@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   bio: {

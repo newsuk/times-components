@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.headline,
     fontSize: 35,
     textAlign: "center",
-    color: "#000000",
+    color: colours.functional.timesBlack,
     marginBottom: 12
   },
   message: {
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bodyRegular,
     fontSize: 18,
     textAlign: "center",
-    color: "#696969"
+    color: colours.functional.doveGrey
   },
   buttonContainer: {
     justifyContent: "flex-end"
@@ -67,8 +67,8 @@ const AuthorProfileError = ({ refetch }) => (
       <View style={styles.buttonContainer}>
         <Button
           onPress={refetch}
-          title="Retry"
-          color="#006699"
+          title="Retrye"
+          color={colours.functional.mineShaftGrey}
           accessibilityLabel="Retry"
         />
       </View>

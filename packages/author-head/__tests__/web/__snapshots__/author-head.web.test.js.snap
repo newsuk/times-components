@@ -14,7 +14,7 @@ exports[`AuthorHead test on web renders 1`] = `
 .c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
-  color: #000;
+  color: #1D1D1B;
 }
 
 .c2 {
@@ -120,7 +120,7 @@ exports[`AuthorHead test on web renders with data 1`] = `
 .c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
-  color: #000;
+  color: #1D1D1B;
 }
 
 .c2 {
@@ -311,7 +311,7 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
 .c3 {
   font-family: TimesModern-Bold;
   font-size: 30px;
-  color: #000;
+  color: #1D1D1B;
 }
 
 .c2 {

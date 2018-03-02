@@ -6,7 +6,7 @@ import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
 import { IconTwitter } from "@times-components/icons";
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";

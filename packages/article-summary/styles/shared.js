@@ -1,4 +1,4 @@
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const sharedStyles = {
   text: {
@@ -20,7 +20,7 @@ const sharedStyles = {
     marginBottom: 0
   },
   headline: {
-    color: colours.functional.doveGrey,
+    color: colours.functional.mineShaftGrey,
     marginBottom: 5,
     fontFamily: fonts.headline,
     fontWeight: "400"

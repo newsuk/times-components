@@ -9,7 +9,7 @@ exports[`AuthorProfile test on ios does not re-render the author head if the nam
   ellipsizeMode="tail"
   style={
     Object {
-      "color": "#000",
+      "color": "#1D1D1B",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
     }
@@ -29,7 +29,7 @@ exports[`AuthorProfile test on ios does re-render the author head if the loading
   ellipsizeMode="tail"
   style={
     Object {
-      "color": "#000",
+      "color": "#1D1D1B",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
     }
@@ -69,7 +69,7 @@ exports[`AuthorProfile test on ios renders page error 1`] = `
       style={
         Object {
           "alignSelf": "center",
-          "color": "#000000",
+          "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 35,
           "marginBottom": 12,
@@ -285,7 +285,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 style={
                   Array [
                     Object {
-                      "borderColor": "#FFF",
+                      "borderColor": "#FFFFFF",
                       "marginBottom": 20,
                       "marginLeft": "auto",
                       "marginRight": "auto",
@@ -393,7 +393,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -483,7 +483,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -973,7 +973,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1291,7 +1291,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1989,7 +1989,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -2079,7 +2079,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -2417,7 +2417,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -2659,7 +2659,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -3073,7 +3073,7 @@ exports[`AuthorProfile test on ios renders profile content empty 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -3116,7 +3116,7 @@ exports[`AuthorProfile test on ios renders profile content empty 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -3671,7 +3671,7 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
             <View
               style={
                 Object {
-                  "borderColor": "#FFF",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 50,
                   "height": 100,
                   "overflow": "hidden",
@@ -4208,7 +4208,7 @@ exports[`AuthorProfile test on ios renders profile error 1`] = `
         style={
           Object {
             "alignSelf": "center",
-            "color": "#000000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 35,
             "marginBottom": 12,
@@ -4244,9 +4244,9 @@ exports[`AuthorProfile test on ios renders profile error 1`] = `
     >
       <Button
         accessibilityLabel="Retry"
-        color="#006699"
+        color="#333333"
         onPress={[Function]}
-        title="Retry"
+        title="Retrye"
       />
     </View>
   </View>
@@ -4387,7 +4387,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
             <View
               style={
                 Object {
-                  "borderColor": "#FFF",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 50,
                   "height": 100,
                   "overflow": "hidden",
@@ -4826,7 +4826,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5144,7 +5144,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5511,7 +5511,7 @@ exports[`AuthorProfile test on ios renders profile separator 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#dbdbdb",
+      "backgroundColor": "#DBDBDB",
       "height": 1,
     }
   }
@@ -5561,7 +5561,7 @@ exports[`AuthorProfile test on ios renders the author head 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
           }
@@ -5651,7 +5651,7 @@ exports[`AuthorProfile test on ios renders the author head 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#333",
+              "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "lineHeight": 26,
@@ -5810,7 +5810,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -5853,7 +5853,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -6158,7 +6158,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -6382,7 +6382,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
