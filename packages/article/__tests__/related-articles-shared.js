@@ -147,20 +147,7 @@ export default () => {
       renderer.create(
         <RelatedArticles
           {...createRelatedArticlesProps(
-            singleRelatedArticleFixture.data,
-            events
-          )}
-        />
-      );
-      expect(events.mock.calls).toMatchSnapshot();
-    });
-
-    it("sends analytics if a single related article with no byline is rendered", () => {
-      const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            singleRelatedArticleNoBylineFixture.data,
+            defaultSingleRelatedArticleFixture.data,
             events
           )}
         />
@@ -173,7 +160,7 @@ export default () => {
       renderer.create(
         <RelatedArticles
           {...createRelatedArticlesProps(
-            twoRelatedArticlesFixture.data,
+            defaultTwoRelatedArticlesFixture.data,
             events
           )}
         />
@@ -186,7 +173,7 @@ export default () => {
       renderer.create(
         <RelatedArticles
           {...createRelatedArticlesProps(
-            threeRelatedArticlesFixture.data,
+            defaultThreeRelatedArticlesFixture.data,
             events
           )}
         />
