@@ -20,7 +20,7 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
     <CardContainer>
       {showImage && (
         <ImageContainer>
-          <Image uri="" aspectRatio={aspectRatio} />
+          <Image aspectRatio={aspectRatio} />
         </ImageContainer>
       )}
       <ChildContainer>
