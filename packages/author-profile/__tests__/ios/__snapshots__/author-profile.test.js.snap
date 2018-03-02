@@ -4244,9 +4244,9 @@ exports[`AuthorProfile test on ios renders profile error 1`] = `
     >
       <Button
         accessibilityLabel="Retry"
-        color="#333333"
+        color="#006699"
         onPress={[Function]}
-        title="Retrye"
+        title="Retry"
       />
     </View>
   </View>

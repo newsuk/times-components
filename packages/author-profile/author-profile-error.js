@@ -67,8 +67,8 @@ const AuthorProfileError = ({ refetch }) => (
       <View style={styles.buttonContainer}>
         <Button
           onPress={refetch}
-          title="Retrye"
-          color={colours.functional.mineShaftGrey}
+          title="Retry"
+          color={colours.functional.azureBlue}
           accessibilityLabel="Retry"
         />
       </View>
