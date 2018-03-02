@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
-import {
-  View,
-  ViewPropTypes,
-  Dimensions,
-  StyleSheet,
-  Platform
-} from "react-native";
+import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
 import Placeholder from "./placeholder";

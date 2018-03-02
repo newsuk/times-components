@@ -24,10 +24,10 @@ const adInit = args => {
             resolve();
           });
           script.addEventListener("error", () => {
-            reject(`load error for ${scriptUri}`);
+            reject(new Error(`load error for ${scriptUri}`));
           });
           if (timeout) {
-            setTimeout(reject, timeout, `timeout for ${scriptUri}`);
+            setTimeout(reject, timeout, new Error(`timeout for ${scriptUri}`));
           }
         });
       }
@@ -50,9 +50,9 @@ const adInit = args => {
       scheduleSetPageTargetingValues(keyValuePairs) {
         this.scheduleAction(() => {
           const pubads = window.googletag.pubads();
-          for (let keyName in keyValuePairs) {
-            pubads.setTargeting(keyName, keyValuePairs[keyName]);
-          }
+          Object.entries(keyValuePairs).forEach((key, value) => {
+            pubads.setTargeting(key, value);
+          });
         });
       },
 
@@ -75,7 +75,7 @@ const adInit = args => {
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
-              adUnitPath
+                adUnitPath
               } could not be defined, probably it was already defined`
             );
           }
@@ -98,9 +98,6 @@ const adInit = args => {
             slot.setTargeting(entry[0], entry[1])
           );
           window.googletag.display(containerID);
-          // TODO: probably we should move this callback inside slotRenderEnded event handler
-          // this callback update the Ad component setting the height
-          eventCallback("renderComplete");
         });
       },
 
@@ -186,7 +183,7 @@ const adInit = args => {
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-          setDisplayBids() { },
+          setDisplayBids() {},
           targetingKeys() {
             return [];
           },
@@ -310,9 +307,9 @@ const adInit = args => {
         prebidConfig,
         section,
         slots,
-        pageTargeting,
         slotTargeting
       } = data;
+
       if (!window.initCalled) {
         window.initCalled = true;
 
@@ -346,6 +343,7 @@ const adInit = args => {
             this.gpt.displayAds();
           });
       }
+
       this.gpt.scheduleSlotDefine(
         el,
         networkId,
@@ -354,6 +352,9 @@ const adInit = args => {
         slotConfig,
         slotTargeting
       );
+      this.gpt.waitUntilReady().then(() => {
+        eventCallback("renderComplete");
+      });
     }
   };
 
