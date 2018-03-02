@@ -1,6 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { colours } from "@times-components/styleguide";
 import Svg, { Rect, Polygon } from "svgs";
+import iconPropTypes from "./proptypes";
 
 const viewBox = [
   0.15463916957378387,
@@ -29,14 +30,10 @@ const IconVideo = ({ width, height, fillColour }) => (
   </Svg>
 );
 
-IconVideo.propTypes = {
-  fillColour: PropTypes.string,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired
-};
+IconVideo.propTypes = iconPropTypes;
 
 IconVideo.defaultProps = {
-  fillColour: "black"
+  fillColour: colours.functional.black
 };
 
 export default IconVideo;
