@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   label: {
     paddingTop: 15,
-    fontFamily: fonts.supporting
+    fontFamily: "GillSansMTStd-Medium"
   }
 });
 
