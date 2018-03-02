@@ -4,7 +4,11 @@ import { storiesOf } from "@storybook/react-native";
 <<<<<<< HEAD
 =======
 import { fonts } from "@times-components/styleguide";
+<<<<<<< HEAD
 >>>>>>> feat: adds video-icon svg
+=======
+import { withKnobs, color } from "@storybook/addon-knobs";
+>>>>>>> feat: adds knobs to icons
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
@@ -40,15 +44,27 @@ const styles = StyleSheet.create({
 storiesOf("Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
-      <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
+      <IconDiamond
+        width={50}
+        height={50}
+        fillColour={color("Diamond color", "#4D4D4D")}
+      />
       <Text style={styles.label}>Diamond</Text>
     </View>
     <View style={styles.icon}>
-      <IconTwitter width={50} height={50} />
+      <IconTwitter
+        width={50}
+        height={50}
+        fillColour={color("Icon color", "#006699")}
+      />
       <Text style={styles.label}>Twitter</Text>
     </View>
     <View style={styles.icon}>
-      <IconVideo width={50} height={50} />
+      <IconVideo
+        width={50}
+        height={50}
+        fillColour={color("Video color", "#000000")}
+      />
       <Text style={styles.label}>Video</Text>
     </View>
   </View>
