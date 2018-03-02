@@ -6,89 +6,6 @@
 const adInit = args => {
   const { el, data, window, renderComplete, platform, eventCallback } = args;
 
-  /*
-  Code that we're importing from render and isn't tested in render we can treat
-  as a blob and run it. Prebidding is a good example. Good code coverage required,
-  but the tests don't need to do a detailed verification of behaviour.
-
-  Code that we wrote we should be tested in more detail. For example, we need decent
-  tests around "we will delay the ad reqest for up to a second for grapeshot to
-  load, and up to 3 seconds for prebidding to complete"
-
-  Refactors that are required to be able to cleanly write tests are essential.
-  */
-
-
-
-
-  // const initialiser = {
-  //   utils: {
-  //     loadScript(uri) {
-  //       // insert into head first time only
-  //       // return promise that resolves on either load or error - both are valid resolutions, there is no rejection.
-  //     },
-
-  //     withTimeout(promise, timeout) {
-  //       // Wrap `promise` and resolve it anyway if it has not resolved or rejected within the timeout
-  //     }
-  //   },
-
-  //   gpt: {
-  //     scheduleAction(action) {},
-
-  // scheduleSetPageTargetingValues(keyValuePairs) {
-  //   this.scheduleAction(() => {
-  //     for (let keyName in keyValuePairs) {
-  //       gtag.pubads().setTargeting(keyName, keyValuePairs[keyName]);
-  //     }
-  //   })
-  // }
-  //   },
-
-  //   grapeshot: {
-  //     initialiseGrapeshotAsync(utils) {
-  //       return utils
-  //         .loadScript(GRAPESHOT_SCRIPT_URI)
-  //         .then(this.doRemainingSetup);
-  //     },
-
-  //     doRemainingSetup() {
-  //       // return promise
-  //     }
-  //   },
-
-  // init() {
-  //   const { withTimeout } = this.utils;
-  //   Promise.all(
-  //     withTimeout(setupGrapeshot, 1000),
-  //     withTimeout(setupPrebidding, 3000)
-  //   )
-  //     .then(sendGPTRequest);
-
-
-  //   setupGrapeshot()
-  //   const { withTimeout } = this.utils;
-  //   withTimeout(setupPrebidding, 3000)
-  //     .then(sendGPTRequest);
-  // }
-  // };
-
-  // const setupGrapeshot = () => {
-  //   return loadScript(GS_SCRIPT_URI)
-  //     .then(() => {
-  //       gtag.pubads().setTargeting("gs_cat", window.gs_channels);
-  //     });
-  // }
-
-  // const setupAmazon = () => {
-  //   loadScript(AMAZON_SCRIPT_URI);
-  //   return new Promise((resolve, reject) => {
-  //     amazonQueue.push(() => {
-  //       resolve();
-  //     })
-  //   });
-  // }
-
   const scriptsInserted = {};
 
 
@@ -96,7 +13,7 @@ const adInit = args => {
 
 
     utils: {
-      loadScript(scriptUri) {
+      loadScript(scriptUri, timeout) {
         if (scriptsInserted[scriptUri]) {
           throw new Error(`Inserting "${scriptUri}" twice.`);
         }
@@ -111,17 +28,18 @@ const adInit = args => {
             resolve();
           });
           script.addEventListener("error", () => {
-            reject();
+            reject(`load error for ${scriptUri}`);
           });
-        })
-
-        //TODO maybe this is the best place for a timeout after all, since timing out is built into prebidding
+          if (timeout) {
+            setTimeout(reject, timeout, `timeout for ${scriptUri}`);
+          }
+        });
       }
     },
 
     gpt: {
 
-      setupGPT(utils) {
+      setupAsync(utils) {
         window.googletag = window.googletag || {};
         window.googletag.cmd = window.googletag.cmd || [];
         this.scheduleGPTConfiguration(data.pageTargeting);
@@ -313,11 +231,11 @@ const adInit = args => {
     },
 
     grapeshot: {
-      setupGrapeshot(gpt, utils) {
+      setupAsync(gpt, utils) {
         const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
         )}`;
-        return utils.loadScript(grapeshotUrl)
+        return utils.loadScript(grapeshotUrl, 1000)
           .then(() => {
             console.log("GRAPESHOT COMPLETE!", window.gs_channels);
             gpt.scheduleSetPageTargetingValues({ gs_cat: window.gs_channels });
@@ -405,8 +323,8 @@ const adInit = args => {
         window.initCalled = true;
 
         const parallelActions = [
-          this.gpt.setupGPT(this.utils),
-          this.grapeshot.setupGrapeshot(this.gpt, this.utils),
+          this.gpt.setupAsync(this.utils),
+          this.grapeshot.setupAsync(this.gpt, this.utils),
         ];
 
         const enablePrebidding = platform === "web";
