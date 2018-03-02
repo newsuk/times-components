@@ -351,8 +351,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -741,8 +741,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -791,8 +791,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -835,8 +835,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -879,8 +879,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -927,8 +927,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1059,8 +1059,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -1109,8 +1109,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1153,8 +1153,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1197,8 +1197,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1245,8 +1245,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1377,8 +1377,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -1427,8 +1427,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1471,8 +1471,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1515,8 +1515,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1563,8 +1563,8 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -2298,8 +2298,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -2540,8 +2540,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -2782,8 +2782,8 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -3689,8 +3689,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -3878,8 +3878,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -3928,8 +3928,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -3972,8 +3972,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4016,8 +4016,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4064,8 +4064,8 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4405,8 +4405,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4594,8 +4594,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -4644,8 +4644,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4688,8 +4688,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4732,8 +4732,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4780,8 +4780,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4912,8 +4912,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -4962,8 +4962,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5006,8 +5006,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5050,8 +5050,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5098,8 +5098,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5230,8 +5230,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                       <BVLinearGradient
                         colors={
                           Array [
-                            "#f9f9f9",
-                            "#ededed",
+                            "#F9F9F9",
+                            "#EDEDED",
                           ]
                         }
                         end={
@@ -5280,8 +5280,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5324,8 +5324,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5368,8 +5368,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5416,8 +5416,8 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5976,8 +5976,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6020,8 +6020,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6064,8 +6064,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6112,8 +6112,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6200,8 +6200,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6244,8 +6244,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6288,8 +6288,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6336,8 +6336,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6424,8 +6424,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6468,8 +6468,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6512,8 +6512,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6560,8 +6560,8 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={

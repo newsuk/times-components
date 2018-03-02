@@ -186,8 +186,8 @@ exports[`ModalImage test on ios renders correctly 1`] = `
                     <BVLinearGradient
                       colors={
                         Array [
-                          "#f9f9f9",
-                          "#ededed",
+                          "#F9F9F9",
+                          "#EDEDED",
                         ]
                       }
                       end={
@@ -307,8 +307,8 @@ exports[`ModalImage test on ios renders correctly 1`] = `
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={

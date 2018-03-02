@@ -91,8 +91,8 @@ exports[`Caption on Android renders an image with a caption 1`] = `
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -167,7 +167,7 @@ exports[`Caption on Android renders an image with a caption 1`] = `
             "lineHeight": 20,
           },
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
@@ -226,7 +226,7 @@ exports[`Caption on Android renders correctly with credits 1`] = `
             "lineHeight": 20,
           },
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
@@ -267,7 +267,7 @@ exports[`Caption on Android renders correctly with credits only 1`] = `
             "lineHeight": 20,
           },
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,
@@ -330,7 +330,7 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
             "lineHeight": 20,
           },
           Object {
-            "color": "#333",
+            "color": "#333333",
             "fontSize": 9,
             "fontWeight": "400",
             "letterSpacing": 1,

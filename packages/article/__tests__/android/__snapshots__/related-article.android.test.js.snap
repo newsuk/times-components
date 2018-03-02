@@ -200,8 +200,8 @@ exports[`Related articles tests on android DEFAULT template should render one re
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1140,8 +1140,8 @@ exports[`Related articles tests on android DEFAULT template should render two re
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1445,8 +1445,8 @@ exports[`Related articles tests on android DEFAULT template should render two re
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1808,8 +1808,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -2306,8 +2306,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -2947,8 +2947,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={

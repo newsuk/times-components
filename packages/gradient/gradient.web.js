@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { View, ViewPropTypes } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
@@ -10,7 +11,7 @@ const Gradient = ({ degrees, children, style }) => (
       {
         backgroundImage: `linear-gradient(${
           degrees
-        }deg, #f9f9f9 0%, #ededed 100%)`
+        }deg, ${colours.functional.offWhite} 0%, ${colours.functional.galleryGrey} 100%)`
       },
       style
     ]}
