@@ -1,7 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { fonts } from "@times-components/styleguide";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
@@ -30,10 +29,11 @@ const styles = StyleSheet.create({
   },
   label: {
     paddingTop: 15,
-    fontFamily: fonts.supporting
+    fontFamily: "GillSansMTStd-Medium"
   }
 });
 
+<<<<<<< HEAD
 storiesOf("Primitives/Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
@@ -42,6 +42,12 @@ storiesOf("Primitives/Icons", module).add("Icons", () => (
         height={50}
         fillColour={color("Diamond color", IconDiamond.defaultProps.fillColour)}
       />
+=======
+storiesOf("Icons", module).add("Icons", () => (
+  <View style={styles.wrapper}>
+    <View style={styles.icon}>
+      <IconDiamond width={50} height={50} fillColour="#4D4D4D" />
+>>>>>>> chore: adjusts styleguide colour names in icons
       <Text style={styles.label}>Diamond</Text>
     </View>
     <View style={styles.icon}>
