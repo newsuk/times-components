@@ -5,8 +5,12 @@ import Svg, { Rect, Polygon } from "svgs";
 import iconPropTypes from "./proptypes";
 =======
 import PropTypes from "prop-types";
+<<<<<<< HEAD
 import Svg, { Path } from "svgs";
 >>>>>>> feat: adds video-icon svg
+=======
+import Svg, { Rect, Polygon } from "svgs";
+>>>>>>> chore: make linter happy
 
 const viewBox = [
   0.15463916957378387,
@@ -19,16 +23,21 @@ const IconVideo = ({ width, height, fillColour }) => (
   <Svg width={width} height={height} viewBox={viewBox}>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Rect
 =======
     <rect
 >>>>>>> feat: adds knobs to icons
+=======
+    <Rect
+>>>>>>> chore: make linter happy
       fill={fillColour}
       x="0.154639175"
       y="0.139754386"
       width="15.4550103"
       height="13.5721404"
     />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Polygon
       fill={fillColour}
@@ -51,10 +60,13 @@ IconVideo.defaultProps = {
     <polygon fill={fillColour} points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"/>
 =======
     <polygon
+=======
+    <Polygon
+>>>>>>> chore: make linter happy
       fill={fillColour}
       points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
     />
-    <polygon
+    <Polygon
       fill={fillColour}
       points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
     />

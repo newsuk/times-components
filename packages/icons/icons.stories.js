@@ -5,10 +5,14 @@ import { storiesOf } from "@storybook/react-native";
 =======
 import { fonts } from "@times-components/styleguide";
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feat: adds video-icon svg
 =======
 import { withKnobs, color } from "@storybook/addon-knobs";
 >>>>>>> feat: adds knobs to icons
+=======
+import { color } from "@storybook/addon-knobs";
+>>>>>>> chore: make linter happy
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
