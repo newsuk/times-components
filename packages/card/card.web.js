@@ -13,19 +13,25 @@ import {
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { childRatio, image, imageSize, isLoading, showImage } = this.props;
+    const {
+      image,
+      imageSize,
+      isLoading,
+      showImage,
+      tabletChildRatio
+    } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
       isLoading !== nextProps.isLoading ||
       showImage !== nextProps.showImage ||
-      childRatio !== nextProps.childRatio
+      tabletChildRatio !== nextProps.tabletChildRatio
     );
   }
   render() {
     const {
       children,
-      childRatio,
+      tabletChildRatio,
       image,
       imageRatio,
       imageSize,
@@ -38,14 +44,14 @@ class CardComponent extends Component {
         <View>
           <Loading
             aspectRatio={imageRatio}
-            childRatio={childRatio}
+            tabletChildRatio={tabletChildRatio}
             showImage={showImage}
           />
         </View>
       );
     }
 
-    const ChildContainer = getChildContainer({ childRatio });
+    const ChildContainer = getChildContainer({ tabletChildRatio });
 
     return (
       <Animations.FadeIn>
@@ -69,11 +75,11 @@ class CardComponent extends Component {
 
 CardComponent.propTypes = {
   ...cardPropTypes,
-  childRatio: PropTypes.number
+  tabletChildRatio: PropTypes.number
 };
 CardComponent.defaultProps = {
   ...cardDefaultProps,
-  childRatio: 1
+  tabletChildRatio: 1
 };
 
 export default CardComponent;

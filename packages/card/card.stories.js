@@ -26,8 +26,8 @@ storiesOf("Composed/Card", module)
   .add("Loading", () => (
     <Card
       {...cardProps}
-      childRatio={number(label, defaultValue, options)}
       showImage={boolean("Show Image?", true, "")}
+      tabletChildRatio={number(label, defaultValue, options)}
       isLoading
     >
       <Text>Is loading</Text>
@@ -36,8 +36,8 @@ storiesOf("Composed/Card", module)
   .add("Default", () => (
     <Card
       {...cardProps}
-      childRatio={number(label, defaultValue, options)}
       showImage={boolean("Show Image?", true, "")}
+      tabletChildRatio={number(label, defaultValue, options)}
     >
       <View
         style={{

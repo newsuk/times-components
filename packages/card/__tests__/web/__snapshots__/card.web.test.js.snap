@@ -21,7 +21,6 @@ exports[`1. Render a Card 1`] = `
 
 exports[`2. Render the loading state 1`] = `
 <CardComponent
-  childRatio={2.7}
   image={
     Object {
       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12",
@@ -31,6 +30,7 @@ exports[`2. Render the loading state 1`] = `
   imageSize={360}
   isLoading={true}
   showImage={true}
+  tabletChildRatio={2.7}
 >
   <View>
     <div
@@ -38,8 +38,9 @@ exports[`2. Render the loading state 1`] = `
     >
       <Loading
         aspectRatio={1.5}
-        childRatio={2.7}
+        childRatio={1}
         showImage={true}
+        tabletChildRatio={2.7}
       >
         <CardContainer>
           <View
@@ -155,10 +156,10 @@ exports[`2. Render the loading state 1`] = `
               </ImageContainer>
               <ChildContainer>
                 <View
-                  className="sc-ifAKCX csdLvu"
+                  className="sc-ifAKCX ljpOYQ"
                 >
                   <div
-                    className="sc-ifAKCX csdLvu rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+                    className="sc-ifAKCX ljpOYQ rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
                   >
                     <Gradient
                       degrees={264}

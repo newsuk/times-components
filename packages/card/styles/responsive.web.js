@@ -24,13 +24,13 @@ export const ImageContainer = withResponsiveStyles(View, {
 });
 ImageContainer.displayName = "ImageContainer";
 
-export const getChildContainer = ({ childRatio }) => {
+export const getChildContainer = ({ tabletChildRatio }) => {
   const ChildContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
   `,
     mediumUp: () => `
-    flex: ${childRatio};
+    flex: ${tabletChildRatio};
     flex-basis: 0 !important;
   `
   });
