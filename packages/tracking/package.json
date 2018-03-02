@@ -37,7 +37,7 @@
     "@times-components/jest-configurator": "0.2.1",
     "@times-components/storybook": "0.4.2",
     "@times-components/tealium": "0.2.7",
-    "dextrose": "^1.4.6",
+    "dextrose": "1.5.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
