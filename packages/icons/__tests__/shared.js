@@ -31,9 +31,7 @@ module.exports = () => {
   });
 
   it("Video renders correctly", () => {
-    const tree = renderer
-      .create(<IconVideo width={50} height={50} />)
-      .toJSON();
+    const tree = renderer.create(<IconVideo width={50} height={50} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
