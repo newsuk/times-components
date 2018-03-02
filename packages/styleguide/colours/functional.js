@@ -1,6 +1,7 @@
 const functionalColours = {
   alto: "#DBDBDB", // Keylines and borders
   azureBlue: "#006699", // Buttons and links
+  buff: "#F9F8F3", // Author profile background
   cardinalRed: "#C51D24", // Exclusive article flag
   doveGrey: "#696969", // Bylines, dates and other auxiliary text
   mineShaftGrey: "#333333", // Headlines, titles and paragraph text

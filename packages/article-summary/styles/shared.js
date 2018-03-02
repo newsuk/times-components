@@ -1,8 +1,8 @@
-import { fonts } from "@times-components/styleguide";
+import { fonts, colours } from "@times-components/styleguide";
 
 const sharedStyles = {
   text: {
-    color: "#696969",
+    color: colours.functional.doveGrey,
     fontSize: 14,
     fontFamily: fonts.body,
     lineHeight: 20,
@@ -10,7 +10,7 @@ const sharedStyles = {
     flexWrap: "wrap"
   },
   metaText: {
-    color: "#696969",
+    color: colours.functional.doveGrey,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting,
@@ -20,7 +20,7 @@ const sharedStyles = {
     marginBottom: 0
   },
   headline: {
-    color: "#333333",
+    color: colours.functional.doveGrey,
     marginBottom: 5,
     fontFamily: fonts.headline,
     fontWeight: "400"

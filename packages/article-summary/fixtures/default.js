@@ -1,10 +1,11 @@
 import React from "react";
+import { colours } from "@times-components/styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
 export default {
   labelProps: {
     title: "Camilla Long",
-    color: "#333333"
+    color: colours.functional.mineShaftGrey
   },
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
