@@ -20,7 +20,11 @@ const IconTwitter = ({ width, height, fillColour }) => (
 IconTwitter.propTypes = iconPropTypes;
 
 IconTwitter.defaultProps = {
+<<<<<<< HEAD
   fillColour: colours.functional.azureBlue
+=======
+  fillColour: colours.functional.blue
+>>>>>>> chore: uses styleguide colors in Icons
 };
 
 export default IconTwitter;

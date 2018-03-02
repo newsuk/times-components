@@ -1,5 +1,6 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { colours } from "@times-components/styleguide";
 import Svg, { Rect, Polygon } from "svgs";
 import iconPropTypes from "./proptypes";
@@ -11,6 +12,11 @@ import Svg, { Path } from "svgs";
 =======
 import Svg, { Rect, Polygon } from "svgs";
 >>>>>>> chore: make linter happy
+=======
+import { colours } from "@times-components/styleguide";
+import Svg, { Rect, Polygon } from "svgs";
+import iconPropTypes from "./proptypes";
+>>>>>>> chore: uses styleguide colors in Icons
 
 const viewBox = [
   0.15463916957378387,
@@ -74,15 +80,15 @@ IconVideo.defaultProps = {
   </Svg>
 );
 
-IconVideo.propTypes = {
-  fillColour: PropTypes.string,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired
-};
+IconVideo.propTypes = iconPropTypes;
 
 IconVideo.defaultProps = {
+<<<<<<< HEAD
   fillColour: "black"
 >>>>>>> feat: adds video-icon svg
+=======
+  fillColour: colours.functional.black
+>>>>>>> chore: uses styleguide colors in Icons
 };
 
 export default IconVideo;

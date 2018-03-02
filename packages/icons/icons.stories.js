@@ -51,7 +51,7 @@ storiesOf("Icons", module).add("Icons", () => (
       <IconDiamond
         width={50}
         height={50}
-        fillColour={color("Diamond color", "#4D4D4D")}
+        fillColour={color("Diamond color", IconDiamond.defaultProps.fillColour)}
       />
       <Text style={styles.label}>Diamond</Text>
     </View>
@@ -59,7 +59,7 @@ storiesOf("Icons", module).add("Icons", () => (
       <IconTwitter
         width={50}
         height={50}
-        fillColour={color("Icon color", "#006699")}
+        fillColour={color("Icon color", IconTwitter.defaultProps.fillColour)}
       />
       <Text style={styles.label}>Twitter</Text>
     </View>
@@ -67,7 +67,7 @@ storiesOf("Icons", module).add("Icons", () => (
       <IconVideo
         width={50}
         height={50}
-        fillColour={color("Video color", "#000000")}
+        fillColour={color("Video color", IconVideo.defaultProps.fillColour)}
       />
       <Text style={styles.label}>Video</Text>
     </View>

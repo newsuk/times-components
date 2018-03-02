@@ -14,7 +14,11 @@ const IconDiamond = ({ width, height, fillColour }) => (
 IconDiamond.propTypes = iconPropTypes;
 
 IconDiamond.defaultProps = {
+<<<<<<< HEAD
   fillColour: colours.functional.timesBlack
+=======
+  fillColour: colours.functional.black
+>>>>>>> chore: uses styleguide colors in Icons
 };
 
 export default IconDiamond;
