@@ -3,6 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { checkA11y } from "@storybook/addon-a11y";
 import { fonts } from "@times-components/styleguide";
+import { withKnobs, color } from "@storybook/addon-knobs";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
@@ -35,6 +36,7 @@ const styles = StyleSheet.create({
   }
 });
 
+<<<<<<< HEAD
 storiesOf("Primitives/Icons", module)
   .addDecorator(checkA11y)
   .add("Icons", () => (
@@ -47,16 +49,35 @@ storiesOf("Primitives/Icons", module)
         <IconTwitter width={50} height={50} />
         <Text style={styles.label}>Twitter</Text>
       </View>
+=======
+storiesOf("Primitives/Icons", module).add("Icons", () => (
+  <View style={styles.wrapper}>
+    <View style={styles.icon}>
+      <IconDiamond
+        width={50}
+        height={50}
+        fillColour={color("Diamond color", "#4D4D4D")}
+      />
+      <Text style={styles.label}>Diamond</Text>
+>>>>>>> feat: adds knobs to icons
     </View>
 <<<<<<< HEAD
   ));
 =======
     <View style={styles.icon}>
-      <IconTwitter width={50} height={50} />
+      <IconTwitter
+        width={50}
+        height={50}
+        fillColour={color("Icon color", "#006699")}
+      />
       <Text style={styles.label}>Twitter</Text>
     </View>
     <View style={styles.icon}>
-      <IconVideo width={50} height={50} />
+      <IconVideo
+        width={50}
+        height={50}
+        fillColour={color("Video color", "#000000")}
+      />
       <Text style={styles.label}>Video</Text>
     </View>
   </View>
