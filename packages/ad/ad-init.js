@@ -37,6 +37,11 @@ const adInit = args => {
       }
     },
 
+
+
+
+
+
     gpt: {
 
       setupAsync(utils) {
@@ -83,12 +88,14 @@ const adInit = args => {
       },
     },
 
+
+
+
+
     prebid: {
-      initGlobals() {
+      setupAsync(prebidConfig, utils) {
         window.pbjs = window.pbjs || {};
         window.pbjs.que = window.pbjs.que || [];
-      },
-      loadScriptsAsync(prebidConfig, utils) {
         const scriptPromises = [
           utils.loadScript("https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js")
         ];
@@ -98,7 +105,6 @@ const adInit = args => {
         return Promise.all(scriptPromises);
       },
 
-      // TODO rename to someting better
       requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
         const amazonAccountID = prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
@@ -230,6 +236,10 @@ const adInit = args => {
       },
     },
 
+
+
+
+
     grapeshot: {
       setupAsync(gpt, utils) {
         const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
@@ -241,7 +251,7 @@ const adInit = args => {
             gpt.scheduleSetPageTargetingValues({ gs_cat: window.gs_channels });
           })
           .catch(() => {
-            gpt.scheduleSetPageTargetingValues({ gs_cat: ["default"] });
+            // allow grapeshot to error or time out silently
           })
       },
     },
@@ -331,7 +341,7 @@ const adInit = args => {
         if (enablePrebidding) {
           this.prebid.initGlobals();
           parallelActions.push(
-            this.prebid.loadScriptsAsync(prebidConfig, this.utils),
+            this.prebid.setupAsync(prebidConfig, this.utils),
             this.prebid.requestBidsAsync(
               prebidConfig,
               slots,
