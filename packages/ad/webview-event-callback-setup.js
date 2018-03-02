@@ -1,5 +1,4 @@
 // NOTE: this function is serialised to a string and passed into a webview.
-// See the warning about the implications of this in dom-context-harness.js
 
 /* eslint-env browser */
 

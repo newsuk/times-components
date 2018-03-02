@@ -8,7 +8,6 @@ import Ad, { AdComposer } from "../ad";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 // prevent function sources appearing in snapshots
-jest.mock("../dom-context-harness", () => "mockHarness");
 jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
 jest.mock("../ad-init", () => () => "mockInit");
 

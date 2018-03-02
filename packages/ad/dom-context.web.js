@@ -1,28 +1,22 @@
 import React from "react";
 
-import makeHarness from "./dom-context-harness";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 /* eslint-env browser */
 export default class DOMContext extends React.PureComponent {
   componentDidMount() {
-    const { scripts, init, data, id, platform } = this.props;
-    const harness = makeHarness({
+    const { init, data, id, platform } = this.props;
+    const adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
-      id,
-      window,
-      document,
-      scripts,
-      init,
       data,
       platform
     });
 
-    this.harnessExecuting = true;
+    this.initExecuting = true;
 
-    harness.execute();
-    this.harnessExecuting = false;
+    adInit.init();
+    this.initExecuting = false;
     this.processEventQueue();
   }
 
@@ -34,7 +28,7 @@ export default class DOMContext extends React.PureComponent {
   };
 
   processEventQueue() {
-    if (!this.harnessExecuting) {
+    if (!this.initExecuting) {
       this.eventQueue.forEach(this.processEvent);
       this.eventQueue = [];
     }

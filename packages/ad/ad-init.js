@@ -1,17 +1,13 @@
 /* eslint-env browser */
 
 // NOTE: this function is serialised to a string and passed into a webview.
-// See the warning about the implications of this in dom-context-harness.js
 
 const adInit = args => {
-  const { el, data, window, renderComplete, platform, eventCallback } = args;
+  const { el, data, platform, eventCallback } = args;
 
   const scriptsInserted = {};
 
-
   const initialiser = {
-
-
     utils: {
       loadScript(scriptUri, timeout) {
         if (scriptsInserted[scriptUri]) {
@@ -37,18 +33,14 @@ const adInit = args => {
       }
     },
 
-
-
-
-
-
     gpt: {
-
       setupAsync(utils) {
         window.googletag = window.googletag || {};
         window.googletag.cmd = window.googletag.cmd || [];
         this.scheduleGPTConfiguration(data.pageTargeting);
-        return utils.loadScript("https://www.googletagservices.com/tag/js/gpt.js");
+        return utils.loadScript(
+          "https://www.googletagservices.com/tag/js/gpt.js"
+        );
       },
 
       scheduleAction(action) {
@@ -61,7 +53,7 @@ const adInit = args => {
           for (let keyName in keyValuePairs) {
             pubads.setTargeting(keyName, keyValuePairs[keyName]);
           }
-        })
+        });
       },
 
       scheduleSlotDefine(
@@ -75,7 +67,11 @@ const adInit = args => {
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
           const { pos: containerID, sizes, mappings } = slotConfig;
-          const slot = window.googletag.defineSlot(adUnitPath, sizes, containerID);
+          const slot = window.googletag.defineSlot(
+            adUnitPath,
+            sizes,
+            containerID
+          );
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
@@ -104,7 +100,7 @@ const adInit = args => {
           window.googletag.display(containerID);
           // TODO: probably we should move this callback inside slotRenderEnded event handler
           // this callback update the Ad component setting the height
-          renderComplete();
+          eventCallback("renderComplete");
         });
       },
 
@@ -136,19 +132,19 @@ const adInit = args => {
       }
     },
 
-
-
-
-
     prebid: {
       setupAsync(prebidConfig, utils) {
         window.pbjs = window.pbjs || {};
         window.pbjs.que = window.pbjs.que || [];
         const scriptPromises = [
-          utils.loadScript("https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js")
+          utils.loadScript(
+            "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
+          )
         ];
         if (prebidConfig.bidders.amazon.accountId) {
-          scriptPromises.push(utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js"))
+          scriptPromises.push(
+            utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js")
+          );
         }
         return Promise.all(scriptPromises);
       },
@@ -200,7 +196,7 @@ const adInit = args => {
           _Q: []
         };
       },
-      //TODO merge with configureApstag?
+      // TODO: merge with configureApstag?
       initApstag(amazonAccountID, timeout) {
         window.apstag.init({
           pubID: amazonAccountID,
@@ -222,7 +218,8 @@ const adInit = args => {
       },
       getAdUnitPath(params) {
         return params.reduce(
-          (acc, cur, index) => (index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`)
+          (acc, cur, index) =>
+            index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`
         );
       },
       scheduleRequestAmazonBids(
@@ -281,37 +278,29 @@ const adInit = args => {
           console.log("Amazon bids done");
           window.apstag.setDisplayBids();
         }
-      },
+      }
     },
-
-
-
-
 
     grapeshot: {
       setupAsync(gpt, utils) {
         const grapeshotUrl = `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
           data.contextUrl
         )}`;
-        return utils.loadScript(grapeshotUrl, 1000)
+        return utils
+          .loadScript(grapeshotUrl, 1000)
           .then(() => {
             console.log("GRAPESHOT COMPLETE!", window.gs_channels);
             gpt.scheduleSetPageTargetingValues({ gs_cat: window.gs_channels });
           })
           .catch(() => {
             // allow grapeshot to error or time out silently
-          })
-      },
+          });
+      }
     },
-
-
 
     //
     // ABANDON HOPE BELOW HERE
     //
-
-
-
 
     init() {
       const {
@@ -325,12 +314,11 @@ const adInit = args => {
         slotTargeting
       } = data;
       if (!window.initCalled) {
-
         window.initCalled = true;
 
         const parallelActions = [
           this.gpt.setupAsync(this.utils),
-          this.grapeshot.setupAsync(this.gpt, this.utils),
+          this.grapeshot.setupAsync(this.gpt, this.utils)
         ];
 
         const enablePrebidding = platform === "web";
@@ -345,7 +333,7 @@ const adInit = args => {
               section,
               this.gpt
             )
-          )
+          );
         }
 
         Promise.all(parallelActions)
@@ -357,7 +345,6 @@ const adInit = args => {
             }
             this.gpt.displayAds();
           });
-
       }
       this.gpt.scheduleSlotDefine(
         el,
@@ -367,7 +354,7 @@ const adInit = args => {
         slotConfig,
         slotTargeting
       );
-    },
+    }
   };
 
   // uncomment this to enable logging of ad initialisation logic
