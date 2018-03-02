@@ -5,12 +5,12 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 export default class DOMContext extends React.PureComponent {
   componentDidMount() {
-    const { init, data, id, platform } = this.props;
+    const { init, data, id } = this.props;
     const adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
       data,
-      platform
+      platform: "web"
     });
 
     this.initExecuting = true;

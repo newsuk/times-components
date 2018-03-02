@@ -50,7 +50,7 @@ export default class DOMContext extends PureComponent {
   };
 
   render() {
-    const { init, data, width, height, platform } = this.props;
+    const { init, data, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
@@ -81,7 +81,7 @@ export default class DOMContext extends PureComponent {
             el: document.getElementsByTagName("div")[0],
             eventCallback: eventCallback,
             data: ${JSON.stringify(data)},
-            platform: "${platform}"
+            platform: "native"
           }).init();
           </script>
         </body>
