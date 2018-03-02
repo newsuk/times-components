@@ -9,8 +9,9 @@ export default class DOMContext extends React.PureComponent {
     const adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
+      platform: "web",
       data,
-      platform: "web"
+      window
     });
 
     this.initExecuting = true;
