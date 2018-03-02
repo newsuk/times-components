@@ -1,4 +1,4 @@
-import { fonts } from "@times-components/styleguide";
+import { fonts, colours } from "@times-components/styleguide";
 
 const sharedStyles = {
   leadAsset: {
@@ -9,7 +9,7 @@ const sharedStyles = {
     lineHeight: 26,
     fontSize: 17,
     marginBottom: 25,
-    color: "#333333"
+    color: colours.functional.mineShaftGrey
   },
   articleMainContentRow: {
     paddingLeft: 10,

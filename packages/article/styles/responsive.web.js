@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 import config from "./responsive-config";
 
 export const MainContainer = withResponsiveStyles(View, {
@@ -11,8 +12,8 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
   base: () => `display: none;`,
   mediumUp: () => `
     display: flex;
-    border-top-color: #dbdbdb;
-    border-bottom-color: #dbdbdb;
+    border-top-color: ${colours.functional.alto};
+    border-bottom-color: ${colours.functional.alto};
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;

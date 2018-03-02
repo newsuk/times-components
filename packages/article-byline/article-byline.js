@@ -3,6 +3,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
+import { colours } from "@times-components/styleguide";
 
 import {
   articleBylinePropTypes,
@@ -11,7 +12,7 @@ import {
 
 const linkStyles = StyleSheet.create({
   link: {
-    color: "#069"
+    color: colours.functional.azureBlue
   }
 });
 
