@@ -90,7 +90,7 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
     padding-left: 10px;
     padding-right: 10px;
     width: ${hasSupports ? "auto" : "100%"};
-  `, 
+  `,
     mediumUp: () => {
       const withoutSupportsStyle = `
       flex-grow: 0;
