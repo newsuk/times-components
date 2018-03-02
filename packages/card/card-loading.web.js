@@ -13,8 +13,8 @@ import {
 } from "./styles/responsive";
 import styles from "./styles/shared";
 
-const Loading = ({ aspectRatio, childRatio, showImage }) => {
-  const ChildContainer = getChildContainer({ childRatio });
+const Loading = ({ aspectRatio, tabletChildRatio, showImage }) => {
+  const ChildContainer = getChildContainer({ tabletChildRatio });
 
   return (
     <CardContainer>
@@ -38,11 +38,11 @@ const Loading = ({ aspectRatio, childRatio, showImage }) => {
 
 Loading.propTypes = {
   ...loadingPropTypes,
-  childRatio: PropTypes.number
+  tabletChildRatio: PropTypes.number
 };
 Loading.defaultProps = {
   ...loadingDefaultProps,
-  childRatio: 1
+  tabletChildRatio: 1
 };
 
 export default Loading;
