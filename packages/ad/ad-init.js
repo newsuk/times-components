@@ -64,6 +64,50 @@ const adInit = args => {
         })
       },
 
+      scheduleSlotDefine(
+        adWrapper,
+        networkId,
+        adUnit,
+        section,
+        slotConfig,
+        slotTargeting
+      ) {
+        this.scheduleAction(() => {
+          const adUnitPath = `/${networkId}/${adUnit}/${section}`;
+          const { pos: containerID, sizes, mappings } = slotConfig;
+          const slot = window.googletag.defineSlot(adUnitPath, sizes, containerID);
+          if (!slot) {
+            throw new Error(
+              `Ad slot ${containerID} ${
+              adUnitPath
+              } could not be defined, probably it was already defined`
+            );
+          }
+          slot.addService(window.googletag.pubads());
+          /* eslint-disable no-param-reassign */
+          adWrapper.id = `wrapper-${containerID}`;
+          adWrapper.innerHTML = `<div id="${containerID}"></div>`;
+          adWrapper.style.display = "flex";
+          adWrapper.style.alignItems = "center";
+          adWrapper.style.justifyContent = "center";
+          adWrapper.style.margin = "0 auto";
+          /* eslint-enable no-param-reassign */
+
+          const gptMapping = window.googletag.sizeMapping();
+          mappings.forEach(size =>
+            gptMapping.addSize([size.width, size.height], size.sizes)
+          );
+          slot.defineSizeMapping(gptMapping.build());
+          Object.entries(slotTargeting || {}).forEach(entry =>
+            slot.setTargeting(entry[0], entry[1])
+          );
+          window.googletag.display(containerID);
+          // TODO: probably we should move this callback inside slotRenderEnded event handler
+          // this callback update the Ad component setting the height
+          renderComplete();
+        });
+      },
+
       scheduleGPTConfiguration(pageTargeting) {
         this.scheduleSetPageTargetingValues(pageTargeting);
         this.scheduleAction(() => {
@@ -86,6 +130,10 @@ const adInit = args => {
           })
         );
       },
+
+      displayAds() {
+        window.googletag.pubads().refresh();
+      }
     },
 
 
@@ -265,58 +313,6 @@ const adInit = args => {
 
 
 
-
-    displayAds() {
-      if (platform === "web") {
-        this.prebid.applyPrebidTargeting();
-        this.prebid.applyAmazonTargeting();
-      }
-      window.googletag.pubads().refresh();
-    },
-    scheduleSlotDefine(
-      gtag,
-      adWrapper,
-      networkId,
-      adUnit,
-      section,
-      slotConfig,
-      slotTargeting
-    ) {
-      this.gpt.scheduleAction(() => {
-        const adUnitPath = `/${networkId}/${adUnit}/${section}`;
-        const { pos: containerID, sizes, mappings } = slotConfig;
-        const slot = gtag.defineSlot(adUnitPath, sizes, containerID);
-        if (!slot) {
-          throw new Error(
-            `Ad slot ${containerID} ${
-            adUnitPath
-            } could not be defined, probably it was already defined`
-          );
-        }
-        slot.addService(gtag.pubads());
-        /* eslint-disable no-param-reassign */
-        adWrapper.id = `wrapper-${containerID}`;
-        adWrapper.innerHTML = `<div id="${containerID}"></div>`;
-        adWrapper.style.display = "flex";
-        adWrapper.style.alignItems = "center";
-        adWrapper.style.justifyContent = "center";
-        adWrapper.style.margin = "0 auto";
-        /* eslint-enable no-param-reassign */
-
-        const gptMapping = gtag.sizeMapping();
-        mappings.forEach(size =>
-          gptMapping.addSize([size.width, size.height], size.sizes)
-        );
-        slot.defineSizeMapping(gptMapping.build());
-        Object.entries(slotTargeting || {}).forEach(entry =>
-          slot.setTargeting(entry[0], entry[1])
-        );
-        gtag.display(containerID);
-        // TODO: probably we should move this callback inside slotRenderEnded event handler
-        // this callback update the Ad component setting the height
-        renderComplete();
-      });
-    },
     init() {
       const {
         config: slotConfig,
@@ -339,7 +335,6 @@ const adInit = args => {
 
         const enablePrebidding = platform === "web";
         if (enablePrebidding) {
-          this.prebid.initGlobals();
           parallelActions.push(
             this.prebid.setupAsync(prebidConfig, this.utils),
             this.prebid.requestBidsAsync(
@@ -356,12 +351,15 @@ const adInit = args => {
         Promise.all(parallelActions)
           .then(this.gpt.waitUntilReady())
           .then(() => {
-            this.displayAds();
+            if (enablePrebidding) {
+              this.prebid.applyPrebidTargeting();
+              this.prebid.applyAmazonTargeting();
+            }
+            this.gpt.displayAds();
           });
 
       }
-      this.scheduleSlotDefine(
-        window.googletag,
+      this.gpt.scheduleSlotDefine(
         el,
         networkId,
         adUnit,
