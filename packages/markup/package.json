@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.21.8",
+  "version": "0.21.9",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -48,9 +48,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.10.4",
-    "@times-components/pull-quote": "0.2.21",
-    "@times-components/styleguide": "0.3.5",
+    "@times-components/ad": "0.10.5",
+    "@times-components/pull-quote": "0.2.22",
+    "@times-components/styleguide": "0.3.6",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

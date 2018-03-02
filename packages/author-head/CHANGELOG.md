@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.9"></a>
+## [0.19.9](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.8...@times-components/author-head@0.19.9) (2018-03-02)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.19.8"></a>
 ## [0.19.8](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.6...@times-components/author-head@0.19.8) (2018-03-01)
 
