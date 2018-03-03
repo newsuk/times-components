@@ -33,7 +33,7 @@ const defaultRenderers = {
   },
   ad(key, attributes) {
     return (
-      <Ad key={key} pos="intervention" style={styles.ad} {...attributes} />
+      <Ad key={key} pos="inline-ad" style={styles.ad} {...attributes} />
     );
   },
   break(key) {
