@@ -69,6 +69,9 @@ class ArticlePage extends React.Component {
             <BodyContainer>
               <ArticleBody content={content} section={section} />
             </BodyContainer>
+            <Ad pos="pixel" style={adStyle} />
+            <Ad pos="pixelskin" style={adStyle} />
+            <Ad pos="pixelteads" style={adStyle} />
           </View>
         </MainContainer>
       </Fragment>
