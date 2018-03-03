@@ -18,7 +18,7 @@ const getMaxSizes = adSizes => {
 
 const getSizeMaps = pos => {
   switch (pos) {
-    case "ad-header":
+    case "header":
       return sizes.header;
     case "pixel":
     case "pixelskin":
