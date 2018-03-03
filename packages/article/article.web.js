@@ -5,6 +5,7 @@ import Ad, { AdComposer } from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import ArticlePrototype from "./article-prototype";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
@@ -90,10 +91,7 @@ class ArticlePage extends React.Component {
 }
 
 ArticlePage.propTypes = {
-  article: PropTypes.shape({
-    ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes
-  }),
+  ...ArticlePrototype,
   isLoading: PropTypes.bool,
   error: PropTypes.shape({
     graphQLErrors: PropTypes.array,
@@ -110,5 +108,5 @@ ArticlePage.defaultProps = {
   isLoading: false,
   error: null
 };
-
+export { ArticlePrototype };
 export default articleTrackingContext(ArticlePage);
