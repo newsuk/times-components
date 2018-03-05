@@ -27,6 +27,16 @@ describe("Ad init", () => {
     expect(nativeInit.prebid.setupAsync).toHaveBeenCalledTimes(0);
   });
 
+  if ("Sets up Amazon bidding if amazon account ID is set", () => {
+
+  });
+
+  if ("Does not set up Amazon bidding if no Amazon account id is set", () => {
+    // NOTE test both the case where prebidConfig.bidders.amazon is null,
+    // or where prebidConfig.bidders.amazon is present but
+    // prebidConfig.bidders.amazon.accountId is null / empty
+  });
+
   it("calculates the ad unit path correctly", () => {
     const init = adInit(initOptions);
     expect(init.prebid.getAdUnitPath(["3048", "d.thetimes.co.uk"])).toEqual(
