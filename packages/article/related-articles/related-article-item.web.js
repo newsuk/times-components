@@ -38,18 +38,16 @@ const RelatedArticleItem = ({
   return (
     <Link url={url} onPress={onPress}>
       <RelatedArticleContainer>
-        {
-          imageUri &&
-            <ImageContainer>
-              <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-            </ImageContainer>
-        }
+        {imageUri && (
+          <ImageContainer>
+            <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
+          </ImageContainer>
+        )}
         <SummaryContainer>
           <ArticleSummary
             bylineProps={{ ast: byline }}
             content={() =>
-              !hideSummaryContent &&
-                <ArticleSummaryContent ast={summary} />
+              !hideSummaryContent && <ArticleSummaryContent ast={summary} />
             }
             datePublicationProps={{ date: publishedTime }}
             headline={() => (
