@@ -19,21 +19,31 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
-  const ImageContainer = getImageContainer({ articleCount });
   const RelatedArticleContainer = getRelatedArticleContainer({ articleCount });
   const SummaryContainer = getSummaryContainer({ articleCount });
 
   const renderArticleItems = () =>
-    articles.map(article => (
-      <RelatedArticleItem
-        article={article}
-        key={article.id}
-        onPress={onPress}
-        imageContainer={ImageContainer}
-        relatedArticleContainer={RelatedArticleContainer}
-        summaryContainer={SummaryContainer}
-      />
-    ));
+    articles.map((article, index) => {
+      const ImageContainer = getImageContainer({
+        articleCount,
+        index,
+        template
+      });
+
+      const hideSummaryContent = template === "LEAD_AND_TWO" && index > 0;
+
+      return (
+        <RelatedArticleItem
+          article={article}
+          hideSummaryContent={hideSummaryContent}
+          imageContainer={ImageContainer}
+          key={article.id}
+          onPress={onPress}
+          relatedArticleContainer={RelatedArticleContainer}
+          summaryContainer={SummaryContainer}
+        />
+      );
+    });
 
   const renderSlice = () => {
     switch (template) {

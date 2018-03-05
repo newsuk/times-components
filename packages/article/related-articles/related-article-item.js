@@ -1,6 +1,7 @@
 import React from "react";
-import get from "lodash.get";
+import PropTypes from "prop-types";
 import { View } from "react-native";
+import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
@@ -11,7 +12,12 @@ import { colours } from "@times-components/styleguide";
 import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
 
-const RelatedArticleItem = ({ article, onPress }) => {
+const RelatedArticleItem = ({
+  article,
+  hideImage,
+  hideSummaryContent,
+  onPress
+}) => {
   const {
     byline,
     headline,
@@ -31,14 +37,17 @@ const RelatedArticleItem = ({ article, onPress }) => {
   return (
     <Link url={url} onPress={onPress}>
       <View>
-        {imageUri ? (
-          <View style={styles.imageContainer}>
-            <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </View>
-        ) : null}
+        {imageUri &&
+          !hideImage && (
+            <View style={styles.imageContainer}>
+              <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
+            </View>
+          )}
         <ArticleSummary
           bylineProps={{ ast: byline }}
-          content={() => <ArticleSummaryContent ast={summary} />}
+          content={() =>
+            hideSummaryContent ? null : <ArticleSummaryContent ast={summary} />
+          }
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
           labelProps={{
@@ -51,6 +60,9 @@ const RelatedArticleItem = ({ article, onPress }) => {
   );
 };
 
-RelatedArticleItem.propTypes = relatedArticleItemPropTypes;
+RelatedArticleItem.propTypes = {
+  ...relatedArticleItemPropTypes,
+  hideImage: PropTypes.bool.isRequired
+};
 
 export default RelatedArticleItem;

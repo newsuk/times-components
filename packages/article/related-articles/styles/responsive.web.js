@@ -23,39 +23,6 @@ export const Heading = withResponsiveStyles(View, {
 });
 Heading.displayName = "Heading";
 
-export const ResponsiveHeadline = withResponsiveStyles(Text, {
-  base: () => `
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 5px;
-  `,
-  mediumUp: () => `
-    font-size: 30px;
-    line-height: 30px;
-  `
-});
-ResponsiveHeadline.displayName = "ResponsiveHeadline";
-
-export const getImageContainer = ({ articleCount }) => {
-  const ImageContainer = withResponsiveStyles(View, {
-    base: () => `
-    display: ${articleCount === 3 ? "none" : "block"};
-    flex-grow: 1;
-    margin-bottom: 10px;
-  `,
-    mediumUp: () =>
-      articleCount === 1
-        ? `
-    flex-grow: 2;
-    flex-basis: 0;
-    margin-bottom: 0;
-  `
-        : `display: block;`
-  });
-  ImageContainer.displayName = "ImageContainer";
-  return ImageContainer;
-};
-
 // replace with Card
 export const getRelatedArticleContainer = ({ articleCount }) => {
   const RelatedArticleContainer = withResponsiveStyles(View, {
@@ -69,6 +36,44 @@ export const getRelatedArticleContainer = ({ articleCount }) => {
   });
   RelatedArticleContainer.displayName = "RelatedArticleContainer";
   return RelatedArticleContainer;
+};
+
+export const ResponsiveHeadline = withResponsiveStyles(Text, {
+  base: () => `
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  `,
+  mediumUp: () => `
+    font-size: 30px;
+    line-height: 30px;
+  `
+});
+ResponsiveHeadline.displayName = "ResponsiveHeadline";
+
+export const getImageContainer = ({ articleCount, index, template }) => {
+  const ImageContainer = withResponsiveStyles(View, {
+    base: () => `
+    display: ${
+      (template === "DEFAULT" && articleCount === 3) ||
+      (template === "LEAD_AND_TWO" && index > 0)
+        ? "none"
+        : "block"
+    };
+    flex-grow: 1;
+    margin-bottom: 10px;
+  `,
+    mediumUp: () =>
+      articleCount === 1
+        ? `
+          flex-grow: 2;
+          flex-basis: 0;
+          margin-bottom: 0;
+        `
+        : `display: block;`
+  });
+  ImageContainer.displayName = "ImageContainer";
+  return ImageContainer;
 };
 
 export const getSummaryContainer = ({ articleCount }) => {
