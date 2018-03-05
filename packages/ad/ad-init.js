@@ -57,14 +57,14 @@ const adInit = args => {
         });
       },
 
-      doSlotAdSetup(
-        adWrapper,
-        networkId,
-        adUnit,
-        section,
-        slotConfig,
-        slotTargeting
-      ) {
+      doSlotAdSetup() {
+        const {
+          config: slotConfig,
+          networkId,
+          adUnit,
+          section,
+          slotTargeting
+        } = data;
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
           const { pos: containerID, sizes, mappings } = slotConfig;
@@ -82,12 +82,12 @@ const adInit = args => {
           }
           slot.addService(window.googletag.pubads());
           /* eslint-disable no-param-reassign */
-          adWrapper.id = `wrapper-${containerID}`;
-          adWrapper.innerHTML = `<div id="${containerID}"></div>`;
-          adWrapper.style.display = "flex";
-          adWrapper.style.alignItems = "center";
-          adWrapper.style.justifyContent = "center";
-          adWrapper.style.margin = "0 auto";
+          el.id = `wrapper-${containerID}`;
+          el.innerHTML = `<div id="${containerID}"></div>`;
+          el.style.display = "flex";
+          el.style.alignItems = "center";
+          el.style.justifyContent = "center";
+          el.style.margin = "0 auto";
           /* eslint-enable no-param-reassign */
 
           const gptMapping = window.googletag.sizeMapping();
@@ -338,29 +338,14 @@ const adInit = args => {
     },
 
     init() {
-      const {
-        config: slotConfig,
-        networkId,
-        adUnit,
-        prebidConfig,
-        section,
-        slots,
-        slotTargeting
-      } = data;
 
       if (!window.initCalled) {
         window.initCalled = true;
         this.doPageAdSetupAsync();
       }
 
-      this.gpt.doSlotAdSetup(
-        el,
-        networkId,
-        adUnit,
-        section,
-        slotConfig,
-        slotTargeting
-      );
+      this.gpt.doSlotAdSetup();
+
       this.gpt.waitUntilReady().then(() => {
         eventCallback("renderComplete");
       });

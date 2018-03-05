@@ -13,7 +13,6 @@ describe("Ad init", () => {
   let mockSlot;
   let mockSizeMapping;
   let mockGoogletag;
-  // let platform;
   let slotConfig;
 
   const adInit = (...args) => {
