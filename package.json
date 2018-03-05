@@ -109,7 +109,7 @@
     "@storybook/addons": "3.3.14",
     "@storybook/react": "3.3.14",
     "@storybook/react-native": "3.3.14",
-    "@times-components/depend": "0.1.0",
+    "@times-components/depend": "*",
     "@times-components/fructose": "3.1.14",
     "babel-core": "6.26.0",
     "babel-plugin-flow-react-proptypes": "14.0.3",
