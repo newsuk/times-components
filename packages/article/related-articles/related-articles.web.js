@@ -29,7 +29,8 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         template
       });
 
-      const showSummaryContent = template === "LEAD_AND_TWO" && index > 0;
+      const showSummaryContent =
+        template === "DEFAULT" || (template === "LEAD_AND_TWO" && index === 0);
 
       return (
         <RelatedArticleItem
