@@ -12,13 +12,12 @@ import slotTargeting from "./fixtures/slot-options.json";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
-const adConfig = Object.assign(
-  {},
-  adConfigBase,
-  { pageTargeting },
-  { slotTargeting }
-);
-
+const adConfig = pos => (Object.assign(
+    {},
+    adConfigBase,
+    { pageTargeting },
+    { slotTargeting: slotTargeting[pos] }
+  ));
 let DOMContext;
 if (window.document) {
   DOMContext = WebDOMContext;
@@ -39,9 +38,8 @@ const withOpenInNewWindow = children => {
         Open in new window
       </a>
     );
-
-  return (
-    <AdComposer adConfig={adConfig}>
+    return (
+    <AdComposer adConfig={adConfig(children.props.pos)}>
       <View>
         {link}
         {children}
@@ -58,14 +56,14 @@ storiesOf("Advertisement", module)
   )
   .add("render one ad - header", () =>
     withOpenInNewWindow(
-      <Ad pos="ad-header" contextUrl={articleUrl} section="news" />
+      <Ad pos="header" contextUrl={articleUrl} section="news" />
     )
   )
   .add("render article ads - header, inline", () =>
     withOpenInNewWindow(
       <View>
-        <Ad section="news" pos="ad-header" contextUrl={articleUrl} />
-        <Ad section="news" pos="ad-article-inline" contextUrl={articleUrl} />
+        <Ad section="news" pos="header" contextUrl={articleUrl} />
+        <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -97,7 +95,7 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="ad-header" section="news" contextUrl={articleUrl} />
+        <Ad pos="header" section="news" contextUrl={articleUrl} />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
@@ -106,7 +104,7 @@ storiesOf("Advertisement", module)
           vitae erat. Nulla eget nulla rhoncus, sollicitudin ipsum et, volutpat
           ligula.
         </Text>
-        <Ad pos="ad-article-inline" section="news" contextUrl={articleUrl} />
+        <Ad pos="inline-ad" section="news" contextUrl={articleUrl} />
         <Text>
           Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo. Donec
           vitae justo aliquam, pellentesque risus laoreet, hendrerit augue.
