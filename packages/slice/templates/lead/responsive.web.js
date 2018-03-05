@@ -81,7 +81,7 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getLeadContainer = ({ hasSupports }) => {
+export const getLeadContainer = ({ hasSupports, supportCount }) => {
   const LeadContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -98,14 +98,17 @@ export const getLeadContainer = ({ hasSupports }) => {
     `;
       const withSupportsStyle = `
       flex-basis: 0 !important;
-      flex-grow: 3;
+      flex-grow: ${supportCount === 1 ? "3" : "1.75"};
       padding-left: 10px;
       padding-right: 10px;
     `;
       return `
       ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
-    }
+    },
+    wideUp: () => `
+      flex-grow: ${supportCount === 1 ? "1.75" : "1.25"};;
+    `
   });
   LeadContainer.displayName = "LeadContainer";
   return LeadContainer;
