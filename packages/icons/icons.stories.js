@@ -6,7 +6,7 @@ import { color } from "@storybook/addon-knobs";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
-const borderColor = "#D3D3D3";
+const borderColor = colours.functional.alto;
 
 const styles = StyleSheet.create({
   wrapper: {
