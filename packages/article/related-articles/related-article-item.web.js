@@ -18,7 +18,7 @@ const RelatedArticleItem = ({
   imageContainer: ImageContainer,
   relatedArticleContainer: RelatedArticleContainer,
   summaryContainer: SummaryContainer
-}) => { 
+}) => {
   const {
     byline,
     headline,
