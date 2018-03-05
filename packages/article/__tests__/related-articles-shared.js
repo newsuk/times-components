@@ -1,3 +1,4 @@
+/* global context */
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -36,8 +37,8 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  describe("Related articles", () => {
-    it("handles no related articles", () => {
+  context("DEFAULT template", () => {
+    it("should handle no related articles", () => {
       const data = {
         relatedArticles: [],
         relatedArticlesLayout: {
@@ -50,7 +51,7 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("Default template with one related article", () => {
+    it("should render one related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -63,7 +64,7 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("Default template with two related articles", () => {
+    it("should render two related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -76,7 +77,7 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("Default template with three related articles", () => {
+    it("should render three related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -88,8 +89,10 @@ export default () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
+  });
 
-    it("Lead and two template with one related article", () => {
+  context("LEAD AND TWO template", () => {
+    it("should render one lead related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -102,7 +105,7 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("Lead and two template with two related articles", () => {
+    it("should render one lead and one support related article", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -113,7 +116,7 @@ export default () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it("Lead and two template with three related articles", () => {
+    it("should render one lead and two support related articles", () => {
       const tree = renderer
         .create(
           <RelatedArticles
@@ -127,8 +130,8 @@ export default () => {
     });
   });
 
-  describe("tracker", () => {
-    it("sends analytics even if no related articles are rendered", () => {
+  context("tracking and analytics", () => {
+    it("should send analytics even when no related articles", () => {
       const events = jest.fn();
       const data = {
         relatedArticles: [],
@@ -142,7 +145,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("sends analytics if a single related article is rendered", () => {
+    it("should send analytics for a single related article", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -155,7 +158,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("sends analytics if two related articles are rendered", () => {
+    it("should send analytics for two related articles", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles
@@ -168,7 +171,7 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("sends analytics if three related articles are rendered", () => {
+    it("should send analytics for three related articles", () => {
       const events = jest.fn();
       renderer.create(
         <RelatedArticles

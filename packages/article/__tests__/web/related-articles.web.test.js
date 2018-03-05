@@ -1,5 +1,5 @@
 import relatedArticlesShared from "../related-articles-shared";
 
-describe("Related articles test on web", () => {
+describe("Related articles tests on web", () => {
   relatedArticlesShared();
 });

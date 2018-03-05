@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Related articles test on android Related articles Default template with one related article 1`] = `
+exports[`Related articles tests on android DEFAULT template should handle no related articles 1`] = `null`;
+
+exports[`Related articles tests on android DEFAULT template should render one related article 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -363,7 +365,7 @@ exports[`Related articles test on android Related articles Default template with
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles Default template with three related articles 1`] = `
+exports[`Related articles tests on android DEFAULT template should render three related articles 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -940,7 +942,7 @@ exports[`Related articles test on android Related articles Default template with
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles Default template with two related articles 1`] = `
+exports[`Related articles tests on android DEFAULT template should render two related articles 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -1608,7 +1610,7 @@ exports[`Related articles test on android Related articles Default template with
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles Lead and two template with one related article 1`] = `
+exports[`Related articles tests on android LEAD AND TWO template should render one lead and one support related article 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -1958,12 +1960,155 @@ exports[`Related articles test on android Related articles Lead and two template
           </View>
         </View>
       </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            nativeBackgroundAndroid={
+              Object {
+                "attribute": "selectableItemBackground",
+                "type": "ThemeAttrAndroid",
+              }
+            }
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            pointerEvents="box-only"
+            testID={undefined}
+          >
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    D E F E N C E   C U T S   |   A N A L Y S I S
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Size matters, so ministers must prove they are serious about defence
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Deborah Haynes
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
     </View>
   </View>
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles Lead and two template with three related articles 1`] = `
+exports[`Related articles tests on android LEAD AND TWO template should render one lead and two support related articles 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -2604,7 +2749,7 @@ exports[`Related articles test on android Related articles Lead and two template
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles Lead and two template with two related articles 1`] = `
+exports[`Related articles tests on android LEAD AND TWO template should render one lead related article 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -2954,157 +3099,12 @@ exports[`Related articles test on android Related articles Lead and two template
           </View>
         </View>
       </View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#dbdbdb",
-            "borderBottomWidth": 0.5,
-            "borderStyle": "solid",
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            hitSlop={undefined}
-            nativeBackgroundAndroid={
-              Object {
-                "attribute": "selectableItemBackground",
-                "type": "ThemeAttrAndroid",
-              }
-            }
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            pointerEvents="box-only"
-            testID={undefined}
-          >
-            <View>
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 5,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 12,
-                          "fontWeight": "400",
-                          "letterSpacing": 1.2,
-                          "lineHeight": 12,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
-                        },
-                        Object {
-                          "color": "#333333",
-                        },
-                      ]
-                    }
-                  >
-                    D E F E N C E   C U T S   |   A N A L Y S I S
-                  </Text>
-                </View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontWeight": "400",
-                        "marginBottom": 5,
-                      },
-                      Object {
-                        "fontSize": 22,
-                        "lineHeight": 22,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Size matters, so ministers must prove they are serious about defence
-                </Text>
-                <Text
-                  accessibilityLabel="datePublication"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                  testID="datePublication"
-                >
-                  Saturday November 25 2017, 12:01am
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Deborah Haynes
-                  </Text>
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
     </View>
   </View>
 </RCTScrollView>
 `;
 
-exports[`Related articles test on android Related articles handles no related articles 1`] = `null`;
-
-exports[`Related articles test on android tracker sends analytics even if no related articles are rendered 1`] = `
+exports[`Related articles tests on android tracking and analytics should send analytics even when no related articles 1`] = `
 Array [
   Array [
     Object {
@@ -3121,7 +3121,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android tracker sends analytics if a single related article is rendered 1`] = `
+exports[`Related articles tests on android tracking and analytics should send analytics for a single related article 1`] = `
 Array [
   Array [
     Object {
@@ -3146,7 +3146,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android tracker sends analytics if three related articles are rendered 1`] = `
+exports[`Related articles tests on android tracking and analytics should send analytics for three related articles 1`] = `
 Array [
   Array [
     Object {
@@ -3185,7 +3185,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on android tracker sends analytics if two related articles are rendered 1`] = `
+exports[`Related articles tests on android tracking and analytics should send analytics for two related articles 1`] = `
 Array [
   Array [
     Object {
