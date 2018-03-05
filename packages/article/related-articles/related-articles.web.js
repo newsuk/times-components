@@ -29,16 +29,16 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         template
       });
 
-      const hideSummaryContent = template === "LEAD_AND_TWO" && index > 0;
+      const showSummaryContent = template === "LEAD_AND_TWO" && index > 0;
 
       return (
         <RelatedArticleItem
           article={article}
-          hideSummaryContent={hideSummaryContent}
           imageContainer={ImageContainer}
           key={article.id}
           onPress={onPress}
           relatedArticleContainer={RelatedArticleContainer}
+          showSummaryContent={showSummaryContent}
           summaryContainer={SummaryContainer}
         />
       );

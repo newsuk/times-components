@@ -14,18 +14,19 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   const renderArticleItems = () =>
     articles.map((article, index) => {
-      const hideImage =
-        (template === "DEFAULT" && articles.length === 3) ||
-        (template === "LEAD_AND_TWO" && index > 0);
-      const hideSummaryContent = template === "LEAD_AND_TWO" && index > 0;
+      const showImage =
+        (template === "DEFAULT" && articles.length < 3) ||
+        (template === "LEAD_AND_TWO" && index === 0);
+      const showSummaryContent =
+        template === "DEFAULT" || (template === "LEAD_AND_TWO" && index === 0);
 
       return (
         <RelatedArticleItem
           article={article}
-          hideImage={hideImage}
-          hideSummaryContent={hideSummaryContent}
           key={article.id}
           onPress={onPress}
+          showImage={showImage}
+          showSummaryContent={showSummaryContent}
         />
       );
     });

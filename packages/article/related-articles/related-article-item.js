@@ -14,9 +14,9 @@ import styles from "./styles";
 
 const RelatedArticleItem = ({
   article,
-  hideImage,
-  hideSummaryContent,
-  onPress
+  onPress,
+  showImage,
+  showSummaryContent
 }) => {
   const {
     byline,
@@ -38,7 +38,7 @@ const RelatedArticleItem = ({
     <Link url={url} onPress={onPress}>
       <View>
         {imageUri &&
-          !hideImage && (
+          showImage && (
             <View style={styles.imageContainer}>
               <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
             </View>
@@ -46,7 +46,7 @@ const RelatedArticleItem = ({
         <ArticleSummary
           bylineProps={{ ast: byline }}
           content={() =>
-            hideSummaryContent ? null : <ArticleSummaryContent ast={summary} />
+            showSummaryContent && <ArticleSummaryContent ast={summary} />
           }
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
@@ -62,7 +62,7 @@ const RelatedArticleItem = ({
 
 RelatedArticleItem.propTypes = {
   ...relatedArticleItemPropTypes,
-  hideImage: PropTypes.bool.isRequired
+  showImage: PropTypes.bool.isRequired
 };
 
 export default RelatedArticleItem;

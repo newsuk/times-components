@@ -10,6 +10,6 @@ export default {
     summary: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
-  hideSummaryContent: PropTypes.bool.isRequired,
-  onPress: PropTypes.func.isRequired
+  onPress: PropTypes.func.isRequired,
+  showSummaryContent: PropTypes.bool.isRequired
 };

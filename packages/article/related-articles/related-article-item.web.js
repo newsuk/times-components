@@ -13,8 +13,8 @@ import { ResponsiveHeadline } from "./styles/responsive";
 
 const RelatedArticleItem = ({
   article,
-  hideSummaryContent,
   onPress,
+  showSummaryContent,
   imageContainer: ImageContainer,
   relatedArticleContainer: RelatedArticleContainer,
   summaryContainer: SummaryContainer
@@ -47,7 +47,7 @@ const RelatedArticleItem = ({
           <ArticleSummary
             bylineProps={{ ast: byline }}
             content={() =>
-              !hideSummaryContent && <ArticleSummaryContent ast={summary} />
+              showSummaryContent && <ArticleSummaryContent ast={summary} />
             }
             datePublicationProps={{ date: publishedTime }}
             headline={() => (
