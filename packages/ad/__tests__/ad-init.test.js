@@ -1,6 +1,6 @@
 import { jsdom } from "jsdom";
 
-import adInit from "../ad-init";
+import adInitOriginal from "../ad-init";
 import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
 jest.useFakeTimers();
@@ -9,13 +9,12 @@ describe("Ad init", () => {
   let document;
   let window;
   let initOptions;
-  let init;
   let mockPubAds;
   let mockSlot;
   let mockSizeMapping;
   let mockGoogletag;
-  // let platform;
   let slotConfig;
+  let adInit;
 
   beforeEach(() => {
     document = jsdom("<html></html>");
@@ -90,7 +89,11 @@ describe("Ad init", () => {
       platform: "web",
       eventCallback: jest.fn()
     };
-    init = adInit(initOptions);
+    adInit = (...args) => {
+      const initResult = adInitOriginal(...args);
+      jest.spyOn(initResult.utils, "loadScript").mockImplementation(() => Promise.resolve());
+      return initResult;
+    }
   });
 
   const processGoogletagCommandQueue = () => {
@@ -107,18 +110,18 @@ describe("Ad init", () => {
     const init1 = adInit(initOptions);
     const init2 = adInit(initOptions);
 
-    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation(() => {});
-    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation(() => {});
-    jest.spyOn(init1.gpt, "scheduleSlotDefine").mockImplementation(() => {});
-    jest.spyOn(init2.gpt, "scheduleSlotDefine").mockImplementation(() => {});
+    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation();
+    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation();
+    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
+    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
 
     init1.init();
     init2.init();
 
     expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
     expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
-    expect(init1.gpt.scheduleSlotDefine).toHaveBeenCalledTimes(1);
-    expect(init2.gpt.scheduleSlotDefine).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
+    expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
 
   it("does not perform bidding request for native", () => {
@@ -127,24 +130,20 @@ describe("Ad init", () => {
     });
     const nativeInit = adInit(nativeInitOptions);
 
-    nativeInit.initializeBidding = jest.fn();
-    nativeInit.scheduleGPTConfiguration = jest.fn();
-    nativeInit.scheduleSlotDefine = jest.fn();
+
+    jest.spyOn(nativeInit.prebid, "setupAsync").mockImplementation();
+    jest.spyOn(nativeInit.prebid, "requestBidsAsync").mockImplementation();
 
     nativeInit.init();
-    expect(nativeInit.initializeBidding).toHaveBeenCalledTimes(0);
-    expect(nativeInit.scheduleGPTConfiguration).toHaveBeenCalledTimes(1);
-    expect(nativeInit.scheduleSlotDefine).toHaveBeenCalledTimes(1);
 
-    nativeInit.init();
-    // called once in the first init call, so 1 + 0 = 1
-    expect(nativeInit.scheduleGPTConfiguration).toHaveBeenCalledTimes(1);
-    expect(nativeInit.scheduleSlotDefine).toHaveBeenCalledTimes(2);
+    expect(nativeInit.prebid.setupAsync).toHaveBeenCalledTimes(0);
+    expect(nativeInit.prebid.requestBidsAsync).toHaveBeenCalledTimes(0);
   });
 
-  it("configures googletag on page init", () => {
+  it.only("configures googletag on page init", () => {
+    const init = adInit(initOptions);
     init.initializeBidding = jest.fn();
-    init.scheduleSlotDefine = jest.fn();
+    init.doSlotAdSetup = jest.fn();
 
     init.init();
     processGoogletagCommandQueue();
@@ -152,6 +151,7 @@ describe("Ad init", () => {
   });
 
   it("configures slots on slot init", () => {
+    const init = adInit(initOptions);
     init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
 
@@ -200,7 +200,7 @@ describe("Ad init", () => {
     init.initializeBidding = jest.fn();
     init.scheduleGPTConfiguration = jest.fn();
 
-    // init.scheduleSlotDefine = jest.fn();
+    // init.doSlotAdSetup = jest.fn();
 
     init.init();
     expect(processGoogletagCommandQueue).toThrowError(
