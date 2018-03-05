@@ -6,6 +6,9 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 export default class DOMContext extends React.PureComponent {
   componentDidMount() {
     const { init, data } = this.props;
+
+    this.initExecuting = true;
+
     const adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
@@ -14,9 +17,10 @@ export default class DOMContext extends React.PureComponent {
       window
     });
 
-    this.initExecuting = true;
+    if (adInit && adInit.init) {
+      adInit.init();
+    }
 
-    adInit.init();
     this.initExecuting = false;
     this.processEventQueue();
   }

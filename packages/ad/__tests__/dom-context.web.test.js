@@ -8,17 +8,12 @@ import DOMContext from "../dom-context.web";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("DOMContext Web", () => {
-  let platform;
-
-  beforeEach(() => {
-    platform = "web";
-  });
 
   it("passes an element to the init function", () => {
     const init = jest.fn(() => {
-      return { init: () => {} };
+      return { init: () => { } };
     });
-    mount(<DOMContext init={init} platform={platform} />);
+    mount(<DOMContext init={init} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -29,10 +24,10 @@ describe("DOMContext Web", () => {
 
   it("passes the data object to the init function", () => {
     const init = jest.fn(() => {
-      return { init: () => {} };
+      return { init: () => { } };
     });
 
-    mount(<DOMContext init={init} data={{ foo: "bar" }} platform={platform} />);
+    mount(<DOMContext init={init} data={{ foo: "bar" }} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -51,48 +46,47 @@ describe("DOMContext Web", () => {
             throw new Error("broken");
           }}
           data={{ foo: "bar" }}
-          platform={platform}
         />
       );
     };
 
-    expect(runWithError).toThrowError("DomContext error: broken");
+    expect(runWithError).toThrowError("broken");
   });
 
-  //  --------- FIX ME
-  // it("calls onRenderComplete when the renderComplete callback is invoked", () => {
-  //   const onRenderComplete = jest.fn();
+  it("calls the renderComplete callback when a renderComplete event is dispatched", () => {
+    const onRenderComplete = jest.fn();
 
-  //   mount(
-  //     <DOMContext
-  //       init={
-  //         ({ renderComplete }) => renderComplete()
-  //         }
-  //       onRenderComplete={onRenderComplete}
-  //       platform={platform}
-  //     />
-  //   );
+    mount(
+      <DOMContext
+        init={
+          ({ eventCallback }) => eventCallback("renderComplete")
+        }
+        onRenderComplete={onRenderComplete}
+      />
+    );
 
-  //   expect(onRenderComplete).toHaveBeenCalled();
-  // });
+    expect(onRenderComplete).toHaveBeenCalled();
+  });
 
-  // --------- FIX ME
-  // it("does not error when init calls renderComplete but no onRenderComplete callback is provided", () => {
-  //   const init = jest.fn();
-  //   const f = () => {
-  //     mount(<DOMContext init={({ renderComplete }, {init}) => {renderComplete();}} platform={platform}/>);
-  //   };
-  //   expect(f).not.toThrow();
-  // });
+  it("does not error when init dispatches a renderComplete event but no onRenderComplete callback is provided", () => {
+    const init = jest.fn();
+    const f = () => mount(
+      <DOMContext
+        init={
+          ({ eventCallback }) => eventCallback("renderComplete")
+        }
+      />
+    );
+    expect(f).not.toThrow();
+  });
 
   it("Doesn't throw an error when given an invalid event name", () => {
     /* eslint arrow-body-style: ["error", "as-needed", { "requireReturnForObjectLiteral": true }] */
     const component = mount(
       <DOMContext
         init={() => {
-          return { init: () => {} };
+          return { init: () => { } };
         }}
-        platform={platform}
       />
     );
 

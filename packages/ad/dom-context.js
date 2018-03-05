@@ -88,7 +88,6 @@ export default class DOMContext extends PureComponent {
         </body>
       </html>
     `;
-    console.log(html);
     const postMessageBugWorkaround = Platform.select({
       // https://github.com/facebook/react-native/issues/10865
       ios: {
