@@ -1,12 +1,12 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleLabel from "../article-label";
+import VideoLabel from "../video-label";
 
 module.exports = () => {
-  it("renders ArticleLabel", () => {
+  it("renders VideoLabel", () => {
     const tree = renderer
-      .create(<ArticleLabel title="swimming" color="#008347" />)
+      .create(<VideoLabel title="swimming" color="#008347" />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

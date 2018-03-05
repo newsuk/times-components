@@ -5,14 +5,13 @@ import PropTypes from "prop-types";
 import styles from "./style";
 
 const VideoLabel = ({ title, color }) => (
-  <View style={{flexDirection:"row", alignItems: "center"}}>
-    <IconVideo
-      width={styles.title.fontSize * 1.5}
-      height={styles.title.fontSize * 1.5}
-      fillColor={color}
-    />
-    <Text style={[styles.title, { color , marginLeft:10}]}>VIDEO</Text>
-    {title && <Text style={[styles.title, { color }]}> | {title}</Text>}
+  <View style={{ flexDirection: "row", alignItems: "center" }}>
+    <IconVideo height={styles.title.fontSize} fillColor={color} />
+    <Text style={[styles.title, { color, marginLeft: 5 }]}>VIDEO</Text>
+    {title ? <Text style={[styles.title,{ marginLeft: 3 }]}>|</Text> : null}
+    {title ? (
+      <Text style={[styles.title, { color, paddingLeft: 3 }]}>{title}</Text>
+    ) : null}
   </View>
 );
 
@@ -22,6 +21,7 @@ VideoLabel.propTypes = {
 };
 
 VideoLabel.defaultProps = {
+  title: "",
   color: "black"
 };
 

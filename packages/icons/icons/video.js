@@ -10,8 +10,9 @@ const viewBox = [
   13.728596687316895
 ].join(" ");
 
+const ratio = 1.72;
 const IconVideo = ({ width, height, fillColour }) => (
-  <Svg width={width} height={height} viewBox={viewBox}>
+  <Svg width={width || height * ratio } height={height} viewBox={viewBox}>
     <Rect
       fill={fillColour}
       x="0.154639175"
