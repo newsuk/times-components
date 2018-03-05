@@ -11,7 +11,7 @@ exports[`ModalImage test on android renders correctly 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#000",
+          "backgroundColor": "#1D1D1B",
           "flexDirection": "column",
           "height": "100%",
           "width": "100%",
