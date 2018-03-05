@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.headline,
     fontSize: 35,
     textAlign: "center",
-    color: colours.functional.timesBlack,
+    color: colours.functional.brandColour,
     marginBottom: 12
   },
   message: {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bodyRegular,
     fontSize: 18,
     textAlign: "center",
-    color: colours.functional.doveGrey
+    color: colours.functional.secondary
   },
   buttonContainer: {
     justifyContent: "flex-end"
@@ -50,7 +50,7 @@ const AuthorProfileListingError = ({ refetch }) => (
       <Button
         onPress={refetch}
         title="Retry"
-        color={colours.functional.azureBlue}
+        color={colours.functional.cta}
         accessibilityLabel="Retry"
       />
     </View>

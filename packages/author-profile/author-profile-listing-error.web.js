@@ -18,7 +18,7 @@ const Heading = withResponsiveStyles(Text, {
     font-family: TimesModern-Bold;
     font-size: 35px;
     text-align: center;
-    color: ${colours.functional.timesBlack};
+    color: ${colours.functional.brandColour};
     margin-bottom: 12px;
   `
 });
@@ -29,7 +29,7 @@ const Message = withResponsiveStyles(Text, {
     font-size: 18px;
     line-height: 1.44;
     text-align: center;
-    color: ${colours.functional.doveGrey};
+    color: ${colours.functional.secondary};
   `
 });
 
@@ -54,7 +54,7 @@ const AuthorProfileListingError = ({ refetch }) => (
       <Button
         onPress={refetch}
         title="Retry"
-        color={colours.functional.azureBlue}
+        color={colours.functional.cta}
         accessibilityLabel="Refresh the page"
       />
     </ButtonContainer>

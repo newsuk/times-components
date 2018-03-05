@@ -7,8 +7,8 @@ import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = StyleSheet.create({
   ad: {
-    borderTopColor: colours.functional.alto,
-    borderBottomColor: colours.functional.alto,
+    borderTopColor: colours.functional.keyline,
+    borderBottomColor: colours.functional.keyline,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     paddingTop: 10,

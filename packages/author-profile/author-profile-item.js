@@ -67,7 +67,7 @@ const AuthorProfileItem = item => {
           <ArticleSummary
             labelProps={{
               title: label,
-              color: colours.functional.mineShaftGrey
+              color: colours.functional.primary
             }}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
             content={() => <ArticleSummaryContent ast={content} />}

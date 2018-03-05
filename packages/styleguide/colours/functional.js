@@ -1,17 +1,18 @@
 const functionalColours = {
-  alto: "#DBDBDB", // Keylines and borders
-  azureBlue: "#006699", // Buttons and links
-  bostonBlue: "#3C81BE", // Updated article flag
-  buff: "#F9F8F3", // Author profile background
-  cardinalRed: "#C51D24", // Exclusive article flag
-  doveGrey: "#696969", // Bylines, dates and other auxiliary text
-  galleryGrey: "#EDEDED", // Gradients
-  mineShaftGrey: "#333333", // Headlines, titles and paragraph text
-  offWhite: "#F9F9F9", // Gradients, text
-  timesBlack: "#1D1D1B", // Times brand colour
-  trinidadOrange: "#E34605", // New article flag
-  tundoraGrey: "#4D4D4D", // Sponsored article flag
-  white: "#FFFFFF"
+  brandColour: "#1D1D1B", // Times brand colour
+  contrast: "#FFFFFF", // Contrast to Times brand colour
+  primary: "#333333", // Headlines, titles and paragraph text
+  secondary: "#696969", // Bylines, dates and other auxiliary text
+  ternary: "#4D4D4D", // Sponsored article flag and icon fills
+  cta: "#006699", // Buttons and links
+  background: "#F9F8F3", // Author profile background
+  keyline: "#DBDBDB", // Keylines and borders
+  articleFlagExclusive: "#C51D24",
+  articleFlagNew: "#E34605",
+  articleFlagUpdated: "#3C81BE",
+  cancel: "rgba(255, 255, 255, 0.8)",
+  gradientStart: "#F9F9F9",
+  gradientEnd: "#EDEDED"
 };
 
 export default functionalColours;

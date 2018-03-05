@@ -6,7 +6,7 @@ import DatePublication from "./date-publication";
 
 const styles = StyleSheet.create({
   text: {
-    color: colours.functional.doveGrey,
+    color: colours.functional.secondary,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   name: {
     fontFamily: fonts.headline,
     fontSize: 30,
-    color: colours.functional.timesBlack
+    color: colours.functional.brandColour
   }
 });
 

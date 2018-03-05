@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
     fontSize: 14,
-    color: colours.functional.doveGrey
+    color: colours.functional.secondary
   }
 });
 

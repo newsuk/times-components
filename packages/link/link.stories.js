@@ -11,7 +11,7 @@ const BigGreySquare = props => (
     style={{
       width: 100,
       height: 100,
-      backgroundColor: colours.functional.galleryGrey
+      backgroundColor: colours.functional.gradientEnd
     }}
     {...props}
   />
@@ -25,7 +25,7 @@ storiesOf("Primitives/Link", module)
         style={{
           width: 100,
           height: 100,
-          backgroundColor: colours.functional.galleryGrey
+          backgroundColor: colours.functional.gradientEnd
         }}
       />
     </Link>
@@ -48,7 +48,7 @@ storiesOf("Primitives/Link", module)
   ))
   .add("TextLink with styles", () => (
     <TextLink
-      style={{ color: colours.functional.azureBlue }}
+      style={{ color: colours.functional.cta }}
       url="https://thetimes.co.uk/"
       onPress={action("onPress")}
     >

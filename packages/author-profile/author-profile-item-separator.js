@@ -4,7 +4,7 @@ import { colours } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colours.functional.alto,
+    backgroundColor: colours.functional.keyline,
     height: 1
   }
 });

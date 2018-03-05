@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     lineHeight: 26,
-    color: colours.functional.mineShaftGrey
+    color: colours.functional.primary
   }
 });
 

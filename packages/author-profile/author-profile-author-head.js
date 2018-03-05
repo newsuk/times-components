@@ -7,7 +7,7 @@ import { StyleSheet, View } from "react-native";
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: colours.functional.buff,
+    backgroundColor: colours.functional.background,
     minHeight: 264,
     width: "100%"
   },
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   roundImage: {
     width: 100,
     height: 100,
-    borderColor: colours.functional.white,
+    borderColor: colours.functional.contrast,
     borderRadius: 50,
     overflow: "hidden"
   },

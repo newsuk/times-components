@@ -5,7 +5,7 @@ import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 export default {
   labelProps: {
     title: "Camilla Long",
-    color: colours.functional.mineShaftGrey
+    color: colours.functional.primary
   },
   headline: () => (
     <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />

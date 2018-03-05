@@ -5,7 +5,7 @@ import { ArticleSummaryContent } from "../";
 export default {
   labelProps: {
     title: "Camilla Long",
-    color: colours.functional.mineShaftGrey
+    color: colours.functional.primary
   },
   datePublicationProps: {
     date: "2017-07-01T14:32:00.000Z",

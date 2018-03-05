@@ -25,12 +25,12 @@ const defaultStyle = StyleSheet.create({
   text: {
     fontFamily: fonts.supporting,
     fontSize: 13,
-    color: colours.functional.doveGrey,
+    color: colours.functional.secondary,
     ...lineHeightStyle
   },
   credits: {
     fontSize: 9,
-    color: colours.functional.mineShaftGrey,
+    color: colours.functional.primary,
     letterSpacing: 1,
     fontWeight: "400",
     ...lineHeightStyle

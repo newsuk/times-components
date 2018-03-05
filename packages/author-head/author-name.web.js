@@ -8,7 +8,7 @@ const AuthorNameWrapper = withResponsiveStyles(Text, {
   base: () => `
     font-family: TimesModern-Bold;
     font-size: 30px;
-    color: ${colours.functional.timesBlack};
+    color: ${colours.functional.brandColour};
   `,
   mediumUp: () => "font-size: 45px;"
 });

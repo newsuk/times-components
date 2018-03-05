@@ -70,7 +70,7 @@ const AuthorProfileItem = item => {
   const childProps = {
     labelProps: {
       title: label,
-      color: colours.functional.mineShaftGrey
+      color: colours.functional.primary
     },
     headline: () => <ArticleSummaryHeadline headline={headline} />,
     datePublicationProps: {

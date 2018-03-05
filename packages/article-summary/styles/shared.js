@@ -2,7 +2,7 @@ import { colours, fonts } from "@times-components/styleguide";
 
 const sharedStyles = {
   text: {
-    color: colours.functional.doveGrey,
+    color: colours.functional.secondary,
     fontSize: 14,
     fontFamily: fonts.body,
     lineHeight: 20,
@@ -10,7 +10,7 @@ const sharedStyles = {
     flexWrap: "wrap"
   },
   metaText: {
-    color: colours.functional.doveGrey,
+    color: colours.functional.secondary,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting,
@@ -20,7 +20,7 @@ const sharedStyles = {
     marginBottom: 0
   },
   headline: {
-    color: colours.functional.mineShaftGrey,
+    color: colours.functional.primary,
     marginBottom: 5,
     fontFamily: fonts.headline,
     fontWeight: "400"

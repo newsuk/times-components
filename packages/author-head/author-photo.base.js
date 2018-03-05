@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   authorPhoto: {
     marginLeft: "auto",
     marginRight: "auto",
-    borderColor: colours.functional.white,
+    borderColor: colours.functional.contrast,
     overflow: "hidden",
     marginBottom: 20
   }

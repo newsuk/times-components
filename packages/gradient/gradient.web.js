@@ -10,8 +10,8 @@ const Gradient = ({ degrees, children, style }) => (
     style={[
       {
         backgroundImage: `linear-gradient(${degrees}deg, ${
-          colours.functional.offWhite
-        } 0%, ${colours.functional.galleryGrey} 100%)`
+          colours.functional.gradientStart
+        } 0%, ${colours.functional.gradientEnd} 100%)`
       },
       style
     ]}

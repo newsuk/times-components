@@ -39,7 +39,10 @@ const Gradient = ({ degrees, children, style }) => {
         start={start}
         end={end}
         locations={[0.0, 1.0]}
-        colors={[colours.functional.offWhite, colours.functional.galleryGrey]}
+        colors={[
+          colours.functional.gradientStart,
+          colours.functional.gradientEnd
+        ]}
         style={[styles.container]}
       >
         {children}
