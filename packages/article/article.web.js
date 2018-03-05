@@ -5,7 +5,7 @@ import Ad, { AdComposer } from "@times-components/ad";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import ArticlePrototype from "./article-prototype";
+import { ArticlePrototype, ArticleDefaultProps } from "./article-prototype";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
@@ -104,7 +104,7 @@ ArticlePage.propTypes = {
 };
 
 ArticlePage.defaultProps = {
-  article: null,
+  ...ArticleDefaultProps,
   isLoading: false,
   error: null
 };
