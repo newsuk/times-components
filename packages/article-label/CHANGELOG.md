@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.6"></a>
+## [0.8.6](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.5...@times-components/article-label@0.8.6) (2018-03-02)
+
+
+### Bug Fixes
+
+* release variant of storybooknative app ([#691](https://github.com/newsuk/times-components/issues/691)) ([708659e](https://github.com/newsuk/times-components/commit/708659e))
+
+
+
+
 <a name="0.8.5"></a>
 ## [0.8.5](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.4...@times-components/article-label@0.8.5) (2018-03-01)
 

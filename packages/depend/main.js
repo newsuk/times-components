@@ -24,15 +24,23 @@ export default async function main({
   argv,
   exit
 }) {
-  const lernaPackages = argv.lerna
-    ? await readJson(join(argv.lerna, "lerna.json"))
-        .then(lerna => lerna.packages)
+  const { lerna = "", expr } = argv;
+
+  const lernaPath = lerna || !expr ? join(lerna, "lerna.json") : "";
+
+  const lernaPackages = lernaPath
+    ? await readJson(lernaPath)
+        .then(({ packages }) => packages)
         .then(packages =>
-          packages.map(expr => join(argv.lerna, expr, "package.json"))
+          packages.map(pattern => join(lerna, pattern, "package.json"))
         )
+        .catch(e => {
+          log(e);
+          exit(1);
+        })
     : [];
 
-  const packagesToFind = [...lernaPackages, argv.expr].filter(x => x);
+  const packagesToFind = [...lernaPackages, expr].filter(x => x);
 
   const packagesList = await Promise.all(
     packagesToFind.map(path => getPackages(path))
@@ -52,6 +60,7 @@ export default async function main({
 
         if (argv.list) {
           Object.entries(versionSets)
+            .sort(([a], [b]) => a.localeCompare(b))
             .map(([name, versions]) => [name, [...versions]])
             .forEach(([name, versions], i) => {
               const color = (() => {

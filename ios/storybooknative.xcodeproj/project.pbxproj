@@ -46,7 +46,6 @@
 		A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */; };
 		A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */; };
 		A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */; };
-		A8EA893E2023733900C2D919 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EA89392023732700C2D919 /* libRNDeviceInfo.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED3A0BB01F38C8F300048867 /* RNTBrightcoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */; };
 		ED3A0BB11F38C8F300048867 /* RNTBrightcoveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */; };
@@ -326,6 +325,34 @@
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = RNSVG;
 		};
+		EDF303B82046FF5000831352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
+			remoteInfo = jsinspector;
+		};
+		EDF303BA2046FF5000831352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
+			remoteInfo = "jsinspector-tvOS";
+		};
+		EDF303BE2046FF5000831352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5891D81BA9A9FC002B4DB2;
+			remoteInfo = RNDeviceInfo;
+		};
+		EDF303C02046FF5000831352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E72EC1401F7ABB5A0001BC90;
+			remoteInfo = "RNDeviceInfo-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -416,7 +443,6 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				6352792727934A4A80BA505A /* libRNSVG.a in Frameworks */,
 				3C71D31CB1D843E590D3A8D6 /* libBVLinearGradient.a in Frameworks */,
-				A8EA893E2023733900C2D919 /* libRNDeviceInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +537,8 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+				EDF303B92046FF5000831352 /* libjsinspector.a */,
+				EDF303BB2046FF5000831352 /* libjsinspector-tvOS.a */,
 				A391C059202C946C00A44181 /* libthird-party.a */,
 				A391C05B202C946C00A44181 /* libthird-party.a */,
 				A391C05D202C946C00A44181 /* libdouble-conversion.a */,
@@ -667,8 +695,8 @@
 		A8EA890F2023732700C2D919 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8EA89392023732700C2D919 /* libRNDeviceInfo.a */,
-				A8EA893B2023732700C2D919 /* libRNDeviceInfo-tvOS.a */,
+				EDF303BF2046FF5000831352 /* libRNDeviceInfo.a */,
+				EDF303C12046FF5000831352 /* libRNDeviceInfo-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -702,6 +730,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				EDF303902046FF5000831352 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1067,20 +1096,6 @@
 			remoteRef = A391C062202C946C00A44181 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A8EA89392023732700C2D919 /* libRNDeviceInfo.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNDeviceInfo.a;
-			remoteRef = A8EA89382023732700C2D919 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A8EA893B2023732700C2D919 /* libRNDeviceInfo-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNDeviceInfo-tvOS.a";
-			remoteRef = A8EA893A2023732700C2D919 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1093,6 +1108,34 @@
 			fileType = archive.ar;
 			path = libRNSVG.a;
 			remoteRef = ED3A0BAA1F38C8B300048867 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDF303B92046FF5000831352 /* libjsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsinspector.a;
+			remoteRef = EDF303B82046FF5000831352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDF303BB2046FF5000831352 /* libjsinspector-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsinspector-tvOS.a";
+			remoteRef = EDF303BA2046FF5000831352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDF303BF2046FF5000831352 /* libRNDeviceInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNDeviceInfo.a;
+			remoteRef = EDF303BE2046FF5000831352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDF303C12046FF5000831352 /* libRNDeviceInfo-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNDeviceInfo-tvOS.a";
+			remoteRef = EDF303C02046FF5000831352 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1131,6 +1174,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\nexport SKIP_BUNDLING=true\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		EDF303902046FF5000831352 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]; then\ncp -r \"${PROJECT_DIR}/main.jsbundle\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

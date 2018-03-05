@@ -4,7 +4,7 @@ import { colours } from "@times-components/styleguide";
 
 const responsiveLinkStyles = {
   base: `
-      color: ${colours.functional.blue};
+      color: ${colours.functional.azureBlue};
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;

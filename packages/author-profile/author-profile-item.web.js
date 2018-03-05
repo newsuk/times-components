@@ -13,7 +13,7 @@ import ArticleSummary, {
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
-  mediumUp: () => "display: block;"
+  mediumUp: () => "display: block; padding-left: 15px;"
 });
 
 const ShortText = withResponsiveStyles(View, {
@@ -59,6 +59,7 @@ const AuthorProfileItem = item => {
           isLoading={isLoading}
           imageRatio={imageRatio}
           showImage={showImage}
+          tabletChildRatio={2.7}
         />
       </View>
     );
@@ -106,6 +107,7 @@ const AuthorProfileItem = item => {
           imageRatio={imageRatio}
           imageSize={imageSize}
           showImage={showImage}
+          tabletChildRatio={2.7}
         >
           {children}
         </Card>

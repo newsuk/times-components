@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.19.7",
+  "version": "0.19.9",
   "main": "card",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -9,9 +9,7 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage"
   },
   "repository": {
     "type": "git",
@@ -32,17 +30,16 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/addon-a11y": "3.3.14",
+    "@storybook/addon-knobs": "3.3.14",
     "@storybook/react-native": "3.3.14",
-    "@times-components/article-summary": "0.17.21",
     "@times-components/eslint-config-thetimes": "0.1.3",
     "@times-components/jest-configurator": "0.2.1",
     "@times-components/storybook": "0.4.2",
-    "dextrose": "^1.4.6",
+    "dextrose": "1.5.0",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
-    "jest-styled-components": "4.9.0",
     "prettier": "1.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -51,13 +48,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-label": "0.8.5",
-    "@times-components/date-publication": "0.11.12",
-    "@times-components/gradient": "0.5.10",
-    "@times-components/image": "1.13.25",
-    "@times-components/markup": "0.21.8",
+    "@times-components/gradient": "0.5.11",
+    "@times-components/image": "1.13.26",
     "@times-components/responsive-styles": "0.4.1",
-    "@times-components/styleguide": "0.3.5",
+    "@times-components/styleguide": "0.3.6",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"

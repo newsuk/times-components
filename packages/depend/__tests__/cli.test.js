@@ -11,7 +11,7 @@ chalk.enabled = false;
 describe("depend cli tests", () => {
   it("prints graph", async () => {
     const log = jest.fn();
-    const argv = { graph: "*=>*" };
+    const argv = { graph: "*=>*", expr: "package.json" };
     const getPackages = () => simple;
     await main({ log, getPackages, argv });
     expect(log.mock.calls).toMatchSnapshot();
@@ -107,5 +107,18 @@ describe("depend cli tests", () => {
     expect(exit.mock.calls).toEqual([]);
     expect(readJson.mock.calls).toEqual([["project/root/lerna.json"]]);
     expect(getPackages.mock.calls).toEqual([["project/root/*/package.json"]]);
+  });
+
+  it("should find lerna.json if neither -e or -l is used", async () => {
+    const exit = jest.fn();
+    const readJson = jest.fn(async () => ({ packages: ["./*"] }));
+    const getPackages = jest.fn(() => simple);
+
+    const log = jest.fn();
+    const argv = { list: "" };
+    await main({ log, argv, getPackages, exit, readJson });
+    expect(exit.mock.calls).toEqual([]);
+    expect(readJson.mock.calls).toEqual([["lerna.json"]]);
+    expect(getPackages.mock.calls).toEqual([["*/package.json"]]);
   });
 });

@@ -42,7 +42,7 @@ Evaluate all `package.json` files defined in the `packages` field found
 ## --expr, -e "{glob}"
 
 Defines the glob expression that will be used to search the filesystem for
-package.json files. By default it will use `"packages/*/package.json"`.
+package.json files.
 
 ## --fix
 
@@ -91,7 +91,7 @@ Consider following repo:
 }
 ```
 
-`depend -g` outputs all dependencies in `.dot` format:
+`depend -l . -g` outputs all dependencies in `.dot` format:
 
 ```dot
   digraph {
@@ -102,8 +102,8 @@ Consider following repo:
   }
 ```
 
-`depend -g "*=>react-native"` will only outputs the subset that has react-native
-as a dependency:
+`depend -l . -g "*=>react-native"` will only outputs the subset that has
+react-native as a dependency:
 
 ```dot
 digraph {
@@ -112,8 +112,8 @@ digraph {
 }
 ```
 
-`depend -g "foo=>*"` will only outputs the subset that has react-native as a
-dependency:
+`depend -l . -g "foo=>*"` will only outputs the subset that has react-native as
+a dependency:
 
 ```dot
 digraph {
@@ -125,13 +125,14 @@ digraph {
 ### Rendering Svgs
 
 Depend itself does not have any rendering capabilities but `--graph` output can
-be directly piped into a [graphviz](https://www.graphviz.org/) renderer.
+be directly piped into a [graphviz](https://www.graphviz.org/) renderer. `fdp`
+and `circo` can be obtained by installing the graphviz package.
 
-`depend -g "@times-components/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
+`depend -l . -g "@times-components/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
 
 ![dextrose](https://user-images.githubusercontent.com/4670055/36293283-fe725ae0-12cf-11e8-989d-1d240be38f86.gif)
 
-`depend -g "*/ad@ => *" | circo -Tgif -o ad.gif`
+`depend -l . -g "*/ad@ => *" | circo -Tgif -o ad.gif`
 
 ![ad](https://user-images.githubusercontent.com/4670055/36293460-eaaf110e-12d1-11e8-9e93-77416224fe81.gif)
 
@@ -140,7 +141,7 @@ be directly piped into a [graphviz](https://www.graphviz.org/) renderer.
 Adds `{package}@{version}` to the set of rules. Use this in conjunction with
 `--hint` to verify the expected behaviour and use `--fix` to apply the changes.
 
-`depend --pick react-native@0.53.3 --hint` would set all react-native
+`depend -l . --pick react-native@0.53.3 --hint` would set all react-native
 dependencies to _0.53.3_
 
 ### Filter

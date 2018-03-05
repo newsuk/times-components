@@ -1,81 +1,47 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { View, StyleSheet, ViewPropTypes } from "react-native";
+import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
+import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
+import styles from "./styles/shared";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
-const styles = StyleSheet.create({
-  imageContainer: {
-    marginBottom: 10
-  }
-});
-
-class CardComponent extends React.Component {
-  render() {
-    const {
-      isLoading,
-      image,
-      imageRatio,
-      imageSize,
-      showImage,
-      style,
-      children
-    } = this.props;
-
-    if (isLoading) {
-      return (
-        <View>
-          <Loading aspectRatio={imageRatio} showImage={showImage} />
-        </View>
-      );
-    }
-
-    const imageComponent =
-      image && image.uri ? (
-        <View style={styles.imageContainer}>
-          <Image
-            uri={`${image.uri}&resize=${imageSize}`}
-            aspectRatio={imageRatio}
-          />
-        </View>
-      ) : null;
-
+const CardComponent = ({
+  children,
+  image,
+  imageRatio,
+  imageSize,
+  isLoading,
+  showImage
+}) => {
+  if (isLoading) {
     return (
-      <Animations.FadeIn>
-        <View onLayout={this.handleLayout}>
-          <View style={style}>
-            {showImage ? imageComponent : null}
-            <View>{children}</View>
-          </View>
-        </View>
-      </Animations.FadeIn>
+      <View>
+        <Loading aspectRatio={imageRatio} showImage={showImage} />
+      </View>
     );
   }
-}
 
-CardComponent.propTypes = {
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  style: ViewPropTypesStyle,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
+  return (
+    <Animations.FadeIn>
+      <View>
+        {showImage &&
+          image &&
+          image.uri && (
+            <View style={styles.imageContainer}>
+              <Image
+                aspectRatio={imageRatio}
+                uri={`${image.uri}&resize=${imageSize}`}
+              />
+            </View>
+          )}
+        <View>{children}</View>
+      </View>
+    </Animations.FadeIn>
+  );
 };
 
-CardComponent.defaultProps = {
-  image: {
-    uri: ""
-  },
-  imageRatio: 1,
-  imageSize: 100,
-  showImage: false,
-  style: null,
-  children: [],
-  isLoading: false
-};
+CardComponent.propTypes = cardPropTypes;
+CardComponent.defaultProps = cardDefaultProps;
 
 export default CardComponent;

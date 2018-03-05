@@ -1,10 +1,10 @@
-import { fonts } from "@times-components/styleguide";
+import { fonts, colours } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: "#1d1d1b",
+    color: colours.functional.timesBlack,
     marginBottom: 7,
     fontFamily: fonts.headline
   },
@@ -12,7 +12,7 @@ const sharedStyles = {
     fontSize: 20,
     lineHeight: 26,
     fontFamily: fonts.headlineRegular,
-    color: "#333333",
+    color: colours.functional.mineShaftGrey,
     paddingBottom: 9
   },
   articleLabel: {
