@@ -51,8 +51,8 @@ const adInit = args => {
       scheduleSetPageTargetingValues(keyValuePairs) {
         this.scheduleAction(() => {
           const pubads = window.googletag.pubads();
-          Object.entries(keyValuePairs).forEach((key, value) => {
-            pubads.setTargeting(key, value);
+          Object.entries(keyValuePairs).forEach(entry => {
+            pubads.setTargeting(entry[0], entry[1]);
           });
         });
       },

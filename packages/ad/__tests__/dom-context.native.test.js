@@ -163,7 +163,7 @@ describe("DOMContext Native", () => {
 
   it("handleNavigationStateChange should log an error if the url can't be opened", done => {
     setUpNavigationTest(() => Promise.resolve(false));
-    jest.spyOn(console, "error").mockImplementation(() => {});
+    jest.spyOn(console, "error").mockImplementation();
 
     const navigateTo = "http://originB.com";
 
