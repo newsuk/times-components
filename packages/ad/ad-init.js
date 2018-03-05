@@ -7,6 +7,7 @@ const adInit = args => {
   const { document, setTimeout } = window;
 
   const scriptsInserted = {};
+  let initCalled = false;
 
   const initialiser = {
     utils: {
@@ -326,6 +327,11 @@ const adInit = args => {
 
     init() {
 
+      if (initCalled) {
+        throw new Error("init() has already been called");
+      }
+      initCalled = true;
+
       if (!window.initCalled) {
         window.initCalled = true;
         this.doPageAdSetupAsync();
@@ -339,7 +345,8 @@ const adInit = args => {
     }
   };
 
-  // uncomment this to enable logging of ad initialisation logic
+  // uncomment this to enable logging of ad initialisation logic - every method
+  // call will be logged
   // NOTE: do not delete this code, it's super-useful for the next person who needs to debug ads on native
   // for (let groupName in initialiser) {
   //   let group = initialiser[groupName];
