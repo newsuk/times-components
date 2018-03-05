@@ -38,7 +38,13 @@ const adInit = args => {
       setupAsync(utils) {
         window.googletag = window.googletag || {};
         window.googletag.cmd = window.googletag.cmd || [];
-        this.scheduleGPTConfiguration(data.pageTargeting);
+        this.scheduleSetPageTargetingValues(data.pageTargeting);
+        this.scheduleAction(() => {
+          const pubads = window.googletag.pubads();
+          pubads.disableInitialLoad();
+          pubads.enableSingleRequest();
+          window.googletag.enableServices();
+        });
         return utils.loadScript(
           "https://www.googletagservices.com/tag/js/gpt.js"
         );
@@ -102,21 +108,6 @@ const adInit = args => {
         });
       },
 
-      scheduleGPTConfiguration(pageTargeting) {
-        this.scheduleSetPageTargetingValues(pageTargeting);
-        this.scheduleAction(() => {
-          const pubads = window.googletag.pubads();
-          pubads.disableInitialLoad();
-          pubads.enableSingleRequest();
-          window.googletag.enableServices();
-          // window.googletag
-          //   .pubads()
-          //   .addEventListener("slotRenderEnded", event =>
-          //     log("gpt", `event: slot render ended ${event.slot}`)
-          //   );
-        });
-      },
-
       waitUntilReady() {
         return new Promise(resolve =>
           this.scheduleAction(() => {
@@ -154,8 +145,7 @@ const adInit = args => {
         window.pbjs.bidderSettings = prebidConfig.bidderSettings;
         // Enable Amazon Bidding
         if (amazonAccountID) {
-          this.configureApstag();
-          this.initApstag(amazonAccountID, prebidConfig.timeout);
+          this.setupApstag(amazonAccountID, prebidConfig.timeout);
           // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
           // because we call init just one time (window.initCalled)
           biddingActions.push(
@@ -175,7 +165,7 @@ const adInit = args => {
         );
         return Promise.all(biddingActions);
       },
-      configureApstag() {
+      setupApstag(amazonAccountID, timeout) {
         // NOTE: this is Amazon code, change it carefully
         window.apstag = {
           init() {
@@ -193,9 +183,6 @@ const adInit = args => {
           },
           _Q: []
         };
-      },
-      // TODO: merge with configureApstag?
-      initApstag(amazonAccountID, timeout) {
         window.apstag.init({
           pubID: amazonAccountID,
           adServer: "googletag",
