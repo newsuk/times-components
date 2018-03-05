@@ -51,22 +51,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       );
     });
 
-  const renderSlice = () => {
-    switch (template) {
-      case "DEFAULT":
-      default:
-        return <DefaultSlice>{renderArticleItems()}</DefaultSlice>;
-      case "LEAD_AND_TWO":
-        return (
-          <LeadSlice
-            lead={renderArticleItems()[0]}
-            support1={renderArticleItems()[1]}
-            support2={renderArticleItems()[2]}
-          />
-        );
-    }
-  };
-
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
