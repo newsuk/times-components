@@ -1,18 +1,9 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-<<<<<<< HEAD
-=======
 import { fonts } from "@times-components/styleguide";
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> feat: adds video-icon svg
-=======
 import { withKnobs, color } from "@storybook/addon-knobs";
->>>>>>> feat: adds knobs to icons
-=======
 import { color } from "@storybook/addon-knobs";
->>>>>>> chore: make linter happy
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
@@ -45,8 +36,7 @@ const styles = StyleSheet.create({
   }
 });
 
-<<<<<<< HEAD
-storiesOf("Icons", module).add("Icons", () => (
+storiesOf("Primitives/Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
       <IconDiamond
@@ -74,38 +64,3 @@ storiesOf("Icons", module).add("Icons", () => (
     </View>
   </View>
 ));
-=======
-storiesOf("Primitives/Icons", module)
-  .addDecorator(checkA11y)
-  .add("Icons", () => (
-    <View style={styles.wrapper}>
-      <View style={styles.icon}>
-        <IconDiamond
-          width={50}
-          height={50}
-          fillColour={color(
-            "Diamond color",
-            IconDiamond.defaultProps.fillColour
-          )}
-        />
-        <Text style={styles.label}>Diamond</Text>
-      </View>
-      <View style={styles.icon}>
-        <IconTwitter
-          width={50}
-          height={50}
-          fillColour={color("Icon color", IconTwitter.defaultProps.fillColour)}
-        />
-        <Text style={styles.label}>Twitter</Text>
-      </View>
-      <View style={styles.icon}>
-        <IconVideo
-          width={50}
-          height={50}
-          fillColour={color("Video color", IconVideo.defaultProps.fillColour)}
-        />
-        <Text style={styles.label}>Video</Text>
-      </View>
-    </View>
-  ));
->>>>>>> chore: make linter happy

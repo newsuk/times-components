@@ -1,5 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
+import { View, Text } from "react-native";
+import { IconVideo } from "@times-components/icons";
 import PropTypes from "prop-types";
 import styles from "./style";
 
@@ -13,15 +14,29 @@ const beautifyTitle = title =>
     .join("\u200A");
 
 const VideoLabel = ({ title, color }) => (
-  <Text style={[styles.title, { color }]}>{beautifyTitle(title)}</Text>
+  <View style={{ flexDirection: "row", alignItems: "center" }}>
+    <IconVideo height={styles.title.fontSize} fillColor={color} />
+    <Text style={[styles.title, { color, marginLeft: 5 }]}>
+      {beautifyTitle("VIDEO")}
+    </Text>
+    {title ? (
+      <Text style={[styles.title, { color, marginLeft: 3 }]}>|</Text>
+    ) : null}
+    {title ? (
+      <Text style={[styles.title, { color, paddingLeft: 3 }]}>
+        {beautifyTitle(title)}
+      </Text>
+    ) : null}
+  </View>
 );
 
 VideoLabel.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   color: PropTypes.string
 };
 
 VideoLabel.defaultProps = {
+  title: "",
   color: "black"
 };
 

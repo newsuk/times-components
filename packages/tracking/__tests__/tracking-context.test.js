@@ -276,38 +276,31 @@ module.exports = () => {
     });
 
     it("tracks nested events", () => {
-
       const Test1 = props => <div> {props.children} </div>;
       const Test2 = props => <span> {props.b} </span>;
-      
+
       Test1.propTypes = { a: PropTypes.string, children: PropTypes.node };
       Test2.propTypes = { b: PropTypes.string };
 
+      const Tracker1 = withTrackingContext(Test1, {
+        trackingObjectName: "tracker1",
+        getAttrs: ({ a }) => ({ a })
+      });
 
-      const Tracker1 = withTrackingContext(
-        Test1, {
-          trackingObjectName: "tracker1",
-          getAttrs: ({a}) => ({a})
-        }
-      );
-
-      const Tracker2 = withTrackingContext(
-        Test2, {
-          trackingObjectName: "tracker2",
-          getAttrs: ({b}) => ({b})
-        }
-      );
+      const Tracker2 = withTrackingContext(Test2, {
+        trackingObjectName: "tracker2",
+        getAttrs: ({ b }) => ({ b })
+      });
 
       const reporter = jest.fn();
 
       renderer.create(
         <Tracker1 a="a" analyticsStream={reporter}>
-          <Tracker2 b="b"/>
+          <Tracker2 b="b" />
         </Tracker1>
       );
 
       expect(reporter.mock.calls).toEqual({});
     });
-
   });
 };

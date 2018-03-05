@@ -30,7 +30,6 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-<<<<<<< HEAD
   it("Video renders correctly", () => {
     const tree = renderer.create(<IconVideo width={50} height={50} />).toJSON();
 
@@ -38,9 +37,6 @@ module.exports = () => {
   });
 
   it("Video renders correctly with different fillColour", () => {
-=======
-  it("Twitter renders correctly with different fillColour", () => {
->>>>>>> feat: adds knobs to icons
     const tree = renderer
       .create(<IconVideo width={50} height={50} fillColour="#4D4D4D" />)
       .toJSON();

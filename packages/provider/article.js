@@ -14,10 +14,10 @@ export const query = gql`
       byline
       content
       leadAsset {
-        ... imageFields
+        ...imageFields
         ... on Video {
           posterImage {
-            ... imageFields
+            ...imageFields
           }
         }
       }

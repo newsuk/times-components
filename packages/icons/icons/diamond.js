@@ -4,7 +4,7 @@ import Svg, { G, Path } from "svgs";
 import iconPropTypes from "./proptypes";
 
 const IconDiamond = ({ width, height, fillColour }) => (
-  <Svg width={width} height={height} viewBox="0 0 20 20">
+  <Svg width={width || height} height={height} viewBox="0 0 20 20">
     <G fill={fillColour}>
       <Path d="M 0,10 10,20 20,10 10,0 Z" />
     </G>
@@ -14,11 +14,7 @@ const IconDiamond = ({ width, height, fillColour }) => (
 IconDiamond.propTypes = iconPropTypes;
 
 IconDiamond.defaultProps = {
-<<<<<<< HEAD
   fillColour: colours.functional.timesBlack
-=======
-  fillColour: colours.functional.black
->>>>>>> chore: uses styleguide colors in Icons
 };
 
 export default IconDiamond;

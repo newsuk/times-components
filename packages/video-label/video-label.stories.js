@@ -18,7 +18,7 @@ storiesOf("Primitives/VideoLabel", module)
   ))
   .add("VideoLabel with title", () => (
     <VideoLabel
-      title="swimming"
+      title="SWIMMING"
       color={select(
         "Section",
         invert(colours.section),
