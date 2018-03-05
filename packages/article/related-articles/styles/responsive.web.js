@@ -23,6 +23,7 @@ export const Heading = withResponsiveStyles(View, {
 });
 Heading.displayName = "Heading";
 
+// replace with Card
 export const getRelatedArticleContainer = ({ articleCount }) => {
   const RelatedArticleContainer = withResponsiveStyles(View, {
     base: () => `
@@ -81,21 +82,6 @@ export const getImageContainer = ({
   });
   ImageContainer.displayName = "ImageContainer";
   return ImageContainer;
-};
-
-// replace with Card
-export const getRelatedArticleContainer = ({ articleCount }) => {
-  const RelatedArticleContainer = withResponsiveStyles(View, {
-    base: () => `
-    display: flex;
-    flex-direction: column;
-  `,
-    mediumUp: () => `
-      flex-direction: ${articleCount === 1 ? "row" : "column"};
-  `
-  });
-  RelatedArticleContainer.displayName = "RelatedArticleContainer";
-  return RelatedArticleContainer;
 };
 
 export const getSummaryContainer = ({ articleCount }) => {
