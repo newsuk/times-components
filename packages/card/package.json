@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.19.8",
+  "version": "0.19.9",
   "main": "card",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
