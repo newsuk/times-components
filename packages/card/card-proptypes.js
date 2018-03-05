@@ -1,21 +1,21 @@
 import PropTypes from "prop-types";
 
 export const cardPropTypes = {
+  children: PropTypes.node,
   image: PropTypes.shape({ uri: PropTypes.string }),
   imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
+  showImage: PropTypes.bool
 };
 
 export const cardDefaultProps = {
+  children: [],
   image: {
     uri: ""
   },
   imageRatio: 1,
   imageSize: 100,
-  showImage: false,
-  children: [],
-  isLoading: false
+  isLoading: false,
+  showImage: false
 };
