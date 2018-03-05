@@ -23,7 +23,6 @@ export const Heading = withResponsiveStyles(View, {
 });
 Heading.displayName = "Heading";
 
-// replace with Card
 export const getRelatedArticleContainer = ({ articleCount }) => {
   const RelatedArticleContainer = withResponsiveStyles(View, {
     base: () => `
