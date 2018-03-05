@@ -64,12 +64,6 @@ class ArticlePage extends React.Component {
             <BodyContainer>
               <ArticleBody content={content} />
             </BodyContainer>
-            <Ad pos="pixel" style={adStyle} />
-            <Ad pos="pixelskin" style={adStyle} />
-            <Ad pos="pixelteads" style={adStyle} />
-
-            // This should come after the related links, once we have it
-            <Ad pos="article-sponsored-ad" style={adStyle} />
           </View>
         </MainContainer>
       </Fragment>
