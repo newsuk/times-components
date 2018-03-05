@@ -53,6 +53,22 @@ describe("DOMContext Web", () => {
     expect(runWithError).toThrowError("broken");
   });
 
+  it("throw an error", () => {
+
+    const runWithError = () => {
+      mount(
+        <DOMContext
+          init={
+            ({ eventCallback }) => eventCallback("error", "error message")
+          }
+          data={{ foo: "bar" }}
+        />
+      );
+    };
+
+    expect(runWithError).toThrowError("DomContext error: error message");
+  });
+
   it("calls the renderComplete callback when a renderComplete event is dispatched", () => {
     const onRenderComplete = jest.fn();
 
