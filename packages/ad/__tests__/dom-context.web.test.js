@@ -69,7 +69,6 @@ describe("DOMContext Web", () => {
   });
 
   it("does not error when init dispatches a renderComplete event but no onRenderComplete callback is provided", () => {
-    const init = jest.fn();
     const f = () => mount(
       <DOMContext
         init={
