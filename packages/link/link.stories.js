@@ -2,7 +2,6 @@ import { View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
-import { checkA11y } from "@storybook/addon-a11y";
 import { CenteredDecorator } from "@times-components/storybook";
 import Link, { TextLink } from "./link";
 
@@ -14,7 +13,6 @@ const BigPinkSquare = props => (
 );
 
 storiesOf("Primitives/Link", module)
-  .addDecorator(checkA11y)
   .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
     <Link url="https://thetimes.co.uk" onPress={action("onPress")}>

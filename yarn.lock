@@ -54,14 +54,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@storybook/addon-a11y@3.3.14":
-  version "3.3.14"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.14.tgz#dcf3253e768ebb25b2e4669706865946dfff5ec3"
-  dependencies:
-    "@storybook/components" "^3.3.14"
-    axe-core "^2.6.0"
-    prop-types "^15.6.0"
-
 "@storybook/addon-actions@3.3.14", "@storybook/addon-actions@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.14.tgz#b78e707b32130ad16ea8a0af62a66f23b5df502b"
@@ -983,10 +975,6 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
-
-axe-core@^2.6.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
 axobject-query@^0.1.0:
   version "0.1.0"

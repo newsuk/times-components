@@ -4,7 +4,6 @@ import { View, Text, Platform, ScrollView } from "react-native";
 import { AdComposer } from "@times-components/ad";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fonts } from "@times-components/styleguide";
 import { renderTree, renderTrees } from "./markup";
@@ -17,7 +16,6 @@ const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
 
 storiesOf("Composed/Markup", module)
-  .addDecorator(checkA11y)
   .addDecorator(CenteredDecorator)
   .add("Multiple paragraphs", () => <View>{renderTrees(multiParagraph)}</View>)
   .add("Multiple paragraphs with ads", () => {

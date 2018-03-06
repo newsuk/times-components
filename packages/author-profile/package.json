@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-a11y": "3.3.14",
     "@storybook/addon-actions": "3.3.14",
     "@storybook/addons": "3.3.14",
     "@storybook/react-native": "3.3.14",

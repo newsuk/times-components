@@ -3,7 +3,6 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import Image from "./image";
 
 const squareUri =
@@ -12,9 +11,9 @@ const SquareImage = props => (
   <Image uri={squareUri} aspectRatio={1 / 1} {...props} />
 );
 
-storiesOf("Primitives/Image", module)
-  .addDecorator(checkA11y)
-  .add("Server side rendered Image (web only)", () => {
+storiesOf("Primitives/Image", module).add(
+  "Server side rendered Image (web only)",
+  () => {
     const markup = {
       __html: ReactDOMServer.renderToStaticMarkup(
         <View>
@@ -47,4 +46,5 @@ storiesOf("Primitives/Image", module)
     };
 
     return <div dangerouslySetInnerHTML={markup} />;
-  });
+  }
+);

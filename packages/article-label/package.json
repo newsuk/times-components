@@ -35,7 +35,6 @@
     "prop-types": "15.6.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "3.3.14",
     "@storybook/addon-knobs": "3.3.14",
     "@storybook/react-native": "3.3.14",
     "@times-components/eslint-config-thetimes": "0.1.3",

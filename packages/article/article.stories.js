@@ -5,7 +5,6 @@ import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { checkA11y } from "@storybook/addon-a11y";
 import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { query as articleQuery } from "@times-components/provider/article";
@@ -72,7 +71,6 @@ const adConfig = {
 };
 
 storiesOf("Pages/Article", module)
-  .addDecorator(checkA11y)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
