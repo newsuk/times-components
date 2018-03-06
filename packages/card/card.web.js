@@ -17,6 +17,7 @@ class CardComponent extends Component {
       showImage !== nextProps.showImage
     );
   }
+
   render() {
     const {
       children,

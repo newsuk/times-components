@@ -12,6 +12,31 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 
+const CardWrapper = withResponsiveStyles(View, {
+  base: () => `
+    .authorProfileImage {
+      margin-bottom: 10px;
+      min-width: 100%;
+    };
+    .authorProfileContent {
+      min-width: 100%;
+    };
+  `,
+  mediumUp: () => `
+    .authorProfileImage {
+      min-width: auto;
+      max-width: 285px;
+      flex: 2;
+      margin-bottom: 0;
+      padding-right: 15px;
+    };
+    .authorProfileContent {
+      flex: 2.7;
+      min-width: 380px;
+    };
+  `
+});
+
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
   mediumUp: () => "display: block; padding-left: 15px;"
@@ -56,13 +81,15 @@ const AuthorProfileItem = item => {
   if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card
-          childRatio={2.7}
-          isLoading={isLoading}
-          imageRatio={imageRatio}
-          showImage={showImage}
-          tabletChildRatio={2.7}
-        />
+        <CardWrapper>
+          <Card
+            contentClass="authorProfileContent"
+            imgClass="authorProfileImage"
+            isLoading={isLoading}
+            imageRatio={imageRatio}
+            showImage={showImage}
+          />
+        </CardWrapper>
       </View>
     );
   }
@@ -104,16 +131,18 @@ const AuthorProfileItem = item => {
   return (
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
-        <Card
-          childRatio={2.7}
-          image={imageUri ? { uri: imageUri } : null}
-          imageRatio={imageRatio}
-          imageSize={imageSize}
-          showImage={showImage}
-          tabletChildRatio={2.7}
-        >
-          {children}
-        </Card>
+        <CardWrapper>
+          <Card
+            contentClass="authorProfileContent"
+            imgClass="authorProfileImage"
+            image={imageUri ? { uri: imageUri } : null}
+            imageRatio={imageRatio}
+            imageSize={imageSize}
+            showImage={showImage}
+          >
+            {children}
+          </Card>
+        </CardWrapper>
       </View>
     </Link>
   );

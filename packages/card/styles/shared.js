@@ -7,16 +7,13 @@ export default StyleSheet.create({
     flexWrap: "wrap"
   },
   imgContainer: {
-    flex: 1,
-    marginBottom: 10,
-    minWidth: 360
+    flex: 1
   },
   imageContainer: {
     marginBottom: 10
   },
   contentContainer: {
-    flex: 1,
-    minWidth: 360
+    flex: 1
   },
   headerContainer: {
     height: 24,
