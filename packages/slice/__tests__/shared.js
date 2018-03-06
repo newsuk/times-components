@@ -92,11 +92,11 @@ module.exports = () => {
     });
 
     it("should throw if child does not exist", () => {
-      expect(() => roleMap("DEFAULT", 3)).toThrow();
+      expect(roleMap("DEFAULT", 3)).toBe(null);
     });
 
     it("should throw if template does not exist", () => {
-      expect(() => roleMap("NonExistantTemplateName", 0)).toThrow();
+      expect(roleMap("NonExistantTemplateName", 0)).toBe(null);
     });
   });
 };

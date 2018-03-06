@@ -11,15 +11,15 @@ export default (template, index) => {
 
   const roles = templateObject[template];
 
-  if (!roles)
-    throw new Error(`template "${template}" does not have any roles specified`);
+  if (!roles) {
+    return null;
+  }
 
   const role = roles[index];
 
-  if (!role)
-    throw new Error(
-      `template "${template}" does not have a role for index "${index}"`
-    );
+  if (!role) {
+    return null;
+  }
 
   return role;
 };
