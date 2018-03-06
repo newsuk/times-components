@@ -54,6 +54,14 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@storybook/addon-a11y@3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.14.tgz#dcf3253e768ebb25b2e4669706865946dfff5ec3"
+  dependencies:
+    "@storybook/components" "^3.3.14"
+    axe-core "^2.6.0"
+    prop-types "^15.6.0"
+
 "@storybook/addon-actions@3.3.14", "@storybook/addon-actions@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.14.tgz#b78e707b32130ad16ea8a0af62a66f23b5df502b"
@@ -354,20 +362,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-"@times-components/responsive-styles@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.4.0.tgz#e00a256b68ac978d33f6b146c980df0878f3527f"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "2.2.3"
-
-"@times-components/styleguide@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.3.3.tgz#1fa5bb2d92eb6e1b4f8b4de910976824df7e7b1e"
-  dependencies:
-    "@times-components/responsive-styles" "0.4.0"
-    prop-types "15.6.0"
 
 "@types/async@2.0.46":
   version "2.0.46"
@@ -976,6 +970,10 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axe-core@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -4031,7 +4029,7 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.5.0, dextrose@^1.4.6:
+dextrose@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.5.0.tgz#79ced11b639d773a3198ac1dd7b5b9b1200ae88f"
   dependencies:
