@@ -50,7 +50,7 @@ exports[`ModalImage test on ios renders correctly 1`] = `
           width="48"
         >
           <g
-            fill="#dddddd"
+            fill="rgba(255, 255, 255, 0.8)"
             style={Object {}}
           >
             <path
@@ -63,6 +63,7 @@ exports[`ModalImage test on ios renders correctly 1`] = `
               style={Object {}}
             />
           </g>
+          §
         </svg>
       </View>
       <View
