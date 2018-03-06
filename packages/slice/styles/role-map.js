@@ -15,11 +15,5 @@ export default (template, index) => {
     return null;
   }
 
-  const role = roles[index];
-
-  if (!role) {
-    return null;
-  }
-
-  return role;
+  return roles[index] || null;
 };
