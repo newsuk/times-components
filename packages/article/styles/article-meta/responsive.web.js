@@ -1,8 +1,9 @@
 import { Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 export const MetaTextElement = withResponsiveStyles(Text, {
-  base: () => ` border-top: 1px solid #d0cece;`,
+  base: () => ` border-top: 1px solid ${colours.functional.alto};`,
   mediumUp: () => `
     padding-top: 10px;
     padding-bottom: 10px;

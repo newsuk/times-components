@@ -5,6 +5,7 @@ import { Slice } from "@times-components/slice";
 import RelatedArticlesHeading from "./heading";
 import RelatedArticleItem from "./related-article-item";
 import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
+import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
@@ -28,4 +29,4 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 RelatedArticles.propTypes = relatedArticlesPropTypes;
 RelatedArticles.defaultProps = defaultProps;
 
-export default RelatedArticles;
+export default withTrackingContext(RelatedArticles);

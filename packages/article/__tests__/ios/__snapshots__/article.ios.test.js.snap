@@ -532,7 +532,7 @@ exports[`Article test on ios renders article no flags 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -576,7 +576,7 @@ exports[`Article test on ios renders article no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -590,7 +590,7 @@ exports[`Article test on ios renders article no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -622,7 +622,7 @@ exports[`Article test on ios renders article no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -1394,7 +1394,7 @@ exports[`Article test on ios renders article no label 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -1575,7 +1575,7 @@ exports[`Article test on ios renders article no label 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -1589,7 +1589,7 @@ exports[`Article test on ios renders article no label 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -1621,7 +1621,7 @@ exports[`Article test on ios renders article no label 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -2390,7 +2390,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -2434,7 +2434,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -2448,7 +2448,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -2480,7 +2480,7 @@ exports[`Article test on ios renders article no label no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -3249,7 +3249,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -3273,7 +3273,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -3287,7 +3287,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -3319,7 +3319,7 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -4123,7 +4123,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -4284,7 +4284,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -4298,7 +4298,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -4330,7 +4330,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -5131,7 +5131,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -5155,7 +5155,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -5169,7 +5169,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -5201,7 +5201,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -5973,7 +5973,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -6134,7 +6134,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -6148,7 +6148,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -6180,7 +6180,7 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -7083,7 +7083,7 @@ exports[`Article test on ios renders full article 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#1d1d1b",
+              "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "700",
@@ -7264,7 +7264,7 @@ exports[`Article test on ios renders full article 1`] = `
               "paddingTop": 9,
             },
             Object {
-              "borderBottomColor": "#d0cece",
+              "borderBottomColor": "#DBDBDB",
               "borderBottomWidth": 0.5,
               "marginBottom": 20,
               "marginLeft": 10,
@@ -7278,7 +7278,7 @@ exports[`Article test on ios renders full article 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,
@@ -7310,7 +7310,7 @@ exports[`Article test on ios renders full article 1`] = `
         <View
           style={
             Object {
-              "borderTopColor": "#d0cece",
+              "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
               "paddingBottom": 4,
               "paddingTop": 9,

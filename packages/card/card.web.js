@@ -1,57 +1,72 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
+import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
 import {
-  ImageContainer,
-  SummaryContainer,
-  CardContainer
-} from "./card-styles.web";
+  CardContainer,
+  getChildContainer,
+  ImageContainer
+} from "./styles/responsive";
 
-class CardComponent extends React.Component {
+class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading } = this.props;
+    const {
+      image,
+      imageSize,
+      isLoading,
+      showImage,
+      tabletChildRatio
+    } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
-      isLoading !== nextProps.isLoading
+      isLoading !== nextProps.isLoading ||
+      showImage !== nextProps.showImage ||
+      tabletChildRatio !== nextProps.tabletChildRatio
     );
   }
   render() {
     const {
-      isLoading,
+      children,
+      tabletChildRatio,
       image,
       imageRatio,
       imageSize,
-      showImage,
-      children
+      isLoading,
+      showImage
     } = this.props;
 
     if (isLoading) {
       return (
         <View>
-          <Loading imageRatio={imageRatio} showImage={showImage} />
+          <Loading
+            aspectRatio={imageRatio}
+            tabletChildRatio={tabletChildRatio}
+            showImage={showImage}
+          />
         </View>
       );
     }
 
-    const imageComponent =
-      image && image.uri ? (
-        <ImageContainer>
-          <Image
-            uri={`${image.uri}&resize=${imageSize || 100}`}
-            aspectRatio={imageRatio}
-          />
-        </ImageContainer>
-      ) : null;
+    const ChildContainer = getChildContainer({ tabletChildRatio });
 
     return (
       <Animations.FadeIn>
         <CardContainer>
-          {showImage ? imageComponent : null}
-          <SummaryContainer>{children}</SummaryContainer>
+          {showImage &&
+            image &&
+            image.uri && (
+              <ImageContainer>
+                <Image
+                  aspectRatio={imageRatio}
+                  uri={`${image.uri}&resize=${imageSize}`}
+                />
+              </ImageContainer>
+            )}
+          <ChildContainer>{children}</ChildContainer>
         </CardContainer>
       </Animations.FadeIn>
     );
@@ -59,23 +74,12 @@ class CardComponent extends React.Component {
 }
 
 CardComponent.propTypes = {
-  image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
-  imageSize: PropTypes.number,
-  showImage: PropTypes.bool,
-  children: PropTypes.node,
-  isLoading: PropTypes.bool
+  ...cardPropTypes,
+  tabletChildRatio: PropTypes.number
 };
-
 CardComponent.defaultProps = {
-  image: {
-    uri: ""
-  },
-  imageRatio: 1,
-  imageSize: 100,
-  showImage: false,
-  children: [],
-  isLoading: false
+  ...cardDefaultProps,
+  tabletChildRatio: 1
 };
 
 export default CardComponent;

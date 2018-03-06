@@ -2,10 +2,10 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts } from "@times-components/styleguide";
-import { IconDiamond, IconTwitter } from "./icons";
+import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
-const borderColor = "#d3d3d3";
+const borderColor = "#D3D3D3";
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -43,6 +43,10 @@ storiesOf("Primitives/Icons", module).add("Icons", () => (
     <View style={styles.icon}>
       <IconTwitter width={50} height={50} />
       <Text style={styles.label}>Twitter</Text>
+    </View>
+    <View style={styles.icon}>
+      <IconVideo width={50} height={50} />
+      <Text style={styles.label}>Video</Text>
     </View>
   </View>
 ));

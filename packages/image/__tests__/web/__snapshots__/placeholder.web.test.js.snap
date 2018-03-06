@@ -23,8 +23,8 @@ exports[`Placeholder test on ios renders loading image when width set 1`] = `
       }
     >
       <T
-        height={45}
-        width={45}
+        height={82.23350253807106}
+        width={82.23350253807106}
       />
     </View>
   </Gradient>

@@ -1,10 +1,8 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { LateralSpacingDecorator } from "@times-components/storybook";
-import ArticleSummary from "@times-components/article-summary";
+import { boolean, number } from "@storybook/addon-knobs/react";
 import Card from "./card";
-import articleSummaryProps from "./fixtures/article-summary-props";
 
 const cardProps = {
   image: {
@@ -12,30 +10,42 @@ const cardProps = {
       "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
   },
   imageRatio: 1.5,
-  imageSize: 360,
-  showImage: true
+  imageSize: 360
+};
+
+const label = "Width of Card content";
+const defaultValue = 2.7;
+const options = {
+  range: true,
+  min: 1,
+  max: 5,
+  step: 0.1
 };
 
 storiesOf("Composed/Card", module)
-  .addDecorator(LateralSpacingDecorator)
   .add("Loading", () => (
-    <Card {...cardProps} isLoading>
+    <Card
+      {...cardProps}
+      showImage={boolean("Show Image?", true, "")}
+      tabletChildRatio={number(label, defaultValue, options)}
+      isLoading
+    >
       <Text>Is loading</Text>
     </Card>
   ))
   .add("Default", () => (
-    <Card {...cardProps}>
-      <ArticleSummary {...articleSummaryProps} />
-    </Card>
-  ))
-  .add("Without Image", () => (
     <Card
-      {...Object.assign({}, cardProps, {
-        image: {
-          url: null
-        }
-      })}
+      {...cardProps}
+      showImage={boolean("Show Image?", true, "")}
+      tabletChildRatio={number(label, defaultValue, options)}
     >
-      <ArticleSummary {...articleSummaryProps} />
+      <View
+        style={{
+          borderColor: "black",
+          borderStyle: "solid",
+          borderWidth: 1,
+          minHeight: 200
+        }}
+      />
     </Card>
   ));

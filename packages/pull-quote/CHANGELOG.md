@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.24"></a>
+## [0.2.24](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.23...@times-components/pull-quote@0.2.24) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.23"></a>
+## [0.2.23](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.22...@times-components/pull-quote@0.2.23) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.22"></a>
+## [0.2.22](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.21...@times-components/pull-quote@0.2.22) (2018-03-02)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.2.21"></a>
+## [0.2.21](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.20...@times-components/pull-quote@0.2.21) (2018-03-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
 <a name="0.2.20"></a>
 ## [0.2.20](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.19...@times-components/pull-quote@0.2.20) (2018-02-28)
 

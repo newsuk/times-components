@@ -14,7 +14,7 @@ exports[`Article Byline test on iOS renders correctly with a single author 1`] =
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#069",
+        "color": "#006699",
       },
       undefined,
     ]
@@ -51,7 +51,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -79,7 +79,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -107,7 +107,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -133,7 +133,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -161,7 +161,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -189,7 +189,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -214,7 +214,7 @@ exports[`Article Byline test on iOS renders correctly with styles 1`] = `
         "textDecorationLine": "underline",
       },
       Object {
-        "color": "#069",
+        "color": "#006699",
       },
       Object {
         "color": "red",
@@ -249,7 +249,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
@@ -275,7 +275,7 @@ Array [
           "textDecorationLine": "underline",
         },
         Object {
-          "color": "#069",
+          "color": "#006699",
         },
         undefined,
       ]
