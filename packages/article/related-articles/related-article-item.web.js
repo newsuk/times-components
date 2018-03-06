@@ -9,12 +9,12 @@ import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
-import { ResponsiveHeadline } from "./styles/responsive";
 
 const RelatedArticleItem = ({
   article,
   onPress,
   showSummaryContent,
+  headlineContainer: HeadlineContainer,
   imageContainer: ImageContainer,
   relatedArticleContainer: RelatedArticleContainer,
   summaryContainer: SummaryContainer
@@ -51,7 +51,7 @@ const RelatedArticleItem = ({
             }
             datePublicationProps={{ date: publishedTime }}
             headline={() => (
-              <ResponsiveHeadline>
+              <HeadlineContainer>
                 <Text
                   accessibilityRole="heading"
                   aria-level="3"
@@ -59,7 +59,7 @@ const RelatedArticleItem = ({
                 >
                   {headline}
                 </Text>
-              </ResponsiveHeadline>
+              </HeadlineContainer>
             )}
             labelProps={{
               color: colours.section[section] || colours.section.default,

@@ -37,28 +37,36 @@ export const getRelatedArticleContainer = ({ articleCount }) => {
   return RelatedArticleContainer;
 };
 
-export const ResponsiveHeadline = withResponsiveStyles(Text, {
-  base: () => `
+export const getHeadlineContainer = ({ isSupport }) => {
+  const smallStyles = `
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 5px;
-  `,
-  mediumUp: () => `
+  `;
+  const largeStyles = `
     font-size: 30px;
     line-height: 30px;
-  `
-});
-ResponsiveHeadline.displayName = "ResponsiveHeadline";
+  `;
+  const HeadlineContainer = withResponsiveStyles(Text, {
+    base: () => `
+      ${smallStyles}
+      margin-bottom: 5px;
+    `,
+    mediumUp: () => `
+      ${isSupport ? smallStyles : largeStyles}
+    `
+  });
+  HeadlineContainer.displayName = "HeadlineContainer";
+  return HeadlineContainer;
+};
 
-export const getImageContainer = ({ articleCount, index, template }) => {
+export const getImageContainer = ({
+  articleCount,
+  hasManyDefaults,
+  isSupport
+}) => {
   const ImageContainer = withResponsiveStyles(View, {
     base: () => `
-    display: ${
-      (template === "DEFAULT" && articleCount === 3) ||
-      (template === "LEAD_AND_TWO" && index > 0)
-        ? "none"
-        : "block"
-    };
+    display: ${hasManyDefaults || isSupport ? "none" : "block"};
     flex-grow: 1;
     margin-bottom: 10px;
   `,

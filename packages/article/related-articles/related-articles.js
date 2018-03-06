@@ -14,11 +14,11 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   const renderArticleItems = () =>
     articles.map((article, index) => {
-      const showImage =
-        (template === "DEFAULT" && articles.length < 3) ||
-        (template === "LEAD_AND_TWO" && index === 0);
-      const showSummaryContent =
-        template === "DEFAULT" || (template === "LEAD_AND_TWO" && index === 0);
+      const isDefault = template === "DEFAULT";
+      const isLead = template === "LEAD_AND_TWO" && index === 0;
+
+      const showImage = (isDefault && articles.length < 3) || isLead;
+      const showSummaryContent = isDefault || isLead;
 
       return (
         <RelatedArticleItem

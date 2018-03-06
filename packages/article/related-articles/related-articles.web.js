@@ -9,6 +9,7 @@ import {
 } from "./related-articles-proptypes";
 import withTrackingContext from "./related-articles-tracking-context";
 import {
+  getHeadlineContainer,
   getImageContainer,
   getRelatedArticleContainer,
   getSummaryContainer
@@ -23,18 +24,22 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   const renderArticleItems = () =>
     articles.map((article, index) => {
+      const isLead = template === "LEAD_AND_TWO" && index === 0;
+      const isSupport = template === "LEAD_AND_TWO" && index > 0;
+      const isDefault = template === "DEFAULT";
+
       const ImageContainer = getImageContainer({
         articleCount,
-        index,
-        template
+        hasManyDefaults: isDefault && article >= 3,
+        isSupport
       });
-
-      const showSummaryContent =
-        template === "DEFAULT" || (template === "LEAD_AND_TWO" && index === 0);
+      const HeadlineContainer = getHeadlineContainer({ isSupport });
+      const showSummaryContent = isDefault || isLead;
 
       return (
         <RelatedArticleItem
           article={article}
+          headlineContainer={HeadlineContainer}
           imageContainer={ImageContainer}
           key={article.id}
           onPress={onPress}
