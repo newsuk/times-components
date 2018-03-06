@@ -8,10 +8,9 @@ import DOMContext from "../dom-context.web";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("DOMContext Web", () => {
-
   it("passes an element to the init function", () => {
     const init = jest.fn(() => {
-      return { init: () => { } };
+      return { init: () => {} };
     });
     mount(<DOMContext init={init} />);
 
@@ -24,7 +23,7 @@ describe("DOMContext Web", () => {
 
   it("passes the data object to the init function", () => {
     const init = jest.fn(() => {
-      return { init: () => { } };
+      return { init: () => {} };
     });
 
     mount(<DOMContext init={init} data={{ foo: "bar" }} />);
@@ -74,9 +73,7 @@ describe("DOMContext Web", () => {
 
     mount(
       <DOMContext
-        init={
-          ({ eventCallback }) => eventCallback("renderComplete")
-        }
+        init={({ eventCallback }) => eventCallback("renderComplete")}
         onRenderComplete={onRenderComplete}
       />
     );
@@ -85,13 +82,12 @@ describe("DOMContext Web", () => {
   });
 
   it("does not error when init dispatches a renderComplete event but no onRenderComplete callback is provided", () => {
-    const f = () => mount(
-      <DOMContext
-        init={
-          ({ eventCallback }) => eventCallback("renderComplete")
-        }
-      />
-    );
+    const f = () =>
+      mount(
+        <DOMContext
+          init={({ eventCallback }) => eventCallback("renderComplete")}
+        />
+      );
     expect(f).not.toThrow();
   });
 
@@ -100,7 +96,7 @@ describe("DOMContext Web", () => {
     const component = mount(
       <DOMContext
         init={() => {
-          return { init: () => { } };
+          return { init: () => {} };
         }}
       />
     );

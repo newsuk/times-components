@@ -18,11 +18,7 @@ describe("Ad init", () => {
     // by mocking gpt.scheduleSetPageTargetingValues
   });
 
-  it.skip("Does not set page targeting value if the script errors", () => {
+  it.skip("Does not set page targeting value if the script errors", () => {});
 
-  });
-
-  it.skip("Does not set page targeting value if the script times out", () => {
-
-  });
+  it.skip("Does not set page targeting value if the script times out", () => {});
 });

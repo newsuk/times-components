@@ -19,7 +19,9 @@ describe("Ad init", () => {
     jest.spyOn(init.gpt, "scheduleSetPageTargetingValues");
 
     init.init();
-    expect(init.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({ pageOptionName: "pageOptionValue" });
+    expect(init.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
+      pageOptionName: "pageOptionValue"
+    });
   });
 
   it("configures slots on slot init", () => {
@@ -34,45 +36,22 @@ describe("Ad init", () => {
       "slotOptionName",
       "slotOptionValue"
     );
+    expect(mock.googletag.display).toHaveBeenCalledWith("mock-code");
   });
 
-  it.skip("displays all ads for web", () => {
-
+  it("displays all ads for web", () => {
     const init = adInit(initOptions);
 
-    init.init();
+    init.gpt.displayAds();
 
-    expect(mock.googletag.display).toHaveBeenCalled();
-    expect(mock.pubAds.refresh).not.toHaveBeenCalled();
+    expect(mock.pubAds.refresh).toHaveBeenCalled();
   });
 
-  it.skip("displays all ads for native", () => {
-    const nativeInitOptions = Object.assign(initOptions, {
-      platform: "native"
-    });
-    const nativeInit = adInit(nativeInitOptions);
-    jest.spyOn(nativeInit, "dfpReady");
-
-    nativeInit.init();
-    //FIXME use mock.processGoogletagCommandQueue
-    nativeInitOptions.window.googletag.cmd.forEach(cmd => cmd());
-    nativeInitOptions.window.googletag.cmd = [];
-
-    expect(nativeInitOptions.window.googletag.display).toHaveBeenCalled(); // when slot is define
-    expect(nativeInit.dfpReady).toHaveBeenCalled();
-  });
-
-  it.skip("throws if defineSlot returns null", () => {
+  it("throws if defineSlot returns null", () => {
     const init = adInit(initOptions);
     mock.googletag.defineSlot.mockImplementation(() => null);
-
-    init.initializeBidding = jest.fn();
-    init.scheduleGPTConfiguration = jest.fn();
-
-    // init.doPageAdSetupAsync = jest.fn();
-
     init.init();
-    expect(processGoogletagCommandQueue).toThrowError(
+    expect(() => mock.processGoogletagCommandQueue()).toThrowError(
       new Error(
         "Ad slot mock-code /mockNetwork/mockAdUnit/mockSection could not be defined, probably it was already defined"
       )

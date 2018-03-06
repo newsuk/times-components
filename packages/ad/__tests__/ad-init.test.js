@@ -21,7 +21,6 @@ describe("Ad init", () => {
   });
 
   it("performs page-level setup for the first slot only", () => {
-
     const init1 = adInit(initOptions);
     const init2 = adInit(initOptions);
 
@@ -36,7 +35,6 @@ describe("Ad init", () => {
     expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
     expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
-
 
   it("throws if the init hook is called twice", () => {
     const init = adInit(initOptions);
@@ -60,6 +58,6 @@ describe("Ad init", () => {
   });
 
   it.skip("Applies prebidding targeting after all services are initialised", () => {
-    // TODO test promise chain using promise-mock to mock out services e.g. grapeshot.setupAsync
+    // TODO test promise chain using promise-mock
   });
 });
