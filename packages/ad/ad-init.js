@@ -19,9 +19,13 @@ const adInit = args => {
         return new Promise((resolve, reject) => {
           this.createScriptElement(
             scriptUri,
-            () => { resolve(); },
-            () => { reject(new Error(`load error for ${scriptUri}`)); }
-          )
+            () => {
+              resolve();
+            },
+            () => {
+              reject(new Error(`load error for ${scriptUri}`));
+            }
+          );
           if (timeout) {
             setTimeout(reject, timeout, new Error(`timeout for ${scriptUri}`));
           }
@@ -87,7 +91,7 @@ const adInit = args => {
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
-              adUnitPath
+                adUnitPath
               } could not be defined, probably it was already defined`
             );
           }
@@ -187,7 +191,7 @@ const adInit = args => {
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-          setDisplayBids() { },
+          setDisplayBids() {},
           targetingKeys() {
             return [];
           },
@@ -262,13 +266,11 @@ const adInit = args => {
       },
 
       applyPrebidTargeting() {
-        console.log("PREBIDDING COMPLETE!");
         window.pbjs.enableSendAllBids();
         window.pbjs.setTargetingForGPTAsync();
       },
       applyAmazonTargeting() {
         if (window.apstag) {
-          console.log("Amazon bids done");
           window.apstag.setDisplayBids();
         }
       }
@@ -282,7 +284,6 @@ const adInit = args => {
         return utils
           .loadScript(grapeshotUrl, 1000)
           .then(() => {
-            console.log("GRAPESHOT COMPLETE!", window.gs_channels);
             gpt.scheduleSetPageTargetingValues({ gs_cat: window.gs_channels });
           })
           .catch(() => {
@@ -292,15 +293,7 @@ const adInit = args => {
     },
 
     doPageAdSetupAsync() {
-      const {
-        config: slotConfig,
-        networkId,
-        adUnit,
-        prebidConfig,
-        section,
-        slots,
-        slotTargeting
-      } = data;
+      const { networkId, adUnit, prebidConfig, section, slots } = data;
       const parallelActions = [
         this.gpt.setupAsync(this.utils),
         this.grapeshot.setupAsync(this.gpt, this.utils)

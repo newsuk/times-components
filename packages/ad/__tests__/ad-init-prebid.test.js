@@ -1,9 +1,6 @@
-import { jsdom } from "jsdom";
 import merge from "lodash.merge";
-import { SynchronousPromise } from "synchronous-promise";
 
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
-import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
 const amazonInitExtension = {
   data: {
@@ -14,14 +11,14 @@ const amazonInitExtension = {
   }
 };
 
-describe("Ad init", () => {
+describe("AdInit.prebid", () => {
   let mock;
   let initOptions;
 
   beforeEach(() => {
     const adInitMocks = makeAdInitMocks();
-    mock = adInitMocks.mock;
-    initOptions = adInitMocks.initOptions;
+    mock = adInitMocks.mock; // eslint-disable-line prefer-destructuring
+    initOptions = adInitMocks.initOptions; // eslint-disable-line prefer-destructuring
   });
 
   it("perform bidding request for web", () => {
@@ -42,20 +39,29 @@ describe("Ad init", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
-    expect(init.prebid.setupApstag).toHaveBeenCalledWith("mockAmazonAccount", 1234);
+    expect(init.prebid.setupApstag).toHaveBeenCalledWith(
+      "mockAmazonAccount",
+      1234
+    );
   });
 
   it("Does not set up Amazon bidding if no Amazon bidder config is present", () => {
-    const init = adInit(merge(initOptions, { data: { prebidConfig: { bidders: { amazon: null } } } }));
-    //TODO can I remove this?
-    mock.window.Promise = SynchronousPromise;
+    const init = adInit(
+      merge(initOptions, {
+        data: { prebidConfig: { bidders: { amazon: null } } }
+      })
+    );
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
   });
 
   it("Does not set up Amazon bidding if no Amazon account id is set in the bidder config", () => {
-    const init = adInit(merge(initOptions, { data: { prebidConfig: { bidders: { amazon: { accountId: "" } } } } }));
+    const init = adInit(
+      merge(initOptions, {
+        data: { prebidConfig: { bidders: { amazon: { accountId: "" } } } }
+      })
+    );
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
@@ -64,7 +70,11 @@ describe("Ad init", () => {
   it("Fetches bids from Amazon", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     init.prebid.setupApstag();
-    jest.spyOn(mock.window.apstag, "fetchBids").mockImplementation((slots, callback) => { callback() });
+    jest
+      .spyOn(mock.window.apstag, "fetchBids")
+      .mockImplementation((slots, callback) => {
+        callback();
+      });
     init.prebid.scheduleRequestAmazonBids([], "", "", "", "");
     expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
   });
@@ -80,11 +90,18 @@ describe("Ad init", () => {
     const init = adInit(initOptions);
     init.prebid.createPbjsGlobals();
     mock.window.pbjs.addAdUnits = jest.fn();
-    jest.spyOn(init.prebid, "schedulePrebidAction").mockImplementation((callback) => { callback(); });
-    mock.window.pbjs.requestBids = jest.fn().mockImplementation(options => options.bidsBackHandler([]));
+    jest
+      .spyOn(init.prebid, "schedulePrebidAction")
+      .mockImplementation(callback => {
+        callback();
+      });
+    mock.window.pbjs.requestBids = jest
+      .fn()
+      .mockImplementation(options => options.bidsBackHandler([]));
     mock.window.pbjs.removeAdUnit = jest.fn();
 
-    init.prebid.requestPrebidBids([{ code: "A" }])
+    init.prebid
+      .requestPrebidBids([{ code: "A" }])
       .then(() => done())
       .catch(error => done(error));
 
@@ -111,7 +128,9 @@ describe("Ad init", () => {
 
   it("applyAmazonTargeting does not error if apstag is not set up", () => {
     const init = adInit(initOptions);
-    expect(() => { init.prebid.applyAmazonTargeting() }).not.toThrow();
+    expect(() => {
+      init.prebid.applyAmazonTargeting();
+    }).not.toThrow();
   });
 
   it("calculates the ad unit path correctly", () => {
@@ -123,9 +142,9 @@ describe("Ad init", () => {
 
   it("get the ad unit path with a commercial section", () => {
     const init = adInit(initOptions);
-    expect(init.prebid.getAdUnitPath(["3048", "d.thetimes.co.uk", "news"])).toEqual(
-      "/3048/d.thetimes.co.uk/news"
-    );
+    expect(
+      init.prebid.getAdUnitPath(["3048", "d.thetimes.co.uk", "news"])
+    ).toEqual("/3048/d.thetimes.co.uk/news");
   });
 
   it("get Amazon Config without a commercial section", () => {
@@ -138,9 +157,9 @@ describe("Ad init", () => {
         sizes: [[970, 250], [970, 90]]
       }
     ];
-    expect(init.prebid.getAmazonConfig(adsSlot, "3048", "d.thetimes.co.uk")).toEqual(
-      amazonSlotConfig
-    );
+    expect(
+      init.prebid.getAmazonConfig(adsSlot, "3048", "d.thetimes.co.uk")
+    ).toEqual(amazonSlotConfig);
   });
 
   it("get Amazon Config with a commercial section", () => {
@@ -163,7 +182,10 @@ describe("Ad init", () => {
     init.prebid.setupApstag("3360", 3000);
     jest.spyOn(mock.window.apstag, "addToQueue");
     mock.window.apstag.fetchBids("bids");
-    expect(mock.window.apstag.addToQueue).toHaveBeenCalledWith("f", expect.objectContaining(["bids"]));
+    expect(mock.window.apstag.addToQueue).toHaveBeenCalledWith(
+      "f",
+      expect.objectContaining(["bids"])
+    );
     expect(mock.window.apstag.targetingKeys()).toEqual([]);
   });
 });

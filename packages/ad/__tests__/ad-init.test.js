@@ -1,19 +1,14 @@
-import { jsdom } from "jsdom";
-
 import adInitOriginal from "../ad-init";
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
 import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
 jest.useFakeTimers();
 
-describe("Ad init", () => {
-  let mock;
+describe("AdInit", () => {
   let initOptions;
 
   beforeEach(() => {
-    const adInitMocks = makeAdInitMocks();
-    mock = adInitMocks.mock;
-    initOptions = adInitMocks.initOptions;
+    initOptions = makeAdInitMocks().initOptions; // eslint-disable-line prefer-destructuring
   });
 
   it("is serialisable", () => {

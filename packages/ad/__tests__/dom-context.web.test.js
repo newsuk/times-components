@@ -53,13 +53,10 @@ describe("DOMContext Web", () => {
   });
 
   it("throw an error", () => {
-
     const runWithError = () => {
       mount(
         <DOMContext
-          init={
-            ({ eventCallback }) => eventCallback("error", "error message")
-          }
+          init={({ eventCallback }) => eventCallback("error", "error message")}
           data={{ foo: "bar" }}
         />
       );
