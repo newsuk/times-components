@@ -127,10 +127,8 @@ storiesOf("Advertisement", module)
   .add("Placeholder (970x250 - Billboard)", () => (
     <Placeholder width={970} height={250} />
   ))
-  .add("DOMContext", () => {
-    // script content: `window.global1 = "external value";`dsb2JhbDEgPSAiZXh0ZXJuYWwgdmFsdWUiOw==";
-
-    return withOpenInNewWindow(
+  .add("DOMContext", () =>
+    withOpenInNewWindow(
       <DOMContext
         data={{ message: "data value" }}
         init={args => {
@@ -175,8 +173,8 @@ storiesOf("Advertisement", module)
         width={300}
         height={200}
       />
-    );
-  })
+    )
+  )
   .add("DOMContext with internal error", () => (
     <DOMContext
       init={() => {

@@ -10,8 +10,6 @@ jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 describe("DOMContext Native", () => {
-  const platform = "native";
-
   afterEach(() => {
     jest.resetModules();
     jest.clearAllMocks();
@@ -32,8 +30,7 @@ describe("DOMContext Native", () => {
     try {
       process.env.NODE_ENV = "development";
       const component = new DOMContextNative({
-        ...DOMContextNative.defaultProps,
-        platform
+        ...DOMContextNative.defaultProps
       });
       const f = () =>
         component.handleMessageEvent(makeMessageEvent("error", "message"));
@@ -48,8 +45,7 @@ describe("DOMContext Native", () => {
     try {
       process.env.NODE_ENV = "production";
       const component = new DOMContextNative({
-        ...DOMContextNative.defaultProps,
-        platform
+        ...DOMContextNative.defaultProps
       });
       const f = () =>
         component.handleMessageEvent(makeMessageEvent("error", "message"));
@@ -61,8 +57,7 @@ describe("DOMContext Native", () => {
 
   it("Does not error on messages containing invalid JSON", () => {
     const component = new DOMContextNative({
-      ...DOMContextNative.defaultProps,
-      platform
+      ...DOMContextNative.defaultProps
     });
     const f = () =>
       component.handleMessageEvent({
@@ -75,11 +70,7 @@ describe("DOMContext Native", () => {
 
   it("renders correctly", () => {
     const component = renderer.create(
-      <DOMContextNative
-        init={() => {}}
-        data={{ foo: "bar" }}
-        platform={platform}
-      />
+      <DOMContextNative init={() => {}} data={{ foo: "bar" }} />
     );
     const s = component.toJSON();
 
@@ -90,8 +81,7 @@ describe("DOMContext Native", () => {
     const onRenderComplete = jest.fn();
     const component = new DOMContextNative({
       ...DOMContextNative.defaultProps,
-      onRenderComplete,
-      platform
+      onRenderComplete
     });
 
     expect(onRenderComplete).not.toHaveBeenCalled();
@@ -99,11 +89,22 @@ describe("DOMContext Native", () => {
     expect(onRenderComplete).toHaveBeenCalledTimes(1);
   });
 
+  it("logs a console message when it receives a log event from the webview", () => {
+    jest.spyOn(console, "log").mockImplementation();
+
+    const component = new DOMContextNative({
+      ...DOMContextNative.defaultProps
+    });
+
+    expect(console.log).not.toHaveBeenCalled(); // eslint-disable-line no-console
+    component.handleMessageEvent(makeMessageEvent("log", "message"));
+    expect(console.log).toHaveBeenCalledWith("message"); // eslint-disable-line no-console
+  });
+
   it("hasDifferentOrigin does not allow null origins", () => {
     const result = DOMContextNative.hasDifferentOrigin(
       null,
-      "https://mock-url.com/",
-      platform
+      "https://mock-url.com/"
     );
     expect(result).toEqual(null);
   });

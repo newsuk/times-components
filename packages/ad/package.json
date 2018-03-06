@@ -57,8 +57,7 @@
     "react-dom": "16.2.0",
     "react-native": "0.53.3",
     "react-stateful-fn": "0.1.0",
-    "react-test-renderer": "16.2.0",
-    "synchronous-promise": "2.0.4"
+    "react-test-renderer": "16.2.0"
   },
   "dependencies": {
     "@times-components/styleguide": "0.3.4",

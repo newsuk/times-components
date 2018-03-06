@@ -1,7 +1,6 @@
 import { jsdom } from "jsdom";
 
 import adInitOriginal from "../ad-init";
-import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
 
 export const makeAdInitMocks = () => {
   const document = jsdom("<html></html>");

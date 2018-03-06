@@ -75,4 +75,11 @@ describe("Ad", () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it("TODO", () => {
+    const component = new Ad(adProps);
+    jest.spyOn(component, "setState").mockImplementation();
+    component.setAdReady();
+    expect(component.setState).toHaveBeenCalledWith({ adReady: true });
+  });
 });
