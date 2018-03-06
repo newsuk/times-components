@@ -1,8 +1,18 @@
 import { jsdom } from "jsdom";
 import merge from "lodash.merge";
+import { SynchronousPromise } from "synchronous-promise";
 
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
 import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
+
+const amazonInitExtension = {
+  data: {
+    prebidConfig: {
+      bidders: { amazon: { accountId: "mockAmazonAccount" } },
+      timeout: 1234
+    }
+  }
+};
 
 describe("Ad init", () => {
   let mock;
@@ -29,16 +39,7 @@ describe("Ad init", () => {
   });
 
   it("Sets up Amazon bidding if amazon account ID is set", () => {
-    const init = adInit(
-      merge(initOptions, {
-        data: {
-          prebidConfig: {
-            bidders: { amazon: { accountId: "mockAmazonAccount" } },
-            timeout: 1234
-          }
-        }
-      })
-    );
+    const init = adInit(merge(initOptions, amazonInitExtension));
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
     expect(init.prebid.setupApstag).toHaveBeenCalledWith("mockAmazonAccount", 1234);
@@ -46,31 +47,11 @@ describe("Ad init", () => {
 
   it("Does not set up Amazon bidding if no Amazon bidder config is present", () => {
     const init = adInit(merge(initOptions, { data: { prebidConfig: { bidders: { amazon: null } } } }));
+    //TODO can I remove this?
+    mock.window.Promise = SynchronousPromise;
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
-  });
-
-  it.skip("scheduleRequestAmazonBids fetches bids from Amazon", () => {
-    const init = adInit(merge(initOptions, {data: {prebidConfig: {bidders: {amazon: "mockAmazonAccount"}}}}));
-    init.prebid.setupApstag("mockAmazonAccount", 0);
-    jest.spyOn(mock.window.apstag, "fetchBids").mockImplementation((config, callback) => { callback(); });
-    expect(mock.window.apstag.fetchBids).toHaveBeenCalledWith({"slots": []}, expect.any(Function));
-  });
-
-  it("requestPrebidBids fetches bids using pbjs", () => {
-    const init = adInit(initOptions);
-    jest.spyOn(init.prebid, "schedulePrebidAction").mockImplementation((callback) => { callback(); });
-    init.prebid.requestPrebidBids([]);
-  });
-
-  it("requestPrebidBids fetches bids using pbjs", () => {
-    const init = adInit(initOptions);
-    init.prebid.setupAsync({ bidders: { amazon: "mockAmazonAccount" } }, init.utils);
-    jest.spyOn(init.prebid, "schedulePrebidAction").mockImplementation(callback => { callback(); });
-    mock.window.pbjs = jest.fn().mockImplementation(options => {options.bidsBackHandler([])});
-    init.init();
-    expect(init.prebid.schedulePrebidAction).toHaveBeenCalled();
   });
 
   it("Does not set up Amazon bidding if no Amazon account id is set in the bidder config", () => {
@@ -78,6 +59,59 @@ describe("Ad init", () => {
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
+  });
+
+  it("Fetches bids from Amazon", () => {
+    const init = adInit(merge(initOptions, amazonInitExtension));
+    init.prebid.setupApstag();
+    jest.spyOn(mock.window.apstag, "fetchBids").mockImplementation((slots, callback) => { callback() });
+    init.prebid.scheduleRequestAmazonBids([], "", "", "", "");
+    expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
+  });
+
+  it("Applies prebid targeting on finaliseAds()", () => {
+    const init = adInit(initOptions);
+    jest.spyOn(init.prebid, "applyPrebidTargeting").mockImplementation();
+    init.finaliseAds(true);
+    expect(init.prebid.applyPrebidTargeting).toHaveBeenCalled();
+  });
+
+  it("requestPrebidBids fetches bids using pbjs", done => {
+    const init = adInit(initOptions);
+    init.prebid.createPbjsGlobals();
+    mock.window.pbjs.addAdUnits = jest.fn();
+    jest.spyOn(init.prebid, "schedulePrebidAction").mockImplementation((callback) => { callback(); });
+    mock.window.pbjs.requestBids = jest.fn().mockImplementation(options => options.bidsBackHandler([]));
+    mock.window.pbjs.removeAdUnit = jest.fn();
+
+    init.prebid.requestPrebidBids([{ code: "A" }])
+      .then(() => done())
+      .catch(error => done(error));
+
+    expect(mock.window.pbjs.removeAdUnit).toHaveBeenCalled();
+    expect(mock.window.pbjs.addAdUnits).toHaveBeenCalled();
+  });
+
+  it("applyPrebidTargeting calls pbjs.setTargetingForGPTAsync", () => {
+    const init = adInit(initOptions);
+    init.prebid.createPbjsGlobals();
+    mock.window.pbjs.enableSendAllBids = jest.fn();
+    mock.window.pbjs.setTargetingForGPTAsync = jest.fn();
+    init.prebid.applyPrebidTargeting();
+    expect(mock.window.pbjs.setTargetingForGPTAsync).toHaveBeenCalled();
+  });
+
+  it("applyAmazonTargeting calls apstag.setDisplayBids", () => {
+    const init = adInit(initOptions);
+    init.prebid.setupApstag();
+    jest.spyOn(mock.window.apstag, "setDisplayBids");
+    init.prebid.applyAmazonTargeting();
+    expect(mock.window.apstag.setDisplayBids).toHaveBeenCalled();
+  });
+
+  it("applyAmazonTargeting does not error if apstag is not set up", () => {
+    const init = adInit(initOptions);
+    expect(() => { init.prebid.applyAmazonTargeting() }).not.toThrow();
   });
 
   it("calculates the ad unit path correctly", () => {

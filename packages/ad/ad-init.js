@@ -4,7 +4,7 @@
 
 const adInit = args => {
   const { el, data, platform, eventCallback, window } = args;
-  const { document, setTimeout } = window;
+  const { document, setTimeout, Promise } = window;
 
   const scriptsInserted = {};
   let initCalled = false;
@@ -83,7 +83,7 @@ const adInit = args => {
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
-                adUnitPath
+              adUnitPath
               } could not be defined, probably it was already defined`
             );
           }
@@ -124,8 +124,7 @@ const adInit = args => {
 
     prebid: {
       setupAsync(prebidConfig, utils) {
-        window.pbjs = window.pbjs || {};
-        window.pbjs.que = window.pbjs.que || [];
+        this.createPbjsGlobals();
         const scriptPromises = [
           utils.loadScript(
             "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
@@ -140,6 +139,11 @@ const adInit = args => {
           );
         }
         return Promise.all(scriptPromises);
+      },
+
+      createPbjsGlobals() {
+        window.pbjs = window.pbjs || {};
+        window.pbjs.que = window.pbjs.que || [];
       },
 
       requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
@@ -179,7 +183,7 @@ const adInit = args => {
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-          setDisplayBids() {},
+          setDisplayBids() { },
           targetingKeys() {
             return [];
           },
@@ -237,14 +241,13 @@ const adInit = args => {
       setAdUnits(adsSlots) {
         this.schedulePrebidAction(() => {
           adsSlots.forEach(slot => window.pbjs.removeAdUnit(slot.code));
-          // TODO: check for clone
           window.pbjs.addAdUnits(adsSlots);
         });
       },
       requestPrebidBids(slots) {
         return new Promise(resolve => {
           this.schedulePrebidAction(() => {
-            this.setAdUnits(window.pbjs, slots);
+            this.setAdUnits(slots);
             window.pbjs.requestBids({
               bidsBackHandler(bids) {
                 resolve(bids);
@@ -255,13 +258,9 @@ const adInit = args => {
       },
 
       applyPrebidTargeting() {
-        try {
-          console.log("PREBIDDING COMPLETE!", window.pbjs);
-          window.pbjs.enableSendAllBids();
-          window.pbjs.setTargetingForGPTAsync();
-        } catch (ex) {
-          console.error("Set Targeting for GTP Async with prebid failed:", ex); // eslint-disable-line no-console
-        }
+        console.log("PREBIDDING COMPLETE!");
+        window.pbjs.enableSendAllBids();
+        window.pbjs.setTargetingForGPTAsync();
       },
       applyAmazonTargeting() {
         if (window.apstag) {
@@ -320,13 +319,15 @@ const adInit = args => {
 
       return Promise.all(parallelActions)
         .then(this.gpt.waitUntilReady())
-        .then(() => {
-          if (enablePrebidding) {
-            this.prebid.applyPrebidTargeting();
-            this.prebid.applyAmazonTargeting();
-          }
-          this.gpt.displayAds();
-        });
+        .then(this.finaliseAds.bind(this, enablePrebidding));
+    },
+
+    finaliseAds(enablePrebidding) {
+      if (enablePrebidding) {
+        this.prebid.applyPrebidTargeting();
+        this.prebid.applyAmazonTargeting();
+      }
+      this.gpt.displayAds();
     },
 
     init() {

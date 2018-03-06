@@ -73,7 +73,8 @@ export const makeAdInitMocks = () => {
         bucketSize: 0,
         bidders: {},
         bidderSettings: {}
-      }
+      },
+      slots: []
     },
     window,
     renderComplete: jest.fn(),
