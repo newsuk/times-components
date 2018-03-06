@@ -4,7 +4,6 @@ import renderer from "react-test-renderer";
 import Card from "../card";
 
 const cardProps = {
-  childRatio: 2.7,
   image: {
     uri:
       "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
@@ -19,7 +18,7 @@ export default () => {
     width: 200
   });
 
-  it("renders vertical by default", () => {
+  it("should render a card", () => {
     const tree = renderer
       .create(
         <Card {...cardProps}>
@@ -31,7 +30,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders loading state", () => {
+  it("should render the loading state", () => {
     const tree = renderer
       .create(
         <Card {...cardProps} isLoading>
@@ -43,7 +42,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders without image", () => {
+  it("should render without an image", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: null
     });
@@ -58,7 +57,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders without image url", () => {
+  it("should render without image url", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: {
         uri: null

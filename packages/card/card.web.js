@@ -5,69 +5,58 @@ import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
-import {
-  CardContainer,
-  getChildContainer,
-  ImageContainer
-} from "./styles/responsive";
+import styles from "./styles/shared";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const {
-      image,
-      imageSize,
-      isLoading,
-      showImage,
-      tabletChildRatio
-    } = this.props;
+    const { image, imageSize, isLoading, showImage } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
       isLoading !== nextProps.isLoading ||
-      showImage !== nextProps.showImage ||
-      tabletChildRatio !== nextProps.tabletChildRatio
+      showImage !== nextProps.showImage
     );
   }
   render() {
     const {
       children,
+      contentClass,
+      imgClass,
       image,
       imageRatio,
       imageSize,
       isLoading,
-      showImage,
-      tabletChildRatio
+      showImage
     } = this.props;
 
     if (isLoading) {
       return (
-        <View>
-          <Loading
-            aspectRatio={imageRatio}
-            showImage={showImage}
-            tabletChildRatio={tabletChildRatio}
-          />
-        </View>
+        <Loading
+          aspectRatio={imageRatio}
+          contentClass={contentClass}
+          imgClass={imgClass}
+          showImage={showImage}
+        />
       );
     }
 
-    const ChildContainer = getChildContainer({ tabletChildRatio });
-
     return (
       <Animations.FadeIn>
-        <CardContainer>
+        <View style={styles.cardContainer}>
           {showImage &&
             image &&
             image.uri && (
-              <ImageContainer>
+              <View style={styles.imgContainer} className={imgClass}>
                 <Image
                   aspectRatio={imageRatio}
                   uri={`${image.uri}&resize=${imageSize}`}
                 />
-              </ImageContainer>
+              </View>
             )}
-          <ChildContainer>{children}</ChildContainer>
-        </CardContainer>
+          <View style={styles.contentClass} className={contentClass}>
+            {children}
+          </View>
+        </View>
       </Animations.FadeIn>
     );
   }
@@ -75,11 +64,13 @@ class CardComponent extends Component {
 
 CardComponent.propTypes = {
   ...cardPropTypes,
-  tabletChildRatio: PropTypes.number
+  contentClass: PropTypes.string,
+  imgClass: PropTypes.string
 };
 CardComponent.defaultProps = {
   ...cardDefaultProps,
-  tabletChildRatio: 1
+  contentClass: "",
+  imgClass: ""
 };
 
 export default CardComponent;

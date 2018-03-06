@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean, number } from "@storybook/addon-knobs/react";
+import { boolean } from "@storybook/addon-knobs/react";
 import Card from "./card";
 
 const cardProps = {
@@ -14,21 +14,13 @@ const cardProps = {
   imageSize: 360
 };
 
-const label = "Width of Card content";
-const defaultValue = 2.7;
-const options = {
-  range: true,
-  min: 1,
-  max: 5,
-  step: 0.1
-};
-
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
     <Card
       {...cardProps}
+      contentClass="exampleContent"
+      imgClass="exampleImage"
       showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
       isLoading
     >
       <Text>Is loading</Text>
@@ -37,8 +29,9 @@ storiesOf("Composed/Card", module)
   .add("Default", () => (
     <Card
       {...cardProps}
+      contentClass="exampleContent"
+      imgClass="exampleImage"
       showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
     >
       <View
         style={{
