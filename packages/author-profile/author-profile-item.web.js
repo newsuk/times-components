@@ -32,6 +32,7 @@ const CardWrapper = withResponsiveStyles(View, {
     };
     .authorProfileContent {
       flex: 2.7;
+      flex-basis: 0 !important;
       min-width: 380px;
     };
   `

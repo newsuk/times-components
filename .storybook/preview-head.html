@@ -85,6 +85,28 @@
   h1, h2, h3, h4 {
       -webkit-font-smoothing: auto;
   }
+
+  .exampleImage {
+    margin-bottom: 10px;
+    min-width: 100%;
+  }
+  .exampleContent {
+    min-width: 100%;
+  }
+
+  /* mediumUp */
+  @media (min-width: 768px) {
+    .exampleImage {
+      flex-grow: 2 !important;
+      margin-bottom: 0;
+      min-width: 360px;
+      padding-right: 15px;
+    }
+    .exampleContent {
+      flex-grow: 2.7 !important;
+      min-width: 380px;
+    }
+  }
+
 </style>
-<link rel="stylesheet" href="styles/example-card.css" type="text/css" />
 <script src="vendor.dll.js"></script>
