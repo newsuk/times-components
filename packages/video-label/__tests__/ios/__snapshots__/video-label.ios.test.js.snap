@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Label test on ios renders VideoLabel 1`] = `
+exports[`Video Label test on ios renders VideoLabel 1`] = `
 <View
   style={
     Object {

@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("Article Label test on ios", () => {
+describe("Video Label test on android", () => {
   shared();
 });
