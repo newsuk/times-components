@@ -76,7 +76,7 @@ describe("Ad", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("TODO", () => {
+  it("displays the ad when setAdReady is called", () => {
     const component = new Ad(adProps);
     jest.spyOn(component, "setState").mockImplementation();
     component.setAdReady();
