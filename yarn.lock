@@ -330,19 +330,6 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-"@times-components/depend@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@times-components/depend/-/depend-0.1.0.tgz#71031aa7a158f2effb9033956d53cb266d7a4a29"
-  dependencies:
-    babel-plugin-transform-runtime "6.23.0"
-    babel-polyfill "6.26.0"
-    babel-runtime "6.26.0"
-    chalk "2.3.1"
-    commander "2.14.1"
-    fs-extra "5.0.0"
-    glob "7.1.2"
-    semver "5.5.0"
-
 "@times-components/fructose@3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.1.14.tgz#a31be85b619132431a46774f970b4146927156c1"

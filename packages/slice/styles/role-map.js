@@ -9,5 +9,11 @@ export default (template, index) => {
     ]
   };
 
-  return templateObject[template][index];
+  const roles = templateObject[template];
+
+  if (!roles) {
+    return null;
+  }
+
+  return roles[index] || null;
 };

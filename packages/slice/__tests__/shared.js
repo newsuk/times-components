@@ -3,6 +3,7 @@ import { View } from "react-native";
 import React from "react";
 import { shallow } from "enzyme";
 import { DefaultSlice, LeadSlice } from "../";
+import roleMap from "../styles/role-map";
 
 module.exports = () => {
   const ExampleChild = () => <View />;
@@ -82,6 +83,20 @@ module.exports = () => {
       expect(wrapper).toMatchSnapshot(
         "6. LEAD_AND_TWO template renders three child elements"
       );
+    });
+  });
+
+  context("RoleMaps", () => {
+    it("returns the name if template and index exists", () => {
+      expect(roleMap("DEFAULT", 0)).toEqual("default-1");
+    });
+
+    it("should return null if child does not exist", () => {
+      expect(roleMap("DEFAULT", 3)).toBe(null);
+    });
+
+    it("should return null if template does not exist", () => {
+      expect(roleMap("NonExistantTemplateName", 0)).toBe(null);
     });
   });
 };
