@@ -16,7 +16,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann"
+                "value":
+                  "Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann"
               },
               "children": []
             }
@@ -31,7 +32,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "Three members of a family are missing after a massive explosion tore through a shop and a flat in Leicester last night, killing five."
+                "value":
+                  "Three members of a family are missing after a massive explosion tore through a shop and a flat in Leicester last night, killing five."
               },
               "children": []
             }
@@ -44,7 +46,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "A young boy is feared to be among the dead with a further five people taken to hospital, including one in a critical condition, after a blast at a Polish grocery store which sent flames rising 25ft into the air."
+                "value":
+                  "A young boy is feared to be among the dead with a further five people taken to hospital, including one in a critical condition, after a blast at a Polish grocery store which sent flames rising 25ft into the air."
               },
               "children": []
             }
@@ -57,7 +60,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "Rescuers used their hands to dig through the rubble to recover those trapped, including a little boy heard crying from beneath the debris."
+                "value":
+                  "Rescuers used their hands to dig through the rubble to recover those trapped, including a little boy heard crying from beneath the debris."
               },
               "children": []
             }
@@ -67,10 +71,12 @@
           "name": "image",
           "attributes": {
             "display": "primary",
-            "caption": "Some 60 homes near the site of the explosion were evacuated",
+            "caption":
+              "Some 60 homes near the site of the explosion were evacuated",
             "credits": "CATERS",
             "ratio": "1500:1000",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264"
+            "url":
+              "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264"
           },
           "children": []
         },
@@ -81,7 +87,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "Tony Hartley, who lives 50 yards away from the site, said he had found a man buried beneath the rubble. “Me and a friend lifted up a steel girder with about five other blokes and removed a man"
+                "value":
+                  "Tony Hartley, who lives 50 yards away from the site, said he had found a man buried beneath the rubble. “Me and a friend lifted up a steel girder with about five other blokes and removed a man"
               },
               "children": []
             }
@@ -96,7 +103,8 @@
           "caption": "",
           "crop": {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+            "url":
+              "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
           }
         }
       }

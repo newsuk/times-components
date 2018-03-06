@@ -11,9 +11,16 @@ import { HeadlineContainer } from "../styles/article-header/responsive";
 
 const { style: ViewStylePropTypes } = ViewPropTypes;
 
-const ArticleHeader = ({ label, headline, standfirst, flags, style }) => (
+const ArticleHeader = ({
+  label,
+  headline,
+  standfirst,
+  flags,
+  isVideo,
+  style
+}) => (
   <View style={[...style]}>
-    <HeaderLabel label={label} />
+    <HeaderLabel label={label} isVideo={isVideo} />
     <HeadlineContainer style={styles.articleHeadLineText}>
       {headline}
     </HeadlineContainer>
@@ -27,6 +34,7 @@ ArticleHeader.propTypes = {
   label: PropTypes.string,
   standfirst: PropTypes.string,
   flags: PropTypes.arrayOf(PropTypes.string),
+  isVideo: PropTypes.bool,
   style: ViewStylePropTypes
 };
 
@@ -34,6 +42,7 @@ ArticleHeader.defaultProps = {
   label: null,
   standfirst: null,
   flags: [],
+  isVideo: false,
   style: {}
 };
 

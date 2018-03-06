@@ -75,26 +75,26 @@ const adConfig = {
 };
 
 storiesOf("Pages/Article", module)
-.add("Default", () => {
-  const props = {
-    ...fullArticleFixture.data,
-    isLoading: false,
-    analyticsStream: storybookReporter,
-    adConfig
-  };
+  .add("Default", () => {
+    const props = {
+      ...fullArticleFixture.data,
+      isLoading: false,
+      analyticsStream: storybookReporter,
+      adConfig
+    };
 
-  return <Article {...props} />;
-})
-.add("Article with video asset", () => {
-  const props = {
-    ...articleWithVideoFixture.data,
-    isLoading: false,
-    analyticsStream: storybookReporter,
-    adConfig
-  };
+    return <Article {...props} />;
+  })
+  .add("Article with video asset", () => {
+    const props = {
+      ...articleWithVideoFixture.data,
+      isLoading: false,
+      analyticsStream: storybookReporter,
+      adConfig
+    };
 
-  return <Article {...props} />;
-})
+    return <Article {...props} />;
+  })
   .add("Long Article", () => {
     const props = {
       ...fullLongArticleFixture.data,

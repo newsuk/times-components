@@ -32,7 +32,7 @@ class ArticlePage extends React.Component {
         </View>
       );
     } else if (rowData.type === "header") {
-      const { headline, flags, standfirst, label } = rowData.data;
+      const { headline, flags, standfirst, label, isVideo } = rowData.data;
       return (
         <ArticleHeader
           key={rowData.type}
@@ -40,6 +40,7 @@ class ArticlePage extends React.Component {
           flags={flags}
           standfirst={standfirst}
           label={label}
+          isVideo={isVideo}
           style={[styles.articleMainContentRow]}
         />
       );
