@@ -2,7 +2,7 @@ import sharedStyles from "./shared";
 
 const styles = {
   title: {
-    ...sharedStyles.title,
+    ...sharedStyles.title
   }
 };
 

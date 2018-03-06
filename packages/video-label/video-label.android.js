@@ -16,11 +16,17 @@ const beautifyTitle = title =>
 const VideoLabel = ({ title, color }) => (
   <View style={{ flexDirection: "row", alignItems: "center" }}>
     <IconVideo height={styles.title.fontSize} fillColor={color} />
-    <Text style={[styles.title, { color, marginLeft: 5 }]}>{beautifyTitle("VIDEO")}</Text>
-    {title ? <Text style={[styles.title, { color, marginLeft: 3 }]}>|</Text> : null}
+    <Text style={[styles.title, { color, marginLeft: 5 }]}>
+      {beautifyTitle("VIDEO")}
+    </Text>
     {title ? (
-      <Text style={[styles.title, { color, paddingLeft: 3 }]}>{beautifyTitle(title)}</Text>
-    ): null}
+      <Text style={[styles.title, { color, marginLeft: 3 }]}>|</Text>
+    ) : null}
+    {title ? (
+      <Text style={[styles.title, { color, paddingLeft: 3 }]}>
+        {beautifyTitle(title)}
+      </Text>
+    ) : null}
   </View>
 );
 
@@ -30,6 +36,7 @@ VideoLabel.propTypes = {
 };
 
 VideoLabel.defaultProps = {
+  title: "",
   color: "black"
 };
 
