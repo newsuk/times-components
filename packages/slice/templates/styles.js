@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 export default {
   container: {
@@ -11,7 +12,7 @@ export default {
   },
   childContainer: {
     borderStyle: "solid",
-    borderBottomColor: "#dbdbdb",
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
     width: "100%"
   },
