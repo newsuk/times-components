@@ -2,6 +2,6 @@
 
 import shared from "../shared";
 
-describe("Icons test on android: ", () => {
+describe("Icons test on android", () => {
   shared();
 });

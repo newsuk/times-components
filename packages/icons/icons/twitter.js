@@ -1,6 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { colours } from "@times-components/styleguide";
 import Svg, { Path } from "svgs";
+import iconPropTypes from "./proptypes";
 
 const IconTwitter = ({ width, height, fillColour }) => (
   <Svg width={width} height={height} viewBox="-354.2 -279.4 750 600">
@@ -16,14 +17,10 @@ const IconTwitter = ({ width, height, fillColour }) => (
   </Svg>
 );
 
-IconTwitter.propTypes = {
-  fillColour: PropTypes.string,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired
-};
+IconTwitter.propTypes = iconPropTypes;
 
 IconTwitter.defaultProps = {
-  fillColour: "#006699"
+  fillColour: colours.functional.azureBlue
 };
 
 export default IconTwitter;
