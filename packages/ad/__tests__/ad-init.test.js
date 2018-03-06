@@ -50,21 +50,4 @@ describe("AdInit", () => {
       new Error("init() has already been called")
     );
   });
-
-  it.skip("Dispatches the renderComplete event when GPT initialises", () => {
-    // TODO
-  });
-
-  it.skip("Initialises services in parallel", () => {
-    // TODO test that GPT, grapeshot and prebidding are initialised in parallel
-    // TODO test promise chain using promise-mock to mock out services e.g. grapeshot.setupAsync
-  });
-
-  it.skip("Displays ads after all services are initialised", () => {
-    // TODO test promise chain using promise-mock to mock out services e.g. grapeshot.setupAsync
-  });
-
-  it.skip("Applies prebidding targeting after all services are initialised", () => {
-    // TODO test promise chain using promise-mock
-  });
 });

@@ -44,7 +44,6 @@ class Ad extends Component {
     const data = {
       config: this.config,
       prebidConfig: this.prebidConfig,
-      // TODO
       slots: this.slots,
       pos: this.props.pos,
       networkId: adConfig.networkId,
