@@ -17,21 +17,25 @@ const adInit = args => {
         }
         scriptsInserted[scriptUri] = true;
         return new Promise((resolve, reject) => {
-          const script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = scriptUri;
-          script.defer = true;
-          document.head.appendChild(script);
-          script.addEventListener("load", () => {
-            resolve();
-          });
-          script.addEventListener("error", () => {
-            reject(new Error(`load error for ${scriptUri}`));
-          });
+          this.createScriptElement(
+            scriptUri,
+            () => { resolve(); },
+            () => { reject(new Error(`load error for ${scriptUri}`)); }
+          )
           if (timeout) {
             setTimeout(reject, timeout, new Error(`timeout for ${scriptUri}`));
           }
         });
+      },
+
+      createScriptElement(scriptUri, onLoad, onError) {
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = scriptUri;
+        script.defer = true;
+        document.head.appendChild(script);
+        script.addEventListener("load", onLoad);
+        script.addEventListener("error", onError);
       }
     },
 
