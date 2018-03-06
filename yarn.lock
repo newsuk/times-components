@@ -355,20 +355,6 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/responsive-styles@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.4.1.tgz#e212a625e8a45b984baa93e343563d796f988336"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "2.2.3"
-
-"@times-components/styleguide@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.3.5.tgz#83a1047d0d0057f39c9263685bf2e09fa7c9ce64"
-  dependencies:
-    "@times-components/responsive-styles" "0.4.1"
-    prop-types "15.6.0"
-
 "@types/async@2.0.46":
   version "2.0.46"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"
