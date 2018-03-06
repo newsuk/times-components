@@ -1,6 +1,8 @@
+import { fonts } from "@times-components/styleguide";
+
 const styles = {
   title: {
-    fontFamily: "GillSansMTStd-Medium",
+    fontFamily: fonts.supporting,
     fontSize: 12,
     lineHeight: 12,
     fontWeight: "400",
