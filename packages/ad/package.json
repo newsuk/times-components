@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.10.4",
+  "version": "0.10.6",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -41,7 +41,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-a11y": "3.3.14",
     "@storybook/addon-actions": "3.3.14",
     "@storybook/react-native": "3.3.14",
     "@times-components/eslint-config-thetimes": "0.1.3",
@@ -60,8 +59,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.3.5",
-    "@times-components/watermark": "0.3.9",
+    "@times-components/styleguide": "0.3.7",
+    "@times-components/watermark": "0.3.11",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },

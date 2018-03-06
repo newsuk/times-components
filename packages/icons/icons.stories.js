@@ -2,9 +2,10 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
+import { fonts } from "@times-components/styleguide";
 
 const borderWidth = 1;
-const borderColor = "#d3d3d3";
+const borderColor = "#D3D3D3";
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Icons", module).add("Icons", () => (
+storiesOf("Primitives/Icons", module).add("Icons", () => (
   <View style={styles.wrapper}>
     <View style={styles.icon}>
       <IconDiamond width={50} height={50} fillColour="#4D4D4D" />

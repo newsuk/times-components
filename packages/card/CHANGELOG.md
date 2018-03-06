@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.10"></a>
+## [0.19.10](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.9...@times-components/card@0.19.10) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.19.9"></a>
+## [0.19.9](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.8...@times-components/card@0.19.9) (2018-03-05)
+
+
+### Bug Fixes
+
+* bug fix the Card loading state layout ([#699](https://github.com/newsuk/times-components/issues/699)) ([945b020](https://github.com/newsuk/times-components/commit/945b020))
+
+
+
+
+<a name="0.19.8"></a>
+## [0.19.8](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.7...@times-components/card@0.19.8) (2018-03-02)
+
+
+### Bug Fixes
+
+* release variant of storybooknative app ([#691](https://github.com/newsuk/times-components/issues/691)) ([708659e](https://github.com/newsuk/times-components/commit/708659e))
+
+
+
+
 <a name="0.19.7"></a>
 ## [0.19.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.6...@times-components/card@0.19.7) (2018-03-01)
 

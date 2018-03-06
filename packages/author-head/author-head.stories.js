@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
-import { checkA11y } from "@storybook/addon-a11y";
 import storybookReporter from "@times-components/tealium/storybook";
 import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
@@ -21,7 +20,6 @@ const extras = {
 };
 
 storiesOf("Composed/AuthorHead", module)
-  .addDecorator(checkA11y)
   .addDecorator(LateralSpacingDecorator)
   .add("Full Header", () => <AuthorHead {...data} {...extras} />)
   .add("No profile picture", () => {

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.45.3"></a>
+## [0.45.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.45.2...@times-components/author-profile@0.45.3) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.45.2"></a>
+## [0.45.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.45.1...@times-components/author-profile@0.45.2) (2018-03-05)
+
+
+### Bug Fixes
+
+* bug fix the Card loading state layout ([#699](https://github.com/newsuk/times-components/issues/699)) ([945b020](https://github.com/newsuk/times-components/commit/945b020))
+
+
+
+
+<a name="0.45.1"></a>
+## [0.45.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.45.0...@times-components/author-profile@0.45.1) (2018-03-02)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.45.0"></a>
 # [0.45.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.43.7...@times-components/author-profile@0.45.0) (2018-03-01)
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { checkA11y } from "@storybook/addon-a11y";
 import BrightcoveVideo from "./brightcove-video";
 
 const policyKey =
@@ -10,9 +9,9 @@ const videoId = "4084164751001";
 const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
-storiesOf("Primitives/BrightcoveVideo/Web", module)
-  .addDecorator(checkA11y)
-  .add("Launcher with custom play icon defined by emoji", () => {
+storiesOf("Primitives/BrightcoveVideo/Web", module).add(
+  "Launcher with custom play icon defined by emoji",
+  () => {
     const playIconEmoji = () => (
       <span role="img" aria-label="play-video">
         ▶️
@@ -28,4 +27,5 @@ storiesOf("Primitives/BrightcoveVideo/Web", module)
         playIcon={playIconEmoji()}
       />
     );
-  });
+  }
+);
