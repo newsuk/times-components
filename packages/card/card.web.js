@@ -53,7 +53,7 @@ class CardComponent extends Component {
                 />
               </View>
             )}
-          <View style={styles.contentClass} className={contentClass}>
+          <View style={styles.contentContainer} className={contentClass}>
             {children}
           </View>
         </View>

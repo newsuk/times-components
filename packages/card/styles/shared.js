@@ -14,7 +14,7 @@ export default StyleSheet.create({
   imageContainer: {
     marginBottom: 10
   },
-  contentClass: {
+  contentContainer: {
     flex: 1,
     minWidth: 360
   },

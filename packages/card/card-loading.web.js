@@ -16,7 +16,7 @@ const Loading = ({ aspectRatio, contentClass, imgClass, showImage }) => (
         <Image aspectRatio={aspectRatio} />
       </View>
     )}
-    <View style={styles.contentClass} className={contentClass}>
+    <View style={styles.contentContainer} className={contentClass}>
       <Gradient style={[styles.headerContainer]} degrees={264} />
       <Gradient style={[styles.textContainer]} degrees={267} />
       <Gradient style={[styles.textContainer]} degrees={267} />
