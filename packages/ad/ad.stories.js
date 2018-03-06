@@ -12,12 +12,13 @@ import slotTargeting from "./fixtures/slot-options.json";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
-const adConfig = pos => (Object.assign(
+const adConfig = pos =>
+  Object.assign(
     {},
     adConfigBase,
     { pageTargeting },
     { slotTargeting: slotTargeting[pos] }
-  ));
+  );
 let DOMContext;
 if (window.document) {
   DOMContext = WebDOMContext;
@@ -38,7 +39,7 @@ const withOpenInNewWindow = children => {
         Open in new window
       </a>
     );
-    return (
+  return (
     <AdComposer adConfig={adConfig(children.props.pos)}>
       <View>
         {link}
@@ -133,17 +134,11 @@ storiesOf("Advertisement", module)
       <DOMContext
         data={{ message: "data value" }}
         init={args => {
-          const {
-            el,
-            data: { message },
-            window,
-            eventCallback
-          } = args;
+          const { el, data: { message }, window, eventCallback } = args;
           return {
             init() {
-              const worked =
-              message === "data value";
-            el.innerHTML = `
+              const worked = message === "data value";
+              el.innerHTML = `
               <div style="
                   width: 100%;
                   height: 100%;
@@ -160,19 +155,21 @@ storiesOf("Advertisement", module)
                 <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
               </div>
             `;
-            el
-              .getElementsByClassName("renderComplete")[0]
-              .addEventListener("click", () => { eventCallback("renderComplete") });
-            el
-              .getElementsByClassName("logMessages")[0]
-              .addEventListener("click", () => {
-                eventCallback("log", "message 1");
-                eventCallback("log", "message 2");
-                eventCallback("log", "message 3");
-                eventCallback("log", "message 4");
-              });
+              el
+                .getElementsByClassName("renderComplete")[0]
+                .addEventListener("click", () => {
+                  eventCallback("renderComplete");
+                });
+              el
+                .getElementsByClassName("logMessages")[0]
+                .addEventListener("click", () => {
+                  eventCallback("log", "message 1");
+                  eventCallback("log", "message 2");
+                  eventCallback("log", "message 3");
+                  eventCallback("log", "message 4");
+                });
             }
-          }
+          };
         }}
         onRenderComplete={action("onRenderComplete")}
         width={300}

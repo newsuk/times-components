@@ -81,7 +81,6 @@ export const makeAdInitMocks = () => {
     eventCallback: jest.fn()
   };
 
-
   return {
     mock: {
       document,
@@ -91,7 +90,7 @@ export const makeAdInitMocks = () => {
       sizeMapping,
       googletag,
       processGoogletagCommandQueue,
-      slotConfig,
+      slotConfig
     },
     initOptions
   };
@@ -99,8 +98,8 @@ export const makeAdInitMocks = () => {
 
 export const adInit = (...args) => {
   const result = adInitOriginal(...args);
-  jest.spyOn(result.utils, "loadScript").mockImplementation(
-    () => Promise.resolve()
-  );
+  jest
+    .spyOn(result.utils, "loadScript")
+    .mockImplementation(() => Promise.resolve());
   return result;
-}
+};

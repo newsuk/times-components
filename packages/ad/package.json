@@ -51,13 +51,14 @@
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "jsdom": "^9.12.0",
+    "lodash.merge": "4.6.1",
     "prettier": "1.8.2",
-    "promise-mock": "2.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.53.3",
     "react-stateful-fn": "0.1.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "synchronous-promise": "2.0.4"
   },
   "dependencies": {
     "@times-components/styleguide": "0.3.4",

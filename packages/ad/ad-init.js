@@ -83,7 +83,7 @@ const adInit = args => {
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
-              adUnitPath
+                adUnitPath
               } could not be defined, probably it was already defined`
             );
           }
@@ -131,7 +131,10 @@ const adInit = args => {
             "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4812861170.js"
           )
         ];
-        if (prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId) {
+        if (
+          prebidConfig.bidders.amazon &&
+          prebidConfig.bidders.amazon.accountId
+        ) {
           scriptPromises.push(
             utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js")
           );
@@ -140,7 +143,8 @@ const adInit = args => {
       },
 
       requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
-        const amazonAccountID = prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
+        const amazonAccountID =
+          prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
         window.pbjs.bidderSettings = prebidConfig.bidderSettings;
@@ -175,7 +179,7 @@ const adInit = args => {
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-          setDisplayBids() { },
+          setDisplayBids() {},
           targetingKeys() {
             return [];
           },
@@ -326,7 +330,6 @@ const adInit = args => {
     },
 
     init() {
-
       if (initCalled) {
         throw new Error("init() has already been called");
       }
