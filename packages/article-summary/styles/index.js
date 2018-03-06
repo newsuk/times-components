@@ -1,3 +1,11 @@
 import sharedStyles from "./shared";
 
-export default sharedStyles;
+const styles = {
+  ...sharedStyles,
+  headline: {
+    ...sharedStyles.headline,
+    fontWeight: "900"
+  }
+};
+
+export default styles;
