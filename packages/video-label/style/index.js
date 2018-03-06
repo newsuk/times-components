@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { fonts } from "@times-components/styleguide";
 
 const styles = {
@@ -11,6 +12,13 @@ const styles = {
     margin: 0,
     position: "relative",
     top: 2
+=======
+import sharedStyles from "./shared";
+
+const styles = {
+  title: {
+    ...sharedStyles.title,
+>>>>>>> feat: implements video-label
   }
 };
 
