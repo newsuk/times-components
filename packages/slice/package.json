@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Slice",
   "main": "index",
   "scripts": {
