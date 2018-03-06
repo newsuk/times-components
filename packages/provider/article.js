@@ -19,12 +19,10 @@ export const query = gql`
             ...imageProps
           }
         }
-
         ... on Image {
           ...imageProps
         }
       }
-
       relatedArticles {
         id
         headline
@@ -67,7 +65,6 @@ export const query = gql`
       }
     }
   }
-
 
   fragment imageProps on Image {
     id
