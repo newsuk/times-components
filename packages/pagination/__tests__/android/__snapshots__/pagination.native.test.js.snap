@@ -41,10 +41,10 @@ exports[`Pagination on Android renders correctly 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -172,10 +172,10 @@ exports[`Pagination on Android renders next link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -303,10 +303,10 @@ exports[`Pagination on Android renders prev and next link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -507,10 +507,10 @@ exports[`Pagination on Android renders prev link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -638,10 +638,10 @@ exports[`Pagination on Android renders results message 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -741,10 +741,10 @@ exports[`Pagination on Android renders with hidden results 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,

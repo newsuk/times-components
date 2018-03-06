@@ -567,10 +567,10 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -1632,10 +1632,10 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -2163,10 +2163,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -2924,10 +2924,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -3185,10 +3185,10 @@ exports[`AuthorProfile test on ios renders profile content empty 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -3237,10 +3237,10 @@ exports[`AuthorProfile test on ios renders profile content empty 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -3780,10 +3780,10 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -4133,10 +4133,10 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -4496,10 +4496,10 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -5485,10 +5485,10 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -5922,10 +5922,10 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -6629,10 +6629,10 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,

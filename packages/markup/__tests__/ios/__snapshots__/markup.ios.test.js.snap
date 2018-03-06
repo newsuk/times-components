@@ -175,7 +175,7 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with a pull quot
             "marginTop": 0,
           },
           Object {
-            "color": "#13354e",
+            "color": "#696969",
           },
         ]
       }
