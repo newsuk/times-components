@@ -160,11 +160,11 @@ const adInit = args => {
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
         window.pbjs.bidderSettings = prebidConfig.bidderSettings;
-        // Enable Amazon Bidding
         if (amazonAccountID) {
           this.setupApstag(amazonAccountID, prebidConfig.timeout);
           // FIXME: at the moment we configure the amazon bids with just one slot (the first one)
           // because we call init just one time (window.initCalled)
+          // to be fixed in REPLAT-1370
           biddingActions.push(
             this.scheduleRequestAmazonBids(
               slots,
