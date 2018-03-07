@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     right: 0
   },
   arrow: {
-    color: colours.functional.cta,
+    color: colours.functional.action,
     fontFamily: fonts.supporting,
     fontSize: 14
   }

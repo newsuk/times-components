@@ -12,7 +12,7 @@ import {
 
 const linkStyles = StyleSheet.create({
   link: {
-    color: colours.functional.cta
+    color: colours.functional.action
   }
 });
 

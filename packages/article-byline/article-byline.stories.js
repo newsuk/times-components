@@ -16,7 +16,7 @@ const bylineStyles = {
 
 const bylineLinkStyles = {
   link: {
-    color: colours.functional.cta,
+    color: colours.functional.action,
     textDecorationLine: "none"
   }
 };

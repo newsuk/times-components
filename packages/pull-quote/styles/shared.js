@@ -24,7 +24,7 @@ const sharedStyles = {
     lineHeight: 13
   },
   link: {
-    color: colours.functional.cta,
+    color: colours.functional.action,
     fontFamily: fonts.supporting,
     textDecorationLine: "none",
     fontSize: 13,

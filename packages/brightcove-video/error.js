@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     flexDirection: "row",
-    backgroundColor: colours.functional.cta,
+    backgroundColor: colours.functional.action,
     paddingVertical: 12,
     paddingHorizontal: 16,
     borderRadius: 2

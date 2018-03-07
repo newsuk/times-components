@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   twitterLink: {
     fontSize: 15,
     fontFamily: fonts.supporting,
-    color: colours.functional.cta,
+    color: colours.functional.action,
     textDecorationLine: "none",
     paddingLeft: 5
   }

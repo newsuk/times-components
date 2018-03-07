@@ -48,7 +48,7 @@ storiesOf("Primitives/Link", module)
   ))
   .add("TextLink with styles", () => (
     <TextLink
-      style={{ color: colours.functional.cta }}
+      style={{ color: colours.functional.action }}
       url="https://thetimes.co.uk/"
       onPress={action("onPress")}
     >

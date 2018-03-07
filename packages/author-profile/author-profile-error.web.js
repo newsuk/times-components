@@ -103,7 +103,7 @@ const AuthorProfileError = ({ refetch }) => (
         <Button
           onPress={refetch}
           title="Retry"
-          color={colours.functional.cta}
+          color={colours.functional.action}
           accessibilityLabel="Refresh the page"
         />
       </ButtonContainer>

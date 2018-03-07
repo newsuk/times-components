@@ -9,7 +9,7 @@ describe("Link tests on Web", () => {
   it("renders with responsive styles", () => {
     const responsiveLinkStyles = {
       base: `
-      color: ${colours.functional.cta};
+      color: ${colours.functional.action};
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;
