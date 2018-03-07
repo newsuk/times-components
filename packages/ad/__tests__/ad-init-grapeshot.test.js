@@ -7,7 +7,7 @@ describe("AdInit.grapeshot", () => {
   let init;
 
   beforeEach(() => {
-    ({ mock, initOptions }) = makeAdInitMocks();
+    ({ mock, initOptions } = makeAdInitMocks());
     init = adInit(initOptions);
   });
 

@@ -16,7 +16,7 @@ describe("AdInit.prebid", () => {
   let initOptions;
 
   beforeEach(() => {
-    ({ mock, initOptions }) = makeAdInitMocks();
+    ({ mock, initOptions } = makeAdInitMocks());
   });
 
   it("perform bidding request for web", () => {
