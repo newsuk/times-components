@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.21.11",
+  "version": "0.21.12",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "markup",
   "scripts": {
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@times-components/ad": "0.10.6",
-    "@times-components/pull-quote": "0.2.24",
+    "@times-components/pull-quote": "0.2.25",
     "@times-components/styleguide": "0.3.7",
     "prop-types": "15.6.0"
   },
