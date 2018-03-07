@@ -8,8 +8,8 @@ describe("AdInit.utils", () => {
   jest.useFakeTimers();
 
   beforeEach(() => {
-    ({ mock, initOptions } = makeAdInitMocks());
-    ({ utils } = adInit(initOptions));
+    ({ mock, initOptions }) = makeAdInitMocks();
+    ({ utils }) = adInit(initOptions);
   });
 
   it("Adds a script tag to the DOM head", () => {
