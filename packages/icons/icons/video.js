@@ -6,8 +6,9 @@ import iconPropTypes from "./proptypes";
 const viewBox =
   "0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895";
 
+const ratio = 43 / 25;
 const IconVideo = ({ width, height, fillColour }) => (
-  <Svg width={width} height={height} viewBox={viewBox}>
+  <Svg width={width || height * ratio} height={height} viewBox={viewBox}>
     <Rect
       fill={fillColour}
       x="0.154639175"

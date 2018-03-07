@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video Label test on ios renders VideoLabel 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <svg
+    height={12}
+    style={Object {}}
+    viewBox="0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895"
+    width={20.64}
+  >
+    <rect
+      fill="#1D1D1B"
+      height="13.5721404"
+      style={Object {}}
+      width="15.4550103"
+      x="0.154639175"
+      y="0.139754386"
+    />
+    <polygon
+      fill="#1D1D1B"
+      points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
+      style={Object {}}
+    />
+    <polygon
+      fill="#1D1D1B"
+      points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
+      style={Object {}}
+    />
+  </svg>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "margin": 0,
+          "padding": 0,
+          "position": "relative",
+          "top": 2,
+        },
+        Object {
+          "color": "#008347",
+          "marginLeft": 5,
+        },
+      ]
+    }
+  >
+    VIDEO
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "margin": 0,
+          "padding": 0,
+          "position": "relative",
+          "top": 2,
+        },
+        Object {
+          "marginLeft": 5,
+        },
+      ]
+    }
+  >
+    |
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "lineHeight": 12,
+          "margin": 0,
+          "padding": 0,
+          "position": "relative",
+          "top": 2,
+        },
+        Object {
+          "color": "#008347",
+          "paddingLeft": 5,
+        },
+      ]
+    }
+  >
+    SWIMMING
+  </Text>
+</View>
+`;
