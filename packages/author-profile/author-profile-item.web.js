@@ -13,15 +13,6 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 
 const CardWrapper = withResponsiveStyles(View, {
-  base: () => `
-    .authorProfileImage {
-      margin-bottom: 10px;
-      min-width: 100%;
-    };
-    .authorProfileContent {
-      min-width: 100%;
-    };
-  `,
   mediumUp: () => `
     .authorProfileImage {
       min-width: auto;
@@ -84,8 +75,8 @@ const AuthorProfileItem = item => {
       <View style={[styles.container, style]}>
         <CardWrapper>
           <Card
-            contentClass="authorProfileContent"
-            imgClass="authorProfileImage"
+            contentContainerClass="authorProfileContent"
+            imageContainerClass="authorProfileImage"
             isLoading={isLoading}
             imageRatio={imageRatio}
             showImage={showImage}
@@ -134,8 +125,8 @@ const AuthorProfileItem = item => {
       <View style={[styles.container, style]}>
         <CardWrapper>
           <Card
-            contentClass="authorProfileContent"
-            imgClass="authorProfileImage"
+            contentContainerClass="authorProfileContent"
+            imageContainerClass="authorProfileImage"
             image={imageUri ? { uri: imageUri } : null}
             imageRatio={imageRatio}
             imageSize={imageSize}
