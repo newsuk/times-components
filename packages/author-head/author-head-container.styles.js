@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     paddingBottom: 40,
-    backgroundColor: colours.functional.background
+    backgroundColor: colours.functional.backgroundPrimary
   }
 });
 

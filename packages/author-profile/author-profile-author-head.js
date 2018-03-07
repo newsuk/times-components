@@ -7,7 +7,7 @@ import { StyleSheet, View } from "react-native";
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: colours.functional.background,
+    backgroundColor: colours.functional.backgroundPrimary,
     minHeight: 264,
     width: "100%"
   },

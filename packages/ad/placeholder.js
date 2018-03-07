@@ -14,7 +14,7 @@ const getStyles = (width, height) =>
     wrapper: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: colours.functional.gradientStart,
+      backgroundColor: colours.functional.backgroundSecondary,
       width,
       height,
       borderColor: colours.functional.keyline,
@@ -24,7 +24,7 @@ const getStyles = (width, height) =>
     placeholderText: {
       fontSize: 11,
       fontFamily: fonts.body,
-      backgroundColor: colours.functional.gradientStart,
+      backgroundColor: colours.functional.backgroundSecondary,
       color: colours.functional.secondary,
       borderColor: colours.functional.keyline,
       borderWidth: 1,

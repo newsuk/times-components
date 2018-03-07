@@ -10,7 +10,7 @@ const Watermark = ({ width, height }) => (
       width,
       borderColor: colours.functional.keyline,
       borderWidth: StyleSheet.hairlineWidth,
-      backgroundColor: colours.functional.gradientEnd
+      backgroundColor: colours.functional.backgroundTertiary
     }}
   />
 );

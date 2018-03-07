@@ -40,8 +40,8 @@ const Gradient = ({ degrees, children, style }) => {
         end={end}
         locations={[0.0, 1.0]}
         colors={[
-          colours.functional.gradientStart,
-          colours.functional.gradientEnd
+          colours.functional.backgroundSecondary,
+          colours.functional.backgroundTertiary
         ]}
         style={[styles.container]}
       >

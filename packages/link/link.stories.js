@@ -11,7 +11,7 @@ const BigSquare = props => (
     style={{
       width: 100,
       height: 100,
-      backgroundColor: colours.functional.gradientEnd
+      backgroundColor: colours.functional.backgroundTertiary
     }}
     {...props}
   />
@@ -25,7 +25,7 @@ storiesOf("Primitives/Link", module)
         style={{
           width: 100,
           height: 100,
-          backgroundColor: colours.functional.gradientEnd
+          backgroundColor: colours.functional.backgroundTertiary
         }}
       />
     </Link>
