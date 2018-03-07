@@ -24,7 +24,7 @@ const listViewScrollRenderAheadDistance = 10;
 class ArticlePage extends React.Component {
   static renderRow(rowData) {
     switch (rowData.type) {
-      case "leadAsset":
+      case "leadAsset": {
         const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
         const aspectRatio = ratioWidth / ratioHeight;
         return (
@@ -32,8 +32,9 @@ class ArticlePage extends React.Component {
             <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
           </View>
         );
+      }
 
-      case "header":
+      case "header": {
         const { headline, flags, standfirst, label, isVideo } = rowData.data;
         return (
           <ArticleHeader
@@ -46,8 +47,9 @@ class ArticlePage extends React.Component {
             style={[styles.articleMainContentRow]}
           />
         );
+      }
 
-      case "middleContainer":
+      case "middleContainer": {
         const { byline, publishedTime, publicationName } = rowData.data;
         return (
           <ArticleMeta
@@ -57,10 +59,15 @@ class ArticlePage extends React.Component {
             publicationName={publicationName}
           />
         );
-      case "articleBodyRow":
+      }
+
+      case "articleBodyRow": {
         return <ArticleRow content={rowData} />;
-      default:
+      }
+
+      default: {
         return null;
+      }
     }
   }
 
