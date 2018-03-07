@@ -16,9 +16,7 @@ describe("AdInit.prebid", () => {
   let initOptions;
 
   beforeEach(() => {
-    const adInitMocks = makeAdInitMocks();
-    mock = adInitMocks.mock; // eslint-disable-line prefer-destructuring
-    initOptions = adInitMocks.initOptions; // eslint-disable-line prefer-destructuring
+    ({ mock, initOptions } = makeAdInitMocks());
   });
 
   it("perform bidding request for web", () => {
