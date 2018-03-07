@@ -2,11 +2,15 @@ import PropTypes from "prop-types";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 
-const ArticlePrototype = {
+const articlePropTypes = {
   article: PropTypes.shape({
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
   })
 };
 
-export default ArticlePrototype;
+const articleDefaultProps = {
+  article: null
+};
+
+export { articlePropTypes, articleDefaultProps };
