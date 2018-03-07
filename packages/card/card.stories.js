@@ -17,8 +17,8 @@ storiesOf("Composed/Card", module)
   .add("Loading", () => (
     <Card
       {...cardProps}
-      contentClass="exampleContent"
-      imgClass="exampleImage"
+      contentContainerClass="exampleCardContent"
+      imageContainerClass="exampleCardImage"
       isLoading
       showImage={boolean("Show Image?", true, "")}
     >
@@ -28,8 +28,8 @@ storiesOf("Composed/Card", module)
   .add("Default", () => (
     <Card
       {...cardProps}
-      contentClass="exampleContent"
-      imgClass="exampleImage"
+      contentContainerClass="exampleCardContent"
+      imageContainerClass="exampleCardImage"
       showImage={boolean("Show Image?", true, "")}
     >
       <View

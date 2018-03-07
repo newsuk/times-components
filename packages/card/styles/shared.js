@@ -2,18 +2,19 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   cardContainer: {
-    flex: 1,
+    display: "flex",
+    alignItems: "flex-start",
     flexDirection: "row",
     flexWrap: "wrap"
   },
-  imgContainer: {
-    flex: 1
-  },
   imageContainer: {
-    marginBottom: 10
+    flex: 1,
+    marginBottom: 10,
+    minWidth: "100%"
   },
   contentContainer: {
-    flex: 1
+    flex: 1,
+    minWidth: "100%"
   },
   headerContainer: {
     height: 24,

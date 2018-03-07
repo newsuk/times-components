@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
 
 export const loadingPropTypes = {
-  aspectRatio: PropTypes.number,
+  contentContainerClass: PropTypes.string,
+  imageContainerClass: PropTypes.string,
+  imageRatio: PropTypes.number,
   showImage: PropTypes.bool
 };
 
 export const loadingDefaultProps = {
-  aspectRatio: 3 / 2,
+  contentContainerClass: "",
+  imageContainerClass: "",
+  imageRatio: 3 / 2,
   showImage: false
 };
