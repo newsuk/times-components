@@ -3,12 +3,12 @@ import { makeAdInitMocks } from "./ad-init-mocks";
 
 describe("AdInit.grapeshot", () => {
   let mock;
+  let initOptions;
   let init;
 
   beforeEach(() => {
-    const adInitMocks = makeAdInitMocks();
-    mock = adInitMocks.mock; // eslint-disable-line prefer-destructuring
-    init = adInit(adInitMocks.initOptions); // eslint-disable-line prefer-destructuring
+    ({ mock, initOptions } = makeAdInitMocks());
+    init = adInit(initOptions);
   });
 
   const mockGrapeshotResult = ["mock", "grapeshot", "result"];
