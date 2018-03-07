@@ -3,7 +3,7 @@ import { colours } from "@times-components/styleguide";
 import Svg, { Path } from "svgs";
 import iconPropTypes from "./proptypes";
 
-const ratio = 750 / 600;
+const ratio = 75 / 60;
 const IconTwitter = ({ width, height, fillColour }) => (
   <Svg
     width={width || height * ratio}
