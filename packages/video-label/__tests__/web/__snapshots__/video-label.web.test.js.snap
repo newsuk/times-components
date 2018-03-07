@@ -57,7 +57,7 @@ exports[`Video Label test on web renders VideoLabel 1`] = `
         "fontWeight": "400",
         "letterSpacing": "1.2px",
         "lineHeight": "12px",
-        "marginLeft": "3px",
+        "marginLeft": "5px",
         "top": "2px",
       }
     }
@@ -75,12 +75,12 @@ exports[`Video Label test on web renders VideoLabel 1`] = `
         "fontWeight": "400",
         "letterSpacing": "1.2px",
         "lineHeight": "12px",
-        "paddingLeft": "3px",
+        "paddingLeft": "5px",
         "top": "2px",
       }
     }
   >
-    swimming
+    SWIMMING
   </div>
 </div>
 `;

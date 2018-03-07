@@ -20,10 +20,10 @@ const VideoLabel = ({ title, color }) => (
       {beautifyTitle("VIDEO")}
     </Text>
     {title ? (
-      <Text style={[styles.title, { color, marginLeft: 3 }]}>|</Text>
+      <Text style={[styles.title, { color, marginLeft: 5 }]}>|</Text>
     ) : null}
     {title ? (
-      <Text style={[styles.title, { color, paddingLeft: 3 }]}>
+      <Text style={[styles.title, { color, paddingLeft: 5 }]}>
         {beautifyTitle(title)}
       </Text>
     ) : null}

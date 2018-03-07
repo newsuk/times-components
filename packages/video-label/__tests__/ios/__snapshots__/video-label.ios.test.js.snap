@@ -78,7 +78,7 @@ exports[`Video Label test on ios renders VideoLabel 1`] = `
           "top": 2,
         },
         Object {
-          "marginLeft": 3,
+          "marginLeft": 5,
         },
       ]
     }
@@ -104,12 +104,12 @@ exports[`Video Label test on ios renders VideoLabel 1`] = `
         },
         Object {
           "color": "#008347",
-          "paddingLeft": 3,
+          "paddingLeft": 5,
         },
       ]
     }
   >
-    swimming
+    SWIMMING
   </Text>
 </View>
 `;

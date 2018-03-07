@@ -79,7 +79,7 @@ exports[`Video Label test on android renders VideoLabel 1`] = `
         },
         Object {
           "color": "#008347",
-          "marginLeft": 3,
+          "marginLeft": 5,
         },
       ]
     }
@@ -105,7 +105,7 @@ exports[`Video Label test on android renders VideoLabel 1`] = `
         },
         Object {
           "color": "#008347",
-          "paddingLeft": 3,
+          "paddingLeft": 5,
         },
       ]
     }

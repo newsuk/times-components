@@ -8,9 +8,9 @@ const VideoLabel = ({ title, color }) => (
   <View style={{ flexDirection: "row", alignItems: "center" }}>
     <IconVideo height={styles.title.fontSize} fillColor={color} />
     <Text style={[styles.title, { color, marginLeft: 5 }]}>VIDEO</Text>
-    {title ? <Text style={[styles.title, { marginLeft: 3 }]}>|</Text> : null}
+    {title ? <Text style={[styles.title, { marginLeft: 5 }]}>|</Text> : null}
     {title ? (
-      <Text style={[styles.title, { color, paddingLeft: 3 }]}>{title}</Text>
+      <Text style={[styles.title, { color, paddingLeft: 5 }]}>{title.toUpperCase()}</Text>
     ) : null}
   </View>
 );
