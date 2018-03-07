@@ -7,7 +7,7 @@ describe("AdInit.gpt", () => {
   let initOptions;
 
   beforeEach(() => {
-    ({ mock, initOptions } = makeAdInitMocks());
+    ({ mock, initOptions }) = makeAdInitMocks();
   });
 
   it("configures googletag on page init", () => {

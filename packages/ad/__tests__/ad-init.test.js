@@ -8,7 +8,7 @@ describe("AdInit", () => {
   let initOptions;
 
   beforeEach(() => {
-    ({ initOptions } = makeAdInitMocks());
+    ({ initOptions }) = makeAdInitMocks();
   });
 
   it("is serialisable", () => {
