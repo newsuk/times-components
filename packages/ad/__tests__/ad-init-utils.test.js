@@ -3,13 +3,13 @@ import adInit from "../ad-init";
 
 describe("AdInit.utils", () => {
   let mock;
+  let initOptions;
   let utils;
   jest.useFakeTimers();
 
   beforeEach(() => {
-    const adInitMocks = makeAdInitMocks();
-    mock = adInitMocks.mock; // eslint-disable-line prefer-destructuring
-    utils = adInit(adInitMocks.initOptions).utils; // eslint-disable-line prefer-destructuring
+    ({ mock, initOptions } = makeAdInitMocks());
+    ({ utils } = adInit(initOptions));
   });
 
   it("Adds a script tag to the DOM head", () => {

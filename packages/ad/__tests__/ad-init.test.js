@@ -8,7 +8,7 @@ describe("AdInit", () => {
   let initOptions;
 
   beforeEach(() => {
-    initOptions = makeAdInitMocks().initOptions; // eslint-disable-line prefer-destructuring
+    ({ initOptions } = makeAdInitMocks());
   });
 
   it("is serialisable", () => {
