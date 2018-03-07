@@ -6,7 +6,7 @@ import { CenteredDecorator } from "@times-components/storybook";
 import { colours } from "@times-components/styleguide";
 import Link, { TextLink } from "./link";
 
-const BigGreySquare = props => (
+const BigSquare = props => (
   <View
     style={{
       width: 100,
@@ -38,7 +38,7 @@ storiesOf("Primitives/Link", module)
         action("onPress")(e);
       }}
     >
-      <BigGreySquare />
+      <BigSquare />
     </Link>
   ))
   .add("TextLink", () => (

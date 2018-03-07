@@ -74,7 +74,7 @@ const ExclusiveArticleFlag = () => (
   />
 );
 const SponsoredArticleFlag = () => (
-  <ArticleFlag title="sponsored" color={colours.functional.ternary} />
+  <ArticleFlag title="sponsored" color={colours.functional.tertiary} />
 );
 
 export default ArticleFlag;

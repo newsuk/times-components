@@ -13,7 +13,7 @@ module.exports = () => {
         <IconDiamond
           width={50}
           height={50}
-          fillColour={colours.functional.ternary}
+          fillColour={colours.functional.tertiary}
         />
       )
       .toJSON();
@@ -35,7 +35,7 @@ module.exports = () => {
         <IconTwitter
           width={50}
           height={50}
-          fillColour={colours.functional.ternary}
+          fillColour={colours.functional.tertiary}
         />
       )
       .toJSON();

@@ -3,7 +3,7 @@ const functionalColours = {
   contrast: "#FFFFFF", // Contrast to Times brand colour
   primary: "#333333", // Headlines, titles and paragraph text
   secondary: "#696969", // Bylines, dates and other auxiliary text
-  ternary: "#4D4D4D", // Sponsored article flag and icon fills
+  tertiary: "#4D4D4D", // Sponsored article flag and icon fills
   cta: "#006699", // Buttons and links
   background: "#F9F8F3", // Author profile background
   keyline: "#DBDBDB", // Keylines and borders
