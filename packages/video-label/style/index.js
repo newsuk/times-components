@@ -1,8 +1,16 @@
-import sharedStyles from "./shared";
+import { fonts } from "@times-components/styleguide";
 
 const styles = {
   title: {
-    ...sharedStyles.title
+    fontFamily: fonts.supporting,
+    fontSize: 12,
+    lineHeight: 12,
+    fontWeight: "400",
+    letterSpacing: 1.2,
+    padding: 0,
+    margin: 0,
+    position: "relative",
+    top: 2
   }
 };
 
