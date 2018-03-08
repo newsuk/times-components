@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.2"></a>
+## 0.5.2 (2018-03-08)
+
+
+### Bug Fixes
+
+* correcting app delegate to support release and dev configuration ([#676](https://github.com/newsuk/times-components/issues/676)) ([c92a460](https://github.com/newsuk/times-components/commit/c92a460))
+
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/utils@0.5.0...@times-components/utils@0.5.1) (2018-02-20)
 

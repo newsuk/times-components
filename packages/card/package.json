@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.19.10",
+  "version": "0.19.11",
   "main": "card",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@times-components/gradient": "0.5.12",
-    "@times-components/image": "1.13.27",
+    "@times-components/image": "1.13.28",
     "@times-components/responsive-styles": "0.4.2",
     "@times-components/styleguide": "0.3.7",
     "prop-types": "15.6.0",
