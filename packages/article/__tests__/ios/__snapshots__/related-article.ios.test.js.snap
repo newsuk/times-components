@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Related articles test on ios Related articles handles no related articles 1`] = `null`;
+exports[`Related articles tests on ios DEFAULT template should handle no related articles 1`] = `null`;
 
-exports[`Related articles test on ios Related articles renders single related article 1`] = `
+exports[`Related articles tests on ios DEFAULT template should render one related article 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -333,7 +333,7 @@ exports[`Related articles test on ios Related articles renders single related ar
 </RCTScrollView>
 `;
 
-exports[`Related articles test on ios Related articles renders single related article with no byline 1`] = `
+exports[`Related articles tests on ios DEFAULT template should render three related articles 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -438,962 +438,6 @@ exports[`Related articles test on ios Related articles renders single related ar
             tvParallaxProperties={undefined}
           >
             <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#f9f9f9",
-                              "#ededed",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 0,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 12,
-                          "fontWeight": "400",
-                          "letterSpacing": 1.2,
-                          "lineHeight": 12,
-                        },
-                        Object {
-                          "color": "#DB133B",
-                        },
-                      ]
-                    }
-                  >
-                    BAYEUX TAPESTRY
-                  </Text>
-                </View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontWeight": "400",
-                        "marginBottom": 5,
-                      },
-                      Object {
-                        "fontSize": 22,
-                        "lineHeight": 22,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Now for a new battle: bringing the fragile masterpiece over safely
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    
-                    Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                    ...
-                  </Text>
-                </Text>
-                <Text
-                  accessibilityLabel="datePublication"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                  testID="datePublication"
-                >
-                  Friday March 13 2015, 06:54pm
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Related articles test on ios Related articles renders single related article with no label 1`] = `
-<RCTScrollView
-  style={
-    Object {
-      "marginTop": 10,
-    }
-  }
->
-  <View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 0.5,
-          "borderStyle": "solid",
-          "borderTopColor": "#DBDBDB",
-          "borderTopWidth": 0.5,
-          "display": "flex",
-          "height": 55,
-          "justifyContent": "center",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 26,
-          }
-        }
-      >
-        Related links
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "flex-start",
-          "marginBottom": 10,
-          "marginTop": 10,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#dbdbdb",
-            "borderBottomWidth": 0.5,
-            "borderStyle": "solid",
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 10,
-                "width": "100%",
-              },
-              Object {
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
-            isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-            testID={undefined}
-            tvParallaxProperties={undefined}
-          >
-            <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#f9f9f9",
-                              "#ededed",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontWeight": "400",
-                        "marginBottom": 5,
-                      },
-                      Object {
-                        "fontSize": 22,
-                        "lineHeight": 22,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Now for a new battle: bringing the fragile masterpiece over safely
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    
-                    Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                    ...
-                  </Text>
-                </Text>
-                <Text
-                  accessibilityLabel="datePublication"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                  testID="datePublication"
-                >
-                  Friday March 13 2015, 06:54pm
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Charles Bremner, Paris | Jack Malvern
-                  </Text>
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Related articles test on ios Related articles renders single related article with no lead image 1`] = `
-<RCTScrollView
-  style={
-    Object {
-      "marginTop": 10,
-    }
-  }
->
-  <View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 0.5,
-          "borderStyle": "solid",
-          "borderTopColor": "#DBDBDB",
-          "borderTopWidth": 0.5,
-          "display": "flex",
-          "height": 55,
-          "justifyContent": "center",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 26,
-          }
-        }
-      >
-        Related links
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "flex-start",
-          "marginBottom": 10,
-          "marginTop": 10,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#dbdbdb",
-            "borderBottomWidth": 0.5,
-            "borderStyle": "solid",
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 10,
-                "width": "100%",
-              },
-              Object {
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
-            isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-            testID={undefined}
-            tvParallaxProperties={undefined}
-          >
-            <View>
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 0,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 12,
-                          "fontWeight": "400",
-                          "letterSpacing": 1.2,
-                          "lineHeight": 12,
-                        },
-                        Object {
-                          "color": "#DB133B",
-                        },
-                      ]
-                    }
-                  >
-                    BAYEUX TAPESTRY
-                  </Text>
-                </View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontWeight": "400",
-                        "marginBottom": 5,
-                      },
-                      Object {
-                        "fontSize": 22,
-                        "lineHeight": 22,
-                      },
-                      Object {},
-                    ]
-                  }
-                >
-                  Now for a new battle: bringing the fragile masterpiece over safely
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "flexWrap": "wrap",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 10,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    
-                    Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                    ...
-                  </Text>
-                </Text>
-                <Text
-                  accessibilityLabel="datePublication"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                  testID="datePublication"
-                >
-                  Friday March 13 2015, 06:54pm
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 15,
-                      "marginBottom": 5,
-                    }
-                  }
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Charles Bremner, Paris | Jack Malvern
-                  </Text>
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Related articles test on ios Related articles renders three related articles 1`] = `
-<RCTScrollView
-  style={
-    Object {
-      "marginTop": 10,
-    }
-  }
->
-  <View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 0.5,
-          "borderStyle": "solid",
-          "borderTopColor": "#DBDBDB",
-          "borderTopWidth": 0.5,
-          "display": "flex",
-          "height": 55,
-          "justifyContent": "center",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 26,
-          }
-        }
-      >
-        Related links
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "flex-start",
-          "marginBottom": 10,
-          "marginTop": 10,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#dbdbdb",
-            "borderBottomWidth": 0.5,
-            "borderStyle": "solid",
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 10,
-                "width": "100%",
-              },
-              Object {
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
-            isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-            testID={undefined}
-            tvParallaxProperties={undefined}
-          >
-            <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#f9f9f9",
-                              "#ededed",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
               <View>
                 <View
                   style={
@@ -1568,105 +612,6 @@ exports[`Related articles test on ios Related articles renders three related art
             tvParallaxProperties={undefined}
           >
             <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=996",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#f9f9f9",
-                              "#ededed",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
               <View>
                 <View
                   style={
@@ -1841,105 +786,6 @@ exports[`Related articles test on ios Related articles renders three related art
             tvParallaxProperties={undefined}
           >
             <View>
-              <View
-                style={
-                  Object {
-                    "marginBottom": 10,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=996",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#f9f9f9",
-                              "#ededed",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
               <View>
                 <View
                   style={
@@ -2067,7 +913,7 @@ exports[`Related articles test on ios Related articles renders three related art
 </RCTScrollView>
 `;
 
-exports[`Related articles test on ios Related articles renders two related articles 1`] = `
+exports[`Related articles tests on ios DEFAULT template should render two related articles 1`] = `
 <RCTScrollView
   style={
     Object {
@@ -2671,7 +1517,1408 @@ exports[`Related articles test on ios Related articles renders two related artic
 </RCTScrollView>
 `;
 
-exports[`Related articles test on ios tracker sends analytics even if no related articles are rendered 1`] = `
+exports[`Related articles tests on ios LEAD AND TWO template should render one lead and one support related article 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "borderTopColor": "#DBDBDB",
+          "borderTopWidth": 0.5,
+          "display": "flex",
+          "height": 55,
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 26,
+          }
+        }
+      >
+        Related links
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "marginBottom": 10,
+          "marginTop": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+                "width": "100%",
+              },
+              Object {
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.7777777777777777}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#f9f9f9",
+                              "#ededed",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    LEADING ARTICLE
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Defence of the Realm
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    
+                    The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                    ...
+                  </Text>
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    DEFENCE CUTS | ANALYSIS
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Size matters, so ministers must prove they are serious about defence
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Deborah Haynes
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Related articles tests on ios LEAD AND TWO template should render one lead and two support related articles 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "borderTopColor": "#DBDBDB",
+          "borderTopWidth": 0.5,
+          "display": "flex",
+          "height": 55,
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 26,
+          }
+        }
+      >
+        Related links
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "marginBottom": 10,
+          "marginTop": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+                "width": "100%",
+              },
+              Object {
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.7777777777777777}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#f9f9f9",
+                              "#ededed",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    LEADING ARTICLE
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Defence of the Realm
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    
+                    The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                    ...
+                  </Text>
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    DEFENCE CUTS
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Defence cuts: Take expensive Trident out of MoD budget, Hammond urged
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Deborah Haynes
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    DEFENCE CUTS | ANALYSIS
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Size matters, so ministers must prove they are serious about defence
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Deborah Haynes
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Related articles tests on ios LEAD AND TWO template should render one lead related article 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "borderTopColor": "#DBDBDB",
+          "borderTopWidth": 0.5,
+          "display": "flex",
+          "height": 55,
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 26,
+          }
+        }
+      >
+        Related links
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "marginBottom": 10,
+          "marginTop": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#dbdbdb",
+            "borderBottomWidth": 0.5,
+            "borderStyle": "solid",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+                "width": "100%",
+              },
+              Object {
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.7777777777777777}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#f9f9f9",
+                              "#ededed",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "lineHeight": 12,
+                        },
+                        Object {
+                          "color": "#333333",
+                        },
+                      ]
+                    }
+                  >
+                    LEADING ARTICLE
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontWeight": "400",
+                        "marginBottom": 5,
+                      },
+                      Object {
+                        "fontSize": 22,
+                        "lineHeight": 22,
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Defence of the Realm
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    
+                    The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                    ...
+                  </Text>
+                </Text>
+                <Text
+                  accessibilityLabel="datePublication"
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                  testID="datePublication"
+                >
+                  Saturday November 25 2017, 12:01am
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 15,
+                      "marginBottom": 5,
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Related articles tests on ios tracking and analytics should send analytics even when no related articles 1`] = `
 Array [
   Array [
     Object {
@@ -2688,7 +2935,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on ios tracker sends analytics if a single related article is rendered 1`] = `
+exports[`Related articles tests on ios tracking and analytics should send analytics for a single related article 1`] = `
 Array [
   Array [
     Object {
@@ -2713,32 +2960,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on ios tracker sends analytics if a single related article with no byline is rendered 1`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "",
-            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
-            "id": "08604618-fb0e-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "default-1",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
-exports[`Related articles test on ios tracker sends analytics if three related articles are rendered 1`] = `
+exports[`Related articles tests on ios tracking and analytics should send analytics for three related articles 1`] = `
 Array [
   Array [
     Object {
@@ -2777,7 +2999,7 @@ Array [
 ]
 `;
 
-exports[`Related articles test on ios tracker sends analytics if two related articles are rendered 1`] = `
+exports[`Related articles tests on ios tracking and analytics should send analytics for two related articles 1`] = `
 Array [
   Array [
     Object {

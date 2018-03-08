@@ -21,6 +21,7 @@ exports[`1. Render a Card 1`] = `
 
 exports[`2. Render the loading state 1`] = `
 <CardComponent
+  childRatio={2.7}
   image={
     Object {
       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12",

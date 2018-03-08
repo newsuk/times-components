@@ -1,47 +1,64 @@
 import React from "react";
 import { View } from "react-native";
-// @TODO: use TemplateSlice components
-import { Slice } from "@times-components/slice";
-import RelatedArticlesHeading from "./heading";
+import renderSlice from "./related-articles.base";
+import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
-import { relatedArticlesPropTypes, defaultProps } from "./proptypes";
 import {
-  RelatedArticleContainer,
-  ImageContainer,
-  SummaryContainer
-} from "./styles/responsive";
-
+  relatedArticlesPropTypes,
+  relatedArticlesDefaultProps
+} from "./related-articles-proptypes";
 import withTrackingContext from "./related-articles-tracking-context";
+import {
+  getHeadlineContainer,
+  getImageContainer,
+  getRelatedArticleContainer,
+  getSummaryContainer
+} from "./styles/responsive";
 
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
-  const StyledRelatedArticleContainer = RelatedArticleContainer(articleCount);
-  const StyledImageContainer = ImageContainer(articleCount);
-  const StyledSummaryContainer = SummaryContainer(articleCount);
+  const RelatedArticleContainer = getRelatedArticleContainer({ articleCount });
+  const SummaryContainer = getSummaryContainer({ articleCount });
 
   const renderArticleItems = () =>
-    articles.map(article => (
-      <RelatedArticleItem
-        article={article}
-        key={article.id}
-        onPress={onPress}
-        styledRelatedArticleContainer={StyledRelatedArticleContainer}
-        styledImageContainer={StyledImageContainer}
-        styledSummaryContainer={StyledSummaryContainer}
-      />
-    ));
+    articles.map((article, index) => {
+      const isLead = template === "LEAD_AND_TWO" && index === 0;
+      const isSupport = template === "LEAD_AND_TWO" && index > 0;
+      const isDefault = template === "DEFAULT";
+
+      const ImageContainer = getImageContainer({
+        articleCount,
+        hasManyDefaults: isDefault && article >= 3,
+        isSupport
+      });
+      const HeadlineContainer = getHeadlineContainer({ isSupport });
+      const showSummaryContent = isDefault || isLead;
+
+      return (
+        <RelatedArticleItem
+          article={article}
+          headlineContainer={HeadlineContainer}
+          imageContainer={ImageContainer}
+          key={article.id}
+          onPress={onPress}
+          relatedArticleContainer={RelatedArticleContainer}
+          showSummaryContent={showSummaryContent}
+          summaryContainer={SummaryContainer}
+        />
+      );
+    });
 
   return (
     <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      <Slice template={template}>{renderArticleItems()}</Slice>
+      {renderSlice(template, renderArticleItems)}
     </View>
   );
 };
 
 RelatedArticles.propTypes = relatedArticlesPropTypes;
-RelatedArticles.defaultProps = defaultProps;
+RelatedArticles.defaultProps = relatedArticlesDefaultProps;
 
 export default withTrackingContext(RelatedArticles);

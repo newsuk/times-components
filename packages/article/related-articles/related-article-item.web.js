@@ -7,21 +7,22 @@ import ArticleSummary, {
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import { relatedArticleItemPropTypes } from "./proptypes";
+import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
-import { ResponsiveHeadline } from "./styles/responsive";
 
 const RelatedArticleItem = ({
   article,
   onPress,
-  styledRelatedArticleContainer: StyledRelatedArticleContainer,
-  styledImageContainer: StyledImageContainer,
-  styledSummaryContainer: StyledSummaryContainer
+  showSummaryContent,
+  headlineContainer: HeadlineContainer,
+  imageContainer: ImageContainer,
+  relatedArticleContainer: RelatedArticleContainer,
+  summaryContainer: SummaryContainer
 }) => {
   const {
     byline,
-    label,
     headline,
+    label,
     publishedTime,
     section,
     summary,
@@ -36,18 +37,21 @@ const RelatedArticleItem = ({
 
   return (
     <Link url={url} onPress={onPress}>
-      <StyledRelatedArticleContainer>
-        {imageUri ? (
-          <StyledImageContainer>
+      <RelatedArticleContainer>
+        {imageUri && (
+          <ImageContainer>
             <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </StyledImageContainer>
-        ) : null}
-        <StyledSummaryContainer>
+          </ImageContainer>
+        )}
+        <SummaryContainer>
           <ArticleSummary
             bylineProps={{ ast: byline }}
+            content={() =>
+              showSummaryContent && <ArticleSummaryContent ast={summary} />
+            }
             datePublicationProps={{ date: publishedTime }}
             headline={() => (
-              <ResponsiveHeadline>
+              <HeadlineContainer>
                 <Text
                   accessibilityRole="heading"
                   aria-level="3"
@@ -55,16 +59,15 @@ const RelatedArticleItem = ({
                 >
                   {headline}
                 </Text>
-              </ResponsiveHeadline>
+              </HeadlineContainer>
             )}
             labelProps={{
-              title: label,
-              color: colours.section[section] || colours.section.default
+              color: colours.section[section] || colours.section.default,
+              title: label
             }}
-            content={() => <ArticleSummaryContent ast={summary} />}
           />
-        </StyledSummaryContainer>
-      </StyledRelatedArticleContainer>
+        </SummaryContainer>
+      </RelatedArticleContainer>
     </Link>
   );
 };

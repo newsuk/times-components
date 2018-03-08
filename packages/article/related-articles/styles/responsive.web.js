@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 
-export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
+export const Heading = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
     border-style: solid;
@@ -21,49 +21,70 @@ export const StyledRelatedArticlesHeading = withResponsiveStyles(View, {
     margin-right: 0;
   `
 });
+Heading.displayName = "Heading";
 
-export const RelatedArticleContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getRelatedArticleContainer = ({ articleCount }) => {
+  const RelatedArticleContainer = withResponsiveStyles(View, {
     base: () => `
     display: flex;
     flex-direction: column;
   `,
     mediumUp: () => `
-      flex-direction: ${articleCount === 1 ? "row" : ""};
+      flex-direction: ${articleCount === 1 ? "row" : "column"};
   `
   });
+  RelatedArticleContainer.displayName = "RelatedArticleContainer";
+  return RelatedArticleContainer;
+};
 
-export const ResponsiveHeadline = withResponsiveStyles(Text, {
-  base: () => `
+export const getHeadlineContainer = ({ isSupport }) => {
+  const smallStyles = `
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 5px;
-  `,
-  mediumUp: () => `
+  `;
+  const largeStyles = `
     font-size: 30px;
     line-height: 30px;
-  `
-});
-
-export const ImageContainer = articleCount =>
-  withResponsiveStyles(View, {
+  `;
+  const HeadlineContainer = withResponsiveStyles(Text, {
     base: () => `
-    display: ${articleCount === 3 ? "none" : "block"};
+      ${smallStyles}
+      margin-bottom: 5px;
+    `,
+    mediumUp: () => `
+      ${isSupport ? smallStyles : largeStyles}
+    `
+  });
+  HeadlineContainer.displayName = "HeadlineContainer";
+  return HeadlineContainer;
+};
+
+export const getImageContainer = ({
+  articleCount,
+  hasManyDefaults,
+  isSupport
+}) => {
+  const ImageContainer = withResponsiveStyles(View, {
+    base: () => `
+    display: ${hasManyDefaults || isSupport ? "none" : "block"};
     flex-grow: 1;
     margin-bottom: 10px;
   `,
     mediumUp: () =>
       articleCount === 1
         ? `
-    flex-grow: 2;
-    flex-basis: 0;
-    margin-bottom: 0;
-  `
+          flex-grow: 2;
+          flex-basis: 0;
+          margin-bottom: 0;
+        `
         : `display: block;`
   });
+  ImageContainer.displayName = "ImageContainer";
+  return ImageContainer;
+};
 
-export const SummaryContainer = articleCount =>
-  withResponsiveStyles(View, {
+export const getSummaryContainer = ({ articleCount }) => {
+  const SummaryContainer = withResponsiveStyles(View, {
     base: () => `
     flex-grow: 1;
   `,
@@ -76,3 +97,6 @@ export const SummaryContainer = articleCount =>
   `
         : ``
   });
+  SummaryContainer.displayName = "SummaryContainer";
+  return SummaryContainer;
+};

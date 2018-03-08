@@ -10,9 +10,10 @@ import {
 
 const LeadSlice = ({ lead, support1, support2 }) => {
   const supports = [support1, support2].filter(support => support !== null);
-  const hasSupports = supports.length > 0;
+  const supportCount = supports.length;
+  const hasSupports = supportCount > 0;
   const Container = getContainer({ hasSupports });
-  const LeadContainer = getLeadContainer({ hasSupports });
+  const LeadContainer = getLeadContainer({ hasSupports, supportCount });
   const Separator = getSeparator({ hasLeftRightMargin: false });
 
   return (
