@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-import {
-  sharedPropTypes,
-  sharedDefaultProps
-} from "./card-loading-proptypes";
+import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
 
 export const cardPropTypes = {
   ...sharedPropTypes,

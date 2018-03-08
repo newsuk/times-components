@@ -2,10 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import {
-  loadingPropTypes,
-  loadingDefaultProps
-} from "./card-loading-proptypes";
+import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
 import styles from "./styles/shared";
 
 const Loading = ({
@@ -29,7 +26,7 @@ const Loading = ({
   </View>
 );
 
-Loading.propTypes = loadingPropTypes;
-Loading.defaultProps = loadingDefaultProps;
+Loading.propTypes = sharedPropTypes;
+Loading.defaultProps = sharedDefaultProps;
 
 export default Loading;
