@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.23.5",
+  "version": "0.23.6",
   "main": "provider",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
