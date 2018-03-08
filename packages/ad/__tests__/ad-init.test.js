@@ -27,6 +27,18 @@ describe("AdInit", () => {
 
     expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
     expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
+  });
+
+  it("performs slot-level setup for every slot", () => {
+    const init1 = adInit(initOptions);
+    const init2 = adInit(initOptions);
+
+    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
+    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
+
+    init1.init();
+    init2.init();
+
     expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
     expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
