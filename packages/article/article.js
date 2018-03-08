@@ -16,7 +16,6 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 
 import articleTrackingContext from "./article-tracking-context";
-import {articlePropTypes} from "./article-proptype";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
