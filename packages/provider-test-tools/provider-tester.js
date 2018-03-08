@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
-import { ApolloProvider } from "react-apollo-temp";
+import { ApolloProvider } from "react-apollo";
 import clientTester from "./client-tester";
 
 export default function providerTester(
