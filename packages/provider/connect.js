@@ -36,9 +36,7 @@ const connectGraphql = (query, propsToVariables) => {
   }) =>
     children({
       error,
-      refetch: () => {
-        refetch();
-      },
+      refetch,
       isLoading: loading,
       ...result,
       ...props

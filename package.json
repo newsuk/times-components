@@ -111,7 +111,7 @@
     "@storybook/react-native": "3.3.14",
     "@times-components/depend": "*",
     "@times-components/fructose": "3.2.2",
-    "babel-loader": "*",
+    "babel-loader": "7.1.4",
     "babel-core": "6.26.0",
     "babel-plugin-flow-react-proptypes": "14.0.3",
     "babel-plugin-transform-class": "0.3.0",
