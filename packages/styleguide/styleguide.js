@@ -5,6 +5,8 @@ import FadeIn from "./animations";
 
 import timesFonts from "./fonts";
 
+import timesSpacing from "./spacing";
+
 export const colours = {
   section: sectionColours,
   functional: functionalColours
@@ -15,3 +17,5 @@ export const Animations = {
 };
 
 export const fonts = timesFonts;
+
+export const spacing = timesSpacing;

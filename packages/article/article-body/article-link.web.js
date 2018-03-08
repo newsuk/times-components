@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "@times-components/link";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 const responsiveLinkStyles = {
   base: `
@@ -8,7 +8,7 @@ const responsiveLinkStyles = {
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;
-      margin-bottom: 25px;
+      margin-bottom: ${spacing.stackStandard}px;
       margin-top: 0;
   `,
   medium: `

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { Animations } from "@times-components/styleguide";
+import { Animations, spacing } from "@times-components/styleguide";
 import styles from "./author-head-container.styles";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
@@ -12,7 +12,7 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
     padding-top: 30px;
   `,
   mediumUp: () => `
-    padding-top: 60px;
+    padding-top: ${spacing.stackLarge}px;
   `
 });
 

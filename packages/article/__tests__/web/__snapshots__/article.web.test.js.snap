@@ -149,7 +149,7 @@ Array [
   .c7 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -1000,7 +1000,7 @@ Array [
   .c6 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -1930,7 +1930,7 @@ Array [
   .c6 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -2756,7 +2756,7 @@ Array [
   .c6 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -3574,7 +3574,7 @@ Array [
   .c7 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -4521,7 +4521,7 @@ Array [
   .c7 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -5364,7 +5364,7 @@ Array [
   .c6 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -6286,7 +6286,7 @@ Array [
   .c4 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
@@ -7467,7 +7467,7 @@ Array [
   .c7 {
   font-size: 30px;
   color: #1D1D1B;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "TimesModern-Bold";
   font-weight: 400;
   line-height: 30px;
