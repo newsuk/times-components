@@ -34,13 +34,13 @@ describe("AdInit", () => {
     const init2 = adInit(initOptions);
 
     jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
-    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
+    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
 
     init1.init();
     init2.init();
 
     expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
+    expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
 
   it("throws if the init hook is called twice", () => {
