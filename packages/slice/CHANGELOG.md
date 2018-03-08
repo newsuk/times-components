@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.7.3...@times-components/slice@0.8.0) (2018-03-08)
+
+
+### Features
+
+* make related articles use Slice and add Lead and Two ([#702](https://github.com/newsuk/times-components/issues/702)) ([7e441ac](https://github.com/newsuk/times-components/commit/7e441ac))
+
+
+
+
 <a name="0.7.3"></a>
 ## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/slice@0.7.2...@times-components/slice@0.7.3) (2018-03-06)
 
