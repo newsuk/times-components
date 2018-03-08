@@ -1,15 +1,8 @@
 import PropTypes from "prop-types";
+import {
+  sharedPropTypes,
+  sharedDefaultProps
+} from "./card-loading-proptypes";
 
-export const loadingPropTypes = {
-  contentContainerClass: PropTypes.string,
-  imageContainerClass: PropTypes.string,
-  imageRatio: PropTypes.number,
-  showImage: PropTypes.bool
-};
-
-export const loadingDefaultProps = {
-  contentContainerClass: "",
-  imageContainerClass: "",
-  imageRatio: 3 / 2,
-  showImage: false
-};
+export const loadingPropTypes = sharedPropTypes;
+export const loadingDefaultProps = sharedDefaultProps;

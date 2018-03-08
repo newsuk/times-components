@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import {
-  loadingPropTypes,
-  loadingDefaultProps
+  sharedPropTypes,
+  sharedDefaultProps
 } from "./card-loading-proptypes";
 
 export const cardPropTypes = {
-  ...loadingPropTypes,
+  ...sharedPropTypes,
   children: PropTypes.node,
   image: PropTypes.shape({ uri: PropTypes.string }),
   imageSize: PropTypes.number,
@@ -13,7 +13,7 @@ export const cardPropTypes = {
 };
 
 export const cardDefaultProps = {
-  ...loadingDefaultProps,
+  ...sharedDefaultProps,
   children: null,
   image: {
     uri: ""
