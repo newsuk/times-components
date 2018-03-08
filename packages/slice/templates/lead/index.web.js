@@ -7,9 +7,12 @@ import {
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
+import { leadConfig, supportConfig, ConfigWrapper } from "./config";
 
 const LeadSlice = ({ lead, support1, support2 }) => {
-  const supports = [support1, support2].filter(support => support !== null);
+  const supports = [support1(supportConfig), support2(supportConfig)].filter(
+    support => support !== null
+  );
   const supportCount = supports.length;
   const hasSupports = supportCount > 0;
   const Container = getContainer({ hasSupports });
@@ -17,25 +20,27 @@ const LeadSlice = ({ lead, support1, support2 }) => {
   const Separator = getSeparator({ hasLeftRightMargin: false });
 
   return (
-    <SliceContainer>
-      <Container>
-        <LeadContainer>{lead}</LeadContainer>
-        {hasSupports && <Separator />}
-        {hasSupports && (
-          <SupportsContainer>
-            {supports.map((support, index) => {
-              const SupportContainer = getSupportContainer({ index });
-              SupportContainer.displayName = "SupportContainer";
-              return (
-                <SupportContainer key={`support-container-${support.key}`}>
-                  {support}
-                </SupportContainer>
-              );
-            })}
-          </SupportsContainer>
-        )}
-      </Container>
-    </SliceContainer>
+    <ConfigWrapper>
+      <SliceContainer>
+        <Container>
+          <LeadContainer>{lead(leadConfig)}</LeadContainer>
+          {hasSupports && <Separator />}
+          {hasSupports && (
+            <SupportsContainer>
+              {supports.map((support, index) => {
+                const SupportContainer = getSupportContainer({ index });
+                SupportContainer.displayName = "SupportContainer";
+                return (
+                  <SupportContainer key={`support-container-${support[0].key}`}>
+                    {support[0]}
+                  </SupportContainer>
+                );
+              })}
+            </SupportsContainer>
+          )}
+        </Container>
+      </SliceContainer>
+    </ConfigWrapper>
   );
 };
 

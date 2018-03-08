@@ -6,7 +6,7 @@ import {
 
 export const cardPropTypes = {
   ...loadingPropTypes,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   image: PropTypes.shape({ uri: PropTypes.string }),
   imageSize: PropTypes.number,
   isLoading: PropTypes.bool
@@ -14,6 +14,7 @@ export const cardPropTypes = {
 
 export const cardDefaultProps = {
   ...loadingDefaultProps,
+  children: null,
   image: {
     uri: ""
   },

@@ -26,7 +26,7 @@ module.exports = () => {
 
     it("renders a single child element", () => {
       const wrapper = shallow(
-        <DefaultSlice>{createDefaultItems(1)}</DefaultSlice>
+        <DefaultSlice itemCount={1} renderItems={() => createDefaultItems(1)} />
       );
       expect(wrapper).toMatchSnapshot(
         "1. DEFAULT template renders a single child element"
@@ -35,7 +35,7 @@ module.exports = () => {
 
     it("renders two child elements", () => {
       const wrapper = shallow(
-        <DefaultSlice>{createDefaultItems(2)}</DefaultSlice>
+        <DefaultSlice itemCount={2} renderItems={() => createDefaultItems(2)} />
       );
       expect(wrapper).toMatchSnapshot(
         "2. DEFAULT template renders two child elements"
@@ -44,7 +44,7 @@ module.exports = () => {
 
     it("renders three child elements", () => {
       const wrapper = shallow(
-        <DefaultSlice>{createDefaultItems(3)}</DefaultSlice>
+        <DefaultSlice itemCount={3} renderItems={() => createDefaultItems(3)} />
       );
       expect(wrapper).toMatchSnapshot(
         "3. DEFAULT template renders three child elements"
@@ -54,7 +54,9 @@ module.exports = () => {
 
   context("LEAD_AND_TWO template", () => {
     it("renders a single child element", () => {
-      const wrapper = shallow(<LeadSlice lead={<ExampleChild />} />);
+      const wrapper = shallow(
+        <LeadSlice lead={() => [<ExampleChild key="lead" />]} />
+      );
       expect(wrapper).toMatchSnapshot(
         "4. LEAD_AND_TWO template renders a single child element"
       );
@@ -63,8 +65,8 @@ module.exports = () => {
     it("renders two child elements", () => {
       const wrapper = shallow(
         <LeadSlice
-          lead={<ExampleChild />}
-          support1={<ExampleChild key="support1" />}
+          lead={() => [<ExampleChild key="lead" />]}
+          support1={() => [<ExampleChild key="support1" />]}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -75,9 +77,9 @@ module.exports = () => {
     it("renders three child elements", () => {
       const wrapper = shallow(
         <LeadSlice
-          lead={<ExampleChild />}
-          support1={<ExampleChild key="support1" />}
-          support2={<ExampleChild key="support2" />}
+          lead={() => [<ExampleChild key="lead" />]}
+          support1={() => [<ExampleChild key="support1" />]}
+          support2={() => [<ExampleChild key="support2" />]}
         />
       );
       expect(wrapper).toMatchSnapshot(

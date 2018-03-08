@@ -26,9 +26,6 @@ export const getChildrenContainer = ({ childCount }) => {
     padding-bottom: 10px;
     padding-top: 10px;
     width: 100%;
-    div[accessibilityLabel="imageContainer"] {
-      display: ${childCount >= 3 ? "none" : "block"};
-    }
   `,
     mediumUp: () => {
       const smallStyle = `

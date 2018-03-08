@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { treePropType } from "@times-components/markup";
 
-export default {
+export const relatedArticleItemPropTypes = {
   article: PropTypes.shape({
     byline: PropTypes.arrayOf(treePropType),
     headline: PropTypes.string.isRequired,
@@ -10,6 +10,20 @@ export default {
     summary: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
+  contentContainerClass: PropTypes.string,
+  headlineClass: PropTypes.string,
+  imageContainerClass: PropTypes.string,
   onPress: PropTypes.func.isRequired,
-  showSummaryContent: PropTypes.bool.isRequired
+  showImage: PropTypes.bool,
+  showSummary: PropTypes.bool,
+  summaryClass: PropTypes.string
+};
+
+export const relatedArticleItemDefaultProps = {
+  contentContainerClass: "",
+  headlineClass: "",
+  imageContainerClass: "",
+  showImage: true,
+  showSummary: true,
+  summaryClass: ""
 };

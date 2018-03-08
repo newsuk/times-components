@@ -4,10 +4,6 @@ exports[`1. DEFAULT template renders a single child element 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -52,10 +48,6 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -132,10 +124,6 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -244,10 +232,6 @@ exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -279,7 +263,9 @@ exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
 </View>
@@ -289,10 +275,6 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -324,7 +306,9 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
   <View
@@ -361,10 +345,6 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -396,7 +376,9 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
   <View

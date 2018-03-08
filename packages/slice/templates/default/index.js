@@ -3,18 +3,24 @@ import { View } from "react-native";
 import propTypes from "./proptypes";
 import styles from "../styles";
 
-const Slice = ({ children }) => (
-  <View style={styles.container}>
-    {children.map((child, index) => (
-      <View key={child.key} style={styles.childContainer}>
-        <View style={[styles.child, { paddingTop: index === 0 ? 0 : 10 }]}>
-          {child}
+const DefaultSlice = ({ itemCount, renderItems }) => {
+  const config = {
+    showImage: itemCount < 3
+  };
+
+  return (
+    <View style={styles.container}>
+      {renderItems(config).map((item, index) => (
+        <View key={item.key} style={styles.itemContainer}>
+          <View style={[styles.item, { paddingTop: index === 0 ? 0 : 10 }]}>
+            {item}
+          </View>
         </View>
-      </View>
-    ))}
-  </View>
-);
+      ))}
+    </View>
+  );
+};
 
-Slice.propTypes = propTypes;
+DefaultSlice.propTypes = propTypes;
 
-export default Slice;
+export default DefaultSlice;

@@ -24,9 +24,8 @@ export default StyleSheet.create({
     color: colours.functional.primary,
     marginBottom: 5,
     fontFamily: fonts.headline,
-    fontWeight: "400"
-  },
-  imageContainer: {
-    marginBottom: 10
+    fontSize: 22,
+    fontWeight: "400",
+    lineHeight: 22
   }
 });
