@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.42.5",
+  "version": "0.42.6",
   "description": "The article",
   "main": "article",
   "scripts": {
