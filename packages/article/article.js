@@ -7,6 +7,7 @@ import { AdComposer } from "@times-components/ad";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import { articlePropTypes, articleDefaultProps } from "./article-proptype";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-body";
@@ -15,6 +16,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 
 import articleTrackingContext from "./article-tracking-context";
+import {articlePropTypes} from "./article-proptype";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -108,10 +110,7 @@ class ArticlePage extends React.Component {
 }
 
 ArticlePage.propTypes = {
-  article: PropTypes.shape({
-    ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes
-  }),
+  ...articlePropTypes,
   isLoading: PropTypes.bool,
   error: PropTypes.shape({
     graphQLErrors: PropTypes.array,
@@ -124,7 +123,7 @@ ArticlePage.propTypes = {
 };
 
 ArticlePage.defaultProps = {
-  article: null,
+  ...articleDefaultProps,
   isLoading: false,
   error: null
 };
