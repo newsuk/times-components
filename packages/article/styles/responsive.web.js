@@ -5,7 +5,7 @@ import config from "./responsive-config";
 
 export const MainContainer = withResponsiveStyles(View, {
   wideUp: () => `
-    padding-top: ${spacing.stackSmall}px; 
+    padding-top: ${spacing.m}px; 
     margin: 0 auto;
   `
 });
@@ -18,8 +18,8 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
     border-top-color: ${colours.functional.keyline};
     border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: 1px;
-    padding-top: ${spacing.standard}px;
-    padding-bottom: ${spacing.standard}px;
+    padding-top: ${spacing.default}px;
+    padding-bottom: ${spacing.default}px;
   `
 });
 
@@ -30,7 +30,7 @@ export const HeaderContainer = withResponsiveStyles(View, {
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `
     width: ${config.wideBpWidth};
-    margin-bottom: ${spacing.headline}px;
+    margin-bottom: ${spacing.s}px;
   `
 });
 
@@ -39,9 +39,9 @@ export const HeaderContainer = withResponsiveStyles(View, {
 export const MetaContainer = withResponsiveStyles(View, {
   mediumUp: () => `width: ${config.mediumBpWidth}; margin: 0 auto;`,
   wideUp: () => `
-    margin-bottom: ${spacing.stackSmall}px;
-    padding-right: ${spacing.insetStandard}px;
-    padding-left: ${spacing.insetStandard}px;
+    margin-bottom: ${spacing.m}px;
+    padding-right: ${spacing.m}px;
+    padding-left: ${spacing.m}px;
     position: absolute;
     top: 0;
     width: 20.8333%;

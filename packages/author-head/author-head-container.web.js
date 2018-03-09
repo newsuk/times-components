@@ -12,7 +12,7 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
     padding-top: 30px;
   `,
   mediumUp: () => `
-    padding-top: ${spacing.stackLarge}px;
+    padding-top: ${spacing.xxl}px;
   `
 });
 

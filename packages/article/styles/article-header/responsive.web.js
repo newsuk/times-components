@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, spacing } from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
 
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `
     font-size: 30px;
     color: ${colours.functional.brandColour};
-    margin-bottom: ${spacing.standard}px;
+    margin-bottom: 8px;
     font-family: "TimesModern-Bold";
     font-weight: 400;
     line-height: 30px;
@@ -18,5 +18,5 @@ export const HeadlineContainer = withResponsiveStyles(Text, {
 });
 
 export const LabelContainer = withResponsiveStyles(View, {
-  wideUp: () => "margin-top: 0px;"
+  wideUp: () => "margin-top: 0;"
 });

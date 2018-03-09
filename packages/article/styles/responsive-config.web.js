@@ -12,8 +12,8 @@ const mediumBpPositioning = `
 `;
 
 const articleContainerPadding = `
-  padding-left: ${spacing.standard}px;
-  padding-right: ${spacing.standard}px;
+  padding-left: ${spacing.default}px;
+  padding-right: ${spacing.default}px;
 `;
 
 const showHideToggle = (component, show, styles = "") =>

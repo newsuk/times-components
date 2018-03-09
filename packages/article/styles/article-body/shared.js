@@ -1,19 +1,19 @@
-import { fonts, colours } from "@times-components/styleguide";
+import { fonts, colours, spacing } from "@times-components/styleguide";
 
 const sharedStyles = {
   leadAsset: {
-    marginBottom: 10
+    marginBottom: spacing.default
   },
   articleTextElement: {
     fontFamily: fonts.body,
     lineHeight: 26,
     fontSize: 17,
-    marginBottom: 25,
+    marginBottom: spacing.l,
     color: colours.functional.primary
   },
   articleMainContentRow: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing.default,
+    paddingRight: spacing.default
   }
 };
 

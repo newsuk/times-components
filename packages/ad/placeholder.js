@@ -32,8 +32,8 @@ const getStyles = (width, height) =>
       position: "absolute",
       paddingTop: spacing.base,
       paddingBottom: spacing.base,
-      paddingLeft: spacing.standard,
-      paddingRight: spacing.standard,
+      paddingLeft: spacing.default,
+      paddingRight: spacing.default,
       letterSpacing: 1.5
     }
   });

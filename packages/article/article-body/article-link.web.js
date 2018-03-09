@@ -8,7 +8,7 @@ const responsiveLinkStyles = {
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;
-      margin-bottom: ${spacing.stackStandard}px;
+      margin-bottom: ${spacing.l}px;
       margin-top: 0;
   `,
   medium: `

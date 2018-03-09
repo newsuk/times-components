@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 import config from "../responsive-config";
 
 /* --- Body --- */
@@ -17,7 +17,7 @@ export const Paragraph = withResponsiveStyles("p", {
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;
-    margin-bottom: 25px;
+    margin-bottom: ${spacing.l}px;
     margin-top: 0;
     display: block;
   `,
@@ -33,7 +33,7 @@ export const LinkStyle = withResponsiveStyles("a", {
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;
-    margin-bottom: 25px;
+    margin-bottom: ${spacing.l}px;
     margin-top: 0;
 `,
   mediumUp: () => `
@@ -45,8 +45,12 @@ export const LinkStyle = withResponsiveStyles("a", {
 /* --- Lead Asset Styles --- */
 
 export const LeadAsset = withResponsiveStyles(View, {
-  base: () => "margin-bottom: 10px;",
-  mediumUp: () => "margin-bottom: 20px",
+  base: () => `
+    margin-bottom: ${spacing.default}px;
+  `,
+  mediumUp: () => `
+    margin-bottom: ${spacing.m}px;
+  `,
   wideUp: () => "width: 100%; margin: 0 auto;"
 });
 
@@ -73,7 +77,7 @@ export const PrimaryImg = withResponsiveStyles(View, {
   base: () => `
     width: 100%;
     flex-direction: column;
-    padding-bottom: 25px;
+    padding-bottom: ${spacing.l}px;
   `,
   mediumUp: () => `
     width: ${config.mediumBpWidth};
@@ -86,14 +90,14 @@ const imageStyles = `
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: ${spacing.default}px;
+  padding-right: ${spacing.default}px;
 `;
 
 export const SecondaryImg = withResponsiveStyles(View, {
   base: () => `
     ${imageStyles}
-    padding-bottom: 25px;
+    padding-bottom: ${spacing.l}px;
   `,
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
@@ -113,18 +117,18 @@ export const InlineImg = withResponsiveStyles(View, {
 
 export const PullQuoteResp = withResponsiveStyles(View, {
   base: () => `
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    padding-left: ${spacing.default}px;
+    padding-right: ${spacing.default}px;
+    margin-bottom: ${spacing.default}px;
   `,
   mediumUp: () => `
     width: 60%;
     float: left;
-    margin-right: 20px;
-    margin-bottom 0px;
-    margin-top: 5px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-right: ${spacing.m}px;
+    margin-bottom 0;
+    margin-top: ${spacing.base}px;
+    padding-left: 0;
+    padding-right: 0;
   `
 });
 

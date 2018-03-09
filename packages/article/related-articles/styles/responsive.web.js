@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 export const Heading = withResponsiveStyles(View, {
   base: () => `
@@ -13,8 +13,8 @@ export const Heading = withResponsiveStyles(View, {
     display: flex;
     height: 55px;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: ${spacing.default}px;
+    margin-right: ${spacing.default}px;
   `,
   mediumUp: () => `
     margin-left: 0;
@@ -49,7 +49,7 @@ export const getHeadlineContainer = ({ isSupport }) => {
   const HeadlineContainer = withResponsiveStyles(Text, {
     base: () => `
       ${smallStyles}
-      margin-bottom: 5px;
+      margin-bottom: ${spacing.base}px;
     `,
     mediumUp: () => `
       ${isSupport ? smallStyles : largeStyles}
@@ -68,7 +68,7 @@ export const getImageContainer = ({
     base: () => `
     display: ${hasManyDefaults || isSupport ? "none" : "block"};
     flex-grow: 1;
-    margin-bottom: 10px;
+    margin-bottom: ${spacing.default}px;
   `,
     mediumUp: () =>
       articleCount === 1
@@ -91,7 +91,7 @@ export const getSummaryContainer = ({ articleCount }) => {
     mediumUp: () =>
       articleCount === 1
         ? `
-    padding-left: 15px;
+    padding-left: ${spacing.s}px;
     flex-grow: 2.7;
     flex-basis: 0 !important;
   `

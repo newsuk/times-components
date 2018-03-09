@@ -1,7 +1,9 @@
+import { spacing } from "@times-components/styleguide";
+
 const globalStyle = {
   articleMainContentRow: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing.default,
+    paddingRight: spacing.default
   }
 };
 
