@@ -36,7 +36,7 @@ const connectGraphql = (query, propsToVariables) => {
   }) =>
     children({
       error,
-      refetch,
+      refetch: () => refetch(), // using shorthand causes a rect-native error
       isLoading: loading,
       ...result,
       ...props
