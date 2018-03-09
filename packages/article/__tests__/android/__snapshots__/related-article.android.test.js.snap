@@ -107,23 +107,11 @@ exports[`Related articles tests on android DEFAULT template should render one re
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -252,15 +240,7 @@ exports[`Related articles tests on android DEFAULT template should render one re
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -508,25 +488,8 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -720,25 +683,8 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -932,25 +878,8 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -1198,23 +1127,11 @@ exports[`Related articles tests on android DEFAULT template should render two re
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1343,15 +1260,7 @@ exports[`Related articles tests on android DEFAULT template should render two re
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -1545,23 +1454,11 @@ exports[`Related articles tests on android DEFAULT template should render two re
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1690,15 +1587,7 @@ exports[`Related articles tests on android DEFAULT template should render two re
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -1946,23 +1835,11 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2091,15 +1968,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -2280,25 +2149,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -2520,23 +2372,11 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2665,15 +2505,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -2854,25 +2686,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -3035,25 +2850,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -3275,23 +3073,11 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -3420,15 +3206,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={

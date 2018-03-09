@@ -110,23 +110,11 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -222,15 +210,7 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -479,25 +459,8 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -692,25 +655,8 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -905,25 +851,8 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -1172,23 +1101,11 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1284,15 +1201,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -1487,23 +1396,11 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1599,15 +1496,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -1856,23 +1745,11 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1968,15 +1845,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -2158,25 +2027,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -2399,23 +2251,11 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2511,15 +2351,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
@@ -2701,25 +2533,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -2883,25 +2698,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+              <View>
+                <View>
                   <View>
                     <View
                       style={
@@ -3124,23 +2922,11 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                  }
-                }
-              >
+              <View>
                 <View
-                  className=""
                   style={
                     Object {
-                      "flex": 1,
                       "marginBottom": 10,
-                      "minWidth": "100%",
                     }
                   }
                 >
@@ -3236,15 +3022,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View
-                  className=""
-                  style={
-                    Object {
-                      "flex": 1,
-                      "minWidth": "100%",
-                    }
-                  }
-                >
+                <View>
                   <View>
                     <View
                       style={
