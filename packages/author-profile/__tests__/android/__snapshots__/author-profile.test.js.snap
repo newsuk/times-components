@@ -524,6 +524,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                       "textAlign": "center",
                     }
                   }
+                  testID="author-bio"
                 >
                   Deborah Haynes is the defence editor at 
                   <Text
@@ -593,6 +594,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 1 - 3 of 20 results
                 </Text>
@@ -644,6 +646,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                           "padding": 12,
                         }
                       }
+                      testID="pagination-button-next"
                     >
                       <Text
                         accessible={true}
@@ -1805,6 +1808,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         "padding": 12,
                       }
                     }
+                    testID="pagination-button-next"
                   >
                     <Text
                       accessible={true}
@@ -2214,6 +2218,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                       "textAlign": "center",
                     }
                   }
+                  testID="author-bio"
                 >
                   Deborah Haynes is the defence editor at 
                   <Text
@@ -2283,6 +2288,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 0 - 0 of 0 results
                 </Text>
@@ -3341,6 +3347,7 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                       "textAlign": "center",
                     }
                   }
+                  testID="author-bio"
                 />
               </View>
             </View>
@@ -3395,6 +3402,7 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 0 - 0 of 0 results
                 </Text>
@@ -3981,6 +3989,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 0 - 0 of 0 results
                 </Text>
@@ -4730,6 +4739,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 0 - 0 of 0 results
                 </Text>
@@ -6000,6 +6010,7 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
               "textAlign": "center",
             }
           }
+          testID="author-bio"
         />
       </View>
     </View>
@@ -6202,6 +6213,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                       "textAlign": "center",
                     }
                   }
+                  testID="author-bio"
                 />
               </View>
             </View>
@@ -6256,6 +6268,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                       },
                     ]
                   }
+                  testID="results-message"
                 >
                   Showing 0 - 0 of 0 results
                 </Text>
