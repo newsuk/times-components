@@ -68,7 +68,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       const doubleSupportContentStyle = `
         flex: 2.7;
         flex-basis: 0 !important;
-        min-width: 270px;
+        min-width: 250px;
       `;
 
       return `
