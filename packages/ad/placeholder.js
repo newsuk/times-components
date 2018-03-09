@@ -15,7 +15,7 @@ const getStyles = (width, height) =>
     wrapper: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "#F9F9F9",
+      backgroundColor: colours.functional.backgroundSecondary,
       width,
       height,
       borderColor: colours.functional.alto,
