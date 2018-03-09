@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.46.1...@times-components/author-profile@0.47.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="0.46.1"></a>
 ## [0.46.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.46.0...@times-components/author-profile@0.46.1) (2018-03-08)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.25...@times-components/pull-quote@0.3.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="0.2.25"></a>
 ## [0.2.25](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.2.24...@times-components/pull-quote@0.2.25) (2018-03-07)
 
