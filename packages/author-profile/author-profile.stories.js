@@ -14,7 +14,7 @@ import {
   makeMocksWithAuthorError,
   makeMocksWithPageError
 } from "@times-components/provider/fixtures/author-profile/fixture-generator";
-import { ApolloProvider } from "react-apollo-temp";
+import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";

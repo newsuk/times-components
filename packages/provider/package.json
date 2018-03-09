@@ -69,7 +69,7 @@
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-apollo-temp": "2.0.5",
+    "react-apollo": "2.1.0-rc.3",
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {

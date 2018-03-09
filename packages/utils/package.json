@@ -36,11 +36,11 @@
   },
   "dependencies": {
     "apollo-cache-inmemory": "1.1.5",
-    "apollo-client": "2.2.0",
+    "apollo-client": "2.2.3",
     "graphql": "0.12.3",
     "prop-types": "15.6.0",
     "react": "16.2.0",
-    "react-apollo-temp": "2.0.5"
+    "react-apollo": "2.1.0-rc.3"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

@@ -25,7 +25,7 @@
       "!**/packages/depend/get-packages.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-apollo-temp|@times-components)/)"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/depend/__tests__/**.test.js"
