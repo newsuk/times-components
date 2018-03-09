@@ -54,7 +54,7 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -403,7 +403,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -599,7 +599,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -795,7 +795,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -1045,7 +1045,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -1340,7 +1340,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -1689,7 +1689,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -1976,7 +1976,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -2195,7 +2195,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -2482,7 +2482,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -2647,7 +2647,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
@@ -2866,7 +2866,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
       <View
         style={
           Object {
-            "borderBottomColor": "#dbdbdb",
+            "borderBottomColor": "#DBDBDB",
             "borderBottomWidth": 0.5,
             "borderStyle": "solid",
             "width": "100%",
