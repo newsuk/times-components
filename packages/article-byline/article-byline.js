@@ -12,7 +12,7 @@ import {
 
 const linkStyles = StyleSheet.create({
   link: {
-    color: colours.functional.azureBlue
+    color: colours.functional.action
   }
 });
 

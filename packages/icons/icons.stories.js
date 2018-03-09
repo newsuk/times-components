@@ -1,12 +1,12 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 import { color } from "@storybook/addon-knobs";
 import { IconDiamond, IconTwitter, IconVideo } from "./icons";
 
 const borderWidth = 1;
-const borderColor = "#D3D3D3";
+const borderColor = colours.functional.keyline;
 
 const styles = StyleSheet.create({
   wrapper: {

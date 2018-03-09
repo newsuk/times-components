@@ -444,8 +444,8 @@ exports[`Article test on ios renders article no flags 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1338,8 +1338,8 @@ exports[`Article test on ios renders article no label 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -2334,8 +2334,8 @@ exports[`Article test on ios renders article no label no flags 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -3193,8 +3193,8 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4035,8 +4035,8 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5043,8 +5043,8 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5917,8 +5917,8 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6995,8 +6995,8 @@ exports[`Article test on ios renders full article 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -7538,8 +7538,8 @@ exports[`Article test on ios renders full article 1`] = `
                     <BVLinearGradient
                       colors={
                         Array [
-                          "#f9f9f9",
-                          "#ededed",
+                          "#F9F9F9",
+                          "#EDEDED",
                         ]
                       }
                       end={
@@ -7620,7 +7620,7 @@ exports[`Article test on ios renders full article 1`] = `
                         "lineHeight": 16,
                       },
                       Object {
-                        "color": "#333",
+                        "color": "#333333",
                         "fontSize": 9,
                         "fontWeight": "400",
                         "letterSpacing": 1,
@@ -7787,8 +7787,8 @@ exports[`Article test on ios renders full article 1`] = `
                     <BVLinearGradient
                       colors={
                         Array [
-                          "#f9f9f9",
-                          "#ededed",
+                          "#F9F9F9",
+                          "#EDEDED",
                         ]
                       }
                       end={
@@ -7875,7 +7875,7 @@ exports[`Article test on ios renders full article 1`] = `
                         "lineHeight": 16,
                       },
                       Object {
-                        "color": "#333",
+                        "color": "#333333",
                         "fontSize": 9,
                         "fontWeight": "400",
                         "letterSpacing": 1,

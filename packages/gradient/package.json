@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "@times-components/jest-configurator": "0.2.1",
+    "@times-components/styleguide": "0.3.7",
     "prop-types": "15.6.0",
     "react-native-linear-gradient": "2.4.0"
   },

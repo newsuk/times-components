@@ -3,6 +3,7 @@ import { Text, View, Button } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 const ErrorContainer = withResponsiveStyles(View, {
   base: () => `
@@ -27,7 +28,7 @@ const Heading = withResponsiveStyles(Text, {
     font-family: TimesModern-Bold;
     font-size: 35px;
     text-align: center;
-    color: #000000;
+    color: ${colours.functional.brandColour};
     margin-bottom: 12px;
   `,
   wideUp: () => `
@@ -41,7 +42,7 @@ const Message = withResponsiveStyles(Text, {
     font-size: 18px;
     line-height: 1.44;
     text-align: center;
-    color: #696969;
+    color: ${colours.functional.secondary};
   `,
   wideUp: () => `
     text-align: left;
@@ -102,7 +103,7 @@ const AuthorProfileError = ({ refetch }) => (
         <Button
           onPress={refetch}
           title="Retry"
-          color="#006699"
+          color={colours.functional.action}
           accessibilityLabel="Refresh the page"
         />
       </ButtonContainer>

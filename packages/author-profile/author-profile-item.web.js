@@ -5,6 +5,7 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -69,7 +70,7 @@ const AuthorProfileItem = item => {
   const childProps = {
     labelProps: {
       title: label,
-      color: "#333333"
+      color: colours.functional.primary
     },
     headline: () => <ArticleSummaryHeadline headline={headline} />,
     datePublicationProps: {

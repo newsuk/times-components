@@ -2,6 +2,7 @@ import { View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 export const SupportsContainer = withResponsiveStyles(View, {
   base: () => `
@@ -21,7 +22,7 @@ export const getSupportContainer = ({ index }) => {
       const secondSupportStyle = `
         border-top-style: solid;
         border-top-width: 1px;
-        border-top-color: #dbdbdb;
+        border-top-color: ${colours.functional.keyline};
         margin-top: 10px;
         padding-top: 10px;
       `;

@@ -9,7 +9,7 @@ exports[`AuthorProfile test on android does not re-render the author head if the
   ellipsizeMode="tail"
   style={
     Object {
-      "color": "#000",
+      "color": "#1D1D1B",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
     }
@@ -29,7 +29,7 @@ exports[`AuthorProfile test on android does re-render the author head if the loa
   ellipsizeMode="tail"
   style={
     Object {
-      "color": "#000",
+      "color": "#1D1D1B",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 30,
     }
@@ -69,7 +69,7 @@ exports[`AuthorProfile test on android renders page error 1`] = `
       style={
         Object {
           "alignSelf": "center",
-          "color": "#000000",
+          "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 35,
           "marginBottom": 12,
@@ -285,7 +285,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 style={
                   Array [
                     Object {
-                      "borderColor": "#FFF",
+                      "borderColor": "#FFFFFF",
                       "marginBottom": 20,
                       "marginLeft": "auto",
                       "marginRight": "auto",
@@ -383,8 +383,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -426,7 +426,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -517,7 +517,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -601,10 +601,10 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -804,8 +804,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -855,8 +855,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -899,8 +899,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -943,8 +943,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -991,8 +991,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1037,7 +1037,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1155,8 +1155,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -1206,8 +1206,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1250,8 +1250,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1294,8 +1294,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1342,8 +1342,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1388,7 +1388,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -1506,8 +1506,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -1557,8 +1557,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1601,8 +1601,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1645,8 +1645,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1693,8 +1693,8 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -1762,10 +1762,10 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -2116,7 +2116,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -2207,7 +2207,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -2291,10 +2291,10 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -2455,8 +2455,8 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -2575,7 +2575,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -2727,8 +2727,8 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -2847,7 +2847,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -2999,8 +2999,8 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -3142,10 +3142,10 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -3291,7 +3291,7 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -3334,7 +3334,7 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -3403,10 +3403,10 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -3455,10 +3455,10 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -3880,7 +3880,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
             <View
               style={
                 Object {
-                  "borderColor": "#FFF",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 50,
                   "height": 100,
                   "overflow": "hidden",
@@ -3898,8 +3898,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -3989,10 +3989,10 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -4119,8 +4119,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -4170,8 +4170,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4214,8 +4214,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4258,8 +4258,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4306,8 +4306,8 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4375,10 +4375,10 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -4450,7 +4450,7 @@ exports[`AuthorProfile test on android renders profile error 1`] = `
         style={
           Object {
             "alignSelf": "center",
-            "color": "#000000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 35,
             "marginBottom": 12,
@@ -4629,7 +4629,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
             <View
               style={
                 Object {
-                  "borderColor": "#FFF",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 50,
                   "height": 100,
                   "overflow": "hidden",
@@ -4647,8 +4647,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4738,10 +4738,10 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -4868,8 +4868,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -4919,8 +4919,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -4963,8 +4963,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5007,8 +5007,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5055,8 +5055,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5101,7 +5101,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5219,8 +5219,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -5270,8 +5270,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5314,8 +5314,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5358,8 +5358,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5406,8 +5406,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5452,7 +5452,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -5570,8 +5570,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         <BVLinearGradient
                           colors={
                             Array [
-                              "#f9f9f9",
-                              "#ededed",
+                              "#F9F9F9",
+                              "#EDEDED",
                             ]
                           }
                           end={
@@ -5621,8 +5621,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5665,8 +5665,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5709,8 +5709,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5757,8 +5757,8 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -5826,10 +5826,10 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,
@@ -5852,7 +5852,7 @@ exports[`AuthorProfile test on android renders profile separator 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#dbdbdb",
+      "backgroundColor": "#DBDBDB",
       "height": 1,
     }
   }
@@ -5902,7 +5902,7 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
           }
@@ -5993,7 +5993,7 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#333",
+              "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "lineHeight": 26,
@@ -6152,7 +6152,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 ellipsizeMode="tail"
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#1D1D1B",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 30,
                   }
@@ -6195,7 +6195,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 16,
                       "lineHeight": 26,
@@ -6264,10 +6264,10 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "borderBottomColor": "#dbdbdb",
+                    "borderBottomColor": "#DBDBDB",
                     "borderBottomWidth": 1,
                     "borderStyle": "solid",
-                    "borderTopColor": "#dbdbdb",
+                    "borderTopColor": "#DBDBDB",
                     "borderTopWidth": 1,
                     "flexDirection": "row",
                     "height": 50,
@@ -6318,8 +6318,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6362,8 +6362,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6406,8 +6406,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6454,8 +6454,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6500,7 +6500,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -6542,8 +6542,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6586,8 +6586,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6630,8 +6630,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6678,8 +6678,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6724,7 +6724,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
         <View
           style={
             Object {
-              "backgroundColor": "#dbdbdb",
+              "backgroundColor": "#DBDBDB",
               "height": 1,
             }
           }
@@ -6766,8 +6766,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6810,8 +6810,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6854,8 +6854,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6902,8 +6902,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -6971,10 +6971,10 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "borderBottomColor": "#dbdbdb",
+                  "borderBottomColor": "#DBDBDB",
                   "borderBottomWidth": 1,
                   "borderStyle": "solid",
-                  "borderTopColor": "#dbdbdb",
+                  "borderTopColor": "#DBDBDB",
                   "borderTopWidth": 1,
                   "flexDirection": "row",
                   "height": 50,

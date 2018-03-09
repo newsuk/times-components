@@ -1,6 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import "jest-styled-components";
+import { colours } from "@times-components/styleguide";
 import test from "../shared";
 import Link, { TextLink } from "../../link";
 
@@ -8,7 +9,7 @@ describe("Link tests on Web", () => {
   it("renders with responsive styles", () => {
     const responsiveLinkStyles = {
       base: `
-      color: #069;
+      color: ${colours.functional.action};
       font-family: "TimesDigitalW04-Regular";
       line-height: 26px;
       font-size: 17px;

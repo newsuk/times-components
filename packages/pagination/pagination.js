@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     right: 0
   },
   arrow: {
-    color: "#006699",
+    color: colours.functional.action,
     fontFamily: fonts.supporting,
     fontSize: 14
   }

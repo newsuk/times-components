@@ -175,7 +175,7 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with a pull quot
             "marginTop": 0,
           },
           Object {
-            "color": "#13354e",
+            "color": "#696969",
           },
         ]
       }
@@ -304,9 +304,9 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with ads 1`] = `
     section="article"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "paddingBottom": 10,
         "paddingTop": 10,

@@ -116,7 +116,7 @@ exports[`Markup Web renders multiple paragraphs with a pull quote 1`] = `
       dir="auto"
       style={
         Object {
-          "color": "rgba(19,53,78,1)",
+          "color": "rgba(105,105,105,1)",
         }
       }
     >

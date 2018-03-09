@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
     fontSize: 14,
-    color: "#696969"
+    color: colours.functional.secondary
   }
 });
 

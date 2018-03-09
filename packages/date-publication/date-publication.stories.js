@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 import DatePublication from "./date-publication";
 
 const styles = StyleSheet.create({
   text: {
-    color: "#696969",
+    color: colours.functional.secondary,
     fontSize: 13,
     lineHeight: 15,
     fontFamily: fonts.supporting

@@ -43,7 +43,7 @@ exports[`AuthorHead test on ios renders 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
           }
@@ -86,7 +86,7 @@ exports[`AuthorHead test on ios renders 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#333",
+              "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "lineHeight": 26,
@@ -140,7 +140,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         style={
           Array [
             Object {
-              "borderColor": "#FFF",
+              "borderColor": "#FFFFFF",
               "marginBottom": 20,
               "marginLeft": "auto",
               "marginRight": "auto",
@@ -206,8 +206,8 @@ exports[`AuthorHead test on ios renders with data 1`] = `
               <BVLinearGradient
                 colors={
                   Array [
-                    "#f9f9f9",
-                    "#ededed",
+                    "#F9F9F9",
+                    "#EDEDED",
                   ]
                 }
                 end={
@@ -248,7 +248,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
           }
@@ -338,7 +338,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#333",
+              "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "lineHeight": 26,
@@ -423,7 +423,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#000",
+            "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
           }
@@ -513,7 +513,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#333",
+              "color": "#333333",
               "fontFamily": "TimesDigitalW04",
               "fontSize": 16,
               "lineHeight": 26,

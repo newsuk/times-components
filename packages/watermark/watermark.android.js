@@ -1,15 +1,16 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
+import { colours } from "@times-components/styleguide";
 
 const Watermark = ({ width, height }) => (
   <View
     style={{
       height,
       width,
-      borderColor: "#646464",
+      borderColor: colours.functional.keyline,
       borderWidth: StyleSheet.hairlineWidth,
-      backgroundColor: "#e8e8e8"
+      backgroundColor: colours.functional.backgroundTertiary
     }}
   />
 );
