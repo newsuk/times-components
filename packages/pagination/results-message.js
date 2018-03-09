@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
 });
 
 const ResultsMessage = ({ children: message }) => (
-  <Text style={[styles.message]}>{message}</Text>
+  <Text testID="results-message" style={[styles.message]}>
+    {message}
+  </Text>
 );
 
 ResultsMessage.propTypes = {

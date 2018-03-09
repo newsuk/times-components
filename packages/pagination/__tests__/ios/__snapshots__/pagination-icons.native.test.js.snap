@@ -9,6 +9,7 @@ exports[`PaginationIcons on iOS Next page icon renders out an svg and label 1`] 
       "padding": 12,
     }
   }
+  testID="pagination-button-next"
 >
   <Text
     accessible={true}
@@ -54,6 +55,7 @@ exports[`PaginationIcons on iOS Previous page icon renders out an svg and label 
       "padding": 12,
     }
   }
+  testID="pagination-button-previous"
 >
   <Svg
     height={12}

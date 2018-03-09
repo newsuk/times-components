@@ -93,6 +93,7 @@ exports[`AuthorHead test on ios renders 1`] = `
               "textAlign": "center",
             }
           }
+          testID="author-bio"
         />
       </View>
     </View>
@@ -345,6 +346,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
               "textAlign": "center",
             }
           }
+          testID="author-bio"
         >
           Carol Midgley joined 
           <Text
@@ -520,6 +522,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
               "textAlign": "center",
             }
           }
+          testID="author-bio"
         >
           Carol Midgley joined 
           <Text
