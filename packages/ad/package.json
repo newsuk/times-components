@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.4.0",
-    "@times-components/watermark": "0.3.11",
+    "@times-components/watermark": "0.4.0",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },
