@@ -5,7 +5,7 @@ import { colours, fonts, fontSizes } from "@times-components/styleguide";
 const responsiveLinkStyles = {
   base: `
       color: ${colours.functional.action};
-      font-family: ${fonts.bodyRegular};
+      font-family: "${fonts.bodyRegular}";
       line-height: 26px;
       font-size: ${fontSizes.bodyMobile}px;
       margin-bottom: 25px;

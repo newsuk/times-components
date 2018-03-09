@@ -9738,7 +9738,7 @@ Array [
 
 .c15 {
   color: #006699;
-  font-family: TimesDigitalW04-Regular;
+  font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;
   margin-bottom: 25px;
