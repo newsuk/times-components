@@ -66,8 +66,8 @@ const adInit = args => {
       scheduleSetPageTargetingValues(keyValuePairs) {
         this.scheduleAction(() => {
           const pubads = window.googletag.pubads();
-          Object.entries(keyValuePairs).forEach(entry => {
-            pubads.setTargeting(entry[0], entry[1]);
+          Object.keys(keyValuePairs).forEach(key => {
+            pubads.setTargeting(key, keyValuePairs[key]);
           });
         });
       },
@@ -103,6 +103,7 @@ const adInit = args => {
           el.style.alignItems = "center";
           el.style.justifyContent = "center";
           el.style.margin = "0 auto";
+          el.style.height = "100%";
           /* eslint-enable no-param-reassign */
 
           const gptMapping = window.googletag.sizeMapping();
@@ -110,8 +111,8 @@ const adInit = args => {
             gptMapping.addSize([size.width, size.height], size.sizes)
           );
           slot.defineSizeMapping(gptMapping.build());
-          Object.entries(slotTargeting || {}).forEach(entry =>
-            slot.setTargeting(entry[0], entry[1])
+          Object.keys(slotTargeting || {}).forEach(key =>
+            slot.setTargeting(key, slotTargeting[key])
           );
           window.googletag.display(containerID);
         });

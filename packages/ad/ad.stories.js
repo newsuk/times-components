@@ -96,7 +96,7 @@ storiesOf("Advertisement", module)
           Orci varius natoque penatibus et magnis dis parturient montes,
           nascetur ridiculus mus.
         </Text>
-        <Ad pos="header" section="news" contextUrl={articleUrl} />
+        <Ad pos="intervention" section="news" contextUrl={articleUrl} />
         <Text>
           Donec convallis enim sit amet elit pharetra, et aliquet augue blandit.
           Integer suscipit mollis libero, et imperdiet nunc. Aenean eu lacus
