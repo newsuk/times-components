@@ -29,7 +29,7 @@ const defaultStyle = StyleSheet.create({
     ...lineHeightStyle
   },
   credits: {
-    fontSize: 9,
+    fontSize: fontSizes.credits,
     color: colours.functional.primary,
     letterSpacing: 1,
     fontWeight: "400",

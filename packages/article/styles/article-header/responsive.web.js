@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `

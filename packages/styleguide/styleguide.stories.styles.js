@@ -1,4 +1,5 @@
 import { fonts } from "./styleguide";
+import fontSizes from "./fonts/font-sizes";
 
 const styles = {
   display: {
@@ -19,7 +20,7 @@ const styles = {
   text: {
     textAlign: "center",
     fontFamily: fonts.body,
-    fontSize: 12,
+    fontSize: fontSizes.flags,
     color: "#333333"
   },
   animationBox: {
@@ -33,19 +34,19 @@ const styles = {
     margin: 20
   },
   headline: {
-    fontSize: 18,
+    fontSize: fontSizes.body,
     fontWeight: "bold",
     marginBottom: 10,
     textDecoration: "underline"
   },
   subHeadline: {
-    fontSize: 14,
+    fontSize: fontSizes.meta,
     fontWeight: "bold",
     marginLeft: 10,
     marginTop: 10
   },
   showoffFonts: {
-    fontSize: 30,
+    fontSize: fontSizes.headline,
     marginTop: 10,
     marginBottom: 20,
     marginLeft: 20

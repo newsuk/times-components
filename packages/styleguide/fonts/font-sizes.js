@@ -22,7 +22,7 @@ const fontSizes = {
   flags: 12,
   cardMetaMobile: 12,
   puffLink: 11,
-  credit: 9
+  credits: 9
 };
 
 export default fontSizes;

@@ -1,4 +1,4 @@
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   leadAsset: {
@@ -7,7 +7,7 @@ const sharedStyles = {
   articleTextElement: {
     fontFamily: fonts.body,
     lineHeight: 26,
-    fontSize: 17,
+    fontSize: fontSizes.bodyMobile,
     marginBottom: 25,
     color: colours.functional.primary
   },

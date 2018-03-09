@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const AuthorNameWrapper = withResponsiveStyles(Text, {
   base: () => `

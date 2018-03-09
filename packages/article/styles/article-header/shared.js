@@ -9,7 +9,7 @@ const sharedStyles = {
     fontFamily: fonts.headline
   },
   standFirst: {
-    fontSize: 20,
+    fontSize: fontSizes.smallestHeadline,
     lineHeight: 26,
     fontFamily: fonts.headlineRegular,
     color: colours.functional.primary,

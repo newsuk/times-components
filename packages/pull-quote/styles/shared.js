@@ -13,7 +13,7 @@ const sharedStyles = {
   },
   content: {
     fontFamily: fonts.headlineRegular,
-    fontSize: 25,
+    fontSize: fontSizes.pageComponentHeadline,
     lineHeight: 30,
     color: colours.functional.primary
   },

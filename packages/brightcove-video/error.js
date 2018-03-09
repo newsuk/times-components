@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   errorHead: {
     color: "white",
-    fontSize: 20,
+    fontSize: fontSizes.smallestHeadline,
     marginBottom: 5,
     fontFamily: fonts.headline
   },

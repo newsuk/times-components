@@ -5,6 +5,7 @@ import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "@times-components/brightcove-video";
+import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./error-view";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -16,7 +17,7 @@ class BadComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  text: { color: "white", fontSize: 20 },
+  text: { color: "white", fontSize: fontSizes.smallestHeadline },
   background: {
     backgroundColor: "red"
   },
