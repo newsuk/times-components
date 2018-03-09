@@ -2,7 +2,7 @@ import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleHeadLineText: {
-    fontSize: fontSizes.biggestHeadline,
+    fontSize: fontSizes.headline,
     lineHeight: 32,
     color: colours.functional.brandColour,
     marginBottom: 7,

@@ -8,7 +8,7 @@ const { propTypes: { style: TextPropTypesStyle } } = Text;
 const styles = StyleSheet.create({
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: fontSizes.teasers,
+    fontSize: fontSizes.meta,
     color: colours.functional.secondary
   }
 });

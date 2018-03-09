@@ -3,7 +3,7 @@ import { colours, fonts, fontSizes } from "@times-components/styleguide";
 const sharedStyles = {
   text: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.teasers,
+    fontSize: fontSizes.teaser,
     fontFamily: fonts.body,
     lineHeight: 20,
     marginBottom: 10,
@@ -11,7 +11,7 @@ const sharedStyles = {
   },
   metaText: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting,
     marginBottom: 5

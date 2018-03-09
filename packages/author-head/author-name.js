@@ -6,7 +6,7 @@ import { colours, fonts, fontSizes } from "@times-components/styleguide";
 const styles = StyleSheet.create({
   name: {
     fontFamily: fonts.headline,
-    fontSize: fontSizes.biggestHeadline,
+    fontSize: fontSizes.headline,
     color: colours.functional.brandColour
   }
 });

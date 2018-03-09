@@ -1,35 +1,28 @@
 const fontSizes = {
-  labels: 13,
-  teasers: 14,
-  body: 18,
-  smallestHeadline: 18,
+  articleHeadline: 45,
+  pageHeadline: 40,
+  leadHeadline: 35,
+  sliceHeadline: 32,
+  headline: 30,
+  cardHeadline: 27,
+  pageComponentHeadline: 25,
   smallHeadline: 22,
-  regularHeadline: 24,
-  bigHeadline: 27,
-  biggestHeadline: 30,
-  hugeHeadline: 35,
-  hugestHeadline: 45
+  smallestHeadline: 20,
+  body: 18,
+  bodyMobile: 17,
+  secondary: 16,
+  pagingMeta: 15,
+  tertiary: 15,
+  articleMeta: 15,
+  teaser: 14,
+  meta: 14,
+  caption: 13,
+  cardMeta: 13,
+  link: 13,
+  flags: 12,
+  cardMetaMobile: 12,
+  puffLink: 11,
+  credit: 9
 };
 
 export default fontSizes;
-
-/*
-9
-11
-12
-13
-14
-15
-17
-18
-20
-22
-25
-26
-28
-30
-35
-40
-45
-75
-*/

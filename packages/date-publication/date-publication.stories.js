@@ -7,7 +7,7 @@ import DatePublication from "./date-publication";
 const styles = StyleSheet.create({
   text: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting
   }

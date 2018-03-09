@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   arrow: {
     color: colours.functional.action,
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.teasers
+    fontSize: fontSizes.meta
   }
 });
 

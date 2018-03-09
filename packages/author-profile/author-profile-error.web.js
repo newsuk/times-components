@@ -26,7 +26,7 @@ const ErrorContainer = withResponsiveStyles(View, {
 const Heading = withResponsiveStyles(Text, {
   base: () => `
     font-family: ${fonts.headline};
-    font-size: ${fontSizes.hugeHeadline}px;
+    font-size: ${fontSizes.leadHeadline}px;
     text-align: center;
     color: ${colours.functional.brandColour};
     margin-bottom: 12px;

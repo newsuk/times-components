@@ -7,7 +7,7 @@ import ArticleByline from "./article-byline";
 const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
-  fontSize: fontSizes.labels,
+  fontSize: fontSizes.cardMeta,
   fontFamily: fonts.supporting,
   color: colours.functional.secondary,
   lineHeight: 13,

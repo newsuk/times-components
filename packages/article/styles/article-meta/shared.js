@@ -20,12 +20,12 @@ const sharedStyles = {
   },
   datePublication: {
     color: colours.functional.secondary,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting
   },
   byline: {
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.cardMeta,
     fontFamily: fonts.supporting,
     color: colours.functional.secondary,
     lineHeight: 15

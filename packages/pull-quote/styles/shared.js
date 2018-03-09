@@ -19,7 +19,7 @@ const sharedStyles = {
   },
   caption: {
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.caption,
     marginBottom: 0,
     lineHeight: 13
   },
@@ -27,7 +27,7 @@ const sharedStyles = {
     color: colours.functional.action,
     fontFamily: fonts.supporting,
     textDecorationLine: "none",
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.link,
     marginLeft: 3,
     lineHeight: 13
   },

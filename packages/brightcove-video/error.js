@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 15,
     opacity: 0.8,
-    fontSize: fontSizes.teasers,
+    fontSize: fontSizes.meta,
     fontFamily: fonts.body
   },
   resetButton: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   resetText: {
     color: "white",
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     position: "relative",
     top: 3,

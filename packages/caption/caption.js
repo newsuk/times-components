@@ -24,7 +24,7 @@ const defaultStyle = StyleSheet.create({
   },
   text: {
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.labels,
+    fontSize: fontSizes.caption,
     color: colours.functional.secondary,
     ...lineHeightStyle
   },

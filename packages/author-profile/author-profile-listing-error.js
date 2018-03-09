@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   heading: {
     alignSelf: "center",
     fontFamily: fonts.headline,
-    fontSize: fontSizes.hugeHeadline,
+    fontSize: fontSizes.leadHeadline,
     textAlign: "center",
     color: colours.functional.brandColour,
     marginBottom: 12

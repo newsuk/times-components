@@ -4,7 +4,7 @@ import { colours } from "@times-components/styleguide";
 
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `
-    font-size: ${fontSizes.biggestHeadline}px;
+    font-size: ${fontSizes.headline}px;
     color: ${colours.functional.brandColour};
     margin-bottom: 8px;
     font-family: "${fonts.headline}";
@@ -12,7 +12,7 @@ export const HeadlineContainer = withResponsiveStyles(Text, {
     line-height: 30px;
   `,
   mediumUp: () => `
-    font-size: ${fontSizes.hugestHeadline}px;
+    font-size: ${fontSizes.articleHeadline}px;
     line-height: 45px;
   `
 });
