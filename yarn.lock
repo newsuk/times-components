@@ -345,10 +345,11 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-"@times-components/fructose@3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.2.2.tgz#c6b8fdc032800004f8af4f8e8eb5155d3b671418"
+"@times-components/fructose@3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.2.3.tgz#dd4a4f643aeb1a19c70091d0cdbc01d7ff3987f8"
   dependencies:
+    babel-loader "7.1.4"
     babel-polyfill "^6.26.0"
     babel-preset-es2015 "^6.24.1"
     callsite "^1.0.0"
@@ -395,16 +396,16 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
 "@types/node@*", "@types/node@^9.4.6":
-  version "9.4.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
+  version "9.4.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
 
 "@types/node@6.0.66":
   version "6.0.66"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.66.tgz#5680b74a6135d33d4c00447e7c3dc691a4601625"
 
 "@types/node@^8.0.19":
-  version "8.9.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.4.tgz#dfd327582a06c114eb6e0441fa3d6fab35edad48"
+  version "8.9.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
 
 "@types/zen-observable@0.5.3", "@types/zen-observable@^0.5.3":
   version "0.5.3"
@@ -973,8 +974,8 @@ autoprefixer@^7.2.3:
     postcss-value-parser "^3.2.3"
 
 aws-sdk@^2.179.0, aws-sdk@^2.90.0:
-  version "2.206.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.206.0.tgz#235ca109576c888f2467d1c10c33af7e342d3be1"
+  version "2.207.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.207.0.tgz#c0a30977d8d2788301850b265ff05eb7c9fdf7f2"
   dependencies:
     buffer "4.9.1"
     events "^1.1.1"
@@ -4315,8 +4316,8 @@ engine.io-client@~1.8.4:
     yeast "0.1.2"
 
 engine.io-client@~3.1.0:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/engine.io-client/-/engine.io-client-3.1.5.tgz#85de17666560327ef1817978f6e3f8101ded2c47"
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/engine.io-client/-/engine.io-client-3.1.6.tgz#5bdeb130f8b94a50ac5cbeb72583e7a4a063ddfd"
   dependencies:
     component-emitter "1.2.1"
     component-inherit "0.0.3"
@@ -4424,8 +4425,8 @@ enzyme-to-json@3.3.0:
     lodash "^4.17.4"
 
 enzyme-to-json@^3.2.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.3.2.tgz#5caf0b3729ffea3aa14702f12c37e93b501a9d96"
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.3.1.tgz#64239dcd417e2fb552f4baa6632de4744b9b5b93"
   dependencies:
     lodash "^4.17.4"
 
@@ -4488,8 +4489,8 @@ es-to-primitive@^1.1.1:
     is-symbol "^1.0.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.39"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.39.tgz#fca21b67559277ca4ac1a1ed7048b107b6f76d87"
+  version "0.10.40"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.40.tgz#ab3d2179b943008c5e9ef241beb25ef41424c774"
   dependencies:
     es6-iterator "~2.0.3"
     es6-symbol "~3.1.1"
@@ -12510,11 +12511,10 @@ wordwrap@~0.0.2:
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 worker-farm@^1.3.1, worker-farm@^1.5.2:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/worker-farm/-/worker-farm-1.5.4.tgz#4debbe46b40edefcc717ebde74a90b1ae1e909a1"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/worker-farm/-/worker-farm-1.6.0.tgz#aecc405976fab5a95526180846f0dba288f3a4a0"
   dependencies:
     errno "~0.1.7"
-    xtend "~4.0.1"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
