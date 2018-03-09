@@ -373,9 +373,9 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@types/async@2.0.46":
-  version "2.0.46"
-  resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.46.tgz#f13a6c336a6582b95d0c0269e796b709488fd54d"
+"@types/async@2.0.47":
+  version "2.0.47"
+  resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.1"
@@ -620,25 +620,25 @@ apollo-cache-inmemory@1.1.5:
     apollo-utilities "^1.0.4"
     graphql-anywhere "^4.1.1"
 
-apollo-cache@^1.1.0:
+apollo-cache@^1.1.0, apollo-cache@^1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.1.5.tgz#159488bb8981ceacfe26172666a593f38318dbf7"
   dependencies:
     apollo-utilities "^1.0.9"
 
-apollo-client@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.2.0.tgz#e22c4ba3a3c01aec6dc916a5dbc0f39c58d277fb"
+apollo-client@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.2.3.tgz#a8df51c9ff89acb0d98de81b911e56b1ce468ca3"
   dependencies:
     "@types/zen-observable" "^0.5.3"
-    apollo-cache "^1.1.0"
+    apollo-cache "^1.1.2"
     apollo-link "^1.0.0"
     apollo-link-dedup "^1.0.0"
-    apollo-utilities "^1.0.4"
+    apollo-utilities "^1.0.6"
     symbol-observable "^1.0.2"
     zen-observable "^0.7.0"
   optionalDependencies:
-    "@types/async" "2.0.46"
+    "@types/async" "2.0.47"
 
 apollo-link-dedup@^1.0.0:
   version "1.0.8"
@@ -679,7 +679,7 @@ apollo-utilities@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.4.tgz#560009ea5541b9fdc4ee07ebb1714ee319a76c15"
 
-apollo-utilities@^1.0.0, apollo-utilities@^1.0.4, apollo-utilities@^1.0.9:
+apollo-utilities@^1.0.0, apollo-utilities@^1.0.4, apollo-utilities@^1.0.6, apollo-utilities@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.9.tgz#16f9f2f92fd6c651d497aba6f2747ce17d87d80a"
 
