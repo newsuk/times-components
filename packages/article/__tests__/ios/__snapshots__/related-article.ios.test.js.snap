@@ -110,11 +110,23 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -175,8 +187,8 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -210,7 +222,15 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -459,8 +479,25 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -655,8 +692,25 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -851,8 +905,25 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1101,11 +1172,23 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1166,8 +1249,8 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1201,7 +1284,15 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1396,11 +1487,23 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1461,8 +1564,8 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1496,7 +1599,15 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1745,11 +1856,23 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1810,8 +1933,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -1845,7 +1968,15 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2027,8 +2158,25 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2251,11 +2399,23 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2316,8 +2476,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -2351,7 +2511,15 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2533,8 +2701,25 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2698,8 +2883,25 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2922,11 +3124,23 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2987,8 +3201,8 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           <BVLinearGradient
                             colors={
                               Array [
-                                "#f9f9f9",
-                                "#ededed",
+                                "#F9F9F9",
+                                "#EDEDED",
                               ]
                             }
                             end={
@@ -3022,7 +3236,15 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={

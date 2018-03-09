@@ -107,11 +107,23 @@ exports[`Related articles tests on android DEFAULT template should render one re
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -204,8 +216,8 @@ exports[`Related articles tests on android DEFAULT template should render one re
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -240,7 +252,15 @@ exports[`Related articles tests on android DEFAULT template should render one re
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -488,8 +508,25 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -683,8 +720,25 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -878,8 +932,25 @@ exports[`Related articles tests on android DEFAULT template should render three 
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1127,11 +1198,23 @@ exports[`Related articles tests on android DEFAULT template should render two re
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1224,8 +1307,8 @@ exports[`Related articles tests on android DEFAULT template should render two re
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -1260,7 +1343,15 @@ exports[`Related articles tests on android DEFAULT template should render two re
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1454,11 +1545,23 @@ exports[`Related articles tests on android DEFAULT template should render two re
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1551,8 +1654,8 @@ exports[`Related articles tests on android DEFAULT template should render two re
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -1587,7 +1690,15 @@ exports[`Related articles tests on android DEFAULT template should render two re
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -1835,11 +1946,23 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -1932,8 +2055,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -1968,7 +2091,15 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2149,8 +2280,25 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2372,11 +2520,23 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -2469,8 +2629,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -2505,7 +2665,15 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2686,8 +2854,25 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -2850,8 +3035,25 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
-                <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
@@ -3073,11 +3275,23 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                 }
               }
             >
-              <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
                 <View
+                  className=""
                   style={
                     Object {
+                      "flex": 1,
                       "marginBottom": 10,
+                      "minWidth": "100%",
                     }
                   }
                 >
@@ -3170,8 +3384,8 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                             <BVLinearGradient
                               colors={
                                 Array [
-                                  "#f9f9f9",
-                                  "#ededed",
+                                  "#F9F9F9",
+                                  "#EDEDED",
                                 ]
                               }
                               end={
@@ -3206,7 +3420,15 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
                     </View>
                   </View>
                 </View>
-                <View>
+                <View
+                  className=""
+                  style={
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    }
+                  }
+                >
                   <View>
                     <View
                       style={
