@@ -12,7 +12,7 @@ describe("Link tests on Web", () => {
       color: ${colours.functional.action};
       font-family: "${fonts.bodyRegular}";
       line-height: 26px;
-      font-size: 17px;
+      font-size: ${fontSizes.bodyMobile}px;
       margin-bottom: 25px;
       margin-top: 0;
   `,

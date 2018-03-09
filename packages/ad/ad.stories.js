@@ -3,6 +3,7 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
+import { fontSizes } from "@times-components/styleguide";
 import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
@@ -162,7 +163,7 @@ storiesOf("Advertisement", module)
                   width: 100%;
                   height: 100%;
                   background: ${worked ? "#8C8" : "#C88"};
-                  font-size: 20px;
+                  font-size: ${fontSizes.smallestHeadline}px;
                   padding: 10px;
               ">
                 worked=${worked}<br>

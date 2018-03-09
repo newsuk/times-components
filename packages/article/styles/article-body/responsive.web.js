@@ -16,7 +16,7 @@ export const Paragraph = withResponsiveStyles("p", {
     color: ${colours.functional.primary};
     font-family: "${fonts.bodyRegular}";
     line-height: 26px;
-    font-size: 17px;
+    font-size: ${fontSizes.bodyMobile}px;
     margin-bottom: 25px;
     margin-top: 0;
     display: block;
@@ -32,7 +32,7 @@ export const LinkStyle = withResponsiveStyles("a", {
     color: ${colours.functional.action};
     font-family: "${fonts.bodyRegular}";
     line-height: 26px;
-    font-size: 17px;
+    font-size: ${fontSizes.bodyMobile}px;
     margin-bottom: 25px;
     margin-top: 0;
 `,
