@@ -15,10 +15,10 @@ import ArticleSummary, {
 const CardWrapper = withResponsiveStyles(View, {
   mediumUp: () => `
     .authorProfileImage {
-      min-width: auto;
-      max-width: 285px;
       flex: 2;
       margin-bottom: 0;
+      max-width: 285px;
+      min-width: auto;
       padding-right: 15px;
     };
     .authorProfileContent {
@@ -77,8 +77,8 @@ const AuthorProfileItem = item => {
           <Card
             contentContainerClass="authorProfileContent"
             imageContainerClass="authorProfileImage"
-            isLoading={isLoading}
             imageRatio={imageRatio}
+            isLoading={isLoading}
             showImage={showImage}
           />
         </CardWrapper>
