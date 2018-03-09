@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.1...@times-components/video-label@0.1.2) (2018-03-09)
+
+
+### Bug Fixes
+
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.0...@times-components/video-label@0.1.1) (2018-03-09)
 

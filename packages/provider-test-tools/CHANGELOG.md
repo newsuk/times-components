@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.11"></a>
+## [0.1.11](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.10...@times-components/provider-test-tools@0.1.11) (2018-03-09)
+
+
+### Bug Fixes
+
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+
+
+
+
 <a name="0.1.10"></a>
 ## [0.1.10](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.9...@times-components/provider-test-tools@0.1.10) (2018-03-08)
 

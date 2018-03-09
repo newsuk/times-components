@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
@@ -44,7 +44,7 @@
     "@storybook/addon-actions": "3.3.14",
     "@storybook/react-native": "3.3.14",
     "@times-components/eslint-config-thetimes": "0.1.3",
-    "@times-components/utils": "0.5.2",
+    "@times-components/utils": "0.5.3",
     "dextrose": "1.5.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
