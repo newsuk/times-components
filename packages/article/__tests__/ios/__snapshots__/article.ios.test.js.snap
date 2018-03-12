@@ -6724,8 +6724,8 @@ exports[`Article test on ios renders article with video asset 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -7122,8 +7122,8 @@ exports[`Article test on ios renders article with video asset 1`] = `
                     <BVLinearGradient
                       colors={
                         Array [
-                          "#f9f9f9",
-                          "#ededed",
+                          "#F9F9F9",
+                          "#EDEDED",
                         ]
                       }
                       end={
@@ -7204,7 +7204,7 @@ exports[`Article test on ios renders article with video asset 1`] = `
                         "lineHeight": 16,
                       },
                       Object {
-                        "color": "#333",
+                        "color": "#333333",
                         "fontSize": 9,
                         "fontWeight": "400",
                         "letterSpacing": 1,

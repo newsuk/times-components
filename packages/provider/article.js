@@ -15,11 +15,13 @@ export const query = gql`
       content
       leadAsset {
         ... on Video {
+          type: __typename
           posterImage {
             ...imageProps
           }
         }
         ... on Image {
+          type: __typename
           ...imageProps
         }
       }

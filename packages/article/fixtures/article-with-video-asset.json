@@ -96,6 +96,7 @@
         }
       ],
       "leadAsset": {
+        "type": "Video",
         "posterImage": {
           "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
           "title": "",

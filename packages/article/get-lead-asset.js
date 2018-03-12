@@ -1,7 +1,7 @@
-export default function getLeadAsset({ leadAsset: asset }) {
+export default function getLeadAsset({ type, leadAsset: asset }) {
   if (!asset) return { isVideo: false, leadAsset: null };
 
-  const isVideo = !!asset.posterImage;
+  const isVideo = asset.type === 'Video';
   const leadAsset = isVideo ? asset.posterImage : asset;
 
   return {
