@@ -30,7 +30,7 @@ const IconVideo = ({ width, height, fillColour }) => (
 IconVideo.propTypes = iconPropTypes;
 
 IconVideo.defaultProps = {
-  fillColour: colours.functional.timesBlack
+  fillColour: colours.functional.brandColour
 };
 
 export default IconVideo;

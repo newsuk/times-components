@@ -1,6 +1,6 @@
 import { fonts } from "@times-components/styleguide";
 
-const shared =  {
+const shared = {
   fontFamily: fonts.supporting,
   fontSize: 12,
   lineHeight: 12,
