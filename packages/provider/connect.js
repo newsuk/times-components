@@ -1,5 +1,5 @@
 import pick from "lodash.pick";
-import { graphql } from "react-apollo-temp";
+import { graphql } from "react-apollo";
 import PropTypes from "prop-types";
 import withDebounce from "./debounce";
 
@@ -30,16 +30,13 @@ export const makeGraphqlOptions = (
 const connectGraphql = (query, propsToVariables) => {
   const variableNames = getQueryVariables(query.definitions);
   const Wrapper = ({
-    data: { error, loading, refetch, retry, ...result },
+    data: { error, loading, refetch, ...result },
     children,
     ...props
   }) =>
     children({
       error,
-      refetch: () => {
-        retry(); // FIXME: remove this after react-apollo fixes https://github.com/apollographql/apollo-client/issues/2513
-        refetch();
-      },
+      refetch: () => refetch(), // using shorthand causes a rect-native error
       isLoading: loading,
       ...result,
       ...props

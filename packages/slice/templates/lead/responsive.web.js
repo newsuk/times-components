@@ -2,12 +2,16 @@ import { View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 export const SupportsContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
     flex-direction: column;
     height: auto;
+  `,
+  mediumUp: () => `
+    flex-basis: 0 !important;
   `
 });
 SupportsContainer.displayName = "SupportsContainer";
@@ -15,14 +19,10 @@ SupportsContainer.displayName = "SupportsContainer";
 export const getSupportContainer = ({ index }) => {
   const SupportContainer = withResponsiveStyles(View, {
     base: () => {
-      const firstSupportStyle = `
-        padding-bottom: 0;
-      `;
-
       const secondSupportStyle = `
         border-top-style: solid;
         border-top-width: 1px;
-        border-top-color: #dbdbdb;
+        border-top-color: ${colours.functional.keyline};
         margin-top: 10px;
         padding-top: 10px;
       `;
@@ -33,7 +33,7 @@ export const getSupportContainer = ({ index }) => {
         min-height: auto;
         padding-left: 10px;
         padding-right: 10px;
-        ${index === 0 ? firstSupportStyle : secondSupportStyle}
+        ${index > 0 ? secondSupportStyle : ``}
       `;
     },
     mediumUp: () => `
@@ -82,7 +82,7 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getLeadContainer = ({ hasSupports }) => {
+export const getLeadContainer = ({ hasSupports, supportCount }) => {
   const LeadContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
@@ -98,14 +98,18 @@ export const getLeadContainer = ({ hasSupports }) => {
       padding-right: 0;
     `;
       const withSupportsStyle = `
-      flex-grow: 3;
+      flex-basis: 0 !important;
+      flex-grow: ${supportCount === 1 ? "3" : "1.75"};
       padding-left: 10px;
       padding-right: 10px;
     `;
       return `
       ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
     `;
-    }
+    },
+    wideUp: () => `
+      flex-grow: ${supportCount === 1 ? "1.75" : "1.25"};;
+    `
   });
   LeadContainer.displayName = "LeadContainer";
   return LeadContainer;

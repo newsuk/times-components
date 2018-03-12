@@ -3,12 +3,19 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import { colours } from "@times-components/styleguide";
 import { IconDiamond, IconTwitter, IconVideo } from "../icons";
 
 module.exports = () => {
   it("Diamond renders correctly", () => {
     const tree = renderer
-      .create(<IconDiamond width={50} height={50} fillColour="#4D4D4D" />)
+      .create(
+        <IconDiamond
+          width={50}
+          height={50}
+          fillColour={colours.functional.tertiary}
+        />
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -24,7 +31,13 @@ module.exports = () => {
 
   it("Twitter renders correctly with different fillColour", () => {
     const tree = renderer
-      .create(<IconTwitter width={50} height={50} fillColour="#4D4D4D" />)
+      .create(
+        <IconTwitter
+          width={50}
+          height={50}
+          fillColour={colours.functional.tertiary}
+        />
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();

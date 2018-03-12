@@ -3,11 +3,16 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { CenteredDecorator } from "@times-components/storybook";
+import { colours } from "@times-components/styleguide";
 import Link, { TextLink } from "./link";
 
-const BigPinkSquare = props => (
+const BigSquare = props => (
   <View
-    style={{ width: 100, height: 100, backgroundColor: "pink" }}
+    style={{
+      width: 100,
+      height: 100,
+      backgroundColor: colours.functional.backgroundTertiary
+    }}
     {...props}
   />
 );
@@ -16,7 +21,13 @@ storiesOf("Primitives/Link", module)
   .addDecorator(CenteredDecorator)
   .add("Link with big content", () => (
     <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
-      <View style={{ width: 100, height: 100, backgroundColor: "pink" }} />
+      <View
+        style={{
+          width: 100,
+          height: 100,
+          backgroundColor: colours.functional.backgroundTertiary
+        }}
+      />
     </Link>
   ))
   .add("Link can prevent browser navigation", () => (
@@ -27,7 +38,7 @@ storiesOf("Primitives/Link", module)
         action("onPress")(e);
       }}
     >
-      <BigPinkSquare />
+      <BigSquare />
     </Link>
   ))
   .add("TextLink", () => (
@@ -37,7 +48,7 @@ storiesOf("Primitives/Link", module)
   ))
   .add("TextLink with styles", () => (
     <TextLink
-      style={{ color: "red" }}
+      style={{ color: colours.functional.action }}
       url="https://thetimes.co.uk/"
       onPress={action("onPress")}
     >

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.1"></a>
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.0...@times-components/article-summary@0.18.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.26...@times-components/article-summary@0.18.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.17.26"></a>
+## [0.17.26](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.25...@times-components/article-summary@0.17.26) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
+<a name="0.17.25"></a>
+## [0.17.25](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.24...@times-components/article-summary@0.17.25) (2018-03-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
 <a name="0.17.24"></a>
 ## [0.17.24](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.23...@times-components/article-summary@0.17.24) (2018-03-06)
 

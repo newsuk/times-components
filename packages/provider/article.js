@@ -40,6 +40,7 @@ export const query = gql`
         summary180: summary(maxCharCount: 180)
         leadAsset {
           ... on Image {
+            id
             title
             crop169: crop(ratio: "16:9") {
               url

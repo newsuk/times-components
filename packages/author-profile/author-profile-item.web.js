@@ -5,6 +5,7 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -56,6 +57,7 @@ const AuthorProfileItem = item => {
     return (
       <View style={[styles.container, style]}>
         <Card
+          childRatio={2.7}
           isLoading={isLoading}
           imageRatio={imageRatio}
           showImage={showImage}
@@ -68,7 +70,7 @@ const AuthorProfileItem = item => {
   const childProps = {
     labelProps: {
       title: label,
-      color: "#333333"
+      color: colours.functional.primary
     },
     headline: () => <ArticleSummaryHeadline headline={headline} />,
     datePublicationProps: {
@@ -103,6 +105,7 @@ const AuthorProfileItem = item => {
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
         <Card
+          childRatio={2.7}
           image={imageUri ? { uri: imageUri } : null}
           imageRatio={imageRatio}
           imageSize={imageSize}

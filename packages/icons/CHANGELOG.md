@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/icons@0.2.0...@times-components/icons@0.3.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/icons@0.1.21...@times-components/icons@0.2.0) (2018-03-07)
+
+
+### Features
+
+* video label ([#704](https://github.com/newsuk/times-components/issues/704)) ([d13c2a5](https://github.com/newsuk/times-components/commit/d13c2a5))
+
+
+
+
 <a name="0.1.21"></a>
 ## [0.1.21](https://github.com/newsuk/times-components/compare/@times-components/icons@0.1.20...@times-components/icons@0.1.21) (2018-03-06)
 

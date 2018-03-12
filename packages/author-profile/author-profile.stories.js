@@ -14,7 +14,7 @@ import {
   makeMocksWithAuthorError,
   makeMocksWithPageError
 } from "@times-components/provider/fixtures/author-profile/fixture-generator";
-import { ApolloProvider } from "react-apollo-temp";
+import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
@@ -159,7 +159,13 @@ storiesOf("Pages/AuthorProfile", module)
 
       if (uri) {
         const client = new ApolloClient({
-          link: new HttpLink({ uri }),
+          link: new HttpLink({
+            uri,
+            useGETForQueries: true,
+            headers: {
+              "content-type": "application/x-www-form-urlencoded"
+            }
+          }),
           cache: new InMemoryCache({
             fragmentMatcher
           })

@@ -12,8 +12,8 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
   base: () => `display: none;`,
   mediumUp: () => `
     display: flex;
-    border-top-color: ${colours.functional.alto};
-    border-bottom-color: ${colours.functional.alto};
+    border-top-color: ${colours.functional.keyline};
+    border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;

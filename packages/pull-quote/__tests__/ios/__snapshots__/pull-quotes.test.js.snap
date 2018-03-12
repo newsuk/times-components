@@ -26,7 +26,7 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption 1`] = `
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#696969",
         },
       ]
     }
@@ -110,7 +110,7 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption and a Twitter 1`] = `
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#696969",
         },
       ]
     }
@@ -247,7 +247,7 @@ exports[`PullQuotes test on ios Pull Quotes without a Caption 1`] = `
           "marginTop": 0,
         },
         Object {
-          "color": "#13354e",
+          "color": "#696969",
         },
       ]
     }

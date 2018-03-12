@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import config from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 export const ChildrenContainer = ({ childCount }) => ({
   base: () => `
@@ -34,7 +35,7 @@ export const ChildrenContainer = ({ childCount }) => ({
 export const ChildContainer = ({ isFirstChild }) => ({
   base: () => `
     border-style: solid;
-    border-bottom-color: #dbdbdb;
+    border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
     padding-bottom: 10px;
     padding-left: 10px;

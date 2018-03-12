@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.44.1"></a>
+## [0.44.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.44.0...@times-components/article@0.44.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.43.1...@times-components/article@0.44.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.43.1"></a>
+## [0.43.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.43.0...@times-components/article@0.43.1) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.43.0"></a>
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.7...@times-components/article@0.43.0) (2018-03-08)
+
+
+### Features
+
+* make related articles use Slice and add Lead and Two ([#702](https://github.com/newsuk/times-components/issues/702)) ([7e441ac](https://github.com/newsuk/times-components/commit/7e441ac))
+
+
+
+
+<a name="0.42.7"></a>
+## [0.42.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.6...@times-components/article@0.42.7) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.42.6"></a>
+## [0.42.6](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.5...@times-components/article@0.42.6) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.42.5"></a>
+## [0.42.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.4...@times-components/article@0.42.5) (2018-03-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.42.4"></a>
+## [0.42.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.3...@times-components/article@0.42.4) (2018-03-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.42.3"></a>
 ## [0.42.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.42.2...@times-components/article@0.42.3) (2018-03-06)
 

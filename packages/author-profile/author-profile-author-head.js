@@ -1,12 +1,13 @@
 import AuthorHead from "@times-components/author-head";
 import Gradient from "@times-components/gradient";
+import { colours } from "@times-components/styleguide";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: "#F9F8F3",
+    backgroundColor: colours.functional.backgroundPrimary,
     minHeight: 264,
     width: "100%"
   },
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   roundImage: {
     width: 100,
     height: 100,
-    borderColor: "#FFF",
+    borderColor: colours.functional.contrast,
     borderRadius: 50,
     overflow: "hidden"
   },

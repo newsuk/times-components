@@ -6,7 +6,7 @@ import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
 import { IconTwitter } from "@times-components/icons";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   twitterLink: {
     fontSize: 15,
     fontFamily: fonts.supporting,
-    color: "#006699",
+    color: colours.functional.action,
     textDecorationLine: "none",
     paddingLeft: 5
   }

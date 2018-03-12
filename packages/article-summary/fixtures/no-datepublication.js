@@ -1,10 +1,11 @@
 import React from "react";
+import { colours } from "@times-components/styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
 export default {
   labelProps: {
     title: "Camilla Long",
-    color: "#333333"
+    color: colours.functional.primary
   },
   headline: () => (
     <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />

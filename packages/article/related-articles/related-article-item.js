@@ -1,6 +1,7 @@
 import React from "react";
-import get from "lodash.get";
+import PropTypes from "prop-types";
 import { View } from "react-native";
+import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
@@ -8,14 +9,19 @@ import ArticleSummary, {
 import Image from "@times-components/image";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import { relatedArticleItemPropTypes } from "./proptypes";
+import relatedArticleItemPropTypes from "./related-article-item-proptypes";
 import styles from "./styles";
 
-const RelatedArticleItem = ({ article, onPress }) => {
+const RelatedArticleItem = ({
+  article,
+  onPress,
+  showImage,
+  showSummaryContent
+}) => {
   const {
     byline,
-    label,
     headline,
+    label,
     publishedTime,
     section,
     summary,
@@ -31,26 +37,32 @@ const RelatedArticleItem = ({ article, onPress }) => {
   return (
     <Link url={url} onPress={onPress}>
       <View>
-        {imageUri ? (
-          <View style={styles.imageContainer}>
-            <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </View>
-        ) : null}
+        {imageUri &&
+          showImage && (
+            <View style={styles.imageContainer}>
+              <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
+            </View>
+          )}
         <ArticleSummary
           bylineProps={{ ast: byline }}
+          content={() =>
+            showSummaryContent && <ArticleSummaryContent ast={summary} />
+          }
           datePublicationProps={{ date: publishedTime }}
           headline={() => <ArticleSummaryHeadline headline={headline} />}
           labelProps={{
             title: label,
             color: colours.section[section] || colours.section.default
           }}
-          content={() => <ArticleSummaryContent ast={summary} />}
         />
       </View>
     </Link>
   );
 };
 
-RelatedArticleItem.propTypes = relatedArticleItemPropTypes;
+RelatedArticleItem.propTypes = {
+  ...relatedArticleItemPropTypes,
+  showImage: PropTypes.bool.isRequired
+};
 
 export default RelatedArticleItem;

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.1"></a>
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.20.0...@times-components/author-head@0.20.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.13...@times-components/author-head@0.20.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.19.13"></a>
+## [0.19.13](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.12...@times-components/author-head@0.19.13) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.19.12"></a>
+## [0.19.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.11...@times-components/author-head@0.19.12) (2018-03-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.19.11"></a>
 ## [0.19.11](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.10...@times-components/author-head@0.19.11) (2018-03-06)
 

@@ -41,10 +41,10 @@ exports[`Pagination on iOS renders correctly 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -175,10 +175,10 @@ exports[`Pagination on iOS renders next link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -309,10 +309,10 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -519,10 +519,10 @@ exports[`Pagination on iOS renders prev link 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -653,10 +653,10 @@ exports[`Pagination on iOS renders results message 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,
@@ -759,10 +759,10 @@ exports[`Pagination on iOS renders with hidden results 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderStyle": "solid",
-        "borderTopColor": "#dbdbdb",
+        "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
         "flexDirection": "row",
         "height": 50,

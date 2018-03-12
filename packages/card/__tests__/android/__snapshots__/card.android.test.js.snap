@@ -94,8 +94,8 @@ exports[`Card tests on android renders loading state 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={
@@ -145,8 +145,8 @@ exports[`Card tests on android renders loading state 1`] = `
         <BVLinearGradient
           colors={
             Array [
-              "#f9f9f9",
-              "#ededed",
+              "#F9F9F9",
+              "#EDEDED",
             ]
           }
           end={
@@ -189,8 +189,8 @@ exports[`Card tests on android renders loading state 1`] = `
         <BVLinearGradient
           colors={
             Array [
-              "#f9f9f9",
-              "#ededed",
+              "#F9F9F9",
+              "#EDEDED",
             ]
           }
           end={
@@ -233,8 +233,8 @@ exports[`Card tests on android renders loading state 1`] = `
         <BVLinearGradient
           colors={
             Array [
-              "#f9f9f9",
-              "#ededed",
+              "#F9F9F9",
+              "#EDEDED",
             ]
           }
           end={
@@ -281,8 +281,8 @@ exports[`Card tests on android renders loading state 1`] = `
         <BVLinearGradient
           colors={
             Array [
-              "#f9f9f9",
-              "#ededed",
+              "#F9F9F9",
+              "#EDEDED",
             ]
           }
           end={
@@ -423,8 +423,8 @@ exports[`Card tests on android renders vertical by default 1`] = `
                 <BVLinearGradient
                   colors={
                     Array [
-                      "#f9f9f9",
-                      "#ededed",
+                      "#F9F9F9",
+                      "#EDEDED",
                     ]
                   }
                   end={

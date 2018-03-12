@@ -19,11 +19,11 @@ import {
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
-    it("renders SliceContainer correctly", () => {
+    it("should render SliceContainer correctly", () => {
       expect(renderer.create(<SliceContainer />).toJSON()).toMatchSnapshot();
     });
 
-    it("renders Separator correctly", () => {
+    it("should render Separator correctly", () => {
       let Separator = getSeparator({ hasLeftRightMargin: false });
       expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
       Separator = getSeparator({ hasLeftRightMargin: true });
@@ -32,11 +32,11 @@ describe("Slice tests on web", () => {
   });
 
   context("responsive default template components", () => {
-    it("renders ChildContainer correctly", () => {
+    it("should render ChildContainer correctly", () => {
       expect(renderer.create(<ChildContainer />).toJSON()).toMatchSnapshot();
     });
 
-    it("renders ChildrenContainer correctly", () => {
+    it("should render ChildrenContainer correctly", () => {
       let ChildrenContainer = getChildrenContainer({ childCount: 1 });
       expect(renderer.create(<ChildrenContainer />).toJSON()).toMatchSnapshot();
       ChildrenContainer = getChildrenContainer({ childCount: 3 });
@@ -45,25 +45,25 @@ describe("Slice tests on web", () => {
   });
 
   context("responsive lead and two template components", () => {
-    it("renders SupportsContainer correctly", () => {
+    it("should render SupportsContainer correctly", () => {
       expect(renderer.create(<SupportsContainer />).toJSON()).toMatchSnapshot();
     });
 
-    it("renders SupportContainer correctly", () => {
+    it("should render SupportContainer correctly", () => {
       let SupportContainer = getSupportContainer({ index: 0 });
       expect(renderer.create(<SupportContainer />).toJSON()).toMatchSnapshot();
       SupportContainer = getSupportContainer({ index: 1 });
       expect(renderer.create(<SupportContainer />).toJSON()).toMatchSnapshot();
     });
 
-    it("renders Container correctly", () => {
+    it("should render Container correctly", () => {
       let Container = getContainer({ hasSupports: true });
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
       Container = getContainer({ hasSupports: false });
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
     });
 
-    it("renders LeadContainer correctly", () => {
+    it("should render LeadContainer correctly", () => {
       let LeadContainer = getLeadContainer({ hasSupports: true });
       expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
       LeadContainer = getLeadContainer({ hasSupports: false });

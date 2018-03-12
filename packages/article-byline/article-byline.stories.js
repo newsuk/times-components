@@ -9,14 +9,14 @@ const authorsAST = require("./fixtures/authors.json");
 const bylineStyles = {
   fontSize: 13,
   fontFamily: fonts.supporting,
-  color: colours.functional.doveGrey,
+  color: colours.functional.secondary,
   lineHeight: 13,
   flexDirection: "row"
 };
 
 const bylineLinkStyles = {
   link: {
-    color: colours.functional.azureBlue,
+    color: colours.functional.action,
     textDecorationLine: "none"
   }
 };

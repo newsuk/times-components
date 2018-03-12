@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { StyleSheet, View, ViewPropTypes } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
+import { colours } from "@times-components/styleguide";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = StyleSheet.create({
@@ -38,7 +39,10 @@ const Gradient = ({ degrees, children, style }) => {
         start={start}
         end={end}
         locations={[0.0, 1.0]}
-        colors={["#f9f9f9", "#ededed"]}
+        colors={[
+          colours.functional.backgroundSecondary,
+          colours.functional.backgroundTertiary
+        ]}
         style={[styles.container]}
       >
         {children}
