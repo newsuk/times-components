@@ -11,6 +11,7 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
+  const relatedArticlesData = articleData.relatedArticles
 
   const data = [
     { type: "leadAsset", data: leadAssetData },
@@ -22,6 +23,8 @@ const prepareDataForListView = articleData => {
       data: i,
       index
     }))
+  ).concat(
+    { type: "relatedArticles", data: relatedArticlesData }
   );
 
   if (!leadAssetData) {

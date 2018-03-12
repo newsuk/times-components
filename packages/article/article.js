@@ -14,6 +14,7 @@ import styles from "./styles/article-body";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
+import RelatedArticles from "./related-articles/related-articles";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -36,7 +37,7 @@ class ArticlePage extends React.Component {
       return (
         <ArticleHeader
           key={rowData.type}
-          headline={headline}
+          headline={"Test"}
           flags={flags}
           standfirst={standfirst}
           label={label}
@@ -55,6 +56,15 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "articleBodyRow") {
       return <ArticleRow content={rowData} />;
+    } else if (rowData.type === "relatedArticles") {
+      return (
+        <RelatedArticles
+          analyticsStream={() => {}}
+          articles={rowData.data}
+          template="DEFAULT"
+          onPress={() => {}}
+        />
+      );
     }
 
     return null;
