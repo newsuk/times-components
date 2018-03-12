@@ -20,12 +20,12 @@ const CardWrapper = withResponsiveStyles(View, {
       max-width: 285px;
       min-width: auto;
       padding-right: 15px;
-    };
+    }
     .authorProfileContent {
       flex: 2.7;
       flex-basis: 0 !important;
       min-width: 380px;
-    };
+    }
   `
 });
 
