@@ -2350,7 +2350,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
+                          "fontWeight": "900",
                           "marginBottom": 5,
                         },
                         Object {
@@ -2592,7 +2592,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
+                          "fontWeight": "900",
                           "marginBottom": 5,
                         },
                         Object {
@@ -2834,7 +2834,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                         Object {
                           "color": "#333333",
                           "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
+                          "fontWeight": "900",
                           "marginBottom": 5,
                         },
                         Object {
@@ -3324,7 +3324,7 @@ exports[`AuthorProfile test on ios renders profile content item component 1`] = 
                   Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
+                    "fontWeight": "900",
                     "marginBottom": 5,
                   },
                   Object {
@@ -3420,7 +3420,7 @@ exports[`AuthorProfile test on ios renders profile content item component with a
                   Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
+                    "fontWeight": "900",
                     "marginBottom": 5,
                   },
                   Object {
@@ -3516,7 +3516,7 @@ exports[`AuthorProfile test on ios renders profile content item component with n
                   Object {
                     "color": "#333333",
                     "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
+                    "fontWeight": "900",
                     "marginBottom": 5,
                   },
                   Object {
