@@ -14,7 +14,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const Bio = ({ bio }) => <Text style={styles.bio}>{renderTrees(bio)}</Text>;
+const Bio = ({ bio }) => (
+  <Text testID="author-bio" style={styles.bio}>
+    {renderTrees(bio)}
+  </Text>
+);
 
 Bio.propTypes = {
   bio: PropTypes.arrayOf(treePropType)

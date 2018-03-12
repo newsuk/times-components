@@ -18,7 +18,7 @@ const AuthorHeadWrapper = withResponsiveStyles(View, {
 
 const AuthorHeadContainer = props => (
   <Animations.FadeIn>
-    <View style={styles.wrapper} pointerEvents="box-none">
+    <View testID="author-head" style={styles.wrapper} pointerEvents="box-none">
       <AuthorHeadWrapper
         accessibilityRole="banner"
         style={[styles.container, props.style]}

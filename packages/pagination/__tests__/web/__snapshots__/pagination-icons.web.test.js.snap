@@ -3,6 +3,7 @@
 exports[`PaginationIcons on Web Next page icon renders out an svg and label 1`] = `
 <View
   style={72}
+  testID="pagination-button-next"
 >
   <Text
     style={74}
@@ -30,6 +31,7 @@ exports[`PaginationIcons on Web Next page icon renders out an svg and label 1`] 
 exports[`PaginationIcons on Web Previous page icon renders out an svg and label 1`] = `
 <View
   style={73}
+  testID="pagination-button-previous"
 >
   <Svg
     height={12}
