@@ -33,6 +33,7 @@ exports[`Pagination on iOS renders correctly 1`] = `
           },
         ]
       }
+      testID="results-message"
     >
       Showing 1 - 20 of 21 results
     </Text>
@@ -87,6 +88,7 @@ exports[`Pagination on iOS renders correctly 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-next"
         >
           <Text
             accessible={true}
@@ -167,6 +169,7 @@ exports[`Pagination on iOS renders next link 1`] = `
           },
         ]
       }
+      testID="results-message"
     >
       Showing 1 - 20 of 41 results
     </Text>
@@ -221,6 +224,7 @@ exports[`Pagination on iOS renders next link 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-next"
         >
           <Text
             accessible={true}
@@ -301,6 +305,7 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
           },
         ]
       }
+      testID="results-message"
     >
       Showing 21 - 40 of 41 results
     </Text>
@@ -354,6 +359,7 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-previous"
         >
           <svg
             height={12}
@@ -431,6 +437,7 @@ exports[`Pagination on iOS renders prev and next link 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-next"
         >
           <Text
             accessible={true}
@@ -511,6 +518,7 @@ exports[`Pagination on iOS renders prev link 1`] = `
           },
         ]
       }
+      testID="results-message"
     >
       Showing 41 - 41 of 41 results
     </Text>
@@ -564,6 +572,7 @@ exports[`Pagination on iOS renders prev link 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-previous"
         >
           <svg
             height={12}
@@ -645,6 +654,7 @@ exports[`Pagination on iOS renders results message 1`] = `
           },
         ]
       }
+      testID="results-message"
     >
       Showing 1 - 20 of 21 results
     </Text>
@@ -699,6 +709,7 @@ exports[`Pagination on iOS renders results message 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-next"
         >
           <Text
             accessible={true}
@@ -805,6 +816,7 @@ exports[`Pagination on iOS renders with hidden results 1`] = `
               "padding": 12,
             }
           }
+          testID="pagination-button-next"
         >
           <Text
             accessible={true}

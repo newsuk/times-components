@@ -42,7 +42,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -184,7 +184,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -400,7 +400,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -557,7 +557,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -631,7 +631,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -676,7 +676,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -797,7 +797,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -896,7 +896,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {
@@ -1068,7 +1068,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
+          "fontWeight": "900",
           "marginBottom": 5,
         },
         Object {

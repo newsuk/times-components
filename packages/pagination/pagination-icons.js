@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 });
 
 export const NextPageIcon = () => (
-  <View style={styles.nextContainer}>
+  <View style={styles.nextContainer} testID="pagination-button-next">
     <Text style={styles.nextText}>
       <PageLabel direction="Next" />
     </Text>
@@ -70,7 +70,7 @@ export const NextPageIcon = () => (
 );
 
 export const PreviousPageIcon = () => (
-  <View style={styles.previousContainer}>
+  <View style={styles.previousContainer} testID="pagination-button-previous">
     <Svg width={7} height={12} viewBox="42 12 60 120">
       <G fill={colours.functional.action}>
         <Path d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z" />
