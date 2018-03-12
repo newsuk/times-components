@@ -59,7 +59,8 @@ storiesOf("Advertisement", module)
     withOpenInNewWindow(
       <Ad pos="header" contextUrl={articleUrl} section="news" />
     )
-  ).add("sponsored ad", () =>
+  )
+  .add("sponsored ad", () =>
     withOpenInNewWindow(
       <Ad pos="article-sponsored-ad" contextUrl={articleUrl} section="news" />
     )
