@@ -18,7 +18,7 @@ exports[`Placeholder renders a large placeholder 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F9F9",
-        "borderColor": undefined,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "borderWidth": 1,
         "height": 300,
@@ -34,11 +34,11 @@ exports[`Placeholder renders a large placeholder 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "backgroundColor": undefined,
-          "borderColor": undefined,
+          "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "borderWidth": 1,
-          "color": undefined,
+          "color": "#696969",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 11,
           "letterSpacing": 1.5,
@@ -74,7 +74,7 @@ exports[`Placeholder renders a medium placeholder 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F9F9",
-        "borderColor": undefined,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "borderWidth": 1,
         "height": 300,
@@ -90,11 +90,11 @@ exports[`Placeholder renders a medium placeholder 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "backgroundColor": undefined,
-          "borderColor": undefined,
+          "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "borderWidth": 1,
-          "color": undefined,
+          "color": "#696969",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 11,
           "letterSpacing": 1.5,
@@ -130,7 +130,7 @@ exports[`Placeholder renders a small placeholder 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F9F9",
-        "borderColor": undefined,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "borderWidth": 1,
         "height": 300,
@@ -146,11 +146,11 @@ exports[`Placeholder renders a small placeholder 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "backgroundColor": undefined,
-          "borderColor": undefined,
+          "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "borderWidth": 1,
-          "color": undefined,
+          "color": "#696969",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 11,
           "letterSpacing": 1.5,
@@ -186,7 +186,7 @@ exports[`Placeholder renders a tiny placeholder 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#F9F9F9",
-        "borderColor": undefined,
+        "borderColor": "#DBDBDB",
         "borderStyle": "solid",
         "borderWidth": 1,
         "height": 100,
@@ -202,11 +202,11 @@ exports[`Placeholder renders a tiny placeholder 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "backgroundColor": undefined,
-          "borderColor": undefined,
+          "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "borderWidth": 1,
-          "color": undefined,
+          "color": "#696969",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 11,
           "letterSpacing": 1.5,
