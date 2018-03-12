@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, spacing } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
@@ -12,8 +12,8 @@ export default StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing.default,
+    paddingRight: spacing.default
   },
   title: {
     fontFamily: fonts.headline,
@@ -22,11 +22,11 @@ export default StyleSheet.create({
   },
   headline: {
     color: colours.functional.primary,
-    marginBottom: 5,
+    marginBottom: spacing.base,
     fontFamily: fonts.headline,
     fontWeight: "400"
   },
   imageContainer: {
-    marginBottom: 10
+    marginBottom: spacing.default
   }
 });

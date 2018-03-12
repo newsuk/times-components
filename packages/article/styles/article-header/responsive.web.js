@@ -18,5 +18,5 @@ export const HeadlineContainer = withResponsiveStyles(Text, {
 });
 
 export const LabelContainer = withResponsiveStyles(View, {
-  wideUp: () => "margin-top: 0px;"
+  wideUp: () => "margin-top: 0;"
 });

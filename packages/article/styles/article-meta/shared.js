@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
-import { fonts, colours } from "@times-components/styleguide";
+import { fonts, colours, spacing } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleMeta: {
-    marginBottom: 20,
+    marginBottom: spacing.m,
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingLeft: 0,
     paddingRight: 0,
-    marginLeft: 10,
-    marginRight: 10
+    marginLeft: spacing.default,
+    marginRight: spacing.default
   },
   articleMiddleContainer: {
     paddingTop: 9
