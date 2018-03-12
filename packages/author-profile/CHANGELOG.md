@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.48.2"></a>
+## [0.48.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.48.1...@times-components/author-profile@0.48.2) (2018-03-12)
+
+
+### Bug Fixes
+
+* update font weight for article summary headline - ios platform specific ([#705](https://github.com/newsuk/times-components/issues/705)) ([c1933a2](https://github.com/newsuk/times-components/commit/c1933a2))
+
+
+
+
 <a name="0.48.1"></a>
 ## [0.48.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.48.0...@times-components/author-profile@0.48.1) (2018-03-12)
 
