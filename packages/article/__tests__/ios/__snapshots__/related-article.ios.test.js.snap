@@ -273,7 +273,7 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -540,7 +540,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -753,7 +753,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -966,7 +966,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -1335,7 +1335,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -1650,7 +1650,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -2019,7 +2019,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -2219,7 +2219,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -2562,7 +2562,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -2762,7 +2762,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -2944,7 +2944,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
@@ -3287,7 +3287,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                           Object {
                             "color": "#333333",
                             "fontFamily": "TimesModern-Bold",
-                            "fontWeight": "400",
+                            "fontWeight": "900",
                             "marginBottom": 5,
                           },
                           Object {
