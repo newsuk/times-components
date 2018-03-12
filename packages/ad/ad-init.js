@@ -97,7 +97,7 @@ const adInit = args => {
           if (!slot) {
             throw new Error(
               `Ad slot ${containerID} ${
-              adUnitPath
+                adUnitPath
               } could not be defined, probably it was already defined`
             );
           }
@@ -198,7 +198,7 @@ const adInit = args => {
           fetchBids() {
             this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
           },
-          setDisplayBids() { },
+          setDisplayBids() {},
           targetingKeys() {
             return [];
           },
@@ -335,7 +335,10 @@ const adInit = args => {
 
     handleBreakpointChange(breakpoint, mql) {
       if (mql.matches) {
-        this.gpt.scheduleSetPageTargetingValues({ breakpoint, refresh: "true" });
+        this.gpt.scheduleSetPageTargetingValues({
+          breakpoint,
+          refresh: "true"
+        });
         this.gpt.displayAds();
       }
     },
