@@ -39,7 +39,7 @@ exports[`Related articles tests on android DEFAULT template should render one re
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -438,7 +438,7 @@ exports[`Related articles tests on android DEFAULT template should render three 
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -1126,7 +1126,7 @@ exports[`Related articles tests on android DEFAULT template should render two re
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -1872,7 +1872,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -2444,7 +2444,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -3197,7 +3197,7 @@ exports[`Related articles tests on android LEAD AND TWO template should render o
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View

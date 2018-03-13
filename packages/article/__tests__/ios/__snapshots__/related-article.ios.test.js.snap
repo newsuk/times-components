@@ -39,7 +39,7 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -406,7 +406,7 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -1097,7 +1097,7 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -1779,7 +1779,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -2320,7 +2320,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View
@@ -3043,7 +3043,7 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
         }
       }
     >
-      Related links
+      Related articles
     </Text>
   </View>
   <View

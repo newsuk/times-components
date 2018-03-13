@@ -15,7 +15,7 @@ exports[`Related articles tests on web DEFAULT template should render one relate
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div
@@ -193,7 +193,7 @@ exports[`Related articles tests on web DEFAULT template should render three rela
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div
@@ -671,7 +671,7 @@ exports[`Related articles tests on web DEFAULT template should render two relate
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div
@@ -999,7 +999,7 @@ exports[`Related articles tests on web LEAD AND TWO template should render one l
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div
@@ -1325,7 +1325,7 @@ exports[`Related articles tests on web LEAD AND TWO template should render one l
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div
@@ -1797,7 +1797,7 @@ exports[`Related articles tests on web LEAD AND TWO template should render one l
       dir="auto"
       role="heading"
     >
-      Related links
+      Related articles
     </h3>
   </div>
   <div

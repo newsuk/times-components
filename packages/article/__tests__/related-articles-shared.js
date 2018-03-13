@@ -30,6 +30,7 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+    jest.useFakeTimers();
   });
 
   afterEach(() => {
