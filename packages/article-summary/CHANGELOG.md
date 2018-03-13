@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.3...@times-components/article-summary@0.19.0) (2018-03-13)
+
+
+### Features
+
+* create a template system for Slice ([#710](https://github.com/newsuk/times-components/issues/710)) ([f22ed7c](https://github.com/newsuk/times-components/commit/f22ed7c))
+
+
+
+
 <a name="0.18.3"></a>
 ## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.2...@times-components/article-summary@0.18.3) (2018-03-12)
 
