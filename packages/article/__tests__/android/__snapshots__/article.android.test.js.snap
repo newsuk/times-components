@@ -8252,7 +8252,7 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
