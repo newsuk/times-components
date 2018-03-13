@@ -58,7 +58,7 @@ exports[`Video Label test on web renders VideoLabel 1`] = `
         "letterSpacing": "1.2px",
         "lineHeight": "12px",
         "marginLeft": "5px",
-        "top": "2px",
+        "top": "1px",
       }
     }
   >

@@ -75,7 +75,7 @@ exports[`Video Label test on ios renders VideoLabel 1`] = `
           "margin": 0,
           "padding": 0,
           "position": "relative",
-          "top": 2,
+          "top": 1,
         },
         Object {
           "marginLeft": 5,

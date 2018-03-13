@@ -11,6 +11,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
+import getLeadAsset from "./get-lead-asset";
 
 import {
   MainContainer,
@@ -34,9 +35,10 @@ class ArticlePage extends React.Component {
       byline,
       publishedTime,
       publicationName,
-      leadAsset,
       content
     } = articleData;
+
+    const leadAssetProps = getLeadAsset(articleData);
 
     return (
       <Fragment>
@@ -44,13 +46,14 @@ class ArticlePage extends React.Component {
           <Ad pos="header" style={adStyle} />
         </HeaderAdContainer>
         <MainContainer>
-          <LeadAssetComponent device="MOBILE" leadAsset={leadAsset} />
+          <LeadAssetComponent device="MOBILE" {...leadAssetProps} />
           <HeaderContainer>
             <ArticleHeader
               headline={headline}
               flags={flags}
               standfirst={standfirst}
               label={label}
+              isVideo={leadAssetProps.isVideo}
             />
           </HeaderContainer>
           <View>
@@ -61,7 +64,7 @@ class ArticlePage extends React.Component {
                 publicationName={publicationName}
               />
             </MetaContainer>
-            <LeadAssetComponent device="DESKTOP" leadAsset={leadAsset} />
+            <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
               <ArticleBody content={content} />
             </BodyContainer>

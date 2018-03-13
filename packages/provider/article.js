@@ -14,15 +14,15 @@ export const query = gql`
       byline
       content
       leadAsset {
-        ... on Image {
-          id
-          title
-          credits
-          caption
-          crop(ratio: "16:9") {
-            ratio
-            url
+        ... on Video {
+          type: __typename
+          posterImage {
+            ...imageProps
           }
+        }
+        ... on Image {
+          type: __typename
+          ...imageProps
         }
       }
       relatedArticles {
@@ -65,6 +65,17 @@ export const query = gql`
           opinion
         }
       }
+    }
+  }
+
+  fragment imageProps on Image {
+    id
+    title
+    credits
+    caption
+    crop(ratio: "16:9") {
+      ratio
+      url
     }
   }
 `;

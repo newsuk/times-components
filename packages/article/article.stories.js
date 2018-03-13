@@ -15,6 +15,7 @@ import RelatedArticles from "./related-articles/related-articles";
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
 import fullLongArticleFixture from "./fixtures/full-long-article.json";
+import articleWithVideoFixture from "./fixtures/article-with-video-asset.json";
 import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
 import articleFixtureNoLabel from "./fixtures/no-label.json";
 import articleFixtureNoAds from "./fixtures/no-ads.json";
@@ -77,6 +78,16 @@ storiesOf("Pages/Article", module)
   .add("Default", () => {
     const props = {
       ...fullArticleFixture.data,
+      isLoading: false,
+      analyticsStream: storybookReporter,
+      adConfig
+    };
+
+    return <Article {...props} />;
+  })
+  .add("Article with video asset", () => {
+    const props = {
+      ...articleWithVideoFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
       adConfig

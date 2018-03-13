@@ -74,6 +74,7 @@
     "@times-components/slice": "0.10.0",
     "@times-components/styleguide": "0.4.1",
     "@times-components/tracking": "0.9.5",
+    "@times-components/video-label": "0.1.3",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },

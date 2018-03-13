@@ -6,6 +6,7 @@ import Article from "../article";
 import fullArticleFixture from "../fixtures/full-article.json";
 import articleFixtureNoLabel from "../fixtures/no-label.json";
 import articleFixtureNoFlags from "../fixtures/no-flags.json";
+import articleFixtureWithVideo from "../fixtures/article-with-video-asset.json";
 import articleFixtureNoStandfirst from "../fixtures/no-standfirst.json";
 import articleFixtureNoStandfirstNoLabel from "../fixtures/no-standfirst-no-label.json";
 import articleFixtureNoStandfirstNoFlags from "../fixtures/no-standfirst-no-flags.json";
@@ -152,6 +153,19 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders article with video asset", () => {
+    const tree = renderer
+      .create(
+        <Article
+          {...articleFixtureWithVideo.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
         />
