@@ -67,12 +67,12 @@ class ArticlePage extends React.Component {
       }
 
       case "relatedArticles": {
-        const { relatedArticles, template } = rowData.data;
+        const { relatedArticles, relatedArticlesLayout } = rowData.data;
         return (
           <RelatedArticles
             analyticsStream={() => {}}
             articles={relatedArticles}
-            template={template}
+            template={relatedArticlesLayout.template}
             onPress={onRelatedArticlePress}
           />
         );

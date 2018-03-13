@@ -16,7 +16,7 @@ const prepareDataForListView = articleData => {
   };
   const relatedArticlesData = {
     relatedArticles: articleData.relatedArticles,
-    template: articleData.relatedArticlesLayout.template
+    template: articleData.relatedArticlesLayout
   };
 
   const data = [
@@ -25,11 +25,20 @@ const prepareDataForListView = articleData => {
     { type: "middleContainer", data: articleMidContainerData }
   ]
     .concat(
-      articleData.content.map((i, index) => ({
-        type: "articleBodyRow",
-        data: i,
-        index
-      }))
+      articleData.content.map((rowData, index) => {
+        const item = {
+          type: "articleBodyRow",
+          data: rowData,
+          index
+        };
+        if (rowData.name === "ad") {
+          item.data.attributes = {
+            ...item.data.attributes,
+            ...{ section: articleData.section }
+          };
+        }
+        return item;
+      })
     )
     .concat({ type: "relatedArticles", data: relatedArticlesData });
 
