@@ -23,7 +23,7 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData) {
+  static renderRow(rowData, onRelatedArticlePress) {
     if (rowData.type === "leadAsset") {
       const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
       const aspectRatio = ratioWidth / ratioHeight;
@@ -37,7 +37,7 @@ class ArticlePage extends React.Component {
       return (
         <ArticleHeader
           key={rowData.type}
-          headline={"Test"}
+          headline={headline}
           flags={flags}
           standfirst={standfirst}
           label={label}
@@ -57,12 +57,13 @@ class ArticlePage extends React.Component {
     } else if (rowData.type === "articleBodyRow") {
       return <ArticleRow content={rowData} />;
     } else if (rowData.type === "relatedArticles") {
+      const { relatedArticles, template } = rowData.data;
       return (
         <RelatedArticles
           analyticsStream={() => {}}
-          articles={rowData.data}
-          template="DEFAULT"
-          onPress={() => {}}
+          articles={relatedArticles}
+          template={template}
+          onPress={onRelatedArticlePress}
         />
       );
     }
@@ -107,6 +108,7 @@ class ArticlePage extends React.Component {
         data={this.state.dataSource}
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
+        onRelatedArticlePress={this.props.onRelatedArticlePress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -128,13 +130,15 @@ ArticlePage.propTypes = {
     }),
     message: PropTypes.string
   }),
-  adConfig: PropTypes.shape({}).isRequired
+  adConfig: PropTypes.shape({}).isRequired,
+  onRelatedArticlePress: PropTypes.func
 };
 
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
-  error: null
+  error: null,
+  onRelatedArticlePress: () => {}
 };
 
 export default articleTrackingContext(ArticlePage);

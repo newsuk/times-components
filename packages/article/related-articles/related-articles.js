@@ -18,7 +18,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
           <RelatedArticleItem
             key={article.id}
             article={article}
-            onPress={onPress}
+            onPress={e => onPress(e, { url: article.url })}
           />
         ))}
       </Slice>

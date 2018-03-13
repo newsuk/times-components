@@ -11,21 +11,24 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
-  const relatedArticlesData = articleData.relatedArticles
+  const relatedArticlesData = {
+    relatedArticles: articleData.relatedArticles,
+    template: articleData.relatedArticlesLayout.template
+  };
 
   const data = [
     { type: "leadAsset", data: leadAssetData },
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
-  ].concat(
-    articleData.content.map((i, index) => ({
-      type: "articleBodyRow",
-      data: i,
-      index
-    }))
-  ).concat(
-    { type: "relatedArticles", data: relatedArticlesData }
-  );
+  ]
+    .concat(
+      articleData.content.map((i, index) => ({
+        type: "articleBodyRow",
+        data: i,
+        index
+      }))
+    )
+    .concat({ type: "relatedArticles", data: relatedArticlesData });
 
   if (!leadAssetData) {
     data.splice(0, 1);
