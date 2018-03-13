@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -31,6 +32,11 @@ const RelatedArticleItem = ({
     publishedTime,
     section,
     summary105,
+    summary125,
+    summary145,
+    summary160,
+    summary175,
+    summary225,
     url
   } = article;
 
@@ -54,7 +60,14 @@ const RelatedArticleItem = ({
           bylineProps={{ ast: byline }}
           content={() =>
             showSummary && (
-              <ArticleSummaryContent className={summaryClass} ast={summary105} />
+              <View>
+                <ArticleSummaryContent className={summaryClass} ast={summary105} />
+                <ArticleSummaryContent className={summaryClass} ast={summary125} />
+                <ArticleSummaryContent className={summaryClass} ast={summary145} />
+                <ArticleSummaryContent className={summaryClass} ast={summary160} />
+                <ArticleSummaryContent className={summaryClass} ast={summary175} />
+                <ArticleSummaryContent className={summaryClass} ast={summary225} />
+              </View>
             )
           }
           datePublicationProps={{ date: publishedTime }}
