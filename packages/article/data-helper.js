@@ -20,13 +20,13 @@ const prepareDataForListView = articleData => {
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
   ].concat(
-    articleData.content.map((i, index) => {
+    articleData.content.map((rowData, index) => {
       const item = {
         type: "articleBodyRow",
-        data: i,
+        data: rowData,
         index
       };
-      if (i.name === "ad") {
+      if (item.name === "ad") {
         item.data.attributes = Object.assign({}, item.data.attributes, {
           section: articleData.section
         });
