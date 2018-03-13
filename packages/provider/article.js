@@ -13,6 +13,7 @@ export const query = gql`
       flags
       byline
       content
+      section
       leadAsset {
         ... on Video {
           type: __typename
