@@ -27,9 +27,10 @@ const prepareDataForListView = articleData => {
         index
       };
       if (rowData.name === "ad") {
-        item.data.attributes = Object.assign({}, item.data.attributes, {
-          section: articleData.section
-        });
+        item.data.attributes = {
+          ...item.data.attributes,
+          ...{ section: articleData.section }
+        };
       }
       return item;
     })

@@ -10,9 +10,7 @@ const ArticleBody = props => {
       index
     };
     if (data.name === "ad") {
-      item.data.attributes = Object.assign({}, item.data.attributes, {
-        section
-      });
+      item.data.attributes = { ...item.data.attributes, ...{ section } };
     }
     return item;
   });
