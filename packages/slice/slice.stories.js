@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import { DefaultSlice, LeadSlice } from "./";
+import { StandardSlice, LeadAndTwoSlice } from "./";
 
 const styles = StyleSheet.create({
   child: {
@@ -16,7 +16,7 @@ const colours = [
   { backgroundColor: "blue", key: 4 }
 ];
 
-const createDefaultItems = noOfItems =>
+const createStandardItems = noOfItems =>
   colours
     .map(colour => {
       const { backgroundColor, key } = colour;
@@ -28,17 +28,17 @@ const createDefaultItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module)
-  .add("Default template with one item", () => (
-    <DefaultSlice itemCount={1} renderItems={() => createDefaultItems(1)} />
+  .add("Standard template with one item", () => (
+    <StandardSlice itemCount={1} renderItems={() => createStandardItems(1)} />
   ))
-  .add("Default template with two items", () => (
-    <DefaultSlice itemCount={2} renderItems={() => createDefaultItems(2)} />
+  .add("Standard template with two items", () => (
+    <StandardSlice itemCount={2} renderItems={() => createStandardItems(2)} />
   ))
-  .add("Default template with three items", () => (
-    <DefaultSlice itemCount={3} renderItems={() => createDefaultItems(3)} />
+  .add("Standard template with three items", () => (
+    <StandardSlice itemCount={3} renderItems={() => createStandardItems(3)} />
   ))
-  .add("Lead template with one item", () => (
-    <LeadSlice
+  .add("Lead and two template with one item", () => (
+    <LeadAndTwoSlice
       lead={() => [
         <View
           key="lead"
@@ -50,8 +50,8 @@ storiesOf("Primitives/Slice", module)
       ]}
     />
   ))
-  .add("Lead template with two items", () => (
-    <LeadSlice
+  .add("Lead and two template with two items", () => (
+    <LeadAndTwoSlice
       lead={() => [
         <View
           key="lead"
@@ -72,8 +72,8 @@ storiesOf("Primitives/Slice", module)
       ]}
     />
   ))
-  .add("Lead template with three items", () => (
-    <LeadSlice
+  .add("Lead and two template with three items", () => (
+    <LeadAndTwoSlice
       lead={() => [
         <View
           key="lead"

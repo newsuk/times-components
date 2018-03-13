@@ -2,21 +2,21 @@
 import { View } from "react-native";
 import React from "react";
 import { shallow } from "enzyme";
-import { DefaultSlice, LeadSlice } from "../";
+import { StandardSlice, LeadAndTwoSlice } from "../";
 import roleMap from "../styles/role-map";
 
 module.exports = () => {
   const ExampleChild = () => <View />;
   ExampleChild.displayName = "ExampleChild";
 
-  context("DEFAULT template", () => {
+  context("Standard template", () => {
     const items = [
       { key: "08604618-fb0e-11e7-a987-7fcf5e9983dc" },
       { key: "08604618-fb0e-11e7-a987-7fcf5e9983dd" },
       { key: "08604618-fb0e-11e7-a987-7fcf5e9983de" }
     ];
 
-    const createDefaultItems = noOfItems =>
+    const createStandardItems = noOfItems =>
       items
         .map((item, index) => {
           if (index >= noOfItems) return false;
@@ -26,64 +26,73 @@ module.exports = () => {
 
     it("renders a single child element", () => {
       const wrapper = shallow(
-        <DefaultSlice itemCount={1} renderItems={() => createDefaultItems(1)} />
+        <StandardSlice
+          itemCount={1}
+          renderItems={() => createStandardItems(1)}
+        />
       );
       expect(wrapper).toMatchSnapshot(
-        "1. DEFAULT template renders a single child element"
+        "1. Standard template renders a single child element"
       );
     });
 
     it("renders two child elements", () => {
       const wrapper = shallow(
-        <DefaultSlice itemCount={2} renderItems={() => createDefaultItems(2)} />
+        <StandardSlice
+          itemCount={2}
+          renderItems={() => createStandardItems(2)}
+        />
       );
       expect(wrapper).toMatchSnapshot(
-        "2. DEFAULT template renders two child elements"
+        "2. Standard template renders two child elements"
       );
     });
 
     it("renders three child elements", () => {
       const wrapper = shallow(
-        <DefaultSlice itemCount={3} renderItems={() => createDefaultItems(3)} />
+        <StandardSlice
+          itemCount={3}
+          renderItems={() => createStandardItems(3)}
+        />
       );
       expect(wrapper).toMatchSnapshot(
-        "3. DEFAULT template renders three child elements"
+        "3. Standard template renders three child elements"
       );
     });
   });
 
-  context("LEAD_AND_TWO template", () => {
+  context("Lead and two template", () => {
     it("renders a single child element", () => {
       const wrapper = shallow(
-        <LeadSlice lead={() => [<ExampleChild key="lead" />]} />
+        <LeadAndTwoSlice lead={() => [<ExampleChild key="lead" />]} />
       );
       expect(wrapper).toMatchSnapshot(
-        "4. LEAD_AND_TWO template renders a single child element"
+        "4. Lead and two template renders a single child element"
       );
     });
 
     it("renders two child elements", () => {
       const wrapper = shallow(
-        <LeadSlice
+        <LeadAndTwoSlice
           lead={() => [<ExampleChild key="lead" />]}
           support1={() => [<ExampleChild key="support1" />]}
         />
       );
       expect(wrapper).toMatchSnapshot(
-        "5. LEAD_AND_TWO template renders two child elements"
+        "5. Lead and two template renders two child elements"
       );
     });
 
     it("renders three child elements", () => {
       const wrapper = shallow(
-        <LeadSlice
+        <LeadAndTwoSlice
           lead={() => [<ExampleChild key="lead" />]}
           support1={() => [<ExampleChild key="support1" />]}
           support2={() => [<ExampleChild key="support2" />]}
         />
       );
       expect(wrapper).toMatchSnapshot(
-        "6. LEAD_AND_TWO template renders three child elements"
+        "6. Lead and two template renders three child elements"
       );
     });
   });

@@ -2,42 +2,42 @@ import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 export default {
-  contentContainerClass: "defaultSliceContentContainerClass",
-  headlineClass: "defaultSliceHeadlineClass",
-  imageContainerClass: "defaultSliceImageContainerClass",
-  summaryClass: "defaultSliceSummaryClass"
+  contentContainerClass: "standardSliceContentContainerClass",
+  headlineClass: "standardSliceHeadlineClass",
+  imageContainerClass: "standardSliceImageContainerClass",
+  summaryClass: "standardSliceSummaryClass"
 };
 
 export const getConfigWrapper = ({ itemCount }) =>
   withResponsiveStyles(View, {
     base: () => `
-    .defaultSliceImageContainerClass {
+    .standardSliceImageContainerClass {
       display: ${itemCount >= 3 ? "none" : "block"};
     }
   `,
     mediumUp: () => {
-      const singleDefaultImageStyle = `
+      const singleStandardImageStyle = `
       flex: 2;
       min-width: auto;
       max-width: 328px;
       padding-right: 15px;
     `;
-      const singleDefaultSummaryStyle = `
+      const singleStandardSummaryStyle = `
       flex-grow: 2.7;
       flex-basis: 0 !important;
       min-width: 325px;
     `;
       return `
-      .defaultSliceImageContainerClass {
+      .standardSliceImageContainerClass {
         display: block;
-        ${itemCount === 1 ? singleDefaultImageStyle : ``}
+        ${itemCount === 1 ? singleStandardImageStyle : ``}
       }
 
-      .defaultSliceContentContainerClass {
-        ${itemCount === 1 ? singleDefaultSummaryStyle : ``}
+      .standardSliceContentContainerClass {
+        ${itemCount === 1 ? singleStandardSummaryStyle : ``}
       }
 
-      .defaultSliceHeadlineClass {
+      .standardSliceHeadlineClass {
         font-size: 30px;
         line-height: 30px;
       }

@@ -1,11 +1,11 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const leadConfig = {
-  contentContainerClass: "leadSliceContentContainerClass",
-  headlineClass: "leadSliceHeadlineClass",
-  imageContainerClass: "leadSliceImageContainerClass",
-  summaryClass: "leadSliceSummaryClass"
+export const leadAndTwoConfig = {
+  contentContainerClass: "leadAndTwoSliceContentContainerClass",
+  headlineClass: "leadAndTwoSliceHeadlineClass",
+  imageContainerClass: "leadAndTwoSliceImageContainerClass",
+  summaryClass: "leadAndTwoSliceSummaryClass"
 };
 
 export const supportConfig = {
@@ -26,26 +26,26 @@ export const getConfigWrapper = ({ supportCount }) => {
       }
     `,
     mediumUp: () => {
-      const leadSliceImageWithSupportsStyle = `
+      const leadAndTwoSliceImageWithSupportsStyle = `
         margin-bottom: 10px;
         min-width: 270px;
       `;
 
       return `
-        .leadSliceHeadlineClass {
+        .leadAndTwoSliceHeadlineClass {
           font-size: 30px;
           line-height: 30px;
         }
 
-        .leadSliceImageContainerClass {
+        .leadAndTwoSliceImageContainerClass {
           flex: 2;
           margin-bottom: 0;
           min-width: auto;
           padding-right: 10px;
-          ${supportCount === 2 ? leadSliceImageWithSupportsStyle : ``}
+          ${supportCount === 2 ? leadAndTwoSliceImageWithSupportsStyle : ``}
         }
 
-        .leadSliceContentContainerClass {
+        .leadAndTwoSliceContentContainerClass {
           flex-grow: 2.7;
           flex-basis: 0 !important;
           min-width: ${supportCount === 2 ? "300px" : "325px"};

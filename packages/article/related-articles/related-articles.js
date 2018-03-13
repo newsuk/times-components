@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { DefaultSlice, LeadSlice } from "@times-components/slice";
+import { StandardSlice, LeadAndTwoSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -43,14 +43,14 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       case "DEFAULT":
       default:
         return (
-          <DefaultSlice
+          <StandardSlice
             itemCount={articleCount}
             renderItems={(config = {}) => renderArticleItems(articles, config)}
           />
         );
       case "LEAD_AND_TWO":
         return (
-          <LeadSlice
+          <LeadAndTwoSlice
             lead={(config = {}) => renderArticleItems([articles[0]], config)}
             support1={(config = {}) => {
               const article = articles[1];

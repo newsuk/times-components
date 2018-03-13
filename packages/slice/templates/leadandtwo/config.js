@@ -1,4 +1,4 @@
-export const leadConfig = {};
+export const leadAndTwoConfig = {};
 
 export const supportConfig = {
   showImage: false,

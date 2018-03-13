@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. DEFAULT template renders a single child element 1`] = `
+exports[`1. Standard template renders a single child element 1`] = `
 <Styled(View)>
   <SliceContainer>
     <ChildrenContainer>
@@ -16,7 +16,7 @@ exports[`1. DEFAULT template renders a single child element 1`] = `
 </Styled(View)>
 `;
 
-exports[`2. DEFAULT template renders two child elements 1`] = `
+exports[`2. Standard template renders two child elements 1`] = `
 <Styled(View)>
   <SliceContainer>
     <ChildrenContainer>
@@ -42,7 +42,7 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
 </Styled(View)>
 `;
 
-exports[`3. DEFAULT template renders three child elements 1`] = `
+exports[`3. Standard template renders three child elements 1`] = `
 <Styled(View)>
   <SliceContainer>
     <ChildrenContainer>
@@ -78,29 +78,29 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
 </Styled(View)>
 `;
 
-exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
+exports[`4. Lead and two template renders a single child element 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <Container>
-      <LeadContainer>
+      <LeadAndTwoContainer>
         <ExampleChild
           key="lead"
         />
-      </LeadContainer>
+      </LeadAndTwoContainer>
     </Container>
   </SliceContainer>
 </ConfigWrapper>
 `;
 
-exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
+exports[`5. Lead and two template renders two child elements 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <Container>
-      <LeadContainer>
+      <LeadAndTwoContainer>
         <ExampleChild
           key="lead"
         />
-      </LeadContainer>
+      </LeadAndTwoContainer>
       <Separator />
       <SupportsContainer>
         <SupportContainer
@@ -116,15 +116,15 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
 </ConfigWrapper>
 `;
 
-exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
+exports[`6. Lead and two template renders three child elements 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <Container>
-      <LeadContainer>
+      <LeadAndTwoContainer>
         <ExampleChild
           key="lead"
         />
-      </LeadContainer>
+      </LeadAndTwoContainer>
       <Separator />
       <SupportsContainer>
         <SupportContainer
