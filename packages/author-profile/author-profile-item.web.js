@@ -12,6 +12,23 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 
+const CardWrapper = withResponsiveStyles(View, {
+  mediumUp: () => `
+    .authorProfileImage {
+      flex: 2;
+      margin-bottom: 0;
+      max-width: 285px;
+      min-width: auto;
+      padding-right: 15px;
+    }
+    .authorProfileContent {
+      flex: 2.7;
+      flex-basis: 0 !important;
+      min-width: 380px;
+    }
+  `
+});
+
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
   mediumUp: () => "display: block; padding-left: 15px;"
@@ -56,13 +73,15 @@ const AuthorProfileItem = item => {
   if (isLoading) {
     return (
       <View style={[styles.container, style]}>
-        <Card
-          childRatio={2.7}
-          isLoading={isLoading}
-          imageRatio={imageRatio}
-          showImage={showImage}
-          tabletChildRatio={2.7}
-        />
+        <CardWrapper>
+          <Card
+            contentContainerClass="authorProfileContent"
+            imageContainerClass="authorProfileImage"
+            imageRatio={imageRatio}
+            isLoading={isLoading}
+            showImage={showImage}
+          />
+        </CardWrapper>
       </View>
     );
   }
@@ -104,16 +123,18 @@ const AuthorProfileItem = item => {
   return (
     <Link url={url} onPress={onPress}>
       <View style={[styles.container, style]}>
-        <Card
-          childRatio={2.7}
-          image={imageUri ? { uri: imageUri } : null}
-          imageRatio={imageRatio}
-          imageSize={imageSize}
-          showImage={showImage}
-          tabletChildRatio={2.7}
-        >
-          {children}
-        </Card>
+        <CardWrapper>
+          <Card
+            contentContainerClass="authorProfileContent"
+            imageContainerClass="authorProfileImage"
+            image={imageUri ? { uri: imageUri } : null}
+            imageRatio={imageRatio}
+            imageSize={imageSize}
+            showImage={showImage}
+          >
+            {children}
+          </Card>
+        </CardWrapper>
       </View>
     </Link>
   );

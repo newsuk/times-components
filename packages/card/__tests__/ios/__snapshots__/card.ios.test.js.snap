@@ -1,290 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card tests on ios renders loading state 1`] = `
-<View>
-  <View>
+exports[`5. Re-renders after showing the loading state 1`] = `
+<FadeIn>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
     <View
+      className=""
       style={
         Object {
+          "flex": 1,
           "marginBottom": 10,
+          "minWidth": "100%",
         }
       }
     >
-      <View
+      <TimesImage
         aspectRatio={1.5}
         style={Object {}}
-      >
-        <View
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            onLoad={[Function]}
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          />
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flex": 1,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
     </View>
-    <View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 24,
-              "marginBottom": 10,
-              "maxWidth": 300,
-            },
-          ]
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
         }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "height": 10,
-              "marginBottom": 10,
-            },
-            Object {
-              "marginBottom": 0,
-              "maxWidth": 240,
-            },
-          ]
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.049525179317961854,
-              "y": 0.05500328394968961,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        />
-      </View>
+      }
+    >
+      <span>
+        Re-render me
+      </span>
     </View>
   </View>
-</View>
+</FadeIn>
 `;
 
-exports[`Card tests on ios renders vertical by default 1`] = `
+exports[`6. Renders Card normally and does not re-render 1`] = `
+<FadeIn>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <TimesImage
+        aspectRatio={1.5}
+        style={Object {}}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
+    </View>
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <span>
+        Do not re-render me
+      </span>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`Card tests on ios should render a card 1`] = `
 <View
   collapsable={undefined}
   style={
@@ -293,11 +99,23 @@ exports[`Card tests on ios renders vertical by default 1`] = `
     }
   }
 >
-  <View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
     <View
+      className=""
       style={
         Object {
+          "flex": 1,
           "marginBottom": 10,
+          "minWidth": "100%",
         }
       }
     >
@@ -393,7 +211,15 @@ exports[`Card tests on ios renders vertical by default 1`] = `
         </View>
       </View>
     </View>
-    <View>
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -406,7 +232,309 @@ exports[`Card tests on ios renders vertical by default 1`] = `
 </View>
 `;
 
-exports[`Card tests on ios renders without image 1`] = `
+exports[`Card tests on ios should render the loading state 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+    }
+  }
+>
+  <View
+    className=""
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <View
+      aspectRatio={1.5}
+      style={Object {}}
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": "100%",
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        />
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flex": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <BVLinearGradient
+              colors={
+                Array [
+                  "#F9F9F9",
+                  "#EDEDED",
+                ]
+              }
+              end={
+                Object {
+                  "x": -0.09302964577578221,
+                  "y": 0.11488204504197774,
+                }
+              }
+              locations={
+                Array [
+                  0,
+                  1,
+                ]
+              }
+              start={
+                Object {
+                  "x": 1,
+                  "y": 0,
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    className=""
+    style={
+      Object {
+        "flex": 1,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#F9F9F9",
+            "#EDEDED",
+          ]
+        }
+        end={
+          Object {
+            "x": -0.09302964577578221,
+            "y": 0.11488204504197774,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#F9F9F9",
+            "#EDEDED",
+          ]
+        }
+        end={
+          Object {
+            "x": -0.049525179317961854,
+            "y": 0.05500328394968961,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#F9F9F9",
+            "#EDEDED",
+          ]
+        }
+        end={
+          Object {
+            "x": -0.049525179317961854,
+            "y": 0.05500328394968961,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+          Object {
+            "marginBottom": 0,
+            "maxWidth": 240,
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            "#F9F9F9",
+            "#EDEDED",
+          ]
+        }
+        end={
+          Object {
+            "x": -0.049525179317961854,
+            "y": 0.05500328394968961,
+          }
+        }
+        locations={
+          Array [
+            0,
+            1,
+          ]
+        }
+        start={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card tests on ios should render without an image 1`] = `
 <View
   collapsable={undefined}
   style={
@@ -415,8 +543,25 @@ exports[`Card tests on ios renders without image 1`] = `
     }
   }
 >
-  <View>
-    <View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -429,7 +574,7 @@ exports[`Card tests on ios renders without image 1`] = `
 </View>
 `;
 
-exports[`Card tests on ios renders without image url 1`] = `
+exports[`Card tests on ios should render without image url 1`] = `
 <View
   collapsable={undefined}
   style={
@@ -438,8 +583,25 @@ exports[`Card tests on ios renders without image url 1`] = `
     }
   }
 >
-  <View>
-    <View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
+    <View
+      className=""
+      style={
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        }
+      }
+    >
       <Text
         accessible={true}
         allowFontScaling={true}

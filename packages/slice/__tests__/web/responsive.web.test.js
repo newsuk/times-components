@@ -10,12 +10,14 @@ import {
   ChildContainer,
   getChildrenContainer
 } from "../../templates/default/responsive";
+import { getConfigWrapper as getDefaultConfigWrapper } from "../../templates/default/config";
 import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
   getLeadContainer
 } from "../../templates/lead/responsive";
+import { getConfigWrapper as getLeadConfigWrapper } from "../../templates/lead/config";
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
@@ -42,6 +44,13 @@ describe("Slice tests on web", () => {
       ChildrenContainer = getChildrenContainer({ childCount: 3 });
       expect(renderer.create(<ChildrenContainer />).toJSON()).toMatchSnapshot();
     });
+
+    it("should render ConfigWrapper correctly", () => {
+      let ConfigWrapper = getDefaultConfigWrapper({ itemCount: 1 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+      ConfigWrapper = getDefaultConfigWrapper({ itemCount: 3 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+    });
   });
 
   context("responsive lead and two template components", () => {
@@ -64,10 +73,22 @@ describe("Slice tests on web", () => {
     });
 
     it("should render LeadContainer correctly", () => {
-      let LeadContainer = getLeadContainer({ hasSupports: true });
+      let LeadContainer = getLeadContainer({
+        hasSupports: true,
+        supportCount: 1
+      });
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      LeadContainer = getLeadContainer({ hasSupports: true, supportCount: 2 });
       expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
       LeadContainer = getLeadContainer({ hasSupports: false });
       expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render ConfigWrapper correctly", () => {
+      let ConfigWrapper = getLeadConfigWrapper({ supportCount: 1 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+      ConfigWrapper = getLeadConfigWrapper({ supportCount: 2 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });
 });

@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean, number } from "@storybook/addon-knobs/react";
+import { boolean } from "@storybook/addon-knobs/react";
+import withResponsiveStyles from "@times-components/responsive-styles";
 import Card from "./card";
 
 const cardProps = {
-  childRatio: 2.7,
   image: {
     uri:
       "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
@@ -14,39 +14,51 @@ const cardProps = {
   imageSize: 360
 };
 
-const label = "Width of Card content";
-const defaultValue = 2.7;
-const options = {
-  range: true,
-  min: 1,
-  max: 5,
-  step: 0.1
-};
+const CardWrapper = withResponsiveStyles(View, {
+  mediumUp: () => `
+    .exampleCardImage {
+      flex-grow: 2 !important;
+      margin-bottom: 0;
+      min-width: 360px;
+      padding-right: 15px;
+    }
+    .exampleCardContent {
+      flex-grow: 2.7 !important;
+      min-width: 380px;
+    }
+  `
+});
 
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
-    <Card
-      {...cardProps}
-      showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
-      isLoading
-    >
-      <Text>Is loading</Text>
-    </Card>
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isLoading
+        showImage={boolean("Show Image?", true, "")}
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </CardWrapper>
   ))
   .add("Default", () => (
-    <Card
-      {...cardProps}
-      showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
-    >
-      <View
-        style={{
-          borderColor: "black",
-          borderStyle: "solid",
-          borderWidth: 1,
-          minHeight: 200
-        }}
-      />
-    </Card>
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={boolean("Show Image?", true, "")}
+      >
+        <View
+          style={{
+            borderColor: "black",
+            borderStyle: "solid",
+            borderWidth: 1,
+            minHeight: 200
+          }}
+        />
+      </Card>
+    </CardWrapper>
   ));

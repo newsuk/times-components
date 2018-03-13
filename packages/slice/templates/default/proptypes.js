@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
 export default {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired
+  itemCount: PropTypes.number.isRequired,
+  renderItems: PropTypes.func.isRequired
 };

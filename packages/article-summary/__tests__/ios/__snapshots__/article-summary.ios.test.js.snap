@@ -34,8 +34,11 @@ exports[`Article Summary test on ios renders an article-summary component with a
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -58,6 +61,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -176,8 +180,11 @@ exports[`Article Summary test on ios renders an article-summary component with c
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -200,6 +207,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -392,8 +400,11 @@ exports[`Article Summary test on ios renders an article-summary component with e
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -416,6 +427,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -549,8 +561,11 @@ exports[`Article Summary test on ios renders an article-summary component with h
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -623,8 +638,11 @@ exports[`Article Summary test on ios renders an article-summary component with h
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -668,8 +686,11 @@ exports[`Article Summary test on ios renders an article-summary component with h
 exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -692,6 +713,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -789,8 +811,11 @@ exports[`Article Summary test on ios renders an article-summary component with m
 exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -813,6 +838,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -888,8 +914,11 @@ exports[`Article Summary test on ios renders an article-summary component with n
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -912,6 +941,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1014,6 +1044,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1060,8 +1091,11 @@ exports[`Article Summary test on ios renders an article-summary component with n
 exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -1084,6 +1118,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {

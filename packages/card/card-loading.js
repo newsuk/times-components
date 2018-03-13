@@ -2,20 +2,22 @@ import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
-import {
-  loadingPropTypes,
-  loadingDefaultProps
-} from "./card-loading-proptypes";
+import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
 import styles from "./styles/shared";
 
-const Loading = ({ aspectRatio, showImage }) => (
-  <View>
+const Loading = ({
+  contentContainerClass,
+  imageContainerClass,
+  imageRatio,
+  showImage
+}) => (
+  <View style={styles.cardContainer}>
     {showImage && (
-      <View style={styles.imageContainer}>
-        <Image aspectRatio={aspectRatio} />
+      <View style={styles.imageContainer} className={imageContainerClass}>
+        <Image aspectRatio={imageRatio} />
       </View>
     )}
-    <View>
+    <View style={styles.contentContainer} className={contentContainerClass}>
       <Gradient style={[styles.headerContainer]} degrees={264} />
       <Gradient style={[styles.textContainer]} degrees={267} />
       <Gradient style={[styles.textContainer]} degrees={267} />
@@ -24,7 +26,7 @@ const Loading = ({ aspectRatio, showImage }) => (
   </View>
 );
 
-Loading.propTypes = loadingPropTypes;
-Loading.defaultProps = loadingDefaultProps;
+Loading.propTypes = sharedPropTypes;
+Loading.defaultProps = sharedDefaultProps;
 
 export default Loading;

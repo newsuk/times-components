@@ -1,6 +1,6 @@
 import React from "react";
-import { ScrollView } from "react-native";
-import renderSlice from "./related-articles.base";
+import { View } from "react-native";
+import { DefaultSlice, LeadSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -12,30 +12,64 @@ import withTrackingContext from "./related-articles-tracking-context";
 const RelatedArticles = ({ articles, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
-  const renderArticleItems = () =>
-    articles.map((article, index) => {
-      const isDefault = template === "DEFAULT";
-      const isLead = template === "LEAD_AND_TWO" && index === 0;
+  const articleCount = articles.length;
 
-      const showImage = (isDefault && articles.length < 3) || isLead;
-      const showSummaryContent = isDefault || isLead;
+  const renderArticleItems = (articleItems, config) => {
+    const {
+      contentContainerClass = "",
+      headlineClass = "",
+      imageContainerClass = "",
+      summaryClass = "",
+      showImage = true,
+      showSummary = true
+    } = config;
+    return articleItems.map(articleItem => (
+      <RelatedArticleItem
+        article={articleItem}
+        contentContainerClass={contentContainerClass}
+        headlineClass={headlineClass}
+        imageContainerClass={imageContainerClass}
+        key={articleItem.id}
+        onPress={onPress}
+        showImage={showImage}
+        showSummary={showSummary}
+        summaryClass={summaryClass}
+      />
+    ));
+  };
 
-      return (
-        <RelatedArticleItem
-          article={article}
-          key={article.id}
-          onPress={onPress}
-          showImage={showImage}
-          showSummaryContent={showSummaryContent}
-        />
-      );
-    });
+  const renderSlice = () => {
+    switch (template) {
+      case "DEFAULT":
+      default:
+        return (
+          <DefaultSlice
+            itemCount={articleCount}
+            renderItems={(config = {}) => renderArticleItems(articles, config)}
+          />
+        );
+      case "LEAD_AND_TWO":
+        return (
+          <LeadSlice
+            lead={(config = {}) => renderArticleItems([articles[0]], config)}
+            support1={(config = {}) => {
+              const article = articles[1];
+              return article ? renderArticleItems([article], config) : null;
+            }}
+            support2={(config = {}) => {
+              const article = articles[2];
+              return article ? renderArticleItems([article], config) : null;
+            }}
+          />
+        );
+    }
+  };
 
   return (
-    <ScrollView style={{ marginTop: 10 }}>
+    <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
-      {renderSlice(template, renderArticleItems)}
-    </ScrollView>
+      {renderSlice()}
+    </View>
   );
 };
 

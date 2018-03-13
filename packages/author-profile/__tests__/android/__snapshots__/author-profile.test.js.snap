@@ -714,19 +714,62 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -737,11 +780,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -760,271 +798,251 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -1065,19 +1083,62 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -1088,11 +1149,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -1111,271 +1167,251 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -1416,19 +1452,62 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -1439,11 +1518,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -1462,271 +1536,251 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -2364,11 +2418,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
               <View
+                className=""
                 style={
                   Object {
+                    "flex": 1,
                     "marginBottom": 10,
+                    "minWidth": "100%",
                   }
                 }
               >
@@ -2497,11 +2563,22 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   </View>
                 </View>
               </View>
-              <View>
+              <View
+                className=""
+                style={
+                  Object {
+                    "flex": 1,
+                    "minWidth": "100%",
+                  }
+                }
+              >
                 <View>
                   <Text
+                    accessibilityRole="heading"
                     accessible={true}
                     allowFontScaling={true}
+                    aria-level="3"
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -2524,6 +2601,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2636,11 +2714,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
               <View
+                className=""
                 style={
                   Object {
+                    "flex": 1,
                     "marginBottom": 10,
+                    "minWidth": "100%",
                   }
                 }
               >
@@ -2769,11 +2859,22 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   </View>
                 </View>
               </View>
-              <View>
+              <View
+                className=""
+                style={
+                  Object {
+                    "flex": 1,
+                    "minWidth": "100%",
+                  }
+                }
+              >
                 <View>
                   <Text
+                    accessibilityRole="heading"
                     accessible={true}
                     allowFontScaling={true}
+                    aria-level="3"
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -2796,6 +2897,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2908,11 +3010,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
               <View
+                className=""
                 style={
                   Object {
+                    "flex": 1,
                     "marginBottom": 10,
+                    "minWidth": "100%",
                   }
                 }
               >
@@ -3041,11 +3155,22 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   </View>
                 </View>
               </View>
-              <View>
+              <View
+                className=""
+                style={
+                  Object {
+                    "flex": 1,
+                    "minWidth": "100%",
+                  }
+                }
+              >
                 <View>
                   <Text
+                    accessibilityRole="heading"
                     accessible={true}
                     allowFontScaling={true}
+                    aria-level="3"
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Array [
@@ -3068,6 +3193,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3527,12 +3653,32 @@ exports[`AuthorProfile test on android renders profile content item component 1`
         }
       }
     >
-      <View>
-        <View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          className=""
+          style={
+            Object {
+              "flex": 1,
+              "minWidth": "100%",
+            }
+          }
+        >
           <View>
             <Text
+              accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
+              aria-level="3"
+              className=""
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3620,12 +3766,32 @@ exports[`AuthorProfile test on android renders profile content item component wi
         }
       }
     >
-      <View>
-        <View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          className=""
+          style={
+            Object {
+              "flex": 1,
+              "minWidth": "100%",
+            }
+          }
+        >
           <View>
             <Text
+              accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
+              aria-level="3"
+              className=""
               ellipsizeMode="tail"
               style={
                 Array [
@@ -3713,12 +3879,32 @@ exports[`AuthorProfile test on android renders profile content item component wi
         }
       }
     >
-      <View>
-        <View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          className=""
+          style={
+            Object {
+              "flex": 1,
+              "minWidth": "100%",
+            }
+          }
+        >
           <View>
             <Text
+              accessibilityRole="heading"
               accessible={true}
               allowFontScaling={true}
+              aria-level="3"
+              className=""
               ellipsizeMode="tail"
               style={
                 Array [
@@ -4035,19 +4221,62 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -4058,11 +4287,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -4081,271 +4305,251 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -4785,19 +4989,62 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -4808,11 +5055,6 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -4831,271 +5073,251 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -5136,19 +5358,62 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -5159,11 +5424,6 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -5182,271 +5442,251 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -5487,19 +5727,62 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 10,
-                }
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
               }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+              style={Object {}}
             >
               <View
-                aspectRatio={1.5}
-                style={Object {}}
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
               >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "&preview=true",
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
                 <View
                   style={
                     Object {
@@ -5510,11 +5793,6 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 >
                   <Image
                     onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "&preview=true",
-                      }
-                    }
                     style={
                       Array [
                         Object {
@@ -5533,271 +5811,251 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     }
                   />
                   <View
+                    onLayout={[Function]}
                     style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
+                      Array [
+                        Object {
+                          "flex": 1,
+                        },
+                        null,
+                      ]
                     }
                   >
-                    <Image
-                      onLoad={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
                     <View
-                      onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
-                      <View
-                        style={
+                      <BVLinearGradient
+                        colors={
+                          Array [
+                            "#F9F9F9",
+                            "#EDEDED",
+                          ]
+                        }
+                        end={
                           Object {
-                            "flex": 1,
+                            "x": -0.09302964577578221,
+                            "y": 0.11488204504197774,
                           }
                         }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
+                        locations={
+                          Array [
+                            0,
+                            1,
+                          ]
+                        }
+                        start={
+                          Object {
+                            "x": 1,
+                            "y": 0,
                           }
-                          end={
+                        }
+                        style={
+                          Array [
                             Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
+                              "flex": 1,
+                            },
+                          ]
+                        }
+                      />
                     </View>
                   </View>
                 </View>
               </View>
             </View>
-            <View>
-              <View
+          </View>
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -6314,190 +6572,205 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View>
-              <View
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -6538,190 +6811,205 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View>
-              <View
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -6762,190 +7050,205 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           ]
         }
       >
-        <View>
-          <View>
-            <View>
-              <View
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            className=""
+            style={
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 24,
+                    "marginBottom": 10,
+                    "maxWidth": 300,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "marginBottom": 10,
-                      "maxWidth": 300,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "marginBottom": 10,
+                  },
+                  Object {
+                    "marginBottom": 0,
+                    "maxWidth": 240,
+                  },
+                ]
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
                   }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
                   }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
-              <View
+                }
                 style={
                   Array [
                     Object {
-                      "height": 10,
-                      "marginBottom": 10,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                      "maxWidth": 240,
+                      "flex": 1,
                     },
                   ]
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.049525179317961854,
-                      "y": 0.05500328394968961,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>

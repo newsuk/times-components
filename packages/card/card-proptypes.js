@@ -1,21 +1,21 @@
 import PropTypes from "prop-types";
+import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
 
 export const cardPropTypes = {
+  ...sharedPropTypes,
   children: PropTypes.node,
   image: PropTypes.shape({ uri: PropTypes.string }),
-  imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
-  isLoading: PropTypes.bool,
-  showImage: PropTypes.bool
+  isLoading: PropTypes.bool
 };
 
 export const cardDefaultProps = {
-  children: [],
+  ...sharedDefaultProps,
+  children: null,
   image: {
     uri: ""
   },
   imageRatio: 1,
   imageSize: 100,
-  isLoading: false,
-  showImage: false
+  isLoading: false
 };

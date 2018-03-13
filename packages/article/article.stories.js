@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
-import { Platform } from "react-native";
+import { Platform, ScrollView } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
@@ -222,53 +222,71 @@ storiesOf("Pages/Article", module)
     />
   ))
   .add("Default template with one related article", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(defaultSingleRelatedArticleFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(defaultSingleRelatedArticleFixture.data)}
+      />
+    </ScrollView>
   ))
   .add("Default template with one related article with no lead image", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(
-        defaultSingleRelatedArticleNoImageFixture.data
-      )}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          defaultSingleRelatedArticleNoImageFixture.data
+        )}
+      />
+    </ScrollView>
   ))
   .add("Default template with one related article with no label", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(
-        defaultSingleRelatedArticleNoLabelFixture.data
-      )}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          defaultSingleRelatedArticleNoLabelFixture.data
+        )}
+      />
+    </ScrollView>
   ))
   .add("Default template with one related article with no byline", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(
-        defaultSingleRelatedArticleNoBylineFixture.data
-      )}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          defaultSingleRelatedArticleNoBylineFixture.data
+        )}
+      />
+    </ScrollView>
   ))
   .add("Default template with two related articles", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(defaultTwoRelatedArticlesFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(defaultTwoRelatedArticlesFixture.data)}
+      />
+    </ScrollView>
   ))
   .add("Default template with three related articles", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(defaultThreeRelatedArticlesFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(defaultThreeRelatedArticlesFixture.data)}
+      />
+    </ScrollView>
   ))
   .add("Lead and two template with one related article", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(leadSingleRelatedArticleFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(leadSingleRelatedArticleFixture.data)}
+      />
+    </ScrollView>
   ))
   .add("Lead and two template with two related articles", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(leadTwoRelatedArticlesFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(leadTwoRelatedArticlesFixture.data)}
+      />
+    </ScrollView>
   ))
   .add("Lead and two template with three related articles", () => (
-    <RelatedArticles
-      {...createRelatedArticlesProps(leadThreeRelatedArticlesFixture.data)}
-    />
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(leadThreeRelatedArticlesFixture.data)}
+      />
+    </ScrollView>
   ));
