@@ -14,33 +14,37 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
-  const relatedArticlesData = {
-    relatedArticles: articleData.relatedArticles,
-    relatedArticlesLayout: articleData.relatedArticlesLayout
-  };
+  const relatedArticlesData = articleData.relatedArticles
+    ? {
+        relatedArticles: articleData.relatedArticles,
+        relatedArticlesLayout: articleData.relatedArticlesLayout
+      }
+    : null;
 
-  const data = [
+  let data = [
     { type: "leadAsset", data: leadAsset },
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
-  ]
-    .concat(
-      articleData.content.map((rowData, index) => {
-        const item = {
-          type: "articleBodyRow",
-          data: rowData,
-          index
+  ].concat(
+    articleData.content.map((rowData, index) => {
+      const item = {
+        type: "articleBodyRow",
+        data: rowData,
+        index
+      };
+      if (rowData.name === "ad") {
+        item.data.attributes = {
+          ...item.data.attributes,
+          ...{ section: articleData.section }
         };
-        if (rowData.name === "ad") {
-          item.data.attributes = {
-            ...item.data.attributes,
-            ...{ section: articleData.section }
-          };
-        }
-        return item;
-      })
-    )
-    .concat({ type: "relatedArticles", data: relatedArticlesData });
+      }
+      return item;
+    })
+  );
+
+  if (relatedArticlesData) {
+    data = data.concat({ type: "relatedArticles", data: relatedArticlesData });
+  }
 
   if (!leadAsset) {
     data.splice(0, 1);
