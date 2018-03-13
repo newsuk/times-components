@@ -35,7 +35,6 @@ class ArticlePage extends React.Component {
       byline,
       publishedTime,
       publicationName,
-      leadAsset,
       content,
       section
     } = articleData;
