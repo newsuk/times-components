@@ -7842,7 +7842,9 @@ exports[`Article test on android renders full article 1`] = `
       },
       Object {
         "data": Object {
-          "attributes": Object {},
+          "attributes": Object {
+            "section": "news",
+          },
           "children": Array [],
           "name": "ad",
         },

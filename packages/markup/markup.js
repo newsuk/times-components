@@ -46,8 +46,8 @@ const defaultRenderers = {
   inline(key, attributes, renderedChildren) {
     return <Text key={key}>{renderedChildren}</Text>;
   },
-  ad(key) {
-    return <Ad key={key} pos="inline-ad" section="article" style={styles.ad} />;
+  ad(key, attributes) {
+    return <Ad key={key} pos="inline-ad" style={styles.ad} {...attributes} />;
   },
   break(key) {
     return <Text key={key}>{"\n"}</Text>;

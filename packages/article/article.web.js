@@ -35,7 +35,8 @@ class ArticlePage extends React.Component {
       byline,
       publishedTime,
       publicationName,
-      content
+      content,
+      section
     } = articleData;
 
     const leadAssetProps = getLeadAsset(articleData);
@@ -43,7 +44,7 @@ class ArticlePage extends React.Component {
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad pos="header" style={adStyle} />
+          <Ad pos="header" style={adStyle} section={section} />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" {...leadAssetProps} />
@@ -66,7 +67,7 @@ class ArticlePage extends React.Component {
             </MetaContainer>
             <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
-              <ArticleBody content={content} />
+              <ArticleBody content={content} section={section} />
             </BodyContainer>
           </View>
         </MainContainer>

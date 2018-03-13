@@ -20,11 +20,20 @@ const prepareDataForListView = articleData => {
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
   ].concat(
-    articleData.content.map((i, index) => ({
-      type: "articleBodyRow",
-      data: i,
-      index
-    }))
+    articleData.content.map((rowData, index) => {
+      const item = {
+        type: "articleBodyRow",
+        data: rowData,
+        index
+      };
+      if (rowData.name === "ad") {
+        item.data.attributes = {
+          ...item.data.attributes,
+          ...{ section: articleData.section }
+        };
+      }
+      return item;
+    })
   );
 
   if (!leadAsset) {
