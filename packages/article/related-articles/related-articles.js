@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { View } from "react-native";
 import { DefaultSlice, LeadSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
@@ -66,10 +66,10 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   };
 
   return (
-    <ScrollView style={{ marginTop: 10 }}>
+    <View style={{ marginTop: 10 }}>
       <RelatedArticlesHeading />
       {renderSlice()}
-    </ScrollView>
+    </View>
   );
 };
 
