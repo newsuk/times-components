@@ -897,7 +897,7 @@ exports[`Article test on android renders article no flags 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -2388,7 +2388,7 @@ exports[`Article test on android renders article no label 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -3979,7 +3979,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -5433,7 +5433,7 @@ exports[`Article test on android renders article no label no flags no standfirst
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -6869,7 +6869,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -8473,7 +8473,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -9943,7 +9943,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },
@@ -12450,7 +12450,7 @@ exports[`Article test on android renders full article 1`] = `
               "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
             },
           ],
-          "template": Object {
+          "relatedArticlesLayout": Object {
             "template": "DEFAULT",
           },
         },

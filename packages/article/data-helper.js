@@ -16,7 +16,7 @@ const prepareDataForListView = articleData => {
   };
   const relatedArticlesData = {
     relatedArticles: articleData.relatedArticles,
-    template: articleData.relatedArticlesLayout
+    relatedArticlesLayout: articleData.relatedArticlesLayout
   };
 
   const data = [
