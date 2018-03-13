@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.45.2...@times-components/article@0.46.0) (2018-03-13)
+
+
+### Features
+
+* add support for article section ([#722](https://github.com/newsuk/times-components/issues/722)) ([b36133d](https://github.com/newsuk/times-components/commit/b36133d))
+
+
+
+
 <a name="0.45.2"></a>
 ## [0.45.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.45.1...@times-components/article@0.45.2) (2018-03-13)
 
