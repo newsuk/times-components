@@ -4,9 +4,9 @@ import { colours, fonts } from "@times-components/styleguide";
 export default StyleSheet.create({
   titleContainer: {
     borderStyle: "solid",
-    borderBottomColor: colours.functional.alto,
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colours.functional.alto,
+    borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
     height: 55,
     display: "flex",
@@ -18,15 +18,14 @@ export default StyleSheet.create({
   title: {
     fontFamily: fonts.headline,
     fontSize: 26,
-    color: colours.functional.mineShaftGrey
+    color: colours.functional.primary
   },
   headline: {
-    color: colours.functional.mineShaftGrey,
+    color: colours.functional.primary,
     marginBottom: 5,
     fontFamily: fonts.headline,
-    fontWeight: "400"
-  },
-  imageContainer: {
-    marginBottom: 10
+    fontSize: 22,
+    fontWeight: "400",
+    lineHeight: 22
   }
 });

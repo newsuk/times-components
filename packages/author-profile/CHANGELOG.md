@@ -3,6 +3,104 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.49.2"></a>
+## [0.49.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.1...@times-components/author-profile@0.49.2) (2018-03-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.1"></a>
+## [0.49.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.0...@times-components/author-profile@0.49.1) (2018-03-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.0"></a>
+# [0.49.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.48.2...@times-components/author-profile@0.49.0) (2018-03-13)
+
+
+### Features
+
+* create a template system for Slice ([#710](https://github.com/newsuk/times-components/issues/710)) ([f22ed7c](https://github.com/newsuk/times-components/commit/f22ed7c))
+
+
+
+
+<a name="0.48.2"></a>
+## [0.48.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.48.1...@times-components/author-profile@0.48.2) (2018-03-12)
+
+
+### Bug Fixes
+
+* update font weight for article summary headline - ios platform specific ([#705](https://github.com/newsuk/times-components/issues/705)) ([c1933a2](https://github.com/newsuk/times-components/commit/c1933a2))
+
+
+
+
+<a name="0.48.1"></a>
+## [0.48.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.48.0...@times-components/author-profile@0.48.1) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.47.1...@times-components/author-profile@0.48.0) (2018-03-12)
+
+
+### Features
+
+* add test ids to components in author profile to support e2e tests ([#713](https://github.com/newsuk/times-components/issues/713)) ([9048bd1](https://github.com/newsuk/times-components/commit/9048bd1))
+
+
+
+
+<a name="0.47.1"></a>
+## [0.47.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.47.0...@times-components/author-profile@0.47.1) (2018-03-09)
+
+
+### Bug Fixes
+
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+
+
+
+
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.46.1...@times-components/author-profile@0.47.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.46.1"></a>
+## [0.46.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.46.0...@times-components/author-profile@0.46.1) (2018-03-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.45.7...@times-components/author-profile@0.46.0) (2018-03-08)
+
+
+### Features
+
+* make related articles use Slice and add Lead and Two ([#702](https://github.com/newsuk/times-components/issues/702)) ([7e441ac](https://github.com/newsuk/times-components/commit/7e441ac))
+
+
+
+
 <a name="0.45.7"></a>
 ## [0.45.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.45.6...@times-components/author-profile@0.45.7) (2018-03-08)
 

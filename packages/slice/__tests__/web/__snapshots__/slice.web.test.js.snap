@@ -1,130 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. DEFAULT template renders a single child element 1`] = `
-<SliceContainer>
-  <ChildrenContainer>
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-    >
-      <ExampleChild
+<Styled(View)>
+  <SliceContainer>
+    <ChildrenContainer>
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-      />
-    </ChildContainer>
-  </ChildrenContainer>
-</SliceContainer>
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        />
+      </ChildContainer>
+    </ChildrenContainer>
+  </SliceContainer>
+</Styled(View)>
 `;
 
 exports[`2. DEFAULT template renders two child elements 1`] = `
-<SliceContainer>
-  <ChildrenContainer>
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-    >
-      <ExampleChild
+<Styled(View)>
+  <SliceContainer>
+    <ChildrenContainer>
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        />
+      </ChildContainer>
+      <Separator
+        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
       />
-    </ChildContainer>
-    <Separator
-      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    />
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    >
-      <ExampleChild
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-      />
-    </ChildContainer>
-  </ChildrenContainer>
-</SliceContainer>
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        />
+      </ChildContainer>
+    </ChildrenContainer>
+  </SliceContainer>
+</Styled(View)>
 `;
 
 exports[`3. DEFAULT template renders three child elements 1`] = `
-<SliceContainer>
-  <ChildrenContainer>
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
-    >
-      <ExampleChild
+<Styled(View)>
+  <SliceContainer>
+    <ChildrenContainer>
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        />
+      </ChildContainer>
+      <Separator
+        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
       />
-    </ChildContainer>
-    <Separator
-      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    />
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
-    >
-      <ExampleChild
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        />
+      </ChildContainer>
+      <Separator
+        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983de"
       />
-    </ChildContainer>
-    <Separator
-      key="separator-08604618-fb0e-11e7-a987-7fcf5e9983de"
-    />
-    <ChildContainer
-      key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-    >
-      <ExampleChild
+      <ChildContainer
         key="08604618-fb0e-11e7-a987-7fcf5e9983de"
-      />
-    </ChildContainer>
-  </ChildrenContainer>
-</SliceContainer>
+      >
+        <ExampleChild
+          key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+        />
+      </ChildContainer>
+    </ChildrenContainer>
+  </SliceContainer>
+</Styled(View)>
 `;
 
 exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
-<SliceContainer>
-  <Container>
-    <LeadContainer>
-      <ExampleChild />
-    </LeadContainer>
-  </Container>
-</SliceContainer>
+<ConfigWrapper>
+  <SliceContainer>
+    <Container>
+      <LeadContainer>
+        <ExampleChild
+          key="lead"
+        />
+      </LeadContainer>
+    </Container>
+  </SliceContainer>
+</ConfigWrapper>
 `;
 
 exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
-<SliceContainer>
-  <Container>
-    <LeadContainer>
-      <ExampleChild />
-    </LeadContainer>
-    <Separator />
-    <SupportsContainer>
-      <SupportContainer
-        key="support-container-support1"
-      >
+<ConfigWrapper>
+  <SliceContainer>
+    <Container>
+      <LeadContainer>
         <ExampleChild
-          key="support1"
+          key="lead"
         />
-      </SupportContainer>
-    </SupportsContainer>
-  </Container>
-</SliceContainer>
+      </LeadContainer>
+      <Separator />
+      <SupportsContainer>
+        <SupportContainer
+          key="support-container-support1"
+        >
+          <ExampleChild
+            key="support1"
+          />
+        </SupportContainer>
+      </SupportsContainer>
+    </Container>
+  </SliceContainer>
+</ConfigWrapper>
 `;
 
 exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
-<SliceContainer>
-  <Container>
-    <LeadContainer>
-      <ExampleChild />
-    </LeadContainer>
-    <Separator />
-    <SupportsContainer>
-      <SupportContainer
-        key="support-container-support1"
-      >
+<ConfigWrapper>
+  <SliceContainer>
+    <Container>
+      <LeadContainer>
         <ExampleChild
-          key="support1"
+          key="lead"
         />
-      </SupportContainer>
-      <SupportContainer
-        key="support-container-support2"
-      >
-        <ExampleChild
-          key="support2"
-        />
-      </SupportContainer>
-    </SupportsContainer>
-  </Container>
-</SliceContainer>
+      </LeadContainer>
+      <Separator />
+      <SupportsContainer>
+        <SupportContainer
+          key="support-container-support1"
+        >
+          <ExampleChild
+            key="support1"
+          />
+        </SupportContainer>
+        <SupportContainer
+          key="support-container-support2"
+        >
+          <ExampleChild
+            key="support2"
+          />
+        </SupportContainer>
+      </SupportsContainer>
+    </Container>
+  </SliceContainer>
+</ConfigWrapper>
 `;

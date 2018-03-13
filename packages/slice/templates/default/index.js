@@ -2,19 +2,20 @@ import React from "react";
 import { View } from "react-native";
 import propTypes from "./proptypes";
 import styles from "../styles";
+import config from "./config";
 
-const Slice = ({ children }) => (
+const DefaultSlice = ({ itemCount, renderItems }) => (
   <View style={styles.container}>
-    {children.map((child, index) => (
-      <View key={child.key} style={styles.childContainer}>
-        <View style={[styles.child, { paddingTop: index === 0 ? 0 : 10 }]}>
-          {child}
+    {renderItems(config(itemCount)).map((item, index) => (
+      <View key={item.key} style={styles.itemContainer}>
+        <View style={[styles.item, { paddingTop: index === 0 ? 0 : 10 }]}>
+          {item}
         </View>
       </View>
     ))}
   </View>
 );
 
-Slice.propTypes = propTypes;
+DefaultSlice.propTypes = propTypes;
 
-export default Slice;
+export default DefaultSlice;

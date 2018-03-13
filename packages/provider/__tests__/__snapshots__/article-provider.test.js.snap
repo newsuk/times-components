@@ -499,6 +499,7 @@ Object {
     },
     "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
     "title": "Chris Reynolds Gordon at one of his party venues in London",
+    "type": "Image",
     Symbol(id): "Image:263b03a1-2ce6-4b94-b053-0d35316548c5",
   },
   "publicationName": "TIMES",
@@ -529,20 +530,21 @@ Object {
         "crop169": Object {
           "__typename": "Crop",
           "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Article:ea16d744-cb4a-11e4-a202-50ac5def393a.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
         },
         "crop32": Object {
           "__typename": "Crop",
           "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Article:ea16d744-cb4a-11e4-a202-50ac5def393a.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
         },
+        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
         "title": "TMS: Pratchett’s law of the jungle",
-        Symbol(id): "$Article:ea16d744-cb4a-11e4-a202-50ac5def393a.leadAsset",
+        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T19:39:39.000Z",
       "section": "sport",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -568,42 +570,7 @@ Object {
             },
             Object {
               "attributes": Object {
-                "value": " in 1965, aged 17, and",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Terry Pratchett, who died last week, began his career on the ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Bucks Free Press",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": " in 1965, aged 17, and the paper",
+                "value": " in 1965, aged 17, and the",
               },
               "children": Array [],
               "name": "text",
@@ -647,7 +614,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -673,7 +640,7 @@ Object {
             },
             Object {
               "attributes": Object {
-                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his",
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
               },
               "children": Array [],
               "name": "text",
@@ -682,7 +649,42 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary160": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Terry Pratchett, who died last week, began his career on the ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Bucks Free Press",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary175": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -709,6 +711,41 @@ Object {
             Object {
               "attributes": Object {
                 "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Terry Pratchett, who died last week, began his career on the ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Bucks Free Press",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like",
               },
               "children": Array [],
               "name": "text",
@@ -744,42 +781,28 @@ Object {
         "__typename": "Image",
         "crop169": Object {
           "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Article:b09fc422-cb53-11e4-81dd-064fe933cd41.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
         },
         "crop32": Object {
           "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Article:b09fc422-cb53-11e4-81dd-064fe933cd41.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
         },
-        "title": "Rise of centenarian drivers as elderly push on",
-        Symbol(id): "$Article:b09fc422-cb53-11e4-81dd-064fe933cd41.leadAsset",
+        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+        "title": "TMS: Pratchett’s law of the jungle",
+        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:42:27.000Z",
       "section": "comment",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
                 "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become",
               },
               "children": Array [],
               "name": "text",
@@ -803,7 +826,27 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [],
+          "name": "paragraph",
+        },
+      ],
+      "summary160": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -822,7 +865,7 @@ Object {
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "Figures",
+                "value": "Figures from the",
               },
               "children": Array [],
               "name": "text",
@@ -831,7 +874,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary175": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -851,6 +894,34 @@ Object {
             Object {
               "attributes": Object {
                 "value": "Figures from the Driver and Vehicle",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of",
               },
               "children": Array [],
               "name": "text",
@@ -886,42 +957,28 @@ Object {
         "__typename": "Image",
         "crop169": Object {
           "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Article:8557a3d2-cb55-11e4-81dd-064fe933cd41.leadAsset.crop({\\"ratio\\":\\"16:9\\"})",
+          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
         },
         "crop32": Object {
           "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Article:8557a3d2-cb55-11e4-81dd-064fe933cd41.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
+          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
         },
-        "title": "At long last, a burial place fit for a king",
-        Symbol(id): "$Article:8557a3d2-cb55-11e4-81dd-064fe933cd41.leadAsset",
+        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+        "title": "TMS: Pratchett’s law of the jungle",
+        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
       },
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:56:09.000Z",
       "section": "thedish",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the",
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and",
               },
               "children": Array [],
               "name": "text",
@@ -945,7 +1002,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -960,13 +1017,56 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary160": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair",
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary175": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "His coffin has been",
               },
               "children": Array [],
               "name": "text",

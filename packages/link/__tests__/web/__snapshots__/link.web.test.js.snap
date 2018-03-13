@@ -82,7 +82,7 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 
 exports[`Link tests on Web renders with responsive styles 1`] = `
 .c0 {
-  color: #069;
+  color: #006699;
   font-family: "TimesDigitalW04-Regular";
   line-height: 26px;
   font-size: 17px;

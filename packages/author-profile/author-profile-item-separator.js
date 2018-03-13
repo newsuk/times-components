@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#dbdbdb",
+    backgroundColor: colours.functional.keyline,
     height: 1
   }
 });

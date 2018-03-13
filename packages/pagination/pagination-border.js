@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, StyleSheet } from "react-native";
+import { colours } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   border: {
@@ -9,9 +10,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     height: 50,
-    borderBottomColor: "#dbdbdb",
+    borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
-    borderTopColor: "#dbdbdb",
+    borderTopColor: colours.functional.keyline,
     borderTopWidth: 1
   }
 });

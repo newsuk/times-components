@@ -1,21 +1,32 @@
 import React from "react";
 import get from "lodash.get";
-import { View } from "react-native";
 import ArticleSummary, {
-  ArticleSummaryHeadline,
-  ArticleSummaryContent
+  ArticleSummaryContent,
+  ArticleSummaryHeadline
 } from "@times-components/article-summary";
-import Image from "@times-components/image";
+import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import { relatedArticleItemPropTypes } from "./proptypes";
+import {
+  relatedArticleItemPropTypes,
+  relatedArticleItemDefaultProps
+} from "./related-article-item-proptypes";
 import styles from "./styles";
 
-const RelatedArticleItem = ({ article, onPress }) => {
+const RelatedArticleItem = ({
+  article,
+  contentContainerClass,
+  headlineClass,
+  imageContainerClass,
+  onPress,
+  showImage,
+  showSummary,
+  summaryClass
+}) => {
   const {
     byline,
-    label,
     headline,
+    label,
     publishedTime,
     section,
     summary,
@@ -30,27 +41,40 @@ const RelatedArticleItem = ({ article, onPress }) => {
 
   return (
     <Link url={url} onPress={onPress}>
-      <View>
-        {imageUri ? (
-          <View style={styles.imageContainer}>
-            <Image uri={`${imageUri}&resize=996`} aspectRatio={16 / 9} />
-          </View>
-        ) : null}
+      <Card
+        contentContainerClass={contentContainerClass}
+        imageContainerClass={imageContainerClass}
+        image={imageUri ? { uri: imageUri } : null}
+        imageRatio={16 / 9}
+        imageSize={996}
+        showImage={showImage}
+      >
         <ArticleSummary
           bylineProps={{ ast: byline }}
+          content={() =>
+            showSummary && (
+              <ArticleSummaryContent className={summaryClass} ast={summary} />
+            )
+          }
           datePublicationProps={{ date: publishedTime }}
-          headline={() => <ArticleSummaryHeadline headline={headline} />}
+          headline={() => (
+            <ArticleSummaryHeadline
+              className={headlineClass}
+              style={styles.headline}
+              headline={headline}
+            />
+          )}
           labelProps={{
-            title: label,
-            color: colours.section[section] || colours.section.default
+            color: colours.section[section] || colours.section.default,
+            title: label
           }}
-          content={() => <ArticleSummaryContent ast={summary} />}
         />
-      </View>
+      </Card>
     </Link>
   );
 };
 
 RelatedArticleItem.propTypes = relatedArticleItemPropTypes;
+RelatedArticleItem.defaultProps = relatedArticleItemDefaultProps;
 
 export default RelatedArticleItem;

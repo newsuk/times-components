@@ -24,51 +24,64 @@ const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
   static renderRow(rowData, onRelatedArticlePress) {
-    if (rowData.type === "leadAsset") {
-      const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
-      const aspectRatio = ratioWidth / ratioHeight;
-      return (
-        <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-          <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
-        </View>
-      );
-    } else if (rowData.type === "header") {
-      const { headline, flags, standfirst, label } = rowData.data;
-      return (
-        <ArticleHeader
-          key={rowData.type}
-          headline={headline}
-          flags={flags}
-          standfirst={standfirst}
-          label={label}
-          style={[styles.articleMainContentRow]}
-        />
-      );
-    } else if (rowData.type === "middleContainer") {
-      const { byline, publishedTime, publicationName } = rowData.data;
-      return (
-        <ArticleMeta
-          key={rowData.type}
-          byline={byline}
-          publishedTime={publishedTime}
-          publicationName={publicationName}
-        />
-      );
-    } else if (rowData.type === "articleBodyRow") {
-      return <ArticleRow content={rowData} />;
-    } else if (rowData.type === "relatedArticles") {
-      const { relatedArticles, template } = rowData.data;
-      return (
-        <RelatedArticles
-          analyticsStream={() => {}}
-          articles={relatedArticles}
-          template={template}
-          onPress={onRelatedArticlePress}
-        />
-      );
-    }
+    switch (rowData.type) {
+      case "leadAsset": {
+        const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
+        const aspectRatio = ratioWidth / ratioHeight;
+        return (
+          <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
+            <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
+          </View>
+        );
+      }
 
-    return null;
+      case "header": {
+        const { headline, flags, standfirst, label, isVideo } = rowData.data;
+        return (
+          <ArticleHeader
+            key={rowData.type}
+            headline={headline}
+            flags={flags}
+            standfirst={standfirst}
+            label={label}
+            isVideo={isVideo}
+            style={[styles.articleMainContentRow]}
+          />
+        );
+      }
+
+      case "middleContainer": {
+        const { byline, publishedTime, publicationName } = rowData.data;
+        return (
+          <ArticleMeta
+            key={rowData.type}
+            byline={byline}
+            publishedTime={publishedTime}
+            publicationName={publicationName}
+          />
+        );
+      }
+
+      case "articleBodyRow": {
+        return <ArticleRow content={rowData} />;
+      }
+
+      case "relatedArticles": {
+        const { relatedArticles, template } = rowData.data;
+        return (
+          <RelatedArticles
+            analyticsStream={() => {}}
+            articles={relatedArticles}
+            template={template}
+            onPress={onRelatedArticlePress}
+          />
+        );
+      }
+
+      default: {
+        return null;
+      }
+    }
   }
 
   constructor(props) {

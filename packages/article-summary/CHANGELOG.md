@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.3...@times-components/article-summary@0.19.0) (2018-03-13)
+
+
+### Features
+
+* create a template system for Slice ([#710](https://github.com/newsuk/times-components/issues/710)) ([f22ed7c](https://github.com/newsuk/times-components/commit/f22ed7c))
+
+
+
+
+<a name="0.18.3"></a>
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.2...@times-components/article-summary@0.18.3) (2018-03-12)
+
+
+### Bug Fixes
+
+* update font weight for article summary headline - ios platform specific ([#705](https://github.com/newsuk/times-components/issues/705)) ([c1933a2](https://github.com/newsuk/times-components/commit/c1933a2))
+
+
+
+
+<a name="0.18.2"></a>
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.1...@times-components/article-summary@0.18.2) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
+<a name="0.18.1"></a>
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.18.0...@times-components/article-summary@0.18.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.26...@times-components/article-summary@0.18.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="0.17.26"></a>
 ## [0.17.26](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.17.25...@times-components/article-summary@0.17.26) (2018-03-08)
 

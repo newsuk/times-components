@@ -4,10 +4,6 @@ exports[`1. DEFAULT template renders a single child element 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -17,7 +13,7 @@ exports[`1. DEFAULT template renders a single child element 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -52,10 +48,6 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -65,7 +57,7 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -97,7 +89,7 @@ exports[`2. DEFAULT template renders two child elements 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -132,10 +124,6 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -145,7 +133,7 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -177,7 +165,7 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -209,7 +197,7 @@ exports[`3. DEFAULT template renders three child elements 1`] = `
     key="08604618-fb0e-11e7-a987-7fcf5e9983de"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -244,10 +232,6 @@ exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -256,7 +240,7 @@ exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -279,7 +263,9 @@ exports[`4. LEAD_AND_TWO template renders a single child element 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
 </View>
@@ -289,10 +275,6 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -301,7 +283,7 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -324,14 +306,16 @@ exports[`5. LEAD_AND_TWO template renders two child elements 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
   <View
     key="support1"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -361,10 +345,6 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
       "marginBottom": 10,
       "marginTop": 10,
     }
@@ -373,7 +353,7 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -396,14 +376,16 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
         ]
       }
     >
-      <ExampleChild />
+      <ExampleChild
+        key="lead"
+      />
     </View>
   </View>
   <View
     key="support1"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",
@@ -430,7 +412,7 @@ exports[`6. LEAD_AND_TWO template renders three child elements 1`] = `
     key="support2"
     style={
       Object {
-        "borderBottomColor": "#dbdbdb",
+        "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 0.5,
         "borderStyle": "solid",
         "width": "100%",

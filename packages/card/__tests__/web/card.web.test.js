@@ -9,8 +9,7 @@ const cardProps = {
   },
   imageRatio: 1.5,
   imageSize: 360,
-  showImage: true,
-  tabletChildRatio: 2.7
+  showImage: true
 };
 
 describe("Card tests on web", () => {

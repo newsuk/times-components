@@ -9,6 +9,7 @@ exports[`Pagination Icons on Android Next page icon renders out an svg and label
       "padding": 12,
     }
   }
+  testID="pagination-button-next"
 >
   <Text
     accessible={true}
@@ -54,6 +55,7 @@ exports[`Pagination Icons on Android Previous page icon renders out an svg and l
       "padding": 12,
     }
   }
+  testID="pagination-button-previous"
 >
   <Svg
     height={12}

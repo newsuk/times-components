@@ -3,7 +3,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 
 export const MetaTextElement = withResponsiveStyles(Text, {
-  base: () => ` border-top: 1px solid ${colours.functional.alto};`,
+  base: () => ` border-top: 1px solid ${colours.functional.keyline};`,
   mediumUp: () => `
     padding-top: 10px;
     padding-bottom: 10px;

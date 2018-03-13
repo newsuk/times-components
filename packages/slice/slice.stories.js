@@ -29,37 +29,39 @@ const createDefaultItems = noOfItems =>
 
 storiesOf("Primitives/Slice", module)
   .add("Default template with one item", () => (
-    <DefaultSlice>{createDefaultItems(1)}</DefaultSlice>
+    <DefaultSlice itemCount={1} renderItems={() => createDefaultItems(1)} />
   ))
   .add("Default template with two items", () => (
-    <DefaultSlice>{createDefaultItems(2)}</DefaultSlice>
+    <DefaultSlice itemCount={2} renderItems={() => createDefaultItems(2)} />
   ))
   .add("Default template with three items", () => (
-    <DefaultSlice>{createDefaultItems(3)}</DefaultSlice>
+    <DefaultSlice itemCount={3} renderItems={() => createDefaultItems(3)} />
   ))
   .add("Lead template with one item", () => (
     <LeadSlice
-      lead={
+      lead={() => [
         <View
+          key="lead"
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      }
+      ]}
     />
   ))
   .add("Lead template with two items", () => (
     <LeadSlice
-      lead={
+      lead={() => [
         <View
+          key="lead"
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      }
-      support1={
+      ]}
+      support1={() => [
         <View
           key={1}
           style={{
@@ -67,20 +69,21 @@ storiesOf("Primitives/Slice", module)
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      }
+      ]}
     />
   ))
   .add("Lead template with three items", () => (
     <LeadSlice
-      lead={
+      lead={() => [
         <View
+          key="lead"
           style={{
             minHeight: 320,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      }
-      support1={
+      ]}
+      support1={() => [
         <View
           key={1}
           style={{
@@ -88,8 +91,8 @@ storiesOf("Primitives/Slice", module)
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      }
-      support2={
+      ]}
+      support2={() => [
         <View
           key={2}
           style={{
@@ -97,6 +100,6 @@ storiesOf("Primitives/Slice", module)
             backgroundColor: colours[2].backgroundColor
           }}
         />
-      }
+      ]}
     />
   ));

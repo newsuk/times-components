@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.21.2...@times-components/card@0.22.0) (2018-03-13)
+
+
+### Features
+
+* create a template system for Slice ([#710](https://github.com/newsuk/times-components/issues/710)) ([f22ed7c](https://github.com/newsuk/times-components/commit/f22ed7c))
+
+
+
+
+<a name="0.21.2"></a>
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/card@0.21.1...@times-components/card@0.21.2) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/card@0.21.0...@times-components/card@0.21.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.20.0...@times-components/card@0.21.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.11...@times-components/card@0.20.0) (2018-03-08)
+
+
+### Features
+
+* make related articles use Slice and add Lead and Two ([#702](https://github.com/newsuk/times-components/issues/702)) ([7e441ac](https://github.com/newsuk/times-components/commit/7e441ac))
+
+
+
+
 <a name="0.19.11"></a>
 ## [0.19.11](https://github.com/newsuk/times-components/compare/@times-components/card@0.19.10...@times-components/card@0.19.11) (2018-03-08)
 

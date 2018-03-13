@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.23.10"></a>
+## [0.23.10](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.9...@times-components/provider@0.23.10) (2018-03-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.23.9"></a>
+## [0.23.9](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.8...@times-components/provider@0.23.9) (2018-03-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.23.8"></a>
+## [0.23.8](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.7...@times-components/provider@0.23.8) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.23.7"></a>
+## [0.23.7](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.6...@times-components/provider@0.23.7) (2018-03-09)
+
+
+### Bug Fixes
+
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+
+
+
+
+<a name="0.23.6"></a>
+## [0.23.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.5...@times-components/provider@0.23.6) (2018-03-08)
+
+
+### Bug Fixes
+
+* add id field to leadassets in article query ([#711](https://github.com/newsuk/times-components/issues/711)) ([5c46dd9](https://github.com/newsuk/times-components/commit/5c46dd9))
+
+
+
+
 <a name="0.23.5"></a>
 ## [0.23.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.23.4...@times-components/provider@0.23.5) (2018-03-08)
 

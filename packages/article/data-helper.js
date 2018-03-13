@@ -1,10 +1,13 @@
+import getLeadAsset from "./get-lead-asset";
+
 const prepareDataForListView = articleData => {
-  const leadAssetData = articleData.leadAsset;
+  const { isVideo, leadAsset } = getLeadAsset(articleData);
   const articleHeaderData = {
     label: articleData.label,
     headline: articleData.headline,
     standfirst: articleData.standfirst,
-    flags: articleData.flags
+    flags: articleData.flags,
+    isVideo
   };
   const articleMidContainerData = {
     publicationName: articleData.publicationName,
@@ -17,7 +20,7 @@ const prepareDataForListView = articleData => {
   };
 
   const data = [
-    { type: "leadAsset", data: leadAssetData },
+    { type: "leadAsset", data: leadAsset },
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
   ]
@@ -30,7 +33,7 @@ const prepareDataForListView = articleData => {
     )
     .concat({ type: "relatedArticles", data: relatedArticlesData });
 
-  if (!leadAssetData) {
+  if (!leadAsset) {
     data.splice(0, 1);
   }
 

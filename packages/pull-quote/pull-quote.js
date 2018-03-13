@@ -3,6 +3,7 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { TextLink } from "@times-components/link";
 import { IconTwitter } from "@times-components/icons";
+import { colours } from "@times-components/styleguide";
 import styles from "./styles";
 
 const ShowTwitter = twitter => {
@@ -47,8 +48,8 @@ PullQuotes.propTypes = {
 
 PullQuotes.defaultProps = {
   caption: "",
-  quoteColour: "#13354e",
-  captionColour: "#696969",
+  quoteColour: colours.functional.secondary,
+  captionColour: colours.functional.secondary,
   twitter: ""
 };
 

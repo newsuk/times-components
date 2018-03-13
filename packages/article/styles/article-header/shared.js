@@ -4,7 +4,7 @@ const sharedStyles = {
   articleHeadLineText: {
     fontSize: 30,
     lineHeight: 32,
-    color: colours.functional.timesBlack,
+    color: colours.functional.brandColour,
     marginBottom: 7,
     fontFamily: fonts.headline
   },
@@ -12,7 +12,7 @@ const sharedStyles = {
     fontSize: 20,
     lineHeight: 26,
     fontFamily: fonts.headlineRegular,
-    color: colours.functional.mineShaftGrey,
+    color: colours.functional.primary,
     paddingBottom: 9
   },
   articleLabel: {

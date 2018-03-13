@@ -70,8 +70,8 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -157,7 +157,7 @@ exports[`Article Image test on ios does not render Article Image if display is n
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,
@@ -232,7 +232,7 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,
@@ -320,8 +320,8 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -435,8 +435,8 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -523,7 +523,7 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,
@@ -618,8 +618,8 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -706,7 +706,7 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,
@@ -794,8 +794,8 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -876,7 +876,7 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,
@@ -971,8 +971,8 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             <BVLinearGradient
               colors={
                 Array [
-                  "#f9f9f9",
-                  "#ededed",
+                  "#F9F9F9",
+                  "#EDEDED",
                 ]
               }
               end={
@@ -1059,7 +1059,7 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
                 "lineHeight": 16,
               },
               Object {
-                "color": "#333",
+                "color": "#333333",
                 "fontSize": 9,
                 "fontWeight": "400",
                 "letterSpacing": 1,

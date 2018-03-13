@@ -36,8 +36,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -60,6 +63,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -180,8 +184,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -204,6 +211,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -398,8 +406,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -422,6 +433,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -557,8 +569,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -633,8 +648,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -678,8 +696,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
 exports[`Article Summary test on Android renders an article-summary component with multiple paragraphs 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -702,6 +723,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -799,8 +821,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
 exports[`Article Summary test on Android renders an article-summary component with no byline 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -823,6 +848,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -900,8 +926,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
     </Text>
   </View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -924,6 +953,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1028,6 +1058,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1074,8 +1105,11 @@ exports[`Article Summary test on Android renders an article-summary component wi
 exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
 <View>
   <Text
+    accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
+    aria-level="3"
+    className=""
     ellipsizeMode="tail"
     style={
       Array [
@@ -1098,6 +1132,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className=""
     ellipsizeMode="tail"
     style={
       Object {

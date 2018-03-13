@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean, number } from "@storybook/addon-knobs/react";
+import { boolean } from "@storybook/addon-knobs/react";
+import withResponsiveStyles from "@times-components/responsive-styles";
 import Card from "./card";
 
 const cardProps = {
@@ -13,39 +14,51 @@ const cardProps = {
   imageSize: 360
 };
 
-const label = "Width of Card content";
-const defaultValue = 2.7;
-const options = {
-  range: true,
-  min: 1,
-  max: 5,
-  step: 0.1
-};
+const CardWrapper = withResponsiveStyles(View, {
+  mediumUp: () => `
+    .exampleCardImage {
+      flex-grow: 2 !important;
+      margin-bottom: 0;
+      min-width: 360px;
+      padding-right: 15px;
+    }
+    .exampleCardContent {
+      flex-grow: 2.7 !important;
+      min-width: 380px;
+    }
+  `
+});
 
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
-    <Card
-      {...cardProps}
-      showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
-      isLoading
-    >
-      <Text>Is loading</Text>
-    </Card>
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isLoading
+        showImage={boolean("Show Image?", true, "")}
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </CardWrapper>
   ))
   .add("Default", () => (
-    <Card
-      {...cardProps}
-      showImage={boolean("Show Image?", true, "")}
-      tabletChildRatio={number(label, defaultValue, options)}
-    >
-      <View
-        style={{
-          borderColor: "black",
-          borderStyle: "solid",
-          borderWidth: 1,
-          minHeight: 200
-        }}
-      />
-    </Card>
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={boolean("Show Image?", true, "")}
+      >
+        <View
+          style={{
+            borderColor: "black",
+            borderStyle: "solid",
+            borderWidth: 1,
+            minHeight: 200
+          }}
+        />
+      </Card>
+    </CardWrapper>
   ));

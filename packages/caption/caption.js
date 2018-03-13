@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 const { style: TextPropTypesStyle } = Text.propTypes;
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -25,12 +25,12 @@ const defaultStyle = StyleSheet.create({
   text: {
     fontFamily: fonts.supporting,
     fontSize: 13,
-    color: "#696969",
+    color: colours.functional.secondary,
     ...lineHeightStyle
   },
   credits: {
     fontSize: 9,
-    color: "#333",
+    color: colours.functional.primary,
     letterSpacing: 1,
     fontWeight: "400",
     ...lineHeightStyle

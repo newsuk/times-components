@@ -5,7 +5,7 @@ import { colours } from "@times-components/styleguide";
 export const HeadlineContainer = withResponsiveStyles(Text, {
   base: () => `
     font-size: 30px;
-    color: ${colours.functional.timesBlack};
+    color: ${colours.functional.brandColour};
     margin-bottom: 8px;
     font-family: "TimesModern-Bold";
     font-weight: 400;

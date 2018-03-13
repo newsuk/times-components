@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.21.1"></a>
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.0...@times-components/author-head@0.21.1) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.20.1...@times-components/author-head@0.21.0) (2018-03-12)
+
+
+### Features
+
+* add test ids to components in author profile to support e2e tests ([#713](https://github.com/newsuk/times-components/issues/713)) ([9048bd1](https://github.com/newsuk/times-components/commit/9048bd1))
+
+
+
+
+<a name="0.20.1"></a>
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.20.0...@times-components/author-head@0.20.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.13...@times-components/author-head@0.20.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="0.19.13"></a>
 ## [0.19.13](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.19.12...@times-components/author-head@0.19.13) (2018-03-08)
 

@@ -2,6 +2,7 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
 import PullQuote from "@times-components/pull-quote";
+import { colours } from "@times-components/styleguide";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
 
 const styles = StyleSheet.create({
@@ -12,8 +13,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   ad: {
-    borderTopColor: "#dbdbdb",
-    borderBottomColor: "#dbdbdb",
+    borderTopColor: colours.functional.keyline,
+    borderBottomColor: colours.functional.keyline,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     paddingTop: 10,

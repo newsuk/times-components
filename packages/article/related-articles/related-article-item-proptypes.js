@@ -10,15 +10,20 @@ export const relatedArticleItemPropTypes = {
     summary: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
-  onPress: PropTypes.func.isRequired
-};
-
-export const relatedArticlesPropTypes = {
-  articles: PropTypes.arrayOf(relatedArticleItemPropTypes.article),
+  contentContainerClass: PropTypes.string,
+  headlineClass: PropTypes.string,
+  imageContainerClass: PropTypes.string,
   onPress: PropTypes.func.isRequired,
-  template: PropTypes.string
+  showImage: PropTypes.bool,
+  showSummary: PropTypes.bool,
+  summaryClass: PropTypes.string
 };
 
-export const defaultProps = {
-  template: "DEFAULT"
+export const relatedArticleItemDefaultProps = {
+  contentContainerClass: "",
+  headlineClass: "",
+  imageContainerClass: "",
+  showImage: true,
+  showSummary: true,
+  summaryClass: ""
 };

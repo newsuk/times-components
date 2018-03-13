@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.14.2"></a>
+## [1.14.2](https://github.com/newsuk/times-components/compare/@times-components/image@1.14.1...@times-components/image@1.14.2) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.14.1"></a>
+## [1.14.1](https://github.com/newsuk/times-components/compare/@times-components/image@1.14.0...@times-components/image@1.14.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.28...@times-components/image@1.14.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="1.13.28"></a>
 ## [1.13.28](https://github.com/newsuk/times-components/compare/@times-components/image@1.13.27...@times-components/image@1.13.28) (2018-03-08)
 

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.2"></a>
+## [0.22.2](https://github.com/newsuk/times-components/compare/@times-components/markup@0.22.1...@times-components/markup@0.22.2) (2018-03-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.22.1"></a>
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/markup@0.22.0...@times-components/markup@0.22.1) (2018-03-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.21.13...@times-components/markup@0.22.0) (2018-03-09)
+
+
+### Features
+
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+
+
+
+
 <a name="0.21.13"></a>
 ## [0.21.13](https://github.com/newsuk/times-components/compare/@times-components/markup@0.21.12...@times-components/markup@0.21.13) (2018-03-08)
 

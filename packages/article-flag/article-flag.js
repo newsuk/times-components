@@ -62,16 +62,19 @@ ArticleFlag.defaultProps = {
 };
 
 const NewArticleFlag = () => (
-  <ArticleFlag title="new" color={colours.functional.trinidadOrange} />
+  <ArticleFlag title="new" color={colours.functional.articleFlagNew} />
 );
 const UpdatedArticleFlag = () => (
-  <ArticleFlag title="updated" color={colours.functional.bostonBlue} />
+  <ArticleFlag title="updated" color={colours.functional.articleFlagUpdated} />
 );
 const ExclusiveArticleFlag = () => (
-  <ArticleFlag title="exclusive" color={colours.functional.cardinalRed} />
+  <ArticleFlag
+    title="exclusive"
+    color={colours.functional.articleFlagExclusive}
+  />
 );
 const SponsoredArticleFlag = () => (
-  <ArticleFlag title="sponsored" color={colours.functional.tundoraGrey} />
+  <ArticleFlag title="sponsored" color={colours.functional.tertiary} />
 );
 
 export default ArticleFlag;

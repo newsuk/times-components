@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/styleguide";
 
 import ResetIcon from "./reset-icon";
 
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     flexDirection: "row",
-    backgroundColor: "#006699",
+    backgroundColor: colours.functional.action,
     paddingVertical: 12,
     paddingHorizontal: 16,
     borderRadius: 2

@@ -13,7 +13,7 @@ export const ParagraphContainer = withResponsiveStyles("div", {
 
 export const Paragraph = withResponsiveStyles("p", {
   base: () => `
-    color: ${colours.functional.mineShaftGrey};
+    color: ${colours.functional.primary};
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;
@@ -29,7 +29,7 @@ export const Paragraph = withResponsiveStyles("p", {
 
 export const LinkStyle = withResponsiveStyles("a", {
   base: () => `
-    color: ${colours.functional.azureBlue};
+    color: ${colours.functional.action};
     font-family: "TimesDigitalW04-Regular";
     line-height: 26px;
     font-size: 17px;

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours } from "@times-components/styleguide";
 
 const baseStyle = `
   border-style: solid;
@@ -9,9 +10,9 @@ const baseStyle = `
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  border-bottom-color: #dbdbdb;
+  border-bottom-color: ${colours.functional.keyline};
   border-bottom-width: 1px;
-  border-top-color: #dbdbdb;
+  border-top-color: ${colours.functional.keyline};
   border-top-width: 1px;
 `;
 const mediumStyle = `

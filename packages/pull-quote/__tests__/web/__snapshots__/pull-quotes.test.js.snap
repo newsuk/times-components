@@ -9,7 +9,7 @@ exports[`PullQuotes test on web Pull Quotes with a Caption 1`] = `
     dir="auto"
     style={
       Object {
-        "color": "rgba(19,53,78,1)",
+        "color": "rgba(105,105,105,1)",
       }
     }
   >
@@ -48,7 +48,7 @@ exports[`PullQuotes test on web Pull Quotes with a Caption and a Twitter 1`] = `
     dir="auto"
     style={
       Object {
-        "color": "rgba(19,53,78,1)",
+        "color": "rgba(105,105,105,1)",
       }
     }
   >
@@ -113,7 +113,7 @@ exports[`PullQuotes test on web Pull Quotes without a Caption 1`] = `
     dir="auto"
     style={
       Object {
-        "color": "rgba(19,53,78,1)",
+        "color": "rgba(105,105,105,1)",
       }
     }
   >

@@ -14,15 +14,15 @@ export const query = gql`
       byline
       content
       leadAsset {
-        ... on Image {
-          id
-          title
-          credits
-          caption
-          crop(ratio: "16:9") {
-            ratio
-            url
+        ... on Video {
+          type: __typename
+          posterImage {
+            ...imageProps
           }
+        }
+        ... on Image {
+          type: __typename
+          ...imageProps
         }
       }
       relatedArticles {
@@ -33,13 +33,15 @@ export const query = gql`
         label
         publicationName
         publishedTime
-        summary100: summary(maxCharCount: 100)
-        summary110: summary(maxCharCount: 110)
+        summary105: summary(maxCharCount: 105)
         summary125: summary(maxCharCount: 125)
-        summary150: summary(maxCharCount: 150)
-        summary180: summary(maxCharCount: 180)
+        summary145: summary(maxCharCount: 145)
+        summary160: summary(maxCharCount: 160)
+        summary175: summary(maxCharCount: 175)
+        summary225: summary(maxCharCount: 225)
         leadAsset {
           ... on Image {
+            id
             title
             crop169: crop(ratio: "16:9") {
               url
@@ -64,6 +66,17 @@ export const query = gql`
           opinion
         }
       }
+    }
+  }
+
+  fragment imageProps on Image {
+    id
+    title
+    credits
+    caption
+    crop(ratio: "16:9") {
+      ratio
+      url
     }
   }
 `;
