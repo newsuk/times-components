@@ -19,7 +19,8 @@ ArticleContent.propTypes = {
       index: PropTypes.number
     })
   ).isRequired,
-  renderRow: PropTypes.func.isRequired
+  renderRow: PropTypes.func.isRequired,
+  onRelatedArticlePress: PropTypes.func.isRequired
 };
 
 export default ArticleContent;
