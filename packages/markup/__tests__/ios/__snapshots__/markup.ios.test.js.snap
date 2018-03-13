@@ -301,7 +301,6 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with ads 1`] = `
   </Text>
   <Ad
     pos="inline-ad"
-    section="article"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
