@@ -544,7 +544,7 @@ Object {
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T19:39:39.000Z",
       "section": "sport",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -570,42 +570,7 @@ Object {
             },
             Object {
               "attributes": Object {
-                "value": " in 1965, aged 17, and",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Terry Pratchett, who died last week, began his career on the ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Bucks Free Press",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": " in 1965, aged 17, and the paper",
+                "value": " in 1965, aged 17, and the",
               },
               "children": Array [],
               "name": "text",
@@ -649,7 +614,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -675,7 +640,7 @@ Object {
             },
             Object {
               "attributes": Object {
-                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his",
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
               },
               "children": Array [],
               "name": "text",
@@ -684,7 +649,42 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary160": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Terry Pratchett, who died last week, began his career on the ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Bucks Free Press",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary175": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -711,6 +711,41 @@ Object {
             Object {
               "attributes": Object {
                 "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Terry Pratchett, who died last week, began his career on the ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Bucks Free Press",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+            Object {
+              "attributes": Object {
+                "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like",
               },
               "children": Array [],
               "name": "text",
@@ -761,28 +796,13 @@ Object {
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:42:27.000Z",
       "section": "comment",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
                 "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become",
               },
               "children": Array [],
               "name": "text",
@@ -806,7 +826,27 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [],
+          "name": "paragraph",
+        },
+      ],
+      "summary160": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -825,7 +865,7 @@ Object {
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "Figures",
+                "value": "Figures from the",
               },
               "children": Array [],
               "name": "text",
@@ -834,7 +874,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary175": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -854,6 +894,34 @@ Object {
             Object {
               "attributes": Object {
                 "value": "Figures from the Driver and Vehicle",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of",
               },
               "children": Array [],
               "name": "text",
@@ -904,28 +972,13 @@ Object {
       "publicationName": "TIMES",
       "publishedTime": "2015-03-23T20:56:09.000Z",
       "section": "thedish",
-      "summary100": Array [
+      "summary105": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "paragraph",
-        },
-      ],
-      "summary110": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the",
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and",
               },
               "children": Array [],
               "name": "text",
@@ -949,7 +1002,7 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary150": Array [
+      "summary145": Array [
         Object {
           "attributes": Object {},
           "children": Array [
@@ -964,13 +1017,56 @@ Object {
           "name": "paragraph",
         },
       ],
-      "summary180": Array [
+      "summary160": Array [
         Object {
           "attributes": Object {},
           "children": Array [
             Object {
               "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair",
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary175": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "summary225": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time.",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "paragraph",
+        },
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": "His coffin has been",
               },
               "children": Array [],
               "name": "text",
