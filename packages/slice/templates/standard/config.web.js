@@ -1,11 +1,25 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
+export const summaryConfig = {
+  1: {
+    base: 125
+  },
+  2: {
+    base: 125
+  },
+  3: {
+    base: 145,
+    wide: 125
+  }
+};
+
 export default {
-  contentContainerClass: "standardSliceContentContainerClass",
-  headlineClass: "standardSliceHeadlineClass",
-  imageContainerClass: "standardSliceImageContainerClass",
-  summaryClass: "standardSliceSummaryClass"
+  contentContainerClass: "defaultSliceContentContainerClass",
+  headlineClass: "defaultSliceHeadlineClass",
+  imageContainerClass: "defaultSliceImageContainerClass",
+  summaryClass: "defaultSliceSummaryClass",
+  ...summaryConfig
 };
 
 export const getConfigWrapper = ({ itemCount }) => {

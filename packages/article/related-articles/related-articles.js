@@ -21,7 +21,8 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       imageContainerClass = "",
       summaryClass = "",
       showImage = true,
-      showSummary = true
+      showSummary = true,
+      summaryConfig = {}
     } = config;
     return (
       <RelatedArticleItem
@@ -34,6 +35,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         showImage={showImage}
         showSummary={showSummary}
         summaryClass={summaryClass}
+        summaryConfig={summaryConfig}
       />
     );
   };

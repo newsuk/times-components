@@ -1,18 +1,34 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const leadAndTwoConfig = {
-  contentContainerClass: "leadAndTwoSliceContentContainerClass",
-  headlineClass: "leadAndTwoSliceHeadlineClass",
-  imageContainerClass: "leadAndTwoSliceImageContainerClass",
-  summaryClass: "leadAndTwoSliceSummaryClass"
+export const summaryConfig = {
+  1: {
+    base: 125
+  },
+  2: {
+    base: 105
+  },
+  3: {
+    base: 105,
+    wide: 175,
+    huge: 125 
+  }
+};
+
+export const leadConfig = {
+  contentContainerClass: "leadSliceContentContainerClass",
+  headlineClass: "leadSliceHeadlineClass",
+  imageContainerClass: "leadSliceImageContainerClass",
+  summaryClass: "leadSliceSummaryClass",
+  ...summaryConfig
 };
 
 export const supportConfig = {
   contentContainerClass: "supportSliceContentContainerClass",
   headlineClass: "supportSliceHeadlineClass",
   imageContainerClass: "supportSliceImageContainerClass",
-  summaryClass: "supportSliceSummaryClass"
+  summaryClass: "supportSliceSummaryClass",
+  ...summaryConfig
 };
 
 export const getConfigWrapper = ({ supportCount }) => {

@@ -2,10 +2,13 @@ import React from "react";
 import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
-import config, { getConfigWrapper } from "./config";
+import config, { summaryConfig, getConfigWrapper } from "./config";
 
 const StandardSlice = ({ itemCount, renderItems }) => {
   const ConfigWrapper = getConfigWrapper({ itemCount });
+
+  console.log(summaryConfig);
+
   const ChildrenContainer = getChildrenContainer({
     childCount: itemCount
   });

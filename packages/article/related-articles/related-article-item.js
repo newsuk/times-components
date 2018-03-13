@@ -21,7 +21,8 @@ const RelatedArticleItem = ({
   onPress,
   showImage,
   showSummary,
-  summaryClass
+  summaryClass,
+  summaryConfig
 }) => {
   const {
     byline,
@@ -29,7 +30,7 @@ const RelatedArticleItem = ({
     label,
     publishedTime,
     section,
-    summary,
+    summary105,
     url
   } = article;
 
@@ -53,7 +54,7 @@ const RelatedArticleItem = ({
           bylineProps={{ ast: byline }}
           content={() =>
             showSummary && (
-              <ArticleSummaryContent className={summaryClass} ast={summary} />
+              <ArticleSummaryContent className={summaryClass} ast={summary105} />
             )
           }
           datePublicationProps={{ date: publishedTime }}
