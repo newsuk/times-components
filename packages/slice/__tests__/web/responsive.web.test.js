@@ -10,14 +10,14 @@ import {
   ChildContainer,
   getChildrenContainer
 } from "../../templates/standard/responsive";
-import { getConfigWrapper as getDefaultConfigWrapper } from "../../templates/standard/config";
+import { getConfigWrapper as getStandardConfigWrapper } from "../../templates/standard/config";
 import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
   getLeadAndTwoContainer
 } from "../../templates/leadandtwo/responsive";
-import { getConfigWrapper as getLeadConfigWrapper } from "../../templates/leadandtwo/config";
+import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../templates/leadandtwo/config";
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
@@ -46,9 +46,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render ConfigWrapper correctly", () => {
-      let ConfigWrapper = getDefaultConfigWrapper({ itemCount: 1 });
+      let ConfigWrapper = getStandardConfigWrapper({ itemCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
-      ConfigWrapper = getDefaultConfigWrapper({ itemCount: 3 });
+      ConfigWrapper = getStandardConfigWrapper({ itemCount: 3 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });
@@ -94,9 +94,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render ConfigWrapper correctly", () => {
-      let ConfigWrapper = getLeadConfigWrapper({ supportCount: 1 });
+      let ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
-      ConfigWrapper = getLeadConfigWrapper({ supportCount: 2 });
+      ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 2 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });
