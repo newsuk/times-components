@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.49.1",
+  "version": "0.49.2",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -70,7 +70,7 @@
     "@times-components/image": "1.14.2",
     "@times-components/link": "0.15.1",
     "@times-components/pagination": "0.15.1",
-    "@times-components/provider": "0.23.9",
+    "@times-components/provider": "0.23.10",
     "@times-components/responsive-styles": "0.4.3",
     "@times-components/styleguide": "0.4.1",
     "@times-components/tracking": "0.9.5",
