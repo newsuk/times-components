@@ -437,3 +437,19 @@ exports[`6. Lead and two template renders three child elements 1`] = `
   </View>
 </View>
 `;
+
+exports[`7. Standard tracking roles 1`] = `
+Array [
+  "standard-1",
+  "standard-2",
+  "standard-3",
+]
+`;
+
+exports[`8. Lead and two tracking roles 1`] = `
+Array [
+  "lead-and-two",
+  "lead-and-two-supporting-1",
+  "lead-and-two-supporting-2",
+]
+`;

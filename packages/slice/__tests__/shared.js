@@ -2,8 +2,12 @@
 import { View } from "react-native";
 import React from "react";
 import { shallow } from "enzyme";
-import { StandardSlice, LeadAndTwoSlice } from "../";
-import roleMap from "../styles/role-map";
+import {
+  StandardSlice,
+  standardRoles,
+  LeadAndTwoSlice,
+  leadAndTwoRoles
+} from "../";
 
 module.exports = () => {
   const ExampleChild = () => <View />;
@@ -97,17 +101,13 @@ module.exports = () => {
     });
   });
 
-  context("RoleMaps", () => {
-    it("returns the name if template and index exists", () => {
-      expect(roleMap("DEFAULT", 0)).toEqual("default-1");
+  context("Roles", () => {
+    it("should return the standard roles for tracking", () => {
+      expect(standardRoles).toMatchSnapshot("7. Standard tracking roles");
     });
 
-    it("should return null if child does not exist", () => {
-      expect(roleMap("DEFAULT", 3)).toBe(null);
-    });
-
-    it("should return null if template does not exist", () => {
-      expect(roleMap("NonExistantTemplateName", 0)).toBe(null);
+    it("should return the lead and two roles for tracking", () => {
+      expect(leadAndTwoRoles).toMatchSnapshot("8. Lead and two tracking roles");
     });
   });
 };
