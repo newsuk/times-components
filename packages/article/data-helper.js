@@ -29,7 +29,7 @@ const prepareDataForListView = articleData => {
     articleData.content.map((rowData, index) => {
       const item = {
         type: "articleBodyRow",
-        data: rowData,
+        data: Object.assign({}, rowData),
         index
       };
       if (rowData.name === "ad") {
