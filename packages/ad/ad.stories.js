@@ -19,7 +19,7 @@ const adConfig = pos =>
     adConfigBase,
     { pageTargeting },
     { slotTargeting: slotTargeting[pos] },
-    { bidders: biddersConfig }
+    { biddersConfig }
   );
 let DOMContext;
 if (window.document) {

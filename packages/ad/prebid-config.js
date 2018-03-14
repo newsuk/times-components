@@ -1,44 +1,5 @@
 import { getAdSizes } from "./generate-config";
 
-const timeout = 3000;
-const minPrice = 0.01;
-const maxBid = 15;
-const bucketSize = 0.25;
-
-// const biddersConfig = {
-//   appnexus: {
-//     placementId: "5823281"
-//   },
-//   rubicon: {
-//     accountId: "14062",
-//     siteId: "70608",
-//     zoneId: "335918"
-//   },
-//   amazon: {
-//     accountId: "3360"
-//   },
-//   criteo: {
-//     zoneMap: {
-//       "120x600": "764877",
-//       "160x600": "764878",
-//       "300x100": "764885",
-//       "300x250": "764879",
-//       "300x600": "764880",
-//       "320x50": "764882",
-//       "728x90": "764881",
-//       "970x250": "764883",
-//       "970x90": "764884"
-//     }
-//   },
-//   pubmatic: {
-//     accountId: "156034",
-//     adSlotPrefix: "Thetimes"
-//   },
-//   indexExchange: {
-//     siteId: "188830"
-//   }
-// };
-
 const bidderSettings = {
   standard: {
     adserverTargeting: [
@@ -76,22 +37,22 @@ const bidderSettings = {
   }
 };
 
-const getPrebidSlotConfig = (pos, section, width, bidders) => {
+const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
   const sizes = getAdSizes(pos, width);
   const bids = [
     {
       bidder: "appnexus",
       params: {
-        placementId: bidders.appnexus.placementId,
+        placementId: biddersConfig.appnexus.placementId,
         section
       }
     },
     {
       bidder: "rubicon",
       params: {
-        accountId: bidders.rubicon.accountId,
-        siteId: bidders.rubicon.siteId,
-        zoneId: bidders.rubicon.zoneId,
+        accountId: biddersConfig.rubicon.accountId,
+        siteId: biddersConfig.rubicon.siteId,
+        zoneId: biddersConfig.rubicon.zoneId,
         inventory: {
           section
         }
@@ -101,7 +62,7 @@ const getPrebidSlotConfig = (pos, section, width, bidders) => {
       bidder: "indexExchange",
       params: {
         id: pos,
-        siteID: bidders.indexExchange.siteId
+        siteID: biddersConfig.indexExchange.siteId
       }
     }
   ];
@@ -109,14 +70,14 @@ const getPrebidSlotConfig = (pos, section, width, bidders) => {
     bids.push({
       bidder: "pubmatic",
       params: {
-        publisherId: bidders.pubmatic.accountId,
-        adSlot: `${bidders.pubmatic.adSlotPrefix}@${size.join("x")}`,
+        publisherId: biddersConfig.pubmatic.accountId,
+        adSlot: `${biddersConfig.pubmatic.adSlotPrefix}@${size.join("x")}`,
         section
       }
     });
 
     // Criteo
-    const zoneId = bidders.criteo.zoneMap[size.join("x")] || "";
+    const zoneId = biddersConfig.criteo.zoneMap[size.join("x")] || "";
     if (zoneId) {
       bids.push({
         bidder: "criteo",
@@ -135,11 +96,6 @@ const getPrebidSlotConfig = (pos, section, width, bidders) => {
 };
 
 const prebidConfig = {
-  timeout,
-  minPrice,
-  maxBid,
-  bucketSize,
-  //bidders: bidders,
   bidderSettings
 };
 

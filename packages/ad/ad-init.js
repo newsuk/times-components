@@ -132,7 +132,7 @@ const adInit = args => {
     },
 
     prebid: {
-      setupAsync(prebidConfig, bidders, utils) {
+      setupAsync(prebidConfig, utils) {
         this.createPbjsGlobals();
         const scriptPromises = [
           utils.loadScript(
@@ -140,8 +140,8 @@ const adInit = args => {
           )
         ];
         if (
-          bidders.amazon &&
-          bidders.amazon.accountId
+          prebidConfig.bidders.amazon &&
+          prebidConfig.bidders.amazon.accountId
         ) {
           scriptPromises.push(
             utils.loadScript("https://c.amazon-adsystem.com/aax2/apstag.js")
@@ -155,9 +155,9 @@ const adInit = args => {
         window.pbjs.que = window.pbjs.que || [];
       },
 
-      requestBidsAsync(prebidConfig, bidders, slots, networkId, adUnit, section, gpt) {
+      requestBidsAsync(prebidConfig, slots, networkId, adUnit, section, gpt) {
         const amazonAccountID =
-        bidders.amazon && bidders.amazon.accountId;
+          prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
         window.pbjs.bidderSettings = prebidConfig.bidderSettings;
@@ -294,7 +294,7 @@ const adInit = args => {
     },
 
     doPageAdSetupAsync() {
-      const { networkId, adUnit, prebidConfig, section, slots, bidders } = data;
+      const { networkId, adUnit, prebidConfig, section, slots } = data;
       const parallelActions = [
         this.gpt.setupAsync(this.utils),
         this.grapeshot.setupAsync(this.gpt, this.utils)
@@ -303,10 +303,9 @@ const adInit = args => {
       const enablePrebidding = platform === "web";
       if (enablePrebidding) {
         parallelActions.push(
-          this.prebid.setupAsync(prebidConfig, bidders, this.utils),
+          this.prebid.setupAsync(prebidConfig, this.utils),
           this.prebid.requestBidsAsync(
             prebidConfig,
-            bidders,
             slots,
             networkId,
             adUnit,

@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
 class Ad extends Component {
   constructor(props) {
     super(props);
-    //const { width } = Dimensions.get("window");
-    this.windowWidth = Dimensions.get("window");
+    const { width } = Dimensions.get("window");
+    this.windowWidth = width;
     this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
@@ -40,10 +40,19 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
+    this.slotsForPrebid.map(slot =>
+      this.slots.push(getPrebidSlotConfig(slot, "article", this.windowWidth, adConfig.biddersConfig.bidders))
+    );
+
     const data = {
       config: this.config,
-      bidders: adConfig.bidders,
-      prebidConfig: this.prebidConfig,
+      prebidConfig: Object.assign(this.prebidConfig, {
+        bidders: adConfig.biddersConfig.bidders,
+        timeout:  adConfig.biddersConfig.timeout,
+        minPrice:  adConfig.biddersConfig.minPrice,
+        maxBid:  adConfig.biddersConfig.maxBid,
+        bucketSize:  adConfig.biddersConfig.bucketSize,
+      }),
       slots: this.slots,
       pos: this.props.pos,
       networkId: adConfig.networkId,
@@ -54,10 +63,6 @@ class Ad extends Component {
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
-    console.log('>>>>>>>>>', adConfig);
-    this.slotsForPrebid.map(slot =>
-      this.slots.push(getPrebidSlotConfig(slot, "article", this.windowWidth, adConfig.bidders))
-    );
 
     const sizeProps = !this.state.adReady
       ? { width: 0, height: 0 }
