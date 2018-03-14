@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.23.0...@times-components/markup@0.24.0) (2018-03-14)
+
+
+### Features
+
+* enable header bidding for ads ([#706](https://github.com/newsuk/times-components/issues/706)) ([e53c7df](https://github.com/newsuk/times-components/commit/e53c7df))
+
+
+
+
 <a name="0.23.0"></a>
 # [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.22.2...@times-components/markup@0.23.0) (2018-03-13)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.21.2",
+  "version": "0.21.3",
   "main": "author-head",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -63,13 +63,13 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/icons": "0.3.1",
-    "@times-components/image": "1.14.2",
-    "@times-components/link": "0.15.1",
-    "@times-components/markup": "0.23.0",
+    "@times-components/icons": "0.3.2",
+    "@times-components/image": "1.14.3",
+    "@times-components/link": "0.15.2",
+    "@times-components/markup": "0.24.0",
     "@times-components/responsive-styles": "0.4.3",
     "@times-components/styleguide": "0.4.1",
-    "@times-components/tracking": "0.9.5",
+    "@times-components/tracking": "0.9.6",
     "prop-types": "15.6.0",
     "styled-components": "2.2.3",
     "svgs": "3.2.1"
