@@ -102,11 +102,11 @@ module.exports = () => {
   });
 
   context("Roles", () => {
-    it("should return the first standard role", () => {
+    it("should return the standard roles for tracking", () => {
       expect(standardRoles).toMatchSnapshot("7. Standard tracking roles");
     });
 
-    it("should return the first lead and two role", () => {
+    it("should return the lead and two roles for tracking", () => {
       expect(leadAndTwoRoles).toMatchSnapshot("8. Lead and two tracking roles");
     });
   });
