@@ -21,6 +21,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
+
 class ArticlePage extends React.Component {
   static renderRow(rowData) {
     switch (rowData.type) {
