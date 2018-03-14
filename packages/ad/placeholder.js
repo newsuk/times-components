@@ -18,7 +18,7 @@ const getStyles = (width, height) =>
       backgroundColor: colours.functional.backgroundSecondary,
       width,
       height,
-      borderColor: "#DBDBDB",
+      borderColor: colours.functional.keyline,
       borderWidth: 1,
       borderStyle: "solid"
     },
