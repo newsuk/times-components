@@ -2,7 +2,12 @@
 import { View } from "react-native";
 import React from "react";
 import { shallow } from "enzyme";
-import { StandardSlice, standardRoles, LeadAndTwoSlice, leadAndTwoRoles } from "../";
+import {
+  StandardSlice,
+  standardRoles,
+  LeadAndTwoSlice,
+  leadAndTwoRoles
+} from "../";
 
 module.exports = () => {
   const ExampleChild = () => <View />;
