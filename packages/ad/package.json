@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Ad component",
   "main": "ad",
   "scripts": {
