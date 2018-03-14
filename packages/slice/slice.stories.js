@@ -10,19 +10,19 @@ const styles = StyleSheet.create({
 });
 
 const colours = [
-  { backgroundColor: "red", key: 1 },
-  { backgroundColor: "yellow", key: 2 },
-  { backgroundColor: "green", key: 3 },
-  { backgroundColor: "blue", key: 4 }
+  { backgroundColor: "red", id: 1 },
+  { backgroundColor: "yellow", id: 2 },
+  { backgroundColor: "green", id: 3 },
+  { backgroundColor: "blue", id: 4 }
 ];
 
 const createStandardItems = noOfItems =>
   colours
     .map(colour => {
-      const { backgroundColor, key } = colour;
-      if (key > noOfItems) return false;
+      const { backgroundColor, id } = colour;
+      if (id > noOfItems) return false;
       return (
-        <View key={`item${key}`} style={[styles.child, { backgroundColor }]} />
+        <View id={`item-${id}`} style={[styles.child, { backgroundColor }]} />
       );
     })
     .filter(item => item !== false);
@@ -39,67 +39,67 @@ storiesOf("Primitives/Slice", module)
   ))
   .add("Lead and two template with one item", () => (
     <LeadAndTwoSlice
-      lead={() => [
+      lead={() => (
         <View
-          key="lead"
+          id="lead"
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      ]}
+      )}
     />
   ))
   .add("Lead and two template with two items", () => (
     <LeadAndTwoSlice
-      lead={() => [
+      lead={() => (
         <View
-          key="lead"
+          id="lead"
           style={{
             minHeight: 150,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      ]}
-      support1={() => [
+      )}
+      support1={() => (
         <View
-          key={1}
+          id={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      ]}
+      )}
     />
   ))
   .add("Lead and two template with three items", () => (
     <LeadAndTwoSlice
-      lead={() => [
+      lead={() => (
         <View
-          key="lead"
+          id="lead"
           style={{
             minHeight: 320,
             backgroundColor: colours[0].backgroundColor
           }}
         />
-      ]}
-      support1={() => [
+      )}
+      support1={() => (
         <View
-          key={1}
+          id={1}
           style={{
             minHeight: 150,
             backgroundColor: colours[1].backgroundColor
           }}
         />
-      ]}
-      support2={() => [
+      )}
+      support2={() => (
         <View
-          key={2}
+          id={2}
           style={{
             minHeight: 150,
             backgroundColor: colours[2].backgroundColor
           }}
         />
-      ]}
+      )}
     />
   ));

@@ -14,25 +14,13 @@ module.exports = () => {
   ExampleChild.displayName = "ExampleChild";
 
   context("Standard template", () => {
-    const items = [
-      { key: "08604618-fb0e-11e7-a987-7fcf5e9983dc" },
-      { key: "08604618-fb0e-11e7-a987-7fcf5e9983dd" },
-      { key: "08604618-fb0e-11e7-a987-7fcf5e9983de" }
-    ];
-
-    const createStandardItems = noOfItems =>
-      items
-        .map((item, index) => {
-          if (index >= noOfItems) return false;
-          return <ExampleChild key={item.key} />;
-        })
-        .filter(item => item !== false);
+    const createStandardItem = id => <ExampleChild id={`standard-${id}`} />;
 
     it("renders a single child element", () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={1}
-          renderItems={() => createStandardItems(1)}
+          renderItems={() => ["1"].map(id => createStandardItem(id))}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -44,7 +32,7 @@ module.exports = () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={2}
-          renderItems={() => createStandardItems(2)}
+          renderItems={() => ["1", "2"].map(id => createStandardItem(id))}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -56,7 +44,7 @@ module.exports = () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={3}
-          renderItems={() => createStandardItems(3)}
+          renderItems={() => ["1", "2", "3"].map(id => createStandardItem(id))}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -68,7 +56,7 @@ module.exports = () => {
   context("Lead and two template", () => {
     it("renders a single child element", () => {
       const wrapper = shallow(
-        <LeadAndTwoSlice lead={() => [<ExampleChild key="lead" />]} />
+        <LeadAndTwoSlice lead={() => <ExampleChild id="lead" />} />
       );
       expect(wrapper).toMatchSnapshot(
         "4. Lead and two template renders a single child element"
@@ -78,8 +66,8 @@ module.exports = () => {
     it("renders two child elements", () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
-          lead={() => [<ExampleChild key="lead" />]}
-          support1={() => [<ExampleChild key="support1" />]}
+          lead={() => <ExampleChild id="lead" />}
+          support1={() => <ExampleChild id="support1" />}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -90,9 +78,9 @@ module.exports = () => {
     it("renders three child elements", () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
-          lead={() => [<ExampleChild key="lead" />]}
-          support1={() => [<ExampleChild key="support1" />]}
-          support2={() => [<ExampleChild key="support2" />]}
+          lead={() => <ExampleChild id="lead" />}
+          support1={() => <ExampleChild id="support1" />}
+          support2={() => <ExampleChild id="support2" />}
         />
       );
       expect(wrapper).toMatchSnapshot(
