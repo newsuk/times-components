@@ -4,7 +4,7 @@ import { getSeparator, SliceContainer } from "../shared.responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
 import config, { getConfigWrapper } from "./config";
 
-const DefaultSlice = ({ itemCount, renderItems }) => {
+const StandardSlice = ({ itemCount, renderItems }) => {
   const ConfigWrapper = getConfigWrapper({ itemCount });
   const ChildrenContainer = getChildrenContainer({
     childCount: itemCount
@@ -28,6 +28,6 @@ const DefaultSlice = ({ itemCount, renderItems }) => {
   );
 };
 
-DefaultSlice.propTypes = propTypes;
+StandardSlice.propTypes = propTypes;
 
-export default DefaultSlice;
+export default StandardSlice;

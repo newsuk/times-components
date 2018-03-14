@@ -1,4 +1,4 @@
-import DefaultSlice from "./templates/default";
-import LeadSlice from "./templates/lead";
+import StandardSlice from "./templates/standard";
+import LeadAndTwoSlice from "./templates/leadandtwo";
 
-export { DefaultSlice, LeadSlice };
+export { StandardSlice, LeadAndTwoSlice };

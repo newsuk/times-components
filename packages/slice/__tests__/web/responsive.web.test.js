@@ -9,15 +9,15 @@ import {
 import {
   ChildContainer,
   getChildrenContainer
-} from "../../templates/default/responsive";
-import { getConfigWrapper as getDefaultConfigWrapper } from "../../templates/default/config";
+} from "../../templates/standard/responsive";
+import { getConfigWrapper as getStandardConfigWrapper } from "../../templates/standard/config";
 import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
-  getLeadContainer
-} from "../../templates/lead/responsive";
-import { getConfigWrapper as getLeadConfigWrapper } from "../../templates/lead/config";
+  getLeadAndTwoContainer
+} from "../../templates/leadandtwo/responsive";
+import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../templates/leadandtwo/config";
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
@@ -46,9 +46,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render ConfigWrapper correctly", () => {
-      let ConfigWrapper = getDefaultConfigWrapper({ itemCount: 1 });
+      let ConfigWrapper = getStandardConfigWrapper({ itemCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
-      ConfigWrapper = getDefaultConfigWrapper({ itemCount: 3 });
+      ConfigWrapper = getStandardConfigWrapper({ itemCount: 3 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });
@@ -72,22 +72,31 @@ describe("Slice tests on web", () => {
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
     });
 
-    it("should render LeadContainer correctly", () => {
-      let LeadContainer = getLeadContainer({
+    it("should render LeadAndTwoContainer correctly", () => {
+      let LeadAndTwoContainer = getLeadAndTwoContainer({
         hasSupports: true,
         supportCount: 1
       });
-      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
-      LeadContainer = getLeadContainer({ hasSupports: true, supportCount: 2 });
-      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
-      LeadContainer = getLeadContainer({ hasSupports: false });
-      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      expect(
+        renderer.create(<LeadAndTwoContainer />).toJSON()
+      ).toMatchSnapshot();
+      LeadAndTwoContainer = getLeadAndTwoContainer({
+        hasSupports: true,
+        supportCount: 2
+      });
+      expect(
+        renderer.create(<LeadAndTwoContainer />).toJSON()
+      ).toMatchSnapshot();
+      LeadAndTwoContainer = getLeadAndTwoContainer({ hasSupports: false });
+      expect(
+        renderer.create(<LeadAndTwoContainer />).toJSON()
+      ).toMatchSnapshot();
     });
 
     it("should render ConfigWrapper correctly", () => {
-      let ConfigWrapper = getLeadConfigWrapper({ supportCount: 1 });
+      let ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
-      ConfigWrapper = getLeadConfigWrapper({ supportCount: 2 });
+      ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 2 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });

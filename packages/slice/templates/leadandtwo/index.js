@@ -2,12 +2,14 @@ import React from "react";
 import { View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "../styles";
-import { leadConfig, supportConfig } from "./config";
+import { leadAndTwoConfig, supportConfig } from "./config";
 
-const LeadSlice = ({ lead, support1, support2 }) => (
+const LeadAndTwoSlice = ({ lead, support1, support2 }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
-      <View style={[styles.item, { paddingTop: 0 }]}>{lead(leadConfig)}</View>
+      <View style={[styles.item, { paddingTop: 0 }]}>
+        {lead(leadAndTwoConfig)}
+      </View>
     </View>
     {[support1(supportConfig), support2(supportConfig)]
       .filter(support => support !== null)
@@ -19,7 +21,7 @@ const LeadSlice = ({ lead, support1, support2 }) => (
   </View>
 );
 
-LeadSlice.propTypes = propTypes;
-LeadSlice.defaultProps = defaultProps;
+LeadAndTwoSlice.propTypes = propTypes;
+LeadAndTwoSlice.defaultProps = defaultProps;
 
-export default LeadSlice;
+export default LeadAndTwoSlice;
