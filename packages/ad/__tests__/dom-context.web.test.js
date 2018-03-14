@@ -9,8 +9,9 @@ Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("DOMContext Web", () => {
   it("passes an element to the init function", () => {
-    const init = jest.fn();
-
+    const init = jest.fn(() => {
+      return { init: () => {} };
+    });
     mount(<DOMContext init={init} />);
 
     expect(init).toHaveBeenCalledWith(
@@ -21,7 +22,9 @@ describe("DOMContext Web", () => {
   });
 
   it("passes the data object to the init function", () => {
-    const init = jest.fn();
+    const init = jest.fn(() => {
+      return { init: () => {} };
+    });
 
     mount(<DOMContext init={init} data={{ foo: "bar" }} />);
 
@@ -30,30 +33,6 @@ describe("DOMContext Web", () => {
         data: { foo: "bar" }
       })
     );
-  });
-
-  it("passes selected global variables to the init function", () => {
-    const init = jest.fn();
-    window.myGlobalVar1 = "myGlobalVar1Value";
-    window.myGlobalVar2 = "myGlobalVar2Value";
-    window.myGlobalVar3 = "myGlobalVar3Value";
-
-    mount(
-      <DOMContext init={init} globalNames={["myGlobalVar1", "myGlobalVar2"]} />
-    );
-
-    expect(init).toHaveBeenCalledWith(
-      expect.objectContaining({
-        globals: {
-          myGlobalVar1: "myGlobalVar1Value",
-          myGlobalVar2: "myGlobalVar2Value"
-        }
-      })
-    );
-
-    delete window.myGlobalVar1;
-    delete window.myGlobalVar2;
-    delete window.myGlobalVar3;
   });
 
   it("reports an error in the init function", () => {
@@ -70,15 +49,28 @@ describe("DOMContext Web", () => {
       );
     };
 
-    expect(runWithError).toThrowError("DomContext error: broken");
+    expect(runWithError).toThrowError("broken");
   });
 
-  it("calls onRenderComplete when the renderComplete callback is invoked", () => {
+  it("throw an error", () => {
+    const runWithError = () => {
+      mount(
+        <DOMContext
+          init={({ eventCallback }) => eventCallback("error", "error message")}
+          data={{ foo: "bar" }}
+        />
+      );
+    };
+
+    expect(runWithError).toThrowError("DomContext error: error message");
+  });
+
+  it("calls the renderComplete callback when a renderComplete event is dispatched", () => {
     const onRenderComplete = jest.fn();
 
     mount(
       <DOMContext
-        init={({ renderComplete }) => renderComplete()}
+        init={({ eventCallback }) => eventCallback("renderComplete")}
         onRenderComplete={onRenderComplete}
       />
     );
@@ -86,15 +78,25 @@ describe("DOMContext Web", () => {
     expect(onRenderComplete).toHaveBeenCalled();
   });
 
-  it("does not error when init calls renderComplete but no onRenderComplete callback is provided", () => {
-    const f = () => {
-      mount(<DOMContext init={({ renderComplete }) => renderComplete()} />);
-    };
+  it("does not error when init dispatches a renderComplete event but no onRenderComplete callback is provided", () => {
+    const f = () =>
+      mount(
+        <DOMContext
+          init={({ eventCallback }) => eventCallback("renderComplete")}
+        />
+      );
     expect(f).not.toThrow();
   });
 
   it("Doesn't throw an error when given an invalid event name", () => {
-    const component = mount(<DOMContext init={() => {}} />);
+    /* eslint arrow-body-style: ["error", "as-needed", { "requireReturnForObjectLiteral": true }] */
+    const component = mount(
+      <DOMContext
+        init={() => {
+          return { init: () => {} };
+        }}
+      />
+    );
 
     expect(() => {
       component.instance().processEvent({ type: "invalid" });

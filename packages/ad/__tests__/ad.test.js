@@ -8,7 +8,6 @@ import Ad, { AdComposer } from "../ad";
 Enzyme.configure({ adapter: new React16Adapter() });
 
 // prevent function sources appearing in snapshots
-jest.mock("../dom-context-harness", () => "mockHarness");
 jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
 jest.mock("../ad-init", () => () => "mockInit");
 
@@ -75,5 +74,12 @@ describe("Ad", () => {
       .toJSON();
 
     expect(tree).toMatchSnapshot();
+  });
+
+  it("displays the ad when setAdReady is called", () => {
+    const component = new Ad(adProps);
+    jest.spyOn(component, "setState").mockImplementation();
+    component.setAdReady();
+    expect(component.setState).toHaveBeenCalledWith({ adReady: true });
   });
 });

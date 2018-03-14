@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import { WebView, View, Linking, Platform } from "react-native";
 
-import makeHarness from "./dom-context-harness";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
@@ -51,7 +50,7 @@ export default class DOMContext extends PureComponent {
   };
 
   render() {
-    const { init, data, width, height, globalNames, scriptUris } = this.props;
+    const { init, data, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
@@ -78,21 +77,17 @@ export default class DOMContext extends PureComponent {
             (${webviewEventCallbackSetup})(window);
           </script>
           <script>
-            (${makeHarness})({
-              el: document.getElementsByTagName("div")[0],
-              window: window,
-              document: document,
-              eventCallback: eventCallback,
-              init: ${init},
-              data: ${JSON.stringify(data)},
-              scriptUris: ${JSON.stringify(scriptUris)},
-              globalNames: ${JSON.stringify(globalNames)}
-            }).execute();
+          (${init})({
+            el: document.getElementsByTagName("div")[0],
+            eventCallback: eventCallback,
+            data: ${JSON.stringify(data)},
+            platform: "native",
+            window
+          }).init();
           </script>
         </body>
       </html>
     `;
-
     const postMessageBugWorkaround = Platform.select({
       // https://github.com/facebook/react-native/issues/10865
       ios: {
@@ -100,7 +95,6 @@ export default class DOMContext extends PureComponent {
           "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
       }
     });
-
     return (
       <View style={{ width, height }}>
         <WebView

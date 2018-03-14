@@ -1,8 +1,56 @@
 {
-  "sec_id": "null",
-  "section": "",
-  "path": "/edition/news/",
-  "zone": "current_edition",
-  "slot": "",
-  "timestestgroup": 4
+  "header": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "header",
+    "timestestgroup": 1
+  },
+  "inline-ad": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "inline-ad",
+    "timestestgroup": 1
+  },
+  "article-sponsored-ad": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "article-sponsored-ad",
+    "timestestgroup": 1
+  },
+  "pixel": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "pixel",
+    "timestestgroup": 1
+  },
+  "pixelskin": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "pixelskin",
+    "timestestgroup": 1
+  },
+  "pixelteads": {
+    "sec_id": "null",
+    "section": "news",
+    "path": "/edition/news/",
+    "zone": "current_edition",
+    "slot": "news",
+    "pos": "pixelteads",
+    "timestestgroup": 1
+  }
 }

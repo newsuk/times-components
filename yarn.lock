@@ -361,6 +361,12 @@
 "@types/async@2.0.47":
   version "2.0.47"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"
+"@times-components/styleguide@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.4.0.tgz#8e538b787d0e6fb71c498b9dc7fac1cecb6fc76e"
+  dependencies:
+    "@times-components/responsive-styles" "0.4.2"
+    prop-types "15.6.0"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.1"
@@ -7177,7 +7183,7 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jsdom@9.12.0, jsdom@^9.12.0:
+jsdom@^9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
   dependencies:

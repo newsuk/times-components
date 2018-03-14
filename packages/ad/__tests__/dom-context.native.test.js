@@ -5,7 +5,6 @@ import renderer from "react-test-renderer";
 import DOMContextNative from "../dom-context";
 
 // prevent function sources appearing in snapshots
-jest.mock("../dom-context-harness", () => "mockHarness");
 jest.mock("../webview-event-callback-setup", () => "mockErrorHandler");
 
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
@@ -90,6 +89,18 @@ describe("DOMContext Native", () => {
     expect(onRenderComplete).toHaveBeenCalledTimes(1);
   });
 
+  it("logs a console message when it receives a log event from the webview", () => {
+    jest.spyOn(console, "log").mockImplementation();
+
+    const component = new DOMContextNative({
+      ...DOMContextNative.defaultProps
+    });
+
+    expect(console.log).not.toHaveBeenCalled(); // eslint-disable-line no-console
+    component.handleMessageEvent(makeMessageEvent("log", "message"));
+    expect(console.log).toHaveBeenCalledWith("message"); // eslint-disable-line no-console
+  });
+
   it("hasDifferentOrigin does not allow null origins", () => {
     const result = DOMContextNative.hasDifferentOrigin(
       null,
@@ -153,7 +164,7 @@ describe("DOMContext Native", () => {
 
   it("handleNavigationStateChange should log an error if the url can't be opened", done => {
     setUpNavigationTest(() => Promise.resolve(false));
-    jest.spyOn(console, "error").mockImplementation(() => {});
+    jest.spyOn(console, "error").mockImplementation();
 
     const navigateTo = "http://originB.com";
 

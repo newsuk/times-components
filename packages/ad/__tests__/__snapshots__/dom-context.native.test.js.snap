@@ -36,16 +36,13 @@ exports[`DOMContext Native renders correctly 1`] = `
             (mockErrorHandler)(window);
           </script>
           <script>
-            (mockHarness)({
-              el: document.getElementsByTagName(\\"div\\")[0],
-              window: window,
-              document: document,
-              eventCallback: eventCallback,
-              init: function init() {},
-              data: {\\"foo\\":\\"bar\\"},
-              scriptUris: [],
-              globalNames: []
-            }).execute();
+          (function init() {})({
+            el: document.getElementsByTagName(\\"div\\")[0],
+            eventCallback: eventCallback,
+            data: {\\"foo\\":\\"bar\\"},
+            platform: \\"native\\",
+            window
+          }).init();
           </script>
         </body>
       </html>
