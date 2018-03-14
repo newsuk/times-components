@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   cardContainer: {
     display: "flex",
     alignItems: "flex-start",
@@ -30,3 +30,5 @@ export default StyleSheet.create({
     maxWidth: 240
   }
 });
+
+export default styles;
