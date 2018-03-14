@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
 class Ad extends Component {
   constructor(props) {
     super(props);
-    const { width } = Dimensions.get("window");
-    this.config = getSlotConfig(props.section, props.pos, width);
+    //const { width } = Dimensions.get("window");
+    this.windowWidth = Dimensions.get("window");
+    this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
@@ -30,9 +31,6 @@ class Ad extends Component {
     this.slots = [];
     // FIXME make this generic, to be fixed in REPLAT-1370
     this.slotsForPrebid = ["ad-header", "ad-article-inline"];
-    this.slotsForPrebid.map(slot =>
-      this.slots.push(getPrebidSlotConfig(slot, "article", width))
-    );
   }
 
   setAdReady = () => {
@@ -44,6 +42,7 @@ class Ad extends Component {
   renderAd(adConfig) {
     const data = {
       config: this.config,
+      bidders: adConfig.bidders,
       prebidConfig: this.prebidConfig,
       slots: this.slots,
       pos: this.props.pos,
@@ -55,6 +54,10 @@ class Ad extends Component {
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
+    console.log('>>>>>>>>>', adConfig);
+    this.slotsForPrebid.map(slot =>
+      this.slots.push(getPrebidSlotConfig(slot, "article", this.windowWidth, adConfig.bidders))
+    );
 
     const sizeProps = !this.state.adReady
       ? { width: 0, height: 0 }
