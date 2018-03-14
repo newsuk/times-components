@@ -68,6 +68,27 @@ storiesOf("Advertisement", module)
       </View>
     )
   )
+  .add("render pixel ads - pixel", () =>
+    withOpenInNewWindow(
+      <View>
+        <Ad section="news" pos="pixel" contextUrl={articleUrl} />
+      </View>
+    )
+  )
+  .add("render pixel ads - pixelteads", () =>
+    withOpenInNewWindow(
+      <View>
+        <Ad section="news" pos="pixelteads" contextUrl={articleUrl} />
+      </View>
+    )
+  )
+  .add("render pixel ads - pixelskin", () =>
+    withOpenInNewWindow(
+      <View>
+        <Ad section="news" pos="pixelskin" contextUrl={articleUrl} />
+      </View>
+    )
+  )
   .add("render one ad and some text", () =>
     withOpenInNewWindow(
       <ScrollView>
