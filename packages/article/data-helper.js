@@ -21,7 +21,7 @@ const prepareDataForListView = articleData => {
       }
     : null;
 
-  let data = [
+  const data = [
     { type: "leadAsset", data: leadAsset },
     { type: "header", data: articleHeaderData },
     { type: "middleContainer", data: articleMidContainerData }
@@ -43,7 +43,7 @@ const prepareDataForListView = articleData => {
   );
 
   if (relatedArticlesData) {
-    data = data.concat({ type: "relatedArticles", data: relatedArticlesData });
+    data.push({ type: "relatedArticles", data: relatedArticlesData });
   }
 
   if (!leadAsset) {
