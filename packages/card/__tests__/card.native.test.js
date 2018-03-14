@@ -28,7 +28,7 @@ export default () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("1. Render a Card");
   });
 
   it("should render the loading state", () => {
@@ -40,7 +40,7 @@ export default () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("2. Render the loading state");
   });
 
   it("should render without an image", () => {
@@ -55,7 +55,7 @@ export default () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("3. Renders without an image");
   });
 
   it("should render without image url", () => {
@@ -72,7 +72,7 @@ export default () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("4. Renders without an image URL");
   });
 
   it("should re-render when image uri changes", () => {
