@@ -43,7 +43,7 @@
     "apollo-client": "2.2.3",
     "apollo-link-http": "1.5.2",
     "chance": "1.0.10",
-    "dextrose": "1.6.0",
+    "dextrose": "git://github.com/newsuk/dextrose.git#4ccc439fe3502a76c2a6a15e6de9ce51489e0b41",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",

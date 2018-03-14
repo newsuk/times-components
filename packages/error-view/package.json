@@ -38,7 +38,7 @@
     "@times-components/brightcove-video": "1.11.1",
     "@times-components/eslint-config-thetimes": "0.1.3",
     "@times-components/jest-configurator": "0.2.1",
-    "dextrose": "1.6.0",
+    "dextrose": "git://github.com/newsuk/dextrose.git#4ccc439fe3502a76c2a6a15e6de9ce51489e0b41",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
