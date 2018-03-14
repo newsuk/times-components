@@ -8,8 +8,8 @@ export default {
   summaryClass: "standardSliceSummaryClass"
 };
 
-export const getConfigWrapper = ({ itemCount }) =>
-  withResponsiveStyles(View, {
+export const getConfigWrapper = ({ itemCount }) => {
+  const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
     .standardSliceImageContainerClass {
       display: ${itemCount >= 3 ? "none" : "block"};
@@ -44,3 +44,6 @@ export const getConfigWrapper = ({ itemCount }) =>
     `;
     }
   });
+  ConfigWrapper.displayName = "ConfigWrapper";
+  return ConfigWrapper;
+};
