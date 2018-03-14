@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 
-export default {
+const propTypes = {
   itemCount: PropTypes.number.isRequired,
   renderItems: PropTypes.func.isRequired
 };
+
+export default propTypes;

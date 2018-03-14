@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";
-import styles from "../styles";
+import styles from "../shared.native";
 import { leadAndTwoConfig, supportConfig } from "./config";
 
 const LeadAndTwoSlice = ({ lead, support1, support2 }) => (
