@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import propTypes from "./proptypes";
-import styles from "../shared.native";
+import styles from "../styles";
 import config from "./config";
 
 const StandardSlice = ({ itemCount, renderItems }) => (
