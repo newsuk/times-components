@@ -40,6 +40,13 @@ const adInit = args => {
         document.head.appendChild(script);
         script.addEventListener("load", onLoad);
         script.addEventListener("error", onError);
+      },
+
+      breakpoints: {
+        small: "(max-width: 767px)",
+        medium: "(min-width: 768px) and (max-width: 1023px)",
+        wide: "(min-width: 1024px) and (max-width: 1319px)",
+        huge: "(min-width: 1320px)"
       }
     },
 
@@ -315,11 +322,27 @@ const adInit = args => {
         );
       }
 
+      if (platform === "web" && window.matchMedia) {
+        Object.keys(this.utils.breakpoints).forEach(b => {
+          window
+            .matchMedia(this.utils.breakpoints[b])
+            .addListener(this.handleBreakpointChange.bind(this, b));
+        });
+      }
+
       return Promise.all(parallelActions)
         .then(this.gpt.waitUntilReady())
         .then(this.finaliseAds.bind(this, enablePrebidding));
     },
-
+    handleBreakpointChange(breakpoint, mql) {
+      if (mql.matches) {
+        this.gpt.scheduleSetPageTargetingValues({
+          breakpoint,
+          refresh: "true"
+        });
+        this.gpt.displayAds();
+      }
+    },
     finaliseAds(enablePrebidding) {
       if (enablePrebidding) {
         this.prebid.applyPrebidTargeting();
