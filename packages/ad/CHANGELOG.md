@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.12.0...@times-components/ad@0.14.0) (2018-03-14)
+
+
+### Features
+
+* adding pixel ads ([#734](https://github.com/newsuk/times-components/issues/734)) ([eb4d17d](https://github.com/newsuk/times-components/commit/eb4d17d))
+* responsive ads ([#733](https://github.com/newsuk/times-components/issues/733)) ([9e2df9e](https://github.com/newsuk/times-components/commit/9e2df9e))
+
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.12.0...@times-components/ad@0.13.0) (2018-03-14)
 

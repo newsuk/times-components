@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.15.2",
+  "version": "0.15.3",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@times-components/responsive-styles": "0.4.3",
-    "@times-components/styleguide": "0.4.1",
+    "@times-components/styleguide": "0.4.2",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },
