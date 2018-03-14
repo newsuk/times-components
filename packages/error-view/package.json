@@ -48,6 +48,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@times-components/styleguide": "0.4.1",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

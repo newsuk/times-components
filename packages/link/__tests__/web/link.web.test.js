@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import "jest-styled-components";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import test from "../shared";
 import Link, { TextLink } from "../../link";
 
@@ -10,14 +10,14 @@ describe("Link tests on Web", () => {
     const responsiveLinkStyles = {
       base: `
       color: ${colours.functional.action};
-      font-family: "TimesDigitalW04-Regular";
+      font-family: "${fonts.bodyRegular}";
       line-height: 26px;
-      font-size: 17px;
+      font-size: ${fontSizes.bodyMobile}px;
       margin-bottom: 25px;
       margin-top: 0;
   `,
       medium: `
-      font-size: 18px;
+      font-size: ${fontSizes.body}px;
       line-height: 30px;
   `
     };

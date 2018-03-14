@@ -1,14 +1,14 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
 const styles = StyleSheet.create({
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: 14,
+    fontSize: fontSizes.meta,
     color: colours.functional.secondary
   }
 });

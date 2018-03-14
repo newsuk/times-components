@@ -1,9 +1,9 @@
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   text: {
     color: colours.functional.secondary,
-    fontSize: 14,
+    fontSize: fontSizes.teaser,
     fontFamily: fonts.body,
     lineHeight: 20,
     marginBottom: 10,
@@ -11,7 +11,7 @@ const sharedStyles = {
   },
   metaText: {
     color: colours.functional.secondary,
-    fontSize: 13,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting,
     marginBottom: 5
@@ -26,7 +26,7 @@ const sharedStyles = {
     fontWeight: "400"
   },
   headlineWrapper: {
-    fontSize: 22,
+    fontSize: fontSizes.smallHeadline,
     lineHeight: 22
   }
 };

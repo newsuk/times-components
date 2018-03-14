@@ -1,8 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { colours, fonts } from "@times-components/styleguide";
-
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import TimesWatermark from "./ad-watermark";
 
 const getStyles = (width, height) =>
@@ -23,7 +22,7 @@ const getStyles = (width, height) =>
       borderStyle: "solid"
     },
     placeholderText: {
-      fontSize: 11,
+      fontSize: fontSizes.puffLink,
       fontFamily: fonts.body,
       backgroundColor: colours.functional.backgroundSecondary,
       color: colours.functional.secondary,

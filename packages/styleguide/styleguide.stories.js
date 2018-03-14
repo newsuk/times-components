@@ -1,9 +1,9 @@
 import { Platform, ScrollView, Text, View } from "react-native";
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
+import { Animations, colours, fonts, fontSizes } from "./styleguide";
 import styles from "./styleguide.stories.styles";
-import { Animations, colours, fonts } from "./styleguide";
 
 const ColourBox = ({ name, hex }) => (
   <View style={styles.container}>
@@ -18,6 +18,23 @@ ColourBox.propTypes = {
   name: PropTypes.string.isRequired,
   hex: PropTypes.string.isRequired
 };
+
+const fontDisplayer = (fontFamily, phrase) =>
+  Object.keys(fontSizes).map(fontSize => (
+    <Fragment>
+      <Text style={styles.subHeadline}>{fontSize}</Text>
+      <Text
+        style={[
+          styles.showoffFonts,
+          { fontFamily, fontSize: fontSizes[fontSize] }
+        ]}
+      >
+        {phrase}
+      </Text>
+    </Fragment>
+  ));
+
+fontDisplayer();
 
 storiesOf("Helpers/Styleguide", module)
   .add("Functional Colours", () => {
@@ -63,9 +80,7 @@ storiesOf("Helpers/Styleguide", module)
       <ScrollView>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Body</Text>
-          <Text style={[styles.showoffFonts, { fontFamily: fonts.body }]}>
-            {phrase}
-          </Text>
+          {fontDisplayer(fonts.body, phrase)}
         </View>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Body Regular</Text>
@@ -73,11 +88,7 @@ storiesOf("Helpers/Styleguide", module)
             Used for the body copy of articles or as the teaser copy on article
             links.
           </Text>
-          <Text
-            style={[styles.showoffFonts, { fontFamily: fonts.bodyRegular }]}
-          >
-            {phrase}
-          </Text>
+          {fontDisplayer(fonts.bodyRegular, phrase)}
         </View>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Body Regular Small Caps</Text>
@@ -87,23 +98,14 @@ storiesOf("Helpers/Styleguide", module)
             pages for the Journalist job title, article flags and show more
             buttons on the homepage.
           </Text>
-          <Text
-            style={[
-              styles.showoffFonts,
-              { fontFamily: fonts.bodyRegularSmallCaps }
-            ]}
-          >
-            {phrase.toLowerCase()}
-          </Text>
+          {fontDisplayer(fonts.bodyRegularSmallCaps, phrase.toLowerCase())}
         </View>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Headline</Text>
           <Text>
             Used as the headline for components and articles across the site.
           </Text>
-          <Text style={[styles.showoffFonts, { fontFamily: fonts.headline }]}>
-            {phrase}
-          </Text>
+          {fontDisplayer(fonts.headline, phrase)}
         </View>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Headline Regular</Text>
@@ -111,11 +113,7 @@ storiesOf("Helpers/Styleguide", module)
             Used primarily to style subheadings for components and stand firsts
             on the homepage and articles.
           </Text>
-          <Text
-            style={[styles.showoffFonts, { fontFamily: fonts.headlineRegular }]}
-          >
-            {phrase}
-          </Text>
+          {fontDisplayer(fonts.headlineRegular, phrase)}
         </View>
         <View style={styles.showoffFontsContainer}>
           <Text style={styles.headline}>Supporting</Text>
@@ -123,9 +121,7 @@ storiesOf("Helpers/Styleguide", module)
             Used as a supporting typeface in a variety of places including
             messaging banners, buttons, links, homepage labels and tags.
           </Text>
-          <Text style={[styles.showoffFonts, { fontFamily: fonts.supporting }]}>
-            {phrase}
-          </Text>
+          {fontDisplayer(fonts.supporting, phrase)}
         </View>
       </ScrollView>
     );
