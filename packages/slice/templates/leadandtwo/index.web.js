@@ -35,8 +35,8 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
                 const SupportContainer = getSupportContainer({ index });
                 SupportContainer.displayName = "SupportContainer";
                 return (
-                  <SupportContainer key={`support-container-${support[0].key}`}>
-                    {support[0]}
+                  <SupportContainer key={support.props.id}>
+                    {support}
                   </SupportContainer>
                 );
               })}

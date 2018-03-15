@@ -5,10 +5,10 @@ exports[`1. Standard template renders a single child element 1`] = `
   <SliceContainer>
     <ChildrenContainer>
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        key="standard-1"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+          id="standard-1"
         />
       </ChildContainer>
     </ChildrenContainer>
@@ -21,20 +21,20 @@ exports[`2. Standard template renders two child elements 1`] = `
   <SliceContainer>
     <ChildrenContainer>
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        key="standard-1"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+          id="standard-1"
         />
       </ChildContainer>
       <Separator
-        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        key="separator-standard-2"
       />
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        key="standard-2"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+          id="standard-2"
         />
       </ChildContainer>
     </ChildrenContainer>
@@ -47,30 +47,30 @@ exports[`3. Standard template renders three child elements 1`] = `
   <SliceContainer>
     <ChildrenContainer>
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        key="standard-1"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+          id="standard-1"
         />
       </ChildContainer>
       <Separator
-        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        key="separator-standard-2"
       />
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        key="standard-2"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+          id="standard-2"
         />
       </ChildContainer>
       <Separator
-        key="separator-08604618-fb0e-11e7-a987-7fcf5e9983de"
+        key="separator-standard-3"
       />
       <ChildContainer
-        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+        key="standard-3"
       >
         <ExampleChild
-          key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+          id="standard-3"
         />
       </ChildContainer>
     </ChildrenContainer>
@@ -84,7 +84,7 @@ exports[`4. Lead and two template renders a single child element 1`] = `
     <Container>
       <LeadAndTwoContainer>
         <ExampleChild
-          key="lead"
+          id="lead"
         />
       </LeadAndTwoContainer>
     </Container>
@@ -98,16 +98,16 @@ exports[`5. Lead and two template renders two child elements 1`] = `
     <Container>
       <LeadAndTwoContainer>
         <ExampleChild
-          key="lead"
+          id="lead"
         />
       </LeadAndTwoContainer>
       <Separator />
       <SupportsContainer>
         <SupportContainer
-          key="support-container-support1"
+          key="support-1"
         >
           <ExampleChild
-            key="support1"
+            id="support-1"
           />
         </SupportContainer>
       </SupportsContainer>
@@ -122,23 +122,23 @@ exports[`6. Lead and two template renders three child elements 1`] = `
     <Container>
       <LeadAndTwoContainer>
         <ExampleChild
-          key="lead"
+          id="lead"
         />
       </LeadAndTwoContainer>
       <Separator />
       <SupportsContainer>
         <SupportContainer
-          key="support-container-support1"
+          key="support-1"
         >
           <ExampleChild
-            key="support1"
+            id="support-1"
           />
         </SupportContainer>
         <SupportContainer
-          key="support-container-support2"
+          key="support-2"
         >
           <ExampleChild
-            key="support2"
+            id="support-2"
           />
         </SupportContainer>
       </SupportsContainer>

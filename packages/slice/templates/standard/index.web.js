@@ -16,7 +16,9 @@ const StandardSlice = ({ itemCount, renderItems }) => {
       <SliceContainer>
         <ChildrenContainer>
           {renderItems(config)
-            .map(item => <ChildContainer key={item.key}>{item}</ChildContainer>)
+            .map(item => (
+              <ChildContainer key={item.props.id}>{item}</ChildContainer>
+            ))
             .reduce((previous, current) => [
               ...(previous.length > 0 ? previous : [previous]),
               <Separator key={`separator-${current.key}`} />,
