@@ -4060,9 +4060,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.7.0-alpha.0:
-  version "1.7.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.7.0-alpha.0.tgz#231a1f1d6ce40d2740c6ae57a4719f9a973c93b5"
+dextrose@1.7.0-alpha.1:
+  version "1.7.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.7.0-alpha.1.tgz#e7e5c8852b8b8770ff175437856a0d440546d974"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
