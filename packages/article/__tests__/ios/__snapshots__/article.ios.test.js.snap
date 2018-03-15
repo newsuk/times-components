@@ -11355,6 +11355,7 @@ exports[`Article test on ios renders full article 1`] = `
       Object {
         "data": Object {
           "attributes": Object {
+            "contextUrl": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
             "section": "news",
           },
           "children": Array [],
