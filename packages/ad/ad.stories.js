@@ -50,7 +50,7 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Advertisement", module)
+storiesOf("Primitives/Advertisement", module)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(
       <Ad pos="intervention" contextUrl={articleUrl} section="news" />
@@ -72,6 +72,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixel", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixel ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixel" contextUrl={articleUrl} />
       </View>
     )
@@ -79,6 +80,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixelteads", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixelteads ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixelteads" contextUrl={articleUrl} />
       </View>
     )
@@ -86,6 +88,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixelskin", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixelskin ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixelskin" contextUrl={articleUrl} />
       </View>
     )
