@@ -12,3 +12,4 @@ CHANGELOG.md
 LICENSE
 yarn.lock
 *.sh
+*.log
