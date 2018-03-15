@@ -1,6 +1,6 @@
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
-import { getSeparator, SliceContainer } from "../shared.responsive";
+import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
   getLeadAndTwoContainer,

@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 import {
   SliceContainer,
   getSeparator
-} from "../../templates/shared.responsive";
+} from "../../templates/styles/responsive";
 import {
   ChildContainer,
   getChildrenContainer
