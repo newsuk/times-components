@@ -34,7 +34,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         display: none;
       }
       .summary125Class {
-        display: block !important;
+        display: block;
       }
     `,
     mediumUp: () => {
@@ -66,9 +66,11 @@ export const getConfigWrapper = ({ supportCount }) => {
         .supportSliceImageContainerClass {
           display: block;
         }
+
         .summary125Class {
-          display: ${supportCount === 2 ? "none !important" : "block"};
+          display: ${supportCount === 2 ? "none" : "block"};
         }
+
         .summary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
@@ -96,13 +98,6 @@ export const getConfigWrapper = ({ supportCount }) => {
 
         .supportSliceContentContainerClass {
           ${supportCount === 2 ? doubleSupportContentStyle : ``}
-        }
-
-        .summary175Class {
-          display: ${supportCount === 2 ? "none" : "block"};
-        }
-        .summary125Class {
-          display: ${supportCount === 2 ? "block !important" : "none"};
         }
       `;
     }

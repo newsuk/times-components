@@ -15,7 +15,6 @@ import {
 } from "./config";
 
 const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
-
   const supports = [support1(supportConfig), support2(supportConfig)].filter(
     support => support !== null
   );
