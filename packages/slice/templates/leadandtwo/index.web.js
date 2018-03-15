@@ -7,13 +7,19 @@ import {
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
-import { leadAndTwoConfig, supportConfig, getConfigWrapper } from "./config";
+import {
+  leadAndTwoConfig,
+  supportConfig,
+  getConfigWrapper,
+  summaryConfig
+} from "./config";
 
 const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
   const supports = [support1(supportConfig), support2(supportConfig)].filter(
     support => support !== null
   );
   const supportCount = supports.length;
+  const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
@@ -22,6 +28,9 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
     supportCount
   });
   const Separator = getSeparator({ hasLeftRightMargin: false });
+
+  leadConfig.summaryConfig = summaryConfig[itemCount];
+  supportConfig.summaryConfig = summaryConfig[itemCount];
 
   return (
     <ConfigWrapper>

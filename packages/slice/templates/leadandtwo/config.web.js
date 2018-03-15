@@ -2,17 +2,9 @@ import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
 export const summaryConfig = {
-  1: {
-    base: 125
-  },
-  2: {
-    base: 105
-  },
-  3: {
-    base: 105,
-    wide: 175,
-    huge: 125 
-  }
+  1: [125],
+  2: [125],
+  3: [125, 175]
 };
 
 export const leadConfig = {
@@ -39,6 +31,12 @@ export const getConfigWrapper = ({ supportCount }) => {
       }
       .supportSliceSummaryClass {
         display: none;
+      }
+      .summaryHidden {
+        display: none;
+      }
+      .summary125Class {
+        display: block !important;
       }
     `,
     mediumUp: () => {
@@ -70,6 +68,12 @@ export const getConfigWrapper = ({ supportCount }) => {
         .supportSliceImageContainerClass {
           display: block;
         }
+        .summary125Class {
+          display: ${supportCount === 2 ? "none !important" : "block"};
+        }
+        .summary175Class {
+          display: ${supportCount === 2 ? "block" : "none"};
+        }
       `;
     },
     wideUp: () => {
@@ -94,6 +98,13 @@ export const getConfigWrapper = ({ supportCount }) => {
 
         .supportSliceContentContainerClass {
           ${supportCount === 2 ? doubleSupportContentStyle : ``}
+        }
+
+        .summary175Class {
+          display: ${supportCount === 2 ? "none" : "block"};
+        }
+        .summary125Class {
+          display: ${supportCount === 2 ? "block !important" : "none"};
         }
       `;
     }

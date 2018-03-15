@@ -19,10 +19,9 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       contentContainerClass = "",
       headlineClass = "",
       imageContainerClass = "",
-      summaryClass = "",
       showImage = true,
       showSummary = true,
-      summaryConfig = {}
+      summaryConfig = []
     } = config;
     return (
       <RelatedArticleItem
@@ -34,7 +33,6 @@ const RelatedArticles = ({ articles, onPress, template }) => {
         onPress={e => onPress(e, { url: article.url })}
         showImage={showImage}
         showSummary={showSummary}
-        summaryClass={summaryClass}
         summaryConfig={summaryConfig}
       />
     );

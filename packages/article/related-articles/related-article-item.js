@@ -22,23 +22,9 @@ const RelatedArticleItem = ({
   onPress,
   showImage,
   showSummary,
-  summaryClass,
   summaryConfig
 }) => {
-  const {
-    byline,
-    headline,
-    label,
-    publishedTime,
-    section,
-    summary105,
-    summary125,
-    summary145,
-    summary160,
-    summary175,
-    summary225,
-    url
-  } = article;
+  const { byline, headline, label, publishedTime, section, url } = article;
 
   const imageUri = get(
     article,
@@ -61,12 +47,12 @@ const RelatedArticleItem = ({
           content={() =>
             showSummary && (
               <View>
-                <ArticleSummaryContent className={summaryClass} ast={summary105} />
-                <ArticleSummaryContent className={summaryClass} ast={summary125} />
-                <ArticleSummaryContent className={summaryClass} ast={summary145} />
-                <ArticleSummaryContent className={summaryClass} ast={summary160} />
-                <ArticleSummaryContent className={summaryClass} ast={summary175} />
-                <ArticleSummaryContent className={summaryClass} ast={summary225} />
+                {summaryConfig.map(item => (
+                  <ArticleSummaryContent
+                    className={`summaryHidden summary${item}Class`}
+                    ast={article[`summary${item}`]}
+                  />
+                ))}
               </View>
             )
           }
