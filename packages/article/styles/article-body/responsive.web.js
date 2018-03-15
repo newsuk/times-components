@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import config from "../responsive-config";
 
 /* --- Body --- */
@@ -14,15 +14,15 @@ export const ParagraphContainer = withResponsiveStyles("div", {
 export const Paragraph = withResponsiveStyles("p", {
   base: () => `
     color: ${colours.functional.primary};
-    font-family: "TimesDigitalW04-Regular";
+    font-family: "${fonts.bodyRegular}";
     line-height: 26px;
-    font-size: 17px;
+    font-size: ${fontSizes.bodyMobile}px;
     margin-bottom: 25px;
     margin-top: 0;
     display: block;
   `,
   mediumUp: () => `
-    font-size: 18px;
+    font-size: ${fontSizes.body}px;
     line-height: 30px;
   `
 });
@@ -30,14 +30,14 @@ export const Paragraph = withResponsiveStyles("p", {
 export const LinkStyle = withResponsiveStyles("a", {
   base: () => `
     color: ${colours.functional.action};
-    font-family: "TimesDigitalW04-Regular";
+    font-family: "${fonts.bodyRegular}";
     line-height: 26px;
-    font-size: 17px;
+    font-size: ${fontSizes.bodyMobile}px;
     margin-bottom: 25px;
     margin-top: 0;
 `,
   mediumUp: () => `
-    font-size: 18px;
+    font-size: ${fontSizes.body}px;
     line-height: 30px;
   `
 });

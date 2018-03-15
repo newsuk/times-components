@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { fonts } from "@times-components/styleguide";
+import { fonts, fontSizes } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
@@ -11,7 +11,7 @@ const androidStyles = {
   articleTextElement: {
     ...sharedStyles.articleTextElement,
     fontFamily: fonts.body,
-    fontSize: 17,
+    fontSize: fontSizes.bodyMobile,
     fontStyle: "normal",
     marginBottom: 20
   }

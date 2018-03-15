@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text, StyleSheet } from "react-native";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   message: {
     color: colours.functional.secondary,
     fontFamily: fonts.supporting,
-    fontSize: 15,
+    fontSize: fontSizes.pagingMeta,
     paddingTop: 4
   }
 });

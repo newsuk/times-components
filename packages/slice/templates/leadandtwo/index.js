@@ -14,8 +14,8 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => (
     {[support1(supportConfig), support2(supportConfig)]
       .filter(support => support !== null)
       .map(support => (
-        <View key={support[0].key} style={styles.itemContainer}>
-          <View style={styles.item}>{support[0]}</View>
+        <View key={support.props.id} style={styles.itemContainer}>
+          <View style={styles.item}>{support}</View>
         </View>
       ))}
   </View>

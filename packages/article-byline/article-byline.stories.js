@@ -1,13 +1,13 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { fonts, colours } from "@times-components/styleguide";
+import { fonts, colours, fontSizes } from "@times-components/styleguide";
 import ArticleByline from "./article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
 const bylineStyles = {
-  fontSize: 13,
+  fontSize: fontSizes.cardMeta,
   fontFamily: fonts.supporting,
   color: colours.functional.secondary,
   lineHeight: 13,

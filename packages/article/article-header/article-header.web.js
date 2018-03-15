@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
 
-import HeaderLabel from "./article-header-label";
+import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderFlags from "./article-header-flags";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";

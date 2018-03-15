@@ -3,14 +3,17 @@ import PropTypes from "prop-types";
 import ArticleRow from "./article-body-row";
 
 const ArticleBody = props => {
-  const { section, content: bodyContent } = props;
+  const { section, content: bodyContent, contextUrl } = props;
   const contentArray = bodyContent.map((data, index) => {
     const item = {
       data,
       index
     };
     if (data.name === "ad") {
-      item.data.attributes = { ...item.data.attributes, ...{ section } };
+      item.data.attributes = {
+        ...item.data.attributes,
+        ...{ section, contextUrl }
+      };
     }
     return item;
   });
@@ -29,7 +32,8 @@ ArticleBody.propTypes = {
       name: PropTypes.string
     })
   ).isRequired,
-  section: PropTypes.string
+  section: PropTypes.string,
+  contextUrl: PropTypes.string.isRequired
 };
 
 export default ArticleBody;

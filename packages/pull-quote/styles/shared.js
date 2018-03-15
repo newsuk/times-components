@@ -1,4 +1,4 @@
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   container: {
@@ -13,13 +13,13 @@ const sharedStyles = {
   },
   content: {
     fontFamily: fonts.headlineRegular,
-    fontSize: 25,
+    fontSize: fontSizes.pageComponentHeadline,
     lineHeight: 30,
     color: colours.functional.primary
   },
   caption: {
     fontFamily: fonts.supporting,
-    fontSize: 13,
+    fontSize: fontSizes.caption,
     marginBottom: 0,
     lineHeight: 13
   },
@@ -27,7 +27,7 @@ const sharedStyles = {
     color: colours.functional.action,
     fontFamily: fonts.supporting,
     textDecorationLine: "none",
-    fontSize: 13,
+    fontSize: fontSizes.link,
     marginLeft: 3,
     lineHeight: 13
   },

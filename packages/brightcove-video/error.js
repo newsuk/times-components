@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 import ResetIcon from "./reset-icon";
 
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   errorHead: {
     color: "white",
-    fontSize: 20,
+    fontSize: fontSizes.smallestHeadline,
     marginBottom: 5,
     fontFamily: fonts.headline
   },
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 15,
     opacity: 0.8,
-    fontSize: 14,
+    fontSize: fontSizes.meta,
     fontFamily: fonts.body
   },
   resetButton: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   resetText: {
     color: "white",
     fontFamily: fonts.supporting,
-    fontSize: 13,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     position: "relative",
     top: 3,

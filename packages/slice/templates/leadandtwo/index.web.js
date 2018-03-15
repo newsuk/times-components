@@ -1,6 +1,6 @@
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
-import { getSeparator, SliceContainer } from "../shared.responsive";
+import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
   getLeadAndTwoContainer,
@@ -35,8 +35,8 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
                 const SupportContainer = getSupportContainer({ index });
                 SupportContainer.displayName = "SupportContainer";
                 return (
-                  <SupportContainer key={`support-container-${support[0].key}`}>
-                    {support[0]}
+                  <SupportContainer key={support.props.id}>
+                    {support}
                   </SupportContainer>
                 );
               })}

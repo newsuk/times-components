@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { fontSizes } from "@times-components/styleguide";
 import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
@@ -6,7 +7,7 @@ const androidStyles = {
   ...sharedStyles,
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
-    fontSize: 28,
+    fontSize: fontSizes.headline,
     lineHeight: 37,
     fontWeight: "400"
   },

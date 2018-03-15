@@ -14,6 +14,7 @@ export const query = gql`
       byline
       content
       section
+      url
       leadAsset {
         ... on Video {
           type: __typename

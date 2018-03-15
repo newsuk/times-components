@@ -10,7 +10,7 @@ exports[`1. Standard template renders a single child element 1`] = `
   }
 >
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -37,7 +37,7 @@ exports[`1. Standard template renders a single child element 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        id="standard-1"
       />
     </View>
   </View>
@@ -54,7 +54,7 @@ exports[`2. Standard template renders two child elements 1`] = `
   }
 >
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -81,12 +81,12 @@ exports[`2. Standard template renders two child elements 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        id="standard-1"
       />
     </View>
   </View>
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    key="standard-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -113,7 +113,7 @@ exports[`2. Standard template renders two child elements 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        id="standard-2"
       />
     </View>
   </View>
@@ -130,7 +130,7 @@ exports[`3. Standard template renders three child elements 1`] = `
   }
 >
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -157,12 +157,12 @@ exports[`3. Standard template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dc"
+        id="standard-1"
       />
     </View>
   </View>
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+    key="standard-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -189,12 +189,12 @@ exports[`3. Standard template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983dd"
+        id="standard-2"
       />
     </View>
   </View>
   <View
-    key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+    key="standard-3"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -221,7 +221,7 @@ exports[`3. Standard template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="08604618-fb0e-11e7-a987-7fcf5e9983de"
+        id="standard-3"
       />
     </View>
   </View>
@@ -264,7 +264,7 @@ exports[`4. Lead and two template renders a single child element 1`] = `
       }
     >
       <ExampleChild
-        key="lead"
+        id="lead"
       />
     </View>
   </View>
@@ -307,12 +307,12 @@ exports[`5. Lead and two template renders two child elements 1`] = `
       }
     >
       <ExampleChild
-        key="lead"
+        id="lead"
       />
     </View>
   </View>
   <View
-    key="support1"
+    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -334,7 +334,7 @@ exports[`5. Lead and two template renders two child elements 1`] = `
       }
     >
       <ExampleChild
-        key="support1"
+        id="support-1"
       />
     </View>
   </View>
@@ -377,12 +377,12 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="lead"
+        id="lead"
       />
     </View>
   </View>
   <View
-    key="support1"
+    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -404,12 +404,12 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="support1"
+        id="support-1"
       />
     </View>
   </View>
   <View
-    key="support2"
+    key="support-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -431,7 +431,7 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        key="support2"
+        id="support-2"
       />
     </View>
   </View>

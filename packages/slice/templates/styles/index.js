@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { colours } from "@times-components/styleguide";
 
-export default {
+const styles = {
   container: {
     marginBottom: 10,
     marginTop: 10
@@ -20,3 +20,5 @@ export default {
     width: "100%"
   }
 };
+
+export default styles;
