@@ -312,7 +312,7 @@ exports[`5. Lead and two template renders two child elements 1`] = `
     </View>
   </View>
   <View
-    key="support1"
+    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -334,7 +334,7 @@ exports[`5. Lead and two template renders two child elements 1`] = `
       }
     >
       <ExampleChild
-        id="support1"
+        id="support-1"
       />
     </View>
   </View>
@@ -382,7 +382,7 @@ exports[`6. Lead and two template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="support1"
+    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -404,12 +404,12 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        id="support1"
+        id="support-1"
       />
     </View>
   </View>
   <View
-    key="support2"
+    key="support-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -431,7 +431,7 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       }
     >
       <ExampleChild
-        id="support2"
+        id="support-2"
       />
     </View>
   </View>

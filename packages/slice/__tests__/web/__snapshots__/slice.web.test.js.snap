@@ -104,10 +104,10 @@ exports[`5. Lead and two template renders two child elements 1`] = `
       <Separator />
       <SupportsContainer>
         <SupportContainer
-          key="support1"
+          key="support-1"
         >
           <ExampleChild
-            id="support1"
+            id="support-1"
           />
         </SupportContainer>
       </SupportsContainer>
@@ -128,17 +128,17 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       <Separator />
       <SupportsContainer>
         <SupportContainer
-          key="support1"
+          key="support-1"
         >
           <ExampleChild
-            id="support1"
+            id="support-1"
           />
         </SupportContainer>
         <SupportContainer
-          key="support2"
+          key="support-2"
         >
           <ExampleChild
-            id="support2"
+            id="support-2"
           />
         </SupportContainer>
       </SupportsContainer>
