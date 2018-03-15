@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.49.2",
+  "version": "0.49.3",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -68,7 +68,7 @@
     "@times-components/image": "1.14.5",
     "@times-components/link": "0.15.4",
     "@times-components/markup": "0.24.4",
-    "@times-components/provider": "0.24.2",
+    "@times-components/provider": "0.24.3",
     "@times-components/pull-quote": "0.3.4",
     "@times-components/responsive-styles": "0.4.4",
     "@times-components/slice": "0.10.7",
