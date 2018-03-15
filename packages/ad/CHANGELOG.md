@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.2"></a>
+## [0.14.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.1...@times-components/ad@0.14.2) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.14.1"></a>
+## [0.14.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.0...@times-components/ad@0.14.1) (2018-03-15)
+
+
+### Bug Fixes
+
+* tidy up ads stories ([#742](https://github.com/newsuk/times-components/issues/742)) ([c3b1eb3](https://github.com/newsuk/times-components/commit/c3b1eb3))
+
+
+
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.12.0...@times-components/ad@0.14.0) (2018-03-14)
+
+
+### Features
+
+* adding pixel ads ([#734](https://github.com/newsuk/times-components/issues/734)) ([eb4d17d](https://github.com/newsuk/times-components/commit/eb4d17d))
+* responsive ads ([#733](https://github.com/newsuk/times-components/issues/733)) ([9e2df9e](https://github.com/newsuk/times-components/commit/9e2df9e))
+
+
+
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.12.0...@times-components/ad@0.13.0) (2018-03-14)
+
+
+### Features
+
+* adding pixel ads ([#734](https://github.com/newsuk/times-components/issues/734)) ([eb4d17d](https://github.com/newsuk/times-components/commit/eb4d17d))
+* responsive ads ([#733](https://github.com/newsuk/times-components/issues/733)) ([9e2df9e](https://github.com/newsuk/times-components/commit/9e2df9e))
+
+
+
+
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.11.2...@times-components/ad@0.12.0) (2018-03-14)
+
+
+### Features
+
+* enable header bidding for ads ([#706](https://github.com/newsuk/times-components/issues/706)) ([e53c7df](https://github.com/newsuk/times-components/commit/e53c7df))
+
+
+
+
 <a name="0.11.2"></a>
 ## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.11.1...@times-components/ad@0.11.2) (2018-03-12)
 

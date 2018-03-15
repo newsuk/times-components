@@ -42,6 +42,37 @@ describe("AdInit", () => {
     expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
     expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
+  it("refresh the ads on a new breakpoint", () => {
+    const init1 = adInit(initOptions);
+
+    jest
+      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
+      .mockImplementation();
+    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
+
+    init1.init();
+    init1.handleBreakpointChange("huge", { matches: true });
+
+    expect(init1.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
+      breakpoint: "huge",
+      refresh: "true"
+    });
+    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(1);
+  });
+
+  it("do not refresh the ads if the query doesn't match", () => {
+    const init1 = adInit(initOptions);
+
+    jest
+      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
+      .mockImplementation();
+    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
+
+    init1.init();
+    init1.handleBreakpointChange("huge", { matches: false });
+
+    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(0);
+  });
 
   it("throws if the init hook is called twice", () => {
     const init = adInit(initOptions);

@@ -14,6 +14,7 @@ import styles from "./styles/article-body";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
+import RelatedArticles from "./related-articles/related-articles";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -22,7 +23,7 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData) {
+  static renderRow(rowData, onRelatedArticlePress) {
     switch (rowData.type) {
       case "leadAsset": {
         const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
@@ -63,6 +64,18 @@ class ArticlePage extends React.Component {
 
       case "articleBodyRow": {
         return <ArticleRow content={rowData} />;
+      }
+
+      case "relatedArticles": {
+        const { relatedArticles, relatedArticlesLayout } = rowData.data;
+        return (
+          <RelatedArticles
+            analyticsStream={() => {}}
+            articles={relatedArticles}
+            template={relatedArticlesLayout.template}
+            onPress={onRelatedArticlePress}
+          />
+        );
       }
 
       default: {
@@ -108,6 +121,7 @@ class ArticlePage extends React.Component {
         data={this.state.dataSource}
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
+        onRelatedArticlePress={this.props.onRelatedArticlePress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -129,13 +143,15 @@ ArticlePage.propTypes = {
     }),
     message: PropTypes.string
   }),
-  adConfig: PropTypes.shape({}).isRequired
+  adConfig: PropTypes.shape({}).isRequired,
+  onRelatedArticlePress: PropTypes.func
 };
 
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
-  error: null
+  error: null,
+  onRelatedArticlePress: () => {}
 };
 
 export default articleTrackingContext(ArticlePage);

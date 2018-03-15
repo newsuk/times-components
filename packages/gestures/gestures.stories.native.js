@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook";
+import { fontSizes } from "@times-components/styleguide";
 import Gestures from "./gestures";
 
 const styles = StyleSheet.create({
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "yellow",
-    fontSize: 20,
+    fontSize: fontSizes.smallestHeadline,
     padding: 5
   }
 });

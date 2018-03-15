@@ -3,7 +3,8 @@ import functionalColours from "./colours/functional";
 
 import FadeIn from "./animations";
 
-import timesFonts from "./fonts";
+import timesFonts from "./fonts/fonts";
+import timesFontSizes from "./fonts/font-sizes";
 
 export const colours = {
   section: sectionColours,
@@ -15,3 +16,4 @@ export const Animations = {
 };
 
 export const fonts = timesFonts;
+export const fontSizes = timesFontSizes;

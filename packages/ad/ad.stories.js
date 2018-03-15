@@ -3,6 +3,7 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
+import { fontSizes } from "@times-components/styleguide";
 import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
@@ -49,7 +50,7 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Advertisement", module)
+storiesOf("Primitives/Advertisement", module)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(
       <Ad pos="intervention" contextUrl={articleUrl} section="news" />
@@ -65,6 +66,30 @@ storiesOf("Advertisement", module)
       <View>
         <Ad section="news" pos="header" contextUrl={articleUrl} />
         <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
+      </View>
+    )
+  )
+  .add("render pixel ads - pixel", () =>
+    withOpenInNewWindow(
+      <View>
+        <Text>The pixel ad is below. It&rsquo;s invisible.</Text>
+        <Ad section="news" pos="pixel" contextUrl={articleUrl} />
+      </View>
+    )
+  )
+  .add("render pixel ads - pixelteads", () =>
+    withOpenInNewWindow(
+      <View>
+        <Text>The pixelteads ad is below. It&rsquo;s invisible.</Text>
+        <Ad section="news" pos="pixelteads" contextUrl={articleUrl} />
+      </View>
+    )
+  )
+  .add("render pixel ads - pixelskin", () =>
+    withOpenInNewWindow(
+      <View>
+        <Text>The pixelskin ad is below. It&rsquo;s invisible.</Text>
+        <Ad section="news" pos="pixelskin" contextUrl={articleUrl} />
       </View>
     )
   )
@@ -141,7 +166,7 @@ storiesOf("Advertisement", module)
                   width: 100%;
                   height: 100%;
                   background: ${worked ? "#8C8" : "#C88"};
-                  font-size: 20px;
+                  font-size: ${fontSizes.smallestHeadline}px;
                   padding: 10px;
               ">
                 worked=${worked}<br>

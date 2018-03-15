@@ -5,6 +5,9 @@ import adInitOriginal from "../ad-init";
 export const makeAdInitMocks = () => {
   const document = jsdom("<html></html>");
   const window = document.defaultView;
+  window.matchMedia = jest.fn().mockImplementation(() => ({
+    addListener: jest.fn()
+  }));
   const pubAds = {
     setTargeting: jest.fn(),
     disableInitialLoad: jest.fn(),

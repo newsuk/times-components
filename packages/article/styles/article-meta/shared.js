@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { fonts, colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const sharedStyles = {
   articleMeta: {
@@ -20,12 +20,12 @@ const sharedStyles = {
   },
   datePublication: {
     color: colours.functional.secondary,
-    fontSize: 13,
+    fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting
   },
   byline: {
-    fontSize: 13,
+    fontSize: fontSizes.cardMeta,
     fontFamily: fonts.supporting,
     color: colours.functional.secondary,
     lineHeight: 15

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.49.10"></a>
+## [0.49.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.9...@times-components/author-profile@0.49.10) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.9"></a>
+## [0.49.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.8...@times-components/author-profile@0.49.9) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.8"></a>
+## [0.49.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.7...@times-components/author-profile@0.49.8) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.7"></a>
+## [0.49.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.6...@times-components/author-profile@0.49.7) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.6"></a>
+## [0.49.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.4...@times-components/author-profile@0.49.6) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.5"></a>
+## [0.49.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.4...@times-components/author-profile@0.49.5) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.4"></a>
+## [0.49.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.3...@times-components/author-profile@0.49.4) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.49.3"></a>
 ## [0.49.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.2...@times-components/author-profile@0.49.3) (2018-03-13)
 

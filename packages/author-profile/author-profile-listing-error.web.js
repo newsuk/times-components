@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Button } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const ListingError = withResponsiveStyles(View, {
   base: () => `
@@ -15,8 +15,8 @@ const ListingError = withResponsiveStyles(View, {
 
 const Heading = withResponsiveStyles(Text, {
   base: () => `
-    font-family: TimesModern-Bold;
-    font-size: 35px;
+    font-family: ${fonts.headline};
+    font-size: ${fontSizes.leadHeadline}px;
     text-align: center;
     color: ${colours.functional.brandColour};
     margin-bottom: 12px;
@@ -25,8 +25,8 @@ const Heading = withResponsiveStyles(Text, {
 
 const Message = withResponsiveStyles(Text, {
   base: () => `
-    font-family: TimesDigitalW04-Regular;
-    font-size: 18px;
+    font-family: ${fonts.bodyRegular};
+    font-size: ${fontSizes.body}px;
     line-height: 1.44;
     text-align: center;
     color: ${colours.functional.secondary};
