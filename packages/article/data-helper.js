@@ -1,5 +1,21 @@
 import getLeadAsset from "./get-lead-asset";
 
+const prepend = ({ type, data }, list) => {
+  if (!data) {
+    return list;
+  }
+
+  return [{ type, data }, ...list];
+};
+
+const append = ({ type, data }, list) => {
+  if (!data) {
+    return list;
+  }
+
+  return [...list, { type, data }];
+};
+
 const prepareDataForListView = articleData => {
   const { isVideo, leadAsset } = getLeadAsset(articleData);
   const articleHeaderData = {
@@ -22,11 +38,9 @@ const prepareDataForListView = articleData => {
     : null;
 
   const data = [
-    { type: "leadAsset", data: leadAsset },
     { type: "header", data: articleHeaderData },
-    { type: "middleContainer", data: articleMidContainerData }
-  ].concat(
-    articleData.content.map((rowData, index) => {
+    { type: "middleContainer", data: articleMidContainerData },
+    ...articleData.content.map((rowData, index) => {
       const item = {
         type: "articleBodyRow",
         data: Object.assign({}, rowData),
@@ -40,17 +54,12 @@ const prepareDataForListView = articleData => {
       }
       return item;
     })
+  ];
+
+  return prepend(
+    { type: "leadAsset", data: leadAsset },
+    append({ type: "relatedArticles", data: relatedArticlesData }, data)
   );
-
-  if (relatedArticlesData) {
-    data.push({ type: "relatedArticles", data: relatedArticlesData });
-  }
-
-  if (!leadAsset) {
-    data.splice(0, 1);
-  }
-
-  return data;
 };
 
 export default prepareDataForListView;
