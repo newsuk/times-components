@@ -71,6 +71,9 @@ class ArticlePage extends React.Component {
             </BodyContainer>
           </View>
         </MainContainer>
+        <HeaderAdContainer key="sponsoredAd">
+          <Ad pos="article-sponsored-ad" style={adStyle} section={section} />
+        </HeaderAdContainer>
         <Ad pos="pixel" section={section} />
         <Ad pos="pixelteads" section={section} />
         <Ad pos="pixelskin" section={section} />
