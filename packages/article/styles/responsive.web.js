@@ -20,6 +20,18 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
   `
 });
 
+/* --- SponsoredAd --- */
+export const SponsoredAdContainer = withResponsiveStyles(View, {
+  base: () => `
+    display: flex;
+    border-top-color: ${colours.functional.keyline};
+    border-bottom-color: ${colours.functional.keyline};
+    border-bottom-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  `
+});
+
 /* --- Header --- */
 
 export const HeaderContainer = withResponsiveStyles(View, {
