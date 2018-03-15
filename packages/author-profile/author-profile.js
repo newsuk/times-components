@@ -10,6 +10,7 @@ import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 
+
 const AuthorProfile = ({
   author,
   error,
