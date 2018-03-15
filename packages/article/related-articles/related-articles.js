@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { DefaultSlice, LeadSlice } from "@times-components/slice";
+import { StandardSlice, LeadAndTwoSlice } from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -14,7 +14,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
 
   const articleCount = articles.length;
 
-  const renderArticleItems = (articleItems, config) => {
+  const renderArticleItem = (config, article) => {
     const {
       contentContainerClass = "",
       headlineClass = "",
@@ -23,19 +23,19 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       showImage = true,
       showSummary = true
     } = config;
-    return articleItems.map(articleItem => (
+    return (
       <RelatedArticleItem
-        article={articleItem}
+        article={article}
         contentContainerClass={contentContainerClass}
         headlineClass={headlineClass}
+        id={article.id}
         imageContainerClass={imageContainerClass}
-        key={articleItem.id}
         onPress={e => onPress(e, { url: articleItem.url })}
         showImage={showImage}
         showSummary={showSummary}
         summaryClass={summaryClass}
       />
-    ));
+    );
   };
 
   const renderSlice = () => {
@@ -43,22 +43,24 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       case "DEFAULT":
       default:
         return (
-          <DefaultSlice
+          <StandardSlice
             itemCount={articleCount}
-            renderItems={(config = {}) => renderArticleItems(articles, config)}
+            renderItems={(config = {}) =>
+              articles.map(article => renderArticleItem(config, article))
+            }
           />
         );
       case "LEAD_AND_TWO":
         return (
-          <LeadSlice
-            lead={(config = {}) => renderArticleItems([articles[0]], config)}
+          <LeadAndTwoSlice
+            lead={(config = {}) => renderArticleItem(config, articles[0])}
             support1={(config = {}) => {
               const article = articles[1];
-              return article ? renderArticleItems([article], config) : null;
+              return article ? renderArticleItem(config, article) : null;
             }}
             support2={(config = {}) => {
               const article = articles[2];
-              return article ? renderArticleItems([article], config) : null;
+              return article ? renderArticleItem(config, article) : null;
             }}
           />
         );

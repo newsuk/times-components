@@ -51,8 +51,8 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getLeadContainer = ({ hasSupports, supportCount }) => {
-  const LeadContainer = withResponsiveStyles(View, {
+export const getLeadAndTwoContainer = ({ hasSupports, supportCount }) => {
+  const LeadAndTwoContainer = withResponsiveStyles(View, {
     base: () => `
     flex: 1;
     flex-grow: 1;
@@ -80,8 +80,8 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
       flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};;
     `
   });
-  LeadContainer.displayName = "LeadContainer";
-  return LeadContainer;
+  LeadAndTwoContainer.displayName = "LeadAndTwoContainer";
+  return LeadAndTwoContainer;
 };
 
 export const getSupportContainer = ({ index }) => {

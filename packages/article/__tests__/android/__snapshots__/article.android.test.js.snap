@@ -1123,7 +1123,7 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -2580,7 +2580,7 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -2667,7 +2667,7 @@ exports[`Article test on android renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -2731,7 +2731,7 @@ exports[`Article test on android renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -4171,7 +4171,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -5625,7 +5625,7 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -7095,7 +7095,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -7161,7 +7161,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -7225,7 +7225,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -8699,7 +8699,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -10135,7 +10135,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -10201,7 +10201,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -10265,7 +10265,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -11046,7 +11046,7 @@ exports[`Article test on android renders article with video asset 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -12676,7 +12676,7 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "color": "#1D1D1B",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 28,
+              "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 37,
               "marginBottom": 7,
@@ -12763,7 +12763,7 @@ exports[`Article test on android renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -12827,7 +12827,7 @@ exports[`Article test on android renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 10,
+                      "fontSize": 12,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },

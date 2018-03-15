@@ -4,10 +4,10 @@ import propTypes from "./proptypes";
 import styles from "../styles";
 import config from "./config";
 
-const DefaultSlice = ({ itemCount, renderItems }) => (
+const StandardSlice = ({ itemCount, renderItems }) => (
   <View style={styles.container}>
     {renderItems(config(itemCount)).map((item, index) => (
-      <View key={item.key} style={styles.itemContainer}>
+      <View key={item.props.id} style={styles.itemContainer}>
         <View style={[styles.item, { paddingTop: index === 0 ? 0 : 10 }]}>
           {item}
         </View>
@@ -16,6 +16,6 @@ const DefaultSlice = ({ itemCount, renderItems }) => (
   </View>
 );
 
-DefaultSlice.propTypes = propTypes;
+StandardSlice.propTypes = propTypes;
 
-export default DefaultSlice;
+export default StandardSlice;

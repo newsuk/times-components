@@ -9,7 +9,8 @@ export const getSerialisableFunctionErrors = f => {
       rules: { "no-undef": "error" }
     })
     .filter(e => !/'cov_\w+' is not defined./.test(e.message))
-    .filter(e => !/'console' is not defined./.test(e.message));
+    .filter(e => !/'console' is not defined./.test(e.message))
+    .filter(e => !/'Promise' is not defined./.test(e.message));
 };
 
 export const reportErrors = (errors, source) => {

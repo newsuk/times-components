@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   heading: {
     alignSelf: "center",
     fontFamily: fonts.headline,
-    fontSize: 35,
+    fontSize: fontSizes.leadHeadline,
     textAlign: "center",
     color: colours.functional.brandColour,
     marginBottom: 12
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   message: {
     alignSelf: "center",
     fontFamily: fonts.bodyRegular,
-    fontSize: 18,
+    fontSize: fontSizes.body,
     textAlign: "center",
     color: colours.functional.secondary
   },

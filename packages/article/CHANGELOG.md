@@ -3,6 +3,95 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.48.5"></a>
+## [0.48.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.4...@times-components/article@0.48.5) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.48.4"></a>
+## [0.48.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.3...@times-components/article@0.48.4) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.48.3"></a>
+## [0.48.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.2...@times-components/article@0.48.3) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.48.2"></a>
+## [0.48.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.1...@times-components/article@0.48.2) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.48.1"></a>
+## [0.48.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.0...@times-components/article@0.48.1) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.47.1...@times-components/article@0.48.0) (2018-03-14)
+
+
+### Features
+
+* adding pixel ads ([#734](https://github.com/newsuk/times-components/issues/734)) ([eb4d17d](https://github.com/newsuk/times-components/commit/eb4d17d))
+
+
+
+
+<a name="0.47.2"></a>
+## [0.47.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.47.1...@times-components/article@0.47.2) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.47.1"></a>
+## [0.47.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.47.0...@times-components/article@0.47.1) (2018-03-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.46.0...@times-components/article@0.47.0) (2018-03-13)
+
+
+### Features
+
+* change related links to articles ([#726](https://github.com/newsuk/times-components/issues/726)) ([bf619d3](https://github.com/newsuk/times-components/commit/bf619d3))
+
+
+
+
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.45.2...@times-components/article@0.46.0) (2018-03-13)
+
+
+### Features
+
+* add support for article section ([#722](https://github.com/newsuk/times-components/issues/722)) ([b36133d](https://github.com/newsuk/times-components/commit/b36133d))
+
+
+
+
 <a name="0.45.2"></a>
 ## [0.45.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.45.1...@times-components/article@0.45.2) (2018-03-13)
 

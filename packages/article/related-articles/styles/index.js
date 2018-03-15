@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
@@ -17,7 +17,7 @@ export default StyleSheet.create({
   },
   title: {
     fontFamily: fonts.headline,
-    fontSize: 26,
+    fontSize: fontSizes.pageComponentHeadline,
     color: colours.functional.primary
   },
   headline: {

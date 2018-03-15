@@ -1,15 +1,15 @@
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
-import { getSeparator, SliceContainer } from "../shared.responsive";
+import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
-  getLeadContainer,
+  getLeadAndTwoContainer,
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
-import { leadConfig, supportConfig, getConfigWrapper } from "./config";
+import { leadAndTwoConfig, supportConfig, getConfigWrapper } from "./config";
 
-const LeadSlice = ({ lead, support1, support2 }) => {
+const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
   const supports = [support1(supportConfig), support2(supportConfig)].filter(
     support => support !== null
   );
@@ -17,14 +17,17 @@ const LeadSlice = ({ lead, support1, support2 }) => {
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
-  const LeadContainer = getLeadContainer({ hasSupports, supportCount });
+  const LeadAndTwoContainer = getLeadAndTwoContainer({
+    hasSupports,
+    supportCount
+  });
   const Separator = getSeparator({ hasLeftRightMargin: false });
 
   return (
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadContainer>{lead(leadConfig)}</LeadContainer>
+          <LeadAndTwoContainer>{lead(leadAndTwoConfig)}</LeadAndTwoContainer>
           {hasSupports && <Separator />}
           {hasSupports && (
             <SupportsContainer>
@@ -32,8 +35,8 @@ const LeadSlice = ({ lead, support1, support2 }) => {
                 const SupportContainer = getSupportContainer({ index });
                 SupportContainer.displayName = "SupportContainer";
                 return (
-                  <SupportContainer key={`support-container-${support[0].key}`}>
-                    {support[0]}
+                  <SupportContainer key={support.props.id}>
+                    {support}
                   </SupportContainer>
                 );
               })}
@@ -45,7 +48,7 @@ const LeadSlice = ({ lead, support1, support2 }) => {
   );
 };
 
-LeadSlice.propTypes = propTypes;
-LeadSlice.defaultProps = defaultProps;
+LeadAndTwoSlice.propTypes = propTypes;
+LeadAndTwoSlice.defaultProps = defaultProps;
 
-export default LeadSlice;
+export default LeadAndTwoSlice;

@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Image from "@times-components/image";
 import Gradient from "@times-components/gradient";
 import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
-import styles from "./styles/shared";
+import styles from "./styles";
 
 const Loading = ({
   contentContainerClass,

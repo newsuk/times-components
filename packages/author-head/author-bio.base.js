@@ -2,13 +2,13 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 import { renderTrees, treePropType } from "@times-components/markup";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   bio: {
     fontFamily: fonts.body,
     textAlign: "center",
-    fontSize: 16,
+    fontSize: fontSizes.secondary,
     lineHeight: 26,
     color: colours.functional.primary
   }

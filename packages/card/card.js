@@ -4,7 +4,7 @@ import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
 import Loading from "./card-loading";
-import styles from "./styles/shared";
+import styles from "./styles";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {

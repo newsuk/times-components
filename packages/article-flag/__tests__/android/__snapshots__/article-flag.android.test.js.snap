@@ -43,7 +43,7 @@ exports[`Article Flag test on android renders Exclusive flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
         },
@@ -102,7 +102,7 @@ exports[`Article Flag test on android renders New flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
         },
@@ -161,7 +161,7 @@ exports[`Article Flag test on android renders Sponsored flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
         },
@@ -220,7 +220,7 @@ exports[`Article Flag test on android renders Updated flag correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
         },
@@ -279,7 +279,7 @@ exports[`Article Flag test on android renders correctly 1`] = `
       Array [
         Object {
           "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 10,
+          "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.4,
         },

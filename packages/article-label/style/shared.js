@@ -1,9 +1,9 @@
-import { fonts } from "@times-components/styleguide";
+import { fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = {
   title: {
     fontFamily: fonts.supporting,
-    fontSize: 12,
+    fontSize: fontSizes.cardMetaMobile,
     lineHeight: 12,
     fontWeight: "400",
     letterSpacing: 1.2

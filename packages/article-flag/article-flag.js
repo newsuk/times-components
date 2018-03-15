@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
 
 // When changing styles please debug both web, android and ios because
@@ -18,7 +18,7 @@ const styles = {
   },
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: Platform.OS === "android" ? 10 : 12,
+    fontSize: fontSizes.flags,
     fontWeight: "400",
     letterSpacing: 1.4
   }

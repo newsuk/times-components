@@ -41,7 +41,7 @@ describe("checkSerialisableFunction", () => {
   });
 
   it("logs errors to the console", () => {
-    jest.spyOn(console, "error").mockImplementation(() => {});
+    jest.spyOn(console, "error").mockImplementation();
     reportErrors(getSerialisableFunctionErrors(() => {}));
     // eslint-disable-next-line no-console
     expect(console.error).not.toHaveBeenCalled();
