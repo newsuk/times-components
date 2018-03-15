@@ -1,12 +1,12 @@
 import { colours } from "@times-components/styleguide";
+import sharedStyles from "./shared";
 
 const topicStyles = {
+  ...sharedStyles,
   topicsContainer: {
-    borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1,
-  },
-  topicsMetaContainer: {
-    justifyContent: "flex-start"
+    ...sharedStyles.topicsContainer,
+    marginLeft: 10,
+    marginRight: 10
   }
 };
 

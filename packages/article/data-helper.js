@@ -53,7 +53,8 @@ const prepareDataForListView = articleData => {
         };
       }
       return item;
-    })
+    }),
+    { type: "topics", data: { topics: articleData.topics } }
   ];
 
   return prepend(

@@ -352,6 +352,12 @@ exports[`Article test on ios renders article no flags 1`] = `
       },
       Object {
         "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
+      Object {
+        "data": Object {
           "relatedArticles": Array [
             Object {
               "byline": Array [
@@ -1797,6 +1803,12 @@ exports[`Article test on ios renders article no label 1`] = `
         },
         "index": 12,
         "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
       },
       Object {
         "data": Object {
@@ -3350,6 +3362,12 @@ exports[`Article test on ios renders article no label no flags 1`] = `
       },
       Object {
         "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
+      Object {
+        "data": Object {
           "relatedArticles": Array [
             Object {
               "byline": Array [
@@ -4763,6 +4781,12 @@ exports[`Article test on ios renders article no label no flags no standfirst 1`]
       },
       Object {
         "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
+      Object {
+        "data": Object {
           "relatedArticles": Array [
             Object {
               "byline": Array [
@@ -6156,6 +6180,12 @@ exports[`Article test on ios renders article no standfirst 1`] = `
         },
         "index": 12,
         "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
       },
       Object {
         "data": Object {
@@ -7721,6 +7751,12 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
       },
       Object {
         "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
+      Object {
+        "data": Object {
           "relatedArticles": Array [
             Object {
               "byline": Array [
@@ -9149,6 +9185,12 @@ exports[`Article test on ios renders article no standfirst no label 1`] = `
       },
       Object {
         "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
+      Object {
+        "data": Object {
           "relatedArticles": Array [
             Object {
               "byline": Array [
@@ -10500,6 +10542,12 @@ exports[`Article test on ios renders article with video asset 1`] = `
         "index": 4,
         "type": "articleBodyRow",
       },
+      Object {
+        "data": Object {
+          "topics": undefined,
+        },
+        "type": "topics",
+      },
     ]
   }
   disableVirtualization={false}
@@ -11127,6 +11175,10 @@ exports[`Article test on ios renders article with video asset 1`] = `
         </Text>
       </View>
     </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
   </View>
 </RCTScrollView>
 `;
@@ -11544,6 +11596,38 @@ exports[`Article test on ios renders full article 1`] = `
         },
         "index": 18,
         "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
+          "topics": Array [
+            Object {
+              "id": "football",
+              "name": "Football",
+              "order": 1,
+            },
+            Object {
+              "id": "manchester-united",
+              "name": "Manchester United FC",
+              "order": 4,
+            },
+            Object {
+              "id": "chelsea",
+              "name": "Chelsea FC",
+              "order": 2,
+            },
+            Object {
+              "id": "arsenal",
+              "name": "Arsenal",
+              "order": 3,
+            },
+            Object {
+              "id": "rugby-union",
+              "name": "Rugby Union",
+              "order": 5,
+            },
+          ],
+        },
+        "type": "topics",
       },
       Object {
         "data": Object {
