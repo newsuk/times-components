@@ -21,7 +21,8 @@ class Ad extends Component {
   constructor(props) {
     super(props);
     const { width } = Dimensions.get("window");
-    this.config = getSlotConfig(props.section, props.pos, width);
+    this.windowWidth = width;
+    this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
@@ -30,9 +31,6 @@ class Ad extends Component {
     this.slots = [];
     // FIXME make this generic, to be fixed in REPLAT-1370
     this.slotsForPrebid = ["ad-header", "ad-article-inline"];
-    this.slotsForPrebid.map(slot =>
-      this.slots.push(getPrebidSlotConfig(slot, "article", width))
-    );
   }
 
   setAdReady = () => {
@@ -42,9 +40,26 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
+    this.slotsForPrebid.map(slot =>
+      this.slots.push(
+        getPrebidSlotConfig(
+          slot,
+          "article",
+          this.windowWidth,
+          adConfig.biddersConfig.bidders
+        )
+      )
+    );
+
     const data = {
       config: this.config,
-      prebidConfig: this.prebidConfig,
+      prebidConfig: Object.assign(this.prebidConfig, {
+        bidders: adConfig.biddersConfig.bidders,
+        timeout: adConfig.biddersConfig.timeout,
+        minPrice: adConfig.biddersConfig.minPrice,
+        maxBid: adConfig.biddersConfig.maxBid,
+        bucketSize: adConfig.biddersConfig.bucketSize
+      }),
       slots: this.slots,
       pos: this.props.pos,
       networkId: adConfig.networkId,

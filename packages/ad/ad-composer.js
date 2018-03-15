@@ -17,7 +17,8 @@ AdComposer.propTypes = {
     networkId: PropTypes.string.isRequired,
     adUnit: PropTypes.string.isRequired,
     pageTargeting: PropTypes.shape({}),
-    slotTargeting: PropTypes.shape({})
+    slotTargeting: PropTypes.shape({}),
+    biddersConfig: PropTypes.shape({})
   })
 };
 
@@ -31,6 +32,37 @@ AdComposer.defaultProps = {
     },
     slotTargeting: {
       section: "news"
+    },
+    biddersConfig: {
+      timeout: 3000,
+      minPrice: 0.01,
+      maxBid: 15,
+      bucketSize: 0.25,
+      bidders: {
+        appnexus: {
+          placementId: "5823281"
+        },
+        rubicon: {
+          accountId: "14062",
+          siteId: "70608",
+          zoneId: "335918"
+        },
+        amazon: {
+          accountId: "3360"
+        },
+        criteo: {
+          zoneMap: {
+            "120x600": "764877"
+          }
+        },
+        pubmatic: {
+          accountId: "156034",
+          adSlotPrefix: "Thetimes"
+        },
+        indexExchange: {
+          siteId: "188830"
+        }
+      }
     }
   }
 };

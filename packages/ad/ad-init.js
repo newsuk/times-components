@@ -167,7 +167,7 @@ const adInit = args => {
           prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
-        window.pbjs.bidderSettings = prebidConfig.bidderSettings;
+        window.pbjs.bidderSettings = prebidConfig.bidderSettings(prebidConfig);
         if (amazonAccountID) {
           this.setupApstag(amazonAccountID, prebidConfig.timeout);
           // FIXME: at the moment we configure the amazon bids with just one slot (the first one)

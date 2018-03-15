@@ -10,6 +10,7 @@ import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
 import slotTargeting from "./fixtures/slot-options.json";
+import biddersConfig from "./fixtures/bidders-config.json";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
@@ -18,7 +19,8 @@ const adConfig = pos =>
     {},
     adConfigBase,
     { pageTargeting },
-    { slotTargeting: slotTargeting[pos] }
+    { slotTargeting: slotTargeting[pos] },
+    { biddersConfig }
   );
 let DOMContext;
 if (window.document) {
