@@ -842,9 +842,9 @@ arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-art@^0.10.0, art@^0.10.1:
+art@^0.10.0, art@^0.10.1, "art@git+https://github.com/sebmarkbage/art.git#658d84d424ee0bf385337fdc56d429a74b533b27":
   version "0.10.1"
-  resolved "https://registry.yarnpkg.com/art/-/art-0.10.1.tgz#38541883e399225c5e193ff246e8f157cf7b2146"
+  resolved "git+https://github.com/sebmarkbage/art.git#658d84d424ee0bf385337fdc56d429a74b533b27"
 
 asap@~2.0.3:
   version "2.0.6"

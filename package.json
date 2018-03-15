@@ -154,5 +154,9 @@
   "dependencies": {
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1"
+  },
+  "resolutions": {
+    "art": "git+https://github.com/sebmarkbage/art.git#658d84d424ee0bf385337fdc56d429a74b533b27" 
   }
 }
+
