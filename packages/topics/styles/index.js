@@ -9,7 +9,9 @@ const styles = {
     borderWidth: 1,
     borderColor: colours.functional.keyline,
     borderRadius: 1,
-    margin: 10
+    marginTop: 10,
+    marginRight: 5,
+    marginLeft: 5
   },
   text: {
     color: colours.functional.secondary,

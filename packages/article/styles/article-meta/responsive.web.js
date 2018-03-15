@@ -23,5 +23,5 @@ export const Meta = withResponsiveStyles(View, {
     margin-left: 0;
     margin-right: 0;
   `,
-  wideUp: () => "padding-top: 0px;"
+  wideUp: () => "padding-top: 0px; margin-bottom: 0"
 });

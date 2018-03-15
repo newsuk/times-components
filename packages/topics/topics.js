@@ -5,11 +5,11 @@ import orderBy from "lodash.orderby";
 import Topic from "./topic";
 import styles from "./styles";
 
-const Topics = ({ topics }) => {
-  const orderedTopics = orderBy(topics, "order", "desc");
+const Topics = ({ topics, style }) => {
+  const orderedTopics = orderBy(topics, "order", "asc");
 
   return (
-    <View style={styles.topicGroup}>
+    <View style={[styles.topicGroup, style]}>
       {orderedTopics.map(topic => (
         <Topic key={topic.id} id={topic.id} name={topic.name} />
       ))}
@@ -18,11 +18,11 @@ const Topics = ({ topics }) => {
 };
 
 Topics.propTypes = {
-  topics: PropTypes.shape({
+  topics: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     order: PropTypes.number.isRequired
-  }).isRequired
+  }).isRequired).isRequired
 }
 
 export default Topics;
