@@ -121,6 +121,9 @@ const adInit = args => {
           Object.keys(slotTargeting || {}).forEach(key =>
             slot.setTargeting(key, slotTargeting[key])
           );
+          const randomTestingGroup = Math.floor(Math.random() * 10).toString();
+          slot.setTargeting("timestestgroup", randomTestingGroup);
+          slot.setTargeting("pos", containerID);
           window.googletag.display(containerID);
         });
       },

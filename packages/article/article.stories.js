@@ -70,7 +70,11 @@ const adConfig = {
     label: "Label"
   },
   slotTargeting: {
-    path: "/news"
+    path: "/news",
+    sec_id: "null",
+    section: "news",
+    zone: "current_edition",
+    slot: "news"
   },
   biddersConfig: {
     timeout: 3000,
