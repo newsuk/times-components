@@ -67,7 +67,7 @@
       "searchDir": [
         "./packages"
       ],
-      "pattern": "**!(node_modules)/*.stories!(.web).js",
+      "pattern": "**!(node_modules)/**/*.stories!(.web).js",
       "outputFile": "./.storybook.native/story-loader.js"
     },
     "commitizen": {
