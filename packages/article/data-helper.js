@@ -49,7 +49,7 @@ const prepareDataForListView = articleData => {
       if (rowData.name === "ad") {
         item.data.attributes = {
           ...item.data.attributes,
-          ...{ section: articleData.section }
+          ...{ section: articleData.section, contextUrl: articleData.url }
         };
       }
       return item;

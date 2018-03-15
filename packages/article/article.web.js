@@ -36,15 +36,15 @@ class ArticlePage extends React.Component {
       publishedTime,
       publicationName,
       content,
-      section
+      section,
+      url
     } = articleData;
-
     const leadAssetProps = getLeadAsset(articleData);
 
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad pos="header" style={adStyle} section={section} />
+          <Ad pos="header" style={adStyle} section={section} contextUrl={url} />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" {...leadAssetProps} />
@@ -67,13 +67,17 @@ class ArticlePage extends React.Component {
             </MetaContainer>
             <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
-              <ArticleBody content={content} section={section} />
+              <ArticleBody
+                content={content}
+                section={section}
+                contextUrl={url}
+              />
             </BodyContainer>
           </View>
         </MainContainer>
-        <Ad pos="pixel" section={section} />
-        <Ad pos="pixelteads" section={section} />
-        <Ad pos="pixelskin" section={section} />
+        <Ad pos="pixel" section={section} contextUrl={url} />
+        <Ad pos="pixelteads" section={section} contextUrl={url} />
+        <Ad pos="pixelskin" section={section} contextUrl={url} />
       </Fragment>
     );
   }
