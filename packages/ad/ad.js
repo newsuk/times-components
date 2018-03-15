@@ -27,10 +27,6 @@ class Ad extends Component {
     this.state = {
       adReady: false
     };
-
-    this.slots = [];
-    // FIXME make this generic, to be fixed in REPLAT-1370
-    this.slotsForPrebid = ["ad-header", "ad-article-inline"];
   }
 
   setAdReady = () => {
@@ -40,6 +36,8 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
+    this.slots = [];
+    this.slotsForPrebid = adConfig.bidderSlots;
     this.slotsForPrebid.map(slot =>
       this.slots.push(
         getPrebidSlotConfig(

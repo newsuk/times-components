@@ -19,7 +19,8 @@ const adConfig = pos =>
     adConfigBase,
     { pageTargeting },
     { slotTargeting: slotTargeting[pos] },
-    { biddersConfig }
+    { biddersConfig },
+    { bidderSlots: ["ad-header", "ad-article-inline"] }
   );
 let DOMContext;
 if (window.document) {
