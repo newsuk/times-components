@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.49.10",
+  "version": "0.49.11",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -62,15 +62,15 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.19.6",
-    "@times-components/author-head": "0.21.7",
+    "@times-components/article-summary": "0.19.7",
+    "@times-components/author-head": "0.21.8",
     "@times-components/card": "0.22.5",
     "@times-components/error-view": "0.8.17",
     "@times-components/gradient": "0.6.4",
     "@times-components/image": "1.14.5",
     "@times-components/link": "0.15.4",
     "@times-components/pagination": "0.15.4",
-    "@times-components/provider": "0.24.2",
+    "@times-components/provider": "0.24.3",
     "@times-components/responsive-styles": "0.4.4",
     "@times-components/styleguide": "0.4.3",
     "@times-components/tracking": "0.9.7",

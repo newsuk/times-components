@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.21.7",
+  "version": "0.21.8",
   "main": "author-head",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -66,7 +66,7 @@
     "@times-components/icons": "0.3.4",
     "@times-components/image": "1.14.5",
     "@times-components/link": "0.15.4",
-    "@times-components/markup": "0.24.4",
+    "@times-components/markup": "0.24.5",
     "@times-components/responsive-styles": "0.4.4",
     "@times-components/styleguide": "0.4.3",
     "@times-components/tracking": "0.9.7",
