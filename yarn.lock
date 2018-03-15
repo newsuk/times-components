@@ -361,12 +361,6 @@
 "@types/async@2.0.47":
   version "2.0.47"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"
-"@times-components/styleguide@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.4.0.tgz#8e538b787d0e6fb71c498b9dc7fac1cecb6fc76e"
-  dependencies:
-    "@times-components/responsive-styles" "0.4.2"
-    prop-types "15.6.0"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.1"
@@ -4066,9 +4060,25 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.6.0:
+dextrose@../dextrose:
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.6.0.tgz#76c9117d7001eb2b867520bdd620d857950f5b28"
+  dependencies:
+    aws-sdk "^2.179.0"
+    babel-core "6.26.0"
+    babel-preset-react-native "4.0.0"
+    commander " 2.12.1"
+    nock "^9.1.9"
+    npmlog "4.1.2"
+    osnap "^1.1.0"
+    pug "^2.0.0-rc.4"
+    request "^2.83.0"
+    socket.io "^2.0.4"
+    socket.io-client "^2.0.4"
+    wd "1.4.1"
+
+dextrose@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.6.1.tgz#2119570a363702d2c182bf92f0957733ea2d063c"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
@@ -7183,7 +7193,7 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jsdom@^9.12.0:
+jsdom@9.12.0, jsdom@^9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
   dependencies:
