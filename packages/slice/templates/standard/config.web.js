@@ -8,10 +8,10 @@ export const summaryConfig = {
 };
 
 export default {
-  contentContainerClass: "defaultSliceContentContainerClass",
-  headlineClass: "defaultSliceHeadlineClass",
-  imageContainerClass: "defaultSliceImageContainerClass",
-  summaryClass: "defaultSliceSummaryClass"
+  contentContainerClass: "standardSliceContentContainerClass",
+  headlineClass: "standardSliceHeadlineClass",
+  imageContainerClass: "standardSliceImageContainerClass",
+  summaryClass: "standardSliceSummaryClass"
 };
 
 export const getConfigWrapper = ({ itemCount }) => {

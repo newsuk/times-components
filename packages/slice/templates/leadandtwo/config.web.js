@@ -7,20 +7,18 @@ export const summaryConfig = {
   3: [125, 175]
 };
 
-export const leadConfig = {
-  contentContainerClass: "leadSliceContentContainerClass",
-  headlineClass: "leadSliceHeadlineClass",
-  imageContainerClass: "leadSliceImageContainerClass",
-  summaryClass: "leadSliceSummaryClass",
-  ...summaryConfig
+export const leadAndTwoConfig = {
+  contentContainerClass: "leadAndTwoSliceContentContainerClass",
+  headlineClass: "leadAndTwoSliceHeadlineClass",
+  imageContainerClass: "leadAndTwoSliceImageContainerClass",
+  summaryClass: "leadAndTwoSliceSummaryClass"
 };
 
 export const supportConfig = {
   contentContainerClass: "supportSliceContentContainerClass",
   headlineClass: "supportSliceHeadlineClass",
   imageContainerClass: "supportSliceImageContainerClass",
-  summaryClass: "supportSliceSummaryClass",
-  ...summaryConfig
+  summaryClass: "supportSliceSummaryClass"
 };
 
 export const getConfigWrapper = ({ supportCount }) => {

@@ -15,6 +15,7 @@ import {
 } from "./config";
 
 const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
+
   const supports = [support1(supportConfig), support2(supportConfig)].filter(
     support => support !== null
   );
@@ -29,14 +30,17 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
   });
   const Separator = getSeparator({ hasLeftRightMargin: false });
 
-  leadConfig.summaryConfig = summaryConfig[itemCount];
-  supportConfig.summaryConfig = summaryConfig[itemCount];
+  const config = {
+    ...leadAndTwoConfig,
+    summaryConfig: summaryConfig[itemCount]
+  };
 
+  console.log(config);
   return (
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadAndTwoContainer>{lead(leadAndTwoConfig)}</LeadAndTwoContainer>
+          <LeadAndTwoContainer>{lead(config)}</LeadAndTwoContainer>
           {hasSupports && <Separator />}
           {hasSupports && (
             <SupportsContainer>

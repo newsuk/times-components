@@ -51,6 +51,7 @@ const RelatedArticleItem = ({
                   <ArticleSummaryContent
                     className={`summaryHidden summary${item}Class`}
                     ast={article[`summary${item}`]}
+                    key={item}
                   />
                 ))}
               </View>
