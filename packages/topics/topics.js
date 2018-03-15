@@ -18,11 +18,13 @@ const Topics = ({ topics, style }) => {
 };
 
 Topics.propTypes = {
-  topics: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    order: PropTypes.number.isRequired
-  }).isRequired).isRequired
-}
+  topics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      order: PropTypes.number.isRequired
+    }).isRequired
+  ).isRequired
+};
 
 export default Topics;
