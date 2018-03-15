@@ -1,9 +1,10 @@
 {
-    "timeout": 3000,
-    "minPrice": 0.01,
-    "maxBid": 15,
-    "bucketSize": 0.25,
-    "bidders": {"appnexus": {
+  "timeout": 3000,
+  "minPrice": 0.01,
+  "maxBid": 15,
+  "bucketSize": 0.25,
+  "bidders": {
+    "appnexus": {
       "placementId": "5823281"
     },
     "rubicon": {
@@ -33,5 +34,6 @@
     },
     "indexExchange": {
       "siteId": "188830"
-    }}
+    }
   }
+}

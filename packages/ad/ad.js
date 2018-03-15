@@ -41,17 +41,24 @@ class Ad extends Component {
 
   renderAd(adConfig) {
     this.slotsForPrebid.map(slot =>
-      this.slots.push(getPrebidSlotConfig(slot, "article", this.windowWidth, adConfig.biddersConfig.bidders))
+      this.slots.push(
+        getPrebidSlotConfig(
+          slot,
+          "article",
+          this.windowWidth,
+          adConfig.biddersConfig.bidders
+        )
+      )
     );
 
     const data = {
       config: this.config,
       prebidConfig: Object.assign(this.prebidConfig, {
         bidders: adConfig.biddersConfig.bidders,
-        timeout:  adConfig.biddersConfig.timeout,
-        minPrice:  adConfig.biddersConfig.minPrice,
-        maxBid:  adConfig.biddersConfig.maxBid,
-        bucketSize:  adConfig.biddersConfig.bucketSize,
+        timeout: adConfig.biddersConfig.timeout,
+        minPrice: adConfig.biddersConfig.minPrice,
+        maxBid: adConfig.biddersConfig.maxBid,
+        bucketSize: adConfig.biddersConfig.bucketSize
       }),
       slots: this.slots,
       pos: this.props.pos,

@@ -1,41 +1,39 @@
 import { getAdSizes } from "./generate-config";
 
-const bidderSettings = {
-  standard: {
-    adserverTargeting: [
-      {
-        key: "hb_bidder",
-        val(bidResponse) {
-          return bidResponse.bidder;
-        }
-      },
-      {
-        key: "hb_adid",
-        val(bidResponse) {
-          return bidResponse.adId;
-        }
-      },
-      {
-        key: "hb_pb",
-        val(bidResponse) {
-          if (bidResponse.cpm > maxBid) {
-            return maxBid.toFixed(2);
-          }
-          if (bidResponse.cpm < bucketSize) {
-            return minPrice.toFixed(2);
-          }
-          return (bidResponse.cpm - bidResponse.cpm % bucketSize).toFixed(2);
-        }
-      },
-      {
-        key: "hb_size",
-        val(bidResponse) {
-          return bidResponse.size;
-        }
+const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
+  adserverTargeting: [
+    {
+      key: "hb_bidder",
+      val(bidResponse) {
+        return bidResponse.bidder;
       }
-    ]
-  }
-};
+    },
+    {
+      key: "hb_adid",
+      val(bidResponse) {
+        return bidResponse.adId;
+      }
+    },
+    {
+      key: "hb_pb",
+      val(bidResponse) {
+        if (bidResponse.cpm > maxBid) {
+          return maxBid.toFixed(2);
+        }
+        if (bidResponse.cpm < bucketSize) {
+          return minPrice.toFixed(2);
+        }
+        return (bidResponse.cpm - bidResponse.cpm % bucketSize).toFixed(2);
+      }
+    },
+    {
+      key: "hb_size",
+      val(bidResponse) {
+        return bidResponse.size;
+      }
+    }
+  ]
+});
 
 const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
   const sizes = getAdSizes(pos, width);

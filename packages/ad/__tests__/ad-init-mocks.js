@@ -71,7 +71,7 @@ export const makeAdInitMocks = () => {
         maxBid: 0,
         bucketSize: 0,
         bidders: {},
-        bidderSettings: {}
+        bidderSettings: () => {}
       },
       slots: []
     },
