@@ -18,7 +18,8 @@ import {
   HeaderContainer,
   MetaContainer,
   BodyContainer,
-  HeaderAdContainer
+  HeaderAdContainer,
+  SponsoredAdContainer
 } from "./styles/responsive";
 
 const adStyle = {
@@ -75,9 +76,12 @@ class ArticlePage extends React.Component {
             </BodyContainer>
           </View>
         </MainContainer>
-        <Ad pos="pixel" section={section} contextUrl={url} />
-        <Ad pos="pixelteads" section={section} contextUrl={url} />
-        <Ad pos="pixelskin" section={section} contextUrl={url} />
+        <SponsoredAdContainer key="sponsoredAd">
+          <Ad pos="article-sponsored-ad" style={adStyle} section={section} />
+        </SponsoredAdContainer>
+        <Ad pos="pixel" section={section} />
+        <Ad pos="pixelteads" section={section} />
+        <Ad pos="pixelskin" section={section} />
       </Fragment>
     );
   }
