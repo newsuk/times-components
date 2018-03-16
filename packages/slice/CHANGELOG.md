@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.10.8...@times-components/slice@0.11.0) (2018-03-16)
+
+
+### Features
+
+* add knobs to Slice stories and put them in relevant directories ([#744](https://github.com/newsuk/times-components/issues/744)) ([d8584b4](https://github.com/newsuk/times-components/commit/d8584b4))
+
+
+
+
 <a name="0.10.8"></a>
 ## [0.10.8](https://github.com/newsuk/times-components/compare/@times-components/slice@0.10.7...@times-components/slice@0.10.8) (2018-03-16)
 
