@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gestures",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "gestures",
   "scripts": {
