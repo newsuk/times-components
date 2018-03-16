@@ -9,11 +9,15 @@ module.exports = () => {
   it("renders a group of Topics in the correct order", () => {
     const wrapper = shallow(<Topics topics={topicData} />);
 
-    expect(wrapper).toMatchSnapshot("1. Render a group of topics in the correct order");
+    expect(wrapper).toMatchSnapshot(
+      "1. Render a group of topics in the correct order"
+    );
   });
 
   it("renders a single Topic", () => {
-    const wrapper = shallow(<Topic id={topicData[0].id} name={topicData[0].name} />);
+    const wrapper = shallow(
+      <Topic id={topicData[0].id} name={topicData[0].name} />
+    );
 
     expect(wrapper).toMatchSnapshot("2. Render a single Topic");
   });
