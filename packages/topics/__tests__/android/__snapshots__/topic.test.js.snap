@@ -9,7 +9,7 @@ exports[`Topic test on android:  renders a group of Topics in the correct order 
         "flexWrap": "wrap",
         "justifyContent": "center",
       },
-      undefined,
+      null,
     ]
   }
 >

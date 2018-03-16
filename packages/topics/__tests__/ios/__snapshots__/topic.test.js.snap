@@ -9,7 +9,7 @@ exports[`Topic test on ios:  renders a group of Topics in the correct order 1`] 
         "flexWrap": "wrap",
         "justifyContent": "center",
       },
-      undefined,
+      null,
     ]
   }
 >
