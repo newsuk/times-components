@@ -1,10 +1,16 @@
 # Slice
 
-Slices are re-usable templates. A slice template lays itself out according to a set of self-defined rules. The slice also provides a suggested default configuration that can be applied to the given components that are to be laid out within the template - this configuration is provided in the form of CSS class names for web, and a JS API for native. The consumer of slice can opt-in or out of utilising these suggested default configurations
+Slices are re-usable templates. A slice template lays itself out according to a
+set of self-defined rules. The slice also provides a suggested default
+configuration that can be applied to the given components that are to be laid
+out within the template - this configuration is provided in the form of CSS
+class names for web, and a JS API for native. The consumer of slice can opt-in
+or out of utilising these suggested default configurations
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this package
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
+package
 
 ## Running the code
 
@@ -21,7 +27,8 @@ yarn lint
 
 ## Testing
 
-This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each platform with [jest](https://facebook.github.io/jest/).
+This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
+platform with [jest](https://facebook.github.io/jest/).
 
 ```
 yarn test:all
@@ -36,4 +43,5 @@ to see our available slice templates.
 
 ## Future
 
-Template creation could be done using a CLI to create default files in the accepted architectural format
+Template creation could be done using a CLI to create default files in the
+accepted architectural format
