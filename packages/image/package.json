@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.14.5",
+  "version": "1.14.6",
   "main": "image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -48,10 +48,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gestures": "1.2.12",
-    "@times-components/gradient": "0.6.4",
-    "@times-components/link": "0.15.4",
-    "@times-components/styleguide": "0.4.3",
+    "@times-components/gestures": "1.2.13",
+    "@times-components/gradient": "0.6.5",
+    "@times-components/link": "0.15.5",
+    "@times-components/styleguide": "0.4.4",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
