@@ -44,6 +44,7 @@
   "dependencies": {
     "@times-components/link": "0.15.4",
     "@times-components/styleguide": "0.4.3",
+    "enzyme": "3.3.0",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },

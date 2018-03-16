@@ -1,313 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic test on web:  renders a group of Topics in the correct order 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+exports[`1. Render a group of topics in the correct order 1`] = `
+<View
   style={
-    Object {
-      "WebkitBoxLines": "multiple",
-      "WebkitFlexWrap": "wrap",
-      "flexWrap": "wrap",
-      "msFlexWrap": "wrap",
-    }
+    Array [
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "center",
+      },
+      null,
+    ]
   }
 >
-  <a
-    href="/topic/football"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1)",
-          "borderBottomLeftRadius": "1px",
-          "borderBottomRightRadius": "1px",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(219,219,219,1)",
-          "borderLeftWidth": "1px",
-          "borderRightColor": "rgba(219,219,219,1)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1)",
-          "borderTopLeftRadius": "1px",
-          "borderTopRightRadius": "1px",
-          "borderTopWidth": "1px",
-          "marginRight": "10px",
-          "marginTop": "10px",
-          "paddingBottom": "12px",
-          "paddingLeft": "15px",
-          "paddingRight": "15px",
-          "paddingTop": "12px",
-        }
-      }
-    >
-      <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": "13px",
-          }
-        }
-      >
-        Football
-      </div>
-    </div>
-  </a>
-  <a
-    href="/topic/chelsea"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1)",
-          "borderBottomLeftRadius": "1px",
-          "borderBottomRightRadius": "1px",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(219,219,219,1)",
-          "borderLeftWidth": "1px",
-          "borderRightColor": "rgba(219,219,219,1)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1)",
-          "borderTopLeftRadius": "1px",
-          "borderTopRightRadius": "1px",
-          "borderTopWidth": "1px",
-          "marginRight": "10px",
-          "marginTop": "10px",
-          "paddingBottom": "12px",
-          "paddingLeft": "15px",
-          "paddingRight": "15px",
-          "paddingTop": "12px",
-        }
-      }
-    >
-      <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": "13px",
-          }
-        }
-      >
-        Chelsea FC
-      </div>
-    </div>
-  </a>
-  <a
-    href="/topic/arsenal"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1)",
-          "borderBottomLeftRadius": "1px",
-          "borderBottomRightRadius": "1px",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(219,219,219,1)",
-          "borderLeftWidth": "1px",
-          "borderRightColor": "rgba(219,219,219,1)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1)",
-          "borderTopLeftRadius": "1px",
-          "borderTopRightRadius": "1px",
-          "borderTopWidth": "1px",
-          "marginRight": "10px",
-          "marginTop": "10px",
-          "paddingBottom": "12px",
-          "paddingLeft": "15px",
-          "paddingRight": "15px",
-          "paddingTop": "12px",
-        }
-      }
-    >
-      <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": "13px",
-          }
-        }
-      >
-        Arsenal
-      </div>
-    </div>
-  </a>
-  <a
-    href="/topic/manchester-united"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1)",
-          "borderBottomLeftRadius": "1px",
-          "borderBottomRightRadius": "1px",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(219,219,219,1)",
-          "borderLeftWidth": "1px",
-          "borderRightColor": "rgba(219,219,219,1)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1)",
-          "borderTopLeftRadius": "1px",
-          "borderTopRightRadius": "1px",
-          "borderTopWidth": "1px",
-          "marginRight": "10px",
-          "marginTop": "10px",
-          "paddingBottom": "12px",
-          "paddingLeft": "15px",
-          "paddingRight": "15px",
-          "paddingTop": "12px",
-        }
-      }
-    >
-      <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": "13px",
-          }
-        }
-      >
-        Manchester United FC
-      </div>
-    </div>
-  </a>
-  <a
-    href="/topic/rugby-union"
-    onClick={[Function]}
-    style={
-      Object {
-        "textDecoration": "none",
-      }
-    }
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
-      style={
-        Object {
-          "borderBottomColor": "rgba(219,219,219,1)",
-          "borderBottomLeftRadius": "1px",
-          "borderBottomRightRadius": "1px",
-          "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(219,219,219,1)",
-          "borderLeftWidth": "1px",
-          "borderRightColor": "rgba(219,219,219,1)",
-          "borderRightWidth": "1px",
-          "borderTopColor": "rgba(219,219,219,1)",
-          "borderTopLeftRadius": "1px",
-          "borderTopRightRadius": "1px",
-          "borderTopWidth": "1px",
-          "marginRight": "10px",
-          "marginTop": "10px",
-          "paddingBottom": "12px",
-          "paddingLeft": "15px",
-          "paddingRight": "15px",
-          "paddingTop": "12px",
-        }
-      }
-    >
-      <div
-        className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": "13px",
-          }
-        }
-      >
-        Rugby Union
-      </div>
-    </div>
-  </a>
-</div>
+  <Topic
+    id="football"
+    key="football"
+    name="Football"
+  />
+  <Topic
+    id="chelsea"
+    key="chelsea"
+    name="Chelsea FC"
+  />
+  <Topic
+    id="arsenal"
+    key="arsenal"
+    name="Arsenal"
+  />
+  <Topic
+    id="manchester-united"
+    key="manchester-united"
+    name="Manchester United FC"
+  />
+  <Topic
+    id="rugby-union"
+    key="rugby-union"
+    name="Rugby Union"
+  />
+</View>
 `;
 
-exports[`Topic test on web:  renders a single Topic 1`] = `
-<a
-  href="/topic/football"
-  onClick={[Function]}
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
+exports[`2. Render a single Topic 1`] = `
+<Link
+  index="0"
+  onPress={[Function]}
+  responsiveLinkStyles={null}
+  url="/topic/football"
 >
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+  <View
     style={
       Object {
-        "borderBottomColor": "rgba(219,219,219,1)",
-        "borderBottomLeftRadius": "1px",
-        "borderBottomRightRadius": "1px",
-        "borderBottomWidth": "1px",
-        "borderLeftColor": "rgba(219,219,219,1)",
-        "borderLeftWidth": "1px",
-        "borderRightColor": "rgba(219,219,219,1)",
-        "borderRightWidth": "1px",
-        "borderTopColor": "rgba(219,219,219,1)",
-        "borderTopLeftRadius": "1px",
-        "borderTopRightRadius": "1px",
-        "borderTopWidth": "1px",
-        "marginRight": "10px",
-        "marginTop": "10px",
-        "paddingBottom": "12px",
-        "paddingLeft": "15px",
-        "paddingRight": "15px",
-        "paddingTop": "12px",
+        "borderColor": "#DBDBDB",
+        "borderRadius": 1,
+        "borderWidth": 1,
+        "marginRight": 10,
+        "marginTop": 10,
+        "paddingBottom": 12,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 12,
       }
     }
   >
-    <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-      dir="auto"
+    <Text
       style={
         Object {
-          "color": "rgba(105,105,105,1)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "13px",
+          "fontSize": 13,
         }
       }
     >
       Football
-    </div>
-  </div>
-</a>
+    </Text>
+  </View>
+</Link>
 `;

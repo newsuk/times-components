@@ -1,22 +1,20 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import Topics from "../topics";
 import Topic from "../topic";
 import topicData from "../fixtures/topics";
 
 module.exports = () => {
   it("renders a group of Topics in the correct order", () => {
-    const tree = renderer.create(<Topics topics={topicData} />).toJSON();
+    const wrapper = shallow(<Topics topics={topicData} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot("1. Render a group of topics in the correct order");
   });
 
   it("renders a single Topic", () => {
-    const tree = renderer
-      .create(<Topic id={topicData[0].id} name={topicData[0].name} />)
-      .toJSON();
+    const wrapper = shallow(<Topic id={topicData[0].id} name={topicData[0].name} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot("2. Render a single Topic");
   });
 };

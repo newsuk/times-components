@@ -2,15 +2,15 @@ import { colours, fonts } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    paddingTop: 12,
+    borderColor: colours.functional.keyline,
+    borderRadius: 1,
+    borderWidth: 1,
     paddingBottom: 12,
     paddingLeft: 15,
     paddingRight: 15,
-    borderWidth: 1,
-    borderColor: colours.functional.keyline,
-    borderRadius: 1,
-    marginTop: 10,
-    marginRight: 10
+    paddingTop: 12,
+    marginRight: 10,
+    marginTop: 10
   },
   text: {
     color: colours.functional.secondary,
@@ -19,8 +19,8 @@ const styles = {
   },
   topicGroup: {
     flexDirection: "row",
-    justifyContent: "center",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: "center"
   }
 };
 

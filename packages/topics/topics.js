@@ -12,8 +12,8 @@ const Topics = ({ topics, style }) => {
 
   return (
     <View style={[styles.topicGroup, style]}>
-      {orderedTopics.map(topic => (
-        <Topic key={topic.id} id={topic.id} name={topic.name} />
+      {orderedTopics.map(({ id, name }) => (
+        <Topic key={id} id={id} name={name} />
       ))}
     </View>
   );
