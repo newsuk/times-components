@@ -19,7 +19,6 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
     support => support !== null
   );
   const supportCount = supports.length;
-  const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
@@ -31,7 +30,7 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
 
   const config = {
     ...leadAndTwoConfig,
-    summaryConfig: summaryConfig[itemCount]
+    summaryConfig: summaryConfig[supportCount + 1]
   };
 
   return (
