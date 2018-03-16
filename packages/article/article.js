@@ -80,7 +80,7 @@ class ArticlePage extends React.Component {
       }
 
       case "topics": {
-        return <Topics topics={rowData.data.topics} />
+        return <Topics topics={rowData.data.topics} />;
       }
 
       default: {

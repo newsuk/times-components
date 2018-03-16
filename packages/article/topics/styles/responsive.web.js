@@ -10,5 +10,5 @@ export const TopicsContainer = withResponsiveStyles(View, {
 
 export const TopicsMetaContainer = withResponsiveStyles(View, {
   base: () => `display: none;`,
-  wideUp: () => `display: block;`,
+  wideUp: () => `display: block;`
 });
