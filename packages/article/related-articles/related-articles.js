@@ -9,8 +9,10 @@ import {
 } from "./related-articles-proptypes";
 import withTrackingContext from "./related-articles-tracking-context";
 
-const RelatedArticles = ({ articles, onPress, template }) => {
+const RelatedArticles = ({ articles, leadId, onPress, opinionId, template }) => {
   if (!articles || articles.length === 0) return null;
+
+  console.log('leadId: ', leadId);
 
   const articleCount = articles.length;
 
@@ -53,6 +55,7 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       case "LEAD_AND_TWO":
         return (
           <LeadAndTwoSlice
+            leadId={leadId}
             lead={(config = {}) => renderArticleItem(config, articles[0])}
             support1={(config = {}) => {
               const article = articles[1];
