@@ -10,8 +10,7 @@ const styles = {
     borderColor: colours.functional.keyline,
     borderRadius: 1,
     marginTop: 10,
-    marginRight: 5,
-    marginLeft: 5
+    marginRight: 10
   },
   text: {
     color: colours.functional.secondary,

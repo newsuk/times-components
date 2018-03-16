@@ -22,7 +22,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1)",
@@ -37,8 +37,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
           "borderTopLeftRadius": "1px",
           "borderTopRightRadius": "1px",
           "borderTopWidth": "1px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
+          "marginRight": "10px",
           "marginTop": "10px",
           "paddingBottom": "12px",
           "paddingLeft": "15px",
@@ -72,7 +71,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1)",
@@ -87,8 +86,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
           "borderTopLeftRadius": "1px",
           "borderTopRightRadius": "1px",
           "borderTopWidth": "1px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
+          "marginRight": "10px",
           "marginTop": "10px",
           "paddingBottom": "12px",
           "paddingLeft": "15px",
@@ -122,7 +120,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1)",
@@ -137,8 +135,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
           "borderTopLeftRadius": "1px",
           "borderTopRightRadius": "1px",
           "borderTopWidth": "1px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
+          "marginRight": "10px",
           "marginTop": "10px",
           "paddingBottom": "12px",
           "paddingLeft": "15px",
@@ -172,7 +169,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1)",
@@ -187,8 +184,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
           "borderTopLeftRadius": "1px",
           "borderTopRightRadius": "1px",
           "borderTopWidth": "1px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
+          "marginRight": "10px",
           "marginTop": "10px",
           "paddingBottom": "12px",
           "paddingLeft": "15px",
@@ -222,7 +218,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1)",
@@ -237,8 +233,7 @@ exports[`Topic test on web:  renders a group of Topics in the correct order 1`] 
           "borderTopLeftRadius": "1px",
           "borderTopRightRadius": "1px",
           "borderTopWidth": "1px",
-          "marginLeft": "5px",
-          "marginRight": "5px",
+          "marginRight": "10px",
           "marginTop": "10px",
           "paddingBottom": "12px",
           "paddingLeft": "15px",
@@ -276,7 +271,7 @@ exports[`Topic test on web:  renders a single Topic 1`] = `
   }
 >
   <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
+    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-zIndex-1lgpqti"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1)",
@@ -291,8 +286,7 @@ exports[`Topic test on web:  renders a single Topic 1`] = `
         "borderTopLeftRadius": "1px",
         "borderTopRightRadius": "1px",
         "borderTopWidth": "1px",
-        "marginLeft": "5px",
-        "marginRight": "5px",
+        "marginRight": "10px",
         "marginTop": "10px",
         "paddingBottom": "12px",
         "paddingLeft": "15px",
