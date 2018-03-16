@@ -34,7 +34,6 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
     summaryConfig: summaryConfig[itemCount]
   };
 
-  console.log(config);
   return (
     <ConfigWrapper>
       <SliceContainer>
