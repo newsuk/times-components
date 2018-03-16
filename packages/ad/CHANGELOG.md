@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.4...@times-components/ad@0.15.0) (2018-03-16)
+
+
+### Features
+
+* refactor slot targeting and add timestestgroup ([#751](https://github.com/newsuk/times-components/issues/751)) ([1d39555](https://github.com/newsuk/times-components/commit/1d39555))
+
+
+
+
 <a name="0.14.4"></a>
 ## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.3...@times-components/ad@0.14.4) (2018-03-16)
 

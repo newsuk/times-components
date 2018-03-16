@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.49.4",
+  "version": "0.50.0",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -56,18 +56,18 @@
     "styled-components": "3.2.2"
   },
   "dependencies": {
-    "@times-components/ad": "0.14.4",
-    "@times-components/article-byline": "0.13.10",
+    "@times-components/ad": "0.15.0",
+    "@times-components/article-byline": "0.13.11",
     "@times-components/article-flag": "0.11.5",
     "@times-components/article-image": "0.12.6",
     "@times-components/article-label": "0.8.13",
-    "@times-components/article-summary": "0.19.8",
+    "@times-components/article-summary": "0.19.9",
     "@times-components/caption": "0.10.6",
     "@times-components/card": "0.22.6",
     "@times-components/date-publication": "0.12.6",
     "@times-components/image": "1.14.6",
     "@times-components/link": "0.15.5",
-    "@times-components/markup": "0.24.6",
+    "@times-components/markup": "0.24.7",
     "@times-components/provider": "0.24.3",
     "@times-components/pull-quote": "0.3.5",
     "@times-components/responsive-styles": "0.4.5",
