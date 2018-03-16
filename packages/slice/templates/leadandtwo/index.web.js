@@ -9,11 +9,9 @@ import {
 } from "./responsive";
 import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
+const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   const supportConfig = getSupportConfig();
-  const supports = [support1(supportConfig), support2(supportConfig)].filter(
-    support => support !== null
-  );
+  const supports = renderSupports(supportConfig);
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
