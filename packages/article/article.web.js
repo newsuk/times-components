@@ -12,6 +12,7 @@ import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
+import Topics from "./topics";
 
 import {
   MainContainer,
@@ -37,7 +38,8 @@ class ArticlePage extends React.Component {
       publicationName,
       content,
       section,
-      url
+      url,
+      topics
     } = articleData;
     const leadAssetProps = getLeadAsset(articleData);
 
@@ -64,6 +66,7 @@ class ArticlePage extends React.Component {
                 publishedTime={publishedTime}
                 publicationName={publicationName}
               />
+              <Topics topics={topics} device="DESKTOP" />
             </MetaContainer>
             <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
@@ -75,6 +78,7 @@ class ArticlePage extends React.Component {
             </BodyContainer>
           </View>
         </MainContainer>
+        <Topics topics={topics} />
         <Ad pos="pixel" section={section} contextUrl={url} />
         <Ad pos="pixelteads" section={section} contextUrl={url} />
         <Ad pos="pixelskin" section={section} contextUrl={url} />

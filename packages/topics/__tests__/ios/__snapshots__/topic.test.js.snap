@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Render a group of topics in the correct order 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "center",
+      },
+      null,
+    ]
+  }
+>
+  <Topic
+    id="football"
+    key="football"
+    name="Football"
+  />
+  <Topic
+    id="chelsea"
+    key="chelsea"
+    name="Chelsea FC"
+  />
+  <Topic
+    id="arsenal"
+    key="arsenal"
+    name="Arsenal"
+  />
+  <Topic
+    id="manchester-united"
+    key="manchester-united"
+    name="Manchester United FC"
+  />
+  <Topic
+    id="rugby-union"
+    key="rugby-union"
+    name="Rugby Union"
+  />
+</View>
+`;
+
+exports[`2. Render a single Topic 1`] = `
+<Link
+  onPress={[Function]}
+  url="/topic/football"
+>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRadius": 1,
+        "borderWidth": 1,
+        "marginRight": 10,
+        "marginTop": 10,
+        "paddingBottom": 12,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+        }
+      }
+    >
+      Football
+    </Text>
+  </View>
+</Link>
+`;

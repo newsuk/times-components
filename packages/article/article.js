@@ -15,6 +15,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import RelatedArticles from "./related-articles/related-articles";
+import Topics from "./topics";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -76,6 +77,10 @@ class ArticlePage extends React.Component {
             onPress={onRelatedArticlePress}
           />
         );
+      }
+
+      case "topics": {
+        return <Topics topics={rowData.data.topics} />;
       }
 
       default: {

@@ -73,6 +73,7 @@
     "@times-components/responsive-styles": "0.4.5",
     "@times-components/slice": "0.13.1",
     "@times-components/styleguide": "0.4.4",
+    "@times-components/topics": "0.0.1",
     "@times-components/tracking": "0.9.8",
     "@times-components/video-label": "0.1.9",
     "lodash.get": "4.4.2",
