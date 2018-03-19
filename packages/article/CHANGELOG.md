@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.3...@times-components/article@0.51.0) (2018-03-19)
+
+
+### Features
+
+* Dynamic Summary lengths ([#755](https://github.com/newsuk/times-components/issues/755)) ([341b897](https://github.com/newsuk/times-components/commit/341b897))
+
+
+
+
 <a name="0.50.3"></a>
 ## [0.50.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.2...@times-components/article@0.50.3) (2018-03-19)
 
