@@ -119,12 +119,10 @@ const adInit = args => {
           );
           slot.defineSizeMapping(gptMapping.build());
 
+          Object.keys(slotTargeting || []).forEach(key =>
+            slot.setTargeting(key, slotTargeting[key])
+          );
           const randomTestingGroup = Math.floor(Math.random() * 10).toString();
-          if (slotTargeting) {
-            Object.keys(slotTargeting).forEach(key =>
-              slot.setTargeting(key, slotTargeting[key])
-            );
-          }
           slot.setTargeting("timestestgroup", randomTestingGroup);
           slot.setTargeting("pos", containerID);
           window.googletag.display(containerID);
@@ -337,7 +335,7 @@ const adInit = args => {
       }
 
       return Promise.all(parallelActions)
-        .then(this.gpt.waitUntilReady())
+        .then(this.gpt.waitUntilReady.bind(this.gpt))
         .then(this.finaliseAds.bind(this, enablePrebidding));
     },
     handleBreakpointChange(breakpoint, mql) {
@@ -346,7 +344,7 @@ const adInit = args => {
           breakpoint,
           refresh: "true"
         });
-        this.gpt.displayAds();
+        this.gpt.scheduleAction(() => this.gpt.displayAds());
       }
     },
     finaliseAds(enablePrebidding) {

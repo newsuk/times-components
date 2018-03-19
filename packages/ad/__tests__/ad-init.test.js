@@ -6,9 +6,10 @@ jest.useFakeTimers();
 
 describe("AdInit", () => {
   let initOptions;
+  let mock;
 
   beforeEach(() => {
-    ({ initOptions } = makeAdInitMocks());
+    ({ initOptions, mock } = makeAdInitMocks());
   });
 
   it("is serialisable", () => {
@@ -52,6 +53,7 @@ describe("AdInit", () => {
 
     init1.init();
     init1.handleBreakpointChange("huge", { matches: true });
+    mock.processGoogletagCommandQueue();
 
     expect(init1.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
       breakpoint: "huge",
