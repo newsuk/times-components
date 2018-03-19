@@ -1,18 +1,19 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const summaryConfig = {
+const leadSummaryConfig = {
   1: [125],
   2: [125],
   3: [125, 175]
 };
 
-export const leadAndTwoConfig = {
+export const getLeadAndTwoConfig = itemCount => ({
   contentContainerClass: "leadAndTwoSliceContentContainerClass",
   headlineClass: "leadAndTwoSliceHeadlineClass",
   imageContainerClass: "leadAndTwoSliceImageContainerClass",
-  summaryClass: "leadAndTwoSliceSummaryClass"
-};
+  summaryClass: "leadAndTwoSliceSummaryClass",
+  summaryConfig: leadSummaryConfig[itemCount]
+});
 
 export const supportConfig = {
   contentContainerClass: "supportSliceContentContainerClass",
