@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.52.1...@times-components/article@0.53.0) (2018-03-19)
+
+
+### Features
+
+* REPLAT-1602 topics front end ([#749](https://github.com/newsuk/times-components/issues/749)) ([0fa9364](https://github.com/newsuk/times-components/commit/0fa9364))
+
+
+
+
 <a name="0.52.1"></a>
 ## [0.52.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.52.0...@times-components/article@0.52.1) (2018-03-19)
 
