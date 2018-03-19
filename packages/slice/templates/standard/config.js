@@ -1,6 +1,8 @@
 const config = itemCount => ({
   showImage: itemCount < 3,
-  summaryConfig: [125]
+  summaryConfig: {
+    lengths: [125]
+  }
 });
 
 export default config;

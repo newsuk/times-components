@@ -12,7 +12,10 @@ export const getLeadAndTwoConfig = itemCount => ({
   headlineClass: "leadAndTwoSliceHeadlineClass",
   imageContainerClass: "leadAndTwoSliceImageContainerClass",
   summaryClass: "leadAndTwoSliceSummaryClass",
-  summaryConfig: leadSummaryConfig[itemCount]
+  summaryConfig: {
+    lengths: leadSummaryConfig[itemCount],
+    type: "leadAndTwo"
+  }
 });
 
 export const supportConfig = {
@@ -34,7 +37,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       .summaryHidden {
         display: none;
       }
-      .summary125Class {
+      .leadAndTwoSummary125Class {
         display: block;
       }
     `,
@@ -68,11 +71,11 @@ export const getConfigWrapper = ({ supportCount }) => {
           display: block;
         }
 
-        .summary125Class {
+        .leadAndTwoSummary125Class {
           display: ${supportCount === 2 ? "none" : "block"};
         }
 
-        .summary175Class {
+        .leadAndTwoSummary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
       `;

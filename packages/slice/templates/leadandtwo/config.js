@@ -1,5 +1,7 @@
 export const leadAndTwoConfig = {
-  summaryConfig: [125]
+  summaryConfig: {
+    lengths: [125]
+  }
 };
 
 export const supportConfig = {

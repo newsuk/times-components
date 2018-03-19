@@ -25,6 +25,7 @@ const RelatedArticleItem = ({
   summaryConfig
 }) => {
   const { byline, headline, label, publishedTime, section, url } = article;
+  const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
 
   const imageUri = get(
     article,
@@ -47,13 +48,21 @@ const RelatedArticleItem = ({
           content={() =>
             showSummary && (
               <View>
-                {summaryConfig.map(item => (
-                  <ArticleSummaryContent
-                    className={`summaryHidden summary${item}Class`}
-                    ast={article[`summary${item}`]}
-                    key={item}
-                  />
-                ))}
+                {summaryLengths.map(item => {
+                  const summaryClassSuffix = `${item}Class`;
+                  const summaryClass = summaryType
+                    ? `${summaryType}Summary`
+                    : `summary`;
+                  return (
+                    <ArticleSummaryContent
+                      ast={article[`summary${item}`]}
+                      className={`summaryHidden ${summaryClass}${
+                        summaryClassSuffix
+                      }`}
+                      key={item}
+                    />
+                  );
+                })}
               </View>
             )
           }
