@@ -17,8 +17,10 @@ const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
   analyticsStream: action,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  leadId: fixtureData.relatedArticlesLayout.lead || "",
-  opinionId: fixtureData.relatedArticlesLayout.opinion || "",
+  mainId:
+    fixtureData.relatedArticlesLayout.lead ||
+    fixtureData.relatedArticlesLayout.opinion ||
+    "",
   onPress: () => {}
 });
 
