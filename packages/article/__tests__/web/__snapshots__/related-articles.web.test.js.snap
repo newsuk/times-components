@@ -313,38 +313,6 @@ exports[`Related articles tests on web Lead and two template should render one l
 </div>
 `;
 
-exports[`Related articles tests on web Lead and two template should render one lead and one support related article 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "",
-            "headline": "Defence of the Realm",
-            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two",
-          },
-          Object {
-            "byline": "Deborah Haynes",
-            "headline": "Size matters, say very tiny ministers",
-            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two-supporting-1",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "LEAD_AND_TWO",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
 exports[`Related articles tests on web Lead and two template should render one lead and two support related articles 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -807,45 +775,6 @@ exports[`Related articles tests on web Lead and two template should render one l
 </div>
 `;
 
-exports[`Related articles tests on web Lead and two template should render one lead and two support related articles 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "",
-            "headline": "Defence of the Realm",
-            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two",
-          },
-          Object {
-            "byline": "Deborah Haynes",
-            "headline": "Trident out of MoD budget, Hammond urged",
-            "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two-supporting-1",
-          },
-          Object {
-            "byline": "Deborah Haynes",
-            "headline": "Size matters, say tiny ministers",
-            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two-supporting-2",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "LEAD_AND_TWO",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
 exports[`Related articles tests on web Lead and two template should render one lead related article 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -1023,49 +952,7 @@ exports[`Related articles tests on web Lead and two template should render one l
 </div>
 `;
 
-exports[`Related articles tests on web Lead and two template should render one lead related article 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "",
-            "headline": "Defence of the Realm",
-            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2017-11-25T00:01:00.000Z",
-            "role": "lead-and-two",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "LEAD_AND_TWO",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
 exports[`Related articles tests on web Standard template should handle no related articles 1`] = `null`;
-
-exports[`Related articles tests on web Standard template should handle no related articles 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
 
 exports[`Related articles tests on web Standard template should render one related article 1`] = `
 <div
@@ -1247,31 +1134,6 @@ exports[`Related articles tests on web Standard template should render one relat
     </div>
   </div>
 </div>
-`;
-
-exports[`Related articles tests on web Standard template should render one related article 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "Camilla Long, Environment Editor",
-            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
-            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
 `;
 
 exports[`Related articles tests on web Standard template should render three related articles 1`] = `
@@ -1852,45 +1714,6 @@ exports[`Related articles tests on web Standard template should render three rel
 </div>
 `;
 
-exports[`Related articles tests on web Standard template should render three related articles 2`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "Camilla Long, Environment Editor",
-            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
-            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
-          },
-          Object {
-            "byline": "Camilla Long, Environment Editor",
-            "headline": "Bayeux Tapestry to be displayed in Britain",
-            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2018-01-17T12:00:00.000Z",
-            "role": "standard-2",
-          },
-          Object {
-            "byline": "Camilla Long, Environment Editor",
-            "headline": "Bayeux Tapestry to be displayed in Britain",
-            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
-            "publishedTime": "2018-01-17T12:00:00.000Z",
-            "role": "standard-3",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
 exports[`Related articles tests on web Standard template should render two related articles 1`] = `
 <div
   className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-156q2ks rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -2231,7 +2054,184 @@ exports[`Related articles tests on web Standard template should render two relat
 </div>
 `;
 
-exports[`Related articles tests on web Standard template should render two related articles 2`] = `
+exports[`should send analytics even when no related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for a lead related article 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Defence of the Realm",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "LEAD_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for a single related article 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for lead and support related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Defence of the Realm",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Size matters, say very tiny ministers",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two-supporting-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "LEAD_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for lead and two support related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "",
+            "headline": "Defence of the Realm",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Trident out of MoD budget, Hammond urged",
+            "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two-supporting-1",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Size matters, say tiny ministers",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "lead-and-two-supporting-2",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "LEAD_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for three related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "standard-2",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Bayeux Tapestry to be displayed in Britain",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "standard-3",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for two related articles 1`] = `
 Array [
   Array [
     Object {

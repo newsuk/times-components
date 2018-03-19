@@ -57,7 +57,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics even when no related articles"
+      );
     });
 
     it("should render one related article", () => {
@@ -73,7 +75,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a single related article"
+      );
     });
 
     it("should render two related articles", () => {
@@ -89,7 +93,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for two related articles"
+      );
     });
 
     it("should render three related articles", () => {
@@ -105,7 +111,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for three related articles"
+      );
     });
   });
 
@@ -123,7 +131,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a lead related article"
+      );
     });
 
     it("should render one lead and one support related article", () => {
@@ -139,7 +149,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for lead and support related articles"
+      );
     });
 
     it("should render one lead and two support related articles", () => {
@@ -155,7 +167,9 @@ export default () => {
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-      expect(events.mock.calls).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for lead and two support related articles"
+      );
     });
   });
 };
