@@ -26,7 +26,7 @@ export const getChildrenContainer = ({ childCount }) => {
       padding-bottom: 10px;
       padding-top: ${childCount >= 3 ? "15px" : "10px"};
       width: 100%;
-    `,
+    `, 
     mediumUp: () => {
       const smallStyle = `
       width: ${config.mediumBpWidth};
