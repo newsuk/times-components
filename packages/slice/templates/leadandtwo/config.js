@@ -1,4 +1,4 @@
-export const leadAndTwoConfig = {
+export const leadConfig = {
   summaryConfig: {
     lengths: [125]
   }

@@ -31,14 +31,14 @@ export const getConfigWrapper = ({ itemCount }) => {
       }
     `,
     mediumUp: () => {
-      const singleStandardImageStyle = `
+      const singleItemImageStyle = `
         flex: 2;
         min-width: auto;
         max-width: 328px;
         padding-right: 15px;
       `;
 
-      const singleStandardSummaryStyle = `
+      const singleItemSummaryStyle = `
         flex-grow: 2.7;
         flex-basis: 0 !important;
         min-width: 325px;
@@ -47,11 +47,11 @@ export const getConfigWrapper = ({ itemCount }) => {
       return `
         .imageContainerClass {
           display: block;
-          ${itemCount === 1 ? singleStandardImageStyle : ``}
+          ${itemCount === 1 ? singleItemImageStyle : ``}
         }
 
         .contentContainerClass {
-          ${itemCount === 1 ? singleStandardSummaryStyle : ``}
+          ${itemCount === 1 ? singleItemSummaryStyle : ``}
         }
 
         .headlineClass {

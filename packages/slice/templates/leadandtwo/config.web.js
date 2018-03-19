@@ -42,7 +42,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       }
     `,
     mediumUp: () => {
-      const leadAndTwoSliceImageWithSupportsStyle = `
+      const withSupportsImageStyle = `
         margin-bottom: 10px;
         min-width: 270px;
       `;
@@ -58,7 +58,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           margin-bottom: 0;
           min-width: auto;
           padding-right: 10px;
-          ${supportCount === 2 ? leadAndTwoSliceImageWithSupportsStyle : ``}
+          ${supportCount === 2 ? withSupportsImageStyle : ``}
         }
 
         .leadContentContainerClass {
@@ -81,7 +81,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
     },
     wideUp: () => {
-      const doubleSupportImageStyle = `
+      const twoSupportImageStyle = `
         flex: 2;
         margin-bottom: 0;
         max-width: 180px;
@@ -89,7 +89,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         padding-right: 10px;
       `;
 
-      const doubleSupportContentStyle = `
+      const twoSupportContentStyle = `
         flex: 2.7;
         flex-basis: 0 !important;
         min-width: 250px;
@@ -97,11 +97,11 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       return `
         .supportImageContainerClass {
-          ${supportCount === 2 ? doubleSupportImageStyle : ``}
+          ${supportCount === 2 ? twoSupportImageStyle : ``}
         }
 
         .supportContentContainerClass {
-          ${supportCount === 2 ? doubleSupportContentStyle : ``}
+          ${supportCount === 2 ? twoSupportContentStyle : ``}
         }
       `;
     }

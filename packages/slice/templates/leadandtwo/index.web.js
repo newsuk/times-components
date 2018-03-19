@@ -3,7 +3,7 @@ import { propTypes, defaultProps } from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
-  getLeadAndTwoContainer,
+  getLeadContainer,
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
@@ -19,7 +19,7 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
-  const LeadAndTwoContainer = getLeadAndTwoContainer({
+  const LeadContainer = getLeadContainer({
     hasSupports,
     supportCount
   });
@@ -31,7 +31,7 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadAndTwoContainer>{lead(leadConfig)}</LeadAndTwoContainer>
+          <LeadContainer>{lead(leadConfig)}</LeadContainer>
           {hasSupports && <Separator />}
           {hasSupports && (
             <SupportsContainer>
