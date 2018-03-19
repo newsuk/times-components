@@ -54,7 +54,7 @@ class Ad extends Component {
         maxBid: adConfig.biddersConfig.maxBid,
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
-      slots: this.slots,
+      slots: this.slots || [],
       pos: this.props.pos,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
