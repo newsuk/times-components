@@ -37,4 +37,7 @@ export const expectFunctionToBeSerialisable = f => {
   const errors = getSerialisableFunctionErrors(f);
   reportErrors(errors);
   expect(errors).toEqual([]);
+  // Object.assign transpiles to _extends global helper in react native compile, but
+  // not in web compile, so getSerialisableFunctionErrors doesn't catch the error
+  expect(String(f)).not.toContain("Object.assign");
 };
