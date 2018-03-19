@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.49.17"></a>
+## [0.49.17](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.16...@times-components/author-profile@0.49.17) (2018-03-19)
+
+
+### Bug Fixes
+
+* Put back the missing summary for Author Profiles with no images ([#754](https://github.com/newsuk/times-components/issues/754)) ([466fb97](https://github.com/newsuk/times-components/commit/466fb97))
+
+
+
+
 <a name="0.49.16"></a>
 ## [0.49.16](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.15...@times-components/author-profile@0.49.16) (2018-03-19)
 
