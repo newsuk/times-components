@@ -74,7 +74,7 @@ module.exports = () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
           lead={() => createItem("lead")}
-          support1={() => createItem("support-1")}
+          renderSupports={() => [createItem("support-1")]}
         />
       );
       expect(wrapper).toMatchSnapshot(
@@ -86,8 +86,10 @@ module.exports = () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
           lead={() => createItem("lead")}
-          support1={() => createItem("support-1")}
-          support2={() => createItem("support-2")}
+          renderSupports={() => [
+            createItem("support-1"),
+            createItem("support-2")
+          ]}
         />
       );
       expect(wrapper).toMatchSnapshot(

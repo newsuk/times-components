@@ -9,7 +9,7 @@ import {
 } from "./related-articles-proptypes";
 import withTrackingContext from "./related-articles-tracking-context";
 
-const RelatedArticles = ({ articles, onPress, template }) => {
+const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   if (!articles || articles.length === 0) return null;
 
   const articleCount = articles.length;
@@ -39,6 +39,9 @@ const RelatedArticles = ({ articles, onPress, template }) => {
   };
 
   const renderSlice = () => {
+    const mainArticle = articles.find(article => article.id === mainId);
+    const supports = articles.filter(article => article.id !== mainId);
+
     switch (template) {
       case "DEFAULT":
       default:
@@ -53,15 +56,10 @@ const RelatedArticles = ({ articles, onPress, template }) => {
       case "LEAD_AND_TWO":
         return (
           <LeadAndTwoSlice
-            lead={(config = {}) => renderArticleItem(config, articles[0])}
-            support1={(config = {}) => {
-              const article = articles[1];
-              return article ? renderArticleItem(config, article) : null;
-            }}
-            support2={(config = {}) => {
-              const article = articles[2];
-              return article ? renderArticleItem(config, article) : null;
-            }}
+            lead={(config = {}) => renderArticleItem(config, mainArticle)}
+            renderSupports={(config = {}) =>
+              supports.map(article => renderArticleItem(config, article))
+            }
           />
         );
     }

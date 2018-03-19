@@ -47,6 +47,10 @@ const createRelatedArticlesProps = fixtureData => ({
   analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
+  mainId:
+    fixtureData.relatedArticlesLayout.lead ||
+    fixtureData.relatedArticlesLayout.opinion ||
+    "",
   onPress: preventDefaultedAction("onArticlePress")
 });
 
