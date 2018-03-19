@@ -108,7 +108,7 @@ const AuthorProfileItem = item => {
       <LongText>
         <ArticleSummary
           {...childProps}
-          summaryText={() => <ArticleSummaryContent ast={longSummary} />}
+          content={() => <ArticleSummaryContent ast={longSummary} />}
         />
       </LongText>
       <ShortText>
