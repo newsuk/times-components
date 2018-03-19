@@ -120,9 +120,11 @@ const adInit = args => {
           slot.defineSizeMapping(gptMapping.build());
 
           const randomTestingGroup = Math.floor(Math.random() * 10).toString();
-          Object.keys(slotTargeting).forEach(key =>
-            slot.setTargeting(key, slotTargeting[key])
-          );
+          if (slotTargeting) {
+            Object.keys(slotTargeting).forEach(key =>
+              slot.setTargeting(key, slotTargeting[key])
+            );
+          }
           slot.setTargeting("timestestgroup", randomTestingGroup);
           slot.setTargeting("pos", containerID);
           window.googletag.display(containerID);
