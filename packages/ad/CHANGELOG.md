@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.2"></a>
+## [0.15.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.1...@times-components/ad@0.15.2) (2018-03-19)
+
+
+### Bug Fixes
+
+* moving bidding slots as a prop from render ([#753](https://github.com/newsuk/times-components/issues/753)) ([a957e50](https://github.com/newsuk/times-components/commit/a957e50))
+
+
+
+
 <a name="0.15.1"></a>
 ## [0.15.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.0...@times-components/ad@0.15.1) (2018-03-16)
 
