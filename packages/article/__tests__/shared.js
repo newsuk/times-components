@@ -55,7 +55,8 @@ export default () => {
           siteId: "188830"
         }
       }
-    }
+    },
+    bidderSlots: ["ad-header", "ad-article-inline"]
   };
 
   beforeEach(() => {

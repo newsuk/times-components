@@ -18,7 +18,8 @@ AdComposer.propTypes = {
     adUnit: PropTypes.string.isRequired,
     pageTargeting: PropTypes.shape({}),
     slotTargeting: PropTypes.shape({}),
-    biddersConfig: PropTypes.shape({})
+    biddersConfig: PropTypes.shape({}),
+    bidderSlots: PropTypes.arrayOf(PropTypes.string)
   })
 };
 
@@ -63,7 +64,8 @@ AdComposer.defaultProps = {
           siteId: "188830"
         }
       }
-    }
+    },
+    bidderSlots: ["ad-header", "ad-article-inline"]
   }
 };
 export default AdComposer;

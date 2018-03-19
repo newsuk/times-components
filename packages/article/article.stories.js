@@ -106,7 +106,8 @@ const adConfig = {
         siteId: "188830"
       }
     }
-  }
+  },
+  bidderSlots: ["ad-header", "ad-article-inline"]
 };
 
 storiesOf("Pages/Article", module)

@@ -27,7 +27,8 @@ const adConfig = () =>
         slot: "news"
       }
     },
-    { biddersConfig }
+    { biddersConfig },
+    { bidderSlots: ["ad-header", "ad-article-inline"] }
   );
 let DOMContext;
 if (window.document) {
