@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.12.0...@times-components/slice@0.13.0) (2018-03-19)
+
+
+### Features
+
+* slice ordering ([#756](https://github.com/newsuk/times-components/issues/756)) ([bcb91a6](https://github.com/newsuk/times-components/commit/bcb91a6))
+
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.11.1...@times-components/slice@0.12.0) (2018-03-19)
 
