@@ -11,7 +11,7 @@ const VideoLabel = ({ title, color }) => (
   <View style={{ flexDirection: "row", alignItems: "center" }}>
     <IconVideo height={styles.title.fontSize} fillColor={color} />
     <Text style={[styles.title, { color, marginLeft: 5 }]}>
-      {beautifyTitle("VIDEO")}
+      {beautifyTitle("video")}
     </Text>
     {showTitle(title) ? (
       <Fragment>
