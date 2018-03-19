@@ -14,7 +14,7 @@ const androidStyles = {
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 29,
-    paddingBottom: 15,
+    paddingBottom: 12,
     marginTop: -7
   }
 };
