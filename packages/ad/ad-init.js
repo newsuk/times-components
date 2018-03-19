@@ -118,8 +118,14 @@ const adInit = args => {
             gptMapping.addSize([size.width, size.height], size.sizes)
           );
           slot.defineSizeMapping(gptMapping.build());
-          Object.keys(slotTargeting || {}).forEach(key =>
-            slot.setTargeting(key, slotTargeting[key])
+
+          const randomTestingGroup = Math.floor(Math.random() * 10).toString();
+          const slotTargetingList = Object.assign({}, slotTargeting, {
+            timestestgroup: randomTestingGroup,
+            pos: containerID
+          });
+          Object.keys(slotTargetingList).forEach(key =>
+            slot.setTargeting(key, slotTargetingList[key])
           );
           window.googletag.display(containerID);
         });
