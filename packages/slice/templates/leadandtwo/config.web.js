@@ -7,37 +7,37 @@ const leadSummaryConfig = {
   3: [125, 175]
 };
 
-export const getLeadAndTwoConfig = itemCount => ({
-  contentContainerClass: "leadAndTwoSliceContentContainerClass",
-  headlineClass: "leadAndTwoSliceHeadlineClass",
-  imageContainerClass: "leadAndTwoSliceImageContainerClass",
-  summaryClass: "leadAndTwoSliceSummaryClass",
+export const getLeadConfig = itemCount => ({
+  contentContainerClass: "leadContentContainerClass",
+  headlineClass: "leadHeadlineClass",
+  imageContainerClass: "leadImageContainerClass",
+  summaryClass: "leadSummaryClass",
   summaryConfig: {
     lengths: leadSummaryConfig[itemCount],
-    type: "leadAndTwo"
+    type: "lead"
   }
 });
 
-export const supportConfig = {
-  contentContainerClass: "supportSliceContentContainerClass",
-  headlineClass: "supportSliceHeadlineClass",
-  imageContainerClass: "supportSliceImageContainerClass",
-  summaryClass: "supportSliceSummaryClass"
-};
+export const getSupportConfig = () => ({
+  contentContainerClass: "supportContentContainerClass",
+  headlineClass: "supportHeadlineClass",
+  imageContainerClass: "supportImageContainerClass",
+  summaryClass: "supportSummaryClass"
+});
 
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
-      .supportSliceImageContainerClass {
+      .supportImageContainerClass {
         display: none;
       }
-      .supportSliceSummaryClass {
+      .supportSummaryClass {
         display: none;
       }
       .summaryHidden {
         display: none;
       }
-      .leadAndTwoSummary125Class {
+      .leadSummary125Class {
         display: block;
       }
     `,
@@ -48,12 +48,12 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
 
       return `
-        .leadAndTwoSliceHeadlineClass {
+        .leadHeadlineClass {
           font-size: 30px;
           line-height: 30px;
         }
 
-        .leadAndTwoSliceImageContainerClass {
+        .leadImageContainerClass {
           flex: 2;
           margin-bottom: 0;
           min-width: auto;
@@ -61,21 +61,21 @@ export const getConfigWrapper = ({ supportCount }) => {
           ${supportCount === 2 ? leadAndTwoSliceImageWithSupportsStyle : ``}
         }
 
-        .leadAndTwoSliceContentContainerClass {
+        .leadContentContainerClass {
           flex-grow: 2.7;
           flex-basis: 0 !important;
           min-width: ${supportCount === 2 ? "300px" : "325px"};
         }
 
-        .supportSliceImageContainerClass {
+        .supportImageContainerClass {
           display: block;
         }
 
-        .leadAndTwoSummary125Class {
+        .leadSummary125Class {
           display: ${supportCount === 2 ? "none" : "block"};
         }
 
-        .leadAndTwoSummary175Class {
+        .leadSummary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
       `;
@@ -96,11 +96,11 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
 
       return `
-        .supportSliceImageContainerClass {
+        .supportImageContainerClass {
           ${supportCount === 2 ? doubleSupportImageStyle : ``}
         }
 
-        .supportSliceContentContainerClass {
+        .supportContentContainerClass {
           ${supportCount === 2 ? doubleSupportContentStyle : ``}
         }
       `;

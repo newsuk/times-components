@@ -8,10 +8,10 @@ const summaryConfig = {
 };
 
 export const getConfig = itemCount => ({
-  contentContainerClass: "standardSliceContentContainerClass",
-  headlineClass: "standardSliceHeadlineClass",
-  imageContainerClass: "standardSliceImageContainerClass",
-  summaryClass: "standardSliceSummaryClass",
+  contentContainerClass: "contentContainerClass",
+  headlineClass: "headlineClass",
+  imageContainerClass: "imageContainerClass",
+  summaryClass: "summaryClass",
   summaryConfig: {
     lengths: summaryConfig[itemCount]
   }
@@ -26,7 +26,7 @@ export const getConfigWrapper = ({ itemCount }) => {
       .summary125Class {
         display: block;
       }
-      .standardSliceImageContainerClass {
+      .imageContainerClass {
         display: ${itemCount >= 3 ? "none" : "block"};
       }
     `,
@@ -45,16 +45,16 @@ export const getConfigWrapper = ({ itemCount }) => {
       `;
 
       return `
-        .standardSliceImageContainerClass {
+        .imageContainerClass {
           display: block;
           ${itemCount === 1 ? singleStandardImageStyle : ``}
         }
 
-        .standardSliceContentContainerClass {
+        .contentContainerClass {
           ${itemCount === 1 ? singleStandardSummaryStyle : ``}
         }
 
-        .standardSliceHeadlineClass {
+        .headlineClass {
           font-size: 30px;
           line-height: 30px;
         }
