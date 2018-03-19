@@ -14,7 +14,6 @@ export const query = gql`
       byline
       content
       section
-      url
       leadAsset {
         ... on Video {
           type: __typename
@@ -35,7 +34,12 @@ export const query = gql`
         label
         publicationName
         publishedTime
+        summary105: summary(maxCharCount: 105)
         summary125: summary(maxCharCount: 125)
+        summary145: summary(maxCharCount: 145)
+        summary160: summary(maxCharCount: 160)
+        summary175: summary(maxCharCount: 175)
+        summary225: summary(maxCharCount: 225)
         leadAsset {
           ... on Image {
             id

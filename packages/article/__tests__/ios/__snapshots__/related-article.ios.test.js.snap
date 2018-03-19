@@ -292,32 +292,34 @@ exports[`Related articles tests on ios DEFAULT template should render one relate
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -557,32 +559,34 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -770,32 +774,47 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          The Times
+                        </Text>
+                        , is expected to be to the
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -983,32 +1002,47 @@ exports[`Related articles tests on ios DEFAULT template should render three rela
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          The Times
+                        </Text>
+                        , is expected to be to the
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -1350,32 +1384,34 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -1665,32 +1701,47 @@ exports[`Related articles tests on ios DEFAULT template should render two relate
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab.
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          The Times
+                        </Text>
+                        , is expected to be to the
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -2032,32 +2083,34 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -2573,32 +2626,34 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}
@@ -3296,32 +3351,34 @@ exports[`Related articles tests on ios LEAD AND TWO template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
+                      className="summaryHidden summary125Class"
                       ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
                     >
-                      
-                      The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
-                      ...
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
                     </Text>
-                  </Text>
+                  </View>
                   <Text
                     accessibilityLabel="datePublication"
                     accessible={true}

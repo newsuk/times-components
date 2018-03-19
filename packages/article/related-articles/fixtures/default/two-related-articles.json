@@ -9,7 +9,7 @@
         "headline":
           "Now for a new battle: bringing the fragile masterpiece over safely",
         "section": "thedish",
-        "summary": [
+        "summary105": [
           {
             "name": "paragraph",
             "attributes": {},
@@ -18,7 +18,87 @@
                 "name": "text",
                 "attributes": {
                   "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab."
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary125": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary145": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary160": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary175": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary225": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
                 },
                 "children": []
               }
@@ -68,7 +148,7 @@
         },
         "label": "BAYEUX TAPESTRY",
         "headline": "Bayeux Tapestry to be displayed in Britain",
-        "summary": [
+        "summary105": [
           {
             "name": "paragraph",
             "attributes": {},
@@ -77,7 +157,252 @@
                 "name": "text",
                 "attributes": {
                   "value":
-                    "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab."
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary125": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is expected to be to the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary145": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is expected to be to the British Museum in 2022"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": []
+          }
+        ],
+        "summary160": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is expected to be to the British Museum in 2022."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Although the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary175": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is expected to be to the British Museum in 2022."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Although the museum stopped"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary225": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "The Times"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", is expected to be to the British Museum in 2022."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Although the museum stopped short of confirming that it had secured the loan"
                 },
                 "children": []
               }

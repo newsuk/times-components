@@ -15,7 +15,7 @@ import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
-  getLeadAndTwoContainer
+  getLeadContainer
 } from "../../templates/leadandtwo/responsive";
 import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../templates/leadandtwo/config";
 
@@ -72,25 +72,19 @@ describe("Slice tests on web", () => {
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
     });
 
-    it("should render LeadAndTwoContainer correctly", () => {
-      let LeadAndTwoContainer = getLeadAndTwoContainer({
+    it("should render LeadContainer correctly", () => {
+      let LeadContainer = getLeadContainer({
         hasSupports: true,
         supportCount: 1
       });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
-      LeadAndTwoContainer = getLeadAndTwoContainer({
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      LeadContainer = getLeadContainer({
         hasSupports: true,
         supportCount: 2
       });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
-      LeadAndTwoContainer = getLeadAndTwoContainer({ hasSupports: false });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      LeadContainer = getLeadContainer({ hasSupports: false });
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
     });
 
     it("should render ConfigWrapper correctly", () => {

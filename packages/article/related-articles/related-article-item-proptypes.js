@@ -7,7 +7,12 @@ export const relatedArticleItemPropTypes = {
     headline: PropTypes.string.isRequired,
     label: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
-    summary: PropTypes.arrayOf(treePropType).isRequired,
+    summary105: PropTypes.arrayOf(treePropType).isRequired,
+    summary125: PropTypes.arrayOf(treePropType).isRequired,
+    summary145: PropTypes.arrayOf(treePropType).isRequired,
+    summary160: PropTypes.arrayOf(treePropType).isRequired,
+    summary175: PropTypes.arrayOf(treePropType).isRequired,
+    summary225: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
   contentContainerClass: PropTypes.string,
