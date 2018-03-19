@@ -6,7 +6,9 @@ import {
   StandardSlice,
   standardRoles,
   LeadAndTwoSlice,
-  leadAndTwoRoles
+  leadAndTwoRoles,
+  OpinionAndTwoSlice,
+  opinionAndTwoRoles
 } from "../";
 
 module.exports = () => {
@@ -98,13 +100,59 @@ module.exports = () => {
     });
   });
 
+  context("Opinion and two template", () => {
+    it("renders a single child element", () => {
+      const wrapper = shallow(
+        <OpinionAndTwoSlice opinion={() => createItem("opinion")} />
+      );
+      expect(wrapper).toMatchSnapshot(
+        "7. Opinion and two template renders a single child element"
+      );
+    });
+
+    it("renders two child elements", () => {
+      const wrapper = shallow(
+        <OpinionAndTwoSlice
+          opinion={() => createItem("opinion")}
+          renderSupports={() => [createItem("support-1")]}
+        />
+      );
+      expect(wrapper).toMatchSnapshot(
+        "8. Opinion and two template renders two child elements"
+      );
+    });
+
+    it("renders three child elements", () => {
+      const wrapper = shallow(
+        <OpinionAndTwoSlice
+          opinion={() => createItem("opinion")}
+          renderSupports={() => [
+            createItem("support-1"),
+            createItem("support-2")
+          ]}
+        />
+      );
+      expect(wrapper).toMatchSnapshot(
+        "9. Opinion and two template renders three child elements"
+      );
+    });
+  });
+
   context("Roles", () => {
     it("should return the standard roles for tracking", () => {
-      expect(standardRoles).toMatchSnapshot("7. Standard tracking roles");
+      expect(standardRoles).toMatchSnapshot("10. Standard tracking roles");
     });
 
     it("should return the lead and two roles for tracking", () => {
-      expect(leadAndTwoRoles).toMatchSnapshot("8. Lead and two tracking roles");
+      expect(leadAndTwoRoles).toMatchSnapshot(
+        "11. Lead and two tracking roles"
+      );
+    });
+
+    it("should return the opinion and two roles for tracking", () => {
+      expect(opinionAndTwoRoles).toMatchSnapshot(
+        "12. Opinion and two tracking roles"
+      );
     });
   });
 };
