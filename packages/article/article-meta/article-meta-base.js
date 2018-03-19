@@ -16,20 +16,30 @@ const ArticleMetaBase = ({
   publishedTime,
   publicationName,
   RowWrapper
-}) => [
-  ArticleMetaRow(
-    styles.byline,
-    <ArticleByline ast={byline} />,
-    "articleByline",
-    RowWrapper
-  ),
-  ArticleMetaRow(
-    styles.datePublication,
-    <DatePublication date={publishedTime} publication={publicationName} />,
-    "articleDatePublication",
-    RowWrapper
-  )
-];
+}) => {
+  const data = [];
+
+  if (byline && byline.length > 0) {
+    data.push(
+      ArticleMetaRow(
+        styles.byline,
+        <ArticleByline ast={byline} />,
+        "articleByline",
+        RowWrapper
+      )
+    );
+  }
+  data.push(
+    ArticleMetaRow(
+      styles.datePublication,
+      <DatePublication date={publishedTime} publication={publicationName} />,
+      "articleDatePublication",
+      RowWrapper
+    )
+  );
+
+  return data;
+};
 
 const TextNode = PropTypes.shape({ text: PropTypes.string });
 
