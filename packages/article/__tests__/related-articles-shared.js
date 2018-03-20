@@ -6,12 +6,12 @@ import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-import defaultSingleRelatedArticleFixture from "../related-articles/fixtures/default/single-related-article.json";
-import defaultTwoRelatedArticlesFixture from "../related-articles/fixtures/default/two-related-articles.json";
-import defaultThreeRelatedArticlesFixture from "../related-articles/fixtures/default/three-related-articles.json";
-import leadSingleRelatedArticleFixture from "../related-articles/fixtures/lead/single-related-article.json";
-import leadTwoRelatedArticlesFixture from "../related-articles/fixtures/lead/two-related-articles.json";
-import leadThreeRelatedArticlesFixture from "../related-articles/fixtures/lead/three-related-articles.json";
+import standardSingleRelatedArticleFixture from "../related-articles/fixtures/standard/single-related-article.json";
+import standardTwoRelatedArticlesFixture from "../related-articles/fixtures/standard/two-related-articles.json";
+import standardThreeRelatedArticlesFixture from "../related-articles/fixtures/standard/three-related-articles.json";
+import leadAndTwoLeadOnlyRelatedArticleFixture from "../related-articles/fixtures/leadandtwo/lead-related-article.json";
+import leadAndTwoLeadAndSupportRelatedArticlesFixture from "../related-articles/fixtures/leadandtwo/lead-and-support-related-articles.json";
+import leadAndTwoLeadAndTwoSupportsRelatedArticlesFixture from "../related-articles/fixtures/leadandtwo/lead-and-two-supports-related-articles.json";
 
 const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
   analyticsStream: action,
@@ -42,8 +42,9 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  context("DEFAULT template", () => {
+  context("Standard template", () => {
     it("should handle no related articles", () => {
+      const events = jest.fn();
       const data = {
         relatedArticles: [],
         relatedArticlesLayout: {
@@ -51,142 +52,124 @@ export default () => {
         }
       };
       const tree = renderer
-        .create(<RelatedArticles {...createRelatedArticlesProps(data)} />)
+        .create(
+          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+        )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics even when no related articles"
+      );
     });
 
     it("should render one related article", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              defaultSingleRelatedArticleFixture.data
+              standardSingleRelatedArticleFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a single related article"
+      );
     });
 
     it("should render two related articles", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              defaultTwoRelatedArticlesFixture.data
+              standardTwoRelatedArticlesFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for two related articles"
+      );
     });
 
     it("should render three related articles", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              defaultThreeRelatedArticlesFixture.data
+              standardThreeRelatedArticlesFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for three related articles"
+      );
     });
   });
 
-  context("LEAD AND TWO template", () => {
+  context("Lead and two template", () => {
     it("should render one lead related article", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              leadSingleRelatedArticleFixture.data
+              leadAndTwoLeadOnlyRelatedArticleFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a lead related article"
+      );
     });
 
     it("should render one lead and one support related article", () => {
-      const tree = renderer
-        .create(
-          <RelatedArticles
-            {...createRelatedArticlesProps(leadTwoRelatedArticlesFixture.data)}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("should render one lead and two support related articles", () => {
+      const events = jest.fn();
       const tree = renderer
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              leadThreeRelatedArticlesFixture.data
+              leadAndTwoLeadAndSupportRelatedArticlesFixture.data,
+              events
             )}
           />
         )
         .toJSON();
       expect(tree).toMatchSnapshot();
-    });
-  });
-
-  context("tracking and analytics", () => {
-    it("should send analytics even when no related articles", () => {
-      const events = jest.fn();
-      const data = {
-        relatedArticles: [],
-        relatedArticlesLayout: {
-          template: "DEFAULT"
-        }
-      };
-      renderer.create(
-        <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for lead and support related articles"
       );
-      expect(events.mock.calls).toMatchSnapshot();
     });
 
-    it("should send analytics for a single related article", () => {
+    it("should render one lead and two support related articles", () => {
       const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            defaultSingleRelatedArticleFixture.data,
-            events
-          )}
-        />
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              leadAndTwoLeadAndTwoSupportsRelatedArticlesFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for lead and two support related articles"
       );
-      expect(events.mock.calls).toMatchSnapshot();
-    });
-
-    it("should send analytics for two related articles", () => {
-      const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            defaultTwoRelatedArticlesFixture.data,
-            events
-          )}
-        />
-      );
-      expect(events.mock.calls).toMatchSnapshot();
-    });
-
-    it("should send analytics for three related articles", () => {
-      const events = jest.fn();
-      renderer.create(
-        <RelatedArticles
-          {...createRelatedArticlesProps(
-            defaultThreeRelatedArticlesFixture.data,
-            events
-          )}
-        />
-      );
-      expect(events.mock.calls).toMatchSnapshot();
     });
   });
 };
