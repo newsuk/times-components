@@ -7,7 +7,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-stories": "dextrose generate-stories \$\(pwd\) ",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "jest": {
