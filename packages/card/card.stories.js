@@ -37,6 +37,7 @@ storiesOf("Composed/Card", module)
         contentContainerClass="exampleCardContent"
         imageContainerClass="exampleCardImage"
         isLoading
+        isReversed={boolean("Card is reversed?", false, "")}
         showImage={boolean("Show Image?", true, "")}
       >
         <Text>Is loading</Text>
@@ -49,6 +50,7 @@ storiesOf("Composed/Card", module)
         {...cardProps}
         contentContainerClass="exampleCardContent"
         imageContainerClass="exampleCardImage"
+        isReversed={boolean("Card is reversed?", false, "")}
         showImage={boolean("Show Image?", true, "")}
       >
         <View

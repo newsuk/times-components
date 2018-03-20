@@ -8,11 +8,12 @@ import styles from "./styles";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading, showImage } = this.props;
+    const { image, imageSize, isLoading, isReversed, showImage } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
       isLoading !== nextProps.isLoading ||
+      isReversed !== nextProps.isReversed ||
       showImage !== nextProps.showImage
     );
   }
@@ -26,6 +27,7 @@ class CardComponent extends Component {
       imageRatio,
       imageSize,
       isLoading,
+      isReversed,
       showImage
     } = this.props;
 
@@ -35,14 +37,19 @@ class CardComponent extends Component {
           contentContainerClass={contentContainerClass}
           imageContainerClass={imageContainerClass}
           imageRatio={imageRatio}
+          isReversed={isReversed}
           showImage={showImage}
         />
       );
     }
 
+    const cardFlexDirectionStyle = isReversed
+      ? styles.reverseRowLayout
+      : styles.rowLayout;
+
     return (
       <Animations.FadeIn>
-        <View style={styles.cardContainer}>
+        <View style={[styles.cardContainer, cardFlexDirectionStyle]}>
           {showImage &&
             image &&
             image.uri && (
