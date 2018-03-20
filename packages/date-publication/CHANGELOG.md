@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.9...@times-components/date-publication@0.13.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
 <a name="0.12.9"></a>
 ## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.7...@times-components/date-publication@0.12.9) (2018-03-20)
 

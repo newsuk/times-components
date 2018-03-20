@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.9.10",
+  "version": "0.10.0",
   "main": "tracking",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",

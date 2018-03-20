@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.8...@times-components/gradient@0.7.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
 <a name="0.6.8"></a>
 ## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.6...@times-components/gradient@0.6.8) (2018-03-20)
 
