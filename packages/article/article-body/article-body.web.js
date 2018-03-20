@@ -4,12 +4,12 @@ import ArticleRow from "./article-body-row";
 
 const ArticleBody = props => {
   const { section, content: bodyContent, contextUrl } = props;
-  const contentArray = bodyContent.map((data, index) => {
+  const contentArray = bodyContent.map((rowData, index) => {
     const item = {
-      data,
+      data: Object.assign({}, rowData),
       index
     };
-    if (data.name === "ad") {
+    if (rowData.name === "ad") {
       item.data.attributes = {
         ...item.data.attributes,
         ...{ section, contextUrl }
