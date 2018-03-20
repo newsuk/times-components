@@ -23,7 +23,7 @@ ShowTopics.propTypes = {
       name: PropTypes.string.isRequired,
       order: PropTypes.number.isRequired
     }).isRequired
-  ).isRequired
+  )
 };
 
 export default ShowTopics;
