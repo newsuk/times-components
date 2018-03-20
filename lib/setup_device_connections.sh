@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! adb devices -l | grep usb > /dev/null
+if ! adb devices -l | grep 'usb\|emulator' > /dev/null
 then
   echo "No devices connected"
   exit 1
