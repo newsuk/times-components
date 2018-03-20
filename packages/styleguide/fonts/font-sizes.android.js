@@ -1,4 +1,4 @@
-import fontSizes from "./font-sizes";
+import fontSizes from "./font-sizes-base";
 
 const androidFontSizes = {
   ...fontSizes,
