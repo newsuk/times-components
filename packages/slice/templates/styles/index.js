@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   itemContainer: {
@@ -9,10 +9,10 @@ const styles = {
     width: "100%"
   },
   item: {
-    paddingBottom: 10,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 10,
+    paddingBottom: 2 * spacing,
+    paddingLeft: 2 * spacing,
+    paddingRight: 2 * spacing,
+    paddingTop: 2 * spacing,
     width: "100%"
   }
 };
