@@ -12,7 +12,6 @@ exports[`Article Label test on android renders ArticleLabel 1`] = `
         "fontSize": 12,
         "fontWeight": "400",
         "letterSpacing": 1.2,
-        "lineHeight": 12,
         "marginBottom": -4,
         "paddingTop": 5,
       },
