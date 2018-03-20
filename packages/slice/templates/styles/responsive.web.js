@@ -14,15 +14,15 @@ export const SliceContainer = withResponsiveStyles(View, {
 });
 SliceContainer.displayName = "SliceContainer";
 
-export const getSeparator = ({ hasLeftRightMargin }) => {
+export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
   const Separator = withResponsiveStyles(View, {
     base: () => `
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: ${colours.functional.keyline};
     flex: 1;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: ${itemCount >= 3 ? "15px" : "10px"};
+    margin-top: 15px;
     min-width: auto;
   `,
     mediumUp: () => `

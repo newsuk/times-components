@@ -113,7 +113,21 @@
         },
         "label": "leading article",
         "headline": "Defence of the Realm",
-        "byline": [],
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Deborah Haynes"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
         "url":
           "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
       },

@@ -7,11 +7,11 @@ import { leadConfig, supportConfig } from "./config";
 const LeadAndTwoSlice = ({ lead, renderSupports }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
-      <View style={[styles.item, { paddingTop: 0 }]}>{lead(leadConfig)}</View>
+      <View style={styles.item}>{lead(leadConfig)}</View>
     </View>
     {renderSupports(supportConfig).map(support => (
       <View key={support.props.id} style={styles.itemContainer}>
-        <View style={styles.item}>{support}</View>
+        <View style={[styles.item, { paddingTop: 15 }]}>{support}</View>
       </View>
     ))}
   </View>

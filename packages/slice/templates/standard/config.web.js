@@ -32,16 +32,15 @@ export const getConfigWrapper = ({ itemCount }) => {
     `,
     mediumUp: () => {
       const singleItemImageStyle = `
-        flex: 2;
+        flex: 1;
         min-width: auto;
-        max-width: 328px;
-        padding-right: 15px;
+        padding-right: 10px;
       `;
 
       const singleItemSummaryStyle = `
-        flex-grow: 2.7;
+        flex-grow: 1;
         flex-basis: 0 !important;
-        min-width: 325px;
+        min-width: 300px;
       `;
 
       return `

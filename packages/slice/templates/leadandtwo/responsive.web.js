@@ -96,9 +96,6 @@ export const getSupportContainer = ({ index }) => {
       `;
 
       return `
-        flex: 1;
-        flex-wrap: wrap;
-        min-height: auto;
         padding-left: 10px;
         padding-right: 10px;
         ${index > 0 ? secondSupportStyle : ``}

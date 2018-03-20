@@ -4,17 +4,18 @@ import propTypes from "./proptypes";
 import styles from "../styles";
 import config from "./config";
 
-const StandardSlice = ({ itemCount, renderItems }) => (
-  <View style={styles.container}>
-    {renderItems(config(itemCount)).map((item, index) => (
-      <View key={item.props.id} style={styles.itemContainer}>
-        <View style={[styles.item, { paddingTop: index === 0 ? 0 : 10 }]}>
-          {item}
+const StandardSlice = ({ itemCount, renderItems }) => {
+  const itemPaddingStyle = itemCount >= 3 ? { paddingTop: 15 } : {};
+  return (
+    <View style={styles.container}>
+      {renderItems(config(itemCount)).map(item => (
+        <View key={item.props.id} style={styles.itemContainer}>
+          <View style={[styles.item, itemPaddingStyle]}>{item}</View>
         </View>
-      </View>
-    ))}
-  </View>
-);
+      ))}
+    </View>
+  );
+};
 
 StandardSlice.propTypes = propTypes;
 
