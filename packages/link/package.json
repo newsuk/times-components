@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/jest-configurator": "0.2.2",
     "@times-components/storybook": "0.4.4",
-    "dextrose": "1.7.0",
+    "dextrose": "1.7.2",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",

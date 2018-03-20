@@ -43,7 +43,7 @@
     "apollo-client": "2.2.3",
     "apollo-link-http": "1.5.2",
     "chance": "1.0.10",
-    "dextrose": "1.7.0",
+    "dextrose": "1.7.2",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",
