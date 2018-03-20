@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
   nextText: Object.assign(
     {
       textAlign: "right",
-      marginRight: spacing
+      marginRight: 2 * spacing
     },
     textStyle
   ),
   previousText: Object.assign(
     {
       textAlign: "left",
-      marginLeft: spacing
+      marginLeft: 2 * spacing
     },
     textStyle
   )
