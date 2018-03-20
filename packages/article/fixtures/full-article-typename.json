@@ -535,6 +535,7 @@
             "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F94d46672-d8e2-11e7-9b16-edd3826708d6.jpg?crop=1155%2C650%2C46%2C248",
           "__typename": "Crop"
         },
+        "type": "Image",
         "__typename": "Image"
       },
       "relatedArticlesLayout": {
@@ -785,6 +786,7 @@
             }
           ],
           "leadAsset": {
+            "id": "123423456789-654321-12345-765432",
             "title": "TMS: Pratchett’s law of the jungle",
             "crop169": {
               "url":
@@ -967,6 +969,7 @@
             }
           ],
           "leadAsset": {
+            "id": "123423456789-654321-12345-765432",
             "title": "Rise of centenarian drivers as elderly push on",
             "crop169": {
               "url":
@@ -1117,6 +1120,7 @@
             }
           ],
           "leadAsset": {
+            "id": "123423456789-654321-12345-765432",
             "title": "At long last, a burial place fit for a king",
             "crop169": {
               "url":
