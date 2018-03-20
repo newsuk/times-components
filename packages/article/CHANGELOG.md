@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.4"></a>
+## [0.53.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.3...@times-components/article@0.53.4) (2018-03-20)
+
+
+### Bug Fixes
+
+* export article default props ([#760](https://github.com/newsuk/times-components/issues/760)) ([aeef260](https://github.com/newsuk/times-components/commit/aeef260))
+
+
+
+
 <a name="0.53.3"></a>
 ## [0.53.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.2...@times-components/article@0.53.3) (2018-03-20)
 
