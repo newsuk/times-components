@@ -1,7 +1,12 @@
 import React from "react";
 import { StyleSheet, View, Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { colours, fonts, fontSizes, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 import TimesWatermark from "./ad-watermark";
 
 const getStyles = (width, height) =>
