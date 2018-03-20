@@ -149,7 +149,7 @@ class AuthorProfileContent extends React.Component {
         testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
-        keyExtractor={item => item.id}
+        keyExtractor={item => `${item.id}`}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
