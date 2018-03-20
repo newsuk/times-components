@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.13.14",
+  "version": "0.13.15",
   "description": "Article byline information",
   "main": "article-byline",
   "scripts": {
@@ -47,8 +47,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/link": "0.15.7",
-    "@times-components/markup": "0.24.10",
+    "@times-components/link": "0.15.8",
+    "@times-components/markup": "0.24.11",
     "@times-components/styleguide": "0.4.4",
     "prop-types": "15.6.0"
   },

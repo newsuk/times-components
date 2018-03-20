@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.8.15",
+  "version": "0.8.16",
   "description": "The article label",
   "main": "article-label",
   "scripts": {

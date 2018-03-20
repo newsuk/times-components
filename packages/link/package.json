@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.15.7",
+  "version": "0.15.8",
   "description": "component to handle links and navigation",
   "main": "link",
   "scripts": {
