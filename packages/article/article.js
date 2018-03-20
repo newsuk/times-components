@@ -159,4 +159,5 @@ ArticlePage.defaultProps = {
   onRelatedArticlePress: () => {}
 };
 
+export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);

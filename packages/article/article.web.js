@@ -124,4 +124,5 @@ ArticlePage.defaultProps = {
   error: null
 };
 
+export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);
