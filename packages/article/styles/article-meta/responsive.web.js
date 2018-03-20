@@ -1,23 +1,23 @@
 import { Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 export const MetaTextElement = withResponsiveStyles(Text, {
   base: () => ` border-top: 1px solid ${colours.functional.keyline};`,
   mediumUp: () => `
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: ${2 * spacing}px;
+    padding-bottom: ${2 * spacing}px;
   `,
   wideUp: () => `
     line-height: 18px;
-    padding-bottom: 25px;
+    padding-bottom: ${5 * spacing}px;
   `
 });
 
 export const Meta = withResponsiveStyles(View, {
   base: () => `
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: ${2 * spacing}px;
+    margin-right: ${2 * spacing}px;
   `,
   mediumUp: () => `
     margin-left: 0;
