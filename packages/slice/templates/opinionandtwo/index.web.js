@@ -11,8 +11,7 @@ import {
 import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
 
 const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
-  const supportConfig = getSupportConfig();
-  const supports = renderSupports(supportConfig);
+  const supports = renderSupports(getSupportConfig());
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
@@ -20,12 +19,11 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
   const Container = getContainer({ hasSupports });
   const SupportsContainer = getSupportsContainer({ itemCount });
   const OpinionContainer = getOpinionContainer({
-    hasSupports,
     supportCount
   });
-  const Separator = getSeparator({ hasLeftRightMargin: false, itemCount });
+  const Separator = getSeparator({ itemCount });
 
-  const opinionConfig = getOpinionConfig(itemCount);
+  const opinionConfig = getOpinionConfig({ itemCount });
 
   return (
     <ConfigWrapper>

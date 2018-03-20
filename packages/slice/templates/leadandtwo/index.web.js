@@ -23,7 +23,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   });
   const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
 
-  const leadConfig = getLeadConfig(itemCount);
+  const leadConfig = getLeadConfig({ itemCount });
 
   return (
     <ConfigWrapper>

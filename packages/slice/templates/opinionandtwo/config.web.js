@@ -7,7 +7,7 @@ const opinionSummaryConfig = {
   3: [125, 175]
 };
 
-export const getOpinionConfig = itemCount => ({
+export const getOpinionConfig = ({ itemCount }) => ({
   contentContainerClass: "opinionContentContainerClass",
   headlineClass: "opinionHeadlineClass",
   imageContainerClass: "opinionImageContainerClass",

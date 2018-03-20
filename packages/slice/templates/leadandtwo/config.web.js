@@ -7,7 +7,7 @@ const leadSummaryConfig = {
   3: [125, 175]
 };
 
-export const getLeadConfig = itemCount => ({
+export const getLeadConfig = ({ itemCount }) => ({
   contentContainerClass: "leadContentContainerClass",
   headlineClass: "leadHeadlineClass",
   imageContainerClass: "leadImageContainerClass",

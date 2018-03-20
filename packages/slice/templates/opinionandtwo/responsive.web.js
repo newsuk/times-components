@@ -4,7 +4,7 @@ import withResponsiveStyles, {
 } from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 
-export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
+export const getSeparator = ({ itemCount }) => {
   const Separator = withResponsiveStyles(View, {
     base: () => `
       border-bottom-style: solid;
@@ -22,7 +22,7 @@ export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
       border-right-color: ${colours.functional.keyline};
       display: ${itemCount === 3 ? "none" : "block"};
       flex: 0 !important;
-      margin: ${hasLeftRightMargin ? "0 10px" : "0"};
+      margin: 0;
     `,
     wideUp: () => `
       display: block;
@@ -67,14 +67,14 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getOpinionContainer = ({ hasSupports, supportCount }) => {
+export const getOpinionContainer = ({ supportCount }) => {
   const OpinionContainer = withResponsiveStyles(View, {
     base: () => `
       flex: 1;
       flex-grow: 1;
       padding-left: 10px;
       padding-right: 10px;
-      width: ${hasSupports ? "auto" : "100%"};
+      width: ${supportCount > 0 ? "auto" : "100%"};
     `,
     mediumUp: () => {
       const withoutSupportsStyle = `
@@ -97,7 +97,7 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         min-width: 100%;
       `;
       return `
-        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
+        ${supportCount > 0 ? withSupportsStyle : withoutSupportsStyle}
         ${supportCount === 2 ? twoSupportStyle : ``}
       `;
     },

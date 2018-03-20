@@ -12,7 +12,7 @@ const StandardSlice = ({ itemCount, renderItems }) => {
   });
   const Separator = getSeparator({ hasLeftRightMargin: true, itemCount });
 
-  const config = getConfig(itemCount);
+  const config = getConfig({ itemCount });
 
   return (
     <ConfigWrapper>
