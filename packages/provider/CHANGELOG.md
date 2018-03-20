@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.1"></a>
+## [0.25.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.25.0...@times-components/provider@0.25.1) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+
+
+
+
 <a name="0.25.0"></a>
 # [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.4...@times-components/provider@0.25.0) (2018-03-19)
 

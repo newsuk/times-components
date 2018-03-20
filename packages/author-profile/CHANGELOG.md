@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.49.18"></a>
+## [0.49.18](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.17...@times-components/author-profile@0.49.18) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the warning on Native devices when viewing Author Profile ([#762](https://github.com/newsuk/times-components/issues/762)) ([6722ab8](https://github.com/newsuk/times-components/commit/6722ab8))
+
+
+
+
 <a name="0.49.17"></a>
 ## [0.49.17](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.16...@times-components/author-profile@0.49.17) (2018-03-19)
 
