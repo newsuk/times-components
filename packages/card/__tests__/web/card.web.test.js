@@ -142,6 +142,8 @@ describe("Card tests on web", () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("7. Renders a Card with a reversed layout");
+    expect(component).toMatchSnapshot(
+      "7. Renders a Card with a reversed layout"
+    );
   });
 });
