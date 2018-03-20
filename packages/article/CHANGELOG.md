@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.3"></a>
+## [0.53.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.2...@times-components/article@0.53.3) (2018-03-20)
+
+
+### Bug Fixes
+
+* use mutable object as apollo uses immutables ([#766](https://github.com/newsuk/times-components/issues/766)) ([080f1ec](https://github.com/newsuk/times-components/commit/080f1ec))
+
+
+
+
 <a name="0.53.2"></a>
 ## [0.53.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.0...@times-components/article@0.53.2) (2018-03-20)
 
