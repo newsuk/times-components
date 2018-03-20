@@ -15,5 +15,7 @@ export const Animations = {
   FadeIn
 };
 
+export const spacing = 5;
+
 export const fonts = timesFonts;
 export const fontSizes = timesFontSizes;

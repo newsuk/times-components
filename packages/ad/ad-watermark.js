@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Watermark from "@times-components/watermark";
+import { spacing } from "@times-components/styleguide";
 
 const calculateViewBox = (width, height) => {
   if (width >= 970 && height >= 250) {
     return {
-      marginLeft: 205,
-      marginTop: -40,
+      marginLeft: 41 * spacing,
+      marginTop: -8 * spacing,
       svgWidth: 584,
       svgHeight: 220
     };
@@ -14,8 +15,8 @@ const calculateViewBox = (width, height) => {
 
   if (width >= 728 && height >= 90) {
     return {
-      marginLeft: 630,
-      marginTop: -120,
+      marginLeft: 126 * spacing,
+      marginTop: -24 * spacing,
       svgWidth: 1200,
       svgHeight: 50
     };
@@ -24,7 +25,7 @@ const calculateViewBox = (width, height) => {
   if (width >= 300 && height >= 250) {
     // MPU
     return {
-      marginLeft: 15,
+      marginLeft: 3 * spacing,
       marginTop: 0,
       svgWidth: 269,
       svgHeight: 250
@@ -32,7 +33,7 @@ const calculateViewBox = (width, height) => {
   }
 
   return {
-    marginLeft: 50,
+    marginLeft: 10 * spacing,
     marginTop: 0,
     svgWidth: width,
     svgHeight: height
