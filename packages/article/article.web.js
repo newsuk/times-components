@@ -45,13 +45,15 @@ class ArticlePage extends React.Component {
       relatedArticlesLayout
     } = articleData;
     const leadAssetProps = getLeadAsset(articleData);
-    const displayRelatedArticles = relatedArticlesLayout && relatedArticlesLayout.template ?
-      <RelatedArticles
-        analyticsStream={() => {}}
-        articles={relatedArticles}
-        template={relatedArticlesLayout.template}
-        onPress={() => null}
-      /> : null;
+    const displayRelatedArticles =
+      relatedArticlesLayout && relatedArticlesLayout.template ? (
+        <RelatedArticles
+          analyticsStream={() => {}}
+          articles={relatedArticles}
+          template={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
+      ) : null;
 
     return (
       <Fragment>

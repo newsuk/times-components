@@ -26,4 +26,8 @@ ShowTopics.propTypes = {
   )
 };
 
+ShowTopics.defaultProps = {
+  topics: null
+};
+
 export default ShowTopics;

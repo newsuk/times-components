@@ -36,7 +36,8 @@ ShowTopics.propTypes = {
 };
 
 ShowTopics.defaultProps = {
-  device: null
+  device: null,
+  topics: null
 };
 
 export default ShowTopics;
