@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import ArticleImage from "./article-image.base";
 
 import {
@@ -11,23 +12,23 @@ const styles = StyleSheet.create({
   primaryContainer: {
     width: "100%",
     flexDirection: "column",
-    paddingBottom: 25
+    paddingBottom: 5 * spacing
   },
   secondaryContainer: {
     width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
-    paddingBottom: 25,
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingBottom: 5 * spacing,
+    paddingLeft: 2 * spacing,
+    paddingRight: 2 * spacing
   },
   inlineContainer: {
     width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
-    paddingBottom: 25,
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingBottom: 5 * spacing,
+    paddingLeft: 2 * spacing,
+    paddingRight: 2 * spacing
   }
 });
 
