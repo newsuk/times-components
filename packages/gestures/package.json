@@ -11,7 +11,7 @@
     "test:android:debug": "node --inspect --inspect-brk node_modules/.bin/jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage",
-    "dextrose-stories": "dextrose generate-stories $(pwd) ",
+    "dextrose-stories": "dextrose generate-stories $(pwd)  ",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
