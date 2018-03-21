@@ -20,14 +20,14 @@ exports[`Related articles tests on android Lead and two template should render o
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -41,12 +41,7 @@ exports[`Related articles tests on android Lead and two template should render o
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -60,18 +55,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -277,7 +267,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -381,7 +370,15 @@ exports[`Related articles tests on android Lead and two template should render o
                         "marginBottom": 5,
                       }
                     }
-                  />
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
                 </View>
               </View>
             </View>
@@ -401,13 +398,18 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingTop": 15,
+            },
+          ]
         }
       >
         <View
@@ -478,7 +480,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -594,14 +595,14 @@ exports[`Related articles tests on android Lead and two template should render o
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -615,12 +616,7 @@ exports[`Related articles tests on android Lead and two template should render o
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -634,18 +630,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -851,7 +842,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -955,7 +945,15 @@ exports[`Related articles tests on android Lead and two template should render o
                         "marginBottom": 5,
                       }
                     }
-                  />
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
                 </View>
               </View>
             </View>
@@ -975,13 +973,18 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingTop": 15,
+            },
+          ]
         }
       >
         <View
@@ -1052,7 +1055,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -1156,13 +1158,18 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingTop": 15,
+            },
+          ]
         }
       >
         <View
@@ -1233,7 +1240,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -1349,14 +1355,14 @@ exports[`Related articles tests on android Lead and two template should render o
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -1370,12 +1376,7 @@ exports[`Related articles tests on android Lead and two template should render o
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -1389,18 +1390,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1606,7 +1602,6 @@ exports[`Related articles tests on android Lead and two template should render o
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -1710,7 +1705,15 @@ exports[`Related articles tests on android Lead and two template should render o
                         "marginBottom": 5,
                       }
                     }
-                  />
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
                 </View>
               </View>
             </View>
@@ -1744,14 +1747,14 @@ exports[`Related articles tests on android Standard template should render one r
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -1765,12 +1768,7 @@ exports[`Related articles tests on android Standard template should render one r
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -1792,9 +1790,7 @@ exports[`Related articles tests on android Standard template should render one r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {
-              "paddingTop": 0,
-            },
+            "",
           ]
         }
       >
@@ -2001,7 +1997,6 @@ exports[`Related articles tests on android Standard template should render one r
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -2145,14 +2140,14 @@ exports[`Related articles tests on android Standard template should render three
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -2166,12 +2161,7 @@ exports[`Related articles tests on android Standard template should render three
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -2194,7 +2184,7 @@ exports[`Related articles tests on android Standard template should render three
               "width": "100%",
             },
             Object {
-              "paddingTop": 0,
+              "paddingTop": 15,
             },
           ]
         }
@@ -2267,7 +2257,6 @@ exports[`Related articles tests on android Standard template should render three
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -2408,7 +2397,7 @@ exports[`Related articles tests on android Standard template should render three
               "width": "100%",
             },
             Object {
-              "paddingTop": 10,
+              "paddingTop": 15,
             },
           ]
         }
@@ -2481,7 +2470,6 @@ exports[`Related articles tests on android Standard template should render three
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -2635,7 +2623,7 @@ exports[`Related articles tests on android Standard template should render three
               "width": "100%",
             },
             Object {
-              "paddingTop": 10,
+              "paddingTop": 15,
             },
           ]
         }
@@ -2708,7 +2696,6 @@ exports[`Related articles tests on android Standard template should render three
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -2865,14 +2852,14 @@ exports[`Related articles tests on android Standard template should render two r
         "display": "flex",
         "height": 55,
         "justifyContent": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
       }
     }
   >
     <Text
+      accessibilityRole="heading"
       accessible={true}
       allowFontScaling={true}
+      aria-level="3"
       ellipsizeMode="tail"
       style={
         Object {
@@ -2886,12 +2873,7 @@ exports[`Related articles tests on android Standard template should render two r
     </Text>
   </View>
   <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "marginTop": 10,
-      }
-    }
+    style={undefined}
   >
     <View
       style={
@@ -2913,9 +2895,7 @@ exports[`Related articles tests on android Standard template should render two r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {
-              "paddingTop": 0,
-            },
+            "",
           ]
         }
       >
@@ -3122,7 +3102,6 @@ exports[`Related articles tests on android Standard template should render two r
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -3262,9 +3241,7 @@ exports[`Related articles tests on android Standard template should render two r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {
-              "paddingTop": 10,
-            },
+            "",
           ]
         }
       >
@@ -3471,7 +3448,6 @@ exports[`Related articles tests on android Standard template should render two r
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "lineHeight": 12,
                             "marginBottom": -4,
                             "paddingTop": 5,
                           },
@@ -3633,7 +3609,7 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "",
+            "byline": "Deborah Haynes",
             "headline": "Defence of the Realm",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
@@ -3683,7 +3659,7 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "",
+            "byline": "Deborah Haynes",
             "headline": "Defence of the Realm",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
@@ -3715,7 +3691,7 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "",
+            "byline": "Deborah Haynes",
             "headline": "Defence of the Realm",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",

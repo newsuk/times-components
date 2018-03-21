@@ -3,17 +3,15 @@ import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 export default StyleSheet.create({
   titleContainer: {
+    alignItems: "center",
     borderStyle: "solid",
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderTopColor: colours.functional.keyline,
     borderTopWidth: StyleSheet.hairlineWidth,
-    height: 55,
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingLeft: 10,
-    paddingRight: 10
+    height: 55,
+    justifyContent: "center"
   },
   title: {
     fontFamily: fonts.headline,

@@ -24,7 +24,7 @@ export const getChildrenContainer = ({ childCount }) => {
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: ${childCount >= 3 ? "15px" : "10px"};
     width: 100%;
   `,
     mediumUp: () => {

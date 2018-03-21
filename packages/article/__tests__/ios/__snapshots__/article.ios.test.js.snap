@@ -1075,7 +1075,7 @@ exports[`Article test on ios renders article no flags 1`] = `
                   "fontSize": 12,
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
-                  "lineHeight": 12,
+                  "marginBottom": 0,
                 },
                 Object {
                   "color": "#333333",
@@ -6906,7 +6906,7 @@ exports[`Article test on ios renders article no standfirst 1`] = `
                   "fontSize": 12,
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
-                  "lineHeight": 12,
+                  "marginBottom": 0,
                 },
                 Object {
                   "color": "#333333",
@@ -8474,7 +8474,7 @@ exports[`Article test on ios renders article no standfirst no flags 1`] = `
                   "fontSize": 12,
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
-                  "lineHeight": 12,
+                  "marginBottom": 0,
                 },
                 Object {
                   "color": "#333333",
@@ -12348,7 +12348,7 @@ exports[`Article test on ios renders full article 1`] = `
                   "fontSize": 12,
                   "fontWeight": "400",
                   "letterSpacing": 1.2,
-                  "lineHeight": 12,
+                  "marginBottom": 0,
                 },
                 Object {
                   "color": "#333333",

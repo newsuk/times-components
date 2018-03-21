@@ -2,10 +2,6 @@ import { StyleSheet } from "react-native";
 import { colours } from "@times-components/styleguide";
 
 const styles = {
-  container: {
-    marginBottom: 10,
-    marginTop: 10
-  },
   itemContainer: {
     borderStyle: "solid",
     borderBottomColor: colours.functional.keyline,
