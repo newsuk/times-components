@@ -1145,7 +1145,7 @@ exports[`Article test on android renders article no flags 1`] = `
                 "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
-                "paddingBottom": 15,
+                "paddingBottom": 12,
               },
             ]
           }
@@ -1182,8 +1182,8 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -1196,7 +1196,7 @@ exports[`Article test on android renders article no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -1214,8 +1214,8 @@ exports[`Article test on android renders article no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -1228,7 +1228,7 @@ exports[`Article test on android renders article no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -2602,7 +2602,7 @@ exports[`Article test on android renders article no label 1`] = `
                 "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
-                "paddingBottom": 15,
+                "paddingBottom": 12,
               },
             ]
           }
@@ -2667,7 +2667,7 @@ exports[`Article test on android renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -2731,7 +2731,7 @@ exports[`Article test on android renders article no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -2776,8 +2776,8 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -2790,7 +2790,7 @@ exports[`Article test on android renders article no label 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -2808,8 +2808,8 @@ exports[`Article test on android renders article no label 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -2822,7 +2822,7 @@ exports[`Article test on android renders article no label 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -4193,7 +4193,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
-                "paddingBottom": 15,
+                "paddingBottom": 12,
               },
             ]
           }
@@ -4230,8 +4230,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -4244,7 +4244,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -4262,8 +4262,8 @@ exports[`Article test on android renders article no label no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -4276,7 +4276,7 @@ exports[`Article test on android renders article no label no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -5663,8 +5663,8 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -5677,7 +5677,7 @@ exports[`Article test on android renders article no label no flags no standfirst
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -5695,8 +5695,8 @@ exports[`Article test on android renders article no label no flags no standfirst
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -5709,7 +5709,7 @@ exports[`Article test on android renders article no label no flags no standfirst
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -7161,7 +7161,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -7225,7 +7225,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -7270,8 +7270,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -7284,7 +7284,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -7302,8 +7302,8 @@ exports[`Article test on android renders article no standfirst 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -7316,7 +7316,7 @@ exports[`Article test on android renders article no standfirst 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -8737,8 +8737,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -8751,7 +8751,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -8769,8 +8769,8 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -8783,7 +8783,7 @@ exports[`Article test on android renders article no standfirst no flags 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -10201,7 +10201,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -10265,7 +10265,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -10310,8 +10310,8 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -10324,7 +10324,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -10342,8 +10342,8 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -10356,7 +10356,7 @@ exports[`Article test on android renders article no standfirst no label 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -11084,8 +11084,8 @@ exports[`Article test on android renders article with video asset 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -11098,7 +11098,7 @@ exports[`Article test on android renders article with video asset 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -11116,8 +11116,8 @@ exports[`Article test on android renders article with video asset 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -11130,7 +11130,7 @@ exports[`Article test on android renders article with video asset 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
@@ -12698,7 +12698,7 @@ exports[`Article test on android renders full article 1`] = `
                 "fontSize": 20,
                 "lineHeight": 29,
                 "marginTop": -7,
-                "paddingBottom": 15,
+                "paddingBottom": 12,
               },
             ]
           }
@@ -12763,7 +12763,7 @@ exports[`Article test on android renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -12827,7 +12827,7 @@ exports[`Article test on android renders full article 1`] = `
                   Array [
                     Object {
                       "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 12,
+                      "fontSize": 14,
                       "fontWeight": "400",
                       "letterSpacing": 1.4,
                     },
@@ -12872,8 +12872,8 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -12886,7 +12886,7 @@ exports[`Article test on android renders full article 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 17,
+                "lineHeight": 21,
               }
             }
           >
@@ -12904,8 +12904,8 @@ exports[`Article test on android renders full article 1`] = `
             Object {
               "borderTopColor": "#DBDBDB",
               "borderTopWidth": 0.5,
-              "paddingBottom": 8,
-              "paddingTop": 6,
+              "paddingBottom": 6,
+              "paddingTop": 7,
             }
           }
         >
@@ -12918,7 +12918,7 @@ exports[`Article test on android renders full article 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 15,
+                "lineHeight": 21,
               }
             }
           >
