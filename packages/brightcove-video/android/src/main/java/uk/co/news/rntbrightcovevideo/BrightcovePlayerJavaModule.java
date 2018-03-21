@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 
-public class BrightcovePlayerJavaModule extends ReactContextBaseJavaModule {
+class BrightcovePlayerJavaModule extends ReactContextBaseJavaModule {
 
     private static final String PROP_ACCOUNT_ID = "accountId";
     private static final String PROP_POLICY_KEY = "policyKey";
@@ -15,7 +15,7 @@ public class BrightcovePlayerJavaModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext context;
 
-    public BrightcovePlayerJavaModule(ReactApplicationContext reactContext) {
+    BrightcovePlayerJavaModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.context = reactContext;
     }
