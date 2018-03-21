@@ -32,7 +32,7 @@ export const getChildrenContainer = ({ childCount }) => {
       width: ${config.mediumBpWidth};
     `;
 
-      const multiItemStyle = `
+      const multipleItemsStyle = `
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
@@ -40,7 +40,7 @@ export const getChildrenContainer = ({ childCount }) => {
 
       return `
         flex-direction: row;
-        ${childCount >= 3 ? multiItemStyle : fewItemsStyle}
+        ${childCount >= 3 ? multipleItemsStyle : fewItemsStyle}
       `;
     },
     wideUp: () => `
