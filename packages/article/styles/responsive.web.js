@@ -3,14 +3,24 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours } from "@times-components/styleguide";
 import config from "./responsive-config";
 
-export const MainContainer = withResponsiveStyles(View, {
-  wideUp: () => "padding-top: 20px; margin: 0 auto;"
-});
+export const MainContainer = withResponsiveStyles(
+  View,
+  {
+    wideUp: () => `
+      padding-top: 20px;
+      margin: 0 auto;
+      display: block;
+    `
+  },
+  "MainContainer"
+);
 
 /* --- HeaderAd --- */
-export const HeaderAdContainer = withResponsiveStyles(View, {
-  base: () => `display: none;`,
-  mediumUp: () => `
+export const HeaderAdContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `display: none;`,
+    mediumUp: () => `
     display: flex;
     border-top-color: ${colours.functional.keyline};
     border-bottom-color: ${colours.functional.keyline};
@@ -18,37 +28,68 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
     padding-top: 10px;
     padding-bottom: 10px;
   `
-});
+  },
+  "HeaderAdContainer"
+);
 
 /* --- Header --- */
 
-export const HeaderContainer = withResponsiveStyles(View, {
-  base: () => config.articleContainerPadding,
-  mediumUp: () => config.mediumBpPositioning,
-  wideUp: () => `
-    width: ${config.wideBpWidth};
-    margin-bottom: 15px;
-  `
-});
+export const HeaderContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+      ${config.articleContainerPadding}
+      order: 2
+    `,
+    mediumUp: () => config.mediumBpPositioning,
+    wideUp: () => `
+      width: ${config.wideBpWidth};
+      margin-bottom: 15px;
+    `
+  },
+  "HeaderContainer"
+);
 
 /* --- Meta --- */
 
-export const MetaContainer = withResponsiveStyles(View, {
-  mediumUp: () => `width: ${config.mediumBpWidth}; margin: 0 auto;`,
-  wideUp: () => `
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    top: 0;
-    width: 20.8333%;
-  `
-});
+export const MetaContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+      order: 3;
+    `,
+    mediumUp: () => `width: ${config.mediumBpWidth}; margin: 0 auto;`,
+    wideUp: () => `
+      margin-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      position: absolute;
+      left: 0;
+      width: 20.8333%;
+    `
+  },
+  "MetaContainer"
+);
 
 /* --- Body --- */
 
-export const BodyContainer = withResponsiveStyles(View, {
-  base: () => `
-    display: block;
-  `
-});
+export const LeadAssetContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+      order: 1;
+    `
+  },
+  "LeadAssetContainer"
+);
+
+export const BodyContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+      display: block;
+      order: 4;
+    `
+  },
+  "BodyContainer"
+);

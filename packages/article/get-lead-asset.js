@@ -1,11 +1,20 @@
-export default function getLeadAsset({ leadAsset: asset }) {
-  if (!asset) return { isVideo: false, leadAsset: null };
+export default function getLeadAsset({ leadAsset }) {
+  if (!leadAsset)
+    return {
+      isVideo: false,
+      leadAsset: null,
+      displayImage: null,
+      aspectRatio: "1:1"
+    };
 
-  const isVideo = asset.type === "Video";
-  const leadAsset = isVideo ? asset.posterImage : asset;
+  const isVideo = leadAsset.type === "Video";
+  const displayImage = isVideo ? leadAsset.posterImage.crop : leadAsset.crop;
+  const aspectRatio = displayImage.ratio;
 
   return {
+    isVideo,
     leadAsset,
-    isVideo
+    displayImage,
+    aspectRatio
   };
 }

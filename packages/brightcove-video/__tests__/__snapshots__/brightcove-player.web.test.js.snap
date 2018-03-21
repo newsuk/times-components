@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`brightcove-video web component renders correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+>
   <video
     autoPlay={false}
     className="video-js"
@@ -23,7 +30,14 @@ exports[`brightcove-video web component renders correctly 1`] = `
 `;
 
 exports[`brightcove-video web component renders correctly with a poster 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+>
   <video
     autoPlay={false}
     className="video-js"

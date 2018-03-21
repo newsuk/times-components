@@ -58,6 +58,7 @@
   "dependencies": {
     "@times-components/ad": "0.15.5",
     "@times-components/article-byline": "0.13.16",
+    "@times-components/brightcove-video": "1.11.9",
     "@times-components/article-flag": "0.11.9",
     "@times-components/article-image": "0.12.12",
     "@times-components/article-label": "0.9.0",
