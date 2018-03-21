@@ -6,12 +6,12 @@ import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-import standardSingleRelatedArticleFixture from "../related-articles/fixtures/standard/single-related-article.json";
-import standardTwoRelatedArticlesFixture from "../related-articles/fixtures/standard/two-related-articles.json";
-import standardThreeRelatedArticlesFixture from "../related-articles/fixtures/standard/three-related-articles.json";
-import leadAndTwoLeadOnlyRelatedArticleFixture from "../related-articles/fixtures/leadandtwo/lead-related-article.json";
-import leadAndTwoLeadAndSupportRelatedArticlesFixture from "../related-articles/fixtures/leadandtwo/lead-and-support-related-articles.json";
-import leadAndTwoLeadAndTwoSupportsRelatedArticlesFixture from "../related-articles/fixtures/leadandtwo/lead-and-two-supports-related-articles.json";
+import standard1ArticleFixture from "../related-articles/fixtures/standard/1-article.json";
+import standard2ArticlesFixture from "../related-articles/fixtures/standard/2-articles.json";
+import standard3ArticlesFixture from "../related-articles/fixtures/standard/3-articles.json";
+import leadAndTwo1ArticleFixture from "../related-articles/fixtures/leadandtwo/1-article.json";
+import leadAndTwo2ArticlesFixture from "../related-articles/fixtures/leadandtwo/2-articles.json";
+import leadAndTwo3ArticlesFixture from "../related-articles/fixtures/leadandtwo/3-articles.json";
 
 const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
   analyticsStream: action,
@@ -68,7 +68,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              standardSingleRelatedArticleFixture.data,
+              standard1ArticleFixture.data,
               events
             )}
           />
@@ -86,7 +86,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              standardTwoRelatedArticlesFixture.data,
+              standard2ArticlesFixture.data,
               events
             )}
           />
@@ -104,7 +104,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              standardThreeRelatedArticlesFixture.data,
+              standard3ArticlesFixture.data,
               events
             )}
           />
@@ -124,7 +124,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              leadAndTwoLeadOnlyRelatedArticleFixture.data,
+              leadAndTwo1ArticleFixture.data,
               events
             )}
           />
@@ -142,7 +142,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              leadAndTwoLeadAndSupportRelatedArticlesFixture.data,
+              leadAndTwo2ArticlesFixture.data,
               events
             )}
           />
@@ -160,7 +160,7 @@ export default () => {
         .create(
           <RelatedArticles
             {...createRelatedArticlesProps(
-              leadAndTwoLeadAndTwoSupportsRelatedArticlesFixture.data,
+              leadAndTwo3ArticlesFixture.data,
               events
             )}
           />
