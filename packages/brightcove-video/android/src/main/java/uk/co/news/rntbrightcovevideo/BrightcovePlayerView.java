@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.SurfaceView;
-import android.view.View;
 
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
@@ -99,10 +98,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
-            View fullScreenButton = this.findViewById(com.brightcove.player.R.id.full_screen);
-            fullScreenButton.setVisibility(isFullscreenButtonHidden ? View.GONE : View.VISIBLE);
-
-            mAutoplay = autoplay;
+        mAutoplay = autoplay;
 
             EventEmitter eventEmitter = setupEventEmitter();
 
