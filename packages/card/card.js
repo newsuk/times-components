@@ -8,13 +8,11 @@ import styles from "./styles";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading, isReversed, showImage } = this.props;
+    const { image, imageSize, isLoading } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
-      isLoading !== nextProps.isLoading ||
-      isReversed !== nextProps.isReversed ||
-      showImage !== nextProps.showImage
+      isLoading !== nextProps.isLoading
     );
   }
 
