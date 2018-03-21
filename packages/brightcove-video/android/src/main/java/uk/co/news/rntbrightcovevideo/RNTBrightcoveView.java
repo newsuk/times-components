@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.util.Log;
 import android.widget.FrameLayout;
 
 import com.brightcove.player.event.Event;
@@ -17,14 +16,12 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 public class RNTBrightcoveView extends FrameLayout {
-    public static final String TAG = RNTBrightcoveView.class.getSimpleName();
-
-    private String mVideoId;
-    private String mAccountId;
-    private String mPolicyKey;
-    private Boolean mAutoplay;
-    private Boolean mHideFullScreenButton;
-    private BrightcovePlayerView mPlayerView;
+    private String videoId;
+    private String accountId;
+    private String policyKey;
+    private Boolean autoplay;
+    private Boolean hideFullScreenButton;
+    private BrightcovePlayerView playerView;
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
@@ -33,66 +30,62 @@ public class RNTBrightcoveView extends FrameLayout {
 
     @Override
     protected void onConfigurationChanged(Configuration newConfig) {
-        Log.d(TAG, "onConfigurationChanged");
-
-        mPlayerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
+        playerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
 
         super.onConfigurationChanged(newConfig);
     }
 
     public void play() {
-        mPlayerView.start();
+        playerView.start();
     }
 
     public void pause() {
-        mPlayerView.pause();
+        playerView.pause();
     }
 
     public void setVideoId(final String videoId) {
-        if (mVideoId == null) {
-            mVideoId = videoId;
+        if (this.videoId == null) {
+            this.videoId = videoId;
             initPlayerView();
         }
     }
 
     public void setAccountId(final String accountId) {
-        if (mAccountId == null) {
-            mAccountId = accountId;
+        if (this.accountId == null) {
+            this.accountId = accountId;
             initPlayerView();
         }
     }
 
     public void setPolicyKey(final String policyKey) {
-        if (mPolicyKey == null) {
-            mPolicyKey = policyKey;
+        if (this.policyKey == null) {
+            this.policyKey = policyKey;
             initPlayerView();
         }
     }
 
     public void setAutoplay(final Boolean autoplay) {
-        if (mAutoplay == null) {
-            mAutoplay = autoplay;
+        if (this.autoplay == null) {
+            this.autoplay = autoplay;
             initPlayerView();
         }
     }
 
     public void setHideFullScreenButton(final Boolean hideFullScreenButton) {
-        if (mHideFullScreenButton == null) {
-            mHideFullScreenButton = hideFullScreenButton;
+        if (this.hideFullScreenButton == null) {
+            this.hideFullScreenButton = hideFullScreenButton;
             initPlayerView();
         }
     }
 
     private void initPlayerView() {
         if (parametersSet()) {
-            Log.d(TAG, "adding player view");
+            playerView = new BrightcovePlayerView(getActivity());
 
-            mPlayerView = new BrightcovePlayerView(getActivity());
+            addView(playerView);
 
-            addView(mPlayerView);
-
-            boolean isFullscreenButtonHidden = mHideFullScreenButton != null ? mHideFullScreenButton : false;
-            mPlayerView.initVideo(mVideoId, mAccountId, mPolicyKey, mAutoplay, isFullscreenButtonHidden);
+            boolean isFullscreenButtonHidden = hideFullScreenButton != null ? hideFullScreenButton : false;
+            playerView.initVideo(videoId, accountId, policyKey, autoplay, isFullscreenButtonHidden);
         }
     }
 
@@ -112,10 +105,10 @@ public class RNTBrightcoveView extends FrameLayout {
         WritableMap event = Arguments.createMap();
 
         if (isPlaying != null) {
-            Integer duration = mPlayerView.getDuration();
+            Integer duration = playerView.getDuration();
 
             event.putBoolean("isPlaying", isPlaying);
-            event.putBoolean("isFullscreen", mPlayerView.getIsFullscreen());
+            event.putBoolean("isFullscreen", playerView.getIsFullscreen());
             event.putDouble("progress", progress);
 
             if (duration > 0) {
@@ -137,6 +130,6 @@ public class RNTBrightcoveView extends FrameLayout {
     }
 
     private boolean parametersSet() {
-        return mVideoId != null && mAccountId != null && mPolicyKey != null && mAutoplay != null && mHideFullScreenButton != null;
+        return videoId != null && accountId != null && policyKey != null && autoplay != null && hideFullScreenButton != null;
     }
 }
