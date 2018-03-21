@@ -24,25 +24,25 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   const leadConfig = getLeadConfig({ itemCount });
   const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
 
+  const renderSupportsContainer = () => (
+    <SupportsContainer>
+      {supports.map((support, index) => {
+        const SupportContainer = getSupportContainer({ index });
+        SupportContainer.displayName = "SupportContainer";
+        return (
+          <SupportContainer key={support.props.id}>{support}</SupportContainer>
+        );
+      })}
+    </SupportsContainer>
+  );
+
   return (
     <ConfigWrapper>
       <SliceContainer>
         <Container>
           <LeadContainer>{lead(leadConfig)}</LeadContainer>
           {hasSupports && <Separator />}
-          {hasSupports && (
-            <SupportsContainer>
-              {supports.map((support, index) => {
-                const SupportContainer = getSupportContainer({ index });
-                SupportContainer.displayName = "SupportContainer";
-                return (
-                  <SupportContainer key={support.props.id}>
-                    {support}
-                  </SupportContainer>
-                );
-              })}
-            </SupportsContainer>
-          )}
+          {hasSupports && renderSupportsContainer()}
         </Container>
       </SliceContainer>
     </ConfigWrapper>

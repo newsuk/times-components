@@ -1,6 +1,6 @@
 const styles = {
-  supports: {
-    paddingTop: 15
+  opinion: {
+    paddingTop: 0
   }
 };
 

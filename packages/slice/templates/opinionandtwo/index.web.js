@@ -25,28 +25,28 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
   const Separator = getSeparator({ itemCount });
   const SupportsContainer = getSupportsContainer({ supportCount });
 
+  const renderSupportsContainer = () => (
+    <SupportsContainer>
+      {supports.map((support, index) => {
+        const SupportContainer = getSupportContainer({
+          index,
+          supportCount
+        });
+        SupportContainer.displayName = "SupportContainer";
+        return (
+          <SupportContainer key={support.props.id}>{support}</SupportContainer>
+        );
+      })}
+    </SupportsContainer>
+  );
+
   return (
     <ConfigWrapper>
       <SliceContainer>
         <Container>
           <OpinionContainer>{opinion(opinionConfig)}</OpinionContainer>
           {hasSupports && <Separator />}
-          {hasSupports && (
-            <SupportsContainer>
-              {supports.map((support, index) => {
-                const SupportContainer = getSupportContainer({
-                  index,
-                  supportCount
-                });
-                SupportContainer.displayName = "SupportContainer";
-                return (
-                  <SupportContainer key={support.props.id}>
-                    {support}
-                  </SupportContainer>
-                );
-              })}
-            </SupportsContainer>
-          )}
+          {hasSupports && renderSupportsContainer()}
         </Container>
       </SliceContainer>
     </ConfigWrapper>
