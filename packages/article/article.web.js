@@ -13,6 +13,7 @@ import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
 import Topics from "./topics";
+import RelatedArticles from "./related-articles/related-articles";
 
 import {
   MainContainer,
@@ -39,9 +40,20 @@ class ArticlePage extends React.Component {
       content,
       section,
       url,
-      topics
+      topics,
+      relatedArticles,
+      relatedArticlesLayout
     } = articleData;
     const leadAssetProps = getLeadAsset(articleData);
+    const displayRelatedArticles =
+      relatedArticlesLayout && relatedArticlesLayout.template ? (
+        <RelatedArticles
+          analyticsStream={() => {}}
+          articles={relatedArticles}
+          template={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
+      ) : null;
 
     return (
       <Fragment>
@@ -79,6 +91,7 @@ class ArticlePage extends React.Component {
           </View>
         </MainContainer>
         <Topics topics={topics} />
+        {displayRelatedArticles}
         <Ad pos="pixel" section={section} contextUrl={url} />
         <Ad pos="pixelteads" section={section} contextUrl={url} />
         <Ad pos="pixelskin" section={section} contextUrl={url} />

@@ -23,7 +23,11 @@ ShowTopics.propTypes = {
       name: PropTypes.string.isRequired,
       order: PropTypes.number.isRequired
     }).isRequired
-  ).isRequired
+  )
+};
+
+ShowTopics.defaultProps = {
+  topics: null
 };
 
 export default ShowTopics;

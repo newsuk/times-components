@@ -31,12 +31,13 @@ ShowTopics.propTypes = {
       name: PropTypes.string.isRequired,
       order: PropTypes.number.isRequired
     }).isRequired
-  ).isRequired,
-  device: PropTypes.oneOf("DESKTOP", null)
+  ),
+  device: PropTypes.oneOf(["DESKTOP", null])
 };
 
 ShowTopics.defaultProps = {
-  device: null
+  device: null,
+  topics: null
 };
 
 export default ShowTopics;

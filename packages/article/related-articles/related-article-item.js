@@ -29,7 +29,7 @@ const RelatedArticleItem = ({
 
   const imageUri = get(
     article,
-    "leadAsset.crop.url",
+    "leadAsset.crop169.url",
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
