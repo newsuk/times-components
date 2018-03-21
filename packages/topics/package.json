@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topics",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Map of Topics related to the Article",
   "main": "topics",
   "scripts": {

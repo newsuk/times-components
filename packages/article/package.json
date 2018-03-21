@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "0.54.0",
+  "version": "0.54.1",
   "description": "The article",
   "main": "article",
   "scripts": {
@@ -73,7 +73,7 @@
     "@times-components/responsive-styles": "0.4.5",
     "@times-components/slice": "0.13.4",
     "@times-components/styleguide": "0.4.4",
-    "@times-components/topics": "0.1.3",
+    "@times-components/topics": "0.1.4",
     "@times-components/tracking": "0.10.1",
     "@times-components/video-label": "0.1.12",
     "lodash.get": "4.4.2",
