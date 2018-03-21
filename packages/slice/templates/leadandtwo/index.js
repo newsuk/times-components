@@ -1,7 +1,8 @@
 import React from "react";
 import { View } from "react-native";
-import { propTypes, defaultProps } from "./proptypes";
 import styles from "../styles";
+import { propTypes, defaultProps } from "./proptypes";
+import leadAndTwoStyles from "./styles";
 import { leadConfig, supportConfig } from "./config";
 
 const LeadAndTwoSlice = ({ lead, renderSupports }) => (
@@ -11,7 +12,9 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => (
     </View>
     {renderSupports(supportConfig).map(support => (
       <View key={support.props.id} style={styles.itemContainer}>
-        <View style={[styles.item, { paddingTop: 15 }]}>{support}</View>
+        <View style={[styles.item, leadAndTwoStyles.supportItem]}>
+          {support}
+        </View>
       </View>
     ))}
   </View>

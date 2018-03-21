@@ -1790,7 +1790,7 @@ exports[`Related articles tests on android Standard template should render one r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >
@@ -2895,7 +2895,7 @@ exports[`Related articles tests on android Standard template should render two r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >
@@ -3241,7 +3241,7 @@ exports[`Related articles tests on android Standard template should render two r
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >

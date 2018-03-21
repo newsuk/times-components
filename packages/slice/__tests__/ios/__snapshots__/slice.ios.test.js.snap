@@ -23,7 +23,7 @@ exports[`1. Standard template renders a single child element 1`] = `
             "paddingTop": 10,
             "width": "100%",
           },
-          Object {},
+          "",
         ]
       }
     >
@@ -58,7 +58,7 @@ exports[`2. Standard template renders two child elements 1`] = `
             "paddingTop": 10,
             "width": "100%",
           },
-          Object {},
+          "",
         ]
       }
     >
@@ -88,7 +88,7 @@ exports[`2. Standard template renders two child elements 1`] = `
             "paddingTop": 10,
             "width": "100%",
           },
-          Object {},
+          "",
         ]
       }
     >

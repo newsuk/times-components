@@ -1703,7 +1703,7 @@ exports[`Related articles tests on ios Standard template should render one relat
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >
@@ -2783,7 +2783,7 @@ exports[`Related articles tests on ios Standard template should render two relat
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >
@@ -3098,7 +3098,7 @@ exports[`Related articles tests on ios Standard template should render two relat
               "paddingTop": 10,
               "width": "100%",
             },
-            Object {},
+            "",
           ]
         }
       >
