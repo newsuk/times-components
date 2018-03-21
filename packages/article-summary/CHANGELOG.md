@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.19.15...@times-components/article-summary@0.20.0) (2018-03-21)
+
+
+### Features
+
+* design review related articles ([#772](https://github.com/newsuk/times-components/issues/772)) ([9e2130a](https://github.com/newsuk/times-components/commit/9e2130a))
+
+
+
+
 <a name="0.19.15"></a>
 ## [0.19.15](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.19.14...@times-components/article-summary@0.19.15) (2018-03-21)
 
