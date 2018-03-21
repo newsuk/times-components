@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Image from "@times-components/image";
+import { ModalImage } from "@times-components/image";
 import Caption from "@times-components/caption";
 import InsetCaption from "./inset-caption";
 import InlineImage from "./inline-image";
@@ -71,7 +71,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   return [
     <View key="img" style={styles[`${display}Image`]}>
-      <Image uri={url} aspectRatio={aspectRatio} />
+      <ModalImage uri={url} aspectRatio={aspectRatio} />
     </View>,
     ...children
   ];
