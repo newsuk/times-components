@@ -237,7 +237,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -452,7 +452,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -783,7 +783,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -998,7 +998,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -1185,7 +1185,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -1516,7 +1516,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#333333",
@@ -1880,7 +1880,7 @@ exports[`Related articles tests on ios Standard template should render one relat
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#DB133B",
@@ -2142,7 +2142,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#DB133B",
@@ -2357,7 +2357,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#008347",
@@ -2585,7 +2585,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#6C6C69",
@@ -2960,7 +2960,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#DB133B",
@@ -3275,7 +3275,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                             "fontSize": 12,
                             "fontWeight": "400",
                             "letterSpacing": 1.2,
-                            "marginBottom": 2,
+                            "marginBottom": 0,
                           },
                           Object {
                             "color": "#008347",
