@@ -115,9 +115,23 @@
               "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opinionandtwo_3x2crop.png"
           }
         },
-        "label": "leading article",
-        "headline": "Defence of the Realm",
-        "byline": [],
+        "label": "opinion",
+        "headline": "High score for labour in football club election",
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Sathnam Sanghera"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
         "url":
           "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
       },
