@@ -28,7 +28,6 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
     <SupportsContainer>
       {supports.map((support, index) => {
         const SupportContainer = getSupportContainer({ index });
-        SupportContainer.displayName = "SupportContainer";
         return (
           <SupportContainer key={support.props.id}>{support}</SupportContainer>
         );

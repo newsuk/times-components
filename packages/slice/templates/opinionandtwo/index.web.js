@@ -32,7 +32,6 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
           index,
           supportCount
         });
-        SupportContainer.displayName = "SupportContainer";
         return (
           <SupportContainer key={support.props.id}>{support}</SupportContainer>
         );
