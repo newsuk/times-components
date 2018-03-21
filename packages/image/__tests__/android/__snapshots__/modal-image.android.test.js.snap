@@ -41,10 +41,10 @@ exports[`ModalImage test on android renders correctly 1`] = `
         testID={undefined}
       >
         <svg
-          height="48"
+          height="24"
           style={Object {}}
           viewBox="0 0 24 24"
-          width="48"
+          width="24"
         >
           <g
             fill="rgba(255, 255, 255, 0.8)"
@@ -60,7 +60,6 @@ exports[`ModalImage test on android renders correctly 1`] = `
               style={Object {}}
             />
           </g>
-          §
         </svg>
       </View>
       <View

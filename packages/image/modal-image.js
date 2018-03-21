@@ -44,11 +44,11 @@ class ModalImage extends Component {
 
   render() {
     const closeButton = (
-      <Svg height="48" viewBox="0 0 24 24" width="48">
+      <Svg height="24" viewBox="0 0 24 24" width="24">
         <G fill={colours.functional.cancel}>
           <Path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           <Path d="M0 0h24v24H0z" fill="none" />
-        </G>§
+        </G>
       </Svg>
     );
 
