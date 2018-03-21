@@ -28,19 +28,19 @@ export const getContainer = ({ hasSupports }) => {
       width: 100%;
     `,
     mediumUp: () => {
-      const withoutSupportsStyle = `
+      const noSupportsStyle = `
         padding-left: 0px;
         padding-right: 0px;
         width: ${config.mediumBpWidth};
       `;
 
-      const withSupportsStyle = `
+      const hasSupportsStyle = `
         width: 100%;
       `;
 
       return `
         flex-direction: row;
-        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
     wideUp: () => `
@@ -61,19 +61,19 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
       width: ${hasSupports ? "auto" : "100%"};
     `,
     mediumUp: () => {
-      const withoutSupportsStyle = `
+      const noSupportsStyle = `
         flex-grow: 0;
         padding-left: 0;
         padding-right: 0;
       `;
-      const withSupportsStyle = `
+      const hasSupportsStyle = `
         flex-basis: 0 !important;
         flex-grow: ${supportCount === 1 ? "3" : "2"};
         padding-left: 10px;
         padding-right: 10px;
       `;
       return `
-        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
     wideUp: () => `

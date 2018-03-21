@@ -67,14 +67,14 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getOpinionContainer = ({ supportCount }) => {
+export const getOpinionContainer = ({ hasSupports, supportCount }) => {
   const OpinionContainer = withResponsiveStyles(View, {
     base: () => `
       flex: 1;
       flex-grow: 1;
       padding-left: 10px;
       padding-right: 10px;
-      width: ${supportCount > 0 ? "auto" : "100%"};
+      width: ${hasSupports ? "auto" : "100%"};
     `,
     mediumUp: () => {
       const withoutSupportsStyle = `
@@ -97,7 +97,7 @@ export const getOpinionContainer = ({ supportCount }) => {
         min-width: 100%;
       `;
       return `
-        ${supportCount > 0 ? withSupportsStyle : withoutSupportsStyle}
+        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
         ${supportCount === 2 ? twoSupportStyle : ``}
       `;
     },
@@ -120,7 +120,7 @@ export const getOpinionContainer = ({ supportCount }) => {
   return OpinionContainer;
 };
 
-export const getSupportsContainer = ({ itemCount }) => {
+export const getSupportsContainer = ({ supportCount }) => {
   const SupportsContainer = withResponsiveStyles(View, {
     base: () => `
       flex: 1;
@@ -134,11 +134,11 @@ export const getSupportsContainer = ({ itemCount }) => {
       `;
       return `
         flex-basis: 0 !important;
-        ${itemCount === 3 ? twoSupportStyle : ``};
+        ${supportCount === 2 ? twoSupportStyle : ``};
       `;
     },
     wideUp: () => `
-      flex-grow: ${itemCount === 3 ? "2" : "1"};
+      flex-grow: ${supportCount === 2 ? "2" : "1"};
       min-width: auto;
     `
   });
@@ -163,7 +163,7 @@ export const getSupportContainer = ({ index, supportCount }) => {
         min-height: auto;
         padding-left: 10px;
         padding-right: 10px;
-        ${index > 0 ? secondSupportStyle : ``}
+        ${index === 1 ? secondSupportStyle : ``}
       `;
     },
     mediumUp: () => {
@@ -187,7 +187,7 @@ export const getSupportContainer = ({ index, supportCount }) => {
       `;
       return `
         padding-right: 0;
-        ${index > 0 ? secondSupportStyle : ``}
+        ${index === 1 ? secondSupportStyle : ``}
         ${supportCount === 2 ? twoSupportStyle : oneSupportStyle}
       `;
     }

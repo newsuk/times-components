@@ -143,9 +143,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render SupportsContainer correctly", () => {
-      let Separator = opinionGetSupportsContainer({ itemCount: 1 });
+      let Separator = opinionGetSupportsContainer({ supportCount: 1 });
       expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
-      Separator = opinionGetSupportsContainer({ itemCount: 3 });
+      Separator = opinionGetSupportsContainer({ supportCount: 2 });
       expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
     });
 
