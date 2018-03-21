@@ -28,7 +28,7 @@ public class RNTBrightcoveView extends FrameLayout {
 
     public RNTBrightcoveView(final ThemedReactContext context) {
         super(context);
-        this.setBackgroundColor(Color.BLACK);
+        setBackgroundColor(Color.BLACK);
     }
 
     @Override
@@ -101,9 +101,9 @@ public class RNTBrightcoveView extends FrameLayout {
         Context context = getContext();
         while (context instanceof ContextWrapper) {
             if (context instanceof Activity) {
-                return (Activity)context;
+                return (Activity) context;
             }
-            context = ((ContextWrapper)context).getBaseContext();
+            context = ((ContextWrapper) context).getBaseContext();
         }
         return null;
     }

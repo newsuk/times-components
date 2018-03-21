@@ -11,7 +11,7 @@ import com.brightcove.player.model.Video;
 import com.brightcove.player.view.BrightcovePlayer;
 
 public class BrightcovePlayerActivity extends BrightcovePlayer {
-    private final String TAG = this.getClass().getSimpleName();
+    private final String TAG = getClass().getSimpleName();
 
     private static final String PROP_ACCOUNT_ID = "accountId";
     private static final String PROP_POLICY_KEY = "policyKey";

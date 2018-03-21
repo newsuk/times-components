@@ -3,7 +3,6 @@ package uk.co.news.rntbrightcovevideo;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.SurfaceView;
 
 import com.brightcove.player.edge.Catalog;
@@ -18,28 +17,26 @@ import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
 
 public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
-    public static final String TAG = BrightcovePlayerView.class.getSimpleName();
-
     private Boolean mAutoplay;
     private Boolean mIsPlaying = false;
     private Boolean mIsFullscreen = false;
-    private float mProgress = 0;
+    private final float mProgress = 0;
 
     public BrightcovePlayerView(final Context context) {
         super(context);
-        this.setBackgroundColor(Color.BLACK);
+        setBackgroundColor(Color.BLACK);
         finishInitialization();
-        this.setMediaController(new BrightcoveMediaController(this));
+        setMediaController(new BrightcoveMediaController(this));
     }
 
     private EventEmitter setupEventEmitter() {
-        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+        final BrightcovePlayerView playerView = this;
 
-        EventEmitter eventEmitter = this.getEventEmitter();
+        EventEmitter eventEmitter = getEventEmitter();
         eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
             @Override
             public void processEvent(Event e) {
-               fixVideoLayout();
+                fixVideoLayout();
             }
         });
         eventEmitter.on(EventType.PLAY, onEvent(true));
@@ -90,7 +87,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         mIsPlaying = isPlaying;
 
         try {
-            RNTBrightcoveView parentView = (RNTBrightcoveView) this.getParent();
+            RNTBrightcoveView parentView = (RNTBrightcoveView) getParent();
             parentView.emitState(mIsPlaying, headPos);
         } catch (ClassCastException exc) {
             // ignore
@@ -100,14 +97,14 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
         mAutoplay = autoplay;
 
-            EventEmitter eventEmitter = setupEventEmitter();
+        EventEmitter eventEmitter = setupEventEmitter();
 
-            Catalog catalog = new Catalog(eventEmitter, accountId, policyKey);
-            catalog.findVideoByID(videoId, createVideoListener());
+        Catalog catalog = new Catalog(eventEmitter, accountId, policyKey);
+        catalog.findVideoByID(videoId, createVideoListener());
     }
 
     private EventListener onEvent(final Boolean isPlaying) {
-        final BrightcovePlayerView playerView = BrightcovePlayerView.this;
+        final BrightcovePlayerView playerView = this;
 
         return new EventListener() {
             @Override
@@ -122,27 +119,25 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         return new VideoListener() {
             @Override
             public void onVideo(final Video video) {
-                BrightcovePlayerView.this.add(video);
+                add(video);
 
-                BrightcovePlayerView.this.seekTo((int) mProgress);
+                seekTo((int) mProgress);
 
-                BrightcovePlayerView.this.invalidate();
-                BrightcovePlayerView.this.requestLayout();
+                invalidate();
+                requestLayout();
 
                 if (mAutoplay) {
-                    BrightcovePlayerView.this.start();
+                    start();
                 }
             }
         };
     }
 
     private void fixVideoLayout() {
-        Log.d(TAG, "fixVideoLayout");
+        final int viewW = getMeasuredWidth();
+        final int viewH = getMeasuredHeight();
 
-        final int viewW = this.getMeasuredWidth();
-        final int viewH = this.getMeasuredHeight();
-
-        SurfaceView surfaceView = (SurfaceView) this.getRenderView();
+        SurfaceView surfaceView = (SurfaceView) getRenderView();
 
         surfaceView.measure(viewW, viewH);
 
@@ -163,6 +158,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     public Boolean getIsPlaying() {
         return mIsPlaying;
     }
+
     public Boolean getIsFullscreen() {
         return mIsFullscreen;
     }
