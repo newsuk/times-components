@@ -70,7 +70,7 @@ class ArticlePage extends React.Component {
         const { relatedArticles, relatedArticlesLayout } = rowData.data;
         return (
           <RelatedArticles
-            analyticsStream={() => { }}
+            analyticsStream={() => {}}
             articles={relatedArticles}
             template={relatedArticlesLayout.template}
             onPress={onRelatedArticlePress}
@@ -151,7 +151,7 @@ ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
   error: null,
-  onRelatedArticlePress: () => { }
+  onRelatedArticlePress: () => {}
 };
 
 export default articleTrackingContext(ArticlePage);
