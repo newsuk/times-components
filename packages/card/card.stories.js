@@ -77,6 +77,34 @@ storiesOf("Composed/Card", module)
       </Card>
     </CardWrapper>
   ))
+  .add("Loading - reversed", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage
+        isLoading
+        isReversed
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </CardWrapper>
+  ))
+  .add("Loading - reversed, no image", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={false}
+        isLoading
+        isReversed
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </CardWrapper>
+  ))
   .add("Default", () => (
     <CardWrapper>
       <Card
@@ -101,7 +129,7 @@ storiesOf("Composed/Card", module)
       </Card>
     </CardWrapper>
   ))
-  .add("Reversed", () => (
+  .add("Default - reversed", () => (
     <ReversedCardWrapper>
       <Card
         {...cardProps}
@@ -109,6 +137,19 @@ storiesOf("Composed/Card", module)
         imageContainerClass="exampleCardImage"
         isReversed
         showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
+  ))
+  .add("Default - reversed, no image", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage={false}
       >
         <View style={childStyle} />
       </Card>
