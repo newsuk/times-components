@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { ModalImage } from "@times-components/image";
+import ModalImage from "@times-components/image/modal-image";
 import Caption from "@times-components/caption";
 
 import {

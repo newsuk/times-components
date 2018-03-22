@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { ModalImage } from "@times-components/image";
+import ModalImage from "@times-components/image/modal-image";
 import { AdComposer } from "@times-components/ad";
 
 import ArticleContent from "./article-content";

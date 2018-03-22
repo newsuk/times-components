@@ -39,4 +39,3 @@ TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = propTypes;
 
 export default TimesImage;
-export { TimesImage as ModalImage };
