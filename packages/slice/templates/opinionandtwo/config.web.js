@@ -1,20 +1,20 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-const leadSummaryConfig = {
+const opinionSummaryConfig = {
   1: [125],
   2: [125],
   3: [125, 175]
 };
 
-export const getLeadConfig = ({ itemCount }) => ({
-  contentContainerClass: "leadContentContainerClass",
-  headlineClass: "leadHeadlineClass",
-  imageContainerClass: "leadImageContainerClass",
-  summaryClass: "leadSummaryClass",
+export const getOpinionConfig = ({ itemCount }) => ({
+  contentContainerClass: "opinionContentContainerClass",
+  headlineClass: "opinionHeadlineClass",
+  imageContainerClass: "opinionImageContainerClass",
+  summaryClass: "opinionSummaryClass",
   summaryConfig: {
-    lengths: leadSummaryConfig[itemCount],
-    type: "lead"
+    lengths: opinionSummaryConfig[itemCount],
+    type: "opinion"
   }
 });
 
@@ -37,80 +37,65 @@ export const getConfigWrapper = ({ supportCount }) => {
       .summaryHidden {
         display: none;
       }
-      .leadSummary125Class {
+      .opinionSummary125Class {
         display: block;
       }
     `,
     mediumUp: () => {
       const withSupportsImageStyle = `
         margin-bottom: 10px;
-        min-width: 370px;
-      `;
-
-      const withoutSupportsImageStyle = `
-        padding-right: 10px;
+        min-width: 270px;
       `;
 
       return `
-        .leadHeadlineClass {
+        .opinionHeadlineClass {
           font-size: 30px;
           line-height: 30px;
         }
 
-        .leadImageContainerClass {
-          flex: 1;
+        .opinionImageContainerClass {
+          flex: 2;
           margin-bottom: 0;
           min-width: auto;
-          ${
-            supportCount === 2
-              ? withSupportsImageStyle
-              : withoutSupportsImageStyle
-          }
+          padding-right: 10px;
+          ${supportCount === 2 ? withSupportsImageStyle : ``}
         }
 
-        .leadContentContainerClass {
-          flex-grow: 1;
+        .opinionContentContainerClass {
+          flex-grow: 2.7;
           flex-basis: 0 !important;
-          min-width: 300px;
+          min-width: ${supportCount === 2 ? "300px" : "325px"};
         }
 
         .supportImageContainerClass {
           display: block;
         }
 
-        .leadSummary125Class {
+        .opinionSummary125Class {
           display: ${supportCount === 2 ? "none" : "block"};
         }
 
-        .leadSummary175Class {
+        .opinionSummary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
       `;
     },
     wideUp: () => {
-      const twoLeadImageStyle = `
-        min-width: auto;
-      `;
-
       const twoSupportImageStyle = `
-        flex: 1;
+        flex: 2;
         margin-bottom: 0;
-        max-width: 185px;
+        max-width: 180px;
         min-width: auto;
         padding-right: 10px;
       `;
 
       const twoSupportContentStyle = `
-        flex: 1;
-        min-width: 100px;
+        flex: 2.7;
+        flex-basis: 0 !important;
+        min-width: 250px;
       `;
 
       return `
-        .leadImageContainerClass {
-          padding-right: 10px;
-          ${supportCount === 2 ? twoLeadImageStyle : ``}
-        }
-
         .supportImageContainerClass {
           ${supportCount === 2 ? twoSupportImageStyle : ``}
         }

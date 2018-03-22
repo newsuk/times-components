@@ -1,4 +1,4 @@
-const config = itemCount => ({
+const config = ({ itemCount }) => ({
   showImage: itemCount < 3,
   summaryConfig: {
     lengths: [125]

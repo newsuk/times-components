@@ -7,7 +7,7 @@ const summaryConfig = {
   3: [125, 145]
 };
 
-export const getConfig = itemCount => ({
+export const getConfig = ({ itemCount }) => ({
   contentContainerClass: "contentContainerClass",
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",

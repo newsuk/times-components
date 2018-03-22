@@ -20,32 +20,32 @@ ChildContainer.displayName = "ChildContainer";
 export const getChildrenContainer = ({ childCount }) => {
   const ChildrenContainer = withResponsiveStyles(View, {
     base: () => `
-    flex: 1;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    padding-top: ${childCount >= 3 ? "15px" : "10px"};
-    width: 100%;
-  `,
+      flex: 1;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      padding-top: ${childCount >= 3 ? "15px" : "10px"};
+      width: 100%;
+    `,
     mediumUp: () => {
-      const smallStyle = `
+      const fewItemsStyle = `
       width: ${config.mediumBpWidth};
     `;
 
-      const largeStyle = `
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 100%;
-    `;
+      const multipleItemsStyle = `
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+      `;
 
       return `
-      flex-direction: row;
-      ${childCount >= 3 ? largeStyle : smallStyle}
-    `;
+        flex-direction: row;
+        ${childCount >= 3 ? multipleItemsStyle : fewItemsStyle}
+      `;
     },
     wideUp: () => `
-    width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
-  `
+      width: ${childCount >= 3 ? "100%" : config.wideBpWidth};
+    `
   });
   ChildrenContainer.displayName = "ChildrenContainer";
   return ChildrenContainer;

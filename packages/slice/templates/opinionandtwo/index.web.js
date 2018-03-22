@@ -1,33 +1,37 @@
 import React from "react";
 import { propTypes, defaultProps } from "./proptypes";
-import { getSeparator, SliceContainer } from "../styles/responsive";
+import { SliceContainer } from "../styles/responsive";
 import {
+  getSeparator,
   getContainer,
-  getLeadContainer,
+  getOpinionContainer,
   getSupportContainer,
-  SupportsContainer
+  getSupportsContainer
 } from "./responsive";
-import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
+import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const LeadAndTwoSlice = ({ lead, renderSupports }) => {
-  const supportConfig = getSupportConfig();
-  const supports = renderSupports(supportConfig);
+const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
+  const supports = renderSupports(getSupportConfig());
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
-  const LeadContainer = getLeadContainer({
+  const OpinionContainer = getOpinionContainer({
     hasSupports,
     supportCount
   });
-  const leadConfig = getLeadConfig({ itemCount });
-  const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
+  const opinionConfig = getOpinionConfig({ itemCount });
+  const Separator = getSeparator({ itemCount });
+  const SupportsContainer = getSupportsContainer({ supportCount });
 
   const renderSupportsContainer = () => (
     <SupportsContainer>
       {supports.map((support, index) => {
-        const SupportContainer = getSupportContainer({ index });
+        const SupportContainer = getSupportContainer({
+          index,
+          supportCount
+        });
         return (
           <SupportContainer key={support.props.id}>{support}</SupportContainer>
         );
@@ -39,7 +43,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadContainer>{lead(leadConfig)}</LeadContainer>
+          <OpinionContainer>{opinion(opinionConfig)}</OpinionContainer>
           {hasSupports && <Separator />}
           {hasSupports && renderSupportsContainer()}
         </Container>
@@ -48,7 +52,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   );
 };
 
-LeadAndTwoSlice.propTypes = propTypes;
-LeadAndTwoSlice.defaultProps = defaultProps;
+OpinionAndTwoSlice.propTypes = propTypes;
+OpinionAndTwoSlice.defaultProps = defaultProps;
 
-export default LeadAndTwoSlice;
+export default OpinionAndTwoSlice;

@@ -28,19 +28,19 @@ export const getContainer = ({ hasSupports }) => {
       width: 100%;
     `,
     mediumUp: () => {
-      const withoutSupportsStyle = `
+      const noSupportsStyle = `
         padding-left: 0px;
         padding-right: 0px;
         width: ${config.mediumBpWidth};
       `;
 
-      const withSupportsStyle = `
+      const hasSupportsStyle = `
         width: 100%;
       `;
 
       return `
         flex-direction: row;
-        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
     wideUp: () => `
@@ -54,30 +54,30 @@ export const getContainer = ({ hasSupports }) => {
 export const getLeadContainer = ({ hasSupports, supportCount }) => {
   const LeadContainer = withResponsiveStyles(View, {
     base: () => `
-    flex: 1;
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: ${hasSupports ? "auto" : "100%"};
-  `,
-    mediumUp: () => {
-      const withoutSupportsStyle = `
-      flex-grow: 0;
-      padding-left: 0;
-      padding-right: 0;
-    `;
-      const withSupportsStyle = `
-      flex-basis: 0 !important;
-      flex-grow: ${supportCount === 1 ? "3" : "2"};
+      flex: 1;
+      flex-grow: 1;
       padding-left: 10px;
       padding-right: 10px;
-    `;
+      width: ${hasSupports ? "auto" : "100%"};
+    `,
+    mediumUp: () => {
+      const noSupportsStyle = `
+        flex-grow: 0;
+        padding-left: 0;
+        padding-right: 0;
+      `;
+      const hasSupportsStyle = `
+        flex-basis: 0 !important;
+        flex-grow: ${supportCount === 1 ? "3" : "2"};
+        padding-left: 10px;
+        padding-right: 10px;
+      `;
       return `
-      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
-    `;
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
+      `;
     },
     wideUp: () => `
-      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};;
+      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};
     `
   });
   LeadContainer.displayName = "LeadContainer";
