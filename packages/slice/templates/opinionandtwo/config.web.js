@@ -10,6 +10,10 @@ const opinionSummaryConfig = {
 export const getOpinionConfig = ({ itemCount }) => ({
   contentContainerClass: "opinionContentContainerClass",
   headlineClass: "opinionHeadlineClass",
+  imageConfig: {
+    cropSize: "23",
+    imageRatio: 2 / 3
+  },
   imageContainerClass: "opinionImageContainerClass",
   isReversed: true,
   summaryClass: "opinionSummaryClass",

@@ -23,6 +23,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
     const {
       contentContainerClass = "",
       headlineClass = "",
+      imageConfig = {},
       imageContainerClass = "",
       isReversed = false,
       showImage = true,
@@ -35,6 +36,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         contentContainerClass={contentContainerClass}
         headlineClass={headlineClass}
         id={article.id}
+        imageConfig={imageConfig}
         imageContainerClass={imageContainerClass}
         isReversed={isReversed}
         onPress={onPress}

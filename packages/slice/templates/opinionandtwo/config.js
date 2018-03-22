@@ -1,4 +1,8 @@
 export const opinionConfig = {
+  imageConfig: {
+    cropSize: "23",
+    imageRatio: 2 / 3
+  },
   summaryConfig: {
     lengths: [125]
   }

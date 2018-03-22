@@ -18,6 +18,7 @@ const RelatedArticleItem = ({
   article,
   contentContainerClass,
   headlineClass,
+  imageConfig,
   imageContainerClass,
   isReversed,
   onPress,
@@ -27,11 +28,11 @@ const RelatedArticleItem = ({
 }) => {
   const { byline, headline, label, publishedTime, section, url } = article;
   const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
+  const { cropSize, imageRatio } = imageConfig;
 
   const imageUri = get(
     article,
-    "leadAsset.crop169.url",
-    get(article, "leadAsset.posterImage.crop.url", null)
+    `leadAsset.crop${cropSize}.url`
   );
 
   return (
@@ -40,7 +41,7 @@ const RelatedArticleItem = ({
         contentContainerClass={contentContainerClass}
         imageContainerClass={imageContainerClass}
         image={imageUri ? { uri: imageUri } : null}
-        imageRatio={16 / 9}
+        imageRatio={imageRatio}
         imageSize={996}
         isReversed={isReversed}
         showImage={showImage}

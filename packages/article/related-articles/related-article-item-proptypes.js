@@ -17,6 +17,10 @@ export const relatedArticleItemPropTypes = {
   }).isRequired,
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
+  imageConfig: PropTypes.shape({
+    cropSize: PropTypes.string,
+    imageRatio: PropTypes.number
+  }),
   imageContainerClass: PropTypes.string,
   isReversed: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
@@ -28,6 +32,7 @@ export const relatedArticleItemPropTypes = {
 export const relatedArticleItemDefaultProps = {
   contentContainerClass: "",
   headlineClass: "",
+  imageConfig: null,
   imageContainerClass: "",
   isReversed: false,
   showImage: true,
