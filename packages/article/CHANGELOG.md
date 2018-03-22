@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.55.0...@times-components/article@0.56.0) (2018-03-22)
+
+
+### Features
+
+* add comment/opinion and two template to Slice package ([#761](https://github.com/newsuk/times-components/issues/761)) ([18e125c](https://github.com/newsuk/times-components/commit/18e125c))
+
+
+
+
 <a name="0.55.0"></a>
 # [0.55.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.54.2...@times-components/article@0.55.0) (2018-03-21)
 
