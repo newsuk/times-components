@@ -11,6 +11,7 @@ export const getOpinionConfig = ({ itemCount }) => ({
   contentContainerClass: "opinionContentContainerClass",
   headlineClass: "opinionHeadlineClass",
   imageContainerClass: "opinionImageContainerClass",
+  isReversed: true,
   summaryClass: "opinionSummaryClass",
   summaryConfig: {
     lengths: opinionSummaryConfig[itemCount],

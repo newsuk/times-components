@@ -19,6 +19,7 @@ const RelatedArticleItem = ({
   contentContainerClass,
   headlineClass,
   imageContainerClass,
+  isReversed,
   onPress,
   showImage,
   showSummary,
@@ -41,6 +42,7 @@ const RelatedArticleItem = ({
         image={imageUri ? { uri: imageUri } : null}
         imageRatio={16 / 9}
         imageSize={996}
+        isReversed={isReversed}
         showImage={showImage}
       >
         <ArticleSummary

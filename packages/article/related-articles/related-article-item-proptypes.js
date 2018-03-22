@@ -18,6 +18,7 @@ export const relatedArticleItemPropTypes = {
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
   imageContainerClass: PropTypes.string,
+  isReversed: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   showImage: PropTypes.bool,
   showSummary: PropTypes.bool,
@@ -28,6 +29,7 @@ export const relatedArticleItemDefaultProps = {
   contentContainerClass: "",
   headlineClass: "",
   imageContainerClass: "",
+  isReversed: false,
   showImage: true,
   showSummary: true,
   summaryClass: ""

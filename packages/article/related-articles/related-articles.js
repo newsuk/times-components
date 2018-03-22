@@ -1,7 +1,11 @@
 import React from "react";
 import { View } from "react-native";
-import { StandardSlice, LeadAndTwoSlice } from "@times-components/slice";
 import { spacing } from "@times-components/styleguide";
+import {
+  StandardSlice,
+  LeadAndTwoSlice,
+  OpinionAndTwoSlice
+} from "@times-components/slice";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -20,6 +24,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
       contentContainerClass = "",
       headlineClass = "",
       imageContainerClass = "",
+      isReversed = false,
       showImage = true,
       showSummary = true,
       summaryConfig = {}
@@ -31,6 +36,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         headlineClass={headlineClass}
         id={article.id}
         imageContainerClass={imageContainerClass}
+        isReversed={isReversed}
         onPress={onPress}
         showImage={showImage}
         showSummary={showSummary}
@@ -58,6 +64,15 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         return (
           <LeadAndTwoSlice
             lead={(config = {}) => renderArticleItem(config, mainArticle)}
+            renderSupports={(config = {}) =>
+              supports.map(article => renderArticleItem(config, article))
+            }
+          />
+        );
+      case "OPINION_AND_TWO":
+        return (
+          <OpinionAndTwoSlice
+            opinion={(config = {}) => renderArticleItem(config, mainArticle)}
             renderSupports={(config = {}) =>
               supports.map(article => renderArticleItem(config, article))
             }
