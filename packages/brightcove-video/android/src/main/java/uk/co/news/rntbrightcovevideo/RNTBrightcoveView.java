@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.view.ContextThemeWrapper;
 import android.widget.FrameLayout;
 
 import com.brightcove.player.event.Event;
@@ -80,12 +81,15 @@ public class RNTBrightcoveView extends FrameLayout {
 
     private void initPlayerView() {
         if (parametersSet()) {
-            playerView = new BrightcovePlayerView(getActivity());
+            boolean hideFullScreenButton = this.hideFullScreenButton != null ? this.hideFullScreenButton : false;
+            int theme = hideFullScreenButton ? R.style.FullScreenButtonDisabled : R.style.FullScreenButtonEnabled;
+
+            playerView = new BrightcovePlayerView(new ContextThemeWrapper(getActivity(), theme));
+
 
             addView(playerView);
 
-            boolean isFullscreenButtonHidden = hideFullScreenButton != null ? hideFullScreenButton : false;
-            playerView.initVideo(videoId, accountId, policyKey, autoplay, isFullscreenButtonHidden);
+            playerView.initVideo(videoId, accountId, policyKey, autoplay);
         }
     }
 

@@ -22,7 +22,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     private Boolean isFullscreen = false;
     private final float progress = 0;
 
-    public BrightcovePlayerView(final Context context) {
+    public BrightcovePlayerView(Context context) {
         super(context);
         setBackgroundColor(Color.BLACK);
         finishInitialization();
@@ -94,7 +94,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         }
     }
 
-    public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay, Boolean isFullscreenButtonHidden) {
+    public void initVideo(String videoId, String accountId, String policyKey, Boolean autoplay) {
         this.autoplay = autoplay;
 
         EventEmitter eventEmitter = setupEventEmitter();
