@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   inlineCaption: {
-    paddingLeft: 2 * spacing,
+    paddingLeft: spacing(2),
     paddingTop: 0,
     width: "50%"
   },

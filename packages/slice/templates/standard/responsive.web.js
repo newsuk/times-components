@@ -7,8 +7,8 @@ import { spacing } from "@times-components/styleguide";
 export const ChildContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
-    padding-left: ${2 * spacing}px;
-    padding-right: ${2 * spacing}px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     flex-basis: 0 !important;
@@ -25,7 +25,7 @@ export const getChildrenContainer = ({ childCount }) => {
       flex-direction: column;
       flex-wrap: wrap;
       padding-bottom: ${spacing(2)};
-      padding-top: ${childCount >= 3 ? `${3 * spacing}` : `${2 * spacing}`};
+      padding-top: ${childCount >= 3 ? spacing(3) : spacing(2)};
       width: 100%;
     `,
     mediumUp: () => {

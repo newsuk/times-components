@@ -12,7 +12,7 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 2 * spacing
+    margin: spacing(2)
   },
   body: {
     flex: 1,
@@ -41,15 +41,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-start",
     alignSelf: "center",
-    marginTop: 4 * spacing,
-    marginLeft: spacing,
-    marginRight: spacing
+    marginTop: spacing(4),
+    marginLeft: spacing(1),
+    marginRight: spacing(1)
   },
   imageContainer: {
     alignSelf: "center",
     width: "60%",
-    marginTop: 4 * spacing,
-    marginBottom: 4 * spacing
+    marginTop: spacing(4),
+    marginBottom: spacing(4)
   }
 });
 

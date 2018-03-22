@@ -13,7 +13,7 @@ const androidStyles = {
     fontFamily: fonts.body,
     fontSize: fontSizes.bodyMobile,
     fontStyle: "normal",
-    marginBottom: 4 * spacing
+    marginBottom: spacing(4)
   }
 };
 

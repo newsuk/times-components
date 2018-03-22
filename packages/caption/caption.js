@@ -25,7 +25,7 @@ const lineHeightStyle = Platform.select({
 
 const defaultStyle = StyleSheet.create({
   container: {
-    paddingTop: 2 * spacing
+    paddingTop: spacing(2)
   },
   text: {
     fontFamily: fonts.supporting,

@@ -13,8 +13,8 @@ import ArticleSummary, {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 3 * spacing,
-    paddingTop: 3 * spacing
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   }
 });
 

@@ -36,9 +36,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-start",
     alignSelf: "center",
-    marginTop: 4 * spacing,
-    marginLeft: spacing,
-    marginRight: spacing
+    marginTop: spacing(4),
+    marginLeft: spacing(1),
+    marginRight: spacing(1)
   }
 });
 

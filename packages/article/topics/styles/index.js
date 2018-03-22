@@ -5,8 +5,8 @@ const topicStyles = {
   ...sharedStyles,
   topicsContainer: {
     ...sharedStyles.topicsContainer,
-    marginLeft: 2 * spacing,
-    marginRight: 2 * spacing
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   }
 };
 

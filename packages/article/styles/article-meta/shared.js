@@ -8,13 +8,13 @@ import {
 
 const sharedStyles = {
   articleMeta: {
-    marginBottom: 4 * spacing,
+    marginBottom: spacing(4),
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
     paddingLeft: 0,
     paddingRight: 0,
-    marginLeft: 2 * spacing,
-    marginRight: 2 * spacing
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   },
   articleMiddleContainer: {
     paddingTop: 9

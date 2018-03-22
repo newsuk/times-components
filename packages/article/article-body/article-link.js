@@ -12,7 +12,7 @@ const linkStyles = {
   fontFamily: fonts.bodyRegular,
   lineHeight: 26,
   fontSize: fontSizes.bodyMobile,
-  marginBottom: 5 * spacing,
+  marginBottom: spacing(5),
   marginTop: 0
 };
 

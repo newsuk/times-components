@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     marginRight: "auto",
     borderColor: colours.functional.contrast,
     overflow: "hidden",
-    marginBottom: 4 * spacing
+    marginBottom: spacing(4)
   }
 });
 

@@ -9,7 +9,7 @@ const AuthorHeadContainer = props => (
     <View style={styles.wrapper} pointerEvents="box-none">
       <View
         accessibilityRole="banner"
-        style={[styles.container, { paddingTop: 6 * spacing }]}
+        style={[styles.container, { paddingTop: spacing(6) }]}
       >
         {props.children}
       </View>

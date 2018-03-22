@@ -13,11 +13,11 @@ import {
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    margin-top: -${2 * spacing}px;
-    padding-top: ${spacing}px;
-    padding-left: ${4 * spacing}px;
-    padding-right: ${2 * spacing}px;
-    padding-bottom: ${4 * spacing}px;
+    margin-top: ${spacing(-2)};
+    padding-top: ${spacing(1)};
+    padding-left: ${spacing(4)};
+    padding-right: ${spacing(2)};
+    padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;
   `,
@@ -28,8 +28,8 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
     float:left;
     margin-top: 0px;
     padding-top: 0px;
-    padding-right: ${4 * spacing}px;
-    padding-bottom: ${6 * spacing}px;
+    padding-right: ${spacing(4)};
+    padding-bottom: ${spacing(6)};
   `,
   wideUp: () => `
     padding-left: 0px;
@@ -40,8 +40,8 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    padding-top: ${spacing}px;
-    padding-bottom: ${4 * spacing}px;
+    padding-top: ${spacing(1)};
+    padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;`,
   mediumUp: () => `
@@ -49,7 +49,7 @@ const InsetImageStyle = withResponsiveStyles(View, {
     clear:left;
     float:left;
     padding-bottom: 0px;
-    padding-right: ${4 * spacing}px;`,
+    padding-right: ${spacing(4)};`,
   wideUp: () => `
     width: 35.71429%;
     clear: left;`

@@ -67,7 +67,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   return (
-    <View style={{ marginTop: 2 * spacing }}>
+    <View style={{ marginTop: spacing(2) }}>
       <RelatedArticlesHeading />
       {renderSlice()}
     </View>

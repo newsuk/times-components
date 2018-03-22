@@ -19,7 +19,7 @@ const CardWrapper = withResponsiveStyles(View, {
       margin-bottom: 0;
       max-width: 285px;
       min-width: auto;
-      padding-right: ${3 * spacing}px;
+      padding-right: ${spacing(3)};
     }
     .authorProfileContent {
       flex: 2.7;
@@ -31,7 +31,7 @@ const CardWrapper = withResponsiveStyles(View, {
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
-  mediumUp: () => `display: block; padding-left: ${3 * spacing}px;`
+  mediumUp: () => `display: block; padding-left: ${spacing(3)};`
 });
 
 const ShortText = withResponsiveStyles(View, {
@@ -41,8 +41,8 @@ const ShortText = withResponsiveStyles(View, {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 3 * spacing,
-    paddingTop: 3 * spacing
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   }
 });
 

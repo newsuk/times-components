@@ -7,18 +7,18 @@ import {
 
 const sharedStyles = {
   leadAsset: {
-    marginBottom: 2 * spacing
+    marginBottom: spacing(2)
   },
   articleTextElement: {
     fontFamily: fonts.body,
     lineHeight: 26,
     fontSize: fontSizes.bodyMobile,
-    marginBottom: 5 * spacing,
+    marginBottom: spacing(5),
     color: colours.functional.primary
   },
   articleMainContentRow: {
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   }
 };
 

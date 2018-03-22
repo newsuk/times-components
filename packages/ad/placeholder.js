@@ -35,10 +35,10 @@ const getStyles = (width, height) =>
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",
-      paddingTop: spacing,
-      paddingBottom: spacing,
-      paddingLeft: 2 * spacing,
-      paddingRight: 2 * spacing,
+      paddingTop: spacing(1),
+      paddingBottom: spacing(1),
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2),
       letterSpacing: 1.5
     }
   });

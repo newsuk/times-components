@@ -12,23 +12,23 @@ const styles = StyleSheet.create({
   primaryContainer: {
     width: "100%",
     flexDirection: "column",
-    paddingBottom: 5 * spacing
+    paddingBottom: spacing(5)
   },
   secondaryContainer: {
     width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
-    paddingBottom: 5 * spacing,
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingBottom: spacing(5),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   inlineContainer: {
     width: "100%",
     flexDirection: "row",
     flexWrap: "nowrap",
-    paddingBottom: 5 * spacing,
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingBottom: spacing(5),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   }
 });
 

@@ -54,11 +54,11 @@ exports[`2. Render a single Topic 1`] = `
         "borderColor": "#DBDBDB",
         "borderRadius": 1,
         "borderWidth": 1,
-        "marginRight": 10,
-        "marginTop": 10,
+        "marginRight": "10px",
+        "marginTop": "10px",
         "paddingBottom": 12,
-        "paddingLeft": 15,
-        "paddingRight": 15,
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
         "paddingTop": 12,
       }
     }

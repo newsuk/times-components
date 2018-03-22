@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   photoContainer: {
     width: 100,
     height: 100,
-    top: 6 * spacing,
+    top: spacing(6),
     position: "absolute"
   },
   gradient: {

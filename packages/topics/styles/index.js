@@ -6,11 +6,11 @@ const styles = {
     borderRadius: 1,
     borderWidth: 1,
     paddingBottom: 12,
-    paddingLeft: 3 * spacing,
-    paddingRight: 3 * spacing,
+    paddingLeft: spacing(3),
+    paddingRight: spacing(3),
     paddingTop: 12,
-    marginRight: 2 * spacing,
-    marginTop: 2 * spacing
+    marginRight: spacing(2),
+    marginTop: spacing(2)
   },
   text: {
     color: colours.functional.secondary,

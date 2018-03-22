@@ -7,7 +7,7 @@ const nativeStyles = {
   ...sharedStyles,
   articleTextElement: {
     ...sharedStyles.articleTextElement,
-    marginBottom: 4 * spacing
+    marginBottom: spacing(4)
   }
 };
 

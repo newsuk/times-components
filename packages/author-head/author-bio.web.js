@@ -6,8 +6,8 @@ import Bio from "./author-bio.base";
 
 const BioContainer = withResponsiveStyles(View, {
   base: () => `
-    padding-left: ${2 * spacing}px;
-    padding-right: ${2 * spacing}px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     padding-left: 0;

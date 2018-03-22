@@ -5,19 +5,19 @@ import { colours, spacing } from "@times-components/styleguide";
 export const MetaTextElement = withResponsiveStyles(Text, {
   base: () => ` border-top: 1px solid ${colours.functional.keyline};`,
   mediumUp: () => `
-    padding-top: ${2 * spacing}px;
-    padding-bottom: ${2 * spacing}px;
+    padding-top: ${spacing(2)};
+    padding-bottom: ${spacing(2)};
   `,
   wideUp: () => `
     line-height: 18px;
-    padding-bottom: ${5 * spacing}px;
+    padding-bottom: ${spacing(5)};
   `
 });
 
 export const Meta = withResponsiveStyles(View, {
   base: () => `
-    margin-left: ${2 * spacing}px;
-    margin-right: ${2 * spacing}px;
+    margin-left: ${spacing(2)};
+    margin-right: ${spacing(2)};
   `,
   mediumUp: () => `
     margin-left: 0;

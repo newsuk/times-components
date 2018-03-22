@@ -6,8 +6,8 @@ import { spacing } from "@times-components/styleguide";
 const calculateViewBox = (width, height) => {
   if (width >= 970 && height >= 250) {
     return {
-      marginLeft: 41 * spacing,
-      marginTop: -8 * spacing,
+      marginLeft: spacing(41),
+      marginTop: spacing(-8),
       svgWidth: 584,
       svgHeight: 220
     };
@@ -15,8 +15,8 @@ const calculateViewBox = (width, height) => {
 
   if (width >= 728 && height >= 90) {
     return {
-      marginLeft: 126 * spacing,
-      marginTop: -24 * spacing,
+      marginLeft: spacing(126),
+      marginTop: spacing(-24),
       svgWidth: 1200,
       svgHeight: 50
     };
@@ -25,7 +25,7 @@ const calculateViewBox = (width, height) => {
   if (width >= 300 && height >= 250) {
     // MPU
     return {
-      marginLeft: 3 * spacing,
+      marginLeft: spacing(3),
       marginTop: 0,
       svgWidth: 269,
       svgHeight: 250

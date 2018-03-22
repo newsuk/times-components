@@ -35,7 +35,7 @@ export const getConfigWrapper = ({ itemCount }) => {
       const singleItemImageStyle = `
         flex: 1;
         min-width: auto;
-        padding-right: ${2 * spacing}px;
+        padding-right: ${spacing(2)};
       `;
 
       const singleItemSummaryStyle = `

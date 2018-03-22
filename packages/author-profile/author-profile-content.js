@@ -13,12 +13,12 @@ import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   errorContainer: {
     flex: 1,
-    margin: 3 * spacing
+    margin: spacing(3)
   }
 });
 

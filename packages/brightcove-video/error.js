@@ -25,13 +25,13 @@ const styles = StyleSheet.create({
   errorHead: {
     color: "white",
     fontSize: fontSizes.smallestHeadline,
-    marginBottom: spacing,
+    marginBottom: spacing(1),
     fontFamily: fonts.headline
   },
   errorBody: {
     color: "white",
     textAlign: "center",
-    marginBottom: 3 * spacing,
+    marginBottom: spacing(3),
     opacity: 0.8,
     fontSize: fontSizes.meta,
     fontFamily: fonts.body
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     position: "relative",
     top: 3,
     letterSpacing: 1,
-    paddingLeft: spacing
+    paddingLeft: spacing(1)
   }
 });
 

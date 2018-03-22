@@ -11,7 +11,7 @@ const sharedStyles = {
     fontSize: fontSizes.teaser,
     fontFamily: fonts.body,
     lineHeight: 20,
-    marginBottom: 2 * spacing,
+    marginBottom: spacing(2),
     flexWrap: "wrap"
   },
   metaText: {
@@ -19,14 +19,14 @@ const sharedStyles = {
     fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting,
-    marginBottom: spacing
+    marginBottom: spacing(1)
   },
   labelWrapper: {
     marginBottom: 0
   },
   headline: {
     color: colours.functional.primary,
-    marginBottom: spacing,
+    marginBottom: spacing(1),
     fontFamily: fonts.headline,
     fontWeight: "400"
   },

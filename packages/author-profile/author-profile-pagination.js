@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   itemContainer: {
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   spacing: {
     flex: 1,

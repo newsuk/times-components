@@ -2,8 +2,8 @@ import { spacing } from "@times-components/styleguide";
 
 const globalStyle = {
   articleMainContentRow: {
-    paddingLeft: 2 * spacing,
-    paddingRight: 2 * spacing
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   }
 };
 

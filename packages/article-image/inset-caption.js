@@ -4,7 +4,7 @@ import { spacing } from "@times-components/styleguide";
 
 const captionStyle = {
   container: {
-    paddingLeft: 2 * spacing
+    paddingLeft: spacing(2)
   }
 };
 

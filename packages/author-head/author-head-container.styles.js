@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingBottom: 8 * spacing,
+    paddingBottom: spacing(8),
     backgroundColor: colours.functional.backgroundPrimary
   }
 });

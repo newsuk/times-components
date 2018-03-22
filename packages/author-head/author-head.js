@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.supporting,
     color: colours.functional.action,
     textDecorationLine: "none",
-    paddingLeft: spacing
+    paddingLeft: spacing(1)
   }
 });
 

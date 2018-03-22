@@ -41,10 +41,10 @@ const Message = withResponsiveStyles(Text, {
 const ButtonContainer = withResponsiveStyles(View, {
   base: () => `
     align-self: center;
-    padding-top: ${8 * spacing}px;
+    padding-top: ${spacing(8)};
     max-width: 300px;
     width: 200px;
-    padding-bottom: ${2 * spacing}px;
+    padding-bottom: ${spacing(2)};
   `
 });
 

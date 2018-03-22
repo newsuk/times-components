@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const androidStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   }
 });
 

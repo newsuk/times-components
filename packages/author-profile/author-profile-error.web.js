@@ -60,7 +60,7 @@ const ButtonContainer = withResponsiveStyles(View, {
     padding-top: 40px;
     max-width: 300px;
     width: 100%;
-    padding-bottom: ${2 * spacing}px;
+    padding-bottom: ${spacing(2)};
   `,
   mediumUp: () => `
     width: 200px;

@@ -25,8 +25,8 @@ const ContentContainer = withResponsiveStyles(View, {
     align-self: center;
     width: 100%;
     max-width: 680px;
-    padding-left: ${2 * spacing}px;
-    padding-right: ${2 * spacing}px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     padding-left: 0;
@@ -64,7 +64,7 @@ class AuthorProfileContent extends Component {
     }
 
     const options = {
-      rootMargin: `${10 * spacing}px`,
+      rootMargin: spacing(10),
       threshold: 0.5
     };
 

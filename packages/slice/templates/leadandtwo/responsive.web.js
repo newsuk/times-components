@@ -22,8 +22,8 @@ export const getContainer = ({ hasSupports }) => {
       flex: 1;
       flex-direction: column;
       flex-wrap: wrap;
-      padding-bottom: ${2 * spacing}px;
-      padding-top: ${2 * spacing}px;
+      padding-bottom: ${spacing(2)};
+      padding-top: ${spacing(2)};
       height: auto;
       width: 100%;
     `,
@@ -91,19 +91,19 @@ export const getSupportContainer = ({ index }) => {
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: ${colours.functional.keyline};
-        margin-top: ${2 * spacing}px;
-        padding-top: ${2 * spacing}px;
+        margin-top: ${spacing(2)};
+        padding-top: ${spacing(2)};
       `;
 
       return `
-        padding-left: ${2 * spacing}px;
-        padding-right: ${2 * spacing}px;
+        padding-left: ${spacing(2)};
+        padding-right: ${spacing(2)};
         ${index > 0 ? secondSupportStyle : ``}
       `;
     },
     mediumUp: () => `
-      margin-left: ${2 * spacing}px;
-      margin-right: ${2 * spacing}px;
+      margin-left: ${spacing(2)};
+      margin-right: ${spacing(2)};
       padding-left: 0;
       padding-right: 0;
     `

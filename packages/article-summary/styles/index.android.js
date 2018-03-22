@@ -5,7 +5,7 @@ const styles = {
   ...sharedStyles,
   labelWrapper: {
     ...sharedStyles.labelWrapper,
-    marginBottom: spacing
+    marginBottom: spacing(1)
   }
 };
 

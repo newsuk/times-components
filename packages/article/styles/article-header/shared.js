@@ -22,7 +22,7 @@ const sharedStyles = {
   },
   articleLabel: {
     paddingTop: 4,
-    paddingBottom: spacing
+    paddingBottom: spacing(1)
   },
   articleFlag: {
     marginBottom: 11,
