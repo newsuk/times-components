@@ -58,19 +58,13 @@ class CardComponent extends Component {
     const renderImage = () => {
       if (!image || !image.uri || !showImage) return null;
 
-      const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`
+      const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
       return (
-        <View
-          style={styles.imageContainer}
-          className={imageContainerClass}
-        >
-          <Image
-            aspectRatio={imageRatio}
-            uri={imageUrl}
-          />
+        <View style={styles.imageContainer} className={imageContainerClass}>
+          <Image aspectRatio={imageRatio} uri={imageUrl} />
         </View>
-      )
-    }
+      );
+    };
 
     return (
       <Animations.FadeIn>

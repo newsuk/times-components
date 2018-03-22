@@ -30,10 +30,7 @@ const RelatedArticleItem = ({
   const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
   const { cropSize, imageRatio } = imageConfig;
 
-  const imageUri = get(
-    article,
-    `leadAsset.crop${cropSize}.url`
-  );
+  const imageUri = get(article, `leadAsset.crop${cropSize}.url`);
 
   return (
     <Link url={url} onPress={e => onPress(e, { url: article.url })}>
