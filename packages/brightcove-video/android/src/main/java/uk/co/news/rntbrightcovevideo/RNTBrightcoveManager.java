@@ -14,8 +14,8 @@ import javax.annotation.Nullable;
 
 public class RNTBrightcoveManager extends SimpleViewManager<RNTBrightcoveView> {
 
-    public static final String TAG = RNTBrightcoveManager.class.getSimpleName();
-    public static final String REACT_CLASS = "RNTBrightcove";
+    private static final String TAG = RNTBrightcoveManager.class.getSimpleName();
+    private static final String REACT_CLASS = "RNTBrightcove";
     private static final String PLAY_KEY = "play";
     private static final String PAUSE_KEY = "pause";
     private static final int PLAY_VALUE = 1;
