@@ -4,8 +4,13 @@ const styles = StyleSheet.create({
   cardContainer: {
     display: "flex",
     alignItems: "flex-start",
-    flexDirection: "row",
     flexWrap: "wrap"
+  },
+  rowLayout: {
+    flexDirection: "row"
+  },
+  reverseRowLayout: {
+    flexDirection: "row-reverse"
   },
   imageContainer: {
     flex: 1,

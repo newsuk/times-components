@@ -148,4 +148,16 @@ export default () => {
       "6. Renders Card normally and does not re-render"
     );
   });
+
+  it("should render a card with reversed layout", () => {
+    const component = shallow(
+      <Card {...cardProps} isReversed>
+        <span>A card</span>
+      </Card>
+    );
+
+    expect(component).toMatchSnapshot(
+      "7. Renders a Card with a reversed layout"
+    );
+  });
 };

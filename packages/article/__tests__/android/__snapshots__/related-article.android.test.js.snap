@@ -96,12 +96,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -444,12 +448,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -671,12 +679,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -1019,12 +1031,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -1204,12 +1220,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -1431,12 +1451,16 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -1826,12 +1850,16 @@ exports[`Related articles tests on android Standard template should render one r
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -2086,12 +2114,16 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -2299,12 +2331,16 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -2525,12 +2561,16 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -2796,12 +2836,16 @@ exports[`Related articles tests on android Standard template should render two r
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
@@ -3007,12 +3051,16 @@ exports[`Related articles tests on android Standard template should render two r
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexWrap": "wrap",
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
               }
             >
               <View
