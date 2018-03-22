@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import { AdComposer } from "@times-components/ad";
 
 import ArticleContent from "./article-content";
@@ -16,7 +15,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import RelatedArticles from "./related-articles/related-articles";
 import Topics from "./topics";
-import ArticleLeadAssetVideo from "./article-lead-asset-video";
+import ArticleLeadAsset from "./article-lead-asset";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -28,14 +27,9 @@ class ArticlePage extends React.Component {
   static renderRow(rowData, onRelatedArticlePress) {
     switch (rowData.type) {
       case "leadAsset": {
-        if (rowData.data.isVideo) {
-          return <ArticleLeadAssetVideo {...rowData.data} />;
-        }
-        const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
-        const aspectRatio = ratioWidth / ratioHeight;
         return (
-          <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-            <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
+          <View testID="leadAsset" key="leadAsset">
+            <ArticleLeadAsset key={rowData.type} data={rowData.data} />
           </View>
         );
       }
