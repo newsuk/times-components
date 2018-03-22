@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.8.22",
+  "version": "0.8.23",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -35,7 +35,7 @@
     "@storybook/addon-actions": "3.3.15",
     "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/brightcove-video": "1.11.9",
+    "@times-components/brightcove-video": "1.11.10",
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/jest-configurator": "0.2.2",
     "dextrose": "1.7.3",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.2...@times-components/author-profile@0.51.0) (2018-03-22)
+
+
+### Features
+
+* add reversal flag for Card layout ([#769](https://github.com/newsuk/times-components/issues/769)) ([9e7953a](https://github.com/newsuk/times-components/commit/9e7953a))
+
+
+
+
 <a name="0.50.2"></a>
 ## [0.50.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.1...@times-components/author-profile@0.50.2) (2018-03-21)
 
