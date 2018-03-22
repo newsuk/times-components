@@ -62,6 +62,7 @@
     "@times-components/article-image": "0.12.12",
     "@times-components/article-label": "0.9.0",
     "@times-components/article-summary": "0.20.0",
+    "@times-components/brightcove-video": "1.11.10",
     "@times-components/caption": "0.10.12",
     "@times-components/card": "0.23.0",
     "@times-components/date-publication": "0.13.1",
