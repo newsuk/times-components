@@ -23,6 +23,7 @@ const Loading = ({
       </View>
     );
   };
+
   return (
     <View style={styles.cardContainer}>
       {!isReversed ? renderImage() : null}

@@ -10,7 +10,11 @@ exports[`1. Render a Card 1`] = `
       style={
         Array [
           75,
+<<<<<<< HEAD
           78,
+=======
+          76,
+>>>>>>> feat: make Card reverse on native
         ]
       }
     >
@@ -24,7 +28,11 @@ exports[`1. Render a Card 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
+=======
+          77,
+>>>>>>> feat: make Card reverse on native
           "",
         ]
       }
@@ -70,7 +78,11 @@ exports[`2. Render the loading state 1`] = `
           style={
             Array [
               75,
+<<<<<<< HEAD
               78,
+=======
+              76,
+>>>>>>> feat: make Card reverse on native
             ]
           }
         >
@@ -178,7 +190,11 @@ exports[`2. Render the loading state 1`] = `
           className=""
           style={
             Array [
+<<<<<<< HEAD
               76,
+=======
+              77,
+>>>>>>> feat: make Card reverse on native
               "",
             ]
           }
@@ -190,7 +206,11 @@ exports[`2. Render the loading state 1`] = `
               degrees={264}
               style={
                 Array [
+<<<<<<< HEAD
                   77,
+=======
+                  78,
+>>>>>>> feat: make Card reverse on native
                 ]
               }
             >
@@ -201,7 +221,11 @@ exports[`2. Render the loading state 1`] = `
                       "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                     },
                     Array [
+<<<<<<< HEAD
                       77,
+=======
+                      78,
+>>>>>>> feat: make Card reverse on native
                     ],
                   ]
                 }
@@ -325,7 +349,11 @@ exports[`3. Renders without an image 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
+=======
+          77,
+>>>>>>> feat: make Card reverse on native
           "",
         ]
       }
@@ -347,7 +375,11 @@ exports[`4. Renders without an image URL 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
+=======
+          77,
+>>>>>>> feat: make Card reverse on native
           "",
         ]
       }
@@ -370,7 +402,11 @@ exports[`5. Re-renders after showing the loading state 1`] = `
       style={
         Array [
           75,
+<<<<<<< HEAD
           78,
+=======
+          76,
+>>>>>>> feat: make Card reverse on native
         ]
       }
     >
@@ -384,7 +420,11 @@ exports[`5. Re-renders after showing the loading state 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
+=======
+          77,
+>>>>>>> feat: make Card reverse on native
           "",
         ]
       }
@@ -407,7 +447,11 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
       style={
         Array [
           75,
+<<<<<<< HEAD
           78,
+=======
+          76,
+>>>>>>> feat: make Card reverse on native
         ]
       }
     >
@@ -421,7 +465,11 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
+=======
+          77,
+>>>>>>> feat: make Card reverse on native
           "",
         ]
       }
@@ -443,8 +491,13 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
       className=""
       style={
         Array [
+<<<<<<< HEAD
           76,
           78,
+=======
+          77,
+          76,
+>>>>>>> feat: make Card reverse on native
         ]
       }
     >
