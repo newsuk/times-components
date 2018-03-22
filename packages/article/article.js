@@ -16,6 +16,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import RelatedArticles from "./related-articles/related-articles";
 import Topics from "./topics";
+import ArticleLeadAssetVideo from "./article-lead-asset-video";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -27,6 +28,9 @@ class ArticlePage extends React.Component {
   static renderRow(rowData, onRelatedArticlePress) {
     switch (rowData.type) {
       case "leadAsset": {
+        if (rowData.data.isVideo) {
+          return <ArticleLeadAssetVideo {...rowData.data} />;
+        }
         const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
         const aspectRatio = ratioWidth / ratioHeight;
         return (
