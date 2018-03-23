@@ -20,7 +20,7 @@ const styles = {
   text: {
     textAlign: "center",
     fontFamily: fonts.body,
-    fontSize: fontSizes.flags,
+    fontSize: fontSizes.caption,
     color: "#333333"
   },
   animationBox: {
