@@ -5,10 +5,7 @@ import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
-import {
-  makeAuthor,
-  makeArticleMocks
-} from "@times-components/provider/fixture-generator";
+import { fixtureGenerator } from "@times-components/provider";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";
@@ -44,11 +41,11 @@ export default AuthorProfileContent => {
   it("renders profile", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
+      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: true, pageSize })}>
         <AuthorProfile
           slug={authorProfileProps.slug}
           analyticsStream={() => {}}
-          author={makeAuthor({ withImages: true })}
+          author={fixtureGenerator.makeAuthor({ withImages: true })}
           isLoading={false}
           page={1}
           pageSize={pageSize}
@@ -62,7 +59,7 @@ export default AuthorProfileContent => {
   it("renders profile loading", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={makeArticleMocks({ withImages: true, pageSize })}>
+      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: true, pageSize })}>
         <AuthorProfile
           {...authorProfileProps}
           isLoading
@@ -78,7 +75,7 @@ export default AuthorProfileContent => {
   it("renders with no author", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={makeArticleMocks({ withImages: false, pageSize })}>
+      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: false, pageSize })}>
         <AuthorProfile
           {...authorProfileProps}
           isLoading={false}
@@ -96,10 +93,10 @@ export default AuthorProfileContent => {
     const pageSize = 3;
 
     renderer.create(
-      <MockedProvider mocks={makeArticleMocks()}>
+      <MockedProvider mocks={fixtureGenerator.makeArticleMocks()}>
         <AuthorProfile
           {...authorProfileProps}
-          author={makeAuthor()}
+          author={fixtureGenerator.makeAuthor()}
           isLoading={false}
           page={1}
           pageSize={pageSize}
@@ -125,7 +122,7 @@ export default AuthorProfileContent => {
     const results = pagedResult(0, pageSize);
     const component = renderer.create(
       <AuthorProfileContent
-        {...makeAuthor({ withImages: true })}
+        {...fixtureGenerator.makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
         page={1}
         pageSize={pageSize}
@@ -237,7 +234,7 @@ export default AuthorProfileContent => {
 
     const p = {
       ...authorProfileProps,
-      ...makeAuthor({ withImages: true }),
+      ...fixtureGenerator.makeAuthor({ withImages: true }),
       showImages: true,
       articlesLoading: false,
       articles: [
@@ -283,7 +280,7 @@ export default AuthorProfileContent => {
 
   it("renders the author head", () => {
     const component = renderer.create(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
@@ -291,7 +288,7 @@ export default AuthorProfileContent => {
 
   it("does not re-render the author head if the name changes", () => {
     const el = shallow(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     el.setProps({
@@ -310,7 +307,7 @@ export default AuthorProfileContent => {
 
   it("does re-render the author head if the loading state changes", () => {
     const el = shallow(
-      <AuthorHead {...makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
     );
 
     el.setProps({
@@ -334,10 +331,10 @@ export default AuthorProfileContent => {
     const withImages = true;
 
     renderer.create(
-      <MockedProvider mocks={makeArticleMocks({ pageSize, withImages })}>
+      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ pageSize, withImages })}>
         <AuthorProfile
           {...authorProfileProps}
-          author={makeAuthor({ withImages })}
+          author={fixtureGenerator.makeAuthor({ withImages })}
           isLoading={false}
           page={1}
           pageSize={pageSize}
@@ -411,7 +408,7 @@ export default AuthorProfileContent => {
       <AuthorProfileContent
         count={0}
         articles={[]}
-        author={makeAuthor()}
+        author={fixtureGenerator.makeAuthor()}
         slug="deborah-haynes"
         page={1}
         pageSize={3}

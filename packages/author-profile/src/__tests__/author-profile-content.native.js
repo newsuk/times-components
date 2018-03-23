@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import RCT from "react-test-renderer";
 import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
-import { makeAuthor } from "@times-components/provider/fixture-generator";
+import { fixtureGenerator } from "@times-components/provider";
 import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
@@ -54,7 +54,7 @@ export default () => {
       <AuthorProfileContent
         count={0}
         articles={[]}
-        author={makeAuthor()}
+        author={fixtureGenerator.makeAuthor()}
         slug="deborah-haynes"
         page={1}
         pageSize={3}

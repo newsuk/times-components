@@ -1,12 +1,12 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "../../author-profile";
-import { query as articleListWithImagesQuery } from "../../author-articles-with-images";
-import { query as articleListNoImagesQuery } from "../../author-articles-no-images";
-import authorProfileFixture from "../../fixtures/author-profile.json";
-import articleListWithImagesFixture from "../../fixtures/article-list-with-images.json";
-import articleListNoImagesFixture from "../../fixtures/article-list-no-images.json";
+import { query as authorProfileQuery } from "./author-profile";
+import { query as articleListWithImagesQuery } from "./author-articles-with-images";
+import { query as articleListNoImagesQuery } from "./author-articles-no-images";
+import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
+import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
+import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
 
-export const makeAuthor = ({ count = 20, withImages } = {}) => {
+const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
     return {
       ...authorProfileFixture.data.author,
@@ -28,7 +28,7 @@ export const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-export const makeArticleList = (
+const makeArticleList = (
   { skip, first, withImages },
   transform = id => id
 ) => {
@@ -90,7 +90,7 @@ const makeVariables = ({ withImages, skip, pageSize, slug }) => {
   };
 };
 
-export const makeArticleMocks = (
+const makeArticleMocks = (
   {
     count = 20,
     pageSize = 5,
@@ -123,7 +123,7 @@ export const makeArticleMocks = (
   }))
 ];
 
-export const makeBrokenMocks = ({ count, withImages, pageSize }) =>
+const makeBrokenMocks = ({ count, withImages, pageSize }) =>
   makeArticleMocks({ count, withImages, pageSize }, list =>
     list.map((card, indx) => ({
       ...card,
@@ -145,7 +145,7 @@ export const makeBrokenMocks = ({ count, withImages, pageSize }) =>
     }))
   );
 
-export const makeMocksWithPageError = ({ withImages, pageSize }) => {
+const makeMocksWithPageError = ({ withImages, pageSize }) => {
   const [author, ...articles] = makeArticleMocks({
     pageSize,
     withImages
@@ -166,7 +166,7 @@ export const makeMocksWithPageError = ({ withImages, pageSize }) => {
   ];
 };
 
-export const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
+const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
   const [, ...articles] = makeArticleMocks({
     withImages,
     slug,
@@ -186,4 +186,15 @@ export const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
     makeAuthorMock({ withImages, slug }),
     ...articles
   ];
+};
+
+export default {
+  makeAuthor,
+  makeArticleList,
+  makeAuthorMock,
+  makeVariables,
+  makeArticleMocks,
+  makeBrokenMocks,
+  makeMocksWithPageError,
+  makeMocksWithAuthorError,
 };

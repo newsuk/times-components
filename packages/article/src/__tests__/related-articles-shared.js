@@ -6,12 +6,12 @@ import mockDate from "mockdate";
 
 import RelatedArticles from "../related-articles/related-articles";
 
-import standard1ArticleFixture from "../related-articles/fixtures/standard/1-article.json";
-import standard2ArticlesFixture from "../related-articles/fixtures/standard/2-articles.json";
-import standard3ArticlesFixture from "../related-articles/fixtures/standard/3-articles.json";
-import leadAndTwo1ArticleFixture from "../related-articles/fixtures/leadandtwo/1-article.json";
-import leadAndTwo2ArticlesFixture from "../related-articles/fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3ArticlesFixture from "../related-articles/fixtures/leadandtwo/3-articles.json";
+import standard1ArticleFixture from "../../fixtures/related-articles/standard/1-article.json";
+import standard2ArticlesFixture from "../../fixtures/related-articles/standard/2-articles.json";
+import standard3ArticlesFixture from "../../fixtures/related-articles/standard/3-articles.json";
+import leadAndTwo1ArticleFixture from "../../fixtures/related-articles/leadandtwo/1-article.json";
+import leadAndTwo2ArticlesFixture from "../../fixtures/related-articles/leadandtwo/2-articles.json";
+import leadAndTwo3ArticlesFixture from "../../fixtures/related-articles/leadandtwo/3-articles.json";
 
 const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
   analyticsStream: action,

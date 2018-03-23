@@ -71,7 +71,8 @@ export default (
     ),
     testMatch: [`${module}/{,src/}__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
-      `${module}/{,src/}__tests__/${platformPath}jest.config.js`
+      `${module}/{,src/,dist/}__tests__/${platformPath}jest.config.js`,
+      `${module}/dist/__tests__/${platformPath}*.test.js`
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupFiles: [
