@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.52.0"></a>
+# [0.52.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.51.0...@times-components/author-profile@0.52.0) (2018-03-23)
+
+
+### Features
+
+* card reversal native ([#781](https://github.com/newsuk/times-components/issues/781)) ([9b22750](https://github.com/newsuk/times-components/commit/9b22750))
+
+
+
+
 <a name="0.51.0"></a>
 # [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.2...@times-components/author-profile@0.51.0) (2018-03-22)
 
