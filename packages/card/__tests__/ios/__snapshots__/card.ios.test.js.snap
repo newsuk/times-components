@@ -678,24 +678,24 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
         A card
       </span>
     </View>
-  </View>
-  <View
-    className=""
-    style={
-      Array [
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        },
-        "",
-      ]
-    }
-  >
-    <TimesImage
-      aspectRatio={1.5}
-      style={Object {}}
-      uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
-    />
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={1.5}
+        style={Object {}}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
+    </View>
   </View>
 </FadeIn>
 `;

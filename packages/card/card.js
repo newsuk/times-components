@@ -65,8 +65,8 @@ class CardComponent extends Component {
           >
             {children}
           </View>
+          {isReversed ? renderImage() : null}
         </View>
-        {isReversed ? renderImage() : null}
       </Animations.FadeIn>
     );
   }
