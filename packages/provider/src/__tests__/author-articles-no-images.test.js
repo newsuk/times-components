@@ -2,11 +2,11 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { AuthorArticlesNoImagesProvider } from "../provider";
-import { makeArticleMocks } from "../fixture-generator";
+import fixtureGenerator from "../fixture-generator";
 
 const renderComponent = child =>
   renderer.create(
-    <MockedProvider mocks={makeArticleMocks({ pageSize: 5, delay: 0 })}>
+    <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ pageSize: 5, delay: 0 })}>
       <AuthorArticlesNoImagesProvider
         slug="deborah-haynes"
         pageSize={5}
