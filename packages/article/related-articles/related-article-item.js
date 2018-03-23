@@ -28,7 +28,7 @@ const RelatedArticleItem = ({
 }) => {
   const { byline, headline, label, publishedTime, section, url } = article;
   const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
-  const { cropSize, imageRatio } = imageConfig;
+  const { cropSize = "169", imageRatio = 16 / 9 } = imageConfig;
 
   const imageUri = get(article, `leadAsset.crop${cropSize}.url`);
 
