@@ -2,7 +2,7 @@ import {
   delay,
   advance,
   delayAndAdvance
-} from "@times-components/utils/faketime";
+} from "@times-components/utils";
 import TealiumSendScheduler from "../tealium-send-scheduler";
 
 module.exports = () => {

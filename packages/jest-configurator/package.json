@@ -2,15 +2,14 @@
   "name": "@times-components/jest-configurator",
   "version": "0.2.2",
   "description": "Cross platform Jest Config",
-  "main": "dist/lib/jest-configurator.js",
+  "main": "lib/jest-configurator.js",
   "scripts": {
     "prepublishOnly": "babel src -d lib",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
-    "test": "jest",
-    "transpile": "babel src -d dist"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

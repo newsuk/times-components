@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils/graphql";
+import { MockedProvider } from "@times-components/utils";
 import { addTypenameToDocument } from "apollo-utilities";
 import { ArticleProvider } from "../provider";
 import { query as articleQuery } from "../article";
-import fixture from "../fixtures/article.json";
+import fixture from "../../fixtures/article.json";
 
 const mocks = [
   {

@@ -2,13 +2,13 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils/graphql";
+import { MockedProvider } from "@times-components/utils";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
 import {
   makeAuthor,
   makeArticleMocks
-} from "@times-components/provider/fixtures/author-profile/fixture-generator";
+} from "@times-components/provider/fixture-generator";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";

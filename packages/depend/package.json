@@ -10,7 +10,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --bail --ci --coverage",
-    "transpile": "babel src -d dist"
+    "transpile": "npm run build", "__TODO": "remove"
   },
   "bin": {
     "depend": "dist/cli.js"

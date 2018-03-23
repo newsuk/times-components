@@ -3,7 +3,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import Topics from "../topics";
 import Topic from "../topic";
-import topicData from "../fixtures/topics";
+import topicData from "../../fixtures/topics";
 
 module.exports = () => {
   it("renders a group of Topics in the correct order", () => {

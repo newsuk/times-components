@@ -6,7 +6,7 @@ import {
   BarSpacingDecorator,
   LateralSpacingDecorator,
   WhiteBgColorDecorator
-} from "../";
+} from "../storybook";
 
 const WrappedComponent = () => <Text>I am in Storybook!</Text>;
 

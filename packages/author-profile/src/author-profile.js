@@ -4,7 +4,7 @@ import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { AuthorArticlesWithImagesProvider } from "@times-components/provider";
 import { withTrackingContext } from "@times-components/tracking";
-import { ratioTextToFloat } from "@times-components/utils/strings";
+import { ratioTextToFloat } from "@times-components/utils";
 import get from "lodash.get";
 import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";

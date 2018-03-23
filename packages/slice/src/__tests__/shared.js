@@ -9,7 +9,7 @@ import {
   leadAndTwoRoles,
   OpinionAndTwoSlice,
   opinionAndTwoRoles
-} from "../";
+} from "../slice";
 
 module.exports = () => {
   const ExampleChild = () => <View />;

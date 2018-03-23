@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import AuthorHead from "../author-head";
 
-const data = require("../fixtures/profile.json");
+const data = require("../../fixtures/profile.json");
 
 const extra = { onTwitterLinkPress: () => {} };
 

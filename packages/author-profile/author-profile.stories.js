@@ -5,7 +5,7 @@ import { AuthorProfileProvider } from "@times-components/provider";
 import {
   MockedProvider,
   fragmentMatcher
-} from "@times-components/utils/graphql";
+} from "@times-components/utils";
 import storybookReporter from "@times-components/tealium/storybook";
 import {
   makeAuthor,
@@ -13,7 +13,7 @@ import {
   makeBrokenMocks,
   makeMocksWithAuthorError,
   makeMocksWithPageError
-} from "@times-components/provider/fixtures/author-profile/fixture-generator";
+} from "@times-components/provider/fixture-generator";
 import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";

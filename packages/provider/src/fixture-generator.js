@@ -2,9 +2,9 @@ import { addTypenameToDocument } from "apollo-utilities";
 import { query as authorProfileQuery } from "../../author-profile";
 import { query as articleListWithImagesQuery } from "../../author-articles-with-images";
 import { query as articleListNoImagesQuery } from "../../author-articles-no-images";
-import authorProfileFixture from "./author-profile.json";
-import articleListWithImagesFixture from "./article-list-with-images.json";
-import articleListNoImagesFixture from "./article-list-no-images.json";
+import authorProfileFixture from "../../fixtures/author-profile.json";
+import articleListWithImagesFixture from "../../fixtures/article-list-with-images.json";
+import articleListNoImagesFixture from "../../fixtures/article-list-no-images.json";
 
 export const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {

@@ -1,8 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils/graphql";
+import { MockedProvider } from "@times-components/utils";
 import { AuthorProfileProvider } from "../provider";
-import { makeArticleMocks } from "../fixtures/author-profile/fixture-generator";
+import { makeArticleMocks } from "../fixture-generator";
 
 const renderComponent = child =>
   renderer.create(

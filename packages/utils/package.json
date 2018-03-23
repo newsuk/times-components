@@ -2,13 +2,14 @@
   "name": "@times-components/utils",
   "version": "0.5.4",
   "description": "A set of helpers and/or workarounds to be shared across packages",
+  "main": "dist",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest --config='./__tests__/jest.config.js'",
-    "transpile": "babel src -d dist"
+    "test": "jest --config='./src/__tests__/jest.config.js'",
+    "transpile": "babel src -d dist && cp schema.json dist"
   },
   "repository": {
     "type": "git",

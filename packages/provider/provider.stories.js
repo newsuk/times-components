@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
-import { MockedProvider } from "@times-components/utils/graphql";
+import { MockedProvider } from "@times-components/utils";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider

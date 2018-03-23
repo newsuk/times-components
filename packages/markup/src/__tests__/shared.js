@@ -1,21 +1,21 @@
 import React from "react";
 import { Text, View } from "react-native";
 import renderer from "react-test-renderer";
-import { renderTree, renderTrees } from "../";
+import { renderTree, renderTrees } from "../markup";
 
-const singleParagraph = require("../fixtures/single-paragraph.json");
-const multiParagraph = require("../fixtures/multi-paragraph.json");
-const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json");
-const multiParagraphWithPullQuote = require("../fixtures/multi-paragraph-with-pullquote.json");
-const bold = require("../fixtures/bold.json");
-const italic = require("../fixtures/italic.json");
-const span = require("../fixtures/span.json");
-const lineBreak = require("../fixtures/line-break.json");
-const mixture = require("../fixtures/tag-mixture.json");
-const nested = require("../fixtures/nested.json");
-const bio = require("../fixtures/bio.json");
-const script = require("../fixtures/script.json");
-const image = require("../fixtures/image.json");
+const singleParagraph = require("../../fixtures/single-paragraph.json");
+const multiParagraph = require("../../fixtures/multi-paragraph.json");
+const multiParagraphWithAds = require("../../fixtures/multi-paragraph-with-ads.json");
+const multiParagraphWithPullQuote = require("../../fixtures/multi-paragraph-with-pullquote.json");
+const bold = require("../../fixtures/bold.json");
+const italic = require("../../fixtures/italic.json");
+const span = require("../../fixtures/span.json");
+const lineBreak = require("../../fixtures/line-break.json");
+const mixture = require("../../fixtures/tag-mixture.json");
+const nested = require("../../fixtures/nested.json");
+const bio = require("../../fixtures/bio.json");
+const script = require("../../fixtures/script.json");
+const image = require("../../fixtures/image.json");
 
 // don't render ad internals
 jest.mock("@times-components/ad", () => "Ad");
