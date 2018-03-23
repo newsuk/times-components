@@ -11,9 +11,6 @@ const styles = StyleSheet.create({
     flex: 1,
     minWidth: "100%"
   },
-  layout: {
-    marginBottom: 10
-  },
   contentContainer: {
     flex: 1,
     minWidth: "100%"
