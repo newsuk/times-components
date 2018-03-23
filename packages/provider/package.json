@@ -9,7 +9,7 @@
     "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
-    "transpile": "babel src -d dist"
+    "prepublishOnly": "babel src -d dist"
   },
   "jest": {
     "preset": "react-native",

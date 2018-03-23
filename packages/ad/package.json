@@ -4,7 +4,7 @@
   "description": "Ad component",
   "main": "dist/ad",
   "scripts": {
-    "transpile": "babel src -d dist",
+    "prepublishOnly": "babel src -d dist",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",

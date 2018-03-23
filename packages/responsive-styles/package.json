@@ -8,7 +8,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
-    "transpile": "babel src -d dist"
+    "prepublishOnly": "babel src -d dist"
   },
   "repository": {
     "type": "git",

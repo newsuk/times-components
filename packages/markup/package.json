@@ -13,7 +13,7 @@
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose gs $(PWD)",
     "dextrose-clean": "dextrose cs $(PWD)",
-    "transpile": "babel src -d dist"
+    "prepublishOnly": "babel src -d dist"
   },
   "repository": {
     "type": "git",
