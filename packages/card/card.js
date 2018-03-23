@@ -41,32 +41,31 @@ class CardComponent extends Component {
       );
     }
 
-    const cardFlexDirectionStyle = isReversed
-      ? styles.reverseRowLayout
-      : styles.rowLayout;
+    const renderImage = () => {
+      if (!image || !image.uri || !showImage) return null;
+
+      const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
+      return (
+        <View
+          style={[styles.imageContainer, isReversed ? "" : styles.layout]}
+          className={imageContainerClass}
+        >
+          <Image aspectRatio={imageRatio} uri={imageUrl} />
+        </View>
+      );
+    };
 
     return (
       <Animations.FadeIn>
-        <View style={[styles.cardContainer, cardFlexDirectionStyle]}>
-          {showImage &&
-            image &&
-            image.uri && (
-              <View
-                style={styles.imageContainer}
-                className={imageContainerClass}
-              >
-                <Image
-                  aspectRatio={imageRatio}
-                  uri={`${image.uri}&resize=${imageSize}`}
-                />
-              </View>
-            )}
+        <View style={styles.cardContainer}>
+          {!isReversed ? renderImage() : null}
           <View
-            style={styles.contentContainer}
+            style={[styles.contentContainer, isReversed ? styles.layout : ""]}
             className={contentContainerClass}
           >
             {children}
           </View>
+          {isReversed ? renderImage() : null}
         </View>
       </Animations.FadeIn>
     );

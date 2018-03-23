@@ -11,26 +11,26 @@ exports[`1. Render a Card 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ]
       }
     >
       <View
@@ -161,10 +161,13 @@ exports[`1. Render a Card 1`] = `
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <Text
@@ -182,26 +185,26 @@ exports[`1. Render a Card 1`] = `
 exports[`2. Render the loading state 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexWrap": "wrap",
-      },
-      Object {
-        "flexDirection": "row",
-      },
-    ]
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+    }
   }
 >
   <View
     className=""
     style={
-      Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
     }
   >
     <View
@@ -327,10 +330,13 @@ exports[`2. Render the loading state 1`] = `
   <View
     className=""
     style={
-      Object {
-        "flex": 1,
-        "minWidth": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+          "minWidth": "100%",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -529,25 +535,24 @@ exports[`3. Renders without an image 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <Text
@@ -573,25 +578,24 @@ exports[`4. Renders without an image URL 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <Text
@@ -610,26 +614,26 @@ exports[`5. Re-renders after showing the loading state 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ]
       }
     >
       <TimesImage
@@ -641,10 +645,13 @@ exports[`5. Re-renders after showing the loading state 1`] = `
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <span>
@@ -659,26 +666,26 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ]
       }
     >
       <TimesImage
@@ -690,10 +697,13 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <span>
@@ -708,26 +718,42 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "flex-start",
-          "display": "flex",
-          "flexWrap": "wrap",
-        },
-        Object {
-          "flexDirection": "row-reverse",
-        },
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
     }
   >
     <View
       className=""
       style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      <span>
+        A card
+      </span>
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "minWidth": "100%",
+          },
+          "",
+        ]
       }
     >
       <TimesImage
@@ -735,19 +761,6 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
         style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
-    </View>
-    <View
-      className=""
-      style={
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <span>
-        A card
-      </span>
     </View>
   </View>
 </FadeIn>

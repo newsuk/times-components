@@ -2,19 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   cardContainer: {
-    display: "flex",
     alignItems: "flex-start",
+    display: "flex",
+    flexDirection: "row",
     flexWrap: "wrap"
-  },
-  rowLayout: {
-    flexDirection: "row"
-  },
-  reverseRowLayout: {
-    flexDirection: "row-reverse"
   },
   imageContainer: {
     flex: 1,
-    marginBottom: 10,
     minWidth: "100%"
   },
   contentContainer: {
@@ -25,6 +19,9 @@ const styles = StyleSheet.create({
     height: 24,
     marginBottom: 10,
     maxWidth: 300
+  },
+  layout: {
+    marginBottom: 10
   },
   textContainer: {
     height: 10,

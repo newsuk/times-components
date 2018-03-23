@@ -96,26 +96,26 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -246,10 +246,13 @@ exports[`Related articles tests on android Lead and two template should render o
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -448,25 +451,24 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -679,26 +681,26 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -829,10 +831,13 @@ exports[`Related articles tests on android Lead and two template should render o
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -1031,25 +1036,24 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -1220,25 +1224,24 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -1451,26 +1454,26 @@ exports[`Related articles tests on android Lead and two template should render o
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -1601,10 +1604,13 @@ exports[`Related articles tests on android Lead and two template should render o
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -1850,25 +1856,24 @@ exports[`Related articles tests on android Standard template should render one r
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -2114,25 +2119,24 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -2331,25 +2335,24 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -2561,25 +2564,24 @@ exports[`Related articles tests on android Standard template should render three
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -2836,25 +2838,24 @@ exports[`Related articles tests on android Standard template should render two r
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -3051,25 +3052,24 @@ exports[`Related articles tests on android Standard template should render two r
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexWrap": "wrap",
-                  },
-                  Object {
-                    "flexDirection": "row",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
               }
             >
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>

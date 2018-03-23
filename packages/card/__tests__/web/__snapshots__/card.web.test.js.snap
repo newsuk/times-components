@@ -3,16 +3,16 @@
 exports[`1. Render a Card 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        75,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={77}
+      style={
+        Array [
+          75,
+          78,
+        ]
+      }
     >
       <TimesImage
         aspectRatio={1.5}
@@ -22,7 +22,12 @@ exports[`1. Render a Card 1`] = `
     </View>
     <View
       className=""
-      style={78}
+      style={
+        Array [
+          76,
+          "",
+        ]
+      }
     >
       <span>
         A card
@@ -55,19 +60,19 @@ exports[`2. Render the loading state 1`] = `
     showImage={true}
   >
     <View
-      style={
-        Array [
-          74,
-          75,
-        ]
-      }
+      style={74}
     >
       <div
         className="rn-alignItems-1habvwh rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-flexWrap-1w6e6rj rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
       >
         <View
           className=""
-          style={77}
+          style={
+            Array [
+              75,
+              78,
+            ]
+          }
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-15d164r rn-minHeight-ifefl9 rn-minWidth-3e7lpq rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -171,7 +176,12 @@ exports[`2. Render the loading state 1`] = `
         </View>
         <View
           className=""
-          style={78}
+          style={
+            Array [
+              76,
+              "",
+            ]
+          }
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-3e7lpq rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -180,7 +190,7 @@ exports[`2. Render the loading state 1`] = `
               degrees={264}
               style={
                 Array [
-                  79,
+                  77,
                 ]
               }
             >
@@ -191,7 +201,7 @@ exports[`2. Render the loading state 1`] = `
                       "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                     },
                     Array [
-                      79,
+                      77,
                     ],
                   ]
                 }
@@ -210,7 +220,7 @@ exports[`2. Render the loading state 1`] = `
               degrees={267}
               style={
                 Array [
-                  80,
+                  79,
                 ]
               }
             >
@@ -221,7 +231,7 @@ exports[`2. Render the loading state 1`] = `
                       "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                     },
                     Array [
-                      80,
+                      79,
                     ],
                   ]
                 }
@@ -240,7 +250,7 @@ exports[`2. Render the loading state 1`] = `
               degrees={267}
               style={
                 Array [
-                  80,
+                  79,
                 ]
               }
             >
@@ -251,7 +261,7 @@ exports[`2. Render the loading state 1`] = `
                       "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                     },
                     Array [
-                      80,
+                      79,
                     ],
                   ]
                 }
@@ -270,8 +280,8 @@ exports[`2. Render the loading state 1`] = `
               degrees={267}
               style={
                 Array [
+                  79,
                   80,
-                  81,
                 ]
               }
             >
@@ -282,8 +292,8 @@ exports[`2. Render the loading state 1`] = `
                       "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                     },
                     Array [
+                      79,
                       80,
-                      81,
                     ],
                   ]
                 }
@@ -309,16 +319,16 @@ exports[`2. Render the loading state 1`] = `
 exports[`3. Renders without an image 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        75,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={78}
+      style={
+        Array [
+          76,
+          "",
+        ]
+      }
     >
       <span>
         No image
@@ -331,16 +341,16 @@ exports[`3. Renders without an image 1`] = `
 exports[`4. Renders without an image URL 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        75,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={78}
+      style={
+        Array [
+          76,
+          "",
+        ]
+      }
     >
       <span>
         No URL
@@ -353,16 +363,16 @@ exports[`4. Renders without an image URL 1`] = `
 exports[`5. Re-renders after showing the loading state 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        75,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={77}
+      style={
+        Array [
+          75,
+          78,
+        ]
+      }
     >
       <TimesImage
         aspectRatio={1.5}
@@ -372,7 +382,12 @@ exports[`5. Re-renders after showing the loading state 1`] = `
     </View>
     <View
       className=""
-      style={78}
+      style={
+        Array [
+          76,
+          "",
+        ]
+      }
     >
       <span>
         Re-render me
@@ -385,16 +400,16 @@ exports[`5. Re-renders after showing the loading state 1`] = `
 exports[`6. Renders Card normally and does not re-render 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        75,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={77}
+      style={
+        Array [
+          75,
+          78,
+        ]
+      }
     >
       <TimesImage
         aspectRatio={1.5}
@@ -404,7 +419,12 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
     </View>
     <View
       className=""
-      style={78}
+      style={
+        Array [
+          76,
+          "",
+        ]
+      }
     >
       <span>
         Do not re-render me
@@ -417,30 +437,35 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
 exports[`7. Renders a Card with a reversed layout 1`] = `
 <FadeIn>
   <View
-    style={
-      Array [
-        74,
-        76,
-      ]
-    }
+    style={74}
   >
     <View
       className=""
-      style={77}
+      style={
+        Array [
+          76,
+          78,
+        ]
+      }
+    >
+      <span>
+        A card
+      </span>
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          75,
+          "",
+        ]
+      }
     >
       <TimesImage
         aspectRatio={1.5}
         style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
-    </View>
-    <View
-      className=""
-      style={78}
-    >
-      <span>
-        A card
-      </span>
     </View>
   </View>
 </FadeIn>

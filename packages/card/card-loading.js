@@ -12,17 +12,24 @@ const Loading = ({
   isReversed,
   showImage
 }) => {
-  const cardFlexDirectionStyle = isReversed
-    ? styles.reverseRowLayout
-    : styles.rowLayout;
+  const renderImage = () => {
+    if (!showImage) return null;
+    return (
+      <View
+        style={[styles.imageContainer, isReversed ? "" : styles.layout]}
+        className={imageContainerClass}
+      >
+        <Image aspectRatio={imageRatio} />
+      </View>
+    );
+  };
   return (
-    <View style={[styles.cardContainer, cardFlexDirectionStyle]}>
-      {showImage && (
-        <View style={styles.imageContainer} className={imageContainerClass}>
-          <Image aspectRatio={imageRatio} />
-        </View>
-      )}
-      <View style={styles.contentContainer} className={contentContainerClass}>
+    <View style={styles.cardContainer}>
+      {!isReversed ? renderImage() : null}
+      <View
+        style={[styles.contentContainer, isReversed ? styles.layout : ""]}
+        className={contentContainerClass}
+      >
         <Gradient style={[styles.headerContainer]} degrees={264} />
         <Gradient style={[styles.textContainer]} degrees={267} />
         <Gradient style={[styles.textContainer]} degrees={267} />
@@ -31,6 +38,7 @@ const Loading = ({
           degrees={267}
         />
       </View>
+      {isReversed ? renderImage() : null}
     </View>
   );
 };
