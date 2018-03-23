@@ -5,7 +5,6 @@ import { Platform, ScrollView } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils";
 import { ArticleProvider } from "@times-components/provider";
 import { storybookReporter } from "@times-components/tealium";
