@@ -33,24 +33,40 @@ export const getSupportConfig = () => ({
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
-      .supportImageContainerClass {
-        display: none;
+      .opinionImageContainerClass {
+        max-width: 167px;
       }
-      .supportSummaryClass {
-        display: none;
-      }
-      .summaryHidden {
-        display: none;
-      }
+
       .opinionSummary125Class {
         display: block;
       }
+
+      .supportImageContainerClass {
+        display: none;
+      }
+
+      .supportSummaryClass {
+        display: none;
+      }
+
+      .summaryHidden {
+        display: none;
+      }
     `,
     mediumUp: () => {
-      const withSupportsImageStyle = `
-        margin-bottom: 10px;
-        min-width: 270px;
-      `;
+      const getOpinionImageStyle = () => {
+        if (supportCount === 0)
+          return `
+          min-width: auto;
+        `;
+        if (supportCount === 1)
+          return `
+          min-width: 165px;
+        `;
+        return `
+          min-width: 152px;
+        `;
+      };
 
       return `
         .opinionHeadlineClass {
@@ -58,22 +74,14 @@ export const getConfigWrapper = ({ supportCount }) => {
           line-height: 30px;
         }
 
-        .opinionImageContainerClass {
-          flex: 2;
-          margin-bottom: 0;
-          min-width: auto;
-          padding-right: 10px;
-          ${supportCount === 2 ? withSupportsImageStyle : ``}
-        }
-
         .opinionContentContainerClass {
-          flex-grow: 2.7;
-          flex-basis: 0 !important;
-          min-width: ${supportCount === 2 ? "300px" : "325px"};
+          min-width: auto;
+          padding-right: 54px;
         }
 
-        .supportImageContainerClass {
-          display: block;
+        .opinionImageContainerClass {
+          margin-bottom: -10px;
+          ${getOpinionImageStyle()}
         }
 
         .opinionSummary125Class {
@@ -83,30 +91,27 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionSummary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
+
+        .supportImageContainerClass {
+          display: block;
+        }
       `;
     },
     wideUp: () => {
-      const twoSupportImageStyle = `
-        flex: 2;
-        margin-bottom: 0;
-        max-width: 180px;
-        min-width: auto;
-        padding-right: 10px;
-      `;
-
-      const twoSupportContentStyle = `
-        flex: 2.7;
-        flex-basis: 0 !important;
-        min-width: 250px;
-      `;
+      const getOpinionImageStyle = () => {
+        if (supportCount === 0) return ``;
+        if (supportCount === 1)
+          return `
+          min-width: 226px;
+        `;
+        return `
+          min-width: 177px;
+        `;
+      };
 
       return `
-        .supportImageContainerClass {
-          ${supportCount === 2 ? twoSupportImageStyle : ``}
-        }
-
-        .supportContentContainerClass {
-          ${supportCount === 2 ? twoSupportContentStyle : ``}
+        .opinionImageContainerClass {
+          ${getOpinionImageStyle()}
         }
       `;
     }

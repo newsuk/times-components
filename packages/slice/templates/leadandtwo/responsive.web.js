@@ -4,18 +4,6 @@ import withResponsiveStyles, {
 } from "@times-components/responsive-styles";
 import { colours, spacing } from "@times-components/styleguide";
 
-export const SupportsContainer = withResponsiveStyles(View, {
-  base: () => `
-    flex: 1;
-    flex-direction: column;
-    height: auto;
-  `,
-  mediumUp: () => `
-    flex-basis: 0 !important;
-  `
-});
-SupportsContainer.displayName = "SupportsContainer";
-
 export const getContainer = ({ hasSupports }) => {
   const Container = withResponsiveStyles(View, {
     base: () => `
@@ -83,6 +71,18 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
   LeadContainer.displayName = "LeadContainer";
   return LeadContainer;
 };
+
+export const SupportsContainer = withResponsiveStyles(View, {
+  base: () => `
+    flex: 1;
+    flex-direction: column;
+    height: auto;
+  `,
+  mediumUp: () => `
+    flex-basis: 0 !important;
+  `
+});
+SupportsContainer.displayName = "SupportsContainer";
 
 export const getSupportContainer = ({ index }) => {
   const SupportContainer = withResponsiveStyles(View, {
