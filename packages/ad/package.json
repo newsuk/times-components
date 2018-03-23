@@ -20,7 +20,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/ad/__tests__/**.test.js"
+      "<rootDir>/packages/ad/src/__tests__/**.test.js"
     ],
     "testEnvironment": "jsdom"
   },

@@ -23,7 +23,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/gradient/__tests__/*.test.js"
+      "<rootDir>/packages/gradient/src/__tests__/*.test.js"
     ]
   },
   "repository": {

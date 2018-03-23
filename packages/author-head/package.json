@@ -22,7 +22,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/author-head/__tests__/*.test.js"
+      "<rootDir>/packages/author-head/src/__tests__/*.test.js"
     ]
   },
   "repository": {

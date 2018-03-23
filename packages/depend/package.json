@@ -10,7 +10,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --bail --ci --coverage",
-    "transpile": "npm run build", "__TODO": "remove"
+    "transpile": "npm run build",
+    "__TODO": "remove"
   },
   "bin": {
     "depend": "dist/cli.js"
@@ -29,7 +30,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/depend/__tests__/**.test.js"
+      "<rootDir>/packages/depend/src/__tests__/**.test.js"
     ]
   },
   "repository": {
