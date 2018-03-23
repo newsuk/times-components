@@ -11,7 +11,8 @@
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",

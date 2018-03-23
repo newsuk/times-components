@@ -2,8 +2,9 @@
   "name": "@times-components/ad",
   "version": "0.16.1",
   "description": "Ad component",
-  "main": "ad",
+  "main": "dist/ad",
   "scripts": {
+    "transpile": "babel src -d dist",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",

@@ -9,7 +9,8 @@
     "fmt": "prettier --write '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
-    "test": "jest"
+    "test": "jest",
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
