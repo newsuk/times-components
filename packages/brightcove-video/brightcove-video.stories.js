@@ -3,8 +3,8 @@ import { View, Image, Text } from "react-native";
 
 import { storiesOf } from "@storybook/react-native";
 import { action, decorateAction } from "@storybook/addon-actions";
-import BrightcoveVideo from "./dist/brightcove-video";
-import Player from "./dist/brightcove-player";
+import BrightcoveVideo from "./src/brightcove-video";
+import Player from "./src/brightcove-player";
 
 import VideoAdder from "./src/fixtures/player-adder";
 import VideoWithExternalControls from "./src/fixtures/video-with-external-controls";

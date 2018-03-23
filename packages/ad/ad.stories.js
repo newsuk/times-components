@@ -4,10 +4,10 @@ import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
 import { fontSizes } from "@times-components/styleguide";
-import Ad, { AdComposer } from "./dist/ad";
-import Placeholder from "./dist/placeholder";
-import NativeDOMContext from "./dist/dom-context";
-import WebDOMContext from "./dist/dom-context.web";
+import Ad, { AdComposer } from "./src/ad";
+import Placeholder from "./src/placeholder";
+import NativeDOMContext from "./src/dom-context";
+import WebDOMContext from "./src/dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
 

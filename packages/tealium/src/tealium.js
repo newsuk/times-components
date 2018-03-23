@@ -10,4 +10,7 @@ function createTealiumReporter(options, w, d) {
   };
 }
 
+
+export { default as storybookReporter } from './storybook';
+
 export default createTealiumReporter;

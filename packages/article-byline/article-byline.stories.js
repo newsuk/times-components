@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import ArticleByline from "./dist/article-byline";
+import ArticleByline from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 

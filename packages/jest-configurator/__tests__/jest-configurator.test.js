@@ -1,5 +1,5 @@
 import path from "path";
-import jestConfigurator from "../src/jest-configurator";
+import jestConfigurator from "../jest-configurator";
 
 const dir = path.resolve(__dirname, "../../fixtures/all");
 

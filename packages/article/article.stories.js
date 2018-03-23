@@ -7,10 +7,10 @@ import { addTypenameToDocument } from "apollo-utilities";
 import { decorateAction } from "@storybook/addon-actions";
 import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils";
-import { query as articleQuery } from "@times-components/provider/article";
-import storybookReporter from "@times-components/tealium/storybook";
-import Article from "./dist/article";
-import RelatedArticles from "./dist/related-articles/related-articles";
+import { ArticleProvider } from "@times-components/provider";
+import { storybookReporter } from "@times-components/tealium";
+import Article from "./src/article";
+import RelatedArticles from "./src/related-articles/related-articles";
 
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
@@ -57,7 +57,7 @@ const createRelatedArticlesProps = fixtureData => ({
 const mocks = [
   {
     request: {
-      query: addTypenameToDocument(articleQuery),
+      query: addTypenameToDocument(ArticleProvider.query),
       variables: {
         id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       }

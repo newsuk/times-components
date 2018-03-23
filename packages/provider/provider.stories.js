@@ -7,10 +7,10 @@ import { MockedProvider } from "@times-components/utils";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider
-} from "./provider.js";
-import { query as authorProfileQuery } from "./dist/author-profile";
+} from "./src/provider.js";
+import { query as authorProfileQuery } from "./src/author-profile";
 import fixture from "./fixtures/author-profile/author-profile.json";
-import { query as articleQuery } from "./dist/article";
+import { query as articleQuery } from "./src/article";
 import articleFixture from "./fixtures/article.json";
 
 storiesOf("Helpers/Provider", module)
