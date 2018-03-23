@@ -6,7 +6,7 @@ import FadeIn from "./animations";
 import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
 
-import timesSpacing from "./spacing/spacing";
+import timesSpacing from "./spacing";
 
 export const colours = {
   section: sectionColours,
