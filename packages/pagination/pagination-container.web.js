@@ -9,7 +9,7 @@ const baseStyle = `
   flex-direction: column;
 `;
 const mediumStyle = `
-  margin-top: ${spacing(6)};
+  margin-top: ${spacing(6)}
 `;
 const ContainerWithResults = withResponsiveStyles(View, {
   base: () => baseStyle,

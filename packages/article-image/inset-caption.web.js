@@ -5,7 +5,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
 const InsetCaptionStyle = withResponsiveStyles(View, {
-  base: () => `padding-left: ${spacing(2)}`,
+  base: () => `padding-left: ${spacing(2)};`,
   mediumUp: () => "padding-left: 0px;"
 });
 

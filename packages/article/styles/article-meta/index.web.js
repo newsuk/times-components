@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   articleMetaElement: {
     ...sharedStyles.articleMetaElement,
     paddingTop: 9,
-    paddingBottom: spacing
+    paddingBottom: spacing(1)
   }
 });
 

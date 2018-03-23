@@ -56,8 +56,8 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
     base: () => `
       flex: 1;
       flex-grow: 1;
-      padding-left: ${spacing(4)};
-      padding-right: ${spacing(4)};
+      padding-left: ${spacing(2)};
+      padding-right: ${spacing(2)};
       width: ${hasSupports ? "auto" : "100%"};
     `,
     mediumUp: () => {
@@ -69,8 +69,8 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
       const hasSupportsStyle = `
         flex-basis: 0 !important;
         flex-grow: ${supportCount === 1 ? "3" : "2"};
-        padding-left: ${spacing(4)};
-        padding-right: ${spacing(4)};
+        padding-left: ${spacing(2)};
+        padding-right: ${spacing(2)};
       `;
       return `
         ${hasSupports ? hasSupportsStyle : noSupportsStyle}
