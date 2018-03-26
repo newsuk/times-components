@@ -17,7 +17,6 @@ import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
 public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private Boolean autoplay;
-    private final float progress = 0;
 
     public BrightcovePlayerView(Context context) {
         super(context);
@@ -87,8 +86,6 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             @Override
             public void onVideo(final Video video) {
                 add(video);
-
-                seekTo((int) progress);
 
                 invalidate();
                 requestLayout();

@@ -1,8 +1,5 @@
 package uk.co.news.rntbrightcovevideo;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.view.ContextThemeWrapper;
@@ -83,12 +80,7 @@ public class RNTBrightcoveView extends FrameLayout {
         if (parametersSet()) {
             boolean hideFullScreenButton = this.hideFullScreenButton != null ? this.hideFullScreenButton : false;
             int theme = hideFullScreenButton ? R.style.FullScreenButtonDisabled : R.style.FullScreenButtonEnabled;
-
-           if(hideFullScreenButton) {
-               playerView = new BrightcovePlayerView(new ContextThemeWrapper(getActivity(), theme));
-           } else {
-               playerView = new BrightcovePlayerView(getActivity());
-           }
+            playerView = new BrightcovePlayerView(new ContextThemeWrapper(getContext(), theme));
 
             addView(playerView);
 
@@ -96,29 +88,17 @@ public class RNTBrightcoveView extends FrameLayout {
         }
     }
 
-    // Required for brightcove player full screen (context type has to be Activity)
-    private Activity getActivity() {
-        Context context = getContext();
-        while (context instanceof ContextWrapper) {
-            if (context instanceof Activity) {
-                return (Activity) context;
-            }
-            context = ((ContextWrapper) context).getBaseContext();
-        }
-        return null;
-    }
-
     public void emitState(final boolean isPlaying, final int progress, boolean isFullScreen) {
         WritableMap event = Arguments.createMap();
 
-        Integer duration = playerView.getDuration();
+        int duration = playerView.getDuration();
 
         event.putBoolean("isPlaying", isPlaying);
         event.putBoolean("isFullscreen", isFullScreen);
         event.putDouble("progress", progress);
 
         if (duration > 0) {
-            event.putDouble("duration", duration);
+            event.putInt("duration", duration);
         }
 
         event.putBoolean("isFinished", duration == progress);
