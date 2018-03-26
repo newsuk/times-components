@@ -2,7 +2,7 @@
   "name": "@times-components/gradient",
   "version": "0.7.4",
   "description": "Renders a gradient background",
-  "main": "gradient",
+  "main": "dist/gradient",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

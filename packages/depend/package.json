@@ -2,7 +2,7 @@
   "name": "@times-components/depend",
   "version": "0.1.3",
   "description": "dependency analyzer and fixer",
-  "main": "depend",
+  "main": "dist/depend",
   "scripts": {
     "build": "babel . -d dist --ignore dist,node_modules,coverage,__tests__ && cp package.json dist/package.json",
     "prepublish": "npm run build",

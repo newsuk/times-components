@@ -2,7 +2,7 @@
   "name": "@times-components/author-profile",
   "version": "0.53.1",
   "description": "Author info along with articles they have written",
-  "main": "author-profile",
+  "main": "dist/author-profile",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

@@ -2,7 +2,7 @@
   "name": "@times-components/error-view",
   "version": "0.8.25",
   "description": "Handles errors",
-  "main": "error-view",
+  "main": "dist/error-view",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

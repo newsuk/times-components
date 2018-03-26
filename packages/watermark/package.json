@@ -2,7 +2,7 @@
   "name": "@times-components/watermark",
   "version": "0.4.11",
   "description": "Watermark",
-  "main": "watermark",
+  "main": "dist/watermark",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

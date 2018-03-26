@@ -2,7 +2,7 @@
   "name": "@times-components/ad",
   "version": "0.16.1",
   "description": "Ad component",
-  "main": "dist/ad",
+  "main": "dist/dist/ad",
   "scripts": {
     "transpile": "babel src -d dist",
     "fmt": "prettier --write '**/*.*'",

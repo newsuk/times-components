@@ -1,7 +1,7 @@
 {
   "name": "@times-components/provider",
   "version": "0.25.3",
-  "main": "provider",
+  "main": "dist/provider",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",

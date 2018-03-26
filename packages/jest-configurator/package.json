@@ -2,7 +2,7 @@
   "name": "@times-components/jest-configurator",
   "version": "0.2.2",
   "description": "Cross platform Jest Config",
-  "main": "lib/jest-configurator.js",
+  "main": "dist/lib/jest-configurator.js",
   "scripts": {
     "prepublishOnly": "babel src -d lib",
     "prettier:diff": "prettier --list-different '**/*.*'",

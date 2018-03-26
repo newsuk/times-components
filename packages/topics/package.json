@@ -2,7 +2,7 @@
   "name": "@times-components/topics",
   "version": "0.2.1",
   "description": "Map of Topics related to the Article",
-  "main": "topics",
+  "main": "dist/topics",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

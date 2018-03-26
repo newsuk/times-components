@@ -2,7 +2,7 @@
   "name": "@times-components/article-label",
   "version": "0.9.2",
   "description": "The article label",
-  "main": "article-label",
+  "main": "dist/article-label",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

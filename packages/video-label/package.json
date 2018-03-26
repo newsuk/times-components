@@ -2,7 +2,7 @@
   "name": "@times-components/video-label",
   "version": "0.1.15",
   "description": "A label for articles with videos",
-  "main": "video-label",
+  "main": "dist/video-label",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

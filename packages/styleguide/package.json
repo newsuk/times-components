@@ -2,7 +2,7 @@
   "name": "@times-components/styleguide",
   "version": "0.5.1",
   "description": "Centralised library for common styles throughout the Times",
-  "main": "styleguide",
+  "main": "dist/styleguide",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

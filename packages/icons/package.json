@@ -2,7 +2,7 @@
   "name": "@times-components/icons",
   "version": "0.3.11",
   "description": "Times SVG Icons",
-  "main": "icons",
+  "main": "dist/icons",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "fmt": "prettier --write '**/*.*'",

@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-summary",
   "version": "0.21.1",
-  "main": "article-summary",
+  "main": "dist/article-summary",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

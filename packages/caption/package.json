@@ -2,7 +2,7 @@
   "name": "@times-components/caption",
   "version": "0.11.1",
   "description": "Media caption component",
-  "main": "caption",
+  "main": "dist/caption",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
