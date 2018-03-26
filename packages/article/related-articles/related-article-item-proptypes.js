@@ -25,7 +25,6 @@ export const relatedArticleItemPropTypes = {
   isOpinionByline: PropTypes.bool,
   isReversed: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
-  showDay: PropTypes.bool,
   showImage: PropTypes.bool,
   showSummary: PropTypes.bool,
   summaryClass: PropTypes.string
@@ -38,7 +37,6 @@ export const relatedArticleItemDefaultProps = {
   imageContainerClass: "",
   isOpinionByline: false,
   isReversed: false,
-  showDay: true,
   showImage: true,
   showSummary: true,
   summaryClass: ""
