@@ -84,8 +84,11 @@ public class RNTBrightcoveView extends FrameLayout {
             boolean hideFullScreenButton = this.hideFullScreenButton != null ? this.hideFullScreenButton : false;
             int theme = hideFullScreenButton ? R.style.FullScreenButtonDisabled : R.style.FullScreenButtonEnabled;
 
-            playerView = new BrightcovePlayerView(new ContextThemeWrapper(getActivity(), theme));
-
+           if(hideFullScreenButton) {
+               playerView = new BrightcovePlayerView(new ContextThemeWrapper(getActivity(), theme));
+           } else {
+               playerView = new BrightcovePlayerView(getActivity());
+           }
 
             addView(playerView);
 
@@ -105,24 +108,22 @@ public class RNTBrightcoveView extends FrameLayout {
         return null;
     }
 
-    public void emitState(final Boolean isPlaying, final int progress) {
+    public void emitState(final boolean isPlaying, final int progress, boolean isFullScreen) {
         WritableMap event = Arguments.createMap();
 
-        if (isPlaying != null) {
-            Integer duration = playerView.getDuration();
+        Integer duration = playerView.getDuration();
 
-            event.putBoolean("isPlaying", isPlaying);
-            event.putBoolean("isFullscreen", playerView.getIsFullscreen());
-            event.putDouble("progress", progress);
+        event.putBoolean("isPlaying", isPlaying);
+        event.putBoolean("isFullscreen", isFullScreen);
+        event.putDouble("progress", progress);
 
-            if (duration > 0) {
-                event.putDouble("duration", duration);
-            }
-
-            event.putBoolean("isFinished", duration == progress);
-            ReactContext reactContext = (ReactContext) getContext();
-            reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
+        if (duration > 0) {
+            event.putDouble("duration", duration);
         }
+
+        event.putBoolean("isFinished", duration == progress);
+        ReactContext reactContext = (ReactContext) getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "topChange", event);
     }
 
     public void emitError(Event e) {
