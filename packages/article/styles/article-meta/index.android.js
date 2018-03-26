@@ -7,12 +7,16 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   articleMetaElement: {
     ...sharedStyles.articleMetaElement,
-    paddingTop: 6,
-    paddingBottom: 8
+    paddingTop: 7,
+    paddingBottom: 6
   },
   byline: {
     ...sharedStyles.byline,
-    lineHeight: 17
+    lineHeight: 21
+  },
+  datePublication: {
+    ...sharedStyles.datePublication,
+    lineHeight: 21
   }
 });
 
