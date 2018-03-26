@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.8.24",
+  "version": "0.8.25",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -48,7 +48,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.0",
+    "@times-components/styleguide": "0.5.1",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
