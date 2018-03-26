@@ -115,6 +115,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         `;
         return `
           min-width: 177px;
+          top: 8px;
         `;
       };
 
