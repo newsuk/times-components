@@ -2,27 +2,9 @@ import React from "react";
 import { View, Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import { colours } from "@times-components/styleguide";
 import { IconDiamond } from "@times-components/icons";
-
-// When changing styles please debug both web, android and ios because
-// some styles are not working correctly on all platforms (namely, android)
-const styles = {
-  view: {
-    flexDirection: "row",
-    alignItems: "center"
-  },
-  diamond: {
-    marginRight: 5,
-    marginBottom: 1
-  },
-  title: {
-    fontFamily: fonts.bodyRegularSmallCaps,
-    fontSize: fontSizes.flags,
-    fontWeight: "400",
-    letterSpacing: 1.4
-  }
-};
+import styles from "./style";
 
 // apply transformations to add uppercase and letter spacing.
 // letterSpacing CSS prop does not work on android:

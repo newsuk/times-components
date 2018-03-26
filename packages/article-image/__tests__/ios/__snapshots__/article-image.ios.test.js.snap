@@ -13,93 +13,344 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
   <View
     style={undefined}
   >
-    <View
-      aspectRatio={1.7777777777777777}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.7777777777777777}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={1.7777777777777777}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -263,93 +514,344 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
   <View
     style={undefined}
   >
-    <View
-      aspectRatio={1.7777777777777777}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.7777777777777777}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={1.7777777777777777}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -378,93 +880,344 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
       }
     }
   >
-    <View
-      aspectRatio={1.5}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={1.5}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -561,93 +1314,344 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
       }
     }
   >
-    <View
-      aspectRatio={0.6666666666666666}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={0.6666666666666666}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={0.6666666666666666}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -737,93 +1741,344 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
   <View
     style={undefined}
   >
-    <View
-      aspectRatio={1.25}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.25}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={1.25}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -914,93 +2169,344 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
       }
     }
   >
-    <View
-      aspectRatio={1.5}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
+    <View>
+      <Modal
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        presentationStyle="fullScreen"
+        visible={false}
       >
-        <Image
-          onLoad={[Function]}
-          source={
+        <View
+          style={
             Object {
-              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
+              "backgroundColor": "#1D1D1B",
+              "flexDirection": "column",
+              "height": "100%",
+              "width": "100%",
             }
           }
-          style={
-            Array [
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
               Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <svg
+              height="24"
+              style={Object {}}
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <g
+                fill="rgba(255, 255, 255, 0.8)"
+                style={Object {}}
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  style={Object {}}
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  style={Object {}}
+                />
+              </g>
+            </svg>
+          </View>
+          <View
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
+            style={
               Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+                "flexGrow": 1,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                collapsable={undefined}
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "scale": 1,
+                      },
+                      Object {
+                        "rotate": "0 deg",
+                      },
+                      Object {
+                        "perspective": 1000,
+                      },
+                    ],
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                  style={
+                    Object {
+                      "opacity": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Array [
+                          Object {
+                            "flex": 1,
+                          },
+                          null,
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "flex": 1,
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
           }
-        />
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
+          aspectRatio={1.5}
+          style={Object {}}
         >
           <View
             style={
               Object {
-                "flex": 1,
+                "height": "100%",
+                "width": "100%",
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
+            <Image
+              onLoad={[Function]}
+              source={
                 Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
                 }
               }
               style={
                 Array [
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
                 ]
               }
             />
+            <View
+              onLayout={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flex": 1,
+                  },
+                  null,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <BVLinearGradient
+                  colors={
+                    Array [
+                      "#F9F9F9",
+                      "#EDEDED",
+                    ]
+                  }
+                  end={
+                    Object {
+                      "x": -0.09302964577578221,
+                      "y": 0.11488204504197774,
+                    }
+                  }
+                  locations={
+                    Array [
+                      0,
+                      1,
+                    ]
+                  }
+                  start={
+                    Object {
+                      "x": 1,
+                      "y": 0,
+                    }
+                  }
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
       </View>
