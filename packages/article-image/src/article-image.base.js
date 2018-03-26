@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import ModalImage from "@times-components/image/modal-image";
+import { ModalImage } from "@times-components/image";
 import Caption from "@times-components/caption";
 import { spacing } from "@times-components/styleguide";
 import InsetCaption from "./inset-caption";
