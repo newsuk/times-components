@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { StandardSlice, LeadAndTwoSlice } from "@times-components/slice";
+import { spacing } from "@times-components/styleguide";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -66,7 +67,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   return (
-    <View style={{ marginTop: 10 }}>
+    <View style={{ marginTop: spacing(2) }}>
       <RelatedArticlesHeading />
       {renderSlice()}
     </View>

@@ -1,6 +1,6 @@
 import AuthorHead from "@times-components/author-head";
 import Gradient from "@times-components/gradient";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   photoContainer: {
     width: 100,
     height: 100,
-    top: 30,
+    top: spacing(6),
     position: "absolute"
   },
   gradient: {

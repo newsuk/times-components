@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 const summaryConfig = {
   1: [125],
@@ -34,7 +35,7 @@ export const getConfigWrapper = ({ itemCount }) => {
       const singleItemImageStyle = `
         flex: 1;
         min-width: auto;
-        padding-right: 10px;
+        padding-right: ${spacing(2)};
       `;
 
       const singleItemSummaryStyle = `

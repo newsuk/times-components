@@ -1,10 +1,10 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 import config from "./responsive-config";
 
 export const MainContainer = withResponsiveStyles(View, {
-  wideUp: () => "padding-top: 20px; margin: 0 auto;"
+  wideUp: () => `padding-top: ${spacing(4)}; margin: 0 auto;`
 });
 
 /* --- HeaderAd --- */
@@ -15,8 +15,8 @@ export const HeaderAdContainer = withResponsiveStyles(View, {
     border-top-color: ${colours.functional.keyline};
     border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: ${spacing(2)};
+    padding-bottom: ${spacing(2)};
   `
 });
 
@@ -27,7 +27,7 @@ export const HeaderContainer = withResponsiveStyles(View, {
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `
     width: ${config.wideBpWidth};
-    margin-bottom: 15px;
+    margin-bottom: ${spacing(3)};
   `
 });
 
@@ -36,9 +36,9 @@ export const HeaderContainer = withResponsiveStyles(View, {
 export const MetaContainer = withResponsiveStyles(View, {
   mediumUp: () => `width: ${config.mediumBpWidth}; margin: 0 auto;`,
   wideUp: () => `
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-bottom: ${spacing(4)};
+    padding-right: ${spacing(4)};
+    padding-left: ${spacing(4)};
     position: absolute;
     top: 0;
     width: 20.8333%;

@@ -1,4 +1,4 @@
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -6,11 +6,11 @@ const styles = {
     borderRadius: 1,
     borderWidth: 1,
     paddingBottom: 12,
-    paddingLeft: 15,
-    paddingRight: 15,
+    paddingLeft: spacing(3),
+    paddingRight: spacing(3),
     paddingTop: 12,
-    marginRight: 10,
-    marginTop: 10
+    marginRight: spacing(2),
+    marginTop: spacing(2)
   },
   text: {
     color: colours.functional.secondary,

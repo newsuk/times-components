@@ -3,6 +3,7 @@ import { View } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 import {
   articleImagePropTypes,
@@ -12,11 +13,11 @@ import {
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    margin-top: -10px;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-bottom: 20px;
+    margin-top: ${spacing(-2)};
+    padding-top: ${spacing(1)};
+    padding-left: ${spacing(4)};
+    padding-right: ${spacing(2)};
+    padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;
   `,
@@ -27,8 +28,8 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
     float:left;
     margin-top: 0px;
     padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+    padding-right: ${spacing(4)};
+    padding-bottom: ${spacing(6)};
   `,
   wideUp: () => `
     padding-left: 0px;
@@ -39,8 +40,8 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-top: ${spacing(1)};
+    padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;`,
   mediumUp: () => `
@@ -48,7 +49,7 @@ const InsetImageStyle = withResponsiveStyles(View, {
     clear:left;
     float:left;
     padding-bottom: 0px;
-    padding-right: 20px;`,
+    padding-right: ${spacing(4)};`,
   wideUp: () => `
     width: 35.71429%;
     clear: left;`

@@ -1,7 +1,12 @@
 import React from "react";
 import { StyleSheet, View, Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 import TimesWatermark from "./ad-watermark";
 
 const getStyles = (width, height) =>
@@ -30,10 +35,10 @@ const getStyles = (width, height) =>
       borderWidth: 1,
       borderStyle: "solid",
       position: "absolute",
-      paddingTop: 5,
-      paddingBottom: 5,
-      paddingLeft: 10,
-      paddingRight: 10,
+      paddingTop: spacing(1),
+      paddingBottom: spacing(1),
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2),
       letterSpacing: 1.5
     }
   });

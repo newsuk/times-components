@@ -2,12 +2,13 @@ import { View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 export const ChildContainer = withResponsiveStyles(View, {
   base: () => `
     flex: 1;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     flex-basis: 0 !important;
@@ -23,8 +24,8 @@ export const getChildrenContainer = ({ childCount }) => {
       flex: 1;
       flex-direction: column;
       flex-wrap: wrap;
-      padding-bottom: 10px;
-      padding-top: ${childCount >= 3 ? "15px" : "10px"};
+      padding-bottom: ${spacing(2)};
+      padding-top: ${childCount >= 3 ? spacing(3) : spacing(2)};
       width: 100%;
     `,
     mediumUp: () => {
@@ -33,8 +34,8 @@ export const getChildrenContainer = ({ childCount }) => {
     `;
 
       const multipleItemsStyle = `
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: ${spacing(4)};
+        padding-right: ${spacing(4)};
         width: 100%;
       `;
 

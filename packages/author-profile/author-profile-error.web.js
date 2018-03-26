@@ -3,7 +3,12 @@ import { Text, View, Button } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const ErrorContainer = withResponsiveStyles(View, {
   base: () => `
@@ -55,7 +60,7 @@ const ButtonContainer = withResponsiveStyles(View, {
     padding-top: 40px;
     max-width: 300px;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: ${spacing(2)};
   `,
   mediumUp: () => `
     width: 200px;

@@ -1,6 +1,11 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 import config from "../responsive-config";
 
 /* --- Body --- */
@@ -17,7 +22,7 @@ export const Paragraph = withResponsiveStyles("p", {
     font-family: "${fonts.bodyRegular}";
     line-height: 26px;
     font-size: ${fontSizes.bodyMobile}px;
-    margin-bottom: 25px;
+    margin-bottom: ${spacing(5)};
     margin-top: 0;
     display: block;
   `,
@@ -33,7 +38,7 @@ export const LinkStyle = withResponsiveStyles("a", {
     font-family: "${fonts.bodyRegular}";
     line-height: 26px;
     font-size: ${fontSizes.bodyMobile}px;
-    margin-bottom: 25px;
+    margin-bottom: ${spacing(5)};
     margin-top: 0;
 `,
   mediumUp: () => `
@@ -45,8 +50,8 @@ export const LinkStyle = withResponsiveStyles("a", {
 /* --- Lead Asset Styles --- */
 
 export const LeadAsset = withResponsiveStyles(View, {
-  base: () => "margin-bottom: 10px;",
-  mediumUp: () => "margin-bottom: 20px",
+  base: () => `margin-bottom: ${spacing(2)}`,
+  mediumUp: () => `margin-bottom: ${spacing(4)}`,
   wideUp: () => "width: 100%; margin: 0 auto;"
 });
 
@@ -59,7 +64,7 @@ export const LeadAssetDesktop = config.showHideToggle(
   width: ${config.wideBpWidth};
   margin: 0 auto;
   // Temp padding for feature flag release
-  padding-bottom: 20px;
+  padding-bottom: ${spacing(4)};
 `
 );
 
@@ -73,7 +78,7 @@ export const PrimaryImg = withResponsiveStyles(View, {
   base: () => `
     width: 100%;
     flex-direction: column;
-    padding-bottom: 25px;
+    padding-bottom: ${spacing(5)};
   `,
   mediumUp: () => `
     width: ${config.mediumBpWidth};
@@ -86,14 +91,14 @@ const imageStyles = `
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
 `;
 
 export const SecondaryImg = withResponsiveStyles(View, {
   base: () => `
     ${imageStyles}
-    padding-bottom: 25px;
+    padding-bottom: ${spacing(5)};
   `,
   mediumUp: () => config.mediumBpPositioning,
   wideUp: () => `width: ${config.wideBpWidth};`
@@ -113,16 +118,16 @@ export const InlineImg = withResponsiveStyles(View, {
 
 export const PullQuoteResp = withResponsiveStyles(View, {
   base: () => `
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
+    margin-bottom: ${spacing(2)};
   `,
   mediumUp: () => `
     width: 60%;
     float: left;
-    margin-right: 20px;
+    margin-right: ${spacing(4)};
     margin-bottom 0px;
-    margin-top: 5px;
+    margin-top: ${spacing(1)};
     padding-left: 0px;
     padding-right: 0px;
   `

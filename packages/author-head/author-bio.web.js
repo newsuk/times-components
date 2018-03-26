@@ -1,12 +1,13 @@
 import React from "react";
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 import Bio from "./author-bio.base";
 
 const BioContainer = withResponsiveStyles(View, {
   base: () => `
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     padding-left: 0;

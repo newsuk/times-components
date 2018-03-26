@@ -1,4 +1,9 @@
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const sharedStyles = {
   articleHeadLineText: {
@@ -17,7 +22,7 @@ const sharedStyles = {
   },
   articleLabel: {
     paddingTop: 4,
-    paddingBottom: 5
+    paddingBottom: spacing(1)
   },
   articleFlag: {
     marginBottom: 11,

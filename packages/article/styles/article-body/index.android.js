@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { fonts, fontSizes } from "@times-components/styleguide";
+import { fonts, fontSizes, spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 import globalStyle from "../shared";
 
@@ -13,7 +13,7 @@ const androidStyles = {
     fontFamily: fonts.body,
     fontSize: fontSizes.bodyMobile,
     fontStyle: "normal",
-    marginBottom: 20
+    marginBottom: spacing(4)
   }
 };
 

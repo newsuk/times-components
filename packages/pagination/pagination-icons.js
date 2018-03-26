@@ -1,7 +1,12 @@
 import React from "react";
 import { Text, View, StyleSheet, Platform } from "react-native";
 import Svg, { G, Path } from "svgs";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 import PageLabel from "./page-label";
 
@@ -43,14 +48,14 @@ const styles = StyleSheet.create({
   nextText: Object.assign(
     {
       textAlign: "right",
-      marginRight: 10
+      marginRight: spacing(2)
     },
     textStyle
   ),
   previousText: Object.assign(
     {
       textAlign: "left",
-      marginLeft: 10
+      marginLeft: spacing(2)
     },
     textStyle
   )
