@@ -9,8 +9,8 @@ import { ArticleProvider } from "@times-components/provider";
 import { MockedProvider } from "@times-components/utils/graphql";
 import { query as articleQuery } from "@times-components/provider/article";
 import storybookReporter from "@times-components/tealium/storybook";
-import Article from "./article";
-import RelatedArticles from "./related-articles/related-articles";
+import Article from "./dist/article";
+import RelatedArticles from "./dist/related-articles/related-articles";
 
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
@@ -26,15 +26,15 @@ import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
 // Related articles
-import standard1RelatedArticleFixture from "./related-articles/fixtures/standard/1-article.json";
-import standard1RelatedArticleNoImageFixture from "./related-articles/fixtures/standard/1-article-no-image.json";
-import standard1RelatedArticleNoLabelFixture from "./related-articles/fixtures/standard/1-article-no-label.json";
-import standard1RelatedArticleNoBylineFixture from "./related-articles/fixtures/standard/1-article-no-byline.json";
-import standard2RelatedArticlesFixture from "./related-articles/fixtures/standard/2-articles.json";
-import standard3RelatedArticlesFixture from "./related-articles/fixtures/standard/3-articles.json";
-import leadAndTwo1RelatedArticleFixture from "./related-articles/fixtures/leadandtwo/1-article.json";
-import leadAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/3-articles.json";
+import standard1RelatedArticleFixture from "./fixtures/related-articles/standard/1-article.json";
+import standard1RelatedArticleNoImageFixture from "./fixtures/related-articles/standard/1-article-no-image.json";
+import standard1RelatedArticleNoLabelFixture from "./fixtures/related-articles/standard/1-article-no-label.json";
+import standard1RelatedArticleNoBylineFixture from "./fixtures/related-articles/standard/1-article-no-byline.json";
+import standard2RelatedArticlesFixture from "./fixtures/related-articles/standard/2-articles.json";
+import standard3RelatedArticlesFixture from "./fixtures/related-articles/standard/3-articles.json";
+import leadAndTwo1RelatedArticleFixture from "./fixtures/related-articles/leadandtwo/1-article.json";
+import leadAndTwo2RelatedArticlesFixture from "./fixtures/related-articles/leadandtwo/2-articles.json";
+import leadAndTwo3RelatedArticlesFixture from "./fixtures/related-articles/leadandtwo/3-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {

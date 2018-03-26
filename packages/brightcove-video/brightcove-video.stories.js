@@ -3,11 +3,11 @@ import { View, Image, Text } from "react-native";
 
 import { storiesOf } from "@storybook/react-native";
 import { action, decorateAction } from "@storybook/addon-actions";
-import BrightcoveVideo from "./brightcove-video";
-import Player from "./brightcove-player";
+import BrightcoveVideo from "./dist/brightcove-video";
+import Player from "./dist/brightcove-player";
 
-import VideoAdder from "./fixtures/player-adder";
-import VideoWithExternalControls from "./fixtures/video-with-external-controls";
+import VideoAdder from "./src/fixtures/player-adder";
+import VideoWithExternalControls from "./src/fixtures/video-with-external-controls";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";

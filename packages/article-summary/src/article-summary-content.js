@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
 import { treePropType } from "@times-components/markup";
-import { renderAst } from "./";
+import { renderAst } from "./article-summary";
 import styles from "./styles";
 
 const ArticleSummaryContent = ({ ast, className }) =>

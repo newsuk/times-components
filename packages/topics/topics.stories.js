@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import Topic from "./topic";
-import Topics from "./topics";
+import Topic from "./dist/topic";
+import Topics from "./dist/topics";
 import topicsData from "./fixtures/topics";
 
 storiesOf("Primitives/Topics", module)

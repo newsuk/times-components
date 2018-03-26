@@ -18,7 +18,7 @@ import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import AuthorProfile from "./author-profile";
+import AuthorProfile from "./dist/author-profile";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
