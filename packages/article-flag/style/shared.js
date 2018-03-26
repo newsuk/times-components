@@ -11,6 +11,7 @@ const styles = {
   },
   title: {
     fontFamily: fonts.bodyRegularSmallCaps,
+    fontSize: 12,
     fontWeight: "400",
     letterSpacing: 1.4
   }
