@@ -1,8 +1,3 @@
 {
-  "presets": ["env", "react", "stage-2"],
-  "plugins": [
-    ["module-resolver", {
-      "root": "src"
-    }]
-  ]
+  "presets": ["env", "react", "stage-2"]
 }

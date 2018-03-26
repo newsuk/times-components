@@ -153,7 +153,6 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "babel-plugin-module-resolver": "3.1.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1"
   }
