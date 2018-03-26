@@ -11,4 +11,12 @@ export default () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it("does not render title if title equals Video", () => {
+    const tree = renderer
+      .create(<VideoLabel title="Video" color="#008347" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 };
