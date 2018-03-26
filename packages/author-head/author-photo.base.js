@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 const { propTypes: { style: TextPropTypesStyle } } = Text;
 
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     marginRight: "auto",
     borderColor: colours.functional.contrast,
     overflow: "hidden",
-    marginBottom: 20
+    marginBottom: spacing(4)
   }
 });
 

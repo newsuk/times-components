@@ -2,12 +2,17 @@ import React from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 10
+    margin: spacing(2)
   },
   body: {
     flex: 1,
@@ -36,15 +41,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-start",
     alignSelf: "center",
-    marginTop: 20,
-    marginLeft: 5,
-    marginRight: 5
+    marginTop: spacing(4),
+    marginLeft: spacing(1),
+    marginRight: spacing(1)
   },
   imageContainer: {
     alignSelf: "center",
     width: "60%",
-    marginTop: 20,
-    marginBottom: 20
+    marginTop: spacing(4),
+    marginBottom: spacing(4)
   }
 });
 

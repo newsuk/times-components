@@ -1,11 +1,12 @@
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const topicStyles = {
   ...sharedStyles,
   topicsContainer: {
     ...sharedStyles.topicsContainer,
-    marginLeft: 10,
-    marginRight: 10
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   }
 };
 

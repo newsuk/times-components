@@ -4,7 +4,7 @@ import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -13,8 +13,8 @@ import ArticleSummary, {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 15,
-    paddingTop: 15
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   }
 });
 

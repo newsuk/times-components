@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import Pagination from "@times-components/pagination";
+import { spacing } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   container: {
@@ -9,8 +10,8 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   itemContainer: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   spacing: {
     flex: 1,

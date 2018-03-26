@@ -2,13 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 const baseStyle = `
   align-items: stretch;
   flex-direction: column;
 `;
 const mediumStyle = `
-  margin-top: 30px
+  margin-top: ${spacing(6)}
 `;
 const ContainerWithResults = withResponsiveStyles(View, {
   base: () => baseStyle,

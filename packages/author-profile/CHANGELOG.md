@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.52.0...@times-components/author-profile@0.53.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
 <a name="0.52.0"></a>
 # [0.52.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.51.0...@times-components/author-profile@0.52.0) (2018-03-23)
 

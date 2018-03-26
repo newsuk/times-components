@@ -2,7 +2,12 @@ import React from "react";
 import { Text, View, Button } from "react-native";
 import PropTypes from "prop-types";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const ListingError = withResponsiveStyles(View, {
   base: () => `
@@ -36,10 +41,10 @@ const Message = withResponsiveStyles(Text, {
 const ButtonContainer = withResponsiveStyles(View, {
   base: () => `
     align-self: center;
-    padding-top: 40px;
+    padding-top: ${spacing(8)};
     max-width: 300px;
     width: 200px;
-    padding-bottom: 10px;
+    padding-bottom: ${spacing(2)};
   `
 });
 

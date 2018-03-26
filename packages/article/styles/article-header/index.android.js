@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { fontSizes } from "@times-components/styleguide";
+import { fontSizes, spacing } from "@times-components/styleguide";
 import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
@@ -14,7 +14,7 @@ const androidStyles = {
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 29,
-    paddingBottom: 15,
+    paddingBottom: spacing(3),
     marginTop: -7
   }
 };

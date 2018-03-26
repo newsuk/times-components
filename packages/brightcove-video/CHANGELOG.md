@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.10...@times-components/brightcove-video@1.12.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
 <a name="1.11.10"></a>
 ## [1.11.10](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.9...@times-components/brightcove-video@1.11.10) (2018-03-22)
 

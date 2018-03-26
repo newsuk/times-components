@@ -1,15 +1,20 @@
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const sharedStyles = {
   container: {
     marginTop: 0,
-    marginBottom: 30
+    marginBottom: spacing(6)
   },
   quotes: {
     fontFamily: fonts.headlineRegular,
     fontSize: 75,
     marginTop: 0,
-    marginBottom: -40
+    marginBottom: spacing(-8)
   },
   content: {
     fontFamily: fonts.headlineRegular,
@@ -35,7 +40,7 @@ const sharedStyles = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 10,
+    marginTop: spacing(2),
     height: 20
   },
   twitterContainer: {

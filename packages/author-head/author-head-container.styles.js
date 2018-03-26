@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingBottom: 40,
+    paddingBottom: spacing(8),
     backgroundColor: colours.functional.backgroundPrimary
   }
 });

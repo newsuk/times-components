@@ -1,6 +1,6 @@
 {
   "name": "@times-components/styleguide",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "Centralised library for common styles throughout the Times",
   "main": "styleguide",
   "scripts": {

@@ -6,7 +6,12 @@ import { TextLink } from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
 import { IconTwitter } from "@times-components/icons";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";
@@ -30,7 +35,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.supporting,
     color: colours.functional.action,
     textDecorationLine: "none",
-    paddingLeft: 5
+    paddingLeft: spacing(1)
   }
 });
 

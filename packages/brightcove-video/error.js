@@ -1,7 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 import ResetIcon from "./reset-icon";
 
@@ -20,13 +25,13 @@ const styles = StyleSheet.create({
   errorHead: {
     color: "white",
     fontSize: fontSizes.smallestHeadline,
-    marginBottom: 5,
+    marginBottom: spacing(1),
     fontFamily: fonts.headline
   },
   errorBody: {
     color: "white",
     textAlign: "center",
-    marginBottom: 15,
+    marginBottom: spacing(3),
     opacity: 0.8,
     fontSize: fontSizes.meta,
     fontFamily: fonts.body
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
     position: "relative",
     top: 3,
     letterSpacing: 1,
-    paddingLeft: 5
+    paddingLeft: spacing(1)
   }
 });
 

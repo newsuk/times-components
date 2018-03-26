@@ -1,3 +1,5 @@
+import { spacing } from "@times-components/styleguide";
+
 const mediumBpWidth = "83.33333333%";
 const wideBpWidth = "58.33333%";
 
@@ -9,8 +11,8 @@ const mediumBpPositioning = `
 `;
 
 const articleContainerPadding = `
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
 `;
 
 export default {
