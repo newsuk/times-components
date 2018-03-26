@@ -15,13 +15,18 @@ const renderComponent = child =>
     </MockedProvider>
   );
 
-it("returns query result", done => {
-  renderComponent(({ isLoading, author }) => {
-    if (!isLoading) {
-      expect(author).toMatchSnapshot();
-      done();
-    }
+describe("AuthorArticlesNoImages provider", () => {
+  beforeAll(() => jest.useRealTimers());
+  afterAll(() => jest.useFakeTimers());
 
-    return null;
+  it("returns query result", done => {
+    renderComponent(({ isLoading, author }) => {
+      if (!isLoading) {
+        expect(author).toMatchSnapshot();
+        done();
+      }
+
+      return null;
+    });
   });
 });

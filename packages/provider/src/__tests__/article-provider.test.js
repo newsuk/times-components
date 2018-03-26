@@ -30,13 +30,18 @@ const renderComponent = child =>
     </MockedProvider>
   );
 
-it("returns query result", done => {
-  renderComponent(({ isLoading, article }) => {
-    if (!isLoading) {
-      expect(article).toMatchSnapshot();
-      done();
-    }
+describe("ArticleProvider", () => {
+  beforeAll(() => jest.useRealTimers());
+  afterAll(() => jest.useFakeTimers());
 
-    return null;
+  it("returns query result", done => {
+    renderComponent(({ isLoading, article }) => {
+      if (!isLoading) {
+        expect(article).toMatchSnapshot();
+        done();
+      }
+
+      return null;
+    });
   });
 });

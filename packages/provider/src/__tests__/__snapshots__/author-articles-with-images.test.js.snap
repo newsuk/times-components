@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`returns query result 1`] = `
+exports[`AuthorArticlesWithImagesProvider returns query result 1`] = `
 Object {
   "__typename": "Author",
   "articles": Object {
