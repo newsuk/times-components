@@ -58,11 +58,11 @@
   "dependencies": {
     "@times-components/ad": "0.16.0",
     "@times-components/article-byline": "0.13.17",
+    "@times-components/brightcove-video": "1.11.10",
     "@times-components/article-flag": "0.11.10",
     "@times-components/article-image": "0.13.0",
     "@times-components/article-label": "0.9.1",
     "@times-components/article-summary": "0.21.0",
-    "@times-components/brightcove-video": "1.11.10",
     "@times-components/caption": "0.11.0",
     "@times-components/card": "0.24.1",
     "@times-components/date-publication": "0.13.2",
