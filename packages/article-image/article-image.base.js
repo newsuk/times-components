@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
+import { spacing } from "@times-components/styleguide";
 import InsetCaption from "./inset-caption";
 import InlineImage from "./inline-image";
 
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   secondaryCaption: {
-    paddingLeft: 10,
+    paddingLeft: spacing(2),
     paddingTop: 0,
     width: "50%"
   }

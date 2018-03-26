@@ -201,6 +201,8 @@ export default AuthorProfileContent => {
   it("renders profile content item component with no image", () => {
     const item = cloneDeep(pagedResult(0, 1).data.author.articles.list[0]);
     set(item, "leadAsset.crop.url", null);
+    set(item, "shortSummary", item.summary);
+    set(item, "longSummary", item.summary);
     const component = renderer.create(
       <AuthorProfileItem {...item} imageRatio={20 / 3} onPress={() => {}} />
     );

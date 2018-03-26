@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.16.1...@times-components/pagination@0.17.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.16.1"></a>
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.16.0...@times-components/pagination@0.16.1) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.8...@times-components/pagination@0.16.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
+<a name="0.15.8"></a>
+## [0.15.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.6...@times-components/pagination@0.15.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.15.7"></a>
+## [0.15.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.6...@times-components/pagination@0.15.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.15.6"></a>
+## [0.15.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.5...@times-components/pagination@0.15.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.15.5"></a>
+## [0.15.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.4...@times-components/pagination@0.15.5) (2018-03-16)
+
+
+### Bug Fixes
+
+* update styled-components ([#740](https://github.com/newsuk/times-components/issues/740)) ([6756ed6](https://github.com/newsuk/times-components/commit/6756ed6))
+
+
+
+
+<a name="0.15.4"></a>
+## [0.15.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.3...@times-components/pagination@0.15.4) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
 <a name="0.15.3"></a>
 ## [0.15.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.15.2...@times-components/pagination@0.15.3) (2018-03-14)
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean } from "@storybook/addon-knobs/react";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import Card from "./card";
 
@@ -29,6 +28,28 @@ const CardWrapper = withResponsiveStyles(View, {
   `
 });
 
+const ReversedCardWrapper = withResponsiveStyles(View, {
+  mediumUp: () => `
+    .exampleCardImage {
+      flex-grow: 2 !important;
+      margin-bottom: 0;
+      min-width: 360px;
+      padding-left: 15px;
+    }
+    .exampleCardContent {
+      flex-grow: 2.7 !important;
+      min-width: 380px;
+    }
+  `
+});
+
+const childStyle = {
+  borderColor: "black",
+  borderStyle: "solid",
+  borderWidth: 1,
+  minHeight: 200
+};
+
 storiesOf("Composed/Card", module)
   .add("Loading", () => (
     <CardWrapper>
@@ -36,12 +57,53 @@ storiesOf("Composed/Card", module)
         {...cardProps}
         contentContainerClass="exampleCardContent"
         imageContainerClass="exampleCardImage"
+        showImage
         isLoading
-        showImage={boolean("Show Image?", true, "")}
       >
         <Text>Is loading</Text>
       </Card>
     </CardWrapper>
+  ))
+  .add("Loading - no image", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={false}
+        isLoading
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </CardWrapper>
+  ))
+  .add("Loading - reversed", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage
+        isLoading
+        isReversed
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </ReversedCardWrapper>
+  ))
+  .add("Loading - reversed, no image", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={false}
+        isLoading
+        isReversed
+      >
+        <Text>Is loading</Text>
+      </Card>
+    </ReversedCardWrapper>
   ))
   .add("Default", () => (
     <CardWrapper>
@@ -49,16 +111,47 @@ storiesOf("Composed/Card", module)
         {...cardProps}
         contentContainerClass="exampleCardContent"
         imageContainerClass="exampleCardImage"
-        showImage={boolean("Show Image?", true, "")}
+        showImage
       >
-        <View
-          style={{
-            borderColor: "black",
-            borderStyle: "solid",
-            borderWidth: 1,
-            minHeight: 200
-          }}
-        />
+        <View style={childStyle} />
       </Card>
     </CardWrapper>
+  ))
+  .add("Default - no image", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={false}
+      >
+        <View style={childStyle} />
+      </Card>
+    </CardWrapper>
+  ))
+  .add("Default - reversed", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
+  ))
+  .add("Default - reversed, no image", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage={false}
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
   ));

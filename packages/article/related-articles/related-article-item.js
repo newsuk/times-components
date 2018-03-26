@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -21,21 +22,14 @@ const RelatedArticleItem = ({
   onPress,
   showImage,
   showSummary,
-  summaryClass
+  summaryConfig
 }) => {
-  const {
-    byline,
-    headline,
-    label,
-    publishedTime,
-    section,
-    summary,
-    url
-  } = article;
+  const { byline, headline, label, publishedTime, section, url } = article;
+  const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
 
   const imageUri = get(
     article,
-    "leadAsset.crop.url",
+    "leadAsset.crop169.url",
     get(article, "leadAsset.posterImage.crop.url", null)
   );
 
@@ -53,7 +47,23 @@ const RelatedArticleItem = ({
           bylineProps={{ ast: byline }}
           content={() =>
             showSummary && (
-              <ArticleSummaryContent className={summaryClass} ast={summary} />
+              <View>
+                {summaryLengths.map(item => {
+                  const summaryClassSuffix = `${item}Class`;
+                  const summaryClass = summaryType
+                    ? `${summaryType}Summary`
+                    : `summary`;
+                  return (
+                    <ArticleSummaryContent
+                      ast={article[`summary${item}`]}
+                      className={`summaryHidden ${summaryClass}${
+                        summaryClassSuffix
+                      }`}
+                      key={item}
+                    />
+                  );
+                })}
+              </View>
             )
           }
           datePublicationProps={{ date: publishedTime }}

@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.9.0...@times-components/article-label@0.9.1) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.17...@times-components/article-label@0.9.0) (2018-03-21)
+
+
+### Features
+
+* design review related articles ([#772](https://github.com/newsuk/times-components/issues/772)) ([9e2130a](https://github.com/newsuk/times-components/commit/9e2130a))
+
+
+
+
+<a name="0.8.17"></a>
+## [0.8.17](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.16...@times-components/article-label@0.8.17) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.8.16"></a>
+## [0.8.16](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.14...@times-components/article-label@0.8.16) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.8.15"></a>
+## [0.8.15](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.14...@times-components/article-label@0.8.15) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.8.14"></a>
+## [0.8.14](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.13...@times-components/article-label@0.8.14) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.8.13"></a>
+## [0.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.12...@times-components/article-label@0.8.13) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
+<a name="0.8.12"></a>
+## [0.8.12](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.11...@times-components/article-label@0.8.12) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-label
+
 <a name="0.8.11"></a>
 ## [0.8.11](https://github.com/newsuk/times-components/compare/@times-components/article-label@0.8.10...@times-components/article-label@0.8.11) (2018-03-14)
 

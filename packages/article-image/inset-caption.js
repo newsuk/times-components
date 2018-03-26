@@ -1,10 +1,10 @@
 import React from "react";
-
 import Caption from "@times-components/caption";
+import { spacing } from "@times-components/styleguide";
 
 const captionStyle = {
   container: {
-    paddingLeft: 10
+    paddingLeft: spacing(2)
   }
 };
 

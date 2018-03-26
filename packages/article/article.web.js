@@ -12,6 +12,8 @@ import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
+import Topics from "./topics";
+import RelatedArticles from "./related-articles/related-articles";
 
 import {
   MainContainer,
@@ -36,15 +38,27 @@ class ArticlePage extends React.Component {
       publishedTime,
       publicationName,
       content,
-      section
+      section,
+      url,
+      topics,
+      relatedArticles,
+      relatedArticlesLayout
     } = articleData;
-
     const leadAssetProps = getLeadAsset(articleData);
+    const displayRelatedArticles =
+      relatedArticlesLayout && relatedArticlesLayout.template ? (
+        <RelatedArticles
+          analyticsStream={() => {}}
+          articles={relatedArticles}
+          template={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
+      ) : null;
 
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad pos="header" style={adStyle} section={section} />
+          <Ad pos="header" style={adStyle} section={section} contextUrl={url} />
         </HeaderAdContainer>
         <MainContainer>
           <LeadAssetComponent device="MOBILE" {...leadAssetProps} />
@@ -64,16 +78,23 @@ class ArticlePage extends React.Component {
                 publishedTime={publishedTime}
                 publicationName={publicationName}
               />
+              <Topics topics={topics} device="DESKTOP" />
             </MetaContainer>
             <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
-              <ArticleBody content={content} section={section} />
+              <ArticleBody
+                content={content}
+                section={section}
+                contextUrl={url}
+              />
             </BodyContainer>
           </View>
         </MainContainer>
-        <Ad pos="pixel" section={section} />
-        <Ad pos="pixelteads" section={section} />
-        <Ad pos="pixelskin" section={section} />
+        <Topics topics={topics} />
+        {displayRelatedArticles}
+        <Ad pos="pixel" section={section} contextUrl={url} />
+        <Ad pos="pixelteads" section={section} contextUrl={url} />
+        <Ad pos="pixelskin" section={section} contextUrl={url} />
       </Fragment>
     );
   }
@@ -116,4 +137,5 @@ ArticlePage.defaultProps = {
   error: null
 };
 
+export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);

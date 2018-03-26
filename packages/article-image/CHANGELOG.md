@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.12...@times-components/article-image@0.13.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.12.12"></a>
+## [0.12.12](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.11...@times-components/article-image@0.12.12) (2018-03-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.11"></a>
+## [0.12.11](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.10...@times-components/article-image@0.12.11) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.10"></a>
+## [0.12.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.9...@times-components/article-image@0.12.10) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.9"></a>
+## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.7...@times-components/article-image@0.12.9) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.8"></a>
+## [0.12.8](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.7...@times-components/article-image@0.12.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.7"></a>
+## [0.12.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.6...@times-components/article-image@0.12.7) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.6"></a>
+## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.5...@times-components/article-image@0.12.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.12.5"></a>
+## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.4...@times-components/article-image@0.12.5) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
 <a name="0.12.4"></a>
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.12.3...@times-components/article-image@0.12.4) (2018-03-14)
 

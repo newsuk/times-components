@@ -5,6 +5,7 @@ import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
+import { spacing } from "@times-components/styleguide";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
@@ -24,8 +25,8 @@ const ContentContainer = withResponsiveStyles(View, {
     align-self: center;
     width: 100%;
     max-width: 680px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
   mediumUp: () => `
     padding-left: 0;
@@ -63,7 +64,7 @@ class AuthorProfileContent extends Component {
     }
 
     const options = {
-      rootMargin: "50px",
+      rootMargin: spacing(10),
       threshold: 0.5
     };
 

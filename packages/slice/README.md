@@ -1,19 +1,47 @@
 # Slice
 
-Slices are templates. A slice lays out a set of components according to the
-given template rules.
+Slices are re-usable templates. A slice template lays itself out according to a
+set of self-defined rules. The slice also provides a suggested default
+configuration that can be applied to the given components that are to be laid
+out within the template - this configuration is provided in the form of CSS
+class names for web, and a JS API for native. The consumer of slice can opt-in
+or out of utilising these suggested default configurations
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
+package
+
+## Running the code
+
+Please see our main [README.md](../README.md) to get the project running locally
+
+## Development
+
+The code can be formatted and linted in accordance with the agreed standards.
+
+```
+yarn fmt
+yarn lint
+```
+
+## Testing
+
+This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
+platform with [jest](https://facebook.github.io/jest/).
+
+```
+yarn test:all
+yarn test:android
+yarn test:ios
+yarn test:web
+```
 
 Visit the official
 [storybook](http://components.thetimes.co.uk/?selectedKind=Primitives%2FSlice&selectedStory=Default%20template%20with%20one%20item&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available slice templates.
 
-## Image Placeholder Rules
+## Future
 
-If an article has no image available (either as the lead image or generated from
-the associated video), display a new generic Times / ST logo, NOT one that is
-specific to the publication (The Times / The Sunday Times)
-
-This should not apply in the following scenarios:
-
-* Any homepage slices
-* When the article page is missing it's lead image
+Template creation could be done using a CLI to create default files in the
+accepted architectural format

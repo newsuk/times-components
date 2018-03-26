@@ -1,13 +1,18 @@
 import React from "react";
 import { TextLink } from "@times-components/link";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const linkStyles = {
   color: colours.functional.action,
   fontFamily: fonts.bodyRegular,
   lineHeight: 26,
   fontSize: fontSizes.bodyMobile,
-  marginBottom: 25,
+  marginBottom: spacing(5),
   marginTop: 0
 };
 

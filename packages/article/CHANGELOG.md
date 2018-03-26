@@ -3,6 +3,262 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.59.0"></a>
+# [0.59.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.58.0...@times-components/article@0.59.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.58.0"></a>
+# [0.58.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.57.0...@times-components/article@0.58.0) (2018-03-23)
+
+
+### Features
+
+* card reversal native ([#781](https://github.com/newsuk/times-components/issues/781)) ([9b22750](https://github.com/newsuk/times-components/commit/9b22750))
+
+
+
+
+<a name="0.57.0"></a>
+# [0.57.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.56.0...@times-components/article@0.57.0) (2018-03-22)
+
+
+### Features
+
+* add reversal flag for Card layout ([#769](https://github.com/newsuk/times-components/issues/769)) ([9e7953a](https://github.com/newsuk/times-components/commit/9e7953a))
+
+
+
+
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.55.0...@times-components/article@0.56.0) (2018-03-22)
+
+
+### Features
+
+* add comment/opinion and two template to Slice package ([#761](https://github.com/newsuk/times-components/issues/761)) ([18e125c](https://github.com/newsuk/times-components/commit/18e125c))
+
+
+
+
+<a name="0.55.0"></a>
+# [0.55.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.54.2...@times-components/article@0.55.0) (2018-03-21)
+
+
+### Features
+
+* design review related articles ([#772](https://github.com/newsuk/times-components/issues/772)) ([9e2130a](https://github.com/newsuk/times-components/commit/9e2130a))
+
+
+
+
+<a name="0.54.2"></a>
+## [0.54.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.54.1...@times-components/article@0.54.2) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.54.1"></a>
+## [0.54.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.54.0...@times-components/article@0.54.1) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.54.0"></a>
+# [0.54.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.6...@times-components/article@0.54.0) (2018-03-21)
+
+
+### Features
+
+* Add related articles to the Web. ([#771](https://github.com/newsuk/times-components/issues/771)) ([57d3758](https://github.com/newsuk/times-components/commit/57d3758))
+
+
+
+
+<a name="0.53.6"></a>
+## [0.53.6](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.5...@times-components/article@0.53.6) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.53.5"></a>
+## [0.53.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.4...@times-components/article@0.53.5) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.53.4"></a>
+## [0.53.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.3...@times-components/article@0.53.4) (2018-03-20)
+
+
+### Bug Fixes
+
+* export article default props ([#760](https://github.com/newsuk/times-components/issues/760)) ([aeef260](https://github.com/newsuk/times-components/commit/aeef260))
+
+
+
+
+<a name="0.53.3"></a>
+## [0.53.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.2...@times-components/article@0.53.3) (2018-03-20)
+
+
+### Bug Fixes
+
+* use mutable object as apollo uses immutables ([#766](https://github.com/newsuk/times-components/issues/766)) ([080f1ec](https://github.com/newsuk/times-components/commit/080f1ec))
+
+
+
+
+<a name="0.53.2"></a>
+## [0.53.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.0...@times-components/article@0.53.2) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+
+
+
+
+<a name="0.53.1"></a>
+## [0.53.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.53.0...@times-components/article@0.53.1) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+
+
+
+
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.52.1...@times-components/article@0.53.0) (2018-03-19)
+
+
+### Features
+
+* REPLAT-1602 topics front end ([#749](https://github.com/newsuk/times-components/issues/749)) ([0fa9364](https://github.com/newsuk/times-components/commit/0fa9364))
+
+
+
+
+<a name="0.52.1"></a>
+## [0.52.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.52.0...@times-components/article@0.52.1) (2018-03-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.52.0"></a>
+# [0.52.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.51.0...@times-components/article@0.52.0) (2018-03-19)
+
+
+### Features
+
+* slice ordering ([#756](https://github.com/newsuk/times-components/issues/756)) ([bcb91a6](https://github.com/newsuk/times-components/commit/bcb91a6))
+
+
+
+
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.3...@times-components/article@0.51.0) (2018-03-19)
+
+
+### Features
+
+* Dynamic Summary lengths ([#755](https://github.com/newsuk/times-components/issues/755)) ([341b897](https://github.com/newsuk/times-components/commit/341b897))
+
+
+
+
+<a name="0.50.3"></a>
+## [0.50.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.2...@times-components/article@0.50.3) (2018-03-19)
+
+
+### Bug Fixes
+
+* moving bidding slots as a prop from render ([#753](https://github.com/newsuk/times-components/issues/753)) ([a957e50](https://github.com/newsuk/times-components/commit/a957e50))
+
+
+
+
+<a name="0.50.2"></a>
+## [0.50.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.1...@times-components/article@0.50.2) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.50.1"></a>
+## [0.50.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.50.0...@times-components/article@0.50.1) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.50.0"></a>
+# [0.50.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.49.4...@times-components/article@0.50.0) (2018-03-16)
+
+
+### Features
+
+* refactor slot targeting and add timestestgroup ([#751](https://github.com/newsuk/times-components/issues/751)) ([1d39555](https://github.com/newsuk/times-components/commit/1d39555))
+
+
+
+
+<a name="0.49.4"></a>
+## [0.49.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.49.2...@times-components/article@0.49.4) (2018-03-16)
+
+
+### Bug Fixes
+
+* update styled-components ([#740](https://github.com/newsuk/times-components/issues/740)) ([6756ed6](https://github.com/newsuk/times-components/commit/6756ed6))
+
+
+
+
+<a name="0.49.3"></a>
+## [0.49.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.49.2...@times-components/article@0.49.3) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.49.2"></a>
+## [0.49.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.49.1...@times-components/article@0.49.2) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.49.1"></a>
+## [0.49.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.49.0...@times-components/article@0.49.1) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.49.0"></a>
 # [0.49.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.48.5...@times-components/article@0.49.0) (2018-03-15)
 

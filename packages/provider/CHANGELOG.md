@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.3"></a>
+## [0.25.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.25.2...@times-components/provider@0.25.3) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.25.2"></a>
+## [0.25.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.25.0...@times-components/provider@0.25.2) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+
+
+
+
+<a name="0.25.1"></a>
+## [0.25.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.25.0...@times-components/provider@0.25.1) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+
+
+
+
+<a name="0.25.0"></a>
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.4...@times-components/provider@0.25.0) (2018-03-19)
+
+
+### Features
+
+* Dynamic Summary lengths ([#755](https://github.com/newsuk/times-components/issues/755)) ([341b897](https://github.com/newsuk/times-components/commit/341b897))
+
+
+
+
+<a name="0.24.4"></a>
+## [0.24.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.2...@times-components/provider@0.24.4) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.24.3"></a>
+## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.2...@times-components/provider@0.24.3) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.24.2"></a>
+## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.1...@times-components/provider@0.24.2) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
 <a name="0.24.1"></a>
 ## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.24.0...@times-components/provider@0.24.1) (2018-03-14)
 

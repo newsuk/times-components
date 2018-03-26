@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- This is used to style the buttons on the media controller -->
     <style name="BrightcoveControlBar" parent="BrightcoveControlBarDefault">
-        <!-- You can override values as shown here. The commented variables have the default values
-             It's recommended to parent BrightcoveControlBarDefault -->
+        <item name="brightcove_full_screen">?attr/brightcove_full_screen</item>
+    </style>
+    <style name="FullScreenButtonEnabled">
+        <item name="brightcove_full_screen">true</item>
+    </style>
+    <style name="FullScreenButtonDisabled">
         <item name="brightcove_full_screen">false</item>
     </style>
 </resources>

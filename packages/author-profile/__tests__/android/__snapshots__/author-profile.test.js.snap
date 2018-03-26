@@ -727,11 +727,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -857,10 +861,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -1096,11 +1103,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -1226,10 +1237,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -1465,11 +1479,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -1595,10 +1613,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -2431,11 +2452,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -2566,10 +2591,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -2727,11 +2755,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -2862,10 +2894,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -3023,11 +3058,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
                 }
               >
                 <View
@@ -3158,10 +3197,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               <View
                 className=""
                 style={
-                  Object {
-                    "flex": 1,
-                    "minWidth": "100%",
-                  }
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
                 }
               >
                 <View>
@@ -3666,10 +3708,13 @@ exports[`AuthorProfile test on android renders profile content item component 1`
         <View
           className=""
           style={
-            Object {
-              "flex": 1,
-              "minWidth": "100%",
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              },
+              "",
+            ]
           }
         >
           <View>
@@ -3779,10 +3824,13 @@ exports[`AuthorProfile test on android renders profile content item component wi
         <View
           className=""
           style={
-            Object {
-              "flex": 1,
-              "minWidth": "100%",
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              },
+              "",
+            ]
           }
         >
           <View>
@@ -3892,10 +3940,13 @@ exports[`AuthorProfile test on android renders profile content item component wi
         <View
           className=""
           style={
-            Object {
-              "flex": 1,
-              "minWidth": "100%",
-            }
+            Array [
+              Object {
+                "flex": 1,
+                "minWidth": "100%",
+              },
+              "",
+            ]
           }
         >
           <View>
@@ -3923,6 +3974,32 @@ exports[`AuthorProfile test on android renders profile content item component wi
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              className=""
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                ...
+              </Text>
             </Text>
             <Text
               accessibilityLabel="datePublication"
@@ -4234,11 +4311,15 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -4364,10 +4445,13 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -5002,11 +5086,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -5132,10 +5220,13 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -5371,11 +5462,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -5501,10 +5596,13 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -5740,11 +5838,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                Object {
+                  "marginBottom": 10,
+                },
+              ]
             }
           >
             <View
@@ -5870,10 +5972,13 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -6585,10 +6690,13 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -6824,10 +6932,13 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View
@@ -7063,10 +7174,13 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           <View
             className=""
             style={
-              Object {
-                "flex": 1,
-                "minWidth": "100%",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                  "minWidth": "100%",
+                },
+                "",
+              ]
             }
           >
             <View

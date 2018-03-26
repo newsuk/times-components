@@ -2,6 +2,7 @@ import React from "react";
 import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
+import { spacing } from "@times-components/styleguide";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -12,12 +13,12 @@ import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   errorContainer: {
     flex: 1,
-    margin: 15
+    margin: spacing(3)
   }
 });
 
@@ -149,7 +150,7 @@ class AuthorProfileContent extends React.Component {
         testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
-        keyExtractor={item => item.id}
+        keyExtractor={item => `${item.id}`}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>

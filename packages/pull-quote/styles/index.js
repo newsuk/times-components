@@ -1,14 +1,15 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const iosStyles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    paddingTop: 5,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 25,
+    paddingTop: spacing(1),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
+    paddingBottom: spacing(5),
     marginBottom: 0
   },
   // iOS Font hack

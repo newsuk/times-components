@@ -9,16 +9,26 @@ import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
-import slotTargeting from "./fixtures/slot-options.json";
+import biddersConfig from "./fixtures/bidders-config.json";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
-const adConfig = pos =>
+const adConfig = () =>
   Object.assign(
     {},
     adConfigBase,
     { pageTargeting },
-    { slotTargeting: slotTargeting[pos] }
+    {
+      slotTargeting: {
+        sec_id: "null",
+        section: "news",
+        path: "/edition/news/",
+        zone: "current_edition",
+        slot: "news"
+      }
+    },
+    { biddersConfig },
+    { bidderSlots: ["ad-header", "ad-article-inline"] }
   );
 let DOMContext;
 if (window.document) {
@@ -27,7 +37,7 @@ if (window.document) {
   DOMContext = NativeDOMContext;
 }
 const articleUrl =
-  "https://www.thetimes.co.uk/article/fdefc7fa-0ac4-11e8-a5b3-3d239643ad40";
+  "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
 const withOpenInNewWindow = children => {
   const link = typeof document === "object" &&
@@ -50,7 +60,7 @@ const withOpenInNewWindow = children => {
   );
 };
 
-storiesOf("Advertisement", module)
+storiesOf("Primitives/Advertisement", module)
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(
       <Ad pos="intervention" contextUrl={articleUrl} section="news" />
@@ -72,6 +82,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixel", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixel ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixel" contextUrl={articleUrl} />
       </View>
     )
@@ -79,6 +90,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixelteads", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixelteads ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixelteads" contextUrl={articleUrl} />
       </View>
     )
@@ -86,6 +98,7 @@ storiesOf("Advertisement", module)
   .add("render pixel ads - pixelskin", () =>
     withOpenInNewWindow(
       <View>
+        <Text>The pixelskin ad is below. It&rsquo;s invisible.</Text>
         <Ad section="news" pos="pixelskin" contextUrl={articleUrl} />
       </View>
     )

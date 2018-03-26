@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.9...@times-components/pull-quote@0.4.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.3.9"></a>
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.8...@times-components/pull-quote@0.3.9) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.6...@times-components/pull-quote@0.3.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.6...@times-components/pull-quote@0.3.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.5...@times-components/pull-quote@0.3.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.4...@times-components/pull-quote@0.3.5) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.3...@times-components/pull-quote@0.3.4) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.2...@times-components/pull-quote@0.3.3) (2018-03-14)
 

@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.7.2...@times-components/gradient@0.7.3) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.7.1...@times-components/gradient@0.7.2) (2018-03-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.7.0...@times-components/gradient@0.7.1) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.8...@times-components/gradient@0.7.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
+<a name="0.6.8"></a>
+## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.6...@times-components/gradient@0.6.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.6...@times-components/gradient@0.6.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.5...@times-components/gradient@0.6.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.4...@times-components/gradient@0.6.5) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.3...@times-components/gradient@0.6.4) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/gradient
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.6.2...@times-components/gradient@0.6.3) (2018-03-14)
 

@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.2"></a>
+## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.13.1...@times-components/date-publication@0.13.2) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.13.1"></a>
+## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.13.0...@times-components/date-publication@0.13.1) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.9...@times-components/date-publication@0.13.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
+<a name="0.12.9"></a>
+## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.7...@times-components/date-publication@0.12.9) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.12.8"></a>
+## [0.12.8](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.7...@times-components/date-publication@0.12.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.12.7"></a>
+## [0.12.7](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.6...@times-components/date-publication@0.12.7) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.12.6"></a>
+## [0.12.6](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.5...@times-components/date-publication@0.12.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
+<a name="0.12.5"></a>
+## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.4...@times-components/date-publication@0.12.5) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/date-publication
+
 <a name="0.12.4"></a>
 ## [0.12.4](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.12.3...@times-components/date-publication@0.12.4) (2018-03-14)
 

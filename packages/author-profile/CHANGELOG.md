@@ -3,6 +3,163 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.52.0...@times-components/author-profile@0.53.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.52.0"></a>
+# [0.52.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.51.0...@times-components/author-profile@0.52.0) (2018-03-23)
+
+
+### Features
+
+* card reversal native ([#781](https://github.com/newsuk/times-components/issues/781)) ([9b22750](https://github.com/newsuk/times-components/commit/9b22750))
+
+
+
+
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.2...@times-components/author-profile@0.51.0) (2018-03-22)
+
+
+### Features
+
+* add reversal flag for Card layout ([#769](https://github.com/newsuk/times-components/issues/769)) ([9e7953a](https://github.com/newsuk/times-components/commit/9e7953a))
+
+
+
+
+<a name="0.50.2"></a>
+## [0.50.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.1...@times-components/author-profile@0.50.2) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.50.1"></a>
+## [0.50.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.50.0...@times-components/author-profile@0.50.1) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.50.0"></a>
+# [0.50.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.19...@times-components/author-profile@0.50.0) (2018-03-20)
+
+
+### Features
+
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+
+
+
+
+<a name="0.49.19"></a>
+## [0.49.19](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.17...@times-components/author-profile@0.49.19) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the warning on Native devices when viewing Author Profile ([#762](https://github.com/newsuk/times-components/issues/762)) ([6722ab8](https://github.com/newsuk/times-components/commit/6722ab8))
+
+
+
+
+<a name="0.49.18"></a>
+## [0.49.18](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.17...@times-components/author-profile@0.49.18) (2018-03-20)
+
+
+### Bug Fixes
+
+* Fix the warning on Native devices when viewing Author Profile ([#762](https://github.com/newsuk/times-components/issues/762)) ([6722ab8](https://github.com/newsuk/times-components/commit/6722ab8))
+
+
+
+
+<a name="0.49.17"></a>
+## [0.49.17](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.16...@times-components/author-profile@0.49.17) (2018-03-19)
+
+
+### Bug Fixes
+
+* Put back the missing summary for Author Profiles with no images ([#754](https://github.com/newsuk/times-components/issues/754)) ([466fb97](https://github.com/newsuk/times-components/commit/466fb97))
+
+
+
+
+<a name="0.49.16"></a>
+## [0.49.16](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.15...@times-components/author-profile@0.49.16) (2018-03-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.15"></a>
+## [0.49.15](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.14...@times-components/author-profile@0.49.15) (2018-03-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.14"></a>
+## [0.49.14](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.13...@times-components/author-profile@0.49.14) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.13"></a>
+## [0.49.13](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.12...@times-components/author-profile@0.49.13) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.12"></a>
+## [0.49.12](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.10...@times-components/author-profile@0.49.12) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.11"></a>
+## [0.49.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.10...@times-components/author-profile@0.49.11) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.10"></a>
+## [0.49.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.9...@times-components/author-profile@0.49.10) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.49.9"></a>
+## [0.49.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.8...@times-components/author-profile@0.49.9) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.49.8"></a>
 ## [0.49.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.49.7...@times-components/author-profile@0.49.8) (2018-03-15)
 

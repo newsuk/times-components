@@ -1,4 +1,9 @@
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const sharedStyles = {
   text: {
@@ -6,7 +11,7 @@ const sharedStyles = {
     fontSize: fontSizes.teaser,
     fontFamily: fonts.body,
     lineHeight: 20,
-    marginBottom: 10,
+    marginBottom: spacing(2),
     flexWrap: "wrap"
   },
   metaText: {
@@ -14,14 +19,14 @@ const sharedStyles = {
     fontSize: fontSizes.cardMeta,
     lineHeight: 15,
     fontFamily: fonts.supporting,
-    marginBottom: 5
+    marginBottom: spacing(1)
   },
   labelWrapper: {
     marginBottom: 0
   },
   headline: {
     color: colours.functional.primary,
-    marginBottom: 5,
+    marginBottom: spacing(1),
     fontFamily: fonts.headline,
     fontWeight: "400"
   },

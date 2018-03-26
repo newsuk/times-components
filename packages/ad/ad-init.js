@@ -118,8 +118,14 @@ const adInit = args => {
             gptMapping.addSize([size.width, size.height], size.sizes)
           );
           slot.defineSizeMapping(gptMapping.build());
-          Object.keys(slotTargeting || {}).forEach(key =>
-            slot.setTargeting(key, slotTargeting[key])
+
+          const randomTestingGroup = Math.floor(Math.random() * 10).toString();
+          const slotTargetingList = Object.assign({}, slotTargeting, {
+            timestestgroup: randomTestingGroup,
+            pos: containerID
+          });
+          Object.keys(slotTargetingList).forEach(key =>
+            slot.setTargeting(key, slotTargetingList[key])
           );
           window.googletag.display(containerID);
         });
@@ -167,7 +173,7 @@ const adInit = args => {
           prebidConfig.bidders.amazon && prebidConfig.bidders.amazon.accountId;
         const biddingActions = [];
         window.pbjs.bidderTimeout = prebidConfig.timeout;
-        window.pbjs.bidderSettings = prebidConfig.bidderSettings;
+        window.pbjs.bidderSettings = prebidConfig.bidderSettings(prebidConfig);
         if (amazonAccountID) {
           this.setupApstag(amazonAccountID, prebidConfig.timeout);
           // FIXME: at the moment we configure the amazon bids with just one slot (the first one)

@@ -8,12 +8,11 @@ import styles from "./styles";
 
 class CardComponent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { image, imageSize, isLoading, showImage } = this.props;
+    const { image, imageSize, isLoading } = this.props;
     return (
       (image && image.uri !== nextProps.image.uri) ||
       imageSize !== nextProps.imageSize ||
-      isLoading !== nextProps.isLoading ||
-      showImage !== nextProps.showImage
+      isLoading !== nextProps.isLoading
     );
   }
 
@@ -26,6 +25,7 @@ class CardComponent extends Component {
       imageRatio,
       imageSize,
       isLoading,
+      isReversed,
       showImage
     } = this.props;
 
@@ -35,33 +35,37 @@ class CardComponent extends Component {
           contentContainerClass={contentContainerClass}
           imageContainerClass={imageContainerClass}
           imageRatio={imageRatio}
+          isReversed={isReversed}
           showImage={showImage}
         />
       );
     }
 
+    const renderImage = () => {
+      if (!image || !image.uri || !showImage) return null;
+
+      const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
+      return (
+        <View
+          style={[styles.imageContainer, isReversed ? "" : styles.layout]}
+          className={imageContainerClass}
+        >
+          <Image aspectRatio={imageRatio} uri={imageUrl} />
+        </View>
+      );
+    };
+
     return (
       <Animations.FadeIn>
         <View style={styles.cardContainer}>
-          {showImage &&
-            image &&
-            image.uri && (
-              <View
-                style={styles.imageContainer}
-                className={imageContainerClass}
-              >
-                <Image
-                  aspectRatio={imageRatio}
-                  uri={`${image.uri}&resize=${imageSize}`}
-                />
-              </View>
-            )}
+          {!isReversed ? renderImage() : null}
           <View
-            style={styles.contentContainer}
+            style={[styles.contentContainer, isReversed ? styles.layout : ""]}
             className={contentContainerClass}
           >
             {children}
           </View>
+          {isReversed ? renderImage() : null}
         </View>
       </Animations.FadeIn>
     );

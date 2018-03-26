@@ -1,9 +1,16 @@
 import { prebidConfig } from "../prebid-config";
 
 describe("Prebid Config test", () => {
-  const { maxBid, minPrice } = prebidConfig;
+  const maxBid = 15;
+  const minPrice = 0.01;
+  const bucketSize = 0.25;
   const dummyValue = 99;
-  const { adserverTargeting } = prebidConfig.bidderSettings.standard;
+
+  const { adserverTargeting } = prebidConfig.bidderSettings({
+    maxBid,
+    minPrice,
+    bucketSize
+  });
 
   it("should return the correct value for the hd_bidder", () => {
     const hbBidder = adserverTargeting.filter(

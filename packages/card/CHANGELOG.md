@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.1"></a>
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/card@0.24.0...@times-components/card@0.24.1) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.23.0...@times-components/card@0.24.0) (2018-03-23)
+
+
+### Features
+
+* card reversal native ([#781](https://github.com/newsuk/times-components/issues/781)) ([9b22750](https://github.com/newsuk/times-components/commit/9b22750))
+
+
+
+
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.11...@times-components/card@0.23.0) (2018-03-22)
+
+
+### Features
+
+* add reversal flag for Card layout ([#769](https://github.com/newsuk/times-components/issues/769)) ([9e7953a](https://github.com/newsuk/times-components/commit/9e7953a))
+
+
+
+
+<a name="0.22.11"></a>
+## [0.22.11](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.10...@times-components/card@0.22.11) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.10"></a>
+## [0.22.10](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.9...@times-components/card@0.22.10) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.9"></a>
+## [0.22.9](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.7...@times-components/card@0.22.9) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.8"></a>
+## [0.22.8](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.7...@times-components/card@0.22.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.7"></a>
+## [0.22.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.6...@times-components/card@0.22.7) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.6"></a>
+## [0.22.6](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.5...@times-components/card@0.22.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.22.5"></a>
+## [0.22.5](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.4...@times-components/card@0.22.5) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.22.4"></a>
 ## [0.22.4](https://github.com/newsuk/times-components/compare/@times-components/card@0.22.3...@times-components/card@0.22.4) (2018-03-15)
 

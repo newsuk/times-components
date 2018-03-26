@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.17...@times-components/author-head@0.22.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.21.17"></a>
+## [0.21.17](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.16...@times-components/author-head@0.21.17) (2018-03-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.16"></a>
+## [0.21.16](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.15...@times-components/author-head@0.21.16) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.15"></a>
+## [0.21.15](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.14...@times-components/author-head@0.21.15) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.14"></a>
+## [0.21.14](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.12...@times-components/author-head@0.21.14) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.13"></a>
+## [0.21.13](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.12...@times-components/author-head@0.21.13) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.12"></a>
+## [0.21.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.11...@times-components/author-head@0.21.12) (2018-03-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.11"></a>
+## [0.21.11](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.10...@times-components/author-head@0.21.11) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.10"></a>
+## [0.21.10](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.9...@times-components/author-head@0.21.10) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.9"></a>
+## [0.21.9](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.8...@times-components/author-head@0.21.9) (2018-03-16)
+
+
+### Bug Fixes
+
+* update styled-components ([#740](https://github.com/newsuk/times-components/issues/740)) ([6756ed6](https://github.com/newsuk/times-components/commit/6756ed6))
+
+
+
+
+<a name="0.21.8"></a>
+## [0.21.8](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.7...@times-components/author-head@0.21.8) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.7"></a>
+## [0.21.7](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.6...@times-components/author-head@0.21.7) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.6"></a>
+## [0.21.6](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.5...@times-components/author-head@0.21.6) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.21.5"></a>
 ## [0.21.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.3...@times-components/author-head@0.21.5) (2018-03-14)
 

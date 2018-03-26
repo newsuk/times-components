@@ -15,9 +15,17 @@ import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
-  getLeadAndTwoContainer
+  getLeadContainer
 } from "../../templates/leadandtwo/responsive";
 import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../templates/leadandtwo/config";
+import {
+  getSeparator as opinionGetSeparator,
+  getSupportsContainer as opinionGetSupportsContainer,
+  getSupportContainer as opinionGetSupportContainer,
+  getContainer as opinionGetContainer,
+  getOpinionContainer as opinionGetOpinionContainer
+} from "../../templates/opinionandtwo/responsive";
+import { getConfigWrapper as getOpinionAndTwoConfigWrapper } from "../../templates/opinionandtwo/config";
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
@@ -72,31 +80,92 @@ describe("Slice tests on web", () => {
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
     });
 
-    it("should render LeadAndTwoContainer correctly", () => {
-      let LeadAndTwoContainer = getLeadAndTwoContainer({
+    it("should render LeadContainer correctly", () => {
+      let LeadContainer = getLeadContainer({
         hasSupports: true,
         supportCount: 1
       });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
-      LeadAndTwoContainer = getLeadAndTwoContainer({
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      LeadContainer = getLeadContainer({
         hasSupports: true,
         supportCount: 2
       });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
-      LeadAndTwoContainer = getLeadAndTwoContainer({ hasSupports: false });
-      expect(
-        renderer.create(<LeadAndTwoContainer />).toJSON()
-      ).toMatchSnapshot();
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
+      LeadContainer = getLeadContainer({ hasSupports: false });
+      expect(renderer.create(<LeadContainer />).toJSON()).toMatchSnapshot();
     });
 
     it("should render ConfigWrapper correctly", () => {
       let ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
       ConfigWrapper = getLeadAndTwoConfigWrapper({ supportCount: 2 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+    });
+  });
+
+  context("responsive opinion and two template components", () => {
+    it("should render Separator correctly", () => {
+      let Separator = opinionGetSeparator({
+        hasLeftRightMargin: false,
+        itemCount: 1
+      });
+      expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
+      Separator = opinionGetSeparator({
+        hasLeftRightMargin: true,
+        itemCount: 3
+      });
+      expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render Container correctly", () => {
+      let Container = opinionGetContainer({ hasSupports: true });
+      expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
+      Container = opinionGetContainer({ hasSupports: false });
+      expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render OpinionContainer correctly", () => {
+      let OpinionContainer = opinionGetOpinionContainer({
+        hasSupports: true,
+        supportCount: 1
+      });
+      expect(renderer.create(<OpinionContainer />).toJSON()).toMatchSnapshot();
+      OpinionContainer = opinionGetOpinionContainer({
+        hasSupports: true,
+        supportCount: 2
+      });
+      expect(renderer.create(<OpinionContainer />).toJSON()).toMatchSnapshot();
+      OpinionContainer = opinionGetOpinionContainer({
+        hasSupports: false,
+        supportCount: 0
+      });
+      expect(renderer.create(<OpinionContainer />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render SupportsContainer correctly", () => {
+      let Separator = opinionGetSupportsContainer({ supportCount: 1 });
+      expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
+      Separator = opinionGetSupportsContainer({ supportCount: 2 });
+      expect(renderer.create(<Separator />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render SupportContainer correctly", () => {
+      let SupportContainer = opinionGetSupportContainer({
+        index: 0,
+        supportCount: 1
+      });
+      expect(renderer.create(<SupportContainer />).toJSON()).toMatchSnapshot();
+      SupportContainer = opinionGetSupportContainer({
+        index: 1,
+        supportCount: 2
+      });
+      expect(renderer.create(<SupportContainer />).toJSON()).toMatchSnapshot();
+    });
+
+    it("should render ConfigWrapper correctly", () => {
+      let ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 1 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+      ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 2 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
     });
   });

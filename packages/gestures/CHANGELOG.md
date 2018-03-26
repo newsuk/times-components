@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.18"></a>
+## [1.2.18](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.17...@times-components/gestures@1.2.18) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.17"></a>
+## [1.2.17](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.16...@times-components/gestures@1.2.17) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.16"></a>
+## [1.2.16](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.14...@times-components/gestures@1.2.16) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.15"></a>
+## [1.2.15](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.14...@times-components/gestures@1.2.15) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.14"></a>
+## [1.2.14](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.13...@times-components/gestures@1.2.14) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.13"></a>
+## [1.2.13](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.12...@times-components/gestures@1.2.13) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.12"></a>
+## [1.2.12](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.11...@times-components/gestures@1.2.12) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
 <a name="1.2.11"></a>
 ## [1.2.11](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.10...@times-components/gestures@1.2.11) (2018-03-14)
 

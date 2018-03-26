@@ -2,7 +2,7 @@ import { View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 export const SupportsContainer = withResponsiveStyles(View, {
   base: () => `
@@ -22,25 +22,25 @@ export const getContainer = ({ hasSupports }) => {
       flex: 1;
       flex-direction: column;
       flex-wrap: wrap;
-      padding-bottom: 10px;
-      padding-top: 10px;
+      padding-bottom: ${spacing(2)};
+      padding-top: ${spacing(2)};
       height: auto;
       width: 100%;
     `,
     mediumUp: () => {
-      const withoutSupportsStyle = `
+      const noSupportsStyle = `
         padding-left: 0px;
         padding-right: 0px;
         width: ${config.mediumBpWidth};
       `;
 
-      const withSupportsStyle = `
+      const hasSupportsStyle = `
         width: 100%;
       `;
 
       return `
         flex-direction: row;
-        ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
     wideUp: () => `
@@ -51,37 +51,37 @@ export const getContainer = ({ hasSupports }) => {
   return Container;
 };
 
-export const getLeadAndTwoContainer = ({ hasSupports, supportCount }) => {
-  const LeadAndTwoContainer = withResponsiveStyles(View, {
+export const getLeadContainer = ({ hasSupports, supportCount }) => {
+  const LeadContainer = withResponsiveStyles(View, {
     base: () => `
-    flex: 1;
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: ${hasSupports ? "auto" : "100%"};
-  `,
+      flex: 1;
+      flex-grow: 1;
+      padding-left: ${spacing(2)};
+      padding-right: ${spacing(2)};
+      width: ${hasSupports ? "auto" : "100%"};
+    `,
     mediumUp: () => {
-      const withoutSupportsStyle = `
-      flex-grow: 0;
-      padding-left: 0;
-      padding-right: 0;
-    `;
-      const withSupportsStyle = `
-      flex-basis: 0 !important;
-      flex-grow: ${supportCount === 1 ? "3" : "2"};
-      padding-left: 10px;
-      padding-right: 10px;
-    `;
+      const noSupportsStyle = `
+        flex-grow: 0;
+        padding-left: 0;
+        padding-right: 0;
+      `;
+      const hasSupportsStyle = `
+        flex-basis: 0 !important;
+        flex-grow: ${supportCount === 1 ? "3" : "2"};
+        padding-left: ${spacing(2)};
+        padding-right: ${spacing(2)};
+      `;
       return `
-      ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
-    `;
+        ${hasSupports ? hasSupportsStyle : noSupportsStyle}
+      `;
     },
     wideUp: () => `
-      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};;
+      flex-grow: ${supportCount === 1 ? "2.75" : "1.5"};
     `
   });
-  LeadAndTwoContainer.displayName = "LeadAndTwoContainer";
-  return LeadAndTwoContainer;
+  LeadContainer.displayName = "LeadContainer";
+  return LeadContainer;
 };
 
 export const getSupportContainer = ({ index }) => {
@@ -91,22 +91,19 @@ export const getSupportContainer = ({ index }) => {
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: ${colours.functional.keyline};
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: ${spacing(2)};
+        padding-top: ${spacing(2)};
       `;
 
       return `
-        flex: 1;
-        flex-wrap: wrap;
-        min-height: auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: ${spacing(2)};
+        padding-right: ${spacing(2)};
         ${index > 0 ? secondSupportStyle : ``}
       `;
     },
     mediumUp: () => `
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: ${spacing(2)};
+      margin-right: ${spacing(2)};
       padding-left: 0;
       padding-right: 0;
     `

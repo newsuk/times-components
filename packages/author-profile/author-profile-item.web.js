@@ -5,7 +5,7 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -19,7 +19,7 @@ const CardWrapper = withResponsiveStyles(View, {
       margin-bottom: 0;
       max-width: 285px;
       min-width: auto;
-      padding-right: 15px;
+      padding-right: ${spacing(3)};
     }
     .authorProfileContent {
       flex: 2.7;
@@ -31,7 +31,7 @@ const CardWrapper = withResponsiveStyles(View, {
 
 const LongText = withResponsiveStyles(View, {
   base: () => "display: none;",
-  mediumUp: () => "display: block; padding-left: 15px;"
+  mediumUp: () => `display: block; padding-left: ${spacing(3)};`
 });
 
 const ShortText = withResponsiveStyles(View, {
@@ -41,8 +41,8 @@ const ShortText = withResponsiveStyles(View, {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 15,
-    paddingTop: 15
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   }
 });
 
@@ -108,7 +108,7 @@ const AuthorProfileItem = item => {
       <LongText>
         <ArticleSummary
           {...childProps}
-          summaryText={() => <ArticleSummaryContent ast={longSummary} />}
+          content={() => <ArticleSummaryContent ast={longSummary} />}
         />
       </LongText>
       <ShortText>

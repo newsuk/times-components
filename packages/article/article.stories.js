@@ -26,15 +26,15 @@ import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
 // Related articles
-import defaultSingleRelatedArticleFixture from "./related-articles/fixtures/default/single-related-article.json";
-import defaultSingleRelatedArticleNoImageFixture from "./related-articles/fixtures/default/single-related-article-no-image.json";
-import defaultSingleRelatedArticleNoLabelFixture from "./related-articles/fixtures/default/single-related-article-no-label.json";
-import defaultSingleRelatedArticleNoBylineFixture from "./related-articles/fixtures/default/single-related-article-no-byline.json";
-import defaultTwoRelatedArticlesFixture from "./related-articles/fixtures/default/two-related-articles.json";
-import defaultThreeRelatedArticlesFixture from "./related-articles/fixtures/default/three-related-articles.json";
-import leadSingleRelatedArticleFixture from "./related-articles/fixtures/lead/single-related-article.json";
-import leadTwoRelatedArticlesFixture from "./related-articles/fixtures/lead/two-related-articles.json";
-import leadThreeRelatedArticlesFixture from "./related-articles/fixtures/lead/three-related-articles.json";
+import standard1RelatedArticleFixture from "./related-articles/fixtures/standard/1-article.json";
+import standard1RelatedArticleNoImageFixture from "./related-articles/fixtures/standard/1-article-no-image.json";
+import standard1RelatedArticleNoLabelFixture from "./related-articles/fixtures/standard/1-article-no-label.json";
+import standard1RelatedArticleNoBylineFixture from "./related-articles/fixtures/standard/1-article-no-byline.json";
+import standard2RelatedArticlesFixture from "./related-articles/fixtures/standard/2-articles.json";
+import standard3RelatedArticlesFixture from "./related-articles/fixtures/standard/3-articles.json";
+import leadAndTwo1RelatedArticleFixture from "./related-articles/fixtures/leadandtwo/1-article.json";
+import leadAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/2-articles.json";
+import leadAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/3-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -47,6 +47,10 @@ const createRelatedArticlesProps = fixtureData => ({
   analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
+  mainId:
+    fixtureData.relatedArticlesLayout.lead ||
+    fixtureData.relatedArticlesLayout.opinion ||
+    "",
   onPress: preventDefaultedAction("onArticlePress")
 });
 
@@ -70,8 +74,44 @@ const adConfig = {
     label: "Label"
   },
   slotTargeting: {
-    path: "/news"
-  }
+    path: "/news",
+    sec_id: "null",
+    section: "news",
+    zone: "current_edition",
+    slot: "news"
+  },
+  biddersConfig: {
+    timeout: 3000,
+    minPrice: 0.01,
+    maxBid: 15,
+    bucketSize: 0.25,
+    bidders: {
+      appnexus: {
+        placementId: "5823281"
+      },
+      rubicon: {
+        accountId: "14062",
+        siteId: "70608",
+        zoneId: "335918"
+      },
+      amazon: {
+        accountId: "3360"
+      },
+      criteo: {
+        zoneMap: {
+          "120x600": "764877"
+        }
+      },
+      pubmatic: {
+        accountId: "156034",
+        adSlotPrefix: "Thetimes"
+      },
+      indexExchange: {
+        siteId: "188830"
+      }
+    }
+  },
+  bidderSlots: ["ad-header", "ad-article-inline"]
 };
 
 storiesOf("Pages/Article", module)
@@ -235,7 +275,7 @@ storiesOf("Pages/Article", module)
   .add("Default template with one related article", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(defaultSingleRelatedArticleFixture.data)}
+        {...createRelatedArticlesProps(standard1RelatedArticleFixture.data)}
       />
     </ScrollView>
   ))
@@ -243,7 +283,7 @@ storiesOf("Pages/Article", module)
     <ScrollView>
       <RelatedArticles
         {...createRelatedArticlesProps(
-          defaultSingleRelatedArticleNoImageFixture.data
+          standard1RelatedArticleNoImageFixture.data
         )}
       />
     </ScrollView>
@@ -252,7 +292,7 @@ storiesOf("Pages/Article", module)
     <ScrollView>
       <RelatedArticles
         {...createRelatedArticlesProps(
-          defaultSingleRelatedArticleNoLabelFixture.data
+          standard1RelatedArticleNoLabelFixture.data
         )}
       />
     </ScrollView>
@@ -261,7 +301,7 @@ storiesOf("Pages/Article", module)
     <ScrollView>
       <RelatedArticles
         {...createRelatedArticlesProps(
-          defaultSingleRelatedArticleNoBylineFixture.data
+          standard1RelatedArticleNoBylineFixture.data
         )}
       />
     </ScrollView>
@@ -269,35 +309,35 @@ storiesOf("Pages/Article", module)
   .add("Default template with two related articles", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(defaultTwoRelatedArticlesFixture.data)}
+        {...createRelatedArticlesProps(standard2RelatedArticlesFixture.data)}
       />
     </ScrollView>
   ))
   .add("Default template with three related articles", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(defaultThreeRelatedArticlesFixture.data)}
+        {...createRelatedArticlesProps(standard3RelatedArticlesFixture.data)}
       />
     </ScrollView>
   ))
   .add("Lead and two template with one related article", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(leadSingleRelatedArticleFixture.data)}
+        {...createRelatedArticlesProps(leadAndTwo1RelatedArticleFixture.data)}
       />
     </ScrollView>
   ))
   .add("Lead and two template with two related articles", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(leadTwoRelatedArticlesFixture.data)}
+        {...createRelatedArticlesProps(leadAndTwo2RelatedArticlesFixture.data)}
       />
     </ScrollView>
   ))
   .add("Lead and two template with three related articles", () => (
     <ScrollView>
       <RelatedArticles
-        {...createRelatedArticlesProps(leadThreeRelatedArticlesFixture.data)}
+        {...createRelatedArticlesProps(leadAndTwo3RelatedArticlesFixture.data)}
       />
     </ScrollView>
   ));

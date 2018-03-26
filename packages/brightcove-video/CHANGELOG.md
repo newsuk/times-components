@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.10...@times-components/brightcove-video@1.12.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="1.11.10"></a>
+## [1.11.10](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.9...@times-components/brightcove-video@1.11.10) (2018-03-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.9"></a>
+## [1.11.9](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.8...@times-components/brightcove-video@1.11.9) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.8"></a>
+## [1.11.8](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.6...@times-components/brightcove-video@1.11.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.7"></a>
+## [1.11.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.6...@times-components/brightcove-video@1.11.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.6"></a>
+## [1.11.6](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.5...@times-components/brightcove-video@1.11.6) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.5"></a>
+## [1.11.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.4...@times-components/brightcove-video@1.11.5) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="1.11.4"></a>
+## [1.11.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.3...@times-components/brightcove-video@1.11.4) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
 <a name="1.11.3"></a>
 ## [1.11.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.11.2...@times-components/brightcove-video@1.11.3) (2018-03-14)
 

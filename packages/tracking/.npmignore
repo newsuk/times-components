@@ -9,3 +9,4 @@ coverage
 android/**/test
 android/**/androidTest
 storybook-components
+flow-typed

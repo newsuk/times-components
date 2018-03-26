@@ -3,6 +3,106 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.5...@times-components/ad@0.16.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.15.5"></a>
+## [0.15.5](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.4...@times-components/ad@0.15.5) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.15.4"></a>
+## [0.15.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.2...@times-components/ad@0.15.4) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.15.3"></a>
+## [0.15.3](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.2...@times-components/ad@0.15.3) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.15.2"></a>
+## [0.15.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.1...@times-components/ad@0.15.2) (2018-03-19)
+
+
+### Bug Fixes
+
+* moving bidding slots as a prop from render ([#753](https://github.com/newsuk/times-components/issues/753)) ([a957e50](https://github.com/newsuk/times-components/commit/a957e50))
+
+
+
+
+<a name="0.15.1"></a>
+## [0.15.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.15.0...@times-components/ad@0.15.1) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.4...@times-components/ad@0.15.0) (2018-03-16)
+
+
+### Features
+
+* refactor slot targeting and add timestestgroup ([#751](https://github.com/newsuk/times-components/issues/751)) ([1d39555](https://github.com/newsuk/times-components/commit/1d39555))
+
+
+
+
+<a name="0.14.4"></a>
+## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.3...@times-components/ad@0.14.4) (2018-03-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.14.3"></a>
+## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.2...@times-components/ad@0.14.3) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.14.2"></a>
+## [0.14.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.1...@times-components/ad@0.14.2) (2018-03-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.14.1"></a>
+## [0.14.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.14.0...@times-components/ad@0.14.1) (2018-03-15)
+
+
+### Bug Fixes
+
+* tidy up ads stories ([#742](https://github.com/newsuk/times-components/issues/742)) ([c3b1eb3](https://github.com/newsuk/times-components/commit/c3b1eb3))
+
+
+
+
 <a name="0.14.0"></a>
 # [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.12.0...@times-components/ad@0.14.0) (2018-03-14)
 

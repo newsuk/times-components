@@ -3,45 +3,45 @@ import { propTypes, defaultProps } from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
-  getLeadAndTwoContainer,
+  getLeadContainer,
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
-import { leadAndTwoConfig, supportConfig, getConfigWrapper } from "./config";
+import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
-  const supports = [support1(supportConfig), support2(supportConfig)].filter(
-    support => support !== null
-  );
+const LeadAndTwoSlice = ({ lead, renderSupports }) => {
+  const supportConfig = getSupportConfig();
+  const supports = renderSupports(supportConfig);
   const supportCount = supports.length;
+  const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
   const Container = getContainer({ hasSupports });
-  const LeadAndTwoContainer = getLeadAndTwoContainer({
+  const LeadContainer = getLeadContainer({
     hasSupports,
     supportCount
   });
-  const Separator = getSeparator({ hasLeftRightMargin: false });
+  const leadConfig = getLeadConfig({ itemCount });
+  const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
+
+  const renderSupportsContainer = () => (
+    <SupportsContainer>
+      {supports.map((support, index) => {
+        const SupportContainer = getSupportContainer({ index });
+        return (
+          <SupportContainer key={support.props.id}>{support}</SupportContainer>
+        );
+      })}
+    </SupportsContainer>
+  );
 
   return (
     <ConfigWrapper>
       <SliceContainer>
         <Container>
-          <LeadAndTwoContainer>{lead(leadAndTwoConfig)}</LeadAndTwoContainer>
+          <LeadContainer>{lead(leadConfig)}</LeadContainer>
           {hasSupports && <Separator />}
-          {hasSupports && (
-            <SupportsContainer>
-              {supports.map((support, index) => {
-                const SupportContainer = getSupportContainer({ index });
-                SupportContainer.displayName = "SupportContainer";
-                return (
-                  <SupportContainer key={support.props.id}>
-                    {support}
-                  </SupportContainer>
-                );
-              })}
-            </SupportsContainer>
-          )}
+          {hasSupports && renderSupportsContainer()}
         </Container>
       </SliceContainer>
     </ConfigWrapper>

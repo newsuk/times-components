@@ -9,22 +9,39 @@ const Loading = ({
   contentContainerClass,
   imageContainerClass,
   imageRatio,
+  isReversed,
   showImage
-}) => (
-  <View style={styles.cardContainer}>
-    {showImage && (
-      <View style={styles.imageContainer} className={imageContainerClass}>
+}) => {
+  const renderImage = () => {
+    if (!showImage) return null;
+    return (
+      <View
+        style={[styles.imageContainer, isReversed ? "" : styles.layout]}
+        className={imageContainerClass}
+      >
         <Image aspectRatio={imageRatio} />
       </View>
-    )}
-    <View style={styles.contentContainer} className={contentContainerClass}>
-      <Gradient style={[styles.headerContainer]} degrees={264} />
-      <Gradient style={[styles.textContainer]} degrees={267} />
-      <Gradient style={[styles.textContainer]} degrees={267} />
-      <Gradient style={[styles.textContainer, styles.lastBar]} degrees={267} />
+    );
+  };
+  return (
+    <View style={styles.cardContainer}>
+      {!isReversed ? renderImage() : null}
+      <View
+        style={[styles.contentContainer, isReversed ? styles.layout : ""]}
+        className={contentContainerClass}
+      >
+        <Gradient style={[styles.headerContainer]} degrees={264} />
+        <Gradient style={[styles.textContainer]} degrees={267} />
+        <Gradient style={[styles.textContainer]} degrees={267} />
+        <Gradient
+          style={[styles.textContainer, styles.lastBar]}
+          degrees={267}
+        />
+      </View>
+      {isReversed ? renderImage() : null}
     </View>
-  </View>
-);
+  );
+};
 
 Loading.propTypes = sharedPropTypes;
 Loading.defaultProps = sharedDefaultProps;

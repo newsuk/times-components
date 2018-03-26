@@ -22,7 +22,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -168,7 +168,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -388,7 +388,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -549,7 +549,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -626,7 +626,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -902,7 +902,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",
@@ -1030,7 +1030,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 1.2,
-            "lineHeight": 12,
+            "marginBottom": 0,
           },
           Object {
             "color": "#333333",

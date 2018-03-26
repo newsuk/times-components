@@ -2,14 +2,15 @@ import React from "react";
 import propTypes from "./proptypes";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
-import config, { getConfigWrapper } from "./config";
+import { getConfig, getConfigWrapper } from "./config";
 
 const StandardSlice = ({ itemCount, renderItems }) => {
   const ConfigWrapper = getConfigWrapper({ itemCount });
+  const config = getConfig({ itemCount });
   const ChildrenContainer = getChildrenContainer({
     childCount: itemCount
   });
-  const Separator = getSeparator({ hasLeftRightMargin: true });
+  const Separator = getSeparator({ hasLeftRightMargin: true, itemCount });
 
   return (
     <ConfigWrapper>

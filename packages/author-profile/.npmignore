@@ -1,0 +1,10 @@
+*.stories.js
+__tests__
+__mocks__
+*.fructose.js
+*.test.js
+fixtures
+coverage
+android/**/test
+android/**/androidTest
+.*

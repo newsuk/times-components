@@ -1,7 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes, Text, StyleSheet, Platform } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 const { style: TextPropTypesStyle } = Text.propTypes;
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -20,7 +25,7 @@ const lineHeightStyle = Platform.select({
 
 const defaultStyle = StyleSheet.create({
   container: {
-    paddingTop: 10
+    paddingTop: spacing(2)
   },
   text: {
     fontFamily: fonts.supporting,

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.22.4",
+  "version": "0.24.1",
   "main": "card",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -9,7 +9,9 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage"
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)"
   },
   "repository": {
     "type": "git",
@@ -29,12 +31,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-knobs": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.3",
-    "@times-components/jest-configurator": "0.2.1",
-    "@times-components/storybook": "0.4.3",
-    "dextrose": "1.6.0",
+    "@times-components/eslint-config-thetimes": "0.1.4",
+    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/storybook": "0.4.4",
+    "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
@@ -47,10 +48,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.6.3",
-    "@times-components/image": "1.14.4",
-    "@times-components/responsive-styles": "0.4.3",
-    "@times-components/styleguide": "0.4.2",
+    "@times-components/gradient": "0.7.3",
+    "@times-components/image": "1.14.13",
+    "@times-components/responsive-styles": "0.4.5",
+    "@times-components/styleguide": "0.5.0",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
