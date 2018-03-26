@@ -28,10 +28,11 @@ const ArticleSummary = props => {
     isOpinionByline
   } = props;
 
-  const renderByline = style => 
+  const renderByline = style => (
     <Text style={style}>
       <Byline {...bylineProps} />
     </Text>
+  );
 
   return (
     <View>
@@ -40,9 +41,9 @@ const ArticleSummary = props => {
           <ArticleLabel {...labelProps} />
         </View>
       ) : null}
-      {bylineProps && isOpinionByline ? (
-        renderByline(styles.opinionByline)
-      ) : null}
+      {bylineProps && isOpinionByline
+        ? renderByline(styles.opinionByline)
+        : null}
       {headline()}
       {content()}
       {datePublicationProps ? (
@@ -54,9 +55,7 @@ const ArticleSummary = props => {
           <DatePublication {...datePublicationProps} />
         </Text>
       ) : null}
-      {bylineProps && !isOpinionByline ? (
-        renderByline(styles.metaText)
-      ) : null}
+      {bylineProps && !isOpinionByline ? renderByline(styles.metaText) : null}
     </View>
   );
 };

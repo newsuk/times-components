@@ -331,7 +331,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -521,7 +521,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -887,7 +887,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1077,7 +1077,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1267,7 +1267,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1633,7 +1633,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1898,7 +1898,7 @@ exports[`Related articles tests on ios Standard template should render one relat
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2163,7 +2163,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2394,7 +2394,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2625,7 +2625,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2888,7 +2888,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -3117,7 +3117,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}

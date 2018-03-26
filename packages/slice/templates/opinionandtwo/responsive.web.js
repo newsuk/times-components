@@ -32,7 +32,6 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
     base: () => `
       flex: 1;
       flex-grow: 1;
-      height: 250px;
       padding-left: 10px;
       padding-right: 10px;
       width: ${hasSupports ? "auto" : "100%"};

@@ -32,13 +32,15 @@ class DatePublication extends React.Component {
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
-    const formatString = showDay ? "dddd MMMM DD YYYY, hh:mma" : "MMMM DD YYYY, hh:mma";
+    const formatString = showDay
+      ? "dddd MMMM DD YYYY, hh:mma"
+      : "MMMM DD YYYY, hh:mma";
     const publicationString = publication
       ? `, ${publications[publication]}`
       : ``;
-    return `${format(datetimeLondonTimezone, formatString)}${
-      this.state.tz
-    }${publicationString}`;
+    return `${format(datetimeLondonTimezone, formatString)}${this.state.tz}${
+      publicationString
+    }`;
   }
 }
 

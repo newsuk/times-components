@@ -39,6 +39,7 @@ exports[`1. Render a Card 1`] = `
 
 exports[`2. Render the loading state 1`] = `
 <CardComponent
+  containerClass=""
   contentContainerClass=""
   image={
     Object {
@@ -53,6 +54,7 @@ exports[`2. Render the loading state 1`] = `
   showImage={true}
 >
   <Loading
+    containerClass=""
     contentContainerClass=""
     imageContainerClass=""
     imageRatio={1.5}

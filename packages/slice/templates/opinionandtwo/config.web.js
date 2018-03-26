@@ -17,7 +17,6 @@ export const getOpinionConfig = ({ itemCount }) => ({
   imageContainerClass: "opinionImageContainerClass",
   isOpinionByline: true,
   isReversed: true,
-  showDay: false,
   summaryClass: "opinionSummaryClass",
   summaryConfig: {
     lengths: opinionSummaryConfig[itemCount],
@@ -37,6 +36,7 @@ export const getConfigWrapper = ({ supportCount }) => {
     base: () => `
       .opinionImageContainerClass {
         bottom: 0;
+        margin-bottom: -10px;
         min-width: 113px;
         position: absolute;
         right: 0;
@@ -86,6 +86,8 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
 
         .opinionImageContainerClass {
+          min-width: auto;
+          position: relative;
           margin-bottom: -10px;
           max-width: 167px;
           ${getOpinionImageStyle()}

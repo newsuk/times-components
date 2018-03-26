@@ -362,7 +362,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -550,7 +550,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -947,7 +947,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1135,7 +1135,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1323,7 +1323,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1720,7 +1720,7 @@ exports[`Related articles tests on android Lead and two template should render o
                     }
                     testID="datePublication"
                   >
-                    Saturday November 25 2017, 12:01am
+                    November 25 2017, 12:01am
                   </Text>
                   <Text
                     accessible={true}
@@ -1983,7 +1983,7 @@ exports[`Related articles tests on android Standard template should render one r
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2246,7 +2246,7 @@ exports[`Related articles tests on android Standard template should render three
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2475,7 +2475,7 @@ exports[`Related articles tests on android Standard template should render three
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2704,7 +2704,7 @@ exports[`Related articles tests on android Standard template should render three
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}
@@ -2965,7 +2965,7 @@ exports[`Related articles tests on android Standard template should render two r
                     }
                     testID="datePublication"
                   >
-                    Friday March 13 2015, 06:54pm
+                    March 13 2015, 06:54pm
                   </Text>
                   <Text
                     accessible={true}
@@ -3192,7 +3192,7 @@ exports[`Related articles tests on android Standard template should render two r
                     }
                     testID="datePublication"
                   >
-                    Wednesday January 17 2018, 12:00pm
+                    January 17 2018, 12:00pm
                   </Text>
                   <Text
                     accessible={true}

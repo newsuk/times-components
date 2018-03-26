@@ -27,7 +27,6 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
       imageContainerClass = "",
       isOpinionByline = false,
       isReversed = false,
-      showDay = true,
       showImage = true,
       showSummary = true,
       summaryConfig = {}
