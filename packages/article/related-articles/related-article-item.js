@@ -23,6 +23,7 @@ const RelatedArticleItem = ({
   isOpinionByline,
   isReversed,
   onPress,
+  showDay,
   showImage,
   showSummary,
   summaryConfig
@@ -67,7 +68,7 @@ const RelatedArticleItem = ({
               </View>
             )
           }
-          datePublicationProps={{ date: publishedTime }}
+          datePublicationProps={{ date: publishedTime, showDay }}
           headline={() => (
             <ArticleSummaryHeadline
               className={headlineClass}

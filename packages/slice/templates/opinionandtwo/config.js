@@ -4,6 +4,7 @@ export const opinionConfig = {
     imageRatio: 2 / 3
   },
   isOpinionByline: true,
+  showDay: false,
   summaryConfig: {
     lengths: [125]
   }

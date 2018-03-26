@@ -27,6 +27,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
       imageContainerClass = "",
       isOpinionByline = false,
       isReversed = false,
+      showDay = true,
       showImage = true,
       showSummary = true,
       summaryConfig = {}
@@ -42,6 +43,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         isOpinionByline={isOpinionByline}
         isReversed={isReversed}
         onPress={onPress}
+        showDay={showDay}
         showImage={showImage}
         showSummary={showSummary}
         summaryConfig={summaryConfig}

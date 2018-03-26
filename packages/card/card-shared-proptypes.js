@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 export const sharedPropTypes = {
+  containerClass: PropTypes.string,
   contentContainerClass: PropTypes.string,
   imageContainerClass: PropTypes.string,
   imageRatio: PropTypes.number,
@@ -9,6 +10,7 @@ export const sharedPropTypes = {
 };
 
 export const sharedDefaultProps = {
+  containerClass: "",
   contentContainerClass: "",
   imageContainerClass: "",
   imageRatio: 3 / 2,
