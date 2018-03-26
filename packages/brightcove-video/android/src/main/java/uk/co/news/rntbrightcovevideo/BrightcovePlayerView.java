@@ -3,7 +3,6 @@ package uk.co.news.rntbrightcovevideo;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
-import android.view.SurfaceView;
 
 import com.brightcove.player.edge.Catalog;
 import com.brightcove.player.edge.VideoListener;
@@ -18,9 +17,6 @@ import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
 public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private Boolean autoplay;
-    private Boolean isPlaying = false;
-    private Boolean isFullscreen = false;
-    private final float progress = 0;
 
     public BrightcovePlayerView(Context context) {
         super(context);
@@ -31,45 +27,17 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
 
     private EventEmitter setupEventEmitter() {
         final BrightcovePlayerView playerView = this;
+        final EventEmitter eventEmitter = getEventEmitter();
 
-        EventEmitter eventEmitter = getEventEmitter();
-        eventEmitter.on(EventType.VIDEO_SIZE_KNOWN, new EventListener() {
-            @Override
-            public void processEvent(Event e) {
-                fixVideoLayout();
-            }
-        });
-        eventEmitter.on(EventType.PLAY, onEvent(true));
-        eventEmitter.on(EventType.PAUSE, onEvent(false));
-        eventEmitter.on(EventType.PROGRESS, onEvent(true));
+        eventEmitter.on(EventType.DID_PLAY, onEvent());
+        eventEmitter.on(EventType.DID_PAUSE, onEvent());
         eventEmitter.on(EventType.COMPLETED, new EventListener() {
             @Override
             public void processEvent(Event e) {
-                playerView.bubbleState(false, playerView.getDuration());
+                playerView.bubbleState(false, playerView.getDuration(), isFullScreen());
             }
         });
-        eventEmitter.on(EventType.SEEK_TO, new EventListener() {
-            @Override
-            public void processEvent(Event e) {
-                playerView.bubbleCurrentState();
-            }
-        });
-        eventEmitter.on(EventType.ENTER_FULL_SCREEN, new EventListener() {
-            @Override
-            public void processEvent(Event e) {
-                isFullscreen = true;
-                playerView.bubbleCurrentState();
-                playerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
-            }
-        });
-        eventEmitter.on(EventType.EXIT_FULL_SCREEN, new EventListener() {
-            @Override
-            public void processEvent(Event e) {
-                isFullscreen = false;
-                playerView.bubbleCurrentState();
-                playerView.getEventEmitter().emit(EventType.CONFIGURATION_CHANGED);
-            }
-        });
+        eventEmitter.on(EventType.DID_SEEK_TO, onEvent());
         eventEmitter.on(EventType.ERROR, new EventListener() {
             @Override
             public void processEvent(Event e) {
@@ -80,15 +48,13 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
     }
 
     private void bubbleCurrentState() {
-        bubbleState(getIsPlaying(), (int) getPlayheadPosition());
+        bubbleState(isPlaying(), (int) getPlayheadPosition(), isFullScreen());
     }
 
-    private void bubbleState(Boolean isPlaying, int headPos) {
-        this.isPlaying = isPlaying;
-
+    private void bubbleState(boolean isPlaying, int headPos, boolean isFullScreen) {
         try {
             RNTBrightcoveView parentView = (RNTBrightcoveView) getParent();
-            parentView.emitState(this.isPlaying, headPos);
+            parentView.emitState(isPlaying, headPos, isFullScreen);
         } catch (ClassCastException exc) {
             // ignore
         }
@@ -103,13 +69,13 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         catalog.findVideoByID(videoId, createVideoListener());
     }
 
-    private EventListener onEvent(final Boolean isPlaying) {
+    private EventListener onEvent() {
         final BrightcovePlayerView playerView = this;
 
         return new EventListener() {
             @Override
             public void processEvent(Event event) {
-                playerView.bubbleState(isPlaying, (int) playerView.getPlayheadPosition());
+                playerView.bubbleCurrentState();
             }
         };
     }
@@ -121,8 +87,6 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
             public void onVideo(final Video video) {
                 add(video);
 
-                seekTo((int) progress);
-
                 invalidate();
                 requestLayout();
 
@@ -133,38 +97,7 @@ public class BrightcovePlayerView extends BrightcoveExoPlayerVideoView {
         };
     }
 
-    private void fixVideoLayout() {
-        final int viewW = getMeasuredWidth();
-        final int viewH = getMeasuredHeight();
-
-        SurfaceView surfaceView = (SurfaceView) getRenderView();
-
-        surfaceView.measure(viewW, viewH);
-
-        final int surfaceW = surfaceView.getMeasuredWidth();
-        final int surfaceH = surfaceView.getMeasuredHeight();
-
-        final int leftOffset = (viewW - surfaceW) / 2;
-        final int topOffset = (viewH - surfaceH) / 2;
-
-        surfaceView.layout(
-                leftOffset,
-                topOffset,
-                leftOffset + surfaceW,
-                topOffset + surfaceH
-        );
-    }
-
-    public Boolean getIsPlaying() {
-        return isPlaying;
-    }
-
-    public Boolean getIsFullscreen() {
-        return isFullscreen;
-    }
-
     public float getPlayheadPosition() {
         return playheadPosition;
     }
-
 }
