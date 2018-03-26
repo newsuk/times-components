@@ -55,6 +55,8 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         margin-bottom: 10px;
         min-width: 100%;
         padding-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
       `;
       return `
         ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
@@ -73,6 +75,8 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         margin-bottom: 0;
         min-width: auto;
         padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
       `;
     }
   });
@@ -146,7 +150,6 @@ export const getSupportContainer = ({ index, supportCount }) => {
 
       return `
         flex: 1;
-        flex-basis: 0 !important;
         flex-wrap: wrap;
         min-height: auto;
         padding-left: 10px;

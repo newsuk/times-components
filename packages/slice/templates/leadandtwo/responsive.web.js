@@ -10,9 +10,9 @@ export const getContainer = ({ hasSupports }) => {
       flex: 1;
       flex-direction: column;
       flex-wrap: wrap;
+      height: auto;
       padding-bottom: ${spacing(2)};
       padding-top: ${spacing(2)};
-      height: auto;
       width: 100%;
     `,
     mediumUp: () => {
