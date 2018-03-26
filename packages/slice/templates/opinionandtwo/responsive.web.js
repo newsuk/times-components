@@ -180,6 +180,7 @@ export const getSupportContainer = ({ index, supportCount }) => {
         max-width: 50%;
       `;
       return `
+        flex-basis: 0 !important;
         padding-right: 0;
         ${index === 1 ? secondSupportStyle : firstSupportStyle}
         ${supportCount === 2 ? twoSupportStyle : oneSupportStyle}
