@@ -1,6 +1,6 @@
 const styles = {
   opinion: {
-    paddingTop: 0
+    paddingTop: 10
   }
 };
 
