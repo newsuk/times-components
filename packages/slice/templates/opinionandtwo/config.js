@@ -3,6 +3,7 @@ export const opinionConfig = {
     cropSize: "23",
     imageRatio: 2 / 3
   },
+  isOpinionByline: true,
   summaryConfig: {
     lengths: [125]
   }

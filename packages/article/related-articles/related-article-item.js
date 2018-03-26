@@ -20,6 +20,7 @@ const RelatedArticleItem = ({
   headlineClass,
   imageConfig,
   imageContainerClass,
+  isOpinionByline,
   isReversed,
   onPress,
   showImage,
@@ -74,6 +75,7 @@ const RelatedArticleItem = ({
               headline={headline}
             />
           )}
+          isOpinionByline={isOpinionByline}
           labelProps={{
             color: colours.section[section] || colours.section.default,
             title: label

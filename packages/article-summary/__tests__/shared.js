@@ -35,6 +35,14 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders an article-summary with opinion byline", () => {
+    const tree = renderer
+      .create(<ArticleSummary {...defaultFixture} isOpinionByline />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders an article-summary component with multiple paragraphs", () => {
     const tree = renderer
       .create(<ArticleSummary {...articleMultiFixture} />)

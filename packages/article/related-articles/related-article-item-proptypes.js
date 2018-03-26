@@ -22,6 +22,7 @@ export const relatedArticleItemPropTypes = {
     imageRatio: PropTypes.number
   }),
   imageContainerClass: PropTypes.string,
+  isOpinionByline: PropTypes.bool,
   isReversed: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   showImage: PropTypes.bool,
@@ -34,6 +35,7 @@ export const relatedArticleItemDefaultProps = {
   headlineClass: "",
   imageConfig: null,
   imageContainerClass: "",
+  isOpinionByline: false,
   isReversed: false,
   showImage: true,
   showSummary: true,

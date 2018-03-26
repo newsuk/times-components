@@ -15,6 +15,7 @@ export const getOpinionConfig = ({ itemCount }) => ({
     imageRatio: 2 / 3
   },
   imageContainerClass: "opinionImageContainerClass",
+  isOpinionByline: true,
   isReversed: true,
   summaryClass: "opinionSummaryClass",
   summaryConfig: {
@@ -34,11 +35,10 @@ export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
       .opinionImageContainerClass {
-        max-width: 167px;
-      }
-
-      .opinionSummary125Class {
-        display: block;
+        bottom: 0;
+        min-width: 113px;
+        position: absolute;
+        right: 0;
       }
 
       .supportImageContainerClass {
@@ -51,6 +51,11 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       .summaryHidden {
         display: none;
+      }
+
+      .opinionSummary125Class {
+        display: block;
+        width: 60%;
       }
     `,
     mediumUp: () => {
@@ -81,6 +86,7 @@ export const getConfigWrapper = ({ supportCount }) => {
 
         .opinionImageContainerClass {
           margin-bottom: -10px;
+          max-width: 167px;
           ${getOpinionImageStyle()}
         }
 
