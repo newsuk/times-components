@@ -44,7 +44,7 @@ export const HeaderContainer = withResponsiveStyles(
     mediumUp: () => config.mediumBpPositioning,
     wideUp: () => `
       width: ${config.wideBpWidth};
-      margin-bottom: ${spacing(4)};
+      margin-bottom: ${spacing(3)};
     `
   },
   "HeaderContainer"
