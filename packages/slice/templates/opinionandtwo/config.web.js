@@ -50,15 +50,14 @@ export const getConfigWrapper = ({ supportCount }) => {
       };
       return `
         .opinionContentContainerClass {
-          min-width: 60%;
+          min-height: 250px;
         }
 
         .opinionImageContainerClass {
-          align-self: flex-end;
           bottom: 0;
-          max-width: 113px;
-          min-width: 113px;
-          position: relative;
+          min-width: 115px;
+          position: absolute;
+          right: 0;
           ${getOpinionImageStyle()}
         }
 
@@ -76,7 +75,37 @@ export const getConfigWrapper = ({ supportCount }) => {
 
         .opinionSummary125Class {
           display: block;
+          padding-right: 20px;
           width: 60%;
+        }
+      `;
+    },
+    smallUp: () => {
+      const getOpinionImageStyle = () => {
+        if (supportCount === 0)
+          return `
+          min-width: 130px;
+        `;
+        if (supportCount === 1)
+          return `
+          min-width: 120px;
+        `;
+        return `
+          min-width: 120px;
+        `;
+      };
+      return `
+        .opinionContentContainerClass {
+          min-height: 180px;
+        }
+
+        .opinionImageContainerClass {
+          ${getOpinionImageStyle()}
+        }
+
+        .opinionHeadlineClass {
+          padding-right: 30px;
+          width: 80%;
         }
       `;
     },
@@ -133,6 +162,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionHeadlineClass {
           font-size: 30px;
           line-height: 30px;
+          width: 100%;
         }
 
         .opinionContentContainerClass {

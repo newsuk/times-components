@@ -28,15 +28,22 @@ export const getSupportConfig = () => ({
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
+      .leadContentContainerClass {
+        margin-bottom: 0;
+      }
+
       .supportImageContainerClass {
         display: none;
       }
+
       .supportSummaryClass {
         display: none;
       }
+
       .summaryHidden {
         display: none;
       }
+
       .leadSummary125Class {
         display: block;
       }
@@ -71,6 +78,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .leadContentContainerClass {
           flex-grow: 1;
           flex-basis: 0 !important;
+          margin-bottom: 10px;
           min-width: 300px;
         }
 
@@ -102,6 +110,7 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       const twoSupportContentStyle = `
         flex: 1;
+        margin-bottom: 0;
         min-width: 100px;
       `;
 

@@ -11,7 +11,7 @@ export const getContainer = ({ hasSupports }) => {
       flex-direction: column;
       flex-wrap: wrap;
       height: auto;
-      padding-bottom: ${spacing(2)};
+      padding-bottom: ${spacing(1)};
       padding-top: ${spacing(2)};
       width: 100%;
     `,
@@ -28,6 +28,7 @@ export const getContainer = ({ hasSupports }) => {
 
       return `
         flex-direction: row;
+        padding-bottom: ${spacing(2)};
         ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
@@ -44,6 +45,7 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
     base: () => `
       flex: 1;
       flex-grow: 1;
+      padding-bottom: 0;
       padding-left: ${spacing(2)};
       padding-right: ${spacing(2)};
       width: ${hasSupports ? "auto" : "100%"};
@@ -91,7 +93,7 @@ export const getSupportContainer = ({ index }) => {
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: ${colours.functional.keyline};
-        margin-top: ${spacing(2)};
+        margin-top: ${spacing(1)};
         padding-top: ${spacing(2)};
       `;
 
@@ -106,6 +108,9 @@ export const getSupportContainer = ({ index }) => {
       margin-right: ${spacing(2)};
       padding-left: 0;
       padding-right: 0;
+    `,
+    wideUp: () => `
+      margin-top: ${index > 0 ? spacing(1) : "0"};
     `
   });
   SupportContainer.displayName = "SupportContainer";
