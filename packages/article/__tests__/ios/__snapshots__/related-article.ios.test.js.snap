@@ -342,6 +342,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -538,6 +539,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -910,6 +912,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1106,6 +1109,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1302,6 +1306,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1674,6 +1679,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2051,6 +2057,7 @@ exports[`Related articles tests on ios Standard template should render one relat
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2322,6 +2329,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2559,6 +2567,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2796,6 +2805,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3171,6 +3181,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3512,6 +3523,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {

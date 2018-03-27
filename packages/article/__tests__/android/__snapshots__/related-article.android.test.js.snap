@@ -373,6 +373,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -567,6 +568,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -970,6 +972,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1164,6 +1167,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1358,6 +1362,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -1761,6 +1766,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2169,6 +2175,7 @@ exports[`Related articles tests on android Standard template should render one r
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2438,6 +2445,7 @@ exports[`Related articles tests on android Standard template should render three
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2673,6 +2681,7 @@ exports[`Related articles tests on android Standard template should render three
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2908,6 +2917,7 @@ exports[`Related articles tests on android Standard template should render three
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3314,6 +3324,7 @@ exports[`Related articles tests on android Standard template should render two r
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3686,6 +3697,7 @@ exports[`Related articles tests on android Standard template should render two r
                   <Text
                     accessible={true}
                     allowFontScaling={true}
+                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {

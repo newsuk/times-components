@@ -20,16 +20,20 @@ function renderAst(ast) {
 
 const ArticleSummary = props => {
   const {
-    labelProps,
-    headline,
+    bylineProps,
     content,
     datePublicationProps,
-    bylineProps,
-    isOpinionByline
+    headline,
+    labelProps
   } = props;
 
-  const renderByline = style => (
-    <Text style={style}>
+  const { bylineClass, isOpinionByline } = bylineProps;
+
+  const renderByline = () => (
+    <Text
+      className={bylineClass}
+      style={isOpinionByline ? styles.opinionByline : styles.metaText}
+    >
       <Byline {...bylineProps} />
     </Text>
   );
@@ -41,9 +45,7 @@ const ArticleSummary = props => {
           <ArticleLabel {...labelProps} />
         </View>
       ) : null}
-      {bylineProps && isOpinionByline
-        ? renderByline(styles.opinionByline)
-        : null}
+      {bylineProps && isOpinionByline ? renderByline() : null}
       {headline()}
       {content()}
       {datePublicationProps ? (
@@ -55,7 +57,7 @@ const ArticleSummary = props => {
           <DatePublication {...datePublicationProps} />
         </Text>
       ) : null}
-      {bylineProps && !isOpinionByline ? renderByline(styles.metaText) : null}
+      {bylineProps && !isOpinionByline ? renderByline() : null}
     </View>
   );
 };

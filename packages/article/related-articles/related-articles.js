@@ -21,6 +21,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
 
   const renderArticleItem = (config, article) => {
     const {
+      bylineClass = "",
       contentContainerClass = "",
       headlineClass = "",
       imageConfig = {},
@@ -34,6 +35,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
     return (
       <RelatedArticleItem
         article={article}
+        bylineClass={bylineClass}
         contentContainerClass={contentContainerClass}
         headlineClass={headlineClass}
         id={article.id}

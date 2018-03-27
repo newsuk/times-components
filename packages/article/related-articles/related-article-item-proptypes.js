@@ -15,6 +15,7 @@ export const relatedArticleItemPropTypes = {
     summary225: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
+  bylineClass: PropTypes.string,
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
   imageConfig: PropTypes.shape({
@@ -31,6 +32,7 @@ export const relatedArticleItemPropTypes = {
 };
 
 export const relatedArticleItemDefaultProps = {
+  bylineClass: "",
   contentContainerClass: "",
   headlineClass: "",
   imageConfig: null,

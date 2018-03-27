@@ -16,6 +16,7 @@ import styles from "./styles";
 
 const RelatedArticleItem = ({
   article,
+  bylineClass,
   contentContainerClass,
   headlineClass,
   imageConfig,
@@ -45,7 +46,7 @@ const RelatedArticleItem = ({
         showImage={showImage}
       >
         <ArticleSummary
-          bylineProps={{ ast: byline }}
+          bylineProps={{ ast: byline, bylineClass, isOpinionByline }}
           content={() =>
             showSummary && (
               <View>
@@ -75,7 +76,6 @@ const RelatedArticleItem = ({
               headline={headline}
             />
           )}
-          isOpinionByline={isOpinionByline}
           labelProps={{
             color: colours.section[section] || colours.section.default,
             title: label

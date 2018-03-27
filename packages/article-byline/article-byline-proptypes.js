@@ -4,6 +4,8 @@ import { treePropType } from "@times-components/markup";
 
 export const articleBylinePropTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
+  bylineClass: PropTypes.string,
+  isOpinionByline: PropTypes.bool,
   style: PropTypes.shape({
     link: Text.propTypes.style
   })
@@ -11,5 +13,7 @@ export const articleBylinePropTypes = {
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
+  bylineClass: "",
+  isOpinionByline: false,
   style: {}
 };
