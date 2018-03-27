@@ -22,7 +22,9 @@ describe("checkSelfContainedFunction", () => {
 
   it("does not find errors in a function using console", () => {
     // eslint-disable-next-line no-console
-    expect(getSelfContainedFunctionErrors(() => console.log("Hi!"))).toEqual([]);
+    expect(getSelfContainedFunctionErrors(() => console.log("Hi!"))).toEqual(
+      []
+    );
   });
 
   it("finds errors in a function that refers to a global variable", () => {
