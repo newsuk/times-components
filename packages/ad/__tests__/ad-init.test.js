@@ -1,18 +1,19 @@
 import adInitOriginal from "../ad-init";
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
-import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
+import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
 
 jest.useFakeTimers();
 
 describe("AdInit", () => {
   let initOptions;
+  let mock;
 
   beforeEach(() => {
-    ({ initOptions } = makeAdInitMocks());
+    ({ initOptions, mock } = makeAdInitMocks());
   });
 
-  it("is serialisable", () => {
-    expectFunctionToBeSerialisable(adInitOriginal);
+  it("is self-contained", () => {
+    expectFunctionToBeSelfContained(adInitOriginal);
   });
 
   it("performs page-level setup for the first slot only", () => {
@@ -52,6 +53,7 @@ describe("AdInit", () => {
 
     init1.init();
     init1.handleBreakpointChange("huge", { matches: true });
+    mock.processGoogletagCommandQueue();
 
     expect(init1.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
       breakpoint: "huge",

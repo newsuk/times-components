@@ -36,16 +36,12 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    this.slots = [];
-    this.slotsForPrebid = adConfig.bidderSlots;
-    this.slotsForPrebid.map(slot =>
-      this.slots.push(
-        getPrebidSlotConfig(
-          slot,
-          "article",
-          this.windowWidth,
-          adConfig.biddersConfig.bidders
-        )
+    this.slots = adConfig.bidderSlots.map(slot =>
+      getPrebidSlotConfig(
+        slot,
+        "article",
+        this.windowWidth,
+        adConfig.biddersConfig.bidders
       )
     );
 
@@ -58,7 +54,7 @@ class Ad extends Component {
         maxBid: adConfig.biddersConfig.maxBid,
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
-      slots: this.slots,
+      slots: this.slots || [],
       pos: this.props.pos,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,

@@ -1,4 +1,5 @@
-// NOTE: this function is serialised to a string and passed into a webview.
+// NOTE: this function must be self-contained, i.e. contain no references to variables
+// defined outside the function, so that it can be passed into a WebView.
 
 /* eslint-env browser */
 
