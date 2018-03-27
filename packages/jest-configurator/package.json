@@ -4,7 +4,7 @@
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
   "scripts": {
-    "prepublishOnly": "babel src -d lib",
+    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d lib",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",

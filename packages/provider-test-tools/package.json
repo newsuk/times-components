@@ -8,7 +8,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",
-    "prepublishOnly": "babel src -d dist"
+    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "jest": {
     "preset": "react-native",
