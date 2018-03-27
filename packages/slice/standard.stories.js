@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { select } from "@storybook/addon-knobs/react";
 import { storiesOf } from "@storybook/react-native";
-import StandardSlice from "./";
+import StandardSlice from "./src/templates/standard";
 
 // knobs
 const itemCountLabel = "Number of items:";

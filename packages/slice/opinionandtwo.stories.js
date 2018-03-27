@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { select } from "@storybook/addon-knobs/react";
-import LeadAndTwoSlice from "./";
+import OpinionAndTwoSlice from "./src/templates/opinionandtwo";
 
 // knobs
 const itemCountLabel = "Number of support items:";
@@ -29,13 +29,13 @@ const createSupportItems = noOfItems =>
     })
     .filter(item => item !== false);
 
-storiesOf("Primitives/Slice", module).add("Lead and two", () => (
-  <LeadAndTwoSlice
-    lead={() => (
+storiesOf("Primitives/Slice", module).add("Opinion and two", () => (
+  <OpinionAndTwoSlice
+    opinion={() => (
       <View
-        id="lead"
+        id="opinion"
         style={{
-          minHeight: 320,
+          minHeight: 150,
           backgroundColor: "red"
         }}
       />

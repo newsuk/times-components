@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import withResponsiveStyles from "./responsive-styles";
+import withResponsiveStyles from "./src/responsive-styles";
 
 const WithColours = withResponsiveStyles("div", {
   base: () => "color: red;",
