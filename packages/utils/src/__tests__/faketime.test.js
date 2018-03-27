@@ -1,6 +1,9 @@
 import { delayAndAdvance, delay, advance } from "../faketime";
 
 describe("faketimer tests", () => {
+  beforeAll(() => jest.useFakeTimers());
+  afterAll(() => jest.useFakeTimers());
+
   it("should advance time instantly", async () => {
     await delayAndAdvance(10 * 60 * 1000);
   });
