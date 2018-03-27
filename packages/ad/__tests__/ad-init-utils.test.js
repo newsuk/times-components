@@ -18,6 +18,19 @@ describe("AdInit.utils", () => {
     expect(scripts.length).toBe(1);
   });
 
+  it("Logs an error and swallows the exception if adding a script tag throws an exception", () => {
+    jest
+      .spyOn(mock.window.document.head, "appendChild")
+      .mockImplementation(() => {
+        throw new Error("lala");
+      });
+    utils.createScriptElement("mock-uri");
+    expect(initOptions.eventCallback).toHaveBeenCalledWith(
+      "log",
+      'Could not insert script "mock-uri" (Error: lala) - could be caused by ad blocker'
+    );
+  });
+
   it("Resolves the promise on script element load event", done => {
     jest
       .spyOn(utils, "createScriptElement")

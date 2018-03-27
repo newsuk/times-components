@@ -34,13 +34,22 @@ const adInit = args => {
       },
 
       createScriptElement(scriptUri, onLoad, onError) {
-        const script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = scriptUri;
-        script.defer = true;
-        document.head.appendChild(script);
-        script.addEventListener("load", onLoad);
-        script.addEventListener("error", onError);
+        try {
+          const script = document.createElement("script");
+          script.type = "text/javascript";
+          script.defer = true;
+          if (onLoad) script.addEventListener("load", onLoad);
+          if (onError) script.addEventListener("error", onError);
+          script.src = scriptUri;
+          document.head.appendChild(script);
+        } catch (e) {
+          eventCallback(
+            "log",
+            `Could not insert script "${scriptUri}" (${
+              e
+            }) - could be caused by ad blocker`
+          );
+        }
       },
 
       breakpoints: {
