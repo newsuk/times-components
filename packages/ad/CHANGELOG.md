@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.2"></a>
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.16.1...@times-components/ad@0.16.2) (2018-03-27)
+
+
+### Bug Fixes
+
+* fix logic bug and compile errors on native ads ([#758](https://github.com/newsuk/times-components/issues/758)) ([4c54cc3](https://github.com/newsuk/times-components/commit/4c54cc3))
+
+
+
+
 <a name="0.16.1"></a>
 ## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/ad@0.16.0...@times-components/ad@0.16.1) (2018-03-26)
 
