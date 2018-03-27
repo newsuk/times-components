@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.17.1",
+  "version": "0.17.2",
   "main": "pagination",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -52,9 +52,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/link": "0.15.11",
-    "@times-components/responsive-styles": "0.4.5",
-    "@times-components/styleguide": "0.5.1",
+    "@times-components/link": "0.15.12",
+    "@times-components/responsive-styles": "0.5.0",
+    "@times-components/styleguide": "0.5.2",
     "@times-components/tracking": "0.10.1",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "0.24.2",
+  "version": "0.24.3",
   "main": "card",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -48,10 +48,10 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gradient": "0.7.4",
-    "@times-components/image": "1.14.14",
-    "@times-components/responsive-styles": "0.4.5",
-    "@times-components/styleguide": "0.5.1",
+    "@times-components/gradient": "0.8.0",
+    "@times-components/image": "1.15.0",
+    "@times-components/responsive-styles": "0.5.0",
+    "@times-components/styleguide": "0.5.2",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"

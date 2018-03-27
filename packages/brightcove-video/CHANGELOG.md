@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@1.12.1...@times-components/brightcove-video@2.1.0) (2018-03-27)
+
+
+### Features
+
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+
+
 <a name="2.0.0"></a>
 * Bumped major version number because HTML structure has changed and the legacy website integration depends on the old structure.
 
