@@ -72,5 +72,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/pagination"
 }

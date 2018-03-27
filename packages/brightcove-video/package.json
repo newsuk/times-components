@@ -77,5 +77,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/brightcove-video"
 }

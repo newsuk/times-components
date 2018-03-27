@@ -68,5 +68,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/link"
 }

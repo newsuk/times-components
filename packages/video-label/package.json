@@ -64,5 +64,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/video-label"
 }

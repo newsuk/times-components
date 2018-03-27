@@ -85,5 +85,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/author-head"
 }

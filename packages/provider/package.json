@@ -83,5 +83,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/provider"
 }

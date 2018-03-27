@@ -1,5 +1,3 @@
-jest.useFakeTimers();
-
 export const advance = ms => {
   jest.runTimersToTime(ms);
   return Promise.resolve();

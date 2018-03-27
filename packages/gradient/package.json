@@ -73,5 +73,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dev": "src/gradient"
 }

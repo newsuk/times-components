@@ -1,3 +1,5 @@
+console.log('*********** FOO');
+
 import TealiumSendScheduler from "./tealium-send-scheduler";
 
 function createTealiumReporter(options, w, d) {
@@ -10,7 +12,7 @@ function createTealiumReporter(options, w, d) {
   };
 }
 
-
-export { default as storybookReporter } from './storybook';
-
-export default createTealiumReporter;
+// import storybookReporter from './storybook';
+// export { default as storybookReporter } from './storybook';
+// export default createTealiumReporter;
+export default () => undefined;

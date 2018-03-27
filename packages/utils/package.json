@@ -9,7 +9,7 @@
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest --config='./src/__tests__/jest.config.js'",
-    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist && cp schema.json dist"
+    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist && cp src/schema.json dist"
   },
   "repository": {
     "type": "git",
@@ -47,5 +47,6 @@
   "peerDependencies": {
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1"
-  }
+  },
+  "dev": "src"
 }
