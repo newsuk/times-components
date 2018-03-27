@@ -16,7 +16,7 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, style }) =>
+const ArticleByline = ({ ast, style, onAuthorPress }) =>
   renderTrees(ast, {
     author(key, attributes, children) {
       const url = `/profile/${attributes.slug}`;
@@ -25,7 +25,7 @@ const ArticleByline = ({ ast, style }) =>
           style={[linkStyles.link, style.link]}
           key={key}
           url={url}
-          onPress={() => {}}
+          onPress={() => onAuthorPress({ slug: attributes.slug, url })}
         >
           {children}
         </TextLink>
