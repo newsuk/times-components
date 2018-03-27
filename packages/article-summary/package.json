@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.21.4",
+  "version": "0.21.5",
   "main": "article-summary",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -44,7 +44,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-byline": "0.13.21",
+    "@times-components/article-byline": "0.14.0",
     "@times-components/article-label": "0.9.3",
     "@times-components/date-publication": "0.13.4",
     "@times-components/jest-configurator": "0.2.2",
