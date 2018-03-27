@@ -27,11 +27,18 @@ class ArticlePage extends React.Component {
   static renderRow(rowData, onRelatedArticlePress) {
     switch (rowData.type) {
       case "leadAsset": {
-        const [ratioWidth, ratioHeight] = rowData.data.crop.ratio.split(":");
+        let image;
+        if (rowData.data.type === "Video") {
+          // TODO: render video lead assets on native
+          image = rowData.data.posterImage.crop;
+        } else {
+          image = rowData.data.crop;
+        }
+        const [ratioWidth, ratioHeight] = image.ratio.split(":");
         const aspectRatio = ratioWidth / ratioHeight;
         return (
           <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-            <ModalImage uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
+            <ModalImage uri={image.url} aspectRatio={aspectRatio} />
           </View>
         );
       }

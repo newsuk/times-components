@@ -8,7 +8,8 @@ export const config = {
 
 // Turn off prettier for this as the identified changes break this component
 // prettier-ignore
-const withResponsiveStyles = (Component, styles = {}) => styled(Component)`
+const withResponsiveStyles = (Component, styles = {}, displayName = null) => {
+  const component = styled(Component) `
   ${styles.base}
 
   @media (min-width: 520px) {
@@ -24,5 +25,10 @@ const withResponsiveStyles = (Component, styles = {}) => styled(Component)`
     ${styles.hugeUp}
   }
 `;
+  if (displayName) {
+    component.displayName = displayName;
+  }
+  return component;
+}
 
 export default withResponsiveStyles;

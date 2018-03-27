@@ -25,6 +25,12 @@ exports[`renders poster correctly before launch 1`] = `
 >
   <View
     accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
     testID="splash-component"
   >
     <Image
@@ -111,6 +117,12 @@ exports[`renders poster with custom play icon if specified 1`] = `
 >
   <View
     accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
     testID="splash-component"
   >
     <Image
@@ -513,6 +525,12 @@ exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
 >
   <View
     accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
     testID="splash-component"
   >
     <Image
@@ -599,6 +617,12 @@ exports[`will reset properly 1`] = `
 >
   <View
     accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
     testID="splash-component"
   >
     <Image

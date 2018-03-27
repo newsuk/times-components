@@ -17,7 +17,11 @@ const styles = StyleSheet.create({
 });
 
 const Splash = ({ poster, width, height, playIcon }) => (
-  <View testID="splash-component" accessibilityLabel="splash-component">
+  <View
+    style={{ width, height }}
+    testID="splash-component"
+    accessibilityLabel="splash-component"
+  >
     {poster ? (
       <Image
         source={poster}

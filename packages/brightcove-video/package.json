@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.12.1",
+  "version": "2.0.0",
   "main": "brightcove-video",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",

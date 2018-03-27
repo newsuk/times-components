@@ -1,4 +1,3 @@
-import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
 const mediumBpWidth = "83.33333333%";
@@ -16,21 +15,9 @@ const articleContainerPadding = `
   padding-right: ${spacing(2)};
 `;
 
-const showHideToggle = (component, show, styles = "") =>
-  withResponsiveStyles(component, {
-    base: () => `
-      display: ${show ? "flex" : "none"};
-    `,
-    wideUp: () => `
-      display: ${show ? "none" : "flex"};
-      ${styles}
-    `
-  });
-
 export default {
   mediumBpWidth,
   wideBpWidth,
   mediumBpPositioning,
-  articleContainerPadding,
-  showHideToggle
+  articleContainerPadding
 };
