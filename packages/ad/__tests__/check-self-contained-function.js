@@ -1,6 +1,6 @@
 import { Linter } from "eslint";
 
-export const getSerialisableFunctionErrors = f => {
+export const getSelfContainedFunctionErrors = f => {
   const linter = new Linter();
   // eslint can't handle top level unnamed function
   const source = String(f).replace(/^function\s*\(/, "function _(");
@@ -33,8 +33,11 @@ ${String(source)
   console.error(message);
 };
 
-export const expectFunctionToBeSerialisable = f => {
-  const errors = getSerialisableFunctionErrors(f);
+export const expectFunctionToBeSelfContained = f => {
+  const errors = getSelfContainedFunctionErrors(f);
   reportErrors(errors);
   expect(errors).toEqual([]);
+  // Object.assign transpiles to _extends global helper in react native compile, but
+  // not in web compile, so getSelfContainedFunctionErrors doesn't catch the error
+  expect(String(f)).not.toContain("Object.assign");
 };

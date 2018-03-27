@@ -3,13 +3,14 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
-import { fontSizes } from "@times-components/styleguide";
+import { spacing, fontSizes, colours } from "@times-components/styleguide";
 import Ad, { AdComposer } from "./ad";
 import Placeholder from "./placeholder";
 import NativeDOMContext from "./dom-context";
 import WebDOMContext from "./dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
+import domContextInit from "./ad.stories-domcontext-init";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
@@ -165,45 +166,13 @@ storiesOf("Primitives/Advertisement", module)
   .add("DOMContext", () =>
     withOpenInNewWindow(
       <DOMContext
-        data={{ message: "data value" }}
-        init={args => {
-          const { el, data: { message }, window, eventCallback } = args;
-          return {
-            init() {
-              const worked = message === "data value";
-              el.innerHTML = `
-              <div style="
-                  width: 100%;
-                  height: 100%;
-                  background: ${worked ? "#8C8" : "#C88"};
-                  font-size: ${fontSizes.smallestHeadline}px;
-                  padding: 10px;
-              ">
-                worked=${worked}<br>
-                data.message=${message}<br>
-                window.global1=${window.global1}<br>
-                <button class="renderComplete">call <code>renderComplete()</code></button><br>
-                <button class="logMessages">log messages</button><br>
-                <button class="exception" onclick="throw new Error('bar')"><code>throw new Error("bar");</button><br>
-                <button class="console-error" onclick="console.error('err')"><code>console.error("err");</code></button><br>
-              </div>
-            `;
-              el
-                .getElementsByClassName("renderComplete")[0]
-                .addEventListener("click", () => {
-                  eventCallback("renderComplete");
-                });
-              el
-                .getElementsByClassName("logMessages")[0]
-                .addEventListener("click", () => {
-                  eventCallback("log", "message 1");
-                  eventCallback("log", "message 2");
-                  eventCallback("log", "message 3");
-                  eventCallback("log", "message 4");
-                });
-            }
-          };
+        data={{
+          message: "data value",
+          heading: fontSizes.smallHeadline,
+          padding: spacing(2),
+          background: colours.functional.backgroundPrimary
         }}
+        init={domContextInit}
         onRenderComplete={action("onRenderComplete")}
         width={300}
         height={200}
