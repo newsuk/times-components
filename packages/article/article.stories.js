@@ -2,9 +2,7 @@
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Platform, ScrollView } from "react-native";
-console.log('***** rofl');
 import { addTypenameToDocument } from "apollo-utilities";
-console.log('***** lol', addTypenameToDocument);
 
 import { decorateAction } from "@storybook/addon-actions";
 import { MockedProvider } from "@times-components/utils";
