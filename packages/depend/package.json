@@ -10,7 +10,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --bail --ci --coverage",
-    "transpile": "npm run build",
+    "prepublishOnly": "npm run build",
     "__TODO": "remove"
   },
   "bin": {

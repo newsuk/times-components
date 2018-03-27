@@ -1,2 +1,4 @@
+import Image from './image';
+
 export { default as ModalImage } from './modal-image';
-export default './image';
+export default Image;
