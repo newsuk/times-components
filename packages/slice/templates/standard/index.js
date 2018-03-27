@@ -7,7 +7,7 @@ import standardStyles from "./styles";
 
 const StandardSlice = ({ itemCount, renderItems }) => (
   <View style={styles.container}>
-    {renderItems(config(itemCount)).map(item => (
+    {renderItems(config({ itemCount })).map(item => (
       <View key={item.props.id} style={styles.itemContainer}>
         <View
           style={[
