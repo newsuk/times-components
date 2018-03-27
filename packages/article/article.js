@@ -24,7 +24,7 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData, onRelatedArticlePress) {
+  static renderRow(rowData, onRelatedArticlePress, onAuthorPress) {
     switch (rowData.type) {
       case "leadAsset": {
         let image;
@@ -66,6 +66,7 @@ class ArticlePage extends React.Component {
             byline={byline}
             publishedTime={publishedTime}
             publicationName={publicationName}
+            onAuthorPress={onAuthorPress}
           />
         );
       }
@@ -134,6 +135,7 @@ class ArticlePage extends React.Component {
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
+        onAuthorPress={this.props.onAuthorPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -156,14 +158,16 @@ ArticlePage.propTypes = {
     message: PropTypes.string
   }),
   adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func
+  onRelatedArticlePress: PropTypes.func,
+  onAuthorPress: PropTypes.func
 };
 
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
   error: null,
-  onRelatedArticlePress: () => {}
+  onRelatedArticlePress: () => {},
+  onAuthorPress: () => {}
 };
 
 export { articlePropTypes, articleDefaultProps };
