@@ -721,6 +721,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -1097,6 +1098,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -1473,6 +1475,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -2441,12 +2444,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2596,7 +2603,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2744,12 +2753,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2899,7 +2912,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -3047,12 +3062,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -3202,7 +3221,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -3697,12 +3718,16 @@ exports[`AuthorProfile test on android renders profile content item component 1`
     >
       <View
         style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-          }
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            },
+            "",
+          ]
         }
       >
         <View
@@ -3713,7 +3738,9 @@ exports[`AuthorProfile test on android renders profile content item component 1`
                 "flex": 1,
                 "minWidth": "100%",
               },
-              "",
+              Object {
+                "marginBottom": 10,
+              },
             ]
           }
         >
@@ -3813,12 +3840,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
     >
       <View
         style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-          }
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            },
+            "",
+          ]
         }
       >
         <View
@@ -3829,7 +3860,9 @@ exports[`AuthorProfile test on android renders profile content item component wi
                 "flex": 1,
                 "minWidth": "100%",
               },
-              "",
+              Object {
+                "marginBottom": 10,
+              },
             ]
           }
         >
@@ -3929,12 +3962,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
     >
       <View
         style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-          }
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            },
+            "",
+          ]
         }
       >
         <View
@@ -3945,7 +3982,9 @@ exports[`AuthorProfile test on android renders profile content item component wi
                 "flex": 1,
                 "minWidth": "100%",
               },
-              "",
+              Object {
+                "marginBottom": 10,
+              },
             ]
           }
         >
@@ -4305,6 +4344,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -5080,6 +5120,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -5456,6 +5497,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -5832,6 +5874,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -6684,6 +6727,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -6926,6 +6970,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
@@ -7168,6 +7213,7 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
