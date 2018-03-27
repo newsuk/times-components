@@ -11,12 +11,16 @@ exports[`1. Render a Card 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -166,7 +170,9 @@ exports[`1. Render a Card 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": 10,
+          },
         ]
       }
     >
@@ -190,6 +196,7 @@ exports[`2. Render the loading state 1`] = `
       "display": "flex",
       "flexDirection": "row",
       "flexWrap": "wrap",
+      "justifyContent": "flex-end",
     }
   }
 >
@@ -535,12 +542,16 @@ exports[`3. Renders without an image 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -551,7 +562,9 @@ exports[`3. Renders without an image 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": 10,
+          },
         ]
       }
     >
@@ -578,12 +591,16 @@ exports[`4. Renders without an image URL 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -594,7 +611,9 @@ exports[`4. Renders without an image URL 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": 10,
+          },
         ]
       }
     >
@@ -614,12 +633,16 @@ exports[`5. Re-renders after showing the loading state 1`] = `
 <FadeIn>
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -650,7 +673,9 @@ exports[`5. Re-renders after showing the loading state 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": 10,
+          },
         ]
       }
     >
@@ -666,12 +691,16 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
 <FadeIn>
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -702,7 +731,9 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": 10,
+          },
         ]
       }
     >
@@ -718,12 +749,18 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
 <FadeIn>
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        Object {
+          "height": "auto",
+        },
+      ]
     }
   >
     <View
@@ -735,7 +772,8 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
             "minWidth": "100%",
           },
           Object {
-            "marginBottom": 10,
+            "maxWidth": "50%",
+            "minWidth": "auto",
           },
         ]
       }
@@ -752,7 +790,13 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
             "flex": 1,
             "minWidth": "100%",
           },
-          "",
+          Object {
+            "marginBottom": -10,
+            "marginTop": 120,
+            "minWidth": "auto",
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          },
         ]
       }
     >

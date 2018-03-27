@@ -5,15 +5,30 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     display: "flex",
     flexDirection: "row",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: "flex-end"
+  },
+  reversedCardContainer: {
+    height: "auto"
   },
   imageContainer: {
     flex: 1,
     minWidth: "100%"
   },
+  reversedImageContainer: {
+    marginBottom: -10,
+    marginTop: 120,
+    minWidth: "auto",
+    paddingLeft: 10,
+    paddingRight: 10
+  },
   contentContainer: {
     flex: 1,
     minWidth: "100%"
+  },
+  reversedContentContainer: {
+    maxWidth: "50%",
+    minWidth: "auto"
   },
   headerContainer: {
     height: 24,

@@ -99,12 +99,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -221,7 +225,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -423,12 +429,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -439,7 +449,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -655,12 +667,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -777,7 +793,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -979,12 +997,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -995,7 +1017,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -1169,12 +1193,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -1185,7 +1213,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -1401,12 +1431,16 @@ exports[`Related articles tests on ios Lead and two template should render one l
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -1523,7 +1557,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -1772,12 +1808,16 @@ exports[`Related articles tests on ios Standard template should render one relat
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -1788,7 +1828,9 @@ exports[`Related articles tests on ios Standard template should render one relat
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2037,12 +2079,16 @@ exports[`Related articles tests on ios Standard template should render three rel
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2053,7 +2099,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2255,12 +2303,16 @@ exports[`Related articles tests on ios Standard template should render three rel
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2271,7 +2323,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2486,12 +2540,16 @@ exports[`Related articles tests on ios Standard template should render three rel
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2502,7 +2560,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2762,12 +2822,16 @@ exports[`Related articles tests on ios Standard template should render two relat
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2778,7 +2842,9 @@ exports[`Related articles tests on ios Standard template should render two relat
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
@@ -2978,12 +3044,16 @@ exports[`Related articles tests on ios Standard template should render two relat
           >
             <View
               style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                }
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
               }
             >
               <View
@@ -2994,7 +3064,9 @@ exports[`Related articles tests on ios Standard template should render two relat
                       "flex": 1,
                       "minWidth": "100%",
                     },
-                    "",
+                    Object {
+                      "marginBottom": 10,
+                    },
                   ]
                 }
               >
