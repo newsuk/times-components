@@ -11,6 +11,9 @@ import pagedResult from "../paged-result";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 describe("AuthorProfile test on web", () => {
+  beforeAll(() => jest.useRealTimers());
+  afterAll(() => jest.useFakeTimers());
+
   test(AuthorProfileContent);
 
   const makeAuthor = ({ withImages } = {}) => ({
