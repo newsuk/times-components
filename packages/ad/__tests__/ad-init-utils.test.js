@@ -25,7 +25,10 @@ describe("AdInit.utils", () => {
         throw new Error("lala");
       });
     utils.createScriptElement("mock-uri");
-    expect(initOptions.eventCallback).toHaveBeenCalledWith("log", "Could not insert script \"mock-uri\" (Error: lala) - could be caused by ad blocker");
+    expect(initOptions.eventCallback).toHaveBeenCalledWith(
+      "log",
+      'Could not insert script "mock-uri" (Error: lala) - could be caused by ad blocker'
+    );
   });
 
   it("Resolves the promise on script element load event", done => {

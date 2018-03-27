@@ -45,7 +45,9 @@ const adInit = args => {
         } catch (e) {
           eventCallback(
             "log",
-            `Could not insert script "${scriptUri}" (${e}) - could be caused by ad blocker`
+            `Could not insert script "${scriptUri}" (${
+              e
+            }) - could be caused by ad blocker`
           );
         }
       },
