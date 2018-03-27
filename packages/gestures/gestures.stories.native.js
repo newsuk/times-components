@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fontSizes } from "@times-components/styleguide";
-import Gestures from "./gestures";
+import Gestures from "./src/gestures";
 
 const styles = StyleSheet.create({
   gestures: {
