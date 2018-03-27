@@ -33,32 +33,52 @@ export const getSupportConfig = () => ({
 
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
-    base: () => `
-      .opinionImageContainerClass {
-        bottom: 0;
-        margin-bottom: -10px;
-        min-width: 113px;
-        position: absolute;
-        right: 0;
-      }
+    base: () => {
+      const getOpinionImageStyle = () => {
+        if (supportCount === 0)
+          return `
+          margin-bottom: -10px;
+        `;
+        if (supportCount === 1)
+          return `
+          margin-bottom: 6px;
+        `;
+        return `
+          margin-bottom: 6px;
+        `;
+      };
+      return `
+        .opinionContentContainerClass {
+          min-width: 60%;
+        }
 
-      .supportImageContainerClass {
-        display: none;
-      }
+        .opinionImageContainerClass {
+          align-self: flex-end;
+          bottom: 0;
+          max-width: 113px;
+          min-width: 113px;
+          position: relative;
+          ${getOpinionImageStyle()}
+        }
 
-      .supportSummaryClass {
-        display: none;
-      }
+        .supportImageContainerClass {
+          display: none;
+        }
 
-      .summaryHidden {
-        display: none;
-      }
+        .supportSummaryClass {
+          display: none;
+        }
 
-      .opinionSummary125Class {
-        display: block;
-        width: 60%;
-      }
-    `,
+        .summaryHidden {
+          display: none;
+        }
+
+        .opinionSummary125Class {
+          display: block;
+          width: 60%;
+        }
+      `;
+    },
     mediumUp: () => {
       const getOpinionImageStyle = () => {
         if (supportCount === 0)
@@ -70,6 +90,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
+          margin-bottom: 15px;
           min-width: 152px;
         `;
       };
@@ -115,7 +136,6 @@ export const getConfigWrapper = ({ supportCount }) => {
         `;
         return `
           min-width: 177px;
-          top: 8px;
         `;
       };
 
