@@ -1,6 +1,6 @@
 import adInitOriginal from "../ad-init";
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
-import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
+import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
 
 jest.useFakeTimers();
 
@@ -12,8 +12,8 @@ describe("AdInit", () => {
     ({ initOptions, mock } = makeAdInitMocks());
   });
 
-  it("is serialisable", () => {
-    expectFunctionToBeSerialisable(adInitOriginal);
+  it("is self-contained", () => {
+    expectFunctionToBeSelfContained(adInitOriginal);
   });
 
   it("performs page-level setup for the first slot only", () => {
