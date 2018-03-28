@@ -2,6 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import ArticleSummary, { ArticleSummaryContent, summarise } from "../";
 import defaultFixture from "../fixtures/default";
+import opinionBylineFixture from "../fixtures/opinion-byline";
 import articleMultiFixture from "../fixtures/article-multi";
 import emptyParagraphFixture from "../fixtures/article-empty-paragraph";
 import noBylineFixture from "../fixtures/no-byline";
@@ -37,7 +38,7 @@ export default () => {
 
   it("renders an article-summary with opinion byline", () => {
     const tree = renderer
-      .create(<ArticleSummary {...defaultFixture} isOpinionByline />)
+      .create(<ArticleSummary {...opinionBylineFixture} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

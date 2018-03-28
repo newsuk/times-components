@@ -1261,6 +1261,52 @@ exports[`Article Summary test on ios renders an article-summary with opinion byl
     </Text>
   </View>
   <Text
+    accessible={true}
+    allowFontScaling={true}
+    className={undefined}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+  <Text
     accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
@@ -1328,53 +1374,6 @@ exports[`Article Summary test on ios renders an article-summary with opinion byl
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    className={undefined}
-    ellipsizeMode="tail"
-    style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
-    }
-  >
-    <Text
-      accessibilityRole="link"
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      , Environment Editor
-    </Text>
   </Text>
 </View>
 `;
