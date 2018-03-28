@@ -149,6 +149,121 @@ exports[`Render a loading Card 1`] = `
 </View>
 `;
 
+exports[`Render a loading Card 2`] = `
+<View
+  style={74}
+>
+  <View
+    className=""
+    style={
+      Array [
+        78,
+        "",
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          80,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+          82,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Render a loading Card 3`] = `
+<View
+  style={74}
+>
+  <View
+    className=""
+    style={
+      Array [
+        78,
+        79,
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          80,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+          82,
+        ]
+      }
+    />
+  </View>
+  <View
+    className=""
+    style={
+      Array [
+        76,
+        77,
+      ]
+    }
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      style={Object {}}
+      uri=""
+    />
+  </View>
+</View>
+`;
+
 exports[`Render the loading state 1`] = `
 <Loading
   contentContainerClass=""

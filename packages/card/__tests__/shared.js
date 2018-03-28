@@ -108,7 +108,7 @@ export default () => {
     const testImageSize = 620;
 
     component.setProps({
-      imageSize: testImageSize
+      imageSize: null
     });
 
     expect(
@@ -116,7 +116,7 @@ export default () => {
         .find("TimesImage")
         .at(0)
         .props().uri
-    ).toEqual(`${cardProps.image.uri}&resize=${testImageSize}`);
+    ).toEqual(`${cardProps.image.uri}`);
   });
 
   it("should re-render after showing the loading state", () => {
@@ -164,6 +164,26 @@ export default () => {
   it("should render a loading card", () => {
     const component = shallow(
       <Loading {...cardProps}>
+        <span>A card</span>
+      </Loading>
+    );
+
+    expect(component).toMatchSnapshot("Render a loading Card");
+  });
+
+  it("should render a loading card with no image", () => {
+    const component = shallow(
+      <Loading {...cardProps} showImage={false}>
+        <span>A card</span>
+      </Loading>
+    );
+
+    expect(component).toMatchSnapshot("Render a loading Card");
+  });
+
+  it("should render a reversed loading card", () => {
+    const component = shallow(
+      <Loading {...cardProps} isReversed>
         <span>A card</span>
       </Loading>
     );
