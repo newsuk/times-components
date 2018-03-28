@@ -15,7 +15,10 @@ class BrightcoveVideo extends Component {
    */
   static getNativeBrightcoveComponent() {
     if (!BrightcoveVideo.RNTBrightcove) {
-      BrightcoveVideo.RNTBrightcove = requireNativeComponent(nativeClassName, null);
+      BrightcoveVideo.RNTBrightcove = requireNativeComponent(
+        nativeClassName,
+        null
+      );
     }
 
     return BrightcoveVideo.RNTBrightcove;
