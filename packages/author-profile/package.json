@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.53.5",
+  "version": "0.53.6",
   "description": "Author info along with articles they have written",
   "main": "author-profile",
   "scripts": {
@@ -62,8 +62,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.21.5",
-    "@times-components/author-head": "0.22.4",
+    "@times-components/article-summary": "0.21.6",
+    "@times-components/author-head": "0.22.5",
     "@times-components/card": "0.24.3",
     "@times-components/error-view": "0.9.0",
     "@times-components/gradient": "0.8.0",
