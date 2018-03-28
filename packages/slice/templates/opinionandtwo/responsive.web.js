@@ -2,7 +2,7 @@ import { View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 
 export const getContainer = ({ supportCount }) => {
   const Container = withResponsiveStyles(View, {
@@ -11,8 +11,8 @@ export const getContainer = ({ supportCount }) => {
       flex-direction: column;
       flex-wrap: wrap;
       height: auto;
-      padding-bottom: 10px;
-      padding-top: 10px;
+      padding-bottom: ${spacing(2)}px;
+      padding-top: ${spacing(2)}px;
       width: 100%;
     `,
     mediumUp: () => `
@@ -32,8 +32,8 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
     base: () => `
       flex: 1;
       flex-grow: 1;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: ${spacing(2)}px;
+      padding-right: ${spacing(2)}px;
       width: ${hasSupports ? "auto" : "100%"};
     `,
     mediumUp: () => {
@@ -45,16 +45,16 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
       const withSupportsStyle = `
         flex-basis: 0 !important;
         flex-grow: ${supportCount === 1 ? "3" : "1"};
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: ${spacing(2)}px;
+        padding-right: ${spacing(2)}px;
       `;
       const twoSupportStyle = `
         border-bottom-color: ${colours.functional.keyline};
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        margin-bottom: 10px;
+        margin-bottom: ${spacing(2)}px;
         min-width: 100%;
-        padding-bottom: 10px;
+        padding-bottom: ${spacing(2)}px;
         padding-left: 0;
         padding-right: 0;
       `;
@@ -68,8 +68,8 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
       margin-bottom: 0;
       min-width: auto;
       padding-bottom: 0;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: ${spacing(2)}px;
+      padding-right: ${spacing(2)}px;
     `
   });
   OpinionContainer.displayName = "OpinionContainer";
@@ -83,8 +83,8 @@ export const getSeparator = ({ itemCount }) => {
       border-bottom-style: solid;
       border-bottom-width: 1px;
       flex: 1;
-      margin-bottom: 10px;
-      margin-top: 10px;
+      margin-bottom: ${spacing(2)}px;
+      margin-top: ${spacing(2)}px;
       min-width: auto;
     `,
     mediumUp: () => `
@@ -136,22 +136,22 @@ export const getSupportContainer = ({ index, supportCount }) => {
         border-top-color: ${colours.functional.keyline};
         border-top-style: solid;
         border-top-width: 1px;
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: ${spacing(2)}px;
+        padding-top: ${spacing(2)}px;
       `;
 
       return `
         flex: 1;
         flex-wrap: wrap;
         min-height: auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: ${spacing(2)}px;
+        padding-right: ${spacing(2)}px;
         ${index === 1 ? secondSupportStyle : ``}
       `;
     },
     mediumUp: () => {
       const firstSupportStyle = `
-        padding-left: ${supportCount === 2 ? "0" : "10px"};
+        padding-left: ${supportCount === 2 ? `0` : `${spacing(2)}px`};
       `;
 
       const secondSupportStyle = `
@@ -159,14 +159,14 @@ export const getSupportContainer = ({ index, supportCount }) => {
         border-left-style: solid;
         border-left-width: 1px;
         border-top: none;
-        margin-left: 10px;
+        margin-left: ${spacing(2)}px;
         margin-top: 0;
-        padding-right: ${supportCount === 2 ? "0" : "10px"};
+        padding-right: ${supportCount === 2 ? `0` : `${spacing(2)}px`};
         padding-top: 0;
       `;
       const oneSupportStyle = `
         max-width: 100%;
-        padding-right: 10px;
+        padding-right: ${spacing(2)}px;
       `;
       const twoSupportStyle = `
         max-width: 50%;
@@ -180,10 +180,10 @@ export const getSupportContainer = ({ index, supportCount }) => {
     },
     wideUp: () => {
       const paddingRightStyle = `
-        padding-right: 10px;
+        padding-right: ${spacing(2)}px;
       `;
       return `
-        padding-left: 10px;
+        padding-left: ${spacing(2)}px;
         ${index === 1 ? paddingRightStyle : ``}
         ${supportCount === 1 ? paddingRightStyle : ``}
       `;

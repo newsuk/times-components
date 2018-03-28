@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 const opinionSummaryConfig = {
   1: [125, 160],
@@ -68,7 +69,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
         .opinionSummary125Class {
           display: block;
-          padding-right: 20px;
+          padding-right: ${spacing(4)}px;
           width: 60%;
         }
       `;
@@ -91,7 +92,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           ${getOpinionImageStyle()}
         }
         .opinionHeadlineClass {
-          padding-right: 30px;
+          padding-right: ${spacing(6)}px;
           width: 80%;
         }
       `;
@@ -107,7 +108,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: 15px;
+          margin-bottom: ${spacing(3)}px;
           min-width: 152px;
         `;
       };
@@ -155,7 +156,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionImageContainerClass {
           min-width: auto;
           position: relative;
-          margin-bottom: -10px;
+          margin-bottom: ${spacing(-2)}px;
           max-width: 167px;
           ${getOpinionImageStyle()}
         }

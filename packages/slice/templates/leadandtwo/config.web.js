@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 const leadSummaryConfig = {
   1: [125],
@@ -41,12 +42,12 @@ export const getConfigWrapper = ({ supportCount }) => {
     `,
     mediumUp: () => {
       const withSupportsImageStyle = `
-        margin-bottom: 10px;
+        margin-bottom: ${spacing(2)}px;
         min-width: 370px;
       `;
 
       const withoutSupportsImageStyle = `
-        padding-right: 10px;
+        padding-right: ${spacing(2)}px;
       `;
 
       return `
@@ -68,7 +69,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .leadContentContainerClass {
           flex-basis: 0 !important;
           flex-grow: 1;
-          margin-bottom: 10px;
+          margin-bottom: ${spacing(2)}px;
           min-width: 300px;
         }
         .supportImageContainerClass {
@@ -92,7 +93,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         margin-bottom: 0;
         max-width: 185px;
         min-width: auto;
-        padding-right: 10px;
+        padding-right: ${spacing(2)}px;
       `;
 
       const twoSupportContentStyle = `
@@ -103,7 +104,7 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       return `
         .leadImageContainerClass {
-          padding-right: 10px;
+          padding-right: ${spacing(2)}px;
           ${supportCount === 2 ? twoLeadImageStyle : ``}
         }
         .supportImageContainerClass {
