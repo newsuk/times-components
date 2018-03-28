@@ -21,9 +21,6 @@ const renderComponent = child =>
   );
 
 describe("AuthorArticlesWithImagesProvider", () => {
-  beforeAll(() => jest.useRealTimers());
-  afterAll(() => jest.useFakeTimers());
-
   it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {

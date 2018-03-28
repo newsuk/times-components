@@ -31,9 +31,6 @@ const renderComponent = child =>
   );
 
 describe("ArticleProvider", () => {
-  beforeAll(() => jest.useRealTimers());
-  afterAll(() => jest.useFakeTimers());
-
   it("returns query result", done => {
     renderComponent(({ isLoading, article }) => {
       if (!isLoading) {

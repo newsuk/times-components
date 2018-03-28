@@ -31,6 +31,9 @@ const Connected = connect(query);
 const Debounced = props => <Connected {...props} debounceTimeMs={1000} />;
 
 describe("provider execution order tests", () => {
+  beforeAll(() => jest.useFakeTimers());
+  afterAll(() => jest.useRealTimers());
+
   it("should resolve in order", async () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
       slug: "1"

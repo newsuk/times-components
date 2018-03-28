@@ -47,9 +47,6 @@ const renderComponent = (child, customMocks) =>
   renderer.create(constructComponent(child, customMocks));
 
 describe("Provider Tests", () => {
-  beforeAll(() => jest.useRealTimers());
-  afterAll(() => jest.useFakeTimers());
-
   it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {
