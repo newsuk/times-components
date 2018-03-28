@@ -10,7 +10,6 @@ export const SliceContainer = withResponsiveStyles(View, {
     border-bottom-width: 1px;
     flex: 1;
     justify-content: center;
-    margin-bottom: 100px;
   `,
   dvp: () => `
     border-bottom-width: 0.5px;
