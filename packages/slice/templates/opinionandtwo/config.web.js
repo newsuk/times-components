@@ -25,6 +25,8 @@ export const getOpinionConfig = ({ itemCount }) => ({
 });
 
 export const getSupportConfig = () => ({
+  bylineClass: "supportBylineClass",
+  contentContainerClass: "supportContentContainerClass",
   imageContainerClass: "supportImageContainerClass",
   summaryClass: "supportSummaryClass"
 });
@@ -56,8 +58,15 @@ export const getConfigWrapper = ({ supportCount }) => {
           right: 0;
           ${getOpinionImageStyle()}
         }
+        .opinionBylineClass,
+        .supportBylineClass {
+          margin-bottom: 0;
+        }
         .supportImageContainerClass {
           display: none;
+        }
+        .supportContentContainerClass {
+          margin-bottom: 0;
         }
         .supportSummaryClass {
           display: none;
