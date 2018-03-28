@@ -700,11 +700,10 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -801,6 +800,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -1044,11 +1044,10 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -1145,6 +1144,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -1388,11 +1388,10 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -1489,6 +1488,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -2337,11 +2337,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2443,11 +2442,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2616,11 +2614,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2722,11 +2719,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2895,11 +2891,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3001,11 +2996,10 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3521,11 +3515,10 @@ exports[`AuthorProfile test on ios renders profile content item component 1`] = 
             Array [
               Object {
                 "flex": 1,
+                "marginBottom": 0,
                 "minWidth": "100%",
               },
-              Object {
-                "marginBottom": 10,
-              },
+              "",
             ]
           }
         >
@@ -3646,11 +3639,10 @@ exports[`AuthorProfile test on ios renders profile content item component with a
             Array [
               Object {
                 "flex": 1,
+                "marginBottom": 0,
                 "minWidth": "100%",
               },
-              Object {
-                "marginBottom": 10,
-              },
+              "",
             ]
           }
         >
@@ -3771,11 +3763,10 @@ exports[`AuthorProfile test on ios renders profile content item component with n
             Array [
               Object {
                 "flex": 1,
+                "marginBottom": 0,
                 "minWidth": "100%",
               },
-              Object {
-                "marginBottom": 10,
-              },
+              "",
             ]
           }
         >
@@ -4145,11 +4136,10 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -4246,6 +4236,7 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -4888,11 +4879,10 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -4989,6 +4979,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -5232,11 +5223,10 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -5333,6 +5323,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -5576,11 +5567,10 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 10,
                   "minWidth": "100%",
                 },
-                Object {
-                  "marginBottom": 10,
-                },
+                "",
               ]
             }
           >
@@ -5677,6 +5667,7 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -6395,6 +6386,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -6638,6 +6630,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",
@@ -6881,6 +6874,7 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
               Array [
                 Object {
                   "flex": 1,
+                  "marginBottom": 0,
                   "minWidth": "100%",
                 },
                 "",

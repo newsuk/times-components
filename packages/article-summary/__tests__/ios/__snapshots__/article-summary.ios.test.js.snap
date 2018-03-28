@@ -108,13 +108,16 @@ exports[`Article Summary test on ios renders an article-summary component with a
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -329,13 +332,16 @@ exports[`Article Summary test on ios renders an article-summary component with c
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -491,13 +497,16 @@ exports[`Article Summary test on ios renders an article-summary component with e
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -771,13 +780,16 @@ exports[`Article Summary test on ios renders an article-summary component with m
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -974,13 +986,16 @@ exports[`Article Summary test on ios renders an article-summary component with n
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -1170,13 +1185,16 @@ exports[`Article Summary test on ios renders an article-summary component with n
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -1317,13 +1335,16 @@ exports[`Article Summary test on ios renders an article-summary with opinion byl
     className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
   cardContainer: {
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
-    marginBottom: 10,
+    marginBottom: spacing(2),
     minWidth: "100%"
   },
   reversedImageContainer: {
@@ -25,16 +26,16 @@ const styles = StyleSheet.create({
     minWidth: "100%"
   },
   reversedContentContainer: {
-    marginBottom: 10
+    marginBottom: spacing(2)
   },
   headerContainer: {
     height: 24,
-    marginBottom: 10,
+    marginBottom: spacing(2),
     maxWidth: 300
   },
   textContainer: {
     height: 10,
-    marginBottom: 10
+    marginBottom: spacing(2)
   },
   lastBar: {
     marginBottom: 0,
