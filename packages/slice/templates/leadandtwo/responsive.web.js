@@ -110,7 +110,7 @@ export const getSupportContainer = ({ index }) => {
       padding-right: 0;
     `,
     wideUp: () => `
-      margin-top: ${index > 0 ? spacing(1) : "0"};
+      margin-top: ${index > 0 ? spacing(2) : "0"};
     `
   });
   SupportContainer.displayName = "SupportContainer";

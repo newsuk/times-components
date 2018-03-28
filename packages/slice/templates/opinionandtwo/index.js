@@ -7,9 +7,7 @@ import { propTypes, defaultProps } from "./proptypes";
 const OpinionAndTwoSlice = ({ opinion, renderSupports }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
-      <View style={styles.item}>
-        {opinion(opinionConfig)}
-      </View>
+      <View style={styles.item}>{opinion(opinionConfig)}</View>
     </View>
     {renderSupports(supportConfig).map(support => (
       <View key={support.props.id} style={styles.itemContainer}>

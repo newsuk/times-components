@@ -44,7 +44,7 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
       `;
       const withSupportsStyle = `
         flex-basis: 0 !important;
-        flex-grow: ${supportCount === 1 ? "3" : "2"};
+        flex-grow: ${supportCount === 1 ? "3" : "1"};
         padding-left: 10px;
         padding-right: 10px;
       `;
@@ -63,22 +63,14 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         ${supportCount === 2 ? twoSupportStyle : ``}
       `;
     },
-    wideUp: () => {
-      const getFlexGrow = () => {
-        if (supportCount === 0) return "1.5";
-        if (supportCount === 1) return "2.75";
-        return "2";
-      };
-      return `
-        border-bottom: none;
-        flex-grow: ${getFlexGrow()};
-        margin-bottom: 0;
-        min-width: auto;
-        padding-bottom: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-      `;
-    }
+    wideUp: () => `
+      border-bottom: none;
+      margin-bottom: 0;
+      min-width: auto;
+      padding-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    `
   });
   OpinionContainer.displayName = "OpinionContainer";
   return OpinionContainer;
@@ -130,7 +122,7 @@ export const getSupportsContainer = ({ supportCount }) => {
       `;
     },
     wideUp: () => `
-      min-width: ${supportCount === 1 ? "400px" : "50%"};
+      min-width: ${supportCount === 1 ? "400px" : "auto"};
     `
   });
   SupportsContainer.displayName = "SupportsContainer";
