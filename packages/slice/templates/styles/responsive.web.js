@@ -7,7 +7,7 @@ export const SliceContainer = withResponsiveStyles(View, {
     align-items: center;
     border-style: solid;
     border-bottom-color: ${colours.functional.keyline};
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
+    border-bottom-width: 1px;
     flex: 1;
     justify-content: center;
   `
