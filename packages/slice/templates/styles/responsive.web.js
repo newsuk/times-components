@@ -24,8 +24,8 @@ export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
       border-bottom-width: 1px;
       border-bottom-color: ${colours.functional.keyline};
       flex: 1;
-      margin-bottom: ${itemCount >= 3 ? spacing(3) : spacing(2)};
-      margin-top: ${spacing(3)};
+      margin-bottom: ${spacing(2)};
+      margin-top: ${spacing(2)};
       min-width: auto;
     `,
     mediumUp: () => `

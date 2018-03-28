@@ -11,7 +11,7 @@ export const getContainer = ({ hasSupports }) => {
       flex-direction: column;
       flex-wrap: wrap;
       height: auto;
-      padding-bottom: ${spacing(1)};
+      padding-bottom: ${spacing(2)};
       padding-top: ${spacing(2)};
       width: 100%;
     `,
@@ -93,7 +93,7 @@ export const getSupportContainer = ({ index }) => {
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: ${colours.functional.keyline};
-        margin-top: ${spacing(1)};
+        margin-top: ${spacing(2)};
         padding-top: ${spacing(2)};
       `;
 
