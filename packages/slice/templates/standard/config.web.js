@@ -9,6 +9,7 @@ const summaryConfig = {
 };
 
 export const getConfig = ({ itemCount }) => ({
+  bylineClass: "standardBylineClass",
   contentContainerClass: "contentContainerClass",
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",
@@ -22,6 +23,12 @@ export const getConfigWrapper = ({ itemCount }) => {
     base: () => `
       .imageContainerClass {
         display: ${itemCount >= 3 ? "none" : "block"};
+      }
+      .contentContainerClass {
+        margin-bottom: 0;
+      }
+      .standardBylineClass {
+        margin-bottom: 0;
       }
       .summaryHidden {
         display: none;
