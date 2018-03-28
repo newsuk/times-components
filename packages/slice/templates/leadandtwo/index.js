@@ -12,7 +12,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => (
     </View>
     {renderSupports(supportConfig).map(support => (
       <View key={support.props.id} style={styles.itemContainer}>
-        <View style={[styles.item, leadAndTwoStyles.supports]}>{support}</View>
+        <View style={styles.item}>{support}</View>
       </View>
     ))}
   </View>

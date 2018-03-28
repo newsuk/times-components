@@ -10,10 +10,7 @@ const StandardSlice = ({ itemCount, renderItems }) => (
     {renderItems(config({ itemCount })).map(item => (
       <View key={item.props.id} style={styles.itemContainer}>
         <View
-          style={[
-            styles.item,
-            itemCount >= 3 ? standardStyles.multipleItems : ""
-          ]}
+          style={styles.item}
         >
           {item}
         </View>

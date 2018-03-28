@@ -381,18 +381,13 @@ exports[`Related articles tests on ios Lead and two template should render one l
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -951,18 +946,13 @@ exports[`Related articles tests on ios Lead and two template should render one l
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1148,18 +1138,13 @@ exports[`Related articles tests on ios Lead and two template should render one l
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1767,16 +1752,13 @@ exports[`Related articles tests on ios Standard template should render one relat
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2143,18 +2125,13 @@ exports[`Related articles tests on ios Standard template should render three rel
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2368,18 +2345,13 @@ exports[`Related articles tests on ios Standard template should render three rel
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2606,18 +2578,13 @@ exports[`Related articles tests on ios Standard template should render three rel
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2891,16 +2858,13 @@ exports[`Related articles tests on ios Standard template should render two relat
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -3220,16 +3184,13 @@ exports[`Related articles tests on ios Standard template should render two relat
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View

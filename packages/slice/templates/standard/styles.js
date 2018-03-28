@@ -1,6 +1,6 @@
 const styles = {
   multipleItems: {
-    paddingTop: 15
+    paddingTop: 10
   }
 };
 

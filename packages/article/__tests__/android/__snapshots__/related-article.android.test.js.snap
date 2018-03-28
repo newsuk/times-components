@@ -412,18 +412,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1011,18 +1006,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1206,18 +1196,13 @@ exports[`Related articles tests on android Lead and two template should render o
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -1854,16 +1839,13 @@ exports[`Related articles tests on android Standard template should render one r
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2261,18 +2243,13 @@ exports[`Related articles tests on android Standard template should render three
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2484,18 +2461,13 @@ exports[`Related articles tests on android Standard template should render three
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -2720,18 +2692,13 @@ exports[`Related articles tests on android Standard template should render three
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingTop": 15,
-            },
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -3003,16 +2970,13 @@ exports[`Related articles tests on android Standard template should render two r
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
@@ -3363,16 +3327,13 @@ exports[`Related articles tests on android Standard template should render two r
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            "",
-          ]
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
