@@ -3,7 +3,6 @@ import { View } from "react-native";
 import styles from "../styles";
 import config from "./config";
 import propTypes from "./proptypes";
-import standardStyles from "./styles";
 
 const StandardSlice = ({ itemCount, renderItems }) => (
   <View style={styles.container}>

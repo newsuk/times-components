@@ -365,18 +365,13 @@ exports[`7. Opinion and two template renders a single child element 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -401,18 +396,13 @@ exports[`8. Opinion and two template renders two child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -464,18 +454,13 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 10,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
