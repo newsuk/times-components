@@ -1,6 +1,6 @@
 /* globals withComponent test beforeEach driver */
 import React from "react";
-import BrightcovePlayer from "./brightcove-player";
+import BrightcovePlayer from "./src/brightcove-player";
 import VideoWithExternalControls from "./fixtures/video-with-external-controls";
 
 const policyKey =
