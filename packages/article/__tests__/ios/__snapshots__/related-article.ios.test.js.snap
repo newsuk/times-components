@@ -117,11 +117,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -223,11 +222,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -443,11 +441,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -682,11 +679,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -788,11 +784,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1008,11 +1003,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1200,11 +1194,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1439,11 +1432,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1545,11 +1537,10 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1814,11 +1805,10 @@ exports[`Related articles tests on ios Standard template should render one relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1920,11 +1910,10 @@ exports[`Related articles tests on ios Standard template should render one relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2187,11 +2176,10 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2407,11 +2395,10 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2640,11 +2627,10 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2920,11 +2906,10 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3026,11 +3011,10 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3246,11 +3230,10 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3352,11 +3335,10 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >

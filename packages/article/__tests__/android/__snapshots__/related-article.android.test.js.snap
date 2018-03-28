@@ -114,11 +114,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -253,11 +252,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -471,11 +469,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -708,11 +705,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -847,11 +843,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1065,11 +1060,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1255,11 +1249,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1492,11 +1485,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1631,11 +1623,10 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -1898,11 +1889,10 @@ exports[`Related articles tests on android Standard template should render one r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2037,11 +2027,10 @@ exports[`Related articles tests on android Standard template should render one r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2302,11 +2291,10 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2520,11 +2508,10 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -2751,11 +2738,10 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3029,11 +3015,10 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3168,11 +3153,10 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3386,11 +3370,10 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >
@@ -3525,11 +3508,10 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
+                      "marginBottom": 10,
                       "minWidth": "100%",
                     },
-                    Object {
-                      "marginBottom": 10,
-                    },
+                    "",
                   ]
                 }
               >

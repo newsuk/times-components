@@ -69,7 +69,11 @@ ArticleSummary.propTypes = {
   }),
   headline: PropTypes.func,
   content: PropTypes.func,
-  bylineProps: PropTypes.shape(articleBylinePropTypes),
+  bylineProps: PropTypes.shape({
+    ...articleBylinePropTypes,
+    bylineClass: PropTypes.string,
+    isOpinionByline: PropTypes.bool
+  }),
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
     publication: PropTypes.string

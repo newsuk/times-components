@@ -47,11 +47,11 @@ class CardComponent extends Component {
       const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
       return (
         <View
+          className={imageContainerClass}
           style={[
             styles.imageContainer,
-            isReversed ? styles.reversedImageContainer : styles.layout
+            isReversed ? styles.reversedImageContainer : ""
           ]}
-          className={imageContainerClass}
         >
           <Image aspectRatio={imageRatio} uri={imageUrl} />
         </View>
@@ -68,11 +68,11 @@ class CardComponent extends Component {
         >
           {!isReversed ? renderImage() : null}
           <View
+            className={contentContainerClass}
             style={[
               styles.contentContainer,
-              isReversed ? styles.reversedContentContainer : styles.layout
+              isReversed ? styles.reversedContentContainer : ""
             ]}
-            className={contentContainerClass}
           >
             {children}
           </View>

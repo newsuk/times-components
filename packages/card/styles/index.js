@@ -13,30 +13,24 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
+    marginBottom: 10,
     minWidth: "100%"
   },
   reversedImageContainer: {
-    marginBottom: -10,
-    marginTop: 120,
-    minWidth: "auto",
-    paddingLeft: 10,
-    paddingRight: 10
+    marginBottom: 0
   },
   contentContainer: {
     flex: 1,
+    marginBottom: 10,
     minWidth: "100%"
   },
   reversedContentContainer: {
-    maxWidth: "50%",
-    minWidth: "auto"
+    marginBottom: 10
   },
   headerContainer: {
     height: 24,
     marginBottom: 10,
     maxWidth: 300
-  },
-  layout: {
-    marginBottom: 10
   },
   textContainer: {
     height: 10,

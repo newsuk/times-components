@@ -22,11 +22,10 @@ exports[`Re-renders after showing the loading state 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -42,11 +41,10 @@ exports[`Re-renders after showing the loading state 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -80,11 +78,10 @@ exports[`Render a Card 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -100,11 +97,10 @@ exports[`Render a Card 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -134,11 +130,10 @@ exports[`Render a loading Card 1`] = `
       Array [
         Object {
           "flex": 1,
+          "marginBottom": 10,
           "minWidth": "100%",
         },
-        Object {
-          "marginBottom": 10,
-        },
+        "",
       ]
     }
   >
@@ -154,6 +149,7 @@ exports[`Render a loading Card 1`] = `
       Array [
         Object {
           "flex": 1,
+          "marginBottom": 10,
           "minWidth": "100%",
         },
         "",
@@ -245,11 +241,10 @@ exports[`Renders Card normally and does not re-render 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -265,11 +260,10 @@ exports[`Renders Card normally and does not re-render 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -305,11 +299,11 @@ exports[`Renders a Card with a reversed layout 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
           Object {
-            "maxWidth": "50%",
-            "minWidth": "auto",
+            "marginBottom": 10,
           },
         ]
       }
@@ -324,14 +318,11 @@ exports[`Renders a Card with a reversed layout 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
           Object {
-            "marginBottom": -10,
-            "marginTop": 120,
-            "minWidth": "auto",
-            "paddingLeft": 10,
-            "paddingRight": 10,
+            "marginBottom": 0,
           },
         ]
       }
@@ -368,11 +359,10 @@ exports[`Renders without an image 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -406,11 +396,10 @@ exports[`Renders without an image URL 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
@@ -444,11 +433,10 @@ exports[`Renders without an image when showImage is false 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          "",
         ]
       }
     >
