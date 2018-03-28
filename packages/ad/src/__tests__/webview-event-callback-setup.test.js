@@ -1,5 +1,5 @@
 import webviewEventCallbackSetup from "../webview-event-callback-setup";
-import { expectFunctionToBeSerialisable } from "./check-serialisable-function";
+import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
 
 const realWindow = window;
 
@@ -33,8 +33,8 @@ describe("webviewEventCallbackSetup", () => {
     jest.useRealTimers();
   });
 
-  it("is serialisable", () => {
-    expectFunctionToBeSerialisable(webviewEventCallbackSetup);
+  it("is self-contained", () => {
+    expectFunctionToBeSelfContained(webviewEventCallbackSetup);
   });
 
   it("sets the eventCallback function on the window", () => {

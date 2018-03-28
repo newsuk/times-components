@@ -15,7 +15,8 @@ const ArticleMetaBase = ({
   byline,
   publishedTime,
   publicationName,
-  RowWrapper
+  RowWrapper,
+  onAuthorPress
 }) => {
   const data = [];
 
@@ -23,7 +24,7 @@ const ArticleMetaBase = ({
     data.push(
       ArticleMetaRow(
         styles.byline,
-        <ArticleByline ast={byline} />,
+        <ArticleByline ast={byline} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
       )
@@ -55,7 +56,8 @@ nodeShape.children = PropTypes.arrayOf(
 ArticleMetaBase.propTypes = {
   byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   publishedTime: PropTypes.string,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  onAuthorPress: PropTypes.func.isRequired
 };
 
 ArticleMetaBase.defaultProps = {

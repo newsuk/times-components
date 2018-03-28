@@ -1,7 +1,7 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "1.12.1",
   "main": "dist/brightcove-video",
+  "version": "2.1.0",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -57,7 +57,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.1",
+    "@times-components/styleguide": "0.5.2",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"

@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.61.0"></a>
+# [0.61.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.60.1...@times-components/article@0.61.0) (2018-03-27)
+
+
+### Features
+
+* Author link press on article byline ([#785](https://github.com/newsuk/times-components/issues/785)) ([7405069](https://github.com/newsuk/times-components/commit/7405069))
+
+
+
+
+<a name="0.60.1"></a>
+## [0.60.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.60.0...@times-components/article@0.60.1) (2018-03-27)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.60.0"></a>
+# [0.60.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.59.3...@times-components/article@0.60.0) (2018-03-27)
+
+
+### Features
+
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+
+
+<a name="0.59.3"></a>
+## [0.59.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.59.2...@times-components/article@0.59.3) (2018-03-27)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.59.2"></a>
 ## [0.59.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.59.1...@times-components/article@0.59.2) (2018-03-26)
 

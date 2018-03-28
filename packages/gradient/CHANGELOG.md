@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.7.4...@times-components/gradient@0.8.0) (2018-03-27)
+
+
+### Features
+
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+
+
 <a name="0.7.4"></a>
 ## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.7.3...@times-components/gradient@0.7.4) (2018-03-26)
 

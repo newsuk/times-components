@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.15.0"></a>
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.14.14...@times-components/image@1.15.0) (2018-03-27)
+
+
+### Features
+
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+
+
 <a name="1.14.14"></a>
 ## [1.14.14](https://github.com/newsuk/times-components/compare/@times-components/image@1.14.13...@times-components/image@1.14.14) (2018-03-26)
 
