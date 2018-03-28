@@ -47,6 +47,9 @@ const touchAndMove = (startTouchPositions, endTouchPositions) => {
 
 export default () => {
   describe("Gestures should", () => {
+    beforeAll(() => jest.useFakeTimers());
+    afterAll(() => jest.useRealTimers());
+
     it("scale correctly when spreading fingers", () => {
       const component = touchAndMove(
         [

@@ -7,6 +7,9 @@ import TealiumSendScheduler from "../tealium-send-scheduler";
 
 module.exports = () => {
   describe("TealiumSendScheduler", () => {
+    beforeAll(() => jest.useFakeTimers());
+    afterAll(() => jest.useRealTimers());
+
     const trackingOptions = {
       enabled: true,
       profile: "times.2017",
