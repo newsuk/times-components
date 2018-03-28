@@ -6,11 +6,19 @@ import propTypes from "./brightcove-player.proptypes";
 import defaults from "./brightcove-player.defaults";
 
 const nativeClassName = "RNTBrightcove";
-const RNTBrightcove = requireNativeComponent(nativeClassName, null);
 
 class BrightcoveVideo extends Component {
+  static RNTBrightcove = null;
+
+  /* Singleton accessor pattern to avoid double
+   * native component loading across packages.
+   */
   static getNativeBrightcoveComponent() {
-    return RNTBrightcove;
+    if (!BrightcoveVideo.RNTBrightcove) {
+      BrightcoveVideo.RNTBrightcove = requireNativeComponent(nativeClassName, null);
+    }
+
+    return BrightcoveVideo.RNTBrightcove;
   }
 
   static getNativeClassName() {
