@@ -27,12 +27,10 @@ const ArticleSummary = props => {
     labelProps
   } = props;
 
-  const { bylineClass, isOpinionByline } = bylineProps;
-
   const renderByline = () => (
     <Text
-      className={bylineClass}
-      style={isOpinionByline ? styles.opinionByline : styles.metaText}
+      className={bylineProps.bylineClass}
+      style={bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText}
     >
       <Byline {...bylineProps} />
     </Text>
@@ -45,7 +43,7 @@ const ArticleSummary = props => {
           <ArticleLabel {...labelProps} />
         </View>
       ) : null}
-      {bylineProps && isOpinionByline ? renderByline() : null}
+      {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
       {content()}
       {datePublicationProps ? (
@@ -57,7 +55,7 @@ const ArticleSummary = props => {
           <DatePublication {...datePublicationProps} />
         </Text>
       ) : null}
-      {bylineProps && !isOpinionByline ? renderByline() : null}
+      {bylineProps && !bylineProps.isOpinionByline ? renderByline() : null}
     </View>
   );
 };
