@@ -25,5 +25,8 @@ export default StyleSheet.create({
     fontSize: 22,
     fontWeight: "400",
     lineHeight: 22
+  },
+  byline: {
+    marginBottom: 0
   }
 });

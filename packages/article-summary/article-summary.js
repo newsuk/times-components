@@ -1,18 +1,19 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import ArticleLabel from "@times-components/article-label";
 import Byline, {
   articleBylinePropTypes
 } from "@times-components/article-byline";
+import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
 import summarise from "./summarise";
-import renderer from "./article-summary-renderer";
-
-import ArticleSummaryHeadline from "./article-summary-headline";
 import ArticleSummaryContent from "./article-summary-content";
+import ArticleSummaryHeadline from "./article-summary-headline";
+import renderer from "./article-summary-renderer";
 import styles from "./styles";
+
+const { style: TextPropTypesStyle } = Text;
 
 function renderAst(ast) {
   return renderTrees(summarise(ast), renderer);
@@ -30,9 +31,10 @@ const ArticleSummary = props => {
   const renderByline = () => (
     <Text
       className={bylineProps.bylineClass}
-      style={
-        bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText
-      }
+      style={[
+        bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText,
+        bylineProps.bylineStyle
+      ]}
     >
       <Byline {...bylineProps} />
     </Text>
@@ -72,6 +74,7 @@ ArticleSummary.propTypes = {
   bylineProps: PropTypes.shape({
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
+    bylineStyle: TextPropTypesStyle,
     isOpinionByline: PropTypes.bool
   }),
   datePublicationProps: PropTypes.shape({

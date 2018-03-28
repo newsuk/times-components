@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    marginBottom: 10,
+    marginBottom: 0,
     minWidth: "100%"
   },
   reversedContentContainer: {

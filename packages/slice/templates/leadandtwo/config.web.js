@@ -8,7 +8,6 @@ const leadSummaryConfig = {
 };
 
 export const getLeadConfig = ({ itemCount }) => ({
-  bylineClass: "leadBylineClass",
   contentContainerClass: "leadContentContainerClass",
   headlineClass: "leadHeadlineClass",
   imageContainerClass: "leadImageContainerClass",
@@ -19,7 +18,6 @@ export const getLeadConfig = ({ itemCount }) => ({
 });
 
 export const getSupportConfig = () => ({
-  bylineClass: "supportBylineClass",
   contentContainerClass: "supportContentContainerClass",
   imageContainerClass: "supportImageContainerClass",
   summaryClass: "supportSummaryClass"
@@ -28,18 +26,8 @@ export const getSupportConfig = () => ({
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
-      .leadContentContainerClass {
-        margin-bottom: 0;
-      }
-      .leadBylineClass,
-      .supportBylineClass {
-        margin-bottom: 0;
-      }
       .supportImageContainerClass {
         display: none;
-      }
-      .supportContentContainerClass {
-        margin-bottom: 0;
       }
       .supportSummaryClass {
         display: none;

@@ -252,7 +252,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -374,13 +374,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -469,7 +474,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -563,13 +568,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -843,7 +853,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -965,13 +975,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1060,7 +1075,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1154,13 +1169,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1249,7 +1269,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1343,13 +1363,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1623,7 +1648,7 @@ exports[`Related articles tests on android Lead and two template should render o
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1745,13 +1770,18 @@ exports[`Related articles tests on android Lead and two template should render o
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2027,7 +2057,7 @@ exports[`Related articles tests on android Standard template should render one r
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2149,13 +2179,18 @@ exports[`Related articles tests on android Standard template should render one r
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2291,7 +2326,7 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2413,13 +2448,18 @@ exports[`Related articles tests on android Standard template should render three
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2508,7 +2548,7 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2643,13 +2683,18 @@ exports[`Related articles tests on android Standard template should render three
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2738,7 +2783,7 @@ exports[`Related articles tests on android Standard template should render three
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2873,13 +2918,18 @@ exports[`Related articles tests on android Standard template should render three
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -3153,7 +3203,7 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -3275,13 +3325,18 @@ exports[`Related articles tests on android Standard template should render two r
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -3508,7 +3563,7 @@ exports[`Related articles tests on android Standard template should render two r
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -3643,13 +3698,18 @@ exports[`Related articles tests on android Standard template should render two r
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text

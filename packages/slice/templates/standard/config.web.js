@@ -9,7 +9,6 @@ const summaryConfig = {
 };
 
 export const getConfig = ({ itemCount }) => ({
-  bylineClass: "standardBylineClass",
   contentContainerClass: "contentContainerClass",
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",
@@ -24,12 +23,6 @@ export const getConfigWrapper = ({ itemCount }) => {
       .imageContainerClass {
         display: ${itemCount >= 3 ? "none" : "block"};
       }
-      .contentContainerClass {
-        margin-bottom: 0;
-      }
-      .standardBylineClass {
-        margin-bottom: 0;
-      }
       .summaryHidden {
         display: none;
       }
@@ -40,6 +33,7 @@ export const getConfigWrapper = ({ itemCount }) => {
     mediumUp: () => {
       const singleItemImageStyle = `
         flex: 1;
+        margin-bottom: 0;
         min-width: auto;
         padding-right: ${spacing(2)};
       `;

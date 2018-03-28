@@ -46,7 +46,12 @@ const RelatedArticleItem = ({
         showImage={showImage}
       >
         <ArticleSummary
-          bylineProps={{ ast: byline, bylineClass, isOpinionByline }}
+          bylineProps={{
+            ast: byline,
+            bylineClass,
+            bylineStyle: styles.byline,
+            isOpinionByline
+          }}
           content={() =>
             showSummary && (
               <View>

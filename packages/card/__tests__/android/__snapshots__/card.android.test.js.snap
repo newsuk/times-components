@@ -41,7 +41,7 @@ exports[`Re-renders after showing the loading state 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -97,7 +97,7 @@ exports[`Render a Card 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -149,7 +149,7 @@ exports[`Render a loading Card 1`] = `
       Array [
         Object {
           "flex": 1,
-          "marginBottom": 10,
+          "marginBottom": 0,
           "minWidth": "100%",
         },
         "",
@@ -260,7 +260,7 @@ exports[`Renders Card normally and does not re-render 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -299,7 +299,7 @@ exports[`Renders a Card with a reversed layout 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           Object {
@@ -359,7 +359,7 @@ exports[`Renders without an image 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -396,7 +396,7 @@ exports[`Renders without an image URL 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -433,7 +433,7 @@ exports[`Renders without an image when showImage is false 1`] = `
         Array [
           Object {
             "flex": 1,
-            "marginBottom": 10,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",

@@ -222,7 +222,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -343,13 +343,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -441,7 +446,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -534,13 +539,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -784,7 +794,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -905,13 +915,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1003,7 +1018,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1096,13 +1111,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1194,7 +1214,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1287,13 +1307,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1537,7 +1562,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -1658,13 +1683,18 @@ exports[`Related articles tests on ios Lead and two template should render one l
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -1910,7 +1940,7 @@ exports[`Related articles tests on ios Standard template should render one relat
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2031,13 +2061,18 @@ exports[`Related articles tests on ios Standard template should render one relat
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2176,7 +2211,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2297,13 +2332,18 @@ exports[`Related articles tests on ios Standard template should render three rel
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2395,7 +2435,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2529,13 +2569,18 @@ exports[`Related articles tests on ios Standard template should render three rel
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -2627,7 +2672,7 @@ exports[`Related articles tests on ios Standard template should render three rel
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -2761,13 +2806,18 @@ exports[`Related articles tests on ios Standard template should render three rel
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -3011,7 +3061,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -3132,13 +3182,18 @@ exports[`Related articles tests on ios Standard template should render two relat
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
@@ -3335,7 +3390,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                   Array [
                     Object {
                       "flex": 1,
-                      "marginBottom": 10,
+                      "marginBottom": 0,
                       "minWidth": "100%",
                     },
                     "",
@@ -3469,13 +3524,18 @@ exports[`Related articles tests on ios Standard template should render two relat
                     className=""
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
                     }
                   >
                     <Text
