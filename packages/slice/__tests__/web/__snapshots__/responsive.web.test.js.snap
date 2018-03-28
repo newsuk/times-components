@@ -20,25 +20,25 @@ exports[`Slice tests on web responsive default template components should render
 
 exports[`Slice tests on web responsive default template components should render ConfigWrapper correctly 1`] = `
 <div
-  className="sc-htoDjs NbKPn rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-htoDjs gXAjOb rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive default template components should render ConfigWrapper correctly 2`] = `
 <div
-  className="sc-dnqmqq eHScKa rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-dnqmqq cPGtSp rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive lead and two template components should render ConfigWrapper correctly 1`] = `
 <div
-  className="sc-cSHVUG ghykxz rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-cSHVUG kwkerW rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive lead and two template components should render ConfigWrapper correctly 2`] = `
 <div
-  className="sc-kAzzGY ePYvVi rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-kAzzGY jdQwTN rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -80,7 +80,7 @@ exports[`Slice tests on web responsive lead and two template components should r
 
 exports[`Slice tests on web responsive lead and two template components should render SupportContainer correctly 2`] = `
 <div
-  className="sc-gZMcBi ZaOGU rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-gZMcBi gwFUHs rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -92,25 +92,31 @@ exports[`Slice tests on web responsive lead and two template components should r
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 1`] = `
 <div
-  className="sc-iAyFgw dwBvQZ rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-iAyFgw QCQly rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 2`] = `
 <div
-  className="sc-hSdWYo iZDXaO rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-hSdWYo STOUM rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+/>
+`;
+
+exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 3`] = `
+<div
+  className="sc-eHgmQL ekffGh rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render Container correctly 1`] = `
 <div
-  className="sc-kGXeez cMwTBJ rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-kGXeez dqpeMl rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render Container correctly 2`] = `
 <div
-  className="sc-kpOJdX idRYTu rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-kpOJdX hEaSnW rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -122,7 +128,7 @@ exports[`Slice tests on web responsive opinion and two template components shoul
 
 exports[`Slice tests on web responsive opinion and two template components should render OpinionContainer correctly 2`] = `
 <div
-  className="sc-ckVGcZ juOjgm rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-ckVGcZ elQfZV rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -134,13 +140,13 @@ exports[`Slice tests on web responsive opinion and two template components shoul
 
 exports[`Slice tests on web responsive opinion and two template components should render Separator correctly 1`] = `
 <div
-  className="sc-chPdSV hzUlSy rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-chPdSV jxrpog rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render Separator correctly 2`] = `
 <div
-  className="sc-kgoBCf dPbXvu rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-kgoBCf cBNuwd rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -152,7 +158,7 @@ exports[`Slice tests on web responsive opinion and two template components shoul
 
 exports[`Slice tests on web responsive opinion and two template components should render SupportContainer correctly 2`] = `
 <div
-  className="sc-kkGfuU kZZXdb rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-kkGfuU cVLCzC rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
@@ -170,18 +176,18 @@ exports[`Slice tests on web responsive opinion and two template components shoul
 
 exports[`Slice tests on web responsive shared components should render Separator correctly 1`] = `
 <div
-  className="sc-ifAKCX cyoNKq rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-ifAKCX hiPOJn rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive shared components should render Separator correctly 2`] = `
 <div
-  className="sc-EHOje dtNetv rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-EHOje jUATPb rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;
 
 exports[`Slice tests on web responsive shared components should render SliceContainer correctly 1`] = `
 <div
-  className="sc-bwzfXH gUcZih rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  className="sc-bwzfXH fjmBje rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 />
 `;

@@ -3,9 +3,9 @@ import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   itemContainer: {
-    borderStyle: "solid",
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: StyleSheet.hairlineWidth,
+    borderStyle: "solid",
     width: "100%"
   },
   item: {

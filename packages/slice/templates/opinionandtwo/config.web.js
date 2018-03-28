@@ -18,7 +18,6 @@ export const getOpinionConfig = ({ itemCount }) => ({
   imageContainerClass: "opinionImageContainerClass",
   isOpinionByline: true,
   isReversed: true,
-  summaryClass: "opinionSummaryClass",
   summaryConfig: {
     lengths: opinionSummaryConfig[itemCount],
     type: "opinion"
@@ -26,8 +25,6 @@ export const getOpinionConfig = ({ itemCount }) => ({
 });
 
 export const getSupportConfig = () => ({
-  contentContainerClass: "supportContentContainerClass",
-  headlineClass: "supportHeadlineClass",
   imageContainerClass: "supportImageContainerClass",
   summaryClass: "supportSummaryClass"
 });
@@ -52,7 +49,6 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionContentContainerClass {
           min-height: 250px;
         }
-
         .opinionImageContainerClass {
           bottom: 0;
           min-width: 115px;
@@ -60,19 +56,15 @@ export const getConfigWrapper = ({ supportCount }) => {
           right: 0;
           ${getOpinionImageStyle()}
         }
-
         .supportImageContainerClass {
           display: none;
         }
-
         .supportSummaryClass {
           display: none;
         }
-
         .summaryHidden {
           display: none;
         }
-
         .opinionSummary125Class {
           display: block;
           padding-right: 20px;
@@ -86,10 +78,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           return `
           min-width: 130px;
         `;
-        if (supportCount === 1)
-          return `
-          min-width: 120px;
-        `;
         return `
           min-width: 120px;
         `;
@@ -98,11 +86,9 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionContentContainerClass {
           min-height: 180px;
         }
-
         .opinionImageContainerClass {
           ${getOpinionImageStyle()}
         }
-
         .opinionHeadlineClass {
           padding-right: 30px;
           width: 80%;
@@ -131,7 +117,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           .opinionSummary125Class {
             display: none;
           }
-
           .opinionSummary160Class {
             display: block;
           }
@@ -141,7 +126,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           .opinionSummary125Class {
             display: none;
           }
-
           .opinionSummary145Class {
             display: block;
           }
@@ -150,7 +134,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           .opinionSummary125Class {
             display: none;
           }
-
           .opinionSummary160Class {
             display: block;
           }
@@ -164,12 +147,10 @@ export const getConfigWrapper = ({ supportCount }) => {
           line-height: 30px;
           width: 100%;
         }
-
         .opinionContentContainerClass {
           min-width: auto;
           padding-right: 54px;
         }
-
         .opinionImageContainerClass {
           min-width: auto;
           position: relative;
@@ -202,7 +183,6 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionSummary145Class {
           display: none;
         }
-
         .opinionSummary225Class {
           display: block;
         }

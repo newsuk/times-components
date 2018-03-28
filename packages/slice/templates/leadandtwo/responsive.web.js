@@ -90,9 +90,9 @@ export const getSupportContainer = ({ index }) => {
   const SupportContainer = withResponsiveStyles(View, {
     base: () => {
       const secondSupportStyle = `
+        border-top-color: ${colours.functional.keyline};
         border-top-style: solid;
         border-top-width: 1px;
-        border-top-color: ${colours.functional.keyline};
         margin-top: ${spacing(2)};
         padding-top: ${spacing(2)};
       `;

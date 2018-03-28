@@ -12,7 +12,6 @@ export const getConfig = ({ itemCount }) => ({
   contentContainerClass: "contentContainerClass",
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",
-  summaryClass: "summaryClass",
   summaryConfig: {
     lengths: summaryConfig[itemCount]
   }
@@ -21,14 +20,14 @@ export const getConfig = ({ itemCount }) => ({
 export const getConfigWrapper = ({ itemCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
     base: () => `
+      .imageContainerClass {
+        display: ${itemCount >= 3 ? "none" : "block"};
+      }
       .summaryHidden {
         display: none;
       }
       .summary125Class {
         display: block;
-      }
-      .imageContainerClass {
-        display: ${itemCount >= 3 ? "none" : "block"};
       }
     `,
     mediumUp: () => {
@@ -39,8 +38,8 @@ export const getConfigWrapper = ({ itemCount }) => {
       `;
 
       const singleItemSummaryStyle = `
-        flex-grow: 1;
         flex-basis: 0 !important;
+        flex-grow: 1;
         min-width: 300px;
       `;
 
@@ -49,11 +48,9 @@ export const getConfigWrapper = ({ itemCount }) => {
           display: block;
           ${itemCount === 1 ? singleItemImageStyle : ``}
         }
-
         .contentContainerClass {
           ${itemCount === 1 ? singleItemSummaryStyle : ``}
         }
-
         .headlineClass {
           font-size: 30px;
           line-height: 30px;
@@ -64,7 +61,6 @@ export const getConfigWrapper = ({ itemCount }) => {
       .summary125Class {
         display: ${itemCount === 3 ? "none" : "block"};
       }
-
       .summary145Class {
         display: ${itemCount === 3 ? "block" : "none"};
       }

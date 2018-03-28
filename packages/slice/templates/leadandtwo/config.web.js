@@ -11,7 +11,6 @@ export const getLeadConfig = ({ itemCount }) => ({
   contentContainerClass: "leadContentContainerClass",
   headlineClass: "leadHeadlineClass",
   imageContainerClass: "leadImageContainerClass",
-  summaryClass: "leadSummaryClass",
   summaryConfig: {
     lengths: leadSummaryConfig[itemCount],
     type: "lead"
@@ -20,7 +19,6 @@ export const getLeadConfig = ({ itemCount }) => ({
 
 export const getSupportConfig = () => ({
   contentContainerClass: "supportContentContainerClass",
-  headlineClass: "supportHeadlineClass",
   imageContainerClass: "supportImageContainerClass",
   summaryClass: "supportSummaryClass"
 });
@@ -31,19 +29,15 @@ export const getConfigWrapper = ({ supportCount }) => {
       .leadContentContainerClass {
         margin-bottom: 0;
       }
-
       .supportImageContainerClass {
         display: none;
       }
-
       .supportSummaryClass {
         display: none;
       }
-
       .summaryHidden {
         display: none;
       }
-
       .leadSummary125Class {
         display: block;
       }
@@ -63,7 +57,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           font-size: 30px;
           line-height: 30px;
         }
-
         .leadImageContainerClass {
           flex: 1;
           margin-bottom: 0;
@@ -76,20 +69,17 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
 
         .leadContentContainerClass {
-          flex-grow: 1;
           flex-basis: 0 !important;
+          flex-grow: 1;
           margin-bottom: 10px;
           min-width: 300px;
         }
-
         .supportImageContainerClass {
           display: block;
         }
-
         .leadSummary125Class {
           display: ${supportCount === 2 ? "none" : "block"};
         }
-
         .leadSummary175Class {
           display: ${supportCount === 2 ? "block" : "none"};
         }
@@ -119,11 +109,9 @@ export const getConfigWrapper = ({ supportCount }) => {
           padding-right: 10px;
           ${supportCount === 2 ? twoLeadImageStyle : ``}
         }
-
         .supportImageContainerClass {
           ${supportCount === 2 ? twoSupportImageStyle : ``}
         }
-
         .supportContentContainerClass {
           ${supportCount === 2 ? twoSupportContentStyle : ``}
         }

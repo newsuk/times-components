@@ -49,9 +49,9 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
         padding-right: 10px;
       `;
       const twoSupportStyle = `
+        border-bottom-color: ${colours.functional.keyline};
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        border-bottom-color: ${colours.functional.keyline};
         margin-bottom: 10px;
         min-width: 100%;
         padding-bottom: 10px;
@@ -87,9 +87,9 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
 export const getSeparator = ({ itemCount }) => {
   const Separator = withResponsiveStyles(View, {
     base: () => `
+      border-bottom-color: ${colours.functional.keyline};
       border-bottom-style: solid;
       border-bottom-width: 1px;
-      border-bottom-color: ${colours.functional.keyline};
       flex: 1;
       margin-bottom: 10px;
       margin-top: 10px;
@@ -97,9 +97,9 @@ export const getSeparator = ({ itemCount }) => {
     `,
     mediumUp: () => `
       border-bottom: none;  
+      border-right-color: ${colours.functional.keyline};
       border-right-style: solid;
       border-right-width: 1px;
-      border-right-color: ${colours.functional.keyline};
       display: ${itemCount === 3 ? "none" : "block"};
       flex: 0 !important;
       margin: 0;
@@ -141,9 +141,9 @@ export const getSupportContainer = ({ index, supportCount }) => {
   const SupportContainer = withResponsiveStyles(View, {
     base: () => {
       const secondSupportStyle = `
+        border-top-color: ${colours.functional.keyline};
         border-top-style: solid;
         border-top-width: 1px;
-        border-top-color: ${colours.functional.keyline};
         margin-top: 10px;
         padding-top: 10px;
       `;
@@ -163,9 +163,9 @@ export const getSupportContainer = ({ index, supportCount }) => {
       `;
 
       const secondSupportStyle = `
+        border-left-color: ${colours.functional.keyline};
         border-left-style: solid;
         border-left-width: 1px;
-        border-left-color: ${colours.functional.keyline};
         border-top: none;
         margin-left: 10px;
         margin-top: 0;
