@@ -1,8 +1,7 @@
-import { Dimensions, Text } from "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import Card from "../card";
+import Card from "../../card";
+import Loading from "../card-loading";
 
 const cardProps = {
   image: {
@@ -15,47 +14,37 @@ const cardProps = {
 };
 
 export default () => {
-  Dimensions.get = jest.fn().mockReturnValue({
-    width: 200
-  });
-
   it("should render a card", () => {
-    const tree = renderer
-      .create(
-        <Card {...cardProps}>
-          <Text>Some text</Text>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...cardProps}>
+        <span>A card</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot("1. Render a Card");
+    expect(component).toMatchSnapshot("Render a Card");
   });
 
   it("should render the loading state", () => {
-    const tree = renderer
-      .create(
-        <Card {...cardProps} isLoading>
-          <Text>A loading state</Text>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...cardProps} isLoading>
+        <span>Loading state</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot("2. Render the loading state");
+    expect(component).toMatchSnapshot("Render the loading state");
   });
 
   it("should render without an image", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: null
     });
-    const tree = renderer
-      .create(
-        <Card {...noImageProps}>
-          <Text>No image</Text>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...noImageProps}>
+        <span>No image</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot("3. Renders without an image");
+    expect(component).toMatchSnapshot("Renders without an image");
   });
 
   it("should render without an image when showImage is false", () => {
@@ -68,7 +57,7 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("4. Renders without an image when showImage is false");
+    expect(component).toMatchSnapshot("Renders without an image when showImage is false");
   });
 
   it("should render without image url", () => {
@@ -77,15 +66,13 @@ export default () => {
         uri: null
       }
     });
-    const tree = renderer
-      .create(
-        <Card {...noImageProps}>
-          <Text>No image URL</Text>
-        </Card>
-      )
-      .toJSON();
+    const component = shallow(
+      <Card {...noImageProps}>
+        <span>No URL</span>
+      </Card>
+    );
 
-    expect(tree).toMatchSnapshot("5. Renders without an image URL");
+    expect(component).toMatchSnapshot("Renders without an image URL");
   });
 
   it("should re-render when image uri changes", () => {
@@ -142,7 +129,7 @@ export default () => {
     });
 
     expect(component).toMatchSnapshot(
-      "6. Re-renders after showing the loading state"
+      "Re-renders after showing the loading state"
     );
   });
 
@@ -158,7 +145,7 @@ export default () => {
     });
 
     expect(component).toMatchSnapshot(
-      "7. Renders Card normally and does not re-render"
+      "Renders Card normally and does not re-render"
     );
   });
 
@@ -170,7 +157,17 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "8. Renders a Card with a reversed layout"
+      "Renders a Card with a reversed layout"
     );
+  });
+
+  it("should render a loading card", () => {
+    const component = shallow(
+      <Loading {...cardProps}>
+        <span>A card</span>
+      </Loading>
+    );
+
+    expect(component).toMatchSnapshot("Render a loading Card");
   });
 };
