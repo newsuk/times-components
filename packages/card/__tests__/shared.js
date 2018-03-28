@@ -57,7 +57,9 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("Renders without an image when showImage is false");
+    expect(component).toMatchSnapshot(
+      "Renders without an image when showImage is false"
+    );
   });
 
   it("should render without image url", () => {
@@ -156,9 +158,7 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot(
-      "Renders a Card with a reversed layout"
-    );
+    expect(component).toMatchSnapshot("Renders a Card with a reversed layout");
   });
 
   it("should render a loading card", () => {

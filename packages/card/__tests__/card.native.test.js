@@ -68,7 +68,9 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("4. Renders without an image when showImage is false");
+    expect(component).toMatchSnapshot(
+      "4. Renders without an image when showImage is false"
+    );
   });
 
   it("should render without image url", () => {

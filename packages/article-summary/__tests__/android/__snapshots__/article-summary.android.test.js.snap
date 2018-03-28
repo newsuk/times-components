@@ -106,6 +106,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -327,6 +328,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -489,6 +491,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -770,6 +773,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -973,6 +977,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -1169,6 +1174,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
       Object {
@@ -1245,48 +1251,6 @@ exports[`Article Summary test on Android renders an article-summary with opinion
     </Text>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#850029",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-      }
-    }
-  >
-    <Text
-      accessibilityRole="link"
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-  <Text
     accessibilityRole="heading"
     accessible={true}
     allowFontScaling={true}
@@ -1354,6 +1318,50 @@ exports[`Article Summary test on Android renders an article-summary with opinion
     testID="datePublication"
   >
     Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    className={undefined}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
   </Text>
 </View>
 `;
