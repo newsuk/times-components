@@ -30,7 +30,9 @@ const ArticleSummary = props => {
   const renderByline = () => (
     <Text
       className={bylineProps.bylineClass}
-      style={bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText}
+      style={
+        bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText
+      }
     >
       <Byline {...bylineProps} />
     </Text>
