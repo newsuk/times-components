@@ -7,9 +7,13 @@ export const SliceContainer = withResponsiveStyles(View, {
     align-items: center;
     border-style: solid;
     border-bottom-color: ${colours.functional.keyline};
-    border-bottom-width: ${StyleSheet.hairlineWidth}px;
+    border-bottom-width: 1px;
     flex: 1;
     justify-content: center;
+    margin-bottom: 100px;
+  `,
+  dvp: () => `
+    border-bottom-width: 0.5px;
   `
 });
 SliceContainer.displayName = "SliceContainer";
@@ -26,7 +30,7 @@ export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
       min-width: auto;
     `,
     mediumUp: () => `
-      border-bottom: none;  
+      border-bottom: none;
       border-right-style: solid;
       border-right-width: 1px;
       border-right-color: ${colours.functional.keyline};

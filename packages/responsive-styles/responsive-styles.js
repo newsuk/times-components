@@ -24,6 +24,9 @@ const withResponsiveStyles = (Component, styles = {}, displayName = null) => {
   @media (min-width: 1320px) {
     ${styles.hugeUp}
   }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    ${styles.dvp}
+  }
 `;
   if (displayName) {
     component.displayName = displayName;
