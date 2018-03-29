@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@0.5.0...@times-components/responsive-styles@0.5.1) (2018-03-28)
+
+
+### Bug Fixes
+
+* Fix the layout when greater than 2 Device Pixel Ratio is used ([#789](https://github.com/newsuk/times-components/issues/789)) ([3192c4a](https://github.com/newsuk/times-components/commit/3192c4a))
+
+
+
+
 <a name="0.5.0"></a>
 # 0.5.0 (2018-03-27)
 
