@@ -105,8 +105,6 @@ export default () => {
       </Card>
     );
 
-    const testImageSize = 620;
-
     component.setProps({
       imageSize: null
     });
