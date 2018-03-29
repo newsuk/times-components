@@ -2340,6 +2340,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -2617,6 +2618,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -2894,6 +2896,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }

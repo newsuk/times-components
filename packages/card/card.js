@@ -24,6 +24,7 @@ class CardComponent extends Component {
       image,
       imageRatio,
       imageSize,
+      imageStyle,
       isLoading,
       isReversed,
       showImage
@@ -50,6 +51,7 @@ class CardComponent extends Component {
           className={imageContainerClass}
           style={[
             styles.imageContainer,
+            imageStyle,
             isReversed ? styles.reversedImageContainer : ""
           ]}
         >

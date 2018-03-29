@@ -15,6 +15,7 @@ exports[`Re-renders after showing the loading state 1`] = `
       style={
         Array [
           76,
+          Object {},
           "",
         ]
       }
@@ -57,6 +58,7 @@ exports[`Render a Card 1`] = `
       style={
         Array [
           76,
+          Object {},
           "",
         ]
       }
@@ -289,6 +291,7 @@ exports[`Renders Card normally and does not re-render 1`] = `
       style={
         Array [
           76,
+          Object {},
           "",
         ]
       }
@@ -344,6 +347,7 @@ exports[`Renders a Card with a reversed layout 1`] = `
       style={
         Array [
           76,
+          Object {},
           77,
         ]
       }

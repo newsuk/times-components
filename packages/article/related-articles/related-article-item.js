@@ -29,8 +29,16 @@ const RelatedArticleItem = ({
   summaryConfig
 }) => {
   const { byline, headline, label, publishedTime, section, url } = article;
-  const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
-  const { cropSize = "169", imageRatio = 16 / 9 } = imageConfig;
+  const {
+    lengths: summaryLengths = [],
+    style: summaryStyle = {},
+    type: summaryType
+  } = summaryConfig;
+  const {
+    cropSize = "169",
+    imageRatio = 16 / 9,
+    style: imageStyle = {}
+  } = imageConfig;
 
   return (
     <Link url={url} onPress={e => onPress(e, { url: article.url })}>
@@ -40,6 +48,7 @@ const RelatedArticleItem = ({
         image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
         imageRatio={imageRatio}
         imageSize={996}
+        imageStyle={imageStyle}
         isReversed={isReversed}
         showImage={showImage}
       >
@@ -52,7 +61,7 @@ const RelatedArticleItem = ({
           }}
           content={() =>
             showSummary && (
-              <View>
+              <View style={summaryStyle}>
                 {summaryLengths.map(item => {
                   const summaryClassSuffix = `${item}Class`;
                   const summaryClass = summaryType

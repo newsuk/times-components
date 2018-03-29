@@ -120,6 +120,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -291,7 +292,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -692,6 +695,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -863,7 +867,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1460,6 +1466,7 @@ exports[`Related articles tests on ios Lead and two template should render one l
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -1631,7 +1638,9 @@ exports[`Related articles tests on ios Lead and two template should render one l
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1933,7 +1942,13 @@ exports[`Related articles tests on ios Opinion and two template should render on
                   >
                     High score for labour in football club election
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1989,6 +2004,14 @@ exports[`Related articles tests on ios Opinion and two template should render on
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -2510,7 +2533,13 @@ exports[`Related articles tests on ios Opinion and two template should render on
                   >
                     High score for labour in football club election
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -2566,6 +2595,14 @@ exports[`Related articles tests on ios Opinion and two template should render on
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -3283,7 +3320,13 @@ exports[`Related articles tests on ios Opinion and two template should render on
                   >
                     Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -3339,6 +3382,14 @@ exports[`Related articles tests on ios Opinion and two template should render on
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -3569,6 +3620,7 @@ exports[`Related articles tests on ios Standard template should render one relat
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -3740,7 +3792,9 @@ exports[`Related articles tests on ios Standard template should render one relat
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4011,7 +4065,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4235,7 +4291,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4472,7 +4530,9 @@ exports[`Related articles tests on ios Standard template should render three rel
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4690,6 +4750,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -4861,7 +4922,9 @@ exports[`Related articles tests on ios Standard template should render two relat
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5019,6 +5082,7 @@ exports[`Related articles tests on ios Standard template should render two relat
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -5190,7 +5254,9 @@ exports[`Related articles tests on ios Standard template should render two relat
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}

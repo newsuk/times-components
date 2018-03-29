@@ -25,6 +25,7 @@ exports[`Re-renders after showing the loading state 1`] = `
             "marginBottom": 10,
             "minWidth": "100%",
           },
+          Object {},
           "",
         ]
       }
@@ -81,6 +82,7 @@ exports[`Render a Card 1`] = `
             "marginBottom": 10,
             "minWidth": "100%",
           },
+          Object {},
           "",
         ]
       }
@@ -423,6 +425,7 @@ exports[`Renders Card normally and does not re-render 1`] = `
             "marginBottom": 10,
             "minWidth": "100%",
           },
+          Object {},
           "",
         ]
       }
@@ -500,6 +503,7 @@ exports[`Renders a Card with a reversed layout 1`] = `
             "marginBottom": 10,
             "minWidth": "100%",
           },
+          Object {},
           Object {
             "marginBottom": 0,
           },

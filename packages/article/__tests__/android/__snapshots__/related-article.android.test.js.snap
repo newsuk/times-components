@@ -117,6 +117,7 @@ exports[`Related articles tests on android Lead and two template should render o
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -322,7 +323,9 @@ exports[`Related articles tests on android Lead and two template should render o
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -718,6 +721,7 @@ exports[`Related articles tests on android Lead and two template should render o
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -923,7 +927,9 @@ exports[`Related articles tests on android Lead and two template should render o
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1513,6 +1519,7 @@ exports[`Related articles tests on android Lead and two template should render o
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -1718,7 +1725,9 @@ exports[`Related articles tests on android Lead and two template should render o
                   >
                     Defence of the Realm
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -2018,7 +2027,13 @@ exports[`Related articles tests on android Opinion and two template should rende
                   >
                     High score for labour in football club election
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -2074,6 +2089,14 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -2624,7 +2647,13 @@ exports[`Related articles tests on android Opinion and two template should rende
                   >
                     High score for labour in football club election
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -2680,6 +2709,14 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -3424,7 +3461,13 @@ exports[`Related articles tests on android Opinion and two template should rende
                   >
                     Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does
                   </Text>
-                  <View>
+                  <View
+                    style={
+                      Object {
+                        "width": "50%",
+                      }
+                    }
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -3480,6 +3523,14 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "flex": 1,
                       "marginBottom": 10,
                       "minWidth": "100%",
+                    },
+                    Object {
+                      "marginTop": -140,
+                      "maxWidth": "40%",
+                      "minWidth": "40%",
+                      "position": "relative",
+                      "right": 0,
+                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -3740,6 +3791,7 @@ exports[`Related articles tests on android Standard template should render one r
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -3945,7 +3997,9 @@ exports[`Related articles tests on android Standard template should render one r
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4214,7 +4268,9 @@ exports[`Related articles tests on android Standard template should render three
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4436,7 +4492,9 @@ exports[`Related articles tests on android Standard template should render three
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4671,7 +4729,9 @@ exports[`Related articles tests on android Standard template should render three
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4886,6 +4946,7 @@ exports[`Related articles tests on android Standard template should render two r
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -5091,7 +5152,9 @@ exports[`Related articles tests on android Standard template should render two r
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5246,6 +5309,7 @@ exports[`Related articles tests on android Standard template should render two r
                       "marginBottom": 10,
                       "minWidth": "100%",
                     },
+                    Object {},
                     "",
                   ]
                 }
@@ -5451,7 +5515,9 @@ exports[`Related articles tests on android Standard template should render two r
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View>
+                  <View
+                    style={Object {}}
+                  >
                     <Text
                       accessible={true}
                       allowFontScaling={true}
