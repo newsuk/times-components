@@ -142,7 +142,7 @@ storiesOf("Pages/Article", module)
     return <RenderArticle fixture={articleWithVideoFixture} />;
   })
   .add("Long Article", () => {
-    return <RenderArticle fixture={fullArticleFixture} />;
+    return <RenderArticle fixture={fullLongArticleFixture} />;
   })
   .add("Loading", () => {
     return <RenderArticle isLoading={true} />;
