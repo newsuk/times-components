@@ -2,6 +2,7 @@
   "name": "@times-components/provider",
   "version": "0.25.3",
   "main": "dist/provider",
+  "dev": "src/provider",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
@@ -83,6 +84,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/provider"
+  }
 }

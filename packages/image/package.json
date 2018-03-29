@@ -1,6 +1,7 @@
 {
   "name": "@times-components/image",
   "main": "dist/index",
+  "dev": "src/index",
   "version": "1.15.1",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -67,6 +68,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/index"
+  }
 }

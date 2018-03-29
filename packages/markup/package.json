@@ -3,6 +3,7 @@
   "version": "0.25.6",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
+  "dev": "src/markup",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -63,6 +64,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/markup"
+  }
 }

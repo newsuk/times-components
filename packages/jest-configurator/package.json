@@ -3,6 +3,7 @@
   "version": "0.2.2",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
+  "dev": "src/jest-configurator.js",
   "scripts": {
     "prepublishOnly": "babel src --ignore node_modules,__tests__ -d lib",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -70,6 +71,5 @@
   },
   "resolutions": {
     "minimatch": "3.0.4"
-  },
-  "dev": "lib/jest-configurator.js"
+  }
 }

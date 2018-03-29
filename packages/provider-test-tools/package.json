@@ -3,6 +3,7 @@
   "version": "0.1.12",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -67,6 +68,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/index"
+  }
 }

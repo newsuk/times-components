@@ -3,6 +3,7 @@
   "version": "0.2.3",
   "description": "Map of Topics related to the Article",
   "main": "dist/topics",
+  "dev": "src/topics",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -57,6 +58,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/topics"
+  }
 }

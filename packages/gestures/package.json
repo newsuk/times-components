@@ -3,6 +3,7 @@
   "version": "1.2.21",
   "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "dist/gestures",
+  "dev": "src/gestures",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -62,6 +63,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/gestures"
+  }
 }

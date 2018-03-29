@@ -3,6 +3,7 @@
   "version": "0.15.13",
   "description": "component to handle links and navigation",
   "main": "dist/link",
+  "dev": "src/link",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -68,6 +69,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/link"
+  }
 }

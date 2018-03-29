@@ -3,6 +3,7 @@
   "version": "0.5.4",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
+  "dev": "src",
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -47,6 +48,5 @@
   "peerDependencies": {
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1"
-  },
-  "dev": "src"
+  }
 }

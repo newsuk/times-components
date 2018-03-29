@@ -3,6 +3,7 @@
   "version": "0.5.3",
   "description": "Centralised library for common styles throughout the Times",
   "main": "dist/styleguide",
+  "dev": "src/styleguide",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -53,6 +54,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/styleguide"
+  }
 }

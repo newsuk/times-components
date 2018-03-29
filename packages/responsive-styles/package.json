@@ -3,6 +3,7 @@
   "version": "0.5.1",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "dist/responsive-styles",
+  "dev": "src/responsive-styles",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -57,6 +58,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/responsive-styles"
+  }
 }

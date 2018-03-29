@@ -3,6 +3,7 @@
   "version": "0.13.3",
   "description": "Article Image",
   "main": "dist/article-image",
+  "dev": "src/article-image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -66,6 +67,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/article-image"
+  }
 }

@@ -3,6 +3,7 @@
   "version": "0.9.1",
   "description": "Handles errors",
   "main": "dist/error-view",
+  "dev": "src/error-view",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -62,6 +63,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/error-view"
+  }
 }

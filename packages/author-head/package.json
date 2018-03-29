@@ -1,7 +1,8 @@
 {
   "name": "@times-components/author-head",
-  "main": "dist/author-head",
   "version": "0.22.6",
+  "main": "dist/author-head",
+  "dev": "src/author-head",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -85,6 +86,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/author-head"
+  }
 }

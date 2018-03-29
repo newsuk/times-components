@@ -3,6 +3,7 @@
   "version": "0.4.3",
   "description": "Pull Quote for Times Components Articles",
   "main": "dist/pull-quote",
+  "dev": "src/pull-quote",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -61,6 +62,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/pull-quote"
+  }
 }

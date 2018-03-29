@@ -3,6 +3,7 @@
   "version": "0.4.13",
   "description": "Watermark",
   "main": "dist/watermark",
+  "dev": "src/watermark",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -61,6 +62,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/watermark"
+  }
 }

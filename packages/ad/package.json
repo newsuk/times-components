@@ -3,6 +3,7 @@
   "version": "0.16.6",
   "description": "Ad component",
   "main": "dist/ad",
+  "dev": "src/ad",
   "scripts": {
     "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist",
     "fmt": "prettier --write '**/*.*'",
@@ -76,6 +77,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/ad"
+  }
 }

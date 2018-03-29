@@ -1,6 +1,7 @@
 {
   "name": "@times-components/card",
   "main": "dist/card",
+  "dev": "src/card",
   "version": "0.24.4",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -67,6 +68,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/card"
+  }
 }

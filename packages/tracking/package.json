@@ -2,6 +2,7 @@
   "name": "@times-components/tracking",
   "version": "0.10.1",
   "main": "dist/tracking",
+  "dev": "src/tracking",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -64,6 +65,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/tracking"
+  }
 }

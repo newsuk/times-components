@@ -3,6 +3,7 @@
   "version": "0.3.13",
   "description": "Times SVG Icons",
   "main": "dist/icons",
+  "dev": "src/icons",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
     "fmt": "prettier --write '**/*.*'",
@@ -66,6 +67,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dev": "src/icons"
+  }
 }
