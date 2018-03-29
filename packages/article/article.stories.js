@@ -114,6 +114,7 @@ const defaultAdConfig = {
   bidderSlots: ["ad-header", "ad-article-inline"]
 };
 
+/* eslint-disable react/prop-types */
 const RenderArticle = ({
   fixture,
   isLoading = false,
@@ -133,13 +134,18 @@ const RenderArticle = ({
     />
   );
 };
+/* eslint-enable */
 
 storiesOf("Pages/Article", module)
   .add("Default", () => <RenderArticle fixture={fullArticleFixture} />)
-  .add("Article with video asset", () => <RenderArticle fixture={articleWithVideoFixture} />)
+  .add("Article with video asset", () => (
+    <RenderArticle fixture={articleWithVideoFixture} />
+  ))
   .add("Long Article", () => <RenderArticle fixture={fullLongArticleFixture} />)
   .add("Loading", () => <RenderArticle isLoading />)
-  .add("Error", () => <RenderArticle error={{ message: "An example error." }} />)
+  .add("Error", () => (
+    <RenderArticle error={{ message: "An example error." }} />
+  ))
   .add("With Provider", () => (
     <MockedProvider mocks={mocks}>
       <ArticleProvider
