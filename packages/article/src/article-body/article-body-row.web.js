@@ -7,7 +7,7 @@ import BrightcoveVideo from "@times-components/brightcove-video";
 import Caption from "@times-components/caption";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-import {AspectRatioContainer} from "../article-lead-asset";
+import { AspectRatioContainer } from "../article-lead-asset";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -54,7 +54,17 @@ const ArticleRow = ({ content: { data, index } }) =>
         </MediaWrapper>
       );
     },
-    video(key, { display, brightcovePolicyKey, brightcoveVideoId, brightcoveAccountId, posterImage, caption }) {
+    video(
+      key,
+      {
+        display,
+        brightcovePolicyKey,
+        brightcoveVideoId,
+        brightcoveAccountId,
+        posterImage,
+        caption
+      }
+    ) {
       const MediaWrapper = responsiveDisplayWrapper(display);
       return (
         <MediaWrapper key={key}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import BrightcoveVideo from "@times-components/brightcove-video";
@@ -59,18 +59,30 @@ const ArticleRow = ({ content: { data, index } }) =>
         </ArticleLink>
       );
     },
-    video(key, { brightcovePolicyKey, brightcoveVideoId, brightcoveAccountId, posterImage, caption }) {
+    video(
+      key,
+      {
+        brightcovePolicyKey,
+        brightcoveVideoId,
+        brightcoveAccountId,
+        posterImage,
+        caption
+      }
+    ) {
       return (
-        <View key={key}>
-          <BrightcoveVideo
-            width="100%"
-            height="100%"
-            policyKey={brightcovePolicyKey}
-            videoId={brightcoveVideoId}
-            accountId={brightcoveAccountId}
-            poster={{ uri: posterImage.crop.url }}
-          />
-        </View>
+        <Fragment>
+          <View key={key}>
+            <BrightcoveVideo
+              width="100%"
+              height="100%"
+              policyKey={brightcovePolicyKey}
+              videoId={brightcoveVideoId}
+              accountId={brightcoveAccountId}
+              poster={{ uri: posterImage.crop.url }}
+            />
+          </View>
+          <Caption text={caption} />
+        </Fragment>
       );
     }
   });
