@@ -20,10 +20,18 @@ const ArticleLeadAssetVideo = ({
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
   return (
-    <Link onPress={onVideoPress}>
+    <Link
+      onPress={e =>
+        onVideoPress(e, {
+          brightcoveAccountId,
+          brightcovePolicyKey,
+          brightcoveVideoId
+        })
+      }
+    >
       <Image uri={image_url} aspectRatio={aspectRatio} />
     </Link>
-  )
+  );
 };
 
 export default ArticleLeadAssetVideo;
