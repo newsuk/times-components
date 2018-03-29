@@ -28,7 +28,7 @@ const adStyle = {
 };
 
 class ArticlePage extends React.Component {
-  static renderArticle(articleData) {
+  static renderArticle(articleData, onRelatedArticlePress, onAuthorPress) {
     const {
       headline,
       flags,
@@ -51,7 +51,7 @@ class ArticlePage extends React.Component {
           analyticsStream={() => {}}
           articles={relatedArticles}
           template={relatedArticlesLayout.template}
-          onPress={() => null}
+          onPress={onRelatedArticlePress}
         />
       ) : null;
 
@@ -75,6 +75,7 @@ class ArticlePage extends React.Component {
               byline={byline}
               publishedTime={publishedTime}
               publicationName={publicationName}
+              onAuthorPress={onAuthorPress}
             />
             <Topics topics={topics} device="DESKTOP" />
           </MetaContainer>
@@ -95,7 +96,12 @@ class ArticlePage extends React.Component {
   }
 
   render() {
-    const { error, isLoading } = this.props;
+    const {
+      error,
+      isLoading,
+      onRelatedArticlePress,
+      onAuthorPress
+    } = this.props;
 
     if (error) {
       return <ArticleError {...error} />;
@@ -107,7 +113,11 @@ class ArticlePage extends React.Component {
 
     return (
       <AdComposer adConfig={this.props.adConfig}>
-        {ArticlePage.renderArticle(this.props.article)}
+        {ArticlePage.renderArticle(
+          this.props.article,
+          onRelatedArticlePress,
+          onAuthorPress
+        )}
       </AdComposer>
     );
   }
@@ -123,7 +133,8 @@ ArticlePage.propTypes = {
     }),
     message: PropTypes.string
   }),
-  adConfig: PropTypes.shape({}).isRequired
+  adConfig: PropTypes.shape({}).isRequired,
+  onRelatedArticlePress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {

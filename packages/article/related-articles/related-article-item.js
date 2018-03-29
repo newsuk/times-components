@@ -34,7 +34,7 @@ const RelatedArticleItem = ({
   );
 
   return (
-    <Link url={url} onPress={onPress}>
+    <Link url={url} onPress={e => onPress(e, { url: article.url })}>
       <Card
         contentContainerClass={contentContainerClass}
         imageContainerClass={imageContainerClass}

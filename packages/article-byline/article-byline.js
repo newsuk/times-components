@@ -25,7 +25,7 @@ const ArticleByline = ({ ast, style, onAuthorPress }) =>
           style={[linkStyles.link, style.link]}
           key={key}
           url={url}
-          onPress={() => onAuthorPress({ slug: attributes.slug, url })}
+          onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
         >
           {children}
         </TextLink>
