@@ -6,13 +6,7 @@ const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
   brightcovePolicyKey,
   brightcoveAccountId,
-  paidonly,
-  caption,
   posterImage: {
-    id: image_id,
-    title: image_title,
-    credits: image_credits,
-    caption: image_caption,
     crop: { ratio: image_ratio, url: image_url }
   },
   onVideoPress
