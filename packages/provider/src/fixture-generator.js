@@ -28,10 +28,7 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeArticleList = (
-  { skip, first, withImages },
-  transform = id => id
-) => {
+const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   const articles = withImages
     ? articleListWithImagesFixture.data.author.articles
     : articleListNoImagesFixture.data.author.articles;
@@ -196,5 +193,5 @@ export default {
   makeArticleMocks,
   makeBrokenMocks,
   makeMocksWithPageError,
-  makeMocksWithAuthorError,
+  makeMocksWithAuthorError
 };

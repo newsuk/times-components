@@ -13,5 +13,5 @@ export {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider,
   ArticleProvider,
-  articleQuery,
+  articleQuery
 };

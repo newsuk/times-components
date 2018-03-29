@@ -6,7 +6,9 @@ import fixtureGenerator from "../fixture-generator";
 
 const renderComponent = child =>
   renderer.create(
-    <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ pageSize: 5, delay: 0 })}>
+    <MockedProvider
+      mocks={fixtureGenerator.makeArticleMocks({ pageSize: 5, delay: 0 })}
+    >
       <AuthorArticlesNoImagesProvider
         slug="deborah-haynes"
         pageSize={5}

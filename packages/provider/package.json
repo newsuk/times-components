@@ -49,7 +49,6 @@
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/provider-test-tools": "0.1.12",
     "@times-components/utils": "0.5.4",
-    "apollo-utilities": "1.0.4",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
@@ -64,6 +63,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "apollo-utilities": "1.0.4",
     "graphql-tag": "2.6.0",
     "hoist-non-react-statics": "2.3.1",
     "lodash.get": "4.4.2",
