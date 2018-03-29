@@ -1,14 +1,16 @@
+import { spacing } from "@times-components/styleguide";
+
 export const opinionConfig = {
   imageConfig: {
     cropSize: "23",
     imageRatio: 2 / 3,
     style: {
+      bottom: 0,
+      marginTop: -140,
       maxWidth: "40%",
       minWidth: "40%",
-      marginTop: -140,
       position: "relative",
-      right: 0,
-      top: 0
+      right: 0
     }
   },
   isOpinionByline: true,
@@ -16,7 +18,8 @@ export const opinionConfig = {
   summaryConfig: {
     lengths: [125],
     style: {
-      width: "50%"
+      paddingRight: spacing(2),
+      width: "60%"
     }
   }
 };

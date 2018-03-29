@@ -1867,13 +1867,18 @@ exports[`Related articles tests on android Opinion and two template should rende
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingBottom": 0,
+            },
+          ]
         }
       >
         <View
@@ -2030,7 +2035,8 @@ exports[`Related articles tests on android Opinion and two template should rende
                   <View
                     style={
                       Object {
-                        "width": "50%",
+                        "paddingRight": 10,
+                        "width": "60%",
                       }
                     }
                   >
@@ -2091,12 +2097,12 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "minWidth": "100%",
                     },
                     Object {
+                      "bottom": 0,
                       "marginTop": -140,
                       "maxWidth": "40%",
                       "minWidth": "40%",
                       "position": "relative",
                       "right": 0,
-                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -2487,13 +2493,18 @@ exports[`Related articles tests on android Opinion and two template should rende
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingBottom": 0,
+            },
+          ]
         }
       >
         <View
@@ -2650,7 +2661,8 @@ exports[`Related articles tests on android Opinion and two template should rende
                   <View
                     style={
                       Object {
-                        "width": "50%",
+                        "paddingRight": 10,
+                        "width": "60%",
                       }
                     }
                   >
@@ -2711,12 +2723,12 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "minWidth": "100%",
                     },
                     Object {
+                      "bottom": 0,
                       "marginTop": -140,
                       "maxWidth": "40%",
                       "minWidth": "40%",
                       "position": "relative",
                       "right": 0,
-                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
@@ -3301,13 +3313,18 @@ exports[`Related articles tests on android Opinion and two template should rende
     >
       <View
         style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "width": "100%",
+            },
+            Object {
+              "paddingBottom": 0,
+            },
+          ]
         }
       >
         <View
@@ -3464,7 +3481,8 @@ exports[`Related articles tests on android Opinion and two template should rende
                   <View
                     style={
                       Object {
-                        "width": "50%",
+                        "paddingRight": 10,
+                        "width": "60%",
                       }
                     }
                   >
@@ -3525,12 +3543,12 @@ exports[`Related articles tests on android Opinion and two template should rende
                       "minWidth": "100%",
                     },
                     Object {
+                      "bottom": 0,
                       "marginTop": -140,
                       "maxWidth": "40%",
                       "minWidth": "40%",
                       "position": "relative",
                       "right": 0,
-                      "top": 0,
                     },
                     Object {
                       "marginBottom": 0,
