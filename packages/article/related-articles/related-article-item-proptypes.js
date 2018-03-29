@@ -28,7 +28,10 @@ export const relatedArticleItemPropTypes = {
   onPress: PropTypes.func.isRequired,
   showImage: PropTypes.bool,
   showSummary: PropTypes.bool,
-  summaryClass: PropTypes.string
+  summaryConfig: PropTypes.shape({
+    lengths: PropTypes.arrayOf(PropTypes.number),
+    type: PropTypes.string
+  })
 };
 
 export const relatedArticleItemDefaultProps = {
@@ -41,5 +44,5 @@ export const relatedArticleItemDefaultProps = {
   isReversed: false,
   showImage: true,
   showSummary: true,
-  summaryClass: ""
+  summaryConfig: {}
 };

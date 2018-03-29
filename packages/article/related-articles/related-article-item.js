@@ -75,8 +75,8 @@ const RelatedArticleItem = ({
           headline={() => (
             <ArticleSummaryHeadline
               className={headlineClass}
-              style={styles.headline}
               headline={headline}
+              style={styles.headline}
             />
           )}
           labelProps={{
