@@ -42,12 +42,12 @@ export const getConfigWrapper = ({ supportCount }) => {
     `,
     mediumUp: () => {
       const withSupportsImageStyle = `
-        margin-bottom: ${spacing(2)}px;
+        margin-bottom: ${spacing(2)};
         min-width: 370px;
       `;
 
       const withoutSupportsImageStyle = `
-        padding-right: ${spacing(2)}px;
+        padding-right: ${spacing(2)};
       `;
 
       return `
@@ -69,7 +69,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .leadContentContainerClass {
           flex-basis: 0 !important;
           flex-grow: 1;
-          margin-bottom: ${spacing(2)}px;
+          margin-bottom: ${spacing(2)};
           min-width: 300px;
         }
         .supportImageContainerClass {
@@ -93,7 +93,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         margin-bottom: 0;
         max-width: 185px;
         min-width: auto;
-        padding-right: ${spacing(2)}px;
+        padding-right: ${spacing(2)};
       `;
 
       const twoSupportContentStyle = `
@@ -104,7 +104,7 @@ export const getConfigWrapper = ({ supportCount }) => {
 
       return `
         .leadImageContainerClass {
-          padding-right: ${spacing(2)}px;
+          padding-right: ${spacing(2)};
           ${supportCount === 2 ? twoLeadImageStyle : ``}
         }
         .supportImageContainerClass {

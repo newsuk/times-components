@@ -69,7 +69,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
         .opinionSummary125Class {
           display: block;
-          padding-right: ${spacing(4)}px;
+          padding-right: ${spacing(4)};
           width: 60%;
         }
       `;
@@ -92,7 +92,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           ${getOpinionImageStyle()}
         }
         .opinionHeadlineClass {
-          padding-right: ${spacing(6)}px;
+          padding-right: ${spacing(6)};
           width: 80%;
         }
       `;
@@ -108,7 +108,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: ${spacing(3)}px;
+          margin-bottom: ${spacing(3)};
           min-width: 152px;
         `;
       };
@@ -156,7 +156,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         .opinionImageContainerClass {
           min-width: auto;
           position: relative;
-          margin-bottom: ${spacing(-2)}px;
+          margin-bottom: ${spacing(-2)};
           max-width: 167px;
           ${getOpinionImageStyle()}
         }
