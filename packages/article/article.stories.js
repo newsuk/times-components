@@ -120,7 +120,9 @@ storiesOf("Pages/Article", module)
       ...fullArticleFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
-      adConfig
+      adConfig,
+      onRelatedArticlePress: preventDefaultedAction("onRelatedArticlePress"),
+      onAuthorPress: preventDefaultedAction("onAuthorPress")
     };
 
     return <Article {...props} />;
@@ -130,7 +132,9 @@ storiesOf("Pages/Article", module)
       ...articleWithVideoFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
-      adConfig
+      adConfig,
+      onRelatedArticlePress: preventDefaultedAction("onRelatedArticlePress"),
+      onAuthorPress: preventDefaultedAction("onAuthorPress")
     };
 
     return <Article {...props} />;
@@ -140,7 +144,9 @@ storiesOf("Pages/Article", module)
       ...fullLongArticleFixture.data,
       isLoading: false,
       analyticsStream: storybookReporter,
-      adConfig
+      adConfig,
+      onRelatedArticlePress: preventDefaultedAction("onRelatedArticlePress"),
+      onAuthorPress: preventDefaultedAction("onAuthorPress")
     };
 
     return <Article {...props} />;
@@ -149,7 +155,9 @@ storiesOf("Pages/Article", module)
     const props = {
       analyticsStream: storybookReporter,
       isLoading: true,
-      adConfig
+      adConfig,
+      onRelatedArticlePress: preventDefaultedAction("onRelatedArticlePress"),
+      onAuthorPress: preventDefaultedAction("onAuthorPress")
     };
 
     return <Article {...props} />;
@@ -175,6 +183,10 @@ storiesOf("Pages/Article", module)
             error={error}
             analyticsStream={storybookReporter}
             adConfig={adConfig}
+            onRelatedArticlePress={preventDefaultedAction(
+              "onRelatedArticlePress"
+            )}
+            onAuthorPress={preventDefaultedAction("onAuthorPress")}
           />
         )}
       </ArticleProvider>
@@ -196,6 +208,10 @@ storiesOf("Pages/Article", module)
             {...fullArticleFixture.data}
             analyticsStream={storybookReporter}
             adConfig={adConfig}
+            onRelatedArticlePress={preventDefaultedAction(
+              "onRelatedArticlePress"
+            )}
+            onAuthorPress={preventDefaultedAction("onAuthorPress")}
           />
         </div>
       );
@@ -206,6 +222,8 @@ storiesOf("Pages/Article", module)
         {...fullArticleFixture.data}
         analyticsStream={storybookReporter}
         adConfig={adConfig}
+        onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+        onAuthorPress={preventDefaultedAction("onAuthorPress")}
       />
     );
   })
@@ -214,6 +232,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoAds.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No standfirst", () => (
@@ -221,6 +241,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoStandfirst.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No label", () => (
@@ -228,6 +250,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoLabel.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No flags", () => (
@@ -235,6 +259,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoFlags.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No standfirst, no label", () => (
@@ -242,6 +268,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoStandfirstNoLabel.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No standfirst, no flags", () => (
@@ -249,6 +277,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoStandfirstNoFlags.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No label, no flags", () => (
@@ -256,6 +286,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoLabelNoFlags.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No label, no flags, no standfirst", () => (
@@ -263,6 +295,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Fixtures - No lead asset", () => (
@@ -270,6 +304,8 @@ storiesOf("Pages/Article", module)
       {...articleFixtureNoLeadAsset.data}
       analyticsStream={storybookReporter}
       adConfig={adConfig}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   ))
   .add("Default template with one related article", () => (

@@ -31,7 +31,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         headlineClass={headlineClass}
         id={article.id}
         imageContainerClass={imageContainerClass}
-        onPress={() => onPress({ url: article.url })}
+        onPress={onPress}
         showImage={showImage}
         showSummary={showSummary}
         summaryConfig={summaryConfig}
