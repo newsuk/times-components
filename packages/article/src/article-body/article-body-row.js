@@ -1,6 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import BrightcoveVideo from "@times-components/brightcove-video";
+import Caption from "@times-components/caption";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
@@ -55,6 +57,20 @@ const ArticleRow = ({ content: { data, index } }) =>
         >
           {children}
         </ArticleLink>
+      );
+    },
+    video(key, { brightcovePolicyKey, brightcoveVideoId, brightcoveAccountId, posterImage, caption }) {
+      return (
+        <View key={key}>
+          <BrightcoveVideo
+            width="100%"
+            height="100%"
+            policyKey={brightcovePolicyKey}
+            videoId={brightcoveVideoId}
+            accountId={brightcoveAccountId}
+            poster={{ uri: posterImage.crop.url }}
+          />
+        </View>
       );
     }
   });
