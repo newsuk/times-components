@@ -13,7 +13,7 @@ export default function getLeadAsset({ leadAsset }) {
 
   return {
     isVideo,
-    leadAsset: {...leadAsset, isVideo},
+    leadAsset: { ...leadAsset, isVideo },
     displayImage,
     aspectRatio
   };

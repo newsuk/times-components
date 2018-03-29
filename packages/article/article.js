@@ -24,7 +24,12 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData, onRelatedArticlePress, onAuthorPress, onVideoPress) {
+  static renderRow(
+    rowData,
+    onRelatedArticlePress,
+    onAuthorPress,
+    onVideoPress
+  ) {
     switch (rowData.type) {
       case "leadAsset": {
         return (
@@ -74,7 +79,7 @@ class ArticlePage extends React.Component {
         const { relatedArticles, relatedArticlesLayout } = rowData.data;
         return (
           <RelatedArticles
-            analyticsStream={() => { }}
+            analyticsStream={() => {}}
             articles={relatedArticles}
             template={relatedArticlesLayout.template}
             onPress={onRelatedArticlePress}

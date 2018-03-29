@@ -115,7 +115,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
-          />
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
