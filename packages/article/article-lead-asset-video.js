@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "@times-components/image/image";
-import Link from "@times-components/link/link";
+import Button from "@times-components/link/link";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
@@ -14,7 +14,7 @@ const ArticleLeadAssetVideo = ({
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
   return (
-    <Link
+    <Button
       onPress={e =>
         onVideoPress(e, {
           brightcoveAccountId,
@@ -24,7 +24,7 @@ const ArticleLeadAssetVideo = ({
       }
     >
       <Image uri={image_url} aspectRatio={aspectRatio} />
-    </Link>
+    </Button>
   );
 };
 
