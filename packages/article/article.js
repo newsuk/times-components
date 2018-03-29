@@ -18,6 +18,7 @@ import RelatedArticles from "./related-articles/related-articles";
 import Topics from "./topics";
 
 import articleTrackingContext from "./article-tracking-context";
+import getMainRelatedArticleId from "./related-articles/get-main-related-article-id";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -83,6 +84,7 @@ class ArticlePage extends React.Component {
             articles={relatedArticles}
             template={relatedArticlesLayout.template}
             onPress={onRelatedArticlePress}
+            mainId={getMainRelatedArticleId(relatedArticlesLayout)}
           />
         );
       }
