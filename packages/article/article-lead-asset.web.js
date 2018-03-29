@@ -34,22 +34,19 @@ const LeadAssetComponent = props => {
   if (!leadAsset) {
     return null;
   }
-  let leadAssetView;
-  if (isVideo) {
-    leadAssetView = (
-      <BrightcoveVideo
-        width="100%"
-        height="100%"
-        position="absolute"
-        policyKey={leadAsset.brightcovePolicyKey}
-        videoId={leadAsset.brightcoveVideoId}
-        accountId={leadAsset.brightcoveAccountId}
-        poster={{ uri: displayImage.url }}
-      />
-    );
-  } else {
-    leadAssetView = <Image uri={displayImage.url} />;
-  }
+  const leadAssetView = isVideo ? (
+    <BrightcoveVideo
+      width="100%"
+      height="100%"
+      position="absolute"
+      policyKey={leadAsset.brightcovePolicyKey}
+      videoId={leadAsset.brightcoveVideoId}
+      accountId={leadAsset.brightcoveAccountId}
+      poster={{ uri: displayImage.url }}
+    />
+  ) : (
+    <Image uri={displayImage.url} />
+  );
 
   return (
     <LeadAsset>
