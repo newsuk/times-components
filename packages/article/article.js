@@ -24,12 +24,16 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData, onRelatedArticlePress, onAuthorPress) {
+  static renderRow(rowData, onRelatedArticlePress, onAuthorPress, onVideoPress) {
     switch (rowData.type) {
       case "leadAsset": {
         return (
           <View testID="leadAsset" key="leadAsset">
-            <ArticleLeadAsset key={rowData.type} data={rowData.data} />
+            <ArticleLeadAsset
+              key={rowData.type}
+              data={rowData.data}
+              onVideoPress={onVideoPress}
+            />
           </View>
         );
       }
@@ -70,7 +74,7 @@ class ArticlePage extends React.Component {
         const { relatedArticles, relatedArticlesLayout } = rowData.data;
         return (
           <RelatedArticles
-            analyticsStream={() => {}}
+            analyticsStream={() => { }}
             articles={relatedArticles}
             template={relatedArticlesLayout.template}
             onPress={onRelatedArticlePress}
@@ -127,6 +131,7 @@ class ArticlePage extends React.Component {
         initialListSize={listViewSize}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onAuthorPress={this.props.onAuthorPress}
+        onVideoPress={this.props.onVideoPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -150,15 +155,16 @@ ArticlePage.propTypes = {
   }),
   adConfig: PropTypes.shape({}).isRequired,
   onRelatedArticlePress: PropTypes.func,
-  onAuthorPress: PropTypes.func
+  onAuthorPress: PropTypes.func,
+  onVideoPress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
   error: null,
-  onRelatedArticlePress: () => {},
-  onAuthorPress: () => {}
+  onRelatedArticlePress: () => { },
+  onAuthorPress: () => { }
 };
 
 export { articlePropTypes, articleDefaultProps };

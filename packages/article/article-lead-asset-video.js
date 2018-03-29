@@ -1,6 +1,5 @@
 import React from "react";
-import { Dimensions } from "react-native";
-import BrightcoveVideo from "@times-components/brightcove-video";
+import Image from "@times-components/image/image";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
@@ -14,19 +13,14 @@ const ArticleLeadAssetVideo = ({
     credits: image_credits,
     caption: image_caption,
     crop: { ratio: image_ratio, url: image_url }
-  }
+  },
+  onVideoPress
 }) => {
-  const { width } = Dimensions.get("window");
+  const [ratioWidth, ratioHeight] = image_ratio.split(":");
+  const aspectRatio = ratioWidth / ratioHeight;
   return (
-    <BrightcoveVideo
-      width={width}
-      policyKey={brightcovePolicyKey}
-      videoId={brightcoveVideoId}
-      accountId={brightcoveAccountId}
-      poster={{ uri: image_url }}
-      hideFullScreenButton
-    />
-  );
+    <Image uri={image_url} aspectRatio={aspectRatio} />
+  )
 };
 
 export default ArticleLeadAssetVideo;
