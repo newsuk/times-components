@@ -36,8 +36,7 @@ class ArticlePage extends React.Component {
           <View testID="leadAsset" key="leadAsset">
             <ArticleLeadAsset
               key={rowData.type}
-              data={rowData.data}
-              onVideoPress={onVideoPress}
+              data={{ ...rowData.data, onVideoPress }}
             />
           </View>
         );
