@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.3"></a>
+## [0.13.3](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.2...@times-components/article-image@0.13.3) (2018-03-28)
+
+
+### Bug Fixes
+
+* Fix the layout when greater than 2 Device Pixel Ratio is used ([#789](https://github.com/newsuk/times-components/issues/789)) ([3192c4a](https://github.com/newsuk/times-components/commit/3192c4a))
+
+
+
+
 <a name="0.13.2"></a>
 ## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.1...@times-components/article-image@0.13.2) (2018-03-27)
 
