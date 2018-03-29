@@ -7,7 +7,7 @@ const ArticleLeadAssetVideo = ({
   brightcovePolicyKey,
   brightcoveAccountId,
   posterImage: {
-    crop: { ratio: image_ratio, url: image_url }
+    crop: { ratio: image_ratio, url: imageUrl }
   },
   onVideoPress
 }) => {
@@ -23,7 +23,7 @@ const ArticleLeadAssetVideo = ({
         })
       }
     >
-      <Image uri={image_url} aspectRatio={aspectRatio} />
+      <Image uri={imageUrl} aspectRatio={aspectRatio} />
     </Button>
   );
 };
