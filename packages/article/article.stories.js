@@ -123,13 +123,16 @@ const RenderArticle = ({
 }) => {
   const data = fixture !== undefined ? fixture.data : {};
 
-  return <Article
-    {...data}
-    isLoading={isLoading}
-    analyticsStream={analyticsStream}
-    adConfig={adConfig}
-    error={error}
-}
+  return (
+    <Article
+      {...data}
+      isLoading={isLoading}
+      analyticsStream={analyticsStream}
+      adConfig={adConfig}
+      error={error}
+    />
+  );
+};
 
 storiesOf("Pages/Article", module)
   .add("Default", () => {
@@ -182,9 +185,7 @@ storiesOf("Pages/Article", module)
       );
     }
 
-    return (
-      <RenderArticle fixture={fullArticleFixture} />
-    );
+    return <RenderArticle fixture={fullArticleFixture} />;
   })
   .add("Fixtures - No ads", () => (
     <RenderArticle fixture={articleFixtureNoAds} />
