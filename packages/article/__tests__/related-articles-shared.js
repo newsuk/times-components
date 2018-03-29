@@ -53,11 +53,7 @@ export default () => {
     const article = standard1ArticleFixture.data.relatedArticles[0];
 
     const component = shallow(
-      <RelatedArticleItem
-        article={article}
-        onPress={onRelatedArticlePress}
-        summaryConfig={{}}
-      />
+      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
     );
 
     const eventMock = {};
@@ -68,7 +64,7 @@ export default () => {
 
     expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
       url: article.url
-    }
+    });
   });
 
   context("Standard template", () => {

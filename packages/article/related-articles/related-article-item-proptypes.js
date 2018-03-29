@@ -43,7 +43,7 @@ export const relatedArticleItemDefaultProps = {
   bylineClass: "",
   contentContainerClass: "",
   headlineClass: "",
-  imageConfig: null,
+  imageConfig: {},
   imageContainerClass: "",
   isOpinionByline: false,
   isReversed: false,
