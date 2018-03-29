@@ -2,6 +2,7 @@ import React from "react";
 import Image from "@times-components/image/image";
 import Button from "@times-components/link/link";
 import PropTypes from "prop-types";
+import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
@@ -32,10 +33,7 @@ export const propTypes = {
   brightcovePolicyKey: PropTypes.string.isRequired,
   brightcoveAccountId: PropTypes.string.isRequired,
   posterImage: PropTypes.shape({
-    crop: PropTypes.shape({
-      ratio: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired
-    }).isRequired
+    crop: cropPropTypes.isRequired
   }).isRequired,
   onVideoPress: PropTypes.func.isRequired
 };

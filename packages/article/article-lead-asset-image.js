@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "@times-components/image";
-import PropTypes from "prop-types";
+import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetImage = ({ crop: { ratio, url } }) => {
   const [ratioWidth, ratioHeight] = ratio.split(":");
@@ -10,10 +10,7 @@ const ArticleLeadAssetImage = ({ crop: { ratio, url } }) => {
 };
 
 export const propTypes = {
-  crop: PropTypes.shape({
-    ratio: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
-  }).isRequired
+  crop: cropPropTypes.isRequired
 };
 
 ArticleLeadAssetImage.propTypes = propTypes;

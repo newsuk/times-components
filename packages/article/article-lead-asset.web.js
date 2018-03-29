@@ -8,6 +8,7 @@ import {
   LeadAsset,
   LeadAssetCaptionContainer
 } from "./styles/article-body/responsive";
+import cropPropTypes from "./crop-prop-types";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
@@ -62,20 +63,15 @@ const LeadAssetComponent = props => {
   );
 };
 
-const imageProps = PropTypes.shape({
-  ratio: PropTypes.string,
-  url: PropTypes.string
-});
-
 LeadAssetComponent.propTypes = {
   leadAsset: PropTypes.shape({
     caption: PropTypes.string,
     credits: PropTypes.string,
-    crop: imageProps
+    crop: cropPropTypes
   }),
   isVideo: PropTypes.bool,
   aspectRatio: PropTypes.string,
-  displayImage: imageProps
+  displayImage: cropPropTypes
 };
 
 LeadAssetComponent.defaultProps = {
