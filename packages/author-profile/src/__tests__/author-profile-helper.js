@@ -41,7 +41,12 @@ export default AuthorProfileContent => {
   it("renders profile", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: true, pageSize })}>
+      <MockedProvider
+        mocks={fixtureGenerator.makeArticleMocks({
+          withImages: true,
+          pageSize
+        })}
+      >
         <AuthorProfile
           slug={authorProfileProps.slug}
           analyticsStream={() => {}}
@@ -59,7 +64,12 @@ export default AuthorProfileContent => {
   it("renders profile loading", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: true, pageSize })}>
+      <MockedProvider
+        mocks={fixtureGenerator.makeArticleMocks({
+          withImages: true,
+          pageSize
+        })}
+      >
         <AuthorProfile
           {...authorProfileProps}
           isLoading
@@ -75,7 +85,12 @@ export default AuthorProfileContent => {
   it("renders with no author", () => {
     const pageSize = 3;
     const component = renderer.create(
-      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ withImages: false, pageSize })}>
+      <MockedProvider
+        mocks={fixtureGenerator.makeArticleMocks({
+          withImages: false,
+          pageSize
+        })}
+      >
         <AuthorProfile
           {...authorProfileProps}
           isLoading={false}
@@ -280,7 +295,10 @@ export default AuthorProfileContent => {
 
   it("renders the author head", () => {
     const component = renderer.create(
-      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead
+        {...fixtureGenerator.makeAuthor()}
+        onTwitterLinkPress={() => {}}
+      />
     );
 
     expect(component).toMatchSnapshot();
@@ -288,7 +306,10 @@ export default AuthorProfileContent => {
 
   it("does not re-render the author head if the name changes", () => {
     const el = shallow(
-      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead
+        {...fixtureGenerator.makeAuthor()}
+        onTwitterLinkPress={() => {}}
+      />
     );
 
     el.setProps({
@@ -307,7 +328,10 @@ export default AuthorProfileContent => {
 
   it("does re-render the author head if the loading state changes", () => {
     const el = shallow(
-      <AuthorHead {...fixtureGenerator.makeAuthor()} onTwitterLinkPress={() => {}} />
+      <AuthorHead
+        {...fixtureGenerator.makeAuthor()}
+        onTwitterLinkPress={() => {}}
+      />
     );
 
     el.setProps({
@@ -331,7 +355,9 @@ export default AuthorProfileContent => {
     const withImages = true;
 
     renderer.create(
-      <MockedProvider mocks={fixtureGenerator.makeArticleMocks({ pageSize, withImages })}>
+      <MockedProvider
+        mocks={fixtureGenerator.makeArticleMocks({ pageSize, withImages })}
+      >
         <AuthorProfile
           {...authorProfileProps}
           author={fixtureGenerator.makeAuthor({ withImages })}

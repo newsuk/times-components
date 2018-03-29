@@ -1,13 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
-import { AuthorProfileProvider } from "@times-components/provider";
-import {
-  MockedProvider,
-  fragmentMatcher
-} from "@times-components/utils";
+import { MockedProvider, fragmentMatcher } from "@times-components/utils";
 import { storybookReporter } from "@times-components/tealium";
-import { fixtureGenerator } from "@times-components/provider";
+import {
+  AuthorProfileProvider,
+  fixtureGenerator
+} from "@times-components/provider";
 import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
@@ -40,7 +39,11 @@ storiesOf("Pages/AuthorProfile", module)
 
     return (
       <MockedProvider
-        mocks={fixtureGenerator.makeArticleMocks({ withImages: true, slug, pageSize })}
+        mocks={fixtureGenerator.makeArticleMocks({
+          withImages: true,
+          slug,
+          pageSize
+        })}
       >
         <AuthorProfile {...props} />
       </MockedProvider>
@@ -79,7 +82,11 @@ storiesOf("Pages/AuthorProfile", module)
   })
   .add("With an error getting author", () => (
     <MockedProvider
-      mocks={fixtureGenerator.makeMocksWithAuthorError({ slug, pageSize, withImages: true })}
+      mocks={fixtureGenerator.makeMocksWithAuthorError({
+        slug,
+        pageSize,
+        withImages: true
+      })}
     >
       <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
         {({ author, isLoading, error, refetch }) => (
@@ -113,7 +120,10 @@ storiesOf("Pages/AuthorProfile", module)
 
     return (
       <MockedProvider
-        mocks={fixtureGenerator.makeMocksWithPageError({ withImages: true, pageSize })}
+        mocks={fixtureGenerator.makeMocksWithPageError({
+          withImages: true,
+          pageSize
+        })}
       >
         <AuthorProfile {...props} />
       </MockedProvider>
@@ -133,7 +143,9 @@ storiesOf("Pages/AuthorProfile", module)
     };
 
     return (
-      <MockedProvider mocks={fixtureGenerator.makeBrokenMocks({ withImages: true, pageSize })}>
+      <MockedProvider
+        mocks={fixtureGenerator.makeBrokenMocks({ withImages: true, pageSize })}
+      >
         <AuthorProfile {...props} />
       </MockedProvider>
     );
@@ -174,7 +186,10 @@ storiesOf("Pages/AuthorProfile", module)
 
       return (
         <MockedProvider
-          mocks={fixtureGenerator.makeArticleMocks({ withImages: true, pageSize })}
+          mocks={fixtureGenerator.makeArticleMocks({
+            withImages: true,
+            pageSize
+          })}
         >
           {child}
         </MockedProvider>
