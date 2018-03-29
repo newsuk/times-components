@@ -16,7 +16,7 @@ const OpinionAndTwoSlice = ({ opinion, renderSupports }) => {
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
   const ConfigWrapper = getConfigWrapper({ supportCount });
-  const Container = getContainer({ hasSupports });
+  const Container = getContainer({ supportCount });
   const OpinionContainer = getOpinionContainer({
     hasSupports,
     supportCount

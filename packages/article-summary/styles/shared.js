@@ -6,6 +6,12 @@ import {
 } from "@times-components/styleguide";
 
 const sharedStyles = {
+  opinionByline: {
+    color: colours.section.comment,
+    fontFamily: fonts.headline,
+    fontSize: fontSizes.smallHeadline,
+    fontWeight: "400"
+  },
   text: {
     color: colours.functional.secondary,
     fontSize: fontSizes.teaser,

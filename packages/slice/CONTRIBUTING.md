@@ -10,9 +10,9 @@ Slice templates sit within their own named directory within the `/templates`
 directory. The Components take functions as `props` (render props) that pass
 configuration objects to consumers of Slice. The configuration objects are
 generated from `config.js` and `config.web.js` for native and web respectively.
-The objects manage JS properties for native and responsive CSS class names for
-web, that provide a suggested layout and format for the children that will be
-laid out in each template.
+The objects manage JS properties for native and both JS properties _and_
+responsive CSS class names for web, that provide a suggested layout and format
+for the children that will be laid out in each template.
 
 <pre>
 

@@ -24,6 +24,7 @@ class CardComponent extends Component {
       image,
       imageRatio,
       imageSize,
+      imageStyle,
       isLoading,
       isReversed,
       showImage
@@ -47,8 +48,12 @@ class CardComponent extends Component {
       const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
       return (
         <View
-          style={[styles.imageContainer, isReversed ? "" : styles.layout]}
           className={imageContainerClass}
+          style={[
+            styles.imageContainer,
+            imageStyle,
+            isReversed ? styles.reversedImageContainer : ""
+          ]}
         >
           <Image aspectRatio={imageRatio} uri={imageUrl} />
         </View>
@@ -57,11 +62,19 @@ class CardComponent extends Component {
 
     return (
       <Animations.FadeIn>
-        <View style={styles.cardContainer}>
+        <View
+          style={[
+            styles.cardContainer,
+            isReversed ? styles.reversedCardContainer : ""
+          ]}
+        >
           {!isReversed ? renderImage() : null}
           <View
-            style={[styles.contentContainer, isReversed ? styles.layout : ""]}
             className={contentContainerClass}
+            style={[
+              styles.contentContainer,
+              isReversed ? styles.reversedContentContainer : ""
+            ]}
           >
             {children}
           </View>

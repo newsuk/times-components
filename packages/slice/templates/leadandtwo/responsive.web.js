@@ -4,27 +4,15 @@ import withResponsiveStyles, {
 } from "@times-components/responsive-styles";
 import { colours, spacing } from "@times-components/styleguide";
 
-export const SupportsContainer = withResponsiveStyles(View, {
-  base: () => `
-    flex: 1;
-    flex-direction: column;
-    height: auto;
-  `,
-  mediumUp: () => `
-    flex-basis: 0 !important;
-  `
-});
-SupportsContainer.displayName = "SupportsContainer";
-
 export const getContainer = ({ hasSupports }) => {
   const Container = withResponsiveStyles(View, {
     base: () => `
       flex: 1;
       flex-direction: column;
       flex-wrap: wrap;
+      height: auto;
       padding-bottom: ${spacing(2)};
       padding-top: ${spacing(2)};
-      height: auto;
       width: 100%;
     `,
     mediumUp: () => {
@@ -40,6 +28,7 @@ export const getContainer = ({ hasSupports }) => {
 
       return `
         flex-direction: row;
+        padding-bottom: ${spacing(2)};
         ${hasSupports ? hasSupportsStyle : noSupportsStyle}
       `;
     },
@@ -56,6 +45,7 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
     base: () => `
       flex: 1;
       flex-grow: 1;
+      padding-bottom: 0;
       padding-left: ${spacing(2)};
       padding-right: ${spacing(2)};
       width: ${hasSupports ? "auto" : "100%"};
@@ -84,13 +74,25 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
   return LeadContainer;
 };
 
+export const SupportsContainer = withResponsiveStyles(View, {
+  base: () => `
+    flex: 1;
+    flex-direction: column;
+    height: auto;
+  `,
+  mediumUp: () => `
+    flex-basis: 0 !important;
+  `
+});
+SupportsContainer.displayName = "SupportsContainer";
+
 export const getSupportContainer = ({ index }) => {
   const SupportContainer = withResponsiveStyles(View, {
     base: () => {
       const secondSupportStyle = `
+        border-top-color: ${colours.functional.keyline};
         border-top-style: solid;
         border-top-width: 1px;
-        border-top-color: ${colours.functional.keyline};
         margin-top: ${spacing(2)};
         padding-top: ${spacing(2)};
       `;
@@ -106,6 +108,9 @@ export const getSupportContainer = ({ index }) => {
       margin-right: ${spacing(2)};
       padding-left: 0;
       padding-right: 0;
+    `,
+    wideUp: () => `
+      margin-top: ${index > 0 ? spacing(2) : "0"};
     `
   });
   SupportContainer.displayName = "SupportContainer";

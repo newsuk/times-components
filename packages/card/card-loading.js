@@ -16,7 +16,10 @@ const Loading = ({
     if (!showImage) return null;
     return (
       <View
-        style={[styles.imageContainer, isReversed ? "" : styles.layout]}
+        style={[
+          styles.imageContainer,
+          isReversed ? styles.reversedImageContainer : ""
+        ]}
         className={imageContainerClass}
       >
         <Image aspectRatio={imageRatio} />
@@ -27,7 +30,10 @@ const Loading = ({
     <View style={styles.cardContainer}>
       {!isReversed ? renderImage() : null}
       <View
-        style={[styles.contentContainer, isReversed ? styles.layout : ""]}
+        style={[
+          styles.contentContainer,
+          isReversed ? styles.reversedContentContainer : ""
+        ]}
         className={contentContainerClass}
       >
         <Gradient style={[styles.headerContainer]} degrees={264} />

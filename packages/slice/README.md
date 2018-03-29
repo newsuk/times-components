@@ -4,8 +4,8 @@ Slices are re-usable templates. A slice template lays itself out according to a
 set of self-defined rules. The slice also provides a suggested default
 configuration that can be applied to the given components that are to be laid
 out within the template - this configuration is provided in the form of CSS
-class names for web, and a JS API for native. The consumer of slice can opt-in
-or out of utilising these suggested default configurations
+class names and JS objects for web, and a JS API for native. The consumer of
+slice can opt-in or out of utilising these suggested default configurations
 
 ## Contributing
 

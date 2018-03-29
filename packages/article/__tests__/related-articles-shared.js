@@ -14,6 +14,9 @@ import standard3ArticlesFixture from "../related-articles/fixtures/standard/3-ar
 import leadAndTwo1ArticleFixture from "../related-articles/fixtures/leadandtwo/1-article.json";
 import leadAndTwo2ArticlesFixture from "../related-articles/fixtures/leadandtwo/2-articles.json";
 import leadAndTwo3ArticlesFixture from "../related-articles/fixtures/leadandtwo/3-articles.json";
+import opinionAndTwo1ArticleFixture from "../related-articles/fixtures/opinionandtwo/1-article.json";
+import opinionAndTwo2ArticlesFixture from "../related-articles/fixtures/opinionandtwo/2-articles.json";
+import opinionAndTwo3ArticlesFixture from "../related-articles/fixtures/opinionandtwo/3-articles.json";
 
 const createRelatedArticlesProps = (
   fixtureData,
@@ -23,10 +26,7 @@ const createRelatedArticlesProps = (
   analyticsStream: action,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId:
-    fixtureData.relatedArticlesLayout.lead ||
-    fixtureData.relatedArticlesLayout.opinion ||
-    "",
+  mainId: fixtureData.relatedArticlesLayout.main || "",
   onPress
 });
 
@@ -46,6 +46,25 @@ export default () => {
   afterEach(() => {
     mockDate.reset();
     global.Intl = realIntl;
+  });
+
+  it("callback triggered on related article press", () => {
+    const onRelatedArticlePress = jest.fn();
+    const article = standard1ArticleFixture.data.relatedArticles[0];
+
+    const component = shallow(
+      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
+    );
+
+    const eventMock = {};
+    component
+      .find("Link")
+      .at(0)
+      .simulate("press", eventMock);
+
+    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
+      url: article.url
+    });
   });
 
   context("Standard template", () => {
@@ -179,26 +198,59 @@ export default () => {
     });
   });
 
-  it("callback triggered on related article press", () => {
-    const onRelatedArticlePress = jest.fn();
-    const article = standard1ArticleFixture.data.relatedArticles[0];
+  context("Opinion and two template", () => {
+    it("should render one opinion related article", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo1ArticleFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a opinion related article"
+      );
+    });
 
-    const component = shallow(
-      <RelatedArticleItem
-        article={article}
-        onPress={onRelatedArticlePress}
-        summaryConfig={{}}
-      />
-    );
+    it("should render one opinion and one support related article", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo2ArticlesFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for opinion and support related articles"
+      );
+    });
 
-    const eventMock = {};
-    component
-      .find("Link")
-      .at(0)
-      .simulate("press", eventMock);
-
-    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-      url: article.url
+    it("should render one opinion and two support related articles", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo3ArticlesFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for opinion and two support related articles"
+      );
     });
   });
 };

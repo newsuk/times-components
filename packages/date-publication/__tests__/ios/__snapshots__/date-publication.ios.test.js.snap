@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Date Publication test on iOS when the user has a different time zone than London time zone renders a DatePublication but does not show the day 1`] = `"July 01 2017, 03:32pm BST"`;
+
 exports[`Date Publication test on iOS when the user has a different time zone than London time zone renders a DatePublication component with BST date 1`] = `"Saturday July 01 2017, 03:32pm BST"`;
 
 exports[`Date Publication test on iOS when the user has a different time zone than London time zone renders a DatePublication component with GMT date 1`] = `"Sunday January 01 2017, 02:32pm GMT"`;
@@ -9,6 +11,8 @@ exports[`Date Publication test on iOS when the user has a different time zone th
 exports[`Date Publication test on iOS when the user has a different time zone than London time zone renders a DatePublication component with Times publication and relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm GMT, The Times"`;
 
 exports[`Date Publication test on iOS when the user has a different time zone than London time zone renders a DatePublication component with no publication and relevant GMT date 1`] = `"Sunday January 01 2017, 02:32pm GMT, The Times"`;
+
+exports[`Date Publication test on iOS when the user has the same time zone as London time zone renders a DatePublication but does not show the day 1`] = `"July 01 2017, 03:32pm"`;
 
 exports[`Date Publication test on iOS when the user has the same time zone as London time zone renders a DatePublication component with BST date 1`] = `"Saturday July 01 2017, 03:32pm"`;
 

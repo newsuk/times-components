@@ -47,4 +47,13 @@ export default function() {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("renders a DatePublication but does not show the day", () => {
+    const tree = renderer
+      .create(
+        <DatePublication date="2017-07-01T14:32:00.000Z" showDay={false} />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 }

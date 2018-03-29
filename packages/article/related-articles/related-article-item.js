@@ -16,38 +16,52 @@ import styles from "./styles";
 
 const RelatedArticleItem = ({
   article,
+  bylineClass,
   contentContainerClass,
   headlineClass,
+  imageConfig,
   imageContainerClass,
+  isOpinionByline,
+  isReversed,
   onPress,
   showImage,
   showSummary,
   summaryConfig
 }) => {
   const { byline, headline, label, publishedTime, section, url } = article;
-  const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
-
-  const imageUri = get(
-    article,
-    "leadAsset.crop169.url",
-    get(article, "leadAsset.posterImage.crop.url", null)
-  );
+  const {
+    lengths: summaryLengths = [],
+    style: summaryStyle = {},
+    type: summaryType
+  } = summaryConfig;
+  const {
+    cropSize = "169",
+    imageRatio = 16 / 9,
+    style: imageStyle = {}
+  } = imageConfig;
 
   return (
     <Link url={url} onPress={e => onPress(e, { url: article.url })}>
       <Card
         contentContainerClass={contentContainerClass}
         imageContainerClass={imageContainerClass}
-        image={imageUri ? { uri: imageUri } : null}
-        imageRatio={16 / 9}
+        image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
+        imageRatio={imageRatio}
         imageSize={996}
+        imageStyle={imageStyle}
+        isReversed={isReversed}
         showImage={showImage}
       >
         <ArticleSummary
-          bylineProps={{ ast: byline }}
+          bylineProps={{
+            ast: byline,
+            bylineClass,
+            bylineStyle: styles.byline,
+            isOpinionByline
+          }}
           content={() =>
             showSummary && (
-              <View>
+              <View style={summaryStyle}>
                 {summaryLengths.map(item => {
                   const summaryClassSuffix = `${item}Class`;
                   const summaryClass = summaryType
@@ -66,12 +80,12 @@ const RelatedArticleItem = ({
               </View>
             )
           }
-          datePublicationProps={{ date: publishedTime }}
+          datePublicationProps={{ date: publishedTime, showDay: false }}
           headline={() => (
             <ArticleSummaryHeadline
               className={headlineClass}
-              style={styles.headline}
               headline={headline}
+              style={styles.headline}
             />
           )}
           labelProps={{

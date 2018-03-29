@@ -35,6 +35,9 @@ import standard3RelatedArticlesFixture from "./related-articles/fixtures/standar
 import leadAndTwo1RelatedArticleFixture from "./related-articles/fixtures/leadandtwo/1-article.json";
 import leadAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/2-articles.json";
 import leadAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/3-articles.json";
+import opinionAndTwo1RelatedArticleFixture from "./related-articles/fixtures/opinionandtwo/1-article.json";
+import opinionAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/opinionandtwo/2-articles.json";
+import opinionAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/opinionandtwo/3-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -47,10 +50,7 @@ const createRelatedArticlesProps = fixtureData => ({
   analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId:
-    fixtureData.relatedArticlesLayout.lead ||
-    fixtureData.relatedArticlesLayout.opinion ||
-    "",
+  mainId: fixtureData.relatedArticlesLayout.main || "",
   onPress: preventDefaultedAction("onArticlePress")
 });
 
@@ -282,6 +282,33 @@ storiesOf("Pages/Article", module)
     <ScrollView>
       <RelatedArticles
         {...createRelatedArticlesProps(leadAndTwo3RelatedArticlesFixture.data)}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with one related article", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo1RelatedArticleFixture.data
+        )}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with two related articles", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo2RelatedArticlesFixture.data
+        )}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with three related articles", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo3RelatedArticlesFixture.data
+        )}
       />
     </ScrollView>
   ));

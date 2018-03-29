@@ -1,577 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a Card 1`] = `
-<View
-  collapsable={undefined}
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
+exports[`Re-renders after showing the loading state 1`] = `
+<FadeIn>
   <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          Object {
-            "flex": 1,
-            "minWidth": "100%",
-          },
-          Object {
-            "marginBottom": 10,
-          },
-        ]
-      }
-    >
-      <View
-        aspectRatio={1.5}
-        style={Object {}}
-      >
-        <View
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            onLoad={[Function]}
-            source={
-              Object {
-                "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          />
-          <View
-            onLayout={[Function]}
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flex": 1,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      className=""
-      style={
-        Array [
-          Object {
-            "flex": 1,
-            "minWidth": "100%",
-          },
-          "",
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        Some text
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`2. Render the loading state 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-    }
-  }
->
-  <View
-    className=""
     style={
       Array [
         Object {
-          "flex": 1,
-          "minWidth": "100%",
-        },
-        Object {
-          "marginBottom": 10,
-        },
-      ]
-    }
-  >
-    <View
-      aspectRatio={1.5}
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
-      >
-        <Image
-          onLoad={[Function]}
-          style={
-            Array [
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
-          }
-        />
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              null,
-            ]
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    className=""
-    style={
-      Array [
-        Object {
-          "flex": 1,
-          "minWidth": "100%",
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
         },
         "",
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "height": 24,
-            "marginBottom": 10,
-            "maxWidth": 300,
-          },
-        ]
-      }
-    >
-      <BVLinearGradient
-        colors={
-          Array [
-            "#F9F9F9",
-            "#EDEDED",
-          ]
-        }
-        end={
-          Object {
-            "x": -0.09302964577578221,
-            "y": 0.11488204504197774,
-          }
-        }
-        locations={
-          Array [
-            0,
-            1,
-          ]
-        }
-        start={
-          Object {
-            "x": 1,
-            "y": 0,
-          }
-        }
-        style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-          ]
-        }
-      />
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          },
-        ]
-      }
-    >
-      <BVLinearGradient
-        colors={
-          Array [
-            "#F9F9F9",
-            "#EDEDED",
-          ]
-        }
-        end={
-          Object {
-            "x": -0.049525179317961854,
-            "y": 0.05500328394968961,
-          }
-        }
-        locations={
-          Array [
-            0,
-            1,
-          ]
-        }
-        start={
-          Object {
-            "x": 1,
-            "y": 0,
-          }
-        }
-        style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-          ]
-        }
-      />
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          },
-        ]
-      }
-    >
-      <BVLinearGradient
-        colors={
-          Array [
-            "#F9F9F9",
-            "#EDEDED",
-          ]
-        }
-        end={
-          Object {
-            "x": -0.049525179317961854,
-            "y": 0.05500328394968961,
-          }
-        }
-        locations={
-          Array [
-            0,
-            1,
-          ]
-        }
-        start={
-          Object {
-            "x": 1,
-            "y": 0,
-          }
-        }
-        style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-          ]
-        }
-      />
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "height": 10,
-            "marginBottom": 10,
-          },
-          Object {
-            "marginBottom": 0,
-            "maxWidth": 240,
-          },
-        ]
-      }
-    >
-      <BVLinearGradient
-        colors={
-          Array [
-            "#F9F9F9",
-            "#EDEDED",
-          ]
-        }
-        end={
-          Object {
-            "x": -0.049525179317961854,
-            "y": 0.05500328394968961,
-          }
-        }
-        locations={
-          Array [
-            0,
-            1,
-          ]
-        }
-        start={
-          Object {
-            "x": 1,
-            "y": 0,
-          }
-        }
-        style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`3. Renders without an image 1`] = `
-<View
-  collapsable={undefined}
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
-    }
-  >
-    <View
       className=""
       style={
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
+          Object {},
           "",
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        No image
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`4. Renders without an image URL 1`] = `
-<View
-  collapsable={undefined}
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          Object {
-            "flex": 1,
-            "minWidth": "100%",
-          },
-          "",
-        ]
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        No image URL
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`5. Re-renders after showing the loading state 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          Object {
-            "flex": 1,
-            "minWidth": "100%",
-          },
-          Object {
-            "marginBottom": 10,
-          },
         ]
       }
     >
       <TimesImage
-        aspectRatio={1.5}
+        aspectRatio={0.6666666666666666}
         style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
@@ -582,6 +42,7 @@ exports[`5. Re-renders after showing the loading state 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -596,16 +57,20 @@ exports[`5. Re-renders after showing the loading state 1`] = `
 </FadeIn>
 `;
 
-exports[`6. Renders Card normally and does not re-render 1`] = `
+exports[`Render a Card 1`] = `
 <FadeIn>
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
     }
   >
     <View
@@ -614,16 +79,16 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
             "minWidth": "100%",
           },
-          Object {
-            "marginBottom": 10,
-          },
+          Object {},
+          "",
         ]
       }
     >
       <TimesImage
-        aspectRatio={1.5}
+        aspectRatio={0.6666666666666666}
         style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
@@ -634,6 +99,350 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          },
+          "",
+        ]
+      }
+    >
+      <span>
+        A card
+      </span>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`Render a loading Card 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    className=""
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        },
+        "",
+      ]
+    }
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      style={Object {}}
+      uri=""
+    />
+  </View>
+  <View
+    className=""
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        },
+        "",
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+          Object {
+            "marginBottom": 0,
+            "maxWidth": 240,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Render a loading Card 2`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    className=""
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        },
+        "",
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+          Object {
+            "marginBottom": 0,
+            "maxWidth": 240,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Render a loading Card 3`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    className=""
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          },
+          Object {
+            "marginBottom": 0,
+            "maxWidth": 240,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    className=""
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        },
+        Object {
+          "marginBottom": 0,
+        },
+      ]
+    }
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      style={Object {}}
+      uri=""
+    />
+  </View>
+</View>
+`;
+
+exports[`Render the loading state 1`] = `
+<Loading
+  contentContainerClass=""
+  imageContainerClass=""
+  imageRatio={0.6666666666666666}
+  isReversed={false}
+  showImage={true}
+/>
+`;
+
+exports[`Renders Card normally and does not re-render 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "marginBottom": 10,
+            "minWidth": "100%",
+          },
+          Object {},
+          "",
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
@@ -648,16 +457,22 @@ exports[`6. Renders Card normally and does not re-render 1`] = `
 </FadeIn>
 `;
 
-exports[`7. Renders a Card with a reversed layout 1`] = `
+exports[`Renders a Card with a reversed layout 1`] = `
 <FadeIn>
   <View
     style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-      }
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        Object {
+          "height": "auto",
+        },
+      ]
     }
   >
     <View
@@ -666,6 +481,7 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           Object {
@@ -684,17 +500,132 @@ exports[`7. Renders a Card with a reversed layout 1`] = `
         Array [
           Object {
             "flex": 1,
+            "marginBottom": 10,
+            "minWidth": "100%",
+          },
+          Object {},
+          Object {
+            "marginBottom": 0,
+          },
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`Renders without an image 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
             "minWidth": "100%",
           },
           "",
         ]
       }
     >
-      <TimesImage
-        aspectRatio={1.5}
-        style={Object {}}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
-      />
+      <span>
+        No image
+      </span>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`Renders without an image URL 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          },
+          "",
+        ]
+      }
+    >
+      <span>
+        No URL
+      </span>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`Renders without an image when showImage is false 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-end",
+        },
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          },
+          "",
+        ]
+      }
+    >
+      <span>
+        No image
+      </span>
     </View>
   </View>
 </FadeIn>
