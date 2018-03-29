@@ -1,6 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleSummary, { ArticleSummaryContent, summarise } from "../article-summary";
+import ArticleSummary, {
+  ArticleSummaryContent,
+  summarise
+} from "../article-summary";
 import defaultFixture from "../../fixtures/default";
 import articleMultiFixture from "../../fixtures/article-multi";
 import emptyParagraphFixture from "../../fixtures/article-empty-paragraph";
