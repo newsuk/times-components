@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Handles errors",
   "main": "error-view",
   "scripts": {
@@ -35,7 +35,7 @@
     "@storybook/addon-actions": "3.3.15",
     "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/brightcove-video": "2.1.1",
+    "@times-components/brightcove-video": "2.1.2",
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/jest-configurator": "0.2.2",
     "dextrose": "1.7.3",
@@ -48,7 +48,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.3",
+    "@times-components/styleguide": "0.5.4",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
