@@ -32,14 +32,12 @@ const RelatedArticleItem = ({
   const { lengths: summaryLengths = [], type: summaryType } = summaryConfig;
   const { cropSize = "169", imageRatio = 16 / 9 } = imageConfig;
 
-  const imageUri = get(article, `leadAsset.crop${cropSize}.url`);
-
   return (
     <Link url={url} onPress={e => onPress(e, { url: article.url })}>
       <Card
         contentContainerClass={contentContainerClass}
         imageContainerClass={imageContainerClass}
-        image={imageUri ? { uri: imageUri } : null}
+        image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
         imageRatio={imageRatio}
         imageSize={996}
         isReversed={isReversed}

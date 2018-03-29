@@ -1803,6 +1803,1824 @@ exports[`Related articles tests on android Lead and two template should render o
 </View>
 `;
 
+exports[`Related articles tests on android Opinion and two template should render one opinion and one support related article 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 55,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="3"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 25,
+        }
+      }
+    >
+      Related articles
+    </Text>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  Object {
+                    "height": "auto",
+                  },
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#850029",
+                          },
+                        ]
+                      }
+                    >
+                      O P I N I O N
+                    </Text>
+                  </View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Sathnam Sanghera
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    High score for labour in football club election
+                  </Text>
+                  <View>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      className="summaryHidden summary125Class"
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                </View>
+              </View>
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 10,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 0,
+                    },
+                  ]
+                }
+              >
+                <View
+                  aspectRatio={0.6666666666666666}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        onLoad={[Function]}
+                        source={
+                          Object {
+                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "bottom": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                            },
+                            Object {
+                              "height": "100%",
+                              "width": "100%",
+                            },
+                            undefined,
+                          ]
+                        }
+                      />
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                            null,
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        >
+                          <BVLinearGradient
+                            colors={
+                              Array [
+                                "#F9F9F9",
+                                "#EDEDED",
+                              ]
+                            }
+                            end={
+                              Object {
+                                "x": -0.09302964577578221,
+                                "y": 0.11488204504197774,
+                              }
+                            }
+                            locations={
+                              Array [
+                                0,
+                                1,
+                              ]
+                            }
+                            start={
+                              Object {
+                                "x": 1,
+                                "y": 0,
+                              }
+                            }
+                            style={
+                              Array [
+                                Object {
+                                  "flex": 1,
+                                },
+                              ]
+                            }
+                          />
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#333333",
+                          },
+                        ]
+                      }
+                    >
+                      D E F E N C E   C U T S   |   A N A L Y S I S
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    Size matters, say very tiny ministers
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Related articles tests on android Opinion and two template should render one opinion and two support related articles 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 55,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="3"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 25,
+        }
+      }
+    >
+      Related articles
+    </Text>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  Object {
+                    "height": "auto",
+                  },
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#850029",
+                          },
+                        ]
+                      }
+                    >
+                      O P I N I O N
+                    </Text>
+                  </View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Sathnam Sanghera
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    High score for labour in football club election
+                  </Text>
+                  <View>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      className="summaryHidden summary125Class"
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                </View>
+              </View>
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 10,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 0,
+                    },
+                  ]
+                }
+              >
+                <View
+                  aspectRatio={0.6666666666666666}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        onLoad={[Function]}
+                        source={
+                          Object {
+                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "bottom": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                            },
+                            Object {
+                              "height": "100%",
+                              "width": "100%",
+                            },
+                            undefined,
+                          ]
+                        }
+                      />
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                            null,
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        >
+                          <BVLinearGradient
+                            colors={
+                              Array [
+                                "#F9F9F9",
+                                "#EDEDED",
+                              ]
+                            }
+                            end={
+                              Object {
+                                "x": -0.09302964577578221,
+                                "y": 0.11488204504197774,
+                              }
+                            }
+                            locations={
+                              Array [
+                                0,
+                                1,
+                              ]
+                            }
+                            start={
+                              Object {
+                                "x": 1,
+                                "y": 0,
+                              }
+                            }
+                            style={
+                              Array [
+                                Object {
+                                  "flex": 1,
+                                },
+                              ]
+                            }
+                          />
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#333333",
+                          },
+                        ]
+                      }
+                    >
+                      D E F E N C E   C U T S
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    Trident out of MoD budget, Hammond urged
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  "",
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    "",
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#333333",
+                          },
+                        ]
+                      }
+                    >
+                      D E F E N C E   C U T S   |   A N A L Y S I S
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    Size matters, say tiny ministers
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#696969",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 15,
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Deborah Haynes
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Related articles tests on android Opinion and two template should render one opinion related article 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 55,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      aria-level="3"
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 25,
+        }
+      }
+    >
+      Related articles
+    </Text>
+  </View>
+  <View
+    style={undefined}
+  >
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          pointerEvents="box-only"
+          testID={undefined}
+        >
+          <View
+            collapsable={undefined}
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                    "justifyContent": "flex-end",
+                  },
+                  Object {
+                    "height": "auto",
+                  },
+                ]
+              }
+            >
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 0,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 12,
+                            "fontWeight": "400",
+                            "letterSpacing": 1.2,
+                            "marginBottom": -4,
+                            "paddingTop": 5,
+                          },
+                          Object {
+                            "color": "#850029",
+                          },
+                        ]
+                      }
+                    >
+                      O P I N I O N
+                    </Text>
+                  </View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      Sathnam Sanghera
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    className=""
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontWeight": "400",
+                          "marginBottom": 5,
+                        },
+                        Object {
+                          "fontSize": 22,
+                          "lineHeight": 22,
+                        },
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": 22,
+                          "fontWeight": "400",
+                          "lineHeight": 22,
+                          "marginBottom": 5,
+                        },
+                      ]
+                    }
+                  >
+                    Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does
+                  </Text>
+                  <View>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      className="summaryHidden summary125Class"
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#696969",
+                          "flexWrap": "wrap",
+                          "fontFamily": "TimesDigitalW04",
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                          "marginBottom": 10,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        
+                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
+                        ...
+                      </Text>
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    November 25 2017, 12:01am
+                  </Text>
+                </View>
+              </View>
+              <View
+                className=""
+                style={
+                  Array [
+                    Object {
+                      "flex": 1,
+                      "marginBottom": 10,
+                      "minWidth": "100%",
+                    },
+                    Object {
+                      "marginBottom": 0,
+                    },
+                  ]
+                }
+              >
+                <View
+                  aspectRatio={0.6666666666666666}
+                  style={Object {}}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        onLoad={[Function]}
+                        source={
+                          Object {
+                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "bottom": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                            },
+                            Object {
+                              "height": "100%",
+                              "width": "100%",
+                            },
+                            undefined,
+                          ]
+                        }
+                      />
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Array [
+                            Object {
+                              "flex": 1,
+                            },
+                            null,
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        >
+                          <BVLinearGradient
+                            colors={
+                              Array [
+                                "#F9F9F9",
+                                "#EDEDED",
+                              ]
+                            }
+                            end={
+                              Object {
+                                "x": -0.09302964577578221,
+                                "y": 0.11488204504197774,
+                              }
+                            }
+                            locations={
+                              Array [
+                                0,
+                                1,
+                              ]
+                            }
+                            start={
+                              Object {
+                                "x": 1,
+                                "y": 0,
+                              }
+                            }
+                            style={
+                              Array [
+                                Object {
+                                  "flex": 1,
+                                },
+                              ]
+                            }
+                          />
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Related articles tests on android Standard template should handle no related articles 1`] = `null`;
 
 exports[`Related articles tests on android Standard template should render one related article 1`] = `
@@ -3773,6 +5591,31 @@ Array [
 ]
 `;
 
+exports[`should send analytics for a opinion related article 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Sathnam Sanghera",
+            "headline": "Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "OPINION_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`should send analytics for a single related article 1`] = `
 Array [
   Array [
@@ -3861,6 +5704,77 @@ Array [
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
         "template": "LEAD_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for opinion and support related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Sathnam Sanghera",
+            "headline": "High score for labour in football club election",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-1",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Size matters, say very tiny ministers",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-2",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "OPINION_AND_TWO",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`should send analytics for opinion and two support related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Sathnam Sanghera",
+            "headline": "High score for labour in football club election",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-1",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Trident out of MoD budget, Hammond urged",
+            "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-2",
+          },
+          Object {
+            "byline": "Deborah Haynes",
+            "headline": "Size matters, say tiny ministers",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+            "publishedTime": "2017-11-25T00:01:00.000Z",
+            "role": "standard-3",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "OPINION_AND_TWO",
       },
       "component": "Page",
       "object": "RelatedArticles",
