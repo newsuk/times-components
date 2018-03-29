@@ -131,6 +131,8 @@ const RenderArticle = ({
       analyticsStream={analyticsStream}
       adConfig={adConfig}
       error={error}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
     />
   );
 };
@@ -159,6 +161,10 @@ storiesOf("Pages/Article", module)
             error={error}
             analyticsStream={storybookReporter}
             adConfig={defaultAdConfig}
+            onRelatedArticlePress={preventDefaultedAction(
+              "onRelatedArticlePress"
+            )}
+            onAuthorPress={preventDefaultedAction("onAuthorPress")}
           />
         )}
       </ArticleProvider>
