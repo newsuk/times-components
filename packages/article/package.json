@@ -8,13 +8,15 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist",
+    "prepublishOnly": "yarn transpile",
     "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",

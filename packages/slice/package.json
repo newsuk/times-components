@@ -11,7 +11,9 @@
     "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist"
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",

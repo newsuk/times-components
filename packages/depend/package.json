@@ -10,8 +10,10 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --bail --ci --coverage",
-    "prepublishOnly": "npm run build",
-    "__TODO": "remove"
+    "prepublishOnly": "yarn transpile",
+    "__TODO": "remove",
+    "transpile": "npm run build",
+    "postinstall": "yarn transpile"
   },
   "bin": {
     "depend": "dist/cli.js"

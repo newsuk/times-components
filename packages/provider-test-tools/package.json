@@ -9,7 +9,9 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",
-    "prepublishOnly": "babel src --ignore node_modules,__tests__ -d dist"
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "jest": {
     "preset": "react-native",
