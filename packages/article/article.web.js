@@ -52,6 +52,7 @@ class ArticlePage extends React.Component {
           articles={relatedArticles}
           template={relatedArticlesLayout.template}
           onPress={onRelatedArticlePress}
+          mainId={relatedArticlesLayout.main}
         />
       ) : null;
 

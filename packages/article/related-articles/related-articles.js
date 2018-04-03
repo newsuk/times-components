@@ -52,8 +52,10 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   const renderSlice = () => {
-    const mainArticle = articles.find(article => article.id === mainId);
-    const supports = articles.filter(article => article.id !== mainId);
+    const mainArticle = mainId
+      ? articles.find(article => article.id === mainId)
+      : articles[0];
+    const supports = articles.filter(article => article.id !== mainArticle.id);
 
     switch (template) {
       case "DEFAULT":
