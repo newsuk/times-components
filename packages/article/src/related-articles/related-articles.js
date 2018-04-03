@@ -22,10 +22,10 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   const renderArticleItem = (config, article) => {
     const {
       bylineClass = "",
-      contentContainerClass = "",
+      contentContainerClass,
       headlineClass = "",
       imageConfig = {},
-      imageContainerClass = "",
+      imageContainerClass,
       isOpinionByline = false,
       isReversed = false,
       showImage = true,
@@ -63,7 +63,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
         return (
           <StandardSlice
             itemCount={articleCount}
-            renderItems={(config = {}) =>
+            renderItems={config =>
               articles.map(article => renderArticleItem(config, article))
             }
           />
@@ -71,8 +71,8 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
       case "LEAD_AND_TWO":
         return (
           <LeadAndTwoSlice
-            lead={(config = {}) => renderArticleItem(config, mainArticle)}
-            renderSupports={(config = {}) =>
+            lead={config => renderArticleItem(config, mainArticle)}
+            renderSupports={config =>
               supports.map(article => renderArticleItem(config, article))
             }
           />
@@ -80,8 +80,8 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
       case "OPINION_AND_TWO":
         return (
           <OpinionAndTwoSlice
-            opinion={(config = {}) => renderArticleItem(config, mainArticle)}
-            renderSupports={(config = {}) =>
+            opinion={config => renderArticleItem(config, mainArticle)}
+            renderSupports={config =>
               supports.map(article => renderArticleItem(config, article))
             }
           />
