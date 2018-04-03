@@ -31,13 +31,9 @@ const createStandardItems = noOfItems =>
 
 storiesOf("Primitives/Slice", module).add("Standard", () => (
   <StandardSlice
-    itemCount={Number(
-      select(itemCountLabel, itemCount, itemCountDefault)
-    )}
+    itemCount={Number(select(itemCountLabel, itemCount, itemCountDefault))}
     renderItems={() =>
-      createStandardItems(
-        select(itemCountLabel, itemCount, itemCountDefault)
-      )
+      createStandardItems(select(itemCountLabel, itemCount, itemCountDefault))
     }
   />
 ));

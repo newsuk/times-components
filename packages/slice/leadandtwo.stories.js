@@ -40,9 +40,7 @@ storiesOf("Primitives/Slice", module).add("Lead and two", () => (
       />
     )}
     renderSupports={() =>
-      createSupportItems(
-        select(itemCountLabel, itemCount, itemCountDefault)
-      )
+      createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
     }
   />
 ));

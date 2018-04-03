@@ -40,9 +40,7 @@ storiesOf("Primitives/Slice", module).add("Opinion and two", () => (
       />
     )}
     renderSupports={() =>
-      createSupportItems(
-        select(itemCountLabel, itemCount, itemCountDefault)
-      )
+      createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
     }
   />
 ));
