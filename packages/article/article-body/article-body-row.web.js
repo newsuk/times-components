@@ -4,7 +4,6 @@ import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BrightcoveVideo from "@times-components/brightcove-video";
-import Caption from "@times-components/caption";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import AspectRatioContainer from "../media-aspect-ratio";
@@ -15,6 +14,7 @@ import {
   PullQuoteContainer,
   PullQuoteResp
 } from "../styles/article-body/responsive";
+import InsetCaption from "../inset-caption";
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -78,7 +78,7 @@ const ArticleRow = ({ content: { data, index } }) =>
               poster={{ uri: posterImage.crop.url }}
             />
           </AspectRatioContainer>
-          <Caption text={caption} />
+          <InsetCaption caption={caption} />
         </MediaWrapper>
       );
     },
