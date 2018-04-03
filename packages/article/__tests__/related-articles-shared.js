@@ -7,6 +7,7 @@ import { shallow } from "enzyme";
 
 import RelatedArticles from "../related-articles/related-articles";
 import RelatedArticleItem from "../related-articles/related-article-item";
+import getMainRelatedArticleId from "../related-articles/get-main-related-article-id";
 
 import standard1ArticleFixture from "../related-articles/fixtures/standard/1-article.json";
 import standard2ArticlesFixture from "../related-articles/fixtures/standard/2-articles.json";
@@ -26,7 +27,7 @@ const createRelatedArticlesProps = (
   analyticsStream: action,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main || "",
+  mainId: getMainRelatedArticleId(fixtureData.relatedArticlesLayout),
   onPress
 });
 
