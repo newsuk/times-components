@@ -10,12 +10,12 @@ export const relatedArticleItemPropTypes = {
     headline: PropTypes.string.isRequired,
     label: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
-    summary105: PropTypes.arrayOf(treePropType).isRequired,
+    summary105: PropTypes.arrayOf(treePropType),
     summary125: PropTypes.arrayOf(treePropType).isRequired,
-    summary145: PropTypes.arrayOf(treePropType).isRequired,
-    summary160: PropTypes.arrayOf(treePropType).isRequired,
-    summary175: PropTypes.arrayOf(treePropType).isRequired,
-    summary225: PropTypes.arrayOf(treePropType).isRequired,
+    summary145: PropTypes.arrayOf(treePropType),
+    summary160: PropTypes.arrayOf(treePropType),
+    summary175: PropTypes.arrayOf(treePropType),
+    summary225: PropTypes.arrayOf(treePropType),
     url: PropTypes.string
   }).isRequired,
   bylineClass: PropTypes.string,
@@ -40,6 +40,11 @@ export const relatedArticleItemPropTypes = {
 };
 
 export const relatedArticleItemDefaultProps = {
+  summary105: [],
+  summary145: [],
+  summary160: [],
+  summary175: [],
+  summary225: [],
   bylineClass: "",
   contentContainerClass: "",
   headlineClass: "",
