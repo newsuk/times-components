@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
@@ -32,16 +33,6 @@ class ArticlePage extends React.Component {
   ) {
     switch (rowData.type) {
       case "leadAsset": {
-        let image;
-        if (rowData.data.__typename === "Video") {
-          // eslint-disable-line no-underscore-dangle
-          // TODO: render video lead assets on native
-          image = rowData.data.posterImage.crop;
-        } else {
-          image = rowData.data.crop;
-        }
-        const [ratioWidth, ratioHeight] = image.ratio.split(":");
-        const aspectRatio = ratioWidth / ratioHeight;
         return (
           <View testID="leadAsset" key="leadAsset">
             <ArticleLeadAsset

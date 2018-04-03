@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import { storiesOf, addDecorator } from "@storybook/react-native";
+import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
@@ -9,7 +9,7 @@ import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { text } from "@storybook/addon-knobs";
+import { text, select } from "@storybook/addon-knobs";
 import { ArticleProvider } from "@times-components/provider";
 import {
   MockedProvider,
