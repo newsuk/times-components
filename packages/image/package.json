@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.15.2",
+  "version": "1.15.3",
   "main": "image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -48,7 +48,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/gestures": "1.2.22",
+    "@times-components/gestures": "1.2.23",
     "@times-components/gradient": "0.8.2",
     "@times-components/link": "0.15.14",
     "@times-components/styleguide": "0.5.4",

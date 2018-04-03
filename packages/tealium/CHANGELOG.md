@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.12"></a>
+## 0.2.12 (2018-04-03)
+
+
+### Bug Fixes
+
+* use mutable object as apollo uses immutables ([#766](https://github.com/newsuk/times-components/issues/766)) ([080f1ec](https://github.com/newsuk/times-components/commit/080f1ec))
+
+
+
+
 <a name="0.2.11"></a>
 ## [0.2.11](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.2.10...@times-components/tealium@0.2.11) (2018-03-15)
 

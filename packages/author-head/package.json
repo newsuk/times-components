@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.22.7",
+  "version": "0.22.8",
   "main": "author-head",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -48,7 +48,7 @@
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/jest-configurator": "0.2.2",
     "@times-components/storybook": "0.4.4",
-    "@times-components/tealium": "0.2.11",
+    "@times-components/tealium": "0.2.12",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
@@ -64,12 +64,12 @@
   },
   "dependencies": {
     "@times-components/icons": "0.3.14",
-    "@times-components/image": "1.15.2",
+    "@times-components/image": "1.15.3",
     "@times-components/link": "0.15.14",
-    "@times-components/markup": "0.25.7",
+    "@times-components/markup": "0.25.8",
     "@times-components/responsive-styles": "0.6.0",
     "@times-components/styleguide": "0.5.4",
-    "@times-components/tracking": "0.10.1",
+    "@times-components/tracking": "0.10.2",
     "prop-types": "15.6.0",
     "styled-components": "3.2.2",
     "svgs": "3.2.1"

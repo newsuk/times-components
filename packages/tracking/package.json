@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "main": "tracking",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -35,7 +35,7 @@
     "@times-components/eslint-config-thetimes": "0.1.4",
     "@times-components/jest-configurator": "0.2.2",
     "@times-components/storybook": "0.4.4",
-    "@times-components/tealium": "0.2.11",
+    "@times-components/tealium": "0.2.12",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
