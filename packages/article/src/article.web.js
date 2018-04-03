@@ -28,7 +28,12 @@ const adStyle = {
 };
 
 class ArticlePage extends React.Component {
-  static renderArticle(articleData, onRelatedArticlePress, onAuthorPress) {
+  static renderArticle(
+    articleData,
+    onRelatedArticlePress,
+    onAuthorPress,
+    onLinkPress
+  ) {
     const {
       headline,
       flags,
@@ -84,7 +89,12 @@ class ArticlePage extends React.Component {
             <LeadAssetComponent {...leadAssetProps} />
           </LeadAssetContainer>
           <BodyContainer>
-            <ArticleBody content={content} section={section} contextUrl={url} />
+            <ArticleBody
+              content={content}
+              section={section}
+              contextUrl={url}
+              onLinkPress={onLinkPress}
+            />
           </BodyContainer>
         </MainContainer>
         <Topics topics={topics} />
@@ -101,7 +111,8 @@ class ArticlePage extends React.Component {
       error,
       isLoading,
       onRelatedArticlePress,
-      onAuthorPress
+      onAuthorPress,
+      onLinkPress
     } = this.props;
 
     if (error) {
@@ -117,7 +128,8 @@ class ArticlePage extends React.Component {
         {ArticlePage.renderArticle(
           this.props.article,
           onRelatedArticlePress,
-          onAuthorPress
+          onAuthorPress,
+          onLinkPress
         )}
       </AdComposer>
     );
@@ -135,7 +147,8 @@ ArticlePage.propTypes = {
     message: PropTypes.string
   }),
   adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired
+  onRelatedArticlePress: PropTypes.func.isRequired,
+  onLinkPress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {
