@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import ModalImage from "@times-components/image/modal-image";
 import { AdComposer } from "@times-components/ad";
 
 import ArticleContent from "./article-content";
@@ -16,6 +15,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import RelatedArticles from "./related-articles/related-articles";
 import Topics from "./topics";
+import ArticleLeadAsset from "./article-lead-asset";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -24,21 +24,20 @@ const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
 class ArticlePage extends React.Component {
-  static renderRow(rowData, onRelatedArticlePress, onAuthorPress) {
+  static renderRow(
+    rowData,
+    onRelatedArticlePress,
+    onAuthorPress,
+    onVideoPress
+  ) {
     switch (rowData.type) {
       case "leadAsset": {
-        let image;
-        if (rowData.data.type === "Video") {
-          // TODO: render video lead assets on native
-          image = rowData.data.posterImage.crop;
-        } else {
-          image = rowData.data.crop;
-        }
-        const [ratioWidth, ratioHeight] = image.ratio.split(":");
-        const aspectRatio = ratioWidth / ratioHeight;
         return (
-          <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-            <ModalImage uri={image.url} aspectRatio={aspectRatio} />
+          <View testID="leadAsset" key="leadAsset">
+            <ArticleLeadAsset
+              key={rowData.type}
+              data={{ ...rowData.data, onVideoPress }}
+            />
           </View>
         );
       }
@@ -136,6 +135,7 @@ class ArticlePage extends React.Component {
         initialListSize={listViewSize}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onAuthorPress={this.props.onAuthorPress}
+        onVideoPress={this.props.onVideoPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -159,7 +159,8 @@ ArticlePage.propTypes = {
   }),
   adConfig: PropTypes.shape({}).isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
-  onAuthorPress: PropTypes.func.isRequired
+  onAuthorPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {

@@ -133,6 +133,7 @@ const RenderArticle = ({
       error={error}
       onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
       onAuthorPress={preventDefaultedAction("onAuthorPress")}
+      onVideoPress={preventDefaultedAction("onVideoPress")}
     />
   );
 };
