@@ -13,7 +13,6 @@ import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
 import Topics from "./topics";
 import RelatedArticles from "./related-articles/related-articles";
-import getMainRelatedArticleId from "./related-articles/get-main-related-article-id";
 
 import {
   MainContainer,
@@ -53,7 +52,7 @@ class ArticlePage extends React.Component {
           articles={relatedArticles}
           template={relatedArticlesLayout.template}
           onPress={onRelatedArticlePress}
-          mainId={getMainRelatedArticleId(relatedArticlesLayout)}
+          mainId={relatedArticlesLayout.main}
         />
       ) : null;
 

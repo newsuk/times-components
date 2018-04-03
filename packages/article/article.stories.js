@@ -11,7 +11,6 @@ import { query as articleQuery } from "@times-components/provider/article";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
 import RelatedArticles from "./related-articles/related-articles";
-import getMainRelatedArticleId from "./related-articles/get-main-related-article-id";
 
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
@@ -51,7 +50,7 @@ const createRelatedArticlesProps = fixtureData => ({
   analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId: getMainRelatedArticleId(fixtureData.relatedArticlesLayout),
+  mainId: fixtureData.relatedArticlesLayout.main,
   onPress: preventDefaultedAction("onArticlePress")
 });
 
