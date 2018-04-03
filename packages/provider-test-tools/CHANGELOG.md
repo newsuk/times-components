@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.13"></a>
+## 0.1.13 (2018-04-03)
+
+
+### Bug Fixes
+
+* use mutable object as apollo uses immutables ([#766](https://github.com/newsuk/times-components/issues/766)) ([080f1ec](https://github.com/newsuk/times-components/commit/080f1ec))
+
+
+
+
 <a name="0.1.12"></a>
 ## [0.1.12](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.11...@times-components/provider-test-tools@0.1.12) (2018-03-15)
 

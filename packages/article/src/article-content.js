@@ -6,14 +6,15 @@ const ArticleContent = ({
   data,
   renderRow,
   onRelatedArticlePress,
-  onAuthorPress
+  onAuthorPress,
+  onVideoPress
 }) => (
   <FlatList
     testID="flat-list-article"
     keyExtractor={item => item.type + item.index || item.type}
     data={data}
     renderItem={({ item }) =>
-      renderRow(item, onRelatedArticlePress, onAuthorPress)
+      renderRow(item, onRelatedArticlePress, onAuthorPress, onVideoPress)
     }
   />
 );
@@ -28,7 +29,8 @@ ArticleContent.propTypes = {
   ).isRequired,
   renderRow: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
-  onAuthorPress: PropTypes.func.isRequired
+  onAuthorPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 
 export default ArticleContent;
