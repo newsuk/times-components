@@ -2137,7 +2137,7 @@
               "deprecationReason": null
             },
             {
-              "name": "lead",
+              "name": "main",
               "description": "",
               "args": [],
               "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
@@ -2167,7 +2167,7 @@
               "deprecationReason": null
             },
             {
-              "name": "opinion",
+              "name": "main",
               "description": "",
               "args": [],
               "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
