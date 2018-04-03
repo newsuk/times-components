@@ -6,7 +6,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fonts } from "@times-components/styleguide";
-import { renderTree, renderTrees } from "./markup";
+import { renderTree, renderTrees } from "./src/markup";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");

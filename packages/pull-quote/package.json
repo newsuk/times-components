@@ -2,15 +2,19 @@
   "name": "@times-components/pull-quote",
   "version": "0.4.4",
   "description": "Pull Quote for Times Components Articles",
-  "main": "pull-quote",
+  "main": "dist/pull-quote",
+  "dev": "src/pull-quote",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage"
+    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",

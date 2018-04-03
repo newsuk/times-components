@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { CenteredDecorator } from "@times-components/storybook";
 import { colours } from "@times-components/styleguide";
-import Link, { TextLink } from "./link";
+import Link, { TextLink } from "./src/link";
 
 const BigSquare = props => (
   <View

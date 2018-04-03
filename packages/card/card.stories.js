@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import Card from "./card";
+import Card from "./src/card";
 
 const cardProps = {
   image: {

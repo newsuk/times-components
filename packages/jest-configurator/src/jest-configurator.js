@@ -65,13 +65,13 @@ export default (
     coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(
       rootDir,
-      module,
+      path.join(module, "src"),
       platform,
       coverageIgnoreGlobs
     ),
-    testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
+    testMatch: [`${module}/{,src/}__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
-      `${module}/__tests__/${platformPath}jest.config.js`
+      `${module}/{,src/}__tests__/${platformPath}jest.config.js`
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupFiles: [

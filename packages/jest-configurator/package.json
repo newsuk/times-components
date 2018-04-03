@@ -3,13 +3,16 @@
   "version": "0.2.2",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
+  "dev": "src/jest-configurator.js",
   "scripts": {
-    "prepublishOnly": "babel src -d lib",
+    "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
-    "test": "jest"
+    "test": "jest",
+    "transpile": "babel src --ignore node_modules,__tests__ -d lib",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",
@@ -41,7 +44,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
+      "<rootDir>/packages/jest-configurator/src/__tests__/*.test.js"
     ]
   },
   "dependencies": {

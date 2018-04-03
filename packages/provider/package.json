@@ -1,14 +1,18 @@
 {
   "name": "@times-components/provider",
   "version": "0.26.0",
-  "main": "provider",
+  "main": "dist/provider",
+  "dev": "src/provider",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "jest": {
     "preset": "react-native",
@@ -23,7 +27,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider/__tests__/**.test.js"
+      "<rootDir>/packages/provider/src/__tests__/**.test.js"
     ]
   },
   "repository": {
@@ -63,6 +67,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "apollo-utilities": "1.0.4",
     "graphql-tag": "2.6.0",
     "hoist-non-react-statics": "2.3.1",
     "lodash.get": "4.4.2",

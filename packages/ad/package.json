@@ -2,14 +2,18 @@
   "name": "@times-components/ad",
   "version": "0.16.8",
   "description": "Ad component",
-  "main": "ad",
+  "main": "dist/ad",
+  "dev": "src/ad",
   "scripts": {
+    "prepublishOnly": "yarn transpile",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "jest": {
     "preset": "react-native",
@@ -19,7 +23,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/ad/__tests__/**.test.js"
+      "<rootDir>/packages/ad/src/__tests__/**.test.js"
     ],
     "testEnvironment": "jsdom"
   },

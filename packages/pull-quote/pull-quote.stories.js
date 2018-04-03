@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import PullQuotes from "./pull-quote";
+import PullQuotes from "./src/pull-quote";
 
 const content =
   "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child";

@@ -3,7 +3,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 
 import Button from "./button";
-import BrightcoveVideo from "../brightcove-player";
+import BrightcoveVideo from "../src/brightcove-player";
 
 class VideoAdder extends Component {
   constructor(props) {

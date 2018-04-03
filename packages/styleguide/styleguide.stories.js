@@ -2,7 +2,7 @@ import { Platform, ScrollView, Text, View } from "react-native";
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import { Animations, colours, fonts, fontSizes } from "./styleguide";
+import { Animations, colours, fonts, fontSizes } from "./src/styleguide";
 import styles from "./styleguide.stories.styles";
 
 const ColourBox = ({ name, hex }) => (

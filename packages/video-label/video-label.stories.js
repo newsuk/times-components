@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react-native";
 import { select } from "@storybook/addon-knobs/react";
 import invert from "lodash.invert";
 import { colours } from "@times-components/styleguide";
-import VideoLabel from "./video-label";
+import VideoLabel from "./src/video-label";
 
 storiesOf("Primitives/VideoLabel", module)
   .add("VideoLabel without title", () => (

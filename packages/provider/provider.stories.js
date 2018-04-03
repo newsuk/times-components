@@ -3,14 +3,14 @@ import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
-import { MockedProvider } from "@times-components/utils/graphql";
+import { MockedProvider } from "@times-components/utils";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider
-} from "./provider.js";
-import { query as authorProfileQuery } from "./author-profile";
+} from "./src/provider.js";
+import { query as authorProfileQuery } from "./src/author-profile";
 import fixture from "./fixtures/author-profile/author-profile.json";
-import { query as articleQuery } from "./article";
+import { query as articleQuery } from "./src/article";
 import articleFixture from "./fixtures/article.json";
 
 storiesOf("Helpers/Provider", module)

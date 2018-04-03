@@ -1,5 +1,5 @@
-import { fonts } from "./styleguide";
-import fontSizes from "./fonts/font-sizes";
+import { fonts } from "./src/styleguide";
+import fontSizes from "./src/fonts/font-sizes";
 
 const styles = {
   display: {

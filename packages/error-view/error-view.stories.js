@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "@times-components/brightcove-video";
 import { fontSizes } from "@times-components/styleguide";
-import ErrorView from "./error-view";
+import ErrorView from "./src/error-view";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 

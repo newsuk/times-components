@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import Watermark from "./watermark";
+import Watermark from "./src/watermark";
 
 storiesOf("Primitives/Watermark", module)
   .add("MPU", () => <Watermark width={300} height={250} />)

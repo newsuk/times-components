@@ -4,8 +4,8 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import Pagination, { withPageState } from "./pagination";
-import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
+import Pagination, { withPageState } from "./src/pagination";
+import { PreviousPageIcon, NextPageIcon } from "./src/pagination-icons";
 
 storiesOf("Composed/Pagination", module)
   .addDecorator(LateralSpacingDecorator)

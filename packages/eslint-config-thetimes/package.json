@@ -2,11 +2,15 @@
   "name": "@times-components/eslint-config-thetimes",
   "version": "0.1.4",
   "description": "The eslint config for Times Components",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "dev": "src/index.js",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "yarn prettier:diff"
+    "lint": "yarn prettier:diff",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",

@@ -2,12 +2,16 @@
   "name": "@times-components/responsive-styles",
   "version": "0.6.0",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
-  "main": "responsive-styles",
+  "main": "dist/responsive-styles",
+  "dev": "src/responsive-styles",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'"
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",

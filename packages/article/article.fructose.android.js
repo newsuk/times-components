@@ -1,6 +1,6 @@
 /* globals withComponent test beforeEach driver */
 import React from "react";
-import Article from "./article";
+import Article from "./src/article";
 
 const fullArticleFixture = require("./fixtures/full-article.json");
 
