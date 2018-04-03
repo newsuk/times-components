@@ -158,67 +158,66 @@ storiesOf("Pages/Article", module)
     <RenderArticle error={{ message: "An example error." }} />
   ))
   .add("With Provider", () => {
+    const withProvider = child => {
+      const uri = process.env.STORYBOOK_ENDPOINT;
 
-        const withProvider = child => {
-          const uri = process.env.STORYBOOK_ENDPOINT;
+      if (uri) {
+        const client = new ApolloClient({
+          link: new HttpLink({
+            uri,
+            useGETForQueries: true,
+            headers: {
+              "content-type": "application/x-www-form-urlencoded"
+            }
+          }),
+          cache: new InMemoryCache({
+            fragmentMatcher
+          })
+        });
 
-          if (uri) {
-            const client = new ApolloClient({
-              link: new HttpLink({
-                uri,
-                useGETForQueries: true,
-                headers: {
-                  "content-type": "application/x-www-form-urlencoded"
-                }
-              }),
-              cache: new InMemoryCache({
-                fragmentMatcher
-              })
-            });
-
-            return (
-              <ApolloProvider debounceTimeMs={250} client={client}>
-                {child}
-              </ApolloProvider>
-            );
-          }
-
-          return (
-            <MockedProvider mocks={mocks}>
-              {child}
-            </MockedProvider>
-          );
-        };
-
-        const predefinedArticles = {
-          "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
-          "1a576df6-cb50-11e4-81dd-064fe933cd41": "Video lead asset"
-        };
-
-        return withProvider(
-            <ArticleProvider
-              id={
-                text("Override article id", "") ||
-                select("Predefined article", predefinedArticles, "198c4b2f-ecec-4f34-be53-c89f83bc1b44")
-              }
-              debounceTimeMs={0}
-            >
-            {({ article, isLoading, error }) => (
-              <Article
-                article={article}
-                isLoading={isLoading}
-                error={error}
-                analyticsStream={storybookReporter}
-                adConfig={defaultAdConfig}
-                onRelatedArticlePress={preventDefaultedAction(
-                  "onRelatedArticlePress"
-                )}
-                onAuthorPress={preventDefaultedAction("onAuthorPress")}
-              />
-            )}
-            </ArticleProvider>
+        return (
+          <ApolloProvider debounceTimeMs={250} client={client}>
+            {child}
+          </ApolloProvider>
         );
-    })
+      }
+
+      return <MockedProvider mocks={mocks}>{child}</MockedProvider>;
+    };
+
+    const predefinedArticles = {
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
+      "1a576df6-cb50-11e4-81dd-064fe933cd41": "Video lead asset"
+    };
+
+    return withProvider(
+      <ArticleProvider
+        id={
+          text("Override article id", "") ||
+          select(
+            "Predefined article",
+            predefinedArticles,
+            "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          )
+        }
+        debounceTimeMs={0}
+      >
+        {({ article, isLoading, error }) => (
+          <Article
+            article={article}
+            isLoading={isLoading}
+            error={error}
+            analyticsStream={storybookReporter}
+            adConfig={defaultAdConfig}
+            onRelatedArticlePress={preventDefaultedAction(
+              "onRelatedArticlePress"
+            )}
+            onAuthorPress={preventDefaultedAction("onAuthorPress")}
+          />
+        )}
+      </ArticleProvider>
+    );
+  })
   .add("Fixtures - Full", () => {
     // Hack, render ads inside storybook's iframe
     if (Platform.OS === "web") {
