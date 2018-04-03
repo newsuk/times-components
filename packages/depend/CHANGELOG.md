@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.4"></a>
+## 0.1.4 (2018-04-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/depend
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/depend@0.1.2...@times-components/depend@0.1.3) (2018-03-15)
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.5"></a>
+## 0.1.5 (2018-04-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/eslint-config-thetimes
+
 <a name="0.1.4"></a>
 ## 0.1.4 (2018-03-15)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -31,8 +31,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.1.4",
-    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/eslint-config-thetimes": "0.1.5",
+    "@times-components/jest-configurator": "0.2.3",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "mkdirp": "0.5.1",
