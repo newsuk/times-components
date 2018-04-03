@@ -8,7 +8,7 @@ export default function getLeadAsset({ leadAsset }) {
     };
   }
 
-  const isVideo = leadAsset.__typename === "Video";
+  const isVideo = leadAsset.__typename === "Video"; // eslint-disable-line no-underscore-dangle
   const displayImage = isVideo ? leadAsset.posterImage.crop : leadAsset.crop;
   const aspectRatio = displayImage.ratio;
 
