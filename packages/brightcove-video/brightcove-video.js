@@ -14,6 +14,8 @@ class BrightcoveVideo extends Component {
     return BrightcoveFullscreenPlayerModule;
   }
 
+  static activePlayers = [];
+
   constructor(props) {
     super(props);
 
@@ -21,13 +23,11 @@ class BrightcoveVideo extends Component {
       isLaunched: props.autoplay,
       error: null
     };
-
-    this.play = this.play.bind(this);
-    this.reset = this.reset.bind(this);
-    this.handleFinish = this.handleFinish.bind(this);
-    this.handleError = this.handleError.bind(this);
   }
 
+  componentDidMount() {
+    BrightcoveVideo.activePlayers.push(this);
+  }
   // specifically check if is launched has changed and block update if it has not;
   // this is so we don't keep reseting our player reference
   shouldComponentUpdate(nextProps, nextState) {
@@ -38,7 +38,13 @@ class BrightcoveVideo extends Component {
     );
   }
 
-  play() {
+  componentWillUnmount() {
+    BrightcoveVideo.activePlayers.splice(
+      BrightcoveVideo.activePlayers.indexOf(this)
+    );
+  }
+
+  play = () => {
     const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
 
     if (nativeModule && this.props.directToFullscreen) {
@@ -54,31 +60,39 @@ class BrightcoveVideo extends Component {
 
       this.setState({ isLaunched: true });
     }
-  }
+  };
 
-  pause() {
+  pause = () => {
     if (this.playerRef) {
       this.playerRef.pause();
     }
-  }
+  };
 
-  reset() {
+  reset = () => {
     this.setState({ isLaunched: false, error: null });
-  }
+  };
 
-  handleFinish() {
+  handlePlay = () => {
+    BrightcoveVideo.activePlayers.forEach(player => {
+      if (player !== this) {
+        player.pause();
+      }
+    });
+  };
+
+  handleFinish = () => {
     if (this.props.resetOnFinish) {
       this.reset();
     }
 
     this.props.onFinish();
-  }
+  };
 
-  handleError(error) {
+  handleError = error => {
     this.setState({ error });
 
     this.props.onError(error);
-  }
+  };
 
   render() {
     this.playerRef = null;
@@ -94,6 +108,7 @@ class BrightcoveVideo extends Component {
             this.playerRef = ref;
           }}
           {...this.props}
+          onPlay={this.handlePlay}
           onError={this.handleError}
           onFinish={this.handleFinish}
           autoplay

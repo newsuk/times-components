@@ -3,10 +3,18 @@ import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { Platform, ScrollView } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
+import { ApolloProvider } from "react-apollo";
+import { ApolloClient } from "apollo-client";
+import { HttpLink } from "apollo-link-http";
+import { InMemoryCache } from "apollo-cache-inmemory";
 
 import { decorateAction } from "@storybook/addon-actions";
+import { text, select } from "@storybook/addon-knobs";
 import { ArticleProvider } from "@times-components/provider";
-import { MockedProvider } from "@times-components/utils/graphql";
+import {
+  MockedProvider,
+  fragmentMatcher
+} from "@times-components/utils/graphql";
 import { query as articleQuery } from "@times-components/provider/article";
 import storybookReporter from "@times-components/tealium/storybook";
 import Article from "./article";
@@ -149,10 +157,49 @@ storiesOf("Pages/Article", module)
   .add("Error", () => (
     <RenderArticle error={{ message: "An example error." }} />
   ))
-  .add("With Provider", () => (
-    <MockedProvider mocks={mocks}>
+  .add("With Provider", () => {
+    const withProvider = child => {
+      const uri = process.env.STORYBOOK_ENDPOINT;
+
+      if (uri) {
+        const client = new ApolloClient({
+          link: new HttpLink({
+            uri,
+            useGETForQueries: true,
+            headers: {
+              "content-type": "application/x-www-form-urlencoded"
+            }
+          }),
+          cache: new InMemoryCache({
+            fragmentMatcher
+          })
+        });
+
+        return (
+          <ApolloProvider debounceTimeMs={250} client={client}>
+            {child}
+          </ApolloProvider>
+        );
+      }
+
+      return <MockedProvider mocks={mocks}>{child}</MockedProvider>;
+    };
+
+    const predefinedArticles = {
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
+      "1a576df6-cb50-11e4-81dd-064fe933cd41": "Video lead asset"
+    };
+
+    return withProvider(
       <ArticleProvider
-        id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        id={
+          text("Override article id", "") ||
+          select(
+            "Predefined article",
+            predefinedArticles,
+            "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          )
+        }
         debounceTimeMs={0}
       >
         {({ article, isLoading, error }) => (
@@ -169,8 +216,8 @@ storiesOf("Pages/Article", module)
           />
         )}
       </ArticleProvider>
-    </MockedProvider>
-  ))
+    );
+  })
   .add("Fixtures - Full", () => {
     // Hack, render ads inside storybook's iframe
     if (Platform.OS === "web") {

@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
+import BrightcoveVideo from "@times-components/brightcove-video";
+import Caption from "@times-components/caption";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-
+import AspectRatioContainer from "../media-aspect-ratio";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -14,8 +16,8 @@ import {
   PullQuoteResp
 } from "../styles/article-body/responsive";
 
-export const responsiveImageWrapper = imageType => {
-  switch (imageType) {
+export const responsiveDisplayWrapper = displayType => {
+  switch (displayType) {
     case "secondary":
       return SecondaryImg;
     case "inline":
@@ -35,9 +37,9 @@ const ArticleRow = ({ content: { data, index } }) =>
       );
     },
     image(key, { display, ratio, url, caption, credits }) {
-      const ImageWrapper = responsiveImageWrapper(display);
+      const MediaWrapper = responsiveDisplayWrapper(display);
       return (
-        <ImageWrapper key={key}>
+        <MediaWrapper key={key}>
           <ArticleImage
             imageOptions={{
               display,
@@ -49,7 +51,35 @@ const ArticleRow = ({ content: { data, index } }) =>
               credits
             }}
           />
-        </ImageWrapper>
+        </MediaWrapper>
+      );
+    },
+    video(
+      key,
+      {
+        display,
+        brightcovePolicyKey,
+        brightcoveVideoId,
+        brightcoveAccountId,
+        posterImage,
+        caption
+      }
+    ) {
+      const MediaWrapper = responsiveDisplayWrapper(display);
+      return (
+        <MediaWrapper key={key}>
+          <AspectRatioContainer aspectRatio={posterImage.crop.ratio}>
+            <BrightcoveVideo
+              width="100%"
+              height="100%"
+              policyKey={brightcovePolicyKey}
+              videoId={brightcoveVideoId}
+              accountId={brightcoveAccountId}
+              poster={{ uri: posterImage.crop.url }}
+            />
+          </AspectRatioContainer>
+          <Caption text={caption} />
+        </MediaWrapper>
       );
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
