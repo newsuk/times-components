@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { withTrackingContext } from "@times-components/tracking";
 import storybookReporter from "@times-components/tealium/storybook";

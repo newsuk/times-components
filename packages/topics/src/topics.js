@@ -32,7 +32,8 @@ Topics.propTypes = {
 };
 
 Topics.defaultProps = {
-  style: null
+  style: null,
+  onPress: () => {}
 };
 
 export default Topics;

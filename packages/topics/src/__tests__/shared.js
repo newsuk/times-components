@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import mockDate from "mockdate";
 import { withTrackingContext } from "@times-components/tracking";
-import { shallow, render } from "enzyme";
+import { shallow } from "enzyme";
 import Topics from "../topics";
 import Topic from "../topic";
 import topicData from "../../fixtures/topics";
@@ -40,7 +40,7 @@ module.exports = () => {
       done();
     };
 
-    const wrapper = shallow(
+    shallow(
       <Topic
         id={topicData[0].id}
         name={topicData[0].name}
