@@ -1,11 +1,21 @@
 import "react-native";
 import React from "react";
-import { shallow, mount } from "enzyme";
+import mockDate from "mockdate";
+import { withTrackingContext } from "@times-components/tracking";
+import { shallow, render } from "enzyme";
 import Topics from "../topics";
 import Topic from "../topic";
 import topicData from "../../fixtures/topics";
 
 module.exports = () => {
+  beforeEach(() => {
+    mockDate.set("1/1/2018");
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+  });
+
   it("renders a group of Topics in the correct order", () => {
     const wrapper = shallow(<Topics topics={topicData} />);
 
@@ -39,5 +49,24 @@ module.exports = () => {
     )
       .dive()
       .simulate("press", "event");
+  });
+
+  it("onPress sends analytics", () => {
+    const events = jest.fn();
+    const TopicWithAnalytics = withTrackingContext(Topic, {
+      trackingObjectName: "TopicsRenderStory"
+    });
+
+    shallow(
+      <TopicWithAnalytics
+        analyticsStream={events}
+        id={topicData[0].id}
+        name={topicData[0].name}
+      />
+    )
+      .dive()
+      .simulate("press", "events");
+
+    expect(events.mock.calls).toMatchSnapshot();
   });
 };

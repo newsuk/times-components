@@ -39,6 +39,7 @@
     "@times-components/jest-configurator": "0.2.4",
     "eslint": "4.9.0",
     "jest": "21.2.1",
+    "mockdate": "2.0.2",
     "prettier": "1.8.2",
     "react-dom": "16.2.0",
     "react-native": "0.53.3",

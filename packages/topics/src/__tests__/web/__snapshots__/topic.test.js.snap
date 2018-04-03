@@ -77,3 +77,18 @@ exports[`2. Render a single Topic 1`] = `
   </View>
 </Link>
 `;
+
+exports[`Topic test on web:  onPress sends analytics 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "Page",
+      "object": "TopicsRenderStory",
+    },
+  ],
+]
+`;
