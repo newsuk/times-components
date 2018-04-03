@@ -218,32 +218,7 @@ storiesOf("Pages/Article", module)
             )}
             </ArticleProvider>
         );
-<<<<<<< HEAD
     })
-=======
-      }
-
-      return <MockedProvider mocks={mocks}>{child}</MockedProvider>;
-    };
-
-    return withProvider(
-      <ArticleProvider
-        id={text("Article id", "1a576df6-cb50-11e4-81dd-064fe933cd41")}
-        debounceTimeMs={0}
-      >
-        {({ article, isLoading, error }) => (
-          <Article
-            article={article}
-            isLoading={isLoading}
-            error={error}
-            analyticsStream={storybookReporter}
-            adConfig={adConfig}
-          />
-        )}
-      </ArticleProvider>
-    );
-  })
->>>>>>> chore: fix linting
   .add("Fixtures - Full", () => {
     // Hack, render ads inside storybook's iframe
     if (Platform.OS === "web") {
