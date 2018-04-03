@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.62.4"></a>
+## [0.62.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.3...@times-components/article@0.62.4) (2018-04-03)
+
+
+### Bug Fixes
+
+* fix proptypes for related articles proptypes for native ([#799](https://github.com/newsuk/times-components/issues/799)) ([79cf3de](https://github.com/newsuk/times-components/commit/79cf3de))
+
+
+
+
 <a name="0.62.3"></a>
 ## [0.62.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.2...@times-components/article@0.62.3) (2018-04-03)
 
