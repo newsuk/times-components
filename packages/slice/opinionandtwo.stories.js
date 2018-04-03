@@ -8,7 +8,6 @@ import OpinionAndTwoSlice from "./src/templates/opinionandtwo";
 const itemCountLabel = "Number of support items:";
 const itemCount = ["0", "1", "2"];
 const itemCountDefault = "0";
-const itemCountGroup = "GROUP-ID1";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
@@ -42,7 +41,7 @@ storiesOf("Primitives/Slice", module).add("Opinion and two", () => (
     )}
     renderSupports={() =>
       createSupportItems(
-        select(itemCountLabel, itemCount, itemCountDefault, itemCountGroup)
+        select(itemCountLabel, itemCount, itemCountDefault)
       )
     }
   />

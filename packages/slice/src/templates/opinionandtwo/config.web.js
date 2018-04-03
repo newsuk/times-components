@@ -37,7 +37,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       const getOpinionImageStyle = () => {
         if (supportCount === 0)
           return `
-          margin-bottom: -10px;
+          margin-bottom: ${spacing(-2)};
         `;
         if (supportCount === 1)
           return `
@@ -151,7 +151,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
         .opinionContentContainerClass {
           min-width: auto;
-          padding-right: 54px;
+          padding-right: ${spacing(11)};
         }
         .opinionImageContainerClass {
           min-width: auto;
