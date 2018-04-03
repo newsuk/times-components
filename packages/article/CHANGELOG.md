@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.62.3"></a>
+## [0.62.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.2...@times-components/article@0.62.3) (2018-04-03)
+
+
+### Bug Fixes
+
+* Main Id in related article is now required ([#794](https://github.com/newsuk/times-components/issues/794)) ([e6a7e09](https://github.com/newsuk/times-components/commit/e6a7e09))
+
+
+
+
 <a name="0.62.2"></a>
 ## [0.62.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.1...@times-components/article@0.62.2) (2018-04-03)
 
