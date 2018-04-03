@@ -190,14 +190,17 @@ export function applyStrategy(requirements, strategy) {
 }
 
 export function restrictRequirements(requirements, expr) {
-  const filter = expr
-    ? name => minimatch(name, expr)
-    : () => true;
+  const filter = expr ? name => minimatch(name, expr) : () => true;
 
   return requirements.filter(requirement => filter(requirement.requires.name));
 }
 
-export default async function compute(packagesList, strategy, filter, overrides = {}) {
+export default async function compute(
+  packagesList,
+  strategy,
+  filter,
+  overrides = {}
+) {
   const packages = packagesList.map(p => p[1]);
   const requirements = getAllRequirements(packages);
   const targetRequirements = restrictRequirements(requirements, filter);

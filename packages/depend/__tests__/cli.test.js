@@ -131,5 +131,5 @@ describe("depend cli tests", () => {
     await main({ log, argv, getPackages, exit });
     expect(exit.mock.calls).toEqual([]);
     expect(log.mock.calls).toMatchSnapshot();
-  })
+  });
 });
