@@ -75,3 +75,5 @@ dextrose/snappy/**
 # Bundles
 ios/main.jsbundle
 ios/main.jsbundle.meta
+
+*.dextrose.tmp.js
