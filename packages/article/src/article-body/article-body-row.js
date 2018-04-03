@@ -1,15 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { spacing } from "@times-components/styleguide";
 import BrightcoveVideo from "@times-components/brightcove-video";
-import Caption from "@times-components/caption";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import AspectRatioContainer from "../media-aspect-ratio";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
+import InsetCaption from "../inset-caption";
 
 const primaryContainer = {
   width: "100%",
@@ -77,21 +77,19 @@ const ArticleRow = ({ content: { data, index } }) =>
       }
     ) {
       return (
-        <Fragment>
-          <View key={key} style={primaryContainer}>
-            <AspectRatioContainer aspectRatio={posterImage.crop.ratio}>
-              <BrightcoveVideo
-                width="100%"
-                height="100%"
-                policyKey={brightcovePolicyKey}
-                videoId={brightcoveVideoId}
-                accountId={brightcoveAccountId}
-                poster={{ uri: posterImage.crop.url }}
-              />
-            </AspectRatioContainer>
-            <Caption text={caption} />
-          </View>
-        </Fragment>
+        <View key={key} style={primaryContainer}>
+          <AspectRatioContainer aspectRatio={posterImage.crop.ratio}>
+            <BrightcoveVideo
+              width="100%"
+              height="100%"
+              policyKey={brightcovePolicyKey}
+              videoId={brightcoveVideoId}
+              accountId={brightcoveAccountId}
+              poster={{ uri: posterImage.crop.url }}
+            />
+          </AspectRatioContainer>
+          <InsetCaption caption={caption} />
+        </View>
       );
     }
   });
