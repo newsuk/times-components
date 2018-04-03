@@ -7,7 +7,7 @@ import BrightcoveVideo from "@times-components/brightcove-video";
 import Caption from "@times-components/caption";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
-import { AspectRatioContainer } from "../article-lead-asset";
+import AspectRatioContainer from "../media-aspect-ratio";
 import {
   PrimaryImg,
   SecondaryImg,
