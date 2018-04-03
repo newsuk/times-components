@@ -11,13 +11,11 @@ import AspectRatioContainer from "../media-aspect-ratio";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 
-
-
 const primaryContainer = {
   width: "100%",
   flexDirection: "column",
   paddingBottom: spacing(5)
-}
+};
 const ArticleRow = ({ content: { data, index } }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
