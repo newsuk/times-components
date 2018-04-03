@@ -1,5 +1,5 @@
-import { fonts } from "./dist/styleguide";
-import fontSizes from "./dist/fonts/font-sizes";
+import { fonts } from "./src/styleguide";
+import fontSizes from "./src/fonts/font-sizes";
 
 const styles = {
   display: {
@@ -20,7 +20,7 @@ const styles = {
   text: {
     textAlign: "center",
     fontFamily: fonts.body,
-    fontSize: fontSizes.flags,
+    fontSize: fontSizes.caption,
     color: "#333333"
   },
   animationBox: {
