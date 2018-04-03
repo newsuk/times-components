@@ -17,7 +17,7 @@ module.exports = () => {
   it("renders a single Topic", () => {
     const wrapper = shallow(
       <Topic id={topicData[0].id} name={topicData[0].name} />
-    );
+    ).dive();
 
     expect(wrapper).toMatchSnapshot("2. Render a single Topic");
   });
