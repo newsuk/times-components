@@ -1,5 +1,5 @@
-import cardTests from "../card.native.test.js";
+import shared from "../shared";
 
 describe("Card tests on android", () => {
-  cardTests();
+  shared();
 });

@@ -106,15 +106,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -327,15 +331,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -489,15 +497,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -770,15 +782,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -973,15 +989,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -1169,15 +1189,19 @@ exports[`Article Summary test on Android renders an article-summary component wi
   <Text
     accessible={true}
     allowFontScaling={true}
+    className={undefined}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
+      Array [
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginBottom": 5,
+        },
+        undefined,
+      ]
     }
   >
     <Text
@@ -1208,6 +1232,156 @@ exports[`Article Summary test on Android renders an article-summary component wi
     >
       , Environment Editor
     </Text>
+  </Text>
+</View>
+`;
+
+exports[`Article Summary test on Android renders an article-summary with opinion byline 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "marginBottom": -4,
+            "paddingTop": 5,
+          },
+          Object {
+            "color": "#333333",
+          },
+        ]
+      }
+    >
+      C A M I L L A   L O N G
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    className={undefined}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#850029",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessibilityRole="link"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      href="/profile/camilla-long"
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "textDecorationLine": "underline",
+          },
+          Object {
+            "color": "#006699",
+          },
+          undefined,
+        ]
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+  <Text
+    accessibilityRole="heading"
+    accessible={true}
+    allowFontScaling={true}
+    aria-level="3"
+    className=""
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontWeight": "400",
+          "marginBottom": 5,
+        },
+        Object {
+          "fontSize": 22,
+          "lineHeight": 22,
+        },
+        Object {},
+      ]
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    className=""
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
 `;

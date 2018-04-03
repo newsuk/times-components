@@ -3,12 +3,12 @@ import { View } from "react-native";
 import styles from "../styles";
 import { opinionConfig, supportConfig } from "./config";
 import { propTypes, defaultProps } from "./proptypes";
-import opinionAndTwoStyles from "./styles";
+import opinionStyles from "./styles";
 
 const OpinionAndTwoSlice = ({ opinion, renderSupports }) => (
   <View style={styles.container}>
     <View style={styles.itemContainer}>
-      <View style={[styles.item, opinionAndTwoStyles.opinion]}>
+      <View style={[styles.item, opinionStyles.opinion]}>
         {opinion(opinionConfig)}
       </View>
     </View>

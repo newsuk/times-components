@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export { keyframes } from "styled-components";
 export const config = {
-  mediumBpWidth: "84%",
-  wideBpWidth: "58%"
+  mediumBpWidth: "80.8%",
+  wideBpWidth: "56.2%"
 };
 
 // Turn off prettier for this as the identified changes break this component

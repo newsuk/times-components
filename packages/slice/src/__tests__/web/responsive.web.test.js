@@ -118,9 +118,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render Container correctly", () => {
-      let Container = opinionGetContainer({ hasSupports: true });
+      let Container = opinionGetContainer({ supportCount: 0 });
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
-      Container = opinionGetContainer({ hasSupports: false });
+      Container = opinionGetContainer({ supportCount: 1 });
       expect(renderer.create(<Container />).toJSON()).toMatchSnapshot();
     });
 
@@ -163,7 +163,9 @@ describe("Slice tests on web", () => {
     });
 
     it("should render ConfigWrapper correctly", () => {
-      let ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 1 });
+      let ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 0 });
+      expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
+      ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 1 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();
       ConfigWrapper = getOpinionAndTwoConfigWrapper({ supportCount: 2 });
       expect(renderer.create(<ConfigWrapper />).toJSON()).toMatchSnapshot();

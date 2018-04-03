@@ -158,16 +158,14 @@ ArticlePage.propTypes = {
     message: PropTypes.string
   }),
   adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func,
-  onAuthorPress: PropTypes.func
+  onRelatedArticlePress: PropTypes.func.isRequired,
+  onAuthorPress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   isLoading: false,
-  error: null,
-  onRelatedArticlePress: () => {},
-  onAuthorPress: () => {}
+  error: null
 };
 
 export { articlePropTypes, articleDefaultProps };

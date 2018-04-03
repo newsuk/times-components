@@ -15,16 +15,13 @@ exports[`1. Standard template renders a single child element 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          "",
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -50,16 +47,13 @@ exports[`2. Standard template renders two child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          "",
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -80,16 +74,13 @@ exports[`2. Standard template renders two child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          "",
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -115,18 +106,13 @@ exports[`3. Standard template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -147,18 +133,13 @@ exports[`3. Standard template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -179,18 +160,13 @@ exports[`3. Standard template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -273,18 +249,13 @@ exports[`5. Lead and two template renders two child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -336,18 +307,13 @@ exports[`6. Lead and two template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -368,18 +334,13 @@ exports[`6. Lead and two template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 15,
-          },
-        ]
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -413,7 +374,7 @@ exports[`7. Opinion and two template renders a single child element 1`] = `
             "width": "100%",
           },
           Object {
-            "paddingTop": 0,
+            "paddingBottom": 0,
           },
         ]
       }
@@ -449,7 +410,7 @@ exports[`8. Opinion and two template renders two child elements 1`] = `
             "width": "100%",
           },
           Object {
-            "paddingTop": 0,
+            "paddingBottom": 0,
           },
         ]
       }
@@ -512,7 +473,7 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
             "width": "100%",
           },
           Object {
-            "paddingTop": 0,
+            "paddingBottom": 0,
           },
         ]
       }

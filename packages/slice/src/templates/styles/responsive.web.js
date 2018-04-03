@@ -5,9 +5,9 @@ import { colours, spacing } from "@times-components/styleguide";
 export const SliceContainer = withResponsiveStyles(View, {
   base: () => `
     align-items: center;
-    border-style: solid;
     border-bottom-color: ${colours.functional.keyline};
     border-bottom-width: 1px;
+    border-style: solid;
     flex: 1;
     justify-content: center;
   `,
@@ -17,22 +17,22 @@ export const SliceContainer = withResponsiveStyles(View, {
 });
 SliceContainer.displayName = "SliceContainer";
 
-export const getSeparator = ({ hasLeftRightMargin, itemCount }) => {
+export const getSeparator = ({ hasLeftRightMargin }) => {
   const Separator = withResponsiveStyles(View, {
     base: () => `
+      border-bottom-color: ${colours.functional.keyline};
       border-bottom-style: solid;
       border-bottom-width: 1px;
-      border-bottom-color: ${colours.functional.keyline};
       flex: 1;
-      margin-bottom: ${itemCount >= 3 ? spacing(3) : spacing(2)};
-      margin-top: ${spacing(3)};
+      margin-bottom: ${spacing(2)};
+      margin-top: ${spacing(2)};
       min-width: auto;
     `,
     mediumUp: () => `
       border-bottom: none;
+      border-right-color: ${colours.functional.keyline};
       border-right-style: solid;
       border-right-width: 1px;
-      border-right-color: ${colours.functional.keyline};
       flex: 0 !important;
       margin: ${hasLeftRightMargin ? `0 ${spacing(2)}` : `0`};
     `

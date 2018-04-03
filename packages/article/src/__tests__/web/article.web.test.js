@@ -60,6 +60,8 @@ describe("Article test on web", () => {
           {...articleFixtureNoLeadAsset.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();

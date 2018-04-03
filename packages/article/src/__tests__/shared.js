@@ -74,7 +74,13 @@ export default () => {
   it("renders activity indicator ", () => {
     const tree = renderer
       .create(
-        <Article isLoading analyticsStream={() => {}} adConfig={adConfig} />
+        <Article
+          isLoading
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -86,7 +92,13 @@ export default () => {
     };
 
     const tree = renderer.create(
-      <Article {...props} analyticsStream={() => {}} adConfig={adConfig} />
+      <Article
+        {...props}
+        analyticsStream={() => {}}
+        adConfig={adConfig}
+        onRelatedArticlePress={() => {}}
+        onAuthorPress={() => {}}
+      />
     );
     expect(tree).toMatchSnapshot();
   });
@@ -98,6 +110,8 @@ export default () => {
           {...fullArticleFixture.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -111,6 +125,8 @@ export default () => {
           {...articleFixtureNoFlags.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -124,6 +140,8 @@ export default () => {
           {...articleFixtureNoLabel.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -137,6 +155,8 @@ export default () => {
           {...articleFixtureNoStandfirst.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -150,6 +170,8 @@ export default () => {
           {...articleFixtureNoStandfirstNoFlags.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -163,6 +185,8 @@ export default () => {
           {...articleFixtureNoStandfirstNoLabel.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -175,6 +199,8 @@ export default () => {
           {...articleFixtureNoLabelNoFlags.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -187,6 +213,8 @@ export default () => {
           {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -200,6 +228,8 @@ export default () => {
           {...articleFixtureWithVideo.data}
           analyticsStream={() => {}}
           adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
         />
       )
       .toJSON();
@@ -213,6 +243,8 @@ export default () => {
         {...fullArticleFixture.data}
         analyticsStream={stream}
         adConfig={adConfig}
+        onRelatedArticlePress={() => {}}
+        onAuthorPress={() => {}}
       />
     );
     expect(stream).toHaveBeenCalledWith({

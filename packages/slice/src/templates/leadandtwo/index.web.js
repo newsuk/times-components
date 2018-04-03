@@ -22,7 +22,7 @@ const LeadAndTwoSlice = ({ lead, renderSupports }) => {
     supportCount
   });
   const leadConfig = getLeadConfig({ itemCount });
-  const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
+  const Separator = getSeparator({ hasLeftRightMargin: false });
 
   const renderSupportsContainer = () => (
     <SupportsContainer>

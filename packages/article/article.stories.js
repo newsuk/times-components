@@ -24,6 +24,7 @@ import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags
 import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
+
 // Related articles
 import standard1RelatedArticleFixture from "./fixtures/related-articles/standard/1-article.json";
 import standard1RelatedArticleNoImageFixture from "./fixtures/related-articles/standard/1-article-no-image.json";
@@ -34,6 +35,9 @@ import standard3RelatedArticlesFixture from "./fixtures/related-articles/standar
 import leadAndTwo1RelatedArticleFixture from "./fixtures/related-articles/leadandtwo/1-article.json";
 import leadAndTwo2RelatedArticlesFixture from "./fixtures/related-articles/leadandtwo/2-articles.json";
 import leadAndTwo3RelatedArticlesFixture from "./fixtures/related-articles/leadandtwo/3-articles.json";
+import opinionAndTwo1RelatedArticleFixture from "./fixtures/related-articles/opinionandtwo/1-article.json";
+import opinionAndTwo2RelatedArticlesFixture from "./fixtures/related-articles/opinionandtwo/2-articles.json";
+import opinionAndTwo3RelatedArticlesFixture from "./fixtures/related-articles/opinionandtwo/3-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -46,10 +50,7 @@ const createRelatedArticlesProps = fixtureData => ({
   analyticsStream: storybookReporter,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId:
-    fixtureData.relatedArticlesLayout.lead ||
-    fixtureData.relatedArticlesLayout.opinion ||
-    "",
+  mainId: fixtureData.relatedArticlesLayout.main || "",
   onPress: preventDefaultedAction("onArticlePress")
 });
 
@@ -65,7 +66,7 @@ const mocks = [
   }
 ];
 
-const adConfig = {
+const defaultAdConfig = {
   networkId: "25436805",
   adUnit: "d.thetimes.co.uk",
   pageTargeting: {
@@ -113,54 +114,40 @@ const adConfig = {
   bidderSlots: ["ad-header", "ad-article-inline"]
 };
 
+/* eslint-disable react/prop-types */
+const RenderArticle = ({
+  fixture,
+  isLoading = false,
+  analyticsStream = storybookReporter,
+  adConfig = defaultAdConfig,
+  error
+}) => {
+  const data = fixture !== undefined ? fixture.data : {};
+
+  return (
+    <Article
+      {...data}
+      isLoading={isLoading}
+      analyticsStream={analyticsStream}
+      adConfig={adConfig}
+      error={error}
+      onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
+      onAuthorPress={preventDefaultedAction("onAuthorPress")}
+    />
+  );
+};
+/* eslint-enable */
+
 storiesOf("Pages/Article", module)
-  .add("Default", () => {
-    const props = {
-      ...fullArticleFixture.data,
-      isLoading: false,
-      analyticsStream: storybookReporter,
-      adConfig
-    };
-
-    return <Article {...props} />;
-  })
-  .add("Article with video asset", () => {
-    const props = {
-      ...articleWithVideoFixture.data,
-      isLoading: false,
-      analyticsStream: storybookReporter,
-      adConfig
-    };
-
-    return <Article {...props} />;
-  })
-  .add("Long Article", () => {
-    const props = {
-      ...fullLongArticleFixture.data,
-      isLoading: false,
-      analyticsStream: storybookReporter,
-      adConfig
-    };
-
-    return <Article {...props} />;
-  })
-  .add("Loading", () => {
-    const props = {
-      analyticsStream: storybookReporter,
-      isLoading: true,
-      adConfig
-    };
-
-    return <Article {...props} />;
-  })
-  .add("Error", () => {
-    const props = {
-      analyticsStream: storybookReporter,
-      error: { message: "An example error." }
-    };
-
-    return <Article {...props} />;
-  })
+  .add("Default", () => <RenderArticle fixture={fullArticleFixture} />)
+  .add("Article with video asset", () => (
+    <RenderArticle fixture={articleWithVideoFixture} />
+  ))
+  .add("Long Article", () => <RenderArticle fixture={fullLongArticleFixture} />)
+  .add("Loading", () => <RenderArticle isLoading />)
+  .add("Error", () => (
+    <RenderArticle error={{ message: "An example error." }} />
+  ))
   .add("With Provider", () => (
     <MockedProvider mocks={mocks}>
       <ArticleProvider
@@ -173,7 +160,11 @@ storiesOf("Pages/Article", module)
             isLoading={isLoading}
             error={error}
             analyticsStream={storybookReporter}
-            adConfig={adConfig}
+            adConfig={defaultAdConfig}
+            onRelatedArticlePress={preventDefaultedAction(
+              "onRelatedArticlePress"
+            )}
+            onAuthorPress={preventDefaultedAction("onAuthorPress")}
           />
         )}
       </ArticleProvider>
@@ -191,85 +182,39 @@ storiesOf("Pages/Article", module)
           >
             Click to render the ads
           </a>
-          <Article
-            {...fullArticleFixture.data}
-            analyticsStream={storybookReporter}
-            adConfig={adConfig}
-          />
+          <RenderArticle fixture={fullArticleFixture} />
         </div>
       );
     }
 
-    return (
-      <Article
-        {...fullArticleFixture.data}
-        analyticsStream={storybookReporter}
-        adConfig={adConfig}
-      />
-    );
+    return <RenderArticle fixture={fullArticleFixture} />;
   })
   .add("Fixtures - No ads", () => (
-    <Article
-      {...articleFixtureNoAds.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoAds} />
   ))
   .add("Fixtures - No standfirst", () => (
-    <Article
-      {...articleFixtureNoStandfirst.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoStandfirst} />
   ))
   .add("Fixtures - No label", () => (
-    <Article
-      {...articleFixtureNoLabel.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoLabel} />
   ))
   .add("Fixtures - No flags", () => (
-    <Article
-      {...articleFixtureNoFlags.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoFlags} />
   ))
   .add("Fixtures - No standfirst, no label", () => (
-    <Article
-      {...articleFixtureNoStandfirstNoLabel.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoStandfirstNoLabel} />
   ))
   .add("Fixtures - No standfirst, no flags", () => (
-    <Article
-      {...articleFixtureNoStandfirstNoFlags.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoStandfirstNoFlags} />
   ))
   .add("Fixtures - No label, no flags", () => (
-    <Article
-      {...articleFixtureNoLabelNoFlags.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoLabelNoFlags} />
   ))
   .add("Fixtures - No label, no flags, no standfirst", () => (
-    <Article
-      {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoLabelNoFlagsNoStandFirst} />
   ))
   .add("Fixtures - No lead asset", () => (
-    <Article
-      {...articleFixtureNoLeadAsset.data}
-      analyticsStream={storybookReporter}
-      adConfig={adConfig}
-    />
+    <RenderArticle fixture={articleFixtureNoLeadAsset} />
   ))
   .add("Default template with one related article", () => (
     <ScrollView>
@@ -337,6 +282,33 @@ storiesOf("Pages/Article", module)
     <ScrollView>
       <RelatedArticles
         {...createRelatedArticlesProps(leadAndTwo3RelatedArticlesFixture.data)}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with one related article", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo1RelatedArticleFixture.data
+        )}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with two related articles", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo2RelatedArticlesFixture.data
+        )}
+      />
+    </ScrollView>
+  ))
+  .add("Opinion and two template with three related articles", () => (
+    <ScrollView>
+      <RelatedArticles
+        {...createRelatedArticlesProps(
+          opinionAndTwo3RelatedArticlesFixture.data
+        )}
       />
     </ScrollView>
   ));

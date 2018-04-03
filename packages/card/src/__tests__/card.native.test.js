@@ -58,6 +58,21 @@ export default () => {
     expect(tree).toMatchSnapshot("3. Renders without an image");
   });
 
+  it("should render without an image when showImage is false", () => {
+    const noImageProps = Object.assign({}, cardProps, {
+      showImage: false
+    });
+    const component = shallow(
+      <Card {...noImageProps}>
+        <span>No image</span>
+      </Card>
+    );
+
+    expect(component).toMatchSnapshot(
+      "4. Renders without an image when showImage is false"
+    );
+  });
+
   it("should render without image url", () => {
     const noImageProps = Object.assign({}, cardProps, {
       image: {
@@ -72,7 +87,7 @@ export default () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot("4. Renders without an image URL");
+    expect(tree).toMatchSnapshot("5. Renders without an image URL");
   });
 
   it("should re-render when image uri changes", () => {
@@ -129,7 +144,7 @@ export default () => {
     });
 
     expect(component).toMatchSnapshot(
-      "5. Re-renders after showing the loading state"
+      "6. Re-renders after showing the loading state"
     );
   });
 
@@ -145,7 +160,7 @@ export default () => {
     });
 
     expect(component).toMatchSnapshot(
-      "6. Renders Card normally and does not re-render"
+      "7. Renders Card normally and does not re-render"
     );
   });
 
@@ -157,7 +172,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "7. Renders a Card with a reversed layout"
+      "8. Renders a Card with a reversed layout"
     );
   });
 };

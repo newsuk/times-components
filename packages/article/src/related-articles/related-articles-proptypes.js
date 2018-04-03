@@ -9,5 +9,7 @@ export const relatedArticlesPropTypes = {
 };
 
 export const relatedArticlesDefaultProps = {
+  articles: [],
+  mainId: "",
   template: "DEFAULT"
 };

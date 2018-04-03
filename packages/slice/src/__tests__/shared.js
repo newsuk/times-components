@@ -11,7 +11,7 @@ import {
   opinionAndTwoRoles
 } from "../slice";
 
-module.exports = () => {
+export default () => {
   const ExampleChild = () => <View />;
   ExampleChild.displayName = "ExampleChild";
 

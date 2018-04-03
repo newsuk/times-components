@@ -3,8 +3,10 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import mockDate from "mockdate";
+import { shallow } from "enzyme";
 
 import RelatedArticles from "../related-articles/related-articles";
+import RelatedArticleItem from "../related-articles/related-article-item";
 
 import standard1ArticleFixture from "../../fixtures/related-articles/standard/1-article.json";
 import standard2ArticlesFixture from "../../fixtures/related-articles/standard/2-articles.json";
@@ -12,16 +14,20 @@ import standard3ArticlesFixture from "../../fixtures/related-articles/standard/3
 import leadAndTwo1ArticleFixture from "../../fixtures/related-articles/leadandtwo/1-article.json";
 import leadAndTwo2ArticlesFixture from "../../fixtures/related-articles/leadandtwo/2-articles.json";
 import leadAndTwo3ArticlesFixture from "../../fixtures/related-articles/leadandtwo/3-articles.json";
+import opinionAndTwo1ArticleFixture from "../../fixtures/related-articles/opinionandtwo/1-article.json";
+import opinionAndTwo2ArticlesFixture from "../../fixtures/related-articles/opinionandtwo/2-articles.json";
+import opinionAndTwo3ArticlesFixture from "../../fixtures/related-articles/opinionandtwo/3-articles.json";
 
-const createRelatedArticlesProps = (fixtureData, action = () => {}) => ({
+const createRelatedArticlesProps = (
+  fixtureData,
+  action = () => {},
+  onPress = () => {}
+) => ({
   analyticsStream: action,
   articles: fixtureData.relatedArticles,
   template: fixtureData.relatedArticlesLayout.template,
-  mainId:
-    fixtureData.relatedArticlesLayout.lead ||
-    fixtureData.relatedArticlesLayout.opinion ||
-    "",
-  onPress: () => {}
+  mainId: fixtureData.relatedArticlesLayout.main || "",
+  onPress
 });
 
 export default () => {
@@ -40,6 +46,25 @@ export default () => {
   afterEach(() => {
     mockDate.reset();
     global.Intl = realIntl;
+  });
+
+  it("callback triggered on related article press", () => {
+    const onRelatedArticlePress = jest.fn();
+    const article = standard1ArticleFixture.data.relatedArticles[0];
+
+    const component = shallow(
+      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
+    );
+
+    const eventMock = {};
+    component
+      .find("Link")
+      .at(0)
+      .simulate("press", eventMock);
+
+    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
+      url: article.url
+    });
   });
 
   context("Standard template", () => {
@@ -169,6 +194,62 @@ export default () => {
       expect(tree).toMatchSnapshot();
       expect(events.mock.calls).toMatchSnapshot(
         "should send analytics for lead and two support related articles"
+      );
+    });
+  });
+
+  context("Opinion and two template", () => {
+    it("should render one opinion related article", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo1ArticleFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for a opinion related article"
+      );
+    });
+
+    it("should render one opinion and one support related article", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo2ArticlesFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for opinion and support related articles"
+      );
+    });
+
+    it("should render one opinion and two support related articles", () => {
+      const events = jest.fn();
+      const tree = renderer
+        .create(
+          <RelatedArticles
+            {...createRelatedArticlesProps(
+              opinionAndTwo3ArticlesFixture.data,
+              events
+            )}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+      expect(events.mock.calls).toMatchSnapshot(
+        "should send analytics for opinion and two support related articles"
       );
     });
   });
