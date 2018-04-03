@@ -5,6 +5,7 @@ import Fructose from "@times-components/fructose";
 import { loadStories } from "./components";
 
 AppRegistry.registerComponent("storybooknative", () => Fructose(loadStories));
+Expo.registerRootComponent(Fructose(loadStories));
 
 Font.loadAsync({
     "GillSansMTStd-Medium": require(`../dist/public/fonts/GillSansMTStd-Medium.ttf`),

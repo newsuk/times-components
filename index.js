@@ -1,1 +1,1 @@
-import ExpoApp from "./fructose/index"
+import ExpoApp from './fructose/index'
