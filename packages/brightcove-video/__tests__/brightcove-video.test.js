@@ -200,7 +200,7 @@ it("will handle an error properly", () => {
 });
 
 it("the player can trigger errors", () => {
-const root = renderer.create(
+  const root = renderer.create(
     <BrightcoveVideo
       policyKey={policyKey}
       videoId={videoId}
