@@ -3,7 +3,8 @@
     package="uk.co.news.rntbrightcovevideo">
 
     <application>
-        <activity android:name=".BrightcovePlayerActivity"/>
+        <activity android:name=".BrightcovePlayerActivity"
+         android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
     </application>
 
 </manifest>
