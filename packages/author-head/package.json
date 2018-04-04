@@ -14,8 +14,7 @@
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
-    "postinstall": "yarn transpile"
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "jest": {
     "preset": "react-native",
