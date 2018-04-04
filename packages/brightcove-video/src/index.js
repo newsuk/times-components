@@ -1,4 +1,4 @@
-import BrightcovePlayer from "./brightcove-player";
+import BrightcovePlayer from "./brightcove-video";
 import Splash_ from "./splash";
 
 export default BrightcovePlayer;
