@@ -1,4 +1,5 @@
 import "babel-polyfill";
+import minimatch from "minimatch";
 
 const { keys, values, entries } = Object;
 const toObject = (a, b) => ({ ...a, ...b });
@@ -188,11 +189,23 @@ export function applyStrategy(requirements, strategy) {
   };
 }
 
-export default async function compute(packagesList, strategy, overrides = {}) {
+export function restrictRequirements(requirements, expr) {
+  const filter = expr ? name => minimatch(name, expr) : () => true;
+
+  return requirements.filter(requirement => filter(requirement.requires.name));
+}
+
+export default async function compute(
+  packagesList,
+  strategy,
+  filter,
+  overrides = {}
+) {
   const packages = packagesList.map(p => p[1]);
   const requirements = getAllRequirements(packages);
+  const targetRequirements = restrictRequirements(requirements, filter);
 
-  const { versionSets, resolved } = applyStrategy(requirements, strategy);
+  const { versionSets, resolved } = applyStrategy(targetRequirements, strategy);
 
   const wrong = findWrongVersions(packages);
   const rules = createRules(resolved, wrong);
@@ -205,7 +218,7 @@ export default async function compute(packagesList, strategy, overrides = {}) {
   const suggestions = getSuggestions(todo);
 
   return {
-    requirements,
+    requirements: targetRequirements,
     versionSets,
     wrong,
     rules,

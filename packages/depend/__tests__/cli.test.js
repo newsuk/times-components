@@ -121,4 +121,15 @@ describe("depend cli tests", () => {
     expect(readJson.mock.calls).toEqual([["lerna.json"]]);
     expect(getPackages.mock.calls).toEqual([["*/package.json"]]);
   });
+
+  it("restricts to only requested packages", async () => {
+    const exit = jest.fn();
+    const log = jest.fn();
+    const argv = { list: 1, expr: "*", only: "{a,b}" };
+    const getPackages = () => divergent;
+
+    await main({ log, argv, getPackages, exit });
+    expect(exit.mock.calls).toEqual([]);
+    expect(log.mock.calls).toMatchSnapshot();
+  });
 });

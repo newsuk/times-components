@@ -79,3 +79,18 @@ Array [
   ],
 ]
 `;
+
+exports[`depend cli tests restricts to only requested packages 1`] = `
+Array [
+  Array [
+    "1",
+    "a",
+    "1.0.1 1.0.0",
+  ],
+  Array [
+    "2",
+    "b",
+    "2.0.0",
+  ],
+]
+`;
