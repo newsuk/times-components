@@ -8,7 +8,6 @@ import StandardSlice from "./src/templates/standard";
 const itemCountLabel = "Number of items:";
 const itemCount = ["1", "2", "3"];
 const itemCountDefault = "1";
-const itemCountGroup = "GROUP-ID1";
 
 const colours = [
   { backgroundColor: "red", id: 1 },
@@ -32,13 +31,9 @@ const createStandardItems = noOfItems =>
 
 storiesOf("Primitives/Slice", module).add("Standard", () => (
   <StandardSlice
-    itemCount={Number(
-      select(itemCountLabel, itemCount, itemCountDefault, itemCountGroup)
-    )}
+    itemCount={Number(select(itemCountLabel, itemCount, itemCountDefault))}
     renderItems={() =>
-      createStandardItems(
-        select(itemCountLabel, itemCount, itemCountDefault, itemCountGroup)
-      )
+      createStandardItems(select(itemCountLabel, itemCount, itemCountDefault))
     }
   />
 ));

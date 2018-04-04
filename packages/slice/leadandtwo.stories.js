@@ -8,7 +8,6 @@ import LeadAndTwoSlice from "./src/templates/leadandtwo";
 const itemCountLabel = "Number of support items:";
 const itemCount = ["0", "1", "2"];
 const itemCountDefault = "0";
-const itemCountGroup = "GROUP-ID1";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
@@ -35,15 +34,13 @@ storiesOf("Primitives/Slice", module).add("Lead and two", () => (
       <View
         id="lead"
         style={{
-          minHeight: 320,
-          backgroundColor: "red"
+          backgroundColor: "red",
+          minHeight: 320
         }}
       />
     )}
     renderSupports={() =>
-      createSupportItems(
-        select(itemCountLabel, itemCount, itemCountDefault, itemCountGroup)
-      )
+      createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
     }
   />
 ));

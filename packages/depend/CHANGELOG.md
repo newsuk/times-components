@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/newsuk/times-components/compare/@times-components/depend@0.1.4...@times-components/depend@0.1.5) (2018-04-04)
+
+
+### Bug Fixes
+
+* run local depend from root ([#808](https://github.com/newsuk/times-components/issues/808)) ([ddbeb3a](https://github.com/newsuk/times-components/commit/ddbeb3a))
+
+
+
+
 <a name="0.1.4"></a>
 ## 0.1.4 (2018-04-03)
 
