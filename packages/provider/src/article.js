@@ -18,7 +18,6 @@ export const query = gql`
       leadAsset {
         ... on Video {
           brightcovePolicyKey
-          brightcovePlayerId
           brightcoveVideoId
           brightcoveAccountId
           type: __typename
