@@ -1,5 +1,3 @@
-/* eslint import/no-unresolved 0 */  // --> OFF
-
 import Expo, { Font } from "expo";
 import Fructose from './fructose/index';
 import GillSansMTStd from './dist/public/fonts/GillSansMTStd-Medium.ttf';
