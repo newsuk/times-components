@@ -12817,126 +12817,68 @@ exports[`Article test on android renders article with video asset 1`] = `
           testID={undefined}
         >
           <View
-            aspectRatio={1.7777777777777777}
-            style={Object {}}
+            accessibilityLabel="splash-component"
+            style={
+              Object {
+                "height": 421.875,
+                "width": 750,
+              }
+            }
+            testID="splash-component"
           >
-            <View
-              style={
+            <Image
+              source={
                 Object {
-                  "height": "100%",
-                  "width": "100%",
+                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
                 }
               }
+              style={
+                Object {
+                  "height": 421.875,
+                  "width": 750,
+                }
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 421.875,
+                    "width": 750,
+                  },
+                ]
+              }
             >
-              <Image
-                onLoad={[Function]}
-                source={
-                  Object {
-                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&preview=true",
-                  }
-                }
-                style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
-                }
-              />
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
-                  }
+              <View>
+                <svg
+                  height={70}
+                  style={Object {}}
+                  viewBox="0 0 100 100"
+                  width={70}
                 >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
-                      }
-                    />
-                  </View>
-                </View>
+                  <rect
+                    fill="rgba(0,0,0)"
+                    fillOpacity="0.4"
+                    height="100"
+                    stroke="rgb(255,255,255)"
+                    strokeWidth="8"
+                    style={Object {}}
+                    width="100"
+                  />
+                  <polygon
+                    fill="rgb(255,255,255)"
+                    points="30,20 70,50 30,80"
+                    style={Object {}}
+                  />
+                </svg>
               </View>
             </View>
           </View>
