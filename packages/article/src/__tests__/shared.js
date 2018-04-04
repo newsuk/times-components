@@ -250,7 +250,7 @@ export default () => {
   it("tracks page view", () => {
     const stream = jest.fn();
 
-    const {topics} = fullArticleFixture.data.article;
+    const { topics } = fullArticleFixture.data.article;
     renderer.create(
       <Article
         {...fullArticleFixture.data}
