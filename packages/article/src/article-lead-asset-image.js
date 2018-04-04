@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "@times-components/image";
+import { ModalImage } from "@times-components/image";
 import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetImage = ({ crop: { ratio, url } }) => {
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return <Image uri={url} aspectRatio={aspectRatio} />;
+  return <ModalImage uri={url} aspectRatio={aspectRatio} />;
 };
 
 export const propTypes = {
