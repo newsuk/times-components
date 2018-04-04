@@ -17,6 +17,10 @@ export const query = gql`
       url
       leadAsset {
         ... on Video {
+          brightcovePolicyKey
+          brightcovePlayerId
+          brightcoveVideoId
+          brightcoveAccountId
           type: __typename
           posterImage {
             ...imageProps
