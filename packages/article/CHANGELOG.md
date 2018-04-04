@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.62.8"></a>
+## [0.62.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.7...@times-components/article@0.62.8) (2018-04-04)
+
+
+### Bug Fixes
+
+* Use modal image in lead asset image ([#807](https://github.com/newsuk/times-components/issues/807)) ([5ba6e05](https://github.com/newsuk/times-components/commit/5ba6e05))
+
+
+
+
 <a name="0.62.7"></a>
 ## [0.62.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.6...@times-components/article@0.62.7) (2018-04-04)
 
