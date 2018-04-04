@@ -1,5 +1,7 @@
-import Fructose from './fructose/index';
+/* eslint import/no-unresolved 0 */  // --> OFF
+
 import Expo, { Font } from "expo";
+import Fructose from './fructose/index';
 import GillSansMTStd from './dist/public/fonts/GillSansMTStd-Medium.ttf';
 import TimesDigitalW04R from './dist/public/fonts/TimesDigitalW04-Regular.ttf';
 import TimesDigitalW04SC from './dist/public/fonts/TimesDigitalW04-RegularSC.ttf';
@@ -21,3 +23,4 @@ Font.loadAsync({
     "TimesModern-Bold": TimesModernB,
     "TimesModern-Regular": TimesModernR,
 });
+
