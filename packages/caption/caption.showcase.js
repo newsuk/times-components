@@ -19,24 +19,29 @@ const style = {
 
 export default {
   name: "Primitives/Caption",
-  stories: [
+  children: [
     {
+      type: "story",
       name: "Without credits",
       component: <Caption text={captionText} />
     },
     {
+      type: "story",
       name: "With credits",
       component: <Caption text={captionText} credits={credits} />
     },
     {
+      type: "story",
       name: "Credits only",
       component: <Caption credits={credits} />
     },
     {
+      type: "story",
       name: "With specific styles",
       component: <Caption text={captionText} credits={credits} style={style} />
     },
     {
+      type: "story",
       name: "Image with caption",
       component: (
         <Caption text={captionText} credits={credits}>

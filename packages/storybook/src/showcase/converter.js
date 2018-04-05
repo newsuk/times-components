@@ -1,17 +1,23 @@
 import { storiesOf } from "@storybook/react-native";
 
-const addStories = (builder, [story, ...stories]) => {
-  if (!story) {
+const addStories = (builder, [child, ...children]) => {
+  if (!child) {
     return;
   }
 
-  builder.add(story.name, () => story.component);
+  if(child.type === 'story') {
+    builder.add(child.name, () => child.component);
+  }
 
-  addStories(builder, stories);
+  if(child.type === 'decorator') {
+    builder.addDecorator(child.decorator);
+  }
+
+  addStories(builder, children);
 };
 
-const converter = (module, { name, stories } = {}) => {
-  addStories(storiesOf(name, module), stories);
+const converter = (module, { name, children } = {}) => {
+  addStories(storiesOf(name, module), children);
 };
 
 export default converter;
