@@ -3,9 +3,8 @@ import React from "react";
 import { ScrollView } from "react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import { storybookReporter } from "@times-components/tealium";
-import RelatedArticles from "/";
+import RelatedArticles from "/related-articles";
 
-// Related articles
 import standard1RelatedArticleFixture from "./fixtures/standard/1-article.json";
 import standard1RelatedArticleNoImageFixture from "./fixtures/standard/1-article-no-image.json";
 import standard1RelatedArticleNoLabelFixture from "./fixtures/standard/1-article-no-label.json";

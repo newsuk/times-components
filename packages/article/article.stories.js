@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
-import { Platform, ScrollView } from "react-native";
+import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
