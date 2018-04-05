@@ -1,7 +1,9 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import { query as authorProfileQuery } from "./author-profile";
-import { query as articleListWithImagesQuery } from "./author-articles-with-images";
-import { query as articleListNoImagesQuery } from "./author-articles-no-images";
+import {
+  authorProfileQuery,
+  articleListNoImagesQuery,
+  articleListWithImagesQuery
+} from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
