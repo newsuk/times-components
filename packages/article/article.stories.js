@@ -5,8 +5,9 @@ import { Platform, ScrollView } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { MockedProvider } from "@times-components/utils";
+import { select, text } from "@storybook/addon-knobs/react";
 import { ArticleProvider, articleQuery } from "@times-components/provider";
+import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { storybookReporter } from "@times-components/tealium";
 import Article from "./src/article";
 import RelatedArticles from "./src/related-articles/related-articles";
@@ -149,28 +150,42 @@ storiesOf("Pages/Article", module)
   .add("Error", () => (
     <RenderArticle error={{ message: "An example error." }} />
   ))
-  .add("With Provider", () => (
-    <MockedProvider mocks={mocks}>
-      <ArticleProvider
-        id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        debounceTimeMs={0}
-      >
-        {({ article, isLoading, error }) => (
-          <Article
-            article={article}
-            isLoading={isLoading}
-            error={error}
-            analyticsStream={storybookReporter}
-            adConfig={defaultAdConfig}
-            onRelatedArticlePress={preventDefaultedAction(
-              "onRelatedArticlePress"
-            )}
-            onAuthorPress={preventDefaultedAction("onAuthorPress")}
-          />
-        )}
-      </ArticleProvider>
-    </MockedProvider>
-  ))
+  .add("With Provider", () => {
+    const predefinedArticles = {
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
+      "1a576df6-cb50-11e4-81dd-064fe933cd41":
+        "Video lead asset (requires GraphQL with CI data)"
+    };
+    const predefinedArticle = select(
+      "Predefined article",
+      predefinedArticles,
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    );
+    const overrideArticleId = text("Override article id", "");
+
+    return (
+      <StorybookProvider mocks={mocks}>
+        <ArticleProvider
+          id={overrideArticleId || predefinedArticle}
+          debounceTimeMs={0}
+        >
+          {({ article, isLoading, error }) => (
+            <Article
+              article={article}
+              isLoading={isLoading}
+              error={error}
+              analyticsStream={storybookReporter}
+              adConfig={defaultAdConfig}
+              onRelatedArticlePress={preventDefaultedAction(
+                "onRelatedArticlePress"
+              )}
+              onAuthorPress={preventDefaultedAction("onAuthorPress")}
+            />
+          )}
+        </ArticleProvider>
+      </StorybookProvider>
+    );
+  })
   .add("Fixtures - Full", () => {
     // Hack, render ads inside storybook's iframe
     if (Platform.OS === "web") {

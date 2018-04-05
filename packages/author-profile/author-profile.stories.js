@@ -1,16 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
-import { MockedProvider, fragmentMatcher } from "@times-components/utils";
+import { MockedProvider } from "@times-components/utils";
 import { storybookReporter } from "@times-components/tealium";
+import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   AuthorProfileProvider,
   fixtureGenerator
 } from "@times-components/provider";
-import { ApolloProvider } from "react-apollo";
-import { ApolloClient } from "apollo-client";
-import { HttpLink } from "apollo-link-http";
-import { InMemoryCache } from "apollo-cache-inmemory";
 import AuthorProfile from "./src/author-profile";
 
 const preventDefaultedAction = decorateAction([
@@ -160,52 +157,23 @@ storiesOf("Pages/AuthorProfile", module)
       analyticsStream: storybookReporter
     };
 
-    const withProvider = child => {
-      const uri = process.env.STORYBOOK_ENDPOINT;
+    const mocks = fixtureGenerator.makeArticleMocks({
+      withImages: true,
+      pageSize
+    });
 
-      if (uri) {
-        const client = new ApolloClient({
-          link: new HttpLink({
-            uri,
-            useGETForQueries: true,
-            headers: {
-              "content-type": "application/x-www-form-urlencoded"
-            }
-          }),
-          cache: new InMemoryCache({
-            fragmentMatcher
-          })
-        });
-
-        return (
-          <ApolloProvider debounceTimeMs={250} client={client}>
-            {child}
-          </ApolloProvider>
-        );
-      }
-
-      return (
-        <MockedProvider
-          mocks={fixtureGenerator.makeArticleMocks({
-            withImages: true,
-            pageSize
-          })}
-        >
-          {child}
-        </MockedProvider>
-      );
-    };
-
-    return withProvider(
-      <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
-        {({ author, isLoading, error }) => (
-          <AuthorProfile
-            author={author}
-            isLoading={isLoading}
-            error={error}
-            {...props}
-          />
-        )}
-      </AuthorProfileProvider>
+    return (
+      <StorybookProvider mocks={mocks}>
+        <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
+          {({ author, isLoading, error }) => (
+            <AuthorProfile
+              author={author}
+              isLoading={isLoading}
+              error={error}
+              {...props}
+            />
+          )}
+        </AuthorProfileProvider>
+      </StorybookProvider>
     );
   });

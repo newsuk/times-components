@@ -7,7 +7,8 @@ export default function getLeadAsset({ leadAsset }) {
       aspectRatio: "1:1"
     };
 
-  const isVideo = leadAsset.type === "Video";
+  /* eslint no-underscore-dangle: ["error", { "allow": ["__typename"] }] */
+  const isVideo = leadAsset.__typename === "Video";
   const displayImage = isVideo ? leadAsset.posterImage.crop : leadAsset.crop;
   const aspectRatio = displayImage.ratio;
 

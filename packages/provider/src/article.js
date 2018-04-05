@@ -21,6 +21,10 @@ export const query = gql`
           posterImage {
             ...imageProps
           }
+          brightcoveAccountId
+          brightcoveVideoId
+          brightcovePlayerId
+          brightcovePolicyKey
         }
         ... on Image {
           type: __typename
