@@ -1,7 +1,8 @@
 import React from "react";
-import Image from "@times-components/image";
+import { Dimensions } from "react-native";
 import Button from "@times-components/link";
 import PropTypes from "prop-types";
+import { Splash } from "@times-components/brightcove-video";
 import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetVideo = ({
@@ -13,6 +14,10 @@ const ArticleLeadAssetVideo = ({
 }) => {
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
+
+  const { width } = Dimensions.get("window");
+  const height = width / aspectRatio;
+
   return (
     <Button
       onPress={e =>
@@ -23,7 +28,7 @@ const ArticleLeadAssetVideo = ({
         })
       }
     >
-      <Image uri={imageUrl} aspectRatio={aspectRatio} />
+      <Splash poster={{ uri: imageUrl }} width={width} height={height} />
     </Button>
   );
 };
