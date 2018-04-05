@@ -88,12 +88,12 @@ exports[`Topic test on ios:  onPress sends analytics 1`] = `
 Array [
   Array [
     Object {
-      "action": "Viewed",
+      "action": "Pressed",
       "attrs": Object {
-        "eventTime": "2018-01-01T00:00:00.000Z",
+        "id": "football",
+        "name": "Football",
       },
-      "component": "Page",
-      "object": "TopicsRenderStory",
+      "component": "TopicLink",
     },
   ],
 ]

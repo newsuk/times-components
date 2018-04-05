@@ -1,7 +1,6 @@
 import "react-native";
 import React from "react";
 import mockDate from "mockdate";
-import { withTrackingContext } from "@times-components/tracking";
 import { shallow } from "enzyme";
 import Topics from "../topics";
 import Topic from "../topic";
@@ -53,19 +52,16 @@ module.exports = () => {
 
   it("onPress sends analytics", () => {
     const events = jest.fn();
-    const TopicWithAnalytics = withTrackingContext(Topic, {
-      trackingObjectName: "TopicsRenderStory"
-    });
 
-    shallow(
-      <TopicWithAnalytics
-        analyticsStream={events}
-        id={topicData[0].id}
-        name={topicData[0].name}
-      />
-    )
-      .dive()
-      .simulate("press", "events");
+    const context = {
+      tracking: {
+        analytics: events
+      }
+    };
+
+    shallow(<Topic id={topicData[0].id} name={topicData[0].name} />, {
+      context
+    }).simulate("press", "events");
 
     expect(events.mock.calls).toMatchSnapshot();
   });
