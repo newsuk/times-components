@@ -1,6 +1,5 @@
 import { View } from "react-native";
 import React from "react";
-import { action } from "@storybook/addon-actions";
 import { CenteredDecorator } from "@times-components/storybook";
 import { colours } from "@times-components/styleguide";
 import Link, { TextLink } from "./src/link";
@@ -26,7 +25,7 @@ export default {
     {
       type: "story",
       name: "Link with big content",
-      component: () => (
+      component: (_, action) => (
         <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
           <View
             style={{
@@ -41,7 +40,7 @@ export default {
     {
       type: "story",
       name: "Link can prevent browser navigation",
-      component: () => (
+      component: (_, action) => (
         <Link
           url="https://thetimes.co.uk"
           onPress={e => {
@@ -56,7 +55,7 @@ export default {
     {
       type: "story",
       name: "TextLink",
-      component: () => (
+      component: (_, action) => (
         <TextLink url="https://thetimes.co.uk/" onPress={action("onPress")}>
           The Times
         </TextLink>
@@ -65,7 +64,7 @@ export default {
     {
       type: "story",
       name: "TextLink with styles",
-      component: () => (
+      component: (_, action) => (
         <TextLink
           style={{ color: colours.functional.action }}
           url="https://thetimes.co.uk/"

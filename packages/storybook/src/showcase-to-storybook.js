@@ -1,5 +1,6 @@
 import { storiesOf } from "@storybook/react-native";
 import { color, select } from "@storybook/addon-knobs/react";
+import { action } from "@storybook/addon-actions";
 
 const addStories = (builder, [child, ...children]) => {
   if (!child) {
@@ -11,7 +12,8 @@ const addStories = (builder, [child, ...children]) => {
       {
         colour: color,
         select
-      }
+      },
+      action
     ];
 
     builder.add(child.name, () => child.component(...args));

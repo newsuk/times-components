@@ -1,5 +1,5 @@
 import * as decorators from "./decorators";
-import * as showcase from "./showcase";
+import showcaseConverter from "./showcase-to-storybook";
 
 const {
   CenteredDecorator,
@@ -7,8 +7,6 @@ const {
   LateralSpacingDecorator,
   WhiteBgColorDecorator
 } = decorators;
-
-const { converter: showcaseConverter } = showcase;
 
 export {
   CenteredDecorator,
