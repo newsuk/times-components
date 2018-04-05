@@ -49,6 +49,7 @@ export default async function main({
   return depend(
     packagesList,
     argv.strategy ? strategies[argv.strategy] : null,
+    argv.only,
     pickOverride(argv.pick)
   )
     .then(

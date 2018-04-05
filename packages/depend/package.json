@@ -1,12 +1,11 @@
 {
   "name": "@times-components/depend",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
     "transpile": "babel . -d dist --ignore dist,node_modules,coverage,__tests__ && cp package.json dist/package.json",
     "prepublishOnly": "yarn transpile",
-    "postinstall": "yarn transpile",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
@@ -66,6 +65,7 @@
     "commander": "2.14.1",
     "fs-extra": "5.0.0",
     "glob": "7.1.2",
+    "minimatch": "3.0.4",
     "semver": "5.5.0"
   },
   "publishConfig": {

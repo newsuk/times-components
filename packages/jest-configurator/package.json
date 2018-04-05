@@ -11,8 +11,7 @@
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
     "test": "jest",
-    "transpile": "babel src --ignore node_modules,__tests__ -d lib",
-    "postinstall": "yarn transpile"
+    "transpile": "babel src --ignore node_modules,__tests__ -d lib"
   },
   "repository": {
     "type": "git",

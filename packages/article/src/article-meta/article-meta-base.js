@@ -18,26 +18,26 @@ const ArticleMetaBase = ({
   RowWrapper,
   onAuthorPress
 }) => {
-  const data = [];
-
-  if (byline && byline.length > 0) {
-    data.push(
-      ArticleMetaRow(
-        styles.byline,
-        <ArticleByline ast={byline} onAuthorPress={onAuthorPress} />,
-        "articleByline",
-        RowWrapper
-      )
-    );
-  }
-  data.push(
+  const data = [
     ArticleMetaRow(
       styles.datePublication,
       <DatePublication date={publishedTime} publication={publicationName} />,
       "articleDatePublication",
       RowWrapper
     )
-  );
+  ];
+
+  if (byline && byline.length > 0) {
+    return [
+      ArticleMetaRow(
+        styles.byline,
+        <ArticleByline ast={byline} onAuthorPress={onAuthorPress} />,
+        "articleByline",
+        RowWrapper
+      ),
+      ...data
+    ];
+  }
 
   return data;
 };

@@ -47,6 +47,10 @@ export default commander
     "how to resolve conflicts. possible strategies: conservative, progressive, majority, majorityConservative, majorityProgressive",
     validateStrategies
   )
+  .option(
+    "-on --only",
+    "glob expression that restricts dependencies to process"
+  )
   .option("-f --fix", "fixed dependencies with wrong versions")
   .option("-sr --show-rules", "prints rules that will be applied")
   .option("-l --list", "prints all dependencies in use")

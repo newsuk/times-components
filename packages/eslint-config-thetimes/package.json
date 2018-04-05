@@ -9,8 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "yarn prettier:diff",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
-    "postinstall": "yarn transpile"
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",

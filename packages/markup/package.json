@@ -15,8 +15,7 @@
     "dextrose-stories": "dextrose gs $(PWD)",
     "dextrose-clean": "dextrose cs $(PWD)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
-    "postinstall": "yarn transpile"
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",
