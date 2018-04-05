@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.16.9",
+  "version": "0.16.10",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -46,8 +46,8 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.5",
-    "@times-components/utils": "0.6.1",
+    "@times-components/eslint-config-thetimes": "0.1.6",
+    "@times-components/utils": "0.6.2",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
@@ -63,8 +63,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.5",
-    "@times-components/watermark": "0.4.15",
+    "@times-components/styleguide": "0.5.6",
+    "@times-components/watermark": "0.4.16",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },

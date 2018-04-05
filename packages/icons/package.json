@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",
@@ -37,9 +37,9 @@
     "@storybook/addon-actions": "3.3.15",
     "@storybook/addon-knobs": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.5",
-    "@times-components/jest-configurator": "0.2.3",
-    "@times-components/storybook": "0.4.5",
+    "@times-components/eslint-config-thetimes": "0.1.6",
+    "@times-components/jest-configurator": "0.2.4",
+    "@times-components/storybook": "0.4.6",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
@@ -54,7 +54,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.5",
+    "@times-components/styleguide": "0.5.6",
     "prop-types": "15.6.0",
     "svgs": "3.2.1"
   },

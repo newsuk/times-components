@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.17.2",
+  "version": "0.17.3",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
@@ -34,7 +34,7 @@
   "devDependencies": {
     "@storybook/addon-knobs": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/jest-configurator": "0.2.3",
+    "@times-components/jest-configurator": "0.2.4",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
@@ -46,8 +46,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.6.1",
-    "@times-components/styleguide": "0.5.5",
+    "@times-components/responsive-styles": "0.6.2",
+    "@times-components/styleguide": "0.5.6",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
