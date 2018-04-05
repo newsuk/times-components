@@ -7,7 +7,7 @@ import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   AuthorProfileProvider,
   fixtureGenerator
-} from "@times-components/provider";
+} from "@times-components/provider-test-tools";
 import AuthorProfile from "./src/author-profile";
 
 const preventDefaultedAction = decorateAction([
