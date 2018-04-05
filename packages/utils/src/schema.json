@@ -8,7 +8,7 @@
         {
           "kind": "OBJECT",
           "name": "Query",
-          "description": "Main query",
+          "description": "",
           "fields": [
             {
               "name": "author",
@@ -30,6 +30,18 @@
                 }
               ],
               "type": { "kind": "OBJECT", "name": "Author", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "authors",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Author", "ofType": null }
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -158,6 +170,18 @@
           "description": "An author of a piece of writing",
           "fields": [
             {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "articles",
               "description": "",
               "args": [],
@@ -222,10 +246,29 @@
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
           "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "ID",
+          "description":
+            "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
         },
@@ -437,6 +480,14 @@
               "deprecationReason": null
             },
             {
+              "name": "updatedTime",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "DateTime", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "relatedArticles",
               "description":
                 "Curated list of articles selected by editorial that appear at the end of an article",
@@ -564,17 +615,6 @@
               "deprecationReason": null
             }
           ],
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "ID",
-          "description":
-            "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
           "possibleTypes": null
         },
         {
@@ -864,6 +904,62 @@
                 "name": null,
                 "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "caption",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "brightcovePolicyKey",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "brightcovePlayerId",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "brightcoveVideoId",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "canonicalidentifier",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "paidonly",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "brightcoveAccountId",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2126,7 +2222,7 @@
           "kind": "OBJECT",
           "name": "LeadAndTwo",
           "description":
-            "Three articles with one that has more importance over the others denoted by the lead ID. Would usually be associated with a list of articles",
+            "Three articles with one that has more importance over the others denoted by the main ID. Would usually be associated with a list of articles",
           "fields": [
             {
               "name": "template",
@@ -2156,7 +2252,7 @@
           "kind": "OBJECT",
           "name": "OpinionAndTwo",
           "description":
-            "Three articles with one that has more importance over the others denoted by the opinion ID. Would usually be associated with a list of articles",
+            "Three articles with one that has more importance over the others denoted by the main ID. Would usually be associated with a list of articles",
           "fields": [
             {
               "name": "template",

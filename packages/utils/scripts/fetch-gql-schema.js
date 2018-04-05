@@ -19,7 +19,7 @@ const fetchIntrospection = () =>
 
 const writeSchemaToDist = res =>
   new Promise((resolve, reject) => {
-    const stream = fs.createWriteStream("schema.json");
+    const stream = fs.createWriteStream("src/schema.json");
 
     stream.on("finish", resolve);
     stream.on("error", reject);

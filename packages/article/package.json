@@ -13,9 +13,8 @@
     "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist",
+    "postinstall": "yarn transpile"
   },
   "repository": {
     "type": "git",
@@ -43,7 +42,6 @@
     "@times-components/tealium": "0.2.14",
     "@times-components/utils": "0.6.2",
     "apollo-utilities": "1.0.4",
-    "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
@@ -59,6 +57,7 @@
     "styled-components": "3.2.2"
   },
   "dependencies": {
+    "@storybook/addon-knobs": "3.3.15",
     "@times-components/ad": "0.16.10",
     "@times-components/article-byline": "0.14.7",
     "@times-components/article-flag": "0.11.16",
@@ -76,6 +75,7 @@
     "@times-components/pull-quote": "0.4.6",
     "@times-components/responsive-styles": "0.6.2",
     "@times-components/slice": "0.17.3",
+    "@times-components/storybook": "0.4.6",
     "@times-components/styleguide": "0.5.6",
     "@times-components/topics": "0.2.6",
     "@times-components/tracking": "0.10.4",
