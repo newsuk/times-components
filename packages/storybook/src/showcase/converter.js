@@ -1,16 +1,5 @@
 import { storiesOf } from "@storybook/react-native";
-import { color } from "@storybook/addon-knobs/react";
-
-const makeKnobs = (knobs, knob) => {
-  if (knob === "colour") {
-    return {
-      ...knobs,
-      colour: color
-    };
-  }
-
-  return knobs;
-};
+import { color, select } from "@storybook/addon-knobs/react";
 
 const addStories = (builder, [child, ...children]) => {
   if (!child) {
@@ -18,7 +7,12 @@ const addStories = (builder, [child, ...children]) => {
   }
 
   if (child.type === "story") {
-    const args = child.knobs ? [child.knobs.reduce(makeKnobs, {})] : [];
+    const args = [
+      {
+        colour: color,
+        select
+      }
+    ];
 
     builder.add(child.name, () => child.component(...args));
   }

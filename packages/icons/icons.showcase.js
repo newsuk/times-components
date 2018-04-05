@@ -39,7 +39,6 @@ export default {
     {
       type: "story",
       name: "Icons",
-      knobs: ["colour"],
       component: ({ colour }) => (
         <View style={styles.wrapper}>
           <View style={styles.icon}>

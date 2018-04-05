@@ -38,7 +38,9 @@ export default {
     {
       type: "story",
       name: "With specific styles",
-      component: () => <Caption text={captionText} credits={credits} style={style} />
+      component: () => (
+        <Caption text={captionText} credits={credits} style={style} />
+      )
     },
     {
       type: "story",
