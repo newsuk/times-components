@@ -23,7 +23,6 @@ export const query = gql`
           }
           brightcoveAccountId
           brightcoveVideoId
-          brightcovePlayerId
           brightcovePolicyKey
         }
         ... on Image {
