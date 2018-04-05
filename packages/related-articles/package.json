@@ -1,0 +1,73 @@
+{
+  "name": "@times-components/related-articles",
+  "version": "0.0.1",
+  "description": "related articles of an article",
+  "main": "dist/related-articles",
+  "dev": "src/related-articles",
+  "scripts": {
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint src && npm run prettier:diff",
+    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "related-articles",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "3.3.15",
+    "@storybook/addons": "3.3.15",
+    "@storybook/react-native": "3.3.15",
+    "@times-components/jest-configurator": "0.2.4",
+    "enzyme": "3.3.0",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "mockdate": "2.0.2",
+    "prettier": "1.8.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-native": "0.53.3",
+    "react-test-renderer": "16.2.0"
+  },
+  "dependencies": {
+    "@times-components/article-summary": "0.22.4",
+    "@times-components/card": "0.25.6",
+    "@times-components/link": "0.15.17",
+    "@times-components/markup": "0.25.11",
+    "@times-components/slice": "0.17.3",
+    "@times-components/styleguide": "0.5.6",
+    "@times-components/tealium": "0.2.15",
+    "@times-components/tracking": "0.10.5",
+    "lodash.get": "4.4.2",
+    "prop-types": "15.6.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

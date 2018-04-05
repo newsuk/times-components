@@ -1,0 +1,463 @@
+{
+  "data": {
+    "relatedArticlesLayout": {
+      "template": "LEAD_AND_TWO",
+      "main": "a88b0330-d14c-11e7-b1ec-8503a5941b97"
+    },
+    "relatedArticles": [
+      {
+        "summary105": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary125": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary145": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary160": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary175": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary225": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
+        "publishedTime": "2017-11-25T00:01:00.000Z",
+        "leadAsset": {
+          "title": "",
+          "crop169": {
+            "url":
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+          }
+        },
+        "label": "leading article",
+        "headline": "Defence of the Realm",
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Deborah Haynes"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "url":
+          "https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
+      },
+      {
+        "summary105": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary125": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating funding for"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary145": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating funding for Britain’s nuclear deterrent"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary160": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating funding for Britain’s nuclear deterrent out of the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary175": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating funding for Britain’s nuclear deterrent out of the defence budget."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": []
+          }
+        ],
+        "summary225": [
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "A Tory MP is leading a campaign among backbench colleagues to force the chancellor to take the escalating funding for Britain’s nuclear deterrent out of the defence budget."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Johnny Mercer, a former army officer, is canvassing"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
+        "publishedTime": "2017-11-25T00:01:00.000Z",
+        "leadAsset": {
+          "title": "Defence Secretary Visits A Trident Nuclear Submarine",
+          "crop169": {
+            "url":
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22"
+          }
+        },
+        "label": "defence cuts",
+        "headline": "Trident out of MoD budget, Hammond urged",
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Deborah Haynes"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "url":
+          "https://www.uat-thetimes.co.uk/article/take-expensive-trident-out-of-mod-budget-hammond-urged-ztsxlskj2"
+      },
+      {
+        "summary105": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary125": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary145": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": []
+          }
+        ],
+        "summary160": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "However, the"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary175": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "However, the funding crisis that"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "summary225": [
+          {
+            "name": "paragraph",
+            "attributes": {
+              "class": "dropcap@1"
+            },
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Philip Hammond knows better than most the challenge posed by the Ministry of Defence when it comes to budget mismanagement and contract chaos."
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "However, the funding crisis that is gripping the armed forces today is an"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
+        "publishedTime": "2017-11-25T00:01:00.000Z",
+        "leadAsset": {
+          "title": "",
+          "crop169": {
+            "url":
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+          }
+        },
+        "label": "defence cuts | analysis",
+        "headline": "Size matters, say tiny ministers",
+        "byline": [
+          {
+            "name": "inline",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Deborah Haynes"
+                },
+                "children": []
+              }
+            ]
+          }
+        ],
+        "url":
+          "https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
+      }
+    ]
+  }
+}

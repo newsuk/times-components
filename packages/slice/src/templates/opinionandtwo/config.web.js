@@ -33,47 +33,32 @@ export const getSupportConfig = () => ({
 
 export const getConfigWrapper = ({ supportCount }) => {
   const ConfigWrapper = withResponsiveStyles(View, {
-    base: () => {
-      const getOpinionImageStyle = () => {
-        if (supportCount === 0)
-          return `
-          margin-bottom: ${spacing(-2)};
-        `;
-        if (supportCount === 1)
-          return `
-          margin-bottom: 6px;
-        `;
-        return `
-          margin-bottom: 6px;
-        `;
-      };
-      return `
-        .opinionContentContainerClass {
-          min-height: 250px;
-        }
-        .opinionImageContainerClass {
-          bottom: 0;
-          min-width: 115px;
-          position: absolute;
-          right: 0;
-          ${getOpinionImageStyle()}
-        }
-        .supportImageContainerClass {
-          display: none;
-        }
-        .supportSummaryClass {
-          display: none;
-        }
-        .summaryHidden {
-          display: none;
-        }
-        .opinionSummary125Class {
-          display: block;
-          padding-right: ${spacing(4)};
-          width: 60%;
-        }
-      `;
-    },
+    base: () => `
+      .opinionContentContainerClass {
+        min-height: 250px;
+      }
+      .opinionImageContainerClass {
+        bottom: 0;
+        margin-bottom: ${spacing(-2)};
+        min-width: 115px;
+        position: absolute;
+        right: 0;
+      }
+      .supportImageContainerClass {
+        display: none;
+      }
+      .supportSummaryClass {
+        display: none;
+      }
+      .summaryHidden {
+        display: none;
+      }
+      .opinionSummary125Class {
+        display: block;
+        padding-right: ${spacing(4)};
+        width: 60%;
+      }
+    `,
     smallUp: () => {
       const getOpinionImageStyle = () => {
         if (supportCount === 0)
@@ -108,7 +93,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: ${spacing(3)};
           min-width: 152px;
         `;
       };
