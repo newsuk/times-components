@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.15.16",
+  "version": "0.15.17",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -40,7 +40,7 @@
     "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.1.6",
     "@times-components/jest-configurator": "0.2.4",
-    "@times-components/storybook": "0.4.6",
+    "@times-components/storybook": "0.4.7",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",

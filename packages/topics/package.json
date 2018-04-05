@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topics",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Map of Topics related to the Article",
   "main": "dist/topics",
   "dev": "src/topics",
@@ -45,7 +45,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/link": "0.15.16",
+    "@times-components/link": "0.15.17",
     "@times-components/styleguide": "0.5.6",
     "enzyme": "3.3.0",
     "lodash.orderby": "4.6.0",
