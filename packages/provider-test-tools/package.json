@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -45,8 +45,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.1.5",
-    "@times-components/utils": "0.6.1",
+    "@times-components/eslint-config-thetimes": "0.1.6",
+    "@times-components/utils": "0.6.2",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "1.5.0",
     "jest": "21.2.1",
