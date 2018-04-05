@@ -5,8 +5,8 @@ import renderer from "react-test-renderer";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
 
-import RelatedArticles from "../related-articles/related-articles";
-import RelatedArticleItem from "../related-articles/related-article-item";
+import RelatedArticles from "../related-articles";
+import RelatedArticleItem from "../related-article-item";
 
 import standard1ArticleFixture from "../../fixtures/standard/1-article.json";
 import standard2ArticlesFixture from "../../fixtures/standard/2-articles.json";

@@ -36,47 +36,45 @@ const createRelatedArticles = fixtureData => {
   };
   return (
     <ScrollView>
-      <RelatedArticles
-        {...props}
-      />
+      <RelatedArticles {...props} />
     </ScrollView>
   );
 };
 
 storiesOf("Composed/RelatedArticles", module)
-  .add("Standard template with one related article", () => (
+  .add("Standard template with one related article", () =>
     createRelatedArticles(standard1RelatedArticleFixture.data)
-  ))
-  .add("Standard template with one related article with no image", () => (
+  )
+  .add("Standard template with one related article with no image", () =>
     createRelatedArticles(standard1RelatedArticleNoImageFixture.data)
-  ))
-  .add("Standard template with one related article with no label", () => (
+  )
+  .add("Standard template with one related article with no label", () =>
     createRelatedArticles(standard1RelatedArticleNoLabelFixture.data)
-  ))
-  .add("Standard template with one related article with no byline", () => (
+  )
+  .add("Standard template with one related article with no byline", () =>
     createRelatedArticles(standard1RelatedArticleNoBylineFixture.data)
-  ))
-  .add("Standard template with two related articles", () => (
+  )
+  .add("Standard template with two related articles", () =>
     createRelatedArticles(standard2RelatedArticlesFixture.data)
-  ))
-  .add("Standard template with three related articles", () => (
+  )
+  .add("Standard template with three related articles", () =>
     createRelatedArticles(standard3RelatedArticlesFixture.data)
-  ))
-  .add("Lead and two template with one related article", () => (
+  )
+  .add("Lead and two template with one related article", () =>
     createRelatedArticles(leadAndTwo1RelatedArticleFixture.data)
-  ))
-  .add("Lead and two template with two related articles", () => (
+  )
+  .add("Lead and two template with two related articles", () =>
     createRelatedArticles(leadAndTwo2RelatedArticlesFixture.data)
-  ))
-  .add("Lead and two template with three related articles", () => (
+  )
+  .add("Lead and two template with three related articles", () =>
     createRelatedArticles(leadAndTwo3RelatedArticlesFixture.data)
-  ))
-  .add("Opinion and two template with one related article", () => (
+  )
+  .add("Opinion and two template with one related article", () =>
     createRelatedArticles(opinionAndTwo1RelatedArticleFixture.data)
-  ))
-  .add("Opinion and two template with two related articles", () => (
+  )
+  .add("Opinion and two template with two related articles", () =>
     createRelatedArticles(opinionAndTwo2RelatedArticlesFixture.data)
-  ))
-  .add("Opinion and two template with three related articles", () => (
+  )
+  .add("Opinion and two template with three related articles", () =>
     createRelatedArticles(opinionAndTwo3RelatedArticlesFixture.data)
-  ));
+  );
