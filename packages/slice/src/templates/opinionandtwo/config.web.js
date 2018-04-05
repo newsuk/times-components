@@ -44,7 +44,7 @@ export const getConfigWrapper = ({ supportCount }) => {
           margin-bottom: 6px;
         `;
         return `
-          margin-bottom: 6px;
+          margin-bottom: ${spacing(-2)};
         `;
       };
       return `
@@ -108,7 +108,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: ${spacing(3)};
           min-width: 152px;
         `;
       };

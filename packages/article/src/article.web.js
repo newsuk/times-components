@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
+import RelatedArticles from "@times-components/related-articles";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
@@ -12,7 +13,6 @@ import LeadAssetComponent from "./article-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
 import Topics from "./topics";
-import RelatedArticles from "./related-articles/related-articles";
 
 import {
   MainContainer,

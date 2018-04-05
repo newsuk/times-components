@@ -2,6 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
+import RelatedArticles from "@times-components/related-articles";
 
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
@@ -13,7 +14,6 @@ import styles from "./styles/article-body";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
-import RelatedArticles from "./related-articles/related-articles";
 import Topics from "./topics";
 import ArticleLeadAsset from "./article-lead-asset";
 
