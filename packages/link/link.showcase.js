@@ -26,7 +26,7 @@ export default {
     {
       type: "story",
       name: "Link with big content",
-      component: (
+      component: () => (
         <Link url="https://thetimes.co.uk" onPress={action("onPress")}>
           <View
             style={{
@@ -41,7 +41,7 @@ export default {
     {
       type: "story",
       name: "Link can prevent browser navigation",
-      component: (
+      component: () => (
         <Link
           url="https://thetimes.co.uk"
           onPress={e => {
@@ -56,7 +56,7 @@ export default {
     {
       type: "story",
       name: "TextLink",
-      component: (
+      component: () => (
         <TextLink url="https://thetimes.co.uk/" onPress={action("onPress")}>
           The Times
         </TextLink>
@@ -65,7 +65,7 @@ export default {
     {
       type: "story",
       name: "TextLink with styles",
-      component: (
+      component: () => (
         <TextLink
           style={{ color: colours.functional.action }}
           url="https://thetimes.co.uk/"
