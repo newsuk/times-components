@@ -1,5 +1,5 @@
-import BrightcovePlayer from "./brightcove-video";
+import BrightcoveVideo from "./brightcove-video";
 import Splash_ from "./splash";
 
-export default BrightcovePlayer;
+export default BrightcoveVideo;
 export const Splash = Splash_;
