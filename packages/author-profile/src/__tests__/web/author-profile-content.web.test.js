@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import authorProfileFixture from "@times-components/provider/fixtures/author-profile/author-profile.json";
-import articleListWithImagesFixture from "@times-components/provider/fixtures/author-profile/article-list-with-images.json";
+import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
+import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
 import AuthorProfile from "../../author-profile";
 import AuthorProfileItem from "../../author-profile-item";
