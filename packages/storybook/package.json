@@ -26,11 +26,18 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@times-components/jest-configurator": "0.2.5",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.6.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
     "jest": "21.2.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@storybook/addon-actions": "3.3.15",
     "@storybook/addon-knobs": "3.3.15",
     "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
@@ -38,19 +45,12 @@
     "@times-components/utils": "0.6.4",
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.3",
-    "apollo-link-http": "1.5.2",
-    "eslint": "4.9.0",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
+    "apollo-link-http": "1.5.3",
+    "graphql": "0.12.3",
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-apollo": "2.1.0-rc.3",
-    "react-dom": "16.2.0",
-    "react-native": "0.53.3",
-    "react-test-renderer": "16.2.0"
+    "react-native": "0.53.3"
   },
   "publishConfig": {
     "access": "public"

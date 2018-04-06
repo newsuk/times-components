@@ -59,7 +59,7 @@
     "apollo-link": "1.0.7",
     "apollo-utilities": "1.0.4",
     "graphql": "0.12.3",
-    "graphql-tag": "2.6.0",
+    "graphql-tag": "2.8.0",
     "lodash.isequal": "4.4.0",
     "prop-types": "15.6.0",
     "react": "16.2.0",

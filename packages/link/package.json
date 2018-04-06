@@ -54,7 +54,6 @@
   "dependencies": {
     "@times-components/responsive-styles": "0.6.3",
     "@times-components/styleguide": "0.5.7",
-    "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
