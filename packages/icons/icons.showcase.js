@@ -41,13 +41,13 @@ export default {
     {
       type: "story",
       name: "Icons",
-      component: ({ colour }) => (
+      component: ({ color }) => (
         <View style={styles.wrapper}>
           <View style={styles.icon}>
             <IconDiamond
               width={50}
               height={50}
-              fillColour={colour(
+              fillColour={color(
                 "Icon Diamond",
                 IconDiamond.defaultProps.fillColour
               )}
@@ -58,7 +58,7 @@ export default {
             <IconTwitter
               width={50}
               height={50}
-              fillColour={colour(
+              fillColour={color(
                 "Icon Twitter",
                 IconTwitter.defaultProps.fillColour
               )}
@@ -69,7 +69,7 @@ export default {
             <IconVideo
               width={50}
               height={50}
-              fillColour={colour(
+              fillColour={color(
                 "Icon Video",
                 IconVideo.defaultProps.fillColour
               )}

@@ -1,20 +1,10 @@
-import { storiesOf } from "@storybook/react-native";
-import { color, select } from "@storybook/addon-knobs/react";
-import { action } from "@storybook/addon-actions";
-
-const addStories = (builder, [child, ...children]) => {
+const addStories = (builder, knobs, actions, [child, ...children]) => {
   if (!child) {
     return;
   }
 
   if (child.type === "story") {
-    const args = [
-      {
-        colour: color,
-        select
-      },
-      action
-    ];
+    const args = [knobs, actions];
 
     builder.add(child.name, () => child.component(...args));
   }
@@ -23,10 +13,12 @@ const addStories = (builder, [child, ...children]) => {
     builder.addDecorator(child.decorator);
   }
 
-  addStories(builder, children);
+  addStories(builder, knobs, actions, children);
 };
 
-const converter = (module, { name, children } = {}) =>
-  addStories(storiesOf(name, module), children);
+const converter = (storiesOf, knobs, actions) => (
+  module,
+  { name, children = [] } = {}
+) => addStories(storiesOf(name, module), knobs, actions, children);
 
 export default converter;

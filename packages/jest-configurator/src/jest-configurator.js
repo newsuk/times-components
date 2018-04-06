@@ -21,13 +21,17 @@ const nativeSpecific = (platform: Platform) => ({
 
 const webSpecific = {
   moduleNameMapper: {
-    "react-native": "react-native-web"
+    "react-native": "react-native-web",
+    "\\.(png)$": "identity-obj-proxy"
   },
   testEnvironment: "jsdom",
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
 const platformIndependentSpecific = {
+  moduleNameMapper: {
+    "\\.(png)$": "identity-obj-proxy"
+  },
   moduleFileExtensions: ["js", "json"]
 };
 
