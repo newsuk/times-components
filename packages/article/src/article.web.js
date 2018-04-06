@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 
