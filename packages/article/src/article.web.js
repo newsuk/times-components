@@ -10,8 +10,8 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset";
+import getLeadAsset from "./article-lead-asset/get-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
-import getLeadAsset from "./get-lead-asset";
 import Topics from "./topics";
 
 import {

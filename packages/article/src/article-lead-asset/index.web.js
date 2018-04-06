@@ -7,8 +7,8 @@ import BrightcoveVideo from "@times-components/brightcove-video";
 import {
   LeadAsset,
   LeadAssetCaptionContainer
-} from "./styles/article-body/responsive";
-import cropPropTypes from "./crop-prop-types";
+} from "../styles/article-body/responsive";
+import cropPropTypes from "../crop-prop-types";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
