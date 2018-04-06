@@ -6,6 +6,7 @@ import Article from "../article";
 import fullArticleFixture from "../../fixtures/full-article.json";
 import articleFixtureNoLabel from "../../fixtures/no-label.json";
 import articleFixtureNoFlags from "../../fixtures/no-flags.json";
+import articleFixtureNoByline from "../../fixtures/no-byline.json";
 import articleFixtureWithVideo from "../../fixtures/article-with-video-asset.json";
 import articleFixtureNoStandfirst from "../../fixtures/no-standfirst.json";
 import articleFixtureNoStandfirstNoLabel from "../../fixtures/no-standfirst-no-label.json";
@@ -135,6 +136,22 @@ export default () => {
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
           onLinkPress={() => {}}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders article no byline", () => {
+    const tree = renderer
+      .create(
+        <Article
+          {...articleFixtureNoByline.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();

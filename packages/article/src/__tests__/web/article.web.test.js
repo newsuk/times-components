@@ -7,7 +7,7 @@ import shared from "../shared";
 
 const articleFixtureNoLeadAsset = require("../../../fixtures/no-lead-asset.json");
 
-describe("Article test on web", () => {
+describe("Article tests on web", () => {
   const adConfig = {
     networkId: "mockNetwork",
     adUnit: "mockAdUnit",
