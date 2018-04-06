@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.15.9",
+  "version": "1.15.10",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/gestures": "1.2.27",
-    "@times-components/gradient": "0.8.7",
+    "@times-components/gradient": "0.8.8",
     "@times-components/link": "0.15.18",
     "@times-components/styleguide": "0.5.7",
     "prop-types": "15.6.0",

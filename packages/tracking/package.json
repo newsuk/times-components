@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.1.7",
     "@times-components/jest-configurator": "0.2.5",
     "@times-components/storybook": "0.4.8",
-    "@times-components/tealium": "0.2.16",
+    "@times-components/tealium": "0.2.17",
     "dextrose": "1.7.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
