@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 
@@ -136,26 +135,7 @@ class ArticlePage extends React.Component {
   }
 }
 
-ArticlePage.propTypes = {
-  ...articlePropTypes,
-  isLoading: PropTypes.bool,
-  error: PropTypes.shape({
-    graphQLErrors: PropTypes.array,
-    networkError: PropTypes.shape({
-      message: PropTypes.string
-    }),
-    message: PropTypes.string
-  }),
-  adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired
-};
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
-ArticlePage.defaultProps = {
-  ...articleDefaultProps,
-  isLoading: false,
-  error: null
-};
-
-export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);
