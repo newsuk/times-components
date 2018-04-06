@@ -81,6 +81,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -100,6 +101,7 @@ export default () => {
         onRelatedArticlePress={() => {}}
         onAuthorPress={() => {}}
         onVideoPress={() => {}}
+        onLinkPress={() => {}}
       />
     );
     expect(tree).toMatchSnapshot();
@@ -115,6 +117,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -131,6 +134,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -147,6 +151,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -163,6 +168,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -179,6 +185,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -195,6 +202,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -210,6 +218,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -225,6 +234,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -241,6 +251,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -259,6 +270,7 @@ export default () => {
         onRelatedArticlePress={() => {}}
         onAuthorPress={() => {}}
         onVideoPress={() => {}}
+        onLinkPress={() => {}}
       />
     );
     expect(stream).toHaveBeenCalledWith({

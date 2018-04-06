@@ -28,7 +28,8 @@ class ArticlePage extends React.Component {
     rowData,
     onRelatedArticlePress,
     onAuthorPress,
-    onVideoPress
+    onVideoPress,
+    onLinkPress
   ) {
     switch (rowData.type) {
       case "leadAsset": {
@@ -71,7 +72,7 @@ class ArticlePage extends React.Component {
       }
 
       case "articleBodyRow": {
-        return <ArticleRow content={rowData} />;
+        return <ArticleRow content={rowData} onLinkPress={onLinkPress} />;
       }
 
       case "relatedArticles": {
@@ -137,6 +138,7 @@ class ArticlePage extends React.Component {
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onAuthorPress={this.props.onAuthorPress}
         onVideoPress={this.props.onVideoPress}
+        onLinkPress={this.props.onLinkPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -161,7 +163,8 @@ ArticlePage.propTypes = {
   adConfig: PropTypes.shape({}).isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  onLinkPress: PropTypes.func.isRequired
 };
 
 ArticlePage.defaultProps = {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ArticleRow from "./article-body-row";
 
 const ArticleBody = props => {
-  const { section, content: bodyContent, contextUrl } = props;
+  const { section, content: bodyContent, contextUrl, onLinkPress } = props;
   const contentArray = bodyContent.map((rowData, index) => {
     const item = {
       data: Object.assign({}, rowData),
@@ -18,7 +18,11 @@ const ArticleBody = props => {
     return item;
   });
   const BodyView = contentArray.map(content => (
-    <ArticleRow key={`cont-${content.index}`} content={content} />
+    <ArticleRow
+      key={`cont-${content.index}`}
+      content={content}
+      onLinkPress={onLinkPress}
+    />
   ));
 
   return BodyView;
@@ -33,7 +37,8 @@ ArticleBody.propTypes = {
     })
   ).isRequired,
   section: PropTypes.string,
-  contextUrl: PropTypes.string.isRequired
+  contextUrl: PropTypes.string.isRequired,
+  onLinkPress: PropTypes.func.isRequired
 };
 
 export default ArticleBody;

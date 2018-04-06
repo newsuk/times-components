@@ -62,6 +62,7 @@ describe("Article test on web", () => {
           adConfig={adConfig}
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();

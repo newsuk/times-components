@@ -7,7 +7,7 @@ import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 
-const ArticleRow = ({ content: { data, index } }) =>
+const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
@@ -46,12 +46,14 @@ const ArticleRow = ({ content: { data, index } }) =>
       );
     },
     link(key, attributes, children) {
+      const url = attributes.href;
+
       return (
         <ArticleLink
           key={index}
           uuid={index}
-          onPress={() => {}}
-          url={attributes.href}
+          onPress={e => onLinkPress(e, { url })}
+          url={url}
         >
           {children}
         </ArticleLink>
@@ -67,7 +69,8 @@ ArticleRow.propTypes = {
       name: PropTypes.string
     }),
     index: PropTypes.number
-  }).isRequired
+  }).isRequired,
+  onLinkPress: PropTypes.func.isRequired
 };
 
 export default ArticleRow;
