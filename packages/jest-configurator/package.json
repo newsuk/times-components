@@ -57,17 +57,19 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.1.7",
     "babel-cli": "6.26.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-flow": "6.23.0",
+    "babel-plugin-flow-react-proptypes": ">=14.0.3",
+    "babel-plugin-add-react-displayname": ">=0.0.5",
+    "babel-plugin-styled-components": ">=1.5.1",
+    "babel-preset-react-native": ">=4.0.0",
     "eslint": "4.9.0",
     "flow-bin": "0.63.1",
     "jest": "21.2.1",
     "prettier": "1.8.2"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
     "react-native-web": ">=0.3"
   },
   "resolutions": {

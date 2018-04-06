@@ -152,7 +152,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1"
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-env": "1.6.1"
   }
 }
