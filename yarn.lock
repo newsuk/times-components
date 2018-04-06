@@ -358,6 +358,22 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
+"@times-components/tealium@0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@times-components/tealium/-/tealium-0.2.13.tgz#ffd95638643e2b7085013aad1bd4071acaee909c"
+  dependencies:
+    "@storybook/addon-actions" "3.3.15"
+    "@storybook/addons" "3.3.15"
+
+"@times-components/tracking@0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@times-components/tracking/-/tracking-0.10.3.tgz#c71023da93f85cad442c4e73cf73e90258a773f1"
+  dependencies:
+    hoist-non-react-statics "2.3.1"
+    lodash.get "4.4.2"
+    prop-types "15.6.0"
+    react-display-name "0.2.3"
+
 "@types/async@2.0.47":
   version "2.0.47"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"

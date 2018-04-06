@@ -13,30 +13,35 @@ exports[`1. Render a group of topics in the correct order 1`] = `
     ]
   }
 >
-  <Topic
+  <WithTrackEvents(Topic)
     id="football"
     key="football"
     name="Football"
+    onPress={[Function]}
   />
-  <Topic
+  <WithTrackEvents(Topic)
     id="chelsea"
     key="chelsea"
     name="Chelsea FC"
+    onPress={[Function]}
   />
-  <Topic
+  <WithTrackEvents(Topic)
     id="arsenal"
     key="arsenal"
     name="Arsenal"
+    onPress={[Function]}
   />
-  <Topic
+  <WithTrackEvents(Topic)
     id="manchester-united"
     key="manchester-united"
     name="Manchester United FC"
+    onPress={[Function]}
   />
-  <Topic
+  <WithTrackEvents(Topic)
     id="rugby-union"
     key="rugby-union"
     name="Rugby Union"
+    onPress={[Function]}
   />
 </View>
 `;
@@ -77,4 +82,19 @@ exports[`2. Render a single Topic 1`] = `
     </Text>
   </View>
 </Link>
+`;
+
+exports[`Topic test on ios:  onPress sends analytics 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Pressed",
+      "attrs": Object {
+        "id": "football",
+        "name": "Football",
+      },
+      "component": "TopicLink",
+    },
+  ],
+]
 `;
