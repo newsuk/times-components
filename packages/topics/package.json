@@ -37,6 +37,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
     "@times-components/jest-configurator": "0.2.4",
+    "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
@@ -47,7 +48,6 @@
   "dependencies": {
     "@times-components/link": "0.15.17",
     "@times-components/styleguide": "0.5.6",
-    "enzyme": "3.3.0",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },
