@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.16...@times-components/provider-test-tools@0.2.0) (2018-04-06)
+
+
+### Features
+
+* move fixture-generator to provider-test-tools ([#819](https://github.com/newsuk/times-components/issues/819)) ([02fdc37](https://github.com/newsuk/times-components/commit/02fdc37))
+
+
+
+
 <a name="0.1.16"></a>
 ## [0.1.16](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.1.15...@times-components/provider-test-tools@0.1.16) (2018-04-05)
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.7"></a>
+## [0.25.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.25.6...@times-components/card@0.25.7) (2018-04-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.25.6"></a>
 ## [0.25.6](https://github.com/newsuk/times-components/compare/@times-components/card@0.25.5...@times-components/card@0.25.6) (2018-04-05)
 

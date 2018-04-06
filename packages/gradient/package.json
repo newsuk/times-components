@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -47,9 +47,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/brightcove-video": "2.1.6",
-    "@times-components/eslint-config-thetimes": "0.1.6",
-    "@times-components/jest-configurator": "0.2.4",
+    "@times-components/brightcove-video": "2.1.7",
+    "@times-components/eslint-config-thetimes": "0.1.7",
+    "@times-components/jest-configurator": "0.2.5",
     "dextrose": "1.7.3",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -60,8 +60,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.2.4",
-    "@times-components/styleguide": "0.5.6",
+    "@times-components/jest-configurator": "0.2.5",
+    "@times-components/styleguide": "0.5.7",
     "prop-types": "15.6.0",
     "react-native-linear-gradient": "2.4.0"
   },
