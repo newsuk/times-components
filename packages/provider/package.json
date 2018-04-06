@@ -52,7 +52,7 @@
     "@times-components/provider-test-tools": "0.2.0",
     "@times-components/utils": "0.6.4",
     "apollo-utilities": "1.0.4",
-    "dextrose": "1.7.3",
+    "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
