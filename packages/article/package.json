@@ -80,7 +80,12 @@
     "@times-components/tracking": "0.10.6",
     "@times-components/video-label": "0.1.22",
     "lodash.get": "4.4.2",
-    "prop-types": "15.6.0"
+    "prop-types": "15.6.0",
+    "react-apollo": "2.1.0-rc.3",
+    "apollo-client": "2.2.3",
+    "apollo-link-http": "1.5.2",
+    "apollo-cache-inmemory": "1.1.5",
+    "@storybook/addon-knobs": "3.3.15"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

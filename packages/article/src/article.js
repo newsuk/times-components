@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
