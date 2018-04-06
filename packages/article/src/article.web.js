@@ -5,11 +5,11 @@ import RelatedArticles from "@times-components/related-articles";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptype";
+import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
-import LeadAssetComponent from "./article-lead-asset";
+import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
 import getLeadAsset from "./article-lead-asset/get-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
 import Topics from "./topics";

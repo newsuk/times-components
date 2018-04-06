@@ -7,7 +7,7 @@ import RelatedArticles from "@times-components/related-articles";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptype";
+import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
 
 import listViewDataHelper from "./data-helper";
 import styles from "./styles/article-body";
@@ -15,7 +15,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import Topics from "./topics";
-import ArticleLeadAsset from "./article-lead-asset";
+import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 
 import articleTrackingContext from "./article-tracking-context";
 
