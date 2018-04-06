@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.63.0"></a>
+# [0.63.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.15...@times-components/article@0.63.0) (2018-04-06)
+
+
+### Features
+
+* Inline article link callbacks for native ([#804](https://github.com/newsuk/times-components/issues/804)) ([02b6eda](https://github.com/newsuk/times-components/commit/02b6eda))
+
+
+
+
 <a name="0.62.16"></a>
 ## [0.62.16](https://github.com/newsuk/times-components/compare/@times-components/article@0.62.15...@times-components/article@0.62.16) (2018-04-06)
 
