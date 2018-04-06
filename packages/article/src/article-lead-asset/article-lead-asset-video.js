@@ -3,7 +3,7 @@ import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { Splash } from "@times-components/brightcove-video";
 import Button from "@times-components/link";
-import cropPropTypes from "../crop-prop-types";
+import cropPropTypes from "./crop-proptypes";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,
