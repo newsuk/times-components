@@ -4,6 +4,7 @@ import renderer from "react-test-renderer";
 import Article from "../article";
 
 import fullArticleFixture from "../../fixtures/full-article.json";
+import shortArticleFixture from "../../fixtures/short-article.json";
 import articleFixtureNoLabel from "../../fixtures/no-label.json";
 import articleFixtureNoFlags from "../../fixtures/no-flags.json";
 import articleFixtureNoByline from "../../fixtures/no-byline.json";
@@ -119,6 +120,22 @@ export default () => {
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
           onLinkPress={() => {}}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders a smaller article", () => {
+    const tree = renderer
+      .create(
+        <Article
+          {...shortArticleFixture.data}
+          analyticsStream={() => {}}
+          adConfig={adConfig}
+          onRelatedArticlePress={() => {}}
+          onAuthorPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
