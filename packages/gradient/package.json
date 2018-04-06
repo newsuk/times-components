@@ -60,7 +60,6 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.2.5",
     "@times-components/styleguide": "0.5.7",
     "prop-types": "15.6.0",
     "react-native-linear-gradient": "2.4.0"
