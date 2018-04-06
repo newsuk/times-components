@@ -1,6 +1,8 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import fixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
+import articleFixture from "@times-components/provider-test-tools/fixtures/article.json";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils";
@@ -9,9 +11,7 @@ import connectGraphql, {
   ArticleProvider
 } from "./src/provider.js";
 import { query as authorProfileQuery } from "./src/author-profile";
-import fixture from "./fixtures/author-profile/author-profile.json";
 import { query as articleQuery } from "./src/article";
-import articleFixture from "./fixtures/article.json";
 
 storiesOf("Helpers/Provider", module)
   .add("Props and fetched data", () => {

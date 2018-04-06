@@ -4,7 +4,7 @@
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
-    "transpile": "babel . -d dist --ignore dist,node_modules,coverage,__tests__ && cp package.json dist/package.json",
+    "transpile": "babel src -d dist --ignore coverage,__tests__",
     "prepublishOnly": "yarn transpile",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -29,7 +29,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/depend/__tests__/**.test.js"
+      "<rootDir>/packages/depend/src/__tests__/**.test.js"
     ]
   },
   "repository": {

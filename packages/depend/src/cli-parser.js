@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import commander from "commander";
-import { version } from "./package.json";
+import { version } from "../package.json";
 import * as strategies from "./strategies";
 
 function validatePick(rule) {

@@ -4,10 +4,8 @@ import { decorateAction } from "@storybook/addon-actions";
 import { MockedProvider } from "@times-components/utils";
 import { storybookReporter } from "@times-components/tealium";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
-import {
-  AuthorProfileProvider,
-  fixtureGenerator
-} from "@times-components/provider";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
+import { AuthorProfileProvider } from "@times-components/provider";
 import AuthorProfile from "./src/author-profile";
 
 const preventDefaultedAction = decorateAction([

@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
-import { fixtureGenerator } from "@times-components/provider";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
 import AuthorProfile from "../author-profile";
 import AuthorProfileItem from "../author-profile-item";
 import AuthorHead from "../author-profile-author-head";

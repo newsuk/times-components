@@ -7,6 +7,7 @@ export default Component =>
     getAttrs: ({ article } = {}) => ({
       byline: get(article, "byline[0].children[0].attributes.value", ""),
       headline: get(article, "headline", ""),
-      publishedTime: get(article, "publishedTime", "")
+      publishedTime: get(article, "publishedTime", ""),
+      topics: get(article, "topics")
     })
   });
