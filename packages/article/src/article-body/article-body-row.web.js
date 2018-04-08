@@ -61,21 +61,21 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         brightcovePolicyKey,
         brightcoveVideoId,
         brightcoveAccountId,
-        posterImage,
+        posterimageUrl,
         caption
       }
     ) {
       const MediaWrapper = responsiveDisplayWrapper(display);
       return (
         <MediaWrapper key={key}>
-          <AspectRatioContainer aspectRatio={posterImage.crop.ratio}>
+          <AspectRatioContainer aspectRatio="16:9">
             <BrightcoveVideo
               width="100%"
               height="100%"
               policyKey={brightcovePolicyKey}
               videoId={brightcoveVideoId}
               accountId={brightcoveAccountId}
-              poster={{ uri: posterImage.crop.url }}
+              poster={{ uri: posterimageUrl }}
             />
           </AspectRatioContainer>
           <InsetCaption caption={caption} />
