@@ -15843,7 +15843,7 @@ exports[`Article test on android renders full article 1`] = `
                 <Image
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                      "uri": undefined,
                     }
                   }
                   style={
