@@ -6,10 +6,10 @@ import { MockedProvider } from "@times-components/utils";
 import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import AuthorProfile from "../author-profile";
-import AuthorProfileItem from "../author-profile-item";
-import AuthorHead from "../author-profile-author-head";
-import AuthorProfileItemSeparator from "../author-profile-item-separator";
+import AuthorProfile from "../src/author-profile";
+import AuthorProfileItem from "../src/author-profile-item";
+import AuthorHead from "../src/author-profile-author-head";
+import AuthorProfileItemSeparator from "../src/author-profile-item-separator";
 import pagedResult from "./paged-result";
 
 Enzyme.configure({ adapter: new React16Adapter() });

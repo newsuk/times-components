@@ -3,9 +3,9 @@ import { shallow, mount } from "enzyme";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
-import AuthorProfile from "../../author-profile";
-import AuthorProfileItem from "../../author-profile-item";
-import AuthorProfileContent from "../../author-profile-content.web.js";
+import AuthorProfile from "../../src/author-profile";
+import AuthorProfileItem from "../../src/author-profile-item";
+import AuthorProfileContent from "../../src/author-profile-content.web.js";
 import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));

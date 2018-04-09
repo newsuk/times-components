@@ -5,11 +5,11 @@ import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
-import AuthorProfile from "../author-profile";
-import AuthorProfileItem from "../author-profile-item";
+import AuthorProfile from "../src/author-profile";
+import AuthorProfileItem from "../src/author-profile-item";
 import pagedResult from "./paged-result";
 import test from "./author-profile-helper";
-import AuthorProfileContent from "../author-profile-content.js";
+import AuthorProfileContent from "../src/author-profile-content.js";
 
 // A hack until this is resolved: https://github.com/facebook/react-native/pull/13048
 jest.mock("ScrollView", () => {
