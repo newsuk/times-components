@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import { shallow } from "enzyme";
 import { delayAndAdvance } from "@times-components/utils";
-import Gesture from "../gestures";
+import Gesture from "../src/gestures";
 
 const mapTouches = ({ x, y }) => ({
   pageX: x,
