@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
-import ErrorView from "../error-view";
+import ErrorView from "../src/error-view";
 import InvokesError from "./invokes-error";
 import ThrowsError from "./throws-error";
 
