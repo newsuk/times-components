@@ -1,3 +1,5 @@
+// eslint-disable import/no-unresolved
+
 import Expo, { Font } from "expo";
 import Fructose from './fructose/index';
 import GillSansMTStd from './dist/public/fonts/GillSansMTStd-Medium.ttf';
