@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import DatePublication from "../date-publication";
+import DatePublication from "../src/date-publication";
 
 export default function() {
   it("renders a DatePublication component with Times publication and relevant GMT date", () => {

@@ -1,6 +1,6 @@
 /* global Intl */
 import rndiMock from "react-native-device-info";
-import { isBST, getUTCTime, isLondonTimezone } from "../date";
+import { isBST, getUTCTime, isLondonTimezone } from "../src/date";
 
 describe("date helper", () => {
   it("2017-11-17 00:01:00 should be a GMT date", () => {
