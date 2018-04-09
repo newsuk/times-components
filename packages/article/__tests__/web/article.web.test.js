@@ -2,10 +2,10 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
-import Article from "../../article";
+import Article from "../../src/article";
 import shared from "../shared";
 
-const articleFixtureNoLeadAsset = require("../../../fixtures/no-lead-asset.json");
+const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
 
 describe("Article test on web", () => {
   const adConfig = {

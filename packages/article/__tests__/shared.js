@@ -1,17 +1,17 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Article from "../article";
+import Article from "../src/article";
 
-import fullArticleFixture from "../../fixtures/full-article.json";
-import articleFixtureNoLabel from "../../fixtures/no-label.json";
-import articleFixtureNoFlags from "../../fixtures/no-flags.json";
-import articleFixtureWithVideo from "../../fixtures/article-with-video-asset.json";
-import articleFixtureNoStandfirst from "../../fixtures/no-standfirst.json";
-import articleFixtureNoStandfirstNoLabel from "../../fixtures/no-standfirst-no-label.json";
-import articleFixtureNoStandfirstNoFlags from "../../fixtures/no-standfirst-no-flags.json";
-import articleFixtureNoLabelNoFlags from "../../fixtures/no-label-no-flags.json";
-import articleFixtureNoLabelNoFlagsNoStandFirst from "../../fixtures/no-label-no-flags-no-standfirst.json";
+import fullArticleFixture from "../fixtures/full-article.json";
+import articleFixtureNoLabel from "../fixtures/no-label.json";
+import articleFixtureNoFlags from "../fixtures/no-flags.json";
+import articleFixtureWithVideo from "../fixtures/article-with-video-asset.json";
+import articleFixtureNoStandfirst from "../fixtures/no-standfirst.json";
+import articleFixtureNoStandfirstNoLabel from "../fixtures/no-standfirst-no-label.json";
+import articleFixtureNoStandfirstNoFlags from "../fixtures/no-standfirst-no-flags.json";
+import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
+import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
 export default () => {
   const realIntl = Intl;
