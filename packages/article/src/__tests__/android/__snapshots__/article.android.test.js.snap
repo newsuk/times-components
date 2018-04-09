@@ -19693,11 +19693,119 @@ exports[`Article tests on android should render an article with no standfirst an
                   ],
                   "name": "paragraph",
                 },
+<<<<<<< HEAD
               ],
               "summary160": Array [
                 Object {
                   "attributes": Object {},
                   "children": Array [
+=======
+              ]
+            }
+          >
+            police disclosure of evidence
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
+          >
+             Telegraph 
+          </Text>
+          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            When Thatcher joined the campaign trail for the 2001 general election...
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityLabel="paragraph-1"
+        style={
+          Array [
+            Object {
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+          ]
+        }
+        testID="paragraph-1"
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 17,
+              "fontStyle": "normal",
+              "lineHeight": 26,
+              "marginBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "flexDirection": "column",
+              "paddingBottom": 25,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={undefined}
+          >
+            <View>
+              <Modal
+                hardwareAccelerated={false}
+                onRequestClose={[Function]}
+                presentationStyle="fullScreen"
+                visible={false}
+              >
+                <View
+                  style={
+>>>>>>> chore: Refactor link to remove null targets
                     Object {
                       "attributes": Object {
                         "value": "Terry Pratchett, who died last week, began his career on the ",

@@ -19,7 +19,6 @@ exports[`Article Byline test on android renders correctly with a single author 1
       undefined,
     ]
   }
-  target={null}
 >
   Alexandra Frean
 </Text>
@@ -57,7 +56,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Camilla Long
   </Text>,
@@ -86,7 +84,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Mike Atherton
   </Text>,
@@ -115,7 +112,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Alexandra Frean
   </Text>,
@@ -142,7 +138,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Camilla Long
   </Text>,
@@ -171,7 +166,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Mike Atherton
   </Text>,
@@ -200,7 +194,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Alexandra Frean
   </Text>,
@@ -229,7 +222,6 @@ exports[`Article Byline test on android renders correctly with styles 1`] = `
       },
     ]
   }
-  target={null}
 >
   Alexandra Frean
 </Text>
@@ -262,7 +254,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Mike Atherton
   </Text>,
@@ -289,7 +280,6 @@ Array [
         undefined,
       ]
     }
-    target={null}
   >
     Camilla Long
   </Text>,

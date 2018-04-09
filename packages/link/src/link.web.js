@@ -24,16 +24,19 @@ const Link = ({
       ? { textDecoration: "underline" }
       : { textDecoration: "none" };
 
-  return (
-    <Wrapper
-      key={index}
-      href={url}
-      onClick={onPress}
-      style={style}
-      target={target}
-    >
+  const props = {
+    key: index,
+    href: url,
+    onClick: onPress,
+    style
+  };
+
+  return target ? (
+    <Wrapper {...props} target={target}>
       {children}
     </Wrapper>
+  ) : (
+    <Wrapper {...props}>{children}</Wrapper>
   );
 };
 

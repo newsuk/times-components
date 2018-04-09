@@ -74,7 +74,7 @@ describe("Article tests on web", () => {
   });
 
   it("ArticleRow should handle a link onPress", () => {
-    const testUrl = "www.test.com";
+    const testUrl = "http://www.test.com";
     const props = {
       content: {
         data: {

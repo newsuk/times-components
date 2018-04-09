@@ -8,7 +8,6 @@ exports[`Article Byline test on web renders correctly with a single author 1`] =
   onClick={[Function]}
   onKeyDown={[Function]}
   role="link"
-  target={null}
 >
   Alexandra Frean
 </a>
@@ -31,7 +30,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Camilla Long
   </a>,
@@ -45,7 +43,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Mike Atherton
   </a>,
@@ -59,7 +56,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Alexandra Frean
   </a>,
@@ -75,7 +71,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Camilla Long
   </a>,
@@ -89,7 +84,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Mike Atherton
   </a>,
@@ -103,7 +97,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Alexandra Frean
   </a>,
@@ -123,7 +116,6 @@ exports[`Article Byline test on web renders correctly with styles 1`] = `
       "color": "red",
     }
   }
-  target={null}
 >
   Alexandra Frean
 </a>
@@ -141,7 +133,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Mike Atherton
   </a>,
@@ -157,7 +148,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
-    target={null}
   >
     Camilla Long
   </a>,

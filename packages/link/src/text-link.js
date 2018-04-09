@@ -10,17 +10,22 @@ const styles = StyleSheet.create({
   }
 });
 
-const TextLink = ({ style, url, onPress, children, target }) => (
-  <Text
-    style={[styles.textLink].concat(style)}
-    href={url}
-    onPress={onPress}
-    accessibilityRole="link"
-    target={target}
-  >
-    {children}
-  </Text>
-);
+const TextLink = ({ style, url, onPress, children, target }) => {
+  const props = {
+    style: [styles.textLink].concat(style),
+    href: url,
+    onPress,
+    accessibilityRole: "link"
+  };
+
+  return target ? (
+    <Text {...props} target={target}>
+      {children}
+    </Text>
+  ) : (
+    <Text {...props}>{children}</Text>
+  );
+};
 
 TextLink.propTypes = {
   style: StylePropType,
