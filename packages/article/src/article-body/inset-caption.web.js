@@ -11,7 +11,7 @@ const InsetCaptionStyle = withResponsiveStyles(
     base: () => `padding-left: ${spacing(2)};`,
     mediumUp: () => "padding-left: 0px;"
   },
-  InsetCaptionStyle
+  "InsetCaptionStyle"
 );
 
 const InsetCaptionWeb = props => (
