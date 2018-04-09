@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { PreviousPageIcon, NextPageIcon } from "../pagination-icons";
+import { PreviousPageIcon, NextPageIcon } from "../src/pagination-icons";
 
 export default () => {
   describe("Previous page icon", () => {
