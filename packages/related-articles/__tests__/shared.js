@@ -5,18 +5,18 @@ import renderer from "react-test-renderer";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
 
-import RelatedArticles from "../related-articles";
-import RelatedArticleItem from "../related-article-item";
+import RelatedArticles from "../src/related-articles";
+import RelatedArticleItem from "../src/related-article-item";
 
-import standard1ArticleFixture from "../../fixtures/standard/1-article.json";
-import standard2ArticlesFixture from "../../fixtures/standard/2-articles.json";
-import standard3ArticlesFixture from "../../fixtures/standard/3-articles.json";
-import leadAndTwo1ArticleFixture from "../../fixtures/leadandtwo/1-article.json";
-import leadAndTwo2ArticlesFixture from "../../fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3ArticlesFixture from "../../fixtures/leadandtwo/3-articles.json";
-import opinionAndTwo1ArticleFixture from "../../fixtures/opinionandtwo/1-article.json";
-import opinionAndTwo2ArticlesFixture from "../../fixtures/opinionandtwo/2-articles.json";
-import opinionAndTwo3ArticlesFixture from "../../fixtures/opinionandtwo/3-articles.json";
+import standard1ArticleFixture from "../fixtures/standard/1-article.json";
+import standard2ArticlesFixture from "../fixtures/standard/2-articles.json";
+import standard3ArticlesFixture from "../fixtures/standard/3-articles.json";
+import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article.json";
+import leadAndTwo2ArticlesFixture from "../fixtures/leadandtwo/2-articles.json";
+import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles.json";
+import opinionAndTwo1ArticleFixture from "../fixtures/opinionandtwo/1-article.json";
+import opinionAndTwo2ArticlesFixture from "../fixtures/opinionandtwo/2-articles.json";
+import opinionAndTwo3ArticlesFixture from "../fixtures/opinionandtwo/3-articles.json";
 
 const createRelatedArticlesProps = (
   fixtureData,
