@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils";
-import connectGraphql from "../provider";
+import connectGraphql from "../src/provider";
 
 const query = gql`
   {

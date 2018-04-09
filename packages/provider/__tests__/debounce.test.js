@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Enzyme, { shallow, mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
-import withDebounce from "../debounce";
+import withDebounce from "../src/debounce";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 

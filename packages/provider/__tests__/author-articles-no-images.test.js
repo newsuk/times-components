@@ -2,24 +2,27 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { AuthorProfileProvider } from "../provider";
+import { AuthorArticlesNoImagesProvider } from "../src/provider";
 
 const renderComponent = child =>
   renderer.create(
     <MockedProvider
-      mocks={fixtureGenerator.makeArticleMocks({
-        withImages: true,
-        pageSize: 5,
-        delay: 0
-      })}
+      mocks={fixtureGenerator.makeArticleMocks({ pageSize: 5, delay: 0 })}
     >
-      <AuthorProfileProvider slug="deborah-haynes" debounceTimeMs={0}>
+      <AuthorArticlesNoImagesProvider
+        slug="deborah-haynes"
+        pageSize={5}
+        page={1}
+        shortSummaryLength={220}
+        longSummaryLength={360}
+        debounceTimeMs={0}
+      >
         {child}
-      </AuthorProfileProvider>
+      </AuthorArticlesNoImagesProvider>
     </MockedProvider>
   );
 
-describe("AuthorArticlesNoImages provider", () => {
+describe("AuthorArticlesNoImagesProvider", () => {
   it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {

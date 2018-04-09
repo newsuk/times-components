@@ -1,4 +1,4 @@
-import { makeGraphqlOptions } from "../connect";
+import { makeGraphqlOptions } from "../src/connect";
 
 describe("connect.js", () => {
   it("picks only required variables from the supplied props", () => {

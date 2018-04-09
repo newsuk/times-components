@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { AuthorArticlesWithImagesProvider } from "../provider";
+import { AuthorProfileProvider } from "../src/provider";
 
 const renderComponent = child =>
   renderer.create(
@@ -13,18 +13,13 @@ const renderComponent = child =>
         delay: 0
       })}
     >
-      <AuthorArticlesWithImagesProvider
-        slug="deborah-haynes"
-        pageSize={5}
-        page={1}
-        debounceTimeMs={0}
-      >
+      <AuthorProfileProvider slug="deborah-haynes" debounceTimeMs={0}>
         {child}
-      </AuthorArticlesWithImagesProvider>
+      </AuthorProfileProvider>
     </MockedProvider>
   );
 
-describe("AuthorArticlesWithImagesProvider", () => {
+describe("AuthorArticlesNoImages provider", () => {
   it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {

@@ -6,7 +6,7 @@ import {
 } from "@times-components/provider-test-tools";
 
 import { delayAndAdvance } from "@times-components/utils";
-import connect from "../connect";
+import connect from "../src/connect";
 
 function AuthorQueryResolver({ variables }) {
   return {
