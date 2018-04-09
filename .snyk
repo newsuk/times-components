@@ -6,4 +6,16 @@ ignore:
     - '*':
         reason: None Given
         expires: 2018-05-09T13:49:06.153Z
+  'npm:hoek:20180212':
+    - '*':
+        reason: None Given
+        expires: 2018-05-09T14:06:52.745Z
+  'npm:lodash:20180130':
+    - '*':
+        reason: None Given
+        expires: 2018-05-09T14:07:30.762Z
+  'npm:braces:20180219':
+    - '*':
+        reason: None Given
+        expires: 2018-05-09T14:07:55.149Z
 patch: {}
