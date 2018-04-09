@@ -5,27 +5,27 @@ import renderer from "react-test-renderer";
 import {
   SliceContainer,
   getSeparator
-} from "../../templates/styles/responsive";
+} from "../../src/templates/styles/responsive";
 import {
   ChildContainer,
   getChildrenContainer
-} from "../../templates/standard/responsive";
-import { getConfigWrapper as getStandardConfigWrapper } from "../../templates/standard/config";
+} from "../../src/templates/standard/responsive";
+import { getConfigWrapper as getStandardConfigWrapper } from "../../src/templates/standard/config";
 import {
   SupportsContainer,
   getSupportContainer,
   getContainer,
   getLeadContainer
-} from "../../templates/leadandtwo/responsive";
-import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../templates/leadandtwo/config";
+} from "../../src/templates/leadandtwo/responsive";
+import { getConfigWrapper as getLeadAndTwoConfigWrapper } from "../../src/templates/leadandtwo/config";
 import {
   getSeparator as opinionGetSeparator,
   getSupportsContainer as opinionGetSupportsContainer,
   getSupportContainer as opinionGetSupportContainer,
   getContainer as opinionGetContainer,
   getOpinionContainer as opinionGetOpinionContainer
-} from "../../templates/opinionandtwo/responsive";
-import { getConfigWrapper as getOpinionAndTwoConfigWrapper } from "../../templates/opinionandtwo/config";
+} from "../../src/templates/opinionandtwo/responsive";
+import { getConfigWrapper as getOpinionAndTwoConfigWrapper } from "../../src/templates/opinionandtwo/config";
 
 describe("Slice tests on web", () => {
   context("responsive shared components", () => {
