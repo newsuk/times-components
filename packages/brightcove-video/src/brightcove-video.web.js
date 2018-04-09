@@ -1,22 +1,13 @@
 import React, { Component } from "react";
-import { View, TouchableWithoutFeedback, NativeModules } from "react-native";
 import {
   brightcoveVideoDefaultProps,
   brightcoveVideoPropTypes
 } from "./brightcove-video.proptypes";
 
 import Player from "./brightcove-player";
-import Splash from "./splash";
 import VideoError from "./error";
 
-const BrightcoveFullscreenPlayerModule =
-  NativeModules.BrightcoveFullscreenPlayer;
-
 class BrightcoveVideo extends Component {
-  static getBrightcoveFullscreenPlayerModule() {
-    return BrightcoveFullscreenPlayerModule;
-  }
-
   constructor(props) {
     super(props);
 
@@ -42,21 +33,11 @@ class BrightcoveVideo extends Component {
   }
 
   play() {
-    const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
-
-    if (nativeModule && this.props.directToFullscreen) {
-      nativeModule.playVideo({
-        accountId: this.props.accountId,
-        videoId: this.props.videoId,
-        policyKey: this.props.policyKey
-      });
-    } else {
-      if (this.playerRef) {
-        this.playerRef.play();
-      }
-
-      this.setState({ isLaunched: true });
+    if (this.playerRef) {
+      this.playerRef.play();
     }
+
+    this.setState({ isLaunched: true });
   }
 
   pause() {
@@ -84,32 +65,19 @@ class BrightcoveVideo extends Component {
   }
 
   render() {
-    this.playerRef = null;
-
     if (this.state.error) {
       return <VideoError {...this.props} onReset={this.reset} />;
     }
 
-    if (this.state.isLaunched) {
-      return (
-        <Player
-          ref={ref => {
-            this.playerRef = ref;
-          }}
-          {...this.props}
-          onError={this.handleError}
-          onFinish={this.handleFinish}
-          autoplay
-        />
-      );
-    }
-
     return (
-      <TouchableWithoutFeedback onPress={this.play}>
-        <View style={{ width: this.props.width, height: this.props.height }}>
-          <Splash {...this.props} />
-        </View>
-      </TouchableWithoutFeedback>
+      <Player
+        ref={ref => {
+          this.playerRef = ref;
+        }}
+        {...this.props}
+        onError={this.handleError}
+        onFinish={this.handleFinish}
+      />
     );
   }
 }
