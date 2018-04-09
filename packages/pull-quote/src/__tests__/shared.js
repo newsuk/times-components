@@ -44,4 +44,17 @@ module.exports = () => {
 
     expect(tree).toMatchSnapshot();
   });
+  it("Pull Quotes with a twitter link", () => {
+    const tree = renderer
+      .create(
+        <PullQuotes
+          content={content}
+          caption={caption}
+          twitter="@JudgeSapnara"
+        />
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 };

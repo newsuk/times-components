@@ -8,7 +8,14 @@ const RespLink = responsiveLinkStyles =>
     mediumUp: () => `${responsiveLinkStyles.medium}`
   });
 
-const Link = ({ index, url, onPress, children, responsiveLinkStyles }) => {
+const Link = ({
+  index,
+  url,
+  onPress,
+  children,
+  responsiveLinkStyles,
+  target
+}) => {
   const Wrapper =
     responsiveLinkStyles !== null ? RespLink(responsiveLinkStyles) : "a";
 
@@ -18,7 +25,13 @@ const Link = ({ index, url, onPress, children, responsiveLinkStyles }) => {
       : { textDecoration: "none" };
 
   return (
-    <Wrapper key={index} href={url} onClick={onPress} style={style}>
+    <Wrapper
+      key={index}
+      href={url}
+      onClick={onPress}
+      style={style}
+      target={target}
+    >
       {children}
     </Wrapper>
   );
@@ -32,12 +45,14 @@ Link.propTypes = {
     base: PropTypes.string,
     medium: PropTypes.string
   }),
-  index: PropTypes.string
+  index: PropTypes.string,
+  target: PropTypes.string
 };
 
 Link.defaultProps = {
   responsiveLinkStyles: null,
-  index: "0"
+  index: "0",
+  target: ""
 };
 
 export default Link;

@@ -92,14 +92,15 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       );
     },
     link(key, attributes, children) {
-      const url = attributes.href;
+      const { href, target } = attributes;
 
       return (
         <ArticleLink
           key={key}
           uuid={index}
           onPress={e => onLinkPress(e, { url })}
-          url={url}
+          url={href}
+          target={target}
         >
           {children}
         </ArticleLink>

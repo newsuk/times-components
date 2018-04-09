@@ -17,14 +17,15 @@ const responsiveLinkStyles = {
   `
 };
 
-const ArticleLink = props => (
+const ArticleLink = ({ children, onPress, target, url, uuid }) => (
   <Link
-    index={`link-${props.uuid}`}
-    url={props.url}
-    onPress={props.onPress}
+    index={`link-${uuid}`}
+    url={url}
+    onPress={onPress}
     responsiveLinkStyles={responsiveLinkStyles}
+    target={target}
   >
-    {props.children}
+    {children}
   </Link>
 );
 
