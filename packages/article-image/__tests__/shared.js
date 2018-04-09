@@ -1,13 +1,13 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleImage from "../article-image";
+import ArticleImage from "../src/article-image";
 
-const primaryImage = require("../../fixtures/primary-image.json").fixture;
-const secondaryImage = require("../../fixtures/secondary-image.json").fixture;
-const landscapeInlineImage = require("../../fixtures/landscape-inline-image.json")
+const primaryImage = require("../fixtures/primary-image.json").fixture;
+const secondaryImage = require("../fixtures/secondary-image.json").fixture;
+const landscapeInlineImage = require("../fixtures/landscape-inline-image.json")
   .fixture;
-const portraitInlineImage = require("../../fixtures/portrait-inline-image.json")
+const portraitInlineImage = require("../fixtures/portrait-inline-image.json")
   .fixture;
 
 module.exports = () => {
