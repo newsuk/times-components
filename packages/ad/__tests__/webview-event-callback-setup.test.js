@@ -1,4 +1,4 @@
-import webviewEventCallbackSetup from "../webview-event-callback-setup";
+import webviewEventCallbackSetup from "../src/webview-event-callback-setup";
 import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
 
 const realWindow = window;

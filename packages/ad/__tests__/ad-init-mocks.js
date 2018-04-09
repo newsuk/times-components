@@ -1,6 +1,6 @@
 import { jsdom } from "jsdom";
 
-import adInitOriginal from "../ad-init";
+import adInitOriginal from "../src/ad-init";
 
 export const makeAdInitMocks = () => {
   const document = jsdom("<html></html>");

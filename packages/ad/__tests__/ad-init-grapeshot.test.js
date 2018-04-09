@@ -1,4 +1,4 @@
-import adInit from "../ad-init";
+import adInit from "../src/ad-init";
 import { makeAdInitMocks } from "./ad-init-mocks";
 
 describe("AdInit.grapeshot", () => {

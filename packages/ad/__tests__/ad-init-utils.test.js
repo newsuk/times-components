@@ -1,5 +1,5 @@
 import { makeAdInitMocks } from "./ad-init-mocks";
-import adInit from "../ad-init";
+import adInit from "../src/ad-init";
 
 describe("AdInit.utils", () => {
   let mock;

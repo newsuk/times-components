@@ -1,4 +1,4 @@
-import adInitOriginal from "../ad-init";
+import adInitOriginal from "../src/ad-init";
 import { makeAdInitMocks, adInit } from "./ad-init-mocks";
 import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
 
