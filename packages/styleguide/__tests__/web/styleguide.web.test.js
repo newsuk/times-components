@@ -1,5 +1,5 @@
 import shared from "../shared";
-import { colours, fonts } from "../../styleguide";
+import { colours, fonts } from "../../src/styleguide";
 
 describe("Styleguide tests for web", () => {
   it("should have an object of section colours", () => {

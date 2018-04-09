@@ -1,7 +1,7 @@
 import { Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { Animations } from "../styleguide";
+import { Animations } from "../src/styleguide";
 
 module.exports = () => {
   it("should render a FadeIn animation wrapper component", () => {
