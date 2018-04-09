@@ -1,5 +1,5 @@
 import { delay, advance, delayAndAdvance } from "@times-components/utils";
-import TealiumSendScheduler from "../tealium-send-scheduler";
+import TealiumSendScheduler from "../src/tealium-send-scheduler";
 
 module.exports = () => {
   describe("TealiumSendScheduler", () => {
