@@ -136,6 +136,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -169,6 +170,7 @@ export default () => {
           onRelatedArticlePress={() => {}}
           onAuthorPress={() => {}}
           onVideoPress={() => {}}
+          onLinkPress={() => {}}
         />
       )
       .toJSON();
@@ -242,6 +244,7 @@ export default () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
   it("renders article no label no flags", () => {
     const tree = renderer
       .create(
@@ -258,6 +261,7 @@ export default () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
   it("renders article no label no flags no standfirst", () => {
     const tree = renderer
       .create(
