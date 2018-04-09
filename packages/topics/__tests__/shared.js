@@ -2,9 +2,9 @@ import "react-native";
 import React from "react";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
-import Topics from "../topics";
-import Topic from "../topic";
-import topicData from "../../fixtures/topics";
+import Topics from "../src/topics";
+import Topic from "../src/topic";
+import topicData from "../fixtures/topics";
 
 module.exports = () => {
   beforeEach(() => {
