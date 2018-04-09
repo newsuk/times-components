@@ -1,4 +1,4 @@
-// eslint-disable import/no-unresolved
+/* eslint-disable import/no-unresolved */
 
 import Expo, { Font } from "expo";
 import Fructose from './fructose/index';
