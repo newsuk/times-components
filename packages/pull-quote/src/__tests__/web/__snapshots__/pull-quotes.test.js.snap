@@ -95,7 +95,9 @@ exports[`PullQuotes test on web Pull Quotes with a Caption and a Twitter 1`] = `
         href="https://twitter.com/@henrywinter"
         onClick={[Function]}
         onKeyDown={[Function]}
+        rel=" noopener noreferrer"
         role="link"
+        target="_blank"
       >
         @henrywinter
       </a>
@@ -160,7 +162,9 @@ exports[`PullQuotes test on web Pull Quotes with a twitter link 1`] = `
         href="https://twitter.com/@JudgeSapnara"
         onClick={[Function]}
         onKeyDown={[Function]}
+        rel=" noopener noreferrer"
         role="link"
+        target="_blank"
       >
         @JudgeSapnara
       </a>

@@ -18289,6 +18289,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 "fontStyle": "italic",
               }
             }
+            target=""
           >
             Telegraph 
           </Text>

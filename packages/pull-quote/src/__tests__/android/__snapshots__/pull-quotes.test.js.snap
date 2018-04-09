@@ -206,6 +206,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
             },
           ]
         }
+        target="_blank"
       >
         @henrywinter
       </Text>
@@ -339,6 +340,7 @@ exports[`PullQuotes test on android Pull Quotes with a twitter link 1`] = `
             },
           ]
         }
+        target="_blank"
       >
         @JudgeSapnara
       </Text>
