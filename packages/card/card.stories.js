@@ -51,6 +51,56 @@ const childStyle = {
 };
 
 storiesOf("Composed/Card", module)
+  .add("Default", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </CardWrapper>
+  ))
+  .add("Default - no image", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        showImage={false}
+      >
+        <View style={childStyle} />
+      </Card>
+    </CardWrapper>
+  ))
+  .add("Default - reversed", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
+  ))
+  .add("Default - reversed, no image", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage={false}
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
+  ))
   .add("Loading", () => (
     <CardWrapper>
       <Card
@@ -102,56 +152,6 @@ storiesOf("Composed/Card", module)
         isReversed
       >
         <Text>Is loading</Text>
-      </Card>
-    </ReversedCardWrapper>
-  ))
-  .add("Default", () => (
-    <CardWrapper>
-      <Card
-        {...cardProps}
-        contentContainerClass="exampleCardContent"
-        imageContainerClass="exampleCardImage"
-        showImage
-      >
-        <View style={childStyle} />
-      </Card>
-    </CardWrapper>
-  ))
-  .add("Default - no image", () => (
-    <CardWrapper>
-      <Card
-        {...cardProps}
-        contentContainerClass="exampleCardContent"
-        imageContainerClass="exampleCardImage"
-        showImage={false}
-      >
-        <View style={childStyle} />
-      </Card>
-    </CardWrapper>
-  ))
-  .add("Default - reversed", () => (
-    <ReversedCardWrapper>
-      <Card
-        {...cardProps}
-        contentContainerClass="exampleCardContent"
-        imageContainerClass="exampleCardImage"
-        isReversed
-        showImage
-      >
-        <View style={childStyle} />
-      </Card>
-    </ReversedCardWrapper>
-  ))
-  .add("Default - reversed, no image", () => (
-    <ReversedCardWrapper>
-      <Card
-        {...cardProps}
-        contentContainerClass="exampleCardContent"
-        imageContainerClass="exampleCardImage"
-        isReversed
-        showImage={false}
-      >
-        <View style={childStyle} />
       </Card>
     </ReversedCardWrapper>
   ));
