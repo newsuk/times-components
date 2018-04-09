@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Watermark from "../watermark";
+import Watermark from "../src/watermark";
 
 module.exports = () => {
   it("renders correctly", () => {
