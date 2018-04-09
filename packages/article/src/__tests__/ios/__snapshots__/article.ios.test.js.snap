@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article tests on ios listViewDataHelper() handles an empty leadAsset object 1`] = `
+Array [
+  Object {
+    "data": Object {
+      "flags": undefined,
+      "headline": undefined,
+      "isVideo": false,
+      "label": undefined,
+      "standfirst": undefined,
+    },
+    "type": "header",
+  },
+  Object {
+    "data": Object {
+      "byline": undefined,
+      "publicationName": undefined,
+      "publishedTime": undefined,
+    },
+    "type": "middleContainer",
+  },
+  Object {
+    "data": Object {
+      "topics": undefined,
+    },
+    "type": "topics",
+  },
+]
+`;
+
 exports[`Article tests on ios renders a smaller article 1`] = `
 <RCTScrollView
   data={
