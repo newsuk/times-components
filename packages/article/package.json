@@ -35,7 +35,6 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.3.15",
     "@storybook/addon-knobs": "3.3.15",
-    "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.1.7",
     "@times-components/jest-configurator": "0.2.5",
@@ -63,10 +62,8 @@
     "@times-components/article-flag": "0.11.19",
     "@times-components/article-image": "0.13.13",
     "@times-components/article-label": "0.9.10",
-    "@times-components/article-summary": "0.22.7",
     "@times-components/brightcove-video": "2.1.8",
     "@times-components/caption": "0.11.13",
-    "@times-components/card": "0.25.9",
     "@times-components/date-publication": "0.14.7",
     "@times-components/image": "1.15.11",
     "@times-components/link": "0.15.19",
