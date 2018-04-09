@@ -23,7 +23,7 @@
     "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
     "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
     "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls",
-    "prelint": "./node_modules/.bin/eslint . && ./node_modules/.bin/prettier --list-different '**/*.js' && yarn deps:lint",
+    "prelint": "eslint . && prettier --list-different '**/*.js' && yarn deps:lint",
     "lint": "lerna run lint --since",
     "deps:lint": "lerna run cli -- -- --hint --bail -s majorityProgressive",
     "deps:fix": "lerna run cli -- -- --fix -s majorityProgressive",

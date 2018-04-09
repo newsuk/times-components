@@ -17,7 +17,7 @@ Font.loadAsync({
   "GillSansMTStd-Medium": GillSansMTStd,
   "TimesDigitalW04-Regular": TimesDigitalW04R,
   "TimesDigitalW04-RegularSC": TimesDigitalW04SC,
-  TimesDigitalW04: TimesDigitalW04,
+  TimesDigitalW04,
   TimesDigitalW04_bold: TimesDigitalW04B,
   TimesDigitalW04_italic: TimesDigitalW04I,
   "TimesModern-Bold": TimesModernB,
