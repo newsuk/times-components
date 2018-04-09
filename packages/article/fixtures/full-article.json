@@ -107,6 +107,22 @@
           ]
         },
         {
+          "name": "video",
+          "attributes": {
+            "display": "primary",
+            "posterImageId": "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+            "brightcoveVideoId": "4084164751001",
+            "brightcovePolicyKey":
+              "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+            "brightcoveAccountId": "57838016001",
+            "paidonly": "false",
+            "caption": "This is video caption",
+            "posterimageUrl":
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+          },
+          "children": []
+        },
+        {
           "name": "paragraph",
           "attributes": {},
           "children": [
@@ -125,6 +141,21 @@
               ]
             }
           ]
+        },
+        {
+          "name": "video",
+          "attributes": {
+            "display": "primary",
+            "brightcoveVideoId": "4084164751001",
+            "brightcovePolicyKey":
+              "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+            "brightcoveAccountId": "57838016001",
+            "paidonly": "false",
+            "caption": "This is video caption",
+            "posterimageUrl":
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+          },
+          "children": []
         },
         {
           "name": "image",
@@ -352,7 +383,7 @@
       "relatedArticles": [
         {
           "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-          "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+          "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
           "byline": [
             {
               "name": "inline",
@@ -592,7 +623,7 @@
             }
           ],
           "leadAsset": {
-            "title": "TMS: Pratchett’s law of the jungle",
+            "title": "TMS: Pratchett’s law of the jungle",
             "crop169": {
               "url":
                 "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40"

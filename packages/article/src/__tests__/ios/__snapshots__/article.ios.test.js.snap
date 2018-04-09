@@ -149,6 +149,24 @@ exports[`Article tests on ios should render a full article 1`] = `
       },
       Object {
         "data": Object {
+          "attributes": Object {
+            "brightcoveAccountId": "57838016001",
+            "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+            "brightcoveVideoId": "4084164751001",
+            "caption": "This is video caption",
+            "display": "primary",
+            "paidonly": "false",
+            "posterImageId": "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
+            "posterimageUrl": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+          },
+          "children": Array [],
+          "name": "video",
+        },
+        "index": 1,
+        "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -167,7 +185,24 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 1,
+        "index": 2,
+        "type": "articleBodyRow",
+      },
+      Object {
+        "data": Object {
+          "attributes": Object {
+            "brightcoveAccountId": "57838016001",
+            "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+            "brightcoveVideoId": "4084164751001",
+            "caption": "This is video caption",
+            "display": "primary",
+            "paidonly": "false",
+            "posterimageUrl": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+          },
+          "children": Array [],
+          "name": "video",
+        },
+        "index": 3,
         "type": "articleBodyRow",
       },
       Object {
@@ -182,7 +217,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 2,
+        "index": 4,
         "type": "articleBodyRow",
       },
       Object {
@@ -199,7 +234,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 3,
+        "index": 5,
         "type": "articleBodyRow",
       },
       Object {
@@ -216,7 +251,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 4,
+        "index": 6,
         "type": "articleBodyRow",
       },
       Object {
@@ -231,7 +266,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 5,
+        "index": 7,
         "type": "articleBodyRow",
       },
       Object {
@@ -248,7 +283,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 6,
+        "index": 8,
         "type": "articleBodyRow",
       },
       Object {
@@ -260,7 +295,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "ad",
         },
-        "index": 7,
+        "index": 9,
         "type": "articleBodyRow",
       },
       Object {
@@ -277,7 +312,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 8,
+        "index": 10,
         "type": "articleBodyRow",
       },
       Object {
@@ -292,7 +327,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 9,
+        "index": 11,
         "type": "articleBodyRow",
       },
       Object {
@@ -309,7 +344,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 10,
+        "index": 12,
         "type": "articleBodyRow",
       },
       Object {
@@ -324,7 +359,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 11,
+        "index": 13,
         "type": "articleBodyRow",
       },
       Object {
@@ -341,7 +376,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 12,
+        "index": 14,
         "type": "articleBodyRow",
       },
       Object {
@@ -356,7 +391,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "pullQuote",
         },
-        "index": 13,
+        "index": 15,
         "type": "articleBodyRow",
       },
       Object {
@@ -373,7 +408,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 14,
+        "index": 16,
         "type": "articleBodyRow",
       },
       Object {
@@ -390,7 +425,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 15,
+        "index": 17,
         "type": "articleBodyRow",
       },
       Object {
@@ -407,7 +442,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 16,
+        "index": 18,
         "type": "articleBodyRow",
       },
       Object {
@@ -424,7 +459,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 17,
+        "index": 19,
         "type": "articleBodyRow",
       },
       Object {
@@ -441,7 +476,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 18,
+        "index": 20,
         "type": "articleBodyRow",
       },
       Object {
@@ -495,7 +530,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   "name": "inline",
                 },
               ],
-              "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+              "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
               "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
               "label": "Health",
               "leadAsset": Object {
@@ -505,7 +540,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                 "crop32": Object {
                   "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
                 },
-                "title": "TMS: Pratchett’s law of the jungle",
+                "title": "TMS: Pratchett’s law of the jungle",
               },
               "publicationName": "TIMES",
               "publishedTime": "2015-03-23T19:39:39.000Z",
@@ -1799,7 +1834,163 @@ exports[`Article tests on ios should render a full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-1"
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": "56.25%",
+              "position": "relative",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                accessibilityLabel="splash-component"
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+                testID="splash-component"
+              >
+                <Image
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "justifyContent": "center",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <View>
+                    <svg
+                      height={70}
+                      style={Object {}}
+                      viewBox="0 0 100 100"
+                      width={70}
+                    >
+                      <rect
+                        fill="rgba(0,0,0)"
+                        fillOpacity="0.4"
+                        height="100"
+                        stroke="rgb(255,255,255)"
+                        strokeWidth="8"
+                        style={Object {}}
+                        width="100"
+                      />
+                      <polygon
+                        fill="rgb(255,255,255)"
+                        points="30,20 70,50 30,80"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingTop": 10,
+                },
+                Object {
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 16,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              This is video caption
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityLabel="paragraph-2"
         style={
           Array [
             Object {
@@ -1808,7 +1999,7 @@ exports[`Article tests on ios should render a full article 1`] = `
             },
           ]
         }
-        testID="paragraph-1"
+        testID="paragraph-2"
       >
         <Text
           accessible={true}
@@ -1837,6 +2028,162 @@ exports[`Article tests on ios should render a full article 1`] = `
             Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
           </Text>
         </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 25,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": "56.25%",
+              "position": "relative",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+              testID={undefined}
+            >
+              <View
+                accessibilityLabel="splash-component"
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+                testID="splash-component"
+              >
+                <Image
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "justifyContent": "center",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <View>
+                    <svg
+                      height={70}
+                      style={Object {}}
+                      viewBox="0 0 100 100"
+                      width={70}
+                    >
+                      <rect
+                        fill="rgba(0,0,0)"
+                        fillOpacity="0.4"
+                        height="100"
+                        stroke="rgb(255,255,255)"
+                        strokeWidth="8"
+                        style={Object {}}
+                        width="100"
+                      />
+                      <polygon
+                        fill="rgb(255,255,255)"
+                        points="30,20 70,50 30,80"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingTop": 10,
+                },
+                Object {
+                  "paddingLeft": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 16,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              This is video caption
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
     <View
@@ -2269,7 +2616,7 @@ exports[`Article tests on ios should render a full article 1`] = `
       style={null}
     >
       <View
-        accessibilityLabel="paragraph-3"
+        accessibilityLabel="paragraph-5"
         style={
           Array [
             Object {
@@ -2278,7 +2625,7 @@ exports[`Article tests on ios should render a full article 1`] = `
             },
           ]
         }
-        testID="paragraph-3"
+        testID="paragraph-5"
       >
         <Text
           accessible={true}
@@ -2296,478 +2643,6 @@ exports[`Article tests on ios should render a full article 1`] = `
         >
           When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
         </Text>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        accessibilityLabel="paragraph-4"
-        style={
-          Array [
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
-        }
-        testID="paragraph-4"
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-        </Text>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "nowrap",
-              "paddingBottom": 25,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <View>
-              <Modal
-                hardwareAccelerated={false}
-                onRequestClose={[Function]}
-                presentationStyle="fullScreen"
-                visible={false}
-              >
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#1D1D1B",
-                      "flexDirection": "column",
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
-                    accessible={true}
-                    collapsable={undefined}
-                    hasTVPreferredFocus={undefined}
-                    hitSlop={undefined}
-                    isTVSelectable={true}
-                    nativeID={undefined}
-                    onLayout={undefined}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "opacity": 1,
-                      }
-                    }
-                    testID={undefined}
-                    tvParallaxProperties={undefined}
-                  >
-                    <svg
-                      height="24"
-                      style={Object {}}
-                      viewBox="0 0 24 24"
-                      width="24"
-                    >
-                      <g
-                        fill="rgba(255, 255, 255, 0.8)"
-                        style={Object {}}
-                      >
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                          style={Object {}}
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                          style={Object {}}
-                        />
-                      </g>
-                    </svg>
-                  </View>
-                  <View
-                    onMoveShouldSetResponder={[Function]}
-                    onMoveShouldSetResponderCapture={[Function]}
-                    onResponderEnd={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderReject={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderStart={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    onStartShouldSetResponderCapture={[Function]}
-                    style={
-                      Object {
-                        "flexGrow": 1,
-                      }
-                    }
-                  >
-                    <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
-                      accessible={true}
-                      hitSlop={undefined}
-                      nativeID={undefined}
-                      onLayout={undefined}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        Object {
-                          "flexGrow": 1,
-                          "justifyContent": "center",
-                        }
-                      }
-                      testID={undefined}
-                    >
-                      <View
-                        collapsable={undefined}
-                        style={
-                          Object {
-                            "transform": Array [
-                              Object {
-                                "scale": 1,
-                              },
-                              Object {
-                                "rotate": "0 deg",
-                              },
-                              Object {
-                                "perspective": 1000,
-                              },
-                            ],
-                          }
-                        }
-                      >
-                        <View
-                          aspectRatio={1.5}
-                          style={
-                            Object {
-                              "opacity": 1,
-                              "width": "100%",
-                            }
-                          }
-                        >
-                          <View
-                            style={
-                              Object {
-                                "height": "100%",
-                                "width": "100%",
-                              }
-                            }
-                          >
-                            <Image
-                              onLoad={[Function]}
-                              source={
-                                Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
-                                }
-                              }
-                              style={
-                                Array [
-                                  Object {
-                                    "bottom": 0,
-                                    "left": 0,
-                                    "position": "absolute",
-                                    "right": 0,
-                                    "top": 0,
-                                  },
-                                  Object {
-                                    "height": "100%",
-                                    "width": "100%",
-                                  },
-                                  undefined,
-                                ]
-                              }
-                            />
-                            <View
-                              onLayout={[Function]}
-                              style={
-                                Array [
-                                  Object {
-                                    "flex": 1,
-                                  },
-                                  null,
-                                ]
-                              }
-                            >
-                              <View
-                                style={
-                                  Object {
-                                    "flex": 1,
-                                  }
-                                }
-                              >
-                                <BVLinearGradient
-                                  colors={
-                                    Array [
-                                      "#F9F9F9",
-                                      "#EDEDED",
-                                    ]
-                                  }
-                                  end={
-                                    Object {
-                                      "x": -0.09302964577578221,
-                                      "y": 0.11488204504197774,
-                                    }
-                                  }
-                                  locations={
-                                    Array [
-                                      0,
-                                      1,
-                                    ]
-                                  }
-                                  start={
-                                    Object {
-                                      "x": 1,
-                                      "y": 0,
-                                    }
-                                  }
-                                  style={
-                                    Array [
-                                      Object {
-                                        "flex": 1,
-                                      },
-                                    ]
-                                  }
-                                />
-                              </View>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </Modal>
-              <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
-                accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}
-              >
-                <View
-                  aspectRatio={1.5}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "paddingLeft": 10,
-                "paddingTop": 0,
-                "width": "50%",
-              }
-            }
-          >
-            <View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "paddingTop": 10,
-                    },
-                    Object {
-                      "paddingTop": 0,
-                    },
-                  ]
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 16,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
-                  All the latest stories in culture and books.
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 16,
-                      },
-                      Object {
-                        "color": "#333333",
-                        "fontSize": 9,
-                        "fontWeight": "400",
-                        "letterSpacing": 1,
-                        "lineHeight": 16,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
-                  THE CREDITS
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
       </View>
     </View>
     <View
@@ -2800,7 +2675,7 @@ exports[`Article tests on ios should render a full article 1`] = `
             }
           }
         >
-          By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
+          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
         </Text>
       </View>
     </View>
