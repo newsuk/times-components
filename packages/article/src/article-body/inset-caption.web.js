@@ -5,23 +5,27 @@ import { spacing } from "@times-components/styleguide";
 
 import Caption from "@times-components/caption";
 
-const InsetCaptionStyle = withResponsiveStyles(View, {
-  base: () => `padding-left: ${spacing(2)};`,
-  mediumUp: () => "padding-left: 0px;"
-});
+const InsetCaptionStyle = withResponsiveStyles(
+  View,
+  {
+    base: () => `padding-left: ${spacing(2)};`,
+    mediumUp: () => "padding-left: 0px;"
+  },
+  InsetCaptionStyle
+);
 
-const InsetCaptiontWeb = props => (
+const InsetCaptionWeb = props => (
   <InsetCaptionStyle>
     <Caption text={props.caption} credits={props.credits} />
   </InsetCaptionStyle>
 );
 
-InsetCaptiontWeb.propTypes = {
+InsetCaptionWeb.propTypes = {
   ...Caption.propTypes
 };
 
-InsetCaptiontWeb.defaultProps = {
+InsetCaptionWeb.defaultProps = {
   ...Caption.defaultProps
 };
 
-export default InsetCaptiontWeb;
+export default InsetCaptionWeb;
