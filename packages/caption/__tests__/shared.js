@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import Image from "@times-components/image";
-import Caption from "../caption";
+import Caption from "../src/caption";
 
 const captionText = "Some caption text goes in here";
 const credits = "Just credits";
