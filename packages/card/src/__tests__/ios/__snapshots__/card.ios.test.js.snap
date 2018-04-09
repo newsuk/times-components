@@ -49,9 +49,13 @@ exports[`1. Renders default layout 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         A card
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
@@ -86,9 +90,13 @@ exports[`2. Renders without an image (null) 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         No image
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
@@ -123,9 +131,13 @@ exports[`3. Renders without an image (showImage is false) 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         No image
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
@@ -160,9 +172,13 @@ exports[`4. Renders without an image (uri is null) 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         No URL
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
@@ -201,9 +217,13 @@ exports[`5. Renders with a reversed layout 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         A card
-      </span>
+      </Text>
     </View>
     <View
       className=""
@@ -264,9 +284,13 @@ exports[`6. Renders with a reversed layout with no image 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         A card
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
@@ -638,7 +662,7 @@ exports[`11. Render a reversed loading component with no image 1`] = `
 </View>
 `;
 
-exports[`14. Re-renders when loading state changes 1`] = `
+exports[`Card tests on ios should not re-render when imageRatio prop is changed 1`] = `
 <FadeIn>
   <View
     style={
@@ -687,15 +711,19 @@ exports[`14. Re-renders when loading state changes 1`] = `
         ]
       }
     >
-      <span>
-        Re-render me
-      </span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Do not re-render me
+      </Text>
     </View>
   </View>
 </FadeIn>
 `;
 
-exports[`15. Does not re-render when image ratio changes 1`] = `
+exports[`Card tests on ios should not re-render when imageRatio prop is changed 2`] = `
 <FadeIn>
   <View
     style={
@@ -744,9 +772,13 @@ exports[`15. Does not re-render when image ratio changes 1`] = `
         ]
       }
     >
-      <span>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
         Do not re-render me
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>

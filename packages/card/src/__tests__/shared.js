@@ -1,4 +1,5 @@
 import React from "react";
+import { Text } from "react-native";
 import { shallow } from "enzyme";
 import Card from "../card";
 import Loading from "../card-loading";
@@ -17,7 +18,7 @@ export default () => {
   it("should render default layout", () => {
     const component = shallow(
       <Card {...props}>
-        <span>A card</span>
+        <Text>A card</Text>
       </Card>
     );
 
@@ -27,7 +28,7 @@ export default () => {
   it("should render without an image when null", () => {
     const component = shallow(
       <Card {...props} image={null}>
-        <span>No image</span>
+        <Text>No image</Text>
       </Card>
     );
 
@@ -37,7 +38,7 @@ export default () => {
   it("should render without an image when showImage is false", () => {
     const component = shallow(
       <Card {...props} showImage={false}>
-        <span>No image</span>
+        <Text>No image</Text>
       </Card>
     );
 
@@ -49,7 +50,7 @@ export default () => {
   it("should render without an image when url is null", () => {
     const component = shallow(
       <Card {...props} image={{ uri: null }}>
-        <span>No URL</span>
+        <Text>No URL</Text>
       </Card>
     );
 
@@ -61,7 +62,7 @@ export default () => {
   it("should render with reversed layout", () => {
     const component = shallow(
       <Card {...props} isReversed>
-        <span>A card</span>
+        <Text>A card</Text>
       </Card>
     );
 
@@ -71,7 +72,7 @@ export default () => {
   it("should render with reversed layout and no image", () => {
     const component = shallow(
       <Card {...props} isReversed showImage={false}>
-        <span>A card</span>
+        <Text>A card</Text>
       </Card>
     );
 
@@ -83,7 +84,7 @@ export default () => {
   it("should render a loading state", () => {
     const component = shallow(
       <Card {...props} isLoading>
-        <span>Loading state</span>
+        <Text>Loading state</Text>
       </Card>
     );
 
@@ -93,7 +94,7 @@ export default () => {
   it("should render a loading component", () => {
     const component = shallow(
       <Loading {...props}>
-        <span>A card</span>
+        <Text>A card</Text>
       </Loading>
     );
 
@@ -103,7 +104,7 @@ export default () => {
   it("should render a loading card with no image", () => {
     const component = shallow(
       <Loading {...props} showImage={false}>
-        <span>A card</span>
+        <Text>A card</Text>
       </Loading>
     );
 
@@ -115,7 +116,7 @@ export default () => {
   it("should render a reversed loading component", () => {
     const component = shallow(
       <Loading {...props} isReversed>
-        <span>A card</span>
+        <Text>A card</Text>
       </Loading>
     );
 
@@ -127,7 +128,7 @@ export default () => {
   it("should render a reversed loading component with no image", () => {
     const component = shallow(
       <Loading {...props} isReversed showImage={false}>
-        <span>A card</span>
+        <Text>A card</Text>
       </Loading>
     );
 
@@ -136,10 +137,26 @@ export default () => {
     );
   });
 
-  it("12. should re-render when image uri changes", () => {
+  it("should not re-render when imageRatio prop is changed", () => {
     const component = shallow(
       <Card {...props}>
-        <span>Some text</span>
+        <Text>Do not re-render me</Text>
+      </Card>
+    );
+
+    expect(component).toMatchSnapshot();
+
+    component.setProps({
+      imageRatio: 16 / 9
+    });
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("should re-render when image uri changes", () => {
+    const component = shallow(
+      <Card {...props}>
+        <Text>Some text</Text>
       </Card>
     );
 
@@ -157,12 +174,19 @@ export default () => {
     ).toEqual(`${testUri}&resize=${props.imageSize}`);
   });
 
-  it("13. should re-render when image size changes", () => {
+  it("should re-render when image size changes", () => {
     const component = shallow(
       <Card {...props}>
-        <span>Some content</span>
+        <Text>Some content</Text>
       </Card>
     );
+
+    expect(
+      component
+        .find("TimesImage")
+        .at(0)
+        .props().uri
+    ).toEqual(`${props.image.uri}&resize=${props.imageSize}`);
 
     component.setProps({
       imageSize: null
@@ -179,32 +203,16 @@ export default () => {
   it("should re-render when loading state changes", () => {
     const component = shallow(
       <Card {...props} isLoading>
-        <span>Re-render me</span>
+        <Text>Re-render me</Text>
       </Card>
     );
+
+    expect(component.name()).toEqual("Loading");
 
     component.setProps({
       isLoading: false
     });
 
-    expect(component).toMatchSnapshot(
-      "14. Re-renders when loading state changes"
-    );
-  });
-
-  it("should not re-render when image ratio changes", () => {
-    const component = shallow(
-      <Card {...props}>
-        <span>Do not re-render me</span>
-      </Card>
-    );
-
-    component.setProps({
-      imageRatio: 2
-    });
-
-    expect(component).toMatchSnapshot(
-      "15. Does not re-render when image ratio changes"
-    );
+    expect(component.name()).toEqual("FadeIn");
   });
 };
