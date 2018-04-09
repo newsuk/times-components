@@ -7,7 +7,7 @@ import ArticleFlag, {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag
-} from "../article-flag";
+} from "../src/article-flag";
 
 module.exports = () => {
   it("renders correctly", () => {
