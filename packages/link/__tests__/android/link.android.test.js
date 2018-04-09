@@ -1,7 +1,7 @@
 import { Text } from "react-native";
 import test from "../shared";
-import Link, { TextLink } from "../../link";
+import Link, { TextLink } from "../../src/link";
 
-describe("Link test on ios", () => {
+describe("Link test on android", () => {
   test(Link, TextLink, Text);
 });

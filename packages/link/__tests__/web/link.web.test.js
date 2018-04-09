@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 import "jest-styled-components";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import test from "../shared";
-import Link, { TextLink } from "../../link";
+import Link, { TextLink } from "../../src/link";
 
 describe("Link tests on Web", () => {
   it("renders with responsive styles", () => {
