@@ -1,4 +1,4 @@
-import beautifyTitle from "../beautify-title";
+import beautifyTitle from "../src/beautify-title";
 
 export default () => {
   it("does capitalise every letter", () => {

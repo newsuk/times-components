@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import VideoLabel from "../video-label";
+import VideoLabel from "../src/video-label";
 
 export default () => {
   it("renders VideoLabel", () => {
