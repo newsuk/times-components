@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.16.12",
+  "version": "0.16.13",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.5.7",
-    "@times-components/watermark": "0.4.17",
+    "@times-components/watermark": "0.4.18",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },
