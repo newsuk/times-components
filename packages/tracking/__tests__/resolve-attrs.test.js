@@ -1,4 +1,4 @@
-import resolveAttrs from "../resolve-attrs";
+import resolveAttrs from "../src/resolve-attrs";
 
 module.exports = () => {
   describe("resolveAttrs", () => {

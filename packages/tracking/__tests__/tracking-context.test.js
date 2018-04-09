@@ -2,8 +2,8 @@ import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
-import trackingContextTypes from "../tracking-context-types";
-import { withTrackingContext } from "../tracking";
+import trackingContextTypes from "../src/tracking-context-types";
+import { withTrackingContext } from "../src/tracking";
 
 module.exports = () => {
   describe("WithTrackingContext", () => {

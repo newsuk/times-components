@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
-import { withTrackScrollDepth } from "../tracking";
+import { withTrackScrollDepth } from "../src/tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import trackingContextTypes from "../tracking-context-types";
+import trackingContextTypes from "../src/tracking-context-types";
 
 export default WrappedComponent => {
   class TestContext extends Component {
