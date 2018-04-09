@@ -1,4 +1,4 @@
-import TestLink from "../test-link";
+import TestLink from "../src/test-link";
 
 describe("TestLink tests", () => {
   it("should add an error event", async () => {

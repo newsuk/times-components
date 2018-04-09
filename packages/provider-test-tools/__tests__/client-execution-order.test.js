@@ -1,5 +1,5 @@
 import gql from "graphql-tag";
-import { clientTester, getResolvedQueries } from "../";
+import { clientTester, getResolvedQueries } from "../src";
 
 function AuthorQueryResolver({ variables }) {
   return {

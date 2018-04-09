@@ -1,4 +1,4 @@
-import { getEvents, getResolvedQueries, getRenderedQueries } from "../";
+import { getEvents, getResolvedQueries, getRenderedQueries } from "../src";
 
 const operationEvent = {
   type: "resolved",
