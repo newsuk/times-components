@@ -6,7 +6,7 @@ import {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag
-} from "./article-flag";
+} from "./src/article-flag";
 
 storiesOf("Primitives/ArticleFlag", module)
   .add("ArticleFlag (New)", () => <NewArticleFlag />)

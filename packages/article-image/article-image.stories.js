@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import ArticleImage from "./article-image";
+import ArticleImage from "./src/article-image";
 
 const primaryImage = require("./fixtures/primary-image.json").fixture;
 const secondaryImage = require("./fixtures/secondary-image.json").fixture;

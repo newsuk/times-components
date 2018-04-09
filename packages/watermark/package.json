@@ -1,18 +1,21 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.4.14",
+  "version": "0.4.17",
   "description": "Watermark",
-  "main": "watermark",
+  "main": "dist/watermark",
+  "dev": "src/watermark",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose gs $(PWD)",
-    "dextrose-clean": "dextrose cs $(PWD)"
+    "dextrose-clean": "dextrose cs $(PWD)",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",
@@ -33,8 +36,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.4",
-    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/eslint-config-thetimes": "0.1.7",
+    "@times-components/jest-configurator": "0.2.5",
     "dextrose": "1.7.3",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -45,7 +48,7 @@
     "react-test-renderer": "16.3.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.4",
+    "@times-components/styleguide": "0.5.7",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"

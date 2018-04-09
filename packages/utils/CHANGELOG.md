@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.3...@times-components/utils@0.6.4) (2018-04-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.2...@times-components/utils@0.6.3) (2018-04-05)
+
+
+### Bug Fixes
+
+* fixed article lead asset provider ([#813](https://github.com/newsuk/times-components/issues/813)) ([2c8473b](https://github.com/newsuk/times-components/commit/2c8473b))
+
+
+
+
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.1...@times-components/utils@0.6.2) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.0...@times-components/utils@0.6.1) (2018-04-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/utils
+
 <a name="0.6.0"></a>
 # 0.6.0 (2018-04-03)
 

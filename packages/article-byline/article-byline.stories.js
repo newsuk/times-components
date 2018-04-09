@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
 import { decorateAction } from "@storybook/addon-actions";
-import ArticleByline from "./article-byline";
+import ArticleByline from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 

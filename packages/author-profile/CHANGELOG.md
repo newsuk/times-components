@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.1"></a>
+## [0.55.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.55.0...@times-components/author-profile@0.55.1) (2018-04-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.55.0"></a>
+# [0.55.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.6...@times-components/author-profile@0.55.0) (2018-04-06)
+
+
+### Features
+
+* move fixture-generator to provider-test-tools ([#819](https://github.com/newsuk/times-components/issues/819)) ([02fdc37](https://github.com/newsuk/times-components/commit/02fdc37))
+
+
+
+
+<a name="0.54.6"></a>
+## [0.54.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.5...@times-components/author-profile@0.54.6) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.54.5"></a>
+## [0.54.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.4...@times-components/author-profile@0.54.5) (2018-04-05)
+
+
+### Bug Fixes
+
+* fixed article lead asset provider ([#813](https://github.com/newsuk/times-components/issues/813)) ([2c8473b](https://github.com/newsuk/times-components/commit/2c8473b))
+
+
+
+
+<a name="0.54.4"></a>
+## [0.54.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.3...@times-components/author-profile@0.54.4) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.54.3"></a>
+## [0.54.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.2...@times-components/author-profile@0.54.3) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.54.2"></a>
+## [0.54.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.1...@times-components/author-profile@0.54.2) (2018-04-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.54.1"></a>
 ## [0.54.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.54.0...@times-components/author-profile@0.54.1) (2018-04-03)
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
-import DatePublication from "./date-publication";
+import DatePublication from "./src/date-publication";
 
 const styles = StyleSheet.create({
   text: {

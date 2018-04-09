@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import Gradient from "./gradient";
+import Gradient from "./src/gradient";
 
 const styles = StyleSheet.create({
   container: {

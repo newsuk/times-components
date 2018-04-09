@@ -1,15 +1,17 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.2.2",
+  "version": "0.2.5",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
+  "dev": "src/jest-configurator.js",
   "scripts": {
-    "prepublishOnly": "babel src -d lib",
+    "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
-    "test": "jest"
+    "test": "jest",
+    "transpile": "babel src --ignore node_modules,__tests__ -d lib"
   },
   "repository": {
     "type": "git",
@@ -41,7 +43,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
+      "<rootDir>/packages/jest-configurator/src/__tests__/*.test.js"
     ]
   },
   "dependencies": {
@@ -53,7 +55,7 @@
     "recursive-readdir-synchronous": "0.0.3"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.1.4",
+    "@times-components/eslint-config-thetimes": "0.1.7",
     "babel-cli": "6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",

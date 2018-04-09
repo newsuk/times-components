@@ -1,7 +1,7 @@
 /* globals withComponent device test expect element by beforeEach */
 
 import React from "react";
-import Article from "./article";
+import Article from "./src/article";
 
 const fullArticleFixture = require("./fixtures/full-article.json");
 

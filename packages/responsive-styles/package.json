@@ -1,13 +1,16 @@
 {
   "name": "@times-components/responsive-styles",
-  "version": "0.6.0",
+  "version": "0.6.3",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
-  "main": "responsive-styles",
+  "main": "dist/responsive-styles",
+  "dev": "src/responsive-styles",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'"
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",
@@ -28,8 +31,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.4",
-    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/eslint-config-thetimes": "0.1.7",
+    "@times-components/jest-configurator": "0.2.5",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",

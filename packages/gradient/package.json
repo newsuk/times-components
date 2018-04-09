@@ -1,18 +1,21 @@
 {
   "name": "@times-components/gradient",
-  "version": "0.8.2",
+  "version": "0.8.8",
   "description": "Renders a gradient background",
-  "main": "gradient",
+  "main": "dist/gradient",
+  "dev": "src/gradient",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)"
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "jest": {
     "preset": "react-native",
@@ -22,7 +25,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/gradient/__tests__/*.test.js"
+      "<rootDir>/packages/gradient/src/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -44,9 +47,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/brightcove-video": "2.1.2",
-    "@times-components/eslint-config-thetimes": "0.1.4",
-    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/brightcove-video": "2.1.7",
+    "@times-components/eslint-config-thetimes": "0.1.7",
+    "@times-components/jest-configurator": "0.2.5",
     "dextrose": "1.7.3",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -57,8 +60,7 @@
     "react-test-renderer": "16.3.0"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "0.2.2",
-    "@times-components/styleguide": "0.5.4",
+    "@times-components/styleguide": "0.5.7",
     "prop-types": "15.6.0",
     "react-native-linear-gradient": "2.4.0"
   },

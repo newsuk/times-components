@@ -1,16 +1,15 @@
 /* eslint-env browser */
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
-import { Platform, ScrollView } from "react-native";
+import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { ArticleProvider } from "@times-components/provider";
-import { MockedProvider } from "@times-components/utils/graphql";
-import { query as articleQuery } from "@times-components/provider/article";
-import storybookReporter from "@times-components/tealium/storybook";
-import Article from "./article";
-import RelatedArticles from "./related-articles/related-articles";
+import { select, text } from "@storybook/addon-knobs/react";
+import { ArticleProvider, articleQuery } from "@times-components/provider";
+import StorybookProvider from "@times-components/storybook/storybook-provider";
+import { storybookReporter } from "@times-components/tealium";
+import Article from "./src/article";
 
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
@@ -25,19 +24,6 @@ import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags
 import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
-// Related articles
-import standard1RelatedArticleFixture from "./related-articles/fixtures/standard/1-article.json";
-import standard1RelatedArticleNoImageFixture from "./related-articles/fixtures/standard/1-article-no-image.json";
-import standard1RelatedArticleNoLabelFixture from "./related-articles/fixtures/standard/1-article-no-label.json";
-import standard1RelatedArticleNoBylineFixture from "./related-articles/fixtures/standard/1-article-no-byline.json";
-import standard2RelatedArticlesFixture from "./related-articles/fixtures/standard/2-articles.json";
-import standard3RelatedArticlesFixture from "./related-articles/fixtures/standard/3-articles.json";
-import leadAndTwo1RelatedArticleFixture from "./related-articles/fixtures/leadandtwo/1-article.json";
-import leadAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/leadandtwo/3-articles.json";
-import opinionAndTwo1RelatedArticleFixture from "./related-articles/fixtures/opinionandtwo/1-article.json";
-import opinionAndTwo2RelatedArticlesFixture from "./related-articles/fixtures/opinionandtwo/2-articles.json";
-import opinionAndTwo3RelatedArticlesFixture from "./related-articles/fixtures/opinionandtwo/3-articles.json";
 
 const preventDefaultedAction = decorateAction([
   ([e, ...args]) => {
@@ -45,14 +31,6 @@ const preventDefaultedAction = decorateAction([
     return ["[SyntheticEvent (storybook prevented default)]", ...args];
   }
 ]);
-
-const createRelatedArticlesProps = fixtureData => ({
-  analyticsStream: storybookReporter,
-  articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main || "",
-  onPress: preventDefaultedAction("onArticlePress")
-});
 
 const mocks = [
   {
@@ -133,6 +111,8 @@ const RenderArticle = ({
       error={error}
       onRelatedArticlePress={preventDefaultedAction("onRelatedArticlePress")}
       onAuthorPress={preventDefaultedAction("onAuthorPress")}
+      onVideoPress={preventDefaultedAction("onVideoPress")}
+      onLinkPress={preventDefaultedAction("onLinkPress")}
     />
   );
 };
@@ -148,28 +128,43 @@ storiesOf("Pages/Article", module)
   .add("Error", () => (
     <RenderArticle error={{ message: "An example error." }} />
   ))
-  .add("With Provider", () => (
-    <MockedProvider mocks={mocks}>
-      <ArticleProvider
-        id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        debounceTimeMs={0}
-      >
-        {({ article, isLoading, error }) => (
-          <Article
-            article={article}
-            isLoading={isLoading}
-            error={error}
-            analyticsStream={storybookReporter}
-            adConfig={defaultAdConfig}
-            onRelatedArticlePress={preventDefaultedAction(
-              "onRelatedArticlePress"
-            )}
-            onAuthorPress={preventDefaultedAction("onAuthorPress")}
-          />
-        )}
-      </ArticleProvider>
-    </MockedProvider>
-  ))
+  .add("With Provider", () => {
+    const predefinedArticles = {
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44": "Default article",
+      "1a576df6-cb50-11e4-81dd-064fe933cd41":
+        "Video lead asset (requires GraphQL with CI data)"
+    };
+    const predefinedArticle = select(
+      "Predefined article",
+      predefinedArticles,
+      "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    );
+    const overrideArticleId = text("Override article id", "");
+
+    return (
+      <StorybookProvider mocks={mocks}>
+        <ArticleProvider
+          id={overrideArticleId || predefinedArticle}
+          debounceTimeMs={0}
+        >
+          {({ article, isLoading, error }) => (
+            <Article
+              article={article}
+              isLoading={isLoading}
+              error={error}
+              analyticsStream={storybookReporter}
+              adConfig={defaultAdConfig}
+              onRelatedArticlePress={preventDefaultedAction(
+                "onRelatedArticlePress"
+              )}
+              onAuthorPress={preventDefaultedAction("onAuthorPress")}
+              onLinkPress={preventDefaultedAction("onLinkPress")}
+            />
+          )}
+        </ArticleProvider>
+      </StorybookProvider>
+    );
+  })
   .add("Fixtures - Full", () => {
     // Hack, render ads inside storybook's iframe
     if (Platform.OS === "web") {
@@ -215,100 +210,4 @@ storiesOf("Pages/Article", module)
   ))
   .add("Fixtures - No lead asset", () => (
     <RenderArticle fixture={articleFixtureNoLeadAsset} />
-  ))
-  .add("Default template with one related article", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(standard1RelatedArticleFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Default template with one related article with no lead image", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          standard1RelatedArticleNoImageFixture.data
-        )}
-      />
-    </ScrollView>
-  ))
-  .add("Default template with one related article with no label", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          standard1RelatedArticleNoLabelFixture.data
-        )}
-      />
-    </ScrollView>
-  ))
-  .add("Default template with one related article with no byline", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          standard1RelatedArticleNoBylineFixture.data
-        )}
-      />
-    </ScrollView>
-  ))
-  .add("Default template with two related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(standard2RelatedArticlesFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Default template with three related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(standard3RelatedArticlesFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Lead and two template with one related article", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo1RelatedArticleFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Lead and two template with two related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo2RelatedArticlesFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Lead and two template with three related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo3RelatedArticlesFixture.data)}
-      />
-    </ScrollView>
-  ))
-  .add("Opinion and two template with one related article", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          opinionAndTwo1RelatedArticleFixture.data
-        )}
-      />
-    </ScrollView>
-  ))
-  .add("Opinion and two template with two related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          opinionAndTwo2RelatedArticlesFixture.data
-        )}
-      />
-    </ScrollView>
-  ))
-  .add("Opinion and two template with three related articles", () => (
-    <ScrollView>
-      <RelatedArticles
-        {...createRelatedArticlesProps(
-          opinionAndTwo3RelatedArticlesFixture.data
-        )}
-      />
-    </ScrollView>
   ));

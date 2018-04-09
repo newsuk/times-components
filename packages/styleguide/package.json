@@ -1,16 +1,19 @@
 {
   "name": "@times-components/styleguide",
-  "version": "0.5.4",
+  "version": "0.5.7",
   "description": "Centralised library for common styles throughout the Times",
-  "main": "styleguide",
+  "main": "dist/styleguide",
+  "dev": "src/styleguide",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'"
+    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/jest-configurator": "0.2.2",
+    "@times-components/jest-configurator": "0.2.5",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
@@ -41,7 +44,7 @@
     "react-test-renderer": "16.3.0"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.6.0",
+    "@times-components/responsive-styles": "0.6.3",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

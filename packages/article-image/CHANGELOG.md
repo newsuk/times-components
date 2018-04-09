@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.12"></a>
+## [0.13.12](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.11...@times-components/article-image@0.13.12) (2018-04-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.11"></a>
+## [0.13.11](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.10...@times-components/article-image@0.13.11) (2018-04-06)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.10"></a>
+## [0.13.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.9...@times-components/article-image@0.13.10) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.9"></a>
+## [0.13.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.8...@times-components/article-image@0.13.9) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.8"></a>
+## [0.13.8](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.7...@times-components/article-image@0.13.8) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.7"></a>
+## [0.13.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.6...@times-components/article-image@0.13.7) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
+<a name="0.13.6"></a>
+## [0.13.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.5...@times-components/article-image@0.13.6) (2018-04-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-image
+
 <a name="0.13.5"></a>
 ## [0.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@0.13.4...@times-components/article-image@0.13.5) (2018-04-03)
 

@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import Image from "@times-components/image";
-import Caption from "./caption";
+import Caption from "./src/caption";
 
 const captionText =
   'The prime minister said HMS Queen Elizabeth was a symbol of Britain’s status as a "great maritime nation"';

@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import ArticleSummary from "./article-summary";
+import ArticleSummary from "./src/article-summary";
 
 import defaultFixture from "./fixtures/default";
 import articleMultiFixture from "./fixtures/article-multi";

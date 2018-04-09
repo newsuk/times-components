@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { colours, fonts } from "@times-components/styleguide";
 import { color } from "@storybook/addon-knobs";
-import { IconDiamond, IconTwitter, IconVideo } from "./icons";
+import { IconDiamond, IconTwitter, IconVideo } from "./src/icons";
 
 const borderWidth = 1;
 const borderColor = colours.functional.keyline;

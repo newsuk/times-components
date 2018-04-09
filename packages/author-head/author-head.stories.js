@@ -1,10 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
-import storybookReporter from "@times-components/tealium/storybook";
+import { storybookReporter } from "@times-components/tealium";
 import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import AuthorHead from "./author-head";
+import AuthorHead from "./src/author-head";
 
 const data = require("./fixtures/profile.json");
 
