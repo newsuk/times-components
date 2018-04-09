@@ -1,7 +1,7 @@
 import "react-native";
 import React, { Component } from "react";
 import renderer from "react-test-renderer";
-import BrightcovePlayer from "../brightcove-player-helper";
+import BrightcovePlayer from "../src/brightcove-player-helper";
 
 describe("brightcove-player native component", () => {
   it("renders correctly", () => {

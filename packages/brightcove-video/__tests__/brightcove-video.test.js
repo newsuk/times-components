@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import BrightcoveVideo from "../brightcove-video";
+import BrightcoveVideo from "../src/brightcove-video";
 
 const policyKey = "[POLICY_KEY]";
 const accountId = "[ACCOUNT_ID]";

@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import BrightcovePlayer from "../brightcove-player.android";
+import BrightcovePlayer from "../src/brightcove-player.android";
 
 describe("brightcove-player Android component", () => {
   afterEach(() => {

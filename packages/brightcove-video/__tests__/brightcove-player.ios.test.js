@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import BrightcovePlayer from "../brightcove-player";
+import BrightcovePlayer from "../src/brightcove-player";
 
 describe("brightcove-player iOS component", () => {
   afterEach(() => {
