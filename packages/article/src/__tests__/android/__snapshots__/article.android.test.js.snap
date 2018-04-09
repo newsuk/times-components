@@ -13872,16 +13872,7 @@ exports[`Article test on android renders full article 1`] = `
             "caption": "This is video caption",
             "display": "primary",
             "paidonly": "false",
-            "posterImage": Object {
-              "caption": "CCTV captures moment of the explosion",
-              "credits": "",
-              "crop": Object {
-                "ratio": "16:9",
-                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-              },
-              "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
-              "title": "",
-            },
+            "posterimageUrl": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
           },
           "children": Array [],
           "name": "video",
@@ -15843,7 +15834,7 @@ exports[`Article test on android renders full article 1`] = `
                 <Image
                   source={
                     Object {
-                      "uri": undefined,
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
                     }
                   }
                   style={
