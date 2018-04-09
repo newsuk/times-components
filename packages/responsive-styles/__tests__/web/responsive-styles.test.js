@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 
-import withResponsiveStyles from "../../responsive-styles";
+import withResponsiveStyles from "../../src/responsive-styles";
 
 const Hello = ({ className }) => <div className={className}>Hello</div>;
 Hello.propTypes = { className: PropTypes.string };
