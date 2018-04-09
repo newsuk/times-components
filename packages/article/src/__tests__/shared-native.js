@@ -9,11 +9,11 @@ import ArticleLeadAssetVideo from "../article-lead-asset/article-lead-asset-vide
 import listViewDataHelper from "../data-helper";
 
 export default () => {
-  it("getLeadAsset() returns a default object when no leadAsset provided", () => {
+  it("should returns a default object when no leadAsset provided to getLeadAsset()", () => {
     expect(getLeadAsset({ leadAsset: false })).toEqual(defaultAsset);
   });
 
-  it("ArticleLeadAssetVideo onPress is handled correctly", () => {
+  it("should handle ArticleLeadAssetVideo onPress()", () => {
     const props = {
       brightcoveAccountId: "testAccountId",
       brightcovePolicyKey: "testPolicyKey",
@@ -38,7 +38,7 @@ export default () => {
     expect(onPressMock).toHaveBeenCalledWith(eventObject, props);
   });
 
-  it("listViewDataHelper() handles an empty leadAsset object", () => {
+  it("should handles an empty leadAsset object when passed to listViewDataHelper()", () => {
     expect(
       listViewDataHelper({ content: [], leadAsset: false })
     ).toMatchSnapshot();

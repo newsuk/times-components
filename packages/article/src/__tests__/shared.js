@@ -73,7 +73,7 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  it("renders activity indicator ", () => {
+  it("should render activity indicator ", () => {
     const tree = renderer
       .create(
         <Article
@@ -90,7 +90,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an error", () => {
+  it("should render an error", () => {
     const props = {
       error: { message: "An example error." }
     };
@@ -109,7 +109,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders full article", () => {
+  it("should render a full article", () => {
     const tree = renderer
       .create(
         <Article
@@ -126,7 +126,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders a smaller article", () => {
+  it("should render a smaller article", () => {
     const tree = renderer
       .create(
         <Article
@@ -143,7 +143,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no flags", () => {
+  it("should render an article with no flags", () => {
     const tree = renderer
       .create(
         <Article
@@ -160,7 +160,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no byline", () => {
+  it("should render an article with no byline", () => {
     const tree = renderer
       .create(
         <Article
@@ -177,7 +177,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no label", () => {
+  it("should render an article with no label", () => {
     const tree = renderer
       .create(
         <Article
@@ -194,7 +194,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no standfirst", () => {
+  it("should render an article with no standfirst", () => {
     const tree = renderer
       .create(
         <Article
@@ -211,7 +211,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no standfirst no flags", () => {
+  it("should render an article with no standfirst and no flags", () => {
     const tree = renderer
       .create(
         <Article
@@ -228,7 +228,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no standfirst no label", () => {
+  it("should render an article with no standfirst and no label", () => {
     const tree = renderer
       .create(
         <Article
@@ -245,7 +245,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no label no flags", () => {
+  it("should render an article with no label and no flags", () => {
     const tree = renderer
       .create(
         <Article
@@ -262,7 +262,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article no label no flags no standfirst", () => {
+  it("should render an article with no label, no flags and no standfirst", () => {
     const tree = renderer
       .create(
         <Article
@@ -279,7 +279,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders article with video asset", () => {
+  it("should render an article with a video asset", () => {
     const tree = renderer
       .create(
         <Article
@@ -296,7 +296,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("tracks page view", () => {
+  it("should track page view", () => {
     const stream = jest.fn();
 
     const { topics } = fullArticleFixture.data.article;
