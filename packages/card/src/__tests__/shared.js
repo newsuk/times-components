@@ -170,7 +170,7 @@ export default () => {
       component
         .find("TimesImage")
         .at(0)
-        .prop('uri')
+        .prop("uri")
     ).toEqual(`${testUri}&resize=${props.imageSize}`);
   });
 
@@ -185,7 +185,7 @@ export default () => {
       component
         .find("TimesImage")
         .at(0)
-        .prop('uri')
+        .prop("uri")
     ).toEqual(`${props.image.uri}&resize=${props.imageSize}`);
 
     component.setProps({
@@ -196,7 +196,7 @@ export default () => {
       component
         .find("TimesImage")
         .at(0)
-        .prop('uri')
+        .prop("uri")
     ).toEqual(`${props.image.uri}`);
   });
 
