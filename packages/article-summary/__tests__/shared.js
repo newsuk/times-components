@@ -3,18 +3,18 @@ import renderer from "react-test-renderer";
 import ArticleSummary, {
   ArticleSummaryContent,
   summarise
-} from "../article-summary";
-import defaultFixture from "../../fixtures/default";
-import opinionBylineFixture from "../../fixtures/opinion-byline";
-import articleMultiFixture from "../../fixtures/article-multi";
-import emptyParagraphFixture from "../../fixtures/article-empty-paragraph";
-import noBylineFixture from "../../fixtures/no-byline";
-import noLabelFixture from "../../fixtures/no-label";
-import reviewFixture from "../../fixtures/review";
-import blankFixture from "../../fixtures/blank";
-import noContentFixture from "../../fixtures/no-content";
-import noHeadline from "../../fixtures/no-headline";
-import noDatePublication from "../../fixtures/no-datepublication";
+} from "../src/article-summary";
+import defaultFixture from "../fixtures/default";
+import opinionBylineFixture from "../fixtures/opinion-byline";
+import articleMultiFixture from "../fixtures/article-multi";
+import emptyParagraphFixture from "../fixtures/article-empty-paragraph";
+import noBylineFixture from "../fixtures/no-byline";
+import noLabelFixture from "../fixtures/no-label";
+import reviewFixture from "../fixtures/review";
+import blankFixture from "../fixtures/blank";
+import noContentFixture from "../fixtures/no-content";
+import noHeadline from "../fixtures/no-headline";
+import noDatePublication from "../fixtures/no-datepublication";
 
 export default () => {
   const realIntl = Intl;
