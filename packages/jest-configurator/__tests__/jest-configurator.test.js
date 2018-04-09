@@ -1,7 +1,7 @@
 import path from "path";
-import jestConfigurator from "../jest-configurator";
+import jestConfigurator from "../src/jest-configurator";
 
-const dir = path.resolve(__dirname, "../../fixtures/all");
+const dir = path.resolve(__dirname, "../fixtures/all");
 
 describe("Jest Configurator Tests", () => {
   describe("All platforms", () => {
@@ -13,14 +13,14 @@ describe("Jest Configurator Tests", () => {
     it("should have a test match applying to the right directory based on params", () => {
       const config = jestConfigurator("android", dir);
       expect(config.testMatch).toContain(
-        path.join(dir, "/{,src/}__tests__/android/*.test.js")
+        path.join(dir, "/__tests__/android/*.test.js")
       );
     });
 
     it("should ignore jest config", () => {
       const config = jestConfigurator("android", dir);
       expect(config.testPathIgnorePatterns).toContain(
-        path.join(dir, "/{,src/}__tests__/android/jest.config.js")
+        path.join(dir, "/__tests__/android/jest.config.js")
       );
     });
 
@@ -33,13 +33,13 @@ describe("Jest Configurator Tests", () => {
 
     it("should make sure the root directory is correct", () => {
       const config = jestConfigurator("android", dir);
-      expect(config.rootDir).toEqual(path.resolve(__dirname, "../.."));
+      expect(config.rootDir).toEqual(path.resolve(__dirname, ".."));
     });
 
     it("should respect coverage ignore globs", () => {
       const config = jestConfigurator(
         "android",
-        path.resolve(__dirname, "../../fixtures/ignore"),
+        path.resolve(__dirname, "../fixtures/ignore"),
         ["data-helper.js"]
       );
       expect(config.collectCoverageFrom).toEqual([
