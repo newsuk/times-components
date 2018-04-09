@@ -76,7 +76,7 @@ exports[`Link test on android TextLink renders correctly with children 1`] = `
       Object {},
     ]
   }
-  target=""
+  target={null}
 >
   The Times
 </Text>
@@ -103,7 +103,7 @@ exports[`Link test on android TextLink renders correctly with multiple styles 1`
       },
     ]
   }
-  target=""
+  target={null}
 >
   The Times
 </Text>
@@ -127,7 +127,7 @@ exports[`Link test on android TextLink renders correctly with specific styles 1`
       },
     ]
   }
-  target=""
+  target={null}
 >
   The Times
 </Text>

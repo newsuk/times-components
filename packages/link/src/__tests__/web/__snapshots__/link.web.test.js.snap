@@ -9,7 +9,7 @@ exports[`Link tests on Web Link doesnt change inner text styles 1`] = `
       "textDecoration": "none",
     }
   }
-  target=""
+  target={null}
 >
   <p>
     Hello
@@ -26,7 +26,7 @@ exports[`Link tests on Web Link renders correctly 1`] = `
       "textDecoration": "none",
     }
   }
-  target=""
+  target={null}
 >
   The Times
 </a>
@@ -40,7 +40,7 @@ exports[`Link tests on Web TextLink renders correctly with children 1`] = `
   onClick={[Function]}
   onKeyDown={[Function]}
   role="link"
-  target=""
+  target={null}
 >
   The Times
 </a>
@@ -60,7 +60,7 @@ exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] =
       "color": "red",
     }
   }
-  target=""
+  target={null}
 >
   The Times
 </a>
@@ -79,7 +79,7 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
       "backgroundColor": "blue",
     }
   }
-  target=""
+  target={null}
 >
   The Times
 </a>
@@ -121,7 +121,6 @@ exports[`Link tests on Web renders with responsive styles 1`] = `
   class="c0"
   href="http://thetimes.co.uk"
   style="text-decoration: underline;"
-  target=""
 >
   The Times
 </a>

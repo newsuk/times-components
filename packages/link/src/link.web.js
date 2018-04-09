@@ -52,7 +52,7 @@ Link.propTypes = {
 Link.defaultProps = {
   responsiveLinkStyles: null,
   index: "0",
-  target: ""
+  target: null
 };
 
 export default Link;

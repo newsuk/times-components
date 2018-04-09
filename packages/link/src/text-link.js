@@ -37,7 +37,7 @@ TextLink.propTypes = {
 
 TextLink.defaultProps = {
   style: {},
-  target: ""
+  target: null
 };
 
 export default TextLink;
