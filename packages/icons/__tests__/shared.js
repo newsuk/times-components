@@ -4,7 +4,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { colours } from "@times-components/styleguide";
-import { IconDiamond, IconTwitter, IconVideo } from "../icons";
+import { IconDiamond, IconTwitter, IconVideo } from "../src/icons";
 
 module.exports = () => {
   it("Diamond renders correctly", () => {
