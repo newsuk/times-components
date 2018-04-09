@@ -1,4 +1,4 @@
-import { applyPatch } from "../depend";
+import { applyPatch } from "../src/depend";
 
 describe("depend apply-patch tests", () => {
   it("should have dependencies not defined if empty ", () => {

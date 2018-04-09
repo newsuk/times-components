@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import parser from "../cli-parser";
+import parser from "../src/cli-parser";
 
 const { exit } = process;
 const { error } = console;

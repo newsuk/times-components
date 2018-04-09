@@ -1,4 +1,4 @@
-import { getAllRequirements } from "../depend";
+import { getAllRequirements } from "../src/depend";
 
 describe("depend requirements tests", () => {
   it("should return no requirements if no dependencies available", () => {

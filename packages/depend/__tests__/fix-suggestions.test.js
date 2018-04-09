@@ -1,4 +1,4 @@
-import { suggestFix } from "../depend";
+import { suggestFix } from "../src/depend";
 
 describe("depend fix-suggestion tests", () => {
   it("should not suggest fixes no rules defined", () => {

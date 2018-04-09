@@ -4,7 +4,7 @@ import {
   majority,
   majorityConservative,
   majorityProgressive
-} from "../strategies";
+} from "../src/strategies";
 
 describe("depend strategy tests", () => {
   it("should pick older version if strategy is conservative", async () => {

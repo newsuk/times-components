@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import main from "../main";
+import main from "../src/main";
 import simple from "./fixtures/simple.json";
 import divergent from "./fixtures/divergent.json";
 import wrong from "./fixtures/wrong.json";

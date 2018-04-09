@@ -1,4 +1,4 @@
-import graph from "../graph";
+import graph from "../src/graph";
 import requirements from "./fixtures/requirements.json";
 
 describe("depend graph printer tests", () => {

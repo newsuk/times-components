@@ -1,5 +1,5 @@
-import { applyStrategy } from "../depend";
-import { progressive } from "../strategies";
+import { applyStrategy } from "../src/depend";
+import { progressive } from "../src/strategies";
 
 describe("depend apply-strategy tests", () => {
   it("should not resolve conflicts if no strategy is provided", () => {

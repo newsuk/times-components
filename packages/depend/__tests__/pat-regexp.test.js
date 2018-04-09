@@ -1,4 +1,4 @@
-import patRegExp from "../pat-regexp";
+import patRegExp from "../src/pat-regexp";
 
 describe("depend pat-regexp tests", () => {
   it("should return nothing if empty", () => {
