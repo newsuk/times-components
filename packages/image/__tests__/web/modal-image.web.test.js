@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import ModalImage from "../../modal-image";
+import ModalImage from "../../src/modal-image";
 
 it("passes through to Image", () => {
   const tree = renderer

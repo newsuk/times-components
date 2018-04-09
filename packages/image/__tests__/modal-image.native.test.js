@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import ModalImage from "../modal-image";
+import ModalImage from "../src/modal-image";
 
 export default () => {
   it("renders correctly", () => {

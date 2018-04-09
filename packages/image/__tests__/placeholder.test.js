@@ -1,7 +1,7 @@
 import "react-native";
 import { shallow } from "enzyme";
 import React from "react";
-import Placeholder from "../placeholder";
+import Placeholder from "../src/placeholder";
 
 export default () => {
   it("renders loading image when width set", () => {
