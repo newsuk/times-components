@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import renderer from "react-test-renderer";
-import Gradient from "../gradient";
+import Gradient from "../src/gradient";
 
 module.exports = () => {
   const styles = StyleSheet.create({
