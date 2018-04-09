@@ -2,7 +2,7 @@ import { Dimensions, Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import Card from "../card";
+import Card from "../src/card";
 
 const cardProps = {
   image: {

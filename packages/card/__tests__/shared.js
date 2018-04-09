@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Card from "../card";
-import Loading from "../card-loading";
+import Card from "../src/card";
+import Loading from "../src/card-loading";
 
 const cardProps = {
   image: {
