@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleLabel from "../article-label";
+import ArticleLabel from "../src/article-label";
 
 module.exports = () => {
   it("renders ArticleLabel", () => {
