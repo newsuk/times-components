@@ -26,7 +26,7 @@ const adStyle = {
   marginBottom: 0
 };
 
-class ArticlePage extends React.Component {
+class ArticlePage extends Component {
   static renderArticle(
     articleData,
     onRelatedArticlePress,

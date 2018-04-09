@@ -3,16 +3,20 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import ArticleLeadAssetVideo from "../article-lead-asset/article-lead-asset-video";
-import getLeadAsset, { defaultAsset } from "../article-lead-asset/get-lead-asset";
+import getLeadAsset, {
+  defaultAsset
+} from "../article-lead-asset/get-lead-asset";
 import listViewDataHelper from "../data-helper";
 
 export default () => {
   it("getLeadAsset() returns a default object when no leadAsset provided", () => {
-    expect(getLeadAsset({leadAsset: false})).toEqual(defaultAsset);
+    expect(getLeadAsset({ leadAsset: false })).toEqual(defaultAsset);
   });
 
   it("listViewDataHelper() handles an empty leadAsset object", () => {
-    expect(listViewDataHelper({ content: [], leadAsset: false })).toMatchSnapshot();
+    expect(
+      listViewDataHelper({ content: [], leadAsset: false })
+    ).toMatchSnapshot();
   });
 
   it("ArticleLeadAssetVideo onPress is handled correctly", () => {
@@ -36,7 +40,7 @@ export default () => {
       />
     );
     const eventObject = { event: true };
-    component.simulate('press', eventObject);
+    component.simulate("press", eventObject);
     expect(onPressMock).toHaveBeenCalledWith(eventObject, props);
   });
 };
