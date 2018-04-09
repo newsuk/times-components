@@ -10,7 +10,7 @@
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
