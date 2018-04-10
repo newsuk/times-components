@@ -4,9 +4,9 @@ import { shallow } from "enzyme";
 
 import getLeadAsset, {
   defaultAsset
-} from "../article-lead-asset/get-lead-asset";
-import ArticleLeadAssetVideo from "../article-lead-asset/article-lead-asset-video";
-import listViewDataHelper from "../data-helper";
+} from "../src/article-lead-asset/get-lead-asset";
+import ArticleLeadAssetVideo from "../src/article-lead-asset/article-lead-asset-video";
+import listViewDataHelper from "../src/data-helper";
 
 export default () => {
   it("should returns a default object when no leadAsset provided to getLeadAsset()", () => {

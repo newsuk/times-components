@@ -2,7 +2,6 @@ import "jest-styled-components";
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import "jest-styled-components";
 import { mount } from "enzyme";
 import ArticleRow from "../../src/article-body/article-body-row";
 import ArticleLink from "../../src/article-body/article-link";
