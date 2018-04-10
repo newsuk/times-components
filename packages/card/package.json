@@ -59,9 +59,7 @@
     "@times-components/image": "1.15.14",
     "@times-components/responsive-styles": "0.6.3",
     "@times-components/styleguide": "0.5.7",
-    "prop-types": "15.6.0",
-    "react-native-svg": "5.5.1",
-    "svgs": "3.2.1"
+    "prop-types": "15.6.0"
   },
   "peerDependencies": {
     "react": ">=16",
