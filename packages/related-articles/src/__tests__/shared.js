@@ -60,7 +60,9 @@ export default () => {
       const wrapper = shallow(
         <RelatedArticles {...createRelatedArticlesProps(data, events)} />
       );
-      expect(wrapper).toMatchSnapshot("1. Handles empty array of related articles");
+      expect(wrapper).toMatchSnapshot(
+        "1. Handles empty array of related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
         "2. Sends analytics even when no related articles"
       );
@@ -70,13 +72,12 @@ export default () => {
       const events = jest.fn();
       const wrapper = shallow(
         <RelatedArticles
-          {...createRelatedArticlesProps(
-            standard1ArticleFixture.data,
-            events
-          )}
+          {...createRelatedArticlesProps(standard1ArticleFixture.data, events)}
         />
       );
-      expect(wrapper.dive()).toMatchSnapshot("3. Standard template: renders on related article");
+      expect(wrapper.dive()).toMatchSnapshot(
+        "3. Standard template: renders on related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
         "4. Sends analytics for a single related article"
       );
