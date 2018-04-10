@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@0.4.8...@times-components/storybook@0.6.0) (2018-04-10)
+
+
+### Bug Fixes
+
+* fix storybook tests ([#841](https://github.com/newsuk/times-components/issues/841)) ([cc7c7f1](https://github.com/newsuk/times-components/commit/cc7c7f1))
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@0.4.8...@times-components/storybook@0.5.0) (2018-04-10)
 

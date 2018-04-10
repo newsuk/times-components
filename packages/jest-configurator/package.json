@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",
@@ -56,10 +56,10 @@
     "recursive-readdir-synchronous": "0.0.3"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.2.0",
+    "@times-components/eslint-config-thetimes": "0.3.0",
     "babel-cli": "6.26.0",
-    "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
