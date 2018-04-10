@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gestures",
-  "version": "1.2.28",
+  "version": "1.2.29",
   "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "dist/gestures",
   "dev": "src/gestures",
@@ -36,10 +36,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.7",
-    "@times-components/jest-configurator": "0.2.5",
-    "@times-components/storybook": "0.4.8",
-    "@times-components/utils": "0.6.4",
+    "@times-components/eslint-config-thetimes": "0.2.0",
+    "@times-components/jest-configurator": "0.3.0",
+    "@times-components/storybook": "0.5.0",
+    "@times-components/utils": "0.6.5",
     "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
@@ -51,7 +51,7 @@
     "react-native-web": "0.3.2"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.7",
+    "@times-components/styleguide": "0.5.8",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
