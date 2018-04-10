@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.17.6",
+  "version": "0.17.7",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
