@@ -14,7 +14,7 @@ describe("Styleguide tests for web", () => {
     expect(typeof fonts).toBe("object");
   });
 
-  it("should multiple spacing values and add px property", () => {
+  it("should multiply spacing values and add px property", () => {
     expect(spacing(10)).toBe("50px");
   });
 
