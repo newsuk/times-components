@@ -1,13 +1,17 @@
+import "jest-styled-components";
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import "jest-styled-components";
+import { mount } from "enzyme";
+
+import ArticleRow from "../../article-body/article-body-row";
+import ArticleLink from "../../article-body/article-link";
 import Article from "../../article";
 import shared from "../shared";
 
 const articleFixtureNoLeadAsset = require("../../../fixtures/no-lead-asset.json");
 
-describe("Article test on web", () => {
+describe("Article tests on web", () => {
   const adConfig = {
     networkId: "mockNetwork",
     adUnit: "mockAdUnit",
@@ -67,5 +71,39 @@ describe("Article test on web", () => {
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("ArticleRow should handle a link onPress", () => {
+    const testUrl = "www.test.com";
+    const props = {
+      content: {
+        data: {
+          attributes: {
+            href: testUrl
+          },
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "police disclosure of evidence"
+              },
+              children: []
+            }
+          ],
+          name: "link"
+        },
+        index: 1
+      }
+    };
+    const onPressMock = jest.fn();
+    const component = mount(
+      <ArticleRow {...props} onLinkPress={onPressMock} />
+    );
+    const eventObject = { event: true };
+    component
+      .find(ArticleLink)
+      .props()
+      .onPress(eventObject);
+    expect(onPressMock).toHaveBeenCalledWith(eventObject, { url: testUrl });
   });
 });

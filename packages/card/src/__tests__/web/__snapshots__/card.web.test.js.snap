@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Re-renders after showing the loading state 1`] = `
+exports[`1. Renders default layout 1`] = `
 <FadeIn>
   <View
     style={
@@ -35,58 +35,176 @@ exports[`Re-renders after showing the loading state 1`] = `
         ]
       }
     >
-      <span>
-        Re-render me
-      </span>
-    </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`Render a Card 1`] = `
-<FadeIn>
-  <View
-    style={
-      Array [
-        74,
-        "",
-      ]
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
-      }
-    >
-      <TimesImage
-        aspectRatio={0.6666666666666666}
-        style={Object {}}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
-      />
-    </View>
-    <View
-      className=""
-      style={
-        Array [
-          78,
-          "",
-        ]
-      }
-    >
-      <span>
+      <Text>
         A card
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
 `;
 
-exports[`Render a loading Card 1`] = `
+exports[`2. Renders without an image (null) 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          "",
+        ]
+      }
+    >
+      <Text>
+        No image
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`3. Renders without an image (showImage is false) 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          "",
+        ]
+      }
+    >
+      <Text>
+        No image
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`4. Renders without an image (uri is null) 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          "",
+        ]
+      }
+    >
+      <Text>
+        No URL
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`5. Renders with a reversed layout 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        75,
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          79,
+        ]
+      }
+    >
+      <Text>
+        A card
+      </Text>
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          76,
+          Object {},
+          77,
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+      />
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`6. Renders with a reversed layout with no image 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        75,
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          79,
+        ]
+      }
+    >
+      <Text>
+        A card
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`7. Renders a loading state 1`] = `
+<Loading
+  contentContainerClass=""
+  imageContainerClass=""
+  imageRatio={0.6666666666666666}
+  isReversed={false}
+  showImage={true}
+/>
+`;
+
+exports[`8. Renders a loading component 1`] = `
 <View
   style={74}
 >
@@ -151,7 +269,7 @@ exports[`Render a loading Card 1`] = `
 </View>
 `;
 
-exports[`Render a loading Card 2`] = `
+exports[`9. Render a loading component with no image 1`] = `
 <View
   style={74}
 >
@@ -201,7 +319,7 @@ exports[`Render a loading Card 2`] = `
 </View>
 `;
 
-exports[`Render a loading Card 3`] = `
+exports[`10. Render a reversed loading component 1`] = `
 <View
   style={74}
 >
@@ -266,17 +384,57 @@ exports[`Render a loading Card 3`] = `
 </View>
 `;
 
-exports[`Render the loading state 1`] = `
-<Loading
-  contentContainerClass=""
-  imageContainerClass=""
-  imageRatio={0.6666666666666666}
-  isReversed={false}
-  showImage={true}
-/>
+exports[`11. Render a reversed loading component with no image 1`] = `
+<View
+  style={74}
+>
+  <View
+    className=""
+    style={
+      Array [
+        78,
+        79,
+      ]
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Array [
+          80,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          81,
+          82,
+        ]
+      }
+    />
+  </View>
+</View>
 `;
 
-exports[`Renders Card normally and does not re-render 1`] = `
+exports[`Card tests on web should not re-render when imageRatio prop is changed 1`] = `
 <FadeIn>
   <View
     style={
@@ -311,21 +469,21 @@ exports[`Renders Card normally and does not re-render 1`] = `
         ]
       }
     >
-      <span>
+      <Text>
         Do not re-render me
-      </span>
+      </Text>
     </View>
   </View>
 </FadeIn>
 `;
 
-exports[`Renders a Card with a reversed layout 1`] = `
+exports[`Card tests on web should not re-render when imageRatio prop is changed 2`] = `
 <FadeIn>
   <View
     style={
       Array [
         74,
-        75,
+        "",
       ]
     }
   >
@@ -333,22 +491,9 @@ exports[`Renders a Card with a reversed layout 1`] = `
       className=""
       style={
         Array [
-          78,
-          79,
-        ]
-      }
-    >
-      <span>
-        A card
-      </span>
-    </View>
-    <View
-      className=""
-      style={
-        Array [
           76,
           Object {},
-          77,
+          "",
         ]
       }
     >
@@ -358,20 +503,6 @@ exports[`Renders a Card with a reversed layout 1`] = `
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
     </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`Renders without an image 1`] = `
-<FadeIn>
-  <View
-    style={
-      Array [
-        74,
-        "",
-      ]
-    }
-  >
     <View
       className=""
       style={
@@ -381,63 +512,9 @@ exports[`Renders without an image 1`] = `
         ]
       }
     >
-      <span>
-        No image
-      </span>
-    </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`Renders without an image URL 1`] = `
-<FadeIn>
-  <View
-    style={
-      Array [
-        74,
-        "",
-      ]
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          78,
-          "",
-        ]
-      }
-    >
-      <span>
-        No URL
-      </span>
-    </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`Renders without an image when showImage is false 1`] = `
-<FadeIn>
-  <View
-    style={
-      Array [
-        74,
-        "",
-      ]
-    }
-  >
-    <View
-      className=""
-      style={
-        Array [
-          78,
-          "",
-        ]
-      }
-    >
-      <span>
-        No image
-      </span>
+      <Text>
+        Do not re-render me
+      </Text>
     </View>
   </View>
 </FadeIn>

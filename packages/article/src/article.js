@@ -3,21 +3,18 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
-
+import ArticleRow from "./article-body/article-body-row";
+import ArticleHeader from "./article-header/article-header";
+import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
+import ArticleMeta from "./article-meta/article-meta";
+import styles from "./styles/article-body";
+import Topics from "./topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptype";
-
-import listViewDataHelper from "./data-helper";
-import styles from "./styles/article-body";
-import ArticleHeader from "./article-header/article-header";
-import ArticleMeta from "./article-meta/article-meta";
-import ArticleRow from "./article-body/article-body-row";
-import Topics from "./topics";
-import ArticleLeadAsset from "./article-lead-asset";
-
+import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
 import articleTrackingContext from "./article-tracking-context";
+import listViewDataHelper from "./data-helper";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -152,26 +149,10 @@ class ArticlePage extends React.Component {
 
 ArticlePage.propTypes = {
   ...articlePropTypes,
-  isLoading: PropTypes.bool,
-  error: PropTypes.shape({
-    graphQLErrors: PropTypes.array,
-    networkError: PropTypes.shape({
-      message: PropTypes.string
-    }),
-    message: PropTypes.string
-  }),
-  adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired
 };
+ArticlePage.defaultProps = articleDefaultProps;
 
-ArticlePage.defaultProps = {
-  ...articleDefaultProps,
-  isLoading: false,
-  error: null
-};
-
-export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);
