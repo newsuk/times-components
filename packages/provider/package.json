@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.27.2",
+  "version": "0.27.3",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -48,14 +48,14 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.2.0",
-    "@times-components/provider-test-tools": "0.2.2",
-    "@times-components/utils": "0.6.5",
-    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "@times-components/eslint-config-thetimes": "0.3.0",
+    "@times-components/provider-test-tools": "0.2.3",
+    "@times-components/utils": "0.6.6",
+    "apollo-utilities": "1.0.4",
     "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
-    "apollo-utilities": "1.0.4",
     "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",

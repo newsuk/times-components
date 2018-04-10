@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topics",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Map of Topics related to the Article",
   "main": "dist/topics",
   "dev": "src/topics",
@@ -36,11 +36,11 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.2.0",
-    "@times-components/jest-configurator": "0.3.0",
-    "@times-components/tealium": "0.2.18",
-    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "@times-components/eslint-config-thetimes": "0.3.0",
+    "@times-components/jest-configurator": "0.4.0",
+    "@times-components/tealium": "0.2.19",
     "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
@@ -52,9 +52,9 @@
     "react-native": "0.53.3"
   },
   "dependencies": {
-    "@times-components/link": "0.17.0",
-    "@times-components/styleguide": "0.5.8",
-    "@times-components/tracking": "0.10.9",
+    "@times-components/link": "0.18.0",
+    "@times-components/styleguide": "0.5.9",
+    "@times-components/tracking": "0.10.10",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },
