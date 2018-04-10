@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { Animations } from "../styleguide";
 
-module.exports = () => {
+export default () => {
   it("should render a FadeIn animation wrapper component", () => {
     const tree = renderer
       .create(
