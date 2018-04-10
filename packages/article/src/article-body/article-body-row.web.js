@@ -98,7 +98,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         <ArticleLink
           key={key}
           uuid={index}
-          onPress={e => onLinkPress(e, { url })}
+          onPress={e => onLinkPress(e, { href })}
           url={href}
           target={target}
         >

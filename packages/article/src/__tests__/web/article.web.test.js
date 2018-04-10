@@ -104,6 +104,6 @@ describe("Article tests on web", () => {
       .find(ArticleLink)
       .props()
       .onPress(eventObject);
-    expect(onPressMock).toHaveBeenCalledWith(eventObject, { url: testUrl });
+    expect(onPressMock).toHaveBeenCalledWith(eventObject, { href: testUrl });
   });
 });
