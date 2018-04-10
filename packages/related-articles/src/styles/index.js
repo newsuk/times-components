@@ -7,6 +7,9 @@ import {
 } from "@times-components/styleguide";
 
 export default StyleSheet.create({
+  container: {
+    marginTop: spacing(2)
+  },
   titleContainer: {
     alignItems: "center",
     borderStyle: "solid",

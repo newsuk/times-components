@@ -9,5 +9,6 @@ const RelatedArticlesHeading = () => (
     </Text>
   </View>
 );
+RelatedArticlesHeading.displayName = "RelatedArticlesHeading";
 
 export default RelatedArticlesHeading;

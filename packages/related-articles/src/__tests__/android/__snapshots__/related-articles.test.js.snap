@@ -1,5 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`1. Handles empty array of related articles 1`] = `
+<RelatedArticles
+  analyticsStream={[Function]}
+  articles={Array []}
+  mainId=""
+  onPress={[Function]}
+  template="DEFAULT"
+/>
+`;
+
+exports[`2. Sends analytics even when no related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`3. Standard template: renders on related article 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <RelatedArticlesHeading />
+  <StandardSlice
+    itemCount={1}
+    renderItems={[Function]}
+  />
+</View>
+`;
+
+exports[`4. Sends analytics for a single related article 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
 exports[`Related articles tests on android:  Lead and two template should render one lead and one support related article 1`] = `
 <View
   style={
@@ -3690,418 +3758,6 @@ exports[`Related articles tests on android:  Opinion and two template should ren
 </View>
 `;
 
-exports[`Related articles tests on android:  Standard template should handle no related articles 1`] = `null`;
-
-exports[`Related articles tests on android:  Standard template should render one related article 1`] = `
-<View
-  style={
-    Object {
-      "marginTop": 10,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 0.5,
-        "borderStyle": "solid",
-        "borderTopColor": "#DBDBDB",
-        "borderTopWidth": 0.5,
-        "display": "flex",
-        "height": 55,
-        "justifyContent": "center",
-      }
-    }
-  >
-    <Text
-      accessibilityRole="heading"
-      accessible={true}
-      allowFontScaling={true}
-      aria-level="3"
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
-        }
-      }
-    >
-      Related articles
-    </Text>
-  </View>
-  <View
-    style={undefined}
-  >
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 0.5,
-          "borderStyle": "solid",
-          "width": "100%",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hitSlop={undefined}
-          nativeBackgroundAndroid={
-            Object {
-              "attribute": "selectableItemBackground",
-              "type": "ThemeAttrAndroid",
-            }
-          }
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          pointerEvents="box-only"
-          testID={undefined}
-        >
-          <View
-            collapsable={undefined}
-            style={
-              Object {
-                "opacity": 0,
-              }
-            }
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
-              }
-            >
-              <View
-                className=""
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
-                }
-              >
-                <View
-                  aspectRatio={1.7777777777777777}
-                  style={Object {}}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996&preview=true",
-                        }
-                      }
-                      style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                    <View
-                      style={
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996",
-                          }
-                        }
-                        style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
-                        }
-                      />
-                      <View
-                        onLayout={[Function]}
-                        style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
-                        }
-                      >
-                        <View
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
-                            }
-                          />
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                className=""
-                style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
-                }
-              >
-                <View>
-                  <View
-                    style={
-                      Object {
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#DB133B",
-                          },
-                        ]
-                      }
-                    >
-                      B A Y E U X   T A P E S T R Y
-                    </Text>
-                  </View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
-                    }
-                  >
-                    Now for a new battle: bringing the fragile masterpiece over safely
-                  </Text>
-                  <View
-                    style={Object {}}
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      className="summaryHidden summary125Class"
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#696969",
-                          "flexWrap": "wrap",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 14,
-                          "lineHeight": 20,
-                          "marginBottom": 10,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        
-                        Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
-                        ...
-                      </Text>
-                    </Text>
-                  </View>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    March 13 2015, 06:54pm
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    className=""
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      Camilla Long, Environment Editor
-                    </Text>
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
 exports[`Related articles tests on android:  Standard template should render three related articles 1`] = `
 <View
   style={
@@ -5633,23 +5289,6 @@ exports[`Related articles tests on android:  Standard template should render two
 </View>
 `;
 
-exports[`should send analytics even when no related articles 1`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
 exports[`should send analytics for a lead related article 1`] = `
 Array [
   Array [
@@ -5692,31 +5331,6 @@ Array [
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
         "template": "OPINION_AND_TWO",
-      },
-      "component": "Page",
-      "object": "RelatedArticles",
-    },
-  ],
-]
-`;
-
-exports[`should send analytics for a single related article 1`] = `
-Array [
-  Array [
-    Object {
-      "action": "Viewed",
-      "attrs": Object {
-        "articles": Array [
-          Object {
-            "byline": "Camilla Long, Environment Editor",
-            "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
-            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
-          },
-        ],
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
       },
       "component": "Page",
       "object": "RelatedArticles",

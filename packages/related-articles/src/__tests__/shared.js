@@ -48,25 +48,6 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  it("callback triggered on related article press", () => {
-    const onRelatedArticlePress = jest.fn();
-    const article = standard1ArticleFixture.data.relatedArticles[0];
-
-    const component = shallow(
-      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
-    );
-
-    const eventMock = {};
-    component
-      .find("Link")
-      .at(0)
-      .simulate("press", eventMock);
-
-    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-      url: article.url
-    });
-  });
-
   context("Standard template", () => {
     it("should handle no related articles", () => {
       const events = jest.fn();
@@ -76,32 +57,29 @@ export default () => {
           template: "DEFAULT"
         }
       };
-      const tree = renderer
-        .create(
-          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      const wrapper = shallow(
+        <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+      );
+      expect(wrapper).toMatchSnapshot(
+        "1. Handles empty array of related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics even when no related articles"
+        "2. Sends analytics even when no related articles"
       );
     });
 
     it("should render one related article", () => {
       const events = jest.fn();
-      const tree = renderer
-        .create(
-          <RelatedArticles
-            {...createRelatedArticlesProps(
-              standard1ArticleFixture.data,
-              events
-            )}
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot();
+      const wrapper = shallow(
+        <RelatedArticles
+          {...createRelatedArticlesProps(standard1ArticleFixture.data, events)}
+        />
+      );
+      expect(wrapper.dive()).toMatchSnapshot(
+        "3. Standard template: renders on related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for a single related article"
+        "4. Sends analytics for a single related article"
       );
     });
 
@@ -251,6 +229,25 @@ export default () => {
       expect(events.mock.calls).toMatchSnapshot(
         "should send analytics for opinion and two support related articles"
       );
+    });
+  });
+
+  it("callback triggered on related article press", () => {
+    const onRelatedArticlePress = jest.fn();
+    const article = standard1ArticleFixture.data.relatedArticles[0];
+
+    const component = shallow(
+      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
+    );
+
+    const eventMock = {};
+    component
+      .find("Link")
+      .at(0)
+      .simulate("press", eventMock);
+
+    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
+      url: article.url
     });
   });
 };

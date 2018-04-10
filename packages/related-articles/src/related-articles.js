@@ -6,6 +6,7 @@ import {
   LeadAndTwoSlice,
   OpinionAndTwoSlice
 } from "@times-components/slice";
+import styles from "./styles";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import {
@@ -90,7 +91,7 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
   };
 
   return (
-    <View style={{ marginTop: spacing(2) }}>
+    <View style={styles.container}>
       <RelatedArticlesHeading />
       {renderSlice()}
     </View>
