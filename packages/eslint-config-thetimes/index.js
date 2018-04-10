@@ -17,6 +17,7 @@ module.exports = {
           "**/*.test.*",
           "**/fixtures/**",
           "**/*.stories*",
+          "**/*.showcase*",
           "**/scripts/**"
         ],
         optionalDependencies: false

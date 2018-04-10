@@ -80,6 +80,21 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 </a>
 `;
 
+exports[`Link tests on Web renders with a target 1`] = `
+<a
+  href="http://thetimes.co.uk"
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+  target="_blank"
+>
+  The Times
+</a>
+`;
+
 exports[`Link tests on Web renders with responsive styles 1`] = `
 .c0 {
   color: #006699;

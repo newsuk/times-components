@@ -40,25 +40,6 @@ export const Paragraph = withResponsiveStyles(
   "Paragraph"
 );
 
-export const LinkStyle = withResponsiveStyles(
-  "a",
-  {
-    base: () => `
-    color: ${colours.functional.action};
-    font-family: "${fonts.bodyRegular}";
-    line-height: 26px;
-    font-size: ${fontSizes.bodyMobile}px;
-    margin-bottom: ${spacing(5)};
-    margin-top: 0;
-`,
-    mediumUp: () => `
-    font-size: ${fontSizes.body}px;
-    line-height: 30px;
-  `
-  },
-  "LinkStyle"
-);
-
 /* --- Lead Asset Styles --- */
 
 export const LeadAsset = withResponsiveStyles(

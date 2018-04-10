@@ -1,5 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
+import renderer from "react-test-renderer";
 import "jest-styled-components";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import test from "../shared";
@@ -33,6 +34,18 @@ describe("Link tests on Web", () => {
     );
 
     expect(component.render()).toMatchSnapshot();
+  });
+
+  it("renders with a target", () => {
+    const tree = renderer
+      .create(
+        <Link url="http://thetimes.co.uk" onPress={() => {}} target="_blank">
+          The Times
+        </Link>
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
   });
 
   test(Link, TextLink, "p");

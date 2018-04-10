@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 import BrightcoveVideo from "@times-components/brightcove-video";
+import cropPropTypes from "./crop-proptypes";
 import {
   LeadAsset,
   LeadAssetCaptionContainer
-} from "./styles/article-body/responsive";
-import cropPropTypes from "./crop-prop-types";
+} from "../styles/article-body/responsive";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
@@ -29,8 +29,12 @@ AspectRatioContainer.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-const LeadAssetComponent = props => {
-  const { leadAsset, isVideo, aspectRatio, displayImage } = props;
+const LeadAssetComponent = ({
+  aspectRatio,
+  displayImage,
+  isVideo,
+  leadAsset
+}) => {
   if (!leadAsset) {
     return null;
   }

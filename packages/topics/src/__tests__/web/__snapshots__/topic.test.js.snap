@@ -51,6 +51,7 @@ exports[`2. Render a single Topic 1`] = `
   index="0"
   onPress={[Function]}
   responsiveLinkStyles={null}
+  target={null}
   url="/topic/football"
 >
   <View

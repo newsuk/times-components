@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/topics@0.2.10...@times-components/topics@0.3.0) (2018-04-10)
+
+
+### Features
+
+* REPLAT-1720 link target attributes ([#834](https://github.com/newsuk/times-components/issues/834)) ([c74ded9](https://github.com/newsuk/times-components/commit/c74ded9))
+
+
+
+
 <a name="0.2.10"></a>
 ## [0.2.10](https://github.com/newsuk/times-components/compare/@times-components/topics@0.2.9...@times-components/topics@0.2.10) (2018-04-09)
 
