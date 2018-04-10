@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.64.0"></a>
+# [0.64.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.6...@times-components/article@0.64.0) (2018-04-10)
+
+
+### Features
+
+* REPLAT-1720 link target attributes ([#834](https://github.com/newsuk/times-components/issues/834)) ([c74ded9](https://github.com/newsuk/times-components/commit/c74ded9))
+
+
+
+
+<a name="0.63.6"></a>
+## [0.63.6](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.5...@times-components/article@0.63.6) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.63.5"></a>
+## [0.63.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.3...@times-components/article@0.63.5) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.63.4"></a>
+## [0.63.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.3...@times-components/article@0.63.4) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.63.3"></a>
+## [0.63.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.2...@times-components/article@0.63.3) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.63.2"></a>
+## [0.63.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.1...@times-components/article@0.63.2) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.63.1"></a>
 ## [0.63.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.63.0...@times-components/article@0.63.1) (2018-04-06)
 

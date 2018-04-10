@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-label",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "The article label",
   "main": "dist/article-label",
   "dev": "src/article-label",
@@ -38,12 +38,10 @@
     "prop-types": "15.6.0"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "3.3.15",
-    "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.1.7",
     "@times-components/jest-configurator": "0.2.5",
     "@times-components/storybook": "0.4.8",
-    "dextrose": "1.7.3",
+    "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",

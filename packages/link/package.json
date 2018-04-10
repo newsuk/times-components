@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.15.18",
+  "version": "0.16.0",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -35,13 +35,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.15",
-    "@storybook/addons": "3.3.15",
-    "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.1.7",
     "@times-components/jest-configurator": "0.2.5",
     "@times-components/storybook": "0.4.8",
-    "dextrose": "1.7.3",
+    "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
@@ -57,7 +54,6 @@
   "dependencies": {
     "@times-components/responsive-styles": "0.6.3",
     "@times-components/styleguide": "0.5.7",
-    "lodash.pick": "4.4.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

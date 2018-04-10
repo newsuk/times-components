@@ -10,16 +10,22 @@ const styles = StyleSheet.create({
   }
 });
 
-const TextLink = ({ style, url, onPress, children }) => (
-  <Text
-    style={[styles.textLink].concat(style)}
-    href={url}
-    onPress={onPress}
-    accessibilityRole="link"
-  >
-    {children}
-  </Text>
-);
+const TextLink = ({ style, url, onPress, children, target }) => {
+  const props = {
+    style: [styles.textLink].concat(style),
+    href: url,
+    onPress,
+    accessibilityRole: "link"
+  };
+
+  return target ? (
+    <Text {...props} target={target}>
+      {children}
+    </Text>
+  ) : (
+    <Text {...props}>{children}</Text>
+  );
+};
 
 TextLink.propTypes = {
   style: StylePropType,
@@ -30,11 +36,13 @@ TextLink.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+  ]).isRequired,
+  target: PropTypes.string
 };
 
 TextLink.defaultProps = {
-  style: {}
+  style: {},
+  target: null
 };
 
 export default TextLink;

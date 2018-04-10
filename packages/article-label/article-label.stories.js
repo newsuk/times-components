@@ -1,14 +1,4 @@
-import "react-native";
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
-import { select } from "@storybook/addon-knobs/react";
-import invert from "lodash.invert";
-import { colours } from "@times-components/styleguide";
-import ArticleLabel from "./src/article-label";
+import { showcaseConverter } from "@times-components/storybook";
+import showcase from "./article-label.showcase";
 
-storiesOf("Primitives/ArticleLabel", module).add("ArticleLabel", () => (
-  <ArticleLabel
-    title="swimming"
-    color={select("Section", invert(colours.section), colours.section.default)}
-  />
-));
+showcaseConverter(module, showcase);

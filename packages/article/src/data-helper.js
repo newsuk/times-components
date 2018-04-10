@@ -1,4 +1,4 @@
-import getLeadAsset from "./get-lead-asset";
+import getLeadAsset from "./article-lead-asset/get-lead-asset";
 
 const prepend = ({ type, data }, list) => {
   if (!data) {

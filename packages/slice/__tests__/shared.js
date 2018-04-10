@@ -18,7 +18,7 @@ export default () => {
   const createItem = id => <ExampleChild id={id} />;
 
   context("Standard template", () => {
-    it("renders a single child element", () => {
+    it("should render a single child element", () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={1}
@@ -30,7 +30,7 @@ export default () => {
       );
     });
 
-    it("renders two child elements", () => {
+    it("should render two child elements", () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={2}
@@ -45,7 +45,7 @@ export default () => {
       );
     });
 
-    it("renders three child elements", () => {
+    it("should render three child elements", () => {
       const wrapper = shallow(
         <StandardSlice
           itemCount={3}
@@ -63,7 +63,7 @@ export default () => {
   });
 
   context("Lead and two template", () => {
-    it("renders a single child element", () => {
+    it("should render a single child element", () => {
       const wrapper = shallow(
         <LeadAndTwoSlice lead={() => createItem("lead")} />
       );
@@ -72,7 +72,7 @@ export default () => {
       );
     });
 
-    it("renders two child elements", () => {
+    it("should render two child elements", () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
           lead={() => createItem("lead")}
@@ -84,7 +84,7 @@ export default () => {
       );
     });
 
-    it("renders three child elements", () => {
+    it("should render three child elements", () => {
       const wrapper = shallow(
         <LeadAndTwoSlice
           lead={() => createItem("lead")}
@@ -101,7 +101,7 @@ export default () => {
   });
 
   context("Opinion and two template", () => {
-    it("renders a single child element", () => {
+    it("should render a single child element", () => {
       const wrapper = shallow(
         <OpinionAndTwoSlice opinion={() => createItem("opinion")} />
       );
@@ -110,7 +110,7 @@ export default () => {
       );
     });
 
-    it("renders two child elements", () => {
+    it("should render two child elements", () => {
       const wrapper = shallow(
         <OpinionAndTwoSlice
           opinion={() => createItem("opinion")}
@@ -122,7 +122,7 @@ export default () => {
       );
     });
 
-    it("renders three child elements", () => {
+    it("should render three child elements", () => {
       const wrapper = shallow(
         <OpinionAndTwoSlice
           opinion={() => createItem("opinion")}

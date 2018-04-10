@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -53,13 +53,13 @@
     "prettier": "1.8.2"
   },
   "dependencies": {
-    "@times-components/provider": "0.27.0",
+    "@times-components/provider": "0.27.1",
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.3",
     "apollo-link": "1.0.7",
     "apollo-utilities": "1.0.4",
     "graphql": "0.12.3",
-    "graphql-tag": "2.6.0",
+    "graphql-tag": "2.8.0",
     "lodash.isequal": "4.4.0",
     "prop-types": "15.6.0",
     "react": "16.2.0",
