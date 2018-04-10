@@ -34,6 +34,7 @@
   "devDependencies": {
     "@storybook/addon-knobs": "3.3.15",
     "@storybook/react-native": "3.3.15",
+    "@times-components/eslint-config-thetimes": "0.1.7",
     "@times-components/jest-configurator": "0.2.5",
     "dextrose": "1.7.6",
     "enzyme": "3.3.0",

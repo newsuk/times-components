@@ -74,8 +74,7 @@
     "@times-components/styleguide": "0.5.7",
     "@times-components/tracking": "0.10.8",
     "prop-types": "15.6.0",
-    "styled-components": "3.2.2",
-    "svgs": "3.2.1"
+    "styled-components": "3.2.2"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",

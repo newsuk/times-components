@@ -42,7 +42,6 @@
     "@times-components/storybook": "0.4.8",
     "@times-components/tealium": "0.2.17",
     "@times-components/utils": "0.6.4",
-    "chance": "1.0.10",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",
@@ -54,7 +53,6 @@
     "prettier": "1.8.2",
     "raf": "3.4.0",
     "react": "16.2.0",
-    "react-apollo": "2.1.0-rc.3",
     "react-dom": "16.2.0",
     "react-native": "0.53.3",
     "react-native-web": "0.3.2",
@@ -75,7 +73,6 @@
     "@times-components/tracking": "0.10.8",
     "@times-components/utils": "0.6.4",
     "lodash.get": "4.4.2",
-    "lodash.merge": "4.6.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

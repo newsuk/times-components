@@ -54,7 +54,6 @@
     "@times-components/markup": "0.25.14",
     "@times-components/responsive-styles": "0.6.3",
     "@times-components/styleguide": "0.5.7",
-    "date-fns": "1.28.5",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

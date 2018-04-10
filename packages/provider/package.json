@@ -66,10 +66,8 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "apollo-utilities": "1.0.4",
-    "graphql-tag": "2.6.0",
+    "graphql-tag": "2.8.0",
     "hoist-non-react-statics": "2.3.1",
-    "lodash.get": "4.4.2",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
