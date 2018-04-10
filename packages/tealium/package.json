@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "description": "React storybook helpers for Times Components",
   "main": "dist",
   "dev": "src",
@@ -23,9 +23,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/addon-actions": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.3.0",
-    "@times-components/jest-configurator": "0.4.0",
-    "@times-components/utils": "0.6.6",
+    "@times-components/eslint-config-thetimes": "0.4.0",
+    "@times-components/jest-configurator": "0.5.0",
+    "@times-components/utils": "0.6.7",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",

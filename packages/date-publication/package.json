@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.14.9",
+  "version": "0.14.10",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -36,8 +36,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.3.0",
-    "@times-components/jest-configurator": "0.4.0",
+    "@times-components/eslint-config-thetimes": "0.4.0",
+    "@times-components/jest-configurator": "0.5.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -52,7 +52,7 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.9",
+    "@times-components/styleguide": "0.5.10",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-device-info": "0.13.0"
