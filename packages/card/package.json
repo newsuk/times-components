@@ -37,6 +37,11 @@
     "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.2.0",
     "@times-components/jest-configurator": "0.3.0",
+    "@times-components/storybook": "0.5.0",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-to-json": "3.3.0",
@@ -57,8 +62,6 @@
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

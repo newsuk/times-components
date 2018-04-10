@@ -32,6 +32,10 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.2.0",
     "@times-components/jest-configurator": "0.3.0",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "mkdirp": "0.5.1",
@@ -47,7 +51,9 @@
     "react-apollo": "2.1.0-rc.3"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1"
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.3"
   }
 }

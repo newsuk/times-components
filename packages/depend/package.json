@@ -52,8 +52,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.2.0",
     "babel-cli": "6.26.0",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2"

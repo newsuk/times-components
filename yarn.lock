@@ -10,6 +10,12 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@babel/helper-annotate-as-pure@^7.0.0-beta.37":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0-beta.44.tgz#8ecf33cc5235295afcc7f160a63cab17ce7776f4"
+  dependencies:
+    "@babel/types" "7.0.0-beta.44"
+
 "@babel/helper-function-name@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.0.0-beta.36.tgz#366e3bc35147721b69009f803907c4d53212e88d"
@@ -49,6 +55,14 @@
 "@babel/types@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.36.tgz#64f2004353de42adb72f9ebb4665fc35b5499d23"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.2.0"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@7.0.0-beta.44":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.44.tgz#6b1b164591f77dec0a0342aca995f2d046b3a757"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.2.0"
@@ -347,6 +361,15 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
+"@times-components/brightcove-video@2.1.10":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@times-components/brightcove-video/-/brightcove-video-2.1.10.tgz#a757748adf3888989e90d65c8e73ff056038b57b"
+  dependencies:
+    "@times-components/styleguide" "0.5.7"
+    prop-types "15.6.0"
+    react-native-svg "5.5.1"
+    svgs "3.2.1"
+
 "@times-components/fructose@3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.2.3.tgz#dd4a4f643aeb1a19c70091d0cdbc01d7ff3987f8"
@@ -374,6 +397,67 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
+
+"@times-components/jest-configurator@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.2.5.tgz#20272a89404315b41b7d931539c8c2ef030e7077"
+  dependencies:
+    enzyme "3.3.0"
+    enzyme-adapter-react-16 "1.1.0"
+    enzyme-to-json "3.3.0"
+    find-node-modules "1.0.4"
+    jest-plugin-context "2.6.0"
+    recursive-readdir-synchronous "0.0.3"
+
+"@times-components/responsive-styles@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.6.3.tgz#43ef4852b2edd5f98ca59c20b2c3426167f36a77"
+  dependencies:
+    prop-types "15.6.0"
+    styled-components "3.2.2"
+
+"@times-components/storybook@0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-0.4.8.tgz#7b867c14d62e2ba6afdffba47297d370ed7c5f5b"
+  dependencies:
+    "@storybook/addon-actions" "3.3.15"
+    "@storybook/addon-knobs" "3.3.15"
+    "@storybook/addons" "3.3.15"
+    "@times-components/jest-configurator" "0.2.5"
+    "@times-components/utils" "0.6.4"
+    apollo-cache-inmemory "1.1.5"
+    apollo-client "2.2.3"
+    apollo-link-http "1.5.2"
+    eslint "4.9.0"
+    eslint-config-airbnb "16.1.0"
+    eslint-config-prettier "2.6.0"
+    eslint-plugin-import "2.8.0"
+    eslint-plugin-jsx-a11y "6.0.2"
+    eslint-plugin-react "7.4.0"
+    prop-types "15.6.0"
+    react "16.2.0"
+    react-apollo "2.1.0-rc.3"
+    react-dom "16.2.0"
+    react-native "0.53.3"
+    react-test-renderer "16.2.0"
+
+"@times-components/styleguide@0.5.7":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.5.7.tgz#1bfa6daa8f383348c4af76df3462025a71a68700"
+  dependencies:
+    "@times-components/responsive-styles" "0.6.3"
+    prop-types "15.6.0"
+
+"@times-components/utils@0.6.4":
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.6.4.tgz#788e51612db88837c80d976d4a3f338fb9436859"
+  dependencies:
+    apollo-cache-inmemory "1.1.5"
+    apollo-client "2.2.3"
+    graphql "0.12.3"
+    prop-types "15.6.0"
+    react "16.2.0"
+    react-apollo "2.1.0-rc.3"
 
 "@types/async@2.0.47":
   version "2.0.47"
@@ -649,11 +733,18 @@ apollo-link-dedup@^1.0.0:
   dependencies:
     apollo-link "^1.2.1"
 
-apollo-link-http-common@^0.2.3:
+apollo-link-http-common@^0.2.2, apollo-link-http-common@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.3.tgz#82ae0d4ff0cdd7c5c8826411d9dd7f7d8049ca46"
   dependencies:
     apollo-link "^1.2.1"
+
+apollo-link-http@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.5.2.tgz#cac4202b7f802869f892397f989d002c4ebb3b56"
+  dependencies:
+    apollo-link "^1.2.1"
+    apollo-link-http-common "^0.2.2"
 
 apollo-link-http@1.5.3:
   version "1.5.3"
@@ -1261,6 +1352,10 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
+babel-plugin-add-react-displayname@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-add-react-displayname/-/babel-plugin-add-react-displayname-0.0.5.tgz#339d4cddb7b65fd62d1df9db9fe04de134122bd5"
+
 babel-plugin-check-es2015-constants@^6.22.0, babel-plugin-check-es2015-constants@^6.5.0, babel-plugin-check-es2015-constants@^6.8.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
@@ -1284,6 +1379,15 @@ babel-plugin-external-helpers@^6.18.0:
 babel-plugin-flow-react-proptypes@14.0.3:
   version "14.0.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-14.0.3.tgz#9b3eb6e9e09ee8309752c2f60e3e4032dcaa223d"
+  dependencies:
+    babel-core "^6.25.0"
+    babel-template "^6.25.0"
+    babel-traverse "^6.25.0"
+    babel-types "^6.25.0"
+
+babel-plugin-flow-react-proptypes@22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-22.0.0.tgz#d93ad6007c0ea6e4e90b6437dd446e5d9c2d8cdf"
   dependencies:
     babel-core "^6.25.0"
     babel-template "^6.25.0"
@@ -1380,6 +1484,14 @@ babel-plugin-react-transform@^3.0.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-3.0.0.tgz#402f25137b7bb66e9b54ead75557dfbc7ecaaa74"
   dependencies:
     lodash "^4.6.1"
+
+babel-plugin-styled-components@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.5.1.tgz#31dbeb696d1354d1585e60d66c7905f5e474afcd"
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0-beta.37"
+    babel-types "^6.26.0"
+    stylis "^3.0.0"
 
 babel-plugin-syntax-async-functions@^6.13.0, babel-plugin-syntax-async-functions@^6.5.0, babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -1583,7 +1695,7 @@ babel-plugin-transform-es2015-modules-amd@^6.22.0, babel-plugin-transform-es2015
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-modules-commonjs@6.26.0, babel-plugin-transform-es2015-modules-commonjs@6.x, babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1, babel-plugin-transform-es2015-modules-commonjs@^6.5.0, babel-plugin-transform-es2015-modules-commonjs@^6.8.0:
+babel-plugin-transform-es2015-modules-commonjs@6.x, babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1, babel-plugin-transform-es2015-modules-commonjs@^6.5.0, babel-plugin-transform-es2015-modules-commonjs@^6.8.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-es2015-modules-commonjs/-/babel-plugin-transform-es2015-modules-commonjs-6.26.0.tgz#0d8394029b7dc6abe1a97ef181e00758dd2e5d8a"
   dependencies:
@@ -1949,7 +2061,7 @@ babel-preset-fbjs@^2.1.2, babel-preset-fbjs@^2.1.4:
     babel-plugin-transform-react-display-name "^6.8.0"
     babel-plugin-transform-react-jsx "^6.8.0"
 
-babel-preset-flow@6.23.0, babel-preset-flow@^6.23.0:
+babel-preset-flow@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-preset-flow/-/babel-preset-flow-6.23.0.tgz#e71218887085ae9a24b5be4169affb599816c49d"
   dependencies:
@@ -2071,7 +2183,7 @@ babel-preset-stage-1@^6.24.1:
     babel-plugin-transform-export-extensions "^6.22.0"
     babel-preset-stage-2 "^6.24.1"
 
-babel-preset-stage-2@6.24.1, babel-preset-stage-2@^6.24.1:
+babel-preset-stage-2@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-preset-stage-2/-/babel-preset-stage-2-6.24.1.tgz#d9e2960fb3d71187f0e64eec62bc07767219bdc1"
   dependencies:
@@ -2741,6 +2853,10 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+chance@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/chance/-/chance-1.0.10.tgz#03500b04ad94e778dd2891b09ec73a6ad87b1996"
 
 character-parser@^2.1.1:
   version "2.2.0"
@@ -11559,7 +11675,7 @@ stylis-rule-sheet@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
 
-stylis@^3.5.0:
+stylis@^3.0.0, stylis@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.0.tgz#016fa239663d77f868fef5b67cf201c4b7c701e1"
 
