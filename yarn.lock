@@ -6238,17 +6238,15 @@ icss-utils@^2.1.0:
   dependencies:
     postcss "^6.0.1"
 
-<<<<<<< c08b823d221be1dc4ca260fb765dc31cee0c1b1f
 identity-obj-proxy@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz#94d2bda96084453ef36fbc5aaec37e0f79f1fc14"
   dependencies:
     harmony-reflect "^1.4.6"
-=======
+
 ieee754@1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
->>>>>>> chore: fix deps
 
 ieee754@^1.1.4:
   version "1.1.11"
