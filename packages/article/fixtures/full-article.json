@@ -356,7 +356,31 @@
               "name": "text",
               "attributes": {
                 "value":
-                  "Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. "
+                  "Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at "
+              },
+              "children": []
+            },
+            {
+              "name": "link",
+              "attributes": {
+                "href": "https://www.cam.ac.uk/",
+                "target": "_blank"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "Cambridge University"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  ". She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. "
               },
               "children": []
             }
