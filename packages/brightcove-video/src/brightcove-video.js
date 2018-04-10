@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { View, TouchableWithoutFeedback, NativeModules } from "react-native";
-import PropTypes from "prop-types";
+import {
+  brightcoveVideoDefaultProps,
+  brightcoveVideoPropTypes
+} from "./brightcove-video.proptypes";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
@@ -126,20 +129,7 @@ class BrightcoveVideo extends Component {
   }
 }
 
-BrightcoveVideo.propTypes = {
-  resetOnFinish: PropTypes.bool,
-  directToFullscreen: PropTypes.bool,
-  ...Splash.propTypes,
-  ...Player.propTypes
-};
-
-BrightcoveVideo.defaultProps = Object.assign(
-  {
-    resetOnFinish: false,
-    directToFullscreen: false
-  },
-  Splash.defaultProps,
-  Player.defaultProps
-);
+BrightcoveVideo.propTypes = brightcoveVideoPropTypes;
+BrightcoveVideo.defaultProps = brightcoveVideoDefaultProps;
 
 export default BrightcoveVideo;
