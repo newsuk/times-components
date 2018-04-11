@@ -1,1 +1,3 @@
-export { default as storybookReporter } from "./storybook";
+import storybookReporter from "./storybook";
+
+export default { storybookReporter };
