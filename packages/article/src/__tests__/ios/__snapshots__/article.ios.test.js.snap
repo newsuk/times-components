@@ -5420,7 +5420,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
             "credits": "",
             "crop": Object {
               "ratio": "16:9",
-              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+              "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
             },
             "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
             "title": "",
