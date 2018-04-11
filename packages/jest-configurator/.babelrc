@@ -1,9 +1,8 @@
 {
-  "presets": [
-    "flow"
-  ],
+  "presets": ["react-native"],
   "plugins": [
-    "transform-es2015-modules-commonjs",
-    "transform-object-rest-spread"
+    ["flow-react-proptypes", { "ignoreNodeModules": true }],
+    "styled-components",
+    "add-react-displayname"
   ]
 }

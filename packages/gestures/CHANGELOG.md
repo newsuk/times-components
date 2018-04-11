@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.32"></a>
+## [1.2.32](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.31...@times-components/gestures@1.2.32) (2018-04-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.31"></a>
+## [1.2.31](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.28...@times-components/gestures@1.2.31) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.30"></a>
+## [1.2.30](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.28...@times-components/gestures@1.2.30) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.29"></a>
+## [1.2.29](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.28...@times-components/gestures@1.2.29) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.2.28"></a>
+## [1.2.28](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.27...@times-components/gestures@1.2.28) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
 <a name="1.2.27"></a>
 ## [1.2.27](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.2.26...@times-components/gestures@1.2.27) (2018-04-06)
 

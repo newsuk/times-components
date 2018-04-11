@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "2.1.7",
+  "version": "2.1.14",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -11,18 +11,18 @@
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../",
+    "rootDir": "../..",
     "coverageDirectory": "<rootDir>/packages/brightcove-video/coverage/",
     "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/brightcove-video/src/__tests__/*.test.js"
+      "<rootDir>/packages/brightcove-video/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -47,8 +47,12 @@
     "@storybook/addon-actions": "3.3.15",
     "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.7",
-    "dextrose": "1.7.3",
+    "@times-components/eslint-config-thetimes": "0.4.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
+    "dextrose": "1.7.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
@@ -59,14 +63,12 @@
     "react-test-renderer": "16.3.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.7",
+    "@times-components/styleguide": "0.5.11",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

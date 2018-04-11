@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.3...@times-components/topics@0.3.4) (2018-04-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/topics
+
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.0...@times-components/topics@0.3.3) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/topics
+
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.0...@times-components/topics@0.3.2) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/topics
+
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.0...@times-components/topics@0.3.1) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/topics
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/topics@0.2.10...@times-components/topics@0.3.0) (2018-04-10)
+
+
+### Features
+
+* REPLAT-1720 link target attributes ([#834](https://github.com/newsuk/times-components/issues/834)) ([c74ded9](https://github.com/newsuk/times-components/commit/c74ded9))
+
+
+
+
+<a name="0.2.10"></a>
+## [0.2.10](https://github.com/newsuk/times-components/compare/@times-components/topics@0.2.9...@times-components/topics@0.2.10) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/topics
+
 <a name="0.2.9"></a>
 ## [0.2.9](https://github.com/newsuk/times-components/compare/@times-components/topics@0.2.7...@times-components/topics@0.2.9) (2018-04-06)
 

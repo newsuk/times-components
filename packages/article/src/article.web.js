@@ -1,17 +1,16 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
+import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptype";
+import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
-import LeadAssetComponent from "./article-lead-asset";
+import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
+import getLeadAsset from "./article-lead-asset/get-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
-import getLeadAsset from "./get-lead-asset";
 import Topics from "./topics";
 
 import {
@@ -27,7 +26,7 @@ const adStyle = {
   marginBottom: 0
 };
 
-class ArticlePage extends React.Component {
+class ArticlePage extends Component {
   static renderArticle(
     articleData,
     onRelatedArticlePress,
@@ -136,26 +135,7 @@ class ArticlePage extends React.Component {
   }
 }
 
-ArticlePage.propTypes = {
-  ...articlePropTypes,
-  isLoading: PropTypes.bool,
-  error: PropTypes.shape({
-    graphQLErrors: PropTypes.array,
-    networkError: PropTypes.shape({
-      message: PropTypes.string
-    }),
-    message: PropTypes.string
-  }),
-  adConfig: PropTypes.shape({}).isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired
-};
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
-ArticlePage.defaultProps = {
-  ...articleDefaultProps,
-  isLoading: false,
-  error: null
-};
-
-export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);

@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.1"></a>
+## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/link@0.19.0...@times-components/link@0.19.1) (2018-04-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/link
+
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.16.0...@times-components/link@0.19.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.16.0...@times-components/link@0.18.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.16.0...@times-components/link@0.17.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.15.19...@times-components/link@0.16.0) (2018-04-10)
+
+
+### Features
+
+* REPLAT-1720 link target attributes ([#834](https://github.com/newsuk/times-components/issues/834)) ([c74ded9](https://github.com/newsuk/times-components/commit/c74ded9))
+
+
+
+
+<a name="0.15.19"></a>
+## [0.15.19](https://github.com/newsuk/times-components/compare/@times-components/link@0.15.18...@times-components/link@0.15.19) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/link
+
 <a name="0.15.18"></a>
 ## [0.15.18](https://github.com/newsuk/times-components/compare/@times-components/link@0.15.17...@times-components/link@0.15.18) (2018-04-06)
 

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.5.3...@times-components/pull-quote@0.5.4) (2018-04-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.5.0...@times-components/pull-quote@0.5.3) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.5.0...@times-components/pull-quote@0.5.2) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.5.0...@times-components/pull-quote@0.5.1) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.4.9...@times-components/pull-quote@0.5.0) (2018-04-10)
+
+
+### Features
+
+* REPLAT-1720 link target attributes ([#834](https://github.com/newsuk/times-components/issues/834)) ([c74ded9](https://github.com/newsuk/times-components/commit/c74ded9))
+
+
+
+
+<a name="0.4.9"></a>
+## [0.4.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.4.8...@times-components/pull-quote@0.4.9) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
 <a name="0.4.8"></a>
 ## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.4.7...@times-components/pull-quote@0.4.8) (2018-04-06)
 
