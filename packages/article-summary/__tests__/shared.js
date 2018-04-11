@@ -18,53 +18,7 @@ import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
 
 export default () => {
-  let ast = [];
   const realIntl = Intl;
-
-  beforeAll(() => {
-    ast.push({
-      name: "paragraph",
-      attributes: {},
-      children: [
-        {
-          name: "paragraph",
-          attributes: {
-            value: "Example paragraph 1"
-          },
-          children: []
-        },
-        {
-          name: "paragraph",
-          attributes: {
-            value: "Example paragraph 2"
-          },
-          children: [
-            {
-              name: "paragraph",
-              attributes: {
-                value: "Example nested paragraph"
-              },
-              children: []
-            }
-          ]
-        },
-        {
-          name: "teaser",
-          attributes: {
-            value: "Example teaser"
-          },
-          children: []
-        },
-        {
-          name: "text",
-          attributes: {
-            value: "Example text"
-          },
-          children: []
-        }
-      ]
-    });
-  });
 
   beforeEach(() => {
     global.Intl = {
@@ -72,10 +26,6 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
-  });
-
-  afterAll(() => {
-    ast = null;
   });
 
   afterEach(() => {
@@ -173,6 +123,21 @@ export default () => {
   });
 
   it("should render an ArticleSummaryContent component with a AST", () => {
+    const ast = [
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "Victoria"
+            },
+            children: []
+          }
+        ]
+      }
+    ];
     const tree = renderer.create(<ArticleSummaryContent ast={ast} />).toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -191,7 +156,37 @@ export default () => {
     expect(renderAst()).toEqual([]);
   });
 
-  it("should render ast correctly", () => {
+  it("should render ast with two paragraphs", () => {
+    const ast = [
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value:
+                "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "paragraph",
+        attributes: {},
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value:
+                "Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen."
+            },
+            children: []
+          }
+        ]
+      }
+    ];
     expect(renderAst(ast)).toMatchSnapshot();
   });
 };

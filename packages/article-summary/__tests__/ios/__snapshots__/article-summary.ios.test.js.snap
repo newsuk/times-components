@@ -23,36 +23,7 @@ exports[`Article Summary tests on ios should render an ArticleSummaryContent com
     ellipsizeMode="tail"
   >
     
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-       
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        
-      </Text>
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-       
-      ...
-    </Text>
-    Example text
+    Victoria
     ...
   </Text>
 </Text>
@@ -1464,7 +1435,7 @@ exports[`Article Summary tests on ios should render an article-summary with opin
 </View>
 `;
 
-exports[`Article Summary tests on ios should render ast correctly 1`] = `
+exports[`Article Summary tests on ios should render ast with one paragraph 1`] = `
 Array [
   <Text
     accessible={true}
@@ -1472,36 +1443,71 @@ Array [
     ellipsizeMode="tail"
   >
     
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-      
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-       
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
-        
-      </Text>
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
-       
-      ...
-    </Text>
-    Example text
+    Victoria
+    ...
+  </Text>,
+]
+`;
+
+exports[`Article Summary tests on ios should render ast with one paragraph 2`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    Victoria
+    ...
+  </Text>,
+]
+`;
+
+exports[`Article Summary tests on ios should render ast with one paragraph and nested text 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    Victoria
+    ...
+  </Text>,
+]
+`;
+
+exports[`Article Summary tests on ios should render ast with paragraph 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    Victoria
+    ...
+  </Text>,
+]
+`;
+
+exports[`Article Summary tests on ios should render ast with two paragraphs 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     
+    Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
     ...
   </Text>,
 ]
