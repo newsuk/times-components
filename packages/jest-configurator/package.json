@@ -43,7 +43,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/jest-configurator/src/__tests__/*.test.js"
+      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
     ]
   },
   "dependencies": {

@@ -10,7 +10,7 @@
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
@@ -18,13 +18,13 @@
     "testEnvironment": "jsdom",
     "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
     "collectCoverageFrom": [
-      "**/packages/provider-test-tools/*.js"
+      "**/packages/provider-test-tools/src/*.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider-test-tools/src/__tests__/**.test.js"
+      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
     ]
   },
   "repository": {

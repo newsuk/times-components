@@ -11,18 +11,18 @@
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../",
+    "rootDir": "../..",
     "coverageDirectory": "<rootDir>/packages/brightcove-video/coverage/",
     "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/brightcove-video/src/__tests__/*.test.js"
+      "<rootDir>/packages/brightcove-video/__tests__/*.test.js"
     ]
   },
   "repository": {

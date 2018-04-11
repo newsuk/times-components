@@ -11,7 +11,7 @@
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
@@ -26,7 +26,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/provider/src/__tests__/**.test.js"
+      "<rootDir>/packages/provider/__tests__/**.test.js"
     ]
   },
   "repository": {

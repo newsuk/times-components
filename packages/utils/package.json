@@ -9,9 +9,9 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest --config='./src/__tests__/jest.config.js'",
+    "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist && cp src/schema.json dist"
+    "transpile": "babel src -d dist && cp src/schema.json dist"
   },
   "repository": {
     "type": "git",
