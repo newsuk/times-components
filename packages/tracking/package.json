@@ -1,20 +1,20 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.10.8",
+  "version": "0.10.11",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "flow && eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -35,9 +35,13 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.7",
-    "@times-components/jest-configurator": "0.2.5",
-    "@times-components/tealium": "0.2.17",
+    "@times-components/eslint-config-thetimes": "0.4.0",
+    "@times-components/jest-configurator": "0.5.0",
+    "@times-components/tealium": "0.2.20",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
@@ -54,9 +58,6 @@
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
-    "babel-plugin-add-react-displayname": "0.0.4",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

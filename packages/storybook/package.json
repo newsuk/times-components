@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "0.4.8",
+  "version": "0.7.0",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -8,13 +8,13 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
-    "test": "jest --config='./src/__tests__/jest.config.js'",
-    "test:all": "yarn test --coverage & yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/jest-configurator": "0.2.5",
+    "@times-components/jest-configurator": "0.5.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.6.0",
@@ -38,19 +42,25 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
+    "@storybook/addon-actions": "3.3.15",
     "@storybook/addon-knobs": "3.3.15",
     "@storybook/addons": "3.3.15",
     "@storybook/react-native": "3.3.15",
-    "@times-components/jest-configurator": "0.2.5",
-    "@times-components/utils": "0.6.4",
+    "@times-components/jest-configurator": "0.5.0",
+    "@times-components/utils": "0.6.7",
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.3",
     "apollo-link-http": "1.5.3",
     "graphql": "0.12.3",
     "prop-types": "15.6.0",
-    "react": "16.2.0",
     "react-apollo": "2.1.0-rc.3",
-    "react-native": "0.53.3"
+    "react-test-renderer": "16.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.3"
   },
   "publishConfig": {
     "access": "public"

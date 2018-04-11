@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.11.19",
+  "version": "0.11.22",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -8,14 +8,14 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -36,8 +36,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
-    "@times-components/eslint-config-thetimes": "0.1.7",
-    "@times-components/jest-configurator": "0.2.5",
+    "@times-components/eslint-config-thetimes": "0.4.0",
+    "@times-components/jest-configurator": "0.5.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "dextrose": "1.7.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -48,15 +52,13 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/icons": "0.3.19",
-    "@times-components/styleguide": "0.5.7",
+    "@times-components/icons": "0.6.0",
+    "@times-components/styleguide": "0.5.10",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

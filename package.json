@@ -150,9 +150,5 @@
     "url": "0.11.0",
     "wd": "1.4.1",
     "webpack": "3.3.0"
-  },
-  "dependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1"
   }
 }
