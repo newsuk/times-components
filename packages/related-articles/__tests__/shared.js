@@ -34,7 +34,7 @@ export default () => {
   const realIntl = Intl;
 
   beforeEach(() => {
-    mockDate.set("1/1/2018");
+    mockDate.set(1514764800000, 0);
     global.Intl = {
       DateTimeFormat: () => ({
         resolvedOptions: () => ({ timeZone: "Europe/London" })
