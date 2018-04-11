@@ -361,15 +361,6 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/brightcove-video@2.1.10":
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/@times-components/brightcove-video/-/brightcove-video-2.1.10.tgz#a757748adf3888989e90d65c8e73ff056038b57b"
-  dependencies:
-    "@times-components/styleguide" "0.5.7"
-    prop-types "15.6.0"
-    react-native-svg "5.5.1"
-    svgs "3.2.1"
-
 "@times-components/fructose@3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.2.3.tgz#dd4a4f643aeb1a19c70091d0cdbc01d7ff3987f8"
@@ -397,67 +388,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-"@times-components/jest-configurator@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-0.2.5.tgz#20272a89404315b41b7d931539c8c2ef030e7077"
-  dependencies:
-    enzyme "3.3.0"
-    enzyme-adapter-react-16 "1.1.0"
-    enzyme-to-json "3.3.0"
-    find-node-modules "1.0.4"
-    jest-plugin-context "2.6.0"
-    recursive-readdir-synchronous "0.0.3"
-
-"@times-components/responsive-styles@0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.6.3.tgz#43ef4852b2edd5f98ca59c20b2c3426167f36a77"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "3.2.2"
-
-"@times-components/storybook@0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-0.4.8.tgz#7b867c14d62e2ba6afdffba47297d370ed7c5f5b"
-  dependencies:
-    "@storybook/addon-actions" "3.3.15"
-    "@storybook/addon-knobs" "3.3.15"
-    "@storybook/addons" "3.3.15"
-    "@times-components/jest-configurator" "0.2.5"
-    "@times-components/utils" "0.6.4"
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.3"
-    apollo-link-http "1.5.2"
-    eslint "4.9.0"
-    eslint-config-airbnb "16.1.0"
-    eslint-config-prettier "2.6.0"
-    eslint-plugin-import "2.8.0"
-    eslint-plugin-jsx-a11y "6.0.2"
-    eslint-plugin-react "7.4.0"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo "2.1.0-rc.3"
-    react-dom "16.2.0"
-    react-native "0.53.3"
-    react-test-renderer "16.2.0"
-
-"@times-components/styleguide@0.5.7":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.5.7.tgz#1bfa6daa8f383348c4af76df3462025a71a68700"
-  dependencies:
-    "@times-components/responsive-styles" "0.6.3"
-    prop-types "15.6.0"
-
-"@times-components/utils@0.6.4":
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.6.4.tgz#788e51612db88837c80d976d4a3f338fb9436859"
-  dependencies:
-    apollo-cache-inmemory "1.1.5"
-    apollo-client "2.2.3"
-    graphql "0.12.3"
-    prop-types "15.6.0"
-    react "16.2.0"
-    react-apollo "2.1.0-rc.3"
 
 "@types/async@2.0.47":
   version "2.0.47"
@@ -733,18 +663,11 @@ apollo-link-dedup@^1.0.0:
   dependencies:
     apollo-link "^1.2.1"
 
-apollo-link-http-common@^0.2.2, apollo-link-http-common@^0.2.3:
+apollo-link-http-common@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.3.tgz#82ae0d4ff0cdd7c5c8826411d9dd7f7d8049ca46"
   dependencies:
     apollo-link "^1.2.1"
-
-apollo-link-http@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.5.2.tgz#cac4202b7f802869f892397f989d002c4ebb3b56"
-  dependencies:
-    apollo-link "^1.2.1"
-    apollo-link-http-common "^0.2.2"
 
 apollo-link-http@1.5.3:
   version "1.5.3"
