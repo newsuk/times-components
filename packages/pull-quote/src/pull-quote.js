@@ -16,7 +16,13 @@ const ShowTwitter = twitter => {
   return (
     <View style={styles.twitterContainer}>
       <IconTwitter width={12} height={10} />
-      <TextLink key={url} style={styles.link} url={url} onPress={() => null}>
+      <TextLink
+        key={url}
+        style={styles.link}
+        url={url}
+        onPress={() => null}
+        target="_blank"
+      >
         {twitter}
       </TextLink>
     </View>

@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination on Web renders correctly 1`] = `
-.c3 {
-  display: none;
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -40,19 +46,13 @@ exports[`Pagination on Web renders correctly 1`] = `
   border-top-width: 1px;
 }
 
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c3 {
+  display: none;
 }
 
 @media (min-width:768px) {
-  .c3 {
-    display: inline;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
@@ -71,8 +71,8 @@ exports[`Pagination on Web renders correctly 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c3 {
+    display: inline;
   }
 }
 
@@ -153,8 +153,14 @@ exports[`Pagination on Web renders correctly 1`] = `
 `;
 
 exports[`Pagination on Web renders next link 1`] = `
-.c3 {
-  display: none;
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -192,19 +198,13 @@ exports[`Pagination on Web renders next link 1`] = `
   border-top-width: 1px;
 }
 
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c3 {
+  display: none;
 }
 
 @media (min-width:768px) {
-  .c3 {
-    display: inline;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
@@ -223,8 +223,8 @@ exports[`Pagination on Web renders next link 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c3 {
+    display: inline;
   }
 }
 
@@ -305,8 +305,14 @@ exports[`Pagination on Web renders next link 1`] = `
 `;
 
 exports[`Pagination on Web renders prev and next link 1`] = `
-.c3 {
-  display: none;
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -344,19 +350,13 @@ exports[`Pagination on Web renders prev and next link 1`] = `
   border-top-width: 1px;
 }
 
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c3 {
+  display: none;
 }
 
 @media (min-width:768px) {
-  .c3 {
-    display: inline;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
@@ -375,8 +375,8 @@ exports[`Pagination on Web renders prev and next link 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c3 {
+    display: inline;
   }
 }
 
@@ -506,8 +506,14 @@ exports[`Pagination on Web renders prev and next link 1`] = `
 `;
 
 exports[`Pagination on Web renders prev link 1`] = `
-.c3 {
-  display: none;
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -545,19 +551,13 @@ exports[`Pagination on Web renders prev link 1`] = `
   border-top-width: 1px;
 }
 
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c3 {
+  display: none;
 }
 
 @media (min-width:768px) {
-  .c3 {
-    display: inline;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
@@ -576,8 +576,8 @@ exports[`Pagination on Web renders prev link 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c3 {
+    display: inline;
   }
 }
 
@@ -658,8 +658,14 @@ exports[`Pagination on Web renders prev link 1`] = `
 `;
 
 exports[`Pagination on Web renders results message 1`] = `
-.c3 {
-  display: none;
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -697,19 +703,13 @@ exports[`Pagination on Web renders results message 1`] = `
   border-top-width: 1px;
 }
 
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c3 {
+  display: none;
 }
 
 @media (min-width:768px) {
-  .c3 {
-    display: inline;
+  .c0 {
+    margin-top: 30px;
   }
 }
 
@@ -728,8 +728,8 @@ exports[`Pagination on Web renders results message 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
+  .c3 {
+    display: inline;
   }
 }
 
@@ -814,6 +814,16 @@ exports[`Pagination on Web renders with hidden results 1`] = `
   display: none;
 }
 
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c1 {
   border-style: solid;
   -webkit-align-items: center;
@@ -832,16 +842,6 @@ exports[`Pagination on Web renders with hidden results 1`] = `
   border-bottom-width: 1px;
   border-top-color: #DBDBDB;
   border-top-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 @media (min-width:768px) {

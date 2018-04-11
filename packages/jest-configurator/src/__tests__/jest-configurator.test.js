@@ -27,7 +27,7 @@ describe("Jest Configurator Tests", () => {
     it("should include times-components in transform ignore patterns", () => {
       const config = jestConfigurator("android", dir);
       expect(config.transformIgnorePatterns).toContain(
-        "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
+        "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
       );
     });
 

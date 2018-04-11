@@ -122,7 +122,7 @@
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "detox": "5.8.2",
-    "dextrose": "1.7.3",
+    "dextrose": "1.7.6",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.6.0",
@@ -150,9 +150,5 @@
     "url": "0.11.0",
     "wd": "1.4.1",
     "webpack": "3.3.0"
-  },
-  "dependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1"
   }
 }

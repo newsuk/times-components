@@ -10,6 +10,34 @@ const SourcePropType = Image.propTypes.source;
 
 let index = 0;
 
+const playButtonDimensions = "85px";
+const playButtonBorderWidth = "4px";
+const playButtonBorderColor = "white";
+const styles = `
+.video-js .vjs-big-play-button {
+  width: ${playButtonDimensions};
+  height: ${playButtonDimensions};
+
+  background: transparent !important;
+
+  line-height: 1.65em;
+
+  border-radius: 0;
+  border-style: solid;
+  border-width: ${playButtonBorderWidth};
+  border-color: ${playButtonBorderColor};
+}
+
+.video-js .vjs-big-play-button:before {
+  font-size: 77px;
+  left: -2px;
+}
+
+.video-js .vjs-dock-text {
+  visibility: hidden;
+}
+`;
+
 class BrightcoveVideo extends Component {
   static handlePlayerReady(context) {
     context.setPlayer(this);
@@ -26,6 +54,14 @@ class BrightcoveVideo extends Component {
 
   static appendScript(s) {
     document.body.appendChild(s);
+  }
+
+  static attachStyles() {
+    const styleTag = document.createElement("style");
+    styleTag.type = "text/css";
+    const cssText = document.createTextNode(styles);
+    styleTag.appendChild(cssText);
+    document.head.appendChild(styleTag);
   }
 
   static getScriptUrl(accountId, playerId) {
@@ -88,6 +124,7 @@ class BrightcoveVideo extends Component {
       };
 
       BrightcoveVideo.appendScript(s);
+      BrightcoveVideo.attachStyles();
     }
 
     this.init();

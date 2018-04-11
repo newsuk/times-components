@@ -8,6 +8,9 @@ import getCoveragePaths from "./coverage";
 export type Platform = "android" | "ios" | "web";
 
 const nativeSpecific = (platform: Platform) => ({
+  moduleNameMapper: {
+    "\\.(png)$": "identity-obj-proxy"
+  },
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
@@ -18,13 +21,17 @@ const nativeSpecific = (platform: Platform) => ({
 
 const webSpecific = {
   moduleNameMapper: {
-    "react-native": "react-native-web"
+    "react-native": "react-native-web",
+    "\\.(png)$": "identity-obj-proxy"
   },
   testEnvironment: "jsdom",
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
 const platformIndependentSpecific = {
+  moduleNameMapper: {
+    "\\.(png)$": "identity-obj-proxy"
+  },
   moduleFileExtensions: ["js", "json"]
 };
 
@@ -60,7 +67,7 @@ export default (
     ...platformCode(platform),
     rootDir,
     transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
+      "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
     ],
     coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(

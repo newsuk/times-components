@@ -1,4 +1,4 @@
-import { ratioTextToFloat } from "../strings";
+import { ratioTextToFloat } from "../";
 
 describe("ratioTextToFloat should", () => {
   it("return 1 if no string is given", () => {

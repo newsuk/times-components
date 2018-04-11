@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.16...@times-components/caption@0.14.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.16...@times-components/caption@0.13.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.16...@times-components/caption@0.12.0) (2018-04-10)
+
+
+### Features
+
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
+<a name="0.11.16"></a>
+## [0.11.16](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.15...@times-components/caption@0.11.16) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/caption
+
+<a name="0.11.15"></a>
+## [0.11.15](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.14...@times-components/caption@0.11.15) (2018-04-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/caption
+
+<a name="0.11.14"></a>
+## [0.11.14](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.13...@times-components/caption@0.11.14) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/caption
+
+<a name="0.11.13"></a>
+## [0.11.13](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.12...@times-components/caption@0.11.13) (2018-04-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/caption
+
 <a name="0.11.12"></a>
 ## [0.11.12](https://github.com/newsuk/times-components/compare/@times-components/caption@0.11.11...@times-components/caption@0.11.12) (2018-04-06)
 

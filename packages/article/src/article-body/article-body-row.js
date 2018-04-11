@@ -1,11 +1,21 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import { spacing } from "@times-components/styleguide";
+import BrightcoveVideo from "@times-components/brightcove-video";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
+import AspectRatioContainer from "./media-aspect-ratio";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
+import InsetCaption from "./inset-caption";
+
+const primaryContainer = {
+  width: "100%",
+  flexDirection: "column",
+  paddingBottom: spacing(5)
+};
 
 const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
   renderTrees([data], {
@@ -57,6 +67,32 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         >
           {children}
         </ArticleLink>
+      );
+    },
+    video(
+      key,
+      {
+        brightcovePolicyKey,
+        brightcoveVideoId,
+        brightcoveAccountId,
+        posterimageUrl,
+        caption
+      }
+    ) {
+      return (
+        <View key={key} style={primaryContainer}>
+          <AspectRatioContainer aspectRatio="16:9">
+            <BrightcoveVideo
+              width="100%"
+              height="100%"
+              policyKey={brightcovePolicyKey}
+              videoId={brightcoveVideoId}
+              accountId={brightcoveAccountId}
+              poster={{ uri: posterimageUrl }}
+            />
+          </AspectRatioContainer>
+          <InsetCaption caption={caption} />
+        </View>
       );
     }
   });
