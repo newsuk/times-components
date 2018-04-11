@@ -24,7 +24,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.0",
-    "@times-components/jest-configurator": "0.5.0",
+    "@times-components/jest-configurator": "0.5.1",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -35,7 +35,7 @@
     "react-native-web": "0.3.2"
   },
   "dependencies": {
-    "@times-components/tealium": "0.2.20"
+    "@times-components/tealium": "0.2.21"
   },
   "peerDependencies": {
     "babel-preset-env": "1.6.1",
