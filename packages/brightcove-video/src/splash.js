@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, StyleSheet } from "react-native";
+import { addMissingProtocol } from "@times-components/utils";
 import PlayIcon from "./play-icon";
-
-const SourcePropType = Image.propTypes.source;
 
 const styles = StyleSheet.create({
   overlay: {
@@ -16,6 +15,10 @@ const styles = StyleSheet.create({
   }
 });
 
+const addMissingProtocolToPoster = poster => ({
+  uri: addMissingProtocol(poster.uri)
+});
+
 const Splash = ({ poster, width, height, playIcon }) => (
   <View
     style={{ width, height }}
@@ -24,7 +27,7 @@ const Splash = ({ poster, width, height, playIcon }) => (
   >
     {poster ? (
       <Image
-        source={poster}
+        source={addMissingProtocolToPoster(poster)}
         style={{
           width,
           height
@@ -51,7 +54,7 @@ Splash.defaultProps = {
 };
 
 Splash.propTypes = {
-  poster: SourcePropType,
+  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
   playIcon: PropTypes.node,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
