@@ -8,7 +8,6 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile",
     "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
