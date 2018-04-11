@@ -49,7 +49,8 @@
     "flow-bin": "0.63.1",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react-test-renderer": "16.2.0"
+    "raf": "3.4.0",
+    "react-test-renderer": "16.3.0"
   },
   "dependencies": {
     "hoist-non-react-statics": "2.3.1",
