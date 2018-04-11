@@ -2,7 +2,8 @@ import React from "react";
 import renderer from "react-test-renderer";
 import ArticleSummary, {
   ArticleSummaryContent,
-  summarise
+  ArticleSummaryHeadline,
+  renderAst
 } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 import opinionBylineFixture from "../fixtures/opinion-byline";
@@ -17,7 +18,53 @@ import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
 
 export default () => {
+  let ast = [];
   const realIntl = Intl;
+
+  beforeAll(() => {
+    ast.push({
+      name: "paragraph",
+      attributes: {},
+      children: [
+        {
+          name: "paragraph",
+          attributes: {
+            value: "Example paragraph 1"
+          },
+          children: []
+        },
+        {
+          name: "paragraph",
+          attributes: {
+            value: "Example paragraph 2"
+          },
+          children: [
+            {
+              name: "paragraph",
+              attributes: {
+                value: "Example nested paragraph"
+              },
+              children: []
+            }
+          ]
+        },
+        {
+          name: "teaser",
+          attributes: {
+            value: "Example teaser"
+          },
+          children: []
+        },
+        {
+          name: "text",
+          attributes: {
+            value: "Example text"
+          },
+          children: []
+        }
+      ]
+    });
+  });
 
   beforeEach(() => {
     global.Intl = {
@@ -27,11 +74,15 @@ export default () => {
     };
   });
 
+  afterAll(() => {
+    ast = null;
+  });
+
   afterEach(() => {
     global.Intl = realIntl;
   });
 
-  it("renders an article-summary component with a single paragraph", () => {
+  it("should render an article-summary component with a single paragraph", () => {
     const tree = renderer
       .create(<ArticleSummary {...defaultFixture} />)
       .toJSON();
@@ -39,7 +90,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary with opinion byline", () => {
+  it("should render an article-summary with opinion byline", () => {
     const tree = renderer
       .create(<ArticleSummary {...opinionBylineFixture} />)
       .toJSON();
@@ -47,7 +98,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with multiple paragraphs", () => {
+  it("should render an article-summary component with multiple paragraphs", () => {
     const tree = renderer
       .create(<ArticleSummary {...articleMultiFixture} />)
       .toJSON();
@@ -55,7 +106,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with content including line breaks", () => {
+  it("should render an article-summary component with content including line breaks", () => {
     const tree = renderer
       .create(<ArticleSummary {...reviewFixture} />)
       .toJSON();
@@ -63,13 +114,13 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with headline and blank content", () => {
+  it("should render an article-summary component with headline and blank content", () => {
     const tree = renderer.create(<ArticleSummary {...blankFixture} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with headline and no content", () => {
+  it("should render an article-summary component with headline and no content", () => {
     const tree = renderer
       .create(<ArticleSummary {...noContentFixture} />)
       .toJSON();
@@ -77,7 +128,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with empty content at the end trimmed", () => {
+  it("should render an article-summary component with empty content at the end trimmed", () => {
     const tree = renderer
       .create(<ArticleSummary {...emptyParagraphFixture} />)
       .toJSON();
@@ -85,7 +136,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with no byline", () => {
+  it("should render an article-summary component with no byline", () => {
     const tree = renderer
       .create(<ArticleSummary {...noBylineFixture} />)
       .toJSON();
@@ -93,7 +144,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with no label", () => {
+  it("should render an article-summary component with no label", () => {
     const tree = renderer
       .create(<ArticleSummary {...noLabelFixture} />)
       .toJSON();
@@ -101,13 +152,13 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with no headline", () => {
+  it("should render an article-summary component with no headline", () => {
     const tree = renderer.create(<ArticleSummary {...noHeadline} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an article-summary component with no date publication", () => {
+  it("should render an article-summary component with no date publication", () => {
     const tree = renderer
       .create(<ArticleSummary {...noDatePublication} />)
       .toJSON();
@@ -115,17 +166,32 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders an ArticleSummaryContent component with a blank AST", () => {
+  it("should render an ArticleSummaryContent component with a blank AST", () => {
     const tree = renderer.create(<ArticleSummaryContent ast={[]} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("summarise should return the value provided if its an empty array", () => {
-    expect(summarise([])).toEqual([]);
+  it("should render an ArticleSummaryContent component with a AST", () => {
+    const tree = renderer.create(<ArticleSummaryContent ast={ast} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
   });
 
-  it("summarise should return [] if it has no parameters", () => {
-    expect(summarise()).toEqual([]);
+  it("should render an ArticleSummaryHeadline component with a blank AST", () => {
+    const tree = renderer
+      .create(<ArticleSummaryHeadline headline="Example headline" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should handle rendering empty or undefined ast", () => {
+    expect(renderAst([])).toEqual([]);
+    expect(renderAst()).toEqual([]);
+  });
+
+  it("should render ast correctly", () => {
+    expect(renderAst(ast)).toMatchSnapshot();
   });
 };

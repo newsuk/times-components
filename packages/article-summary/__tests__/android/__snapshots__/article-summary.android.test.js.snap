@@ -1,8 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Summary test on Android renders an ArticleSummaryContent component with a blank AST 1`] = `null`;
+exports[`Article Summary tests on Android should render an ArticleSummaryContent component with a AST 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#696969",
+      "flexWrap": "wrap",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        
+      </Text>
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      ...
+    </Text>
+    Example text
+    ...
+  </Text>
+</Text>
+`;
 
-exports[`Article Summary test on Android renders an article-summary component with a single paragraph 1`] = `
+exports[`Article Summary tests on Android should render an ArticleSummaryContent component with a blank AST 1`] = `null`;
+
+exports[`Article Summary tests on Android should render an ArticleSummaryHeadline component with a blank AST 1`] = `
+<Text
+  accessibilityRole="heading"
+  accessible={true}
+  allowFontScaling={true}
+  aria-level="3"
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontWeight": "400",
+        "marginBottom": 5,
+      },
+      Object {
+        "fontSize": 22,
+        "lineHeight": 22,
+      },
+      Object {},
+    ]
+  }
+>
+  Example headline
+</Text>
+`;
+
+exports[`Article Summary tests on Android should render an article-summary component with a single paragraph 1`] = `
 <View>
   <View
     style={
@@ -153,7 +239,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with content including line breaks 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with content including line breaks 1`] = `
 <View>
   <View
     style={
@@ -378,7 +464,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with empty content at the end trimmed 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with empty content at the end trimmed 1`] = `
 <View>
   <View
     style={
@@ -544,7 +630,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with headline and blank content 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with headline and blank content 1`] = `
 <View>
   <View
     style={
@@ -622,7 +708,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with headline and no content 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with headline and no content 1`] = `
 <View>
   <View
     style={
@@ -700,7 +786,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with multiple paragraphs 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with multiple paragraphs 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -829,7 +915,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with no byline 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with no byline 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -903,7 +989,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with no date publication 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with no date publication 1`] = `
 <View>
   <View
     style={
@@ -1036,7 +1122,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with no headline 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with no headline 1`] = `
 <View>
   <View
     style={
@@ -1115,7 +1201,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary component with no label 1`] = `
+exports[`Article Summary tests on Android should render an article-summary component with no label 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -1236,7 +1322,7 @@ exports[`Article Summary test on Android renders an article-summary component wi
 </View>
 `;
 
-exports[`Article Summary test on Android renders an article-summary with opinion byline 1`] = `
+exports[`Article Summary tests on Android should render an article-summary with opinion byline 1`] = `
 <View>
   <View
     style={
@@ -1384,4 +1470,47 @@ exports[`Article Summary test on Android renders an article-summary with opinion
     Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
+`;
+
+exports[`Article Summary tests on Android should render ast correctly 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        
+      </Text>
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      ...
+    </Text>
+    Example text
+    ...
+  </Text>,
+]
 `;
