@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.13"></a>
+## [0.0.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@0.0.12...@times-components/related-articles@0.0.13) (2018-04-11)
+
+
+### Bug Fixes
+
+* updated path to cutout image used in opinion slice ([#835](https://github.com/newsuk/times-components/issues/835)) ([e1db56b](https://github.com/newsuk/times-components/commit/e1db56b))
+
+
+
+
 <a name="0.0.12"></a>
 ## [0.0.12](https://github.com/newsuk/times-components/compare/@times-components/related-articles@0.0.9...@times-components/related-articles@0.0.12) (2018-04-10)
 
