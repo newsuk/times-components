@@ -1,20 +1,20 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.22.11",
+  "version": "0.22.12",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./src/__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./src/__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./src/__tests__/web/jest.config.js'",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "transpile": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.15",
     "@times-components/eslint-config-thetimes": "0.4.0",
-    "@times-components/jest-configurator": "0.5.0",
+    "@times-components/jest-configurator": "0.5.1",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -52,12 +52,12 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-byline": "0.14.14",
-    "@times-components/article-label": "0.12.0",
-    "@times-components/date-publication": "0.14.10",
-    "@times-components/markup": "0.25.17",
-    "@times-components/responsive-styles": "0.6.6",
-    "@times-components/styleguide": "0.5.10",
+    "@times-components/article-byline": "0.14.15",
+    "@times-components/article-label": "0.12.1",
+    "@times-components/date-publication": "0.14.11",
+    "@times-components/markup": "0.25.18",
+    "@times-components/responsive-styles": "0.6.7",
+    "@times-components/styleguide": "0.5.11",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

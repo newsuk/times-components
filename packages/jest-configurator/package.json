@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",
@@ -43,7 +43,7 @@
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/jest-configurator/src/__tests__/*.test.js"
+      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
     ]
   },
   "dependencies": {
