@@ -2126,7 +2126,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
                         }
                       }
                       style={
@@ -2158,7 +2158,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         onLoad={[Function]}
                         source={
                           Object {
-                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
                           }
                         }
                         style={
@@ -2752,7 +2752,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
                         }
                       }
                       style={
@@ -2784,7 +2784,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         onLoad={[Function]}
                         source={
                           Object {
-                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
                           }
                         }
                         style={
@@ -3572,7 +3572,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&preview=true",
                         }
                       }
                       style={
@@ -3604,7 +3604,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         onLoad={[Function]}
                         source={
                           Object {
-                            "uri": "http://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
+                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996",
                           }
                         }
                         style={

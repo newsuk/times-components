@@ -1,4 +1,8 @@
 {
-  "presets": ["env", "stage-2"],
-  "plugins": ["transform-runtime"]
+  "presets": ["react-native"],
+  "plugins": [
+    ["flow-react-proptypes", { "ignoreNodeModules": true }],
+    "styled-components",
+    "add-react-displayname"
+  ]
 }

@@ -6,9 +6,12 @@ exports[`AuthorHead test on web renders 1`] = `
   animation: eMLfYp 0.3s ease-in-out;
 }
 
-.c4 {
-  padding-left: 10px;
-  padding-right: 10px;
+.c1 {
+  padding-top: 30px;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c3 {
@@ -17,12 +20,27 @@ exports[`AuthorHead test on web renders 1`] = `
   color: #1D1D1B;
 }
 
-.c2 {
-  width: 100px;
+.c4 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.c1 {
-  padding-top: 30px;
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 116px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+  }
 }
 
 @media (min-width:768px) {
@@ -36,24 +54,6 @@ exports[`AuthorHead test on web renders 1`] = `
 @media (min-width:1320px) {
   .c4 {
     max-width: 760px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 45px;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 116px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 60px;
   }
 }
 
@@ -114,9 +114,12 @@ exports[`AuthorHead test on web renders with data 1`] = `
   animation: eMLfYp 0.3s ease-in-out;
 }
 
-.c4 {
-  padding-left: 10px;
-  padding-right: 10px;
+.c1 {
+  padding-top: 30px;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c3 {
@@ -125,12 +128,27 @@ exports[`AuthorHead test on web renders with data 1`] = `
   color: #1D1D1B;
 }
 
-.c2 {
-  width: 100px;
+.c4 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.c1 {
-  padding-top: 30px;
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 116px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+  }
 }
 
 @media (min-width:768px) {
@@ -144,24 +162,6 @@ exports[`AuthorHead test on web renders with data 1`] = `
 @media (min-width:1320px) {
   .c4 {
     max-width: 760px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 45px;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 116px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 60px;
   }
 }
 
@@ -307,9 +307,12 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
   animation: eMLfYp 0.3s ease-in-out;
 }
 
-.c4 {
-  padding-left: 10px;
-  padding-right: 10px;
+.c1 {
+  padding-top: 30px;
+}
+
+.c2 {
+  width: 100px;
 }
 
 .c3 {
@@ -318,12 +321,27 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
   color: #1D1D1B;
 }
 
-.c2 {
-  width: 100px;
+.c4 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.c1 {
-  padding-top: 30px;
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 116px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 45px;
+  }
 }
 
 @media (min-width:768px) {
@@ -337,24 +355,6 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
 @media (min-width:1320px) {
   .c4 {
     max-width: 760px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 45px;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 116px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 60px;
   }
 }
 

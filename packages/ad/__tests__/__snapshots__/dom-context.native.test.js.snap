@@ -36,7 +36,7 @@ exports[`DOMContext Native renders correctly 1`] = `
             (mockErrorHandler)(window);
           </script>
           <script>
-          (function init() {})({
+          (function init(){})({
             el: document.getElementsByTagName(\\"div\\")[0],
             eventCallback: eventCallback,
             data: {\\"foo\\":\\"bar\\"},
