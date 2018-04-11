@@ -6,3 +6,4 @@ fixtures
 coverage
 android/**/test
 android/**/androidTest
+.*
