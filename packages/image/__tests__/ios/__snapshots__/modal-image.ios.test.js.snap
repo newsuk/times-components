@@ -145,7 +145,7 @@ exports[`ModalImage test on ios renders correctly 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "http://example.com/image.jpg",
+                      "uri": "http://example.com/image.jpg&resize=1440",
                     }
                   }
                   style={
@@ -266,7 +266,7 @@ exports[`ModalImage test on ios renders correctly 1`] = `
           onLoad={[Function]}
           source={
             Object {
-              "uri": "http://example.com/image.jpg",
+              "uri": "http://example.com/image.jpg&resize=1440",
             }
           }
           style={

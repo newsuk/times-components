@@ -21,7 +21,7 @@ exports[`Image test on ios allows styling 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg",
+          "uri": "http://example.com/image.jpg&resize=1440",
         }
       }
       style={
@@ -115,7 +115,7 @@ exports[`Image test on ios prepends https schema 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "https://example.com/image.jpg",
+          "uri": "https://example.com/image.jpg&resize=1440",
         }
       }
       style={
@@ -209,7 +209,7 @@ exports[`Image test on ios renders correctly 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg",
+          "uri": "http://example.com/image.jpg&resize=1440",
         }
       }
       style={

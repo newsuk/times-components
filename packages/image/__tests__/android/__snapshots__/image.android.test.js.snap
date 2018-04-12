@@ -21,7 +21,7 @@ exports[`Image test on android allows styling 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg&preview=true",
+          "uri": "http://example.com/image.jpg&resize=1440",
         }
       }
       style={
@@ -42,89 +42,56 @@ exports[`Image test on android allows styling 1`] = `
       }
     />
     <View
+      onLayout={[Function]}
       style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          null,
+        ]
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
-        }
-      />
       <View
-        onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
-        <View
-          style={
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
             Object {
-              "flex": 1,
+              "x": -0.09302964577578221,
+              "y": 0.11488204504197774,
             }
           }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
             }
-            end={
+          }
+          style={
+            Array [
               Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
-            }
-          />
-        </View>
+                "flex": 1,
+              },
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -148,7 +115,7 @@ exports[`Image test on android prepends https schema 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "https://example.com/image.jpg&preview=true",
+          "uri": "https://example.com/image.jpg&resize=1440",
         }
       }
       style={
@@ -169,89 +136,56 @@ exports[`Image test on android prepends https schema 1`] = `
       }
     />
     <View
+      onLayout={[Function]}
       style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          null,
+        ]
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "https://example.com/image.jpg",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
-        }
-      />
       <View
-        onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
-        <View
-          style={
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
             Object {
-              "flex": 1,
+              "x": -0.09302964577578221,
+              "y": 0.11488204504197774,
             }
           }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
             }
-            end={
+          }
+          style={
+            Array [
               Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
-            }
-          />
-        </View>
+                "flex": 1,
+              },
+            ]
+          }
+        />
       </View>
     </View>
   </View>
@@ -275,7 +209,7 @@ exports[`Image test on android renders correctly 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg&preview=true",
+          "uri": "http://example.com/image.jpg&resize=1440",
         }
       }
       style={
@@ -296,89 +230,56 @@ exports[`Image test on android renders correctly 1`] = `
       }
     />
     <View
+      onLayout={[Function]}
       style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          null,
+        ]
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
-        }
-      />
       <View
-        onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
-        <View
-          style={
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
             Object {
-              "flex": 1,
+              "x": -0.09302964577578221,
+              "y": 0.11488204504197774,
             }
           }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
             }
-            end={
+          }
+          style={
+            Array [
               Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
-            }
-          />
-        </View>
+                "flex": 1,
+              },
+            ]
+          }
+        />
       </View>
     </View>
   </View>
