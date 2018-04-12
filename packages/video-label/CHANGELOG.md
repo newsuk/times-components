@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.29"></a>
+## [0.1.29](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.28...@times-components/video-label@0.1.29) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
 <a name="0.1.28"></a>
 ## [0.1.28](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.27...@times-components/video-label@0.1.28) (2018-04-12)
 

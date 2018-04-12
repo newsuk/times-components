@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.24"></a>
+## [0.4.24](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.4.23...@times-components/watermark@0.4.24) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
 <a name="0.4.23"></a>
 ## [0.4.23](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.4.22...@times-components/watermark@0.4.23) (2018-04-12)
 

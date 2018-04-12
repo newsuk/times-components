@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.19"></a>
+## [0.17.19](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.17.18...@times-components/pagination@0.17.19) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
 <a name="0.17.18"></a>
 ## [0.17.18](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.17.17...@times-components/pagination@0.17.18) (2018-04-12)
 
