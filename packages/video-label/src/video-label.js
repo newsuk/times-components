@@ -5,17 +5,14 @@ import PropTypes from "prop-types";
 import styles from "./style";
 import beautifyTitle from "./beautify-title";
 
-const VideoLabel = ({ title, color }) => {
-  const displayTitle = title || "VIDEO";
-  return (
-    <View style={{ flexDirection: "row", alignItems: "center" }}>
-      <IconVideo height={styles.title.fontSize} fillColor={color} />
-      <Text style={[styles.title, { color, marginLeft: 5 }]}>
-        {beautifyTitle(displayTitle)}
-      </Text>
-    </View>
-  );
-};
+const VideoLabel = ({ title, color }) => (
+  <View style={{ flexDirection: "row", alignItems: "center" }}>
+    <IconVideo height={styles.title.fontSize} fillColor={color} />
+    <Text style={[styles.title, { color, marginLeft: 5 }]}>
+      {beautifyTitle(title || "VIDEO")}
+    </Text>
+  </View>
+);
 
 VideoLabel.propTypes = {
   title: PropTypes.string,
