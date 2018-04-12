@@ -1,15 +1,15 @@
 import React from "react";
-import { Dimensions, FlatList, StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
+import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";
-import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
@@ -31,10 +31,8 @@ class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
 
-    const { width } = Dimensions.get("window");
-
     this.state = {
-      width: normaliseWidth(width)
+      width: normaliseWidth(screenWidthInPixels())
     };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }

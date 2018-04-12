@@ -1,7 +1,7 @@
 import React from "react";
-import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { Splash } from "@times-components/brightcove-video";
+import { screenWidth } from "@times-components/utils";
 import Button from "@times-components/link";
 import cropPropTypes from "./crop-proptypes";
 
@@ -15,7 +15,7 @@ const ArticleLeadAssetVideo = ({
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  const { width } = Dimensions.get("window");
+  const { width } = screenWidth();
   const height = width / aspectRatio;
 
   return (
