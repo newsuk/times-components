@@ -27,6 +27,8 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
+const videoDisplayType = "primay";
+
 const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
@@ -65,7 +67,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         caption
       }
     ) {
-      const MediaWrapper = responsiveDisplayWrapper(display);
+      const MediaWrapper = responsiveDisplayWrapper(videoDisplayType);
       return (
         <MediaWrapper key={key}>
           <AspectRatioContainer aspectRatio="16:9">
