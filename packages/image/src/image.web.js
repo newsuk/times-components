@@ -22,12 +22,14 @@ const TimesImage = ({ uri, aspectRatio, style }) => {
     }
   };
 
-  return (
-    <View style={[imageStyles.wrapper, style]}>
+  const boundedImg = (
+    <div style={imageStyles.wrapper}>
       <img alt="" src={uri} style={imageStyles.image} />
       <Placeholder style={[styles.placeholder, imageStyles.placeholder]} />
-    </View>
+    </div>
   );
+
+  return style ? <View style={style}>{boundedImg}</View> : boundedImg;
 };
 
 TimesImage.propTypes = propTypes;
