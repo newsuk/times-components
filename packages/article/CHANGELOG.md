@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.65.0"></a>
+# [0.65.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.8...@times-components/article@0.65.0) (2018-04-12)
+
+
+### Features
+
+* Support typed links from tpa ([#845](https://github.com/newsuk/times-components/issues/845)) ([78f57b3](https://github.com/newsuk/times-components/commit/78f57b3))
+
+
+
+
 <a name="0.64.8"></a>
 ## [0.64.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.7...@times-components/article@0.64.8) (2018-04-12)
 
