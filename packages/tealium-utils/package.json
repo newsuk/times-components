@@ -1,16 +1,15 @@
 {
-  "name": "@times-components/tealium",
-  "version": "0.2.22",
-  "description": "React component for tealium reporter",
+  "name": "@times-components/tealium-utils",
+  "version": "0.0.1",
+  "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src -d dist"
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,7 @@
     "@storybook/addon-actions": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.0",
     "@times-components/jest-configurator": "0.5.1",
-    "@times-components/utils": "0.6.9",
+    "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -34,6 +33,9 @@
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react-native-web": "0.3.2"
+  },
+  "dependencies": {
+    "@times-components/tealium": "0.2.21"
   },
   "peerDependencies": {
     "react": ">=16",
