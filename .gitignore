@@ -68,6 +68,7 @@ fructose/components.js
 fructose/components.test.js
 
 dextrose/snappy/**
+*.dextrose.tmp.js
 
 # developer editor preferences
 .vscode

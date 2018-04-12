@@ -50,7 +50,7 @@
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.53.3",
+    "react-native": "0.54.2",
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
@@ -60,9 +60,9 @@
     "react-native-device-info": "0.13.0"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "publishConfig": {
