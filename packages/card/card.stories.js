@@ -63,6 +63,19 @@ storiesOf("Composed/Card", module)
       </Card>
     </CardWrapper>
   ))
+  .add("Default - with placeholder", () => (
+    <CardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        image={null}
+        imageContainerClass="exampleCardImage"
+        showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </CardWrapper>
+  ))
   .add("Default - no image", () => (
     <CardWrapper>
       <Card
@@ -80,6 +93,20 @@ storiesOf("Composed/Card", module)
       <Card
         {...cardProps}
         contentContainerClass="exampleCardContent"
+        imageContainerClass="exampleCardImage"
+        isReversed
+        showImage
+      >
+        <View style={childStyle} />
+      </Card>
+    </ReversedCardWrapper>
+  ))
+  .add("Default - reversed with placeholder", () => (
+    <ReversedCardWrapper>
+      <Card
+        {...cardProps}
+        contentContainerClass="exampleCardContent"
+        image={null}
         imageContainerClass="exampleCardImage"
         isReversed
         showImage

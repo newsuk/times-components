@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { decorateAction } from "@storybook/addon-actions";
 import { MockedProvider } from "@times-components/utils";
-import { storybookReporter } from "@times-components/tealium";
+import storybookReporter from "@times-components/tealium-utils";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { AuthorProfileProvider } from "@times-components/provider";
