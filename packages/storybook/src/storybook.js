@@ -12,7 +12,7 @@ const {
   WhiteBgColorDecorator
 } = decorators;
 
-const showcaseConverter = showcaseToStoryBook(storiesOf, knobs, actions);
+const showcaseConverter = showcaseToStoryBook(storiesOf, { ...knobs, select }, actions);
 
 export {
   CenteredDecorator,
