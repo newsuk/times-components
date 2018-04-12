@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.22.23",
+  "version": "0.22.24",
   "main": "dist/author-head",
   "dev": "src/author-head",
   "scripts": {
@@ -50,8 +50,8 @@
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.0",
     "@times-components/jest-configurator": "0.5.1",
-    "@times-components/storybook": "0.7.1",
-    "@times-components/tealium": "0.2.21",
+    "@times-components/storybook": "0.7.2",
+    "@times-components/tealium": "0.2.22",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -70,13 +70,13 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/icons": "0.6.1",
-    "@times-components/image": "1.15.18",
-    "@times-components/link": "0.19.1",
-    "@times-components/markup": "0.25.18",
-    "@times-components/responsive-styles": "0.6.7",
-    "@times-components/styleguide": "0.5.11",
-    "@times-components/tracking": "0.10.12",
+    "@times-components/icons": "0.6.2",
+    "@times-components/image": "1.15.19",
+    "@times-components/link": "0.19.2",
+    "@times-components/markup": "0.25.19",
+    "@times-components/responsive-styles": "0.6.8",
+    "@times-components/styleguide": "0.5.12",
+    "@times-components/tracking": "0.10.13",
     "prop-types": "15.6.0",
     "styled-components": "3.2.2"
   },

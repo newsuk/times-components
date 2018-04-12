@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -55,14 +55,14 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.22.12",
-    "@times-components/card": "0.25.16",
-    "@times-components/link": "0.19.1",
-    "@times-components/markup": "0.25.18",
-    "@times-components/slice": "0.17.11",
-    "@times-components/styleguide": "0.5.11",
-    "@times-components/tealium": "0.2.21",
-    "@times-components/tracking": "0.10.12",
+    "@times-components/article-summary": "0.22.13",
+    "@times-components/card": "0.25.17",
+    "@times-components/link": "0.19.2",
+    "@times-components/markup": "0.25.19",
+    "@times-components/slice": "0.17.12",
+    "@times-components/styleguide": "0.5.12",
+    "@times-components/tealium": "0.2.22",
+    "@times-components/tracking": "0.10.13",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-styles",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "dist/responsive-styles",
   "dev": "src/responsive-styles",

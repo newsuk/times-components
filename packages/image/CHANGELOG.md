@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.15.19"></a>
+## [1.15.19](https://github.com/newsuk/times-components/compare/@times-components/image@1.15.18...@times-components/image@1.15.19) (2018-04-12)
+
+
+### Bug Fixes
+
+* add protocol to splash REPLAT-1677 ([#837](https://github.com/newsuk/times-components/issues/837)) ([109f0f5](https://github.com/newsuk/times-components/commit/109f0f5))
+
+
+
+
 <a name="1.15.18"></a>
 ## [1.15.18](https://github.com/newsuk/times-components/compare/@times-components/image@1.15.17...@times-components/image@1.15.18) (2018-04-11)
 
