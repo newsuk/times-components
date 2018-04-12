@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.6...@times-components/topics@0.4.0) (2018-04-12)
+
+
+### Features
+
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+
+
+
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/topics@0.3.5...@times-components/topics@0.3.6) (2018-04-12)
 
