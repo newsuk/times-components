@@ -121,7 +121,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "10. Render a loading component with no image"
+      "10. Renders a loading component with no image"
     );
   });
 
@@ -133,7 +133,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "11. Render a reversed loading component"
+      "11. Renders a reversed loading component"
     );
   });
 
@@ -145,7 +145,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "12. Render a reversed loading component with no image"
+      "12. Renders a reversed loading component with no image"
     );
   });
 

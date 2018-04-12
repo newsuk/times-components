@@ -504,7 +504,7 @@ exports[`9. Renders a loading component 1`] = `
 </View>
 `;
 
-exports[`10. Render a loading component with no image 1`] = `
+exports[`10. Renders a loading component with no image 1`] = `
 <View
   style={
     Object {
@@ -582,7 +582,7 @@ exports[`10. Render a loading component with no image 1`] = `
 </View>
 `;
 
-exports[`11. Render a reversed loading component 1`] = `
+exports[`11. Renders a reversed loading component 1`] = `
 <View
   style={
     Object {
@@ -683,7 +683,7 @@ exports[`11. Render a reversed loading component 1`] = `
 </View>
 `;
 
-exports[`12. Render a reversed loading component with no image 1`] = `
+exports[`12. Renders a reversed loading component with no image 1`] = `
 <View
   style={
     Object {
