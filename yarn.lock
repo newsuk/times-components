@@ -387,10 +387,6 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/tealium@0.2.21":
-  version "0.2.21"
-  resolved "https://registry.yarnpkg.com/@times-components/tealium/-/tealium-0.2.21.tgz#57e4ff5e6f8a8be0bf743e0c55b2f788bf3cfec3"
-
 "@types/async@2.0.47":
   version "2.0.47"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"
