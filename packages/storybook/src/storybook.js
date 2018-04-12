@@ -3,6 +3,7 @@ import * as knobs from "@storybook/addon-knobs/react";
 import * as actions from "@storybook/addon-actions";
 import * as decorators from "./decorators";
 import showcaseToStoryBook from "./showcase-to-storybook";
+import select from "./select-shim";
 
 const {
   CenteredDecorator,
@@ -18,5 +19,6 @@ export {
   BarSpacingDecorator,
   LateralSpacingDecorator,
   WhiteBgColorDecorator,
+  select,
   showcaseConverter
 };

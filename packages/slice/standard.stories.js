@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { select } from "@storybook/addon-knobs/react";
+import { select } from "@times-components/storybook";
 import { storiesOf } from "@storybook/react-native";
 import StandardSlice from "./src/templates/standard";
 
