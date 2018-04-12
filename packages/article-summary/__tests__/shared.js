@@ -143,20 +143,7 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render an ArticleSummaryHeadline component with a blank AST", () => {
-    const tree = renderer
-      .create(<ArticleSummaryHeadline headline="Example headline" />)
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should handle rendering empty or undefined ast", () => {
-    expect(renderAst([])).toEqual([]);
-    expect(renderAst()).toEqual([]);
-  });
-
-  it("should render ast with two paragraphs", () => {
+  it("should render an ArticleSummaryContent component with two paragraphs", () => {
     const ast = [
       {
         name: "paragraph",
@@ -187,6 +174,21 @@ export default () => {
         ]
       }
     ];
-    expect(renderAst(ast)).toMatchSnapshot();
+    const tree = renderer.create(<ArticleSummaryContent ast={ast} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render an ArticleSummaryHeadline component with a blank AST", () => {
+    const tree = renderer
+      .create(<ArticleSummaryHeadline headline="Example headline" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should handle rendering empty or undefined ast", () => {
+    expect(renderAst([])).toEqual([]);
+    expect(renderAst()).toEqual([]);
   });
 };

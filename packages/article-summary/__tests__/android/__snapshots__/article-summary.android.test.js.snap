@@ -31,6 +31,43 @@ exports[`Article Summary tests on Android should render an ArticleSummaryContent
 
 exports[`Article Summary tests on Android should render an ArticleSummaryContent component with a blank AST 1`] = `null`;
 
+exports[`Article Summary tests on Android should render an ArticleSummaryContent component with two paragraphs 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#696969",
+      "flexWrap": "wrap",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     
+    Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
+    ...
+  </Text>
+</Text>
+`;
+
 exports[`Article Summary tests on Android should render an ArticleSummaryHeadline component with a blank AST 1`] = `
 <Text
   accessibilityRole="heading"
@@ -1441,82 +1478,4 @@ exports[`Article Summary tests on Android should render an article-summary with 
     Friday November 17 2017, 12:01am, The Times
   </Text>
 </View>
-`;
-
-exports[`Article Summary tests on Android should render ast with one paragraph 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    
-    Victoria
-    ...
-  </Text>,
-]
-`;
-
-exports[`Article Summary tests on Android should render ast with one paragraph 2`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    
-    Victoria
-    ...
-  </Text>,
-]
-`;
-
-exports[`Article Summary tests on Android should render ast with one paragraph and nested text 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    
-    Victoria
-    ...
-  </Text>,
-]
-`;
-
-exports[`Article Summary tests on Android should render ast with paragraph 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    
-    Victoria
-    ...
-  </Text>,
-]
-`;
-
-exports[`Article Summary tests on Android should render ast with two paragraphs 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    
-    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-     
-    Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
-    ...
-  </Text>,
-]
 `;
