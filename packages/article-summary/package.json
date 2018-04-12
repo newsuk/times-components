@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.22.13",
+  "version": "0.22.14",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {

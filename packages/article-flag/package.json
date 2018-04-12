@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.11.24",
+  "version": "0.11.25",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
