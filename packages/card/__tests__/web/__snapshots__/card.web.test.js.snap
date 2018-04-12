@@ -5,7 +5,7 @@ exports[`1. Renders default layout 1`] = `
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -14,7 +14,7 @@ exports[`1. Renders default layout 1`] = `
       className=""
       style={
         Array [
-          76,
+          78,
           Object {},
           "",
         ]
@@ -30,7 +30,7 @@ exports[`1. Renders default layout 1`] = `
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
@@ -48,7 +48,7 @@ exports[`2. Renders without an image (null) 1`] = `
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -57,7 +57,7 @@ exports[`2. Renders without an image (null) 1`] = `
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
@@ -75,7 +75,7 @@ exports[`3. Renders without an image (showImage is false) 1`] = `
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -84,7 +84,7 @@ exports[`3. Renders without an image (showImage is false) 1`] = `
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
@@ -102,7 +102,7 @@ exports[`4. Renders without an image (uri is null) 1`] = `
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -111,7 +111,7 @@ exports[`4. Renders without an image (uri is null) 1`] = `
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
@@ -129,8 +129,8 @@ exports[`5. Renders with a reversed layout 1`] = `
   <View
     style={
       Array [
-        74,
-        75,
+        76,
+        77,
       ]
     }
   >
@@ -138,8 +138,8 @@ exports[`5. Renders with a reversed layout 1`] = `
       className=""
       style={
         Array [
-          78,
-          79,
+          80,
+          81,
         ]
       }
     >
@@ -151,9 +151,9 @@ exports[`5. Renders with a reversed layout 1`] = `
       className=""
       style={
         Array [
-          76,
+          78,
           Object {},
-          77,
+          79,
         ]
       }
     >
@@ -172,8 +172,8 @@ exports[`6. Renders with a reversed layout with no image 1`] = `
   <View
     style={
       Array [
-        74,
-        75,
+        76,
+        77,
       ]
     }
   >
@@ -181,8 +181,8 @@ exports[`6. Renders with a reversed layout with no image 1`] = `
       className=""
       style={
         Array [
-          78,
-          79,
+          80,
+          81,
         ]
       }
     >
@@ -206,13 +206,13 @@ exports[`7. Renders a loading state 1`] = `
 
 exports[`8. Renders a loading component 1`] = `
 <View
-  style={74}
+  style={76}
 >
   <View
     className=""
     style={
       Array [
-        76,
+        78,
         "",
       ]
     }
@@ -227,7 +227,7 @@ exports[`8. Renders a loading component 1`] = `
     className=""
     style={
       Array [
-        78,
+        80,
         "",
       ]
     }
@@ -236,32 +236,32 @@ exports[`8. Renders a loading component 1`] = `
       degrees={264}
       style={
         Array [
-          80,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
           82,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+          84,
         ]
       }
     />
@@ -271,13 +271,13 @@ exports[`8. Renders a loading component 1`] = `
 
 exports[`9. Render a loading component with no image 1`] = `
 <View
-  style={74}
+  style={76}
 >
   <View
     className=""
     style={
       Array [
-        78,
+        80,
         "",
       ]
     }
@@ -286,32 +286,32 @@ exports[`9. Render a loading component with no image 1`] = `
       degrees={264}
       style={
         Array [
-          80,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
           82,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+          84,
         ]
       }
     />
@@ -321,14 +321,14 @@ exports[`9. Render a loading component with no image 1`] = `
 
 exports[`10. Render a reversed loading component 1`] = `
 <View
-  style={74}
+  style={76}
 >
   <View
     className=""
     style={
       Array [
-        78,
-        79,
+        80,
+        81,
       ]
     }
   >
@@ -336,32 +336,32 @@ exports[`10. Render a reversed loading component 1`] = `
       degrees={264}
       style={
         Array [
-          80,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
           82,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+          84,
         ]
       }
     />
@@ -370,8 +370,8 @@ exports[`10. Render a reversed loading component 1`] = `
     className=""
     style={
       Array [
-        76,
-        77,
+        78,
+        79,
       ]
     }
   >
@@ -386,14 +386,14 @@ exports[`10. Render a reversed loading component 1`] = `
 
 exports[`11. Render a reversed loading component with no image 1`] = `
 <View
-  style={74}
+  style={76}
 >
   <View
     className=""
     style={
       Array [
-        78,
-        79,
+        80,
+        81,
       ]
     }
   >
@@ -401,32 +401,32 @@ exports[`11. Render a reversed loading component with no image 1`] = `
       degrees={264}
       style={
         Array [
-          80,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
-        ]
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Array [
-          81,
           82,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+        ]
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Array [
+          83,
+          84,
         ]
       }
     />
@@ -439,7 +439,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -448,7 +448,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       className=""
       style={
         Array [
-          76,
+          78,
           Object {},
           "",
         ]
@@ -464,7 +464,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
@@ -482,7 +482,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
   <View
     style={
       Array [
-        74,
+        76,
         "",
       ]
     }
@@ -491,7 +491,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       className=""
       style={
         Array [
-          76,
+          78,
           Object {},
           "",
         ]
@@ -507,7 +507,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       className=""
       style={
         Array [
-          78,
+          80,
           "",
         ]
       }
