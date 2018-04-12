@@ -1,3 +1,3 @@
 /* eslint-disable import/prefer-default-export */
 
-export { normaliseWidth } from "./screen.base.js";
+export { normaliseWidth, screenWidth } from "./screen.base.js";

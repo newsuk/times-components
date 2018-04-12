@@ -1,5 +1,10 @@
 /* global context */
-import { acceptedWidths, normaliseWidth, screenWidth, screenWidthInPixels } from "../src";
+import {
+  acceptedWidths,
+  normaliseWidth,
+  screenWidth,
+  screenWidthInPixels
+} from "../src";
 
 describe("screen utilities", () => {
   context("normaliseWidth", () => {
@@ -10,7 +15,7 @@ describe("screen utilities", () => {
     });
 
     it("should return the last highest value from the acceptedWidths array", () => {
-      const lastAcceptedWidthItem = acceptedWidths[acceptedWidths.length -1];
+      const lastAcceptedWidthItem = acceptedWidths[acceptedWidths.length - 1];
       const width = lastAcceptedWidthItem + 1;
       expect(normaliseWidth(width)).toEqual(lastAcceptedWidthItem);
     });
