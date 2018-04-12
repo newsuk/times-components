@@ -1,7 +1,7 @@
 import { storiesOf } from "@storybook/react-native";
-import * as knobs from "@storybook/addon-knobs/react";
 import * as actions from "@storybook/addon-actions";
 import showcaseToStoryBook from "../src/showcase-to-storybook";
+import knobs from "../src/knobs";
 
 jest.mock("../src/showcase-to-storybook");
 
