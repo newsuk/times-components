@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Video Label test on web does not render title if title equals Video 1`] = `
+exports[`Video Label test on web renders VideoLabel with an explicit title 1`] = `
 <div
   className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
@@ -41,97 +41,61 @@ exports[`Video Label test on web does not render title if title equals Video 1`]
         "letterSpacing": "1.2px",
         "lineHeight": "12px",
         "marginLeft": "5px",
-        "top": "2px",
-      }
-    }
-  >
-    VIDEO
-  </div>
-</div>
-`;
-
-exports[`Video Label test on web renders VideoLabel 1`] = `
-<div
-  className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <svg
-    height={12}
-    style={Object {}}
-    viewBox="0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895"
-    width={20.64}
-  >
-    <rect
-      fill="#1D1D1B"
-      height="13.5721404"
-      style={Object {}}
-      width="15.4550103"
-      x="0.154639175"
-      y="0.139754386"
-    />
-    <polygon
-      fill="#1D1D1B"
-      points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
-      style={Object {}}
-    />
-    <polygon
-      fill="#1D1D1B"
-      points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
-      style={Object {}}
-    />
-  </svg>
-  <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(0,131,71,1)",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.2px",
-        "lineHeight": "12px",
-        "marginLeft": "5px",
-        "top": "2px",
-      }
-    }
-  >
-    VIDEO
-  </div>
-  <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(0,131,71,1)",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.2px",
-        "lineHeight": "12px",
-        "marginLeft": "5px",
-        "top": "1px",
-      }
-    }
-  >
-    |
-  </div>
-  <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-position-bnwqim rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(0,131,71,1)",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.2px",
-        "lineHeight": "12px",
-        "paddingLeft": "5px",
         "top": "2px",
       }
     }
   >
     SWIMMING
+  </div>
+</div>
+`;
+
+exports[`Video Label test on web renders VideoLabel without an explicit title 1`] = `
+<div
+  className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+>
+  <svg
+    height={12}
+    style={Object {}}
+    viewBox="0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895"
+    width={20.64}
+  >
+    <rect
+      fill="#1D1D1B"
+      height="13.5721404"
+      style={Object {}}
+      width="15.4550103"
+      x="0.154639175"
+      y="0.139754386"
+    />
+    <polygon
+      fill="#1D1D1B"
+      points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
+      style={Object {}}
+    />
+    <polygon
+      fill="#1D1D1B"
+      points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
+      style={Object {}}
+    />
+  </svg>
+  <div
+    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(0,131,71,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "letterSpacing": "1.2px",
+        "lineHeight": "12px",
+        "marginLeft": "5px",
+        "top": "2px",
+      }
+    }
+  >
+    VIDEO
   </div>
 </div>
 `;
