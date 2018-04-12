@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ImageBackground, View } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
 import { defaultProps, propTypes } from "./image-proptypes";
+import Placeholder from "./placeholder";
 import styles from "./styles";
 
 class TimesImage extends Component {
