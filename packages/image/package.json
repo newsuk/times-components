@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/react-native": "3.3.15",
+    "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.0",
     "@times-components/jest-configurator": "0.5.1",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -59,6 +59,7 @@
     "@times-components/gradient": "0.8.15",
     "@times-components/link": "0.19.1",
     "@times-components/styleguide": "0.5.11",
+    "@times-components/utils": "0.6.8",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
