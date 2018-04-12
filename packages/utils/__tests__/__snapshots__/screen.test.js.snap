@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`screen utilities screenWidth should return the device screen width 1`] = `750`;
+
+exports[`screen utilities screenWidthInPixels should return the correct device screen width in pixels 1`] = `1500`;
