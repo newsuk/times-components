@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { select } from "@storybook/addon-knobs/react";
+import { select } from "@times-components/storybook";
 import LeadAndTwoSlice from "./src/templates/leadandtwo";
 
 // knobs

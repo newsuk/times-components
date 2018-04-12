@@ -32,10 +32,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/addon-knobs": "3.3.15",
-    "@storybook/react-native": "3.3.15",
+    "@storybook/addon-knobs": "3.4.1",
+    "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.0",
     "@times-components/jest-configurator": "0.5.1",
+    "@times-components/storybook": "0.7.1",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
