@@ -19,8 +19,9 @@ setOptions({
   hierarchySeparator: /\//
 });
 
-addDecorator(withKnobs);
+
 addDecorator((story, context) => withInfo('')(story)(context));
+addDecorator(withKnobs);
 
 const loadStories = () => req.keys().forEach(filename => req(filename));
 
