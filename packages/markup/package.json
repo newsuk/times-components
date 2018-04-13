@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "0.25.20",
+  "version": "0.25.21",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
@@ -37,8 +37,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.5.2",
-    "@times-components/storybook": "0.7.3",
+    "@times-components/jest-configurator": "0.5.3",
+    "@times-components/storybook": "0.7.4",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -55,9 +55,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/ad": "0.16.19",
-    "@times-components/pull-quote": "0.5.6",
-    "@times-components/styleguide": "0.5.13",
+    "@times-components/ad": "0.16.20",
+    "@times-components/pull-quote": "0.5.7",
+    "@times-components/styleguide": "0.5.14",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

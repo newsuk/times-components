@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "0.14.17",
+  "version": "0.14.18",
   "description": "Article byline information",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
@@ -39,7 +39,7 @@
     "@storybook/addons": "3.4.1",
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.5.2",
+    "@times-components/jest-configurator": "0.5.3",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -57,9 +57,9 @@
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
-    "@times-components/link": "0.19.3",
-    "@times-components/markup": "0.25.20",
-    "@times-components/styleguide": "0.5.13",
+    "@times-components/link": "0.19.4",
+    "@times-components/markup": "0.25.21",
+    "@times-components/styleguide": "0.5.14",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
