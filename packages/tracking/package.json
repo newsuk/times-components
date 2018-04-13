@@ -15,7 +15,7 @@
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
-"   transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist"
   },
   "repository": {
     "type": "git",
