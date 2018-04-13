@@ -61,7 +61,7 @@ exports[`AuthorProfile test on web renders a good quality image if it is visible
   >
     <img
       alt=""
-      src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=440"
+      src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=660"
       style="display: block; width: 100%; z-index: 1; position: absolute;"
     />
     <div

@@ -13,7 +13,6 @@ class TimesImage extends Component {
   constructor(props) {
     super(props);
 
-    console.log(screenWidthInPixels(), normaliseWidth(screenWidthInPixels()));
     this.state = {
       isLoaded: false,
       width: normaliseWidth(screenWidthInPixels())
