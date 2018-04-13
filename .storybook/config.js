@@ -3,6 +3,7 @@ import { configure, addDecorator } from "@storybook/react";
 import { withInfo, setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs/react';
+import { checkA11y } from '@storybook/addon-a11y';
 
 const req = require.context(
   "../packages",
@@ -19,8 +20,10 @@ setOptions({
   hierarchySeparator: /\//
 });
 
-addDecorator(withKnobs);
+
 addDecorator((story, context) => withInfo('')(story)(context));
+addDecorator(checkA11y);
+addDecorator(withKnobs);
 
 const loadStories = () => req.keys().forEach(filename => req(filename));
 

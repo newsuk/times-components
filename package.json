@@ -102,6 +102,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/addon-a11y": "3.4.1",
     "@storybook/addon-actions": "3.4.1",
     "@storybook/addon-info": "3.4.1",
     "@storybook/addon-knobs": "3.4.1",
