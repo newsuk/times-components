@@ -39,7 +39,7 @@
     "eslint-plugin-react": "7.4.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.3.1"
   },
   "dependencies": {
     "@storybook/addon-actions": "3.4.1",
@@ -54,7 +54,7 @@
     "graphql": "0.12.3",
     "prop-types": "15.6.0",
     "react-apollo": "2.1.0-rc.3",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.3.1"
   },
   "peerDependencies": {
     "react": ">=16",
