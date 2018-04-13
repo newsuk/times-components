@@ -43,7 +43,93 @@ exports[`1. Renders default layout 1`] = `
 </FadeIn>
 `;
 
-exports[`2. Renders without an image (null) 1`] = `
+exports[`2. Renders default layout with placeholder 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          76,
+          Object {},
+          "",
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri=""
+      />
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          "",
+        ]
+      }
+    >
+      <Text>
+        A card
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`3. Renders without an image (null) 1`] = `
+<FadeIn>
+  <View
+    style={
+      Array [
+        74,
+        "",
+      ]
+    }
+  >
+    <View
+      className=""
+      style={
+        Array [
+          76,
+          Object {},
+          "",
+        ]
+      }
+    >
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri=""
+      />
+    </View>
+    <View
+      className=""
+      style={
+        Array [
+          78,
+          "",
+        ]
+      }
+    >
+      <Text>
+        No image
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`4. Renders without an image (showImage is false) 1`] = `
 <FadeIn>
   <View
     style={
@@ -70,7 +156,7 @@ exports[`2. Renders without an image (null) 1`] = `
 </FadeIn>
 `;
 
-exports[`3. Renders without an image (showImage is false) 1`] = `
+exports[`5. Renders without an image (uri is null) 1`] = `
 <FadeIn>
   <View
     style={
@@ -84,29 +170,18 @@ exports[`3. Renders without an image (showImage is false) 1`] = `
       className=""
       style={
         Array [
-          78,
+          76,
+          Object {},
           "",
         ]
       }
     >
-      <Text>
-        No image
-      </Text>
+      <TimesImage
+        aspectRatio={0.6666666666666666}
+        style={Object {}}
+        uri=""
+      />
     </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`4. Renders without an image (uri is null) 1`] = `
-<FadeIn>
-  <View
-    style={
-      Array [
-        74,
-        "",
-      ]
-    }
-  >
     <View
       className=""
       style={
@@ -124,7 +199,7 @@ exports[`4. Renders without an image (uri is null) 1`] = `
 </FadeIn>
 `;
 
-exports[`5. Renders with a reversed layout 1`] = `
+exports[`6. Renders with a reversed layout 1`] = `
 <FadeIn>
   <View
     style={
@@ -167,7 +242,7 @@ exports[`5. Renders with a reversed layout 1`] = `
 </FadeIn>
 `;
 
-exports[`6. Renders with a reversed layout with no image 1`] = `
+exports[`7. Renders with a reversed layout with no image 1`] = `
 <FadeIn>
   <View
     style={
@@ -194,7 +269,7 @@ exports[`6. Renders with a reversed layout with no image 1`] = `
 </FadeIn>
 `;
 
-exports[`7. Renders a loading state 1`] = `
+exports[`8. Renders a loading state 1`] = `
 <Loading
   contentContainerClass=""
   imageContainerClass=""
@@ -204,7 +279,7 @@ exports[`7. Renders a loading state 1`] = `
 />
 `;
 
-exports[`8. Renders a loading component 1`] = `
+exports[`9. Renders a loading component 1`] = `
 <View
   style={74}
 >
@@ -269,7 +344,7 @@ exports[`8. Renders a loading component 1`] = `
 </View>
 `;
 
-exports[`9. Render a loading component with no image 1`] = `
+exports[`10. Renders a loading component with no image 1`] = `
 <View
   style={74}
 >
@@ -319,7 +394,7 @@ exports[`9. Render a loading component with no image 1`] = `
 </View>
 `;
 
-exports[`10. Render a reversed loading component 1`] = `
+exports[`11. Renders a reversed loading component 1`] = `
 <View
   style={74}
 >
@@ -384,7 +459,7 @@ exports[`10. Render a reversed loading component 1`] = `
 </View>
 `;
 
-exports[`11. Render a reversed loading component with no image 1`] = `
+exports[`12. Renders a reversed loading component with no image 1`] = `
 <View
   style={74}
 >

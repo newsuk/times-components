@@ -25,6 +25,18 @@ export default () => {
     expect(component).toMatchSnapshot("1. Renders default layout");
   });
 
+  it("should render default layout with placeholder image", () => {
+    const component = shallow(
+      <Card {...props} image={null}>
+        <Text>A card</Text>
+      </Card>
+    );
+
+    expect(component).toMatchSnapshot(
+      "2. Renders default layout with placeholder"
+    );
+  });
+
   it("should render without an image when null", () => {
     const component = shallow(
       <Card {...props} image={null}>
@@ -32,7 +44,7 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("2. Renders without an image (null)");
+    expect(component).toMatchSnapshot("3. Renders without an image (null)");
   });
 
   it("should render without an image when showImage is false", () => {
@@ -43,7 +55,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "3. Renders without an image (showImage is false)"
+      "4. Renders without an image (showImage is false)"
     );
   });
 
@@ -55,7 +67,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "4. Renders without an image (uri is null)"
+      "5. Renders without an image (uri is null)"
     );
   });
 
@@ -66,7 +78,7 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("5. Renders with a reversed layout");
+    expect(component).toMatchSnapshot("6. Renders with a reversed layout");
   });
 
   it("should render with reversed layout and no image", () => {
@@ -77,7 +89,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "6. Renders with a reversed layout with no image"
+      "7. Renders with a reversed layout with no image"
     );
   });
 
@@ -88,7 +100,7 @@ export default () => {
       </Card>
     );
 
-    expect(component).toMatchSnapshot("7. Renders a loading state");
+    expect(component).toMatchSnapshot("8. Renders a loading state");
   });
 
   it("should render a loading component", () => {
@@ -98,7 +110,7 @@ export default () => {
       </Loading>
     );
 
-    expect(component).toMatchSnapshot("8. Renders a loading component");
+    expect(component).toMatchSnapshot("9. Renders a loading component");
   });
 
   it("should render a loading card with no image", () => {
@@ -109,7 +121,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "9. Render a loading component with no image"
+      "10. Renders a loading component with no image"
     );
   });
 
@@ -121,7 +133,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "10. Render a reversed loading component"
+      "11. Renders a reversed loading component"
     );
   });
 
@@ -133,7 +145,7 @@ export default () => {
     );
 
     expect(component).toMatchSnapshot(
-      "11. Render a reversed loading component with no image"
+      "12. Renders a reversed loading component with no image"
     );
   });
 

@@ -43,9 +43,13 @@ class CardComponent extends Component {
     }
 
     const renderImage = () => {
-      if (!image || !image.uri || !showImage) return null;
+      if (!showImage) return null;
 
-      const imageUrl = `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`;
+      const imageUrl =
+        image && image.uri
+          ? `${image.uri}${imageSize ? `&resize=${imageSize}` : ``}`
+          : ``;
+
       return (
         <View
           className={imageContainerClass}
