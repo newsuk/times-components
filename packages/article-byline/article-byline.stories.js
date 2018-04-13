@@ -1,8 +1,9 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import { select } from "@times-components/storybook";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import { boolean, selectV2, withKnobs } from "@storybook/addon-knobs";
+import { boolean, withKnobs } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import ArticleByline from "./src/article-byline";
 
@@ -30,11 +31,14 @@ const bylineLinkStyles = {
   }
 };
 
-const sections = Object.keys(colours.section);
+const sections = Object.assign(
+  {},
+  ...Object.keys(colours.section).map(section => ({ [section]: section })),
+);
 
 const ArticleBylineWithCommonProps = props => (
   <ArticleByline
-    section={selectV2("Section", sections, "default")}
+    section={select("Section", sections, "default")}
     isCurrentEdition={boolean("Is current edition?", true)}
     isPastSixDays={boolean("Is past six days?", true)}
     onAuthorPress={preventDefaultedAction("onAuthorPress")}
