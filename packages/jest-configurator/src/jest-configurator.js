@@ -65,10 +65,10 @@ export default (
   return {
     preset: "react-native",
     ...platformCode(platform),
-    rootDir,
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
     ],
+    rootDir,
     coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(
       rootDir,
@@ -78,6 +78,7 @@ export default (
     ),
     testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
+      "/dist/",
       `${module}/__tests__/${platformPath}jest.config.js`
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],

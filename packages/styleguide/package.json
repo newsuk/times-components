@@ -13,7 +13,8 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src -d dist"
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist"
   },
   "repository": {
     "type": "git",
