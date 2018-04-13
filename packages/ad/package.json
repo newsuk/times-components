@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "0.16.20",
+  "version": "0.16.21",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -47,7 +47,7 @@
     "@storybook/addon-actions": "3.4.1",
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/utils": "0.6.11",
+    "@times-components/utils": "0.6.12",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -67,8 +67,8 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.14",
-    "@times-components/watermark": "0.4.25",
+    "@times-components/styleguide": "0.5.15",
+    "@times-components/watermark": "0.4.26",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.19.4",
+  "version": "0.19.5",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.5.3",
-    "@times-components/storybook": "0.7.4",
+    "@times-components/storybook": "0.7.5",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -57,8 +57,8 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.6.10",
-    "@times-components/styleguide": "0.5.14",
+    "@times-components/responsive-styles": "0.6.11",
+    "@times-components/styleguide": "0.5.15",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
