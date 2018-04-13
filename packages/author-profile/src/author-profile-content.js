@@ -3,7 +3,6 @@ import { FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
@@ -30,10 +29,6 @@ const viewabilityConfig = {
 class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      width: normaliseWidth(screenWidthInPixels())
-    };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
@@ -156,7 +151,6 @@ class AuthorProfileContent extends React.Component {
                 <AuthorProfileItem
                   {...item}
                   imageRatio={imageRatio}
-                  imageSize={this.state.width}
                   showImage={showImages}
                   style={styles.padding}
                   testID={`articleList-${index}`}

@@ -225,7 +225,7 @@ class AuthorProfileContent extends Component {
                           <AuthorProfileItem
                             {...article}
                             imageRatio={imageRatio}
-                            imageSize={this.getImageSize(elementId)}
+                            imageSize={this.getImageSize(elementId) || 100}
                             showImage={showImages}
                             onPress={e => onArticlePress(e, { id, url })}
                           />
