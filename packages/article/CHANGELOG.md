@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.66.1"></a>
+## [0.66.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.66.0...@times-components/article@0.66.1) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
+<a name="0.66.0"></a>
+# [0.66.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.65.0...@times-components/article@0.66.0) (2018-04-12)
+
+
+### Features
+
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+
+
+
+
+<a name="0.65.0"></a>
+# [0.65.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.8...@times-components/article@0.65.0) (2018-04-12)
+
+
+### Features
+
+* Support typed links from tpa ([#845](https://github.com/newsuk/times-components/issues/845)) ([78f57b3](https://github.com/newsuk/times-components/commit/78f57b3))
+
+
+
+
+<a name="0.64.8"></a>
+## [0.64.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.7...@times-components/article@0.64.8) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.64.7"></a>
+## [0.64.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.6...@times-components/article@0.64.7) (2018-04-12)
+
+
+### Bug Fixes
+
+* add protocol to splash REPLAT-1677 ([#837](https://github.com/newsuk/times-components/issues/837)) ([109f0f5](https://github.com/newsuk/times-components/commit/109f0f5))
+
+
+
+
+<a name="0.64.6"></a>
+## [0.64.6](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.5...@times-components/article@0.64.6) (2018-04-11)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.64.5"></a>
 ## [0.64.5](https://github.com/newsuk/times-components/compare/@times-components/article@0.64.4...@times-components/article@0.64.5) (2018-04-11)
 

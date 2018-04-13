@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.15"></a>
+## [0.22.15](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.22.14...@times-components/article-summary@0.22.15) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
+<a name="0.22.14"></a>
+## [0.22.14](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.22.13...@times-components/article-summary@0.22.14) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
+<a name="0.22.13"></a>
+## [0.22.13](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.22.12...@times-components/article-summary@0.22.13) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-summary
+
 <a name="0.22.12"></a>
 ## [0.22.12](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.22.11...@times-components/article-summary@0.22.12) (2018-04-11)
 

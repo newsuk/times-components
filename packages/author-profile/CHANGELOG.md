@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.56.1"></a>
+## [0.56.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.56.0...@times-components/author-profile@0.56.1) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.55.11...@times-components/author-profile@0.56.0) (2018-04-12)
+
+
+### Features
+
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+
+
+
+
+<a name="0.55.11"></a>
+## [0.55.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.55.10...@times-components/author-profile@0.55.11) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.55.10"></a>
+## [0.55.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.55.9...@times-components/author-profile@0.55.10) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.55.9"></a>
 ## [0.55.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.55.8...@times-components/author-profile@0.55.9) (2018-04-11)
 

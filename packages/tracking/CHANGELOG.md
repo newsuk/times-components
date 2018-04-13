@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.11.0...@times-components/tracking@0.11.1) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.10.13...@times-components/tracking@0.11.0) (2018-04-12)
+
+
+### Features
+
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+
+
+
+
+<a name="0.10.13"></a>
+## [0.10.13](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.10.12...@times-components/tracking@0.10.13) (2018-04-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/tracking
+
 <a name="0.10.12"></a>
 ## [0.10.12](https://github.com/newsuk/times-components/compare/@times-components/tracking@0.10.11...@times-components/tracking@0.10.12) (2018-04-11)
 

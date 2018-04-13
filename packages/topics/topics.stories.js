@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { withTrackingContext } from "@times-components/tracking";
-import storybookReporter from "@times-components/tealium/dist/storybook";
+import storybookReporter from "@times-components/tealium-utils";
 import Topic from "./src/topic";
 import Topics from "./src/topics";
 import topicsData from "./fixtures/topics";

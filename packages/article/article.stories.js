@@ -5,10 +5,11 @@ import { Platform } from "react-native";
 import { addTypenameToDocument } from "apollo-utilities";
 
 import { decorateAction } from "@storybook/addon-actions";
-import { select, text } from "@storybook/addon-knobs/react";
+import { text } from "@storybook/addon-knobs/react";
+import { select } from "@times-components/storybook";
 import { ArticleProvider, articleQuery } from "@times-components/provider";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
-import { storybookReporter } from "@times-components/tealium";
+import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
 
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";

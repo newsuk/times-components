@@ -1,8 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Summary test on ios renders an ArticleSummaryContent component with a blank AST 1`] = `null`;
+exports[`Article Summary tests on ios should render an ArticleSummaryContent component with a AST 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#696969",
+      "flexWrap": "wrap",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    Victoria
+    ...
+  </Text>
+</Text>
+`;
 
-exports[`Article Summary test on ios renders an article-summary component with a single paragraph 1`] = `
+exports[`Article Summary tests on ios should render an ArticleSummaryContent component with a blank AST 1`] = `null`;
+
+exports[`Article Summary tests on ios should render an ArticleSummaryContent component with two paragraphs 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#696969",
+      "flexWrap": "wrap",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    
+    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+     
+    Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
+    ...
+  </Text>
+</Text>
+`;
+
+exports[`Article Summary tests on ios should render an ArticleSummaryHeadline component with a blank AST 1`] = `
+<Text
+  accessibilityRole="heading"
+  accessible={true}
+  allowFontScaling={true}
+  aria-level="3"
+  className=""
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontWeight": "900",
+        "marginBottom": 5,
+      },
+      Object {
+        "fontSize": 22,
+        "lineHeight": 22,
+      },
+      Object {},
+    ]
+  }
+>
+  Example headline
+</Text>
+`;
+
+exports[`Article Summary tests on ios should render an article-summary component with a single paragraph 1`] = `
 <View>
   <View
     style={
@@ -152,7 +246,7 @@ exports[`Article Summary test on ios renders an article-summary component with a
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with content including line breaks 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with content including line breaks 1`] = `
 <View>
   <View
     style={
@@ -376,7 +470,7 @@ exports[`Article Summary test on ios renders an article-summary component with c
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with empty content at the end trimmed 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with empty content at the end trimmed 1`] = `
 <View>
   <View
     style={
@@ -541,7 +635,7 @@ exports[`Article Summary test on ios renders an article-summary component with e
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with headline and blank content 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with headline and blank content 1`] = `
 <View>
   <View
     style={
@@ -618,7 +712,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with headline and no content 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with headline and no content 1`] = `
 <View>
   <View
     style={
@@ -695,7 +789,7 @@ exports[`Article Summary test on ios renders an article-summary component with h
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with multiple paragraphs 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with multiple paragraphs 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -824,7 +918,7 @@ exports[`Article Summary test on ios renders an article-summary component with m
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with no byline 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with no byline 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -898,7 +992,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with no date publication 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with no date publication 1`] = `
 <View>
   <View
     style={
@@ -1030,7 +1124,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with no headline 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with no headline 1`] = `
 <View>
   <View
     style={
@@ -1108,7 +1202,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary component with no label 1`] = `
+exports[`Article Summary tests on ios should render an article-summary component with no label 1`] = `
 <View>
   <Text
     accessibilityRole="heading"
@@ -1229,7 +1323,7 @@ exports[`Article Summary test on ios renders an article-summary component with n
 </View>
 `;
 
-exports[`Article Summary test on ios renders an article-summary with opinion byline 1`] = `
+exports[`Article Summary tests on ios should render an article-summary with opinion byline 1`] = `
 <View>
   <View
     style={

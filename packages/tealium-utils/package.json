@@ -1,0 +1,49 @@
+{
+  "name": "@times-components/tealium-utils",
+  "version": "0.1.1",
+  "description": "React tealium helpers for Times Components",
+  "main": "dist",
+  "dev": "src",
+  "scripts": {
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff",
+    "prepublishOnly": "yarn transpile",
+    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "3.4.1",
+    "@times-components/eslint-config-thetimes": "0.4.1",
+    "@times-components/jest-configurator": "0.5.2",
+    "babel-core": "6.26.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2",
+    "react-native-web": "0.3.2"
+  },
+  "dependencies": {
+    "@times-components/tealium": "0.3.1"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

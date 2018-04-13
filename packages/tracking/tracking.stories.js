@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { storybookReporter } from "@times-components/tealium";
+import storybookReporter from "@times-components/tealium-utils";
 import {
   withTrackingContext,
   withTrackEvents,

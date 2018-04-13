@@ -1,0 +1,16 @@
+src
+__tests__
+__mocks__
+fixtures
+coverage
+flow-typed
+storybook-components
+*.stories.js
+*.stories.native.js
+*.stories.web.js
+*.showcase.js
+*.fructose.js
+*.test.js
+android/**/test
+android/**/androidTest
+.*

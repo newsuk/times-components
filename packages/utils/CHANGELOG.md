@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.10"></a>
+## [0.6.10](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.9...@times-components/utils@0.6.10) (2018-04-12)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+
+
+
+
+<a name="0.6.9"></a>
+## [0.6.9](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.8...@times-components/utils@0.6.9) (2018-04-12)
+
+
+### Bug Fixes
+
+* add protocol to splash REPLAT-1677 ([#837](https://github.com/newsuk/times-components/issues/837)) ([109f0f5](https://github.com/newsuk/times-components/commit/109f0f5))
+
+
+
+
 <a name="0.6.8"></a>
 ## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/utils@0.6.7...@times-components/utils@0.6.8) (2018-04-11)
 

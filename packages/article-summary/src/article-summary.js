@@ -7,11 +7,11 @@ import Byline, {
 import ArticleLabel from "@times-components/article-label";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
-import summarise from "./summarise";
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";
 import renderer from "./article-summary-renderer";
 import styles from "./styles";
+import summarise from "./summarise";
 
 const { style: TextPropTypesStyle } = Text;
 
@@ -94,11 +94,11 @@ ArticleSummary.defaultProps = {
 };
 
 export {
-  renderAst,
-  summarise,
-  renderer,
+  ArticleSummaryContent,
   ArticleSummaryHeadline,
-  ArticleSummaryContent
+  renderAst,
+  renderer,
+  summarise
 };
 
 export default ArticleSummary;
