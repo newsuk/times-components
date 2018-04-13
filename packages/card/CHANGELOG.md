@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.26.0"></a>
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.25.18...@times-components/card@0.26.0) (2018-04-13)
+
+
+### Features
+
+* make card use a placeholder image if no image is found ([#857](https://github.com/newsuk/times-components/issues/857)) ([34ec06e](https://github.com/newsuk/times-components/commit/34ec06e))
+
+
+
+
 <a name="0.25.18"></a>
 ## [0.25.18](https://github.com/newsuk/times-components/compare/@times-components/card@0.25.17...@times-components/card@0.25.18) (2018-04-12)
 
