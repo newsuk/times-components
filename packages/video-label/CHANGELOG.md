@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.29...@times-components/video-label@0.2.0) (2018-04-13)
+
+
+### Features
+
+* only set video label to "video" if no explicit label is provided (REPLAT-1919) ([#854](https://github.com/newsuk/times-components/issues/854)) ([5833bba](https://github.com/newsuk/times-components/commit/5833bba))
+
+
+
+
 <a name="0.1.29"></a>
 ## [0.1.29](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.1.28...@times-components/video-label@0.1.29) (2018-04-12)
 

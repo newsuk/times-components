@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video-label",
-  "version": "0.1.29",
+  "version": "0.2.0",
   "description": "A label for articles with videos",
   "main": "dist/video-label",
   "dev": "src/video-label",
