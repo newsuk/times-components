@@ -15,8 +15,8 @@
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
-    "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "cleanupDist": "rm -rf dist",
+    "transpile": "yarn cleanupDist && babel src -d dist"
   },
   "jest": {
     "preset": "react-native",

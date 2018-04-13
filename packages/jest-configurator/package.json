@@ -11,8 +11,8 @@
     "lint": "flow && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
     "test": "jest",
-    "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d lib"
+    "cleanupDist": "rm -rf dist",
+    "transpile": "yarn cleanupDist && babel src --ignore node_modules,__tests__ -d lib"
   },
   "repository": {
     "type": "git",
