@@ -5611,8 +5611,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
             accessibilityLabel="splash-component"
             style={
               Object {
-                "height": NaN,
-                "width": undefined,
+                "height": 810,
+                "width": 1440,
               }
             }
             testID="splash-component"
@@ -5625,8 +5625,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               }
               style={
                 Object {
-                  "height": NaN,
-                  "width": undefined,
+                  "height": 810,
+                  "width": 1440,
                 }
               }
             />
@@ -5642,8 +5642,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                     "top": 0,
                   },
                   Object {
-                    "height": NaN,
-                    "width": undefined,
+                    "height": 810,
+                    "width": 1440,
                   },
                 ]
               }
