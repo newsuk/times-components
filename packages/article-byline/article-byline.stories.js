@@ -36,50 +36,60 @@ const sections = Object.assign(
   ...Object.keys(colours.section).map(section => ({ [section]: section })),
 );
 
-const ArticleBylineWithCommonProps = props => (
-  <ArticleByline
-    section={select("Section", sections, "default")}
-    isCurrentEdition={boolean("Is current edition?", true)}
-    isPastSixDays={boolean("Is past six days?", true)}
-    onAuthorPress={preventDefaultedAction("onAuthorPress")}
-    {...props}
-  />
-);
+const getCommonProps = () => ({
+  section: select("Section", sections, "default"),
+  isCurrentEdition: boolean("Is current edition?", true),
+  isPastSixDays: boolean("Is past six days?", true),
+  onAuthorPress: preventDefaultedAction("onAuthorPress"),
+});
 
 storiesOf("Primitives/ArticleByline", module)
   .addDecorator(withKnobs)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps ast={authorsAST.singleAuthor} />
+      <ArticleByline
+        ast={authorsAST.singleAuthor}
+        {...getCommonProps()}
+      />
     </Text>
   ))
   .add("ArticleByline with a text only element", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps ast={authorsAST.singleInlineElement} />
+      <ArticleByline
+        ast={authorsAST.singleInlineElement}
+        {...getCommonProps()}
+      />
     </Text>
   ))
   .add("ArticleByline with multiple authors", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps
-        ast={authorsAST.multipleAuthorsCommaSeparated}
+      <ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated}
+        {...getCommonProps()}
       />
     </Text>
   ))
   .add("ArticleByline with author in the beginning", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps ast={authorsAST.authorInTheBeginning} />
+      <ArticleByline
+        ast={authorsAST.authorInTheBeginning}
+        {...getCommonProps()}
+      />
     </Text>
   ))
   .add("ArticleByline with author at the end", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps ast={authorsAST.authorAtTheEnd} />
+      <ArticleByline
+        ast={authorsAST.authorAtTheEnd}
+        {...getCommonProps()}
+      />
     </Text>
   ))
   .add("ArticleByline with styles", () => (
     <Text style={bylineStyles}>
-      <ArticleBylineWithCommonProps
+      <ArticleByline
         ast={authorsAST.multipleAuthorsCommaSeparated}
         style={bylineLinkStyles}
+        {...getCommonProps()}
       />
     </Text>
   ));
