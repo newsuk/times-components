@@ -39,6 +39,7 @@
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.5.2",
     "@times-components/tealium-utils": "0.1.1",
+    "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",

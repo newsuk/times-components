@@ -1293,15 +1293,6 @@ babel-plugin-external-helpers@^6.18.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-flow-react-proptypes@14.0.3:
-  version "14.0.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-14.0.3.tgz#9b3eb6e9e09ee8309752c2f60e3e4032dcaa223d"
-  dependencies:
-    babel-core "^6.25.0"
-    babel-template "^6.25.0"
-    babel-traverse "^6.25.0"
-    babel-types "^6.25.0"
-
 babel-plugin-flow-react-proptypes@22.0.0:
   version "22.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-22.0.0.tgz#d93ad6007c0ea6e4e90b6437dd446e5d9c2d8cdf"
@@ -1513,10 +1504,6 @@ babel-plugin-transform-class-properties@^6.18.0, babel-plugin-transform-class-pr
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
-
-babel-plugin-transform-class@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-class/-/babel-plugin-transform-class-0.3.0.tgz#35e68ad61a7fd8aa02980cdb75223896d64ecd3d"
 
 babel-plugin-transform-decorators@^6.24.1:
   version "6.24.1"
