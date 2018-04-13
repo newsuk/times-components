@@ -16,13 +16,24 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, isCurrentEdition, isPastSixDays, section, style, onAuthorPress }) => {
+const ArticleByline = ({
+  ast,
+  isCurrentEdition,
+  isPastSixDays,
+  section,
+  style,
+  onAuthorPress
+}) => {
   const sectionStyle = {
-    color: colours.section[section] || colours.default,
+    color: colours.section[section] || colours.default
   };
 
   const shouldUseSectionStyle = isCurrentEdition || isPastSixDays;
-  const styles = [linkStyles.link, shouldUseSectionStyle && sectionStyle, style.link];
+  const styles = [
+    linkStyles.link,
+    shouldUseSectionStyle && sectionStyle,
+    style.link
+  ];
 
   return renderTrees(ast, {
     author(key, attributes, children) {
@@ -41,10 +52,7 @@ const ArticleByline = ({ ast, isCurrentEdition, isPastSixDays, section, style, o
 
     inline(key, attributes, children) {
       return (
-        <Text
-          style={styles}
-          key={key}
-        >
+        <Text style={styles} key={key}>
           {children}
         </Text>
       );
