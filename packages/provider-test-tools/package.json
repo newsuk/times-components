@@ -10,7 +10,8 @@
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src -d dist"
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
