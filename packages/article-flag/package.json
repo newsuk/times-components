@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "0.11.28",
+  "version": "0.11.29",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -53,7 +53,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "0.6.5",
+    "@times-components/icons": "0.6.6",
     "@times-components/styleguide": "0.5.15",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
