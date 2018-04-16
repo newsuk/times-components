@@ -246,7 +246,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -579,18 +578,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <View />
                 <View>
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    hitSlop={undefined}
                     nativeBackgroundAndroid={
                       Object {
                         "attribute": "selectableItemBackground",
                         "type": "ThemeAttrAndroid",
                       }
                     }
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -598,7 +592,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
                     pointerEvents="box-only"
-                    testID={undefined}
                   >
                     <View
                       style={
@@ -1668,18 +1661,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               <View />
               <View>
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
                   nativeBackgroundAndroid={
                     Object {
                       "attribute": "selectableItemBackground",
                       "type": "ThemeAttrAndroid",
                     }
                   }
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1687,7 +1675,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   pointerEvents="box-only"
-                  testID={undefined}
                 >
                   <View
                     style={
@@ -1749,7 +1736,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -1791,15 +1777,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
             },
           ]
         }
-        isLoading={undefined}
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
         title="Defence Editor"
         twitter="jdoe"
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -1961,7 +1944,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -2184,18 +2166,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2203,7 +2180,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -2216,7 +2192,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2452,18 +2427,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2471,7 +2441,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -2484,7 +2453,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2720,18 +2688,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2739,7 +2702,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -2752,7 +2714,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3026,32 +2987,21 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
-      pageSize={undefined}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={false}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
-        pageSize={undefined}
       />
     </View>
   }
@@ -3061,7 +3011,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-  initialListSize={undefined}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -3074,7 +3023,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   onViewableItemsChanged={[Function]}
-  pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
@@ -3106,7 +3054,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -3327,18 +3274,13 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
 
 exports[`AuthorProfile test on android renders profile content item component 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3346,7 +3288,6 @@ exports[`AuthorProfile test on android renders profile content item component 1`
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
@@ -3357,7 +3298,6 @@ exports[`AuthorProfile test on android renders profile content item component 1`
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3432,18 +3372,13 @@ exports[`AuthorProfile test on android renders profile content item component 1`
 
 exports[`AuthorProfile test on android renders profile content item component with a specific image size 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3451,7 +3386,6 @@ exports[`AuthorProfile test on android renders profile content item component wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
@@ -3462,7 +3396,6 @@ exports[`AuthorProfile test on android renders profile content item component wi
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3537,18 +3470,13 @@ exports[`AuthorProfile test on android renders profile content item component wi
 
 exports[`AuthorProfile test on android renders profile content item component with no image 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3556,7 +3484,6 @@ exports[`AuthorProfile test on android renders profile content item component wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
@@ -3567,7 +3494,6 @@ exports[`AuthorProfile test on android renders profile content item component wi
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3670,32 +3596,21 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
-      pageSize={undefined}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={true}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
-        pageSize={undefined}
       />
     </View>
   }
@@ -3713,7 +3628,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-  initialListSize={undefined}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -3726,7 +3640,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   onViewableItemsChanged={[Function]}
-  pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
@@ -4381,31 +4294,22 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
       pageSize={3}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={true}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
         pageSize={3}
       />
     </View>
@@ -5671,7 +5575,6 @@ exports[`AuthorProfile test on android renders profile separator 1`] = `
 
 exports[`AuthorProfile test on android renders the author head 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,
@@ -5818,13 +5721,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={false}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
         count={0}
@@ -5905,7 +5803,6 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,

@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[
-  `Gesture tests Gestures should animate back to the start after release 1`
-] = `
+exports[`Gesture tests Gestures should animate back to the start after release 1`] = `
 <AnimatedComponent
   style={
     Object {
@@ -30,9 +28,7 @@ exports[
 </AnimatedComponent>
 `;
 
-exports[
-  `Gesture tests Gestures should do nothing if a finger is removed while interacting 1`
-] = `
+exports[`Gesture tests Gestures should do nothing if a finger is removed while interacting 1`] = `
 <AnimatedComponent
   style={
     Object {
@@ -60,9 +56,7 @@ exports[
 </AnimatedComponent>
 `;
 
-exports[
-  `Gesture tests Gestures should rotate anti-clockwise when turning fingers 1`
-] = `
+exports[`Gesture tests Gestures should rotate anti-clockwise when turning fingers 1`] = `
 <AnimatedComponent
   style={
     Object {
@@ -90,9 +84,7 @@ exports[
 </AnimatedComponent>
 `;
 
-exports[
-  `Gesture tests Gestures should rotate clockwise when turning fingers 1`
-] = `
+exports[`Gesture tests Gestures should rotate clockwise when turning fingers 1`] = `
 <AnimatedComponent
   style={
     Object {
@@ -120,9 +112,7 @@ exports[
 </AnimatedComponent>
 `;
 
-exports[
-  `Gesture tests Gestures should scale and rotate when spreading and rotating fingers 1`
-] = `
+exports[`Gesture tests Gestures should scale and rotate when spreading and rotating fingers 1`] = `
 <AnimatedComponent
   style={
     Object {
@@ -150,9 +140,7 @@ exports[
 </AnimatedComponent>
 `;
 
-exports[
-  `Gesture tests Gestures should scale correctly when spreading fingers 1`
-] = `
+exports[`Gesture tests Gestures should scale correctly when spreading fingers 1`] = `
 <AnimatedComponent
   style={
     Object {

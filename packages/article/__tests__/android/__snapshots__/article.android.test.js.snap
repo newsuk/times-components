@@ -1137,18 +1137,13 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -1156,7 +1151,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -1192,13 +1186,7 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1211,10 +1199,8 @@ exports[`Article tests on android should render a full article 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -1351,18 +1337,13 @@ exports[`Article tests on android should render a full article 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1370,7 +1351,6 @@ exports[`Article tests on android should render a full article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -1864,13 +1844,7 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1883,7 +1857,6 @@ exports[`Article tests on android should render a full article 1`] = `
                   "width": "100%",
                 }
               }
-              testID={undefined}
             >
               <View
                 accessibilityLabel="splash-component"
@@ -2046,13 +2019,7 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2065,7 +2032,6 @@ exports[`Article tests on android should render a full article 1`] = `
                   "width": "100%",
                 }
               }
-              testID={undefined}
             >
               <View
                 accessibilityLabel="splash-component"
@@ -2187,18 +2153,13 @@ exports[`Article tests on android should render a full article 1`] = `
                   }
                 >
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    hitSlop={undefined}
                     nativeBackgroundAndroid={
                       Object {
                         "attribute": "selectableItemBackground",
                         "type": "ThemeAttrAndroid",
                       }
                     }
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -2206,7 +2167,6 @@ exports[`Article tests on android should render a full article 1`] = `
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
                     pointerEvents="box-only"
-                    testID={undefined}
                   >
                     <svg
                       height="24"
@@ -2242,13 +2202,7 @@ exports[`Article tests on android should render a full article 1`] = `
                     }
                   >
                     <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
                       accessible={true}
-                      hitSlop={undefined}
-                      nativeID={undefined}
-                      onLayout={undefined}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
                       onResponderRelease={[Function]}
@@ -2261,10 +2215,8 @@ exports[`Article tests on android should render a full article 1`] = `
                           "justifyContent": "center",
                         }
                       }
-                      testID={undefined}
                     >
                       <View
-                        collapsable={undefined}
                         style={
                           Object {
                             "transform": Array [
@@ -2401,18 +2353,13 @@ exports[`Article tests on android should render a full article 1`] = `
                 </View>
               </Modal>
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -2420,7 +2367,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <View
                   aspectRatio={1.5}
@@ -3420,18 +3366,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -3439,7 +3380,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -3475,13 +3415,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -3494,10 +3428,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -3634,18 +3566,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -3653,7 +3580,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -4256,18 +4182,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4275,7 +4196,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               style={
@@ -4309,18 +4229,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4328,7 +4243,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               style={
@@ -4362,18 +4276,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4381,7 +4290,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               style={
@@ -4415,18 +4323,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4434,7 +4337,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               style={
@@ -4468,18 +4370,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4487,7 +4384,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               style={
@@ -4588,18 +4484,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -4607,10 +4498,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -4793,18 +4682,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -4812,10 +4696,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -4985,18 +4867,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -5004,10 +4881,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -5175,7 +5050,6 @@ exports[`Article tests on android should render activity indicator  1`] = `
 >
   <ActivityIndicator
     animating={true}
-    color={undefined}
     hidesWhenStopped={true}
     size="large"
   />
@@ -5362,18 +5236,13 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="leadAsset"
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -5381,7 +5250,6 @@ exports[`Article tests on android should render an article with a video asset 1`
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
             accessibilityLabel="splash-component"
@@ -5738,18 +5606,13 @@ exports[`Article tests on android should render an article with a video asset 1`
                   }
                 >
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    hitSlop={undefined}
                     nativeBackgroundAndroid={
                       Object {
                         "attribute": "selectableItemBackground",
                         "type": "ThemeAttrAndroid",
                       }
                     }
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -5757,7 +5620,6 @@ exports[`Article tests on android should render an article with a video asset 1`
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
                     pointerEvents="box-only"
-                    testID={undefined}
                   >
                     <svg
                       height="24"
@@ -5793,13 +5655,7 @@ exports[`Article tests on android should render an article with a video asset 1`
                     }
                   >
                     <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
                       accessible={true}
-                      hitSlop={undefined}
-                      nativeID={undefined}
-                      onLayout={undefined}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
                       onResponderRelease={[Function]}
@@ -5812,10 +5668,8 @@ exports[`Article tests on android should render an article with a video asset 1`
                           "justifyContent": "center",
                         }
                       }
-                      testID={undefined}
                     >
                       <View
-                        collapsable={undefined}
                         style={
                           Object {
                             "transform": Array [
@@ -5952,18 +5806,13 @@ exports[`Article tests on android should render an article with a video asset 1`
                 </View>
               </Modal>
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -5971,7 +5820,6 @@ exports[`Article tests on android should render an article with a video asset 1`
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <View
                   aspectRatio={1.5}
@@ -7079,18 +6927,13 @@ exports[`Article tests on android should render an article with no byline 1`] = 
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -7098,7 +6941,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -7134,13 +6976,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -7153,10 +6989,8 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -7293,18 +7127,13 @@ exports[`Article tests on android should render an article with no byline 1`] = 
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -7312,7 +7141,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -8856,18 +8684,13 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -8875,7 +8698,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -8911,13 +8733,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -8930,10 +8746,8 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -9070,18 +8884,13 @@ exports[`Article tests on android should render an article with no flags 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -9089,7 +8898,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -10551,18 +10359,13 @@ exports[`Article tests on android should render an article with no label 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -10570,7 +10373,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -10606,13 +10408,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -10625,10 +10421,8 @@ exports[`Article tests on android should render an article with no label 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -10765,18 +10559,13 @@ exports[`Article tests on android should render an article with no label 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -10784,7 +10573,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -12331,18 +12119,13 @@ exports[`Article tests on android should render an article with no label and no 
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -12350,7 +12133,6 @@ exports[`Article tests on android should render an article with no label and no 
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -12386,13 +12168,7 @@ exports[`Article tests on android should render an article with no label and no 
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -12405,10 +12181,8 @@ exports[`Article tests on android should render an article with no label and no 
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -12545,18 +12319,13 @@ exports[`Article tests on android should render an article with no label and no 
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -12564,7 +12333,6 @@ exports[`Article tests on android should render an article with no label and no 
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -13994,18 +13762,13 @@ exports[`Article tests on android should render an article with no label, no fla
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -14013,7 +13776,6 @@ exports[`Article tests on android should render an article with no label, no fla
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -14049,13 +13811,7 @@ exports[`Article tests on android should render an article with no label, no fla
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -14068,10 +13824,8 @@ exports[`Article tests on android should render an article with no label, no fla
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -14208,18 +13962,13 @@ exports[`Article tests on android should render an article with no label, no fla
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -14227,7 +13976,6 @@ exports[`Article tests on android should render an article with no label, no fla
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -15641,18 +15389,13 @@ exports[`Article tests on android should render an article with no standfirst 1`
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -15660,7 +15403,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -15696,13 +15438,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -15715,10 +15451,8 @@ exports[`Article tests on android should render an article with no standfirst 1`
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -15855,18 +15589,13 @@ exports[`Article tests on android should render an article with no standfirst 1`
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -15874,7 +15603,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -17431,18 +17159,13 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -17450,7 +17173,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -17486,13 +17208,7 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -17505,10 +17221,8 @@ exports[`Article tests on android should render an article with no standfirst an
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -17645,18 +17359,13 @@ exports[`Article tests on android should render an article with no standfirst an
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -17664,7 +17373,6 @@ exports[`Article tests on android should render an article with no standfirst an
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -19107,18 +18815,13 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                hitSlop={undefined}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -19126,7 +18829,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
-                testID={undefined}
               >
                 <svg
                   height="24"
@@ -19162,13 +18864,7 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -19181,10 +18877,8 @@ exports[`Article tests on android should render an article with no standfirst an
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -19321,18 +19015,13 @@ exports[`Article tests on android should render an article with no standfirst an
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -19340,7 +19029,6 @@ exports[`Article tests on android should render an article with no standfirst an
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}

@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native-web";
 import omit from "lodash.omit";
+import omitBy from "lodash.omitby";
 
 function withoutProps(node) {
   return { ...node, props: {} };
@@ -55,12 +56,15 @@ function transform(node) {
 
   return React.cloneElement(
     withoutProps(node),
-    {
-      ...cleanSvgProps(node, props),
-      ...transformRenderProps(props, transform),
-      ...cleanClassNames(className),
-      ...style
-    },
+    omitBy(
+      {
+        ...cleanSvgProps(node, props),
+        ...transformRenderProps(props, transform),
+        ...cleanClassNames(className),
+        ...style
+      },
+      x => x === undefined
+    ),
     ...children
   );
 }

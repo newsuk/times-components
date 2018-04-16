@@ -63,18 +63,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -82,10 +77,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -373,18 +366,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -392,10 +380,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -582,18 +568,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -601,10 +582,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -892,18 +871,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -911,10 +885,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1056,18 +1028,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1075,10 +1042,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1265,18 +1230,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1284,10 +1244,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1620,18 +1578,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1639,10 +1592,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1943,18 +1894,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1962,10 +1908,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2152,18 +2096,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2171,10 +2110,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2475,18 +2412,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2494,10 +2426,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2639,18 +2569,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2658,10 +2583,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2848,18 +2771,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2867,10 +2785,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3218,18 +3134,13 @@ exports[`Related articles tests on android:  Standard template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3237,10 +3148,8 @@ exports[`Related articles tests on android:  Standard template should render one
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3573,18 +3482,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3592,10 +3496,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3765,18 +3667,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3784,10 +3681,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3970,18 +3865,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3989,10 +3879,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4220,18 +4108,13 @@ exports[`Related articles tests on android:  Standard template should render two
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4239,10 +4122,8 @@ exports[`Related articles tests on android:  Standard template should render two
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4530,18 +4411,13 @@ exports[`Related articles tests on android:  Standard template should render two
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4549,10 +4425,8 @@ exports[`Related articles tests on android:  Standard template should render two
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,

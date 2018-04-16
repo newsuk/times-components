@@ -29,16 +29,8 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -50,8 +42,6 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -87,13 +77,7 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -106,10 +90,8 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -218,16 +200,8 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -239,8 +213,6 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={1.7777777777777777}
@@ -464,16 +436,8 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -485,8 +449,6 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -522,13 +484,7 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -541,10 +497,8 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -653,16 +607,8 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -674,8 +620,6 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={1.7777777777777777}
@@ -801,16 +745,8 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -822,8 +758,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -859,13 +793,7 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -878,10 +806,8 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -990,16 +916,8 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1011,8 +929,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={1.5}
@@ -1190,16 +1106,8 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1211,8 +1119,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -1248,13 +1154,7 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1267,10 +1167,8 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -1379,16 +1277,8 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1400,8 +1290,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={0.6666666666666666}
@@ -1570,16 +1458,8 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1591,8 +1471,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -1628,13 +1506,7 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1647,10 +1519,8 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -1759,16 +1629,8 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1780,8 +1642,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={1.25}
@@ -1952,16 +1812,8 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1973,8 +1825,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <svg
               height="24"
@@ -2010,13 +1860,7 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2029,10 +1873,8 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -2141,16 +1983,8 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2162,8 +1996,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             "opacity": 1,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <View
           aspectRatio={1.5}

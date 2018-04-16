@@ -63,16 +63,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -84,11 +76,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -347,16 +336,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -368,11 +349,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -558,16 +536,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -579,11 +549,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -842,16 +809,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -863,11 +822,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1008,16 +964,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1029,11 +977,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1219,16 +1164,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1240,11 +1177,8 @@ exports[`Related articles tests on ios:  Lead and two template should render one
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1548,16 +1482,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1569,11 +1495,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1845,16 +1768,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1866,11 +1781,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2056,16 +1968,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2077,11 +1981,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2353,16 +2254,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2374,11 +2267,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2519,16 +2409,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2540,11 +2422,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2730,16 +2609,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2751,11 +2622,8 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3074,16 +2942,8 @@ exports[`Related articles tests on ios:  Standard template should render one rel
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3095,11 +2955,8 @@ exports[`Related articles tests on ios:  Standard template should render one rel
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3403,16 +3260,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3424,11 +3273,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3597,16 +3443,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3618,11 +3456,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3804,16 +3639,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3825,11 +3652,8 @@ exports[`Related articles tests on ios:  Standard template should render three r
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4056,16 +3880,8 @@ exports[`Related articles tests on ios:  Standard template should render two rel
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4077,11 +3893,8 @@ exports[`Related articles tests on ios:  Standard template should render two rel
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4340,16 +4153,8 @@ exports[`Related articles tests on ios:  Standard template should render two rel
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4361,11 +4166,8 @@ exports[`Related articles tests on ios:  Standard template should render two rel
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,

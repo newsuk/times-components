@@ -1137,16 +1137,8 @@ exports[`Article tests on ios should render a full article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -1158,8 +1150,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -1195,13 +1185,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1214,10 +1198,8 @@ exports[`Article tests on ios should render a full article 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -1326,16 +1308,8 @@ exports[`Article tests on ios should render a full article 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1347,8 +1321,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -1811,13 +1783,7 @@ exports[`Article tests on ios should render a full article 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1830,7 +1796,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                   "width": "100%",
                 }
               }
-              testID={undefined}
             >
               <View
                 accessibilityLabel="splash-component"
@@ -1992,13 +1957,7 @@ exports[`Article tests on ios should render a full article 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2011,7 +1970,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                   "width": "100%",
                 }
               }
-              testID={undefined}
             >
               <View
                 accessibilityLabel="splash-component"
@@ -2133,16 +2091,8 @@ exports[`Article tests on ios should render a full article 1`] = `
                   }
                 >
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    collapsable={undefined}
-                    hasTVPreferredFocus={undefined}
-                    hitSlop={undefined}
                     isTVSelectable={true}
-                    nativeID={undefined}
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -2154,8 +2104,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                         "opacity": 1,
                       }
                     }
-                    testID={undefined}
-                    tvParallaxProperties={undefined}
                   >
                     <svg
                       height="24"
@@ -2191,13 +2139,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                     }
                   >
                     <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
                       accessible={true}
-                      hitSlop={undefined}
-                      nativeID={undefined}
-                      onLayout={undefined}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
                       onResponderRelease={[Function]}
@@ -2210,10 +2152,8 @@ exports[`Article tests on ios should render a full article 1`] = `
                           "justifyContent": "center",
                         }
                       }
-                      testID={undefined}
                     >
                       <View
-                        collapsable={undefined}
                         style={
                           Object {
                             "transform": Array [
@@ -2322,16 +2262,8 @@ exports[`Article tests on ios should render a full article 1`] = `
                 </View>
               </Modal>
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -2343,8 +2275,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <View
                   aspectRatio={1.5}
@@ -3314,16 +3244,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -3335,8 +3257,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -3372,13 +3292,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -3391,10 +3305,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -3503,16 +3415,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -3524,8 +3428,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -4101,16 +4003,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4122,8 +4016,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               style={
@@ -4157,16 +4049,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4178,8 +4062,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               style={
@@ -4213,16 +4095,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4234,8 +4108,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               style={
@@ -4269,16 +4141,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4290,8 +4154,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               style={
@@ -4325,16 +4187,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </View>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -4346,8 +4200,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               style={
@@ -4448,16 +4300,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -4469,11 +4313,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -4655,16 +4496,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -4676,11 +4509,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -4849,16 +4679,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -4870,11 +4692,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <View
-                  collapsable={undefined}
                   style={
                     Object {
                       "opacity": 0,
@@ -5228,16 +5047,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="leadAsset"
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
           isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -5249,8 +5060,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               "opacity": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <View
             accessibilityLabel="splash-component"
@@ -5604,16 +5413,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                   }
                 >
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    collapsable={undefined}
-                    hasTVPreferredFocus={undefined}
-                    hitSlop={undefined}
                     isTVSelectable={true}
-                    nativeID={undefined}
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -5625,8 +5426,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                         "opacity": 1,
                       }
                     }
-                    testID={undefined}
-                    tvParallaxProperties={undefined}
                   >
                     <svg
                       height="24"
@@ -5662,13 +5461,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                     }
                   >
                     <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
                       accessible={true}
-                      hitSlop={undefined}
-                      nativeID={undefined}
-                      onLayout={undefined}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
                       onResponderRelease={[Function]}
@@ -5681,10 +5474,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                           "justifyContent": "center",
                         }
                       }
-                      testID={undefined}
                     >
                       <View
-                        collapsable={undefined}
                         style={
                           Object {
                             "transform": Array [
@@ -5793,16 +5584,8 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                 </View>
               </Modal>
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -5814,8 +5597,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <View
                   aspectRatio={1.5}
@@ -6894,16 +6675,8 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -6915,8 +6688,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -6952,13 +6723,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -6971,10 +6736,8 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -7083,16 +6846,8 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -7104,8 +6859,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -8612,16 +8365,8 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -8633,8 +8378,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -8670,13 +8413,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -8689,10 +8426,8 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -8801,16 +8536,8 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -8822,8 +8549,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -10248,16 +9973,8 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -10269,8 +9986,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -10306,13 +10021,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -10325,10 +10034,8 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -10437,16 +10144,8 @@ exports[`Article tests on ios should render an article with no label 1`] = `
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -10458,8 +10157,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -11970,16 +11667,8 @@ exports[`Article tests on ios should render an article with no label and no flag
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -11991,8 +11680,6 @@ exports[`Article tests on ios should render an article with no label and no flag
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -12028,13 +11715,7 @@ exports[`Article tests on ios should render an article with no label and no flag
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -12047,10 +11728,8 @@ exports[`Article tests on ios should render an article with no label and no flag
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -12159,16 +11838,8 @@ exports[`Article tests on ios should render an article with no label and no flag
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -12180,8 +11851,6 @@ exports[`Article tests on ios should render an article with no label and no flag
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -13575,16 +13244,8 @@ exports[`Article tests on ios should render an article with no label, no flags a
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -13596,8 +13257,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -13633,13 +13292,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -13652,10 +13305,8 @@ exports[`Article tests on ios should render an article with no label, no flags a
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -13764,16 +13415,8 @@ exports[`Article tests on ios should render an article with no label, no flags a
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -13785,8 +13428,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -15165,16 +14806,8 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -15186,8 +14819,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -15223,13 +14854,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -15242,10 +14867,8 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -15354,16 +14977,8 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -15375,8 +14990,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -16897,16 +16510,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -16918,8 +16523,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -16955,13 +16558,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -16974,10 +16571,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -17086,16 +16681,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -17107,8 +16694,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}
@@ -18515,16 +18100,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
                 accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
                 isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -18536,8 +18113,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                     "opacity": 1,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
                 <svg
                   height="24"
@@ -18573,13 +18148,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 }
               >
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
-                  nativeID={undefined}
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -18592,10 +18161,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
                       "justifyContent": "center",
                     }
                   }
-                  testID={undefined}
                 >
                   <View
-                    collapsable={undefined}
                     style={
                       Object {
                         "transform": Array [
@@ -18704,16 +18271,8 @@ exports[`Article tests on ios should render an article with no standfirst and no
             </View>
           </Modal>
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
             isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -18725,8 +18284,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 "opacity": 1,
               }
             }
-            testID={undefined}
-            tvParallaxProperties={undefined}
           >
             <View
               aspectRatio={1.7777777777777777}

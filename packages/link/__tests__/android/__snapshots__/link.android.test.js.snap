@@ -2,18 +2,13 @@
 
 exports[`Link test on android Link doesnt change inner text styles 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -21,7 +16,6 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <Text
     accessible={true}
@@ -35,18 +29,13 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
 
 exports[`Link test on android Link renders correctly 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -54,7 +43,6 @@ exports[`Link test on android Link renders correctly 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   The Times
 </View>

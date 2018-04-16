@@ -29,18 +29,13 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -48,7 +43,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -84,13 +78,7 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -103,10 +91,8 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -243,18 +229,13 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -262,7 +243,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={1.7777777777777777}
@@ -514,18 +494,13 @@ exports[`Article Image test on android does not render Caption on Article Image 
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -533,7 +508,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -569,13 +543,7 @@ exports[`Article Image test on android does not render Caption on Article Image 
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -588,10 +556,8 @@ exports[`Article Image test on android does not render Caption on Article Image 
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -728,18 +694,13 @@ exports[`Article Image test on android does not render Caption on Article Image 
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -747,7 +708,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={1.7777777777777777}
@@ -901,18 +861,13 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -920,7 +875,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -956,13 +910,7 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -975,10 +923,8 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -1115,18 +1061,13 @@ exports[`Article Image test on android renders inline image (landscape) correctl
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1134,7 +1075,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={1.5}
@@ -1340,18 +1280,13 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1359,7 +1294,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -1395,13 +1329,7 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1414,10 +1342,8 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -1554,18 +1480,13 @@ exports[`Article Image test on android renders inline image (portrait) correctly
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -1573,7 +1494,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={0.6666666666666666}
@@ -1770,18 +1690,13 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -1789,7 +1704,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -1825,13 +1739,7 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1844,10 +1752,8 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -1984,18 +1890,13 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2003,7 +1904,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={1.25}
@@ -2202,18 +2102,13 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           }
         >
           <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
             accessible={true}
-            hitSlop={undefined}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
                 "type": "ThemeAttrAndroid",
               }
             }
-            onLayout={undefined}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -2221,7 +2116,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
-            testID={undefined}
           >
             <svg
               height="24"
@@ -2257,13 +2151,7 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             }
           >
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2276,10 +2164,8 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                   "justifyContent": "center",
                 }
               }
-              testID={undefined}
             >
               <View
-                collapsable={undefined}
                 style={
                   Object {
                     "transform": Array [
@@ -2416,18 +2302,13 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2435,7 +2316,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           aspectRatio={1.5}

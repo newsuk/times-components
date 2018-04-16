@@ -54,18 +54,13 @@ exports[`Pagination on Android renders correctly 1`] = `
     <View />
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -73,7 +68,6 @@ exports[`Pagination on Android renders correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -179,18 +173,13 @@ exports[`Pagination on Android renders next link 1`] = `
     <View />
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -198,7 +187,6 @@ exports[`Pagination on Android renders next link 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -303,18 +291,13 @@ exports[`Pagination on Android renders prev and next link 1`] = `
   >
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -322,7 +305,6 @@ exports[`Pagination on Android renders prev and next link 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -372,18 +354,13 @@ exports[`Pagination on Android renders prev and next link 1`] = `
     </View>
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -391,7 +368,6 @@ exports[`Pagination on Android renders prev and next link 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -496,18 +472,13 @@ exports[`Pagination on Android renders prev link 1`] = `
   >
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -515,7 +486,6 @@ exports[`Pagination on Android renders prev link 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -622,18 +592,13 @@ exports[`Pagination on Android renders results message 1`] = `
     <View />
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -641,7 +606,6 @@ exports[`Pagination on Android renders results message 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
@@ -720,18 +684,13 @@ exports[`Pagination on Android renders with hidden results 1`] = `
     <View />
     <View>
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -739,7 +698,6 @@ exports[`Pagination on Android renders with hidden results 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={

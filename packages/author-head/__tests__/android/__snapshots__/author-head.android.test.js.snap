@@ -2,7 +2,6 @@
 
 exports[`AuthorHead test on android renders 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,
@@ -96,7 +95,6 @@ exports[`AuthorHead test on android renders 1`] = `
 
 exports[`AuthorHead test on android renders with data 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,
@@ -376,7 +374,6 @@ exports[`AuthorHead test on android renders with data 1`] = `
 
 exports[`AuthorHead test on android renders without profile picture 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,
