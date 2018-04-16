@@ -1,8 +1,12 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
+import { boolean } from "@storybook/addon-knobs/react";
+
 import { storiesOf } from "@storybook/react-native";
 import { action, decorateAction } from "@storybook/addon-actions";
+
+import IsPaidSubscriber from "./src/is-paid-subscriber";
 import BrightcoveVideo from "./src/brightcove-video";
 import Player from "./src/brightcove-player";
 
@@ -52,6 +56,19 @@ storiesOf("Primitives/BrightcoveVideo", module)
       videoId={videoId}
       accountId={accountId}
     />
+  ))
+  .add("paidonly state", () => (
+    <IsPaidSubscriber.Provider value={boolean("Is paid subscriber?", false)}>
+      <BrightcoveVideo
+        width={426}
+        height={239}
+        policyKey={policyKey}
+        videoId={videoId}
+        accountId={accountId}
+        poster={{ uri: posterImageURI }}
+        paidonly={boolean("paidonly video", false)}
+      />
+    </IsPaidSubscriber.Provider>
   ))
   .add("Inline launcher with default values to demonstrate fullscreen", () => (
     <View style={{ width: "100%", height: "100%" }}>

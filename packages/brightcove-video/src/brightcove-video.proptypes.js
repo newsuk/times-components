@@ -9,11 +9,9 @@ export const brightcoveVideoPropTypes = {
   ...Player.propTypes
 };
 
-export const brightcoveVideoDefaultProps = Object.assign(
-  {
-    resetOnFinish: false,
-    directToFullscreen: false
-  },
-  Splash.defaultProps,
-  Player.defaultProps
-);
+export const brightcoveVideoDefaultProps = {
+  resetOnFinish: false,
+  directToFullscreen: false,
+  ...Splash.defaultProps,
+  ...Player.defaultProps
+};

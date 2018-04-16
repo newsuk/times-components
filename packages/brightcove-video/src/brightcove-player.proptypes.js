@@ -9,6 +9,7 @@ export default {
   videoId: PropTypes.string.isRequired,
   accountId: PropTypes.string.isRequired,
   policyKey: PropTypes.string,
+  paidonly: PropTypes.bool,
   playerId: PropTypes.string,
   width: numberOrString,
   height: numberOrString,

@@ -1,6 +1,6 @@
-import BrightcoveVideo from "../src/brightcove-video";
+import BrightcoveVideo from "../src/brightcove-video.web";
 import brightcoveSharedTests from "./brightcove-video.shared";
 
-describe("Brightcove native", () => {
+describe("Brightcove web", () => {
   brightcoveSharedTests(BrightcoveVideo);
 });

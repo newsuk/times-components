@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders poster correctly before launch 1`] = `
+exports[`Brightcove native renders a non-paidonly video correctly for paid users 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -92,7 +92,375 @@ exports[`renders poster correctly before launch 1`] = `
 </View>
 `;
 
-exports[`renders poster with custom play icon if specified 1`] = `
+exports[`Brightcove native renders a non-paidonly video correctly for unpaid users 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <View
+    accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+    testID="splash-component"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
+        }
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View>
+        <svg
+          height={70}
+          style={Object {}}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Brightcove native renders a paidonly video correctly for paid users 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <View
+    accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+    testID="splash-component"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
+        }
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View>
+        <svg
+          height={70}
+          style={Object {}}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Brightcove native renders a paidonly video correctly for unpaid users 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <View
+    accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+    testID="splash-component"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
+        }
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View>
+        <svg
+          height={70}
+          style={Object {}}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Brightcove native renders poster correctly before launch 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 180,
+      "width": 320,
+    }
+  }
+  testID={undefined}
+>
+  <View
+    accessibilityLabel="splash-component"
+    style={
+      Object {
+        "height": 180,
+        "width": 320,
+      }
+    }
+    testID="splash-component"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=",
+        }
+      }
+      style={
+        Object {
+          "height": 180,
+          "width": 320,
+        }
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View>
+        <svg
+          height={70}
+          style={Object {}}
+          viewBox="0 0 100 100"
+          width={70}
+        >
+          <rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            style={Object {}}
+            width="100"
+          />
+          <polygon
+            fill="rgb(255,255,255)"
+            points="30,20 70,50 30,80"
+            style={Object {}}
+          />
+        </svg>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Brightcove native renders poster with custom play icon if specified 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -169,7 +537,7 @@ exports[`renders poster with custom play icon if specified 1`] = `
 </View>
 `;
 
-exports[`the player can trigger errors 1`] = `
+exports[`Brightcove native the player can trigger errors 1`] = `
 <View
   accessibilityLabel="error-component"
   testID="error-component"
@@ -324,7 +692,7 @@ exports[`the player can trigger errors 1`] = `
 </View>
 `;
 
-exports[`will handle an error properly 1`] = `
+exports[`Brightcove native will handle an error properly 1`] = `
 <View
   accessibilityLabel="error-component"
   testID="error-component"
@@ -479,7 +847,7 @@ exports[`will handle an error properly 1`] = `
 </View>
 `;
 
-exports[`will launch if play is called 1`] = `
+exports[`Brightcove native will launch if play is called 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
   autoplay={true}
@@ -500,7 +868,7 @@ exports[`will launch if play is called 1`] = `
 />
 `;
 
-exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
+exports[`Brightcove native will reset if 'resetOnFinish' is true & video finishes 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -592,7 +960,7 @@ exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
 </View>
 `;
 
-exports[`will reset properly 1`] = `
+exports[`Brightcove native will reset properly 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}

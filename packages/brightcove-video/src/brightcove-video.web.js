@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Image } from "react-native";
+
 import {
   brightcoveVideoDefaultProps,
   brightcoveVideoPropTypes
@@ -6,6 +8,7 @@ import {
 
 import Player from "./brightcove-player";
 import VideoError from "./error";
+import IsPaidSubscriber from "./is-paid-subscriber";
 
 class BrightcoveVideo extends Component {
   constructor(props) {
@@ -64,20 +67,37 @@ class BrightcoveVideo extends Component {
     this.props.onError(error);
   }
 
+  // TODO:
+  //
+  // 1. Get snapshots working. Currently we're using the native component.
+  // 1.1 Should I refactor the component? Poster image only for native?
+  // 1.2 Ask Tunca what the state of the native component is.
+  // 2. Fix test coverage.
+
   render() {
+    const { paidonly, width, height, poster } = this.props;
+
     if (this.state.error) {
       return <VideoError {...this.props} onReset={this.reset} />;
     }
 
     return (
-      <Player
-        ref={ref => {
-          this.playerRef = ref;
-        }}
-        {...this.props}
-        onError={this.handleError}
-        onFinish={this.handleFinish}
-      />
+      <IsPaidSubscriber.Consumer>
+        {isPaidSubscriber =>
+          paidonly && !isPaidSubscriber ? (
+            <Image style={{ width, height }} source={poster} />
+          ) : (
+            <Player
+              ref={ref => {
+                this.playerRef = ref;
+              }}
+              {...this.props}
+              onError={this.handleError}
+              onFinish={this.handleFinish}
+            />
+          )
+        }
+      </IsPaidSubscriber.Consumer>
     );
   }
 }
