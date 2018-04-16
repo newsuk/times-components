@@ -3,43 +3,35 @@
 exports[`1. Render a group of topics in the correct order 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "center",
-      },
-      null,
-    ]
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "center",
+    }
   }
 >
   <WithTrackEvents(Topic)
     id="football"
-    key="football"
     name="Football"
     onPress={[Function]}
   />
   <WithTrackEvents(Topic)
     id="chelsea"
-    key="chelsea"
     name="Chelsea FC"
     onPress={[Function]}
   />
   <WithTrackEvents(Topic)
     id="arsenal"
-    key="arsenal"
     name="Arsenal"
     onPress={[Function]}
   />
   <WithTrackEvents(Topic)
     id="manchester-united"
-    key="manchester-united"
     name="Manchester United FC"
     onPress={[Function]}
   />
   <WithTrackEvents(Topic)
     id="rugby-union"
-    key="rugby-union"
     name="Rugby Union"
     onPress={[Function]}
   />

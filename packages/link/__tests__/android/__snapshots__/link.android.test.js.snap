@@ -69,12 +69,9 @@ exports[`Link test on android TextLink renders correctly with children 1`] = `
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {},
-    ]
+    Object {
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times
@@ -90,17 +87,11 @@ exports[`Link test on android TextLink renders correctly with multiple styles 1`
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "backgroundColor": "blue",
-      },
-      Object {
-        "color": "red",
-      },
-    ]
+    Object {
+      "backgroundColor": "blue",
+      "color": "red",
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times
@@ -116,14 +107,10 @@ exports[`Link test on android TextLink renders correctly with specific styles 1`
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "backgroundColor": "blue",
-      },
-    ]
+    Object {
+      "backgroundColor": "blue",
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times

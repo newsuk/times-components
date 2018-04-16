@@ -10,9 +10,7 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
     }
   }
 >
-  <View
-    style={undefined}
-  >
+  <View>
     <View>
       <Modal
         hardwareAccelerated={false}
@@ -54,22 +52,14 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -158,20 +148,15 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -190,31 +175,23 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -250,11 +227,9 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -291,7 +266,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
       >
         <View
           aspectRatio={1.7777777777777777}
-          style={Object {}}
         >
           <View
             style={
@@ -309,20 +283,15 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -341,31 +310,23 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -401,11 +362,9 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -420,21 +379,14 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
 `;
 
 exports[`Article Image test on android does not render Article Image if display is not received 1`] = `
-<View
-  style={undefined}
->
-  <View
-    style={undefined}
-  >
+<View>
+  <View>
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            undefined,
-          ]
+          Object {
+            "paddingTop": 10,
+          }
         }
       >
         <Text
@@ -442,15 +394,12 @@ exports[`Article Image test on android does not render Article Image if display 
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           All the latest stories in culture and books.
@@ -460,22 +409,14 @@ exports[`Article Image test on android does not render Article Image if display 
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           THE CREDITS
@@ -496,20 +437,14 @@ exports[`Article Image test on android does not render Article Image if ratio is
     }
   }
 >
-  <View
-    style={undefined}
-  >
+  <View>
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingLeft": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingTop": 10,
+          }
         }
       >
         <Text
@@ -517,15 +452,12 @@ exports[`Article Image test on android does not render Article Image if ratio is
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           All the latest stories in culture and books.
@@ -535,22 +467,14 @@ exports[`Article Image test on android does not render Article Image if ratio is
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           THE CREDITS
@@ -571,9 +495,7 @@ exports[`Article Image test on android does not render Caption on Article Image 
     }
   }
 >
-  <View
-    style={undefined}
-  >
+  <View>
     <View>
       <Modal
         hardwareAccelerated={false}
@@ -615,22 +537,14 @@ exports[`Article Image test on android does not render Caption on Article Image 
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -719,20 +633,15 @@ exports[`Article Image test on android does not render Caption on Article Image 
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -751,31 +660,23 @@ exports[`Article Image test on android does not render Caption on Article Image 
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -811,11 +712,9 @@ exports[`Article Image test on android does not render Caption on Article Image 
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -852,7 +751,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
       >
         <View
           aspectRatio={1.7777777777777777}
-          style={Object {}}
         >
           <View
             style={
@@ -870,20 +768,15 @@ exports[`Article Image test on android does not render Caption on Article Image 
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -902,31 +795,23 @@ exports[`Article Image test on android does not render Caption on Article Image 
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -962,11 +847,9 @@ exports[`Article Image test on android does not render Caption on Article Image 
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -1041,22 +924,14 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -1145,20 +1020,15 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -1177,31 +1047,23 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -1237,11 +1099,9 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -1278,7 +1138,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
       >
         <View
           aspectRatio={1.5}
-          style={Object {}}
         >
           <View
             style={
@@ -1296,20 +1155,15 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -1328,31 +1182,23 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -1388,11 +1234,9 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -1415,14 +1259,9 @@ exports[`Article Image test on android renders inline image (landscape) correctl
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingTop": 0,
+          }
         }
       >
         <Text
@@ -1430,15 +1269,12 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           All the latest stories in culture and books.
@@ -1448,22 +1284,14 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           TIMES PHOTOGRAPHER JACK HILL
@@ -1535,22 +1363,14 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -1639,20 +1459,15 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -1671,31 +1486,23 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -1731,11 +1538,9 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -1772,7 +1577,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
       >
         <View
           aspectRatio={0.6666666666666666}
-          style={Object {}}
         >
           <View
             style={
@@ -1790,20 +1594,15 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -1822,31 +1621,23 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -1882,11 +1673,9 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -1909,14 +1698,9 @@ exports[`Article Image test on android renders inline image (portrait) correctly
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingTop": 0,
+          }
         }
       >
         <Text
@@ -1924,15 +1708,12 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           President Kennedy’s death in 1963 has spawned countless conspiracy theories
@@ -1942,22 +1723,14 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           BETTMANN
@@ -1978,9 +1751,7 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
     }
   }
 >
-  <View
-    style={undefined}
-  >
+  <View>
     <View>
       <Modal
         hardwareAccelerated={false}
@@ -2022,22 +1793,14 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -2126,20 +1889,15 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -2158,31 +1916,23 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -2218,11 +1968,9 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -2259,7 +2007,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
       >
         <View
           aspectRatio={1.25}
-          style={Object {}}
         >
           <View
             style={
@@ -2277,20 +2024,15 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -2309,31 +2051,23 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -2369,11 +2103,9 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -2384,20 +2116,14 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
       </View>
     </View>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingLeft": 10,
-            },
-          ]
+          Object {
+            "paddingLeft": 10,
+            "paddingTop": 10,
+          }
         }
       >
         <Text
@@ -2405,15 +2131,12 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           From the spreadsheet: 1 Sir Michael Fallon, Admitted placing hand on knee of journalist 15 years ago. 2 Jake Berry, announced he had a baby with a Tory aide after an amicable divorce from his wife. 3 Amber Rudd, had a relationship with Kwasi Kwarteng, who is now an aide to the chancellor. 4 Liam Fox, had to resign over breach of ministerial code after suggestions that his position had benefited his friend Adam Werritty. No allegations were of a sexual nature. 5 Stephen Crabb, sent explicit messages to young women while married. 6 Mark Garnier, admitted asking his secretary to buy sex toys. 7 Liz Truss, had affair with Tory MP Mark Field
@@ -2423,22 +2146,14 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           THE CREDITS
@@ -2510,22 +2225,14 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           >
             <svg
               height="24"
-              style={Object {}}
-              viewBox="0 0 24 24"
               width="24"
             >
               <g
                 fill="rgba(255, 255, 255, 0.8)"
-                style={Object {}}
               >
+                <path />
                 <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  style={Object {}}
-                />
-                <path
-                  d="M0 0h24v24H0z"
                   fill="none"
-                  style={Object {}}
                 />
               </g>
             </svg>
@@ -2614,20 +2321,15 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -2646,31 +2348,23 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -2706,11 +2400,9 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -2747,7 +2439,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
       >
         <View
           aspectRatio={1.5}
-          style={Object {}}
         >
           <View
             style={
@@ -2765,20 +2456,15 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                 }
               }
               style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
+                Object {
+                  "bottom": 0,
+                  "height": "100%",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": "100%",
+                }
               }
             />
             <View
@@ -2797,31 +2483,23 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    undefined,
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
                 }
               />
               <View
                 onLayout={[Function]}
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                    null,
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               >
                 <View
@@ -2857,11 +2535,9 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   />
                 </View>
@@ -2884,14 +2560,9 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
     <View>
       <View
         style={
-          Array [
-            Object {
-              "paddingTop": 10,
-            },
-            Object {
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "paddingTop": 0,
+          }
         }
       >
         <Text
@@ -2899,15 +2570,12 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 20,
+            }
           }
         >
           Sebastian Schwarz, Glyndbourne’s general director, took issue with the BBC
@@ -2917,22 +2585,14 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Array [
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 20,
-              },
-              Object {
-                "color": "#333333",
-                "fontSize": 9,
-                "fontWeight": "400",
-                "letterSpacing": 1,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
+            Object {
+              "color": "#333333",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 9,
+              "fontWeight": "400",
+              "letterSpacing": 1,
+              "lineHeight": 20,
+            }
           }
         >
           TIMES PHOTOGRAPHER RICHARD POHLE

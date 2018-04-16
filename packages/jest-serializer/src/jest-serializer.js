@@ -6,30 +6,27 @@ function withoutProps(node) {
   return { ...node, props: {} };
 }
 
+function getType(node) {
+  if (node.type instanceof Function) {
+    return node.type.name.toLowerCase();
+  }
+  return node.type.toLowerCase();
+}
+
 function cleanSvgProps(node, props) {
-  return node.type.toString().toLowerCase() == "path" ||
-    node.type.toString().toLowerCase() == "polygon" ||
-    node.type.toString().toLowerCase() == "svg"
+  const type = getType(node);
+  return type === "path" || type === "polygon" || type === "svg"
     ? omit(props, ["d", "path", "points", "viewBox"])
     : props;
 }
 
-function transformRenderProps(props) {
-  return Object.entries(props)
-    .filter(([k, p]) => React.isValidElement(p))
-    .reduce((props, [key, element]) => ({...props, [key]: element }), {});
-}
-
 function cleanClassNames(names) {
-  const className = (names||'')
-    .replace(/rn-[^-]+-[^- ]+/g, '')
-    .replace(/[ ]+/g,' ')
+  const className = (names || "")
+    .replace(/rn-[^-]+-[^- ]+/g, "")
+    .replace(/[ ]+/g, " ")
     .trim();
 
-  return (className.length)
-    ? {className}
-    : {};
-
+  return className.length ? { className } : {};
 }
 
 function transform(node) {
@@ -44,12 +41,24 @@ function transform(node) {
   const flattened = StyleSheet.flatten(styles);
   const style = Object.keys(flattened || {}).length ? { style: flattened } : {};
 
+  const transformRenderProps = propsToTransform =>
+    Object.entries(propsToTransform)
+      .filter(([k, p]) => k !== "children" && React.isValidElement(p))
+      .reduce(
+        (transformed, [key, element]) => ({
+          ...transformed,
+          [key]: transform(element)
+        }),
+        {}
+      );
+
   return React.cloneElement(
-    withoutProps(node), {
+    withoutProps(node),
+    {
       ...cleanSvgProps(node, props),
       ...transformRenderProps(props),
-      ...style,
-      ...cleanClassNames(className)
+      ...cleanClassNames(className),
+      ...style
     },
     ...children
   );

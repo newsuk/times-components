@@ -167,17 +167,13 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with a pull quot
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 75,
-            "marginBottom": -40,
-            "marginTop": 0,
-          },
-          Object {
-            "color": "#696969",
-          },
-        ]
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 75,
+          "marginBottom": -40,
+          "marginTop": 0,
+        }
       }
     >
       “
@@ -213,18 +209,14 @@ exports[`Markup Native tests on iOS renders multiple paragraphs with a pull quot
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
-          Array [
-            Object {
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 13,
-              "marginBottom": 0,
-              "paddingTop": 4,
-            },
-            Object {
-              "color": "#696969",
-            },
-          ]
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 13,
+            "marginBottom": 0,
+            "paddingTop": 4,
+          }
         }
       >
         Katie Glass
