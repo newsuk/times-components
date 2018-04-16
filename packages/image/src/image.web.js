@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Placeholder from "./placeholder";
-import { defaultProps, propTypes } from "./image-prop-types";
+import { defaultProps, propTypes } from "./image-proptypes";
 
 const TimesImage = ({ uri, aspectRatio, style }) => {
   const styles = {
