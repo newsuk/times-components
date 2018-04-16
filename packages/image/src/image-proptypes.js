@@ -11,6 +11,6 @@ export const propTypes = {
 
 export const defaultProps = {
   aspectRatio: undefined,
-  style: null,
+  style: {},
   uri: ""
 };
