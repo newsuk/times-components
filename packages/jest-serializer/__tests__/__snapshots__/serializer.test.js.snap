@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest serializer adds styles 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "red",
+      "padding": 1,
+    }
+  }
+/>
+`;
+
+exports[`jest serializer removes paths d props 1`] = `<path />`;
+
+exports[`jest serializer removes rnw-classnames 1`] = `
+<View
+  className="main main2"
+/>
+`;
+
+exports[`jest serializer transforms render props 1`] = `
+<View>
+  <Nested
+    prop={
+      <Path
+        d="1 2 3 4 5 6"
+      />
+    }
+  />
+</View>
+`;
