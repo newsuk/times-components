@@ -1,21 +1,25 @@
 const babelJest = require("babel-jest");
+const crypto = require("crypto");
 const fs = require("fs");
 
 const readSource = filename => fs.readFileSync(filename).toString();
+const isPackageFile = filename => filename.includes("@times-components");
+const getRandomKey = () => crypto.createHash('sha256').update(process.hrtime().join('')).digest();
 
 module.exports = {
-    process(src, targetFilename, config, transformOptions) {
-      const isPackageFile = targetFilename.includes("@times-components");
-      let source = src;
-      let filename = targetFilename;
+  getCacheKey(src, filename, config, cacheOptions) {
+    return isPackageFile(filename) ? getRandomKey() : babelJest.getCacheKey(src, filename, config, cacheOptions);
+  },
 
-      if (isPackageFile) {
-        filename = targetFilename.replace("dist", "src");
-        source = readSource(filename);
-        config.cache = false;
-        transformOptions.cache = false;
-      }
+  process(src, targetFilename, config, processOptions) {
+    let source = src;
+    let filename = targetFilename;
 
-      return babelJest.process(source, filename, config, transformOptions);
+    if (isPackageFile(filename)) {
+      filename = targetFilename.replace("dist", "src");
+      source = readSource(filename);
+    }
+
+    return babelJest.process(source, filename, config, processOptions);
   },
 };
