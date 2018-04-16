@@ -2,7 +2,7 @@ import * as builtInKnobs from "@storybook/addon-knobs/react";
 import select from "./select-shim";
 
 const knobs = {
-  builtInKnobs,
+  ...builtInKnobs,
   select
 };
 
