@@ -303,6 +303,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -458,6 +467,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -776,6 +794,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -931,6 +958,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -1086,6 +1122,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -1404,6 +1449,15 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -1568,6 +1622,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Sathnam Sanghera
                     </Text>
@@ -1890,6 +1953,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -2054,6 +2126,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Sathnam Sanghera
                     </Text>
@@ -2376,6 +2457,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -2531,6 +2621,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Deborah Haynes
                     </Text>
@@ -2695,6 +2794,15 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Sathnam Sanghera
                     </Text>
@@ -3182,6 +3290,15 @@ exports[`Related articles tests on ios:  Standard template should render one rel
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -3410,6 +3527,15 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -3606,6 +3732,15 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -3802,6 +3937,15 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -4120,6 +4264,15 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -4406,6 +4559,15 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       accessible={true}
                       allowFontScaling={true}
                       ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#006699",
+                          },
+                          undefined,
+                          undefined,
+                        ]
+                      }
                     >
                       Camilla Long, Environment Editor
                     </Text>
