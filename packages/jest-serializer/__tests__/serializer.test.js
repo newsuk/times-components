@@ -8,8 +8,8 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("jest serializer", () => {
-  it("removes rnw-classnames", () => {
+describe("Jest serializer", () => {
+  it("should remove rnw-classnames", () => {
     const component = (
       <View className="rn-prop-hash1 main rn-prop-hash2 main2" />
     );
@@ -18,7 +18,7 @@ describe("jest serializer", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("adds styles", () => {
+  it("should not remove styles", () => {
     const { colored, padded } = StyleSheet.create({
       colored: {
         color: "red"
@@ -34,13 +34,13 @@ describe("jest serializer", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("removes paths d props", () => {
+  it("should remove d-prop from path", () => {
     const component = <Path d="1 2 3 4 5 6" />;
     const tree = renderer.create(component);
     expect(tree).toMatchSnapshot();
   });
 
-  it.only("transforms render props", () => {
+  it("should transform render props", () => {
     const propToRender = <Path d="1 2 3 4 5 6" />;
     const Nested = () => <Text>Nested</Text>;
     const PropRenderer = ({ prop }) => (

@@ -6,11 +6,11 @@ function withoutProps(node) {
   return { ...node, props: {} };
 }
 
-function getType(node) {
-  if (node.type instanceof Function) {
-    return node.type.name.toLowerCase();
+function getType({ type }) {
+  if (type instanceof Function) {
+    return type.name.toLowerCase();
   }
-  return node.type.toLowerCase();
+  return type.toLowerCase();
 }
 
 function cleanSvgProps(node, props) {
@@ -29,6 +29,18 @@ function cleanClassNames(names) {
   return className.length ? { className } : {};
 }
 
+function transformRenderProps(propsToTransform, transformer) {
+  return Object.entries(propsToTransform)
+    .filter(([k, p]) => k !== "children" && React.isValidElement(p))
+    .reduce(
+      (transformed, [key, element]) => ({
+        ...transformed,
+        [key]: transformer(element)
+      }),
+      {}
+    );
+}
+
 function transform(node) {
   if (!node || !node.props) return node;
 
@@ -41,22 +53,11 @@ function transform(node) {
   const flattened = StyleSheet.flatten(styles);
   const style = Object.keys(flattened || {}).length ? { style: flattened } : {};
 
-  const transformRenderProps = propsToTransform =>
-    Object.entries(propsToTransform)
-      .filter(([k, p]) => k !== "children" && React.isValidElement(p))
-      .reduce(
-        (transformed, [key, element]) => ({
-          ...transformed,
-          [key]: transform(element)
-        }),
-        {}
-      );
-
   return React.cloneElement(
     withoutProps(node),
     {
       ...cleanSvgProps(node, props),
-      ...transformRenderProps(props),
+      ...transformRenderProps(props, transform),
       ...cleanClassNames(className),
       ...style
     },
