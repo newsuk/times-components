@@ -61,6 +61,7 @@
     "@times-components/eslint-config-thetimes": "0.4.1",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
+    "babel-jest": "22.4.3",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
