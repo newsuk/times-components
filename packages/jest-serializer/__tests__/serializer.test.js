@@ -56,4 +56,17 @@ describe("Jest serializer", () => {
     const tree = shallow(<PropRenderer prop={propToRender} />);
     expect(tree).toMatchSnapshot();
   });
+
+  it("should remove undefined props", () => {
+    const Dummy = () => null;
+    const DummyRenderer = () => (
+      <View> 
+        <Dummy undef={undefined} False={false} Null={null} Zero={0} />
+      </View>
+    );
+
+    const tree = shallow(<DummyRenderer/>);
+    expect(tree).toMatchSnapshot();
+  });
+
 });

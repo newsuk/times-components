@@ -22,6 +22,16 @@ exports[`Jest serializer should remove rnw-classnames 1`] = `
 />
 `;
 
+exports[`Jest serializer should remove undefined props 1`] = `
+<View>
+  <Dummy
+    False={false}
+    Null={null}
+    Zero={0}
+  />
+</View>
+`;
+
 exports[`Jest serializer should transform render props 1`] = `
 <View>
   <Nested
