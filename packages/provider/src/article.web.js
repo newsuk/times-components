@@ -21,7 +21,7 @@ export const query = gql`
           brightcovePlayerId
           brightcoveVideoId
           brightcoveAccountId
-          paidonly
+          paidOnly
           type: __typename
           posterImage {
             ...imageProps
