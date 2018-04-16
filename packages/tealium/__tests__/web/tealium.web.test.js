@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("Tealium test on web", () => {
+describe("Tealium tests on web", () => {
   shared();
 });
