@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.8"></a>
+## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/storybook@0.7.7...@times-components/storybook@0.7.8) (2018-04-16)
+
+
+### Bug Fixes
+
+* repair broken knobs argument to showcaseToStoryBook ([#870](https://github.com/newsuk/times-components/issues/870)) ([240800f](https://github.com/newsuk/times-components/commit/240800f))
+
+
+
+
 <a name="0.7.7"></a>
 ## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/storybook@0.7.6...@times-components/storybook@0.7.7) (2018-04-14)
 

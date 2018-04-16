@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.15.24",
+  "version": "1.15.25",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -57,9 +57,9 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/gestures": "1.2.38",
-    "@times-components/gradient": "0.8.21",
-    "@times-components/link": "0.19.7",
+    "@times-components/gestures": "1.2.39",
+    "@times-components/gradient": "0.8.22",
+    "@times-components/link": "0.19.8",
     "@times-components/styleguide": "0.5.16",
     "@times-components/utils": "0.6.13",
     "prop-types": "15.6.0",
