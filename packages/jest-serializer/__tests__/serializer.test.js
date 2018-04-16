@@ -11,7 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 describe("Jest serializer", () => {
   it("should remove rnw-classnames", () => {
     const component = (
-      <View className="rn-prop-hash1 main rn-prop-hash2 main2" />
+      <View className="rn-prop-hash1 rn-notprop main rn-prop-hash2 main2" />
     );
     const tree = renderer.create(component).toJSON();
 

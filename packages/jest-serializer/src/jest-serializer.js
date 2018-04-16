@@ -23,7 +23,7 @@ function cleanSvgProps(node, props) {
 
 function cleanClassNames(names) {
   const className = (names || "")
-    .replace(/rn-[^-]+-[^- ]+/g, "")
+    .replace(/rn-[^-^ ]+-[^-^ ]+/g, "")
     .replace(/[ ]+/g, " ")
     .trim();
 
