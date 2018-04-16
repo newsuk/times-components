@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Modal, View, StyleSheet } from "react-native";
-import Button from "@times-components/link";
-import Gestures from "@times-components/gestures";
-import { colours } from "@times-components/styleguide";
 import Svg, { Path, G } from "svgs";
+import Gestures from "@times-components/gestures";
+import Button from "@times-components/link";
+import { colours } from "@times-components/styleguide";
 import Image from "./image";
 import { defaultProps, propTypes } from "./image-proptypes";
 

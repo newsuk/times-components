@@ -1,54 +1,58 @@
 /* global context */
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import ModalImage from "../src/modal-image";
+import Image, { ModalImage } from "../src";
 
 export default () => {
-  context("<ModalImage />", () => {
-    it("should render", () => {
-      const tree = renderer
-        .create(
-          <ModalImage aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
-        )
-        .toJSON();
+  context("ModalImage", () => {
+    let image;
+    let modalImage;
 
-      expect(tree).toMatchSnapshot();
-    });
-
-    it("should show a modal on click", () => {
-      const component = shallow(
+    beforeAll(() => {
+      image = shallow(
+        <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+      );
+      modalImage = shallow(
         <ModalImage aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
       );
+    });
 
-      const imageLink = component
+    afterAll(() => {
+      image = null;
+      modalImage = null;
+    });
+
+    it("should handle onPress event on the link", () => {
+      const imageLink = modalImage
         .dive()
         .find("Link")
         .at(1);
 
       imageLink.simulate("press");
-      component.update();
+      modalImage.update();
 
-      const modal = component.childAt(0);
+      const modal = modalImage.childAt(0);
       expect(modal.props().visible).toBe(true);
     });
 
-    it("should close a modal on click", () => {
-      const component = shallow(
-        <ModalImage aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
-      );
-      component.setState({ showModal: true });
+    it("should handle onPress event on the close button", () => {
+      modalImage.setState({ showModal: true });
 
-      const closeButton = component
+      const closeButton = modalImage
         .dive()
         .find("Link")
         .at(0);
       closeButton.simulate("press");
-      component.update();
+      modalImage.update();
 
-      const modal = component.childAt(0);
+      const modal = modalImage.childAt(0);
       expect(modal.props().visible).toBe(false);
+    });
+
+    it("should handle onload event", () => {
+      expect(image.state("isLoaded")).toEqual(false);
+      image.instance().handleLoad();
+      expect(image.state("isLoaded")).toEqual(true);
     });
   });
 };
