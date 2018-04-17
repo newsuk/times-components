@@ -127,7 +127,7 @@ exports[`2. Renders default layout without uri 1`] = `
       onLoad={[Function]}
       source={
         Object {
-          "uri": "&preview=true",
+          "uri": null,
         }
       }
       style={

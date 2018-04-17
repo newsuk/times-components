@@ -30,21 +30,22 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { uri: dirtyUri, style, aspectRatio } = this.props;
+    const { uri, style, aspectRatio } = this.props;
     const { isLoaded } = this.state;
     // web handles missing protocols just fine, native doesn't. This evens out support.
-    const uri = addMissingProtocol(dirtyUri);
-    const previewUri = this.state.isHighResolutionLoaded
-      ? null
-      : `${uri}&preview=true`; // TODO: Implement a separate uri for preview
+    const cleanUri = addMissingProtocol(uri);
+    const previewUri =
+      !cleanUri || this.state.isHighResolutionLoaded
+        ? null
+        : `${cleanUri}&preview=true`; // TODO: Implement a separate uri for preview
 
     const props = {
       style: styles.imageBackground,
       onLoad: this.handleLoad
     };
 
-    if (uri) {
-      props.source = { uri };
+    if (cleanUri) {
+      props.source = { uri: cleanUri };
     }
 
     const previewProps = {
