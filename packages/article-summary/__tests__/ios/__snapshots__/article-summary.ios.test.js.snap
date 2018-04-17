@@ -199,23 +199,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -225,13 +212,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -425,23 +408,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -451,13 +421,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -592,23 +558,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -618,13 +571,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -861,23 +810,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -887,13 +823,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -1062,23 +994,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -1088,13 +1007,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -1262,23 +1177,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -1288,13 +1190,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
@@ -1351,23 +1249,10 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-<<<<<<< HEAD
         Object {
           "color": "#006699",
           "textDecorationLine": "underline",
         }
-=======
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
->>>>>>> Updates article summary snapshots
       }
     >
       Camilla Long
@@ -1377,13 +1262,9 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+        }
       }
     >
       , Environment Editor
