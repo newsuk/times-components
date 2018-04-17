@@ -7,7 +7,7 @@ import {
 
 import Player from "./brightcove-player";
 import Splash from "./splash";
-import VideoError from "./error";
+import VideoError from "./video-error";
 
 const BrightcoveFullscreenPlayerModule =
   NativeModules.BrightcoveFullscreenPlayer;

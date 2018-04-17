@@ -1,7 +1,7 @@
 import React from "react";
 import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
-import { Splash } from "@times-components/brightcove-video";
+import BrightcoveVideo from "@times-components/brightcove-video";
 import Button from "@times-components/link";
 import cropPropTypes from "./crop-proptypes";
 
@@ -28,7 +28,7 @@ const ArticleLeadAssetVideo = ({
         })
       }
     >
-      <Splash poster={{ uri: imageUrl }} width={width} height={height} />
+      <BrightcoveVideo poster={{ uri: imageUrl }} width={width} height={height} />
     </Button>
   );
 };

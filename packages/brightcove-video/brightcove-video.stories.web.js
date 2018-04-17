@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
-import BrightcoveVideo from "./src/brightcove-video";
+import BrightcoveVideo from "./src/brightcove-video.web";
 
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
@@ -10,7 +10,7 @@ const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
 storiesOf("Primitives/BrightcoveVideo/Web", module).add(
-  "Launcher with custom play icon defined by emoji",
+  "with custom play icon defined by emoji",
   () => {
     const playIconEmoji = () => (
       <span role="img" aria-label="play-video">
@@ -25,6 +25,8 @@ storiesOf("Primitives/BrightcoveVideo/Web", module).add(
         accountId={accountId}
         poster={{ uri: posterImageURI }}
         playIcon={playIconEmoji()}
+        width={400}
+        height={300}
       />
     );
   }
