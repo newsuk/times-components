@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
 import { colours } from "@times-components/styleguide";
@@ -16,13 +16,17 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, style, onAuthorPress }) =>
-  renderTrees(ast, {
+const ArticleByline = ({ ast, section, style, onAuthorPress }) => {
+  const sectionStyle = {
+    color: colours.section[section] || colours.default,
+  };
+
+  return renderTrees(ast, {
     author(key, attributes, children) {
       const url = `/profile/${attributes.slug}`;
       return (
         <TextLink
-          style={[linkStyles.link, style.link]}
+          style={[linkStyles.link, sectionStyle, style.link]}
           key={key}
           url={url}
           onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
@@ -30,8 +34,20 @@ const ArticleByline = ({ ast, style, onAuthorPress }) =>
           {children}
         </TextLink>
       );
+    },
+
+    inline(key, attributes, children) {
+      return (
+        <Text
+          style={[linkStyles.link, sectionStyle, style.link]}
+          key={key}
+        >
+          {children}
+        </Text>
+      );
     }
   });
+};
 
 ArticleByline.propTypes = articleBylinePropTypes;
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;

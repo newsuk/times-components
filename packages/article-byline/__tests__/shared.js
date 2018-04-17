@@ -21,6 +21,13 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders correctly with a section", () => {
+    const tree = renderer
+      .create(<ArticleByline ast={authorsAST.singleAuthor} section="business" />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders correctly with a single inline element", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleInlineElement} />)
