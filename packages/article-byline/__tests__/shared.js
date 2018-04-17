@@ -21,9 +21,40 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders correctly with a section", () => {
+  it("renders correctly with a section when in the current edition", () => {
     const tree = renderer
-      .create(<ArticleByline ast={authorsAST.singleAuthor} section="business" />)
+      .create((
+        <ArticleByline
+          ast={authorsAST.singleAuthor}
+          section="business"
+          isCurrentEdition={true}
+        />
+      ))
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders correctly with a section when in an edition from the past six days", () => {
+    const tree = renderer
+      .create((
+        <ArticleByline
+          ast={authorsAST.singleAuthor}
+          section="business"
+          isPastSixDays={true}
+        />
+      ))
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders correctly with a section when it`s neither in the current edition nor past six days", () => {
+    const tree = renderer
+      .create((
+        <ArticleByline
+          ast={authorsAST.singleAuthor}
+          section="business"
+        />
+      ))
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

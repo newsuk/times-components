@@ -16,17 +16,20 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, section, style, onAuthorPress }) => {
+const ArticleByline = ({ ast, isCurrentEdition, isPastSixDays, section, style, onAuthorPress }) => {
   const sectionStyle = {
     color: colours.section[section] || colours.default,
   };
+
+  const shouldUseSectionStyle = isCurrentEdition || isPastSixDays;
+  const styles = [linkStyles.link, shouldUseSectionStyle && sectionStyle, style.link];
 
   return renderTrees(ast, {
     author(key, attributes, children) {
       const url = `/profile/${attributes.slug}`;
       return (
         <TextLink
-          style={[linkStyles.link, sectionStyle, style.link]}
+          style={styles}
           key={key}
           url={url}
           onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
@@ -39,7 +42,7 @@ const ArticleByline = ({ ast, section, style, onAuthorPress }) => {
     inline(key, attributes, children) {
       return (
         <Text
-          style={[linkStyles.link, sectionStyle, style.link]}
+          style={styles}
           key={key}
         >
           {children}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline test on android renders correctly with a section 1`] = `
+exports[`Article Byline test on android renders correctly with a section when in an edition from the past six days 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
@@ -19,6 +19,44 @@ exports[`Article Byline test on android renders correctly with a section 1`] = `
 </Text>
 `;
 
+exports[`Article Byline test on android renders correctly with a section when in the current edition 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Object {
+      "color": "#005B8D",
+      "textDecorationLine": "underline",
+    }
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
+exports[`Article Byline test on android renders correctly with a section when it\`s neither in the current edition nor past six days 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Object {
+      "color": "#006699",
+      "textDecorationLine": "underline",
+    }
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
 exports[`Article Byline test on android renders correctly with a single author 1`] = `
 <Text
   accessibilityRole="link"
@@ -29,7 +67,7 @@ exports[`Article Byline test on android renders correctly with a single author 1
   onPress={[Function]}
   style={
     Object {
-      "color": undefined,
+      "color": "#006699",
       "textDecorationLine": "underline",
     }
   }
@@ -45,7 +83,7 @@ exports[`Article Byline test on android renders correctly with a single inline e
   ellipsizeMode="tail"
   style={
     Object {
-      "color": undefined,
+      "color": "#006699",
     }
   }
 >
@@ -66,7 +104,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -79,7 +117,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
@@ -94,7 +132,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -107,7 +145,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
@@ -122,7 +160,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -143,7 +181,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -156,7 +194,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
@@ -171,7 +209,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -184,7 +222,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
@@ -199,7 +237,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -236,7 +274,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
@@ -251,7 +289,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -272,7 +310,7 @@ Array [
     onPress={[Function]}
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
         "textDecorationLine": "underline",
       }
     }
@@ -285,7 +323,7 @@ Array [
     ellipsizeMode="tail"
     style={
       Object {
-        "color": undefined,
+        "color": "#006699",
       }
     }
   >
