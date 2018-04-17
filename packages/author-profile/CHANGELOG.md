@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.57.0"></a>
+# [0.57.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.56.7...@times-components/author-profile@0.57.0) (2018-04-17)
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
 <a name="0.56.7"></a>
 ## [0.56.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.56.6...@times-components/author-profile@0.56.7) (2018-04-16)
 
