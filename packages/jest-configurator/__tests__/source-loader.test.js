@@ -3,7 +3,7 @@ import * as fs from "fs";
 import { getCacheKey, process as transform } from "../src/source-loader";
 
 jest.mock("babel-jest");
-jest.mock("fs");
+jest.mock("fs", () => jest.genMockFromModule("fs"));
 
 const stubHrtime = (seconds, nanoseconds) => {
   const realHrtime = process.hrtime;
