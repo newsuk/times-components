@@ -19,18 +19,12 @@ exports[`Article Flag test on ios renders Exclusive flag correctly 1`] = `
   >
     <svg
       height={8}
-      style={Object {}}
-      viewBox="0 0 20 20"
       width={8}
     >
       <g
         fill="#C51D24"
-        style={Object {}}
       >
-        <path
-          d="M 0,10 10,20 20,10 10,0 Z"
-          style={Object {}}
-        />
+        <path />
       </g>
     </svg>
   </View>
@@ -40,17 +34,13 @@ exports[`Article Flag test on ios renders Exclusive flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.4,
-        },
-        Object {
-          "color": "#C51D24",
-        },
-      ]
+      Object {
+        "color": "#C51D24",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
     }
     testID="flag-exclusive"
   >
@@ -78,18 +68,12 @@ exports[`Article Flag test on ios renders New flag correctly 1`] = `
   >
     <svg
       height={8}
-      style={Object {}}
-      viewBox="0 0 20 20"
       width={8}
     >
       <g
         fill="#E34605"
-        style={Object {}}
       >
-        <path
-          d="M 0,10 10,20 20,10 10,0 Z"
-          style={Object {}}
-        />
+        <path />
       </g>
     </svg>
   </View>
@@ -99,17 +83,13 @@ exports[`Article Flag test on ios renders New flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.4,
-        },
-        Object {
-          "color": "#E34605",
-        },
-      ]
+      Object {
+        "color": "#E34605",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
     }
     testID="flag-new"
   >
@@ -137,18 +117,12 @@ exports[`Article Flag test on ios renders Sponsored flag correctly 1`] = `
   >
     <svg
       height={8}
-      style={Object {}}
-      viewBox="0 0 20 20"
       width={8}
     >
       <g
         fill="#4D4D4D"
-        style={Object {}}
       >
-        <path
-          d="M 0,10 10,20 20,10 10,0 Z"
-          style={Object {}}
-        />
+        <path />
       </g>
     </svg>
   </View>
@@ -158,17 +132,13 @@ exports[`Article Flag test on ios renders Sponsored flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.4,
-        },
-        Object {
-          "color": "#4D4D4D",
-        },
-      ]
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
     }
     testID="flag-sponsored"
   >
@@ -196,18 +166,12 @@ exports[`Article Flag test on ios renders Updated flag correctly 1`] = `
   >
     <svg
       height={8}
-      style={Object {}}
-      viewBox="0 0 20 20"
       width={8}
     >
       <g
         fill="#3C81BE"
-        style={Object {}}
       >
-        <path
-          d="M 0,10 10,20 20,10 10,0 Z"
-          style={Object {}}
-        />
+        <path />
       </g>
     </svg>
   </View>
@@ -217,17 +181,13 @@ exports[`Article Flag test on ios renders Updated flag correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.4,
-        },
-        Object {
-          "color": "#3C81BE",
-        },
-      ]
+      Object {
+        "color": "#3C81BE",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
     }
     testID="flag-updated"
   >
@@ -255,18 +215,12 @@ exports[`Article Flag test on ios renders correctly 1`] = `
   >
     <svg
       height={8}
-      style={Object {}}
-      viewBox="0 0 20 20"
       width={8}
     >
       <g
         fill="black"
-        style={Object {}}
       >
-        <path
-          d="M 0,10 10,20 20,10 10,0 Z"
-          style={Object {}}
-        />
+        <path />
       </g>
     </svg>
   </View>
@@ -276,17 +230,13 @@ exports[`Article Flag test on ios renders correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "fontFamily": "TimesDigitalW04-RegularSC",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.4,
-        },
-        Object {
-          "color": "black",
-        },
-      ]
+      Object {
+        "color": "black",
+        "fontFamily": "TimesDigitalW04-RegularSC",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.4,
+      }
     }
     testID="flag-articleFlag"
   >

@@ -40,9 +40,7 @@ exports[`Related articles tests on android:  Lead and two template should render
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -65,18 +63,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -84,10 +77,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -96,35 +87,26 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -142,20 +124,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -174,31 +151,23 @@ exports[`Related articles tests on android:  Lead and two template should render
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -234,11 +203,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -248,16 +215,12 @@ exports[`Related articles tests on android:  Lead and two template should render
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -273,19 +236,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       L E A D I N G   A R T I C L E
@@ -296,36 +255,21 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Defence of the Realm
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -374,21 +318,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -428,18 +366,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -447,10 +380,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -459,29 +390,22 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -497,19 +421,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S   |   A N A L Y S I S
@@ -520,29 +440,16 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Size matters, say very tiny ministers
@@ -568,21 +475,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -644,9 +545,7 @@ exports[`Related articles tests on android:  Lead and two template should render
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -669,18 +568,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -688,10 +582,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -700,35 +592,26 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -746,20 +629,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -778,31 +656,23 @@ exports[`Related articles tests on android:  Lead and two template should render
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -838,11 +708,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -852,16 +720,12 @@ exports[`Related articles tests on android:  Lead and two template should render
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -877,19 +741,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       L E A D I N G   A R T I C L E
@@ -900,36 +760,21 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Defence of the Realm
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -978,21 +823,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -1032,18 +871,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1051,10 +885,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1063,29 +895,22 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -1101,19 +926,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S
@@ -1124,29 +945,16 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Trident out of MoD budget, Hammond urged
@@ -1172,21 +980,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -1226,18 +1028,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1245,10 +1042,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1257,29 +1052,22 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -1295,19 +1083,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S   |   A N A L Y S I S
@@ -1318,29 +1102,16 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Size matters, say tiny ministers
@@ -1366,21 +1137,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -1442,9 +1207,7 @@ exports[`Related articles tests on android:  Lead and two template should render
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -1467,18 +1230,13 @@ exports[`Related articles tests on android:  Lead and two template should render
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1486,10 +1244,8 @@ exports[`Related articles tests on android:  Lead and two template should render
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1498,35 +1254,26 @@ exports[`Related articles tests on android:  Lead and two template should render
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -1544,20 +1291,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -1576,31 +1318,23 @@ exports[`Related articles tests on android:  Lead and two template should render
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -1636,11 +1370,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -1650,16 +1382,12 @@ exports[`Related articles tests on android:  Lead and two template should render
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -1675,19 +1403,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       L E A D I N G   A R T I C L E
@@ -1698,36 +1422,21 @@ exports[`Related articles tests on android:  Lead and two template should render
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Defence of the Realm
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -1776,21 +1485,15 @@ exports[`Related articles tests on android:  Lead and two template should render
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -1852,9 +1555,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -1867,33 +1568,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingBottom": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1901,10 +1592,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -1913,33 +1602,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  Object {
-                    "height": "auto",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "height": "auto",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "marginBottom": 10,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -1955,19 +1634,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#850029",
-                          },
-                        ]
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       O P I N I O N
@@ -1976,20 +1651,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#850029",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#850029",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -2005,29 +1675,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     High score for labour in football club election
@@ -2088,31 +1745,21 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "bottom": 0,
-                      "marginTop": -140,
-                      "maxWidth": "40%",
-                      "minWidth": "40%",
-                      "position": "relative",
-                      "right": 0,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                    },
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "marginTop": -140,
+                    "maxWidth": "40%",
+                    "minWidth": "40%",
+                    "position": "relative",
+                    "right": 0,
+                  }
                 }
               >
                 <View
                   aspectRatio={0.6666666666666666}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -2130,20 +1777,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -2162,31 +1804,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -2222,11 +1856,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -2262,18 +1894,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2281,10 +1908,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2293,29 +1918,22 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2331,19 +1949,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S   |   A N A L Y S I S
@@ -2354,29 +1968,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Size matters, say very tiny ministers
@@ -2402,21 +2003,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -2478,9 +2073,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -2493,33 +2086,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingBottom": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2527,10 +2110,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2539,33 +2120,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  Object {
-                    "height": "auto",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "height": "auto",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "marginBottom": 10,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2581,19 +2152,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#850029",
-                          },
-                        ]
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       O P I N I O N
@@ -2602,20 +2169,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#850029",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#850029",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -2631,29 +2193,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     High score for labour in football club election
@@ -2714,31 +2263,21 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "bottom": 0,
-                      "marginTop": -140,
-                      "maxWidth": "40%",
-                      "minWidth": "40%",
-                      "position": "relative",
-                      "right": 0,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                    },
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "marginTop": -140,
+                    "maxWidth": "40%",
+                    "minWidth": "40%",
+                    "position": "relative",
+                    "right": 0,
+                  }
                 }
               >
                 <View
                   aspectRatio={0.6666666666666666}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -2756,20 +2295,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -2788,31 +2322,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -2848,11 +2374,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -2888,18 +2412,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2907,10 +2426,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2919,29 +2436,22 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2957,19 +2467,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S
@@ -2980,29 +2486,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Trident out of MoD budget, Hammond urged
@@ -3028,21 +2521,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -3082,18 +2569,13 @@ exports[`Related articles tests on android:  Opinion and two template should ren
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3101,10 +2583,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3113,29 +2593,22 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -3151,19 +2624,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#333333",
-                          },
-                        ]
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       D E F E N C E   C U T S   |   A N A L Y S I S
@@ -3174,29 +2643,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Size matters, say tiny ministers
@@ -3222,21 +2678,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -3298,9 +2748,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -3313,33 +2761,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
-              "width": "100%",
-            },
-            Object {
-              "paddingBottom": 0,
-            },
-          ]
+          Object {
+            "paddingBottom": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3347,10 +2785,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3359,33 +2795,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  Object {
-                    "height": "auto",
-                  },
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "height": "auto",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "marginBottom": 10,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -3401,19 +2827,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#850029",
-                          },
-                        ]
+                        Object {
+                          "color": "#850029",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       O P I N I O N
@@ -3422,20 +2844,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#850029",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#850029",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -3451,29 +2868,16 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does
@@ -3534,31 +2938,21 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {
-                      "bottom": 0,
-                      "marginTop": -140,
-                      "maxWidth": "40%",
-                      "minWidth": "40%",
-                      "position": "relative",
-                      "right": 0,
-                    },
-                    Object {
-                      "marginBottom": 0,
-                    },
-                  ]
+                  Object {
+                    "bottom": 0,
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "marginTop": -140,
+                    "maxWidth": "40%",
+                    "minWidth": "40%",
+                    "position": "relative",
+                    "right": 0,
+                  }
                 }
               >
                 <View
                   aspectRatio={0.6666666666666666}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -3576,20 +2970,15 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -3608,31 +2997,23 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -3668,11 +3049,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -3732,9 +3111,7 @@ exports[`Related articles tests on android:  Standard template should render one
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -3757,18 +3134,13 @@ exports[`Related articles tests on android:  Standard template should render one
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -3776,10 +3148,8 @@ exports[`Related articles tests on android:  Standard template should render one
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -3788,35 +3158,26 @@ exports[`Related articles tests on android:  Standard template should render one
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -3834,20 +3195,15 @@ exports[`Related articles tests on android:  Standard template should render one
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -3866,31 +3222,23 @@ exports[`Related articles tests on android:  Standard template should render one
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -3926,11 +3274,9 @@ exports[`Related articles tests on android:  Standard template should render one
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -3940,16 +3286,12 @@ exports[`Related articles tests on android:  Standard template should render one
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -3965,19 +3307,15 @@ exports[`Related articles tests on android:  Standard template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#DB133B",
-                          },
-                        ]
+                        Object {
+                          "color": "#DB133B",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -3988,36 +3326,21 @@ exports[`Related articles tests on android:  Standard template should render one
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4066,21 +3389,15 @@ exports[`Related articles tests on android:  Standard template should render one
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -4142,9 +3459,7 @@ exports[`Related articles tests on android:  Standard template should render thr
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -4167,18 +3482,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4186,10 +3496,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4198,29 +3506,22 @@ exports[`Related articles tests on android:  Standard template should render thr
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -4236,19 +3537,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#DB133B",
-                          },
-                        ]
+                        Object {
+                          "color": "#DB133B",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -4259,36 +3556,21 @@ exports[`Related articles tests on android:  Standard template should render thr
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4337,21 +3619,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -4391,18 +3667,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4410,10 +3681,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4422,29 +3691,22 @@ exports[`Related articles tests on android:  Standard template should render thr
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -4460,19 +3722,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#008347",
-                          },
-                        ]
+                        Object {
+                          "color": "#008347",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -4483,36 +3741,21 @@ exports[`Related articles tests on android:  Standard template should render thr
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4574,21 +3817,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -4628,18 +3865,13 @@ exports[`Related articles tests on android:  Standard template should render thr
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4647,10 +3879,8 @@ exports[`Related articles tests on android:  Standard template should render thr
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4659,29 +3889,22 @@ exports[`Related articles tests on android:  Standard template should render thr
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -4697,19 +3920,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#6C6C69",
-                          },
-                        ]
+                        Object {
+                          "color": "#6C6C69",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -4720,36 +3939,21 @@ exports[`Related articles tests on android:  Standard template should render thr
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -4811,21 +4015,15 @@ exports[`Related articles tests on android:  Standard template should render thr
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -4887,9 +4085,7 @@ exports[`Related articles tests on android:  Standard template should render two
       Related articles
     </Text>
   </View>
-  <View
-    style={undefined}
-  >
+  <View>
     <View
       style={
         Object {
@@ -4912,18 +4108,13 @@ exports[`Related articles tests on android:  Standard template should render two
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -4931,10 +4122,8 @@ exports[`Related articles tests on android:  Standard template should render two
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -4943,35 +4132,26 @@ exports[`Related articles tests on android:  Standard template should render two
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -4989,20 +4169,15 @@ exports[`Related articles tests on android:  Standard template should render two
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -5021,31 +4196,23 @@ exports[`Related articles tests on android:  Standard template should render two
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -5081,11 +4248,9 @@ exports[`Related articles tests on android:  Standard template should render two
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -5095,16 +4260,12 @@ exports[`Related articles tests on android:  Standard template should render two
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -5120,19 +4281,15 @@ exports[`Related articles tests on android:  Standard template should render two
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#DB133B",
-                          },
-                        ]
+                        Object {
+                          "color": "#DB133B",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -5143,36 +4300,21 @@ exports[`Related articles tests on android:  Standard template should render two
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Now for a new battle: bringing the fragile masterpiece over safely
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5221,21 +4363,15 @@ exports[`Related articles tests on android:  Standard template should render two
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text
@@ -5275,18 +4411,13 @@ exports[`Related articles tests on android:  Standard template should render two
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
               "type": "ThemeAttrAndroid",
             }
           }
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -5294,10 +4425,8 @@ exports[`Related articles tests on android:  Standard template should render two
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           pointerEvents="box-only"
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -5306,35 +4435,26 @@ exports[`Related articles tests on android:  Standard template should render two
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.7777777777777777}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -5352,20 +4472,15 @@ exports[`Related articles tests on android:  Standard template should render two
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
@@ -5384,31 +4499,23 @@ exports[`Related articles tests on android:  Standard template should render two
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "bottom": 0,
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                            },
-                            Object {
-                              "height": "100%",
-                              "width": "100%",
-                            },
-                            undefined,
-                          ]
+                          Object {
+                            "bottom": 0,
+                            "height": "100%",
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
                         }
                       />
                       <View
                         onLayout={[Function]}
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                            null,
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       >
                         <View
@@ -5444,11 +4551,9 @@ exports[`Related articles tests on android:  Standard template should render two
                               }
                             }
                             style={
-                              Array [
-                                Object {
-                                  "flex": 1,
-                                },
-                              ]
+                              Object {
+                                "flex": 1,
+                              }
                             }
                           />
                         </View>
@@ -5458,16 +4563,12 @@ exports[`Related articles tests on android:  Standard template should render two
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -5483,19 +4584,15 @@ exports[`Related articles tests on android:  Standard template should render two
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 12,
-                            "fontWeight": "400",
-                            "letterSpacing": 1.2,
-                            "marginBottom": -4,
-                            "paddingTop": 5,
-                          },
-                          Object {
-                            "color": "#008347",
-                          },
-                        ]
+                        Object {
+                          "color": "#008347",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
+                        }
                       }
                     >
                       B A Y E U X   T A P E S T R Y
@@ -5506,36 +4603,21 @@ exports[`Related articles tests on android:  Standard template should render two
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": 22,
-                          "fontWeight": "400",
-                          "lineHeight": 22,
-                          "marginBottom": 5,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Bayeux Tapestry to be displayed in Britain
                   </Text>
-                  <View
-                    style={Object {}}
-                  >
+                  <View>
                     <Text
                       accessible={true}
                       allowFontScaling={true}
@@ -5597,21 +4679,15 @@ exports[`Related articles tests on android:  Standard template should render two
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#696969",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 13,
-                          "lineHeight": 15,
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "marginBottom": 0,
-                        },
-                      ]
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 0,
+                      }
                     }
                   >
                     <Text

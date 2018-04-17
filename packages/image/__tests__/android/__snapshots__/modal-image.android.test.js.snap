@@ -19,18 +19,13 @@ exports[`ModalImage test on android renders correctly 1`] = `
       }
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -38,26 +33,17 @@ exports[`ModalImage test on android renders correctly 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <svg
           height="24"
-          style={Object {}}
-          viewBox="0 0 24 24"
           width="24"
         >
           <g
             fill="rgba(255, 255, 255, 0.8)"
-            style={Object {}}
           >
+            <path />
             <path
-              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              style={Object {}}
-            />
-            <path
-              d="M0 0h24v24H0z"
               fill="none"
-              style={Object {}}
             />
           </g>
         </svg>
@@ -82,13 +68,7 @@ exports[`ModalImage test on android renders correctly 1`] = `
         }
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
           accessible={true}
-          hitSlop={undefined}
-          nativeID={undefined}
-          onLayout={undefined}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -101,10 +81,8 @@ exports[`ModalImage test on android renders correctly 1`] = `
               "justifyContent": "center",
             }
           }
-          testID={undefined}
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "transform": Array [
@@ -146,20 +124,15 @@ exports[`ModalImage test on android renders correctly 1`] = `
                     }
                   }
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
@@ -178,31 +151,23 @@ exports[`ModalImage test on android renders correctly 1`] = `
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "bottom": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                        },
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "bottom": 0,
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": "100%",
+                      }
                     }
                   />
                   <View
                     onLayout={[Function]}
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        null,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <View
@@ -238,11 +203,9 @@ exports[`ModalImage test on android renders correctly 1`] = `
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       />
                     </View>
@@ -256,18 +219,13 @@ exports[`ModalImage test on android renders correctly 1`] = `
     </View>
   </Modal>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hitSlop={undefined}
     nativeBackgroundAndroid={
       Object {
         "attribute": "selectableItemBackground",
         "type": "ThemeAttrAndroid",
       }
     }
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -275,11 +233,9 @@ exports[`ModalImage test on android renders correctly 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     pointerEvents="box-only"
-    testID={undefined}
   >
     <View
       aspectRatio={1.5}
-      style={Object {}}
     >
       <View
         style={
@@ -297,20 +253,15 @@ exports[`ModalImage test on android renders correctly 1`] = `
             }
           }
           style={
-            Array [
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              },
-              Object {
-                "height": "100%",
-                "width": "100%",
-              },
-              undefined,
-            ]
+            Object {
+              "bottom": 0,
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "100%",
+            }
           }
         />
         <View
@@ -329,31 +280,23 @@ exports[`ModalImage test on android renders correctly 1`] = `
               }
             }
             style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                },
-                undefined,
-              ]
+              Object {
+                "bottom": 0,
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": "100%",
+              }
             }
           />
           <View
             onLayout={[Function]}
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-                null,
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           >
             <View
@@ -389,11 +332,9 @@ exports[`ModalImage test on android renders correctly 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>

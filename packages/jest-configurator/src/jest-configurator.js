@@ -5,7 +5,7 @@ import findNodeModules from "find-node-modules";
 import path from "path";
 import getCoveragePaths from "./coverage";
 
-export type Platform = "android" | "ios" | "web";
+export type Platform = "node" | "android" | "ios" | "web";
 
 const nativeSpecific = (platform: Platform) => ({
   moduleNameMapper: {
@@ -28,6 +28,16 @@ const webSpecific = {
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
+
+const nodeSpecific = {
+  moduleNameMapper: {
+    "react-native": "react-native-web",
+    "\\.(png)$": "identity-obj-proxy"
+  },
+  testEnvironment: "node",
+  moduleFileExtensions: ["node.js", "web.js", "js", "json"]
+};
+
 const platformIndependentSpecific = {
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy"
@@ -39,6 +49,8 @@ const platformCode = platform => {
   switch (platform) {
     case "web":
       return webSpecific;
+    case "node":
+      return nodeSpecific;
     case "ios":
       return nativeSpecific("ios");
     case "android":
@@ -80,7 +92,10 @@ export default (
     testPathIgnorePatterns: [
       `${module}/__tests__/${platformPath}jest.config.js`
     ],
-    snapshotSerializers: ["enzyme-to-json/serializer"],
+    snapshotSerializers: [
+      "enzyme-to-json/serializer",
+      "@times-components/jest-serializer"
+    ],
     setupFiles: [
       path.resolve(__dirname, "../setup-jest.js"),
       "jest-plugin-context/setup"

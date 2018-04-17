@@ -2,16 +2,8 @@
 
 exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -23,8 +15,6 @@ exports[`Link test on ios Link doesnt change inner text styles 1`] = `
       "opacity": 1,
     }
   }
-  testID={undefined}
-  tvParallaxProperties={undefined}
 >
   <Text
     accessible={true}
@@ -38,16 +28,8 @@ exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 
 exports[`Link test on ios Link renders correctly 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -59,8 +41,6 @@ exports[`Link test on ios Link renders correctly 1`] = `
       "opacity": 1,
     }
   }
-  testID={undefined}
-  tvParallaxProperties={undefined}
 >
   The Times
 </View>
@@ -75,12 +55,9 @@ exports[`Link test on ios TextLink renders correctly with children 1`] = `
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {},
-    ]
+    Object {
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times
@@ -96,17 +73,11 @@ exports[`Link test on ios TextLink renders correctly with multiple styles 1`] = 
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "backgroundColor": "blue",
-      },
-      Object {
-        "color": "red",
-      },
-    ]
+    Object {
+      "backgroundColor": "blue",
+      "color": "red",
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times
@@ -122,14 +93,10 @@ exports[`Link test on ios TextLink renders correctly with specific styles 1`] = 
   href="http://thetimes.co.uk"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "backgroundColor": "blue",
-      },
-    ]
+    Object {
+      "backgroundColor": "blue",
+      "textDecorationLine": "underline",
+    }
   }
 >
   The Times

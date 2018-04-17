@@ -4,7 +4,6 @@ exports[`Article Summary tests on Android should render an ArticleSummaryContent
 <Text
   accessible={true}
   allowFontScaling={true}
-  className=""
   ellipsizeMode="tail"
   style={
     Object {
@@ -35,7 +34,6 @@ exports[`Article Summary tests on Android should render an ArticleSummaryContent
 <Text
   accessible={true}
   allowFontScaling={true}
-  className=""
   ellipsizeMode="tail"
   style={
     Object {
@@ -74,22 +72,16 @@ exports[`Article Summary tests on Android should render an ArticleSummaryHeadlin
   accessible={true}
   allowFontScaling={true}
   aria-level="3"
-  className=""
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontWeight": "400",
-        "marginBottom": 5,
-      },
-      Object {
-        "fontSize": 22,
-        "lineHeight": 22,
-      },
-      Object {},
-    ]
+    Object {
+      "color": "#333333",
+      "fontFamily": "TimesModern-Bold",
+      "fontSize": 22,
+      "fontWeight": "400",
+      "lineHeight": 22,
+      "marginBottom": 5,
+    }
   }
 >
   Example headline
@@ -110,19 +102,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -133,22 +121,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -156,7 +138,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -200,19 +181,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -223,15 +200,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -261,19 +233,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -284,22 +252,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -307,7 +269,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -425,19 +386,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -448,15 +405,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -486,19 +438,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -509,22 +457,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -532,7 +474,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -591,19 +532,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -614,15 +551,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -652,19 +584,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -675,22 +603,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -730,19 +652,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -753,22 +671,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
@@ -801,22 +713,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -824,7 +730,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -876,19 +781,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -899,15 +800,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -930,22 +826,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -953,7 +843,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1011,19 +900,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -1034,22 +919,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -1057,7 +936,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1083,19 +961,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -1106,15 +980,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -1144,19 +1013,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -1165,7 +1030,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1216,22 +1080,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -1239,7 +1097,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {
@@ -1283,19 +1140,15 @@ exports[`Article Summary tests on Android should render an article-summary compo
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 15,
-          "marginBottom": 5,
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
     }
   >
     <Text
@@ -1306,15 +1159,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -1344,19 +1192,15 @@ exports[`Article Summary tests on Android should render an article-summary with 
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "marginBottom": -4,
-            "paddingTop": 5,
-          },
-          Object {
-            "color": "#333333",
-          },
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": -4,
+          "paddingTop": 5,
+        }
       }
     >
       C A M I L L A   L O N G
@@ -1365,18 +1209,14 @@ exports[`Article Summary tests on Android should render an article-summary with 
   <Text
     accessible={true}
     allowFontScaling={true}
-    className={undefined}
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#850029",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "400",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#850029",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+      }
     }
   >
     <Text
@@ -1387,15 +1227,10 @@ exports[`Article Summary tests on Android should render an article-summary with 
       href="/profile/camilla-long"
       onPress={[Function]}
       style={
-        Array [
-          Object {
-            "textDecorationLine": "underline",
-          },
-          Object {
-            "color": "#006699",
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#006699",
+          "textDecorationLine": "underline",
+        }
       }
     >
       Camilla Long
@@ -1413,22 +1248,16 @@ exports[`Article Summary tests on Android should render an article-summary with 
     accessible={true}
     allowFontScaling={true}
     aria-level="3"
-    className=""
     ellipsizeMode="tail"
     style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontWeight": "400",
-          "marginBottom": 5,
-        },
-        Object {
-          "fontSize": 22,
-          "lineHeight": 22,
-        },
-        Object {},
-      ]
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "400",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
     }
   >
     Top medal for forces dog who took a bite out of the Taliban
@@ -1436,7 +1265,6 @@ exports[`Article Summary tests on Android should render an article-summary with 
   <Text
     accessible={true}
     allowFontScaling={true}
-    className=""
     ellipsizeMode="tail"
     style={
       Object {

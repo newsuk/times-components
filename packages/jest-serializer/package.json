@@ -1,0 +1,76 @@
+{
+  "name": "@times-components/jest-serializer",
+  "version": "0.0.1",
+  "description": "serializer",
+  "main": "dist/jest-serializer",
+  "dev": "src/jest-serializer",
+  "scripts": {
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && npm run prettier:diff",
+    "test": "jest --coverage",
+    "dextrose-stories": "dextrose generate-stories $(pwd)",
+    "dextrose-clean": "dextrose clean-stories $(pwd)",
+    "prepublishOnly": "npm run transpile",
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/jest-serializer/coverage/",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@times-components)/)"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/jest-serializer/__tests__/**.test.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer",
+      "<rootDir>/packages/jest-serializer/src/jest-serializer.js"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "jest-serializer",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.4.1",
+    "@times-components/jest-configurator": "0.5.4",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.0",
+    "enzyme-to-json": "3.3.0",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2",
+    "prop-types": "15.6.0",
+    "react-test-renderer": "16.3.1",
+    "svgs": "3.2.1"
+  },
+  "dependencies": {
+    "lodash.omit": "4.5.0",
+    "lodash.omitby": "4.6.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-native": ">=0.53.0",
+    "react-native-web": ">=0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

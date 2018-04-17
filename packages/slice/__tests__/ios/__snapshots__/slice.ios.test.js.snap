@@ -3,7 +3,6 @@
 exports[`1. Standard template renders a single child element 1`] = `
 <View>
   <View
-    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -35,7 +34,6 @@ exports[`1. Standard template renders a single child element 1`] = `
 exports[`2. Standard template renders two child elements 1`] = `
 <View>
   <View
-    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -62,7 +60,6 @@ exports[`2. Standard template renders two child elements 1`] = `
     </View>
   </View>
   <View
-    key="standard-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -94,7 +91,6 @@ exports[`2. Standard template renders two child elements 1`] = `
 exports[`3. Standard template renders three child elements 1`] = `
 <View>
   <View
-    key="standard-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -121,7 +117,6 @@ exports[`3. Standard template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="standard-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -148,7 +143,6 @@ exports[`3. Standard template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="standard-3"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -237,7 +231,6 @@ exports[`5. Lead and two template renders two child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -295,7 +288,6 @@ exports[`6. Lead and two template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -322,7 +314,6 @@ exports[`6. Lead and two template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -365,18 +356,13 @@ exports[`7. Opinion and two template renders a single child element 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingBottom": 0,
-          },
-        ]
+        Object {
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -401,18 +387,13 @@ exports[`8. Opinion and two template renders two child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingBottom": 0,
-          },
-        ]
+        Object {
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -421,7 +402,6 @@ exports[`8. Opinion and two template renders two child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -464,18 +444,13 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "paddingBottom": 0,
-          },
-        ]
+        Object {
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
       }
     >
       <ExampleChild
@@ -484,7 +459,6 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-1"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
@@ -511,7 +485,6 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
     </View>
   </View>
   <View
-    key="support-2"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",
