@@ -28,7 +28,6 @@ const webSpecific = {
   moduleFileExtensions: ["web.js", "js", "json"]
 };
 
-
 const nodeSpecific = {
   moduleNameMapper: {
     "react-native": "react-native-web",

@@ -3,11 +3,12 @@
   "displayName": "storybooknative",
   "expo": {
     "name": "Times-Components",
-    "description": "A complete list of all of The Times components brought to you by the Times Tooling Team 🔥",
+    "description":
+      "A complete list of all of The Times components brought to you by the Times Tooling Team 🔥",
     "slug": "times-components",
     "privacy": "public",
     "sdkVersion": "26.0.0",
-    "platforms": [ "ios", "android" ],
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "ios": {
