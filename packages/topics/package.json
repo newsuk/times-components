@@ -51,7 +51,7 @@
     "mockdate": "2.0.2",
     "prettier": "1.8.2",
     "react-dom": "16.3.1",
-    "react-native": "0.53.3"
+    "react-native": "0.54.2"
   },
   "dependencies": {
     "@times-components/link": "0.19.8",
@@ -61,9 +61,9 @@
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "publishConfig": {

@@ -58,9 +58,9 @@
     "react-test-renderer": "16.3.1"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "publishConfig": {
