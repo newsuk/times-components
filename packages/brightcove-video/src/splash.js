@@ -19,7 +19,7 @@ const addMissingProtocolToPoster = poster => ({
   uri: addMissingProtocol(poster.uri)
 });
 
-const Splash = ({ poster, width, height, playIcon }) => (
+const Splash = ({ poster, width, height }) => (
   <View
     style={{ width, height }}
     testID="splash-component"
@@ -43,19 +43,17 @@ const Splash = ({ poster, width, height, playIcon }) => (
       />
     )}
     <View style={[styles.overlay, { width, height }]}>
-      <PlayIcon icon={playIcon} />
+      <PlayIcon />
     </View>
   </View>
 );
 
 Splash.defaultProps = {
-  poster: null,
-  playIcon: null
+  poster: null
 };
 
 Splash.propTypes = {
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
-  playIcon: PropTypes.node,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };

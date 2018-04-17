@@ -38,16 +38,6 @@ const brightcoveSharedTests = (BrightcoveVideo) => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders poster with custom play icon if specified", () => {
-    const tree = renderer
-      .create(
-        <BrightcoveVideo {...defaultVideoProps} playIcon={playIconEmoji()} />
-      )
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
   it("will launch if play is called", () => {
     const root = renderer.create(<BrightcoveVideo {...defaultVideoProps} />);
 

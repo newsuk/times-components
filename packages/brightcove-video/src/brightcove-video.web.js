@@ -5,14 +5,11 @@ import PropTypes from "prop-types";
 import VideoError from "./video-error";
 import IsPaidSubscriber from "./is-paid-subscriber";
 
-
-let index = 0;
-
 const playButtonDimensions = "85px";
 const playButtonBorderWidth = "4px";
 const playButtonBorderColor = "white";
 const styles = `
-.video-js .vjs-big-play-button {
+.vjs-big-play-button {
   width: ${playButtonDimensions};
   height: ${playButtonDimensions};
 
@@ -26,90 +23,26 @@ const styles = `
   border-color: ${playButtonBorderColor};
 }
 
-.video-js .vjs-big-play-button:before {
+.vjs-big-play-button:before {
   font-size: 77px;
   left: -2px;
 }
 
-.video-js .vjs-dock-text {
+.vjs-dock-text {
   visibility: hidden;
+}
+
+.vjs-poster {
+  background-size: cover;
 }
 `;
 
 class BrightcoveVideo extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      error: null
-    };
-  }
-
-  handleError = (error) => {
-    this.setState({ error });
-    if (this.props.onError) {
-      this.props.onError(error);
-    }
-  }
-
-  render() {
-    const { paidonly, width, height, poster } = this.props;
-
-    if (this.state.error) {
-      return <VideoError {...this.props} onReset={this.reset} />;
-    }
-
-    return (
-      <IsPaidSubscriber.Consumer>
-        {isPaidSubscriber =>
-          paidonly && !isPaidSubscriber ? (
-            <Image style={{ width, height }} source={poster} />
-          ) : (
-              <Player
-                ref={ref => {
-                  this.playerRef = ref;
-                }}
-                {...this.props}
-                onError={this.handleError}
-                onFinish={this.handleFinish}
-              />
-            )
-        }
-      </IsPaidSubscriber.Consumer>
-    );
-  }
-}
-
-const numberOrString = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.number
-]);
-
-BrightcoveVideo.propTypes = {
-  accountId: PropTypes.string.isRequired,
-  playerId: PropTypes.string,
-  videoId: PropTypes.string.isRequired,
-  policyKey: PropTypes.string.isRequired,
-  posterImageUri: PropTypes.string,
-  paidonly: PropTypes.bool,
-  width: numberOrString.isRequired,
-  height: numberOrString.isRequired,
-  onError: PropTypes.func
-};
-
-BrightcoveVideo.defaultProps = {
-  paidonly: false,
-  onError: null,
-  playerId: "default"
-};
-
-export default BrightcoveVideo;
-
-
-
-class Player extends Component {
-
-  static globalErrors = [];
+  static index = 0;
+  static scriptLoadError = false;
+  static activePlayers = [];
+  static brightcoveSDKLoadedStarted = false;
 
   static appendScript(s) {
     document.body.appendChild(s);
@@ -126,34 +59,81 @@ class Player extends Component {
   constructor(props) {
     super(props);
 
-    index += 1;
-
-    Player.globalErrors.forEach(this.props.onError);
-
     this.state = {
-      id: `${props.videoId}-${props.accountId}-${index}`,
-      errors: [].concat(Player.globalErrors),
-      isPlaying: "paused",
-      isFinished: false,
-      progress: 0
+      error: null
     };
+
+    BrightcoveVideo.index += 1;
+    this.id = `${props.videoId}-${props.accountId}-${BrightcoveVideo.index}`;
+    if (BrightcoveVideo.scriptLoadError) {
+      this.handleError(BrightcoveVideo.scriptLoadError);
+    }
+  }
+
+  handleError = (error) => {
+    this.setState({ error });
+  }
+
+  render() {
+    const { paidonly, width, height, poster } = this.props;
+
+    if (this.state.error) {
+      return <VideoError {...this.props} onReset={this.reset} />;
+    }
+
+    return (
+      <IsPaidSubscriber.Consumer>
+        {isPaidSubscriber =>
+          paidonly && !isPaidSubscriber ? (
+            <Image style={{ width, height }} source={poster} />
+          ) : (
+            /* eslint jsx-a11y/media-has-caption: "off" */
+            // Added a wrapping div as brightcove adds siblings to the video tag
+            <div style={{ width: this.props.width, height: this.props.height }}>
+              <video
+                id={this.id}
+                style={{ width: this.props.width, height: this.props.height }}
+                {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
+                data-embed="default"
+                data-video-id={this.props.videoId}
+                data-account={this.props.accountId}
+                data-player={this.props.playerId}
+                // following 'autoplay' can not expected to always work on web
+                // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
+                autoPlay={this.props.autoplay}
+                data-application-id
+                className="video-js"
+                controls
+              />
+            </div>
+            )
+        }
+      </IsPaidSubscriber.Consumer>
+    );
   }
 
   componentDidMount() {
-    if (this.state.errors.length) {
+    if (BrightcoveVideo.scriptLoadError) {
       return;
     }
 
-    // only ever append script once
-    if (!Player.players) {
-      Player.players = [];
+    this.loadBrightcoveSDKIfRequired();
+
+    BrightcoveVideo.activePlayers.push(this);
+
+    if (this.brightcoveSDKHasLoaded()) {
+      this.initBrightcove();
+    }
+  }
+
+  loadBrightcoveSDKIfRequired() {
+    if (!BrightcoveVideo.brightcoveSDKLoadedStarted) {
+      BrightcoveVideo.brightcoveSDKLoadedStarted = true;
 
       const s = this.createBrightcoveScript();
 
       s.onload = () => {
-        Player.players.forEach(player =>
-          player.initVideojs(player.state.id)
-        );
+        BrightcoveVideo.activePlayers.forEach(player => player.initVideojs());
       };
 
       // handle script not loading
@@ -163,28 +143,25 @@ class Player extends Component {
           message: `The script ${err.target.src} is not accessible.`
         };
 
-        Player.globalErrors.push(uriErr);
-
-        this.props.onError(uriErr);
+        BrightcoveVideo.scriptLoadError = "Brightcove script failed to load";
       };
 
-      Player.appendScript(s);
-      Player.attachStyles();
+      BrightcoveVideo.appendScript(s);
+      BrightcoveVideo.attachStyles();
     }
+  }
 
-    this.init();
+  brightcoveSDKHasLoaded() {
+    return !!(window.bc && window.videojs);
   }
 
   componentWillUnmount() {
+    BrightcoveVideo.activePlayers.splice(
+      BrightcoveVideo.activePlayers.indexOf(this)
+    );
     if (this.player) {
       this.player.dispose();
       this.player = null;
-    }
-  }
-
-  onError(player) {
-    if (this.props.onError) {
-      this.props.onError(player.error());
     }
   }
 
@@ -197,55 +174,46 @@ class Player extends Component {
     return s;
   }
 
-  initVideojs(id) {
-    this.player = videojs(id);
+
+  initVideojs() {
+    this.player = videojs(this.id);
     this.player.ready(() => {
       this.player.contextmenu({ disabled: true });
     });
     this.player.on("error", () => this.onError(this.player));
   }
 
-  initBrightcove(id) {
-    bc(document.getElementById(id), {
+  initBrightcove() {
+    bc(document.getElementById(this.id), {
       // TODO remove?
       controlBar: {
         fullscreenToggle: !this.props.hideFullScreenButton
       }
     });
 
-    this.initVideojs(id);
-  }
-
-  init() {
-    if (window.bc && window.videojs) {
-      this.initBrightcove(this.state.id);
-    } else {
-      Player.players.push(this);
-    }
-  }
-
-  render() {
-    /* eslint jsx-a11y/media-has-caption: "off" */
-    // Added a wrapping div as brightcove adds siblings to the video tag
-    return (
-      <div style={{ width: this.props.width, height: this.props.height }}>
-        <video
-          id={this.state.id}
-          style={{ width: this.props.width, height: this.props.height }}
-          {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player={this.props.playerId}
-          // following 'autoplay' can not expected to always work on web
-          // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
-          autoPlay={this.props.autoplay}
-          data-application-id
-          className="video-js"
-          controls
-        />
-      </div>
-    );
+    this.initVideojs();
   }
 }
 
+const numberOrString = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number
+]);
+
+BrightcoveVideo.propTypes = {
+  accountId: PropTypes.string.isRequired,
+  playerId: PropTypes.string,
+  videoId: PropTypes.string.isRequired,
+  policyKey: PropTypes.string.isRequired,
+  posterImageUri: PropTypes.string,
+  paidonly: PropTypes.bool,
+  width: numberOrString.isRequired,
+  height: numberOrString.isRequired
+};
+
+BrightcoveVideo.defaultProps = {
+  paidonly: false,
+  playerId: "default"
+};
+
+export default BrightcoveVideo;

@@ -197,7 +197,6 @@
 //         videoId={videoId}
 //         accountId={accountId}
 //         poster={{ uri: posterImageURI }}
-//         playIcon={playIconImage()}
 //       />
 //     );
 //   })
