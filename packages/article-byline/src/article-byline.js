@@ -18,20 +18,13 @@ const linkStyles = StyleSheet.create({
 
 const ArticleByline = ({
   ast,
-  isCurrentEdition,
-  isPastSixDays,
-  section,
+  sectionColour,
   style,
   onAuthorPress
 }) => {
-  const sectionStyle = {
-    color: colours.section[section] || colours.default
-  };
-
-  const shouldUseSectionStyle = isCurrentEdition || isPastSixDays;
   const styles = [
     linkStyles.link,
-    shouldUseSectionStyle && sectionStyle,
+    sectionColour && { color: sectionColour },
     style.link
   ];
 

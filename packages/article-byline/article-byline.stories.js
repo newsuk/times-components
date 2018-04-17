@@ -31,15 +31,13 @@ const bylineLinkStyles = {
   }
 };
 
-const sections = Object.assign(
+const sectionColours = Object.assign(
   {},
-  ...Object.keys(colours.section).map(section => ({ [section]: section })),
+  ...Object.keys(colours.section).map(section => ({ [colours.section[section]]: section })),
 );
 
 const getCommonProps = () => ({
-  section: select("Section", sections, "default"),
-  isCurrentEdition: boolean("Is current edition?", true),
-  isPastSixDays: boolean("Is past six days?", true),
+  sectionColour: select("Section colours", sectionColours),
   onAuthorPress: preventDefaultedAction("onAuthorPress"),
 });
 

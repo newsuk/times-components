@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline test on web renders correctly with a section when in an edition from the past six days 1`] = `
+exports[`Article Byline test on web renders correctly with a section color 1`] = `
 <a
   dir="auto"
   href="/profile/alexandra-frean"
@@ -9,38 +9,9 @@ exports[`Article Byline test on web renders correctly with a section when in an 
   role="link"
   style={
     Object {
-      "color": "rgba(0,91,141,1)",
+      "color": "blue",
     }
   }
->
-  Alexandra Frean
-</a>
-`;
-
-exports[`Article Byline test on web renders correctly with a section when in the current edition 1`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
-  role="link"
-  style={
-    Object {
-      "color": "rgba(0,91,141,1)",
-    }
-  }
->
-  Alexandra Frean
-</a>
-`;
-
-exports[`Article Byline test on web renders correctly with a section when it\`s neither in the current edition nor past six days 1`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
-  role="link"
 >
   Alexandra Frean
 </a>
