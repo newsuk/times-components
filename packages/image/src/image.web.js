@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 
-const TimesImage = ({ uri, aspectRatio, style }) => {
+const TimesImage = ({ aspectRatio, style, uri }) => {
   const styles = {
     wrapper: {
       height: 0,

@@ -49,14 +49,16 @@ export default () => {
       expect(modal.props().visible).toBe(false);
     });
 
-    it("should handle onload event", () => {
+    it("should show as not loaded when first created", () => {
       expect(image.state("isLoaded")).toEqual(false);
+    });
+
+    it("should handle onload event", () => {
       image.instance().handleLoad();
       expect(image.state("isLoaded")).toEqual(true);
     });
 
     it("should handle handlePreviewLoad event if it exists", () => {
-      expect(image.state("isLoaded")).toEqual(false);
       const { handlePreviewLoad } = image.instance();
       if (handlePreviewLoad) {
         handlePreviewLoad();
