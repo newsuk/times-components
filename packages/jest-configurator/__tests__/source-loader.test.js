@@ -5,33 +5,23 @@ import { getCacheKey, process as transform } from "../src/source-loader";
 jest.mock("babel-jest");
 jest.mock("fs", () => jest.genMockFromModule("fs"));
 
-const stubHrtime = (seconds, nanoseconds) => {
-  const realHrtime = process.hrtime;
-  process.hrtime = () => [seconds, nanoseconds];
-
-  return () => {
-    process.hrtime = realHrtime;
-  };
-};
-
 describe("source loader", () => {
-  const seconds = 0;
-  const nanoseconds = 50;
-  let restoreHrtime;
-
-  beforeAll(() => {
-    restoreHrtime = stubHrtime(seconds, nanoseconds);
-  });
-
-  afterAll(() => restoreHrtime());
-
   describe("getCacheKey", () => {
-    it("should create a high-res time-based key if the file belongs to a monorepo package", () => {
+    afterEach(() => {
+      fs.readFileSync.mockReset();
+    });
+
+    it("should create a hash based upon the source contents if the file belongs to a monorepo package", () => {
       const filename = "node_modules/@times-components/foo/bar.js";
-      const expectedKey = `${filename}_${seconds}${nanoseconds}`;
-      const actualKey = getCacheKey("", filename);
+      const src = "foo";
+      const expectedKey = "acbd18db4cc2f85cedef654fccc4a4d8";
+
+      fs.readFileSync.mockImplementationOnce(() => src);
+
+      const actualKey = getCacheKey(src, filename);
 
       expect(actualKey).toEqual(expectedKey);
+      expect(babelJest.getCacheKey).not.toHaveBeenCalled();
     });
 
     it("should delegate to babel-jest if it is not a monorepo package file", () => {
@@ -46,6 +36,7 @@ describe("source loader", () => {
       const actualKey = getCacheKey(src, filename, config, options);
 
       expect(actualKey).toEqual(expectedKey);
+
       expect(babelJest.getCacheKey).toHaveBeenCalledWith(
         src,
         filename,
