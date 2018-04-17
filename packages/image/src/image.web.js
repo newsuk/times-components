@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Placeholder from "./placeholder";
-import { defaultProps, propTypes } from "./image-proptypes";
+import { defaultProps, propTypes } from "./image-prop-types";
 
 const TimesImage = ({ uri, aspectRatio, style }) => {
   const styles = {
@@ -29,8 +29,6 @@ const TimesImage = ({ uri, aspectRatio, style }) => {
     </div>
   );
 
-  // divs cannot be styled with the output of Stylesheet.create()
-  // only react native Views accept those ids
   return style ? <View style={style}>{boundedImg}</View> : boundedImg;
 };
 

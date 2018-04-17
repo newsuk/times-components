@@ -54,15 +54,13 @@ export default () => {
       expect(wrapper).toMatchSnapshot("5. Renders a placeholder");
     });
 
-    it("should render component and handle layout width", done => {
-      const comp = new Placeholder();
-
-      comp.setState = ({ width }) => {
-        expect(width).toEqual(320);
-        return done();
-      };
-
-      comp.handleLayout({ nativeEvent: { layout: { width: 320 } } });
+    it("should render component and handle layout width", () => {
+      const wrapper = shallow(<Placeholder />);
+      expect(wrapper.state()).toEqual({});
+      wrapper
+        .instance()
+        .handleLayout({ nativeEvent: { layout: { width: 320 } } });
+      expect(wrapper.state()).toEqual({ width: 320 });
     });
   });
 };

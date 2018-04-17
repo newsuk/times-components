@@ -5,7 +5,7 @@ import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import Image from "./image";
-import { defaultProps, propTypes } from "./image-proptypes";
+import { defaultProps, propTypes } from "./image-prop-types";
 
 const style = StyleSheet.create({
   modal: {

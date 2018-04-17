@@ -8,7 +8,7 @@ export default () => {
     let image;
     let modalImage;
 
-    beforeAll(() => {
+    beforeEach(() => {
       image = shallow(
         <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
       );
@@ -53,6 +53,15 @@ export default () => {
       expect(image.state("isLoaded")).toEqual(false);
       image.instance().handleLoad();
       expect(image.state("isLoaded")).toEqual(true);
+    });
+
+    it("should handle handlePreviewLoad event if it exists", () => {
+      expect(image.state("isLoaded")).toEqual(false);
+      const { handlePreviewLoad } = image.instance();
+      if (handlePreviewLoad) {
+        handlePreviewLoad();
+        expect(image.state("isLoaded")).toEqual(true);
+      }
     });
   });
 };
