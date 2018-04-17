@@ -18,4 +18,8 @@ ignore:
     - '*':
         reason: None Given
         expires: 2018-05-09T14:07:55.149Z
+  'npm:plist:20180219':
+    - '*':
+        reason: None Given
+        expires: 2018-05-17T11:30:22.672Z
 patch: {}
