@@ -49,10 +49,12 @@
   },
   "dependencies": {
     "@times-components/jest-serializer": "0.0.2",
+    "babel-jest": "22.4.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",
     "find-node-modules": "1.0.4",
+    "jest": "21.2.1",
     "jest-plugin-context": "2.6.0",
     "jest-plugins": "2.9.0",
     "recursive-readdir-synchronous": "0.0.3"
@@ -61,7 +63,6 @@
     "@times-components/eslint-config-thetimes": "0.4.1",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
-    "babel-jest": "22.4.3",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",

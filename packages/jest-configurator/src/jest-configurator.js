@@ -78,7 +78,7 @@ export default (
     ...platformCode(platform),
     rootDir,
     transform: {
-      "^.+\\.js$": path.resolve(__dirname, "source-loader.js"),
+      "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
     },
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"

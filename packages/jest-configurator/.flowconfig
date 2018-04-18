@@ -1,5 +1,7 @@
 [libs]
 flow-typed
+node_modules
+../../node_modules
 
 [ignore]
 lib
