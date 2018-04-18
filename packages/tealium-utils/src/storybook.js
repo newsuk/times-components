@@ -12,14 +12,14 @@ const trackingOptions = {
   env: "dev"
 };
 
-const utagSendScheduler = new TealiumSendScheduler(
+const tealiumSendScheduler = new TealiumSendScheduler(
   trackingOptions,
   global.window,
   global.document
 );
 
 const reporter =
-  Platform.OS === "web" ? tealiumReporter(utagSendScheduler) : null;
+  Platform.OS === "web" ? tealiumReporter(tealiumSendScheduler) : null;
 
 export default e => {
   if (reporter) reporter.analytics(e);

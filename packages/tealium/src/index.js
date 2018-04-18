@@ -1,5 +1,5 @@
-const createTealiumReporter = utagSendScheduler => ({
-  analytics: e => utagSendScheduler.enqueue(e)
+const createTealiumReporter = tealiumSendScheduler => ({
+  analytics: e => tealiumSendScheduler.enqueue(e)
 });
 
 export default createTealiumReporter;
