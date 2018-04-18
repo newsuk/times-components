@@ -22,14 +22,14 @@ const TimesImage = ({ aspectRatio, style, uri }) => {
     img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
   };
 
-  const boundedImg = (
-    <div style={styles.wrapper}>
-      <img src={uri} style={styles.img} alt="" />
-      <Placeholder style={styles.placeholder} />
-    </div>
+  return (
+    <View style={style}>
+      <div style={styles.wrapper}>
+        <img src={uri} style={styles.img} alt="" />
+        <Placeholder style={styles.placeholder} />
+      </div>
+    </View>
   );
-
-  return style ? <View style={style}>{boundedImg}</View> : boundedImg;
 };
 
 TimesImage.defaultProps = defaultProps;
