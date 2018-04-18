@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.1"></a>
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.0...@times-components/slice@0.18.1) (2018-04-18)
+
+
+### Bug Fixes
+
+* slice stories (knobs) ([#879](https://github.com/newsuk/times-components/issues/879)) ([1b30f4c](https://github.com/newsuk/times-components/commit/1b30f4c))
+
+
+
+
 <a name="0.18.0"></a>
 # [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.17.18...@times-components/slice@0.18.0) (2018-04-17)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -62,7 +62,7 @@
     "@times-components/card": "0.27.0",
     "@times-components/link": "0.20.0",
     "@times-components/markup": "0.26.0",
-    "@times-components/slice": "0.18.0",
+    "@times-components/slice": "0.18.1",
     "@times-components/styleguide": "0.6.0",
     "@times-components/tealium-utils": "0.1.5",
     "@times-components/tracking": "0.12.0",
