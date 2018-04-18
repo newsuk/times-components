@@ -1704,13 +1704,9 @@ exports[`Article tests on android should render a full article 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -3942,13 +3938,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -4668,13 +4660,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             allowFontScaling={true}
                             ellipsizeMode="tail"
                             style={
-                              Array [
-                                Object {
-                                  "color": "#006699",
-                                },
-                                undefined,
-                                undefined,
-                              ]
+                              Object {
+                                "color": "#006699",
+                              }
                             }
                           >
                             Patrick Kidd
@@ -4862,13 +4850,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             allowFontScaling={true}
                             ellipsizeMode="tail"
                             style={
-                              Array [
-                                Object {
-                                  "color": "#006699",
-                                },
-                                undefined,
-                                undefined,
-                              ]
+                              Object {
+                                "color": "#006699",
+                              }
                             }
                           >
                             Graeme Paton Transport Correspondent
@@ -5056,13 +5040,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             allowFontScaling={true}
                             ellipsizeMode="tail"
                             style={
-                              Array [
-                                Object {
-                                  "color": "#006699",
-                                },
-                                undefined,
-                                undefined,
-                              ]
+                              Object {
+                                "color": "#006699",
+                              }
                             }
                           >
                             Jack Malvern Arts Correspondent Dominic Kennedy
@@ -5491,13 +5471,9 @@ exports[`Article tests on android should render an article with a video asset 1`
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann
@@ -9188,13 +9164,9 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -10960,13 +10932,9 @@ exports[`Article tests on android should render an article with no label 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -12612,13 +12580,9 @@ exports[`Article tests on android should render an article with no label and no 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -14245,13 +14209,9 @@ exports[`Article tests on android should render an article with no label, no fla
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -16027,13 +15987,9 @@ exports[`Article tests on android should render an article with no standfirst 1`
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -17689,13 +17645,9 @@ exports[`Article tests on android should render an article with no standfirst an
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
@@ -19442,13 +19394,9 @@ exports[`Article tests on android should render an article with no standfirst an
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#006699",
-                  },
-                  undefined,
-                  undefined,
-                ]
+                Object {
+                  "color": "#006699",
+                }
               }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent

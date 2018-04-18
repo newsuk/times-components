@@ -304,13 +304,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -468,13 +464,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -795,13 +787,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -959,13 +947,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -1123,13 +1107,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -1450,13 +1430,9 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -1623,13 +1599,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Sathnam Sanghera
@@ -1954,13 +1926,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -2127,13 +2095,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Sathnam Sanghera
@@ -2458,13 +2422,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -2622,13 +2582,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Deborah Haynes
@@ -2795,13 +2751,9 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Sathnam Sanghera
@@ -3291,13 +3243,9 @@ exports[`Related articles tests on ios:  Standard template should render one rel
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
@@ -3528,13 +3476,9 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
@@ -3733,13 +3677,9 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
@@ -3938,13 +3878,9 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
@@ -4265,13 +4201,9 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
@@ -4560,13 +4492,9 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Array [
-                          Object {
-                            "color": "#006699",
-                          },
-                          undefined,
-                          undefined,
-                        ]
+                        Object {
+                          "color": "#006699",
+                        }
                       }
                     >
                       Camilla Long, Environment Editor
