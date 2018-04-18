@@ -1,5 +1,5 @@
 /* global context */
-import { advance, delay, delayAndAdvance } from "@times-components/utils";
+import { delayAndAdvance } from "@times-components/utils";
 import { TealiumSendScheduler } from "../../src";
 
 export default () => {
@@ -216,24 +216,28 @@ export default () => {
       });
 
       it("should send more events if they cannot be sent in time", async () => {
+        global.window.requestIdleCallback = fn => {
+          setTimeout(() => {
+            fn({
+              timeRemaining() {
+                return 0;
+              }
+            });
+          }, 0);
+        };
         setup();
-        const timer = delay(2 * 60 * 1000);
+
+        const spy = jest.spyOn(sendScheduler, "scheduleSendEvents");
 
         const e1 = { component: "Page1" };
         const e2 = { component: "Page2" };
 
-        global.window.tealiumTrack = () => {
-          advance(1 * 60 * 1000);
-        };
-
-        jest.spyOn(global.window, "tealiumTrack");
-
         sendScheduler.enqueue(e1);
         sendScheduler.enqueue(e2);
 
-        await delayAndAdvance(0);
-        await timer;
+        await delayAndAdvance(1000);
         expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
+        expect(spy).toHaveBeenCalledTimes(3);
       });
     });
   });
