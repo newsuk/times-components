@@ -37,7 +37,6 @@ const styles = `
 `;
 
 class InlineVideoPlayer extends Component {
-
   static index = 0;
   static scriptLoadError = false;
   static activePlayers = [];
@@ -72,15 +71,15 @@ class InlineVideoPlayer extends Component {
   handleError = () => {
     // TODO: check that brightcove logs the error
     this.setState({ error: true });
-  }
+  };
 
   handlePlay = () => {
     InlineVideoPlayer.activePlayers.forEach(video => {
       if (video !== this && video.player) {
         video.player.pause();
       }
-    })
-  }
+    });
+  };
 
   render() {
     const { paidonly, width, height, poster } = this.props;
@@ -169,11 +168,10 @@ class InlineVideoPlayer extends Component {
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${this.props.accountId}/${
       this.props.playerId
-      }_default/index.min.js`;
+    }_default/index.min.js`;
 
     return s;
   }
-
 
   initVideojs() {
     this.player = videojs(this.id);

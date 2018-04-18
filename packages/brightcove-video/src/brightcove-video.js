@@ -1,8 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
+import Link from "@times-components/link";
+
 import PlayIcon from "./play-icon";
+import { propTypes, defaultProps } from "./brightcove-video.proptypes";
 
 const styles = StyleSheet.create({
   overlay: {
@@ -19,11 +22,28 @@ const addMissingProtocolToPoster = poster => ({
   uri: addMissingProtocol(poster.uri)
 });
 
-const Splash = ({ poster, width, height }) => (
-  <View
+const BrightcoveVideo = ({
+  poster,
+  width,
+  height,
+  onVideoPress,
+  brightcoveAccountId,
+  brightcovePolicyKey,
+  brightcoveVideoId
+}) => (
+  <TouchableOpacity
     style={{ width, height }}
     testID="splash-component"
     accessibilityLabel="splash-component"
+    onPress={e => {
+      if (onVideoPress) {
+        onVideoPress(e, {
+          brightcoveAccountId,
+          brightcovePolicyKey,
+          brightcoveVideoId
+        });
+      }
+    }}
   >
     {poster ? (
       <Image
@@ -45,17 +65,13 @@ const Splash = ({ poster, width, height }) => (
     <View style={[styles.overlay, { width, height }]}>
       <PlayIcon />
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
-Splash.defaultProps = {
-  poster: null
+BrightcoveVideo.defaultProps = defaultProps;
+BrightcoveVideo.propTypes = {
+  ...propTypes,
+  onVideoPress: PropTypes.func.isRequired
 };
 
-Splash.propTypes = {
-  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
-};
-
-export default Splash;
+export default BrightcoveVideo;

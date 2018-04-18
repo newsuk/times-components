@@ -7,7 +7,6 @@ import IsPaidSubscriber from "./is-paid-subscriber";
 import { propTypes, defaultProps } from "./brightcove-video.proptypes";
 
 class BrightcoveVideo extends Component {
-
   render() {
     const { paidonly, width, height, poster } = this.props;
 
@@ -17,8 +16,8 @@ class BrightcoveVideo extends Component {
           paidonly && !isPaidSubscriber ? (
             <Image style={{ width, height }} source={poster} />
           ) : (
-              <InlineVideoPlayer {...this.props} />
-            )
+            <InlineVideoPlayer {...this.props} />
+          )
         }
       </IsPaidSubscriber.Consumer>
     );

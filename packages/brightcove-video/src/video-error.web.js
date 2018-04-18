@@ -11,20 +11,20 @@ import {
 
 const errorStyling = StyleSheet.create({
   heading: {
-      fontFamily: 'TimesModern-Bold',
-      fontSize: '20px',
-      textAlign: 'center',
-      color: 'white',
-      width: 'auto !important',
-      height: 'auto !important',
-      marginBottom: spacing(2)
+    fontFamily: "TimesModern-Bold",
+    fontSize: "20px",
+    textAlign: "center",
+    color: "white",
+    width: "auto !important",
+    height: "auto !important",
+    marginBottom: spacing(2)
   },
   background: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: 'rgba(0, 0, 0, 0.6)'
-  },
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.6)"
+  }
 });
 
 const TextBody = withResponsiveStyles(Text, {
@@ -41,10 +41,12 @@ const TextBody = withResponsiveStyles(Text, {
   `
 });
 
-const VideoError = ({width, height}) => (
-  <View style={[errorStyling.background, {width, height}]}>
-      <Text style={errorStyling.heading}>Something's gone wrong</Text>
-      <TextBody>Please check your network{"\n"}connection and refresh the page</TextBody>
+const VideoError = ({ width, height }) => (
+  <View style={[errorStyling.background, { width, height }]}>
+    <Text style={errorStyling.heading}>Something's gone wrong</Text>
+    <TextBody>
+      Please check your network{"\n"}connection and refresh the page
+    </TextBody>
   </View>
 );
 

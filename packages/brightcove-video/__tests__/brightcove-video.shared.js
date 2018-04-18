@@ -4,8 +4,7 @@ import renderer from "react-test-renderer";
 
 import IsPaidSubscriber from "../src/is-paid-subscriber";
 
-const brightcoveSharedTests = (BrightcoveVideo) => {
-
+const brightcoveSharedTests = BrightcoveVideo => {
   const policyKey = "[POLICY_KEY]";
   const accountId = "[ACCOUNT_ID]";
   const videoId = "[VIDEO_ID]";
@@ -13,7 +12,7 @@ const brightcoveSharedTests = (BrightcoveVideo) => {
   const playIconEmoji = () => (
     <span role="img" aria-label="play-video">
       ▶️
-  </span>
+    </span>
   );
 
   const defaultVideoProps = {
@@ -48,14 +47,14 @@ const brightcoveSharedTests = (BrightcoveVideo) => {
     expect(root.toJSON()).toMatchSnapshot();
   });
 
-  const testSubscriberAndVideoPaidStatus = (subscriberIsPaid, videoIsPaidOnly) => {
+  const testSubscriberAndVideoPaidStatus = (
+    subscriberIsPaid,
+    videoIsPaidOnly
+  ) => {
     const tree = renderer
       .create(
         <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-          <BrightcoveVideo
-            {...defaultVideoProps}
-            paidonly={videoIsPaidOnly}
-          />
+          <BrightcoveVideo {...defaultVideoProps} paidonly={videoIsPaidOnly} />
         </IsPaidSubscriber.Provider>
       )
       .toJSON();
@@ -167,7 +166,8 @@ const brightcoveSharedTests = (BrightcoveVideo) => {
       playVideo: jest.fn()
     };
 
-    BrightcoveVideo.getBrightcoveFullscreenPlayerModule = () => mockNativeModule;
+    BrightcoveVideo.getBrightcoveFullscreenPlayerModule = () =>
+      mockNativeModule;
 
     rootInstance.play();
 
@@ -204,6 +204,6 @@ const brightcoveSharedTests = (BrightcoveVideo) => {
 
     expect(root.toJSON()).toMatchSnapshot();
   });
-}
+};
 
 export default brightcoveSharedTests;
