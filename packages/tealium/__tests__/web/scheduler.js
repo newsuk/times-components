@@ -1,7 +1,8 @@
-import { delay, advance, delayAndAdvance } from "@times-components/utils";
-import TealiumSendScheduler from "../src/tealium-send-scheduler";
+/* global context */
+import { delayAndAdvance } from "@times-components/utils";
+import { TealiumSendScheduler } from "../../src";
 
-module.exports = () => {
+export default () => {
   describe("TealiumSendScheduler", () => {
     beforeAll(() => jest.useFakeTimers());
     afterAll(() => jest.useRealTimers());
@@ -30,8 +31,8 @@ module.exports = () => {
       global.window.utag = realUtag;
     });
 
-    describe("inject utag", () => {
-      it("throws if not given an env", () => {
+    context("inject utag", () => {
+      it("should throw if not given an env", () => {
         const makeTealiumScheduler = () =>
           new TealiumSendScheduler(
             {
@@ -44,7 +45,7 @@ module.exports = () => {
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
 
-      it("throws if not given a profile", () => {
+      it("should throw if not given a profile", () => {
         const makeTealiumScheduler = () =>
           new TealiumSendScheduler(
             {
@@ -57,7 +58,7 @@ module.exports = () => {
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
 
-      it("throws if not given an account", () => {
+      it("should throw if not given an account", () => {
         const makeTealiumScheduler = () =>
           new TealiumSendScheduler(
             {
@@ -70,7 +71,7 @@ module.exports = () => {
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
 
-      it("injects utag script", () => {
+      it("should inject a utag script", () => {
         // eslint-disable-next-line no-new
         new TealiumSendScheduler(
           trackingOptions,
@@ -82,7 +83,7 @@ module.exports = () => {
         ).not.toBeNull();
       });
 
-      it("does not inject utag multiple times", () => {
+      it("should not inject utag multiple times", () => {
         // eslint-disable-next-line no-new
         new TealiumSendScheduler(
           trackingOptions,
@@ -101,7 +102,7 @@ module.exports = () => {
         ).toBe(1);
       });
 
-      it("does not inject utag when tracking is not enabled", () => {
+      it("should not inject utag when tracking is not enabled", () => {
         // eslint-disable-next-line no-new
         new TealiumSendScheduler({ ...trackingOptions, enabled: false });
         expect(
@@ -109,7 +110,7 @@ module.exports = () => {
         ).toBeNull();
       });
 
-      it("disables tealium automatic page view tracking", () => {
+      it("should disable tealium automatic page view tracking", () => {
         // eslint-disable-next-line no-new
         new TealiumSendScheduler(
           trackingOptions,
@@ -120,7 +121,7 @@ module.exports = () => {
       });
     });
 
-    describe("utag loaded", () => {
+    context("utag loaded", () => {
       const realRequestIdleCallback = global.window.requestIdleCallback;
 
       const setup = () => {
@@ -144,7 +145,7 @@ module.exports = () => {
         TealiumSendScheduler.scriptLoaded = false;
       });
 
-      it("schedules sending events during idle time", () => {
+      it("should schedule sending events during idle time", () => {
         global.window.requestIdleCallback = jest.fn();
 
         setup();
@@ -155,7 +156,7 @@ module.exports = () => {
         );
       });
 
-      it("does not schedule multiple sends", async () => {
+      it("should not schedule multiple sends", async () => {
         global.window.requestIdleCallback = jest.fn();
 
         setup();
@@ -166,7 +167,7 @@ module.exports = () => {
         expect(global.window.requestIdleCallback).toHaveBeenCalledTimes(1);
       });
 
-      it("sends events", async () => {
+      it("should send events", async () => {
         setup();
 
         const e = { component: "Page" };
@@ -177,7 +178,7 @@ module.exports = () => {
         expect(global.window.tealiumTrack).toHaveBeenCalledWith(e);
       });
 
-      it("schedules sending events using timeout when idle callback is not available", async () => {
+      it("should schedule sending events using timeout when idle callback is not available", async () => {
         if (global.window.requestIdleCallback) {
           delete global.window.requestIdleCallback;
         }
@@ -191,7 +192,7 @@ module.exports = () => {
         expect(global.window.tealiumTrack).not.toHaveBeenCalled();
       });
 
-      it("sends multiple events", async () => {
+      it("should send multiple events", async () => {
         setup();
 
         const e1 = { component: "Page1" };
@@ -204,7 +205,7 @@ module.exports = () => {
         expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
       });
 
-      it("does not throw if tealium track is not a function", async () => {
+      it("should not throw if tealium track is not a function", async () => {
         setup();
 
         global.window.tealiumTrack = null;
@@ -214,25 +215,29 @@ module.exports = () => {
         await delayAndAdvance(1000);
       });
 
-      it("sends more events if they cannot be sent in time", async () => {
+      it("should send more events if they cannot be sent in time", async () => {
+        global.window.requestIdleCallback = fn => {
+          setTimeout(() => {
+            fn({
+              timeRemaining() {
+                return 0;
+              }
+            });
+          }, 0);
+        };
         setup();
-        const timer = delay(2 * 60 * 1000);
+
+        const spy = jest.spyOn(sendScheduler, "scheduleSendEvents");
 
         const e1 = { component: "Page1" };
         const e2 = { component: "Page2" };
 
-        global.window.tealiumTrack = () => {
-          advance(1 * 60 * 1000);
-        };
-
-        jest.spyOn(global.window, "tealiumTrack");
-
         sendScheduler.enqueue(e1);
         sendScheduler.enqueue(e2);
 
-        await delayAndAdvance(0);
-        await timer;
+        await delayAndAdvance(1000);
         expect(global.window.tealiumTrack).toHaveBeenCalledTimes(2);
+        expect(spy).toHaveBeenCalledTimes(3);
       });
     });
   });

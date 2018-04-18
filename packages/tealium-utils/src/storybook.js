@@ -1,19 +1,25 @@
 import { Platform } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-import tealiumReporter from "@times-components/tealium";
+import tealiumReporter, {
+  TealiumSendScheduler
+} from "@times-components/tealium";
 
-const trackingConfig = {
+const trackingOptions = {
   enabled: true,
   account: "newsinternational",
   profile: "thetimes.2018",
   env: "dev"
 };
 
+const tealiumSendScheduler = new TealiumSendScheduler(
+  trackingOptions,
+  global.window,
+  global.document
+);
+
 const reporter =
-  Platform.OS === "web"
-    ? tealiumReporter(trackingConfig, global.window, global.document)
-    : null;
+  Platform.OS === "web" ? tealiumReporter(tealiumSendScheduler) : null;
 
 export default e => {
   if (reporter) reporter.analytics(e);
