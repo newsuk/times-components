@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrightcoveVideo native renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BrightcoveVideo
+    accountId="[account id]"
+    height={200}
+    onVideoPress={[Function]}
+    paidonly={false}
+    playerId="[player id]"
+    policyKey="[policy key]"
+    poster={
+      Object {
+        "uri": "[poster uri]",
+      }
+    }
+    videoId="[video id]"
+    width={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "accessibilityLabel": "splash-component",
+      "activeOpacity": 0.2,
+      "children": Array [
+        <Image
+          source={
+            Object {
+              "uri": "[poster uri]",
+            }
+          }
+          style={
+            Object {
+              "height": 200,
+              "width": 300,
+            }
+          }
+        />,
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+              },
+              Object {
+                "height": 200,
+                "width": 300,
+              },
+            ]
+          }
+        >
+          <PlayIcon
+            icon={null}
+          />
+        </View>,
+      ],
+      "onPress": [Function],
+      "style": Object {
+        "height": 200,
+        "width": 300,
+      },
+      "testID": "splash-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "source": Object {
+            "uri": "[poster uri]",
+          },
+          "style": Object {
+            "height": 200,
+            "width": 300,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <PlayIcon
+            icon={null}
+          />,
+          "style": Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 200,
+              "width": 300,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "icon": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "accessibilityLabel": "splash-component",
+        "activeOpacity": 0.2,
+        "children": Array [
+          <Image
+            source={
+              Object {
+                "uri": "[poster uri]",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "width": 300,
+              }
+            }
+          />,
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                },
+                Object {
+                  "height": 200,
+                  "width": 300,
+                },
+              ]
+            }
+          >
+            <PlayIcon
+              icon={null}
+            />
+          </View>,
+        ],
+        "onPress": [Function],
+        "style": Object {
+          "height": 200,
+          "width": 300,
+        },
+        "testID": "splash-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "source": Object {
+              "uri": "[poster uri]",
+            },
+            "style": Object {
+              "height": 200,
+              "width": 300,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <PlayIcon
+              icon={null}
+            />,
+            "style": Array [
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+              },
+              Object {
+                "height": 200,
+                "width": 300,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "icon": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

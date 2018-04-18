@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrightcoveVideo on ios renders correctly 1`] = `
+<TouchableOpacity
+  accessibilityLabel="splash-component"
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+  testID="splash-component"
+>
+  <Image
+    source={
+      Object {
+        "uri": "[poster uri]",
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        Object {
+          "height": 200,
+          "width": 300,
+        },
+      ]
+    }
+  >
+    <PlayIcon
+      icon={null}
+    />
+  </View>
+</TouchableOpacity>
+`;
