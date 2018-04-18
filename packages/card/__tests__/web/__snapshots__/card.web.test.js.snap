@@ -4,35 +4,36 @@ exports[`1. Renders default layout 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -47,35 +48,36 @@ exports[`2. Renders default layout with placeholder 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri=""
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -90,35 +92,36 @@ exports[`3. Renders without an image (null) 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri=""
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -133,19 +136,22 @@ exports[`4. Renders without an image (showImage is false) 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -160,35 +166,36 @@ exports[`5. Renders without an image (uri is null) 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri=""
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -203,19 +210,23 @@ exports[`6. Renders with a reversed layout 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        75,
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "height": "auto",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          78,
-          79,
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -223,18 +234,16 @@ exports[`6. Renders with a reversed layout 1`] = `
       </Text>
     </View>
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          77,
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
     </View>
@@ -246,19 +255,23 @@ exports[`7. Renders with a reversed layout with no image 1`] = `
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        75,
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "height": "auto",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          78,
-          79,
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -281,63 +294,75 @@ exports[`8. Renders a loading state 1`] = `
 
 exports[`9. Renders a loading component 1`] = `
 <View
-  style={74}
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
 >
   <View
-    className=""
     style={
-      Array [
-        76,
-        "",
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": "10px",
+        "minWidth": "100%",
+      }
     }
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
-      style={Object {}}
       uri=""
     />
   </View>
   <View
-    className=""
     style={
-      Array [
-        78,
-        "",
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
     }
   >
     <Gradient
       degrees={264}
       style={
-        Array [
-          80,
-        ]
+        Object {
+          "height": 24,
+          "marginBottom": "10px",
+          "maxWidth": 300,
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-          82,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
       }
     />
   </View>
@@ -346,48 +371,61 @@ exports[`9. Renders a loading component 1`] = `
 
 exports[`10. Renders a loading component with no image 1`] = `
 <View
-  style={74}
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
 >
   <View
-    className=""
     style={
-      Array [
-        78,
-        "",
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
     }
   >
     <Gradient
       degrees={264}
       style={
-        Array [
-          80,
-        ]
+        Object {
+          "height": 24,
+          "marginBottom": "10px",
+          "maxWidth": 300,
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-          82,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
       }
     />
   </View>
@@ -396,63 +434,75 @@ exports[`10. Renders a loading component with no image 1`] = `
 
 exports[`11. Renders a reversed loading component 1`] = `
 <View
-  style={74}
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
 >
   <View
-    className=""
     style={
-      Array [
-        78,
-        79,
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": "10px",
+        "minWidth": "100%",
+      }
     }
   >
     <Gradient
       degrees={264}
       style={
-        Array [
-          80,
-        ]
+        Object {
+          "height": 24,
+          "marginBottom": "10px",
+          "maxWidth": 300,
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-          82,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
       }
     />
   </View>
   <View
-    className=""
     style={
-      Array [
-        76,
-        77,
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
     }
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
-      style={Object {}}
       uri=""
     />
   </View>
@@ -461,48 +511,61 @@ exports[`11. Renders a reversed loading component 1`] = `
 
 exports[`12. Renders a reversed loading component with no image 1`] = `
 <View
-  style={74}
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
 >
   <View
-    className=""
     style={
-      Array [
-        78,
-        79,
-      ]
+      Object {
+        "flex": 1,
+        "marginBottom": "10px",
+        "minWidth": "100%",
+      }
     }
   >
     <Gradient
       degrees={264}
       style={
-        Array [
-          80,
-        ]
+        Object {
+          "height": 24,
+          "marginBottom": "10px",
+          "maxWidth": 300,
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": "10px",
+        }
       }
     />
     <Gradient
       degrees={267}
       style={
-        Array [
-          81,
-          82,
-        ]
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
       }
     />
   </View>
@@ -513,35 +576,36 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>
@@ -556,35 +620,36 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
 <FadeIn>
   <View
     style={
-      Array [
-        74,
-        "",
-      ]
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
     }
   >
     <View
-      className=""
       style={
-        Array [
-          76,
-          Object {},
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": "10px",
+          "minWidth": "100%",
+        }
       }
     >
       <TimesImage
         aspectRatio={0.6666666666666666}
-        style={Object {}}
         uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
       />
     </View>
     <View
-      className=""
       style={
-        Array [
-          78,
-          "",
-        ]
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
       }
     >
       <Text>

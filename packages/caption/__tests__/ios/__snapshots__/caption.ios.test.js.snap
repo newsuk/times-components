@@ -4,7 +4,6 @@ exports[`Caption on Android renders an image with a caption 1`] = `
 <View>
   <View
     aspectRatio={1.7777777777777777}
-    style={Object {}}
   >
     <View
       style={
@@ -22,31 +21,23 @@ exports[`Caption on Android renders an image with a caption 1`] = `
           }
         }
         style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
         }
       />
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
         <View
@@ -82,11 +73,9 @@ exports[`Caption on Android renders an image with a caption 1`] = `
               }
             }
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           />
         </View>
@@ -95,12 +84,9 @@ exports[`Caption on Android renders an image with a caption 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
-          "paddingTop": 10,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingTop": 10,
+      }
     }
   >
     <Text
@@ -108,15 +94,12 @@ exports[`Caption on Android renders an image with a caption 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+        }
       }
     >
       Some caption text goes in here
@@ -126,22 +109,14 @@ exports[`Caption on Android renders an image with a caption 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "#333333",
-            "fontSize": 9,
-            "fontWeight": "400",
-            "letterSpacing": 1,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
       }
     >
       JUST CREDITS
@@ -154,12 +129,9 @@ exports[`Caption on Android renders correctly with credits 1`] = `
 <View>
   <View
     style={
-      Array [
-        Object {
-          "paddingTop": 10,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingTop": 10,
+      }
     }
   >
     <Text
@@ -167,15 +139,12 @@ exports[`Caption on Android renders correctly with credits 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+        }
       }
     >
       Some caption text goes in here
@@ -185,22 +154,14 @@ exports[`Caption on Android renders correctly with credits 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "#333333",
-            "fontSize": 9,
-            "fontWeight": "400",
-            "letterSpacing": 1,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
       }
     >
       JUST CREDITS
@@ -213,12 +174,9 @@ exports[`Caption on Android renders correctly with credits only 1`] = `
 <View>
   <View
     style={
-      Array [
-        Object {
-          "paddingTop": 10,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingTop": 10,
+      }
     }
   >
     <Text
@@ -226,22 +184,14 @@ exports[`Caption on Android renders correctly with credits only 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "#333333",
-            "fontSize": 9,
-            "fontWeight": "400",
-            "letterSpacing": 1,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
       }
     >
       JUST CREDITS
@@ -254,14 +204,10 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
 <View>
   <View
     style={
-      Array [
-        Object {
-          "paddingTop": 10,
-        },
-        Object {
-          "backgroundColor": "red",
-        },
-      ]
+      Object {
+        "backgroundColor": "red",
+        "paddingTop": 10,
+      }
     }
   >
     <Text
@@ -269,17 +215,12 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "green",
-          },
-        ]
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+        }
       }
     >
       Some caption text goes in here
@@ -289,24 +230,14 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "#333333",
-            "fontSize": 9,
-            "fontWeight": "400",
-            "letterSpacing": 1,
-            "lineHeight": 16,
-          },
-          Object {
-            "color": "green",
-          },
-        ]
+        Object {
+          "color": "green",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+        }
       }
     >
       JUST CREDITS
@@ -319,12 +250,9 @@ exports[`Caption on Android renders correctly without credits 1`] = `
 <View>
   <View
     style={
-      Array [
-        Object {
-          "paddingTop": 10,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingTop": 10,
+      }
     }
   >
     <Text
@@ -332,15 +260,12 @@ exports[`Caption on Android renders correctly without credits 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Array [
-          Object {
-            "color": "#696969",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 16,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 16,
+        }
       }
     >
       Some caption text goes in here

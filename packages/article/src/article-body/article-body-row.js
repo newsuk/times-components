@@ -81,7 +81,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         brightcovePolicyKey,
         brightcoveVideoId,
         brightcoveAccountId,
-        posterimageUrl,
+        posterImageUrl,
         caption
       }
     ) {
@@ -94,7 +94,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
               policyKey={brightcovePolicyKey}
               videoId={brightcoveVideoId}
               accountId={brightcoveAccountId}
-              poster={{ uri: posterimageUrl }}
+              poster={{ uri: posterImageUrl }}
             />
           </AspectRatioContainer>
           <InsetCaption caption={caption} />

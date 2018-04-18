@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "2.1.19",
+  "version": "2.2.0",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -60,21 +60,21 @@
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.53.3",
+    "react-native": "0.54.2",
     "react-native-web": "0.3.2",
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.5.16",
-    "@times-components/utils": "0.6.13",
+    "@times-components/styleguide": "0.6.0",
+    "@times-components/utils": "0.7.0",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "_timesComponentsCliVariables": {

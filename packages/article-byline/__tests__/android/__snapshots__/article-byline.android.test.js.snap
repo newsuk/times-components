@@ -9,15 +9,10 @@ exports[`Article Byline test on android renders correctly with a single author 1
   href="/profile/alexandra-frean"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "color": "#006699",
-      },
-      undefined,
-    ]
+    Object {
+      "color": "#006699",
+      "textDecorationLine": "underline",
+    }
   }
 >
   Alexandra Frean
@@ -46,15 +41,10 @@ Array [
     href="/profile/camilla-long"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Camilla Long
@@ -74,15 +64,10 @@ Array [
     href="/profile/mike-atherton"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Mike Atherton
@@ -102,15 +87,10 @@ Array [
     href="/profile/alexandra-frean"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Alexandra Frean
@@ -128,15 +108,10 @@ Array [
     href="/profile/camilla-long"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Camilla Long
@@ -156,15 +131,10 @@ Array [
     href="/profile/mike-atherton"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Mike Atherton
@@ -184,15 +154,10 @@ Array [
     href="/profile/alexandra-frean"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Alexandra Frean
@@ -209,18 +174,10 @@ exports[`Article Byline test on android renders correctly with styles 1`] = `
   href="/profile/alexandra-frean"
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "textDecorationLine": "underline",
-      },
-      Object {
-        "color": "#006699",
-      },
-      Object {
-        "color": "red",
-        "textDecorationLine": "underline",
-      },
-    ]
+    Object {
+      "color": "red",
+      "textDecorationLine": "underline",
+    }
   }
 >
   Alexandra Frean
@@ -244,15 +201,10 @@ Array [
     href="/profile/mike-atherton"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Mike Atherton
@@ -270,15 +222,10 @@ Array [
     href="/profile/camilla-long"
     onPress={[Function]}
     style={
-      Array [
-        Object {
-          "textDecorationLine": "underline",
-        },
-        Object {
-          "color": "#006699",
-        },
-        undefined,
-      ]
+      Object {
+        "color": "#006699",
+        "textDecorationLine": "underline",
+      }
     }
   >
     Camilla Long

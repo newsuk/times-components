@@ -2,7 +2,6 @@
 
 exports[`Styleguide tests for ios should render a FadeIn animation wrapper component 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,

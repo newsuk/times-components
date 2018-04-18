@@ -72,7 +72,7 @@ Consider following repo:
   "name": "foo",
   "version": "0.0.1",
   "dependencies": {
-    "react-native": "0.53.3",
+    "react-native": "0.54.2",
     "bar": "0.0.1"
   }
 }
@@ -95,7 +95,7 @@ Consider following repo:
 
 ```dot
   digraph {
-    "foo@0.0.1" -> "react-native@0.53.3";
+    "foo@0.0.1" -> "react-native@0.54.2";
     "foo@0.0.1" -> "bar@0.0.1";
     "bar@0.0.2" -> "react-native@0.53.1";
     "bar@0.0.2" -> "glob@6.2.1";
@@ -107,7 +107,7 @@ react-native as a dependency:
 
 ```dot
 digraph {
-  "foo@0.0.1" -> "react-native@0.53.3";
+  "foo@0.0.1" -> "react-native@0.54.2";
   "bar@0.0.2" -> "react-native@0.53.1";
 }
 ```
@@ -117,7 +117,7 @@ a dependency:
 
 ```dot
 digraph {
-  "foo@0.0.1" -> "react-native@0.53.3";
+  "foo@0.0.1" -> "react-native@0.54.2";
   "foo@0.0.1" -> "bar@0.0.1";
 }
 ```
@@ -141,8 +141,8 @@ and `circo` can be obtained by installing the graphviz package.
 Adds `{package}@{version}` to the set of rules. Use this in conjunction with
 `--hint` to verify the expected behaviour and use `--fix` to apply the changes.
 
-`depend -l . --pick react-native@0.53.3 --hint` would set all react-native
-dependencies to _0.53.3_
+`depend -l . --pick react-native@0.54.2 --hint` would set all react-native
+dependencies to _0.54.2_
 
 ### Filter
 

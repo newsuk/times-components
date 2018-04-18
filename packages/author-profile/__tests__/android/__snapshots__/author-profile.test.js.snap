@@ -243,11 +243,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -266,36 +264,28 @@ exports[`AuthorProfile test on android renders profile 1`] = `
             <View
               accessibilityRole="banner"
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#F9F8F3",
-                    "flexDirection": "column",
-                    "paddingBottom": 40,
-                    "width": "100%",
-                  },
-                  Object {
-                    "paddingTop": 30,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "paddingTop": 30,
+                  "width": "100%",
+                }
               }
             >
               <View
                 aspectRatio={1}
                 style={
-                  Array [
-                    Object {
-                      "borderColor": "#FFFFFF",
-                      "marginBottom": 20,
-                      "marginLeft": "auto",
-                      "marginRight": "auto",
-                      "overflow": "hidden",
-                    },
-                    Object {
-                      "borderRadius": 50,
-                      "width": 100,
-                    },
-                  ]
+                  Object {
+                    "borderColor": "#FFFFFF",
+                    "borderRadius": 50,
+                    "marginBottom": 20,
+                    "marginLeft": "auto",
+                    "marginRight": "auto",
+                    "overflow": "hidden",
+                    "width": 100,
+                  }
                 }
               >
                 <View
@@ -314,31 +304,23 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                       }
                     }
                     style={
-                      Array [
-                        Object {
-                          "bottom": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                        },
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
-                        },
-                        undefined,
-                      ]
+                      Object {
+                        "bottom": 0,
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": "100%",
+                      }
                     }
                   />
                   <View
                     onLayout={[Function]}
                     style={
-                      Array [
-                        Object {
-                          "flex": 1,
-                        },
-                        null,
-                      ]
+                      Object {
+                        "flex": 1,
+                      }
                     }
                   >
                     <View
@@ -374,11 +356,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                           }
                         }
                         style={
-                          Array [
-                            Object {
-                              "flex": 1,
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                          }
                         }
                       />
                     </View>
@@ -409,14 +389,11 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 aria-level="2"
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                    },
-                    Object {},
-                  ]
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  }
                 }
               >
                 defence editor
@@ -433,14 +410,10 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               >
                 <svg
                   height={15}
-                  style={Object {}}
-                  viewBox="-354.2 -279.4 750 600"
                   width={15}
                 >
                   <path
-                    d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
                     fill="#006699"
-                    style={Object {}}
                   />
                 </svg>
                 <Text
@@ -451,18 +424,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   href="https://twitter.com/jdoe"
                   onPress={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingLeft": 5,
-                        "textDecorationLine": "none",
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingLeft": 5,
+                      "textDecorationLine": "none",
+                    }
                   }
                 >
                   @
@@ -552,14 +520,12 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -584,18 +550,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <View />
                 <View>
                   <View
-                    accessibilityComponentType={undefined}
-                    accessibilityLabel={undefined}
-                    accessibilityTraits={undefined}
                     accessible={true}
-                    hitSlop={undefined}
                     nativeBackgroundAndroid={
                       Object {
                         "attribute": "selectableItemBackground",
                         "type": "ThemeAttrAndroid",
                       }
                     }
-                    onLayout={undefined}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
@@ -603,7 +564,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
                     pointerEvents="box-only"
-                    testID={undefined}
                   >
                     <View
                       style={
@@ -640,18 +600,12 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                       </Text>
                       <svg
                         height={12}
-                        style={Object {}}
-                        viewBox="42 12 60 120"
                         width={7}
                       >
                         <g
                           fill="#006699"
-                          style={Object {}}
                         >
-                          <path
-                            d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                            style={Object {}}
-                          />
+                          <path />
                         </g>
                       </svg>
                     </View>
@@ -665,20 +619,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -693,21 +642,16 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -720,31 +664,23 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -780,11 +716,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -793,27 +727,21 @@ exports[`AuthorProfile test on android renders profile 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -842,22 +770,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -886,22 +810,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -930,26 +850,19 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -978,11 +891,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -1009,20 +920,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -1037,21 +943,16 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -1064,31 +965,23 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -1124,11 +1017,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -1137,27 +1028,21 @@ exports[`AuthorProfile test on android renders profile 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -1186,22 +1071,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -1230,22 +1111,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -1274,26 +1151,19 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -1322,11 +1192,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -1353,20 +1221,15 @@ exports[`AuthorProfile test on android renders profile 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -1381,21 +1244,16 @@ exports[`AuthorProfile test on android renders profile 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -1408,31 +1266,23 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -1468,11 +1318,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -1481,27 +1329,21 @@ exports[`AuthorProfile test on android renders profile 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -1530,22 +1372,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -1574,22 +1412,18 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -1618,26 +1452,19 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -1666,11 +1493,9 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -1680,7 +1505,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -1725,18 +1549,13 @@ exports[`AuthorProfile test on android renders profile 1`] = `
               <View />
               <View>
                 <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
                   accessible={true}
-                  hitSlop={undefined}
                   nativeBackgroundAndroid={
                     Object {
                       "attribute": "selectableItemBackground",
                       "type": "ThemeAttrAndroid",
                     }
                   }
-                  onLayout={undefined}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1744,7 +1563,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   pointerEvents="box-only"
-                  testID={undefined}
                 >
                   <View
                     style={
@@ -1781,18 +1599,12 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                     </Text>
                     <svg
                       height={12}
-                      style={Object {}}
-                      viewBox="42 12 60 120"
                       width={7}
                     >
                       <g
                         fill="#006699"
-                        style={Object {}}
                       >
-                        <path
-                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                          style={Object {}}
-                        />
+                        <path />
                       </g>
                     </svg>
                   </View>
@@ -1812,7 +1624,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -1854,15 +1665,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
             },
           ]
         }
-        isLoading={undefined}
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
         title="Defence Editor"
         twitter="jdoe"
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -2021,11 +1829,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -2044,18 +1850,14 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
             <View
               accessibilityRole="banner"
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#F9F8F3",
-                    "flexDirection": "column",
-                    "paddingBottom": 40,
-                    "width": "100%",
-                  },
-                  Object {
-                    "paddingTop": 30,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "paddingTop": 30,
+                  "width": "100%",
+                }
               }
             >
               <Text
@@ -2082,14 +1884,11 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 aria-level="2"
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                    },
-                    Object {},
-                  ]
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  }
                 }
               >
                 defence editor
@@ -2106,14 +1905,10 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
               >
                 <svg
                   height={15}
-                  style={Object {}}
-                  viewBox="-354.2 -279.4 750 600"
                   width={15}
                 >
                   <path
-                    d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
                     fill="#006699"
-                    style={Object {}}
                   />
                 </svg>
                 <Text
@@ -2124,18 +1919,13 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   href="https://twitter.com/jdoe"
                   onPress={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingLeft": 5,
-                        "textDecorationLine": "none",
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingLeft": 5,
+                      "textDecorationLine": "none",
+                    }
                   }
                 >
                   @
@@ -2225,14 +2015,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -2264,21 +2052,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2286,24 +2068,18 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-                "paddingTop": 15,
-              },
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2312,35 +2088,26 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.5}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -2358,31 +2125,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
                       onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
                       <View
@@ -2418,11 +2177,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                             }
                           }
                           style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
+                            Object {
+                              "flex": 1,
+                            }
                           }
                         />
                       </View>
@@ -2431,16 +2188,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2449,22 +2202,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Top medal for forces dog who took a bite out of the Taliban
@@ -2472,7 +2219,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2539,21 +2285,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2561,24 +2301,18 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-                "paddingTop": 15,
-              },
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2587,35 +2321,26 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.5}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -2633,31 +2358,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
                       onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
                       <View
@@ -2693,11 +2410,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                             }
                           }
                           style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
+                            Object {
+                              "flex": 1,
+                            }
                           }
                         />
                       </View>
@@ -2706,16 +2421,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2724,22 +2435,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Social media must raise game to beat terrorists, says UN chief
@@ -2747,7 +2452,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -2814,21 +2518,15 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        hitSlop={undefined}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
             "type": "ThemeAttrAndroid",
           }
         }
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -2836,24 +2534,18 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
-        testID={undefined}
       >
         <View
           style={
-            Array [
-              Object {
-                "paddingBottom": 15,
-                "paddingTop": 15,
-              },
-              Object {
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              },
-            ]
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
           }
         >
           <View
-            collapsable={undefined}
             style={
               Object {
                 "opacity": 0,
@@ -2862,35 +2554,26 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
           >
             <View
               style={
-                Array [
-                  Object {
-                    "alignItems": "flex-start",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "justifyContent": "flex-end",
-                  },
-                  "",
-                ]
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
               }
             >
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 10,
-                      "minWidth": "100%",
-                    },
-                    Object {},
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View
                   aspectRatio={1.5}
-                  style={Object {}}
                 >
                   <View
                     style={
@@ -2908,31 +2591,23 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                          },
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          },
-                          undefined,
-                        ]
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
                       }
                     />
                     <View
                       onLayout={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                          null,
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     >
                       <View
@@ -2968,11 +2643,9 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                             }
                           }
                           style={
-                            Array [
-                              Object {
-                                "flex": 1,
-                              },
-                            ]
+                            Object {
+                              "flex": 1,
+                            }
                           }
                         />
                       </View>
@@ -2981,16 +2654,12 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 </View>
               </View>
               <View
-                className=""
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                      "marginBottom": 0,
-                      "minWidth": "100%",
-                    },
-                    "",
-                  ]
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
                 }
               >
                 <View>
@@ -2999,22 +2668,16 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                     accessible={true}
                     allowFontScaling={true}
                     aria-level="3"
-                    className=""
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesModern-Bold",
-                          "fontWeight": "400",
-                          "marginBottom": 5,
-                        },
-                        Object {
-                          "fontSize": 22,
-                          "lineHeight": 22,
-                        },
-                        Object {},
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
                     }
                   >
                     Cuts have left the army 20 years out of date, says former general
@@ -3022,7 +2685,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                   <Text
                     accessible={true}
                     allowFontScaling={true}
-                    className=""
                     ellipsizeMode="tail"
                     style={
                       Object {
@@ -3072,7 +2734,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -3130,32 +2791,21 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
-      pageSize={undefined}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={false}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
-        pageSize={undefined}
       />
     </View>
   }
@@ -3165,7 +2815,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-  initialListSize={undefined}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -3178,7 +2827,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   onViewableItemsChanged={[Function]}
-  pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
@@ -3207,11 +2855,9 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -3230,18 +2876,14 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
             <View
               accessibilityRole="banner"
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#F9F8F3",
-                    "flexDirection": "column",
-                    "paddingBottom": 40,
-                    "width": "100%",
-                  },
-                  Object {
-                    "paddingTop": 30,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "paddingTop": 30,
+                  "width": "100%",
+                }
               }
             >
               <Text
@@ -3268,14 +2910,11 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                 aria-level="2"
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                    },
-                    Object {},
-                  ]
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  }
                 }
               >
                 
@@ -3348,14 +2987,12 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -3387,7 +3024,6 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -3442,18 +3078,13 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
 
 exports[`AuthorProfile test on android renders profile content item component 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3461,21 +3092,16 @@ exports[`AuthorProfile test on android renders profile content item component 1`
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
-      Array [
-        Object {
-          "paddingBottom": 15,
-          "paddingTop": 15,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      }
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3484,29 +3110,22 @@ exports[`AuthorProfile test on android renders profile content item component 1`
     >
       <View
         style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            },
-            "",
-          ]
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
         }
       >
         <View
-          className=""
           style={
-            Array [
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              },
-              "",
-            ]
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
           }
         >
           <View>
@@ -3515,22 +3134,16 @@ exports[`AuthorProfile test on android renders profile content item component 1`
               accessible={true}
               allowFontScaling={true}
               aria-level="3"
-              className=""
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
-                    "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
@@ -3563,18 +3176,13 @@ exports[`AuthorProfile test on android renders profile content item component 1`
 
 exports[`AuthorProfile test on android renders profile content item component with a specific image size 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3582,21 +3190,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
-      Array [
-        Object {
-          "paddingBottom": 15,
-          "paddingTop": 15,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      }
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3605,29 +3208,22 @@ exports[`AuthorProfile test on android renders profile content item component wi
     >
       <View
         style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            },
-            "",
-          ]
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
         }
       >
         <View
-          className=""
           style={
-            Array [
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              },
-              "",
-            ]
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
           }
         >
           <View>
@@ -3636,22 +3232,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
               accessible={true}
               allowFontScaling={true}
               aria-level="3"
-              className=""
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
-                    "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
@@ -3684,18 +3274,13 @@ exports[`AuthorProfile test on android renders profile content item component wi
 
 exports[`AuthorProfile test on android renders profile content item component with no image 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hitSlop={undefined}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
       "type": "ThemeAttrAndroid",
     }
   }
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -3703,21 +3288,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
-  testID={undefined}
 >
   <View
     style={
-      Array [
-        Object {
-          "paddingBottom": 15,
-          "paddingTop": 15,
-        },
-        undefined,
-      ]
+      Object {
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      }
     }
   >
     <View
-      collapsable={undefined}
       style={
         Object {
           "opacity": 0,
@@ -3726,29 +3306,22 @@ exports[`AuthorProfile test on android renders profile content item component wi
     >
       <View
         style={
-          Array [
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            },
-            "",
-          ]
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
         }
       >
         <View
-          className=""
           style={
-            Array [
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              },
-              "",
-            ]
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
           }
         >
           <View>
@@ -3757,22 +3330,16 @@ exports[`AuthorProfile test on android renders profile content item component wi
               accessible={true}
               allowFontScaling={true}
               aria-level="3"
-              className=""
               ellipsizeMode="tail"
               style={
-                Array [
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontWeight": "400",
-                    "marginBottom": 5,
-                  },
-                  Object {
-                    "fontSize": 22,
-                    "lineHeight": 22,
-                  },
-                  Object {},
-                ]
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "400",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
               }
             >
               Top medal for forces dog who took a bite out of the Taliban
@@ -3780,7 +3347,6 @@ exports[`AuthorProfile test on android renders profile content item component wi
             <Text
               accessible={true}
               allowFontScaling={true}
-              className=""
               ellipsizeMode="tail"
               style={
                 Object {
@@ -3834,32 +3400,21 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
-      pageSize={undefined}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={true}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
-        pageSize={undefined}
       />
     </View>
   }
@@ -3877,7 +3432,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   getItem={[Function]}
   getItemCount={[Function]}
   horizontal={false}
-  initialListSize={undefined}
   initialNumToRender={10}
   keyExtractor={[Function]}
   maxToRenderPerBatch={10}
@@ -3890,7 +3444,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   onViewableItemsChanged={[Function]}
-  pageSize={undefined}
   renderItem={[Function]}
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
@@ -3919,7 +3472,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
@@ -3994,11 +3546,9 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                     }
                   }
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 />
               </View>
@@ -4045,14 +3595,12 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -4084,20 +3632,15 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -4112,21 +3655,16 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -4139,31 +3677,23 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -4199,11 +3729,9 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -4212,27 +3740,21 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -4261,22 +3783,18 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -4305,22 +3823,18 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -4349,26 +3863,19 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -4397,11 +3904,9 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -4411,7 +3916,6 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -4485,7 +3989,6 @@ exports[`AuthorProfile test on android renders profile error 1`] = `
   >
     <TimesImage
       aspectRatio={0.9090909090909091}
-      style={Object {}}
       uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
     />
   </View>
@@ -4567,31 +4070,22 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <AuthorProfilePagination
-      count={undefined}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={undefined}
       pageSize={3}
     />
   }
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={true}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
-        count={undefined}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={undefined}
         pageSize={3}
       />
     </View>
@@ -4662,7 +4156,6 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
@@ -4737,11 +4230,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                     }
                   }
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 />
               </View>
@@ -4788,14 +4279,12 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -4827,20 +4316,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -4855,21 +4339,16 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -4882,31 +4361,23 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -4942,11 +4413,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -4955,27 +4424,21 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -5004,22 +4467,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5048,22 +4507,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5092,26 +4547,19 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -5140,11 +4588,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -5171,20 +4617,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -5199,21 +4640,16 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -5226,31 +4662,23 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -5286,11 +4714,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -5299,27 +4725,21 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -5348,22 +4768,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5392,22 +4808,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5436,26 +4848,19 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -5484,11 +4889,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -5515,20 +4918,15 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -5543,21 +4941,16 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 10,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               aspectRatio={1.5}
-              style={Object {}}
             >
               <View
                 style={
@@ -5570,31 +4963,23 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                 <Image
                   onLoad={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "bottom": 0,
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                      },
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      },
-                      undefined,
-                    ]
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
                   }
                 />
                 <View
                   onLayout={[Function]}
                   style={
-                    Array [
-                      Object {
-                        "flex": 1,
-                      },
-                      null,
-                    ]
+                    Object {
+                      "flex": 1,
+                    }
                   }
                 >
                   <View
@@ -5630,11 +5015,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                         }
                       }
                       style={
-                        Array [
-                          Object {
-                            "flex": 1,
-                          },
-                        ]
+                        Object {
+                          "flex": 1,
+                        }
                       }
                     />
                   </View>
@@ -5643,27 +5026,21 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
             </View>
           </View>
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -5692,22 +5069,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5736,22 +5109,18 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -5780,26 +5149,19 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -5828,11 +5190,9 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -5842,7 +5202,6 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -5908,7 +5267,6 @@ exports[`AuthorProfile test on android renders profile separator 1`] = `
 
 exports[`AuthorProfile test on android renders the author head 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "opacity": 0,
@@ -5927,18 +5285,14 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
     <View
       accessibilityRole="banner"
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#F9F8F3",
-            "flexDirection": "column",
-            "paddingBottom": 40,
-            "width": "100%",
-          },
-          Object {
-            "paddingTop": 30,
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "paddingTop": 30,
+          "width": "100%",
+        }
       }
     >
       <Text
@@ -5965,14 +5319,11 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
         aria-level="2"
         ellipsizeMode="tail"
         style={
-          Array [
-            Object {
-              "color": "#696969",
-              "fontFamily": "TimesDigitalW04-RegularSC",
-              "fontSize": 14,
-            },
-            Object {},
-          ]
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-RegularSC",
+            "fontSize": 14,
+          }
         }
       >
         
@@ -5989,14 +5340,10 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
       >
         <svg
           height={15}
-          style={Object {}}
-          viewBox="-354.2 -279.4 750 600"
           width={15}
         >
           <path
-            d="M391.3-210.7c-28.9,10.9-57.8,21.7-86.7,25.3c32.5-18.1,54.2-50.6,68.7-83.1c-28.9,18.1-61.5,28.9-97.6,36.1 c-28.9-28.9-68.7-47-112-47c-83.1,0-151.8,68.7-151.8,151.8c0,10.8,0,25.3,3.6,36.1c-126.5-7.3-238.6-68.7-314.5-159 c-14.5,21.7-21.7,50.6-21.7,75.9c0,54.2,25.3,101.2,68.7,126.5c-25.3,0-47-7.2-68.7-18.1c0,0,0,0,0,3.6 c0,72.3,54.2,137.4,122.9,148.2c-14.5,3.6-25.3,3.6-39.7,3.6c-10.9,0-18.1,0-28.9-3.6c18.1,61.5,75.9,104.8,141,104.8 c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1 c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
             fill="#006699"
-            style={Object {}}
           />
         </svg>
         <Text
@@ -6007,18 +5354,13 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
           href="https://twitter.com/jdoe"
           onPress={[Function]}
           style={
-            Array [
-              Object {
-                "textDecorationLine": "underline",
-              },
-              Object {
-                "color": "#006699",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 15,
-                "paddingLeft": 5,
-                "textDecorationLine": "none",
-              },
-            ]
+            Object {
+              "color": "#006699",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "paddingLeft": 5,
+              "textDecorationLine": "none",
+            }
           }
         >
           @
@@ -6071,13 +5413,8 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
   ListHeaderComponent={
     <View>
       <AuthorProfileAuthorHead
-        bio={undefined}
         isLoading={false}
-        name={undefined}
         onTwitterLinkPress={[Function]}
-        title={undefined}
-        twitter={undefined}
-        uri={undefined}
       />
       <AuthorProfilePagination
         count={0}
@@ -6155,11 +5492,9 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
   <View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View>
         <View
-          collapsable={undefined}
           style={
             Object {
               "opacity": 0,
@@ -6178,18 +5513,14 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
             <View
               accessibilityRole="banner"
               style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#F9F8F3",
-                    "flexDirection": "column",
-                    "paddingBottom": 40,
-                    "width": "100%",
-                  },
-                  Object {
-                    "paddingTop": 30,
-                  },
-                ]
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "paddingTop": 30,
+                  "width": "100%",
+                }
               }
             >
               <Text
@@ -6216,14 +5547,11 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                 aria-level="2"
                 ellipsizeMode="tail"
                 style={
-                  Array [
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "TimesDigitalW04-RegularSC",
-                      "fontSize": 14,
-                    },
-                    Object {},
-                  ]
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  }
                 }
               >
                 
@@ -6296,14 +5624,12 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 15,
-                        "paddingTop": 4,
-                      },
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
                   }
                   testID="results-message"
                 >
@@ -6335,20 +5661,15 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -6363,27 +5684,21 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -6412,22 +5727,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6456,22 +5767,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6500,26 +5807,19 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -6548,11 +5848,9 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -6579,20 +5877,15 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -6607,27 +5900,21 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -6656,22 +5943,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6700,22 +5983,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6744,26 +6023,19 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -6792,11 +6064,9 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -6823,20 +6093,15 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={
-          Array [
-            Object {
-              "paddingBottom": 15,
-              "paddingTop": 15,
-            },
-            Object {
-              "paddingLeft": 10,
-              "paddingRight": 10,
-            },
-          ]
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
         }
       >
         <View
@@ -6851,27 +6116,21 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
           }
         >
           <View
-            className=""
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                },
-                "",
-              ]
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
             }
           >
             <View
               style={
-                Array [
-                  Object {
-                    "height": 24,
-                    "marginBottom": 10,
-                    "maxWidth": 300,
-                  },
-                ]
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
               }
             >
               <BVLinearGradient
@@ -6900,22 +6159,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6944,22 +6199,18 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
               }
             >
               <BVLinearGradient
@@ -6988,26 +6239,19 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
             <View
               style={
-                Array [
-                  Object {
-                    "height": 10,
-                    "marginBottom": 10,
-                  },
-                  Object {
-                    "marginBottom": 0,
-                    "maxWidth": 240,
-                  },
-                ]
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
               }
             >
               <BVLinearGradient
@@ -7036,11 +6280,9 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "flex": 1,
-                    },
-                  ]
+                  Object {
+                    "flex": 1,
+                  }
                 }
               />
             </View>
@@ -7050,7 +6292,6 @@ exports[`AuthorProfile test on android renders with no author 1`] = `
     </View>
     <View
       onLayout={[Function]}
-      style={null}
     >
       <View
         style={

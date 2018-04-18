@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.68.0"></a>
+# [0.68.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.67.1...@times-components/article@0.68.0) (2018-04-18)
+
+
+### Features
+
+* display secondary video ([#876](https://github.com/newsuk/times-components/issues/876)) ([6aa0bee](https://github.com/newsuk/times-components/commit/6aa0bee))
+
+
+
+
+<a name="0.67.1"></a>
+## [0.67.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.67.0...@times-components/article@0.67.1) (2018-04-18)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.67.0"></a>
+# [0.67.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.66.8...@times-components/article@0.67.0) (2018-04-17)
+
+
+### Bug Fixes
+
+* Update video attribute ([#865](https://github.com/newsuk/times-components/issues/865)) ([1feae5a](https://github.com/newsuk/times-components/commit/1feae5a))
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
+<a name="0.66.8"></a>
+## [0.66.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.66.7...@times-components/article@0.66.8) (2018-04-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.66.7"></a>
 ## [0.66.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.66.6...@times-components/article@0.66.7) (2018-04-14)
 

@@ -4,12 +4,9 @@ exports[`Placeholder test on ios renders loading image when width set 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "flex": 1,
-      },
-      null,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <Gradient
@@ -22,15 +19,11 @@ exports[`Placeholder test on ios renders loading image when width set 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "flex": 1,
-          },
-          Object {
-            "alignItems": "center",
-            "justifyContent": "center",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
       }
     >
       <T

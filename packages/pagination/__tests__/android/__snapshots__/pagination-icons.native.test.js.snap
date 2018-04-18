@@ -32,15 +32,12 @@ exports[`Pagination Icons on Android Next page icon renders out an svg and label
   </Text>
   <Svg
     height={12}
-    viewBox="42 12 60 120"
     width={7}
   >
     <G
       fill="#006699"
     >
-      <Path
-        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-      />
+      <Path />
     </G>
   </Svg>
 </View>
@@ -59,15 +56,12 @@ exports[`Pagination Icons on Android Previous page icon renders out an svg and l
 >
   <Svg
     height={12}
-    viewBox="42 12 60 120"
     width={7}
   >
     <G
       fill="#006699"
     >
-      <Path
-        d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
-      />
+      <Path />
     </G>
   </Svg>
   <Text

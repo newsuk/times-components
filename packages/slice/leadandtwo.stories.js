@@ -6,7 +6,11 @@ import LeadAndTwoSlice from "./src/templates/leadandtwo";
 
 // knobs
 const itemCountLabel = "Number of support items:";
-const itemCount = ["0", "1", "2"];
+const itemCount = {
+  0: "0",
+  1: "1",
+  2: "2"
+};
 const itemCountDefault = "0";
 
 const colours = [

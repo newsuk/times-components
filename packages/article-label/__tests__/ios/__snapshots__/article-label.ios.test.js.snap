@@ -6,18 +6,14 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Array [
-      Object {
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "marginBottom": 0,
-      },
-      Object {
-        "color": "#008347",
-      },
-    ]
+    Object {
+      "color": "#008347",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 12,
+      "fontWeight": "400",
+      "letterSpacing": 1.2,
+      "marginBottom": 0,
+    }
   }
 >
   SWIMMING
