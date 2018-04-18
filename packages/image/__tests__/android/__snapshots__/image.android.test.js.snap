@@ -4,7 +4,13 @@ exports[`1. Renders default layout 1`] = `
 <View
   aspectRatio={1.5}
 >
-  <View
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg&preview=true",
+      }
+    }
     style={
       Object {
         "height": "100%",
@@ -12,26 +18,13 @@ exports[`1. Renders default layout 1`] = `
       }
     }
   >
-    <Image
+    <ImageBackground
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg&preview=true",
+          "uri": "http://example.com/image.jpg",
         }
       }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
       style={
         Object {
           "height": "100%",
@@ -39,75 +32,9 @@ exports[`1. Renders default layout 1`] = `
         }
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        onLayout={[Function]}
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
-            }
-            end={
-              Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
+      <Placeholder />
+    </ImageBackground>
+  </ImageBackground>
 </View>
 `;
 
@@ -115,7 +42,13 @@ exports[`2. Renders default layout without uri 1`] = `
 <View
   aspectRatio={1.5}
 >
-  <View
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": null,
+      }
+    }
     style={
       Object {
         "height": "100%",
@@ -123,26 +56,8 @@ exports[`2. Renders default layout without uri 1`] = `
       }
     }
   >
-    <Image
+    <ImageBackground
       onLoad={[Function]}
-      source={
-        Object {
-          "uri": null,
-        }
-      }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
       style={
         Object {
           "height": "100%",
@@ -150,70 +65,9 @@ exports[`2. Renders default layout without uri 1`] = `
         }
       }
     >
-      <Image
-        onLoad={[Function]}
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        onLayout={[Function]}
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
-            }
-            end={
-              Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
+      <Placeholder />
+    </ImageBackground>
+  </ImageBackground>
 </View>
 `;
 
@@ -226,7 +80,13 @@ exports[`3. Renders with a passed style prop 1`] = `
     }
   }
 >
-  <View
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg&preview=true",
+      }
+    }
     style={
       Object {
         "height": "100%",
@@ -234,26 +94,13 @@ exports[`3. Renders with a passed style prop 1`] = `
       }
     }
   >
-    <Image
+    <ImageBackground
       onLoad={[Function]}
       source={
         Object {
-          "uri": "http://example.com/image.jpg&preview=true",
+          "uri": "http://example.com/image.jpg",
         }
       }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
       style={
         Object {
           "height": "100%",
@@ -261,190 +108,13 @@ exports[`3. Renders with a passed style prop 1`] = `
         }
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        onLayout={[Function]}
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
-            }
-            end={
-              Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
+      <Placeholder />
+    </ImageBackground>
+  </ImageBackground>
 </View>
 `;
 
-exports[`4. Renders with prepended https schema 1`] = `
-<View
-  aspectRatio={1.5}
->
-  <View
-    style={
-      Object {
-        "height": "100%",
-        "width": "100%",
-      }
-    }
-  >
-    <Image
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://example.com/image.jpg&preview=true",
-        }
-      }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "https://example.com/image.jpg",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        onLayout={[Function]}
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <BVLinearGradient
-            colors={
-              Array [
-                "#F9F9F9",
-                "#EDEDED",
-              ]
-            }
-            end={
-              Object {
-                "x": -0.09302964577578221,
-                "y": 0.11488204504197774,
-              }
-            }
-            locations={
-              Array [
-                0,
-                1,
-              ]
-            }
-            start={
-              Object {
-                "x": 1,
-                "y": 0,
-              }
-            }
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`5. Renders a placeholder 1`] = `
+exports[`4. Renders a placeholder 1`] = `
 <View
   onLayout={[Function]}
   style={
@@ -488,5 +158,43 @@ exports[`5. Renders a placeholder 1`] = `
       </Svg>
     </View>
   </Gradient>
+</View>
+`;
+
+exports[`5. Renders with prepended https schema 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://example.com/image.jpg&preview=true",
+      }
+    }
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <ImageBackground
+      onLoad={[Function]}
+      source={
+        Object {
+          "uri": "https://example.com/image.jpg",
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <Placeholder />
+    </ImageBackground>
+  </ImageBackground>
 </View>
 `;

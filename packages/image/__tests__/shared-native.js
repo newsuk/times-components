@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import Image, { ModalImage } from "../src";
 
 export default () => {
-  context("ModalImage", () => {
+  context("Native only", () => {
     let image;
     let modalImage;
 
@@ -64,6 +64,13 @@ export default () => {
         handlePreviewLoad();
         expect(image.state("isLoaded")).toEqual(true);
       }
+    });
+
+    it("should prepend https schema", () => {
+      const wrapper = shallow(
+        <Image aspectRatio={3 / 2} uri="//example.com/image.jpg" />
+      );
+      expect(wrapper).toMatchSnapshot("5. Renders with prepended https schema");
     });
   });
 };

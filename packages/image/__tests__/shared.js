@@ -1,45 +1,35 @@
 /* global context */
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Image from "../src";
 import Placeholder from "../src/placeholder";
 
+jest.mock("@times-components/gradient", () => "Gradient");
+
 export default () => {
   context("Image", () => {
     it("should render default layout", () => {
-      const tree = renderer
-        .create(
-          <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot("1. Renders default layout");
+      const wrapper = shallow(
+        <Image aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+      );
+      expect(wrapper).toMatchSnapshot("1. Renders default layout");
     });
 
     it("should render default layout without uri", () => {
-      const tree = renderer.create(<Image aspectRatio={3 / 2} />).toJSON();
-      expect(tree).toMatchSnapshot("2. Renders default layout without uri");
+      const wrapper = shallow(<Image aspectRatio={3 / 2} />);
+      expect(wrapper).toMatchSnapshot("2. Renders default layout without uri");
     });
 
     it("should accept styling prop", () => {
-      const tree = renderer
-        .create(
-          <Image
-            aspectRatio={3 / 2}
-            style={{ width: 100 }}
-            uri="http://example.com/image.jpg"
-          />
-        )
-        .toJSON();
-      expect(tree).toMatchSnapshot("3. Renders with a passed style prop");
-    });
-
-    it("should prepend https schema", () => {
-      const tree = renderer
-        .create(<Image aspectRatio={3 / 2} uri="//example.com/image.jpg" />)
-        .toJSON();
-      expect(tree).toMatchSnapshot("4. Renders with prepended https schema");
+      const wrapper = shallow(
+        <Image
+          aspectRatio={3 / 2}
+          style={{ width: 100 }}
+          uri="http://example.com/image.jpg"
+        />
+      );
+      expect(wrapper).toMatchSnapshot("3. Renders with a passed style prop");
     });
   });
 
@@ -51,7 +41,7 @@ export default () => {
       });
 
       wrapper.update();
-      expect(wrapper).toMatchSnapshot("5. Renders a placeholder");
+      expect(wrapper).toMatchSnapshot("4. Renders a placeholder");
     });
 
     it("should have an empty state when first loaded", () => {

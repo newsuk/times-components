@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Renders default layout 1`] = `
-<div>
+<View>
   <div
     style={
       Object {
@@ -24,21 +24,24 @@ exports[`1. Renders default layout 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
-      />
-    </div>
+      }
+    />
   </div>
-</div>
+</View>
 `;
 
 exports[`2. Renders default layout without uri 1`] = `
-<div>
+<View>
   <div
     style={
       Object {
@@ -61,24 +64,27 @@ exports[`2. Renders default layout without uri 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
-      />
-    </div>
+      }
+    />
   </div>
-</div>
+</View>
 `;
 
 exports[`3. Renders with a passed style prop 1`] = `
-<div
+<View
   style={
     Object {
-      "width": "100px",
+      "width": 100,
     }
   }
 >
@@ -104,57 +110,23 @@ exports[`3. Renders with a passed style prop 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
-        }
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`4. Renders with prepended https schema 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
-    <img
-      alt=""
-      src="//example.com/image.jpg"
+    <Placeholder
       style={
         Object {
-          "display": "block",
+          "bottom": 0,
+          "left": 0,
           "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
-        }
-      />
-    </div>
   </div>
-</div>
+</View>
 `;
 
-exports[`5. Renders a placeholder 1`] = `
+exports[`4. Renders a placeholder 1`] = `
 <View
   onLayout={[Function]}
   style={
@@ -202,7 +174,7 @@ exports[`5. Renders a placeholder 1`] = `
 `;
 
 exports[`Image tests on web ModalImage passes through to Image 1`] = `
-<div>
+<View>
   <div
     style={
       Object {
@@ -225,15 +197,18 @@ exports[`Image tests on web ModalImage passes through to Image 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
-      />
-    </div>
+      }
+    />
   </div>
-</div>
+</View>
 `;
