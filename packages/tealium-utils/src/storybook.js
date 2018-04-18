@@ -1,7 +1,9 @@
 import { Platform } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
-import tealiumReporter, { TealiumSendScheduler } from "@times-components/tealium";
+import tealiumReporter, {
+  TealiumSendScheduler
+} from "@times-components/tealium";
 
 const trackingOptions = {
   enabled: true,
@@ -10,12 +12,14 @@ const trackingOptions = {
   env: "dev"
 };
 
-const utagSendScheduler = new TealiumSendScheduler(trackingOptions, global.window, global.document);
+const utagSendScheduler = new TealiumSendScheduler(
+  trackingOptions,
+  global.window,
+  global.document
+);
 
 const reporter =
-  Platform.OS === "web"
-    ? tealiumReporter(utagSendScheduler)
-    : null;
+  Platform.OS === "web" ? tealiumReporter(utagSendScheduler) : null;
 
 export default e => {
   if (reporter) reporter.analytics(e);
