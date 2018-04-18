@@ -13,7 +13,7 @@ export default () => {
       env: "dev",
       account: "newsuk"
     };
- 
+
     const realUtag = global.window.utag;
     let sendScheduler;
 
