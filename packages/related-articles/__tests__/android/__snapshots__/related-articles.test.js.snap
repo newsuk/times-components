@@ -120,7 +120,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -597,7 +597,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -1231,7 +1231,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -1689,7 +1689,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&resize=1440",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -2179,7 +2179,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&resize=1440",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -2826,7 +2826,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=996&resize=1440",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -3023,7 +3023,7 @@ exports[`Related articles tests on android:  Standard template should render one
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
                         }
                       }
                       style={
@@ -3969,7 +3969,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
                         }
                       }
                       style={
@@ -4244,7 +4244,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=996&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=1440",
                         }
                       }
                       style={

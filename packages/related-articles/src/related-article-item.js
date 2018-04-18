@@ -47,7 +47,6 @@ const RelatedArticleItem = ({
         imageContainerClass={imageContainerClass}
         image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
         imageRatio={imageRatio}
-        imageSize={996}
         imageStyle={imageStyle}
         isReversed={isReversed}
         showImage={showImage}
