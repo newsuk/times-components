@@ -1,12 +1,12 @@
 // @flow
 
 import * as babelJest from "babel-jest";
-import * as fs from "fs";
+import { readFileSync } from "fs";
 import { createHash } from "crypto";
 import type { CacheKeyOptions, ProjectConfig, TransformOptions } from "jest";
 
 const readSource = (filename: string): string =>
-  fs.readFileSync(filename).toString();
+  readFileSync(filename).toString();
 
 const isPackageFile = (filename: string): boolean =>
   filename.includes("@times-components");
