@@ -2,7 +2,7 @@
 
 import * as babelJest from "babel-jest";
 import * as fs from "fs";
-import * as crypto from "crypto";
+import { createHash } from "crypto";
 import type { CacheKeyOptions, ProjectConfig, TransformOptions } from "jest";
 
 const readSource = (filename: string): string =>
@@ -18,8 +18,7 @@ const pointToSource = (filename: string): boolean =>
  * changes if raw source code has been updated.
  */
 const getPackageCacheKey = (filename: string): string =>
-  crypto
-    .createHash("md5")
+  createHash("md5")
     .update(readSource(pointToSource(filename)))
     .digest("hex");
 
