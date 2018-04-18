@@ -1,3 +1,6 @@
-import createTealiumReport from "./tealium";
+const createTealiumReporter = utagSendScheduler => ({
+  analytics: e => utagSendScheduler.enqueue(e)
+});
 
-export default createTealiumReport;
+export default createTealiumReporter;
+export { default as TealiumSendScheduler } from "./tealium-send-scheduler";
