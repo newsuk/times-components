@@ -16,7 +16,8 @@ const errorStyling = StyleSheet.create({
       textAlign: 'center',
       color: 'white',
       width: 'auto !important',
-      height: 'auto !important'
+      height: 'auto !important',
+      marginBottom: spacing(2)
   },
   background: {
       display: 'flex',
@@ -43,7 +44,7 @@ const TextBody = withResponsiveStyles(Text, {
 const VideoError = ({width, height}) => (
   <View style={[errorStyling.background, {width, height}]}>
       <Text style={errorStyling.heading}>Something's gone wrong</Text>
-      <TextBody>Please check your network connection and refresh the page</TextBody>
+      <TextBody>Please check your network{"\n"}connection and refresh the page</TextBody>
   </View>
 );
 

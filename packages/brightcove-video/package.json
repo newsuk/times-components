@@ -1,8 +1,8 @@
 {
   "name": "@times-components/brightcove-video",
   "version": "2.1.19",
-  "main": "dist/index",
-  "dev": "src/index",
+  "main": "dist/brightcove-video",
+  "dev": "src/brightcove-video",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

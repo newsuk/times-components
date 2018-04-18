@@ -1,135 +1,61 @@
-import React, { Component } from "react";
-import { View, TouchableWithoutFeedback, NativeModules } from "react-native";
-import {
-  brightcoveVideoDefaultProps,
-  brightcoveVideoPropTypes
-} from "./brightcove-video.proptypes";
+import React from "react";
+import PropTypes from "prop-types";
+import { View, Image, StyleSheet } from "react-native";
+import { addMissingProtocol } from "@times-components/utils";
+import PlayIcon from "./play-icon";
 
-import Player from "./brightcove-player";
-import Splash from "./splash";
-import VideoError from "./video-error";
-
-const BrightcoveFullscreenPlayerModule =
-  NativeModules.BrightcoveFullscreenPlayer;
-
-class BrightcoveVideo extends Component {
-  static getBrightcoveFullscreenPlayerModule() {
-    return BrightcoveFullscreenPlayerModule;
+const styles = StyleSheet.create({
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
   }
+});
 
-  static activePlayers = [];
+const addMissingProtocolToPoster = poster => ({
+  uri: addMissingProtocol(poster.uri)
+});
 
-  constructor(props) {
-    super(props);
+const Splash = ({ poster, width, height }) => (
+  <View
+    style={{ width, height }}
+    testID="splash-component"
+    accessibilityLabel="splash-component"
+  >
+    {poster ? (
+      <Image
+        source={addMissingProtocolToPoster(poster)}
+        style={{
+          width,
+          height
+        }}
+      />
+    ) : (
+      <View
+        style={{
+          width,
+          height,
+          backgroundColor: "black"
+        }}
+      />
+    )}
+    <View style={[styles.overlay, { width, height }]}>
+      <PlayIcon />
+    </View>
+  </View>
+);
 
-    this.state = {
-      isLaunched: props.autoplay,
-      error: null
-    };
-  }
+Splash.defaultProps = {
+  poster: null
+};
 
-  componentDidMount() {
-    BrightcoveVideo.activePlayers.push(this);
-  }
-  // specifically check if is launched has changed and block update if it has not;
-  // this is so we don't keep reseting our player reference
-  shouldComponentUpdate(nextProps, nextState) {
-    return (
-      nextState.isLaunched !== this.state.isLaunched ||
-      nextState.error !== this.state.error ||
-      nextProps !== this.props
-    );
-  }
+Splash.propTypes = {
+  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+};
 
-  componentWillUnmount() {
-    BrightcoveVideo.activePlayers.splice(
-      BrightcoveVideo.activePlayers.indexOf(this)
-    );
-  }
-
-  play = () => {
-    const nativeModule = BrightcoveVideo.getBrightcoveFullscreenPlayerModule();
-
-    if (nativeModule && this.props.directToFullscreen) {
-      nativeModule.playVideo({
-        accountId: this.props.accountId,
-        videoId: this.props.videoId,
-        policyKey: this.props.policyKey
-      });
-    } else {
-      if (this.playerRef) {
-        this.playerRef.play();
-      }
-
-      this.setState({ isLaunched: true });
-    }
-  };
-
-  pause = () => {
-    if (this.playerRef) {
-      this.playerRef.pause();
-    }
-  };
-
-  reset = () => {
-    this.setState({ isLaunched: false, error: null });
-  };
-
-  handlePlay = () => {
-    BrightcoveVideo.activePlayers.forEach(player => {
-      if (player !== this) {
-        player.pause();
-      }
-    });
-  };
-
-  handleFinish = () => {
-    if (this.props.resetOnFinish) {
-      this.reset();
-    }
-
-    this.props.onFinish();
-  };
-
-  handleError = error => {
-    this.setState({ error });
-
-    this.props.onError(error);
-  };
-
-  render() {
-    this.playerRef = null;
-
-    if (this.state.error) {
-      return <VideoError {...this.props} onReset={this.reset} />;
-    }
-
-    if (this.state.isLaunched) {
-      return (
-        <Player
-          ref={ref => {
-            this.playerRef = ref;
-          }}
-          {...this.props}
-          onPlay={this.handlePlay}
-          onError={this.handleError}
-          onFinish={this.handleFinish}
-          autoplay
-        />
-      );
-    }
-
-    return (
-      <TouchableWithoutFeedback onPress={this.play}>
-        <View style={{ width: this.props.width, height: this.props.height }}>
-          <Splash {...this.props} />
-        </View>
-      </TouchableWithoutFeedback>
-    );
-  }
-}
-
-BrightcoveVideo.propTypes = brightcoveVideoPropTypes;
-BrightcoveVideo.defaultProps = brightcoveVideoDefaultProps;
-
-export default BrightcoveVideo;
+export default Splash;
