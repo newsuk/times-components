@@ -142,7 +142,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -259,7 +261,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -437,7 +441,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -554,7 +560,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -665,7 +673,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -824,7 +834,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -903,7 +915,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1138,7 +1152,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1218,7 +1234,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1434,7 +1452,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1545,7 +1565,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1625,7 +1647,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1885,7 +1909,9 @@ exports[`Related articles tests on web:  Standard template should render one rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2063,7 +2089,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2231,7 +2259,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2399,7 +2429,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2558,7 +2590,9 @@ exports[`Related articles tests on web:  Standard template should render two rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2698,7 +2732,9 @@ exports[`Related articles tests on web:  Standard template should render two rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>

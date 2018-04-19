@@ -212,6 +212,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -417,6 +422,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -563,6 +573,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -812,6 +827,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -992,6 +1012,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -1171,6 +1196,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -1239,6 +1269,11 @@ exports[`Article Summary tests on Android should render an article-summary with 
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>

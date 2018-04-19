@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article Byline test on android renders correctly with a section colour 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  onPress={[Function]}
+  style={
+    Object {
+      "color": "blue",
+      "textDecorationLine": "underline",
+    }
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
 exports[`Article Byline test on android renders correctly with a single author 1`] = `
 <Text
   accessibilityRole="link"
@@ -24,6 +43,11 @@ exports[`Article Byline test on android renders correctly with a single inline e
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#006699",
+    }
+  }
 >
   Lindsay McIntosh Scottish Political Editor
 </Text>
@@ -53,6 +77,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
      
   </Text>,
@@ -76,6 +105,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
      
   </Text>,
@@ -120,6 +154,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
     , 
   </Text>,
@@ -143,6 +182,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
     , 
   </Text>,
@@ -190,6 +234,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
     RBS Six Nations 
   </Text>,
@@ -234,6 +283,11 @@ Array [
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+      }
+    }
   >
     , Environment Editor
   </Text>,
