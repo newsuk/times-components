@@ -13,6 +13,56 @@ exports[`Icons test on ios Diamond renders correctly 1`] = `
 </svg>
 `;
 
+exports[`Icons test on ios Email renders correctly 1`] = `
+<svg
+  height={50}
+  width={50}
+>
+  <g
+    fill="#000000"
+    fillRule="nonzero"
+  >
+    <path />
+  </g>
+</svg>
+`;
+
+exports[`Icons test on ios Email renders correctly with different fillColour 1`] = `
+<svg
+  height={50}
+  width={50}
+>
+  <g
+    fill="#4D4D4D"
+    fillRule="nonzero"
+  >
+    <path />
+  </g>
+</svg>
+`;
+
+exports[`Icons test on ios Star renders correctly 1`] = `
+<svg
+  height={50}
+  width={50}
+>
+  <polygon
+    fill="#000000"
+  />
+</svg>
+`;
+
+exports[`Icons test on ios Star renders correctly with different fillColour 1`] = `
+<svg
+  height={50}
+  width={50}
+>
+  <polygon
+    fill="#4D4D4D"
+  />
+</svg>
+`;
+
 exports[`Icons test on ios Twitter renders correctly 1`] = `
 <svg
   height={50}
