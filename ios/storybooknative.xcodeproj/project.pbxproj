@@ -20,12 +20,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		27603C521F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C461F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.m */; };
-		27603C531F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C4B1F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.m */; };
-		27603C541F98F5E1003F3296 /* RNTBrightcoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C4C1F98F5E1003F3296 /* RNTBrightcoveViewController.m */; };
-		27603C551F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C4D1F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.m */; };
-		27603C561F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C501F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.m */; };
-		27603C571F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27603C511F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.m */; };
 		3C71D31CB1D843E590D3A8D6 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BE2D48A0F446B793BC771A /* libBVLinearGradient.a */; };
 		515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */; };
 		515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */; };
@@ -40,15 +34,11 @@
 		87396A2F1EF3E9290076CBAD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */; };
 		87396A311EF3E9310076CBAD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A301EF3E9310076CBAD /* SafariServices.framework */; };
 		87396A331EF3E9390076CBAD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A321EF3E9390076CBAD /* WebKit.framework */; };
-		87396A371EF3E9980076CBAD /* BrightcovePlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */; };
-		87396A391EF3E9F10076CBAD /* bcovpuiiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */; };
 		A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */; };
 		A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */; };
 		A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */; };
 		A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		ED3A0BB01F38C8F300048867 /* RNTBrightcoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */; };
-		ED3A0BB11F38C8F300048867 /* RNTBrightcoveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -372,18 +362,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = storybooknative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = storybooknative/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		27603C461F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveCloseButtonView.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveCloseButtonView.m"; sourceTree = "<group>"; };
-		27603C471F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveCloseButtonView.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveCloseButtonView.h"; sourceTree = "<group>"; };
-		27603C481F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenPresentingAutoRotatingViewController.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTFullscreenPresentingAutoRotatingViewController.h"; sourceTree = "<group>"; };
-		27603C491F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveFullscreenManager.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveFullscreenManager.h"; sourceTree = "<group>"; };
-		27603C4A1F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveSVGCloseButtonView.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveSVGCloseButtonView.h"; sourceTree = "<group>"; };
-		27603C4B1F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveSVGCloseButtonView.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveSVGCloseButtonView.m"; sourceTree = "<group>"; };
-		27603C4C1F98F5E1003F3296 /* RNTBrightcoveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveViewController.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveViewController.m"; sourceTree = "<group>"; };
-		27603C4D1F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenPresentingAutoRotatingViewController.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTFullscreenPresentingAutoRotatingViewController.m"; sourceTree = "<group>"; };
-		27603C4E1F98F5E1003F3296 /* RNTBrightcoveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveViewController.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveViewController.h"; sourceTree = "<group>"; };
-		27603C4F1F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNTFullscreenAutoPresentingView.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTFullscreenAutoPresentingView.h"; sourceTree = "<group>"; };
-		27603C501F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTFullscreenAutoPresentingView.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTFullscreenAutoPresentingView.m"; sourceTree = "<group>"; };
-		27603C511F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveFullscreenManager.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveFullscreenManager.m"; sourceTree = "<group>"; };
 		515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GillSansMTStd-Medium.ttf"; path = "../dist/public/fonts/GillSansMTStd-Medium.ttf"; sourceTree = "<group>"; };
 		515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesDigitalW04-RegularSC.ttf"; path = "../dist/public/fonts/TimesDigitalW04-RegularSC.ttf"; sourceTree = "<group>"; };
 		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
@@ -399,8 +377,6 @@
 		87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		87396A301EF3E9310076CBAD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		87396A321EF3E9390076CBAD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightcovePlayerSDK.framework; sourceTree = "<group>"; };
-		87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bcovpuiiconfont.ttf; sourceTree = "<group>"; };
 		A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_bold.ttf; path = ../dist/public/fonts/TimesDigitalW04_bold.ttf; sourceTree = "<group>"; };
 		A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_italic.ttf; path = ../dist/public/fonts/TimesDigitalW04_italic.ttf; sourceTree = "<group>"; };
 		A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04.ttf; path = ../dist/public/fonts/TimesDigitalW04.ttf; sourceTree = "<group>"; };
@@ -408,10 +384,6 @@
 		A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		DB48A49A2B0442E29B68A3A8 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
-		ED3A0BAC1F38C8F300048867 /* RNTBrightcoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveView.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveView.h"; sourceTree = "<group>"; };
-		ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveView.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveView.m"; sourceTree = "<group>"; };
-		ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTBrightcoveManager.h; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveManager.h"; sourceTree = "<group>"; };
-		ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTBrightcoveManager.m; path = "../packages/brightcove-video/ios/RNTBrightcove/RNTBrightcoveManager.m"; sourceTree = "<group>"; };
 		F99A760D4DBA4C06BAA2763C /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -420,7 +392,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87396A371EF3E9980076CBAD /* BrightcovePlayerSDK.framework in Frameworks */,
 				87396A331EF3E9390076CBAD /* WebKit.framework in Frameworks */,
 				87396A311EF3E9310076CBAD /* SafariServices.framework in Frameworks */,
 				87396A2F1EF3E9290076CBAD /* MediaPlayer.framework in Frameworks */,
@@ -624,7 +595,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				87396A3A1EF3EA130076CBAD /* brightcove-video */,
 				13B07FAE1A68108700A75B9A /* storybooknative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -647,7 +617,6 @@
 		87396A0C1EF3E8F70076CBAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87396A361EF3E9980076CBAD /* BrightcovePlayerSDK.framework */,
 				87396A321EF3E9390076CBAD /* WebKit.framework */,
 				87396A301EF3E9310076CBAD /* SafariServices.framework */,
 				87396A2E1EF3E9290076CBAD /* MediaPlayer.framework */,
@@ -657,30 +626,6 @@
 				87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		87396A3A1EF3EA130076CBAD /* brightcove-video */ = {
-			isa = PBXGroup;
-			children = (
-				87396A381EF3E9F10076CBAD /* bcovpuiiconfont.ttf */,
-				27603C471F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.h */,
-				27603C461F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.m */,
-				27603C491F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.h */,
-				27603C511F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.m */,
-				ED3A0BAE1F38C8F300048867 /* RNTBrightcoveManager.h */,
-				ED3A0BAF1F38C8F300048867 /* RNTBrightcoveManager.m */,
-				27603C4A1F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.h */,
-				27603C4B1F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.m */,
-				ED3A0BAC1F38C8F300048867 /* RNTBrightcoveView.h */,
-				ED3A0BAD1F38C8F300048867 /* RNTBrightcoveView.m */,
-				27603C4E1F98F5E1003F3296 /* RNTBrightcoveViewController.h */,
-				27603C4C1F98F5E1003F3296 /* RNTBrightcoveViewController.m */,
-				27603C4F1F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.h */,
-				27603C501F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.m */,
-				27603C481F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.h */,
-				27603C4D1F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.m */,
-			);
-			name = "brightcove-video";
 			sourceTree = "<group>";
 		};
 		8772CF131FB25C34007D34BB /* Products */ = {
@@ -1149,7 +1094,6 @@
 				A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */,
 				A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */,
 				A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */,
-				87396A391EF3E9F10076CBAD /* bcovpuiiconfont.ttf in Resources */,
 				515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */,
 				515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */,
 				A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */,
@@ -1195,14 +1139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27603C531F98F5E1003F3296 /* RNTBrightcoveSVGCloseButtonView.m in Sources */,
-				ED3A0BB01F38C8F300048867 /* RNTBrightcoveView.m in Sources */,
-				27603C561F98F5E1003F3296 /* RNTFullscreenAutoPresentingView.m in Sources */,
-				ED3A0BB11F38C8F300048867 /* RNTBrightcoveManager.m in Sources */,
-				27603C571F98F5E1003F3296 /* RNTBrightcoveFullscreenManager.m in Sources */,
-				27603C521F98F5E1003F3296 /* RNTBrightcoveCloseButtonView.m in Sources */,
-				27603C551F98F5E1003F3296 /* RNTFullscreenPresentingAutoRotatingViewController.m in Sources */,
-				27603C541F98F5E1003F3296 /* RNTBrightcoveViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
