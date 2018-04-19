@@ -3,42 +3,91 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { render, shallow } from "enzyme";
-import * as Icons from "../src/icons";
+import { colours } from "@times-components/styleguide";
+import {
+  IconDiamond,
+  IconTwitter,
+  IconVideo,
+  IconEmail,
+  IconStar
+} from "../src/icons";
 
-function iconRenderTest(name, Icon) {
-  return () => {
+module.exports = () => {
+  it("Diamond renders correctly", () => {
     const tree = renderer
-      .create(<Icon title={name} width={50} height={50} />)
+      .create(
+        <IconDiamond
+          width={50}
+          height={50}
+          fillColour={colours.functional.tertiary}
+        />
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
-  };
-}
+  });
 
-function iconColourTest(Icon) {
-  return () => {
-    const stroke = "#coffee";
-    const fill = "#facade";
+  it("Twitter renders correctly", () => {
+    const tree = renderer
+      .create(<IconTwitter width={50} height={50} />)
+      .toJSON();
 
-    const tree = render(<Icon strokeColour={stroke} fillColour={fill} />);
+    expect(tree).toMatchSnapshot();
+  });
 
-    expect(tree.find(`[stroke="${stroke}"]`).length > 0).toEqual(true);
-    expect(tree.find(`[fill="${fill}"]`).length > 0).toEqual(true);
-  };
-}
+  it("Twitter renders correctly with different fillColour", () => {
+    const tree = renderer
+      .create(
+        <IconTwitter
+          width={50}
+          height={50}
+          fillColour={colours.functional.tertiary}
+        />
+      )
+      .toJSON();
 
-function iconDimensionTest(Icon) {
-  return () => {
-    const tree = shallow(<Icon height={50} />);
-    expect(tree.find("Svg").props().width > 0).toEqual(true);
-  };
-}
+    expect(tree).toMatchSnapshot();
+  });
 
-module.exports = () => {
-  Object.entries(Icons).forEach(([name, Icon]) => {
-    it(`${name} renders correctly`, iconRenderTest(name, Icon));
-    it(`${name} renders with different colours`, iconColourTest(Icon));
-    it(`${name} sets a width when height is set`, iconDimensionTest(Icon));
+  it("Video renders correctly", () => {
+    const tree = renderer.create(<IconVideo width={50} height={50} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Video renders correctly with different fillColour", () => {
+    const tree = renderer
+      .create(<IconVideo width={50} height={50} fillColour="#4D4D4D" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Email renders correctly", () => {
+    const tree = renderer.create(<IconEmail width={50} height={50} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Email renders correctly with different fillColour", () => {
+    const tree = renderer
+      .create(<IconEmail width={50} height={50} fillColour="#4D4D4D" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Star renders correctly", () => {
+    const tree = renderer.create(<IconStar width={50} height={50} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("Star renders correctly with different fillColour", () => {
+    const tree = renderer
+      .create(<IconStar width={50} height={50} fillColour="#4D4D4D" />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
   });
 };

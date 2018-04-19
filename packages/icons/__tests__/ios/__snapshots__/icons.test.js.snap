@@ -1,35 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons test on ios IconDiamond renders correctly 1`] = `
+exports[`Icons test on ios Diamond renders correctly 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconDiamond
-  </title>
   <g
-    fill="#1D1D1B"
+    fill="#4D4D4D"
   >
     <path />
   </g>
 </svg>
 `;
 
-exports[`Icons test on ios IconEmail renders correctly 1`] = `
+exports[`Icons test on ios Email renders correctly 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconEmail
-  </title>
   <g
-    fill="#1D1D1B"
+    fill="#000000"
     fillRule="nonzero"
   >
     <path />
@@ -37,18 +27,13 @@ exports[`Icons test on ios IconEmail renders correctly 1`] = `
 </svg>
 `;
 
-exports[`Icons test on ios IconFacebook renders correctly 1`] = `
+exports[`Icons test on ios Email renders correctly with different fillColour 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconFacebook
-  </title>
   <g
-    fill="#1D1D1B"
+    fill="#4D4D4D"
     fillRule="nonzero"
   >
     <path />
@@ -56,48 +41,55 @@ exports[`Icons test on ios IconFacebook renders correctly 1`] = `
 </svg>
 `;
 
-exports[`Icons test on ios IconStar renders correctly 1`] = `
+exports[`Icons test on ios Star renders correctly 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconStar
-  </title>
   <polygon
-    fill="#1D1D1B"
+    fill="#000000"
   />
 </svg>
 `;
 
-exports[`Icons test on ios IconTwitter renders correctly 1`] = `
+exports[`Icons test on ios Star renders correctly with different fillColour 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconTwitter
-  </title>
+  <polygon
+    fill="#4D4D4D"
+  />
+</svg>
+`;
+
+exports[`Icons test on ios Twitter renders correctly 1`] = `
+<svg
+  height={50}
+  width={50}
+>
   <path
     fill="#006699"
   />
 </svg>
 `;
 
-exports[`Icons test on ios IconVideo renders correctly 1`] = `
+exports[`Icons test on ios Twitter renders correctly with different fillColour 1`] = `
 <svg
-  aria-label="[title]"
   height={50}
-  role="img"
   width={50}
 >
-  <title>
-    IconVideo
-  </title>
+  <path
+    fill="#4D4D4D"
+  />
+</svg>
+`;
+
+exports[`Icons test on ios Video renders correctly 1`] = `
+<svg
+  height={50}
+  width={50}
+>
   <rect
     fill="#1D1D1B"
     height="13.5721404"
@@ -110,6 +102,27 @@ exports[`Icons test on ios IconVideo renders correctly 1`] = `
   />
   <polygon
     fill="#1D1D1B"
+  />
+</svg>
+`;
+
+exports[`Icons test on ios Video renders correctly with different fillColour 1`] = `
+<svg
+  height={50}
+  width={50}
+>
+  <rect
+    fill="#4D4D4D"
+    height="13.5721404"
+    width="15.4550103"
+    x="0.154639175"
+    y="0.139754386"
+  />
+  <polygon
+    fill="#4D4D4D"
+  />
+  <polygon
+    fill="#4D4D4D"
   />
 </svg>
 `;
