@@ -1,9 +1,8 @@
 import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { select } from "@times-components/storybook";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import { boolean, withKnobs } from "@storybook/addon-knobs";
+import { boolean, selectV2, withKnobs } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import ArticleByline from "./src/article-byline";
 
@@ -31,13 +30,12 @@ const bylineLinkStyles = {
   }
 };
 
-const sectionColours = Object.assign(
-  {},
-  ...Object.keys(colours.section).map(section => ({ [colours.section[section]]: section })),
-);
 
 const getCommonProps = () => ({
-  sectionColour: select("Section colours", sectionColours),
+  /* We're using selectV2 over our own select abstraction as
+   * it flips the keys and values. We don't want that behaviour.
+   */
+  sectionColour: selectV2("Section colours", colours.section, 'default'),
   onAuthorPress: preventDefaultedAction("onAuthorPress"),
 });
 
