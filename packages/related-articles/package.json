@@ -64,7 +64,6 @@
     "@times-components/markup": "0.26.0",
     "@times-components/slice": "0.18.1",
     "@times-components/styleguide": "0.6.0",
-    "@times-components/tealium-utils": "0.2.0",
     "@times-components/tracking": "0.12.3",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
