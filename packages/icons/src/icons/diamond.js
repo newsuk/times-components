@@ -4,12 +4,12 @@ import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "svgs";
 import iconPropTypes from "./proptypes";
 
-const IconDiamond = ({ title, width, height, fillColour }) => (
+const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
   <Svg
     viewBox="0 0 20 20"
     {...clean({ title, height, width: width || height })}
   >
-    <G fill={fillColour}>
+    <G fill={fillColour} stroke={strokeColour}>
       <Path d="M 0,10 10,20 20,10 10,0 Z" />
     </G>
   </Svg>
@@ -18,6 +18,7 @@ const IconDiamond = ({ title, width, height, fillColour }) => (
 IconDiamond.propTypes = iconPropTypes;
 
 IconDiamond.defaultProps = {
+  strokeColour: colours.functional.brandColour,
   fillColour: colours.functional.brandColour
 };
 
