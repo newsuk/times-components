@@ -1,8 +1,31 @@
 import React, { Component } from "react";
 import { View, Text, TouchableWithoutFeedback } from "react-native";
-import { IconTwitter, IconDiamond } from "@times-components/icons";
+import { IconTwitter, IconDiamond, IconEmail, IconStar } from "@times-components/icons";
 import { spacing } from "@times-components/styleguide";
 import styles from "./styles";
+
+const TouchView = ({
+  onPressIn, 
+  onPressOut, 
+  onPress,
+  onMouseEnter, 
+  onMouseLeave, 
+  style, 
+  children
+}) => ( 
+  <TouchableWithoutFeedback
+    onPressIn={onPressIn}
+    onPress={onPress}
+    onPressOut={onPressOut}>
+    <View 
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave} 
+      style={style}>{
+      children
+    }</View>
+  </TouchableWithoutFeedback>
+);
+
 
 class Bubble extends Component {
   constructor() {
@@ -25,31 +48,30 @@ class Bubble extends Component {
     const { hover, pressed } = this.state;
     const { onPress, Icon } = this.props;
     const fill = ["black", "white"][+pressed];
-    const background = ["white", "black"][+pressed];
-    console.log({pressed, hover});
-    const border = hover? 3 : 1;
+    const backgroundColor = ["white", "black"][+pressed];
+    const borderColor = hover? "black" : "rgb(219, 219, 219)";
+    const style = [styles.bubble, { 
+      borderColor,
+      backgroundColor
+    }];
     
     return (
-     <TouchableWithoutFeedback
+      <TouchView
+        onPress={()=>{}}
         onPressIn={this.pressed(true)}
         onPressOut={this.pressed(false)}
-      >
-       <View 
         onMouseEnter={this.hover(true)}
-        onMouseLeave={this.hover(false)} 
-        style={[styles.bubble, { 
-          borderWidth: border, 
-          backgroundColor:background
-        }]}>
-      {<Icon fillColour={fill} />}
-      </View>
-      </TouchableWithoutFeedback>
+        onMouseLeave={this.hover(false)}
+        style={style}>
+        <Icon fillColour={fill} />
+      </TouchView>
     );
   }
 }
 
 export default function Shavingbar({
   saved = false,
+  onEmail = () => {},
   onTweet = () => {},
   onFaceBook = () => {},
   onSave = () => {},
@@ -59,23 +81,19 @@ export default function Shavingbar({
       <View style={styles.group}>
         <Text style={styles.text}>Share</Text>
         <Bubble
-          onPress={onTweet}
-          Icon={IconDiamond} />
-
+          onPress={onEmail}
+          Icon={IconEmail} />
         <Bubble
           onPress={onTweet}
-          Icon={IconDiamond} />
+          Icon={IconTwitter} />
       </View>
-
-
       <View style={styles.group}>
         <Text style={styles.text}>{
           saved ? "Saved": "Save"
         }</Text>
-
         <Bubble
-          onPress={onTweet}
-          Icon={IconDiamond} />
+          onPress={onSave}
+          Icon={IconStar} />
       </View>
     </View>
   );

@@ -2,8 +2,8 @@
   "name": "@times-components/shavingbar",
   "version": "0.0.1",
   "description": "A fancy bar for saving & sharing articles",
-  "main": "dist/shavingbar",
-  "dev": "src/shavingbar",
+  "main": "dist",
+  "dev": "src",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
