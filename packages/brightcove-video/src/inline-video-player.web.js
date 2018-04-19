@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from "react";
 
 import { propTypes, defaultProps } from "./brightcove-video.proptypes";
@@ -42,6 +43,10 @@ class InlineVideoPlayer extends Component {
   static activePlayers = [];
   static brightcoveSDKLoadedStarted = false;
 
+  static brightcoveSDKHasLoaded() {
+    return !!(window.bc && window.videojs);
+  }
+
   static appendScript(s) {
     document.body.appendChild(s);
   }
@@ -63,52 +68,12 @@ class InlineVideoPlayer extends Component {
 
     InlineVideoPlayer.index += 1;
     this.id = `${props.videoId}-${props.accountId}-${InlineVideoPlayer.index}`;
+  }
+
+  componentWillMount() {
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
     }
-  }
-
-  handleError = () => {
-    // TODO: check that brightcove logs the error
-    this.setState({ error: true });
-  };
-
-  handlePlay = () => {
-    InlineVideoPlayer.activePlayers.forEach(video => {
-      if (video !== this && video.player) {
-        video.player.pause();
-      }
-    });
-  };
-
-  render() {
-    const { paidonly, width, height, poster } = this.props;
-
-    if (this.state.error) {
-      return <VideoError {...this.props} />;
-    }
-
-    return (
-      /* eslint jsx-a11y/media-has-caption: "off" */
-      // Added a wrapping div as brightcove adds siblings to the video tag
-      <div style={{ width: this.props.width, height: this.props.height }}>
-        <video
-          id={this.id}
-          style={{ width: this.props.width, height: this.props.height }}
-          {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player={this.props.playerId}
-          // following 'autoplay' can not expected to always work on web
-          // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
-          autoPlay={this.props.autoplay}
-          data-application-id
-          className="video-js"
-          controls
-        />
-      </div>
-    );
   }
 
   componentDidMount() {
@@ -120,38 +85,9 @@ class InlineVideoPlayer extends Component {
 
     InlineVideoPlayer.activePlayers.push(this);
 
-    if (this.brightcoveSDKHasLoaded()) {
+    if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
       this.initBrightcove();
     }
-  }
-
-  loadBrightcoveSDKIfRequired() {
-    if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-      InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
-
-      const s = this.createBrightcoveScript();
-
-      s.onload = () => {
-        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
-      };
-
-      // handle script not loading
-      s.onerror = err => {
-        const uriErr = {
-          code: "",
-          message: `The script ${err.target.src} is not accessible.`
-        };
-
-        InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
-      };
-
-      InlineVideoPlayer.appendScript(s);
-      InlineVideoPlayer.attachStyles();
-    }
-  }
-
-  brightcoveSDKHasLoaded() {
-    return !!(window.bc && window.videojs);
   }
 
   componentWillUnmount() {
@@ -164,17 +100,50 @@ class InlineVideoPlayer extends Component {
     }
   }
 
+  handleError = () => {
+    this.setState({ error: true });
+  };
+
+  handlePlay = () => {
+    InlineVideoPlayer.activePlayers.forEach(video => {
+      if (video !== this && video.player) {
+        video.player.pause();
+      }
+    });
+  };
+
+  loadBrightcoveSDKIfRequired() {
+    if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
+      InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
+
+      const s = this.createBrightcoveScript();
+
+      s.onload = () => {
+        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
+      };
+
+      // handle script not loading
+      s.onerror = () => {
+        InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
+        InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
+      };
+
+      InlineVideoPlayer.appendScript(s);
+      InlineVideoPlayer.attachStyles();
+    }
+  }
+
   createBrightcoveScript() {
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${this.props.accountId}/${
       this.props.playerId
-      }_default/index.min.js`;
+    }_default/index.min.js`;
 
     return s;
   }
 
   initVideojs() {
-    this.player = videojs(this.id);
+    this.player = window.videojs(this.id);
     this.player.ready(() => {
       this.player.contextmenu({ disabled: true });
     });
@@ -183,7 +152,7 @@ class InlineVideoPlayer extends Component {
   }
 
   initBrightcove() {
-    bc(document.getElementById(this.id), {
+    window.bc(document.getElementById(this.id), {
       // TODO remove?
       controlBar: {
         fullscreenToggle: !this.props.hideFullScreenButton
@@ -191,6 +160,33 @@ class InlineVideoPlayer extends Component {
     });
 
     this.initVideojs();
+  }
+
+  render() {
+    const { width, height, poster, videoId, accountId, playerId } = this.props;
+
+    if (this.state.error) {
+      return <VideoError {...this.props} />;
+    }
+
+    return (
+      /* eslint jsx-a11y/media-has-caption: "off" */
+      // Added a wrapping div as brightcove adds siblings to the video tag
+      <div style={{ width, height }}>
+        <video
+          id={this.id}
+          style={{ width, height }}
+          {...(poster ? { poster: this.props.poster.uri } : {})}
+          data-embed="default"
+          data-video-id={videoId}
+          data-account={accountId}
+          data-player={playerId}
+          data-application-id
+          className="video-js"
+          controls
+        />
+      </div>
+    );
   }
 }
 

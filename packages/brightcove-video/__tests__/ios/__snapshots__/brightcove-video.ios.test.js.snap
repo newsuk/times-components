@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BrightcoveVideo on ios renders a play icon correctly 1`] = `
+exports[`BrightcoveVideo on native renders a play icon correctly 1`] = `
 <View>
-  <Svg
+  <svg
     height={70}
     width={70}
   >
-    <Rect
+    <rect
       fill="rgba(0,0,0)"
       fillOpacity="0.4"
       height="100"
@@ -14,21 +14,28 @@ exports[`BrightcoveVideo on ios renders a play icon correctly 1`] = `
       strokeWidth="8"
       width="100"
     />
-    <Polygon
+    <polygon
       fill="rgb(255,255,255)"
     />
-  </Svg>
+  </svg>
 </View>
 `;
 
-exports[`BrightcoveVideo on ios renders correctly 1`] = `
-<TouchableOpacity
+exports[`BrightcoveVideo on native renders correctly 1`] = `
+<View
   accessibilityLabel="splash-component"
-  activeOpacity={0.2}
-  onPress={[Function]}
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "height": 200,
+      "opacity": 1,
       "width": 300,
     }
   }
@@ -61,19 +68,43 @@ exports[`BrightcoveVideo on ios renders correctly 1`] = `
       }
     }
   >
-    <PlayIcon />
+    <View>
+      <svg
+        height={70}
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+        />
+      </svg>
+    </View>
   </View>
-</TouchableOpacity>
+</View>
 `;
 
-exports[`BrightcoveVideo on ios renders correctly without a poster image 1`] = `
-<TouchableOpacity
+exports[`BrightcoveVideo on native renders correctly without a poster image 1`] = `
+<View
   accessibilityLabel="splash-component"
-  activeOpacity={0.2}
-  onPress={[Function]}
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "height": 200,
+      "opacity": 1,
       "width": 300,
     }
   }
@@ -102,7 +133,24 @@ exports[`BrightcoveVideo on ios renders correctly without a poster image 1`] = `
       }
     }
   >
-    <PlayIcon />
+    <View>
+      <svg
+        height={70}
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+        />
+      </svg>
+    </View>
   </View>
-</TouchableOpacity>
+</View>
 `;

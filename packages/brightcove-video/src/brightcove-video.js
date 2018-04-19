@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
-import Link from "@times-components/link";
 
 import PlayIcon from "./play-icon";
 import { propTypes, defaultProps } from "./brightcove-video.proptypes";

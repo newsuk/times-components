@@ -1,9 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Svg, { Polygon, Rect } from "svgs";
 import { View } from "react-native";
 
-const PlayIcon = ({ icon }) => (
+const PlayIcon = () => (
   <View>
     <Svg width={70} height={70} viewBox="0 0 100 100">
       <Rect

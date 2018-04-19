@@ -1,13 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 const errorStyling = StyleSheet.create({
   heading: {
@@ -43,7 +38,7 @@ const TextBody = withResponsiveStyles(Text, {
 
 const VideoError = ({ width, height }) => (
   <View style={[errorStyling.background, { width, height }]}>
-    <Text style={errorStyling.heading}>Something's gone wrong</Text>
+    <Text style={errorStyling.heading}>{"Something's gone wrong"}</Text>
     <TextBody>
       Please check your network{"\n"}connection and refresh the page
     </TextBody>

@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 
-import { View, Text, Alert, Platform } from "react-native";
+import { View, Text, Alert } from "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
 import BrightcoveVideo from "./src/brightcove-video";
 import IsPaidSubscriber from "./src/is-paid-subscriber";
 
@@ -65,7 +64,7 @@ export default {
       name: "100% width and height",
       platform: "native",
       component: () => (
-        <View style={{ width: "100%", height: "100%"}}>
+        <View style={{ width: "100%", height: "100%" }}>
           <BrightcoveVideo {...defaultVideoProps} width="100%" height="100%" />
         </View>
       )
