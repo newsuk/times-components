@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrightcoveVideo on android renders a non-paidonly video correctly for paid users 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    autoPlay={undefined}
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-3"
+    poster="[poster uri]"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`BrightcoveVideo on android renders a non-paidonly video correctly for unpaid users 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    autoPlay={undefined}
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-2"
+    poster="[poster uri]"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`BrightcoveVideo on android renders a paidonly video correctly for paid users 1`] = `
+<div
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    autoPlay={undefined}
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-1"
+    poster="[poster uri]"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`BrightcoveVideo on android renders a paidonly video correctly for unpaid users 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  style={
+    Object {
+      "height": "200px",
+      "width": "300px",
+    }
+  }
+/>
+`;
+
+exports[`BrightcoveVideo on android renders a play icon correctly 1`] = `
+<View>
+  <Svg
+    height={70}
+    viewBox="0 0 100 100"
+    width={70}
+  >
+    <Rect
+      fill="rgba(0,0,0)"
+      fillOpacity="0.4"
+      height="100"
+      stroke="rgb(255,255,255)"
+      strokeWidth="8"
+      width="100"
+    />
+    <Polygon
+      fill="rgb(255,255,255)"
+      points="30,20 70,50 30,80"
+    />
+  </Svg>
+</View>
+`;
+
+exports[`BrightcoveVideo on android renders correctly 1`] = `<[object Object] />`;
+
+exports[`BrightcoveVideo on android renders correctly without a poster image 1`] = `<[object Object] />`;

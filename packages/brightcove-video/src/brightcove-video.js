@@ -36,13 +36,11 @@ const BrightcoveVideo = ({
     testID="splash-component"
     accessibilityLabel="splash-component"
     onPress={e => {
-      if (onVideoPress) {
-        onVideoPress(e, {
-          brightcoveAccountId,
-          brightcovePolicyKey,
-          brightcoveVideoId
-        });
-      }
+      onVideoPress(e, {
+        brightcoveAccountId,
+        brightcovePolicyKey,
+        brightcoveVideoId
+      });
     }}
   >
     {poster ? (
@@ -68,10 +66,13 @@ const BrightcoveVideo = ({
   </TouchableOpacity>
 );
 
-BrightcoveVideo.defaultProps = defaultProps;
+BrightcoveVideo.defaultProps = {
+  ...defaultProps,
+  onVideoPress: () => {}
+};
 BrightcoveVideo.propTypes = {
   ...propTypes,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func
 };
 
 export default BrightcoveVideo;

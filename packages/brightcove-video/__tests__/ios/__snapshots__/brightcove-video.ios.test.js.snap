@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`BrightcoveVideo on ios renders a play icon correctly 1`] = `
+<View>
+  <Svg
+    height={70}
+    viewBox="0 0 100 100"
+    width={70}
+  >
+    <Rect
+      fill="rgba(0,0,0)"
+      fillOpacity="0.4"
+      height="100"
+      stroke="rgb(255,255,255)"
+      strokeWidth="8"
+      width="100"
+    />
+    <Polygon
+      fill="rgb(255,255,255)"
+      points="30,20 70,50 30,80"
+    />
+  </Svg>
+</View>
+`;
+
 exports[`BrightcoveVideo on ios renders correctly 1`] = `
 <TouchableOpacity
   accessibilityLabel="splash-component"
@@ -44,9 +67,52 @@ exports[`BrightcoveVideo on ios renders correctly 1`] = `
       ]
     }
   >
-    <PlayIcon
-      icon={null}
-    />
+    <PlayIcon />
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`BrightcoveVideo on ios renders correctly without a poster image 1`] = `
+<TouchableOpacity
+  accessibilityLabel="splash-component"
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+  testID="splash-component"
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        Object {
+          "height": 200,
+          "width": 300,
+        },
+      ]
+    }
+  >
+    <PlayIcon />
   </View>
 </TouchableOpacity>
 `;
