@@ -5,6 +5,9 @@ import InlineVideoPlayer from "./inline-video-player";
 import IsPaidSubscriber from "./is-paid-subscriber";
 import { propTypes, defaultProps } from "./brightcove-video.proptypes";
 
+export const isPaidOnly = paidOnlyValue =>
+  paidOnlyValue === "false" ? false : !!paidOnlyValue;
+
 const BrightcoveVideo = props => {
   const { paidOnly, width, height, poster } = props;
   return (
@@ -24,7 +27,3 @@ BrightcoveVideo.defaultProps = defaultProps;
 BrightcoveVideo.propTypes = propTypes;
 
 export default BrightcoveVideo;
-
-export const isPaidOnly = (paidOnlyValue) => {
-  return paidOnlyValue === "false" ? false : !!paidOnlyValue;
-}
