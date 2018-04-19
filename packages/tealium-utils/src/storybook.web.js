@@ -1,4 +1,3 @@
-import { Platform } from "react-native";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { action } from "@storybook/addon-actions";
 import tealiumReporter, {
@@ -18,8 +17,7 @@ const tealiumSendScheduler = new TealiumSendScheduler(
   global.document
 );
 
-const reporter =
-  Platform.OS === "web" ? tealiumReporter(tealiumSendScheduler) : null;
+const reporter = tealiumReporter(tealiumSendScheduler);
 
 export default e => {
   if (reporter) reporter.analytics(e);
