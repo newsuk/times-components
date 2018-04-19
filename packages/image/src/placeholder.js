@@ -30,7 +30,7 @@ class Placeholder extends Component {
     return (
       <View style={[styles.container, style]} onLayout={this.handleLayout}>
         <Gradient degrees={264} style={styles.container}>
-          {width && (
+          {width ? (
             <View style={[styles.container, styles.placeholderContainer]}>
               <Svg
                 width={width * SCALING_FACTOR}
@@ -46,7 +46,7 @@ class Placeholder extends Component {
                 </G>
               </Svg>
             </View>
-          )}
+          ) : null}
         </Gradient>
       </View>
     );

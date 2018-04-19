@@ -32,7 +32,7 @@ const TimesImage = ({ aspectRatio, style, uri }) => {
   );
 };
 
-TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = propTypes;
+TimesImage.defaultProps = defaultProps;
 
 export default TimesImage;
