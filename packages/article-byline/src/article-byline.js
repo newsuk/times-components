@@ -16,12 +16,7 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({
-  ast,
-  sectionColour,
-  style,
-  onAuthorPress
-}) => {
+const ArticleByline = ({ ast, sectionColour, style, onAuthorPress }) => {
   const styles = [
     linkStyles.link,
     sectionColour && { color: sectionColour },

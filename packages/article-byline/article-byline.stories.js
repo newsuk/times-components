@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import { boolean, selectV2, withKnobs } from "@storybook/addon-knobs";
+import { selectV2, withKnobs } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import ArticleByline from "./src/article-byline";
 
@@ -30,23 +30,19 @@ const bylineLinkStyles = {
   }
 };
 
-
 const getCommonProps = () => ({
   /* We're using selectV2 over our own select abstraction as
    * it flips the keys and values. We don't want that behaviour.
    */
-  sectionColour: selectV2("Section colours", colours.section, 'default'),
-  onAuthorPress: preventDefaultedAction("onAuthorPress"),
+  sectionColour: selectV2("Section colours", colours.section, "default"),
+  onAuthorPress: preventDefaultedAction("onAuthorPress")
 });
 
 storiesOf("Primitives/ArticleByline", module)
   .addDecorator(withKnobs)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
-      <ArticleByline
-        ast={authorsAST.singleAuthor}
-        {...getCommonProps()}
-      />
+      <ArticleByline ast={authorsAST.singleAuthor} {...getCommonProps()} />
     </Text>
   ))
   .add("ArticleByline with a text only element", () => (
@@ -59,7 +55,8 @@ storiesOf("Primitives/ArticleByline", module)
   ))
   .add("ArticleByline with multiple authors", () => (
     <Text style={bylineStyles}>
-      <ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated}
+      <ArticleByline
+        ast={authorsAST.multipleAuthorsCommaSeparated}
         {...getCommonProps()}
       />
     </Text>
@@ -74,10 +71,7 @@ storiesOf("Primitives/ArticleByline", module)
   ))
   .add("ArticleByline with author at the end", () => (
     <Text style={bylineStyles}>
-      <ArticleByline
-        ast={authorsAST.authorAtTheEnd}
-        {...getCommonProps()}
-      />
+      <ArticleByline ast={authorsAST.authorAtTheEnd} {...getCommonProps()} />
     </Text>
   ))
   .add("ArticleByline with styles", () => (
