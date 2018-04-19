@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.4.1...@times-components/tealium@1.1.0) (2018-04-19)
+
+
+### Features
+
+* BREAKING CHANGE: bump version ([#882](https://github.com/newsuk/times-components/issues/882)) ([6a9198d](https://github.com/newsuk/times-components/commit/6a9198d))
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/tealium@0.4.0...@times-components/tealium@0.4.1) (2018-04-18)
 

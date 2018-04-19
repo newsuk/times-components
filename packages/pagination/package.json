@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.18.2",
+  "version": "0.18.3",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -63,7 +63,7 @@
     "@times-components/link": "0.20.0",
     "@times-components/responsive-styles": "0.7.0",
     "@times-components/styleguide": "0.6.0",
-    "@times-components/tracking": "0.12.2",
+    "@times-components/tracking": "0.12.3",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "5.5.1",
