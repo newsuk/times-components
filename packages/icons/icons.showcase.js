@@ -3,7 +3,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { colours, fonts } from "@times-components/styleguide";
-import * as Icons from "./src/icons";
+import { IconDiamond, IconTwitter, IconVideo, IconEmail } from "./src/icons";
 
 const borderWidth = 1;
 const borderColor = colours.functional.keyline;
@@ -35,21 +35,6 @@ const styles = StyleSheet.create({
   }
 });
 
-const renderIcon = color => ([name, Icon]) => (
-  <View style={styles.icon} key={name}>
-    <Icon
-      width={50}
-      height={50}
-      fillColour={color(`Icon ${name} fill`, Icon.defaultProps.fillColour)}
-      strokeColour={color(
-        `Icon ${name} strike`,
-        Icon.defaultProps.strokeColour
-      )}
-    />
-    <Text style={styles.label}>{name}</Text>
-  </View>
-);
-
 export default {
   name: "Primitives/Icons",
   children: [
@@ -58,7 +43,50 @@ export default {
       name: "Icons",
       component: ({ color }) => (
         <View style={styles.wrapper}>
-          {Object.entries(Icons).map(renderIcon(color))}
+          <View style={styles.icon}>
+            <IconDiamond
+              width={50}
+              height={50}
+              fillColour={color(
+                "Icon Diamond",
+                IconDiamond.defaultProps.fillColour
+              )}
+            />
+            <Text style={styles.label}>Diamond</Text>
+          </View>
+          <View style={styles.icon}>
+            <IconTwitter
+              width={50}
+              height={50}
+              fillColour={color(
+                "Icon Twitter",
+                IconTwitter.defaultProps.fillColour
+              )}
+            />
+            <Text style={styles.label}>Twitter</Text>
+          </View>
+          <View style={styles.icon}>
+            <IconVideo
+              width={50}
+              height={50}
+              fillColour={color(
+                "Icon Video",
+                IconVideo.defaultProps.fillColour
+              )}
+            />
+            <Text style={styles.label}>Video</Text>
+          </View>
+          <View style={styles.icon}>
+            <IconEmail
+              width={50}
+              height={50}
+              fillColour={color(
+                "Icon Email",
+                IconEmail.defaultProps.fillColour
+              )}
+            />
+            <Text style={styles.label}>Email</Text>
+          </View>
         </View>
       )
     }

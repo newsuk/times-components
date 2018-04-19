@@ -1,30 +1,40 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
 import { clean } from "@times-components/utils";
-import Svg, { G, Path } from "svgs";
-import iconPropTypes from "./prop-types";
+import Svg, { Rect, Polygon } from "svgs";
+import iconPropTypes from "./proptypes";
 
-const viewBox = "14 10 10.592460632324219 20.397258758544922";
+const viewBox =
+  "0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895";
 
-const ratio = 1 / 2;
-const IconFacebook = ({ title, width, height, fillColour, strokeColour }) => (
+const ratio = 43 / 25;
+const IconVideo = ({ title, width, height, fillColour }) => (
   <Svg
     viewBox={viewBox}
     {...clean({ title, height, width: width || height * ratio })}
   >
-    <G
-      fillRule="nonzero"
-      {...clean({ stroke: strokeColour, fill: fillColour })}
-    >
-      <Path d="M20.8754687,30.3972581 L20.8754687,21.0930804 L23.9984274,21.0930804 L24.4660462,17.4670773 L20.8754687,17.4670773 L20.8754687,15.1521034 C20.8754687,14.1022918 21.1669846,13.3868799 22.6723889,13.3868799 L24.5924599,13.3860409 L24.5924599,10.1429146 C24.2603909,10.0987257 23.1206168,10 21.7945782,10 C19.0262491,10 17.1309761,11.6898042 17.1309761,14.7929991 L17.1309761,17.4670773 L14,17.4670773 L14,21.0930804 L17.1309761,21.0930804 L17.1309761,30.3972581 L20.8754687,30.3972581 Z" />
-    </G>
+    <Rect
+      fill={fillColour}
+      x="0.154639175"
+      y="0.139754386"
+      width="15.4550103"
+      height="13.5721404"
+    />
+    <Polygon
+      fill={fillColour}
+      points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
+    />
+    <Polygon
+      fill={fillColour}
+      points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
+    />
   </Svg>
 );
 
-IconFacebook.propTypes = iconPropTypes;
+IconVideo.propTypes = iconPropTypes;
 
-IconFacebook.defaultProps = {
+IconVideo.defaultProps = {
   fillColour: colours.functional.brandColour
 };
 
-export default IconFacebook;
+export default IconVideo;
