@@ -3,7 +3,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { colours, fonts } from "@times-components/styleguide";
-import { IconDiamond, IconTwitter, IconVideo } from "./src/icons";
+import { IconDiamond, IconTwitter, IconVideo, IconEmail } from "./src/icons";
 
 const borderWidth = 1;
 const borderColor = colours.functional.keyline;
@@ -75,6 +75,17 @@ export default {
               )}
             />
             <Text style={styles.label}>Video</Text>
+          </View>
+          <View style={styles.icon}>
+            <IconEmail
+              width={50}
+              height={50}
+              fillColour={color(
+                "Icon Email",
+                IconEmail.defaultProps.fillColour
+              )}
+            />
+            <Text style={styles.label}>Email</Text>
           </View>
         </View>
       )

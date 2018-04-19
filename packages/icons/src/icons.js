@@ -1,7 +1,4 @@
-import diamond from "./icons/diamond";
-import twitter from "./icons/twitter";
-import video from "./icons/video";
-
-export const IconDiamond = diamond;
-export const IconTwitter = twitter;
-export const IconVideo = video;
+export { default as IconDiamond } from "./icons/diamond";
+export { default as IconTwitter } from "./icons/twitter";
+export { default as IconVideo } from "./icons/video";
+export { default as IconEmail } from "./icons/email";
