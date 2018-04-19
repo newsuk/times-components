@@ -14,21 +14,27 @@ const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
     {...clean({ title, height, width: width || height * ratio })}
   >
     <Rect
-      stroke={strokeColour}
-      fill={fillColour}
+      {...clean({
+        stroke: strokeColour,
+        fill: fillColour
+      })}
       x="0.154639175"
       y="0.139754386"
       width="15.4550103"
       height="13.5721404"
     />
     <Polygon
-      fill={fillColour}
-      stroke={strokeColour}
+      {...clean({
+        stroke: strokeColour,
+        fill: fillColour
+      })}
       points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
     />
     <Polygon
-      fill={fillColour}
-      stroke={strokeColour}
+      {...clean({
+        stroke: strokeColour,
+        fill: fillColour
+      })}
       points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
     />
   </Svg>
@@ -37,7 +43,6 @@ const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
 IconVideo.propTypes = iconPropTypes;
 
 IconVideo.defaultProps = {
-  strokeColour: colours.functional.brandColour,
   fillColour: colours.functional.brandColour
 };
 
