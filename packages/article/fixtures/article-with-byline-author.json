@@ -1,0 +1,191 @@
+{
+  "data": {
+    "article": {
+      "id": "17e53696-3dd7-11e8-b8eb-a2b1e54e4e88",
+      "headline": "The Queen may be a child of the Prophet Muhammad",
+      "publicationName": "TIMES",
+      "publishedTime": "2018-04-11T23:01:00.000Z",
+      "label": "",
+      "standfirst":
+        "Family tree suggests the monarch is directly descended from the founder of Islam",
+      "flags": [],
+      "byline": [
+        {
+          "name": "author",
+          "attributes": {
+            "slug": "kaya-burgess"
+          },
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Kaya Burgess"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", Religious Affairs Correspondent"
+              },
+              "children": []
+            }
+          ]
+        }
+      ],
+      "content": [
+        {
+          "name": "paragraph",
+          "attributes": {},
+          "children": [
+            {
+              "name": "link",
+              "attributes": {
+                "href": "https://www.thetimes.co.uk/topic/royal-family",
+                "target": "_blank",
+                "type": "topic"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "The Queen’s"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  " direct ancestors include kings, dukes, earls and even electresses, but could they also include a holy prophet?"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "paragraph",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  "A Moroccan newspaper has declared that the Queen is a direct descendant of the Prophet Muhammad, claiming to have traced her lineage back more than 40 generations."
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "paragraph",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "The theory first surfaced in 1986 when "
+              },
+              "children": []
+            },
+            {
+              "name": "italic",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "Burke’s Peerage"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  ", the aristocratic genealogy guide, claimed that Elizabeth II could trace her lineage back to the Muslim kings of Spain and, through them, to the founder of Islam, who died in the 7th century in what is now Saudi Arabia."
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "attributes": {
+            "display": "primary",
+            "caption": "",
+            "credits": "",
+            "ratio": "1500:1000",
+            "url":
+              "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F589cee26-3e37-11e8-96da-1445aa653caf.png?crop=3000%2C2000%2C0%2C0"
+          },
+          "children": []
+        },
+        {
+          "name": "paragraph",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "It is unclear why the theory has now resurfaced in "
+              },
+              "children": []
+            },
+            {
+              "name": "italic",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "Assahifa Al-Ousbouia "
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  "in Morocco, but the weekly newspaper has produced a family tree that it claims proves the argument, and"
+              },
+              "children": []
+            }
+          ]
+        }
+      ],
+      "leadAsset": {
+        "id": "a27e8694-3082-4eb3-de8e-d6314f54463c",
+        "title": "Royal visit to Hull",
+        "credits": "DANNY LAWSON/PA",
+        "caption":
+          "The Queen’s lineage has been traced back more than 40 generations by a Moroccan newspaper",
+        "crop": {
+          "ratio": "16:9",
+          "url":
+            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c7ca762-3dcb-11e8-b8eb-a2b1e54e4e88.jpg?crop=2291%2C1289%2C0%2C574",
+          "__typename": "Crop"
+        },
+        "__typename": "Image"
+      },
+      "relatedArticles": [],
+      "relatedArticlesLayout": {
+        "template": null,
+        "__typename": "Default"
+      },
+      "__typename": "Article"
+    }
+  }
+}
