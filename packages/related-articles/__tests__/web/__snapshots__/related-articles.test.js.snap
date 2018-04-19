@@ -52,7 +52,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -142,7 +142,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -190,7 +192,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -259,7 +261,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -328,7 +332,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -437,7 +441,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -485,7 +491,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -554,7 +560,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -596,7 +604,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -665,7 +673,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -734,7 +744,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -824,7 +834,9 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Deborah Haynes
                       </span>
                     </div>
@@ -903,7 +915,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1005,7 +1019,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <img
                         alt=""
-                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -1069,7 +1083,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -1138,7 +1152,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1218,7 +1234,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1301,7 +1319,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <img
                         alt=""
-                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -1365,7 +1383,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe2ea6c20-d159-11e7-b1ec-8503a5941b97.jpg?crop=3169%2C1783%2C138%2C22&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -1434,7 +1452,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1476,7 +1496,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                       >
                         <img
                           alt=""
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2b5e0e82-d171-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100"
                           style={
                             Object {
                               "display": "block",
@@ -1545,7 +1565,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           }
                         }
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Deborah Haynes
                         </span>
                       </div>
@@ -1625,7 +1647,9 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Sathnam Sanghera
                       </span>
                     </div>
@@ -1708,7 +1732,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <img
                         alt=""
-                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0"
+                        src="https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -1794,7 +1818,7 @@ exports[`Related articles tests on web:  Standard template should render one rel
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -1885,7 +1909,9 @@ exports[`Related articles tests on web:  Standard template should render one rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -1953,7 +1979,7 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -2063,7 +2089,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2108,7 +2136,7 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -2231,7 +2259,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2276,7 +2306,7 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -2399,7 +2429,9 @@ exports[`Related articles tests on web:  Standard template should render three r
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2467,7 +2499,7 @@ exports[`Related articles tests on web:  Standard template should render two rel
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -2558,7 +2590,9 @@ exports[`Related articles tests on web:  Standard template should render two rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>
@@ -2603,7 +2637,7 @@ exports[`Related articles tests on web:  Standard template should render two rel
                     >
                       <img
                         alt=""
-                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+                        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=100"
                         style={
                           Object {
                             "display": "block",
@@ -2698,7 +2732,9 @@ exports[`Related articles tests on web:  Standard template should render two rel
                         }
                       }
                     >
-                      <span>
+                      <span
+                        dir="auto"
+                      >
                         Camilla Long, Environment Editor
                       </span>
                     </div>

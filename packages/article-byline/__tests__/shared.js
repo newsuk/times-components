@@ -21,6 +21,13 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders correctly with a section colour", () => {
+    const tree = renderer
+      .create(<ArticleByline ast={authorsAST.singleAuthor} colour="blue" />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders correctly with a single inline element", () => {
     const tree = renderer
       .create(<ArticleByline ast={authorsAST.singleInlineElement} />)
