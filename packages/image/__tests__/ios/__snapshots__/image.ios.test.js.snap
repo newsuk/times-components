@@ -1,5 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`1. Renders default layout 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg&resize=1440",
+      }
+    }
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
+</View>
+`;
+
+exports[`2. Renders default layout without uri 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
+</View>
+`;
+
+exports[`3. Renders with a passed style prop 1`] = `
+<View
+  aspectRatio={1.5}
+  style={
+    Object {
+      "width": 100,
+    }
+  }
+>
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg&resize=1440",
+      }
+    }
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
+</View>
+`;
+
 exports[`4. Renders a placeholder 1`] = `
 <View
   onLayout={[Function]}
@@ -44,5 +113,28 @@ exports[`4. Renders a placeholder 1`] = `
       </Svg>
     </View>
   </Gradient>
+</View>
+`;
+
+exports[`5. Renders with prepended https schema 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://example.com/image.jpg&resize=1440",
+      }
+    }
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
 </View>
 `;

@@ -120,7 +120,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -136,79 +136,51 @@ exports[`Related articles tests on android:  Lead and two template should render
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -635,7 +607,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -651,79 +623,51 @@ exports[`Related articles tests on android:  Lead and two template should render
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -1312,7 +1256,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
                         }
                       }
                       style={
@@ -1328,79 +1272,51 @@ exports[`Related articles tests on android:  Lead and two template should render
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -1808,7 +1724,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -1824,79 +1740,51 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -2336,7 +2224,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -2352,79 +2240,51 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -3026,7 +2886,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100&preview=true",
+                          "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -3042,79 +2902,51 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -3251,7 +3083,7 @@ exports[`Related articles tests on android:  Standard template should render one
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
                         }
                       }
                       style={
@@ -3267,79 +3099,51 @@ exports[`Related articles tests on android:  Standard template should render one
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -4245,7 +4049,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
                         }
                       }
                       style={
@@ -4261,79 +4065,51 @@ exports[`Related articles tests on android:  Standard template should render two
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
@@ -4553,7 +4329,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=100&preview=true",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=1440",
                         }
                       }
                       style={
@@ -4569,79 +4345,51 @@ exports[`Related articles tests on android:  Standard template should render two
                       }
                     />
                     <View
+                      onLayout={[Function]}
                       style={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "flex": 1,
                         }
                       }
                     >
-                      <Image
-                        onLoad={[Function]}
-                        source={
-                          Object {
-                            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=100",
-                          }
-                        }
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": "100%",
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                      />
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
                           }
                         }
                       >
-                        <View
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
                           style={
                             Object {
                               "flex": 1,
                             }
                           }
-                        >
-                          <BVLinearGradient
-                            colors={
-                              Array [
-                                "#F9F9F9",
-                                "#EDEDED",
-                              ]
-                            }
-                            end={
-                              Object {
-                                "x": -0.09302964577578221,
-                                "y": 0.11488204504197774,
-                              }
-                            }
-                            locations={
-                              Array [
-                                0,
-                                1,
-                              ]
-                            }
-                            start={
-                              Object {
-                                "x": 1,
-                                "y": 0,
-                              }
-                            }
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          />
-                        </View>
+                        />
                       </View>
                     </View>
                   </View>
