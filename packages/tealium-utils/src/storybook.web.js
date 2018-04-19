@@ -18,8 +18,7 @@ const tealiumSendScheduler = new TealiumSendScheduler(
   global.document
 );
 
-const reporter =
-  Platform.OS === "web" ? tealiumReporter(tealiumSendScheduler) : null;
+const reporter = tealiumReporter(tealiumSendScheduler);
 
 export default e => {
   if (reporter) reporter.analytics(e);
