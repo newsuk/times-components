@@ -13,11 +13,11 @@ const BrightcoveVideo = props => {
         paidonly && !isPaidSubscriber ? (
           <Image style={{ width, height }} source={poster} />
         ) : (
-            <InlineVideoPlayer {...props} />
-          )
+          <InlineVideoPlayer {...props} />
+        )
       }
     </IsPaidSubscriber.Consumer>
-  )
+  );
 };
 
 BrightcoveVideo.defaultProps = defaultProps;

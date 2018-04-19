@@ -38,7 +38,7 @@ const TextBody = withResponsiveStyles(Text, {
 
 const VideoError = ({ width, height }) => (
   <View style={[errorStyling.background, { width, height }]}>
-    <Text style={errorStyling.heading}>{"Something's gone wrong"}</Text>
+    <Text style={errorStyling.heading}>Something&apos;s gone wrong</Text>
     <TextBody>
       Please check your network{"\n"}connection and refresh the page
     </TextBody>
