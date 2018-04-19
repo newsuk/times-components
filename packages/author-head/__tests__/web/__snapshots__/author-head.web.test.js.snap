@@ -248,6 +248,7 @@ exports[`AuthorHead test on web renders with data 1`] = `
         >
           <path
             fill="#006699"
+            stroke="#006699"
           />
         </svg>
         <a
@@ -383,6 +384,7 @@ exports[`AuthorHead test on web renders without profile picture 1`] = `
         >
           <path
             fill="#006699"
+            stroke="#006699"
           />
         </svg>
         <a

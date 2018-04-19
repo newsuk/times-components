@@ -413,6 +413,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
                 >
                   <path
                     fill="#006699"
+                    stroke="#006699"
                   />
                 </svg>
                 <Text
@@ -1905,6 +1906,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
                 >
                   <path
                     fill="#006699"
+                    stroke="#006699"
                   />
                 </svg>
                 <Text
@@ -5333,6 +5335,7 @@ exports[`AuthorProfile test on ios renders the author head 1`] = `
         >
           <path
             fill="#006699"
+            stroke="#006699"
           />
         </svg>
         <Text

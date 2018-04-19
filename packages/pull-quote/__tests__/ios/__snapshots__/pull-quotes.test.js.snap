@@ -168,6 +168,7 @@ exports[`PullQuotes test on ios Pull Quotes with a Caption and a Twitter 1`] = `
       >
         <path
           fill="#006699"
+          stroke="#006699"
         />
       </svg>
       <Text
@@ -289,6 +290,7 @@ exports[`PullQuotes test on ios Pull Quotes with a twitter link 1`] = `
       >
         <path
           fill="#006699"
+          stroke="#006699"
         />
       </svg>
       <Text

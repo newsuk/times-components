@@ -425,6 +425,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -463,6 +464,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -2357,6 +2359,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -2395,6 +2398,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -3318,6 +3322,7 @@ Array [
                 >
                   <path
                     fill="#006699"
+                    stroke="#006699"
                   />
                 </svg>
                 <a
@@ -4730,6 +4735,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -4768,6 +4774,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -5130,6 +5137,7 @@ Array [
                     >
                       <path
                         fill="#006699"
+                        stroke="#006699"
                       />
                     </svg>
                     <a
@@ -6384,15 +6392,18 @@ Array [
               <rect
                 fill="#1D1D1B"
                 height="13.5721404"
+                stroke="#1D1D1B"
                 width="15.4550103"
                 x="0.154639175"
                 y="0.139754386"
               />
               <polygon
                 fill="#1D1D1B"
+                stroke="#1D1D1B"
               />
               <polygon
                 fill="#1D1D1B"
+                stroke="#1D1D1B"
               />
             </svg>
             <div
@@ -7099,6 +7110,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -7137,6 +7149,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -10010,6 +10023,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -10048,6 +10062,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -14333,6 +14348,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -14371,6 +14387,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -17244,6 +17261,7 @@ Array [
                 >
                   <g
                     fill="#E34605"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -17282,6 +17300,7 @@ Array [
                 >
                   <g
                     fill="#C51D24"
+                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>

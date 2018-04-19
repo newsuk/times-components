@@ -262,6 +262,7 @@ exports[`AuthorHead test on ios renders with data 1`] = `
         >
           <path
             fill="#006699"
+            stroke="#006699"
           />
         </svg>
         <Text
@@ -421,6 +422,7 @@ exports[`AuthorHead test on ios renders without profile picture 1`] = `
         >
           <path
             fill="#006699"
+            stroke="#006699"
           />
         </svg>
         <Text

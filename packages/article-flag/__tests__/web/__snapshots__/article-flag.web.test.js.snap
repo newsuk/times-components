@@ -16,6 +16,7 @@ exports[`Article Flag test on web renders Exclusive flag correctly 1`] = `
     >
       <g
         fill="#C51D24"
+        stroke="#1D1D1B"
       >
         <path />
       </g>
@@ -56,6 +57,7 @@ exports[`Article Flag test on web renders New flag correctly 1`] = `
     >
       <g
         fill="#E34605"
+        stroke="#1D1D1B"
       >
         <path />
       </g>
@@ -96,6 +98,7 @@ exports[`Article Flag test on web renders Sponsored flag correctly 1`] = `
     >
       <g
         fill="#4D4D4D"
+        stroke="#1D1D1B"
       >
         <path />
       </g>
@@ -136,6 +139,7 @@ exports[`Article Flag test on web renders Updated flag correctly 1`] = `
     >
       <g
         fill="#3C81BE"
+        stroke="#1D1D1B"
       >
         <path />
       </g>
@@ -176,6 +180,7 @@ exports[`Article Flag test on web renders correctly 1`] = `
     >
       <g
         fill="black"
+        stroke="#1D1D1B"
       >
         <path />
       </g>
