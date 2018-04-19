@@ -4,9 +4,7 @@ exports[`1. Standard template renders a single child element 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <ChildrenContainer>
-      <ChildContainer
-        key="standard-1"
-      >
+      <ChildContainer>
         <ExampleChild
           id="standard-1"
         />
@@ -20,19 +18,13 @@ exports[`2. Standard template renders two child elements 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <ChildrenContainer>
-      <ChildContainer
-        key="standard-1"
-      >
+      <ChildContainer>
         <ExampleChild
           id="standard-1"
         />
       </ChildContainer>
-      <Separator
-        key="separator-standard-2"
-      />
-      <ChildContainer
-        key="standard-2"
-      >
+      <Separator />
+      <ChildContainer>
         <ExampleChild
           id="standard-2"
         />
@@ -46,29 +38,19 @@ exports[`3. Standard template renders three child elements 1`] = `
 <ConfigWrapper>
   <SliceContainer>
     <ChildrenContainer>
-      <ChildContainer
-        key="standard-1"
-      >
+      <ChildContainer>
         <ExampleChild
           id="standard-1"
         />
       </ChildContainer>
-      <Separator
-        key="separator-standard-2"
-      />
-      <ChildContainer
-        key="standard-2"
-      >
+      <Separator />
+      <ChildContainer>
         <ExampleChild
           id="standard-2"
         />
       </ChildContainer>
-      <Separator
-        key="separator-standard-3"
-      />
-      <ChildContainer
-        key="standard-3"
-      >
+      <Separator />
+      <ChildContainer>
         <ExampleChild
           id="standard-3"
         />
@@ -103,9 +85,7 @@ exports[`5. Lead and two template renders two child elements 1`] = `
       </LeadContainer>
       <Separator />
       <SupportsContainer>
-        <SupportContainer
-          key="support-1"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-1"
           />
@@ -127,16 +107,12 @@ exports[`6. Lead and two template renders three child elements 1`] = `
       </LeadContainer>
       <Separator />
       <SupportsContainer>
-        <SupportContainer
-          key="support-1"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-1"
           />
         </SupportContainer>
-        <SupportContainer
-          key="support-2"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-2"
           />
@@ -172,9 +148,7 @@ exports[`8. Opinion and two template renders two child elements 1`] = `
       </OpinionContainer>
       <Separator />
       <SupportsContainer>
-        <SupportContainer
-          key="support-1"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-1"
           />
@@ -196,16 +170,12 @@ exports[`9. Opinion and two template renders three child elements 1`] = `
       </OpinionContainer>
       <Separator />
       <SupportsContainer>
-        <SupportContainer
-          key="support-1"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-1"
           />
         </SupportContainer>
-        <SupportContainer
-          key="support-2"
-        >
+        <SupportContainer>
           <ExampleChild
             id="support-2"
           />

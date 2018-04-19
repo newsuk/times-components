@@ -25,20 +25,15 @@ exports[`Image test on android allows styling 1`] = `
         }
       }
       style={
-        Array [
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-          Object {
-            "height": "100%",
-            "width": "100%",
-          },
-          undefined,
-        ]
+        Object {
+          "bottom": 0,
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
       }
     />
     <View
@@ -57,31 +52,23 @@ exports[`Image test on android allows styling 1`] = `
           }
         }
         style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
         }
       />
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
         <View
@@ -117,11 +104,9 @@ exports[`Image test on android allows styling 1`] = `
               }
             }
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           />
         </View>
@@ -134,7 +119,6 @@ exports[`Image test on android allows styling 1`] = `
 exports[`Image test on android prepends https schema 1`] = `
 <View
   aspectRatio={1.5}
-  style={Object {}}
 >
   <View
     style={
@@ -152,20 +136,15 @@ exports[`Image test on android prepends https schema 1`] = `
         }
       }
       style={
-        Array [
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-          Object {
-            "height": "100%",
-            "width": "100%",
-          },
-          undefined,
-        ]
+        Object {
+          "bottom": 0,
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
       }
     />
     <View
@@ -184,31 +163,23 @@ exports[`Image test on android prepends https schema 1`] = `
           }
         }
         style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
         }
       />
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
         <View
@@ -244,11 +215,9 @@ exports[`Image test on android prepends https schema 1`] = `
               }
             }
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           />
         </View>
@@ -261,7 +230,6 @@ exports[`Image test on android prepends https schema 1`] = `
 exports[`Image test on android renders correctly 1`] = `
 <View
   aspectRatio={1.5}
-  style={Object {}}
 >
   <View
     style={
@@ -279,20 +247,15 @@ exports[`Image test on android renders correctly 1`] = `
         }
       }
       style={
-        Array [
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-          Object {
-            "height": "100%",
-            "width": "100%",
-          },
-          undefined,
-        ]
+        Object {
+          "bottom": 0,
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
       }
     />
     <View
@@ -311,31 +274,23 @@ exports[`Image test on android renders correctly 1`] = `
           }
         }
         style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
         }
       />
       <View
         onLayout={[Function]}
         style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
       >
         <View
@@ -371,11 +326,9 @@ exports[`Image test on android renders correctly 1`] = `
               }
             }
             style={
-              Array [
-                Object {
-                  "flex": 1,
-                },
-              ]
+              Object {
+                "flex": 1,
+              }
             }
           />
         </View>

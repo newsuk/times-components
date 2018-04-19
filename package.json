@@ -136,7 +136,7 @@
     "prop-types": "15.6.0",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.53.3",
+    "react-native": "0.54.2",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.3.2",
     "rimraf": "2.6.1",
@@ -145,5 +145,9 @@
     "url": "0.11.0",
     "wd": "1.4.1",
     "webpack": "3.3.0"
+  },
+  "dependencies": {
+    "expo": "26.0.0",
+    "react-native": "0.54.2"
   }
 }

@@ -2,7 +2,6 @@
 
 exports[`Tracking tests on web TrackEvents forwards props to wrapped component 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
 >
   bar
@@ -17,7 +16,6 @@ exports[`Tracking tests on web TrackEvents raises error when trying to track the
 
 exports[`Tracking tests on web TrackEvents renders when tracking context is missing 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
 >
   foo
@@ -59,7 +57,6 @@ exports[`Tracking tests on web WithTrackScrollDepth does not report missing elem
 
 exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped component 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
 >
   bar
@@ -68,7 +65,6 @@ exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped co
 
 exports[`Tracking tests on web WithTrackScrollDepth renders when tracking context is missing 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
 >
   foo
@@ -171,7 +167,6 @@ Array [
 
 exports[`Tracking tests on web WithTrackingContext forwards props to wrapped component 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
 >
   bar

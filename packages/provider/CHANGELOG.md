@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.27.10...@times-components/provider@0.28.0) (2018-04-17)
+
+
+### Bug Fixes
+
+* Update video attribute ([#865](https://github.com/newsuk/times-components/issues/865)) ([1feae5a](https://github.com/newsuk/times-components/commit/1feae5a))
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
 <a name="0.27.10"></a>
 ## [0.27.10](https://github.com/newsuk/times-components/compare/@times-components/provider@0.27.9...@times-components/provider@0.27.10) (2018-04-14)
 

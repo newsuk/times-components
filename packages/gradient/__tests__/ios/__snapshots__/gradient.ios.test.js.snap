@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gradient tests on iOS renders a Gradient 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -30,11 +28,9 @@ exports[`Gradient tests on iOS renders a Gradient 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
@@ -43,14 +39,10 @@ exports[`Gradient tests on iOS renders a Gradient 1`] = `
 exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 200,
-      },
-      Object {
-        "width": 200,
-      },
-    ]
+    Object {
+      "height": 200,
+      "width": 200,
+    }
   }
 >
   <BVLinearGradient
@@ -79,11 +71,9 @@ exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = 
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
@@ -124,11 +114,9 @@ exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
@@ -137,17 +125,11 @@ exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
 exports[`Gradient tests on iOS renders a Gradient using stylesheets 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "margin": 10,
-      },
-      Object {
-        "height": 200,
-      },
-      Object {
-        "width": 200,
-      },
-    ]
+    Object {
+      "height": 200,
+      "margin": 10,
+      "width": 200,
+    }
   }
 >
   <BVLinearGradient
@@ -176,20 +158,16 @@ exports[`Gradient tests on iOS renders a Gradient using stylesheets 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
 `;
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (-45) 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -216,20 +194,16 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (-45) 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
 `;
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (45) 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -256,20 +230,16 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (45) 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
 `;
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (90) 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -296,20 +266,16 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (90) 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
 `;
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (180) 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -336,20 +302,16 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (180) 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>
 `;
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (270) 1`] = `
-<View
-  style={null}
->
+<View>
   <BVLinearGradient
     colors={
       Array [
@@ -376,11 +338,9 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (270) 1`] = `
       }
     }
     style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-      ]
+      Object {
+        "flex": 1,
+      }
     }
   />
 </View>

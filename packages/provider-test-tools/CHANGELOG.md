@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.2.10...@times-components/provider-test-tools@0.3.0) (2018-04-17)
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
 <a name="0.2.10"></a>
 ## [0.2.10](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.2.9...@times-components/provider-test-tools@0.2.10) (2018-04-14)
 

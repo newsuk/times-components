@@ -6,7 +6,11 @@ import StandardSlice from "./src/templates/standard";
 
 // knobs
 const itemCountLabel = "Number of items:";
-const itemCount = ["1", "2", "3"];
+const itemCount = {
+  1: "1",
+  2: "2",
+  3: "3"
+};
 const itemCountDefault = "1";
 
 const colours = [

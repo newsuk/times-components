@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.4.27...@times-components/watermark@0.5.0) (2018-04-17)
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
 <a name="0.4.27"></a>
 ## [0.4.27](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.4.26...@times-components/watermark@0.4.27) (2018-04-14)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.27.0"></a>
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.26.5...@times-components/card@0.27.0) (2018-04-17)
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+
+
+
+
 <a name="0.26.5"></a>
 ## [0.26.5](https://github.com/newsuk/times-components/compare/@times-components/card@0.26.4...@times-components/card@0.26.5) (2018-04-16)
 

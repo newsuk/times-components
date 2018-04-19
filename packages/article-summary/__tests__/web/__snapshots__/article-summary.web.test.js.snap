@@ -2,7 +2,6 @@
 
 exports[`Article Summary tests on Web should render an ArticleSummaryContent component with a AST 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
   style={
     Object {
@@ -18,7 +17,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
   }
 >
   <span
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
     dir="auto"
   >
     
@@ -32,7 +30,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
 
 exports[`Article Summary tests on Web should render an ArticleSummaryContent component with two paragraphs 1`] = `
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
   style={
     Object {
@@ -48,14 +45,12 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
   }
 >
   <span
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
     dir="auto"
   >
     
     The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
   </span>
   <span
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
     dir="auto"
   >
      
@@ -68,7 +63,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
 exports[`Article Summary tests on Web should render an ArticleSummaryHeadline component with a blank AST 1`] = `
 <h3
   aria-level="3"
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
   dir="auto"
   role="heading"
   style={
@@ -86,14 +80,9 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with a single paragraph 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -108,7 +97,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -124,7 +112,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -140,7 +127,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -150,7 +136,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -164,7 +149,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -175,7 +159,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -192,14 +175,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with content including line breaks 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -214,7 +192,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -230,7 +207,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -246,7 +222,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -259,7 +234,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       ★★★★☆
     </span>
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
        
@@ -272,7 +246,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       ★★★☆☆
     </span>
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
        
@@ -282,7 +255,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -296,7 +268,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -307,7 +278,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -324,14 +294,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with empty content at the end trimmed 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -346,7 +311,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -362,7 +326,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -378,21 +341,18 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
     </span>
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
        
       The former punk
     </span>
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
        
@@ -401,7 +361,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -415,7 +374,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -426,7 +384,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -443,14 +400,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and blank content 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -465,7 +417,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -482,7 +433,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </h3>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -499,14 +449,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and no content 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -521,7 +466,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -538,7 +482,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </h3>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -555,12 +498,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with multiple paragraphs 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
+<div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -576,7 +516,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -592,14 +531,12 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
     </span>
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
        
@@ -609,7 +546,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -623,7 +559,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -634,7 +569,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -651,12 +585,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with no byline 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
+<div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -672,7 +603,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -688,7 +618,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -698,7 +627,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -715,14 +643,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with no date publication 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -737,7 +660,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -753,7 +675,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -769,7 +690,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -778,7 +698,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -789,7 +708,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -806,14 +724,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with no headline 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -827,7 +740,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </div>
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -843,7 +755,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -853,7 +764,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -870,12 +780,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary component with no label 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
+<div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -891,7 +798,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -907,7 +813,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -917,7 +822,6 @@ exports[`Article Summary tests on Web should render an article-summary component
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -931,7 +835,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -942,7 +845,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -959,14 +861,9 @@ exports[`Article Summary tests on Web should render an article-summary component
 `;
 
 exports[`Article Summary tests on Web should render an article-summary with opinion byline 1`] = `
-<div
-  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
->
-  <div
-    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
-  >
+<div>
+  <div>
     <div
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-p1pxzi rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
       style={
         Object {
@@ -980,7 +877,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     </div>
   </div>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -992,7 +888,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     }
   >
     <a
-      className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1hxpnkq rn-cursor-1loqt21 rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-1ncyl3j rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
       href="/profile/camilla-long"
       onClick={[Function]}
@@ -1007,7 +902,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
   </div>
   <h3
     aria-level="3"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-102hald rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     role="heading"
     style={
@@ -1023,7 +917,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     Top medal for forces dog who took a bite out of the Taliban
   </h3>
   <div
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     dir="auto"
     style={
       Object {
@@ -1039,7 +932,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     }
   >
     <span
-      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-poiln3 rn-fontSize-7cikom rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-irrty rn-wordWrap-qvutc0"
       dir="auto"
     >
       
@@ -1049,7 +941,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
   </div>
   <div
     aria-label="datePublication"
-    className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-j2s0nr rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
     data-testid="datePublication"
     dir="auto"
     style={

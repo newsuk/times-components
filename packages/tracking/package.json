@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.11.4",
+  "version": "0.12.1",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -37,8 +37,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.5.4",
-    "@times-components/tealium-utils": "0.1.4",
+    "@times-components/jest-configurator": "0.6.0",
+    "@times-components/tealium-utils": "0.1.6",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -60,9 +60,9 @@
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "publishConfig": {
