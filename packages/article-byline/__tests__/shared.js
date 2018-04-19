@@ -21,11 +21,9 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders correctly with a section color", () => {
+  it("renders correctly with a section colour", () => {
     const tree = renderer
-      .create(
-        <ArticleByline ast={authorsAST.singleAuthor} sectionColour="blue" />
-      )
+      .create(<ArticleByline ast={authorsAST.singleAuthor} colour="blue" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

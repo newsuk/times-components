@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline test on iOS renders correctly with a section color 1`] = `
+exports[`Article Byline test on iOS renders correctly with a section colour 1`] = `
 <Text
   accessibilityRole="link"
   accessible={true}
