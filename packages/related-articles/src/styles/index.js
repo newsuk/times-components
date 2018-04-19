@@ -30,7 +30,7 @@ export default StyleSheet.create({
     fontWeight: "400",
     lineHeight: Platform.OS === "web" ? 24 : 28,
     marginBottom: spacing(1),
-    marginTop: Platform.OS === "web" ? 0 : spacing(-1),
+    marginTop: Platform.OS === "web" ? 0 : spacing(-1)
   },
   byline: {
     marginBottom: 0
@@ -38,6 +38,6 @@ export default StyleSheet.create({
   opinionByline: {
     lineHeight: Platform.OS === "web" ? 24 : 28,
     marginBottom: 0,
-    marginTop: Platform.OS === "web" ? 0 : spacing(-1),
+    marginTop: Platform.OS === "web" ? 0 : spacing(-1)
   }
 });
