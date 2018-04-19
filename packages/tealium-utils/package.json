@@ -35,7 +35,7 @@
     "react-native-web": "0.3.2"
   },
   "dependencies": {
-    "@times-components/tealium": "0.4.1"
+    "@times-components/tealium": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16",
