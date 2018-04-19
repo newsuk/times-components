@@ -12,7 +12,6 @@ exports[`Icons test on web IconDiamond renders correctly 1`] = `
   </title>
   <g
     fill="#1D1D1B"
-    stroke="#1D1D1B"
   >
     <path />
   </g>
@@ -30,9 +29,27 @@ exports[`Icons test on web IconEmail renders correctly 1`] = `
     IconEmail
   </title>
   <g
-    fill="#000000"
+    fill="#1D1D1B"
     fillRule="nonzero"
-    stroke="#ffffff"
+  >
+    <path />
+  </g>
+</svg>
+`;
+
+exports[`Icons test on web IconFacebook renders correctly 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={50}
+>
+  <title>
+    IconFacebook
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
   >
     <path />
   </g>
@@ -50,8 +67,7 @@ exports[`Icons test on web IconStar renders correctly 1`] = `
     IconStar
   </title>
   <polygon
-    fill="#000000"
-    stroke="#000000"
+    fill="#1D1D1B"
   />
 </svg>
 `;
@@ -68,7 +84,6 @@ exports[`Icons test on web IconTwitter renders correctly 1`] = `
   </title>
   <path
     fill="#006699"
-    stroke="#006699"
   />
 </svg>
 `;
@@ -86,18 +101,15 @@ exports[`Icons test on web IconVideo renders correctly 1`] = `
   <rect
     fill="#1D1D1B"
     height="13.5721404"
-    stroke="#1D1D1B"
     width="15.4550103"
     x="0.154639175"
     y="0.139754386"
   />
   <polygon
     fill="#1D1D1B"
-    stroke="#1D1D1B"
   />
   <polygon
     fill="#1D1D1B"
-    stroke="#1D1D1B"
   />
 </svg>
 `;

@@ -9,7 +9,7 @@ const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
     viewBox="0 0 20 20"
     {...clean({ title, height, width: width || height })}
   >
-    <G fill={fillColour} stroke={strokeColour}>
+    <G {...clean({ fill: fillColour, stroke: strokeColour })}>
       <Path d="M 0,10 10,20 20,10 10,0 Z" />
     </G>
   </Svg>
@@ -18,7 +18,6 @@ const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
 IconDiamond.propTypes = iconPropTypes;
 
 IconDiamond.defaultProps = {
-  strokeColour: colours.functional.brandColour,
   fillColour: colours.functional.brandColour
 };
 

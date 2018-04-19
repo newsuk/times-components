@@ -7,7 +7,8 @@ describe("clean", () => {
       b: 0,
       c: false,
       d: null,
-      e: undefined
+      e: undefined,
+      f: NaN
     };
 
     expect(clean(props)).toEqual({
