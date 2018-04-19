@@ -168,7 +168,7 @@ class InlineVideoPlayer extends Component {
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${this.props.accountId}/${
       this.props.playerId
-    }_default/index.min.js`;
+      }_default/index.min.js`;
 
     return s;
   }

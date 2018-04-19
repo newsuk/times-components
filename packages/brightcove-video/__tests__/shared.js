@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
 import BrightcoveVideo from "../src/brightcove-video";
 import PlayIcon from "../src/play-icon";
 

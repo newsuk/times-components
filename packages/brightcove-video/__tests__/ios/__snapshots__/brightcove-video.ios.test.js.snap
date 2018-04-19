@@ -4,7 +4,6 @@ exports[`BrightcoveVideo on ios renders a play icon correctly 1`] = `
 <View>
   <Svg
     height={70}
-    viewBox="0 0 100 100"
     width={70}
   >
     <Rect
@@ -17,7 +16,6 @@ exports[`BrightcoveVideo on ios renders a play icon correctly 1`] = `
     />
     <Polygon
       fill="rgb(255,255,255)"
-      points="30,20 70,50 30,80"
     />
   </Svg>
 </View>
@@ -39,7 +37,7 @@ exports[`BrightcoveVideo on ios renders correctly 1`] = `
   <Image
     source={
       Object {
-        "uri": "[poster uri]",
+        "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
       }
     }
     style={
@@ -51,20 +49,16 @@ exports[`BrightcoveVideo on ios renders correctly 1`] = `
   />
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 200,
-          "width": 300,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 200,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 300,
+      }
     }
   >
     <PlayIcon />
@@ -96,20 +90,16 @@ exports[`BrightcoveVideo on ios renders correctly without a poster image 1`] = `
   />
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 200,
-          "width": 300,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 200,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 300,
+      }
     }
   >
     <PlayIcon />

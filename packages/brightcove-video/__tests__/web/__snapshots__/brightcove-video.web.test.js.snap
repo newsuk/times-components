@@ -10,7 +10,6 @@ exports[`BrightcoveVideo on web renders a non-paidonly video correctly for paid 
   }
 >
   <video
-    autoPlay={undefined}
     className="video-js"
     controls={true}
     data-account="[account id]"
@@ -40,7 +39,6 @@ exports[`BrightcoveVideo on web renders a non-paidonly video correctly for unpai
   }
 >
   <video
-    autoPlay={undefined}
     className="video-js"
     controls={true}
     data-account="[account id]"
@@ -70,7 +68,6 @@ exports[`BrightcoveVideo on web renders a paidonly video correctly for paid user
   }
 >
   <video
-    autoPlay={undefined}
     className="video-js"
     controls={true}
     data-account="[account id]"
@@ -92,7 +89,6 @@ exports[`BrightcoveVideo on web renders a paidonly video correctly for paid user
 
 exports[`BrightcoveVideo on web renders a paidonly video correctly for unpaid users 1`] = `
 <div
-  className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
   style={
     Object {
       "backgroundImage": "url(\\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\\")",
@@ -103,8 +99,6 @@ exports[`BrightcoveVideo on web renders a paidonly video correctly for unpaid us
 >
   <img
     alt=""
-    className="rn-bottom-1p0dtai rn-height-1pi2tsx rn-left-1d2f490 rn-opacity-1272l3b rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-width-13qz1uu rn-zIndex-1wyyakw"
-    draggable={undefined}
     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
   />
 </div>
@@ -114,7 +108,6 @@ exports[`BrightcoveVideo on web renders a play icon correctly 1`] = `
 <View>
   <Svg
     height={70}
-    viewBox="0 0 100 100"
     width={70}
   >
     <Rect
@@ -127,12 +120,11 @@ exports[`BrightcoveVideo on web renders a play icon correctly 1`] = `
     />
     <Polygon
       fill="rgb(255,255,255)"
-      points="30,20 70,50 30,80"
     />
   </Svg>
 </View>
 `;
 
-exports[`BrightcoveVideo on web renders correctly 1`] = `<[object Object] />`;
+exports[`BrightcoveVideo on web renders correctly 1`] = `<UNDEFINED />`;
 
-exports[`BrightcoveVideo on web renders correctly without a poster image 1`] = `<[object Object] />`;
+exports[`BrightcoveVideo on web renders correctly without a poster image 1`] = `<UNDEFINED />`;
