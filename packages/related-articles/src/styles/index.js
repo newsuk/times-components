@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import {
   colours,
   fonts,
@@ -19,19 +19,23 @@ export default StyleSheet.create({
     justifyContent: "center"
   },
   title: {
+    color: colours.functional.primary,
     fontFamily: fonts.headline,
-    fontSize: fontSizes.pageComponentHeadline,
-    color: colours.functional.primary
+    fontSize: fontSizes.pageComponentHeadline
   },
   headline: {
     color: colours.functional.primary,
-    marginBottom: spacing(1),
     fontFamily: fonts.headline,
     fontSize: 22,
     fontWeight: "400",
-    lineHeight: 22
+    lineHeight: Platform.OS === "web" ? 24 : 28,
+    marginBottom: spacing(1)
   },
   byline: {
     marginBottom: 0
+  },
+  opinionByline: {
+    lineHeight: Platform.OS === "web" ? 24 : 28,
+    marginBottom: Platform.OS === "web" ? 0 : spacing(-1)
   }
 });
