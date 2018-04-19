@@ -6,7 +6,7 @@ import shared, { defaultVideoProps } from "../shared";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import BrightcoveVideo from "../../src/brightcove-video";
 
-describe("BrightcoveVideo on android", () => {
+describe("BrightcoveVideo on web", () => {
   shared();
 
 

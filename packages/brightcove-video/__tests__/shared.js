@@ -9,7 +9,7 @@ export const defaultVideoProps = {
   playerId: "[player id]",
   videoId: "[video id]",
   policyKey: "[policy key]",
-  poster: { uri: "[poster uri]"},
+  poster: { uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"},
   paidonly: false,
   width: 300,
   height: 200,
