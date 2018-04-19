@@ -11,12 +11,12 @@ export const propTypes = {
   videoId: PropTypes.string.isRequired,
   policyKey: PropTypes.string.isRequired,
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
-  paidonly: PropTypes.bool,
+  paidOnly: PropTypes.bool,
   width: numberOrString.isRequired,
   height: numberOrString.isRequired
 };
 
 export const defaultProps = {
-  paidonly: false,
+  paidOnly: false,
   playerId: "default"
 };

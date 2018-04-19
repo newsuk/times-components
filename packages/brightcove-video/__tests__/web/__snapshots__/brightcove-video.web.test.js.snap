@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BrightcoveVideo on web renders a non-paidonly video correctly for paid users 1`] = `
+exports[`BrightcoveVideo on web renders a non-paidOnly video correctly for paid users 1`] = `
 <div
   style={
     Object {
@@ -29,7 +29,7 @@ exports[`BrightcoveVideo on web renders a non-paidonly video correctly for paid 
 </div>
 `;
 
-exports[`BrightcoveVideo on web renders a non-paidonly video correctly for unpaid users 1`] = `
+exports[`BrightcoveVideo on web renders a non-paidOnly video correctly for unpaid users 1`] = `
 <div
   style={
     Object {
@@ -58,7 +58,7 @@ exports[`BrightcoveVideo on web renders a non-paidonly video correctly for unpai
 </div>
 `;
 
-exports[`BrightcoveVideo on web renders a paidonly video correctly for paid users 1`] = `
+exports[`BrightcoveVideo on web renders a paidOnly video correctly for paid users 1`] = `
 <div
   style={
     Object {
@@ -87,7 +87,7 @@ exports[`BrightcoveVideo on web renders a paidonly video correctly for paid user
 </div>
 `;
 
-exports[`BrightcoveVideo on web renders a paidonly video correctly for unpaid users 1`] = `
+exports[`BrightcoveVideo on web renders a paidOnly video correctly for unpaid users 1`] = `
 <div
   style={
     Object {

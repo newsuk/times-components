@@ -81,7 +81,7 @@ export default {
     },
     {
       type: "story",
-      name: "paidonly state",
+      name: "paidOnly state",
       platform: "web",
       component: ({ boolean }) => (
         <View>
@@ -91,7 +91,7 @@ export default {
             <BrightcoveVideo
               {...defaultVideoProps}
               height={250}
-              paidonly={boolean("paidonly video", false)}
+              paidOnly={boolean("paidOnly video", false)}
             />
           </IsPaidSubscriber.Provider>
         </View>

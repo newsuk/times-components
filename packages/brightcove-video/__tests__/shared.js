@@ -13,7 +13,7 @@ export const defaultVideoProps = {
     uri:
       "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
   },
-  paidonly: false,
+  paidOnly: false,
   width: 300,
   height: 200,
   onVideoPress: () => {}
