@@ -6,7 +6,8 @@
       "publicationName": "TIMES",
       "publishedTime": "2018-04-11T23:01:00.000Z",
       "label": "",
-      "standfirst": "Family tree suggests the monarch is directly descended from the founder of Islam",
+      "standfirst":
+        "Family tree suggests the monarch is directly descended from the founder of Islam",
       "flags": [],
       "byline": [
         {
@@ -63,11 +64,12 @@
             {
               "name": "text",
               "attributes": {
-                "value": " direct ancestors include kings, dukes, earls and even electresses, but could they also include a holy prophet?"
+                "value":
+                  " direct ancestors include kings, dukes, earls and even electresses, but could they also include a holy prophet?"
               },
               "children": []
             }
-        ]
+          ]
         },
         {
           "name": "paragraph",
@@ -76,7 +78,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "A Moroccan newspaper has declared that the Queen is a direct descendant of the Prophet Muhammad, claiming to have traced her lineage back more than 40 generations."
+                "value":
+                  "A Moroccan newspaper has declared that the Queen is a direct descendant of the Prophet Muhammad, claiming to have traced her lineage back more than 40 generations."
               },
               "children": []
             }
@@ -109,7 +112,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": ", the aristocratic genealogy guide, claimed that Elizabeth II could trace her lineage back to the Muslim kings of Spain and, through them, to the founder of Islam, who died in the 7th century in what is now Saudi Arabia."
+                "value":
+                  ", the aristocratic genealogy guide, claimed that Elizabeth II could trace her lineage back to the Muslim kings of Spain and, through them, to the founder of Islam, who died in the 7th century in what is now Saudi Arabia."
               },
               "children": []
             }
@@ -122,7 +126,8 @@
             "caption": "",
             "credits": "",
             "ratio": "1500:1000",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F589cee26-3e37-11e8-96da-1445aa653caf.png?crop=3000%2C2000%2C0%2C0"
+            "url":
+              "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F589cee26-3e37-11e8-96da-1445aa653caf.png?crop=3000%2C2000%2C0%2C0"
           },
           "children": []
         },
@@ -153,7 +158,8 @@
             {
               "name": "text",
               "attributes": {
-                "value": "in Morocco, but the weekly newspaper has produced a family tree that it claims proves the argument, and"
+                "value":
+                  "in Morocco, but the weekly newspaper has produced a family tree that it claims proves the argument, and"
               },
               "children": []
             }
@@ -164,10 +170,12 @@
         "id": "a27e8694-3082-4eb3-de8e-d6314f54463c",
         "title": "Royal visit to Hull",
         "credits": "DANNY LAWSON/PA",
-        "caption": "The Queen’s lineage has been traced back more than 40 generations by a Moroccan newspaper",
+        "caption":
+          "The Queen’s lineage has been traced back more than 40 generations by a Moroccan newspaper",
         "crop": {
           "ratio": "16:9",
-          "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c7ca762-3dcb-11e8-b8eb-a2b1e54e4e88.jpg?crop=2291%2C1289%2C0%2C574",
+          "url":
+            "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c7ca762-3dcb-11e8-b8eb-a2b1e54e4e88.jpg?crop=2291%2C1289%2C0%2C574",
           "__typename": "Crop"
         },
         "__typename": "Image"
