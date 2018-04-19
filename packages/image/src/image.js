@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { ImageBackground, View } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
-import styles from "./style-native";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
+import styles from "../styles";
 
 class TimesImage extends Component {
   constructor(props) {
@@ -20,18 +20,18 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { uri: dirtyUri, style, aspectRatio } = this.props;
+    const { aspectRatio, style, uri } = this.props;
     const { isLoaded } = this.state;
     // web handles missing protocols just fine, native doesn't. This evens out support.
-    const uri = addMissingProtocol(dirtyUri);
+    const cleanUri = addMissingProtocol(uri);
 
     const props = {
       style: styles.imageBackground,
       onLoad: this.handleLoad
     };
 
-    if (uri) {
-      props.source = { uri };
+    if (cleanUri) {
+      props.source = { uri: cleanUri };
     }
 
     return (

@@ -1,10 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`allows styling 1`] = `
-<div
+exports[`1. Renders default layout 1`] = `
+<View>
+  <div
+    style={
+      Object {
+        "display": "table",
+        "height": 0,
+        "overflow": "hidden",
+        "paddingBottom": "66.66666666666667%",
+      }
+    }
+  >
+    <img
+      alt=""
+      src="http://example.com/image.jpg"
+      style={
+        Object {
+          "display": "block",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    />
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
+        }
+      }
+    />
+  </div>
+</View>
+`;
+
+exports[`2. Renders default layout without uri 1`] = `
+<View>
+  <div
+    style={
+      Object {
+        "display": "table",
+        "height": 0,
+        "overflow": "hidden",
+        "paddingBottom": "66.66666666666667%",
+      }
+    }
+  >
+    <img
+      alt=""
+      src=""
+      style={
+        Object {
+          "display": "block",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    />
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
+        }
+      }
+    />
+  </div>
+</View>
+`;
+
+exports[`3. Renders with a passed style prop 1`] = `
+<View
   style={
     Object {
-      "width": "100px",
+      "width": 100,
     }
   }
 >
@@ -30,58 +110,71 @@ exports[`allows styling 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
-        }
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`prepends https schema 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "66.66666666666667%",
-      }
-    }
-  >
-    <img
-      alt=""
-      src="//example.com/image.jpg"
+    <Placeholder
       style={
         Object {
-          "display": "block",
+          "bottom": 0,
+          "left": 0,
           "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
-        }
-      />
-    </div>
   </div>
-</div>
+</View>
 `;
 
-exports[`renders correctly 1`] = `
-<div>
+exports[`4. Renders a placeholder 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Gradient
+    degrees={264}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Svg
+        height={82.23350253807106}
+        version="1.1"
+        width={82.23350253807106}
+      >
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
+    </View>
+  </Gradient>
+</View>
+`;
+
+exports[`Image tests on web ModalImage passes through to Image 1`] = `
+<View>
   <div
     style={
       Object {
@@ -104,15 +197,18 @@ exports[`renders correctly 1`] = `
         }
       }
     />
-    <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-          }
+    <Placeholder
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 0,
         }
-      />
-    </div>
+      }
+    />
   </div>
-</div>
+</View>
 `;

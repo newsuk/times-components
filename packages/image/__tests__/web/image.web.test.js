@@ -1,30 +1,18 @@
+/* global context */
 import React from "react";
-import renderer from "react-test-renderer";
-import Image from "../../src/image";
+import { shallow } from "enzyme";
+import ModalImage from "../../src/modal-image";
+import shared from "../shared";
 
-it("renders correctly", () => {
-  const tree = renderer
-    .create(<Image uri="http://example.com/image.jpg" aspectRatio={3 / 2} />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
+describe("Image tests on web", () => {
+  context("ModalImage", () => {
+    it("passes through to Image", () => {
+      const wrapper = shallow(
+        <ModalImage aspectRatio={3 / 2} uri="http://example.com/image.jpg" />
+      );
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 
-it("allows styling", () => {
-  const tree = renderer
-    .create(
-      <Image
-        style={{ width: 100 }}
-        uri="http://example.com/image.jpg"
-        aspectRatio={3 / 2}
-      />
-    )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("prepends https schema", () => {
-  const tree = renderer
-    .create(<Image uri="//example.com/image.jpg" aspectRatio={3 / 2} />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+  shared();
 });

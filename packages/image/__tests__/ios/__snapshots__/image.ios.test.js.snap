@@ -1,6 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image test on ios allows styling 1`] = `
+exports[`1. Renders default layout 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
+    }
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
+</View>
+`;
+
+exports[`2. Renders default layout without uri 1`] = `
+<View
+  aspectRatio={1.5}
+>
+  <ImageBackground
+    onLoad={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Placeholder />
+  </ImageBackground>
+</View>
+`;
+
+exports[`3. Renders with a passed style prop 1`] = `
 <View
   aspectRatio={1.5}
   style={
@@ -9,7 +50,13 @@ exports[`Image test on ios allows styling 1`] = `
     }
   }
 >
-  <View
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com/image.jpg",
+      }
+    }
     style={
       Object {
         "height": "100%",
@@ -17,165 +64,69 @@ exports[`Image test on ios allows styling 1`] = `
       }
     }
   >
-    <Image
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "http://example.com/image.jpg",
-        }
-      }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
-      onLayout={[Function]}
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-  </View>
+    <Placeholder />
+  </ImageBackground>
 </View>
 `;
 
-exports[`Image test on ios prepends https schema 1`] = `
+exports[`4. Renders a placeholder 1`] = `
 <View
-  aspectRatio={1.5}
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
-  <View
+  <Gradient
+    degrees={264}
     style={
       Object {
-        "height": "100%",
-        "width": "100%",
+        "flex": 1,
       }
     }
   >
-    <Image
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "https://example.com/image.jpg",
-        }
-      }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
     <View
-      onLayout={[Function]}
       style={
         Object {
+          "alignItems": "center",
           "flex": 1,
+          "justifyContent": "center",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
+      <Svg
+        height={82.23350253807106}
+        version="1.1"
+        width={82.23350253807106}
       >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        />
-      </View>
+        <G
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <Path
+            fill="#FFFFFF"
+          />
+        </G>
+      </Svg>
     </View>
-  </View>
+  </Gradient>
 </View>
 `;
 
-exports[`Image test on ios renders correctly 1`] = `
+exports[`5. Renders with prepended https schema 1`] = `
 <View
   aspectRatio={1.5}
 >
-  <View
+  <ImageBackground
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://example.com/image.jpg",
+      }
+    }
     style={
       Object {
         "height": "100%",
@@ -183,73 +134,7 @@ exports[`Image test on ios renders correctly 1`] = `
       }
     }
   >
-    <Image
-      onLoad={[Function]}
-      source={
-        Object {
-          "uri": "http://example.com/image.jpg",
-        }
-      }
-      style={
-        Object {
-          "bottom": 0,
-          "height": "100%",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "100%",
-        }
-      }
-    />
-    <View
-      onLayout={[Function]}
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <BVLinearGradient
-          colors={
-            Array [
-              "#F9F9F9",
-              "#EDEDED",
-            ]
-          }
-          end={
-            Object {
-              "x": -0.09302964577578221,
-              "y": 0.11488204504197774,
-            }
-          }
-          locations={
-            Array [
-              0,
-              1,
-            ]
-          }
-          start={
-            Object {
-              "x": 1,
-              "y": 0,
-            }
-          }
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-  </View>
+    <Placeholder />
+  </ImageBackground>
 </View>
 `;

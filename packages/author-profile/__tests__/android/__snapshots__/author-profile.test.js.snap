@@ -693,7 +693,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -1022,7 +1022,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -1351,7 +1351,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -3874,7 +3874,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -4586,7 +4586,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -4915,7 +4915,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
@@ -5244,7 +5244,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "&preview=true",
+                      "uri": null,
                     }
                   }
                   style={
