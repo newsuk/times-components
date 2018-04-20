@@ -242,8 +242,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -262,8 +261,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -432,8 +432,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -452,8 +451,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -757,8 +757,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -777,8 +776,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -947,8 +947,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -967,12 +966,13 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
-                    Trident out of MoD budget, Hammond urged
+                    Trident gets out of MoD budget, Hammond urged
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
@@ -1109,8 +1109,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -1129,8 +1128,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -1434,8 +1434,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -1454,8 +1453,9 @@ exports[`Related articles tests on android:  Lead and two template should render
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -1670,8 +1670,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -1688,7 +1687,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
+                        "lineHeight": 28,
                         "marginBottom": 0,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -1717,8 +1718,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -1794,7 +1796,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6666666666666666}
+                  aspectRatio={0.6}
                 >
                   <View
                     style={
@@ -1990,8 +1992,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -2010,8 +2011,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2198,8 +2200,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -2216,7 +2217,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
+                        "lineHeight": 28,
                         "marginBottom": 0,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2245,8 +2248,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2322,7 +2326,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6666666666666666}
+                  aspectRatio={0.6}
                 >
                   <View
                     style={
@@ -2518,8 +2522,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -2538,8 +2541,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2680,8 +2684,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -2700,8 +2703,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2888,8 +2892,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -2906,7 +2909,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
+                        "lineHeight": 28,
                         "marginBottom": 0,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -2935,8 +2940,9 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -3012,7 +3018,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6666666666666666}
+                  aspectRatio={0.6}
                 >
                   <View
                     style={
@@ -3373,8 +3379,7 @@ exports[`Related articles tests on android:  Standard template should render one
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -3393,8 +3398,9 @@ exports[`Related articles tests on android:  Standard template should render one
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -3608,8 +3614,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -3628,8 +3633,9 @@ exports[`Related articles tests on android:  Standard template should render thr
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -3798,8 +3804,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -3818,8 +3823,9 @@ exports[`Related articles tests on android:  Standard template should render thr
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -4001,8 +4007,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -4021,8 +4026,9 @@ exports[`Related articles tests on android:  Standard template should render thr
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -4367,8 +4373,7 @@ exports[`Related articles tests on android:  Standard template should render two
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -4387,8 +4392,9 @@ exports[`Related articles tests on android:  Standard template should render two
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -4675,8 +4681,7 @@ exports[`Related articles tests on android:  Standard template should render two
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": -4,
-                          "paddingTop": 5,
+                          "marginBottom": 0,
                         }
                       }
                     >
@@ -4695,8 +4700,9 @@ exports[`Related articles tests on android:  Standard template should render two
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 28,
                         "marginBottom": 5,
+                        "marginTop": -5,
                       }
                     }
                   >
@@ -4939,7 +4945,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Trident out of MoD budget, Hammond urged",
+            "headline": "Trident gets out of MoD budget, Hammond urged",
             "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "lead-and-two-supporting-1",
