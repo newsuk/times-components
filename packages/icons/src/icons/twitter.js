@@ -9,7 +9,7 @@ const ratio = 75 / 60;
 const IconTwitter = ({ title, width, height, fillColour, strokeColour }) => (
   <Svg
     viewBox="-354.2 -279.4 750 600"
-    {...clean({ title, height, width: width || height * ratio })}
+    {...clean({ title, height, width: width || height && height * ratio })}
   >
     <Path
       {...clean({

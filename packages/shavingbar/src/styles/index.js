@@ -32,9 +32,9 @@ export default {
     borderStyle: "solid",
     borderColor: "rgb(219, 219, 219)",
     borderWidth: 1,
-    marginLeft: spacing(1),
+    marginLeft: spacing(2),
     borderRadius: spacing(5),
-    padding: spacing(2),
+    padding: spacing(1.5),
     height: spacing(8),
     width: spacing(8),
   }

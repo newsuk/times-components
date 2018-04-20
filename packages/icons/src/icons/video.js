@@ -11,7 +11,7 @@ const ratio = 43 / 25;
 const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
   <Svg
     viewBox={viewBox}
-    {...clean({ title, height, width: width || height * ratio })}
+    {...clean({ title, height, width: width || height && height * ratio })}
   >
     <Rect
       {...clean({

@@ -1,76 +1,104 @@
 import React, { Component } from "react";
+import { colours } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import { View, Text, TouchableWithoutFeedback } from "react-native";
-import { IconTwitter, IconDiamond, IconEmail, IconStar } from "@times-components/icons";
+import { IconTwitter, IconDiamond, IconFacebook, IconEmail, IconStar } from "@times-components/icons";
 import { spacing } from "@times-components/styleguide";
 import styles from "./styles";
 
-const TouchView = ({
-  onPressIn, 
-  onPressOut, 
-  onPress,
-  onMouseEnter, 
-  onMouseLeave, 
-  style, 
-  children
-}) => ( 
-  <TouchableWithoutFeedback
-    onPressIn={onPressIn}
-    onPress={onPress}
-    onPressOut={onPressOut}>
-    <View 
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave} 
-      style={style}>{
-      children
-    }</View>
-  </TouchableWithoutFeedback>
-);
+const {primary, cancel: secondary} = colours.functional; 
 
-
-class Bubble extends Component {
+class Pressable extends Component {
   constructor() {
     super();
     this.state = {
       hover: false,
-      pressed: false
+      active: false
     };
   }
 
   hover(value) {
-    return () => this.setState({hover: value});
+    return () => {
+      this.setState({hover: value});
+      if (value)
+        this.props.onMouseEnter();
+      else
+        this.props.onMouseLeave();
+    };
   }
 
-  pressed(value) {
-    return () => this.setState({pressed: value});
+  pressed(active) {
+    return () => {
+      this.setState({active});
+      if (active)
+        this.props.onMouseEnter();
+      else
+        this.props.onPressOut();
+    };
   }
 
   render() {
-    const { hover, pressed } = this.state;
-    const { onPress, Icon } = this.props;
-    const fill = ["black", "white"][+pressed];
-    const backgroundColor = ["white", "black"][+pressed];
-    const borderColor = hover? "black" : "rgb(219, 219, 219)";
-    const style = [styles.bubble, { 
-      borderColor,
-      backgroundColor
-    }];
-    
+    const { hover, active } = this.state;
     return (
-      <TouchView
-        onPress={()=>{}}
+      <TouchableWithoutFeedback
+        onPress={this.props.onPress}
         onPressIn={this.pressed(true)}
         onPressOut={this.pressed(false)}
         onMouseEnter={this.hover(true)}
-        onMouseLeave={this.hover(false)}
-        style={style}>
-        <Icon fillColour={fill} />
-      </TouchView>
+        onMouseLeave={this.hover(false)}>{
+        this.props.children({active, hover}) 
+      }</TouchableWithoutFeedback>
     );
   }
 }
 
+Pressable.defaultProps = {
+  onPress: () => {},
+  onPressIn: () => {},
+  onPressOut: () => {},
+  onMouseEnter: () => {},
+  onMouseLeave: () => {},
+  children: PropTypes.func.isRequired
+};
+
+const Bubble = ({render, onPress}) => (
+  <Pressable onPress={onPress}>{ 
+    ({active, hover}) => {
+      const backgroundColor = active? primary : secondary;
+      const borderColor = hover ? primary : "rgb(219,219,219)";
+      const style = [styles.bubble, {
+        borderColor,
+        backgroundColor
+      }];
+
+      return (
+        <View style={style}>{
+          render({active, hover}) 
+        }</View>
+      );
+    }
+  }</Pressable>
+);
+
+const Share = (Icon) => ({active}) => ( 
+  <Icon 
+    fillColour={active? "#fff": primary}
+    strokeColour={active? primary: "#fff" }/>
+);
+
+const Star = (saved) => ({active}) => (
+  <IconStar
+    fillColour = { active || !saved ? "#fff" : primary }  
+    strokeColour = { active ? "#fff" : primary }  
+  /> 
+);
+
+
+
 export default function Shavingbar({
   saved = false,
+  mailInProgress = false,
+  saveInProgress = false,
   onEmail = () => {},
   onTweet = () => {},
   onFaceBook = () => {},
@@ -82,10 +110,13 @@ export default function Shavingbar({
         <Text style={styles.text}>Share</Text>
         <Bubble
           onPress={onEmail}
-          Icon={IconEmail} />
+          render={Share(IconEmail)} />
         <Bubble
           onPress={onTweet}
-          Icon={IconTwitter} />
+          render={Share(IconTwitter)}/>
+        <Bubble
+          onPress={onFaceBook}
+          render={Share(IconFacebook)}/>
       </View>
       <View style={styles.group}>
         <Text style={styles.text}>{
@@ -93,7 +124,7 @@ export default function Shavingbar({
         }</Text>
         <Bubble
           onPress={onSave}
-          Icon={IconStar} />
+          render={Star(0)}/>
       </View>
     </View>
   );
