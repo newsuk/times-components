@@ -11,37 +11,45 @@ class InteractiveShavingbar extends Component {
   constructor() {
     super();
     this.state = {
-      saving : false,
-      sharing : false
+      saving: false,
+      sharing: false,
+      saved: false
     };
   }
 
   handleAction(name) {
     const notification = action(name);
+    const toggle = name == "saving";
+    const { saved } = this.state;
     return () => {
-      this.setState({[name]: true});
+      this.setState({ [name]: true });
       if (this.state[name]) {
         return notification("debounce");
       }
 
       notification("inProgress");
       setTimeout(() => {
-        this.setState({[name]: false});
-        notification('send');
+        notification("send");
+        this.setState({
+          [name]: false,
+          saved: toggle ? !saved : saved
+        });
       }, this.props.shavingTime * 100);
-    }
+    };
   }
 
   render() {
-    const {saving, sharing} = this.state;
+    const { saved, saving, sharing } = this.state;
     return (
-      <Shavingbar 
-        emailInProgress={sharing}
-        savingInProgress={saving}
+      <Shavingbar
+        saved={saved}
+        isSharing={sharing}
+        isSaving={saving}
         onEmail={this.handleAction("sharing")}
         onSave={this.handleAction("saving")}
         onTwitter={action("onTwitter")}
-        onFacebook={action("onFacebook")} />
+        onFacebook={action("onFacebook")}
+      />
     );
   }
 }
@@ -50,12 +58,13 @@ InteractiveShavingbar.propTypes = {
   shavingTime: PropTypes.number.isRequired
 };
 
-
 storiesOf("Composed/Shavingbar", module).add("Shavingbar", () => (
-  <InteractiveShavingbar shavingTime={number("shavingTime", 10, {
-    range: true,
-    min: 0,
-    max: 100,
-    step: 1
-  })}/>
+  <InteractiveShavingbar
+    shavingTime={number("shavingTime", 10, {
+      range: true,
+      min: 0,
+      max: 100,
+      step: 1
+    })}
+  />
 ));

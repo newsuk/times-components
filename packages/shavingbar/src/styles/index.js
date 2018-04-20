@@ -1,4 +1,4 @@
-import {spacing} from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 export default {
   body: {
@@ -36,6 +36,6 @@ export default {
     borderRadius: spacing(5),
     padding: spacing(1.5),
     height: spacing(8),
-    width: spacing(8),
+    width: spacing(8)
   }
 };
