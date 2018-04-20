@@ -36,9 +36,11 @@ class TimesImage extends Component {
     };
 
     if (cleanUri && width > 0) {
-      props.source = {
-        uri: `${cleanUri}&resize=${width}`
-      };
+      const resizedUri =
+        cleanUri.indexOf("&resize") === -1
+          ? `${cleanUri}&resize=${width}`
+          : cleanUri;
+      props.source = { uri: resizedUri };
     }
 
     return (
