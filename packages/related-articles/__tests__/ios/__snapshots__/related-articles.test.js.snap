@@ -1705,7 +1705,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={
@@ -2205,7 +2205,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={
@@ -2866,7 +2866,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={

@@ -242,7 +242,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -432,7 +433,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -757,7 +759,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -947,7 +950,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -1109,7 +1113,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -1434,7 +1439,8 @@ exports[`Related articles tests on android:  Lead and two template should render
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -1670,7 +1676,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -1796,7 +1803,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={
@@ -1992,7 +1999,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -2200,7 +2208,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -2326,7 +2335,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={
@@ -2522,7 +2531,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -2684,7 +2694,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -2892,7 +2903,8 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -3018,7 +3030,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                 }
               >
                 <View
-                  aspectRatio={0.6135458167330677}
+                  aspectRatio={0.6666666666666666}
                 >
                   <View
                     style={
@@ -3379,7 +3391,8 @@ exports[`Related articles tests on android:  Standard template should render one
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -3614,7 +3627,8 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -3804,7 +3818,8 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -4007,7 +4022,8 @@ exports[`Related articles tests on android:  Standard template should render thr
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -4373,7 +4389,8 @@ exports[`Related articles tests on android:  Standard template should render two
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
@@ -4681,7 +4698,8 @@ exports[`Related articles tests on android:  Standard template should render two
                           "fontSize": 12,
                           "fontWeight": "400",
                           "letterSpacing": 1.2,
-                          "marginBottom": 0,
+                          "marginBottom": -4,
+                          "paddingTop": 5,
                         }
                       }
                     >
