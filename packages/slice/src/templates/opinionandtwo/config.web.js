@@ -39,8 +39,8 @@ export const getConfigWrapper = ({ supportCount }) => {
       }
       .opinionImageContainerClass {
         align-self: flex-end;
-        bottom: -8px;
-        min-width: 95px;
+        bottom: -9px;
+        min-width: 100px;
         position: absolute;
         right: 0;
       }
