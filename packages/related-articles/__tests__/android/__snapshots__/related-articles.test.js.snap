@@ -335,7 +335,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -497,7 +497,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -850,7 +850,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1012,7 +1012,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1174,7 +1174,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1527,7 +1527,7 @@ exports[`Related articles tests on android:  Lead and two template should render
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1699,7 +1699,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -2057,7 +2057,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2229,7 +2229,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -2587,7 +2587,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2749,7 +2749,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2921,7 +2921,7 @@ exports[`Related articles tests on android:  Opinion and two template should ren
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -3472,7 +3472,7 @@ exports[`Related articles tests on android:  Standard template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -3707,7 +3707,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -3910,7 +3910,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#008347",
                         }
                       }
                     >
@@ -4113,7 +4113,7 @@ exports[`Related articles tests on android:  Standard template should render thr
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#6C6C69",
                         }
                       }
                     >
@@ -4466,7 +4466,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -4787,7 +4787,7 @@ exports[`Related articles tests on android:  Standard template should render two
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#008347",
                         }
                       }
                     >

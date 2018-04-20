@@ -917,6 +917,11 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(133,0,41,1)",
+                          }
+                        }
                       >
                         Sathnam Sanghera
                       </span>
@@ -1236,6 +1241,11 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(133,0,41,1)",
+                          }
+                        }
                       >
                         Sathnam Sanghera
                       </span>
@@ -1649,6 +1659,11 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(133,0,41,1)",
+                          }
+                        }
                       >
                         Sathnam Sanghera
                       </span>
@@ -1911,6 +1926,11 @@ exports[`Related articles tests on web:  Standard template should render one rel
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(219,19,59,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>
@@ -2091,6 +2111,11 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(219,19,59,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>
@@ -2261,6 +2286,11 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(0,131,71,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>
@@ -2431,6 +2461,11 @@ exports[`Related articles tests on web:  Standard template should render three r
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(108,108,105,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>
@@ -2592,6 +2627,11 @@ exports[`Related articles tests on web:  Standard template should render two rel
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(219,19,59,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>
@@ -2734,6 +2774,11 @@ exports[`Related articles tests on web:  Standard template should render two rel
                     >
                       <span
                         dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(0,131,71,1)",
+                          }
+                        }
                       >
                         Camilla Long, Environment Editor
                       </span>

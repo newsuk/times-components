@@ -306,7 +306,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -467,7 +467,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -791,7 +791,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -952,7 +952,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1113,7 +1113,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1437,7 +1437,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -1608,7 +1608,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -1937,7 +1937,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2108,7 +2108,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -2437,7 +2437,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2598,7 +2598,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#333333",
                         }
                       }
                     >
@@ -2769,7 +2769,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#850029",
                         }
                       }
                     >
@@ -3263,7 +3263,7 @@ exports[`Related articles tests on ios:  Standard template should render one rel
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -3497,7 +3497,7 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -3699,7 +3699,7 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#008347",
                         }
                       }
                     >
@@ -3901,7 +3901,7 @@ exports[`Related articles tests on ios:  Standard template should render three r
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#6C6C69",
                         }
                       }
                     >
@@ -4225,7 +4225,7 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#DB133B",
                         }
                       }
                     >
@@ -4517,7 +4517,7 @@ exports[`Related articles tests on ios:  Standard template should render two rel
                       ellipsizeMode="tail"
                       style={
                         Object {
-                          "color": "#006699",
+                          "color": "#008347",
                         }
                       }
                     >
