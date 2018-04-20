@@ -236,7 +236,7 @@ exports[`Related articles tests on web:  Lead and two template should render one
                         dir="auto"
                         role="heading"
                       >
-                        Size matters, say very tiny ministers
+                        Size matters, say very tiny ministers Size matters, say very tiny ministers
                       </h3>
                       <div />
                       <div
@@ -864,16 +864,16 @@ exports[`Related articles tests on web:  Opinion and two template should render 
     </h3>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ kZGyIB"
+    className="responsive-styles__component-fbPFZZ imObkb"
   >
     <div
       className="responsive-styles__component-fbPFZZ kxvYBm"
     >
       <div
-        className="responsive-styles__component-fbPFZZ kwxNqz"
+        className="responsive-styles__component-fbPFZZ ksbOZK"
       >
         <div
-          className="responsive-styles__component-fbPFZZ RxjCM"
+          className="responsive-styles__component-fbPFZZ cmZIbJ"
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
@@ -1018,7 +1018,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           "display": "table",
                           "height": 0,
                           "overflow": "hidden",
-                          "paddingBottom": "166.66666666666669%",
+                          "paddingBottom": "162.98701298701297%",
                         }
                       }
                     >
@@ -1054,7 +1054,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
           className="responsive-styles__component-fbPFZZ cKGcRr"
         />
         <div
-          className="responsive-styles__component-fbPFZZ kNwsuw"
+          className="responsive-styles__component-fbPFZZ hMmSpV"
         >
           <div
             className="responsive-styles__component-fbPFZZ thYDh"
@@ -1132,7 +1132,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         dir="auto"
                         role="heading"
                       >
-                        Size matters, say very tiny ministers
+                        An example of a really really really really really really really really really really long headline
                       </h3>
                       <div />
                       <div
@@ -1188,16 +1188,16 @@ exports[`Related articles tests on web:  Opinion and two template should render 
     </h3>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ fpSmJV"
+    className="responsive-styles__component-fbPFZZ ewHdem"
   >
     <div
       className="responsive-styles__component-fbPFZZ kxvYBm"
     >
       <div
-        className="responsive-styles__component-fbPFZZ kYKWyi"
+        className="responsive-styles__component-fbPFZZ jQaUVA"
       >
         <div
-          className="responsive-styles__component-fbPFZZ iNPGLT"
+          className="responsive-styles__component-fbPFZZ fwjoDc"
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
@@ -1323,7 +1323,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           "display": "table",
                           "height": 0,
                           "overflow": "hidden",
-                          "paddingBottom": "166.66666666666669%",
+                          "paddingBottom": "162.98701298701297%",
                         }
                       }
                     >
@@ -1359,7 +1359,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
           className="responsive-styles__component-fbPFZZ idoqLg"
         />
         <div
-          className="responsive-styles__component-fbPFZZ gyTqvf"
+          className="responsive-styles__component-fbPFZZ kUuqRI"
         >
           <div
             className="responsive-styles__component-fbPFZZ fEqtGp"
@@ -1550,7 +1550,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                         dir="auto"
                         role="heading"
                       >
-                        Size matters, say tiny ministers
+                        An example of a really really really really really really really really really really really really really really really really really really really really long headline
                       </h3>
                       <div />
                       <div
@@ -1606,16 +1606,16 @@ exports[`Related articles tests on web:  Opinion and two template should render 
     </h3>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ igyFgZ"
+    className="responsive-styles__component-fbPFZZ bEiBpM"
   >
     <div
       className="responsive-styles__component-fbPFZZ kxvYBm"
     >
       <div
-        className="responsive-styles__component-fbPFZZ dFePoW"
+        className="responsive-styles__component-fbPFZZ hNlqCh"
       >
         <div
-          className="responsive-styles__component-fbPFZZ jmkcHj"
+          className="responsive-styles__component-fbPFZZ djxFcS"
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
@@ -1741,7 +1741,7 @@ exports[`Related articles tests on web:  Opinion and two template should render 
                           "display": "table",
                           "height": 0,
                           "overflow": "hidden",
-                          "paddingBottom": "166.66666666666669%",
+                          "paddingBottom": "162.98701298701297%",
                         }
                       }
                     >
@@ -2903,7 +2903,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say very tiny ministers",
+            "headline": "Size matters, say very tiny ministers Size matters, say very tiny ministers",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "lead-and-two-supporting-1",
@@ -2974,7 +2974,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say very tiny ministers",
+            "headline": "An example of a really really really really really really really really really really long headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "standard-2",
@@ -3013,7 +3013,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say tiny ministers",
+            "headline": "An example of a really really really really really really really really really really really really really really really really really really really really long headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "standard-3",

@@ -427,7 +427,7 @@ exports[`Related articles tests on ios:  Lead and two template should render one
                       }
                     }
                   >
-                    Size matters, say very tiny ministers
+                    Size matters, say very tiny ministers Size matters, say very tiny ministers
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
@@ -1705,7 +1705,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6}
+                  aspectRatio={0.6135458167330677}
                 >
                   <View
                     style={
@@ -1897,7 +1897,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       }
                     }
                   >
-                    Size matters, say very tiny ministers
+                    An example of a really really really really really really really really really really long headline
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
@@ -2205,7 +2205,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6}
+                  aspectRatio={0.6135458167330677}
                 >
                   <View
                     style={
@@ -2558,7 +2558,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                       }
                     }
                   >
-                    Size matters, say tiny ministers
+                    An example of a really really really really really really really really really really really really really really really really really really really really long headline
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
@@ -2866,7 +2866,7 @@ exports[`Related articles tests on ios:  Opinion and two template should render 
                 }
               >
                 <View
-                  aspectRatio={0.6}
+                  aspectRatio={0.6135458167330677}
                 >
                   <View
                     style={
@@ -4643,7 +4643,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say very tiny ministers",
+            "headline": "Size matters, say very tiny ministers Size matters, say very tiny ministers",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "lead-and-two-supporting-1",
@@ -4714,7 +4714,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say very tiny ministers",
+            "headline": "An example of a really really really really really really really really really really long headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "standard-2",
@@ -4753,7 +4753,7 @@ Array [
           },
           Object {
             "byline": "Deborah Haynes",
-            "headline": "Size matters, say tiny ministers",
+            "headline": "An example of a really really really really really really really really really really really really really really really really really really really really long headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2017-11-25T00:01:00.000Z",
             "role": "standard-3",

@@ -14,7 +14,7 @@ export const getOpinionConfig = ({ itemCount }) => ({
   headlineClass: "opinionHeadlineClass",
   imageConfig: {
     cropSize: "23",
-    imageRatio: 3 / 5
+    imageRatio: 308 / 502
   },
   imageContainerClass: "opinionImageContainerClass",
   isOpinionByline: true,
@@ -38,8 +38,9 @@ export const getConfigWrapper = ({ supportCount }) => {
         min-height: 250px;
       }
       .opinionImageContainerClass {
-        bottom: ${spacing(-2)};
-        min-width: 115px;
+        align-self: flex-end;
+        bottom: -8px;
+        min-width: 95px;
         position: absolute;
         right: 0;
       }
@@ -151,17 +152,6 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
     },
     wideUp: () => {
-      const getOpinionImageStyle = () => {
-        if (supportCount === 0) return ``;
-        if (supportCount === 1)
-          return `
-          min-width: 226px;
-        `;
-        return `
-          min-width: 177px;
-        `;
-      };
-
       const summaryStyle = `
         .opinionSummary125Class,
         .opinionSummary145Class {
@@ -173,10 +163,6 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
 
       return `
-        .opinionImageContainerClass {
-          ${getOpinionImageStyle()}
-        }
-
         ${supportCount === 1 ? summaryStyle : ``}
       `;
     }
