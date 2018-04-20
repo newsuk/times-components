@@ -3,7 +3,7 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
-import BrightcoveVideo from "@times-components/brightcove-video";
+import Video from "@times-components/video";
 import cropPropTypes from "./crop-proptypes";
 import {
   LeadAsset,
@@ -39,13 +39,14 @@ const LeadAssetComponent = ({
     return null;
   }
   const leadAssetView = isVideo ? (
-    <BrightcoveVideo
+    <Video
       width="100%"
       height="100%"
       position="absolute"
       policyKey={leadAsset.brightcovePolicyKey}
       videoId={leadAsset.brightcoveVideoId}
       accountId={leadAsset.brightcoveAccountId}
+      paidOnly={leadAsset.paidOnly}
       poster={{ uri: displayImage.url }}
     />
   ) : (

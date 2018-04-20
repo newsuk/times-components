@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import BrightcoveVideo from "@times-components/brightcove-video";
+import Video from "@times-components/video";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
 
@@ -91,7 +91,7 @@ storiesOf("Primitives/ErrorView", module)
         hasError ? (
           <ErrorState error={error} style={{ width: 400, height: 300 }} />
         ) : (
-          <BrightcoveVideo
+          <Video
             style={{ width: 400, height: 300 }}
             width={400}
             height={300}

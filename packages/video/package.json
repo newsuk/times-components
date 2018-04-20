@@ -1,17 +1,15 @@
 {
-  "name": "@times-components/gradient",
-  "version": "0.9.0",
-  "description": "Renders a gradient background",
-  "main": "dist/gradient",
-  "dev": "src/gradient",
+  "name": "@times-components/video",
+  "version": "1.0.0",
+  "main": "dist/video",
+  "dev": "src/video",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:native": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:all": "yarn test:native --coverage & yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
@@ -20,13 +18,14 @@
   },
   "jest": {
     "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/gradient/coverage/",
+    "rootDir": "../..",
+    "coverageDirectory": "<rootDir>/packages/video/coverage/",
+    "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/gradient/__tests__/*.test.js"
+      "<rootDir>/packages/video/__tests__/*.test.js"
     ]
   },
   "repository": {
@@ -38,7 +37,8 @@
     "react",
     "native",
     "web",
-    "gradient",
+    "video",
+    "brightcove",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -47,8 +47,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@storybook/addon-actions": "3.4.1",
+    "@storybook/addon-knobs": "3.4.1",
+    "@storybook/addons": "3.4.1",
     "@storybook/react-native": "3.4.1",
-    "@times-components/video": "1.0.0",
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.6.0",
     "@times-components/storybook": "0.8.0",
@@ -58,24 +60,35 @@
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "dextrose": "1.7.6",
+    "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
+    "react-native-web": "0.3.2",
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
+    "@times-components/image": "1.16.1",
+    "@times-components/responsive-styles": "0.7.0",
     "@times-components/styleguide": "0.6.0",
+    "@times-components/utils": "0.7.0",
     "prop-types": "15.6.0",
-    "react-native-linear-gradient": "2.4.0"
+    "react-native-svg": "5.5.1",
+    "svgs": "3.2.1"
   },
   "peerDependencies": {
     "react": ">=16.2",
     "react-dom": ">=16.2",
     "react-native": ">=0.54",
     "react-native-web": ">=0.3"
+  },
+  "_timesComponentsCliVariables": {
+    "component": "Video",
+    "packageDescription": "Brightcove component",
+    "packageName": "video"
   },
   "publishConfig": {
     "access": "public"
