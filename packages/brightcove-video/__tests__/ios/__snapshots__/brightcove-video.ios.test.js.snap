@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrightcoveVideo on native renders a play icon correctly 1`] = `
+<View>
+  <svg
+    height={70}
+    width={70}
+  >
+    <rect
+      fill="rgba(0,0,0)"
+      fillOpacity="0.4"
+      height="100"
+      stroke="rgb(255,255,255)"
+      strokeWidth="8"
+      width="100"
+    />
+    <polygon
+      fill="rgb(255,255,255)"
+    />
+  </svg>
+</View>
+`;
+
+exports[`BrightcoveVideo on native renders correctly 1`] = `
+<View
+  accessibilityLabel="splash-component"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 200,
+      "opacity": 1,
+      "width": 300,
+    }
+  }
+  testID="splash-component"
+>
+  <Image
+    source={
+      Object {
+        "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 200,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 300,
+      }
+    }
+  >
+    <View>
+      <svg
+        height={70}
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+        />
+      </svg>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`BrightcoveVideo on native renders correctly without a poster image 1`] = `
+<View
+  accessibilityLabel="splash-component"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 200,
+      "opacity": 1,
+      "width": 300,
+    }
+  }
+  testID="splash-component"
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "black",
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "height": 200,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": 300,
+      }
+    }
+  >
+    <View>
+      <svg
+        height={70}
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+        />
+      </svg>
+    </View>
+  </View>
+</View>
+`;

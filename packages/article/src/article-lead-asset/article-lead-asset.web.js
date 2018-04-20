@@ -46,6 +46,7 @@ const LeadAssetComponent = ({
       policyKey={leadAsset.brightcovePolicyKey}
       videoId={leadAsset.brightcoveVideoId}
       accountId={leadAsset.brightcoveAccountId}
+      paidOnly={leadAsset.paidOnly}
       poster={{ uri: displayImage.url }}
     />
   ) : (

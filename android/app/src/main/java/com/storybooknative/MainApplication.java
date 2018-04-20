@@ -15,8 +15,6 @@ import com.facebook.soloader.SoLoader;
 import java.util.Arrays;
 import java.util.List;
 
-import uk.co.news.rntbrightcovevideo.BrightcovePackage;
-
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
@@ -29,8 +27,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new LinearGradientPackage(),
-            new SvgPackage(), new BrightcovePackage(), new RNDeviceInfo()
+          new LinearGradientPackage(),
+          new SvgPackage(),
+          new RNDeviceInfo()
       );
     }
 

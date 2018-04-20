@@ -9,7 +9,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "prepublishOnly": "yarn transpile",
-    "transpile": "babel src --ignore node_modules,__tests__ -d dist"
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d dist"
   },
   "repository": {
     "type": "git",

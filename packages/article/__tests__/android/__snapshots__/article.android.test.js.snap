@@ -1849,7 +1849,9 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              isTVSelectable={true}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1859,65 +1861,56 @@ exports[`Article tests on android should render a full article 1`] = `
               style={
                 Object {
                   "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
+              testID="splash-component"
             >
-              <View
-                accessibilityLabel="splash-component"
+              <Image
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                  }
+                }
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
+              />
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "height": "100%",
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "flex": 1,
-                      "height": "100%",
-                      "justifyContent": "center",
-                      "left": 0,
-                      "position": "absolute",
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <View>
-                    <svg
-                      height={70}
-                      width={70}
-                    >
-                      <rect
-                        fill="rgba(0,0,0)"
-                        fillOpacity="0.4"
-                        height="100"
-                        stroke="rgb(255,255,255)"
-                        strokeWidth="8"
-                        width="100"
-                      />
-                      <polygon
-                        fill="rgb(255,255,255)"
-                      />
-                    </svg>
-                  </View>
+                <View>
+                  <svg
+                    height={70}
+                    width={70}
+                  >
+                    <rect
+                      fill="rgba(0,0,0)"
+                      fillOpacity="0.4"
+                      height="100"
+                      stroke="rgb(255,255,255)"
+                      strokeWidth="8"
+                      width="100"
+                    />
+                    <polygon
+                      fill="rgb(255,255,255)"
+                    />
+                  </svg>
                 </View>
               </View>
             </View>
@@ -2024,7 +2017,9 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              isTVSelectable={true}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2034,65 +2029,56 @@ exports[`Article tests on android should render a full article 1`] = `
               style={
                 Object {
                   "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
+              testID="splash-component"
             >
-              <View
-                accessibilityLabel="splash-component"
+              <Image
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                  }
+                }
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
+              />
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "height": "100%",
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "flex": 1,
-                      "height": "100%",
-                      "justifyContent": "center",
-                      "left": 0,
-                      "position": "absolute",
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <View>
-                    <svg
-                      height={70}
-                      width={70}
-                    >
-                      <rect
-                        fill="rgba(0,0,0)"
-                        fillOpacity="0.4"
-                        height="100"
-                        stroke="rgb(255,255,255)"
-                        strokeWidth="8"
-                        width="100"
-                      />
-                      <polygon
-                        fill="rgb(255,255,255)"
-                      />
-                    </svg>
-                  </View>
+                <View>
+                  <svg
+                    height={70}
+                    width={70}
+                  >
+                    <rect
+                      fill="rgba(0,0,0)"
+                      fillOpacity="0.4"
+                      height="100"
+                      stroke="rgb(255,255,255)"
+                      strokeWidth="8"
+                      width="100"
+                    />
+                    <polygon
+                      fill="rgb(255,255,255)"
+                    />
+                  </svg>
                 </View>
               </View>
             </View>
@@ -5261,76 +5247,68 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="leadAsset"
       >
         <View
+          accessibilityLabel="splash-component"
           accessible={true}
-          nativeBackgroundAndroid={
-            Object {
-              "attribute": "selectableItemBackground",
-              "type": "ThemeAttrAndroid",
-            }
-          }
+          isTVSelectable={true}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
-          pointerEvents="box-only"
+          style={
+            Object {
+              "height": 421.875,
+              "opacity": 1,
+              "width": 750,
+            }
+          }
+          testID="splash-component"
         >
-          <View
-            accessibilityLabel="splash-component"
+          <Image
+            source={
+              Object {
+                "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+              }
+            }
             style={
               Object {
                 "height": 421.875,
                 "width": 750,
               }
             }
-            testID="splash-component"
+          />
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "height": 421.875,
+                "justifyContent": "center",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": 750,
+              }
+            }
           >
-            <Image
-              source={
-                Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                }
-              }
-              style={
-                Object {
-                  "height": 421.875,
-                  "width": 750,
-                }
-              }
-            />
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "height": 421.875,
-                  "justifyContent": "center",
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 750,
-                }
-              }
-            >
-              <View>
-                <svg
-                  height={70}
-                  width={70}
-                >
-                  <rect
-                    fill="rgba(0,0,0)"
-                    fillOpacity="0.4"
-                    height="100"
-                    stroke="rgb(255,255,255)"
-                    strokeWidth="8"
-                    width="100"
-                  />
-                  <polygon
-                    fill="rgb(255,255,255)"
-                  />
-                </svg>
-              </View>
+            <View>
+              <svg
+                height={70}
+                width={70}
+              >
+                <rect
+                  fill="rgba(0,0,0)"
+                  fillOpacity="0.4"
+                  height="100"
+                  stroke="rgb(255,255,255)"
+                  strokeWidth="8"
+                  width="100"
+                />
+                <polygon
+                  fill="rgb(255,255,255)"
+                />
+              </svg>
             </View>
           </View>
         </View>

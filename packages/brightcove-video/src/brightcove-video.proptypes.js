@@ -1,19 +1,22 @@
 import PropTypes from "prop-types";
-import Splash from "./splash";
-import Player from "./brightcove-player";
 
-export const brightcoveVideoPropTypes = {
-  resetOnFinish: PropTypes.bool,
-  directToFullscreen: PropTypes.bool,
-  ...Splash.propTypes,
-  ...Player.propTypes
+const numberOrString = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number
+]);
+
+export const propTypes = {
+  accountId: PropTypes.string.isRequired,
+  playerId: PropTypes.string,
+  videoId: PropTypes.string.isRequired,
+  policyKey: PropTypes.string.isRequired,
+  poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
+  paidOnly: PropTypes.bool,
+  width: numberOrString.isRequired,
+  height: numberOrString.isRequired
 };
 
-export const brightcoveVideoDefaultProps = Object.assign(
-  {
-    resetOnFinish: false,
-    directToFullscreen: false
-  },
-  Splash.defaultProps,
-  Player.defaultProps
-);
+export const defaultProps = {
+  paidOnly: false,
+  playerId: "default"
+};

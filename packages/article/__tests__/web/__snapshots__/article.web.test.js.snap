@@ -2480,8 +2480,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2508,8 +2510,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2536,8 +2540,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2564,8 +2570,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2592,8 +2600,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2739,7 +2749,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
@@ -2820,7 +2829,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
@@ -3507,8 +3515,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3535,8 +3545,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3563,8 +3575,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3591,8 +3605,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3619,8 +3635,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -4833,8 +4851,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4861,8 +4881,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4889,8 +4911,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4917,8 +4941,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4945,8 +4971,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -5162,8 +5190,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5190,8 +5220,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5218,8 +5250,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5246,8 +5280,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5274,8 +5310,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -6434,7 +6472,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
