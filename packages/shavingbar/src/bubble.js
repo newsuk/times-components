@@ -20,7 +20,11 @@ const Bubble = ({ render, onPress, isLoading }) => (
         }
       ];
 
-      return <View style={style}>{render({ isActive, hover })}</View>;
+      return (
+        <View aria-pressed={isActive} aria-disabled={isLoading} style={style}>
+          {render({ isActive, hover })}
+        </View>
+      );
     }}
   </Pressable>
 );

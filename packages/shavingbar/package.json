@@ -44,6 +44,7 @@
     "@times-components/jest-configurator": "0.6.0",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
+    "enzyme": "3.3.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.3.1",
