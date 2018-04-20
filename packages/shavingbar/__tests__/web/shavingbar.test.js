@@ -1,5 +1,8 @@
-import shared from "../shared";
+import { render } from "enzyme";
+import Shavingbar from "../..";
 
 describe("Shavingbar test on web: ", () => {
-  shared();
+  it("should render correctly", () => {
+    
+  })
 });

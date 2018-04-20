@@ -4,27 +4,27 @@ import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { number } from "@storybook/addon-knobs";
-import { withTrackingContext } from "@times-components/tracking";
-import Shavingbar from "./";
+import Shavingbar from "./src";
 
 class InteractiveShavingbar extends Component {
   constructor() {
     super();
     this.state = {
-      saving: false,
-      sharing: false,
-      saved: false
+      isSaving: false,
+      isSharing: false,
+      isSaved: false
     };
   }
 
   handleAction(name) {
     const notification = action(name);
-    const toggle = name == "saving";
-    const { saved } = this.state;
+    const toggle = name === "isSaving";
+    const { isSaved } = this.state;
     return () => {
       this.setState({ [name]: true });
       if (this.state[name]) {
-        return notification("debounce");
+        notification("debounce");
+        return;
       }
 
       notification("inProgress");
@@ -32,21 +32,21 @@ class InteractiveShavingbar extends Component {
         notification("send");
         this.setState({
           [name]: false,
-          saved: toggle ? !saved : saved
+          isSaved: toggle ? !isSaved : isSaved
         });
       }, this.props.shavingTime * 100);
     };
   }
 
   render() {
-    const { saved, saving, sharing } = this.state;
+    const { isSaved, isSaving, isSharing } = this.state;
     return (
       <Shavingbar
-        saved={saved}
-        isSharing={sharing}
-        isSaving={saving}
-        onEmail={this.handleAction("sharing")}
-        onSave={this.handleAction("saving")}
+        isSaved={isSaved}
+        isSharing={isSharing}
+        isSaving={isSaving}
+        onEmail={this.handleAction("isSharing")}
+        onSave={this.handleAction("isSaving")}
         onTwitter={action("onTwitter")}
         onFacebook={action("onFacebook")}
       />

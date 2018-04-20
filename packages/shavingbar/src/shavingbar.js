@@ -1,114 +1,73 @@
-import React, { Component } from "react";
-import { colours } from "@times-components/styleguide";
+import React from "react";
 import PropTypes from "prop-types";
+import { colours } from "@times-components/styleguide";
 import {
   View,
   Text,
-  TouchableWithoutFeedback,
   ActivityIndicator
 } from "react-native";
+
 import {
   IconTwitter,
-  IconDiamond,
   IconFacebook,
   IconEmail,
   IconStar
 } from "@times-components/icons";
-import { spacing } from "@times-components/styleguide";
+
+import Bubble from "./bubble";
 import styles from "./styles";
 
-const { primary, cancel: secondary } = colours.functional;
+const { primary } = colours.functional;
 
-class Pressable extends Component {
-  constructor() {
-    super();
-    this.state = {
-      hover: false,
-      active: false
-    };
-  }
-
-  hover(value) {
-    return () => {
-      this.setState({ hover: value });
-      if (value) this.props.onMouseEnter();
-      else this.props.onMouseLeave();
-    };
-  }
-
-  pressed(active) {
-    return () => {
-      this.setState({ active });
-      if (active) this.props.onMouseEnter();
-      else this.props.onPressOut();
-    };
-  }
-
-  render() {
-    const { hover, active } = this.state;
-    return (
-      <TouchableWithoutFeedback
-        onPress={this.props.onPress}
-        onPressIn={this.pressed(true)}
-        onPressOut={this.pressed(false)}
-        onMouseEnter={this.hover(true)}
-        onMouseLeave={this.hover(false)}
-      >
-        {this.props.children({ active, hover })}
-      </TouchableWithoutFeedback>
-    );
-  }
-}
-
-Pressable.defaultProps = {
-  onPress: () => {},
-  onPressIn: () => {},
-  onPressOut: () => {},
-  onMouseEnter: () => {},
-  onMouseLeave: () => {},
-  children: PropTypes.func.isRequired
-};
-
-const Bubble = ({ render, onPress, isLoading }) => (
-  <Pressable onPress={onPress}>
-    {({ active, hover }) => {
-      const backgroundColor = active && !isLoading ? primary : secondary;
-      const borderColor = hover || isLoading ? primary : "rgb(219,219,219)";
-      const style = [
-        styles.bubble,
-        {
-          borderColor,
-          backgroundColor
-        }
-      ];
-
-      return <View style={style}>{render({ active, hover })}</View>;
-    }}
-  </Pressable>
+const Share = ({Icon, isSharing, isActive}) => (
+  isSharing 
+    ? <ActivityIndicator />
+    : <Icon
+        fillColour = {isActive ? "#fff" : primary}
+        strokeColour = {isActive ? primary : "#fff"} />
 );
 
-const Share = (Icon, isLoading = false) => ({ active }) =>
-  isLoading ? (
-    <ActivityIndicator />
-  ) : (
-    <Icon
-      fillColour={active ? "#fff" : primary}
-      strokeColour={active ? primary : "#fff"}
-    />
-  );
+Share.propTypes = {
+  isSharing: PropTypes.bool,
+  isActive: PropTypes.bool.isRequired,
+  Icon: PropTypes.func.isRequired
+};
 
-const Save = (saved, isLoading) => ({ active }) =>
-  isLoading ? (
-    <ActivityIndicator />
-  ) : (
+Share.defaultProps = {
+  isSharing: false
+};
+
+const makeShare = (Icon, isSharing = false) => props => ( 
+  <Share Icon={Icon} isSharing={isSharing} {...props} />
+);
+
+const Save = ({isSaved, isSaving, isActive }) => (
+  isSaving
+    ? <ActivityIndicator />
+    : (
     <IconStar
-      fillColour={active || !saved ? "white" : primary}
-      strokeColour={active ? "white" : primary}
+      fillColour={isActive || !isSaved ? "white" : primary}
+      strokeColour={isActive ? "white" : primary}
     />
-  );
+  )
+);
+
+
+Save.propTypes = {
+  isSaved: PropTypes.bool.isRequired,
+  isSaving: PropTypes.bool.isRequired,
+  isActive: PropTypes.bool.isRequired,
+};
+
+
+const makeSave = (isSaved, isSaving) => props => ( 
+  <Save 
+    isSaved={isSaved} 
+    isSaving={isSaving} {...props} />
+);
 
 export default function Shavingbar({
-  saved = false,
+  isSaved = false,
   isSaving = false,
   isSharing = false,
   onEmail = () => {},
@@ -123,19 +82,39 @@ export default function Shavingbar({
         <Bubble
           isLoading={isSharing}
           onPress={onEmail}
-          render={Share(IconEmail, isSharing)}
+          render={makeShare(IconEmail, isSharing)}
         />
-        <Bubble onPress={onTwitter} render={Share(IconTwitter)} />
-        <Bubble onPress={onFacebook} render={Share(IconFacebook)} />
+        <Bubble onPress={onTwitter}  render={makeShare(IconTwitter)} />
+        <Bubble onPress={onFacebook} render={makeShare(IconFacebook)} />
       </View>
       <View style={styles.group}>
-        <Text style={styles.text}>{saved ? "Saved" : "Save"}</Text>
+        <Text style={styles.text}>{isSaved ? "Saved" : "Save"}</Text>
         <Bubble
           isLoading={isSaving}
           onPress={onSave}
-          render={Save(saved, isSaving)}
+          render={makeSave(isSaved, isSaving)}
         />
       </View>
     </View>
   );
 }
+
+Shavingbar.propTypes = {
+  isSaved: PropTypes.bool,
+  isSaving: PropTypes.bool,
+  isSharing: PropTypes.bool,
+  onEmail: PropTypes.func,
+  onTwitter: PropTypes.func,
+  onFacebook: PropTypes.func,
+  onSave: PropTypes.func
+};
+
+Shavingbar.defaultProps = {
+  isSaved: false,
+  isSaving: false,
+  isSharing: false,
+  onEmail: () => {},
+  onTwitter: () => {},
+  onFacebook: () => {},
+  onSave: () => {}
+};
