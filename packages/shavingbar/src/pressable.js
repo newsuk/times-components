@@ -14,7 +14,7 @@ class Pressable extends Component {
   hover(value) {
     return () => {
       this.setState({ hover: value });
-      if (value) { 
+      if (value) {
         this.props.onMouseEnter();
       } else {
         this.props.onMouseLeave();

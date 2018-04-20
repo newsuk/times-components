@@ -1,70 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
-import {
-  View,
-  Text,
-  ActivityIndicator
-} from "react-native";
+import { View, Text } from "react-native";
 
-import {
-  IconTwitter,
-  IconFacebook,
-  IconEmail,
-  IconStar
-} from "@times-components/icons";
+import { IconTwitter, IconFacebook, IconEmail } from "@times-components/icons";
 
 import Bubble from "./bubble";
 import styles from "./styles";
-
-const { primary } = colours.functional;
-
-const Share = ({Icon, isSharing, isActive}) => (
-  isSharing 
-    ? <ActivityIndicator />
-    : <Icon
-        fillColour = {isActive ? "#fff" : primary}
-        strokeColour = {isActive ? primary : "#fff"} />
-);
-
-Share.propTypes = {
-  isSharing: PropTypes.bool,
-  isActive: PropTypes.bool.isRequired,
-  Icon: PropTypes.func.isRequired
-};
-
-Share.defaultProps = {
-  isSharing: false
-};
-
-const makeShare = (Icon, isSharing = false) => props => ( 
-  <Share Icon={Icon} isSharing={isSharing} {...props} />
-);
-
-const Save = ({isSaved, isSaving, isActive }) => (
-  isSaving
-    ? <ActivityIndicator />
-    : (
-    <IconStar
-      fillColour={isActive || !isSaved ? "white" : primary}
-      strokeColour={isActive ? "white" : primary}
-    />
-  )
-);
-
-
-Save.propTypes = {
-  isSaved: PropTypes.bool.isRequired,
-  isSaving: PropTypes.bool.isRequired,
-  isActive: PropTypes.bool.isRequired,
-};
-
-
-const makeSave = (isSaved, isSaving) => props => ( 
-  <Save 
-    isSaved={isSaved} 
-    isSaving={isSaving} {...props} />
-);
+import { makeShareIcon, makeSaveIcon } from "./make-icon";
 
 export default function Shavingbar({
   isSaved = false,
@@ -82,17 +25,17 @@ export default function Shavingbar({
         <Bubble
           isLoading={isSharing}
           onPress={onEmail}
-          render={makeShare(IconEmail, isSharing)}
+          render={makeShareIcon(IconEmail, isSharing)}
         />
-        <Bubble onPress={onTwitter}  render={makeShare(IconTwitter)} />
-        <Bubble onPress={onFacebook} render={makeShare(IconFacebook)} />
+        <Bubble onPress={onTwitter} render={makeShareIcon(IconTwitter)} />
+        <Bubble onPress={onFacebook} render={makeShareIcon(IconFacebook)} />
       </View>
       <View style={styles.group}>
         <Text style={styles.text}>{isSaved ? "Saved" : "Save"}</Text>
         <Bubble
           isLoading={isSaving}
           onPress={onSave}
-          render={makeSave(isSaved, isSaving)}
+          render={makeSaveIcon(isSaved, isSaving)}
         />
       </View>
     </View>

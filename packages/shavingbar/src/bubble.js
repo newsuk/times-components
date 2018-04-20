@@ -5,9 +5,7 @@ import { colours } from "@times-components/styleguide";
 import Pressable from "./pressable";
 import styles from "./styles";
 
-
 const { primary, cancel: secondary } = colours.functional;
-
 
 const Bubble = ({ render, onPress, isLoading }) => (
   <Pressable onPress={onPress}>
@@ -30,7 +28,7 @@ const Bubble = ({ render, onPress, isLoading }) => (
 Bubble.propTypes = {
   onPress: PropTypes.func,
   isLoading: PropTypes.bool,
-  render: PropTypes.func.isRequired,
+  render: PropTypes.func.isRequired
 };
 
 Bubble.defaultProps = {
