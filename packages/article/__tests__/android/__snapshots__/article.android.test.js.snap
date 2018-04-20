@@ -1496,8 +1496,7 @@ exports[`Article tests on android should render a full article 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -3730,8 +3729,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -4555,8 +4553,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4575,8 +4572,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -4661,7 +4659,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4758,8 +4756,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4778,8 +4775,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -4851,7 +4849,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4948,8 +4946,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4968,8 +4965,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -5041,7 +5039,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -7316,8 +7314,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -9073,8 +9070,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -15798,8 +15794,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -17573,8 +17568,7 @@ exports[`Article tests on android should render an article with no standfirst an
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
