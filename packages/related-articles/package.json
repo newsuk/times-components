@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -41,7 +41,7 @@
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.6.0",
-    "@times-components/tealium-utils": "0.2.0",
+    "@times-components/tealium-utils": "0.2.1",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -64,7 +64,7 @@
     "@times-components/markup": "0.26.0",
     "@times-components/slice": "0.18.1",
     "@times-components/styleguide": "0.6.0",
-    "@times-components/tracking": "0.12.3",
+    "@times-components/tracking": "0.12.4",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },
