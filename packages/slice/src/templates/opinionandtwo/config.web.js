@@ -14,7 +14,7 @@ export const getOpinionConfig = ({ itemCount }) => ({
   headlineClass: "opinionHeadlineClass",
   imageConfig: {
     cropSize: "23",
-    imageRatio: 2 / 3
+    imageRatio: 3 / 5
   },
   imageContainerClass: "opinionImageContainerClass",
   isOpinionByline: true,
@@ -38,8 +38,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         min-height: 250px;
       }
       .opinionImageContainerClass {
-        bottom: 0;
-        margin-bottom: ${spacing(1)};
+        bottom: ${spacing(-2)};
         min-width: 115px;
         position: absolute;
         right: 0;
@@ -93,7 +92,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: ${spacing(2)};
           min-width: 152px;
         `;
       };
@@ -139,10 +137,9 @@ export const getConfigWrapper = ({ supportCount }) => {
           padding-right: ${spacing(11)};
         }
         .opinionImageContainerClass {
+          max-width: 167px;
           min-width: auto;
           position: relative;
-          margin-bottom: ${spacing(-2)};
-          max-width: 167px;
           ${getOpinionImageStyle()}
         }
 

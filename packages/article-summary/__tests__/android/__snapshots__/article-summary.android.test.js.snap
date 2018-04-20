@@ -108,8 +108,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -244,8 +243,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -454,8 +452,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -605,8 +602,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -673,8 +669,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -926,8 +921,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -1044,8 +1038,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -1228,8 +1221,7 @@ exports[`Article Summary tests on Android should render an article-summary with 
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >

@@ -100,4 +100,4 @@ const RelatedArticles = ({ articles, mainId, onPress, template }) => {
 RelatedArticles.propTypes = relatedArticlesPropTypes;
 RelatedArticles.defaultProps = relatedArticlesDefaultProps;
 
-export default RelatedArticles;
+export default withTrackingContext(RelatedArticles);
