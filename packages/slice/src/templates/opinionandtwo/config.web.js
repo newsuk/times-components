@@ -70,7 +70,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       };
       return `
         .opinionContentContainerClass {
-          min-height: 180px;
+          min-height: 200px;
         }
         .opinionImageContainerClass {
           ${getOpinionImageStyle()}
