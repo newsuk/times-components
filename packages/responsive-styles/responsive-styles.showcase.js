@@ -1,6 +1,5 @@
 import "react-native";
 import React from "react";
-import { storiesOf } from "@storybook/react-native";
 import withResponsiveStyles from "./src/responsive-styles";
 
 const WithColours = withResponsiveStyles("div", {
@@ -11,6 +10,13 @@ const WithColours = withResponsiveStyles("div", {
   hugeUp: () => "color: purple;"
 });
 
-storiesOf("Helpers/ResponsiveStyles", module).add("ResponsiveStyles", () => (
-  <WithColours>Hello</WithColours>
-));
+export default {
+  name: "Helpers/ResponsiveStyles",
+  children: [
+    {
+      type: "story",
+      name: "ResponsiveStyles",
+      component: () => <WithColours>Hello</WithColours>
+    }
+  ]
+};
