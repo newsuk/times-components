@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { colours } from "@times-components/styleguide";
 import PropTypes from "prop-types";
-import { View, Text, TouchableWithoutFeedback } from "react-native";
+import { View, Text, TouchableWithoutFeedback, ActivityIndicator } from "react-native";
 import { IconTwitter, IconDiamond, IconFacebook, IconEmail, IconStar } from "@times-components/icons";
 import { spacing } from "@times-components/styleguide";
 import styles from "./styles";
@@ -80,28 +80,31 @@ const Bubble = ({render, onPress}) => (
   }</Pressable>
 );
 
-const Share = (Icon) => ({active}) => ( 
-  <Icon 
-    fillColour={active? "#fff": primary}
-    strokeColour={active? primary: "#fff" }/>
+const Share = (Icon, isLoading = false) => ({active}) => ( 
+  isLoading
+    ? <ActivityIndicator />
+    : <Icon 
+        fillColour={active? "#fff": primary}
+        strokeColour={active? primary: "#fff" }/> 
 );
 
-const Star = (saved) => ({active}) => (
-  <IconStar
-    fillColour = { active || !saved ? "#fff" : primary }  
-    strokeColour = { active ? "#fff" : primary }  
-  /> 
+const Save = (saved, isLoading) => ({active}) => (
+  isLoading
+    ? <ActivityIndicator />
+    : <IconStar
+        fillColour = { active || !saved ? "#fff" : primary }  
+        strokeColour = { active ? "#fff" : primary }  /> 
 );
 
 
 
 export default function Shavingbar({
   saved = false,
-  mailInProgress = false,
-  saveInProgress = false,
+  emailInProgress = false,
+  savingInProgress = false,
   onEmail = () => {},
-  onTweet = () => {},
-  onFaceBook = () => {},
+  onTwitter = () => {},
+  onFacebook = () => {},
   onSave = () => {},
 }) {
   return (
@@ -110,12 +113,12 @@ export default function Shavingbar({
         <Text style={styles.text}>Share</Text>
         <Bubble
           onPress={onEmail}
-          render={Share(IconEmail)} />
+          render={Share(IconEmail, emailInProgress)} />
         <Bubble
-          onPress={onTweet}
+          onPress={onTwitter}
           render={Share(IconTwitter)}/>
         <Bubble
-          onPress={onFaceBook}
+          onPress={onFacebook}
           render={Share(IconFacebook)}/>
       </View>
       <View style={styles.group}>
@@ -124,7 +127,7 @@ export default function Shavingbar({
         }</Text>
         <Bubble
           onPress={onSave}
-          render={Star(0)}/>
+          render={Save(0, savingInProgress)}/>
       </View>
     </View>
   );
