@@ -92,19 +92,19 @@ exports[`Slice tests on web responsive lead and two template components should r
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ ijHRAu"
+  className="responsive-styles__component-fbPFZZ gFJTdi"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ bBEOqG"
+  className="responsive-styles__component-fbPFZZ iQvhcy"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 3`] = `
 <div
-  className="responsive-styles__component-fbPFZZ jBQlOT"
+  className="responsive-styles__component-fbPFZZ iZVkJC"
 />
 `;
 

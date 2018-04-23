@@ -162,9 +162,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
       `;
 
-      return `
-        ${supportCount === 1 ? summaryStyle : ``}
-      `;
+      return supportCount === 1 ? summaryStyle : ``;
     }
   });
   ConfigWrapper.displayName = "ConfigWrapper";
