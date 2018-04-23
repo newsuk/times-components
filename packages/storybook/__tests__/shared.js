@@ -7,6 +7,7 @@ import {
   LateralSpacingDecorator,
   WhiteBgColorDecorator
 } from "../src/storybook";
+import "./shared-showcase";
 
 const WrappedComponent = () => <Text>I am in Storybook!</Text>;
 

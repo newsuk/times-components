@@ -67,7 +67,7 @@
     "@times-components/article-flag": "0.12.0",
     "@times-components/article-image": "0.14.1",
     "@times-components/article-label": "0.13.0",
-    "@times-components/brightcove-video": "2.2.0",
+    "@times-components/video": "1.0.0",
     "@times-components/caption": "0.15.1",
     "@times-components/date-publication": "0.15.0",
     "@times-components/image": "1.16.1",

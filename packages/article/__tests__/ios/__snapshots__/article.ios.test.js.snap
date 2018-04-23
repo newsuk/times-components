@@ -1788,7 +1788,9 @@ exports[`Article tests on ios should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              isTVSelectable={true}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1797,34 +1799,104 @@ exports[`Article tests on ios should render a full article 1`] = `
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "height": "100%",
-                  "width": "100%",
+                  "opacity": 1,
                 }
               }
+              testID="splash-component"
             >
               <View
-                accessibilityLabel="splash-component"
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
+                <View
                   style={
                     Object {
                       "height": "100%",
                       "width": "100%",
                     }
                   }
-                />
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
                 <View
                   style={
                     Object {
@@ -1962,7 +2034,9 @@ exports[`Article tests on ios should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              isTVSelectable={true}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1971,34 +2045,104 @@ exports[`Article tests on ios should render a full article 1`] = `
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "height": "100%",
-                  "width": "100%",
+                  "opacity": 1,
                 }
               }
+              testID="splash-component"
             >
               <View
-                accessibilityLabel="splash-component"
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
+                <View
                   style={
                     Object {
                       "height": "100%",
                       "width": "100%",
                     }
                   }
-                />
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
                 <View
                   style={
                     Object {
@@ -5072,6 +5216,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="leadAsset"
       >
         <View
+          accessibilityLabel="splash-component"
           accessible={true}
           isTVSelectable={true}
           onResponderGrant={[Function]}
@@ -5085,30 +5230,101 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               "opacity": 1,
             }
           }
+          testID="splash-component"
         >
           <View
-            accessibilityLabel="splash-component"
             style={
               Object {
                 "height": 421.875,
                 "width": 750,
               }
             }
-            testID="splash-component"
           >
-            <Image
-              source={
-                Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                }
-              }
+            <View
               style={
                 Object {
                   "height": 421.875,
                   "width": 750,
                 }
               }
-            />
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                    }
+                  }
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
             <View
               style={
                 Object {

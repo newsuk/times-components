@@ -1,8 +1,7 @@
 import React from "react";
 import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
-import { Splash } from "@times-components/brightcove-video";
-import Button from "@times-components/link";
+import Video from "@times-components/video";
 import cropPropTypes from "./crop-proptypes";
 
 const ArticleLeadAssetVideo = ({
@@ -19,17 +18,15 @@ const ArticleLeadAssetVideo = ({
   const height = width / aspectRatio;
 
   return (
-    <Button
-      onPress={e =>
-        onVideoPress(e, {
-          brightcoveAccountId,
-          brightcovePolicyKey,
-          brightcoveVideoId
-        })
-      }
-    >
-      <Splash poster={{ uri: imageUrl }} width={width} height={height} />
-    </Button>
+    <Video
+      accountId={brightcoveAccountId}
+      policyKey={brightcovePolicyKey}
+      videoId={brightcoveVideoId}
+      poster={{ uri: imageUrl }}
+      width={width}
+      height={height}
+      onVideoPress={onVideoPress}
+    />
   );
 };
 
