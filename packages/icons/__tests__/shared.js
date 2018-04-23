@@ -3,7 +3,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { render } from "enzyme";
+import { render, shallow } from "enzyme";
 import * as Icons from "../src/icons";
 
 function iconRenderTest(name, Icon) {
@@ -21,12 +21,17 @@ function iconColourTest(Icon) {
     const stroke = "#coffee";
     const fill = "#facade";
 
-    const tree = render(
-      <Icon width={50} height={50} strokeColour={stroke} fillColour={fill} />
-    );
+    const tree = render(<Icon strokeColour={stroke} fillColour={fill} />);
 
     expect(tree.find(`[stroke="${stroke}"]`).length > 0).toEqual(true);
     expect(tree.find(`[fill="${fill}"]`).length > 0).toEqual(true);
+  };
+}
+
+function iconDimensionTest(Icon) {
+  return () => {
+    const tree = shallow(<Icon height={50} />);
+    expect(tree.find("Svg").props().width > 0).toEqual(true);
   };
 }
 
@@ -34,5 +39,6 @@ module.exports = () => {
   Object.entries(Icons).forEach(([name, Icon]) => {
     it(`${name} renders correctly`, iconRenderTest(name, Icon));
     it(`${name} renders with different colours`, iconColourTest(Icon));
+    it(`${name} sets a width when height is set`, iconDimensionTest(Icon));
   });
 };

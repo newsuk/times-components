@@ -2,7 +2,7 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "svgs";
-import iconPropTypes from "./proptypes";
+import iconPropTypes from "./prop-types";
 
 const IconDiamond = ({ title, width, height, fillColour, strokeColour }) => (
   <Svg

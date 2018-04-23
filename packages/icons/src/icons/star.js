@@ -2,7 +2,7 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { clean } from "@times-components/utils";
 import Svg, { Polygon } from "svgs";
-import iconPropTypes from "./proptypes";
+import iconPropTypes from "./prop-types";
 
 const viewBox =
   "11.756953239440918 11.182208061218262 17.48609161376953 16.630264282226562";

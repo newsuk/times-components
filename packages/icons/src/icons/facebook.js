@@ -2,7 +2,7 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { clean } from "@times-components/utils";
 import Svg, { G, Path } from "svgs";
-import iconPropTypes from "./proptypes";
+import iconPropTypes from "./prop-types";
 
 const viewBox = "14 10 10.592460632324219 20.397258758544922";
 
