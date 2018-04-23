@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { View, StyleSheet } from "react-native";
 import Image from "@times-components/image";
 
+import Touchable from "./touchable";
 import PlayIcon from "./play-icon";
 import { propTypes, defaultProps } from "./video.proptypes";
 
@@ -26,10 +27,7 @@ const Video = ({
   brightcovePolicyKey,
   brightcoveVideoId
 }) => (
-  <TouchableOpacity
-    style={{ width, height }}
-    testID="splash-component"
-    accessibilityLabel="splash-component"
+  <Touchable
     onPress={e => {
       onVideoPress(e, {
         brightcoveAccountId,
@@ -37,28 +35,32 @@ const Video = ({
         brightcoveVideoId
       });
     }}
+    testID="splash-component"
+    accessibilityLabel="splash-component"
   >
-    {poster ? (
-      <Image
-        uri={poster.uri}
-        style={{
-          width,
-          height
-        }}
-      />
-    ) : (
-      <View
-        style={{
-          width,
-          height,
-          backgroundColor: "black"
-        }}
-      />
-    )}
-    <View style={[styles.overlay, { width, height }]}>
-      <PlayIcon />
+    <View style={{ width, height }}>
+      {poster ? (
+        <Image
+          uri={poster.uri}
+          style={{
+            width,
+            height
+          }}
+        />
+      ) : (
+        <View
+          style={{
+            width,
+            height,
+            backgroundColor: "black"
+          }}
+        />
+      )}
+      <View style={[styles.overlay, { width, height }]}>
+        <PlayIcon />
+      </View>
     </View>
-  </TouchableOpacity>
+  </Touchable>
 );
 
 Video.defaultProps = {
