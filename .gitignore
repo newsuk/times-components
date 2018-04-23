@@ -76,3 +76,7 @@ dextrose/snappy/**
 # Bundles
 ios/main.jsbundle
 ios/main.jsbundle.meta
+
+# Haul
+#
+haul-debug.log
