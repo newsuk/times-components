@@ -9,7 +9,7 @@ import InlineImage from "./inline-image";
 import {
   articleImagePropTypes,
   articleImageDefaultPropTypes
-} from "./article-image-proptypes";
+} from "./article-image-prop-types";
 
 const styles = StyleSheet.create({
   secondaryImage: {
