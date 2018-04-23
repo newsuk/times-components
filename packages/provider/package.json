@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.28.1",
+  "version": "0.28.2",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -50,8 +50,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/provider-test-tools": "0.3.1",
-    "@times-components/utils": "0.7.1",
+    "@times-components/provider-test-tools": "0.3.2",
+    "@times-components/utils": "0.7.2",
     "apollo-utilities": "1.0.4",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",

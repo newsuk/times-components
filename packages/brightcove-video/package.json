@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.6.1",
-    "@times-components/utils": "0.7.1",
+    "@times-components/utils": "0.7.2",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
     "svgs": "3.2.1"
