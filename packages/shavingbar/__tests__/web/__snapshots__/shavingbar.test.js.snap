@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Shavingbar test on web:  should render bubble2 1`] = `
-<div
-  aria-disabled="false"
-  aria-pressed="false"
-  class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim rn-touchAction-1gvxusu rn-zIndex-1lgpqti"
-  style="background-color:rgba(255, 255, 255, 0.8);border-top-color:rgb(219,219,219);border-right-color:rgb(219,219,219);border-bottom-color:rgb(219,219,219);border-left-color:rgb(219,219,219);border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;height:40px;margin-left:10px;padding-top:7.5px;padding-right:7.5px;padding-bottom:7.5px;padding-left:7.5px;width:40px"
-  tabindex="0"
-/>
-`;
-
-exports[`Shavingbar test on web:  should render bubble2 2`] = `
+exports[`Shavingbar test on web:  should invoke callback when bubble is clicked 1`] = `
 Array [
   Object {
     "hover": true,

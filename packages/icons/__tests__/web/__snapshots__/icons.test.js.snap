@@ -31,7 +31,6 @@ exports[`Icons test on web IconEmail renders correctly 1`] = `
   <g
     fill="#1D1D1B"
     fillRule="nonzero"
-    stroke="#ffffff"
   >
     <path />
   </g>
@@ -51,7 +50,6 @@ exports[`Icons test on web IconFacebook renders correctly 1`] = `
   <g
     fill="#1D1D1B"
     fillRule="nonzero"
-    stroke="#1D1D1B"
   >
     <path />
   </g>

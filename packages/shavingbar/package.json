@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:all": "yarn test:web --coverage",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "npm run transpile",
@@ -51,7 +51,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "0.7.0",
+    "@times-components/icons": "0.7.2",
     "@times-components/styleguide": "0.6.1",
     "prop-types": "15.6.0"
   },

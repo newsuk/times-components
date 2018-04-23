@@ -2,14 +2,14 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { clean } from "@times-components/utils";
 import Svg, { Path } from "svgs";
-import iconPropTypes from "./proptypes";
+import iconPropTypes from "./prop-types";
 
 const ratio = 75 / 60;
 
 const IconTwitter = ({ title, width, height, fillColour, strokeColour }) => (
   <Svg
     viewBox="-354.2 -279.4 750 600"
-    {...clean({ title, height, width: width || height && height * ratio })}
+    {...clean({ title, height, width: width || height * ratio })}
   >
     <Path
       {...clean({

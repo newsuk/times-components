@@ -57,15 +57,14 @@ describe("Shavingbar test on web: ", () => {
     ]);
   });
 
-  it("should render bubble2", () => {
+  it("should invoke callback when bubble is clicked", () => {
     const render = jest.fn(() => null);
     const tree = shallow(<Bubble render={render} />);
     const Pressable = tree.find("Pressable").dive();
+
     click(Pressable);
-    expect(Pressable.render()).toMatchSnapshot();
 
     expect(render.mock.calls).toHaveLength(5);
-
     expect(render.mock.calls[1]).toMatchSnapshot();
   });
 
