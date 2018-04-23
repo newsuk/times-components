@@ -41,7 +41,7 @@ const ArticleSummary = props => {
         <Byline {...bylineProps} />
       </Text>
     );
-  }
+  };
 
   return (
     <View>
