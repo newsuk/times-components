@@ -1,5 +1,7 @@
-import shared from "../shared";
+import scheduler from "./scheduler";
+import tealium from "./tealium";
 
-describe("Tealium test on web", () => {
-  shared();
+describe("Tealium tests on web", () => {
+  scheduler();
+  tealium();
 });

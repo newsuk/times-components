@@ -16,6 +16,7 @@ import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
 import fullLongArticleFixture from "./fixtures/full-long-article.json";
 import articleWithVideoFixture from "./fixtures/article-with-video-asset.json";
+import articleFixtureBylineAuthor from "./fixtures/article-with-byline-author.json";
 import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
 import articleFixtureNoLabel from "./fixtures/no-label.json";
 import articleFixtureNoAds from "./fixtures/no-ads.json";
@@ -185,6 +186,9 @@ storiesOf("Pages/Article", module)
 
     return <RenderArticle fixture={fullArticleFixture} />;
   })
+  .add("Fixtures - Byline with author profile", () => (
+    <RenderArticle fixture={articleFixtureBylineAuthor} />
+  ))
   .add("Fixtures - No ads", () => (
     <RenderArticle fixture={articleFixtureNoAds} />
   ))

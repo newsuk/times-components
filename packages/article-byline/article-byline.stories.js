@@ -2,6 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
+import { selectV2, withKnobs } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import ArticleByline from "./src/article-byline";
 
@@ -29,20 +30,26 @@ const bylineLinkStyles = {
   }
 };
 
+const getCommonProps = () => ({
+  /* We're using selectV2 over our own select abstraction as
+   * it flips the keys and values. We don't want that behaviour.
+   */
+  colour: selectV2("Section colours", colours.section),
+  onAuthorPress: preventDefaultedAction("onAuthorPress")
+});
+
 storiesOf("Primitives/ArticleByline", module)
+  .addDecorator(withKnobs)
   .add("ArticleByline with a single author", () => (
     <Text style={bylineStyles}>
-      <ArticleByline
-        ast={authorsAST.singleAuthor}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
-      />
+      <ArticleByline ast={authorsAST.singleAuthor} {...getCommonProps()} />
     </Text>
   ))
   .add("ArticleByline with a text only element", () => (
     <Text style={bylineStyles}>
       <ArticleByline
         ast={authorsAST.singleInlineElement}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
+        {...getCommonProps()}
       />
     </Text>
   ))
@@ -50,7 +57,7 @@ storiesOf("Primitives/ArticleByline", module)
     <Text style={bylineStyles}>
       <ArticleByline
         ast={authorsAST.multipleAuthorsCommaSeparated}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
+        {...getCommonProps()}
       />
     </Text>
   ))
@@ -58,16 +65,13 @@ storiesOf("Primitives/ArticleByline", module)
     <Text style={bylineStyles}>
       <ArticleByline
         ast={authorsAST.authorInTheBeginning}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
+        {...getCommonProps()}
       />
     </Text>
   ))
   .add("ArticleByline with author at the end", () => (
     <Text style={bylineStyles}>
-      <ArticleByline
-        ast={authorsAST.authorAtTheEnd}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
-      />
+      <ArticleByline ast={authorsAST.authorAtTheEnd} {...getCommonProps()} />
     </Text>
   ))
   .add("ArticleByline with styles", () => (
@@ -75,7 +79,7 @@ storiesOf("Primitives/ArticleByline", module)
       <ArticleByline
         ast={authorsAST.multipleAuthorsCommaSeparated}
         style={bylineLinkStyles}
-        onAuthorPress={preventDefaultedAction("onAuthorPress")}
+        {...getCommonProps()}
       />
     </Text>
   ));

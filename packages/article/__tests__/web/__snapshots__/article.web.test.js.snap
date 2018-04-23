@@ -501,7 +501,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -1422,7 +1424,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -1565,7 +1569,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -1703,7 +1709,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -2425,7 +2433,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -2470,8 +2480,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2498,8 +2510,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2526,8 +2540,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2554,8 +2570,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2582,8 +2600,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -2721,6 +2741,7 @@ Array [
         >
           <div>
             <div
+              data-testid="video-component"
               style={
                 Object {
                   "height": "100%",
@@ -2729,7 +2750,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
@@ -2802,6 +2822,7 @@ Array [
         >
           <div>
             <div
+              data-testid="video-component"
               style={
                 Object {
                   "height": "100%",
@@ -2810,7 +2831,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
@@ -3497,8 +3517,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3525,8 +3547,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3553,8 +3577,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3581,8 +3607,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3609,8 +3637,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -3911,7 +3941,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -4054,7 +4086,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -4192,7 +4226,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -4770,7 +4806,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -4815,8 +4853,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4843,8 +4883,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4871,8 +4913,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4899,8 +4943,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -4927,8 +4973,10 @@ Array [
                   "borderBottomRightRadius": "1px",
                   "borderTopLeftRadius": "1px",
                   "borderTopRightRadius": "1px",
+                  "paddingBottom": "12px",
                   "paddingLeft": "15px",
                   "paddingRight": "15px",
+                  "paddingTop": "12px",
                 }
               }
             >
@@ -5144,8 +5192,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5172,8 +5222,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5200,8 +5252,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5228,8 +5282,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5256,8 +5312,10 @@ Array [
               "borderBottomRightRadius": "1px",
               "borderTopLeftRadius": "1px",
               "borderTopRightRadius": "1px",
+              "paddingBottom": "12px",
               "paddingLeft": "15px",
               "paddingRight": "15px",
+              "paddingTop": "12px",
             }
           }
         >
@@ -5558,7 +5616,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -5701,7 +5761,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -5839,7 +5901,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -6368,7 +6432,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann
             </span>
           </span>
@@ -6400,6 +6466,7 @@ Array [
         >
           <div>
             <div
+              data-testid="video-component"
               style={
                 Object {
                   "height": "100%",
@@ -6408,7 +6475,6 @@ Array [
               }
             >
               <video
-                autoPlay={false}
                 className="video-js"
                 controls={true}
                 data-account="57838016001"
@@ -7806,7 +7872,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -7949,7 +8017,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -8087,7 +8157,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -8524,7 +8596,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -9233,7 +9307,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -9376,7 +9452,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -9514,7 +9592,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -10006,7 +10086,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -10715,7 +10797,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -10858,7 +10942,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -10996,7 +11082,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -11410,7 +11498,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -12119,7 +12209,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -12262,7 +12354,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -12400,7 +12494,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -12807,7 +12903,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -13516,7 +13614,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -13659,7 +13759,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -13797,7 +13899,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -14305,7 +14409,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -15014,7 +15120,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -15157,7 +15265,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -15295,7 +15405,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -15725,7 +15837,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -16434,7 +16548,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -16577,7 +16693,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -16715,7 +16833,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>
@@ -17200,7 +17320,9 @@ Array [
           <span
             dir="auto"
           >
-            <span>
+            <span
+              dir="auto"
+            >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </span>
           </span>
@@ -17909,7 +18031,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Patrick Kidd
                         </span>
                       </div>
@@ -18052,7 +18176,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Graeme Paton Transport Correspondent
                         </span>
                       </div>
@@ -18190,7 +18316,9 @@ Array [
                       <div
                         dir="auto"
                       >
-                        <span>
+                        <span
+                          dir="auto"
+                        >
                           Jack Malvern Arts Correspondent Dominic Kennedy
                         </span>
                       </div>

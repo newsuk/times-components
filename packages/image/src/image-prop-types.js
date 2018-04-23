@@ -3,14 +3,14 @@ import { ViewPropTypes } from "react-native";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-export const defaultProps = {
-  style: {},
-  uri: "",
-  aspectRatio: undefined
+export const propTypes = {
+  aspectRatio: PropTypes.number,
+  style: ViewPropTypesStyle,
+  uri: PropTypes.string
 };
 
-export const propTypes = {
-  uri: PropTypes.string,
-  aspectRatio: PropTypes.number,
-  style: ViewPropTypesStyle
+export const defaultProps = {
+  aspectRatio: undefined,
+  style: {},
+  uri: ""
 };

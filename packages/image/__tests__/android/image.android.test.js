@@ -1,5 +1,7 @@
-import imageTests from "../image.native.test";
+import shared from "../shared";
+import sharedNative from "../shared-native";
 
-describe("Image test on android", () => {
-  imageTests();
+describe("Image tests on android", () => {
+  shared();
+  sharedNative();
 });

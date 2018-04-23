@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { spacing } from "@times-components/styleguide";
-import BrightcoveVideo from "@times-components/brightcove-video";
+import Video from "@times-components/video";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
@@ -88,7 +88,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       return (
         <View key={key} style={primaryContainer}>
           <AspectRatioContainer aspectRatio="16:9">
-            <BrightcoveVideo
+            <Video
               width="100%"
               height="100%"
               policyKey={brightcovePolicyKey}
