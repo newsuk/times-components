@@ -28,17 +28,17 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: 22,
     fontWeight: "400",
-    lineHeight: 28,
+    lineHeight: 24,
     marginBottom: spacing(1),
-    marginTop: spacing(-1)
+    marginTop: 0
   },
   byline: {
     marginBottom: 0
   },
   opinionByline: {
-    lineHeight: 28,
+    lineHeight: 24,
     marginBottom: 0,
-    marginTop: spacing(-1)
+    marginTop: 0
   }
 };
 

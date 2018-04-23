@@ -249,9 +249,9 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -598,9 +598,9 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -877,9 +877,9 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -1156,9 +1156,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -1345,9 +1345,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -1547,9 +1547,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -1923,9 +1923,9 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -2272,9 +2272,9 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -2461,9 +2461,9 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -2789,9 +2789,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -2978,9 +2978,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -3139,9 +3139,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -3383,9 +3383,9 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 0,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -3414,9 +3414,9 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -3747,9 +3747,9 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 0,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -3778,9 +3778,9 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -4042,9 +4042,9 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -4279,9 +4279,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 0,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -4310,9 +4310,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -4574,9 +4574,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
@@ -4735,9 +4735,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 28,
+                        "lineHeight": 24,
                         "marginBottom": 5,
-                        "marginTop": -5,
+                        "marginTop": 0,
                       }
                     }
                   >
