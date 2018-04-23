@@ -4533,8 +4533,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4619,7 +4620,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4734,8 +4735,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4807,7 +4809,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4922,8 +4924,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4995,7 +4998,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >

@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { select } from "@times-components/storybook";
 import OpinionAndTwoSlice from "./src/templates/opinionandtwo";
@@ -33,18 +33,20 @@ const createSupportItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module).add("Opinion and two", () => (
-  <OpinionAndTwoSlice
-    opinion={() => (
-      <View
-        id="opinion"
-        style={{
-          minHeight: 150,
-          backgroundColor: "red"
-        }}
-      />
-    )}
-    renderSupports={() =>
-      createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
-    }
-  />
+  <ScrollView>
+    <OpinionAndTwoSlice
+      opinion={() => (
+        <View
+          id="opinion"
+          style={{
+            minHeight: 150,
+            backgroundColor: "red"
+          }}
+        />
+      )}
+      renderSupports={() =>
+        createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
+      }
+    />
+  </ScrollView>
 ));

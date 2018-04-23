@@ -18,6 +18,11 @@ export const getContainer = ({ supportCount }) => {
     mediumUp: () => `
       flex-direction: row;
       width: ${supportCount === 1 ? "100%" : config.mediumBpWidth};
+
+      a {
+        display: block;
+        height: 100%;
+      }
     `,
     wideUp: () => `
       width: ${supportCount === 0 ? config.wideBpWidth : "100%"};
@@ -61,6 +66,9 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
       return `
         ${hasSupports ? withSupportsStyle : withoutSupportsStyle}
         ${supportCount === 2 ? twoSupportStyle : ``}
+        a > div, a > div > div {
+          height: 100%;
+        }
       `;
     },
     wideUp: () => `
@@ -113,11 +121,11 @@ export const getSupportsContainer = ({ supportCount }) => {
     `,
     mediumUp: () => {
       const twoSupportStyle = `
-        flex-direction: row;
         min-width: 100%;
       `;
       return `
         flex-basis: 0 !important;
+        flex-direction: row;
         ${supportCount === 2 ? twoSupportStyle : ``};
       `;
     },
