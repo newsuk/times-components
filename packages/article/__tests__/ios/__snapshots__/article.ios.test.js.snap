@@ -1815,7 +1815,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
                     }
                   }
                   style={
@@ -2042,7 +2042,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
                     }
                   }
                   style={
@@ -2302,7 +2302,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                               onLoad={[Function]}
                               source={
                                 Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
+                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
                                 }
                               }
                               style={
@@ -2402,7 +2402,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
                         }
                       }
                       style={
@@ -5222,7 +5222,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
                     }
                   }
                   style={
@@ -5721,7 +5721,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                               onLoad={[Function]}
                               source={
                                 Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
+                                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264",
                                 }
                               }
                               style={
@@ -5821,7 +5821,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264",
                         }
                       }
                       style={
