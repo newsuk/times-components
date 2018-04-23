@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.69.0"></a>
+# [0.69.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.68.7...@times-components/article@0.69.0) (2018-04-23)
+
+
+### Features
+
+* paidOnly videos and new video package ([#889](https://github.com/newsuk/times-components/issues/889)) ([2e57f4b](https://github.com/newsuk/times-components/commit/2e57f4b))
+
+
+
+
 <a name="0.68.7"></a>
 ## [0.68.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.68.6...@times-components/article@0.68.7) (2018-04-20)
 

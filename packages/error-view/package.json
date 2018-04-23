@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Handles errors",
   "main": "dist/error-view",
   "dev": "src/error-view",
@@ -37,9 +37,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
-    "@times-components/video": "1.0.0",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.6.0",
+    "@times-components/jest-configurator": "0.6.1",
+    "@times-components/video": "1.1.0",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -55,7 +55,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.6.0",
+    "@times-components/styleguide": "0.6.1",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
