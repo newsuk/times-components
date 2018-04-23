@@ -23,16 +23,16 @@ const Video = ({
   width,
   height,
   onVideoPress,
-  brightcoveAccountId,
-  brightcovePolicyKey,
-  brightcoveVideoId
+  accountId,
+  policyKey,
+  videoId
 }) => (
   <Touchable
     onPress={e => {
       onVideoPress(e, {
-        brightcoveAccountId,
-        brightcovePolicyKey,
-        brightcoveVideoId
+        accountId,
+        policyKey,
+        videoId
       });
     }}
     testID="splash-component"
