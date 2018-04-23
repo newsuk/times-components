@@ -1834,7 +1834,12 @@ exports[`Article tests on android should render a full article 1`] = `
         <View
           accessibilityLabel="splash-component"
           accessible={true}
-          isTVSelectable={true}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1844,7 +1849,6 @@ exports[`Article tests on android should render a full article 1`] = `
           style={
             Object {
               "height": 421.875,
-              "opacity": 1,
               "width": 750,
             }
           }
@@ -2083,7 +2087,12 @@ exports[`Article tests on android should render a full article 1`] = `
         <View
           accessibilityLabel="splash-component"
           accessible={true}
-          isTVSelectable={true}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -2093,7 +2102,6 @@ exports[`Article tests on android should render a full article 1`] = `
           style={
             Object {
               "height": 421.875,
-              "opacity": 1,
               "width": 750,
             }
           }
@@ -5411,7 +5419,12 @@ exports[`Article tests on android should render an article with a video asset 1`
         <View
           accessibilityLabel="splash-component"
           accessible={true}
-          isTVSelectable={true}
+          nativeBackgroundAndroid={
+            Object {
+              "attribute": "selectableItemBackground",
+              "type": "ThemeAttrAndroid",
+            }
+          }
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -5421,7 +5434,6 @@ exports[`Article tests on android should render an article with a video asset 1`
           style={
             Object {
               "height": 421.875,
-              "opacity": 1,
               "width": 750,
             }
           }
