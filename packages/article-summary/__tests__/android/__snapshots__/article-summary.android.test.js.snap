@@ -108,8 +108,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -212,6 +211,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -239,8 +243,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -417,6 +420,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -444,8 +452,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -563,6 +570,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -590,8 +602,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -658,8 +669,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -812,6 +822,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -906,8 +921,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -992,6 +1006,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -1019,8 +1038,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -1171,6 +1189,11 @@ exports[`Article Summary tests on Android should render an article-summary compo
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>
@@ -1198,8 +1221,7 @@ exports[`Article Summary tests on Android should render an article-summary with 
           "fontSize": 12,
           "fontWeight": "400",
           "letterSpacing": 1.2,
-          "marginBottom": -4,
-          "paddingTop": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -1239,6 +1261,11 @@ exports[`Article Summary tests on Android should render an article-summary with 
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+        }
+      }
     >
       , Environment Editor
     </Text>

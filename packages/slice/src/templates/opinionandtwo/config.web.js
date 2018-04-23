@@ -14,7 +14,7 @@ export const getOpinionConfig = ({ itemCount }) => ({
   headlineClass: "opinionHeadlineClass",
   imageConfig: {
     cropSize: "23",
-    imageRatio: 2 / 3
+    imageRatio: 308 / 502
   },
   imageContainerClass: "opinionImageContainerClass",
   isOpinionByline: true,
@@ -38,9 +38,9 @@ export const getConfigWrapper = ({ supportCount }) => {
         min-height: 250px;
       }
       .opinionImageContainerClass {
-        bottom: 0;
-        margin-bottom: ${spacing(1)};
-        min-width: 115px;
+        align-self: flex-end;
+        bottom: -9px;
+        min-width: 100px;
         position: absolute;
         right: 0;
       }
@@ -71,7 +71,7 @@ export const getConfigWrapper = ({ supportCount }) => {
       };
       return `
         .opinionContentContainerClass {
-          min-height: 180px;
+          min-height: 200px;
         }
         .opinionImageContainerClass {
           ${getOpinionImageStyle()}
@@ -93,7 +93,6 @@ export const getConfigWrapper = ({ supportCount }) => {
           min-width: 165px;
         `;
         return `
-          margin-bottom: ${spacing(2)};
           min-width: 152px;
         `;
       };
@@ -139,10 +138,9 @@ export const getConfigWrapper = ({ supportCount }) => {
           padding-right: ${spacing(11)};
         }
         .opinionImageContainerClass {
+          max-width: 167px;
           min-width: auto;
           position: relative;
-          margin-bottom: ${spacing(-2)};
-          max-width: 167px;
           ${getOpinionImageStyle()}
         }
 
@@ -154,17 +152,6 @@ export const getConfigWrapper = ({ supportCount }) => {
       `;
     },
     wideUp: () => {
-      const getOpinionImageStyle = () => {
-        if (supportCount === 0) return ``;
-        if (supportCount === 1)
-          return `
-          min-width: 226px;
-        `;
-        return `
-          min-width: 177px;
-        `;
-      };
-
       const summaryStyle = `
         .opinionSummary125Class,
         .opinionSummary145Class {
@@ -175,13 +162,7 @@ export const getConfigWrapper = ({ supportCount }) => {
         }
       `;
 
-      return `
-        .opinionImageContainerClass {
-          ${getOpinionImageStyle()}
-        }
-
-        ${supportCount === 1 ? summaryStyle : ``}
-      `;
+      return supportCount === 1 ? summaryStyle : ``;
     }
   });
   ConfigWrapper.displayName = "ConfigWrapper";

@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Article Byline test on web renders correctly with a section colour 1`] = `
+<a
+  dir="auto"
+  href="/profile/alexandra-frean"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="link"
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  Alexandra Frean
+</a>
+`;
+
 exports[`Article Byline test on web renders correctly with a single author 1`] = `
 <a
   dir="auto"
@@ -13,9 +30,11 @@ exports[`Article Byline test on web renders correctly with a single author 1`] =
 `;
 
 exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
-<span>
+<div
+  dir="auto"
+>
   Lindsay McIntosh Scottish Political Editor
-</span>
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
@@ -31,9 +50,11 @@ Array [
   >
     Camilla Long
   </a>,
-  <span>
+  <div
+    dir="auto"
+  >
      
-  </span>,
+  </div>,
   <a
     dir="auto"
     href="/profile/mike-atherton"
@@ -43,9 +64,11 @@ Array [
   >
     Mike Atherton
   </a>,
-  <span>
+  <div
+    dir="auto"
+  >
      
-  </span>,
+  </div>,
   <a
     dir="auto"
     href="/profile/alexandra-frean"
@@ -69,9 +92,11 @@ Array [
   >
     Camilla Long
   </a>,
-  <span>
+  <div
+    dir="auto"
+  >
     , 
-  </span>,
+  </div>,
   <a
     dir="auto"
     href="/profile/mike-atherton"
@@ -81,9 +106,11 @@ Array [
   >
     Mike Atherton
   </a>,
-  <span>
+  <div
+    dir="auto"
+  >
     , 
-  </span>,
+  </div>,
   <a
     dir="auto"
     href="/profile/alexandra-frean"
@@ -115,9 +142,11 @@ exports[`Article Byline test on web renders correctly with styles 1`] = `
 
 exports[`Article Byline test on web renders correctly with the author at the end 1`] = `
 Array [
-  <span>
+  <div
+    dir="auto"
+  >
     RBS Six Nations 
-  </span>,
+  </div>,
   <a
     dir="auto"
     href="/profile/mike-atherton"
@@ -141,8 +170,10 @@ Array [
   >
     Camilla Long
   </a>,
-  <span>
+  <div
+    dir="auto"
+  >
     , Environment Editor
-  </span>,
+  </div>,
 ]
 `;

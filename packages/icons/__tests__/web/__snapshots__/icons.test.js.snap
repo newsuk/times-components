@@ -1,45 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons test on web Diamond renders correctly 1`] = `
+exports[`Icons test on web IconDiamond renders correctly 1`] = `
 <svg
+  aria-label="[title]"
   height={50}
+  role="img"
   width={50}
 >
+  <title>
+    IconDiamond
+  </title>
   <g
-    fill="#4D4D4D"
+    fill="#1D1D1B"
   >
     <path />
   </g>
 </svg>
 `;
 
-exports[`Icons test on web Twitter renders correctly 1`] = `
+exports[`Icons test on web IconEmail renders correctly 1`] = `
 <svg
+  aria-label="[title]"
   height={50}
+  role="img"
   width={50}
 >
+  <title>
+    IconEmail
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
+  >
+    <path />
+  </g>
+</svg>
+`;
+
+exports[`Icons test on web IconFacebook renders correctly 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={50}
+>
+  <title>
+    IconFacebook
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
+  >
+    <path />
+  </g>
+</svg>
+`;
+
+exports[`Icons test on web IconStar renders correctly 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={50}
+>
+  <title>
+    IconStar
+  </title>
+  <polygon
+    fill="#1D1D1B"
+  />
+</svg>
+`;
+
+exports[`Icons test on web IconTwitter renders correctly 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={50}
+>
+  <title>
+    IconTwitter
+  </title>
   <path
     fill="#006699"
   />
 </svg>
 `;
 
-exports[`Icons test on web Twitter renders correctly with different fillColour 1`] = `
+exports[`Icons test on web IconVideo renders correctly 1`] = `
 <svg
+  aria-label="[title]"
   height={50}
+  role="img"
   width={50}
 >
-  <path
-    fill="#4D4D4D"
-  />
-</svg>
-`;
-
-exports[`Icons test on web Video renders correctly 1`] = `
-<svg
-  height={50}
-  width={50}
->
+  <title>
+    IconVideo
+  </title>
   <rect
     fill="#1D1D1B"
     height="13.5721404"
@@ -52,27 +110,6 @@ exports[`Icons test on web Video renders correctly 1`] = `
   />
   <polygon
     fill="#1D1D1B"
-  />
-</svg>
-`;
-
-exports[`Icons test on web Video renders correctly with different fillColour 1`] = `
-<svg
-  height={50}
-  width={50}
->
-  <rect
-    fill="#4D4D4D"
-    height="13.5721404"
-    width="15.4550103"
-    x="0.154639175"
-    y="0.139754386"
-  />
-  <polygon
-    fill="#4D4D4D"
-  />
-  <polygon
-    fill="#4D4D4D"
   />
 </svg>
 `;

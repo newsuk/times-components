@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 
-const TimesImage = ({ uri, aspectRatio, style }) => {
+const TimesImage = ({ aspectRatio, style, uri }) => {
   const styles = {
     wrapper: {
       height: 0,
@@ -22,20 +22,17 @@ const TimesImage = ({ uri, aspectRatio, style }) => {
     img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
   };
 
-  const boundedImg = (
-    <div style={styles.wrapper}>
-      <img src={uri} style={styles.img} alt="" />
-      <Placeholder style={styles.placeholder} />
-    </div>
+  return (
+    <View style={style}>
+      <div style={styles.wrapper}>
+        <img src={uri} style={styles.img} alt="" />
+        <Placeholder style={styles.placeholder} />
+      </div>
+    </View>
   );
-
-  // divs cannot be styled with the output of Stylesheet.create()
-  // only react native Views accept those ids
-  return style ? <View style={style}>{boundedImg}</View> : boundedImg;
 };
 
-TimesImage.defaultProps = defaultProps;
-
 TimesImage.propTypes = propTypes;
+TimesImage.defaultProps = defaultProps;
 
 export default TimesImage;

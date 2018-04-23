@@ -1,28 +1,12 @@
 import React, { Component } from "react";
-import { Modal, View, StyleSheet } from "react-native";
-import Button from "@times-components/link";
-import Gestures from "@times-components/gestures";
-import { colours } from "@times-components/styleguide";
+import { Modal, View } from "react-native";
 import Svg, { Path, G } from "svgs";
+import Gestures from "@times-components/gestures";
+import Button from "@times-components/link";
+import { colours } from "@times-components/styleguide";
 import Image from "./image";
 import { defaultProps, propTypes } from "./image-prop-types";
-
-const style = StyleSheet.create({
-  modal: {
-    backgroundColor: colours.functional.brandColour,
-    width: "100%",
-    height: "100%",
-    flexDirection: "column"
-  },
-  imageContainer: {
-    flexGrow: 1,
-    justifyContent: "center"
-  },
-  image: {
-    width: "100%",
-    opacity: 1
-  }
-});
+import styles from "../styles";
 
 class ModalImage extends Component {
   constructor(props) {
@@ -59,10 +43,10 @@ class ModalImage extends Component {
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
         >
-          <View style={style.modal}>
+          <View style={styles.modal}>
             <Button onPress={this.hideModal}>{closeButton}</Button>
-            <Gestures style={style.imageContainer}>
-              <Image {...this.props} style={style.image} />
+            <Gestures style={styles.imageContainer}>
+              <Image {...this.props} style={styles.image} />
             </Gestures>
           </View>
         </Modal>

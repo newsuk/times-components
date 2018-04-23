@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineVideoPlayer renders correctly if the script fails to load 1`] = `
+<div
+  style={
+    Object {
+      "height": "200px",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    dir="auto"
+  >
+    Something's gone wrong
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ jHdYsY"
+    dir="auto"
+  >
+    Please check your network
+    
+
+    connection and refresh the page
+  </div>
+</div>
+`;

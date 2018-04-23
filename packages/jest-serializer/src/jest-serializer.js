@@ -11,7 +11,10 @@ function getType({ type }) {
   if (type instanceof Function) {
     return type.name.toLowerCase();
   }
-  return type.toLowerCase();
+  if (typeof type === "string") {
+    return type.toLowerCase();
+  }
+  return typeof type;
 }
 
 function cleanSvgProps(node, props) {

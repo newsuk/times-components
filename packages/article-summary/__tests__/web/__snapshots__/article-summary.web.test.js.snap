@@ -167,7 +167,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -286,7 +288,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -392,7 +396,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -577,7 +583,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -716,7 +724,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -853,7 +863,9 @@ exports[`Article Summary tests on Web should render an article-summary component
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>
@@ -896,7 +908,9 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     >
       Camilla Long
     </a>
-    <span>
+    <span
+      dir="auto"
+    >
       , Environment Editor
     </span>
   </div>

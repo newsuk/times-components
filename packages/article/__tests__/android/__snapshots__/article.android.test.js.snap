@@ -1496,8 +1496,7 @@ exports[`Article tests on android should render a full article 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -1703,6 +1702,11 @@ exports[`Article tests on android should render a full article 1`] = `
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -1844,7 +1848,14 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              nativeBackgroundAndroid={
+                Object {
+                  "attribute": "selectableItemBackground",
+                  "type": "ThemeAttrAndroid",
+                }
+              }
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -1857,62 +1868,152 @@ exports[`Article tests on android should render a full article 1`] = `
                   "width": "100%",
                 }
               }
+              testID="splash-component"
             >
               <View
-                accessibilityLabel="splash-component"
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                />
                 <View
                   style={
                     Object {
-                      "alignItems": "center",
-                      "flex": 1,
                       "height": "100%",
-                      "justifyContent": "center",
-                      "left": 0,
-                      "position": "absolute",
-                      "top": 0,
                       "width": "100%",
                     }
                   }
                 >
-                  <View>
-                    <svg
-                      height={70}
-                      width={70}
+                  <Image
+                    onLoad={[Function]}
+                    source={
+                      Object {
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&preview=true",
+                      }
+                    }
+                    style={
+                      Object {
+                        "bottom": 0,
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      <rect
-                        fill="rgba(0,0,0)"
-                        fillOpacity="0.4"
-                        height="100"
-                        stroke="rgb(255,255,255)"
-                        strokeWidth="8"
-                        width="100"
-                      />
-                      <polygon
-                        fill="rgb(255,255,255)"
-                      />
-                    </svg>
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
                   </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "height": "100%",
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View>
+                  <svg
+                    height={70}
+                    width={70}
+                  >
+                    <rect
+                      fill="rgba(0,0,0)"
+                      fillOpacity="0.4"
+                      height="100"
+                      stroke="rgb(255,255,255)"
+                      strokeWidth="8"
+                      width="100"
+                    />
+                    <polygon
+                      fill="rgb(255,255,255)"
+                    />
+                  </svg>
                 </View>
               </View>
             </View>
@@ -2019,7 +2120,14 @@ exports[`Article tests on android should render a full article 1`] = `
             }
           >
             <View
+              accessibilityLabel="splash-component"
               accessible={true}
+              nativeBackgroundAndroid={
+                Object {
+                  "attribute": "selectableItemBackground",
+                  "type": "ThemeAttrAndroid",
+                }
+              }
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
@@ -2032,62 +2140,152 @@ exports[`Article tests on android should render a full article 1`] = `
                   "width": "100%",
                 }
               }
+              testID="splash-component"
             >
               <View
-                accessibilityLabel="splash-component"
                 style={
                   Object {
                     "height": "100%",
                     "width": "100%",
                   }
                 }
-                testID="splash-component"
               >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                    }
-                  }
-                  style={
-                    Object {
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                />
                 <View
                   style={
                     Object {
-                      "alignItems": "center",
-                      "flex": 1,
                       "height": "100%",
-                      "justifyContent": "center",
-                      "left": 0,
-                      "position": "absolute",
-                      "top": 0,
                       "width": "100%",
                     }
                   }
                 >
-                  <View>
-                    <svg
-                      height={70}
-                      width={70}
+                  <Image
+                    onLoad={[Function]}
+                    source={
+                      Object {
+                        "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&preview=true",
+                      }
+                    }
+                    style={
+                      Object {
+                        "bottom": 0,
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      <rect
-                        fill="rgba(0,0,0)"
-                        fillOpacity="0.4"
-                        height="100"
-                        stroke="rgb(255,255,255)"
-                        strokeWidth="8"
-                        width="100"
-                      />
-                      <polygon
-                        fill="rgb(255,255,255)"
-                      />
-                    </svg>
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
                   </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "height": "100%",
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View>
+                  <svg
+                    height={70}
+                    width={70}
+                  >
+                    <rect
+                      fill="rgba(0,0,0)"
+                      fillOpacity="0.4"
+                      height="100"
+                      stroke="rgb(255,255,255)"
+                      strokeWidth="8"
+                      width="100"
+                    />
+                    <polygon
+                      fill="rgb(255,255,255)"
+                    />
+                  </svg>
                 </View>
               </View>
             </View>
@@ -3725,8 +3923,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -3932,6 +4129,11 @@ exports[`Article tests on android should render a smaller article 1`] = `
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -4545,8 +4747,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4565,8 +4766,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -4649,6 +4851,11 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            style={
+                              Object {
+                                "color": "#333333",
+                              }
+                            }
                           >
                             Patrick Kidd
                           </Text>
@@ -4743,8 +4950,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4763,8 +4969,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -4834,6 +5041,11 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            style={
+                              Object {
+                                "color": "#333333",
+                              }
+                            }
                           >
                             Graeme Paton Transport Correspondent
                           </Text>
@@ -4928,8 +5140,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
                                 "fontSize": 12,
                                 "fontWeight": "400",
                                 "letterSpacing": 1.2,
-                                "marginBottom": -4,
-                                "paddingTop": 5,
+                                "marginBottom": 0,
                               }
                             }
                           >
@@ -4948,8 +5159,9 @@ exports[`Article tests on android should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 28,
                               "marginBottom": 5,
+                              "marginTop": -5,
                             }
                           }
                         >
@@ -5019,6 +5231,11 @@ exports[`Article tests on android should render a smaller article 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            style={
+                              Object {
+                                "color": "#333333",
+                              }
+                            }
                           >
                             Jack Malvern Arts Correspondent Dominic Kennedy
                           </Text>
@@ -5236,6 +5453,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="leadAsset"
       >
         <View
+          accessibilityLabel="splash-component"
           accessible={true}
           nativeBackgroundAndroid={
             Object {
@@ -5249,63 +5467,158 @@ exports[`Article tests on android should render an article with a video asset 1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
-          pointerEvents="box-only"
+          style={
+            Object {
+              "height": 421.875,
+              "width": 750,
+            }
+          }
+          testID="splash-component"
         >
           <View
-            accessibilityLabel="splash-component"
             style={
               Object {
                 "height": 421.875,
                 "width": 750,
               }
             }
-            testID="splash-component"
           >
-            <Image
-              source={
-                Object {
-                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
-                }
-              }
-              style={
-                Object {
-                  "height": 421.875,
-                  "width": 750,
-                }
-              }
-            />
             <View
               style={
                 Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "height": 421.875,
-                  "justifyContent": "center",
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 750,
+                  "height": "100%",
+                  "width": "100%",
                 }
               }
             >
-              <View>
-                <svg
-                  height={70}
-                  width={70}
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&preview=true",
+                  }
+                }
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                    }
+                  }
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
                 >
-                  <rect
-                    fill="rgba(0,0,0)"
-                    fillOpacity="0.4"
-                    height="100"
-                    stroke="rgb(255,255,255)"
-                    strokeWidth="8"
-                    width="100"
-                  />
-                  <polygon
-                    fill="rgb(255,255,255)"
-                  />
-                </svg>
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
               </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "height": 421.875,
+                "justifyContent": "center",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": 750,
+              }
+            }
+          >
+            <View>
+              <svg
+                height={70}
+                width={70}
+              >
+                <rect
+                  fill="rgba(0,0,0)"
+                  fillOpacity="0.4"
+                  height="100"
+                  stroke="rgb(255,255,255)"
+                  strokeWidth="8"
+                  width="100"
+                />
+                <polygon
+                  fill="rgb(255,255,255)"
+                />
+              </svg>
             </View>
           </View>
         </View>
@@ -5445,6 +5758,11 @@ exports[`Article tests on android should render an article with a video asset 1`
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann
             </Text>
@@ -7286,8 +7604,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -9043,8 +9360,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -9133,6 +9449,11 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -10896,6 +11217,11 @@ exports[`Article tests on android should render an article with no label 1`] = `
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -12539,6 +12865,11 @@ exports[`Article tests on android should render an article with no label and no 
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -14163,6 +14494,11 @@ exports[`Article tests on android should render an article with no label, no fla
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -15748,8 +16084,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -15936,6 +16271,11 @@ exports[`Article tests on android should render an article with no standfirst 1`
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -17518,8 +17858,7 @@ exports[`Article tests on android should render an article with no standfirst an
                 "fontSize": 12,
                 "fontWeight": "400",
                 "letterSpacing": 1.2,
-                "marginBottom": -4,
-                "paddingTop": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -17589,6 +17928,11 @@ exports[`Article tests on android should render an article with no standfirst an
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
@@ -19333,6 +19677,11 @@ exports[`Article tests on android should render an article with no standfirst an
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#006699",
+                }
+              }
             >
               Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
             </Text>
