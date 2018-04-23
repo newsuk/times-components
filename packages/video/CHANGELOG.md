@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# 1.1.0 (2018-04-23)
+
+
+### Features
+
+* paidOnly videos and new video package ([#889](https://github.com/newsuk/times-components/issues/889)) ([2e57f4b](https://github.com/newsuk/times-components/commit/2e57f4b))
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.1.19...@times-components/brightcove-video@2.2.0) (2018-04-17)
 
