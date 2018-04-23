@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { renderTrees } from "@times-components/markup";
-import BrightcoveVideo from "@times-components/brightcove-video";
+import Video from "@times-components/video";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
@@ -68,7 +68,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       return (
         <MediaWrapper key={key}>
           <AspectRatioContainer aspectRatio="16:9">
-            <BrightcoveVideo
+            <Video
               width="100%"
               height="100%"
               policyKey={brightcovePolicyKey}

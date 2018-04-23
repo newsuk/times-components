@@ -88,3 +88,127 @@ exports[`Storybook Decorator tests on iOS should render a White Background Decor
   </Text>
 </View>
 `;
+
+exports[`The showcase converter should add a decorator between stories 1`] = `
+Array [
+  Object {
+    "component": <div>
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+  <div>
+    Some decorator
+  </div>,
+  Object {
+    "component": <div>
+      Hello World Again!
+    </div>,
+    "name": "My Story 2",
+  },
+]
+`;
+
+exports[`The showcase converter should add a single story 1`] = `
+Array [
+  Object {
+    "component": <div>
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;
+
+exports[`The showcase converter should add a story with a decorator 1`] = `
+Array [
+  <div>
+    Some decorator
+  </div>,
+  Object {
+    "component": <div>
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;
+
+exports[`The showcase converter should add two stories 1`] = `
+Array [
+  Object {
+    "component": <div>
+      Hello World!
+    </div>,
+    "name": "My Story 1",
+  },
+  Object {
+    "component": <div>
+      Hello World Again!
+    </div>,
+    "name": "My Story 2",
+  },
+]
+`;
+
+exports[`The showcase converter should filter stories by platform 1`] = `
+Array [
+  Object {
+    "component": <div>
+      All!
+    </div>,
+    "name": "All platforms",
+  },
+  Object {
+    "component": <div>
+      iOS!
+    </div>,
+    "name": "iOS only",
+  },
+  Object {
+    "component": <div>
+      Native!
+    </div>,
+    "name": "Native only",
+  },
+]
+`;
+
+exports[`The showcase converter should provide the action to a story 1`] = `
+Array [
+  Object {
+    "component": <div
+      onPress={undefined}
+    >
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;
+
+exports[`The showcase converter should provide the color knob to a story 1`] = `
+Array [
+  Object {
+    "component": <div
+      color="red"
+    >
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;
+
+exports[`The showcase converter should provide the select knob to a story 1`] = `
+Array [
+  Object {
+    "component": <div
+      color="red"
+    >
+      Hello World!
+    </div>,
+    "name": "My Story",
+  },
+]
+`;

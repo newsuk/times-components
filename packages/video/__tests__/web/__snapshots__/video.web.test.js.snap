@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video on web renders a non-paidOnly video correctly for paid users 1`] = `
+<div
+  data-testid="video-component"
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-5"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Video on web renders a non-paidOnly video correctly for unpaid users 1`] = `
+<div
+  data-testid="video-component"
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-4"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Video on web renders a paidOnly video correctly for paid users 1`] = `
+<div
+  data-testid="video-component"
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-3"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Video on web renders a paidOnly video correctly for unpaid users 1`] = `
+<div
+  style={
+    Object {
+      "height": "200px",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "table",
+        "height": 0,
+        "overflow": "hidden",
+        "paddingBottom": "NaN%",
+      }
+    }
+  >
+    <img
+      alt=""
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style={
+        Object {
+          "display": "block",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    />
+    <div>
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Video on web renders a play icon correctly 1`] = `
+<div>
+  <svg
+    height={70}
+    width={70}
+  >
+    <rect
+      fill="rgba(0,0,0)"
+      fillOpacity="0.4"
+      height="100"
+      stroke="rgb(255,255,255)"
+      strokeWidth="8"
+      width="100"
+    />
+    <polygon
+      fill="rgb(255,255,255)"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Video on web renders correctly 1`] = `
+<div
+  data-testid="video-component"
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-1"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Video on web renders correctly without a poster image 1`] = `
+<div
+  data-testid="video-component"
+  style={
+    Object {
+      "height": 200,
+      "width": 300,
+    }
+  }
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-2"
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  />
+</div>
+`;

@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Splash } from "@times-components/brightcove-video";
-import { normaliseWidth, screenWidthInPixels } from "@times-components/utils";
-import Button from "@times-components/link";
+import { screenWidth } from "@times-components/utils";
+import Video from "@times-components/video";
 import cropPropTypes from "./crop-proptypes";
 
 const ArticleLeadAssetVideo = ({
@@ -15,21 +14,19 @@ const ArticleLeadAssetVideo = ({
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  const width = normaliseWidth(screenWidthInPixels());
+  const width = screenWidth();
   const height = width / aspectRatio;
 
   return (
-    <Button
-      onPress={e =>
-        onVideoPress(e, {
-          brightcoveAccountId,
-          brightcovePolicyKey,
-          brightcoveVideoId
-        })
-      }
-    >
-      <Splash poster={{ uri: imageUrl }} width={width} height={height} />
-    </Button>
+    <Video
+      accountId={brightcoveAccountId}
+      policyKey={brightcovePolicyKey}
+      videoId={brightcoveVideoId}
+      poster={{ uri: imageUrl }}
+      width={width}
+      height={height}
+      onVideoPress={onVideoPress}
+    />
   );
 };
 

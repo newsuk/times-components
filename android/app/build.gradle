@@ -149,18 +149,14 @@ android {
 
 repositories {
     jcenter()
-    maven {
-        url "http://repo.brightcove.com/releases"
-    }
 }
 
 dependencies {
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-svg')
-    implementation (project(':react-native-device-info')){
+    implementation (project(':react-native-device-info')) {
       exclude group: "com.google.android.gms"
-   }
-    implementation project(path: ':rntbrightcovevideo')
+    }
     implementation "com.facebook.react:react-native:0.54.+"  // From node_modules
     implementation "com.facebook.stetho:stetho:1.5.0"
 }
