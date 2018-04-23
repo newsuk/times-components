@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.6.1",
+    "@times-components/utils": "0.7.1",
     "prop-types": "15.6.0",
     "svgs": "3.2.1"
   },
