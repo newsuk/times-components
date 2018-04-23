@@ -499,7 +499,6 @@ exports[`AuthorProfile test on web renders profile 1`] = `
           >
             <path
               fill="#006699"
-              stroke="#006699"
             />
           </svg>
           <a
@@ -955,7 +954,6 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
           >
             <path
               fill="#006699"
-              stroke="#006699"
             />
           </svg>
           <a
@@ -2559,7 +2557,6 @@ exports[`AuthorProfile test on web renders the author head 1`] = `
         >
           <path
             fill="#006699"
-            stroke="#006699"
           />
         </svg>
         <a

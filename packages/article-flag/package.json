@@ -54,7 +54,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "0.7.1",
+    "@times-components/icons": "0.7.0",
     "@times-components/styleguide": "0.6.1",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",

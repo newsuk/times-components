@@ -16,18 +16,15 @@ exports[`Video Label test on android renders VideoLabel with an explicit title 1
     <rect
       fill="#1D1D1B"
       height="13.5721404"
-      stroke="#1D1D1B"
       width="15.4550103"
       x="0.154639175"
       y="0.139754386"
     />
     <polygon
       fill="#1D1D1B"
-      stroke="#1D1D1B"
     />
     <polygon
       fill="#1D1D1B"
-      stroke="#1D1D1B"
     />
   </svg>
   <Text
@@ -71,18 +68,15 @@ exports[`Video Label test on android renders VideoLabel without an explicit titl
     <rect
       fill="#1D1D1B"
       height="13.5721404"
-      stroke="#1D1D1B"
       width="15.4550103"
       x="0.154639175"
       y="0.139754386"
     />
     <polygon
       fill="#1D1D1B"
-      stroke="#1D1D1B"
     />
     <polygon
       fill="#1D1D1B"
-      stroke="#1D1D1B"
     />
   </svg>
   <Text

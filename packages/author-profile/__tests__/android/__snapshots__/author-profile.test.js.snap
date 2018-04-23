@@ -442,7 +442,6 @@ exports[`AuthorProfile test on android renders profile 1`] = `
                 >
                   <path
                     fill="#006699"
-                    stroke="#006699"
                   />
                 </svg>
                 <Text
@@ -2022,7 +2021,6 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
                 >
                   <path
                     fill="#006699"
-                    stroke="#006699"
                   />
                 </svg>
                 <Text
@@ -5654,7 +5652,6 @@ exports[`AuthorProfile test on android renders the author head 1`] = `
         >
           <path
             fill="#006699"
-            stroke="#006699"
           />
         </svg>
         <Text

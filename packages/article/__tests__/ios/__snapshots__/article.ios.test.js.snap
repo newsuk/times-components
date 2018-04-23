@@ -1517,7 +1517,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -1572,7 +1571,6 @@ exports[`Article tests on ios should render a full article 1`] = `
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -3775,7 +3773,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -3830,7 +3827,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -4107,7 +4103,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                   >
                     <path
                       fill="#006699"
-                      stroke="#006699"
                     />
                   </svg>
                   <Text
@@ -5403,18 +5398,15 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               <rect
                 fill="#1D1D1B"
                 height="13.5721404"
-                stroke="#1D1D1B"
                 width="15.4550103"
                 x="0.154639175"
                 y="0.139754386"
               />
               <polygon
                 fill="#1D1D1B"
-                stroke="#1D1D1B"
               />
               <polygon
                 fill="#1D1D1B"
-                stroke="#1D1D1B"
               />
             </svg>
             <Text
@@ -7309,7 +7301,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -7364,7 +7355,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -10586,7 +10576,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -10641,7 +10630,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -15446,7 +15434,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -15501,7 +15488,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -18724,7 +18710,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 >
                   <g
                     fill="#E34605"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
@@ -18779,7 +18764,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 >
                   <g
                     fill="#C51D24"
-                    stroke="#1D1D1B"
                   >
                     <path />
                   </g>
