@@ -16,6 +16,7 @@ import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
 export default () => {
+
   const realIntl = Intl;
 
   const adConfig = {
@@ -296,33 +297,4 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should track page view", () => {
-    const stream = jest.fn();
-
-    const { topics } = fullArticleFixture.data.article;
-    renderer.create(
-      <Article
-        {...fullArticleFixture.data}
-        analyticsStream={stream}
-        adConfig={adConfig}
-        onRelatedArticlePress={() => {}}
-        onAuthorPress={() => {}}
-        onVideoPress={() => {}}
-        onLinkPress={() => {}}
-      />
-    );
-    expect(stream).toHaveBeenCalledWith({
-      object: "Article",
-      component: "Page",
-      action: "Viewed",
-      attrs: expect.objectContaining({
-        headline:
-          "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
-        byline:
-          "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        topics
-      })
-    });
-  });
 };
