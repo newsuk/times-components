@@ -8,6 +8,8 @@ import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
+// To fix a jest coverage issue
+import AspectRatioContainer from "./media-aspect-ratio"; // eslint-disable-line no-unused-vars
 import InsetCaption from "./inset-caption";
 
 const primaryContainer = {
