@@ -36,8 +36,7 @@ const styles = {
   headline: {
     fontSize: fontSizes.body,
     fontWeight: "bold",
-    marginBottom: 10,
-    textDecoration: "underline"
+    marginBottom: 10
   },
   subHeadline: {
     fontSize: fontSizes.meta,

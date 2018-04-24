@@ -21,7 +21,7 @@ ColourBox.propTypes = {
 
 const fontDisplayer = (fontFamily, phrase) =>
   Object.keys(fontSizes).map(fontSize => (
-    <Fragment>
+    <Fragment key={fontSize}>
       <Text style={styles.subHeadline}>{fontSize}</Text>
       <Text
         style={[
