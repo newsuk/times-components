@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import cropPropTypes from "./crop-proptypes";
+import cropPropTypes from "./crop-prop-types";
 
 const ArticleLeadAssetVideo = ({
   brightcoveVideoId,

@@ -59,4 +59,4 @@ export const renderTree = (tree, renderers, index = 0) =>
 export const renderTrees = (trees, renderers) =>
   trees.map((tree, index) => renderTree(tree, renderers, index));
 
-export { default as treePropType } from "./tree-proptype";
+export { default as treePropType } from "./tree-prop-types";

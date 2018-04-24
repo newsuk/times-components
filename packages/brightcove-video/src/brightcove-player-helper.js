@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { findNodeHandle, requireNativeComponent, AppState } from "react-native";
 import PropTypes from "prop-types";
 
-import propTypes from "./brightcove-player.proptypes";
+import propTypes from "./brightcove-player-prop-types";
 import defaults from "./brightcove-player.defaults";
 
 const nativeClassName = "RNTBrightcove";

@@ -3,7 +3,7 @@ import { View, TouchableWithoutFeedback, NativeModules } from "react-native";
 import {
   brightcoveVideoDefaultProps,
   brightcoveVideoPropTypes
-} from "./brightcove-video.proptypes";
+} from "./brightcove-video-prop-types";
 
 import Player from "./brightcove-player";
 import Splash from "./splash";

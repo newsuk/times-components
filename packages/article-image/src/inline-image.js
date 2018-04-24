@@ -7,7 +7,7 @@ import { spacing } from "@times-components/styleguide";
 import {
   articleImagePropTypes,
   articleImageDefaultPropTypes
-} from "./article-image-proptypes";
+} from "./article-image-prop-types";
 
 const styles = StyleSheet.create({
   inlineImage: {
