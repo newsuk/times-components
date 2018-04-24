@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/caption@0.15.3...@times-components/caption@0.16.0) (2018-04-24)
+
+
+### Features
+
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+
+
+
+
 <a name="0.15.3"></a>
 ## [0.15.3](https://github.com/newsuk/times-components/compare/@times-components/caption@0.15.2...@times-components/caption@0.15.3) (2018-04-23)
 

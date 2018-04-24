@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/card@0.27.3...@times-components/card@0.28.0) (2018-04-24)
+
+
+### Features
+
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+
+
+
+
 <a name="0.27.3"></a>
 ## [0.27.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.27.2...@times-components/card@0.27.3) (2018-04-23)
 
