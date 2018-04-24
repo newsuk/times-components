@@ -3,7 +3,7 @@ import { NativeModules } from "react-native";
 
 import BrightcoveVideo from "./brightcove-player-helper";
 
-import propTypes from "./brightcove-player.proptypes";
+import propTypes from "./brightcove-player-prop-types";
 import defaults from "./brightcove-player.defaults";
 
 function withNativeCommand(WrappedComponent) {

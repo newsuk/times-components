@@ -12,7 +12,7 @@ import Topics from "./topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
+import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
 

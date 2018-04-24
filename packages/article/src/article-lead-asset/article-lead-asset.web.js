@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import Caption from "@times-components/caption";
 import Video from "@times-components/video";
-import cropPropTypes from "./crop-proptypes";
+import cropPropTypes from "./crop-prop-types";
 import {
   LeadAsset,
   LeadAssetCaptionContainer

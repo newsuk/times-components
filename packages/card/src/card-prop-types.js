@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { ViewPropTypes } from "react-native";
-import { sharedPropTypes, sharedDefaultProps } from "./card-shared-proptypes";
+import { sharedPropTypes, sharedDefaultProps } from "./card-shared-prop-types";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
@@ -21,6 +21,6 @@ export const cardDefaultProps = {
   },
   imageRatio: 1,
   imageStyle: {},
-  imageSize: 100,
+  imageSize: null,
   isLoading: false
 };

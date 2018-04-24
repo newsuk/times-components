@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
-import { View, ViewPropTypes, Dimensions, StyleSheet } from "react-native";
+import { View, ViewPropTypes, StyleSheet } from "react-native";
+import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
 import Placeholder from "./placeholder";
@@ -20,8 +21,7 @@ const styles = StyleSheet.create({
 class Ad extends Component {
   constructor(props) {
     super(props);
-    const { width } = Dimensions.get("window");
-    this.windowWidth = width;
+    this.windowWidth = screenWidth();
     this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {

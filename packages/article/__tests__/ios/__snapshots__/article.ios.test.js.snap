@@ -39,7 +39,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -1237,7 +1237,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -1337,7 +1337,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -1815,7 +1815,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
                     }
                   }
                   style={
@@ -2042,7 +2042,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
                     }
                   }
                   style={
@@ -2302,7 +2302,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                               onLoad={[Function]}
                               source={
                                 Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
+                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
                                 }
                               }
                               style={
@@ -2402,7 +2402,7 @@ exports[`Article tests on ios should render a full article 1`] = `
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
                         }
                       }
                       style={
@@ -2601,7 +2601,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -3455,7 +3455,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -3555,7 +3555,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -4495,8 +4495,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4581,7 +4582,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4696,8 +4697,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4769,7 +4771,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -4884,8 +4886,9 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                               "fontFamily": "TimesModern-Bold",
                               "fontSize": 22,
                               "fontWeight": "400",
-                              "lineHeight": 22,
+                              "lineHeight": 24,
                               "marginBottom": 5,
+                              "marginTop": 0,
                             }
                           }
                         >
@@ -4957,7 +4960,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                             ellipsizeMode="tail"
                             style={
                               Object {
-                                "color": "#006699",
+                                "color": "#333333",
                               }
                             }
                           >
@@ -5222,7 +5225,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
                     }
                   }
                   style={
@@ -5721,7 +5724,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                               onLoad={[Function]}
                               source={
                                 Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264",
+                                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
                                 }
                               }
                               style={
@@ -5821,7 +5824,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
                       onLoad={[Function]}
                       source={
                         Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264",
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
                         }
                       }
                       style={
@@ -5985,7 +5988,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -6983,7 +6986,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -7083,7 +7086,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -7664,7 +7667,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -8673,7 +8676,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -8773,7 +8776,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -9274,7 +9277,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -10286,7 +10289,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -10386,7 +10389,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -10976,7 +10979,7 @@ exports[`Article tests on ios should render an article with no label and no flag
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -11985,7 +11988,7 @@ exports[`Article tests on ios should render an article with no label and no flag
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -12085,7 +12088,7 @@ exports[`Article tests on ios should render an article with no label and no flag
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -12558,7 +12561,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -13567,7 +13570,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -13667,7 +13670,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -14122,7 +14125,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -15134,7 +15137,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -15234,7 +15237,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -15834,7 +15837,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -16843,7 +16846,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -16943,7 +16946,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={
@@ -17426,7 +17429,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
           "credits": null,
           "crop": Object {
             "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
           },
           "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
           "isVideo": false,
@@ -18438,7 +18441,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                           onLoad={[Function]}
                           source={
                             Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                             }
                           }
                           style={
@@ -18538,7 +18541,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1200",
+                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
                     }
                   }
                   style={

@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { select } from "@times-components/storybook";
 import LeadAndTwoSlice from "./src/templates/leadandtwo";
@@ -33,18 +33,20 @@ const createSupportItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module).add("Lead and two", () => (
-  <LeadAndTwoSlice
-    lead={() => (
-      <View
-        id="lead"
-        style={{
-          backgroundColor: "red",
-          minHeight: 320
-        }}
-      />
-    )}
-    renderSupports={() =>
-      createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
-    }
-  />
+  <ScrollView>
+    <LeadAndTwoSlice
+      lead={() => (
+        <View
+          id="lead"
+          style={{
+            backgroundColor: "red",
+            minHeight: 320
+          }}
+        />
+      )}
+      renderSupports={() =>
+        createSupportItems(select(itemCountLabel, itemCount, itemCountDefault))
+      }
+    />
+  </ScrollView>
 ));

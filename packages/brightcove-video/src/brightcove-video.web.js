@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   brightcoveVideoDefaultProps,
   brightcoveVideoPropTypes
-} from "./brightcove-video.proptypes";
+} from "./brightcove-video-prop-types";
 
 import Player from "./brightcove-player";
 import VideoError from "./error";

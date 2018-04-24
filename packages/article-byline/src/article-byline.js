@@ -8,7 +8,7 @@ import { colours } from "@times-components/styleguide";
 import {
   articleBylinePropTypes,
   articleBylineDefaultPropTypes
-} from "./article-byline-proptypes";
+} from "./article-byline-prop-types";
 
 const linkStyles = StyleSheet.create({
   link: {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
-import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
+import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
 import styles from "./styles";
 

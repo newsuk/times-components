@@ -92,49 +92,49 @@ exports[`Slice tests on web responsive lead and two template components should r
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ dXMZBU"
+  className="responsive-styles__component-fbPFZZ gFJTdi"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ bPvmlj"
+  className="responsive-styles__component-fbPFZZ iQvhcy"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render ConfigWrapper correctly 3`] = `
 <div
-  className="responsive-styles__component-fbPFZZ bzdest"
+  className="responsive-styles__component-fbPFZZ iZVkJC"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render Container correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ dFePoW"
+  className="responsive-styles__component-fbPFZZ hNlqCh"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render Container correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ kwxNqz"
+  className="responsive-styles__component-fbPFZZ ksbOZK"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render OpinionContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ RxjCM"
+  className="responsive-styles__component-fbPFZZ cmZIbJ"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render OpinionContainer correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ iNPGLT"
+  className="responsive-styles__component-fbPFZZ fwjoDc"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render OpinionContainer correctly 3`] = `
 <div
-  className="responsive-styles__component-fbPFZZ jmkcHj"
+  className="responsive-styles__component-fbPFZZ djxFcS"
 />
 `;
 
@@ -164,13 +164,13 @@ exports[`Slice tests on web responsive opinion and two template components shoul
 
 exports[`Slice tests on web responsive opinion and two template components should render SupportsContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ kNwsuw"
+  className="responsive-styles__component-fbPFZZ hMmSpV"
 />
 `;
 
 exports[`Slice tests on web responsive opinion and two template components should render SupportsContainer correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ gyTqvf"
+  className="responsive-styles__component-fbPFZZ kUuqRI"
 />
 `;
 

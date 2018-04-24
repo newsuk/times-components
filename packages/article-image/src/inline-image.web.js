@@ -8,7 +8,7 @@ import { spacing } from "@times-components/styleguide";
 import {
   articleImagePropTypes,
   articleImageDefaultPropTypes
-} from "./article-image-proptypes";
+} from "./article-image-prop-types";
 
 const InsetCaptionContainerStyle = withResponsiveStyles(View, {
   base: () => `
