@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
-const androidStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
@@ -11,4 +11,4 @@ const androidStyles = StyleSheet.create({
   }
 });
 
-export default androidStyles;
+export default styles;

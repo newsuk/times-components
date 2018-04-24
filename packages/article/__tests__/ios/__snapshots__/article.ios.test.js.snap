@@ -4005,15 +4005,8 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
+                className="responsive-styles__component-fbPFZZ defgio"
                 ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Regular",
-                    "fontSize": 25,
-                    "lineHeight": 30,
-                  }
-                }
               >
                 [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
               </Text>

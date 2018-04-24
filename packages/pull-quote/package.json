@@ -56,6 +56,7 @@
   "dependencies": {
     "@times-components/icons": "0.7.5",
     "@times-components/link": "0.20.5",
+    "@times-components/responsive-styles": "0.7.2",
     "@times-components/styleguide": "0.6.3",
     "prop-types": "15.6.0"
   },

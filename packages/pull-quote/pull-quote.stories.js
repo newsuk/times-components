@@ -10,17 +10,17 @@ const twitter = "@henrywinter";
 
 storiesOf("Primitives/PullQuotes", module)
   .add("Pull Quotes with a Caption", () => (
-    <PullQuotes content={content} caption={caption} />
+    <PullQuotes caption={caption} content={content} />
   ))
   .add("Pull Quotes without a Caption", () => <PullQuotes content={content} />)
   .add("Pull Quotes with a caption and Twitter", () => (
-    <PullQuotes content={content} caption={caption} twitter={twitter} />
+    <PullQuotes caption={caption} content={content} twitter={twitter} />
   ))
   .add("Pull Quotes without a Caption and different colours", () => (
     <PullQuotes
-      content={content}
       caption={caption}
-      quoteColour="#850029"
       captionColour="#850029"
+      content={content}
+      quoteColour="#850029"
     />
   ));

@@ -130,7 +130,7 @@ export const PullQuoteResp = withResponsiveStyles(
       margin-bottom: ${spacing(2)};
     `,
     mediumUp: () => `
-      width: 60%;
+      width: 50%;
       float: left;
       margin-right: ${spacing(4)};
       margin-bottom 0px;
