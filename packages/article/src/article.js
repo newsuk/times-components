@@ -69,7 +69,13 @@ class ArticlePage extends React.Component {
       }
 
       case "articleBodyRow": {
-        return <ArticleRow content={rowData} onLinkPress={onLinkPress} />;
+        return (
+          <ArticleRow
+            content={rowData}
+            onLinkPress={onLinkPress}
+            onVideoPress={onVideoPress}
+          />
+        );
       }
 
       case "relatedArticles": {
