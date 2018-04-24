@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.58.0",
+  "version": "0.58.1",
   "description": "Author info along with articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -66,9 +66,9 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.23.5",
-    "@times-components/author-head": "0.25.0",
-    "@times-components/card": "0.28.0",
+    "@times-components/article-summary": "0.23.6",
+    "@times-components/author-head": "0.25.1",
+    "@times-components/card": "0.28.1",
     "@times-components/error-view": "0.11.2",
     "@times-components/gradient": "0.10.2",
     "@times-components/image": "1.17.0",
