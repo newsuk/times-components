@@ -148,6 +148,7 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
+    "babel-loader": "7.1.4",
     "expo": "26.0.0",
     "lodash.merge": "4.6.1",
     "react-native": "0.54.2"
