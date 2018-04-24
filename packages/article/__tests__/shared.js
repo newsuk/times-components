@@ -16,7 +16,6 @@ import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
 export default () => {
-
   const realIntl = Intl;
 
   const adConfig = {
@@ -296,5 +295,4 @@ export default () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 };

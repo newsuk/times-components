@@ -2,8 +2,6 @@ import shared from "../shared";
 import nativeShared from "../shared-native";
 import sharedTracking from "../shared-tracking";
 
-import fullArticleFixture from "../../fixtures/full-article.json";
-
 jest.mock("@times-components/article-byline", () => "MockArticleByline");
 jest.mock("@times-components/article-flag", () => ({
   ExclusiveArticleFlag: "MockExclusiveArticleFlag",
@@ -34,7 +32,5 @@ describe("Article tests on android", () => {
 jest.unmock("@times-components/tracking");
 
 describe("Article Tracking tests on web", () => {
-
   sharedTracking();
-
 });

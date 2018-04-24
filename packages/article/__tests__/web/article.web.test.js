@@ -76,7 +76,6 @@ const adConfig = {
   bidderSlots: ["ad-header", "ad-article-inline"]
 };
 describe("Article tests on web", () => {
-
   shared();
 
   it("renders article with no lead asset", () => {
@@ -128,13 +127,10 @@ describe("Article tests on web", () => {
       .onPress(eventObject);
     expect(onPressMock).toHaveBeenCalledWith(eventObject, { href: testUrl });
   });
-
 });
 
 jest.unmock("@times-components/tracking");
 
 describe("Article Tracking tests on web", () => {
-
   sharedTracking();
-
 });
