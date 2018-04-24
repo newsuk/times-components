@@ -11,7 +11,7 @@ import { colours } from "@times-components/styleguide";
 import {
   relatedArticleItemPropTypes,
   relatedArticleItemDefaultProps
-} from "./related-article-item-proptypes";
+} from "./related-article-item-prop-types";
 import styles from "./styles";
 
 const RelatedArticleItem = ({

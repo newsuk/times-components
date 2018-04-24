@@ -11,7 +11,7 @@ import RelatedArticleItem from "./related-article-item";
 import {
   relatedArticlesPropTypes,
   relatedArticlesDefaultProps
-} from "./related-articles-proptypes";
+} from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({ articles, mainId, onPress, template }) => {
