@@ -1,6 +1,5 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import set from "lodash.set";
@@ -11,8 +10,6 @@ import AuthorProfileItem from "../src/author-profile-item";
 import AuthorHead from "../src/author-profile-author-head";
 import AuthorProfileItemSeparator from "../src/author-profile-item-separator";
 import pagedResult from "./paged-result";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 const authorProfileProps = {
   slug: "deborah-haynes",

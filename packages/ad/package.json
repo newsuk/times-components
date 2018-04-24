@@ -48,7 +48,6 @@
     "@storybook/addon-actions": "3.4.1",
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/utils": "0.7.2",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -69,6 +68,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.6.1",
+    "@times-components/utils": "0.7.2",
     "@times-components/watermark": "0.5.1",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"

@@ -21,6 +21,6 @@ export const cardDefaultProps = {
   },
   imageRatio: 1,
   imageStyle: {},
-  imageSize: 100,
+  imageSize: null,
   isLoading: false
 };

@@ -31,7 +31,6 @@ const AuthorProfileItem = item => {
     headline,
     url,
     imageRatio,
-    imageSize,
     showImage
   } = item;
 
@@ -61,7 +60,6 @@ const AuthorProfileItem = item => {
         <Card
           image={imageUri ? { uri: imageUri } : null}
           imageRatio={imageRatio}
-          imageSize={imageSize}
           showImage={showImage}
         >
           <ArticleSummary

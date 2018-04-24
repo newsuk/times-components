@@ -1,5 +1,5 @@
 import React from "react";
-import { Dimensions, FlatList, StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
@@ -9,7 +9,6 @@ import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";
-import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   padding: {
@@ -30,12 +29,6 @@ const viewabilityConfig = {
 class AuthorProfileContent extends React.Component {
   constructor(props) {
     super(props);
-
-    const { width } = Dimensions.get("window");
-
-    this.state = {
-      width: normaliseWidth(width)
-    };
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
@@ -158,7 +151,6 @@ class AuthorProfileContent extends React.Component {
                 <AuthorProfileItem
                   {...item}
                   imageRatio={imageRatio}
-                  imageSize={this.state.width}
                   showImage={showImages}
                   style={styles.padding}
                   testID={`articleList-${index}`}

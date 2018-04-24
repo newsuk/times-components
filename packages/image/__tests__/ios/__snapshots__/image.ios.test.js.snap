@@ -8,7 +8,7 @@ exports[`1. Renders default layout 1`] = `
     onLoad={[Function]}
     source={
       Object {
-        "uri": "http://example.com/image.jpg",
+        "uri": "http://example.com/image.jpg&resize=1440",
       }
     }
     style={
@@ -54,7 +54,7 @@ exports[`3. Renders with a passed style prop 1`] = `
     onLoad={[Function]}
     source={
       Object {
-        "uri": "http://example.com/image.jpg",
+        "uri": "http://example.com/image.jpg&resize=1440",
       }
     }
     style={
@@ -124,7 +124,7 @@ exports[`5. Renders with prepended https schema 1`] = `
     onLoad={[Function]}
     source={
       Object {
-        "uri": "https://example.com/image.jpg",
+        "uri": "https://example.com/image.jpg&resize=1440",
       }
     }
     style={

@@ -149,7 +149,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
             onLoad={[Function]}
             source={
               Object {
-                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200&preview=true",
+                "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
               }
             }
             style={
@@ -165,79 +165,51 @@ exports[`AuthorHead test on android renders with data 1`] = `
             }
           />
           <View
+            onLayout={[Function]}
             style={
               Object {
-                "height": "100%",
-                "width": "100%",
+                "flex": 1,
               }
             }
           >
-            <Image
-              onLoad={[Function]}
-              source={
-                Object {
-                  "uri": "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=200",
-                }
-              }
-              style={
-                Object {
-                  "bottom": 0,
-                  "height": "100%",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
-            />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
                 }
               }
             >
-              <View
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
                   }
                 }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                />
-              </View>
+              />
             </View>
           </View>
         </View>

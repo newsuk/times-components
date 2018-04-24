@@ -1,6 +1,6 @@
 import React from "react";
-import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
+import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 import cropPropTypes from "./crop-proptypes";
 
@@ -14,7 +14,7 @@ const ArticleLeadAssetVideo = ({
   const [ratioWidth, ratioHeight] = image_ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  const { width } = Dimensions.get("window");
+  const width = screenWidth();
   const height = width / aspectRatio;
 
   return (
