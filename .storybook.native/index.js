@@ -1,3 +1,5 @@
+import "haul/hot/patch";
+import { makeHot, redraw } from "haul/hot";
 import url from "url";
 import { AppRegistry, NativeModules, Platform } from "react-native";
 import {
@@ -28,4 +30,14 @@ const StorybookUI = getStorybookUI({
   host: hostname
 });
 
-AppRegistry.registerComponent("storybooknative", () => StorybookUI);
+const renderStorybook = makeHot(() => StorybookUI);
+
+AppRegistry.registerComponent("storybooknative", renderStorybook);
+
+if (module.hot) {
+  module.hot.addStatusHandler(status => {
+    if (status === "ready") {
+      redraw(renderStorybook);
+    }
+  });
+}

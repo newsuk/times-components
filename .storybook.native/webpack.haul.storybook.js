@@ -1,8 +1,11 @@
 const path = require("path");
 
-const logProxy = val => console.log(val) || val;
-
-module.exports = ({ platform }, { module, resolve }) => logProxy(module) && ({
+module.exports = ({ platform }, { module, resolve, plugins }) => ({
+  entry: path.resolve(__dirname, "./index.js"),
+  devServer: {
+    hot: true,
+  },
+  plugins,
   module: {
     ...module,
     rules: [
@@ -10,10 +13,13 @@ module.exports = ({ platform }, { module, resolve }) => logProxy(module) && ({
       {
         test: /\.jsx?$/,
         loader: require.resolve('babel-loader'),
+        options: {
+          presets: ["react-native"],
+        },
+        exclude: /node_modules\/(?!react|@expo|svgs|pretty-format|haul|metro)/,
       },
     ]
   },
-  entry: path.resolve(__dirname, "./index.js"),
   resolve: {
     ...resolve,
     extensions: [`.${platform}.js`, ".native.js", ".js"],
