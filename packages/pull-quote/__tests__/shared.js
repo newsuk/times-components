@@ -9,7 +9,7 @@ const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
 export default () => {
-  it.only("should render PullQuotes with a Caption", () => {
+  it("should render PullQuotes with a Caption", () => {
     const tree = renderer
       .create(<PullQuotes caption={caption} content={content} />)
       .toJSON();
