@@ -2,9 +2,6 @@ const path = require("path");
 
 module.exports = ({ platform }, { module, resolve, plugins }) => ({
   entry: path.resolve(__dirname, "./index.js"),
-  devServer: {
-    hot: true,
-  },
   plugins,
   module: {
     ...module,
