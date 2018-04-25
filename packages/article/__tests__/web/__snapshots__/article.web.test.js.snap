@@ -163,7 +163,7 @@ Array [
 
 .c15 {
   width: 50%;
-  padding-top: 5px;
+  padding-top: 0;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
@@ -172,8 +172,8 @@ Array [
 .c16 {
   width: 50%;
   margin-top: -10px;
-  padding-top: 5px;
-  padding-left: 20px;
+  padding-top: 0;
+  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   display: inline-block;
@@ -340,6 +340,7 @@ Array [
     clear: left;
     float: left;
     padding-bottom: 0px;
+    padding-top: 5px;
     padding-right: 20px;
   }
 }
@@ -360,7 +361,7 @@ Array [
     margin-top: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2022,7 +2023,7 @@ Array [
 
 .c19 {
   width: 50%;
-  padding-top: 5px;
+  padding-top: 0;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
@@ -2031,8 +2032,8 @@ Array [
 .c20 {
   width: 50%;
   margin-top: -10px;
-  padding-top: 5px;
-  padding-left: 20px;
+  padding-top: 0;
+  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   display: inline-block;
@@ -2252,6 +2253,7 @@ Array [
     clear: left;
     float: left;
     padding-bottom: 0px;
+    padding-top: 5px;
     padding-right: 20px;
   }
 }
@@ -2272,7 +2274,7 @@ Array [
     margin-top: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 

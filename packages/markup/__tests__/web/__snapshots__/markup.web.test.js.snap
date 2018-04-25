@@ -154,6 +154,8 @@ exports[`Markup Web renders multiple paragraphs with ads 1`] = `
         "borderBottomWidth": 1,
         "borderTopColor": "#DBDBDB",
         "borderTopWidth": 1,
+        "marginBottom": "30px",
+        "marginTop": "30px",
         "paddingBottom": "10px",
         "paddingTop": "10px",
       }
