@@ -1,28 +1,36 @@
-import { spacing } from "@times-components/styleguide";
+import { 
+  colours, fonts, spacing 
+} from "@times-components/styleguide";
 
 export default {
-  body: {
+  bar: {
     display: "flex",
     flexDirection: "row",
-    borderColor: "rgb(219, 219, 219)",
+    borderColor: colours.functional.keyline,
     borderStyle: "solid",
     borderWidth: 1,
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    height: spacing(11),
-    marginTop: spacing(10),
-    marginBottom: spacing(4),
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    paddingTop: spacing(1),
+    paddingBottom: spacing(1)
   },
   group: {
+    display:"flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  groupElements: {
     display: "flex",
     flexDirection: "row",
-    height: spacing(4),
-    alignItems: "center"
   },
   text: {
-    marginRight: spacing(1)
+    color: colours.functional.primary,
+    fontFamiliy: fonts.supporting,
+    marginLeft: 0,
+    margin: spacing(1),
+    marginRight: spacing(2)
   },
   bubble: {
     display: "flex",
@@ -30,11 +38,10 @@ export default {
     justifyContent: "center",
     alignItems: "center",
     borderStyle: "solid",
-    borderColor: "rgb(219, 219, 219)",
+    borderColor: colours.functional.keyline,
     borderWidth: 1,
-    marginLeft: spacing(2),
-    borderRadius: spacing(5),
-    padding: spacing(1.5),
+    borderRadius: spacing(4),
+    padding: spacing(2),
     height: spacing(8),
     width: spacing(8)
   }

@@ -2,50 +2,55 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 
+import { spacing } from "@times-components/styleguide";
+import withResponsiveStyles from "@times-components/responsive-styles";
 import { IconTwitter, IconFacebook, IconEmail } from "@times-components/icons";
 
 import Bubble from "./bubble";
 import styles from "./styles";
+import Bar from "./bar";
+import Group from "./group";
 import { makeShareIcon, makeSaveIcon } from "./make-icon";
 
-export default function Shavingbar({
+
+function Shavingbar({
   isSaved,
   isSaving,
   isSharing,
   onEmail,
   onTwitter,
   onFacebook,
-  onSave
+  onSave,
+  ...props
 }) {
   return (
-    <View style={styles.body}>
-      <View style={styles.group}>
-        <Text style={styles.text}>Share</Text>
+    <Bar {...props}>
+      <Group 
+        caption="Share" 
+        orientation="flex-start">
         <Bubble
           isLoading={isSharing}
           onPress={onEmail}
-          render={makeShareIcon(IconEmail, "share via email", isSharing)}
-        />
+          render={makeShareIcon(IconEmail, "share via email", isSharing)}/>
         <Bubble
           onPress={onTwitter}
-          render={makeShareIcon(IconTwitter, "share via twiter")}
-        />
+          style={{marginLeft: spacing(2), marginRight: spacing(2)}}
+          render={makeShareIcon(IconTwitter, "share via Twitter")}/>
         <Bubble
           onPress={onFacebook}
-          render={makeShareIcon(IconFacebook, "share via facebook")}
-        />
-      </View>
-      <View style={styles.group}>
-        <Text aria-label="Save Status" style={styles.text}>
-          {isSaved ? "Saved" : "Save"}
-        </Text>
+          render={makeShareIcon(IconFacebook, "share via Facebook")}/>
+        </Group>
+      <Group 
+        caption={isSaved ? "Saved" : "Save"} 
+        role="Save Status" 
+        orientation="flex-end">
         <Bubble
           isLoading={isSaving}
           onPress={onSave}
           render={makeSaveIcon(isSaved, isSaving)}
         />
-      </View>
-    </View>
+      </Group>
+    </Bar>
   );
 }
 
@@ -69,3 +74,9 @@ Shavingbar.defaultProps = {
   onFacebook: noop,
   onSave: noop
 };
+
+export default withResponsiveStyles(Shavingbar, {
+  base: () => `padding-bottom: ${spacing(0)};`,
+  smallUp: () => `padding-bottom: ${spacing(1)}`
+});
+

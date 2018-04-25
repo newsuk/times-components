@@ -7,21 +7,22 @@ import styles from "./styles";
 
 const { primary, cancel: secondary } = colours.functional;
 
-const Bubble = ({ render, onPress, isLoading }) => (
+const Bubble = ({ render, onPress, isLoading, style, ...props }) => (
   <Pressable onPress={onPress}>
     {({ isActive, hover }) => {
       const backgroundColor = isActive && !isLoading ? primary : secondary;
       const borderColor = hover || isLoading ? primary : "rgb(219,219,219)";
-      const style = [
+      const computedStyle = [
         styles.bubble,
         {
           borderColor,
           backgroundColor
-        }
+        },
+        style
       ];
 
       return (
-        <View aria-pressed={isActive} aria-disabled={isLoading} style={style}>
+        <View aria-pressed={isActive} aria-disabled={isLoading} style={computedStyle} {...props}>
           {render({ isActive, hover })}
         </View>
       );
