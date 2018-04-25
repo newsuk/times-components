@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
-import Video from "@times-components/video";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
 
@@ -81,25 +80,6 @@ storiesOf("Primitives/ErrorView", module)
           <ErrorState error={error} style={styles.customError} />
         ) : (
           <FiresOnError onError={onError} />
-        )
-      }
-    </ErrorView>
-  ))
-  .add("handling a broken video", () => (
-    <ErrorView>
-      {({ hasError, onError, error }) =>
-        hasError ? (
-          <ErrorState error={error} style={{ width: 400, height: 300 }} />
-        ) : (
-          <Video
-            style={{ width: 400, height: 300 }}
-            width={400}
-            height={300}
-            policyKey="x"
-            videoId="y"
-            accountId="z"
-            onError={onError}
-          />
         )
       }
     </ErrorView>

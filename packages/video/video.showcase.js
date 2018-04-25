@@ -35,16 +35,12 @@ export default {
     {
       type: "story",
       name: "default player",
-      component: () => <Video {...defaultVideoProps} />
-    },
-    {
-      type: "story",
-      name: "two players with different sizes",
       component: () => (
         <View>
-          <Video {...defaultVideoProps} width={400} />
-          <View style={{ height: 20 }} />
-          <Video {...defaultVideoProps} height={250} />
+          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
+          <Video {...defaultVideoProps} />
+          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Video {...defaultVideoProps} width={664} height={374} />
         </View>
       )
     },
@@ -90,7 +86,6 @@ export default {
           >
             <Video
               {...defaultVideoProps}
-              height={250}
               paidOnly={boolean("paidOnly video", false)}
             />
           </IsPaidSubscriber.Provider>
@@ -103,8 +98,15 @@ export default {
       platform: "web",
       component: () => (
         <View>
+          <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
           <Video {...defaultVideoProps} videoId="invalid id" />
-          <Text style={{ marginTop: 20 }}>This video has an invalid id</Text>
+          <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
+          <Video
+            {...defaultVideoProps}
+            width={664}
+            height={374}
+            videoId="invalid id"
+          />
         </View>
       )
     }
