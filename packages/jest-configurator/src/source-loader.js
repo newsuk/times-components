@@ -3,7 +3,6 @@
 import * as babelJest from "babel-jest";
 import { readFileSync } from "fs";
 import { createHash } from "crypto";
-import type { CacheKeyOptions, ProjectConfig, TransformOptions } from "jest";
 
 const readSource = (filename: string): string =>
   readFileSync(filename).toString();
@@ -11,7 +10,7 @@ const readSource = (filename: string): string =>
 const isPackageFile = (filename: string): boolean =>
   filename.includes("@times-components");
 
-const pointToSource = (filename: string): boolean =>
+const pointToSource = (filename: string): string =>
   filename.replace("dist", "src");
 
 /* Based upon the babel-jest impl, but only
@@ -26,7 +25,7 @@ const getCacheKey = (
   src: string,
   filename: string,
   config: string,
-  cacheOptions: CacheKeyOptions
+  cacheOptions: {}
 ): string =>
   isPackageFile(filename)
     ? getPackageCacheKey(filename)
@@ -35,8 +34,8 @@ const getCacheKey = (
 const transform = (
   src: string,
   targetFilename: string,
-  config: ProjectConfig,
-  options: TransformOptions
+  config: {},
+  options: {}
 ): string => {
   let source = src;
   let filename = targetFilename;

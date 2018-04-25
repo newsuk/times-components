@@ -8,7 +8,7 @@
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
-    "lint": "flow && eslint . && yarn prettier:diff",
+    "lint": "flow check && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
@@ -70,7 +70,6 @@
     "eslint": "4.9.0",
     "flow-bin": "0.63.1",
     "identity-obj-proxy": "3.0.0",
-    "jest": "21.2.1",
     "prettier": "1.8.2"
   },
   "peerDependencies": {
