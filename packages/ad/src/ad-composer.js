@@ -51,15 +51,6 @@ AdComposer.defaultProps = {
         amazon: {
           accountId: "3360"
         },
-        criteo: {
-          zoneMap: {
-            "120x600": "764877"
-          }
-        },
-        pubmatic: {
-          accountId: "156034",
-          adSlotPrefix: "Thetimes"
-        },
         indexExchange: {
           siteId: "188830"
         }
