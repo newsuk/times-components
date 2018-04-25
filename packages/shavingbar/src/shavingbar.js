@@ -1,17 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text } from "react-native";
 
 import { spacing } from "@times-components/styleguide";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { IconTwitter, IconFacebook, IconEmail } from "@times-components/icons";
 
 import Bubble from "./bubble";
-import styles from "./styles";
 import Bar from "./bar";
 import Group from "./group";
 import { makeShareIcon, makeSaveIcon } from "./make-icon";
-
 
 function Shavingbar({
   isSaved,
@@ -25,25 +22,27 @@ function Shavingbar({
 }) {
   return (
     <Bar {...props}>
-      <Group 
-        caption="Share" 
-        orientation="flex-start">
+      <Group caption="Share" orientation="flex-start">
         <Bubble
           isLoading={isSharing}
           onPress={onEmail}
-          render={makeShareIcon(IconEmail, "share via email", isSharing)}/>
+          render={makeShareIcon(IconEmail, "share via email", isSharing)}
+        />
         <Bubble
           onPress={onTwitter}
-          style={{marginLeft: spacing(2), marginRight: spacing(2)}}
-          render={makeShareIcon(IconTwitter, "share via Twitter")}/>
+          style={{ marginLeft: spacing(2), marginRight: spacing(2) }}
+          render={makeShareIcon(IconTwitter, "share via Twitter")}
+        />
         <Bubble
           onPress={onFacebook}
-          render={makeShareIcon(IconFacebook, "share via Facebook")}/>
-        </Group>
-      <Group 
-        caption={isSaved ? "Saved" : "Save"} 
-        role="Save Status" 
-        orientation="flex-end">
+          render={makeShareIcon(IconFacebook, "share via Facebook")}
+        />
+      </Group>
+      <Group
+        caption={isSaved ? "Saved" : "Save"}
+        captionRole="Save Status"
+        orientation="flex-end"
+      >
         <Bubble
           isLoading={isSaving}
           onPress={onSave}
@@ -79,4 +78,3 @@ export default withResponsiveStyles(Shavingbar, {
   base: () => `padding-bottom: ${spacing(0)};`,
   smallUp: () => `padding-bottom: ${spacing(1)}`
 });
-

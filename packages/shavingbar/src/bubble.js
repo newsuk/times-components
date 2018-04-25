@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import Pressable from "./pressable";
@@ -22,7 +22,12 @@ const Bubble = ({ render, onPress, isLoading, style, ...props }) => (
       ];
 
       return (
-        <View aria-pressed={isActive} aria-disabled={isLoading} style={computedStyle} {...props}>
+        <View
+          {...props}
+          aria-pressed={isActive}
+          aria-disabled={isLoading}
+          style={computedStyle}
+        >
           {render({ isActive, hover })}
         </View>
       );
@@ -33,7 +38,8 @@ const Bubble = ({ render, onPress, isLoading, style, ...props }) => (
 Bubble.propTypes = {
   onPress: PropTypes.func,
   isLoading: PropTypes.bool,
-  render: PropTypes.func.isRequired
+  render: PropTypes.func.isRequired,
+  ...ViewPropTypes
 };
 
 Bubble.defaultProps = {

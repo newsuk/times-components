@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`[object Object] 1`] = `null`;
+
 exports[`Shavingbar test on web:  should invoke callback when bubble is clicked 1`] = `
 Array [
   Object {

@@ -1,6 +1,4 @@
-import { 
-  colours, fonts, spacing 
-} from "@times-components/styleguide";
+import { colours, fonts, spacing } from "@times-components/styleguide";
 
 export default {
   bar: {
@@ -17,13 +15,13 @@ export default {
     paddingBottom: spacing(1)
   },
   group: {
-    display:"flex",
+    display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "center"
   },
   groupElements: {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "row"
   },
   text: {
     color: colours.functional.primary,

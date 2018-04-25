@@ -16,7 +16,7 @@ describe("Shavingbar test on web: ", () => {
   it("should invert colors when active", () => {
     const render = jest.fn(() => null);
 
-    shallow(<Shave Icon={render} title="test" isActive={false} />).dive();
+    shallow(<Shave Icon={render} title="test" />).dive();
     shallow(<Shave Icon={render} title="test" isActive />).dive();
 
     const [[inActive], [active]] = render.mock.calls;
@@ -78,39 +78,42 @@ describe("Shavingbar test on web: ", () => {
         onFacebook={onClick}
         onSave={onClick}
       />
-    );
+    ).dive();
 
-    tree.find("Bubble").forEach(bubble =>
-      click(
-        bubble
-          .dive()
-          .find("Pressable")
-          .dive()
-      )
-    );
+    tree
+      .find("Bubble")
+      .map(bubble => bubble.dive().find("Pressable"))
+      .forEach(click);
 
     expect(onClick.mock.calls).toHaveLength(4);
   });
 
   it("should read 'saved' when is saved", () => {
     const saved = shallow(<Shavingbar isSaved />)
-      .find("[aria-label='Save Status']")
-      .render()
-      .text();
+      .dive()
+      .find("Bar")
+      .dive()
+      .find("Responsive(Group)")
+      .map(group => group.props())
+      .filter(group => group.captionRole === "Save Status");
 
-    const notSaved = shallow(<Shavingbar isSaved={false} />)
-      .find("[aria-label='Save Status']")
-      .render()
-      .text();
+    const notSaved = shallow(<Shavingbar/>)
+      .dive()
+      .find("Bar")
+      .dive()
+      .find("Responsive(Group)")
+      .map(group => group.props())
+      .filter(group => group.captionRole === "Save Status");
 
-    expect(saved).toEqual("Saved");
-    expect(notSaved).toEqual("Save");
+    expect(saved[0].caption).toEqual("Saved");
+    expect(notSaved[0].caption).toEqual("Save");
   });
 
   it("should render 2 Bubbles in loading state", () => {
     const tree = shallow(<Shavingbar isSharing isSaving />);
     expect(
       tree
+        .dive()
         .find("Bubble")
         .map(bubble => bubble.props().isLoading)
         .filter(x => x)
