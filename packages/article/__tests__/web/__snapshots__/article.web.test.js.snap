@@ -2051,9 +2051,9 @@ Array [
 
 .c23 {
   color: #333333;
-  fontFamily: TimesModern-Regular;
-  fontSize: 25;
-  lineHeight: 30px;
+  font-family: TimesModern-Regular;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 @media (min-width:1024px) {
@@ -2312,8 +2312,8 @@ Array [
 
 @media (min-width:768px) {
   .c23 {
-    fontSize: 25;
-    lineHeight: 35px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -4525,9 +4525,9 @@ Array [
 
 .c17 {
   color: #333333;
-  fontFamily: TimesModern-Regular;
-  fontSize: 25;
-  lineHeight: 30px;
+  font-family: TimesModern-Regular;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 @media (min-width:1024px) {
@@ -4700,8 +4700,8 @@ Array [
 
 @media (min-width:768px) {
   .c17 {
-    fontSize: 25;
-    lineHeight: 35px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 

@@ -96,6 +96,7 @@ exports[`Markup Web renders multiple paragraphs with a pull quote 1`] = `
       “
     </div>
     <div
+      className="responsive-styles__component-fbPFZZ kssypV"
       dir="auto"
     >
       [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
