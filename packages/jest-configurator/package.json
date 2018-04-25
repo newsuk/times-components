@@ -8,7 +8,7 @@
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
-    "lint": "flow && eslint . && yarn prettier:diff",
+    "lint": "flow check && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
@@ -49,10 +49,12 @@
   },
   "dependencies": {
     "@times-components/jest-serializer": "0.1.0",
+    "babel-jest": "22.4.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "enzyme-to-json": "3.3.0",
     "find-node-modules": "1.0.4",
+    "jest": "21.2.1",
     "jest-plugin-context": "2.6.0",
     "jest-plugins": "2.9.0",
     "recursive-readdir-synchronous": "0.0.3"
@@ -68,7 +70,6 @@
     "eslint": "4.9.0",
     "flow-bin": "0.63.1",
     "identity-obj-proxy": "3.0.0",
-    "jest": "21.2.1",
     "prettier": "1.8.2"
   },
   "peerDependencies": {
