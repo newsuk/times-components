@@ -73,8 +73,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "fructose/index.js",
-    cliPath: "node_modules/haul/bin/cli.js"
+    entryFile: "fructose/index.js"
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -153,7 +152,6 @@ repositories {
 }
 
 dependencies {
-    compile project(':react-native-svg')
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-svg')
     implementation (project(':react-native-device-info')) {
