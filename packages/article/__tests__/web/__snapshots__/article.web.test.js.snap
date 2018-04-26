@@ -163,7 +163,6 @@ Array [
 
 .c15 {
   width: 50%;
-  padding-top: 0;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
@@ -2023,7 +2022,6 @@ Array [
 
 .c19 {
   width: 50%;
-  padding-top: 0;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
