@@ -8,53 +8,43 @@ const content =
 const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
-module.exports = () => {
-  it("Pull Quotes with a Caption", () => {
+export default () => {
+  it("should render PullQuotes with a Caption", () => {
     const tree = renderer
-      .create(<PullQuotes content={content} caption={caption} />)
+      .create(<PullQuotes caption={caption} content={content} />)
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("1. Renders default layout");
   });
-  it("Pull Quotes without a Caption", () => {
+
+  it("should render PullQuotes without a Caption", () => {
     const tree = renderer.create(<PullQuotes content={content} />).toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("2. Renders without a caption");
   });
-  it("Pull Quotes with a Caption and a Twitter", () => {
+
+  it("should render PullQuotes with a Twitter handle", () => {
     const tree = renderer
       .create(
-        <PullQuotes content={content} caption={caption} twitter={twitter} />
+        <PullQuotes caption={caption} content={content} twitter={twitter} />
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("3. Renders with a twitter handle");
   });
-  it("Pull Quotes without a Caption and different colours", () => {
+
+  it("should render PullQuotes with different colours", () => {
     const tree = renderer
       .create(
         <PullQuotes
-          content={content}
           caption={caption}
-          quoteColour="#850029"
           captionColour="#850029"
-        />
-      )
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-  it("Pull Quotes with a twitter link", () => {
-    const tree = renderer
-      .create(
-        <PullQuotes
           content={content}
-          caption={caption}
-          twitter="@JudgeSapnara"
+          quoteColour="#850029"
         />
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot("4. Renders with different colours");
   });
 };

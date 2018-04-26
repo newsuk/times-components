@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PullQuotes test on web Pull Quotes with a Caption 1`] = `
+exports[`1. Renders default layout 1`] = `
 <div>
   <div
     dir="auto"
@@ -13,6 +13,7 @@ exports[`PullQuotes test on web Pull Quotes with a Caption 1`] = `
     “
   </div>
   <div
+    className="responsive-styles__component-fbPFZZ kssypV"
     dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
@@ -32,7 +33,7 @@ exports[`PullQuotes test on web Pull Quotes with a Caption 1`] = `
 </div>
 `;
 
-exports[`PullQuotes test on web Pull Quotes with a Caption and a Twitter 1`] = `
+exports[`2. Renders without a caption 1`] = `
 <div>
   <div
     dir="auto"
@@ -45,6 +46,40 @@ exports[`PullQuotes test on web Pull Quotes with a Caption and a Twitter 1`] = `
     “
   </div>
   <div
+    className="responsive-styles__component-fbPFZZ kssypV"
+    dir="auto"
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </div>
+  <div>
+    <div
+      dir="auto"
+      style={
+        Object {
+          "color": "rgba(105,105,105,1)",
+        }
+      }
+    >
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. Renders with a twitter handle 1`] = `
+<div>
+  <div
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
+  >
+    “
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ kssypV"
     dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
@@ -85,92 +120,7 @@ exports[`PullQuotes test on web Pull Quotes with a Caption and a Twitter 1`] = `
 </div>
 `;
 
-exports[`PullQuotes test on web Pull Quotes with a twitter link 1`] = `
-<div>
-  <div
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(105,105,105,1)",
-      }
-    }
-  >
-    “
-  </div>
-  <div
-    dir="auto"
-  >
-    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-  </div>
-  <div>
-    <div
-      dir="auto"
-      style={
-        Object {
-          "color": "rgba(105,105,105,1)",
-        }
-      }
-    >
-      Judge Sapnara
-    </div>
-    <div>
-      <svg
-        height={10}
-        width={12}
-      >
-        <path
-          fill="#006699"
-        />
-      </svg>
-      <a
-        dir="auto"
-        href="https://twitter.com/@JudgeSapnara"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        rel=" noopener noreferrer"
-        role="link"
-        target="_blank"
-      >
-        @JudgeSapnara
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`PullQuotes test on web Pull Quotes without a Caption 1`] = `
-<div>
-  <div
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(105,105,105,1)",
-      }
-    }
-  >
-    “
-  </div>
-  <div
-    dir="auto"
-  >
-    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-  </div>
-  <div>
-    <div
-      dir="auto"
-      style={
-        Object {
-          "color": "rgba(105,105,105,1)",
-        }
-      }
-    >
-      
-    </div>
-  </div>
-</div>
-`;
-
-exports[`PullQuotes test on web Pull Quotes without a Caption and different colours 1`] = `
+exports[`4. Renders with different colours 1`] = `
 <div>
   <div
     dir="auto"
@@ -183,6 +133,7 @@ exports[`PullQuotes test on web Pull Quotes without a Caption and different colo
     “
   </div>
   <div
+    className="responsive-styles__component-fbPFZZ kssypV"
     dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child

@@ -123,7 +123,7 @@ exports[`Article Image test on web does not render Caption on Article Image if b
 exports[`Article Image test on web renders inline image (landscape) correctly 1`] = `
 Array [
   <div
-    className="responsive-styles__component-fbPFZZ jUHLOA"
+    className="responsive-styles__component-fbPFZZ eDxyJy"
   >
     <div>
       <div
@@ -161,7 +161,7 @@ Array [
     </div>
   </div>,
   <div
-    className="responsive-styles__component-fbPFZZ gfZQNy"
+    className="responsive-styles__component-fbPFZZ dsGAlg"
   >
     <div>
       <div>
@@ -184,7 +184,7 @@ Array [
 exports[`Article Image test on web renders inline image (portrait) correctly 1`] = `
 Array [
   <div
-    className="responsive-styles__component-fbPFZZ jUHLOA"
+    className="responsive-styles__component-fbPFZZ eDxyJy"
   >
     <div>
       <div
@@ -222,7 +222,7 @@ Array [
     </div>
   </div>,
   <div
-    className="responsive-styles__component-fbPFZZ gfZQNy"
+    className="responsive-styles__component-fbPFZZ dsGAlg"
   >
     <div>
       <div>
