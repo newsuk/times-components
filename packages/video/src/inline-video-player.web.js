@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import { propTypes, defaultProps } from "./video.proptypes";
 
-const styles = `
+const css = `
 .video-js .vjs-big-play-button {
   width: 70px;
   height: 70px;
@@ -51,7 +51,7 @@ class InlineVideoPlayer extends Component {
   static attachStyles() {
     const styleTag = document.createElement("style");
     styleTag.type = "text/css";
-    const cssText = document.createTextNode(styles);
+    const cssText = document.createTextNode(css);
     styleTag.appendChild(cssText);
     document.head.appendChild(styleTag);
   }
@@ -70,9 +70,10 @@ class InlineVideoPlayer extends Component {
   componentWillMount() {
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
-      return;
     }
+  }
 
+  componentDidMount() {
     this.loadBrightcoveSDKIfRequired();
 
     InlineVideoPlayer.activePlayers.push(this);

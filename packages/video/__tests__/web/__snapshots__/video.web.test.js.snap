@@ -98,20 +98,14 @@ exports[`Video on web renders a paidOnly video correctly for unpaid users 1`] = 
     }
   }
 >
-  <div
-    style={
-      Object {
-        "height": "200px",
-      }
-    }
-  >
+  <div>
     <div
       style={
         Object {
           "display": "table",
           "height": 0,
           "overflow": "hidden",
-          "paddingBottom": "NaN%",
+          "paddingBottom": "66.66666666666667%",
         }
       }
     >
