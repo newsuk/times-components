@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
+exports[`1. Renders default layout 1`] = `
 <View
   style={
     Object {
@@ -73,7 +73,80 @@ exports[`PullQuotes test on android Pull Quotes with a Caption 1`] = `
 </View>
 `;
 
-exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`] = `
+exports[`2. Renders without a caption 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 30,
+      "marginTop": 0,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 75,
+        "marginBottom": -40,
+        "marginTop": 0,
+      }
+    }
+  >
+    “
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Regular",
+        "fontSize": 25,
+        "lineHeight": 30,
+      }
+    }
+  >
+    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+          "marginBottom": 0,
+        }
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`3. Renders with a twitter handle 1`] = `
 <View
   style={
     Object {
@@ -190,197 +263,7 @@ exports[`PullQuotes test on android Pull Quotes with a Caption and a Twitter 1`]
 </View>
 `;
 
-exports[`PullQuotes test on android Pull Quotes with a twitter link 1`] = `
-<View
-  style={
-    Object {
-      "marginBottom": 30,
-      "marginTop": 0,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 75,
-        "marginBottom": -40,
-        "marginTop": 0,
-      }
-    }
-  >
-    “
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "lineHeight": 30,
-      }
-    }
-  >
-    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-  </Text>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "row",
-        "height": 20,
-        "marginTop": 10,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-          "marginBottom": 0,
-        }
-      }
-    >
-      Judge Sapnara
-    </Text>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "borderLeftColor": "#696969",
-          "borderLeftWidth": 1,
-          "display": "flex",
-          "flexDirection": "row",
-          "height": 15,
-          "marginLeft": 7,
-          "paddingLeft": 7,
-        }
-      }
-    >
-      <svg
-        height={10}
-        width={12}
-      >
-        <path
-          fill="#006699"
-        />
-      </svg>
-      <Text
-        accessibilityRole="link"
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        href="https://twitter.com/@JudgeSapnara"
-        onPress={[Function]}
-        style={
-          Object {
-            "color": "#006699",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 13,
-            "marginLeft": 3,
-            "textDecorationLine": "none",
-          }
-        }
-        target="_blank"
-      >
-        @JudgeSapnara
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`PullQuotes test on android Pull Quotes without a Caption 1`] = `
-<View
-  style={
-    Object {
-      "marginBottom": 30,
-      "marginTop": 0,
-      "paddingLeft": 10,
-      "paddingRight": 10,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 75,
-        "marginBottom": -40,
-        "marginTop": 0,
-      }
-    }
-  >
-    “
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Regular",
-        "fontSize": 25,
-        "lineHeight": 30,
-      }
-    }
-  >
-    [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-  </Text>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "row",
-        "height": 20,
-        "marginTop": 10,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-          "marginBottom": 0,
-        }
-      }
-    >
-      
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`PullQuotes test on android Pull Quotes without a Caption and different colours 1`] = `
+exports[`4. Renders with different colours 1`] = `
 <View
   style={
     Object {

@@ -12,7 +12,9 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     paddingTop: spacing(2),
-    paddingBottom: spacing(2)
+    paddingBottom: spacing(2),
+    marginBottom: spacing(6),
+    marginTop: spacing(6)
   }
 });
 const defaultRenderers = {

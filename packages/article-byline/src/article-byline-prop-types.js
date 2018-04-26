@@ -4,6 +4,7 @@ import { treePropType } from "@times-components/markup";
 
 export const articleBylinePropTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
+  onAuthorPress: PropTypes.func,
   style: PropTypes.shape({
     link: Text.propTypes.style
   })
@@ -11,5 +12,6 @@ export const articleBylinePropTypes = {
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
+  onAuthorPress: () => null,
   style: {}
 };

@@ -7,8 +7,8 @@ export const MetaTextElement = withResponsiveStyles(
   {
     base: () => ` border-top: 1px solid ${colours.functional.keyline};`,
     mediumUp: () => `
-      padding-top: ${spacing(2)};
-      padding-bottom: ${spacing(2)};
+      padding-top: ${spacing(1)};
+      padding-bottom: ${spacing(1)};
     `,
     wideUp: () => `
       line-height: 18px;

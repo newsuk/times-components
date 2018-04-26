@@ -163,7 +163,6 @@ Array [
 
 .c15 {
   width: 50%;
-  padding-top: 5px;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
@@ -172,8 +171,8 @@ Array [
 .c16 {
   width: 50%;
   margin-top: -10px;
-  padding-top: 5px;
-  padding-left: 20px;
+  padding-top: 0;
+  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   display: inline-block;
@@ -251,8 +250,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -340,6 +339,7 @@ Array [
     clear: left;
     float: left;
     padding-bottom: 0px;
+    padding-top: 5px;
     padding-right: 20px;
   }
 }
@@ -360,7 +360,7 @@ Array [
     margin-top: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2022,7 +2022,6 @@ Array [
 
 .c19 {
   width: 50%;
-  padding-top: 5px;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: top;
@@ -2031,8 +2030,8 @@ Array [
 .c20 {
   width: 50%;
   margin-top: -10px;
-  padding-top: 5px;
-  padding-left: 20px;
+  padding-top: 0;
+  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   display: inline-block;
@@ -2047,6 +2046,13 @@ Array [
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
+}
+
+.c23 {
+  color: #333333;
+  font-family: TimesModern-Regular;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 @media (min-width:1024px) {
@@ -2120,8 +2126,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -2245,6 +2251,7 @@ Array [
     clear: left;
     float: left;
     padding-bottom: 0px;
+    padding-top: 5px;
     padding-right: 20px;
   }
 }
@@ -2265,7 +2272,7 @@ Array [
     margin-top: 0px;
     padding-top: 0px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2293,13 +2300,20 @@ Array [
 
 @media (min-width:768px) {
   .c22 {
-    width: 60%;
+    width: 50%;
     float: left;
     margin-right: 20px;
     margin-bottom: 0px;
     margin-top: 5px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c23 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -3301,6 +3315,7 @@ Array [
               “
             </div>
             <div
+              className="c23"
               dir="auto"
             >
               [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
@@ -4508,6 +4523,13 @@ Array [
   margin-bottom: 10px;
 }
 
+.c17 {
+  color: #333333;
+  font-family: TimesModern-Regular;
+  font-size: 25px;
+  line-height: 30px;
+}
+
 @media (min-width:1024px) {
   .c0 {
     padding-top: 20px;
@@ -4579,8 +4601,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -4666,13 +4688,20 @@ Array [
 
 @media (min-width:768px) {
   .c16 {
-    width: 60%;
+    width: 50%;
     float: left;
     margin-right: 20px;
     margin-bottom: 0px;
     margin-top: 5px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -5113,6 +5142,7 @@ Array [
                   “
                 </div>
                 <div
+                  className="c17"
                   dir="auto"
                 >
                   [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
@@ -6288,8 +6318,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -6988,8 +7018,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -8487,8 +8517,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -9916,8 +9946,8 @@ Array [
 
 @media (min-width:768px) {
   .c5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -11406,8 +11436,8 @@ Array [
 
 @media (min-width:768px) {
   .c5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -12818,8 +12848,8 @@ Array [
 
 @media (min-width:768px) {
   .c5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -14229,8 +14259,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -15735,8 +15765,8 @@ Array [
 
 @media (min-width:768px) {
   .c6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -17157,8 +17187,8 @@ Array [
 
 @media (min-width:768px) {
   .c5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 

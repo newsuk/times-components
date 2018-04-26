@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.6.1...@times-components/jest-configurator@0.6.2) (2018-04-25)
+
+
+### Bug Fixes
+
+* read Jest intra-monorepo dependencies from source ([#877](https://github.com/newsuk/times-components/issues/877)) ([96fb38a](https://github.com/newsuk/times-components/commit/96fb38a))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.6.0...@times-components/jest-configurator@0.6.1) (2018-04-23)
 

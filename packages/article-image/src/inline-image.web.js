@@ -14,8 +14,8 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
     margin-top: ${spacing(-2)};
-    padding-top: ${spacing(1)};
-    padding-left: ${spacing(4)};
+    padding-top: 0;
+    padding-left: ${spacing(2)};
     padding-right: ${spacing(2)};
     padding-bottom: ${spacing(4)};
     display: inline-block;
@@ -29,7 +29,7 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
     margin-top: 0px;
     padding-top: 0px;
     padding-right: ${spacing(4)};
-    padding-bottom: ${spacing(6)};
+    padding-bottom: ${spacing(4)};
   `,
   wideUp: () => `
     padding-left: 0px;
@@ -40,7 +40,6 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    padding-top: ${spacing(1)};
     padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;`,
@@ -49,6 +48,7 @@ const InsetImageStyle = withResponsiveStyles(View, {
     clear:left;
     float:left;
     padding-bottom: 0px;
+    padding-top: ${spacing(1)};
     padding-right: ${spacing(4)};`,
   wideUp: () => `
     width: 35.71429%;

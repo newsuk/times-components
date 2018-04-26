@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
-import PropTypes from "prop-types";
 import { TextLink } from "@times-components/link";
 import { IconTwitter } from "@times-components/icons";
-import { colours } from "@times-components/styleguide";
+import PullQuoteContent from "./pull-quote-content";
+import { propTypes, defaultProps } from "./pull-quote-prop-types";
 import styles from "./styles";
 
 const ShowTwitter = twitter => {
@@ -15,13 +15,13 @@ const ShowTwitter = twitter => {
 
   return (
     <View style={styles.twitterContainer}>
-      <IconTwitter width={12} height={10} />
+      <IconTwitter height={10} width={12} />
       <TextLink
         key={url}
-        style={styles.link}
-        url={url}
         onPress={() => null}
+        style={styles.link}
         target="_blank"
+        url={url}
       >
         {twitter}
       </TextLink>
@@ -29,34 +29,24 @@ const ShowTwitter = twitter => {
   );
 };
 
-const { container, quotes, content, caption } = styles;
-
-const PullQuotes = props => (
-  <View style={container}>
-    <Text style={[quotes, { color: props.quoteColour }]}>&ldquo;</Text>
-    <Text style={content}>{props.content}</Text>
+const PullQuotes = ({
+  caption,
+  captionColour,
+  content,
+  quoteColour,
+  twitter
+}) => (
+  <View style={styles.container}>
+    <Text style={[styles.quotes, { color: quoteColour }]}>&ldquo;</Text>
+    <PullQuoteContent>{content}</PullQuoteContent>
     <View style={styles.captionContainer}>
-      <Text style={[caption, { color: props.captionColour }]}>
-        {props.caption}
-      </Text>
-      {ShowTwitter(props.twitter)}
+      <Text style={[styles.caption, { color: captionColour }]}>{caption}</Text>
+      {ShowTwitter(twitter)}
     </View>
   </View>
 );
 
-PullQuotes.propTypes = {
-  content: PropTypes.string.isRequired,
-  caption: PropTypes.string,
-  captionColour: PropTypes.string,
-  quoteColour: PropTypes.string,
-  twitter: PropTypes.string
-};
-
-PullQuotes.defaultProps = {
-  caption: "",
-  quoteColour: colours.functional.secondary,
-  captionColour: colours.functional.secondary,
-  twitter: ""
-};
+PullQuotes.propTypes = propTypes;
+PullQuotes.defaultProps = defaultProps;
 
 export default PullQuotes;
