@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { shallow } from "enzyme";
 import RCT from "react-test-renderer";
 import Link from "@times-components/link";
@@ -16,7 +16,7 @@ jest.mock("ScrollView", () => {
   const MockScrollView = require.requireMock("ScrollViewMock");
   const React = require("React"); // eslint-disable-line
   const RealScrollView = require.requireActual("ScrollView");
-  class ScrollView extends React.Component {
+  class ScrollView extends Component {
     scrollTo() {
       return this;
     }

@@ -1,7 +1,7 @@
+import { Component } from "react";
 import format from "date-fns/format";
 import addMinutes from "date-fns/add_minutes";
 import PropTypes from "prop-types";
-import React from "react";
 import { isLondonTimezone, isBST, getUTCTime } from "./date";
 
 const publications = {
@@ -9,7 +9,7 @@ const publications = {
   TIMES: "The Times"
 };
 
-class DatePublication extends React.Component {
+class DatePublication extends Component {
   constructor(props) {
     super(props);
     this.state = {

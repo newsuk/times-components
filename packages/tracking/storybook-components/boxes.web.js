@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Text } from "react-native";
 import Box from "./box";
 
-export default class Boxes extends React.Component {
+export default class Boxes extends Component {
   componentDidMount() {
     this.props.receiveChildList(this.props.boxes);
   }

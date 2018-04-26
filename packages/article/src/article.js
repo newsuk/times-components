@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
@@ -20,7 +20,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-class ArticlePage extends React.Component {
+class ArticlePage extends Component {
   static renderRow(
     rowData,
     onRelatedArticlePress,

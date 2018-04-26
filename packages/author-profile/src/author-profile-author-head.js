@@ -1,7 +1,7 @@
+import React, { Component } from "react";
 import AuthorHead from "@times-components/author-head";
 import Gradient from "@times-components/gradient";
 import { colours, spacing } from "@times-components/styleguide";
-import React from "react";
 import { StyleSheet, View } from "react-native";
 
 const styles = StyleSheet.create({
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   }
 });
 
-class AuthorProfileAuthorHead extends React.Component {
+class AuthorProfileAuthorHead extends Component {
   shouldComponentUpdate(nextProps) {
     return this.props.isLoading !== nextProps.isLoading;
   }
