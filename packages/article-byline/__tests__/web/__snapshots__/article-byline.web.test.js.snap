@@ -24,6 +24,11 @@ exports[`Article Byline test on web renders correctly with a single author 1`] =
   onClick={[Function]}
   onKeyDown={[Function]}
   role="link"
+  style={
+    Object {
+      "color": "rgba(105,105,105,1)",
+    }
+  }
 >
   Alexandra Frean
 </a>
@@ -32,6 +37,11 @@ exports[`Article Byline test on web renders correctly with a single author 1`] =
 exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
 <div
   dir="auto"
+  style={
+    Object {
+      "color": "rgba(105,105,105,1)",
+    }
+  }
 >
   Lindsay McIntosh Scottish Political Editor
 </div>
@@ -47,11 +57,21 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Camilla Long
   </a>,
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
      
   </div>,
@@ -61,11 +81,21 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Mike Atherton
   </a>,
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
      
   </div>,
@@ -75,6 +105,11 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Alexandra Frean
   </a>,
@@ -89,11 +124,21 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Camilla Long
   </a>,
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     , 
   </div>,
@@ -103,11 +148,21 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Mike Atherton
   </a>,
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     , 
   </div>,
@@ -117,6 +172,11 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Alexandra Frean
   </a>,
@@ -144,6 +204,11 @@ exports[`Article Byline test on web renders correctly with the author at the end
 Array [
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     RBS Six Nations 
   </div>,
@@ -153,6 +218,11 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Mike Atherton
   </a>,
@@ -167,11 +237,21 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     role="link"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     Camilla Long
   </a>,
   <div
     dir="auto"
+    style={
+      Object {
+        "color": "rgba(105,105,105,1)",
+      }
+    }
   >
     , Environment Editor
   </div>,

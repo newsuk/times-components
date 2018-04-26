@@ -1648,7 +1648,7 @@ exports[`Article tests on android should render a full article 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -3869,7 +3869,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -5470,7 +5470,7 @@ exports[`Article tests on android should render an article with a video asset 1`
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -8993,7 +8993,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -10705,7 +10705,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -12297,7 +12297,7 @@ exports[`Article tests on android should render an article with no label and no 
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -13870,7 +13870,7 @@ exports[`Article tests on android should render an article with no label, no fla
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -15591,7 +15591,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -17192,7 +17192,7 @@ exports[`Article tests on android should render an article with no standfirst an
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
@@ -18885,7 +18885,7 @@ exports[`Article tests on android should render an article with no standfirst an
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#006699",
+                  "color": "#696969",
                 }
               }
             >
