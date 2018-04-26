@@ -62,6 +62,15 @@ const withOpenInNewWindow = children => {
 };
 
 storiesOf("Primitives/Advertisement", module)
+  .add("Placeholder (300x250 - MPU)", () => (
+    <Placeholder width={300} height={250} />
+  ))
+  .add("Placeholder (728x90 - Default)", () => (
+    <Placeholder width={728} height={90} />
+  ))
+  .add("Placeholder (970x250 - Billboard)", () => (
+    <Placeholder width={970} height={250} />
+  ))
   .add("render one ad - intervention", () =>
     withOpenInNewWindow(
       <Ad pos="intervention" contextUrl={articleUrl} section="news" />
@@ -154,15 +163,6 @@ storiesOf("Primitives/Advertisement", module)
       </ScrollView>
     )
   )
-  .add("Placeholder (300x250 - MPU)", () => (
-    <Placeholder width={300} height={250} />
-  ))
-  .add("Placeholder (728x90 - Default)", () => (
-    <Placeholder width={728} height={90} />
-  ))
-  .add("Placeholder (970x250 - Billboard)", () => (
-    <Placeholder width={970} height={250} />
-  ))
   .add("DOMContext", () =>
     withOpenInNewWindow(
       <DOMContext
