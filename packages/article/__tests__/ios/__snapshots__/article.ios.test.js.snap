@@ -1645,7 +1645,7 @@ exports[`Article tests on ios should render a full article 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -3863,7 +3863,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -5463,7 +5463,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -8967,7 +8967,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -10669,7 +10669,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -12251,7 +12251,7 @@ exports[`Article tests on ios should render an article with no label and no flag
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -13815,7 +13815,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -15527,7 +15527,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -17119,7 +17119,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
@@ -18803,7 +18803,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               ellipsizeMode="tail"
               style={
                 Object {
-                  "color": "#696969",
+                  "color": "#006699",
                 }
               }
             >
