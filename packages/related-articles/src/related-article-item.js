@@ -11,7 +11,7 @@ import { colours } from "@times-components/styleguide";
 import {
   relatedArticleItemPropTypes,
   relatedArticleItemDefaultProps
-} from "./related-article-item-proptypes";
+} from "./related-article-item-prop-types";
 import styles from "./styles";
 
 const RelatedArticleItem = ({
@@ -47,7 +47,6 @@ const RelatedArticleItem = ({
         imageContainerClass={imageContainerClass}
         image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
         imageRatio={imageRatio}
-        imageSize={996}
         imageStyle={imageStyle}
         isReversed={isReversed}
         showImage={showImage}
@@ -56,7 +55,8 @@ const RelatedArticleItem = ({
           bylineProps={{
             ast: byline,
             bylineClass,
-            bylineStyle: styles.byline,
+            bylineStyle: isOpinionByline ? styles.opinionByline : styles.byline,
+            colour: colours.section[section] || colours.section.default,
             isOpinionByline
           }}
           content={() =>

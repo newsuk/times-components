@@ -97,7 +97,7 @@ describe("Shavingbar test on web: ", () => {
       .map(group => group.props())
       .filter(group => group.captionRole === "Save Status");
 
-    const notSaved = shallow(<Shavingbar/>)
+    const notSaved = shallow(<Shavingbar />)
       .dive()
       .find("Bar")
       .dive()

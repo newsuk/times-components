@@ -4,6 +4,7 @@ import React, { Component, Fragment } from "react";
 import { StyleSheet, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import { normaliseWidth } from "@times-components/utils";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import AuthorProfileAuthorHead from "./author-profile-author-head";
@@ -12,7 +13,6 @@ import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";
-import { normaliseWidth } from "./utils";
 
 const styles = StyleSheet.create({
   container: {
@@ -225,7 +225,7 @@ class AuthorProfileContent extends Component {
                           <AuthorProfileItem
                             {...article}
                             imageRatio={imageRatio}
-                            imageSize={this.getImageSize(elementId)}
+                            imageSize={this.getImageSize(elementId) || 100}
                             showImage={showImages}
                             onPress={e => onArticlePress(e, { id, url })}
                           />

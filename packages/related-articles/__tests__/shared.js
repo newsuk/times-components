@@ -83,7 +83,7 @@ export default () => {
         .toJSON();
       expect(tree).toMatchSnapshot();
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics even when no related articles"
+        "1. Send analytics even when no related articles"
       );
     });
 
@@ -99,9 +99,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "2a. Standard template: Render a single related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for a single related article"
+        "2b. Standard template: Send analytics for a single related article"
       );
     });
 
@@ -117,9 +119,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "3a. Standard template: Render two related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for two related articles"
+        "3b. Standard template: Send analytics for two related articles"
       );
     });
 
@@ -135,9 +139,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "4a. Standard template: Render three related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for three related articles"
+        "4b. Standard template: Send analytics for three related articles"
       );
     });
   });
@@ -155,9 +161,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "5a. Lead and two template: Render one lead related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for a lead related article"
+        "5b. Lead and two template: Send analytics for a lead related article"
       );
     });
 
@@ -173,9 +181,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "6a. Lead and two template: Render one lead and one support related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for lead and support related articles"
+        "6b. Lead and two template: Send analytics for lead and support related articles"
       );
     });
 
@@ -191,9 +201,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "7a. Lead and two template: Render one lead and two support related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for lead and two support related articles"
+        "7b. Lead and two template: Send analytics for lead and two support related articles"
       );
     });
   });
@@ -211,9 +223,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "8a. Opinion and two template: Render one opinion related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for a opinion related article"
+        "8b. Opinion and two template: Send analytics for a opinion related article"
       );
     });
 
@@ -229,9 +243,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "9a. Opinion and two template: Render one opinion and one support related article"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for opinion and support related articles"
+        "9b. Opinion and two template: Send analytics for opinion and support related articles"
       );
     });
 
@@ -247,9 +263,11 @@ export default () => {
           />
         )
         .toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot(
+        "10a. Opinion and two template: Render one opinion and two support related articles"
+      );
       expect(events.mock.calls).toMatchSnapshot(
-        "should send analytics for opinion and two support related articles"
+        "10b. Opinion and two template: Send analytics for opinion and two support related articles"
       );
     });
   });

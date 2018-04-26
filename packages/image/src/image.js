@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { ImageBackground, View } from "react-native";
-import { addMissingProtocol } from "@times-components/utils";
+import {
+  addMissingProtocol,
+  normaliseWidth,
+  screenWidthInPixels
+} from "@times-components/utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "../styles";
@@ -10,7 +14,8 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false
+      isLoaded: false,
+      width: normaliseWidth(screenWidthInPixels())
     };
     this.handleLoad = this.handleLoad.bind(this);
   }
@@ -21,7 +26,7 @@ class TimesImage extends Component {
 
   render() {
     const { aspectRatio, style, uri } = this.props;
-    const { isLoaded } = this.state;
+    const { isLoaded, width } = this.state;
     // web handles missing protocols just fine, native doesn't. This evens out support.
     const cleanUri = addMissingProtocol(uri);
 
@@ -30,8 +35,12 @@ class TimesImage extends Component {
       onLoad: this.handleLoad
     };
 
-    if (cleanUri) {
-      props.source = { uri: cleanUri };
+    if (cleanUri && width > 0) {
+      const resizedUri =
+        cleanUri.indexOf("&resize") === -1
+          ? `${cleanUri}&resize=${width}`
+          : cleanUri;
+      props.source = { uri: resizedUri };
     }
 
     return (

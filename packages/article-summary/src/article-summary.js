@@ -28,17 +28,20 @@ const ArticleSummary = props => {
     labelProps
   } = props;
 
-  const renderByline = () => (
-    <Text
-      className={bylineProps.bylineClass}
-      style={[
-        bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText,
-        bylineProps.bylineStyle
-      ]}
-    >
-      <Byline {...bylineProps} />
-    </Text>
-  );
+  const renderByline = () => {
+    if (bylineProps.ast.length === 0) return null;
+    return (
+      <Text
+        className={bylineProps.bylineClass}
+        style={[
+          bylineProps.isOpinionByline ? styles.opinionByline : styles.metaText,
+          bylineProps.bylineStyle
+        ]}
+      >
+        <Byline {...bylineProps} />
+      </Text>
+    );
+  };
 
   return (
     <View>

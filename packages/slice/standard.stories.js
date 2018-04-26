@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { select } from "@times-components/storybook";
 import { storiesOf } from "@storybook/react-native";
 import StandardSlice from "./src/templates/standard";
@@ -34,10 +34,12 @@ const createStandardItems = noOfItems =>
     .filter(item => item !== false);
 
 storiesOf("Primitives/Slice", module).add("Standard", () => (
-  <StandardSlice
-    itemCount={Number(select(itemCountLabel, itemCount, itemCountDefault))}
-    renderItems={() =>
-      createStandardItems(select(itemCountLabel, itemCount, itemCountDefault))
-    }
-  />
+  <ScrollView>
+    <StandardSlice
+      itemCount={Number(select(itemCountLabel, itemCount, itemCountDefault))}
+      renderItems={() =>
+        createStandardItems(select(itemCountLabel, itemCount, itemCountDefault))
+      }
+    />
+  </ScrollView>
 ));

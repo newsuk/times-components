@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import { Image } from "react-native";
-import propTypes from "./brightcove-player.proptypes";
+import propTypes from "./brightcove-player-prop-types";
 import defaults from "./brightcove-player.defaults";
 
 const SourcePropType = Image.propTypes.source;

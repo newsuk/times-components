@@ -3,7 +3,7 @@ import { spacing } from "@times-components/styleguide";
 export const opinionConfig = {
   imageConfig: {
     cropSize: "23",
-    imageRatio: 2 / 3,
+    imageRatio: 308 / 502,
     style: {
       bottom: 0,
       marginTop: -140,

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { relatedArticleItemPropTypes } from "./related-article-item-proptypes";
+import { relatedArticleItemPropTypes } from "./related-article-item-prop-types";
 
 export const relatedArticlesPropTypes = {
   articles: PropTypes.arrayOf(relatedArticleItemPropTypes.article),

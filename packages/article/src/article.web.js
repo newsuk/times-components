@@ -4,7 +4,7 @@ import RelatedArticles from "@times-components/related-articles";
 
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-proptypes";
+import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";

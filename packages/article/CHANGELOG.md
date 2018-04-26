@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.70.4"></a>
+## [0.70.4](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.3...@times-components/article@0.70.4) (2018-04-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.3"></a>
+## [0.70.3](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.2...@times-components/article@0.70.3) (2018-04-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.2"></a>
+## [0.70.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.1...@times-components/article@0.70.2) (2018-04-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.1"></a>
+## [0.70.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.0...@times-components/article@0.70.1) (2018-04-24)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.0"></a>
+# [0.70.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.69.2...@times-components/article@0.70.0) (2018-04-24)
+
+
+### Features
+
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+
+
+
+
+<a name="0.69.2"></a>
+## [0.69.2](https://github.com/newsuk/times-components/compare/@times-components/article@0.69.1...@times-components/article@0.69.2) (2018-04-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.69.1"></a>
 ## [0.69.1](https://github.com/newsuk/times-components/compare/@times-components/article@0.69.0...@times-components/article@0.69.1) (2018-04-23)
 

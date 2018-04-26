@@ -1,14 +1,15 @@
 import React from "react";
-import { View } from "react-native";
+import { Dimensions, View } from "react-native";
 import PropTypes from "prop-types";
 import { spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import { renderTrees } from "@times-components/markup";
 import ArticleImage from "@times-components/article-image";
 import PullQuote from "@times-components/pull-quote";
-import AspectRatioContainer from "./media-aspect-ratio";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
+// To fix a jest coverage issue
+import AspectRatioContainer from "./media-aspect-ratio"; // eslint-disable-line no-unused-vars
 import InsetCaption from "./inset-caption";
 
 const primaryContainer = {
@@ -17,7 +18,7 @@ const primaryContainer = {
   paddingBottom: spacing(5)
 };
 
-const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
+const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
       return (
@@ -85,18 +86,22 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         caption
       }
     ) {
+      const aspectRatio = 16 / 9;
+
+      const { width } = Dimensions.get("window");
+      const height = width / aspectRatio;
+
       return (
         <View key={key} style={primaryContainer}>
-          <AspectRatioContainer aspectRatio="16:9">
-            <Video
-              width="100%"
-              height="100%"
-              policyKey={brightcovePolicyKey}
-              videoId={brightcoveVideoId}
-              accountId={brightcoveAccountId}
-              poster={{ uri: posterImageUrl }}
-            />
-          </AspectRatioContainer>
+          <Video
+            width={width}
+            height={height}
+            policyKey={brightcovePolicyKey}
+            videoId={brightcoveVideoId}
+            accountId={brightcoveAccountId}
+            poster={{ uri: posterImageUrl }}
+            onVideoPress={onVideoPress}
+          />
           <InsetCaption caption={caption} />
         </View>
       );
@@ -112,7 +117,8 @@ ArticleRow.propTypes = {
     }),
     index: PropTypes.number
   }).isRequired,
-  onLinkPress: PropTypes.func.isRequired
+  onLinkPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 
 export default ArticleRow;
