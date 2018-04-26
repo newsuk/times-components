@@ -34,7 +34,7 @@ const getCommonProps = () => ({
   /* We're using selectV2 over our own select abstraction as
    * it flips the keys and values. We don't want that behaviour.
    */
-  colour: selectV2("Section colours", colours.section),
+  color: selectV2("Section colours", colours.section),
   onAuthorPress: preventDefaultedAction("onAuthorPress")
 });
 

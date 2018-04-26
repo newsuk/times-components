@@ -56,7 +56,7 @@ const RelatedArticleItem = ({
             ast: byline,
             bylineClass,
             bylineStyle: isOpinionByline ? styles.opinionByline : styles.byline,
-            colour: colours.section[section] || colours.section.default,
+            color: colours.section[section] || colours.section.default,
             isOpinionByline
           }}
           content={() =>

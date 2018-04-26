@@ -16,8 +16,8 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, colour, style, onAuthorPress }) => {
-  const styles = [linkStyles.link, colour && { color: colour }, style.link];
+const ArticleByline = ({ ast, color, style, onAuthorPress }) => {
+  const styles = [linkStyles.link, color && { color }, style.link];
 
   return renderTrees(ast, {
     author(key, attributes, children) {
