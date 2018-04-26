@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.3"></a>
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.2...@times-components/ad@0.18.3) (2018-04-26)
+
+
+### Bug Fixes
+
+* remove criteo and pubmatic bidders ([#899](https://github.com/newsuk/times-components/issues/899)) ([b32d11c](https://github.com/newsuk/times-components/commit/b32d11c))
+
+
+
+
 <a name="0.18.2"></a>
 ## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.1...@times-components/ad@0.18.2) (2018-04-26)
 
