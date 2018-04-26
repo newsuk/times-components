@@ -64,27 +64,6 @@ const getPrebidSlotConfig = (pos, section, width, biddersConfig) => {
       }
     }
   ];
-  sizes.forEach(size => {
-    bids.push({
-      bidder: "pubmatic",
-      params: {
-        publisherId: biddersConfig.pubmatic.accountId,
-        adSlot: `${biddersConfig.pubmatic.adSlotPrefix}@${size.join("x")}`,
-        section
-      }
-    });
-
-    // Criteo
-    const zoneId = biddersConfig.criteo.zoneMap[size.join("x")] || "";
-    if (zoneId) {
-      bids.push({
-        bidder: "criteo",
-        params: {
-          zoneId
-        }
-      });
-    }
-  });
   return {
     // NOTE: for the prebidding the position of the ad in the page is called code
     code: pos,
