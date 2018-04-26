@@ -40,7 +40,6 @@ const InsetCaptionContainerStyle = withResponsiveStyles(View, {
 const InsetImageStyle = withResponsiveStyles(View, {
   base: () => `
     width: 50%;
-    padding-top: 0;
     padding-bottom: ${spacing(4)};
     display: inline-block;
     vertical-align: top;`,
