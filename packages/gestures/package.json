@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gestures",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "dist/gestures",
   "dev": "src/gestures",
@@ -57,7 +57,7 @@
     "react-native-web": "0.3.2"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.6.2",
+    "@times-components/styleguide": "0.6.3",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
