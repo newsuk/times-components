@@ -7,7 +7,6 @@ import cloneDeep from "lodash.clonedeep";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import AuthorProfile from "../src/author-profile";
 import AuthorProfileItem from "../src/author-profile-item";
-import AuthorHead from "../src/author-profile-author-head";
 import AuthorProfileItemSeparator from "../src/author-profile-item-separator";
 import pagedResult from "./paged-result";
 
@@ -288,62 +287,6 @@ export default AuthorProfileContent => {
     const component = renderer.create(<AuthorProfileItemSeparator />);
 
     expect(component).toMatchSnapshot();
-  });
-
-  it("renders the author head", () => {
-    const component = renderer.create(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("does not re-render the author head if the name changes", () => {
-    const el = shallow(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    el.setProps({
-      name: "second name"
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
-  });
-
-  it("does re-render the author head if the loading state changes", () => {
-    const el = shallow(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    el.setProps({
-      name: "second name",
-      isLoading: false
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
   });
 
   it("tracks page view", () => {

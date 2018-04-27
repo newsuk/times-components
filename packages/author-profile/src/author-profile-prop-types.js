@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 import AuthorHead from "@times-components/author-head";
 
 export const propTypes = {
-  isLoading: PropTypes.bool,
-  error: PropTypes.shape(),
   author: PropTypes.shape({
     name: PropTypes.string,
     jobTitle: PropTypes.string,
@@ -11,25 +9,27 @@ export const propTypes = {
     image: PropTypes.string,
     twitter: PropTypes.string
   }),
+  error: PropTypes.shape(),
+  isLoading: PropTypes.bool,
   page: PropTypes.number,
+  pageSize: PropTypes.number,
+  onArticlePress: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
-  pageSize: PropTypes.number,
   onTwitterLinkPress: PropTypes.func,
-  onArticlePress: PropTypes.func,
-  slug: PropTypes.string.isRequired,
-  refetch: PropTypes.func
+  refetch: PropTypes.func,
+  slug: PropTypes.string.isRequired
 };
 
 export const defaultProps = {
   author: null,
   error: null,
   isLoading: true,
-  onArticlePress: () => {},
-  onTwitterLinkPress: () => {},
   page: 1,
+  pageSize: 10,
+  onArticlePress: () => {},
   onNext: () => {},
   onPrev: () => {},
-  pageSize: 10,
+  onTwitterLinkPress: () => {},
   refetch: () => {}
 };

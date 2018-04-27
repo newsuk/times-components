@@ -1,45 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile test on ios does not re-render the author head if the name changes 1`] = `
-<Text
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#1D1D1B",
-      "fontFamily": "TimesModern-Bold",
-      "fontSize": 30,
-    }
-  }
-  testID="author-name"
->
-  Deborah Haynes
-</Text>
-`;
-
-exports[`AuthorProfile test on ios does re-render the author head if the loading state changes 1`] = `
-<Text
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#1D1D1B",
-      "fontFamily": "TimesModern-Bold",
-      "fontSize": 30,
-    }
-  }
-  testID="author-name"
->
-  second name
-</Text>
-`;
-
 exports[`AuthorProfile test on ios renders page error 1`] = `
 <View
   style={
@@ -128,7 +88,7 @@ exports[`AuthorProfile test on ios renders profile 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
         bio={
           Array [
             Object {
@@ -1630,7 +1590,7 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
         bio={
           Array [
             Object {
@@ -1662,10 +1622,12 @@ exports[`AuthorProfile test on ios renders profile content component 1`] = `
             },
           ]
         }
+        isLoading={false}
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
         title="Defence Editor"
         twitter="jdoe"
+        uri=""
       />
       <AuthorProfilePagination
         hideResults={false}
@@ -2791,9 +2753,14 @@ exports[`AuthorProfile test on ios renders profile content empty 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
+        bio={Array []}
         isLoading={false}
+        name=""
         onTwitterLinkPress={[Function]}
+        title=""
+        twitter={null}
+        uri=""
       />
       <AuthorProfilePagination
         hideResults={false}
@@ -3397,9 +3364,14 @@ exports[`AuthorProfile test on ios renders profile content loading 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
+        bio={Array []}
         isLoading={true}
+        name=""
         onTwitterLinkPress={[Function]}
+        title=""
+        twitter={null}
+        uri=""
       />
       <AuthorProfilePagination
         hideResults={false}
@@ -4068,9 +4040,14 @@ exports[`AuthorProfile test on ios renders profile loading 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
+        bio={Array []}
         isLoading={true}
+        name=""
         onTwitterLinkPress={[Function]}
+        title=""
+        twitter={null}
+        uri=""
       />
       <AuthorProfilePagination
         hideResults={false}
@@ -5255,137 +5232,6 @@ exports[`AuthorProfile test on ios renders profile separator 1`] = `
 />
 `;
 
-exports[`AuthorProfile test on ios renders the author head 1`] = `
-<View
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <View
-    pointerEvents="box-none"
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "transparent",
-      }
-    }
-  >
-    <View
-      accessibilityRole="banner"
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#F9F8F3",
-          "flexDirection": "column",
-          "paddingBottom": 40,
-          "paddingTop": 30,
-          "width": "100%",
-        }
-      }
-    >
-      <Text
-        accessibilityLabel="author-name"
-        accessibilityRole="heading"
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#1D1D1B",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 30,
-          }
-        }
-        testID="author-name"
-      >
-        Deborah Haynes
-      </Text>
-      <Text
-        accessibilityRole="heading"
-        accessible={true}
-        allowFontScaling={true}
-        aria-level="2"
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#696969",
-            "fontFamily": "TimesDigitalW04-RegularSC",
-            "fontSize": 14,
-          }
-        }
-      >
-        
-      </Text>
-      <View
-        style={
-          Object {
-            "flexDirection": "row",
-            "paddingBottom": 8,
-            "paddingTop": 8,
-          }
-        }
-      >
-        <svg
-          height={15}
-          width={15}
-        >
-          <path
-            fill="#006699"
-          />
-        </svg>
-        <Text
-          accessibilityRole="link"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          href="https://twitter.com/jdoe"
-          onPress={[Function]}
-          style={
-            Object {
-              "color": "#006699",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 15,
-              "paddingLeft": 5,
-              "textDecorationLine": "none",
-            }
-          }
-        >
-          @
-          jdoe
-        </Text>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingBottom": 32,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 26,
-              "textAlign": "center",
-            }
-          }
-          testID="author-bio"
-        />
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
 exports[`AuthorProfile test on ios renders with no author 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
@@ -5401,9 +5247,14 @@ exports[`AuthorProfile test on ios renders with no author 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <AuthorProfileAuthorHead
+      <WithTrackEvents(AuthorHead)
+        bio={Array []}
         isLoading={false}
+        name=""
         onTwitterLinkPress={[Function]}
+        title=""
+        twitter={null}
+        uri=""
       />
       <AuthorProfilePagination
         count={0}

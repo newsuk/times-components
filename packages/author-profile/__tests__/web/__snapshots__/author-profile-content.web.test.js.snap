@@ -1,16 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile test on web does not re-render the author head if the name changes 1`] = `
-<responsive-styles__component
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  aria-level="1"
-  testID="author-name"
->
-  Deborah Haynes
-</responsive-styles__component>
-`;
-
 exports[`AuthorProfile test on web does not render good quality images if the item is quickly scrolled passed 1`] = `
 Array [
   <img
@@ -39,17 +28,6 @@ Array [
     style="display: block; width: 100%; z-index: 1; position: absolute;"
   />,
 ]
-`;
-
-exports[`AuthorProfile test on web does re-render the author head if the loading state changes 1`] = `
-<responsive-styles__component
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  aria-level="1"
-  testID="author-name"
->
-  second name
-</responsive-styles__component>
 `;
 
 exports[`AuthorProfile test on web renders a good quality image if it is visible 1`] = `
@@ -2513,75 +2491,6 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
 `;
 
 exports[`AuthorProfile test on web renders profile separator 1`] = `<div />`;
-
-exports[`AuthorProfile test on web renders the author head 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ woNlo"
->
-  <div
-    data-testid="author-head"
-  >
-    <header
-      className="responsive-styles__component-fbPFZZ eNPgyU"
-      role="banner"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ fRtPsM"
-      />
-      <h1
-        aria-label="author-name"
-        aria-level="1"
-        className="responsive-styles__component-fbPFZZ dkRirA"
-        data-testid="author-name"
-        dir="auto"
-        role="heading"
-      >
-        Deborah Haynes
-      </h1>
-      <h2
-        aria-level="2"
-        dir="auto"
-        role="heading"
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-          }
-        }
-      >
-        
-      </h2>
-      <div>
-        <svg
-          height={15}
-          width={15}
-        >
-          <path
-            fill="#006699"
-          />
-        </svg>
-        <a
-          dir="auto"
-          href="https://twitter.com/jdoe"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="link"
-        >
-          @
-          jdoe
-        </a>
-      </div>
-      <div
-        className="responsive-styles__component-fbPFZZ yjaCW"
-      >
-        <div
-          data-testid="author-bio"
-          dir="auto"
-        />
-      </div>
-    </header>
-  </div>
-</div>
-`;
 
 exports[`AuthorProfile test on web renders with an intersection observer which uses the expected options 1`] = `
 Object {

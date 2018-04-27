@@ -1,13 +1,12 @@
 /* eslint-env browser */
-
 import React, { Component, Fragment } from "react";
 import { StyleSheet, View } from "react-native";
+import AuthorHead from "@times-components/author-head";
+import ErrorView from "@times-components/error-view";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
-import ErrorView from "@times-components/error-view";
-import { spacing } from "@times-components/styleguide";
-import AuthorProfileAuthorHead from "./author-profile-author-head";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
@@ -245,7 +244,7 @@ class AuthorProfileContent extends Component {
 
     return (
       <View>
-        <AuthorProfileAuthorHead
+        <AuthorHead
           isLoading={isLoading}
           name={name}
           bio={biography}

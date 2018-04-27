@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
-import { withTrackScrollDepth } from "@times-components/tracking";
+import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
-import AuthorProfileAuthorHead from "./author-profile-author-head";
+import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
 import AuthorProfileItemSeparator from "./author-profile-item-separator";
@@ -71,8 +71,8 @@ class AuthorProfileContent extends Component {
       refetch
     } = this.props;
 
-    const AuthorHead = (
-      <AuthorProfileAuthorHead
+    const AuthorProfileHead = (
+      <AuthorHead
         isLoading={isLoading}
         name={name}
         bio={biography}
@@ -86,7 +86,7 @@ class AuthorProfileContent extends Component {
     if (error) {
       return (
         <View style={styles.errorContainer}>
-          {AuthorHead}
+          {AuthorProfileHead}
           <AuthorProfileListingError refetch={refetch} />
         </View>
       );
@@ -169,15 +169,7 @@ class AuthorProfileContent extends Component {
         pageSize={pageSize}
         ListHeaderComponent={
           <View>
-            <AuthorProfileAuthorHead
-              isLoading={isLoading}
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
+            {AuthorProfileHead}
             {paginationComponent({ hideResults: false, autoScroll: false })}
           </View>
         }
