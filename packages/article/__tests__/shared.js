@@ -15,51 +15,51 @@ import articleFixtureNoStandfirstNoFlags from "../fixtures/no-standfirst-no-flag
 import articleFixtureNoLabelNoFlags from "../fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "../fixtures/no-label-no-flags-no-standfirst.json";
 
+const adConfig = {
+  networkId: "mockNetwork",
+  adUnit: "mockAdUnit",
+  pageTargeting: {
+    title: "Title"
+  },
+  slotTargeting: {
+    path: "/news"
+  },
+  biddersConfig: {
+    timeout: 3000,
+    minPrice: 0.01,
+    maxBid: 15,
+    bucketSize: 0.25,
+    bidders: {
+      appnexus: {
+        placementId: "5823281"
+      },
+      rubicon: {
+        accountId: "14062",
+        siteId: "70608",
+        zoneId: "335918"
+      },
+      amazon: {
+        accountId: "3360"
+      },
+      criteo: {
+        zoneMap: {
+          "120x600": "764877"
+        }
+      },
+      pubmatic: {
+        accountId: "156034",
+        adSlotPrefix: "Thetimes"
+      },
+      indexExchange: {
+        siteId: "188830"
+      }
+    }
+  },
+  bidderSlots: ["ad-header", "ad-article-inline"]
+};
+
 export default () => {
   const realIntl = Intl;
-
-  const adConfig = {
-    networkId: "mockNetwork",
-    adUnit: "mockAdUnit",
-    pageTargeting: {
-      title: "Title"
-    },
-    slotTargeting: {
-      path: "/news"
-    },
-    biddersConfig: {
-      timeout: 3000,
-      minPrice: 0.01,
-      maxBid: 15,
-      bucketSize: 0.25,
-      bidders: {
-        appnexus: {
-          placementId: "5823281"
-        },
-        rubicon: {
-          accountId: "14062",
-          siteId: "70608",
-          zoneId: "335918"
-        },
-        amazon: {
-          accountId: "3360"
-        },
-        criteo: {
-          zoneMap: {
-            "120x600": "764877"
-          }
-        },
-        pubmatic: {
-          accountId: "156034",
-          adSlotPrefix: "Thetimes"
-        },
-        indexExchange: {
-          siteId: "188830"
-        }
-      }
-    },
-    bidderSlots: ["ad-header", "ad-article-inline"]
-  };
 
   beforeEach(() => {
     global.Intl = {
@@ -296,3 +296,5 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 };
+
+export { adConfig };

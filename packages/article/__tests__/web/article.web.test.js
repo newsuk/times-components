@@ -6,7 +6,7 @@ import { mount } from "enzyme";
 import ArticleRow from "../../src/article-body/article-body-row";
 import ArticleLink from "../../src/article-body/article-link";
 import Article from "../../src/article";
-import shared from "../shared";
+import shared, { adConfig } from "../shared";
 import sharedTracking from "../shared-tracking";
 
 import articleFixtureNoLeadAsset from "../../fixtures/no-lead-asset.json";
@@ -33,48 +33,6 @@ jest.mock("@times-components/tracking", () => {
   };
 });
 
-const adConfig = {
-  networkId: "mockNetwork",
-  adUnit: "mockAdUnit",
-  pageTargeting: {
-    title: "Title"
-  },
-  slotTargeting: {
-    path: "/news"
-  },
-  biddersConfig: {
-    timeout: 3000,
-    minPrice: 0.01,
-    maxBid: 15,
-    bucketSize: 0.25,
-    bidders: {
-      appnexus: {
-        placementId: "5823281"
-      },
-      rubicon: {
-        accountId: "14062",
-        siteId: "70608",
-        zoneId: "335918"
-      },
-      amazon: {
-        accountId: "3360"
-      },
-      criteo: {
-        zoneMap: {
-          "120x600": "764877"
-        }
-      },
-      pubmatic: {
-        accountId: "156034",
-        adSlotPrefix: "Thetimes"
-      },
-      indexExchange: {
-        siteId: "188830"
-      }
-    }
-  },
-  bidderSlots: ["ad-header", "ad-article-inline"]
-};
 describe("Article tests on web", () => {
   shared();
 
