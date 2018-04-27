@@ -1,14 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
-import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import { AuthorArticlesWithImagesProvider } from "@times-components/provider";
-import { withTrackingContext } from "@times-components/tracking";
 import { ratioTextToFloat } from "@times-components/utils";
 import get from "lodash.get";
 import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
+import { propTypes, defaultProps } from "./author-profile-prop-types";
+import authorProfileTrackingContext from "./author-profile-tracking-context";
 
 const AuthorProfile = ({
   author,
@@ -59,10 +58,10 @@ const AuthorProfile = ({
   return (
     <SelectedProvider
       articleImageRatio="3:2"
-      slug={slug}
+      debounceTimeMs={250}
       page={page}
       pageSize={initPageSize}
-      debounceTimeMs={250}
+      slug={slug}
     >
       {({
         author: data,
@@ -98,47 +97,7 @@ const AuthorProfile = ({
   );
 };
 
-AuthorProfile.defaultProps = {
-  author: null,
-  error: null,
-  isLoading: true,
-  onArticlePress: () => {},
-  onTwitterLinkPress: () => {},
-  page: 1,
-  onNext: () => {},
-  onPrev: () => {},
-  pageSize: 10,
-  refetch: () => {}
-};
+AuthorProfile.propTypes = propTypes;
+AuthorProfile.defaultProps = defaultProps;
 
-AuthorProfile.propTypes = {
-  isLoading: PropTypes.bool,
-  error: PropTypes.shape(),
-  author: PropTypes.shape({
-    name: PropTypes.string,
-    jobTitle: PropTypes.string,
-    biography: AuthorHead.propTypes.bio,
-    image: PropTypes.string,
-    twitter: PropTypes.string
-  }),
-  page: PropTypes.number,
-  onNext: PropTypes.func,
-  onPrev: PropTypes.func,
-  pageSize: PropTypes.number,
-  onTwitterLinkPress: PropTypes.func,
-  onArticlePress: PropTypes.func,
-  slug: PropTypes.string.isRequired,
-  refetch: PropTypes.func
-};
-
-const AuthorProfileWithTracking = withTrackingContext(AuthorProfile, {
-  getAttrs: ({ author, page, pageSize } = {}) => ({
-    authorName: author && author.name,
-    page,
-    pageSize,
-    articlesCount: get(author, "articles.count", 0)
-  }),
-  trackingObjectName: "AuthorProfile"
-});
-
-export default withPageState(AuthorProfileWithTracking);
+export default withPageState(authorProfileTrackingContext(AuthorProfile));
