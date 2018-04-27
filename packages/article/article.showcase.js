@@ -217,7 +217,7 @@ export default {
     {
       type: "story",
       name: "Fixtures - Full",
-      platform: "web",
+      platform: "native",
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, fullArticleFixture)
     },
