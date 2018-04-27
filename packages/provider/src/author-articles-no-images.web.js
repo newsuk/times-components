@@ -1,5 +1,5 @@
 import React from "react";
-import AuthorArticlesNoImagesProvider from "./author-articles-no-images.base";
+import AuthorArticlesNoImagesProvider from "./author-articles-no-images-base";
 
 export default props => (
   <AuthorArticlesNoImagesProvider
