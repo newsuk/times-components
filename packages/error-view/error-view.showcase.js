@@ -62,7 +62,7 @@ FiresOnError.propTypes = {
 };
 
 export default {
-  name: "Primitives/ErrorView",
+  name: "Primitives/Error View",
   children: [
     {
       type: "story",

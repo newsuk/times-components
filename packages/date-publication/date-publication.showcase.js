@@ -13,11 +13,11 @@ const styles = StyleSheet.create({
 });
 
 export default {
-  name: "Primitives/DatePublication",
+  name: "Primitives/Date Publication",
   children: [
     {
       type: "story",
-      name: "standard DatePublication",
+      name: "standard Date Publication",
       component: () => (
         <Text style={styles.text}>
           <DatePublication
@@ -29,7 +29,7 @@ export default {
     },
     {
       type: "story",
-      name: "DatePublication with publication not displayed",
+      name: "Date Publication with publication not displayed",
       component: () => (
         <Text style={styles.text}>
           <DatePublication date="2017-07-01T14:32:00.000Z" />

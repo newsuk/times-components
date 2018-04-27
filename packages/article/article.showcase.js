@@ -124,19 +124,19 @@ export default {
       type: "story",
       name: "Default",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, fullArticleFixture)
+        renderArticle(decorateAction, { fixture: fullArticleFixture })
     },
     {
       type: "story",
       name: "Article with video asset",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleWithVideoFixture)
+        renderArticle(decorateAction, { fixture: articleWithVideoFixture })
     },
     {
       type: "story",
       name: "Long Article",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, fullLongArticleFixture)
+        renderArticle(decorateAction, { fixture: fullLongArticleFixture })
     },
     {
       type: "story",
@@ -210,7 +210,7 @@ export default {
           >
             Click to render the ads
           </a>
-          {renderArticle(decorateAction, fullArticleFixture)}
+          {renderArticle(decorateAction, { fixture: fullArticleFixture })}
         </div>
       )
     },
@@ -219,67 +219,73 @@ export default {
       name: "Fixtures - Full",
       platform: "native",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, fullArticleFixture)
+        renderArticle(decorateAction, { fixture: fullArticleFixture })
     },
     {
       type: "story",
       name: "Fixtures - Byline with author profile",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureBylineAuthor)
+        renderArticle(decorateAction, { fixture: articleFixtureBylineAuthor })
     },
     {
       type: "story",
       name: "Fixtures - No ads",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoAds)
+        renderArticle(decorateAction, { fixture: articleFixtureNoAds })
     },
     {
       type: "story",
       name: "Fixtures - No standfirst",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoStandfirst)
+        renderArticle(decorateAction, { fixture: articleFixtureNoStandfirst })
     },
     {
       type: "story",
       name: "Fixtures - No label",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoLabel)
+        renderArticle(decorateAction, { fixture: articleFixtureNoLabel })
     },
     {
       type: "story",
       name: "Fixtures - No flags",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoFlags)
+        renderArticle(decorateAction, { fixture: articleFixtureNoFlags })
     },
     {
       type: "story",
       name: "Fixtures - No standfirst, no label",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoStandfirstNoLabel)
+        renderArticle(decorateAction, {
+          fixture: articleFixtureNoStandfirstNoLabel
+        })
     },
     {
       type: "story",
       name: "Fixtures - No standfirst, no flags",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoStandfirstNoFlags)
+        renderArticle(decorateAction, {
+          fixture: articleFixtureNoStandfirstNoFlags
+        })
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoLabelNoFlags)
+        renderArticle(decorateAction, { fixture: articleFixtureNoLabelNoFlags })
     },
     {
       type: "story",
       name: "Fixtures - No label, no flags, no standfirst",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoLabelNoFlagsNoStandFirst)
+        renderArticle(decorateAction, {
+          fixture: articleFixtureNoLabelNoFlagsNoStandFirst
+        })
     },
     {
       type: "story",
       name: "Fixtures - No lead asset",
       component: (_, { decorateAction }) =>
-        renderArticle(decorateAction, articleFixtureNoLeadAsset)
+        renderArticle(decorateAction, { fixture: articleFixtureNoLeadAsset })
     }
   ]
 };

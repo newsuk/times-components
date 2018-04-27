@@ -8,7 +8,7 @@ const caption = "Judge Sapnara";
 const twitter = "@henrywinter";
 
 export default {
-  name: "Primitives/PullQuotes",
+  name: "Primitives/Pull Quotes",
   children: [
     {
       type: "story",

@@ -39,7 +39,7 @@ const getCommonProps = (selectV2, decorateAction) => ({
 });
 
 export default {
-  name: "Primitives/ArticleByline",
+  name: "Primitives/Article Byline",
   children: [
     {
       type: "story",

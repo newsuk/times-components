@@ -7,7 +7,7 @@ import invert from "lodash.invert";
 import VideoLabel from "./src/video-label";
 
 export default {
-  name: "Primitives/VideoLabel",
+  name: "Primitives/Video Label",
   children: [
     {
       type: "story",
