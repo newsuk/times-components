@@ -1429,7 +1429,7 @@ exports[`Article tests on android should render a full article 1`] = `
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -1485,7 +1485,7 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -1494,7 +1494,7 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -1539,7 +1539,7 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -2078,7 +2078,7 @@ exports[`Article tests on android should render a full article 1`] = `
       onLayout={[Function]}
     >
       <View>
-        <MockArticleImage
+        <ArticleImage
           captionOptions={
             Object {
               "caption": "All the latest stories in culture and books.",
@@ -3226,7 +3226,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -3282,7 +3282,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -3291,7 +3291,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -3336,7 +3336,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -3462,7 +3462,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
             When Thatcher joined the campaign trail for the 2001 general election...
           </Text>
           <View>
-            <MockPullQuote
+            <PullQuote
               caption="JudgeSapnara"
               content="[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child"
               twitter="@JudgeSapnara"
@@ -3484,7 +3484,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
         }
       >
-        <MockTopics
+        <Topics
           topics={
             Array [
               Object {
@@ -3520,7 +3520,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
     <View
       onLayout={[Function]}
     >
-      <MockRelatedArticles
+      <RelatedArticles
         analyticsStream={[Function]}
         articles={
           Array [
@@ -4440,7 +4440,7 @@ exports[`Article tests on android should render an article with a video asset 1`
           }
           testID="label"
         >
-          <MockVideoLabel
+          <VideoLabel
             color="#333333"
             title=""
           />
@@ -4504,7 +4504,7 @@ exports[`Article tests on android should render an article with a video asset 1`
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -4654,7 +4654,7 @@ exports[`Article tests on android should render an article with a video asset 1`
       onLayout={[Function]}
     >
       <View>
-        <MockArticleImage
+        <ArticleImage
           captionOptions={
             Object {
               "caption": "Some 60 homes near the site of the explosion were evacuated",
@@ -5910,7 +5910,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -5966,7 +5966,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -5975,7 +5975,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -7507,7 +7507,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -7590,7 +7590,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -9166,7 +9166,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -9175,7 +9175,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -9220,7 +9220,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -10820,7 +10820,7 @@ exports[`Article tests on android should render an article with no label and no 
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -12401,7 +12401,7 @@ exports[`Article tests on android should render an article with no label, no fla
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -13936,7 +13936,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -13973,7 +13973,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -13982,7 +13982,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -14027,7 +14027,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -15559,7 +15559,7 @@ exports[`Article tests on android should render an article with no standfirst an
           }
           testID="label"
         >
-          <MockArticleLabel
+          <ArticleLabel
             color="#333333"
             title="HURRICANE IRMA"
           />
@@ -15623,7 +15623,7 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {
@@ -17180,7 +17180,7 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             }
           >
-            <MockNewArticleFlag />
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -17189,7 +17189,7 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             }
           >
-            <MockExclusiveArticleFlag />
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -17234,7 +17234,7 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             }
           >
-            <MockArticleByline
+            <ArticleByline
               ast={
                 Array [
                   Object {

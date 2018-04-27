@@ -11,21 +11,21 @@ import sharedTracking from "../shared-tracking";
 
 import articleFixtureNoLeadAsset from "../../fixtures/no-lead-asset.json";
 
-jest.mock("@times-components/article-byline", () => "MockArticleByline");
+jest.mock("@times-components/article-byline", () => "ArticleByline");
 jest.mock("@times-components/article-flag", () => ({
-  ExclusiveArticleFlag: "MockExclusiveArticleFlag",
-  NewArticleFlag: "MockNewArticleFlag",
-  UpdatedArticleFlag: "MockUpdatedArticleFlag",
-  SponsoredArticleFlag: "MockSponsoredArticleFlag"
+  ExclusiveArticleFlag: "ExclusiveArticleFlag",
+  NewArticleFlag: "NewArticleFlag",
+  UpdatedArticleFlag: "UpdatedArticleFlag",
+  SponsoredArticleFlag: "SponsoredArticleFlag"
 }));
-jest.mock("@times-components/article-label", () => "MockArticleLabel");
-jest.mock("@times-components/video-label", () => "MockVideoLabel");
-jest.mock("@times-components/brightcove-video", () => "MockBrightcoveVideo");
-jest.mock("@times-components/article-image", () => "MockArticleImage");
-jest.mock("@times-components/pull-quote", () => "MockPullQuote");
-jest.mock("@times-components/related-articles", () => "MockRelatedArticles");
-jest.mock("@times-components/topics", () => "MockTopics");
-jest.mock("@times-components/watermark", () => "MockWatermark");
+jest.mock("@times-components/article-label", () => "ArticleLabel");
+jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
+jest.mock("@times-components/article-image", () => "ArticleImage");
+jest.mock("@times-components/pull-quote", () => "PullQuote");
+jest.mock("@times-components/related-articles", () => "RelatedArticles");
+jest.mock("@times-components/topics", () => "Topics");
+jest.mock("@times-components/watermark", () => "Watermark");
 jest.mock("@times-components/tracking", () => {
   const mockTracking = component => component;
   return {
