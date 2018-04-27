@@ -1,9 +1,11 @@
 import React from "react";
 import { withPageState } from "@times-components/pagination";
-import { AuthorArticlesWithImagesProvider } from "@times-components/provider";
+import {
+  AuthorArticlesNoImagesProvider,
+  AuthorArticlesWithImagesProvider
+} from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
 import get from "lodash.get";
-import AuthorArticlesNoImagesProvider from "./author-profile-list-provider";
 import AuthorProfileError from "./author-profile-error";
 import AuthorProfileContent from "./author-profile-content";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
