@@ -35,8 +35,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const renderIcon = color => ([name, Icon]) => (
-  <View style={styles.icon} key={name}>
+const renderIcon = color => args => {
+  const name = args[0];
+  const Icon = args[1];
+
+  return <View style={styles.icon} key={name}>
     <Icon
       width={50}
       height={50}
@@ -47,8 +50,8 @@ const renderIcon = color => ([name, Icon]) => (
       )}
     />
     <Text style={styles.label}>{name}</Text>
-  </View>
-);
+  </View>;
+};
 
 export default {
   name: "Primitives/Icons",
