@@ -12,6 +12,7 @@ const WithColours = withResponsiveStyles("div", {
 
 export default {
   name: "Helpers/ResponsiveStyles",
+  platform: "web",
   children: [
     {
       type: "story",
