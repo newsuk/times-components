@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ErrorView from "@times-components/error-view";
@@ -26,7 +26,7 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-class AuthorProfileContent extends React.Component {
+class AuthorProfileContent extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);

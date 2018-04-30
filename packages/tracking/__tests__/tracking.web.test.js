@@ -1,5 +1,5 @@
+import React, { Component } from "react";
 import { View, Text } from "react-native";
-import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import Enzyme, { mount } from "enzyme";
@@ -40,7 +40,7 @@ FakeIntersectionObserver.observing = [];
 
 const stubGetElementById = id => ({ id });
 
-class ListComponent extends React.Component {
+class ListComponent extends Component {
   static get propTypes() {
     return {
       items: PropTypes.arrayOf(
