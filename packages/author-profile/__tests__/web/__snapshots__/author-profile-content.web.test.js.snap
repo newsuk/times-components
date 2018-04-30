@@ -264,7 +264,6 @@ exports[`AuthorProfile test on web renders page error 1`] = `
       Object {
         "alignSelf": "center",
         "flexBasis": "50%",
-        "marginTop": "10%",
         "maxWidth": 548,
       }
     }
@@ -273,11 +272,12 @@ exports[`AuthorProfile test on web renders page error 1`] = `
       <Text
         style={
           Object {
+            "alignSelf": "center",
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 35,
-            "marginBottom": 12,
-            "textAlign": "center",
+            "marginBottom": "10px",
+            "marginTop": "20px",
           }
         }
       >
@@ -293,7 +293,6 @@ exports[`AuthorProfile test on web renders page error 1`] = `
             "color": "#696969",
             "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 18,
-            "lineHeight": 1.44,
             "textAlign": "center",
           }
         }
@@ -317,13 +316,13 @@ exports[`AuthorProfile test on web renders page error 1`] = `
       >
         <div>
           <Button
-            accessibilityLabel="Refresh the page"
+            accessibilityLabel="Retry"
             color="#006699"
             onPress={[Function]}
             title="Retry"
           >
             <TouchableOpacity
-              accessibilityLabel="Refresh the page"
+              accessibilityLabel="Retry"
               accessibilityRole="button"
               activeOpacity={0.2}
               focusedOpacity={0.7}
@@ -336,7 +335,7 @@ exports[`AuthorProfile test on web renders page error 1`] = `
               }
             >
               <View
-                accessibilityLabel="Refresh the page"
+                accessibilityLabel="Retry"
                 accessibilityRole="button"
                 accessible={true}
                 onKeyDown={[Function]}
@@ -360,7 +359,7 @@ exports[`AuthorProfile test on web renders page error 1`] = `
                 }
               >
                 <div
-                  aria-label="Refresh the page"
+                  aria-label="Retry"
                   onKeyDown={[Function]}
                   onKeyPress={[Function]}
                   onKeyUp={[Function]}

@@ -4,62 +4,52 @@ exports[`AuthorProfile test on android renders page error 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "flex": 1,
-      "justifyContent": "space-between",
       "maxWidth": 548,
+      "paddingLeft": 5,
+      "paddingRight": 5,
     }
   }
 >
-  <View
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
     style={
       Object {
         "alignSelf": "center",
-        "flex": 1,
-        "justifyContent": "flex-start",
-        "marginLeft": 5,
-        "marginRight": 5,
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 35,
+        "marginBottom": 10,
         "marginTop": 20,
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "alignSelf": "center",
-          "color": "#1D1D1B",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 35,
-          "marginBottom": 12,
-          "textAlign": "center",
-        }
+    Something's gone wrong
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesDigitalW04-Regular",
+        "fontSize": 18,
+        "textAlign": "center",
       }
-    >
-      Something's gone wrong
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "alignSelf": "center",
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 18,
-          "textAlign": "center",
-        }
-      }
-    >
-      We can't load the page you have requested. Please check your network connection and retry to continue
-    </Text>
-  </View>
+    }
+  >
+    We can't load the page you have requested. Please check your network connection and retry to continue
+  </Text>
   <View
     style={
       Object {
-        "justifyContent": "flex-end",
+        "bottom": 0,
+        "position": "absolute",
+        "width": "100%",
       }
     }
   >
