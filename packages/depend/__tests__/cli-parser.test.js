@@ -33,7 +33,7 @@ describe("depend cli-parser tests", () => {
       "--strategy",
       "majority"
     ]);
-    expect(strategy).toEqual("majority");
+    expect(strategy.name).toEqual("majority");
   });
 
   it("should exit if invalid strategy provided", () => {
@@ -44,7 +44,23 @@ describe("depend cli-parser tests", () => {
 
   it("should get pick rule", () => {
     const { pick } = parser.parse(["depend", "path", "--pick", "blub@blub"]);
-    expect(pick).toEqual("blub@blub");
+    expect(pick).toEqual({ blub: "blub" });
+  });
+
+  it("should fail when if to many @ symbol are used", () => {
+    parser.parse(["depend", "path", "--pick", "a@b@c@d"]);
+    expect(console.error.mock.calls.length).toBeTruthy();
+    expect(process.exit.mock.calls).toEqual([[1]]);
+  });
+
+  it("should support pick rules with namespaces", () => {
+    const { pick } = parser.parse([
+      "depend",
+      "path",
+      "--pick",
+      "blub@blub@blub"
+    ]);
+    expect(pick).toEqual({ "blub@blub": "blub" });
   });
 
   it("should exit if invalid pick rule is provided", () => {
