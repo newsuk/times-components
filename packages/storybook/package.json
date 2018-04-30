@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",

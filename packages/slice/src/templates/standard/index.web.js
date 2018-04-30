@@ -11,12 +11,17 @@ const StandardSlice = ({ itemCount, renderItems }) => {
     childCount: itemCount
   });
   const Separator = getSeparator({ hasLeftRightMargin: true });
+  const items = renderItems(config);
+
+  if (items.length === 0) {
+    return null;
+  }
 
   return (
     <ConfigWrapper>
       <SliceContainer>
         <ChildrenContainer>
-          {renderItems(config)
+          {items
             .map(item => (
               <ChildContainer key={item.props.id}>{item}</ChildContainer>
             ))

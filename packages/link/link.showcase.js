@@ -20,7 +20,8 @@ export default {
   children: [
     {
       type: "decorator",
-      decorator: CenteredDecorator
+      decorator: CenteredDecorator,
+      platform: "native"
     },
     {
       type: "story",
