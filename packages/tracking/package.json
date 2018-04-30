@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.12.8",
+  "version": "0.12.9",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.6.2",
-    "@times-components/storybook": "0.9.3",
+    "@times-components/storybook": "0.9.4",
     "@times-components/tealium-utils": "0.2.5",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
