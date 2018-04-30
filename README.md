@@ -41,18 +41,22 @@ You can try without these requirements, but you'd be on your own.
        work.
   4. go to http://localhost:7007
 
-## React-Native Remote Debugger
+## Haul
 
-The current React-Native version opens the url `10.0.0.2:8081` when remote
-debugging is enabled. This only works if this ip redirects to `localhost`.
+We use Haul in lieu of the standard `react-native` CLI so that we can generate native Storybook bundles using Webpack, which we configure to honour our monorepo packages' respective `dev` entry points; this allows one update a package's source code and preview the changes without having to manually re-transpile. Haul also automatically generates debuggable source maps.
 
-In order to remote debug react native app on via `localhost` you need to follow
-this particular sequence:
+To debug our native Storybook:
 
-1. `yarn storybook`
-2. navigate to `localhost:8081/debugger-ui`
-3. `yarn android` or `yarn ios`
-   * if android: `cmd+M` and enable Remote Debugging
+1. `yarn storybook-native` and leave it running
+2. `yarn android` or `yarn ios`
+3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS) and tap _Debug JS Remotely_
+4. navigate to http://localhost:8081/debugger-ui if it hasn't opened automatically
+5. open DevTools (this and the subsequent steps assume Google Chrome usage)
+6. click _Sources_
+7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
+
+Any of these source files can be debugged directly.
+
 
 ### Fonts ⚠️
 
