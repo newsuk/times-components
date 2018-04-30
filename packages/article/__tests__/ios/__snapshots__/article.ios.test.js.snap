@@ -1427,23 +1427,10 @@ exports[`Article tests on ios should render a full article 1`] = `
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -1495,52 +1482,7 @@ exports[`Article tests on ios should render a full article 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -1549,52 +1491,7 @@ exports[`Article tests on ios should render a full article 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -1639,18 +1536,26 @@ exports[`Article tests on ios should render a full article 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -2174,348 +2079,21 @@ exports[`Article tests on ios should render a full article 1`] = `
       onLayout={[Function]}
     >
       <View>
-        <View
-          style={
+        <ArticleImage
+          captionOptions={
             Object {
-              "flexDirection": "column",
-              "paddingBottom": 25,
-              "width": "100%",
+              "caption": "All the latest stories in culture and books.",
+              "credits": "The credits",
             }
           }
-        >
-          <View>
-            <View>
-              <Modal
-                hardwareAccelerated={false}
-                onRequestClose={[Function]}
-                presentationStyle="fullScreen"
-                visible={false}
-              >
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#1D1D1B",
-                      "flexDirection": "column",
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <View
-                    accessible={true}
-                    isTVSelectable={true}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "opacity": 1,
-                      }
-                    }
-                  >
-                    <svg
-                      height="24"
-                      width="24"
-                    >
-                      <g
-                        fill="rgba(255, 255, 255, 0.8)"
-                      >
-                        <path />
-                        <path
-                          fill="none"
-                        />
-                      </g>
-                    </svg>
-                  </View>
-                  <View
-                    onMoveShouldSetResponder={[Function]}
-                    onMoveShouldSetResponderCapture={[Function]}
-                    onResponderEnd={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderReject={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderStart={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    onStartShouldSetResponderCapture={[Function]}
-                    style={
-                      Object {
-                        "flexGrow": 1,
-                      }
-                    }
-                  >
-                    <View
-                      accessible={true}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        Object {
-                          "flexGrow": 1,
-                          "justifyContent": "center",
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "transform": Array [
-                              Object {
-                                "scale": 1,
-                              },
-                              Object {
-                                "rotate": "0 deg",
-                              },
-                              Object {
-                                "perspective": 1000,
-                              },
-                            ],
-                          }
-                        }
-                      >
-                        <View
-                          aspectRatio={1.5}
-                          style={
-                            Object {
-                              "opacity": 1,
-                              "width": "100%",
-                            }
-                          }
-                        >
-                          <View
-                            style={
-                              Object {
-                                "height": "100%",
-                                "width": "100%",
-                              }
-                            }
-                          >
-                            <Image
-                              onLoad={[Function]}
-                              source={
-                                Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
-                                }
-                              }
-                              style={
-                                Object {
-                                  "bottom": 0,
-                                  "height": "100%",
-                                  "left": 0,
-                                  "position": "absolute",
-                                  "right": 0,
-                                  "top": 0,
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <View
-                              onLayout={[Function]}
-                              style={
-                                Object {
-                                  "flex": 1,
-                                }
-                              }
-                            >
-                              <View
-                                style={
-                                  Object {
-                                    "flex": 1,
-                                  }
-                                }
-                              >
-                                <BVLinearGradient
-                                  colors={
-                                    Array [
-                                      "#F9F9F9",
-                                      "#EDEDED",
-                                    ]
-                                  }
-                                  end={
-                                    Object {
-                                      "x": -0.09302964577578221,
-                                      "y": 0.11488204504197774,
-                                    }
-                                  }
-                                  locations={
-                                    Array [
-                                      0,
-                                      1,
-                                    ]
-                                  }
-                                  start={
-                                    Object {
-                                      "x": 1,
-                                      "y": 0,
-                                    }
-                                  }
-                                  style={
-                                    Object {
-                                      "flex": 1,
-                                    }
-                                  }
-                                />
-                              </View>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </Modal>
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View>
-            <View>
-              <View
-                style={
-                  Object {
-                    "paddingLeft": 10,
-                    "paddingTop": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 16,
-                    }
-                  }
-                >
-                  All the latest stories in culture and books.
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 9,
-                      "fontWeight": "400",
-                      "letterSpacing": 1,
-                      "lineHeight": 16,
-                    }
-                  }
-                >
-                  THE CREDITS
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
+          imageOptions={
+            Object {
+              "display": "primary",
+              "ratio": "1500:1000",
+              "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
+            }
+          }
+        />
       </View>
     </View>
     <View
@@ -3645,23 +3223,10 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -3713,52 +3278,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -3767,52 +3287,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -3857,18 +3332,26 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -3974,124 +3457,11 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             When Thatcher joined the campaign trail for the 2001 general election...
           </Text>
           <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 25,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 5,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesModern-Regular",
-                    "fontSize": 75,
-                    "marginBottom": -40,
-                    "marginTop": 0,
-                  }
-                }
-              >
-                “
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesModern-Regular",
-                    "fontSize": 25,
-                    "lineHeight": 30,
-                  }
-                }
-              >
-                [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-              </Text>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "height": 20,
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 13,
-                      "marginBottom": 0,
-                      "paddingTop": 4,
-                    }
-                  }
-                >
-                  JudgeSapnara
-                </Text>
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "borderLeftColor": "#696969",
-                      "borderLeftWidth": 1,
-                      "display": "flex",
-                      "flexDirection": "row",
-                      "height": 15,
-                      "marginLeft": 7,
-                      "paddingLeft": 7,
-                    }
-                  }
-                >
-                  <svg
-                    height={10}
-                    width={12}
-                  >
-                    <path
-                      fill="#006699"
-                    />
-                  </svg>
-                  <Text
-                    accessibilityRole="link"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    href="https://twitter.com/@JudgeSapnara"
-                    onPress={[Function]}
-                    style={
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 13,
-                        "marginLeft": 3,
-                        "paddingTop": 4,
-                        "textDecorationLine": "none",
-                      }
-                    }
-                    target="_blank"
-                  >
-                    @JudgeSapnara
-                  </Text>
-                </View>
-              </View>
-            </View>
+            <PullQuote
+              caption="JudgeSapnara"
+              content="[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child"
+              twitter="@JudgeSapnara"
+            />
           </View>
         </Text>
       </View>
@@ -4109,873 +3479,594 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "center",
-            }
+        <Topics
+          topics={
+            Array [
+              Object {
+                "id": "football",
+                "name": "Football",
+                "order": 1,
+              },
+              Object {
+                "id": "manchester-united",
+                "name": "Manchester United FC",
+                "order": 4,
+              },
+              Object {
+                "id": "chelsea",
+                "name": "Chelsea FC",
+                "order": 2,
+              },
+              Object {
+                "id": "arsenal",
+                "name": "Arsenal",
+                "order": 3,
+              },
+              Object {
+                "id": "rugby-union",
+                "name": "Rugby Union",
+                "order": 5,
+              },
+            ]
           }
-        >
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#DBDBDB",
-                  "borderRadius": 1,
-                  "borderWidth": 1,
-                  "marginRight": 10,
-                  "marginTop": 10,
-                  "paddingBottom": 12,
-                  "paddingLeft": 15,
-                  "paddingRight": 15,
-                  "paddingTop": 12,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
-                }
-              >
-                Football
-              </Text>
-            </View>
-          </View>
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#DBDBDB",
-                  "borderRadius": 1,
-                  "borderWidth": 1,
-                  "marginRight": 10,
-                  "marginTop": 10,
-                  "paddingBottom": 12,
-                  "paddingLeft": 15,
-                  "paddingRight": 15,
-                  "paddingTop": 12,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
-                }
-              >
-                Chelsea FC
-              </Text>
-            </View>
-          </View>
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#DBDBDB",
-                  "borderRadius": 1,
-                  "borderWidth": 1,
-                  "marginRight": 10,
-                  "marginTop": 10,
-                  "paddingBottom": 12,
-                  "paddingLeft": 15,
-                  "paddingRight": 15,
-                  "paddingTop": 12,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
-                }
-              >
-                Arsenal
-              </Text>
-            </View>
-          </View>
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#DBDBDB",
-                  "borderRadius": 1,
-                  "borderWidth": 1,
-                  "marginRight": 10,
-                  "marginTop": 10,
-                  "paddingBottom": 12,
-                  "paddingLeft": 15,
-                  "paddingRight": 15,
-                  "paddingTop": 12,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
-                }
-              >
-                Manchester United FC
-              </Text>
-            </View>
-          </View>
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#DBDBDB",
-                  "borderRadius": 1,
-                  "borderWidth": 1,
-                  "marginRight": 10,
-                  "marginTop": 10,
-                  "paddingBottom": 12,
-                  "paddingLeft": 15,
-                  "paddingRight": 15,
-                  "paddingTop": 12,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 13,
-                  }
-                }
-              >
-                Rugby Union
-              </Text>
-            </View>
-          </View>
-        </View>
+        />
       </View>
     </View>
     <View
       onLayout={[Function]}
     >
-      <View
-        style={
-          Object {
-            "marginTop": 10,
-          }
-        }
-      >
-        <View
-          style={
+      <RelatedArticles
+        analyticsStream={[Function]}
+        articles={
+          Array [
             Object {
-              "alignItems": "center",
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 0.5,
-              "borderStyle": "solid",
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "display": "flex",
-              "height": 55,
-              "justifyContent": "center",
-            }
-          }
-        >
-          <Text
-            accessibilityRole="heading"
-            accessible={true}
-            allowFontScaling={true}
-            aria-level="3"
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 25,
-              }
-            }
-          >
-            Related articles
-          </Text>
-        </View>
-        <View>
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#DBDBDB",
-                "borderBottomWidth": 0.5,
-                "borderStyle": "solid",
-                "width": "100%",
-              }
-            }
-          >
-            <View
-              style={
+              "byline": Array [
                 Object {
-                  "paddingBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
+                  "attributes": Object {},
+                  "children": Array [
                     Object {
-                      "opacity": 0,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-start",
-                        "display": "flex",
-                        "flexDirection": "row",
-                        "flexWrap": "wrap",
-                        "justifyContent": "flex-end",
-                      }
-                    }
-                  >
-                    <View
-                      style={
-                        Object {
-                          "flex": 1,
-                          "marginBottom": 0,
-                          "minWidth": "100%",
-                        }
-                      }
-                    >
-                      <View>
-                        <View
-                          style={
-                            Object {
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                                "fontFamily": "GillSansMTStd-Medium",
-                                "fontSize": 12,
-                                "fontWeight": "400",
-                                "letterSpacing": 1.2,
-                                "marginBottom": 0,
-                              }
-                            }
-                          >
-                            HEALTH
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityRole="heading"
-                          accessible={true}
-                          allowFontScaling={true}
-                          aria-level="3"
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#333333",
-                              "fontFamily": "TimesModern-Bold",
-                              "fontSize": 22,
-                              "fontWeight": "400",
-                              "lineHeight": 24,
-                              "marginBottom": 5,
-                              "marginTop": 0,
-                            }
-                          }
-                        >
-                          TMS: Pratchett’s law of the jungle - Disable Saving
-                        </Text>
-                        <View>
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            className="summaryHidden summary125Class"
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#696969",
-                                "flexWrap": "wrap",
-                                "fontFamily": "TimesDigitalW04",
-                                "fontSize": 14,
-                                "lineHeight": 20,
-                                "marginBottom": 10,
-                              }
-                            }
-                          >
-                            <Text
-                              accessible={true}
-                              allowFontScaling={true}
-                              ellipsizeMode="tail"
-                            >
-                              
-                              Terry Pratchett, who died last week, began his career on the
-                              <Text
-                                accessible={true}
-                                allowFontScaling={true}
-                                ellipsizeMode="tail"
-                                style={
-                                  Object {
-                                    "fontStyle": "italic",
-                                  }
-                                }
-                              >
-                                Bucks Free Press
-                              </Text>
-                              in 1965, aged 17, and the paper recalls in a
-                              ...
-                            </Text>
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityLabel="datePublication"
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 5,
-                            }
-                          }
-                          testID="datePublication"
-                        >
-                          March 23 2015, 07:39pm
-                        </Text>
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                              }
-                            }
-                          >
-                            Patrick Kidd
-                          </Text>
-                        </Text>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#DBDBDB",
-                "borderBottomWidth": 0.5,
-                "borderStyle": "solid",
-                "width": "100%",
-              }
-            }
-          >
-            <View
-              style={
+                      "attributes": Object {
+                        "value": "Patrick Kidd",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ],
+              "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+              "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
+              "label": "Health",
+              "leadAsset": Object {
+                "crop169": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+                },
+                "crop32": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+                },
+                "title": "TMS: Pratchett’s law of the jungle",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "summary105": Array [
                 Object {
-                  "paddingBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
+                  "attributes": Object {},
+                  "children": Array [
                     Object {
-                      "opacity": 0,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-start",
-                        "display": "flex",
-                        "flexDirection": "row",
-                        "flexWrap": "wrap",
-                        "justifyContent": "flex-end",
-                      }
-                    }
-                  >
-                    <View
-                      style={
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
                         Object {
-                          "flex": 1,
-                          "marginBottom": 0,
-                          "minWidth": "100%",
-                        }
-                      }
-                    >
-                      <View>
-                        <View
-                          style={
-                            Object {
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                                "fontFamily": "GillSansMTStd-Medium",
-                                "fontSize": 12,
-                                "fontWeight": "400",
-                                "letterSpacing": 1.2,
-                                "marginBottom": 0,
-                              }
-                            }
-                          >
-                            SCIENCE
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityRole="heading"
-                          accessible={true}
-                          allowFontScaling={true}
-                          aria-level="3"
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#333333",
-                              "fontFamily": "TimesModern-Bold",
-                              "fontSize": 22,
-                              "fontWeight": "400",
-                              "lineHeight": 24,
-                              "marginBottom": 5,
-                              "marginTop": 0,
-                            }
-                          }
-                        >
-                          Rise of centenarian drivers as elderly push on - V5 Premoderated Comments
-                        </Text>
-                        <View>
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            className="summaryHidden summary125Class"
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#696969",
-                                "flexWrap": "wrap",
-                                "fontFamily": "TimesDigitalW04",
-                                "fontSize": 14,
-                                "lineHeight": 20,
-                                "marginBottom": 10,
-                              }
-                            }
-                          >
-                            <Text
-                              accessible={true}
-                              allowFontScaling={true}
-                              ellipsizeMode="tail"
-                            >
-                              
-                              More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly
-                              ...
-                            </Text>
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityLabel="datePublication"
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 5,
-                            }
-                          }
-                          testID="datePublication"
-                        >
-                          March 23 2015, 08:42pm
-                        </Text>
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                              }
-                            }
-                          >
-                            Graeme Paton Transport Correspondent
-                          </Text>
-                        </Text>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#DBDBDB",
-                "borderBottomWidth": 0.5,
-                "borderStyle": "solid",
-                "width": "100%",
-              }
-            }
-          >
-            <View
-              style={
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary125": Array [
                 Object {
-                  "paddingBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
+                  "attributes": Object {},
+                  "children": Array [
                     Object {
-                      "opacity": 0,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-start",
-                        "display": "flex",
-                        "flexDirection": "row",
-                        "flexWrap": "wrap",
-                        "justifyContent": "flex-end",
-                      }
-                    }
-                  >
-                    <View
-                      style={
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
                         Object {
-                          "flex": 1,
-                          "marginBottom": 0,
-                          "minWidth": "100%",
-                        }
-                      }
-                    >
-                      <View>
-                        <View
-                          style={
-                            Object {
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                                "fontFamily": "GillSansMTStd-Medium",
-                                "fontSize": 12,
-                                "fontWeight": "400",
-                                "letterSpacing": 1.2,
-                                "marginBottom": 0,
-                              }
-                            }
-                          >
-                            SCIENCE
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityRole="heading"
-                          accessible={true}
-                          allowFontScaling={true}
-                          aria-level="3"
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#333333",
-                              "fontFamily": "TimesModern-Bold",
-                              "fontSize": 22,
-                              "fontWeight": "400",
-                              "lineHeight": 24,
-                              "marginBottom": 5,
-                              "marginTop": 0,
-                            }
-                          }
-                        >
-                          Syndicated url: At long last, a burial place fit for a king
-                        </Text>
-                        <View>
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            className="summaryHidden summary125Class"
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#696969",
-                                "flexWrap": "wrap",
-                                "fontFamily": "TimesDigitalW04",
-                                "fontSize": 14,
-                                "lineHeight": 20,
-                                "marginBottom": 10,
-                              }
-                            }
-                          >
-                            <Text
-                              accessible={true}
-                              allowFontScaling={true}
-                              ellipsizeMode="tail"
-                            >
-                              
-                              It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can
-                              ...
-                            </Text>
-                          </Text>
-                        </View>
-                        <Text
-                          accessibilityLabel="datePublication"
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 5,
-                            }
-                          }
-                          testID="datePublication"
-                        >
-                          March 23 2015, 08:56pm
-                        </Text>
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                          style={
-                            Object {
-                              "color": "#696969",
-                              "fontFamily": "GillSansMTStd-Medium",
-                              "fontSize": 13,
-                              "lineHeight": 15,
-                              "marginBottom": 0,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "color": "#333333",
-                              }
-                            }
-                          >
-                            Jack Malvern Arts Correspondent Dominic Kennedy
-                          </Text>
-                        </Text>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the paper recalls in a",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary145": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary160": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary175": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary225": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Terry Pratchett, who died last week, began his career on the ",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Bucks Free Press",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "italic",
+                    },
+                    Object {
+                      "attributes": Object {
+                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+            },
+            Object {
+              "byline": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Graeme Paton Transport Correspondent",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ],
+              "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+              "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
+              "label": "Science",
+              "leadAsset": Object {
+                "crop169": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
+                },
+                "crop32": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
+                },
+                "title": "Rise of centenarian drivers as elderly push on",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T20:42:27.000Z",
+              "summary105": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary125": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary145": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [],
+                  "name": "paragraph",
+                },
+              ],
+              "summary160": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Figures from the",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary175": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Figures from the Driver and Vehicle",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary225": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+            },
+            Object {
+              "byline": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Jack Malvern Arts Correspondent Dominic Kennedy",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "inline",
+                },
+              ],
+              "headline": "Syndicated url: At long last, a burial place fit for a king",
+              "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
+              "label": "Science",
+              "leadAsset": Object {
+                "crop169": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
+                },
+                "crop32": Object {
+                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
+                },
+                "title": "At long last, a burial place fit for a king",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T20:56:09.000Z",
+              "summary105": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary125": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary145": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary160": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary175": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary225": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "His coffin has been",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+            },
+          ]
+        }
+        onPress={[Function]}
+        template="DEFAULT"
+      />
     </View>
   </View>
 </RCTScrollView>
@@ -5348,55 +4439,10 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
           }
           testID="label"
         >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-              }
-            }
-          >
-            <svg
-              height={12}
-              width={20.64}
-            >
-              <rect
-                fill="#1D1D1B"
-                height="13.5721404"
-                width="15.4550103"
-                x="0.154639175"
-                y="0.139754386"
-              />
-              <polygon
-                fill="#1D1D1B"
-              />
-              <polygon
-                fill="#1D1D1B"
-              />
-            </svg>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "letterSpacing": 1.2,
-                  "lineHeight": 12,
-                  "margin": 0,
-                  "marginLeft": 5,
-                  "padding": 0,
-                  "position": "relative",
-                  "top": 2,
-                }
-              }
-            >
-              VIDEO
-            </Text>
-          </View>
+          <VideoLabel
+            color="#333333"
+            title=""
+          />
         </View>
         <Text
           accessible={true}
@@ -5457,18 +4503,26 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Neil Johnston | Fariha Karim | Charlie Parker | Sebastian Mann
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -5596,348 +4650,21 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
       onLayout={[Function]}
     >
       <View>
-        <View
-          style={
+        <ArticleImage
+          captionOptions={
             Object {
-              "flexDirection": "column",
-              "paddingBottom": 25,
-              "width": "100%",
+              "caption": "Some 60 homes near the site of the explosion were evacuated",
+              "credits": "CATERS",
             }
           }
-        >
-          <View>
-            <View>
-              <Modal
-                hardwareAccelerated={false}
-                onRequestClose={[Function]}
-                presentationStyle="fullScreen"
-                visible={false}
-              >
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#1D1D1B",
-                      "flexDirection": "column",
-                      "height": "100%",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <View
-                    accessible={true}
-                    isTVSelectable={true}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "opacity": 1,
-                      }
-                    }
-                  >
-                    <svg
-                      height="24"
-                      width="24"
-                    >
-                      <g
-                        fill="rgba(255, 255, 255, 0.8)"
-                      >
-                        <path />
-                        <path
-                          fill="none"
-                        />
-                      </g>
-                    </svg>
-                  </View>
-                  <View
-                    onMoveShouldSetResponder={[Function]}
-                    onMoveShouldSetResponderCapture={[Function]}
-                    onResponderEnd={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderReject={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderStart={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    onStartShouldSetResponderCapture={[Function]}
-                    style={
-                      Object {
-                        "flexGrow": 1,
-                      }
-                    }
-                  >
-                    <View
-                      accessible={true}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      style={
-                        Object {
-                          "flexGrow": 1,
-                          "justifyContent": "center",
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "transform": Array [
-                              Object {
-                                "scale": 1,
-                              },
-                              Object {
-                                "rotate": "0 deg",
-                              },
-                              Object {
-                                "perspective": 1000,
-                              },
-                            ],
-                          }
-                        }
-                      >
-                        <View
-                          aspectRatio={1.5}
-                          style={
-                            Object {
-                              "opacity": 1,
-                              "width": "100%",
-                            }
-                          }
-                        >
-                          <View
-                            style={
-                              Object {
-                                "height": "100%",
-                                "width": "100%",
-                              }
-                            }
-                          >
-                            <Image
-                              onLoad={[Function]}
-                              source={
-                                Object {
-                                  "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
-                                }
-                              }
-                              style={
-                                Object {
-                                  "bottom": 0,
-                                  "height": "100%",
-                                  "left": 0,
-                                  "position": "absolute",
-                                  "right": 0,
-                                  "top": 0,
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <View
-                              onLayout={[Function]}
-                              style={
-                                Object {
-                                  "flex": 1,
-                                }
-                              }
-                            >
-                              <View
-                                style={
-                                  Object {
-                                    "flex": 1,
-                                  }
-                                }
-                              >
-                                <BVLinearGradient
-                                  colors={
-                                    Array [
-                                      "#F9F9F9",
-                                      "#EDEDED",
-                                    ]
-                                  }
-                                  end={
-                                    Object {
-                                      "x": -0.09302964577578221,
-                                      "y": 0.11488204504197774,
-                                    }
-                                  }
-                                  locations={
-                                    Array [
-                                      0,
-                                      1,
-                                    ]
-                                  }
-                                  start={
-                                    Object {
-                                      "x": 1,
-                                      "y": 0,
-                                    }
-                                  }
-                                  style={
-                                    Object {
-                                      "flex": 1,
-                                    }
-                                  }
-                                />
-                              </View>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </Modal>
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View>
-            <View>
-              <View
-                style={
-                  Object {
-                    "paddingLeft": 10,
-                    "paddingTop": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 16,
-                    }
-                  }
-                >
-                  Some 60 homes near the site of the explosion were evacuated
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 9,
-                      "fontWeight": "400",
-                      "letterSpacing": 1,
-                      "lineHeight": 16,
-                    }
-                  }
-                >
-                  CATERS
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
+          imageOptions={
+            Object {
+              "display": "primary",
+              "ratio": "1500:1000",
+              "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F34424e00-1af0-11e8-95c3-8b5a448e6e58.jpg?crop=1335%2C890%2C296%2C264",
+            }
+          }
+        />
       </View>
     </View>
     <View
@@ -7176,23 +5903,10 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -7244,52 +5958,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -7298,52 +5967,7 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -8866,23 +7490,10 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -8961,18 +7572,26 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -10519,52 +9138,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -10573,52 +9147,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -10663,18 +9192,26 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -12245,18 +10782,26 @@ exports[`Article tests on ios should render an article with no label and no flag
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -13809,18 +12354,26 @@ exports[`Article tests on ios should render an article with no label, no flags a
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -15327,23 +13880,10 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -15377,52 +13917,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -15431,52 +13926,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -15521,18 +13971,26 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -17036,23 +15494,10 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
           testID="label"
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "letterSpacing": 1.2,
-                "marginBottom": 0,
-              }
-            }
-          >
-            HURRICANE IRMA
-          </Text>
+          <ArticleLabel
+            color="#333333"
+            title="HURRICANE IRMA"
+          />
         </View>
         <Text
           accessible={true}
@@ -17113,18 +15558,26 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
@@ -18653,52 +17106,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#E34605"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-new"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#E34605",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-new"
-              >
-                new
-              </Text>
-            </View>
+            <NewArticleFlag />
           </View>
           <View
             style={
@@ -18707,52 +17115,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "marginBottom": 1,
-                    "marginRight": 5,
-                  }
-                }
-              >
-                <svg
-                  height={8}
-                  width={8}
-                >
-                  <g
-                    fill="#C51D24"
-                  >
-                    <path />
-                  </g>
-                </svg>
-              </View>
-              <Text
-                accessibilityLabel="flag-exclusive"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#C51D24",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.4,
-                  }
-                }
-                testID="flag-exclusive"
-              >
-                exclusive
-              </Text>
-            </View>
+            <ExclusiveArticleFlag />
           </View>
         </View>
       </View>
@@ -18797,18 +17160,26 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#006699",
-                }
+            <ArticleByline
+              ast={
+                Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ]
               }
-            >
-              Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent
-            </Text>
+              onAuthorPress={[Function]}
+            />
           </Text>
         </View>
         <View
