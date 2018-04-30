@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
-import Video from "@times-components/video";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
 
