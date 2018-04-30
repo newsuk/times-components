@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { storiesOf } from "@storybook/react-native";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fontSizes } from "@times-components/styleguide";
 import Gestures from "./src/gestures";
@@ -39,21 +38,33 @@ const styles = StyleSheet.create({
   }
 });
 
-storiesOf("Helpers/Gestures", module)
-  .addDecorator(CenteredDecorator)
-  .add("With a View", () => (
-    <Gestures style={styles.gestures}>
-      <View style={styles.box}>
-        <View style={[styles.row, styles.north]}>
-          <Text style={styles.text}>N</Text>
-        </View>
-        <View style={[styles.row, styles.ew]}>
-          <Text style={styles.text}>E</Text>
-          <Text style={styles.text}>W</Text>
-        </View>
-        <View style={[styles.row, styles.south]}>
-          <Text style={styles.text}>S</Text>
-        </View>
-      </View>
-    </Gestures>
-  ));
+export default {
+  name: "Helpers/Gestures",
+  children: [
+    {
+      type: "decorator",
+      decorator: CenteredDecorator
+    },
+    {
+      type: "story",
+      platform: "native",
+      name: "With a View",
+      component: () => (
+        <Gestures style={styles.gestures}>
+          <View style={styles.box}>
+            <View style={[styles.row, styles.north]}>
+              <Text style={styles.text}>N</Text>
+            </View>
+            <View style={[styles.row, styles.ew]}>
+              <Text style={styles.text}>E</Text>
+              <Text style={styles.text}>W</Text>
+            </View>
+            <View style={[styles.row, styles.south]}>
+              <Text style={styles.text}>S</Text>
+            </View>
+          </View>
+        </Gestures>
+      )
+    }
+  ]
+};
