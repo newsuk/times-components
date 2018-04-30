@@ -64,8 +64,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "0.6.8",
-    "prop-types": "15.6.0",
-    "react-native-linear-gradient": "2.4.0"
+    "prop-types": "15.6.0"
   },
   "peerDependencies": {
     "react": ">=16.2",
