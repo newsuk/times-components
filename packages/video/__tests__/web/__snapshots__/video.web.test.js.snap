@@ -95,40 +95,48 @@ exports[`Video on web renders a paidOnly video correctly for unpaid users 1`] = 
   style={
     Object {
       "height": "200px",
-      "width": "300px",
     }
   }
 >
-  <div
-    style={
-      Object {
-        "display": "table",
-        "height": 0,
-        "overflow": "hidden",
-        "paddingBottom": "NaN%",
-      }
-    }
-  >
-    <img
-      alt=""
-      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  <div>
+    <div
       style={
         Object {
-          "display": "block",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
+          "display": "table",
+          "height": 0,
+          "overflow": "hidden",
+          "paddingBottom": "66.66666666666667%",
         }
       }
-    />
-    <div>
-      <div
+    >
+      <img
+        alt=""
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
-            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+            "display": "block",
+            "position": "absolute",
+            "width": "100%",
+            "zIndex": 1,
           }
         }
       />
+      <div>
+        <div
+          style={
+            Object {
+              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      dir="auto"
+    >
+      We are sorry, you need to be a subscriber to watch this video
     </div>
   </div>
 </div>

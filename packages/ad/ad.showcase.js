@@ -64,6 +64,21 @@ export default {
   children: [
     {
       type: "story",
+      name: "Placeholder (300x250 - MPU)",
+      component: () => <Placeholder width={300} height={250} />
+    },
+    {
+      type: "story",
+      name: "Placeholder (728x90 - Default)",
+      component: () => <Placeholder width={728} height={90} />
+    },
+    {
+      type: "story",
+      name: "Placeholder (970x250 - Billboard)",
+      component: () => <Placeholder width={970} height={250} />
+    },
+    {
+      type: "story",
       name: "render one ad - intervention",
       component: () =>
         withOpenInNewWindow(
@@ -178,21 +193,6 @@ export default {
             </Text>
           </ScrollView>
         )
-    },
-    {
-      type: "story",
-      name: "Placeholder (300x250 - MPU)",
-      component: () => <Placeholder width={300} height={250} />
-    },
-    {
-      type: "story",
-      name: "Placeholder (728x90 - Default)",
-      component: () => <Placeholder width={728} height={90} />
-    },
-    {
-      type: "story",
-      name: "Placeholder (970x250 - Billboard)",
-      component: () => <Placeholder width={970} height={250} />
     },
     {
       type: "story",
