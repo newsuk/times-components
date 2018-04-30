@@ -26,6 +26,7 @@
 		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		6352792727934A4A80BA505A /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99A760D4DBA4C06BAA2763C /* libRNSVG.a */; };
+		64031EF320971EB100D243AE /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64031EC520971E9600D243AE /* libART.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		87396A0E1EF3E8F70076CBAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A0D1EF3E8F70076CBAD /* AVFoundation.framework */; };
 		87396A291EF3E9030076CBAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87396A281EF3E9030076CBAD /* CoreMedia.framework */; };
@@ -217,6 +218,20 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
+		64031EC420971E9600D243AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64031EBF20971E9600D243AE /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
+		64031EC620971E9600D243AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64031EBF20971E9600D243AE /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323A12871E5F266B004975B8;
+			remoteInfo = "ART-tvOS";
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -367,6 +382,7 @@
 		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6062F30799E544E8909E64C2 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
+		64031EBF20971E9600D243AE /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		81BE2D48A0F446B793BC771A /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -399,6 +415,7 @@
 				87396A2B1EF3E9110076CBAD /* CoreMotion.framework in Frameworks */,
 				87396A291EF3E9030076CBAD /* CoreMedia.framework in Frameworks */,
 				87396A0E1EF3E8F70076CBAD /* AVFoundation.framework in Frameworks */,
+				64031EF320971EB100D243AE /* libART.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -552,6 +569,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		64031EC020971E9600D243AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64031EC520971E9600D243AE /* libART.a */,
+				64031EC720971E9600D243AE /* libART-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +590,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				64031EBF20971E9600D243AE /* ART.xcodeproj */,
 				A8EA890E2023732700C2D919 /* RNDeviceInfo.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -671,7 +698,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "storybooknative" */;
 			buildPhases = (
-  AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */,
+				AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -714,6 +741,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 64031EC020971E9600D243AE /* Products */;
+					ProjectRef = 64031EBF20971E9600D243AE /* ART.xcodeproj */;
+				},
 				{
 					ProductGroup = 8772CF131FB25C34007D34BB /* Products */;
 					ProjectRef = DB48A49A2B0442E29B68A3A8 /* BVLinearGradient.xcodeproj */;
@@ -958,6 +989,20 @@
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		64031EC520971E9600D243AE /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = 64031EC420971E9600D243AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64031EC720971E9600D243AE /* libART-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libART-tvOS.a";
+			remoteRef = 64031EC620971E9600D243AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1106,20 +1151,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */ = {
-  isa = PBXShellScriptBuildPhase;
-  buildActionMask = 2147483647;
-  name = "Integrate Haul with React Native";
-  files = (
-  );
-  inputPaths = (
-  );
-  outputPaths = (
-  );
-  runOnlyForDeploymentPostprocessing = 0;
-  shellPath = /bin/sh;
-  shellScript = "bash ../node_modules/haul/src/utils/haul-integrate.sh";
-};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1133,6 +1164,20 @@ AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */ = {
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\nexport SKIP_BUNDLING=true\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		AD0CE2C91E925489006FC317 /* Integrate Haul with React Native */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Integrate Haul with React Native";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash ../node_modules/haul/src/utils/haul-integrate.sh";
 		};
 		EDF303902046FF5000831352 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
