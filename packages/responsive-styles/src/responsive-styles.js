@@ -28,6 +28,11 @@ const withResponsiveStyles = (Component, styles = {}, displayName = null) => {
     ${styles.dvp}
   }
 `;
+
+  if (Component.displayName) {
+    component.displayName = `Responsive(${Component.displayName})`;
+  }
+
   if (displayName) {
     component.displayName = displayName;
   }
