@@ -259,133 +259,150 @@ exports[`AuthorProfile test on web renders page error 1`] = `
 <AuthorProfileListingError
   refetch={[Function]}
 >
-  <responsive-styles__component>
-    <View
-      className="responsive-styles__component-fbPFZZ kWpEOX"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ kWpEOX"
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "flexBasis": "50%",
+        "marginTop": "10%",
+        "maxWidth": 548,
+      }
+    }
+  >
+    <div>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "marginBottom": 12,
+            "textAlign": "center",
+          }
+        }
       >
-        <responsive-styles__component>
-          <Text
-            className="responsive-styles__component-fbPFZZ egBQqt"
+        <div
+          dir="auto"
+        >
+          Something's gone wrong
+        </div>
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 18,
+            "lineHeight": 1.44,
+            "textAlign": "center",
+          }
+        }
+      >
+        <div
+          dir="auto"
+        >
+          We can't load the page you have requested. Please check your network connection and retry to continue
+        </div>
+      </Text>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 300,
+            "paddingBottom": "10px",
+            "paddingTop": "40px",
+            "width": 200,
+          }
+        }
+      >
+        <div>
+          <Button
+            accessibilityLabel="Refresh the page"
+            color="#006699"
+            onPress={[Function]}
+            title="Retry"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ egBQqt"
-              dir="auto"
+            <TouchableOpacity
+              accessibilityLabel="Refresh the page"
+              accessibilityRole="button"
+              activeOpacity={0.2}
+              focusedOpacity={0.7}
+              onPress={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "#006699",
+                  "borderRadius": 2,
+                }
+              }
             >
-              Something's gone wrong
-            </div>
-          </Text>
-        </responsive-styles__component>
-        <responsive-styles__component>
-          <Text
-            className="responsive-styles__component-fbPFZZ knwxCQ"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ knwxCQ"
-              dir="auto"
-            >
-              We can't load the page you have requested. Please check your network connection and retry to continue
-            </div>
-          </Text>
-        </responsive-styles__component>
-        <responsive-styles__component>
-          <View
-            className="responsive-styles__component-fbPFZZ kvPcCV"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ kvPcCV"
-            >
-              <Button
+              <View
                 accessibilityLabel="Refresh the page"
-                color="#006699"
-                onPress={[Function]}
-                title="Retry"
+                accessibilityRole="button"
+                accessible={true}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#006699",
+                    "borderRadius": 2,
+                    "cursor": "pointer",
+                    "touchAction": "manipulate",
+                    "transitionDuration": "0.15s",
+                    "transitionProperty": "opacity",
+                    "userSelect": "none",
+                  }
+                }
               >
-                <TouchableOpacity
-                  accessibilityLabel="Refresh the page"
-                  accessibilityRole="button"
-                  activeOpacity={0.2}
-                  focusedOpacity={0.7}
-                  onPress={[Function]}
+                <div
+                  aria-label="Refresh the page"
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onKeyUp={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  role="button"
                   style={
                     Object {
-                      "backgroundColor": "#006699",
-                      "borderRadius": 2,
+                      "backgroundColor": "rgba(0,102,153,1)",
                     }
                   }
+                  tabIndex="0"
                 >
-                  <View
-                    accessibilityLabel="Refresh the page"
-                    accessibilityRole="button"
-                    accessible={true}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
+                  <Text
                     style={
                       Object {
-                        "backgroundColor": "#006699",
-                        "borderRadius": 2,
-                        "cursor": "pointer",
-                        "touchAction": "manipulate",
-                        "transitionDuration": "0.15s",
-                        "transitionProperty": "opacity",
-                        "userSelect": "none",
+                        "color": "#fff",
+                        "fontWeight": "500",
+                        "padding": 8,
+                        "textAlign": "center",
+                        "textTransform": "uppercase",
                       }
                     }
                   >
                     <div
-                      aria-label="Refresh the page"
-                      onKeyDown={[Function]}
-                      onKeyPress={[Function]}
-                      onKeyUp={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      role="button"
-                      style={
-                        Object {
-                          "backgroundColor": "rgba(0,102,153,1)",
-                        }
-                      }
-                      tabIndex="0"
+                      dir="auto"
                     >
-                      <Text
-                        style={
-                          Object {
-                            "color": "#fff",
-                            "fontWeight": "500",
-                            "padding": 8,
-                            "textAlign": "center",
-                            "textTransform": "uppercase",
-                          }
-                        }
-                      >
-                        <div
-                          dir="auto"
-                        >
-                          Retry
-                        </div>
-                      </Text>
+                      Retry
                     </div>
-                  </View>
-                </TouchableOpacity>
-              </Button>
-            </div>
-          </View>
-        </responsive-styles__component>
-      </div>
-    </View>
-  </responsive-styles__component>
+                  </Text>
+                </div>
+              </View>
+            </TouchableOpacity>
+          </Button>
+        </div>
+      </View>
+    </div>
+  </View>
 </AuthorProfileListingError>
 `;
 
@@ -1060,7 +1077,6 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
                         role="heading"
                         style={
                           Object {
-                            "fontFamily": "TimesModern-Bold",
                             "fontSize": "22px",
                             "fontWeight": "400",
                             "lineHeight": "22px",
@@ -1178,7 +1194,6 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
                         role="heading"
                         style={
                           Object {
-                            "fontFamily": "TimesModern-Bold",
                             "fontSize": "22px",
                             "fontWeight": "400",
                             "lineHeight": "22px",
@@ -1296,7 +1311,6 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
                         role="heading"
                         style={
                           Object {
-                            "fontFamily": "TimesModern-Bold",
                             "fontSize": "22px",
                             "fontWeight": "400",
                             "lineHeight": "22px",
@@ -1487,7 +1501,6 @@ exports[`AuthorProfile test on web renders profile content item component 1`] = 
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
@@ -1522,7 +1535,6 @@ exports[`AuthorProfile test on web renders profile content item component 1`] = 
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
@@ -1586,7 +1598,6 @@ exports[`AuthorProfile test on web renders profile content item component with a
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
@@ -1621,7 +1632,6 @@ exports[`AuthorProfile test on web renders profile content item component with a
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
@@ -1685,7 +1695,6 @@ exports[`AuthorProfile test on web renders profile content item component with n
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
@@ -1736,7 +1745,6 @@ exports[`AuthorProfile test on web renders profile content item component with n
                   role="heading"
                   style={
                     Object {
-                      "fontFamily": "TimesModern-Bold",
                       "fontSize": "22px",
                       "fontWeight": "400",
                       "lineHeight": "22px",
