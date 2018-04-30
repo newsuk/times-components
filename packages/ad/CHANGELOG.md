@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.5"></a>
+## [0.18.5](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.4...@times-components/ad@0.18.5) (2018-04-30)
+
+
+### Bug Fixes
+
+* video package code review updates ([#898](https://github.com/newsuk/times-components/issues/898)) ([fab3593](https://github.com/newsuk/times-components/commit/fab3593))
+
+
+
+
 <a name="0.18.4"></a>
 ## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.3...@times-components/ad@0.18.4) (2018-04-30)
 

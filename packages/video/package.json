@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -72,9 +72,9 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/image": "1.17.3",
-    "@times-components/error-view": "0.11.5",
-    "@times-components/styleguide": "0.6.4",
+    "@times-components/error-view": "0.11.6",
+    "@times-components/image": "1.17.4",
+    "@times-components/styleguide": "0.6.5",
     "@times-components/utils": "0.8.1",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",

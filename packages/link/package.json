@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "0.20.6",
+  "version": "0.20.7",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@times-components/responsive-styles": "0.7.3",
-    "@times-components/styleguide": "0.6.4",
+    "@times-components/styleguide": "0.6.5",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

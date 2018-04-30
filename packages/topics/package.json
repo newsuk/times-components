@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topics",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "description": "Map of Topics related to the Article",
   "main": "dist/topics",
   "dev": "src/topics",
@@ -54,9 +54,9 @@
     "react-native": "0.54.2"
   },
   "dependencies": {
-    "@times-components/link": "0.20.6",
-    "@times-components/styleguide": "0.6.4",
-    "@times-components/tracking": "0.12.9",
+    "@times-components/link": "0.20.7",
+    "@times-components/styleguide": "0.6.5",
+    "@times-components/tracking": "0.12.10",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },
