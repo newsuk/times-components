@@ -35,6 +35,8 @@ You can try without these requirements, but you'd be on your own.
   2. `yarn ios` to start the iOS app
   3. To start the Android app:
      * [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
+     * Check Android SDK path is exported to $ANDROID_HOME. In Mac, android sdk is installed to ~/Library/Android/sdk by default.
+        `export ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
      * `yarn android`
      * If you get build errors, check your JDK version with `javac -version`,
        which should print `javac 1.8.XXXX`. Earlier or later versions may not
