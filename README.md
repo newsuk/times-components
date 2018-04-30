@@ -45,19 +45,6 @@ You can try without these requirements, but you'd be on your own.
 
 We use Haul in lieu of the standard `react-native` CLI so that we can generate native Storybook bundles using Webpack, which we configure to honour our monorepo packages' respective `dev` entry points; this allows one update a package's source code and preview the changes without having to manually re-transpile. Haul also automatically generates debuggable source maps.
 
-To debug our native Storybook:
-
-1. `yarn storybook-native` and leave it running
-2. `yarn android` or `yarn ios`
-3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS) and tap _Debug JS Remotely_
-4. navigate to http://localhost:8081/debugger-ui if it hasn't opened automatically
-5. open DevTools (this and the subsequent steps assume Google Chrome usage)
-6. click _Sources_
-7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
-
-Any of these source files can be debugged directly.
-
-
 ### Fonts ⚠️
 
 In order to view the storybook on native, you'll need to fix broken fonts. This
@@ -65,6 +52,30 @@ fix is done automatically when running storybook (both web and native), but
 requires that [fontforge](http://fontforge.github.io/en-US/) is installed,
 otherwise the fix won't be applied and you'll get the classic red error screen
 when trying to use a broken font.
+
+## Debugging
+
+The components in this project can be debugged through your browser's developer tools. These steps assume the use of Chrome DevTools.
+
+To debug our web Storybook:
+
+1. `yarn storybook`
+2. navigate to `http://localhost:9001
+3. open DevTools
+4. Click _Sources_
+5. In the _Network_ tab under the leftmost pane, expand _top_ => _storybook-preview-iframe_ => _webpack://_ => _._ => _packages_
+
+Any of these source files can be debugged directly.
+
+To debug our native Storybook:
+
+1. `yarn storybook-native` and leave it running
+2. `yarn android` or `yarn ios`
+3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS) and tap _Debug JS Remotely_
+4. navigate to http://localhost:8081/debugger-ui if it hasn't opened automatically
+5. open DevTools
+6. click _Sources_
+7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
 
 ## Testing and code coverage
 
