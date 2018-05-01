@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import ArticleSummary, {
   ArticleSummaryHeadline,
@@ -10,6 +9,7 @@ import Link from "@times-components/link";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours, spacing } from "@times-components/styleguide";
 import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
+import getImageUri from "./utils";
 
 const CardWrapper = withResponsiveStyles(View, {
   mediumUp: () => `
@@ -63,11 +63,7 @@ const AuthorProfileItem = item => {
     showImage
   } = item;
 
-  const imageUri = get(
-    item,
-    "leadAsset.crop.url",
-    get(item, "leadAsset.posterImage.crop.url", null)
-  );
+  const imageUri = getImageUri(item);
 
   if (isLoading) {
     return (

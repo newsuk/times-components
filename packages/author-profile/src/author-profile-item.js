@@ -1,5 +1,4 @@
 import React from "react";
-import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
@@ -9,6 +8,7 @@ import ArticleSummary, {
   ArticleSummaryContent
 } from "@times-components/article-summary";
 import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
+import getImageUri from "./utils";
 
 const styles = StyleSheet.create({
   container: {
@@ -33,11 +33,7 @@ const AuthorProfileItem = item => {
     showImage
   } = item;
 
-  const imageUri = get(
-    item,
-    "leadAsset.crop.url",
-    get(item, "leadAsset.posterImage.crop.url", null)
-  );
+  const imageUri = getImageUri(item);
 
   if (isLoading) {
     return (
