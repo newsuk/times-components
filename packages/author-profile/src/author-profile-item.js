@@ -3,12 +3,12 @@ import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
 import Card from "@times-components/card";
 import Link from "@times-components/link";
-import { withTrackEvents } from "@times-components/tracking";
 import { colours, spacing } from "@times-components/styleguide";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
 } from "@times-components/article-summary";
+import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
 
 const styles = StyleSheet.create({
   container: {
@@ -79,15 +79,4 @@ const AuthorProfileItem = item => {
   );
 };
 
-export default withTrackEvents(AuthorProfileItem, {
-  analyticsEvents: [
-    {
-      eventName: "onPress",
-      actionName: "Pressed",
-      getAttrs: ({ headline, id }) => ({
-        articleHeadline: headline,
-        articleId: id
-      })
-    }
-  ]
-});
+export default authorProfileItemTrackingEvents(AuthorProfileItem);

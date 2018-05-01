@@ -1,16 +1,15 @@
 import React, { Fragment } from "react";
 import get from "lodash.get";
 import { StyleSheet, View } from "react-native";
-import Card from "@times-components/card";
-import Link from "@times-components/link";
-import { withTrackEvents } from "@times-components/tracking";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { colours, spacing } from "@times-components/styleguide";
-
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
 } from "@times-components/article-summary";
+import Card from "@times-components/card";
+import Link from "@times-components/link";
+import withResponsiveStyles from "@times-components/responsive-styles";
+import { colours, spacing } from "@times-components/styleguide";
+import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
 
 const CardWrapper = withResponsiveStyles(View, {
   mediumUp: () => `
@@ -140,15 +139,4 @@ const AuthorProfileItem = item => {
   );
 };
 
-export default withTrackEvents(AuthorProfileItem, {
-  analyticsEvents: [
-    {
-      eventName: "onPress",
-      actionName: "Pressed",
-      getAttrs: ({ headline, id }) => ({
-        articleHeadline: headline,
-        articleId: id
-      })
-    }
-  ]
-});
+export default authorProfileItemTrackingEvents(AuthorProfileItem);
