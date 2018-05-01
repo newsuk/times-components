@@ -71,7 +71,7 @@ export default () => {
       wrapper
         .dive()
         .dive()
-        .find("AuthorProfileListingError")
+        .find("AuthorProfileListError")
         .dive()
     ).toMatchSnapshot();
   });

@@ -256,7 +256,7 @@ Array [
 `;
 
 exports[`AuthorProfile tests on web renders page error 1`] = `
-<AuthorProfileListingError
+<AuthorProfileListError
   refetch={[Function]}
 >
   <View
@@ -402,7 +402,7 @@ exports[`AuthorProfile tests on web renders page error 1`] = `
       </View>
     </div>
   </View>
-</AuthorProfileListingError>
+</AuthorProfileListError>
 `;
 
 exports[`AuthorProfile tests on web renders profile 1`] = `

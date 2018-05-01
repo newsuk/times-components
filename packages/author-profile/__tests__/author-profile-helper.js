@@ -390,7 +390,7 @@ export default AuthorProfileContent => {
     wrapper
       .dive()
       .dive()
-      .find("AuthorProfileListingError")
+      .find("AuthorProfileListError")
       .dive()
       .find("Button")
       .simulate("press");

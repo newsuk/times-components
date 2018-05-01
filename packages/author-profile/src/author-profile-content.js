@@ -8,7 +8,7 @@ import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
-import AuthorProfileListingError from "./author-profile-listing-error";
+import AuthorProfileListError from "./author-profile-list-error";
 
 const styles = StyleSheet.create({
   padding: {
@@ -87,7 +87,7 @@ class AuthorProfileContent extends Component {
       return (
         <View style={styles.errorContainer}>
           {AuthorProfileHead}
-          <AuthorProfileListingError refetch={refetch} />
+          <AuthorProfileListError refetch={refetch} />
         </View>
       );
     }

@@ -11,7 +11,7 @@ import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
-import AuthorProfileListingError from "./author-profile-listing-error";
+import AuthorProfileListError from "./author-profile-list-error";
 
 const styles = StyleSheet.create({
   container: {
@@ -180,7 +180,7 @@ class AuthorProfileContent extends Component {
       <ContentContainer>
         {paginationComponent()}
         <View style={[styles.container, styles.errorContainer]}>
-          <AuthorProfileListingError refetch={refetch} />
+          <AuthorProfileListError refetch={refetch} />
         </View>
       </ContentContainer>
     );

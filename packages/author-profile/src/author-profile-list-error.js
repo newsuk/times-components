@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import styles from "./styles";
 
-const AuthorProfileListingError = ({ refetch }) => (
-  <View style={styles.listingErrorContainer}>
-    <Text style={styles.listingErrorHeading}>Something&apos;s gone wrong</Text>
-    <Text style={styles.listingErrorMessage}>
+const AuthorProfileListError = ({ refetch }) => (
+  <View style={styles.listErrorContainer}>
+    <Text style={styles.listErrorHeading}>Something&apos;s gone wrong</Text>
+    <Text style={styles.listErrorMessage}>
       We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
     </Text>
-    <View style={styles.listingErrorButtonContainer}>
+    <View style={styles.listErrorButtonContainer}>
       <Button
         onPress={refetch}
         title="Retry"
@@ -22,8 +22,8 @@ const AuthorProfileListingError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileListingError.propTypes = {
+AuthorProfileListError.propTypes = {
   refetch: PropTypes.func.isRequired
 };
 
-export default AuthorProfileListingError;
+export default AuthorProfileListError;

@@ -96,7 +96,7 @@ describe("AuthorProfile tests on web", () => {
       />
     );
 
-    expect(wrapper.find("AuthorProfileListingError")).toMatchSnapshot();
+    expect(wrapper.find("AuthorProfileListError")).toMatchSnapshot();
   });
 
   it("renders profile articles and invoke callback on article press", done => {

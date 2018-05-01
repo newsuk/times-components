@@ -4,12 +4,12 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  listingErrorContainer: {
+  listErrorContainer: {
     alignSelf: "center",
     flexBasis: "50%",
     maxWidth: 548
   },
-  listingErrorButtonContainer: {
+  listErrorButtonContainer: {
     alignSelf: "center",
     maxWidth: 300,
     paddingTop: spacing(8),

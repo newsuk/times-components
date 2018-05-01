@@ -15,14 +15,14 @@ const styles = {
     flex: 1,
     maxWidth: 800
   },
-  listingErrorContainer: {
+  listErrorContainer: {
     alignItems: "center",
     flex: 1,
     maxWidth: 548,
     paddingLeft: spacing(1),
     paddingRight: spacing(1)
   },
-  listingErrorHeading: {
+  listErrorHeading: {
     alignSelf: "center",
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
@@ -30,13 +30,13 @@ const styles = {
     marginBottom: spacing(2),
     marginTop: spacing(4)
   },
-  listingErrorMessage: {
+  listErrorMessage: {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.body,
     textAlign: "center"
   },
-  listingErrorButtonContainer: {
+  listErrorButtonContainer: {
     bottom: 0,
     position: "absolute",
     width: "100%"
