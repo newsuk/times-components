@@ -6,6 +6,7 @@ import ArticleSummary, {
   renderAst
 } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
+import withLinksFixture from "../fixtures/with-links";
 import opinionBylineFixture from "../fixtures/opinion-byline";
 import articleMultiFixture from "../fixtures/article-multi";
 import emptyParagraphFixture from "../fixtures/article-empty-paragraph";
@@ -59,6 +60,14 @@ export default () => {
   it("should render an article-summary component with content including line breaks", () => {
     const tree = renderer
       .create(<ArticleSummary {...reviewFixture} />)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render an article-summary component containing links", () => {
+    const tree = renderer
+      .create(<ArticleSummary {...withLinksFixture} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

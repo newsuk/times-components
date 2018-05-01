@@ -3,6 +3,7 @@ import { View } from "react-native";
 import ArticleSummary from "./src/article-summary";
 
 import defaultFixture from "./fixtures/default";
+import withLinksFixture from "./fixtures/with-links";
 import articleMultiFixture from "./fixtures/article-multi";
 import noBylineFixture from "./fixtures/no-byline";
 import noLabelFixture from "./fixtures/no-label";
@@ -17,6 +18,11 @@ export default {
       type: "story",
       name: "Default",
       component: () => story(<ArticleSummary {...defaultFixture} />)
+    },
+    {
+      type: "story",
+      name: "With links",
+      component: () => story(<ArticleSummary {...withLinksFixture} />)
     },
     {
       type: "story",
