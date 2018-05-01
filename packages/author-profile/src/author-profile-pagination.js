@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Pagination from "@times-components/pagination";
-import styles from "../styles";
+import styles from "./styles";
 
 const AuthorProfilePagination = props => (
   <View style={styles.paginationContainer}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
-import styles from "../styles";
+import styles from "./styles";
 
 const AuthorProfileListingError = ({ refetch }) => (
   <View style={styles.listingErrorContainer}>

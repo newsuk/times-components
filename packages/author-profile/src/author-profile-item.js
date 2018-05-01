@@ -5,7 +5,6 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import { colours, spacing } from "@times-components/styleguide";
-
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent

@@ -3,10 +3,10 @@ import AuthorHead from "@times-components/author-head";
 
 export const propTypes = {
   author: PropTypes.shape({
-    name: PropTypes.string,
-    jobTitle: PropTypes.string,
     biography: AuthorHead.propTypes.bio,
     image: PropTypes.string,
+    jobTitle: PropTypes.string,
+    name: PropTypes.string,
     twitter: PropTypes.string
   }),
   error: PropTypes.shape(),
