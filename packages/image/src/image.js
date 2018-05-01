@@ -7,7 +7,7 @@ import {
 } from "@times-components/utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
-import styles from "../styles";
+import styles from "./styles";
 
 class TimesImage extends Component {
   constructor(props) {
