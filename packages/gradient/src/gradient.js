@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  surface: { position: 'absolute', top: 0, left: 0, bottom: 0, right: 0 }
+  surface: { position: "absolute", top: 0, left: 0, bottom: 0, right: 0 }
 });
 
 function angleToPoints(angle) {
@@ -34,7 +34,7 @@ function angleToPoints(angle) {
 
 class Gradient extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       width: 0,
       height: 0
@@ -43,7 +43,7 @@ class Gradient extends React.Component {
 
   onLayout = ({ nativeEvent: { layout: { width, height } } }) => {
     this.setState({ width, height });
-  }
+  };
 
   render() {
     const { width, height } = this.state;
@@ -60,13 +60,21 @@ class Gradient extends React.Component {
     return (
       <View style={[styles.container, style]} onLayout={this.onLayout}>
         <Surface width={width} height={height} style={styles.surface}>
-          <Shape fill={new LinearGradient({
-            '0': colours.functional.backgroundSecondary,
-            '1': colours.functional.backgroundTertiary
-          },
-            width * start.x, height * start.y,
-            width * end.x, height * end.y
-          )} d={d} />
+          <Shape
+            fill={
+              new LinearGradient(
+                {
+                  "0": colours.functional.backgroundSecondary,
+                  "1": colours.functional.backgroundTertiary
+                },
+                width * start.x,
+                height * start.y,
+                width * end.x,
+                height * end.y
+              )
+            }
+            d={d}
+          />
         </Surface>
         {children}
       </View>
