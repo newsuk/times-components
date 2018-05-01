@@ -8,7 +8,7 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { colours, spacing } from "@times-components/styleguide";
-import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
+import authorProfileListItemTrackingEvents from "./author-profile-list-item-tracking-events";
 import getImageUri from "./utils";
 
 const CardWrapper = withResponsiveStyles(View, {
@@ -135,4 +135,4 @@ const AuthorProfileListItem = item => {
   );
 };
 
-export default authorProfileItemTrackingEvents(AuthorProfileListItem);
+export default authorProfileListItemTrackingEvents(AuthorProfileListItem);

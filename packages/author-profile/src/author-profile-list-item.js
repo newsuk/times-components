@@ -7,7 +7,7 @@ import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
 } from "@times-components/article-summary";
-import authorProfileItemTrackingEvents from "./author-profile-item-tracking-events";
+import authorProfileListItemTrackingEvents from "./author-profile-list-item-tracking-events";
 import getImageUri from "./utils";
 
 const styles = StyleSheet.create({
@@ -75,4 +75,4 @@ const AuthorProfileListItem = item => {
   );
 };
 
-export default authorProfileItemTrackingEvents(AuthorProfileListItem);
+export default authorProfileListItemTrackingEvents(AuthorProfileListItem);
