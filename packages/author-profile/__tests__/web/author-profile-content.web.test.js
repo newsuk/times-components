@@ -4,7 +4,7 @@ import authorProfileFixture from "@times-components/provider-test-tools/fixtures
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
 import AuthorProfile from "../../src/author-profile";
-import AuthorProfileItem from "../../src/author-profile-list-item";
+import AuthorProfileListItem from "../../src/author-profile-list-item";
 import AuthorProfileContent from "../../src/author-profile-content.web.js";
 import pagedResult from "../paged-result";
 
@@ -112,7 +112,7 @@ describe("AuthorProfile tests on web", () => {
       .find("ErrorView")
       .at(0)
       .dive()
-      .find(AuthorProfileItem)
+      .find(AuthorProfileListItem)
       .at(0)
       .dive()
       .dive()

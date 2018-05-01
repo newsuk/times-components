@@ -6,7 +6,7 @@ import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import AuthorProfile from "../src/author-profile";
-import AuthorProfileItem from "../src/author-profile-list-item";
+import AuthorProfileListItem from "../src/author-profile-list-item";
 import AuthorProfileListingItemSeparator from "../src/author-profile-listing-item-separator";
 import pagedResult from "./paged-result";
 
@@ -181,7 +181,7 @@ export default AuthorProfileContent => {
   it("renders profile content item component", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem
+      <AuthorProfileListItem
         {...item}
         imageRatio={8 / 5}
         imageSize={200}
@@ -195,7 +195,7 @@ export default AuthorProfileContent => {
   it("renders profile content item component with a specific image size", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem
+      <AuthorProfileListItem
         {...item}
         imageRatio={8 / 5}
         imageSize={200}
@@ -212,7 +212,7 @@ export default AuthorProfileContent => {
     set(item, "shortSummary", item.summary);
     set(item, "longSummary", item.summary);
     const component = renderer.create(
-      <AuthorProfileItem {...item} imageRatio={20 / 3} onPress={() => {}} />
+      <AuthorProfileListItem {...item} imageRatio={20 / 3} onPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
@@ -280,7 +280,7 @@ export default AuthorProfileContent => {
     };
 
     const component = renderer.create(<AuthorProfileContent {...p} />);
-    expect(component.root.findAllByType(AuthorProfileItem)).toHaveLength(1);
+    expect(component.root.findAllByType(AuthorProfileListItem)).toHaveLength(1);
   });
 
   it("renders profile separator", () => {
@@ -325,7 +325,7 @@ export default AuthorProfileContent => {
   it("tracks author profile item interactions", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const stream = jest.fn();
-    const component = shallow(<AuthorProfileItem {...item} />, {
+    const component = shallow(<AuthorProfileListItem {...item} />, {
       context: { tracking: { analytics: stream } }
     });
 
@@ -335,7 +335,7 @@ export default AuthorProfileContent => {
       .simulate("press");
 
     expect(stream).toHaveBeenCalledWith({
-      component: "AuthorProfileItem",
+      component: "AuthorProfileListItem",
       action: "Pressed",
       attrs: {
         articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",

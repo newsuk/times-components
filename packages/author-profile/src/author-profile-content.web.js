@@ -7,7 +7,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
-import AuthorProfileItem from "./author-profile-list-item";
+import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListingItemSeparator from "./author-profile-listing-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
@@ -221,7 +221,7 @@ class AuthorProfileContent extends Component {
                       hasError ? null : (
                         <Fragment>
                           {separatorComponent}
-                          <AuthorProfileItem
+                          <AuthorProfileListItem
                             {...article}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(elementId) || 100}

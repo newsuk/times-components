@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorProfileItem = item => {
+const AuthorProfileListItem = item => {
   const {
     style,
     summary,
@@ -135,4 +135,4 @@ const AuthorProfileItem = item => {
   );
 };
 
-export default authorProfileItemTrackingEvents(AuthorProfileItem);
+export default authorProfileItemTrackingEvents(AuthorProfileListItem);
