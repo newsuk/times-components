@@ -1,23 +1,24 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import AuthorProfileListError from "./author-profile-list-error";
-import { ErrorContainer, ImageContainer } from "./styles/responsive";
+import propTypes from "./author-profile-list-error-prop-types";
+import {
+  PageErrorContainer,
+  PageErrorImageContainer
+} from "./styles/responsive";
 
 const AuthorProfileError = ({ refetch }) => (
-  <ErrorContainer>
+  <PageErrorContainer>
     <AuthorProfileListError refetch={refetch} />
-    <ImageContainer>
+    <PageErrorImageContainer>
       <Image
         aspectRatio={700 / 770}
         uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
       />
-    </ImageContainer>
-  </ErrorContainer>
+    </PageErrorImageContainer>
+  </PageErrorContainer>
 );
 
-AuthorProfileError.propTypes = {
-  refetch: PropTypes.func.isRequired
-};
+AuthorProfileError.propTypes = propTypes;
 
 export default AuthorProfileError;

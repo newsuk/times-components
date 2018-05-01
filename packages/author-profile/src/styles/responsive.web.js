@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 
-export const ErrorContainer = withResponsiveStyles(
+export const PageErrorContainer = withResponsiveStyles(
   View,
   {
     base: () => `
@@ -20,10 +20,10 @@ export const ErrorContainer = withResponsiveStyles(
     flex-direction: row;
   `
   },
-  "ErrorContainer"
+  "PageErrorContainer"
 );
 
-export const ImageContainer = withResponsiveStyles(
+export const PageErrorImageContainer = withResponsiveStyles(
   View,
   {
     base: () => `
@@ -39,5 +39,5 @@ export const ImageContainer = withResponsiveStyles(
     max-width: none;
   `
   },
-  "ImageContainer"
+  "PageErrorImageContainer"
 );

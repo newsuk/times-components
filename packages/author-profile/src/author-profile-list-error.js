@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import PropTypes from "prop-types";
+import propTypes from "./author-profile-list-error-prop-types";
 import styles from "./styles";
 
 const AuthorProfileListError = ({ refetch }) => (
@@ -20,8 +20,6 @@ const AuthorProfileListError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileListError.propTypes = {
-  refetch: PropTypes.func.isRequired
-};
+AuthorProfileListError.propTypes = propTypes;
 
 export default AuthorProfileListError;

@@ -7,7 +7,7 @@ import {
 } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileContent from "./author-profile-content";
-import AuthorProfileError from "./author-profile-error";
+import AuthorProfileError from "./author-profile-list-page-error";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { View } from "react-native";
-import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import AuthorProfileListError from "./author-profile-list-error";
+import propTypes from "./author-profile-list-error-prop-types";
 import styles from "./styles";
 
-// todo: embed image in case of network loss causing the error
+// @TODO: embed image in case of network loss causing the error?
 const AuthorProfileError = ({ refetch }) => (
   <View style={styles.pageErrorContainer}>
     <View style={styles.pageErrorImageContainer}>
@@ -18,8 +18,6 @@ const AuthorProfileError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileError.propTypes = {
-  refetch: PropTypes.func.isRequired
-};
+AuthorProfileError.propTypes = propTypes;
 
 export default AuthorProfileError;

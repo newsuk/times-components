@@ -1932,7 +1932,7 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
 <AuthorProfileError
   refetch={[Function]}
 >
-  <ErrorContainer>
+  <PageErrorContainer>
     <View
       className="responsive-styles__component-fbPFZZ hcvmyw"
     >
@@ -2075,7 +2075,7 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
             </div>
           </View>
         </AuthorProfileListError>
-        <ImageContainer>
+        <PageErrorImageContainer>
           <View
             className="responsive-styles__component-fbPFZZ Xuekk"
           >
@@ -2171,10 +2171,10 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
               </TimesImage>
             </div>
           </View>
-        </ImageContainer>
+        </PageErrorImageContainer>
       </div>
     </View>
-  </ErrorContainer>
+  </PageErrorContainer>
 </AuthorProfileError>
 `;
 
