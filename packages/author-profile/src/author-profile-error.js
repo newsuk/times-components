@@ -1,29 +1,17 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { spacing } from "@times-components/styleguide";
 import AuthorProfileListError from "./author-profile-list-error";
+import styles from "./styles";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    margin: spacing(2)
-  },
-  imageContainer: {
-    alignSelf: "center",
-    width: "60%",
-    marginTop: spacing(4),
-    marginBottom: spacing(4)
-  }
-});
-
+// todo: embed image in case of network loss causing the error
 const AuthorProfileError = ({ refetch }) => (
-  <View style={styles.container}>
-    <View style={styles.imageContainer}>
+  <View style={styles.pageErrorContainer}>
+    <View style={styles.pageErrorImageContainer}>
       <Image
-        uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
         aspectRatio={700 / 770}
+        uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
       />
     </View>
     <AuthorProfileListError refetch={refetch} />

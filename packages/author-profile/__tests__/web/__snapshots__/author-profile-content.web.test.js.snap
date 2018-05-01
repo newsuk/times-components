@@ -1932,12 +1932,12 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
 <AuthorProfileError
   refetch={[Function]}
 >
-  <responsive-styles__component>
+  <ErrorContainer>
     <View
-      className="responsive-styles__component-fbPFZZ fkGisv"
+      className="responsive-styles__component-fbPFZZ hcvmyw"
     >
       <div
-        className="responsive-styles__component-fbPFZZ fkGisv"
+        className="responsive-styles__component-fbPFZZ hcvmyw"
       >
         <AuthorProfileListError
           refetch={[Function]}
@@ -2075,12 +2075,12 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
             </div>
           </View>
         </AuthorProfileListError>
-        <responsive-styles__component>
+        <ImageContainer>
           <View
-            className="responsive-styles__component-fbPFZZ dISvDf"
+            className="responsive-styles__component-fbPFZZ Xuekk"
           >
             <div
-              className="responsive-styles__component-fbPFZZ dISvDf"
+              className="responsive-styles__component-fbPFZZ Xuekk"
             >
               <TimesImage
                 aspectRatio={0.9090909090909091}
@@ -2171,10 +2171,10 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
               </TimesImage>
             </div>
           </View>
-        </responsive-styles__component>
+        </ImageContainer>
       </div>
     </View>
-  </responsive-styles__component>
+  </ErrorContainer>
 </AuthorProfileError>
 `;
 
