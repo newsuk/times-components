@@ -585,81 +585,79 @@ exports[`AuthorProfile tests on web renders profile 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -670,81 +668,79 @@ exports[`AuthorProfile tests on web renders profile 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -755,81 +751,79 @@ exports[`AuthorProfile tests on web renders profile 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -1009,100 +1003,98 @@ exports[`AuthorProfile tests on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Top medal for forces dog who took a bite out of the Taliban
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Top medal for forces dog who took a bite out of the Taliban
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Friday November 17 2017, 12:01am, The Times
-                      </div>
+                        
+                        The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
                     </div>
                   </div>
                 </div>
@@ -1126,100 +1118,98 @@ exports[`AuthorProfile tests on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Social media must raise game to beat terrorists, says UN chief
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Social media must raise game to beat terrorists, says UN chief
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Friday November 17 2017, 12:01am, The Times
-                      </div>
+                        
+                        The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
                     </div>
                   </div>
                 </div>
@@ -1243,100 +1233,98 @@ exports[`AuthorProfile tests on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Cuts have left the army 20 years out of date, says former general
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Cuts have left the army 20 years out of date, says former general
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Tuesday November 14 2017, 05:00pm, The Times
-                      </div>
+                        
+                        Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Tuesday November 14 2017, 05:00pm, The Times
                     </div>
                   </div>
                 </div>
@@ -1468,83 +1456,81 @@ exports[`AuthorProfile tests on web renders profile content item component 1`] =
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1565,83 +1551,81 @@ exports[`AuthorProfile tests on web renders profile content item component with 
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1662,115 +1646,113 @@ exports[`AuthorProfile tests on web renders profile content item component with 
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "20px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "20px",
                   }
-                >
-                  <span
-                    dir="auto"
-                  >
-                    
-                    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                    ...
-                  </span>
-                </div>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
+                }
+              >
+                <span
                   dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
-                  }
                 >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                  
+                  The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "20px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "20px",
                   }
-                >
-                  <span
-                    dir="auto"
-                  >
-                    
-                    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                    ...
-                  </span>
-                </div>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
+                }
+              >
+                <span
                   dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
-                  }
                 >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                  
+                  The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1830,81 +1812,79 @@ exports[`AuthorProfile tests on web renders profile content loading 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2227,81 +2207,79 @@ exports[`AuthorProfile tests on web renders profile loading 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2312,81 +2290,79 @@ exports[`AuthorProfile tests on web renders profile loading 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2397,81 +2373,79 @@ exports[`AuthorProfile tests on web renders profile loading 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2585,43 +2559,41 @@ exports[`AuthorProfile tests on web renders with no author 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2632,43 +2604,41 @@ exports[`AuthorProfile tests on web renders with no author 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2679,43 +2649,41 @@ exports[`AuthorProfile tests on web renders with no author 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>

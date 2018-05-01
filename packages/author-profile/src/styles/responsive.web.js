@@ -1,5 +1,49 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
+
+export const ListItemWrapper = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+    padding-bottom: ${spacing(3)};
+    padding-top: ${spacing(3)};
+  `,
+    mediumUp: () => `
+    .authorProfileImage {
+      flex: 2;
+      margin-bottom: 0;
+      max-width: 285px;
+      min-width: auto;
+      padding-right: ${spacing(3)};
+    }
+    .authorProfileContent {
+      flex: 2.7;
+      flex-basis: 0 !important;
+      min-width: 380px;
+    }
+  `
+  },
+  "ListItemWrapper"
+);
+
+export const ListItemLongText = withResponsiveStyles(
+  View,
+  {
+    base: () => "display: none;",
+    mediumUp: () => `display: block; padding-left: ${spacing(3)};`
+  },
+  "ListItemLongText"
+);
+
+export const ListItemShortText = withResponsiveStyles(
+  View,
+  {
+    base: () => "display: block;",
+    mediumUp: () => "display: none;"
+  },
+  "ListItemShortText"
+);
 
 export const PageErrorContainer = withResponsiveStyles(
   View,
