@@ -8,7 +8,7 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
 import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import AuthorProfileListingItemSeparator from "./author-profile-listing-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";
@@ -206,7 +206,7 @@ class AuthorProfileContent extends Component {
             data.map((article, indx) => {
               const { id, elementId, url } = article;
               const separatorComponent =
-                indx > 0 ? <AuthorProfileItemSeparator /> : null;
+                indx > 0 ? <AuthorProfileListingItemSeparator /> : null;
 
               return (
                 <div

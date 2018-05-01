@@ -6,7 +6,7 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
+import AuthorProfileListingItemSeparator from "./author-profile-listing-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";
 
@@ -179,7 +179,7 @@ class AuthorProfileContent extends Component {
         })}
         ItemSeparatorComponent={() => (
           <View style={styles.padding}>
-            <AuthorProfileItemSeparator />
+            <AuthorProfileListingItemSeparator />
           </View>
         )}
       />

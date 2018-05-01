@@ -7,7 +7,7 @@ import cloneDeep from "lodash.clonedeep";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import AuthorProfile from "../src/author-profile";
 import AuthorProfileItem from "../src/author-profile-item";
-import AuthorProfileItemSeparator from "../src/author-profile-item-separator";
+import AuthorProfileListingItemSeparator from "../src/author-profile-listing-item-separator";
 import pagedResult from "./paged-result";
 
 const authorProfileProps = {
@@ -284,7 +284,7 @@ export default AuthorProfileContent => {
   });
 
   it("renders profile separator", () => {
-    const component = renderer.create(<AuthorProfileItemSeparator />);
+    const component = renderer.create(<AuthorProfileListingItemSeparator />);
 
     expect(component).toMatchSnapshot();
   });
