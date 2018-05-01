@@ -9,8 +9,6 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest --coverage",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "npm run transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
