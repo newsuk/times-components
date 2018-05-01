@@ -41,7 +41,7 @@ const styles = {
     position: "absolute",
     width: "100%"
   },
-  listingItemSeparator: {
+  listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1
   }
