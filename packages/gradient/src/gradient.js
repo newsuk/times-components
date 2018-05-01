@@ -2,13 +2,15 @@ import PropTypes from "prop-types";
 import React from "react";
 import { StyleSheet, View, ViewPropTypes, ART } from "react-native";
 import { colours } from "@times-components/styleguide";
+
 const { Surface, Shape, LinearGradient, Path } = ART;
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  }
+  },
+  surface: { position: 'absolute', top: 0, left: 0, bottom: 0, right: 0 }
 });
 
 function angleToPoints(angle) {
@@ -56,8 +58,8 @@ class Gradient extends React.Component {
       .line(0, -height);
 
     return (
-      <View style={style} onLayout={this.onLayout}>
-        <Surface width={width} height={height} style={{ position: 'absolute', top: 0, left: 0, bottom: 0, right: 0 }}>
+      <View style={[styles.container, style]} onLayout={this.onLayout}>
+        <Surface width={width} height={height} style={styles.surface}>
           <Shape fill={new LinearGradient({
             '0': colours.functional.backgroundSecondary,
             '1': colours.functional.backgroundTertiary
