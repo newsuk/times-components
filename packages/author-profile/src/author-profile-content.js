@@ -5,7 +5,7 @@ import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfilePagination from "./author-profile-pagination";
-import AuthorProfileItem from "./author-profile-item";
+import AuthorProfileItem from "./author-profile-list-item";
 import AuthorProfileListingItemSeparator from "./author-profile-listing-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListingError from "./author-profile-listing-error";

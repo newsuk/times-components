@@ -6,7 +6,7 @@ import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import AuthorProfile from "../src/author-profile";
-import AuthorProfileItem from "../src/author-profile-item";
+import AuthorProfileItem from "../src/author-profile-list-item";
 import AuthorProfileListingItemSeparator from "../src/author-profile-listing-item-separator";
 import pagedResult from "./paged-result";
 

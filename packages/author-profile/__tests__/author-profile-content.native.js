@@ -6,7 +6,7 @@ import Pagination from "@times-components/pagination";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import AuthorProfile from "../src/author-profile";
-import AuthorProfileItem from "../src/author-profile-item";
+import AuthorProfileItem from "../src/author-profile-list-item";
 import pagedResult from "./paged-result";
 import test from "./author-profile-helper";
 import AuthorProfileContent from "../src/author-profile-content.js";

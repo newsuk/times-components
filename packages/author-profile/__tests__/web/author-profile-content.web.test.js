@@ -4,7 +4,7 @@ import authorProfileFixture from "@times-components/provider-test-tools/fixtures
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
 import AuthorProfile from "../../src/author-profile";
-import AuthorProfileItem from "../../src/author-profile-item";
+import AuthorProfileItem from "../../src/author-profile-list-item";
 import AuthorProfileContent from "../../src/author-profile-content.web.js";
 import pagedResult from "../paged-result";
 

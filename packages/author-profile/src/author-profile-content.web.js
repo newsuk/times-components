@@ -7,7 +7,7 @@ import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
-import AuthorProfileItem from "./author-profile-item";
+import AuthorProfileItem from "./author-profile-list-item";
 import AuthorProfileListingItemSeparator from "./author-profile-listing-item-separator";
 import AuthorProfilePagination from "./author-profile-pagination";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";

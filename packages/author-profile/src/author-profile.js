@@ -43,13 +43,13 @@ const AuthorProfile = ({
   }
 
   const {
+    articles,
     biography,
-    name,
+    hasLeadAssets,
     image: uri,
     jobTitle,
-    twitter,
-    hasLeadAssets,
-    articles
+    name,
+    twitter
   } =
     author || {};
 
