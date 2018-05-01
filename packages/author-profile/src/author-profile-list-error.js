@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import PropTypes from "prop-types";
-import { colours } from "@times-components/styleguide";
 import styles from "./styles";
 
 const AuthorProfileListError = ({ refetch }) => (
@@ -12,12 +11,11 @@ const AuthorProfileListError = ({ refetch }) => (
       connection and retry to continue
     </Text>
     <View style={styles.listErrorButtonContainer}>
-      <Button
-        onPress={refetch}
-        title="Retry"
-        color={colours.functional.action}
-        accessibilityLabel="Retry"
-      />
+      <TouchableOpacity accessible accessibilityLabel="Retry" onPress={refetch}>
+        <View style={styles.listErrorButton}>
+          <Text style={styles.listErrorButtonText}>RETRY</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   </View>
 );

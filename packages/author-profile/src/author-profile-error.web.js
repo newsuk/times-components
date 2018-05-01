@@ -1,14 +1,9 @@
 import React from "react";
-import { Text, View, Button } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
+import AuthorProfileListError from "./author-profile-list-error";
 
 const ErrorContainer = withResponsiveStyles(View, {
   base: () => `
@@ -28,46 +23,6 @@ const ErrorContainer = withResponsiveStyles(View, {
   `
 });
 
-const Heading = withResponsiveStyles(Text, {
-  base: () => `
-    font-family: ${fonts.headline};
-    font-size: ${fontSizes.leadHeadline}px;
-    text-align: center;
-    color: ${colours.functional.brandColour};
-    margin-bottom: 12px;
-  `,
-  wideUp: () => `
-    text-align: left;
-  `
-});
-
-const Message = withResponsiveStyles(Text, {
-  base: () => `
-    font-family: ${fonts.bodyRegular};
-    font-size: ${fontSizes.body}px;
-    line-height: 1.44;
-    text-align: center;
-    color: ${colours.functional.secondary};
-  `,
-  wideUp: () => `
-    text-align: left;
-  `
-});
-
-const ButtonContainer = withResponsiveStyles(View, {
-  base: () => `
-    align-self: center;
-    padding-top: 40px;
-    max-width: 300px;
-    width: 100%;
-    padding-bottom: ${spacing(2)};
-  `,
-  mediumUp: () => `
-    width: 200px;
-    margin-bottom: 10%;
-  `
-});
-
 const ImageContainer = withResponsiveStyles(View, {
   base: () => `
     max-width: 75%;
@@ -83,40 +38,13 @@ const ImageContainer = withResponsiveStyles(View, {
   `
 });
 
-const MessagingContainer = withResponsiveStyles(View, {
-  base: () => `
-    margin-top: 10%;
-    flex-basis: 50%;
-    max-width: 548px;
-    align-self: center;
-  `,
-  wideUp: () => `
-    align-self: auto;
-    max-width: 365px;
-  `
-});
-
 const AuthorProfileError = ({ refetch }) => (
   <ErrorContainer>
-    <MessagingContainer>
-      <Heading>Something&apos;s gone wrong</Heading>
-      <Message>
-        We can&apos;t load the page you have requested. Please check your
-        network connection and retry to continue
-      </Message>
-      <ButtonContainer>
-        <Button
-          onPress={refetch}
-          title="Retry"
-          color={colours.functional.action}
-          accessibilityLabel="Refresh the page"
-        />
-      </ButtonContainer>
-    </MessagingContainer>
+    <AuthorProfileListError refetch={refetch} />
     <ImageContainer>
       <Image
-        uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
         aspectRatio={700 / 770}
+        uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
       />
     </ImageContainer>
   </ErrorContainer>

@@ -28,7 +28,8 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: fontSizes.leadHeadline,
     marginBottom: spacing(2),
-    marginTop: spacing(4)
+    marginTop: spacing(4),
+    textAlign: "center"
   },
   listErrorMessage: {
     color: colours.functional.secondary,
@@ -40,6 +41,17 @@ const styles = {
     bottom: 0,
     position: "absolute",
     width: "100%"
+  },
+  listErrorButton: {
+    alignItems: "center",
+    backgroundColor: colours.functional.action,
+    flex: 1,
+    justifyContent: "center",
+    height: 44
+  },
+  listErrorButtonText: {
+    color: "#FFF",
+    fontFamily: fonts.supporting
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,

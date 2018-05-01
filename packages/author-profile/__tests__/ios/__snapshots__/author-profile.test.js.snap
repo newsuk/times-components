@@ -24,6 +24,7 @@ exports[`AuthorProfile tests on ios renders page error 1`] = `
         "fontSize": 35,
         "marginBottom": 10,
         "marginTop": 20,
+        "textAlign": "center",
       }
     }
   >
@@ -53,12 +54,38 @@ exports[`AuthorProfile tests on ios renders page error 1`] = `
       }
     }
   >
-    <Button
+    <TouchableOpacity
       accessibilityLabel="Retry"
-      color="#006699"
+      accessible={true}
+      activeOpacity={0.2}
       onPress={[Function]}
-      title="Retry"
-    />
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#006699",
+            "flex": 1,
+            "height": 44,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontFamily": "GillSansMTStd-Medium",
+            }
+          }
+        >
+          RETRY
+        </Text>
+      </View>
+    </TouchableOpacity>
   </View>
 </View>
 `;
@@ -3944,76 +3971,9 @@ exports[`AuthorProfile tests on ios renders profile error 1`] = `
       uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
     />
   </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "justifyContent": "space-between",
-        "maxWidth": 548,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "justifyContent": "flex-start",
-          "marginLeft": 5,
-          "marginRight": 5,
-          "marginTop": 20,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "alignSelf": "center",
-            "color": "#1D1D1B",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 35,
-            "marginBottom": 12,
-            "textAlign": "center",
-          }
-        }
-      >
-        Something's gone wrong
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "alignSelf": "center",
-            "color": "#696969",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 18,
-            "textAlign": "center",
-          }
-        }
-      >
-        We can't load the page you have requested. Please check your network connection and retry to continue
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
-          "justifyContent": "flex-end",
-        }
-      }
-    >
-      <Button
-        accessibilityLabel="Retry"
-        color="#006699"
-        onPress={[Function]}
-        title="Retry"
-      />
-    </View>
-  </View>
+  <AuthorProfileListError
+    refetch={[Function]}
+  />
 </View>
 `;
 
