@@ -1,14 +1,7 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { View } from "react-native";
+import styles from "./styles";
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colours.functional.keyline,
-    height: 1
-  }
-});
-
-const AuthorProfileSeparator = () => <View style={styles.container} />;
+const AuthorProfileSeparator = () => <View style={styles.itemSeparator} />;
 
 export default AuthorProfileSeparator;

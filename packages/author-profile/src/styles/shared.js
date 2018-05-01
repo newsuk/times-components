@@ -40,6 +40,10 @@ const styles = {
     bottom: 0,
     position: "absolute",
     width: "100%"
+  },
+  itemSeparator: {
+    backgroundColor: colours.functional.keyline,
+    height: 1
   }
 };
 
