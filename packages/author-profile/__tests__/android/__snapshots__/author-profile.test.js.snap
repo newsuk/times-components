@@ -4,11 +4,8 @@ exports[`AuthorProfile tests on android renders page error 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
       "flex": 1,
-      "maxWidth": 548,
-      "paddingLeft": 5,
-      "paddingRight": 5,
+      "margin": 15,
     }
   }
 >
@@ -3081,6 +3078,8 @@ exports[`AuthorProfile tests on android renders profile content item component 1
     style={
       Object {
         "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
         "paddingTop": 15,
       }
     }
@@ -3179,6 +3178,8 @@ exports[`AuthorProfile tests on android renders profile content item component w
     style={
       Object {
         "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
         "paddingTop": 15,
       }
     }
@@ -3277,6 +3278,8 @@ exports[`AuthorProfile tests on android renders profile content item component w
     style={
       Object {
         "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
         "paddingTop": 15,
       }
     }

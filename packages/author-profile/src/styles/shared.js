@@ -53,10 +53,6 @@ const styles = {
     color: "#FFF",
     fontFamily: fonts.supporting
   },
-  listItemContainer: {
-    paddingBottom: spacing(3),
-    paddingTop: spacing(3)
-  },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1

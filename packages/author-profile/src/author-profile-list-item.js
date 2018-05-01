@@ -8,6 +8,7 @@ import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import authorProfileListItemTrackingEvents from "./author-profile-list-item-tracking-events";
+import { propTypes, defaultProps } from "./author-profile-list-item-prop-types";
 import getImageUri from "./utils";
 import styles from "./styles";
 
@@ -23,7 +24,6 @@ const AuthorProfileListItem = item => {
     shortSummary,
     showImage,
     summary,
-    style,
     url
   } = item;
 
@@ -31,7 +31,7 @@ const AuthorProfileListItem = item => {
 
   if (isLoading) {
     return (
-      <View style={[styles.listItemContainer, style]}>
+      <View style={styles.listItemContainer}>
         <Card
           imageRatio={imageRatio}
           isLoading={isLoading}
@@ -44,8 +44,8 @@ const AuthorProfileListItem = item => {
   const content = showImage ? summary : shortSummary;
 
   return (
-    <Link url={url} onPress={onPress}>
-      <View style={[styles.listItemContainer, style]}>
+    <Link onPress={onPress} url={url}>
+      <View style={styles.listItemContainer}>
         <Card
           image={imageUri ? { uri: imageUri } : null}
           imageRatio={imageRatio}
@@ -59,8 +59,8 @@ const AuthorProfileListItem = item => {
             }}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
             labelProps={{
-              title: label,
-              color: colours.functional.primary
+              color: colours.functional.primary,
+              title: label
             }}
           />
         </Card>
@@ -68,5 +68,8 @@ const AuthorProfileListItem = item => {
     </Link>
   );
 };
+
+AuthorProfileListItem.propTypes = propTypes;
+AuthorProfileListItem.defaultProps = defaultProps;
 
 export default authorProfileListItemTrackingEvents(AuthorProfileListItem);

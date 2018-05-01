@@ -1,25 +1,14 @@
-import React, { Component } from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import React from "react";
+import { FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
-import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListError from "./author-profile-list-error";
-
-const styles = StyleSheet.create({
-  padding: {
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2)
-  },
-  errorContainer: {
-    flex: 1,
-    margin: spacing(3)
-  }
-});
+import styles from "./styles";
 
 const viewabilityConfig = {
   viewAreaCoveragePercentThreshold: 100,
@@ -85,7 +74,7 @@ class AuthorProfileContent extends Component {
 
     if (error) {
       return (
-        <View style={styles.errorContainer}>
+        <View style={styles.listErrorContainer}>
           {AuthorProfileHead}
           <AuthorProfileListError refetch={refetch} />
         </View>
@@ -152,7 +141,6 @@ class AuthorProfileContent extends Component {
                   {...item}
                   imageRatio={imageRatio}
                   showImage={showImages}
-                  style={styles.padding}
                   testID={`articleList-${index}`}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })
@@ -178,7 +166,7 @@ class AuthorProfileContent extends Component {
           autoScroll: true
         })}
         ItemSeparatorComponent={() => (
-          <View style={styles.padding}>
+          <View style={styles.listItemSeparatorContainer}>
             <AuthorProfileListItemSeparator />
           </View>
         )}
