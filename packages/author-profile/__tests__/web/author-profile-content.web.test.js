@@ -10,7 +10,7 @@ import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-describe("AuthorProfile test on web", () => {
+describe("AuthorProfile tests on web", () => {
   beforeAll(() => jest.useRealTimers());
   afterAll(() => jest.useFakeTimers());
 

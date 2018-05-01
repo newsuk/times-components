@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile test on android renders page error 1`] = `
+exports[`AuthorProfile tests on android renders page error 1`] = `
 <View
   style={
     Object {
@@ -63,7 +63,7 @@ exports[`AuthorProfile test on android renders page error 1`] = `
 </View>
 `;
 
-exports[`AuthorProfile test on android renders profile 1`] = `
+exports[`AuthorProfile tests on android renders profile 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -1569,7 +1569,7 @@ exports[`AuthorProfile test on android renders profile 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile test on android renders profile content component 1`] = `
+exports[`AuthorProfile tests on android renders profile content component 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -2738,7 +2738,7 @@ exports[`AuthorProfile test on android renders profile content component 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile test on android renders profile content empty 1`] = `
+exports[`AuthorProfile tests on android renders profile content empty 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -3033,7 +3033,7 @@ exports[`AuthorProfile test on android renders profile content empty 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile test on android renders profile content item component 1`] = `
+exports[`AuthorProfile tests on android renders profile content item component 1`] = `
 <View
   accessible={true}
   nativeBackgroundAndroid={
@@ -3131,7 +3131,7 @@ exports[`AuthorProfile test on android renders profile content item component 1`
 </View>
 `;
 
-exports[`AuthorProfile test on android renders profile content item component with a specific image size 1`] = `
+exports[`AuthorProfile tests on android renders profile content item component with a specific image size 1`] = `
 <View
   accessible={true}
   nativeBackgroundAndroid={
@@ -3229,7 +3229,7 @@ exports[`AuthorProfile test on android renders profile content item component wi
 </View>
 `;
 
-exports[`AuthorProfile test on android renders profile content item component with no image 1`] = `
+exports[`AuthorProfile tests on android renders profile content item component with no image 1`] = `
 <View
   accessible={true}
   nativeBackgroundAndroid={
@@ -3352,7 +3352,7 @@ exports[`AuthorProfile test on android renders profile content item component wi
 </View>
 `;
 
-exports[`AuthorProfile test on android renders profile content loading 1`] = `
+exports[`AuthorProfile tests on android renders profile content loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -3930,7 +3930,7 @@ exports[`AuthorProfile test on android renders profile content loading 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile test on android renders profile error 1`] = `
+exports[`AuthorProfile tests on android renders profile error 1`] = `
 <View
   style={
     Object {
@@ -4027,7 +4027,7 @@ exports[`AuthorProfile test on android renders profile error 1`] = `
 </View>
 `;
 
-exports[`AuthorProfile test on android renders profile loading 1`] = `
+exports[`AuthorProfile tests on android renders profile loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -5221,7 +5221,7 @@ exports[`AuthorProfile test on android renders profile loading 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile test on android renders profile separator 1`] = `
+exports[`AuthorProfile tests on android renders profile separator 1`] = `
 <View
   style={
     Object {
@@ -5232,7 +5232,7 @@ exports[`AuthorProfile test on android renders profile separator 1`] = `
 />
 `;
 
-exports[`AuthorProfile test on android renders with no author 1`] = `
+exports[`AuthorProfile tests on android renders with no author 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={

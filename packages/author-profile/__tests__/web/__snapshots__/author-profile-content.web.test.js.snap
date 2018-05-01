@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile test on web does not render good quality images if the item is quickly scrolled passed 1`] = `
+exports[`AuthorProfile tests on web does not render good quality images if the item is quickly scrolled passed 1`] = `
 Array [
   <img
     alt=""
@@ -30,7 +30,7 @@ Array [
 ]
 `;
 
-exports[`AuthorProfile test on web renders a good quality image if it is visible 1`] = `
+exports[`AuthorProfile tests on web renders a good quality image if it is visible 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
@@ -53,7 +53,7 @@ exports[`AuthorProfile test on web renders a good quality image if it is visible
 </div>
 `;
 
-exports[`AuthorProfile test on web renders a poor quality image if it is not visible 1`] = `
+exports[`AuthorProfile tests on web renders a poor quality image if it is not visible 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
@@ -76,7 +76,7 @@ exports[`AuthorProfile test on web renders a poor quality image if it is not vis
 </div>
 `;
 
-exports[`AuthorProfile test on web renders good quality images if there is no IntersectionObserver 1`] = `
+exports[`AuthorProfile tests on web renders good quality images if there is no IntersectionObserver 1`] = `
 Array [
   <TimesImage
     aspectRatio={1.5}
@@ -255,7 +255,7 @@ Array [
 ]
 `;
 
-exports[`AuthorProfile test on web renders page error 1`] = `
+exports[`AuthorProfile tests on web renders page error 1`] = `
 <AuthorProfileListingError
   refetch={[Function]}
 >
@@ -405,7 +405,7 @@ exports[`AuthorProfile test on web renders page error 1`] = `
 </AuthorProfileListingError>
 `;
 
-exports[`AuthorProfile test on web renders profile 1`] = `
+exports[`AuthorProfile tests on web renders profile 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -904,7 +904,7 @@ exports[`AuthorProfile test on web renders profile 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content component 1`] = `
+exports[`AuthorProfile tests on web renders profile content component 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -1375,7 +1375,7 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content empty 1`] = `
+exports[`AuthorProfile tests on web renders profile content empty 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -1469,7 +1469,7 @@ exports[`AuthorProfile test on web renders profile content empty 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1566,7 +1566,7 @@ exports[`AuthorProfile test on web renders profile content item component 1`] = 
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component with a specific image size 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component with a specific image size 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1663,7 +1663,7 @@ exports[`AuthorProfile test on web renders profile content item component with a
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component with no image 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component with no image 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1792,7 +1792,7 @@ exports[`AuthorProfile test on web renders profile content item component with n
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content loading 1`] = `
+exports[`AuthorProfile tests on web renders profile content loading 1`] = `
 <div>
   <div>
     <div />
@@ -1939,7 +1939,7 @@ exports[`AuthorProfile test on web renders profile content loading 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile error 1`] = `
+exports[`AuthorProfile tests on web renders profile error 1`] = `
 <AuthorProfileError
   refetch={[Function]}
 >
@@ -2180,7 +2180,7 @@ exports[`AuthorProfile test on web renders profile error 1`] = `
 </AuthorProfileError>
 `;
 
-exports[`AuthorProfile test on web renders profile loading 1`] = `
+exports[`AuthorProfile tests on web renders profile loading 1`] = `
 <div>
   <div>
     <div />
@@ -2497,16 +2497,16 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile separator 1`] = `<div />`;
+exports[`AuthorProfile tests on web renders profile separator 1`] = `<div />`;
 
-exports[`AuthorProfile test on web renders with an intersection observer which uses the expected options 1`] = `
+exports[`AuthorProfile tests on web renders with an intersection observer which uses the expected options 1`] = `
 Object {
   "rootMargin": "50px",
   "threshold": 0.5,
 }
 `;
 
-exports[`AuthorProfile test on web renders with no author 1`] = `
+exports[`AuthorProfile tests on web renders with no author 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
