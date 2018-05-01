@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
+  devtool: "eval-source-map",
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
     alias: {

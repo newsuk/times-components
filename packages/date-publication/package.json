@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.15.4",
+  "version": "0.15.5",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -54,7 +54,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.6.4",
+    "@times-components/styleguide": "0.6.5",
     "date-fns": "1.28.5",
     "prop-types": "15.6.0",
     "react-native-device-info": "0.13.0"

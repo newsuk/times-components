@@ -1,6 +1,3 @@
 {
-  "extends": ["@times-components/thetimes"],
-  "env": {
-    "jest": true
-  }
+  "extends": ["@times-components/thetimes"]
 }

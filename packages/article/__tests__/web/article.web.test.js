@@ -6,54 +6,34 @@ import { mount } from "enzyme";
 import ArticleRow from "../../src/article-body/article-body-row";
 import ArticleLink from "../../src/article-body/article-link";
 import Article from "../../src/article";
-import shared from "../shared";
+import shared, { adConfig } from "../shared";
+import sharedTracking from "../shared-tracking";
 
-const articleFixtureNoLeadAsset = require("../../fixtures/no-lead-asset.json");
+import articleFixtureNoLeadAsset from "../../fixtures/no-lead-asset.json";
+
+jest.mock("@times-components/article-byline", () => "ArticleByline");
+jest.mock("@times-components/article-flag", () => ({
+  ExclusiveArticleFlag: "ExclusiveArticleFlag",
+  NewArticleFlag: "NewArticleFlag",
+  UpdatedArticleFlag: "UpdatedArticleFlag",
+  SponsoredArticleFlag: "SponsoredArticleFlag"
+}));
+jest.mock("@times-components/article-label", () => "ArticleLabel");
+jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
+jest.mock("@times-components/article-image", () => "ArticleImage");
+jest.mock("@times-components/pull-quote", () => "PullQuote");
+jest.mock("@times-components/related-articles", () => "RelatedArticles");
+jest.mock("@times-components/topics", () => "Topics");
+jest.mock("@times-components/watermark", () => "Watermark");
+jest.mock("@times-components/tracking", () => {
+  const mockTracking = component => component;
+  return {
+    withTrackingContext: mockTracking
+  };
+});
 
 describe("Article tests on web", () => {
-  const adConfig = {
-    networkId: "mockNetwork",
-    adUnit: "mockAdUnit",
-    pageTargeting: {
-      title: "Title"
-    },
-    slotTargeting: {
-      path: "/news"
-    },
-    biddersConfig: {
-      timeout: 3000,
-      minPrice: 0.01,
-      maxBid: 15,
-      bucketSize: 0.25,
-      bidders: {
-        appnexus: {
-          placementId: "5823281"
-        },
-        rubicon: {
-          accountId: "14062",
-          siteId: "70608",
-          zoneId: "335918"
-        },
-        amazon: {
-          accountId: "3360"
-        },
-        criteo: {
-          zoneMap: {
-            "120x600": "764877"
-          }
-        },
-        pubmatic: {
-          accountId: "156034",
-          adSlotPrefix: "Thetimes"
-        },
-        indexExchange: {
-          siteId: "188830"
-        }
-      }
-    },
-    bidderSlots: ["ad-header", "ad-article-inline"]
-  };
-
   shared();
 
   it("renders article with no lead asset", () => {
@@ -105,4 +85,10 @@ describe("Article tests on web", () => {
       .onPress(eventObject);
     expect(onPressMock).toHaveBeenCalledWith(eventObject, { href: testUrl });
   });
+});
+
+jest.unmock("@times-components/tracking");
+
+describe("Article Tracking tests on web", () => {
+  sharedTracking();
 });

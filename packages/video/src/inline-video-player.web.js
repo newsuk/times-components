@@ -3,9 +3,7 @@ import React, { Component } from "react";
 
 import { propTypes, defaultProps } from "./video.proptypes";
 
-import VideoError from "./video-error";
-
-const styles = `
+const css = `
 .video-js .vjs-big-play-button {
   width: 70px;
   height: 70px;
@@ -14,7 +12,7 @@ const styles = `
 
   background: rgba(0, 0, 0, 0.4);
 
-  line-height: 1.65em;
+  line-height: 65px;
 
   border-radius: 0;
   border-style: solid;
@@ -22,10 +20,9 @@ const styles = `
   border-color: white;
 }
 
-.video-js .vjs-big-play-button:before {
+.video-js .vjs-big-play-button:before, .video-js .vjs-icon-placeholder:before {
   font-size: 60px;
   left: -2px;
-  top: -8px;
 }
 
 .video-js .vjs-dock-text {
@@ -54,7 +51,7 @@ class InlineVideoPlayer extends Component {
   static attachStyles() {
     const styleTag = document.createElement("style");
     styleTag.type = "text/css";
-    const cssText = document.createTextNode(styles);
+    const cssText = document.createTextNode(css);
     styleTag.appendChild(cssText);
     document.head.appendChild(styleTag);
   }
@@ -77,10 +74,6 @@ class InlineVideoPlayer extends Component {
   }
 
   componentDidMount() {
-    if (InlineVideoPlayer.scriptLoadError) {
-      return;
-    }
-
     this.loadBrightcoveSDKIfRequired();
 
     InlineVideoPlayer.activePlayers.push(this);
@@ -122,7 +115,6 @@ class InlineVideoPlayer extends Component {
         InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
       };
 
-      // handle script not loading
       s.onerror = () => {
         InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
         InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
@@ -161,7 +153,7 @@ class InlineVideoPlayer extends Component {
     const { width, height, poster, videoId, accountId, playerId } = this.props;
 
     if (this.state.error) {
-      return <VideoError {...this.props} />;
+      throw new Error(); // caught by parent ErrorView
     }
 
     return (
