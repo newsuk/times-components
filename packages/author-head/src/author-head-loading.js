@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
   }
 });
 
-
 const AuthorHeadLoading = () => (
   <View style={styles.wrapper}>
     <View style={styles.container} />
