@@ -48,9 +48,10 @@ You can try without these requirements, but you'd be on your own.
 
 We use Haul in lieu of the standard `react-native` CLI so that we can generate
 native Storybook bundles using Webpack, which we configure to honour our
-monorepo packages' respective `dev` entry points; this allows one update a
+monorepo packages' respective `dev` entry points; this allows one to update a
 package's source code and preview the changes without having to manually
 re-transpile. Haul also automatically generates debuggable source maps.
+
 
 ### Fonts ⚠️
 
