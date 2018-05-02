@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
@@ -18,7 +18,7 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-class AuthorProfileContent extends Component {
+class AuthorProfileListContent extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);

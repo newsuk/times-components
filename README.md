@@ -35,8 +35,9 @@ You can try without these requirements, but you'd be on your own.
   2. `yarn ios` to start the iOS app
   3. To start the Android app:
      * [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
-     * Check Android SDK path is exported to $ANDROID_HOME. In Mac, android sdk is installed to ~/Library/Android/sdk by default.
-        `export ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
+     * Check Android SDK path is exported to $ANDROID_HOME. In Mac, android sdk
+       is installed to ~/Library/Android/sdk by default. `export
+       ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
      * `yarn android`
      * If you get build errors, check your JDK version with `javac -version`,
        which should print `javac 1.8.XXXX`. Earlier or later versions may not
@@ -45,7 +46,11 @@ You can try without these requirements, but you'd be on your own.
 
 ## Haul
 
-We use Haul in lieu of the standard `react-native` CLI so that we can generate native Storybook bundles using Webpack, which we configure to honour our monorepo packages' respective `dev` entry points; this allows one update a package's source code and preview the changes without having to manually re-transpile. Haul also automatically generates debuggable source maps.
+We use Haul in lieu of the standard `react-native` CLI so that we can generate
+native Storybook bundles using Webpack, which we configure to honour our
+monorepo packages' respective `dev` entry points; this allows one update a
+package's source code and preview the changes without having to manually
+re-transpile. Haul also automatically generates debuggable source maps.
 
 ### Fonts ⚠️
 
@@ -57,7 +62,8 @@ when trying to use a broken font.
 
 ## Debugging
 
-The components in this project can be debugged through your browser's developer tools. These steps assume the use of Chrome DevTools.
+The components in this project can be debugged through your browser's developer
+tools. These steps assume the use of Chrome DevTools.
 
 To debug our web Storybook:
 
@@ -65,7 +71,8 @@ To debug our web Storybook:
 2. navigate to `http://localhost:9001
 3. open DevTools
 4. Click _Sources_
-5. In the _Network_ tab under the leftmost pane, expand _top_ => _storybook-preview-iframe_ => _webpack://_ => _._ => _packages_
+5. In the _Network_ tab under the leftmost pane, expand _top_ =>
+   _storybook-preview-iframe_ => _webpack://_ => _._ => _packages_
 
 Any of these source files can be debugged directly.
 
@@ -73,8 +80,10 @@ To debug our native Storybook:
 
 1. `yarn storybook-native` and leave it running
 2. `yarn android` or `yarn ios`
-3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS) and tap _Debug JS Remotely_
-4. navigate to http://localhost:8081/debugger-ui if it hasn't opened automatically
+3. open the developer menu on your device (Cmd + M on Android, Cmd + D on iOS)
+   and tap _Debug JS Remotely_
+4. navigate to http://localhost:8081/debugger-ui if it hasn't opened
+   automatically
 5. open DevTools
 6. click _Sources_
 7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
