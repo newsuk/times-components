@@ -7,7 +7,7 @@ import {
   PageErrorImageContainer
 } from "./styles/responsive";
 
-const AuthorProfileError = ({ refetch }) => (
+const AuthorProfileListPageError = ({ refetch }) => (
   <PageErrorContainer>
     <AuthorProfileListError refetch={refetch} />
     <PageErrorImageContainer>
@@ -19,6 +19,6 @@ const AuthorProfileError = ({ refetch }) => (
   </PageErrorContainer>
 );
 
-AuthorProfileError.propTypes = propTypes;
+AuthorProfileListPageError.propTypes = propTypes;
 
-export default AuthorProfileError;
+export default AuthorProfileListPageError;

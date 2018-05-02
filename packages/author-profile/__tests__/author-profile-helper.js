@@ -18,7 +18,7 @@ const authorProfileProps = {
   slug: "deborah-haynes"
 };
 
-export default AuthorProfileContent => {
+export default AuthorProfileListContent => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -132,7 +132,7 @@ export default AuthorProfileContent => {
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
     const component = renderer.create(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...fixtureGenerator.makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
         page={1}
@@ -161,7 +161,7 @@ export default AuthorProfileContent => {
       imageRatio: 3 / 2
     };
 
-    const component = renderer.create(<AuthorProfileContent {...props} />);
+    const component = renderer.create(<AuthorProfileListContent {...props} />);
 
     expect(component).toMatchSnapshot();
   });
@@ -173,7 +173,7 @@ export default AuthorProfileContent => {
       isLoading: false
     };
 
-    const component = renderer.create(<AuthorProfileContent {...props} />);
+    const component = renderer.create(<AuthorProfileListContent {...props} />);
 
     expect(component).toMatchSnapshot();
   });
@@ -279,7 +279,7 @@ export default AuthorProfileContent => {
       imageRatio: 3 / 2
     };
 
-    const component = renderer.create(<AuthorProfileContent {...p} />);
+    const component = renderer.create(<AuthorProfileListContent {...p} />);
     expect(component.root.findAllByType(AuthorProfileListItem)).toHaveLength(1);
   });
 
@@ -371,7 +371,7 @@ export default AuthorProfileContent => {
 
   // it("calls refetch when retrying from articles error", done => {
   //   const wrapper = shallow(
-  //     <AuthorProfileContent
+  //     <AuthorProfileListContent
   //       count={0}
   //       articles={[]}
   //       author={fixtureGenerator.makeAuthor()}

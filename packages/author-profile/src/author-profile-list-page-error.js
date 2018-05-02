@@ -6,7 +6,7 @@ import propTypes from "./author-profile-list-error-prop-types";
 import styles from "./styles";
 
 // @TODO: embed image in case of network loss causing the error?
-const AuthorProfileError = ({ refetch }) => (
+const AuthorProfileListPageError = ({ refetch }) => (
   <View style={styles.pageErrorContainer}>
     <View style={styles.pageErrorImageContainer}>
       <Image
@@ -18,6 +18,6 @@ const AuthorProfileError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileError.propTypes = propTypes;
+AuthorProfileListPageError.propTypes = propTypes;
 
-export default AuthorProfileError;
+export default AuthorProfileListPageError;

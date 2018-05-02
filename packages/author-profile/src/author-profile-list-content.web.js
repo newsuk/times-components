@@ -28,7 +28,7 @@ const scrollUpToPaging = () => {
   });
 };
 
-class AuthorProfileContent extends Component {
+class AuthorProfileListContent extends Component {
   constructor(props) {
     super(props);
 
@@ -245,7 +245,7 @@ class AuthorProfileContent extends Component {
   }
 }
 
-AuthorProfileContent.propTypes = propTypes;
-AuthorProfileContent.defaultProps = defaultProps;
+AuthorProfileListContent.propTypes = propTypes;
+AuthorProfileListContent.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(AuthorProfileContent);
+export default withTrackScrollDepth(AuthorProfileListContent);

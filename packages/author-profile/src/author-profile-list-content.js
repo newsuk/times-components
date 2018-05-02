@@ -178,7 +178,7 @@ class AuthorProfileContent extends Component {
   }
 }
 
-AuthorProfileContent.propTypes = propTypes;
-AuthorProfileContent.defaultProps = defaultProps;
+AuthorProfileListContent.propTypes = propTypes;
+AuthorProfileListContent.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(AuthorProfileContent);
+export default withTrackScrollDepth(AuthorProfileListContent);

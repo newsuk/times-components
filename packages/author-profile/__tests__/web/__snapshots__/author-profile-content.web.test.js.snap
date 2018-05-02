@@ -1909,7 +1909,7 @@ exports[`AuthorProfile tests on web renders profile content loading 1`] = `
 `;
 
 exports[`AuthorProfile tests on web renders profile error 1`] = `
-<AuthorProfileError
+<AuthorProfileListPageError
   refetch={[Function]}
 >
   <PageErrorContainer>
@@ -2155,7 +2155,7 @@ exports[`AuthorProfile tests on web renders profile error 1`] = `
       </div>
     </View>
   </PageErrorContainer>
-</AuthorProfileError>
+</AuthorProfileListPageError>
 `;
 
 exports[`AuthorProfile tests on web renders profile loading 1`] = `
