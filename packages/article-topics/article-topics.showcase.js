@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import { withTrackingContext } from "@times-components/tracking";
 import storybookReporter from "@times-components/tealium-utils";
-import Topic from "./src/topic";
-import Topics from "./src/topics";
+import ArticleTopic from "./src/article-topic";
+import ArticleTopics from "./src/article-topics";
 import topicsData from "./fixtures/topics";
 
 const TrackingProvider = withTrackingContext(View, {
@@ -11,7 +11,7 @@ const TrackingProvider = withTrackingContext(View, {
 });
 
 export default {
-  name: "Primitives/Topics",
+  name: "Primitives/Article Topics",
   children: [
     {
       type: "decorator",
@@ -25,7 +25,7 @@ export default {
       type: "story",
       name: "Group of Topics",
       component: () => (
-        <Topics
+        <ArticleTopics
           topics={topicsData}
           onPress={e => {
             e.preventDefault();
@@ -38,7 +38,7 @@ export default {
       name: "Single Topic",
       component: () => (
         <View style={{ flexDirection: "row" }}>
-          <Topic
+          <ArticleTopic
             id={topicsData[0].id}
             name={topicsData[0].name}
             onPress={e => {
