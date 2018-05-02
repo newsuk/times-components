@@ -14,7 +14,9 @@ const config = {
     "TrackingEvent",
     "Error",
     "error",
-    "AuthorProfileLoading"
+    "AuthorProfileLoading",
+    "Video",
+    "Tracking"
   ]
 };
 

@@ -4,8 +4,9 @@ import { withTrackingContext } from "@times-components/tracking";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import Pagination, { withPageState } from "./src/pagination";
 import { PreviousPageIcon, NextPageIcon } from "./src/pagination-icons";
+import pageLabel from "./src/page-label";
 
-export const pagination = {
+const pagination = {
   name: "Composed/Pagination",
   children: [
     {
@@ -172,3 +173,5 @@ export const icons = {
     }
   ]
 };
+
+export default pagination;
