@@ -2,6 +2,27 @@ import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
+export const ListContentContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+      align-self: center;
+      max-width: 680px;
+      padding-left: ${spacing(2)};
+      padding-right: ${spacing(2)};
+      width: 100%;
+    `,
+    mediumUp: () => `
+      padding-left: 0;
+      padding-right: 0;
+    `,
+    hugeUp: () => `
+      max-width: 760px;
+    `
+  },
+  "ListContentContainer"
+);
+
 export const ListItemWrapper = withResponsiveStyles(
   View,
   {

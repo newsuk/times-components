@@ -6,8 +6,8 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfilePagination from "./author-profile-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
-import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import AuthorProfileListError from "./author-profile-list-error";
+import { propTypes, defaultProps } from "./author-profile-content-prop-types";
 import styles from "./styles";
 
 const viewabilityConfig = {
@@ -39,11 +39,13 @@ class AuthorProfileContent extends Component {
 
   render() {
     const {
-      count,
-      isLoading,
       articles,
       articlesLoading,
       biography,
+      count,
+      error,
+      imageRatio,
+      isLoading,
       jobTitle,
       name,
       onArticlePress,
@@ -54,21 +56,19 @@ class AuthorProfileContent extends Component {
       pageSize,
       twitter,
       uri,
-      imageRatio,
-      showImages,
-      error,
-      refetch
+      refetch,
+      showImages
     } = this.props;
 
     const AuthorProfileHead = (
       <AuthorHead
+        bio={biography}
         isLoading={isLoading}
         name={name}
-        bio={biography}
-        uri={uri}
+        onTwitterLinkPress={onTwitterLinkPress}
         title={jobTitle}
         twitter={twitter}
-        onTwitterLinkPress={onTwitterLinkPress}
+        uri={uri}
       />
     );
 
@@ -84,14 +84,14 @@ class AuthorProfileContent extends Component {
     const scrollToTopNextFrame = () => {
       this.scrollAnimationFrame = global.requestAnimationFrame(() => {
         this.listRef.scrollToOffset({
-          offset: 0,
-          animated: true
+          animated: true,
+          offset: 0
         });
       });
     };
 
     const paginationComponent = (
-      { hideResults = false, autoScroll = false } = {}
+      { autoScroll = false, hideResults = false } = {}
     ) => (
       <AuthorProfilePagination
         count={count}
@@ -112,27 +112,26 @@ class AuthorProfileContent extends Component {
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, indx) => ({
-            id: indx,
-            elementId: `empty.${indx}`,
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
             isLoading: true
           }))
-      : articles.map((article, indx) => ({
+      : articles.map((article, index) => ({
           ...article,
-          elementId: `${article.id}.${indx}`
+          elementId: `${article.id}.${index}`
         }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
     return (
       <FlatList
-        ref={list => {
-          this.listRef = list;
-        }}
-        testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
+        initialListSize={pageSize}
         keyExtractor={item => `${item.id}`}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        pageSize={pageSize}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
@@ -140,36 +139,37 @@ class AuthorProfileContent extends Component {
                 <AuthorProfileListItem
                   {...item}
                   imageRatio={imageRatio}
-                  showImage={showImages}
-                  testID={`articleList-${index}`}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })
                   }
+                  showImage={showImages}
+                  testID={`articleList-${index}`}
                 />
               )
             }
           </ErrorView>
         )}
-        initialListSize={pageSize}
-        onViewableItemsChanged={this.onViewableItemsChanged}
-        viewabilityConfig={viewabilityConfig}
+        ref={list => {
+          this.listRef = list;
+        }}
         scrollRenderAheadDistance={2}
-        pageSize={pageSize}
+        testID="scroll-view"
+        viewabilityConfig={viewabilityConfig}
+        ItemSeparatorComponent={() => (
+          <View style={styles.listItemSeparatorContainer}>
+            <AuthorProfileListItemSeparator />
+          </View>
+        )}
+        ListFooterComponent={paginationComponent({
+          hideResults: true,
+          autoScroll: true
+        })}
         ListHeaderComponent={
           <View>
             {AuthorProfileHead}
             {paginationComponent({ hideResults: false, autoScroll: false })}
           </View>
         }
-        ListFooterComponent={paginationComponent({
-          hideResults: true,
-          autoScroll: true
-        })}
-        ItemSeparatorComponent={() => (
-          <View style={styles.listItemSeparatorContainer}>
-            <AuthorProfileListItemSeparator />
-          </View>
-        )}
       />
     );
   }

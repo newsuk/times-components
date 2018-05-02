@@ -513,7 +513,7 @@ exports[`AuthorProfile tests on web renders profile 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -962,7 +962,7 @@ exports[`AuthorProfile tests on web renders profile content component 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -1401,7 +1401,7 @@ exports[`AuthorProfile tests on web renders profile content empty 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -1780,7 +1780,7 @@ exports[`AuthorProfile tests on web renders profile content loading 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -2175,7 +2175,7 @@ exports[`AuthorProfile tests on web renders profile loading 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -2527,7 +2527,7 @@ exports[`AuthorProfile tests on web renders with no author 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>

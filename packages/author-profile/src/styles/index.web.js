@@ -15,6 +15,13 @@ const styles = StyleSheet.create({
     paddingTop: spacing(8),
     paddingBottom: spacing(2),
     width: 200
+  },
+  listContentContainer: {
+    width: "100%"
+  },
+  listContentErrorContainer: {
+    flex: 1,
+    margin: spacing(3)
   }
 });
 
