@@ -91,7 +91,7 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       count={20}
       hideResults={true}
       onNext={[Function]}
@@ -141,7 +141,7 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={20}
         hideResults={false}
         onNext={[Function]}
@@ -1597,7 +1597,7 @@ exports[`AuthorProfile tests on android renders profile content component 1`] = 
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -1646,7 +1646,7 @@ exports[`AuthorProfile tests on android renders profile content component 1`] = 
         twitter="jdoe"
         uri=""
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -2766,7 +2766,7 @@ exports[`AuthorProfile tests on android renders profile content empty 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -2783,7 +2783,7 @@ exports[`AuthorProfile tests on android renders profile content empty 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -3386,7 +3386,7 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -3403,7 +3403,7 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -3994,7 +3994,7 @@ exports[`AuthorProfile tests on android renders profile loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -4012,7 +4012,7 @@ exports[`AuthorProfile tests on android renders profile loading 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
@@ -5199,7 +5199,7 @@ exports[`AuthorProfile tests on android renders with no author 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfilePagination
+    <AuthorProfileListPagination
       count={0}
       hideResults={true}
       onNext={[Function]}
@@ -5219,7 +5219,7 @@ exports[`AuthorProfile tests on android renders with no author 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={0}
         hideResults={false}
         onNext={[Function]}

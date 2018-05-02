@@ -7,7 +7,10 @@ import AuthorProfileListPagination from "./author-profile-list-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import AuthorProfileListError from "./author-profile-list-error";
-import { propTypes, defaultProps } from "./author-profile-content-prop-types";
+import {
+  propTypes,
+  defaultProps
+} from "./author-profile-list-content-prop-types";
 import styles from "./styles";
 
 const viewabilityConfig = {
