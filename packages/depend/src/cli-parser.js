@@ -11,8 +11,8 @@ function validatePick(rule) {
       return { [name]: ver };
     }
     case 3: {
-      const [namespace, name, ver] = parts;
-      return { [`${namespace}@${name}`]: ver };
+      const [name, ver] = parts.slice(1);
+      return { [`@${name}`]: ver };
     }
     default: {
       console.error(
