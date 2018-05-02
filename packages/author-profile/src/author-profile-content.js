@@ -3,7 +3,7 @@ import { FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import AuthorProfilePagination from "./author-profile-pagination";
+import AuthorProfileListPagination from "./author-profile-list-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import AuthorProfileListError from "./author-profile-list-error";
@@ -93,7 +93,7 @@ class AuthorProfileContent extends Component {
     const paginationComponent = (
       { autoScroll = false, hideResults = false } = {}
     ) => (
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {

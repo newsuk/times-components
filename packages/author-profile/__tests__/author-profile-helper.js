@@ -1,21 +1,21 @@
 import React from "react";
 import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils";
-import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
+import set from "lodash.set";
+import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
+import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 import AuthorProfileListItem from "../src/author-profile-list-item";
 import AuthorProfileListItemSeparator from "../src/author-profile-list-item-separator";
 import pagedResult from "./paged-result";
 
 const authorProfileProps = {
-  slug: "deborah-haynes",
-  onTwitterLinkPress: () => {},
-  onArticlePress: () => {},
   analyticsStream: () => {},
-  refetch: () => {}
+  onArticlePress: () => {},
+  onTwitterLinkPress: () => {},
+  refetch: () => {},
+  slug: "deborah-haynes"
 };
 
 export default AuthorProfileContent => {

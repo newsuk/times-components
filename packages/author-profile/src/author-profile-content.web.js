@@ -6,7 +6,7 @@ import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
-import AuthorProfilePagination from "./author-profile-pagination";
+import AuthorProfileListPagination from "./author-profile-list-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import AuthorProfileListError from "./author-profile-list-error";
@@ -138,7 +138,7 @@ class AuthorProfileContent extends Component {
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {

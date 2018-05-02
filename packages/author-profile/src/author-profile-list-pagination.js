@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Pagination from "@times-components/pagination";
 import styles from "./styles";
 
-const AuthorProfilePagination = props => (
+const AuthorProfileListPagination = props => (
   <View style={styles.paginationContainer}>
     <View style={styles.paginationSpacing}>
       <Pagination {...props} generatePageLink={pageNum => `?page=${pageNum}`} />
@@ -11,6 +11,6 @@ const AuthorProfilePagination = props => (
   </View>
 );
 
-AuthorProfilePagination.propTypes = Pagination.propTypes;
+AuthorProfileListPagination.propTypes = Pagination.propTypes;
 
-export default AuthorProfilePagination;
+export default AuthorProfileListPagination;
