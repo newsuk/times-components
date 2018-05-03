@@ -122,6 +122,19 @@ describe("depend cli tests", () => {
     expect(getPackages.mock.calls).toEqual([["*/package.json"]]);
   });
 
+  it("should forward error when reading lerna.json failed", async () => {
+    const error = "lerna.json not found";
+    const exit = jest.fn();
+    const readJson = jest.fn(() => Promise.reject(error));
+    const getPackages = jest.fn(() => simple);
+
+    const log = jest.fn();
+    const argv = { lerna: "." };
+    await main({ log, argv, getPackages, exit, readJson });
+    expect(exit.mock.calls).toEqual([[1]]);
+    expect(log.mock.calls).toEqual([[error]]);
+  });
+
   it("restricts to only requested packages", async () => {
     const exit = jest.fn();
     const log = jest.fn();
