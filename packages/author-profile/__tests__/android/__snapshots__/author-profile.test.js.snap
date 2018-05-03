@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render an author profile list 1`] = `
+exports[`1. Render an author profile page 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -601,7 +601,7 @@ exports[`1. Render an author profile list 1`] = `
 </RCTScrollView>
 `;
 
-exports[`2. Render a list loading state 1`] = `
+exports[`2. Render an article list loading state 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={

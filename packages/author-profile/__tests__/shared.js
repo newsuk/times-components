@@ -34,7 +34,7 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(tree).toMatchSnapshot("1. Render an author profile list");
+    expect(tree).toMatchSnapshot("1. Render an author profile page");
   });
 
   it("should render the loading state", () => {
@@ -55,7 +55,7 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(tree).toMatchSnapshot("2. Render a list loading state");
+    expect(tree).toMatchSnapshot("2. Render an article list loading state");
   });
 
   it("should render the article list page error state", () => {
@@ -71,7 +71,7 @@ export default () => {
     expect(tree).toMatchSnapshot("3. Render an article list page error state");
   });
 
-  it("should send analytics when rendering author profile", () => {
+  it("should send analytics when rendering an author profile page", () => {
     const reporter = jest.fn();
     const pageSize = 3;
     const author = fixtureGenerator.makeAuthor();
