@@ -4559,9 +4559,9 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-3.0.2.tgz#0ad280e6faf1847a5c2eb3991472f841a1131c84"
+dextrose@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-3.0.3.tgz#97278f855997da0200c9e043a39c5d47e260fc16"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
@@ -4575,7 +4575,6 @@ dextrose@3.0.2:
     shelljs "^0.8.1"
     socket.io "^2.0.4"
     socket.io-client "^2.0.4"
-    wd "1.4.1"
 
 diff@^3.2.0:
   version "3.5.0"

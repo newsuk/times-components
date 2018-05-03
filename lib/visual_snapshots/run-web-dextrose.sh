@@ -2,7 +2,7 @@
 npx selenium-standalone install &&
 npx selenium-standalone start 2>> selenium.log & 
 npm run fetch-fonts
-# npx rnscl --searchDir ./packages --pattern './*/*.showcase.js' --outputFile ./fructose/components.js
+npx rnscl --searchDir ./packages --pattern './*/*showcase*' --outputFile ./fructose/components.js
 npx react-native start --reset-cache &
 npx fructose-web -d ./fructose >> webpack.log &
 FRUCTOSE_WEB_PID=$!

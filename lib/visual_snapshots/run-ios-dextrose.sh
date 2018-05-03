@@ -1,7 +1,7 @@
 #!/bin/bash
 xcrun simctl boot 'iPhone 7'
-# npm run fetch-fonts
-# ./node_modules/.bin/rnstl --searchDir ./packages --pattern '**/*/*.showcase.js' --outputFile ./fructose/components.js
+npm run fetch-fonts
+npx rnscl --searchDir ./packages --pattern '**/*/*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js
 ./node_modules/.bin/react-native bundle --platform ios --dev false --reset-cache --entry-file ./fructose/index.js --bundle-output ios/main.jsbundle
 PACKAGER_PID=$!
 ./node_modules/.bin/react-native run-ios --configuration Release --no-packager
