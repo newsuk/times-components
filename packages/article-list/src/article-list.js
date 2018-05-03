@@ -3,14 +3,11 @@ import { FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import AuthorProfileListPagination from "./author-profile-list-pagination";
-import AuthorProfileListItem from "./author-profile-list-item";
-import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
-import AuthorProfileListError from "./author-profile-list-error";
-import {
-  propTypes,
-  defaultProps
-} from "./author-profile-list-content-prop-types";
+import AuthorProfileListPagination from "./article-list-pagination";
+import AuthorProfileListItem from "./article-list-item";
+import AuthorProfileListItemSeparator from "./article-list-item-separator";
+import AuthorProfileListError from "./article-list-error";
+import { propTypes, defaultProps } from "./article-list-content-prop-types";
 import styles from "./styles";
 
 const viewabilityConfig = {
@@ -184,4 +181,4 @@ AuthorProfileListContent.defaultProps = defaultProps;
 export default withTrackScrollDepth(AuthorProfileListContent);
 export {
   default as AuthorProfileListPageError
-} from "./author-profile-list-page-error";
+} from "./article-list-page-error";

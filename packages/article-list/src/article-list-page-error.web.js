@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "@times-components/image";
-import AuthorProfileListError from "./author-profile-list-error";
-import propTypes from "./author-profile-list-error-prop-types";
+import AuthorProfileListError from "./article-list-error";
+import propTypes from "./article-list-error-prop-types";
 import {
   PageErrorContainer,
   PageErrorImageContainer

@@ -5,9 +5,9 @@ import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
-import AuthorProfileItem from "../src/author-profile-list-item";
+import AuthorProfileItem from "../src/article-list-item";
 import pagedResult from "./paged-result";
-import test from "./author-profile-helper";
+import test from "./helper";
 import AuthorProfileListContent from "../src/article-list.js";
 
 // A hack until this is resolved: https://github.com/facebook/react-native/pull/13048

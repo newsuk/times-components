@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
-import AuthorProfileListError from "./author-profile-list-error";
-import propTypes from "./author-profile-list-error-prop-types";
+import AuthorProfileListError from "./article-list-error";
+import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
 // @TODO: embed image in case of network loss causing the error?

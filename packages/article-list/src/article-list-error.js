@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import propTypes from "./author-profile-list-error-prop-types";
+import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
 const AuthorProfileListError = ({ refetch }) => (

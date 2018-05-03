@@ -5,8 +5,8 @@ import set from "lodash.set";
 import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 // import { MockedProvider } from "@times-components/utils";
-import AuthorProfileListItem from "../src/author-profile-list-item";
-import AuthorProfileListItemSeparator from "../src/author-profile-list-item-separator";
+import AuthorProfileListItem from "../src/article-list-item";
+import AuthorProfileListItemSeparator from "../src/article-list-item-separator";
 import pagedResult from "./paged-result";
 
 const authorProfileProps = {
