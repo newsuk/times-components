@@ -1,6 +1,6 @@
 #!/bin/bash
 LOCAL=true npx fructose-tunnel
-/Users/kourosaliabadi/Library/Android/sdk/tools/emulator @Nexus_5X_API_25 -no-boot-anim &
+emulator @Nexus_5X_API_25 -no-boot-anim &
 EMU_PID=$!
 adb wait-for-device
 adb reverse tcp:8081 tcp:8081
