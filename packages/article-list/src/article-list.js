@@ -6,7 +6,6 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import AuthorProfileListPagination from "./author-profile-list-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
-import AuthorProfileListPageError from "./author-profile-list-page-error";
 import AuthorProfileListError from "./author-profile-list-error";
 import {
   propTypes,
@@ -63,10 +62,6 @@ class AuthorProfileListContent extends Component {
       refetch,
       showImages
     } = this.props;
-
-    if (error) {
-      return <AuthorProfileListPageError refetch={refetch} />;
-    }
 
     const AuthorProfileHead = (
       <AuthorHead
@@ -187,3 +182,6 @@ AuthorProfileListContent.propTypes = propTypes;
 AuthorProfileListContent.defaultProps = defaultProps;
 
 export default withTrackScrollDepth(AuthorProfileListContent);
+export {
+  default as AuthorProfileListPageError
+} from "./author-profile-list-page-error";

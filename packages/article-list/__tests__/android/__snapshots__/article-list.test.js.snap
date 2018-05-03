@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList tests on android:  renders correctly 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <AuthorProfileListPagination
+      hideResults={true}
+      onNext={[Function]}
+      onPrev={[Function]}
+    />
+  }
+  ListHeaderComponent={
+    <View>
+      <WithTrackEvents(AuthorHead)
+        bio={Array []}
+        isLoading={false}
+        name=""
+        title=""
+        twitter={null}
+        uri=""
+      />
+      <AuthorProfileListPagination
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+      />
+    </View>
+  }
+  accessibilityID="scroll-view"
+  data={Array []}
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={2}
+  stickyHeaderIndices={Array []}
+  testID="scroll-view"
+  updateCellsBatchingPeriod={50}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        >
+          <View
+            pointerEvents="box-none"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+              }
+            }
+          >
+            <View
+              accessibilityRole="banner"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F9F8F3",
+                  "flexDirection": "column",
+                  "paddingBottom": 40,
+                  "paddingTop": 30,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                accessibilityLabel="author-name"
+                accessibilityRole="heading"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#1D1D1B",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 30,
+                  }
+                }
+                testID="author-name"
+              >
+                
+              </Text>
+              <Text
+                accessibilityRole="heading"
+                accessible={true}
+                allowFontScaling={true}
+                aria-level="2"
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-RegularSC",
+                    "fontSize": 14,
+                  }
+                }
+              >
+                
+              </Text>
+              <View
+                style={
+                  Object {
+                    "paddingBottom": 32,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 26,
+                      "textAlign": "center",
+                    }
+                  }
+                  testID="author-bio"
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "stretch",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
+                  }
+                  testID="results-message"
+                >
+                  Showing 0 - 0 of 0 results
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View />
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#DBDBDB",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 50,
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

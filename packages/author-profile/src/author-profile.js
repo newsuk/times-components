@@ -1,6 +1,8 @@
 import React from "react";
 import get from "lodash.get";
-import AuthorProfileListContent from "@times-components/article-list";
+import AuthorProfileListContent, {
+  AuthorProfileListPageError
+} from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
@@ -23,6 +25,10 @@ const AuthorProfile = ({
   refetch,
   slug
 }) => {
+  if (error) {
+    return <AuthorProfileListPageError refetch={refetch} />;
+  }
+
   if (isLoading) {
     return (
       <AuthorProfileListContent

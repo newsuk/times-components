@@ -1,16 +1,16 @@
+/* eslint-env browser */
 import React from "react";
 import { shallow, mount } from "enzyme";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
-import AuthorProfile from "../../src/author-profile";
+import AuthorProfileListContent from "../../src/article-list.web.js";
 import AuthorProfileListItem from "../../src/author-profile-list-item";
-import AuthorProfileListContent from "../../src/author-profile-list-content.web.js";
 import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-describe("AuthorProfile tests on web", () => {
+describe("AuthorList tests on web", () => {
   beforeAll(() => jest.useRealTimers());
   afterAll(() => jest.useFakeTimers());
 
@@ -64,19 +64,19 @@ describe("AuthorProfile tests on web", () => {
     intersectionObserverInstances.splice(0);
   });
 
-  it("renders profile error", () => {
-    const props = {
-      slug: "deborah-haynes",
-      analyticsStream: () => {},
-      error: new Error("broken")
-    };
+  // it("renders profile error", () => {
+  //   const props = {
+  //     slug: "deborah-haynes",
+  //     analyticsStream: () => {},
+  //     error: new Error("broken")
+  //   };
 
-    // react test renderer would be preferred here but there is a bug
-    // in RNW that throws an exception when rendering Button
-    const wrapper = mount(<AuthorProfile {...props} />);
+  //   // react test renderer would be preferred here but there is a bug
+  //   // in RNW that throws an exception when rendering Button
+  //   const wrapper = mount(<AuthorProfile {...props} />);
 
-    expect(wrapper.find("AuthorProfileListPageError")).toMatchSnapshot();
-  });
+  //   expect(wrapper.find("AuthorProfileListPageError")).toMatchSnapshot();
+  // });
 
   it("renders page error", () => {
     const wrapper = mount(
