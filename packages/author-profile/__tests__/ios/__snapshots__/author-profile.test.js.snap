@@ -269,7 +269,6 @@ exports[`1. Render an author profile list 1`] = `
               <View
                 style={
                   Object {
-                    "alignItems": "center",
                     "flexDirection": "row",
                     "paddingBottom": 8,
                     "paddingTop": 8,
@@ -419,24 +418,23 @@ exports[`1. Render an author profile list 1`] = `
                 <View>
                   <View
                     accessible={true}
-                    nativeBackgroundAndroid={
-                      Object {
-                        "attribute": "selectableItemBackground",
-                        "type": "ThemeAttrAndroid",
-                      }
-                    }
+                    isTVSelectable={true}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
                     onResponderRelease={[Function]}
                     onResponderTerminate={[Function]}
                     onResponderTerminationRequest={[Function]}
                     onStartShouldSetResponder={[Function]}
-                    pointerEvents="box-only"
+                    style={
+                      Object {
+                        "opacity": 1,
+                      }
+                    }
                   >
                     <View
                       style={
                         Object {
-                          "alignItems": "baseline",
+                          "alignItems": "center",
                           "flexDirection": "row",
                           "padding": 12,
                         }
@@ -532,24 +530,23 @@ exports[`1. Render an author profile list 1`] = `
               <View>
                 <View
                   accessible={true}
-                  nativeBackgroundAndroid={
-                    Object {
-                      "attribute": "selectableItemBackground",
-                      "type": "ThemeAttrAndroid",
-                    }
-                  }
+                  isTVSelectable={true}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
                   onResponderTerminate={[Function]}
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
-                  pointerEvents="box-only"
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
                 >
                   <View
                     style={
                       Object {
-                        "alignItems": "baseline",
+                        "alignItems": "center",
                         "flexDirection": "row",
                         "padding": 12,
                       }
