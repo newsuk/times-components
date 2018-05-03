@@ -1,13 +1,12 @@
 import React from "react";
 import get from "lodash.get";
+import AuthorProfileListContent from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
-import AuthorProfileListContent from "./author-profile-list-content";
-import AuthorProfileListPageError from "./author-profile-list-page-error";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 
@@ -24,10 +23,6 @@ const AuthorProfile = ({
   refetch,
   slug
 }) => {
-  if (error) {
-    return <AuthorProfileListPageError refetch={refetch} />;
-  }
-
   if (isLoading) {
     return (
       <AuthorProfileListContent

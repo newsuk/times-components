@@ -1,11 +1,11 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleList from "../article-list";
+import AuthorProfileListContent from "../src/article-list";
 
-module.exports = () => {
+export default () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<ArticleList />).toJSON();
+    const tree = renderer.create(<AuthorProfileListContent />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
