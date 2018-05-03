@@ -8,6 +8,7 @@ import AuthorArticlesWithImagesProvider, {
   query as articleListWithImagesQuery
 } from "./author-articles-with-images";
 import ArticleProvider, { query as articleQuery } from "./article";
+import TopicProvider, { query as topicQuery } from "./topic";
 
 export default connect;
 
@@ -19,5 +20,7 @@ export {
   articleQuery,
   authorProfileQuery,
   articleListNoImagesQuery,
-  articleListWithImagesQuery
+  articleListWithImagesQuery,
+  TopicProvider,
+  topicQuery
 };
