@@ -1,41 +1,21 @@
 /* eslint-env browser */
-
 import React, { Component, Fragment } from "react";
-import { StyleSheet, View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
-import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidth } from "@times-components/utils";
+import { View } from "react-native";
+import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
-import AuthorProfileAuthorHead from "./author-profile-author-head";
-import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import AuthorProfilePagination from "./author-profile-pagination";
-import { propTypes, defaultProps } from "./author-profile-content-prop-types";
-import AuthorProfileListingError from "./author-profile-listing-error";
-
-const styles = StyleSheet.create({
-  container: {
-    width: "100%"
-  }
-});
-
-const ContentContainer = withResponsiveStyles(View, {
-  base: () => `
-    align-self: center;
-    width: 100%;
-    max-width: 680px;
-    padding-left: ${spacing(2)};
-    padding-right: ${spacing(2)};
-  `,
-  mediumUp: () => `
-    padding-left: 0;
-    padding-right: 0;
-  `,
-  hugeUp: () => `
-    max-width: 760px;
-  `
-});
+import { withTrackScrollDepth } from "@times-components/tracking";
+import { normaliseWidth } from "@times-components/utils";
+import AuthorProfileListPagination from "./author-profile-list-pagination";
+import AuthorProfileListItem from "./author-profile-list-item";
+import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
+import AuthorProfileListError from "./author-profile-list-error";
+import {
+  propTypes,
+  defaultProps
+} from "./author-profile-list-content-prop-types";
+import styles from "./styles";
+import { ListContentContainer } from "./styles/responsive";
 
 const scrollUpToPaging = () => {
   if (typeof window === "undefined") {
@@ -48,7 +28,7 @@ const scrollUpToPaging = () => {
   });
 };
 
-class AuthorProfileContent extends Component {
+class AuthorProfileListContent extends Component {
   constructor(props) {
     super(props);
 
@@ -161,7 +141,7 @@ class AuthorProfileContent extends Component {
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
@@ -178,36 +158,41 @@ class AuthorProfileContent extends Component {
     );
 
     const ErrorComponent = (
-      <ContentContainer>
+      <ListContentContainer>
         {paginationComponent()}
-        <View style={[styles.container, styles.errorContainer]}>
-          <AuthorProfileListingError refetch={refetch} />
+        <View
+          style={[
+            styles.listContentContainer,
+            styles.listContentErrorContainer
+          ]}
+        >
+          <AuthorProfileListError refetch={refetch} />
         </View>
-      </ContentContainer>
+      </ListContentContainer>
     );
 
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, indx) => ({
-            id: indx,
-            elementId: `empty.${indx}`,
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
             isLoading: true
           }))
-      : articles.map((article, indx) => ({
+      : articles.map((article, index) => ({
           ...article,
-          elementId: `${article.id}.${indx}`
+          elementId: `${article.id}.${index}`
         }));
 
     const Contents = (
-      <ContentContainer>
-        {paginationComponent({ hideResults: false, autoScroll: false })}
-        <View style={styles.container}>
+      <ListContentContainer>
+        {paginationComponent({ autoScroll: false, hideResults: false })}
+        <View style={styles.listContentContainer}>
           {data &&
-            data.map((article, indx) => {
+            data.map((article, index) => {
               const { id, elementId, url } = article;
               const separatorComponent =
-                indx > 0 ? <AuthorProfileItemSeparator /> : null;
+                index > 0 ? <AuthorProfileListItemSeparator /> : null;
 
               return (
                 <div
@@ -222,7 +207,7 @@ class AuthorProfileContent extends Component {
                       hasError ? null : (
                         <Fragment>
                           {separatorComponent}
-                          <AuthorProfileItem
+                          <AuthorProfileListItem
                             {...article}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(elementId) || 100}
@@ -238,14 +223,14 @@ class AuthorProfileContent extends Component {
             })}
         </View>
         {paginationComponent({ hideResults: true, autoScroll: true })}
-      </ContentContainer>
+      </ListContentContainer>
     );
 
     if (!articlesLoading) receiveChildList(data);
 
     return (
       <View>
-        <AuthorProfileAuthorHead
+        <AuthorHead
           isLoading={isLoading}
           name={name}
           bio={biography}
@@ -260,7 +245,7 @@ class AuthorProfileContent extends Component {
   }
 }
 
-AuthorProfileContent.propTypes = propTypes;
-AuthorProfileContent.defaultProps = defaultProps;
+AuthorProfileListContent.propTypes = propTypes;
+AuthorProfileListContent.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(AuthorProfileContent);
+export default withTrackScrollDepth(AuthorProfileListContent);

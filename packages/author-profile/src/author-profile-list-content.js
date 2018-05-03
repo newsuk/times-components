@@ -1,32 +1,24 @@
 import React, { Component } from "react";
-import { FlatList, StyleSheet, View } from "react-native";
-import { withTrackScrollDepth } from "@times-components/tracking";
+import { FlatList, View } from "react-native";
+import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
-import { spacing } from "@times-components/styleguide";
-import AuthorProfileAuthorHead from "./author-profile-author-head";
-import AuthorProfilePagination from "./author-profile-pagination";
-import AuthorProfileItem from "./author-profile-item";
-import AuthorProfileItemSeparator from "./author-profile-item-separator";
-import { propTypes, defaultProps } from "./author-profile-content-prop-types";
-import AuthorProfileListingError from "./author-profile-listing-error";
-
-const styles = StyleSheet.create({
-  padding: {
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2)
-  },
-  errorContainer: {
-    flex: 1,
-    margin: spacing(3)
-  }
-});
+import { withTrackScrollDepth } from "@times-components/tracking";
+import AuthorProfileListPagination from "./author-profile-list-pagination";
+import AuthorProfileListItem from "./author-profile-list-item";
+import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
+import AuthorProfileListError from "./author-profile-list-error";
+import {
+  propTypes,
+  defaultProps
+} from "./author-profile-list-content-prop-types";
+import styles from "./styles";
 
 const viewabilityConfig = {
   viewAreaCoveragePercentThreshold: 100,
   waitForInteraction: false
 };
 
-class AuthorProfileContent extends Component {
+class AuthorProfileListContent extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
@@ -50,11 +42,13 @@ class AuthorProfileContent extends Component {
 
   render() {
     const {
-      count,
-      isLoading,
       articles,
       articlesLoading,
       biography,
+      count,
+      error,
+      imageRatio,
+      isLoading,
       jobTitle,
       name,
       onArticlePress,
@@ -65,29 +59,27 @@ class AuthorProfileContent extends Component {
       pageSize,
       twitter,
       uri,
-      imageRatio,
-      showImages,
-      error,
-      refetch
+      refetch,
+      showImages
     } = this.props;
 
-    const AuthorHead = (
-      <AuthorProfileAuthorHead
+    const AuthorProfileHead = (
+      <AuthorHead
+        bio={biography}
         isLoading={isLoading}
         name={name}
-        bio={biography}
-        uri={uri}
+        onTwitterLinkPress={onTwitterLinkPress}
         title={jobTitle}
         twitter={twitter}
-        onTwitterLinkPress={onTwitterLinkPress}
+        uri={uri}
       />
     );
 
     if (error) {
       return (
-        <View style={styles.errorContainer}>
-          {AuthorHead}
-          <AuthorProfileListingError refetch={refetch} />
+        <View style={styles.listErrorContainer}>
+          {AuthorProfileHead}
+          <AuthorProfileListError refetch={refetch} />
         </View>
       );
     }
@@ -95,16 +87,16 @@ class AuthorProfileContent extends Component {
     const scrollToTopNextFrame = () => {
       this.scrollAnimationFrame = global.requestAnimationFrame(() => {
         this.listRef.scrollToOffset({
-          offset: 0,
-          animated: true
+          animated: true,
+          offset: 0
         });
       });
     };
 
     const paginationComponent = (
-      { hideResults = false, autoScroll = false } = {}
+      { autoScroll = false, hideResults = false } = {}
     ) => (
-      <AuthorProfilePagination
+      <AuthorProfileListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
@@ -123,79 +115,69 @@ class AuthorProfileContent extends Component {
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
-          .map((number, indx) => ({
-            id: indx,
-            elementId: `empty.${indx}`,
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
             isLoading: true
           }))
-      : articles.map((article, indx) => ({
+      : articles.map((article, index) => ({
           ...article,
-          elementId: `${article.id}.${indx}`
+          elementId: `${article.id}.${index}`
         }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
     return (
       <FlatList
-        ref={list => {
-          this.listRef = list;
-        }}
-        testID="scroll-view"
         accessibilityID="scroll-view"
         data={data}
         keyExtractor={item => `${item.id}`}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        pageSize={pageSize}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
               hasError ? null : (
-                <AuthorProfileItem
+                <AuthorProfileListItem
                   {...item}
                   imageRatio={imageRatio}
-                  showImage={showImages}
-                  style={styles.padding}
-                  testID={`articleList-${index}`}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })
                   }
+                  showImage={showImages}
+                  testID={`articleList-${index}`}
                 />
               )
             }
           </ErrorView>
         )}
-        initialListSize={pageSize}
-        onViewableItemsChanged={this.onViewableItemsChanged}
-        viewabilityConfig={viewabilityConfig}
+        ref={list => {
+          this.listRef = list;
+        }}
         scrollRenderAheadDistance={2}
-        pageSize={pageSize}
-        ListHeaderComponent={
-          <View>
-            <AuthorProfileAuthorHead
-              isLoading={isLoading}
-              name={name}
-              bio={biography}
-              uri={uri}
-              title={jobTitle}
-              twitter={twitter}
-              onTwitterLinkPress={onTwitterLinkPress}
-            />
-            {paginationComponent({ hideResults: false, autoScroll: false })}
+        testID="scroll-view"
+        viewabilityConfig={viewabilityConfig}
+        ItemSeparatorComponent={() => (
+          <View style={styles.listItemSeparatorContainer}>
+            <AuthorProfileListItemSeparator />
           </View>
-        }
+        )}
         ListFooterComponent={paginationComponent({
           hideResults: true,
           autoScroll: true
         })}
-        ItemSeparatorComponent={() => (
-          <View style={styles.padding}>
-            <AuthorProfileItemSeparator />
+        ListHeaderComponent={
+          <View>
+            {AuthorProfileHead}
+            {paginationComponent({ hideResults: false, autoScroll: false })}
           </View>
-        )}
+        }
       />
     );
   }
 }
 
-AuthorProfileContent.propTypes = propTypes;
-AuthorProfileContent.defaultProps = defaultProps;
+AuthorProfileListContent.propTypes = propTypes;
+AuthorProfileListContent.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(AuthorProfileContent);
+export default withTrackScrollDepth(AuthorProfileListContent);

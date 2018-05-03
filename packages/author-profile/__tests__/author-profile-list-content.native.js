@@ -6,10 +6,10 @@ import Pagination from "@times-components/pagination";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import AuthorProfile from "../src/author-profile";
-import AuthorProfileItem from "../src/author-profile-item";
+import AuthorProfileItem from "../src/author-profile-list-item";
 import pagedResult from "./paged-result";
 import test from "./author-profile-helper";
-import AuthorProfileContent from "../src/author-profile-content.js";
+import AuthorProfileListContent from "../src/author-profile-list-content.js";
 
 // A hack until this is resolved: https://github.com/facebook/react-native/pull/13048
 jest.mock("ScrollView", () => {
@@ -51,7 +51,7 @@ export default () => {
 
   it("renders page error", () => {
     const wrapper = shallow(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={0}
         articles={[]}
         author={fixtureGenerator.makeAuthor()}
@@ -71,7 +71,7 @@ export default () => {
       wrapper
         .dive()
         .dive()
-        .find("AuthorProfileListingError")
+        .find("AuthorProfileListError")
         .dive()
     ).toMatchSnapshot();
   });
@@ -80,7 +80,7 @@ export default () => {
     const reporter = jest.fn();
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -129,7 +129,7 @@ export default () => {
     const reporter = jest.fn();
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -163,7 +163,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -195,7 +195,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -224,7 +224,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -248,5 +248,5 @@ export default () => {
     expect(onNext).toHaveBeenCalled();
   });
 
-  test(AuthorProfileContent);
+  test(AuthorProfileListContent);
 };

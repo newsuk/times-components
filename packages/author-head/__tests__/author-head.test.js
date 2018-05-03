@@ -14,6 +14,11 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders the loading state", () => {
+    const tree = renderer.create(<AuthorHead {...extra} isLoading />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders with data", () => {
     const tree = renderer.create(<AuthorHead {...data} {...extra} />).toJSON();
     expect(tree).toMatchSnapshot();
