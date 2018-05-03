@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.25.8",
+  "version": "0.25.9",
   "main": "dist/author-head",
   "dev": "src/author-head",
   "scripts": {

@@ -4,13 +4,24 @@ import { version } from "../package.json";
 import * as strategies from "./strategies";
 
 function validatePick(rule) {
-  if (rule.split("@").length !== 2) {
-    console.error(
-      `"${rule}" is an invalid rule. Format: "-p {name}@{version}"`
-    );
-    process.exit(1);
+  const parts = rule.split("@");
+  switch (parts.length) {
+    case 2: {
+      const [name, ver] = parts;
+      return { [name]: ver };
+    }
+    case 3: {
+      const [name, ver] = parts.slice(1);
+      return { [`@${name}`]: ver };
+    }
+    default: {
+      console.error(
+        `"${rule}" is an invalid rule. Format: "-p {[@namespace]name}@{ver}"`
+      );
+      process.exit(1);
+      return null;
+    }
   }
-  return rule;
 }
 
 function validateStrategies(name) {
@@ -19,7 +30,7 @@ function validateStrategies(name) {
     console.error(`"${name}" is invalid strategy. Chose one of: ${options}"`);
     process.exit(1);
   }
-  return name;
+  return strategies[name];
 }
 
 export default commander

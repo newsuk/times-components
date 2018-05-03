@@ -3,17 +3,11 @@ import chalk from "chalk";
 import { join } from "path";
 import depend from "./depend";
 import graph from "./graph";
-import * as strategies from "./strategies";
 
 function prettifyHint([name, current, target]) {
   return ` ${chalk.blue(name)}: ${chalk.red(current)} -> ${chalk.green(
     target
   )}`;
-}
-
-function pickOverride(str = "") {
-  const [name, version] = str.split("@");
-  return { [name]: version };
 }
 
 export default async function main({
@@ -37,6 +31,7 @@ export default async function main({
         .catch(e => {
           log(e);
           exit(1);
+          return [];
         })
     : [];
 
@@ -46,12 +41,7 @@ export default async function main({
     packagesToFind.map(path => getPackages(path))
   ).then(packages => packages.flatten());
 
-  return depend(
-    packagesList,
-    argv.strategy ? strategies[argv.strategy] : null,
-    argv.only,
-    pickOverride(argv.pick)
-  )
+  return depend(packagesList, argv.strategy, argv.only, argv.pick)
     .then(
       ({ requirements, rules, suggestions, fixedPackages, versionSets }) => {
         if (argv.graph) {

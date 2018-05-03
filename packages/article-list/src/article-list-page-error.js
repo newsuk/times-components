@@ -5,7 +5,6 @@ import AuthorProfileListError from "./article-list-error";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
-// @TODO: embed image in case of network loss causing the error?
 const AuthorProfileListPageError = ({ refetch }) => (
   <View style={styles.pageErrorContainer}>
     <View style={styles.pageErrorImageContainer}>
