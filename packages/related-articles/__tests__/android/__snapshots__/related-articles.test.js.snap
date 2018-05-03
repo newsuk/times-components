@@ -911,7 +911,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
@@ -1381,7 +1381,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
@@ -1584,7 +1584,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
