@@ -161,13 +161,13 @@ class AuthorProfileListContent extends Component {
           </View>
         )}
         ListFooterComponent={paginationComponent({
-          hideResults: true,
-          autoScroll: true
+          autoScroll: true,
+          hideResults: true
         })}
         ListHeaderComponent={
           <View>
             {AuthorProfileHead}
-            {paginationComponent({ hideResults: false, autoScroll: false })}
+            {paginationComponent({ autoScroll: false, hideResults: false })}
           </View>
         }
       />

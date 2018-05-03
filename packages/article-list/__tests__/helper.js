@@ -4,7 +4,6 @@ import cloneDeep from "lodash.clonedeep";
 import set from "lodash.set";
 import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-// import { MockedProvider } from "@times-components/utils";
 import AuthorProfileListItem from "../src/article-list-item";
 import AuthorProfileListItemSeparator from "../src/article-list-item-separator";
 import pagedResult from "./paged-result";
@@ -32,100 +31,6 @@ export default AuthorProfileListContent => {
     global.Intl = realIntl;
     jest.restoreAllMocks();
   });
-
-  // it("renders profile", () => {
-  //   const pageSize = 3;
-  //   const component = renderer.create(
-  //     <MockedProvider
-  //       mocks={fixtureGenerator.makeArticleMocks({
-  //         withImages: true,
-  //         pageSize
-  //       })}
-  //     >
-  //       <AuthorProfile
-  //         slug={authorProfileProps.slug}
-  //         analyticsStream={() => {}}
-  //         author={fixtureGenerator.makeAuthor({ withImages: true })}
-  //         isLoading={false}
-  //         page={1}
-  //         pageSize={pageSize}
-  //       />
-  //     </MockedProvider>
-  //   );
-
-  //   expect(component).toMatchSnapshot();
-  // });
-
-  // it("renders profile loading", () => {
-  //   const pageSize = 3;
-  //   const component = renderer.create(
-  //     <MockedProvider
-  //       mocks={fixtureGenerator.makeArticleMocks({
-  //         withImages: true,
-  //         pageSize
-  //       })}
-  //     >
-  //       <AuthorProfile
-  //         {...authorProfileProps}
-  //         isLoading
-  //         page={1}
-  //         pageSize={pageSize}
-  //       />
-  //     </MockedProvider>
-  //   );
-
-  //   expect(component).toMatchSnapshot();
-  // });
-
-  // it("renders with no author", () => {
-  //   const pageSize = 3;
-  //   const component = renderer.create(
-  //     <MockedProvider
-  //       mocks={fixtureGenerator.makeArticleMocks({
-  //         withImages: false,
-  //         pageSize
-  //       })}
-  //     >
-  //       <AuthorProfile
-  //         {...authorProfileProps}
-  //         isLoading={false}
-  //         page={1}
-  //         pageSize={pageSize}
-  //       />
-  //     </MockedProvider>
-  //   );
-
-  //   expect(component).toMatchSnapshot();
-  // });
-
-  // it("adds author profile fields to tracking context", () => {
-  //   const reporter = jest.fn();
-  //   const pageSize = 3;
-
-  //   renderer.create(
-  //     <MockedProvider mocks={fixtureGenerator.makeArticleMocks()}>
-  //       <AuthorProfile
-  //         {...authorProfileProps}
-  //         author={fixtureGenerator.makeAuthor()}
-  //         isLoading={false}
-  //         page={1}
-  //         pageSize={pageSize}
-  //         analyticsStream={reporter}
-  //       />
-  //     </MockedProvider>
-  //   );
-
-  //   expect(reporter).toHaveBeenCalledWith(
-  //     expect.objectContaining({
-  //       object: "AuthorProfile",
-  //       attrs: expect.objectContaining({
-  //         authorName: "Deborah Haynes",
-  //         page: 1,
-  //         pageSize
-  //       })
-  //     })
-  //   );
-  // });
 
   it("renders profile content component", () => {
     const pageSize = 3;

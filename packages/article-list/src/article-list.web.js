@@ -193,10 +193,10 @@ class AuthorProfileListContent extends Component {
 
               return (
                 <div
-                  key={elementId}
-                  id={elementId}
                   accessibility-label={elementId}
                   data-testid={elementId}
+                  id={elementId}
+                  key={elementId}
                   ref={node => this.registerNode(node)}
                 >
                   <ErrorView>
@@ -208,8 +208,8 @@ class AuthorProfileListContent extends Component {
                             {...article}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(elementId) || 100}
-                            showImage={showImages}
                             onPress={e => onArticlePress(e, { id, url })}
+                            showImage={showImages}
                           />
                         </Fragment>
                       )
@@ -228,13 +228,13 @@ class AuthorProfileListContent extends Component {
     return (
       <View>
         <AuthorHead
+          bio={biography}
           isLoading={isLoading}
           name={name}
-          bio={biography}
-          uri={uri}
+          onTwitterLinkPress={onTwitterLinkPress}
           title={jobTitle}
           twitter={twitter}
-          onTwitterLinkPress={onTwitterLinkPress}
+          uri={uri}
         />
         {error ? ErrorComponent : Contents}
       </View>

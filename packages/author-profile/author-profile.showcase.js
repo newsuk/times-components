@@ -99,7 +99,17 @@ export default {
           analyticsStream: storybookReporter
         };
 
-        return <AuthorProfile {...props} />;
+        return (
+          <MockedProvider
+            mocks={fixtureGenerator.makeArticleMocks({
+              withImages: true,
+              slug,
+              pageSize
+            })}
+          >
+            <AuthorProfile {...props} />
+          </MockedProvider>
+        );
       }
     },
     {

@@ -68,20 +68,17 @@ const AuthorProfile = ({
     >
       {({
         author: data,
-        pageSize,
-        isLoading: articlesLoading,
         error: articlesError,
+        pageSize,
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
       }) => (
         <AuthorProfileListContent
           articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
           biography={biography}
           count={get(articles, "count", 0)}
           error={articlesError}
           imageRatio={ratioTextToFloat(imageRatio)}
-          isLoading={isLoading}
           jobTitle={jobTitle}
           name={name}
           onArticlePress={onArticlePress}
