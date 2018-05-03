@@ -131,7 +131,6 @@ class AuthorProfileListContent extends Component {
       <FlatList
         accessibilityID="scroll-view"
         data={data}
-        initialListSize={pageSize}
         keyExtractor={item => `${item.id}`}
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
