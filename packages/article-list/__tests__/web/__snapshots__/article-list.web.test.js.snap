@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleList tests on web:  should render the article page error correctly 1`] = `
-<PageErrorContainer>
-  <ArticleListError
-    refetch={[Function]}
-  />
-  <PageErrorImageContainer>
-    <TimesImage
-      aspectRatio={0.9090909090909091}
-      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-    />
-  </PageErrorImageContainer>
-</PageErrorContainer>
-`;
-
-exports[`ArticleList tests on web:  should render the error component correctly 1`] = `
+exports[`ArticleList tests on web:  should render an article list page error correctly 1`] = `
 <View
   style={
     Object {
@@ -96,7 +82,7 @@ exports[`ArticleList tests on web:  should render the error component correctly 
 </View>
 `;
 
-exports[`ArticleList tests on web:  should render the separator keyline correctly 1`] = `
+exports[`ArticleList tests on web:  should render the article list item separator keyline correctly 1`] = `
 <View
   style={
     Object {
@@ -105,4 +91,85 @@ exports[`ArticleList tests on web:  should render the separator keyline correctl
     }
   }
 />
+`;
+
+exports[`ArticleList tests on web:  should render the article list page error correctly 1`] = `
+<PageErrorContainer>
+  <ArticleListError
+    refetch={[Function]}
+  />
+  <PageErrorImageContainer>
+    <TimesImage
+      aspectRatio={0.9090909090909091}
+      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+    />
+  </PageErrorImageContainer>
+</PageErrorContainer>
+`;
+
+exports[`ArticleList tests on web:  should render the article list pagination correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="responsive-styles__component-fbPFZZ ldBdZT"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ exZFAC"
+      >
+        <div
+          data-testid="results-message"
+          dir="auto"
+        >
+          Showing 1 - 10 of 20 results
+        </div>
+      </div>
+      <div
+        className="responsive-styles__component-fbPFZZ cePhpb"
+      >
+        <div />
+        <div>
+          <a
+            href="?page=2"
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+          >
+            <div
+              data-testid="pagination-button-next"
+            >
+              <div
+                dir="auto"
+              >
+                <span
+                  dir="auto"
+                >
+                  Next
+                  <span
+                    className="responsive-styles__component-fbPFZZ hqaoTY"
+                    dir="auto"
+                  >
+                     page
+                  </span>
+                </span>
+              </div>
+              <svg
+                height={12}
+                width={7}
+              >
+                <g
+                  fill="#006699"
+                >
+                  <path />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
