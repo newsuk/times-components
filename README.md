@@ -20,6 +20,14 @@ requires [Xcode](https://developer.apple.com/xcode),
 
 You can try without these requirements, but you'd be on your own.
 
+
+## Viewing Our Components
+If you use Expo you are able to scan the QR code below
+
+<img src="https://s3.eu-west-1.amazonaws.com/nu-tools-expo/MasterExpo.png">
+
+This has been made possible using [Fructose](https://github.com/newsuk/fructose)
+
 ## Getting Started
 
 1. Run `yarn` to install dependencies
