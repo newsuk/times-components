@@ -2,42 +2,25 @@ import gql from "graphql-tag";
 import connectGraphql from "./connect";
 
 export const query = gql `
-  query ArticleQuery($slug: String!, $first: Int, $skip: Int){
+ query TopicQuery($slug: Slug!, $first: Int, $skip: Int){
   topic(slug: $slug) {
     name
     description
-      articles(first: $first, skip: skip) {
-      count
-      list {
-        ...article
-      }
+    articles(first: $first, skip: $skip) {
+    count
+    list {
+      byline
+      id
+      label
+      section
+      publicationName
+      publishedTime
+      summary(maxCharCount: 115)
+      url
+      __typename
     }
   }
-}
-
-fragment article on Article {
-  byline
-  content(maxCharCount: 115)
-  flags
-  headline
-  id
-  label
-  commercialTags
-  section
-  leadAsset {
-    ... on Video {
-      id
-    }
-    ... on Image {
-      id
-    }
   }
-  publicationName
-  publishedTime
-  updatedTime
-  standfirst
-  summary(maxCharCount: 115)
-  url
 }
 `;
 
