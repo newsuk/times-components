@@ -1,9 +1,31 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  item: PropTypes.object
+  headline: PropTypes.string,
+  imageRatio: PropTypes.number,
+  imageSize: PropTypes.number,
+  label: PropTypes.string,
+  longSummary: PropTypes.array,
+  onPress: PropTypes.func,
+  publicationName: PropTypes.string,
+  publishedTime: PropTypes.string,
+  shortSummary: PropTypes.array,
+  showImage: PropTypes.bool,
+  summary: PropTypes.array,
+  url: PropTypes.string
 };
 
 export const defaultProps = {
-  item: {}
+  headline: "",
+  imageRatio: 1,
+  imageSize: null,
+  label: "",
+  longSummary: [],
+  onPress: () => {},
+  publicationName: "",
+  publishedTime: "",
+  shortSummary: [],
+  showImage: true,
+  summary: [],
+  url: ""
 };

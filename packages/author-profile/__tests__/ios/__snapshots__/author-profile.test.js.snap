@@ -4,7 +4,7 @@ exports[`1. Render an author profile page 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfileListPagination
+    <ArticleListPagination
       count={20}
       hideResults={true}
       onNext={[Function]}
@@ -54,7 +54,7 @@ exports[`1. Render an author profile page 1`] = `
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
-      <AuthorProfileListPagination
+      <ArticleListPagination
         count={20}
         hideResults={false}
         onNext={[Function]}
@@ -602,7 +602,7 @@ exports[`2. Render an article list loading state 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfileListPagination
+    <ArticleListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
@@ -620,7 +620,7 @@ exports[`2. Render an article list loading state 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfileListPagination
+      <ArticleListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}

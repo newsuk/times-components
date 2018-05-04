@@ -12,7 +12,7 @@ import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import getImageUri from "./utils";
 import styles from "./styles";
 
-const ArticleListItem = item => {
+const ArticleListItem = props => {
   const {
     headline,
     imageRatio,
@@ -25,9 +25,9 @@ const ArticleListItem = item => {
     showImage,
     summary,
     url
-  } = item;
+  } = props;
 
-  const imageUri = getImageUri(item);
+  const imageUri = getImageUri(props);
 
   if (isLoading) {
     return (

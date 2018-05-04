@@ -1,5 +1,367 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ArticleList tests on web:  should render an article list item 1`] = `
+<a
+  href="www.test-example.com"
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  <div
+    className="responsive-styles__component-fbPFZZ fXCtkJ"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ woNlo"
+    >
+      <div>
+        <div
+          className="articleListImage"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "display": "table",
+                  "height": 0,
+                  "overflow": "hidden",
+                  "paddingBottom": "66.66666666666667%",
+                }
+              }
+            >
+              <img
+                alt=""
+                src=""
+                style={
+                  Object {
+                    "display": "block",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+              <div>
+                <div
+                  style={
+                    Object {
+                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="articleListContent"
+        >
+          <div>
+            <div>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "fontSize": "12px",
+                    "fontWeight": "400",
+                    "letterSpacing": "1.2px",
+                  }
+                }
+              >
+                TESTLABEL
+              </div>
+            </div>
+            <h3
+              aria-level="3"
+              dir="auto"
+              role="heading"
+              style={
+                Object {
+                  "fontSize": "22px",
+                  "fontWeight": "400",
+                  "lineHeight": "22px",
+                  "marginBottom": "5px",
+                }
+              }
+            >
+              test headline
+            </h3>
+            <div
+              dir="auto"
+              style={
+                Object {
+                  "fontFamily": "TimesDigitalW04",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              <span
+                dir="auto"
+              >
+                
+                Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                ...
+              </span>
+            </div>
+            <div
+              aria-label="datePublication"
+              data-testid="datePublication"
+              dir="auto"
+              style={
+                Object {
+                  "lineHeight": "15px",
+                  "marginBottom": "5px",
+                }
+              }
+            >
+              Invalid Date, The Times
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`ArticleList tests on web:  should render an article list item loading state 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ fXCtkJ"
+>
+  <div>
+    <div
+      className="articleListImage"
+    >
+      <div>
+        <div
+          style={
+            Object {
+              "display": "table",
+              "height": 0,
+              "overflow": "hidden",
+              "paddingBottom": "66.66666666666667%",
+            }
+          }
+        >
+          <img
+            alt=""
+            src=""
+            style={
+              Object {
+                "display": "block",
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 1,
+              }
+            }
+          />
+          <div>
+            <div
+              style={
+                Object {
+                  "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="articleListContent"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleList tests on web:  should render an article list item without images 1`] = `
+<a
+  href="www.test-example.com"
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  <div
+    className="responsive-styles__component-fbPFZZ fXCtkJ"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ woNlo"
+    >
+      <div>
+        <div
+          className="articleListContent"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ dQznFS"
+          >
+            <div>
+              <div>
+                <div
+                  dir="auto"
+                  style={
+                    Object {
+                      "fontSize": "12px",
+                      "fontWeight": "400",
+                      "letterSpacing": "1.2px",
+                    }
+                  }
+                >
+                  TESTLABEL
+                </div>
+              </div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                test headline
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "fontFamily": "TimesDigitalW04",
+                    "lineHeight": "20px",
+                  }
+                }
+              >
+                <span
+                  dir="auto"
+                >
+                  
+                  Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Invalid Date, The Times
+              </div>
+            </div>
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <div>
+                <div
+                  dir="auto"
+                  style={
+                    Object {
+                      "fontSize": "12px",
+                      "fontWeight": "400",
+                      "letterSpacing": "1.2px",
+                    }
+                  }
+                >
+                  TESTLABEL
+                </div>
+              </div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                test headline
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "fontFamily": "TimesDigitalW04",
+                    "lineHeight": "20px",
+                  }
+                }
+              >
+                <span
+                  dir="auto"
+                >
+                  
+                  Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Invalid Date, The Times
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
 exports[`ArticleList tests on web:  should render an article list page error correctly 1`] = `
 <View
   style={

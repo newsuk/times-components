@@ -15,7 +15,7 @@ import {
   ListItemShortText
 } from "./styles/responsive";
 
-const ArticleListItem = item => {
+const ArticleListItem = props => {
   const {
     headline,
     imageRatio,
@@ -30,9 +30,9 @@ const ArticleListItem = item => {
     showImage,
     summary,
     url
-  } = item;
+  } = props;
 
-  const imageUri = getImageUri(item);
+  const imageUri = getImageUri(props);
 
   if (isLoading) {
     return (

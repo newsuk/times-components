@@ -31,14 +31,14 @@ export const ListItemWrapper = withResponsiveStyles(
     padding-top: ${spacing(3)};
   `,
     mediumUp: () => `
-    .authorProfileImage {
+    .articleListImage {
       flex: 2;
       margin-bottom: 0;
       max-width: 285px;
       min-width: auto;
       padding-right: ${spacing(3)};
     }
-    .authorProfileContent {
+    .articleListContent {
       flex: 2.7;
       flex-basis: 0 !important;
       min-width: 380px;

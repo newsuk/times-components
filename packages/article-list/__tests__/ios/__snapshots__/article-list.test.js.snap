@@ -1,5 +1,671 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ArticleList tests on ios:  should render an article list item 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 10,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View
+            aspectRatio={1.5}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#F9F9F9",
+                        "#EDEDED",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                TESTLABEL
+              </Text>
+            </View>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="3"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "900",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
+              }
+            >
+              test headline
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                ...
+              </Text>
+            </Text>
+            <Text
+              accessibilityLabel="datePublication"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+              testID="datePublication"
+            >
+              Invalid Date, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios:  should render an article list item loading state 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 15,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <View
+        aspectRatio={1.5}
+      >
+        <View
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            onLoad={[Function]}
+            style={
+              Object {
+                "bottom": 0,
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.09302964577578221,
+              "y": 0.11488204504197774,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios:  should render an article list item without images 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                TESTLABEL
+              </Text>
+            </View>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="3"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "900",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
+              }
+            >
+              test headline
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
+                ...
+              </Text>
+            </Text>
+            <Text
+              accessibilityLabel="datePublication"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+              testID="datePublication"
+            >
+              Invalid Date, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`ArticleList tests on ios:  should render an article list page error correctly 1`] = `
 <View
   style={

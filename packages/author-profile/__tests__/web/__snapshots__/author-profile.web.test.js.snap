@@ -294,11 +294,11 @@ exports[`2. Render an article list loading state 1`] = `
         id="empty.0"
       >
         <div
-          className="responsive-styles__component-fbPFZZ gBgAce"
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
         >
           <div>
             <div
-              className="authorProfileImage"
+              className="articleListImage"
             >
               <div>
                 <div
@@ -336,7 +336,7 @@ exports[`2. Render an article list loading state 1`] = `
               </div>
             </div>
             <div
-              className="authorProfileContent"
+              className="articleListContent"
             >
               <div
                 style={
@@ -377,11 +377,11 @@ exports[`2. Render an article list loading state 1`] = `
       >
         <div />
         <div
-          className="responsive-styles__component-fbPFZZ gBgAce"
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
         >
           <div>
             <div
-              className="authorProfileImage"
+              className="articleListImage"
             >
               <div>
                 <div
@@ -419,7 +419,7 @@ exports[`2. Render an article list loading state 1`] = `
               </div>
             </div>
             <div
-              className="authorProfileContent"
+              className="articleListContent"
             >
               <div
                 style={
@@ -460,11 +460,11 @@ exports[`2. Render an article list loading state 1`] = `
       >
         <div />
         <div
-          className="responsive-styles__component-fbPFZZ gBgAce"
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
         >
           <div>
             <div
-              className="authorProfileImage"
+              className="articleListImage"
             >
               <div>
                 <div
@@ -502,7 +502,7 @@ exports[`2. Render an article list loading state 1`] = `
               </div>
             </div>
             <div
-              className="authorProfileContent"
+              className="articleListContent"
             >
               <div
                 style={
