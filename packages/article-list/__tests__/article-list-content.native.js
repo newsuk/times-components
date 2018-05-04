@@ -5,7 +5,7 @@ import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
-import AuthorProfileItem from "../src/article-list-item";
+import ArticleListItem from "../src/article-list-item";
 import pagedResult from "./paged-result";
 import test from "./helper";
 import ArticleList from "../src/article-list.js";
@@ -51,18 +51,18 @@ export default () => {
   it("renders page error", () => {
     const wrapper = shallow(
       <ArticleList
-        count={0}
         articles={[]}
         author={fixtureGenerator.makeAuthor()}
-        slug="deborah-haynes"
-        page={1}
-        pageSize={3}
-        imageRatio={3 / 2}
+        count={0}
         error={new Error("Failed")}
-        refetch={() => {}}
-        onTwitterLinkPress={() => {}}
+        imageRatio={3 / 2}
         onArticlePress={() => {}}
         onViewed={() => {}}
+        onTwitterLinkPress={() => {}}
+        page={1}
+        pageSize={3}
+        refetch={() => {}}
+        slug="deborah-haynes"
       />
     );
 
@@ -80,15 +80,15 @@ export default () => {
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
       <ArticleList
-        count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
-        slug="deborah-haynes"
+        count={10}
+        imageRatio={3 / 2}
+        onArticlePress={() => {}}
+        onTwitterLinkPress={() => {}}
         page={1}
         pageSize={3}
-        imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
-        onArticlePress={() => {}}
+        slug="deborah-haynes"
       />,
       {
         context: {
@@ -129,15 +129,15 @@ export default () => {
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
       <ArticleList
-        count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
-        slug="deborah-haynes"
+        count={10}
+        imageRatio={3 / 2}
+        onArticlePress={() => {}}
+        onTwitterLinkPress={() => {}}
         page={1}
         pageSize={3}
-        imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
-        onArticlePress={() => {}}
+        slug="deborah-haynes"
       />,
       {
         context: {
@@ -163,22 +163,22 @@ export default () => {
 
     const comp = RCT.create(
       <ArticleList
-        count={10}
         articles={results.data.author.articles.list}
-        author={authorProfileFixture.data.author}
-        isLoading={false}
         articlesLoading={false}
-        slug="deborah-haynes"
+        author={authorProfileFixture.data.author}
+        count={10}
+        imageRatio={3 / 2}
+        isLoading={false}
+        onArticlePress={onArticlePress}
+        onTwitterLinkPress={() => {}}
         page={1}
         pageSize={3}
-        imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
-        onArticlePress={onArticlePress}
+        slug="deborah-haynes"
       />
     ).root;
 
     comp
-      .findAllByType(AuthorProfileItem)[0]
+      .findAllByType(ArticleListItem)[0]
       .findByType(Link)
       .props.onPress();
 
@@ -195,18 +195,18 @@ export default () => {
 
     const comp = RCT.create(
       <ArticleList
-        count={10}
         articles={results.data.author.articles.list}
-        author={authorProfileFixture.data.author}
-        isLoading={false}
         articlesLoading={false}
-        slug="deborah-haynes"
-        page={2}
-        pageSize={3}
+        author={authorProfileFixture.data.author}
+        count={10}
         imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
+        isLoading={false}
         onArticlePress={() => {}}
         onPrev={onPrev}
+        onTwitterLinkPress={() => {}}
+        page={2}
+        pageSize={3}
+        slug="deborah-haynes"
       />
     ).root;
 
@@ -224,18 +224,18 @@ export default () => {
 
     const comp = RCT.create(
       <ArticleList
-        count={10}
         articles={results.data.author.articles.list}
-        author={authorProfileFixture.data.author}
-        isLoading={false}
         articlesLoading={false}
-        slug="deborah-haynes"
-        page={2}
-        pageSize={3}
+        author={authorProfileFixture.data.author}
+        count={10}
         imageRatio={3 / 2}
-        onTwitterLinkPress={() => {}}
+        isLoading={false}
         onArticlePress={() => {}}
         onNext={onNext}
+        onTwitterLinkPress={() => {}}
+        page={2}
+        pageSize={3}
+        slug="deborah-haynes"
       />
     ).root;
 

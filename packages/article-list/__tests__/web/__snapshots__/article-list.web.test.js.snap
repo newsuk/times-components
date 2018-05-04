@@ -256,7 +256,7 @@ Array [
 `;
 
 exports[`ArticleList tests on web renders page error 1`] = `
-<AuthorProfileListError
+<ArticleListError
   refetch={[Function]}
 >
   <View
@@ -391,7 +391,7 @@ exports[`ArticleList tests on web renders page error 1`] = `
       </View>
     </div>
   </View>
-</AuthorProfileListError>
+</ArticleListError>
 `;
 
 exports[`ArticleList tests on web renders profile content component 1`] = `
@@ -518,7 +518,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
             >
               <div>
                 <div
-                  className="authorProfileImage"
+                  className="articleListImage"
                 >
                   <div>
                     <div
@@ -556,7 +556,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
                   </div>
                 </div>
                 <div
-                  className="authorProfileContent"
+                  className="articleListContent"
                 >
                   <div>
                     <h3
@@ -633,7 +633,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
             >
               <div>
                 <div
-                  className="authorProfileImage"
+                  className="articleListImage"
                 >
                   <div>
                     <div
@@ -671,7 +671,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
                   </div>
                 </div>
                 <div
-                  className="authorProfileContent"
+                  className="articleListContent"
                 >
                   <div>
                     <h3
@@ -748,7 +748,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
             >
               <div>
                 <div
-                  className="authorProfileImage"
+                  className="articleListImage"
                 >
                   <div>
                     <div
@@ -786,7 +786,7 @@ exports[`ArticleList tests on web renders profile content component 1`] = `
                   </div>
                 </div>
                 <div
-                  className="authorProfileContent"
+                  className="articleListContent"
                 >
                   <div>
                     <h3
@@ -971,7 +971,7 @@ exports[`ArticleList tests on web renders profile content item component 1`] = `
     >
       <div>
         <div
-          className="authorProfileContent"
+          className="articleListContent"
         >
           <div
             className="responsive-styles__component-fbPFZZ dQznFS"
@@ -1066,7 +1066,7 @@ exports[`ArticleList tests on web renders profile content item component with a 
     >
       <div>
         <div
-          className="authorProfileContent"
+          className="articleListContent"
         >
           <div
             className="responsive-styles__component-fbPFZZ dQznFS"
@@ -1161,7 +1161,7 @@ exports[`ArticleList tests on web renders profile content item component with no
     >
       <div>
         <div
-          className="authorProfileContent"
+          className="articleListContent"
         >
           <div
             className="responsive-styles__component-fbPFZZ dQznFS"
@@ -1324,7 +1324,7 @@ exports[`ArticleList tests on web renders profile content loading 1`] = `
         >
           <div>
             <div
-              className="authorProfileImage"
+              className="articleListImage"
             >
               <div>
                 <div
@@ -1362,7 +1362,7 @@ exports[`ArticleList tests on web renders profile content loading 1`] = `
               </div>
             </div>
             <div
-              className="authorProfileContent"
+              className="articleListContent"
             >
               <div
                 style={

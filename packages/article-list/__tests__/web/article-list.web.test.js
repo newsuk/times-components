@@ -5,7 +5,7 @@ import authorProfileFixture from "@times-components/provider-test-tools/fixtures
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../helper";
 import ArticleList from "../../src/article-list.web.js";
-import AuthorProfileListItem from "../../src/article-list-item";
+import ArticleListItem from "../../src/article-list-item";
 import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -22,7 +22,7 @@ describe("ArticleList tests on web", () => {
     showImages: withImages
   });
 
-  const authorProfileContentProps = {
+  const articleListContentProps = {
     ...makeAuthor({ withImages: true }),
     articles: articleListWithImagesFixture.data.author.articles.list,
     count: articleListWithImagesFixture.data.author.articles.list.length,
@@ -81,27 +81,27 @@ describe("ArticleList tests on web", () => {
   it("renders page error", () => {
     const wrapper = mount(
       <ArticleList
-        count={0}
         articles={[]}
         author={makeAuthor()}
-        slug="deborah-haynes"
+        count={0}
+        error={new Error("Failed")}
+        imageRatio={3 / 2}
         page={1}
         pageSize={3}
-        imageRatio={3 / 2}
-        error={new Error("Failed")}
-        refetch={() => {}}
-        onTwitterLinkPress={() => {}}
         onArticlePress={() => {}}
+        onTwitterLinkPress={() => {}}
         onViewed={() => {}}
+        refetch={() => {}}
+        slug="deborah-haynes"
       />
     );
 
-    expect(wrapper.find("AuthorProfileListError")).toMatchSnapshot();
+    expect(wrapper.find("ArticleListError")).toMatchSnapshot();
   });
 
   it("renders profile articles and invoke callback on article press", done => {
     const component = shallow(
-      <ArticleList {...authorProfileContentProps} onArticlePress={done} />
+      <ArticleList {...articleListContentProps} onArticlePress={done} />
     );
 
     component
@@ -109,7 +109,7 @@ describe("ArticleList tests on web", () => {
       .find("ErrorView")
       .at(0)
       .dive()
-      .find(AuthorProfileListItem)
+      .find(ArticleListItem)
       .at(0)
       .dive()
       .dive()
@@ -129,7 +129,7 @@ describe("ArticleList tests on web", () => {
       observe() {} // eslint-disable-line class-methods-use-this
     };
 
-    mount(<ArticleList {...authorProfileContentProps} />);
+    mount(<ArticleList {...articleListContentProps} />);
 
     expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
   });
@@ -137,7 +137,7 @@ describe("ArticleList tests on web", () => {
   it("renders a good quality image if it is visible", async () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
-    const component = mount(<ArticleList {...authorProfileContentProps} />);
+    const component = mount(<ArticleList {...articleListContentProps} />);
 
     // prove the first image starts off as low quality
     expect(
@@ -170,7 +170,7 @@ describe("ArticleList tests on web", () => {
   it("renders a poor quality image if it is not visible", async () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
-    const component = mount(<ArticleList {...authorProfileContentProps} />);
+    const component = mount(<ArticleList {...articleListContentProps} />);
 
     const makeEntries = nodes =>
       [...nodes].map((node, indx) => ({
@@ -193,7 +193,7 @@ describe("ArticleList tests on web", () => {
   it("renders good quality images if there is no IntersectionObserver", () => {
     const component = mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           2
@@ -232,7 +232,7 @@ describe("ArticleList tests on web", () => {
 
     const component = mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           5
@@ -268,7 +268,7 @@ describe("ArticleList tests on web", () => {
 
     mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           5
@@ -309,7 +309,7 @@ describe("ArticleList tests on web", () => {
 
     const component = mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           5
@@ -354,7 +354,7 @@ describe("ArticleList tests on web", () => {
 
     const component = mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           5
@@ -374,7 +374,7 @@ describe("ArticleList tests on web", () => {
 
     const component = mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
           5
@@ -395,7 +395,7 @@ describe("ArticleList tests on web", () => {
 
     mount(
       <ArticleList
-        {...authorProfileContentProps}
+        {...articleListContentProps}
         articles={pageResults.data.author.articles.list}
       />,
       {
@@ -432,7 +432,7 @@ describe("ArticleList tests on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onPrev = jest.fn();
     const component = mount(
-      <ArticleList {...authorProfileContentProps} page={2} onPrev={onPrev} />
+      <ArticleList {...articleListContentProps} page={2} onPrev={onPrev} />
     );
 
     component
@@ -447,7 +447,7 @@ describe("ArticleList tests on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onNext = jest.fn();
     const component = mount(
-      <ArticleList {...authorProfileContentProps} page={2} onNext={onNext} />
+      <ArticleList {...articleListContentProps} page={2} onNext={onNext} />
     );
 
     component
@@ -462,7 +462,7 @@ describe("ArticleList tests on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onPrev = jest.fn();
     const component = mount(
-      <ArticleList {...authorProfileContentProps} page={2} onPrev={onPrev} />
+      <ArticleList {...articleListContentProps} page={2} onPrev={onPrev} />
     );
 
     component
@@ -477,7 +477,7 @@ describe("ArticleList tests on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onNext = jest.fn();
     const component = mount(
-      <ArticleList {...authorProfileContentProps} page={2} onNext={onNext} />
+      <ArticleList {...articleListContentProps} page={2} onNext={onNext} />
     );
 
     component

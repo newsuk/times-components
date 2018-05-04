@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "@times-components/image";
-import AuthorProfileListError from "./article-list-error";
+import ArticleListError from "./article-list-error";
 import propTypes from "./article-list-error-prop-types";
 import {
   PageErrorContainer,
@@ -9,7 +9,7 @@ import {
 
 const ArticleListPageError = ({ refetch }) => (
   <PageErrorContainer>
-    <AuthorProfileListError refetch={refetch} />
+    <ArticleListError refetch={refetch} />
     <PageErrorImageContainer>
       <Image
         aspectRatio={700 / 770}

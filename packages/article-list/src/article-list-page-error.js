@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
-import AuthorProfileListError from "./article-list-error";
+import ArticleListError from "./article-list-error";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
@@ -13,7 +13,7 @@ const ArticleListPageError = ({ refetch }) => (
         uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
       />
     </View>
-    <AuthorProfileListError refetch={refetch} />
+    <ArticleListError refetch={refetch} />
   </View>
 );
 

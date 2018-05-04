@@ -6,10 +6,10 @@ import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
-import AuthorProfileListPagination from "./article-list-pagination";
-import AuthorProfileListItem from "./article-list-item";
-import AuthorProfileListItemSeparator from "./article-list-item-separator";
-import AuthorProfileListError from "./article-list-error";
+import ArticleListError from "./article-list-error";
+import ArticleListItem from "./article-list-item";
+import ArticleListItemSeparator from "./article-list-item-separator";
+import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
@@ -138,7 +138,7 @@ class ArticleList extends Component {
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
-      <AuthorProfileListPagination
+      <ArticleListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
@@ -163,7 +163,7 @@ class ArticleList extends Component {
             styles.listContentErrorContainer
           ]}
         >
-          <AuthorProfileListError refetch={refetch} />
+          <ArticleListError refetch={refetch} />
         </View>
       </ListContentContainer>
     );
@@ -189,7 +189,7 @@ class ArticleList extends Component {
             data.map((article, index) => {
               const { id, elementId, url } = article;
               const separatorComponent =
-                index > 0 ? <AuthorProfileListItemSeparator /> : null;
+                index > 0 ? <ArticleListItemSeparator /> : null;
 
               return (
                 <div
@@ -204,7 +204,7 @@ class ArticleList extends Component {
                       hasError ? null : (
                         <Fragment>
                           {separatorComponent}
-                          <AuthorProfileListItem
+                          <ArticleListItem
                             {...article}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(elementId) || 100}

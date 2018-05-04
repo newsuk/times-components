@@ -3,10 +3,10 @@ import { FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import AuthorProfileListPagination from "./article-list-pagination";
-import AuthorProfileListItem from "./article-list-item";
-import AuthorProfileListItemSeparator from "./article-list-item-separator";
-import AuthorProfileListError from "./article-list-error";
+import ArticleListError from "./article-list-error";
+import ArticleListItem from "./article-list-item";
+import ArticleListItemSeparator from "./article-list-item-separator";
+import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 
@@ -60,7 +60,7 @@ class ArticleList extends Component {
       showImages
     } = this.props;
 
-    const AuthorProfileHead = (
+    const ArticleListHead = (
       <AuthorHead
         bio={biography}
         isLoading={isLoading}
@@ -75,8 +75,8 @@ class ArticleList extends Component {
     if (error) {
       return (
         <View style={styles.listErrorContainer}>
-          {AuthorProfileHead}
-          <AuthorProfileListError refetch={refetch} />
+          {ArticleListHead}
+          <ArticleListError refetch={refetch} />
         </View>
       );
     }
@@ -93,7 +93,7 @@ class ArticleList extends Component {
     const paginationComponent = (
       { autoScroll = false, hideResults = false } = {}
     ) => (
-      <AuthorProfileListPagination
+      <ArticleListPagination
         count={count}
         hideResults={hideResults}
         onNext={(...args) => {
@@ -135,7 +135,7 @@ class ArticleList extends Component {
           <ErrorView>
             {({ hasError }) =>
               hasError ? null : (
-                <AuthorProfileListItem
+                <ArticleListItem
                   {...item}
                   imageRatio={imageRatio}
                   onPress={e =>
@@ -156,7 +156,7 @@ class ArticleList extends Component {
         viewabilityConfig={viewabilityConfig}
         ItemSeparatorComponent={() => (
           <View style={styles.listItemSeparatorContainer}>
-            <AuthorProfileListItemSeparator />
+            <ArticleListItemSeparator />
           </View>
         )}
         ListFooterComponent={paginationComponent({
@@ -165,7 +165,7 @@ class ArticleList extends Component {
         })}
         ListHeaderComponent={
           <View>
-            {AuthorProfileHead}
+            {ArticleListHead}
             {paginationComponent({ autoScroll: false, hideResults: false })}
           </View>
         }

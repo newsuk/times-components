@@ -6,7 +6,7 @@ import ArticleSummary, {
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import authorProfileListItemTrackingEvents from "./article-list-item-tracking-events";
+import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import getImageUri from "./utils";
 import {
@@ -15,7 +15,7 @@ import {
   ListItemShortText
 } from "./styles/responsive";
 
-const AuthorProfileListItem = item => {
+const ArticleListItem = item => {
   const {
     headline,
     imageRatio,
@@ -38,8 +38,8 @@ const AuthorProfileListItem = item => {
     return (
       <ListItemWrapper>
         <Card
-          contentContainerClass="authorProfileContent"
-          imageContainerClass="authorProfileImage"
+          contentContainerClass="articleListContent"
+          imageContainerClass="articleListImage"
           imageRatio={imageRatio}
           isLoading={isLoading}
           showImage={showImage}
@@ -86,9 +86,9 @@ const AuthorProfileListItem = item => {
     <Link url={url} onPress={onPress}>
       <ListItemWrapper>
         <Card
-          contentContainerClass="authorProfileContent"
+          contentContainerClass="articleListContent"
           image={imageUri ? { uri: imageUri } : null}
-          imageContainerClass="authorProfileImage"
+          imageContainerClass="articleListImage"
           imageRatio={imageRatio}
           imageSize={imageSize}
           isLoading={isLoading}
@@ -101,7 +101,7 @@ const AuthorProfileListItem = item => {
   );
 };
 
-AuthorProfileListItem.propTypes = propTypes;
-AuthorProfileListItem.defaultProps = defaultProps;
+ArticleListItem.propTypes = propTypes;
+ArticleListItem.defaultProps = defaultProps;
 
-export default authorProfileListItemTrackingEvents(AuthorProfileListItem);
+export default articleListItemTrackingEvents(ArticleListItem);

@@ -3,7 +3,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
-const AuthorProfileListError = ({ refetch }) => (
+const ArticleListError = ({ refetch }) => (
   <View style={styles.listErrorContainer}>
     <Text style={styles.listErrorHeading}>Something&apos;s gone wrong</Text>
     <Text style={styles.listErrorMessage}>
@@ -20,6 +20,6 @@ const AuthorProfileListError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileListError.propTypes = propTypes;
+ArticleListError.propTypes = propTypes;
 
-export default AuthorProfileListError;
+export default ArticleListError;

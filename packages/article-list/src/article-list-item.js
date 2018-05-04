@@ -7,12 +7,12 @@ import ArticleSummary, {
 import Card from "@times-components/card";
 import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
-import authorProfileListItemTrackingEvents from "./article-list-item-tracking-events";
+import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import getImageUri from "./utils";
 import styles from "./styles";
 
-const AuthorProfileListItem = item => {
+const ArticleListItem = item => {
   const {
     headline,
     imageRatio,
@@ -69,7 +69,7 @@ const AuthorProfileListItem = item => {
   );
 };
 
-AuthorProfileListItem.propTypes = propTypes;
-AuthorProfileListItem.defaultProps = defaultProps;
+ArticleListItem.propTypes = propTypes;
+ArticleListItem.defaultProps = defaultProps;
 
-export default authorProfileListItemTrackingEvents(AuthorProfileListItem);
+export default articleListItemTrackingEvents(ArticleListItem);
