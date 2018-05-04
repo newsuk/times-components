@@ -7,4 +7,4 @@ AppRegistry.registerComponent("storybooknative", () =>
   Fructose(getStories, { platform: "native" })
 );
 
-export default Fructose(getStories);
+export default Fructose(getStories, { platform: "native" });
