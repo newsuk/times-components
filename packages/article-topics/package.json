@@ -1,9 +1,9 @@
 {
-  "name": "@times-components/topics",
-  "version": "0.5.11",
+  "name": "@times-components/article-topics",
+  "version": "0.0.1",
   "description": "Map of Topics related to the Article",
-  "main": "dist/topics",
-  "dev": "src/topics",
+  "main": "dist/article-topics",
+  "dev": "src/article-topics",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -27,7 +27,7 @@
     "react",
     "native",
     "web",
-    "topics",
+    "article-topics",
     "component"
   ],
   "license": "BSD-3-Clause",

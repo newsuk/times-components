@@ -2,8 +2,8 @@ import "react-native";
 import React from "react";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
-import Topics from "../src/topics";
-import Topic from "../src/topic";
+import ArticleTopics from "../src/article-topics";
+import ArticleTopic from "../src/article-topic";
 import topicData from "../fixtures/topics";
 
 module.exports = () => {
@@ -15,20 +15,20 @@ module.exports = () => {
     mockDate.reset();
   });
 
-  it("renders a group of Topics in the correct order", () => {
-    const wrapper = shallow(<Topics topics={topicData} />);
+  it("renders a group of topics in the correct order", () => {
+    const wrapper = shallow(<ArticleTopics topics={topicData} />);
 
     expect(wrapper).toMatchSnapshot(
       "1. Render a group of topics in the correct order"
     );
   });
 
-  it("renders a single Topic", () => {
+  it("renders a single topic", () => {
     const wrapper = shallow(
-      <Topic id={topicData[0].id} name={topicData[0].name} />
+      <ArticleTopic id={topicData[0].id} name={topicData[0].name} />
     ).dive();
 
-    expect(wrapper).toMatchSnapshot("2. Render a single Topic");
+    expect(wrapper).toMatchSnapshot("2. Render a single topic");
   });
 
   it("onPress handler is working", done => {
@@ -40,7 +40,7 @@ module.exports = () => {
     };
 
     shallow(
-      <Topic
+      <ArticleTopic
         id={topicData[0].id}
         name={topicData[0].name}
         onPress={(e, data) => onPress(e, data)}
@@ -59,7 +59,7 @@ module.exports = () => {
       }
     };
 
-    shallow(<Topic id={topicData[0].id} name={topicData[0].name} />, {
+    shallow(<ArticleTopic id={topicData[0].id} name={topicData[0].name} />, {
       context
     }).simulate("press", "events");
 

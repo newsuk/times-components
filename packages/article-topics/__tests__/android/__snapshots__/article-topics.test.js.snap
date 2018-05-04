@@ -10,27 +10,27 @@ exports[`1. Render a group of topics in the correct order 1`] = `
     }
   }
 >
-  <WithTrackEvents(Topic)
+  <WithTrackEvents(ArticleTopic)
     id="football"
     name="Football"
     onPress={[Function]}
   />
-  <WithTrackEvents(Topic)
+  <WithTrackEvents(ArticleTopic)
     id="chelsea"
     name="Chelsea FC"
     onPress={[Function]}
   />
-  <WithTrackEvents(Topic)
+  <WithTrackEvents(ArticleTopic)
     id="arsenal"
     name="Arsenal"
     onPress={[Function]}
   />
-  <WithTrackEvents(Topic)
+  <WithTrackEvents(ArticleTopic)
     id="manchester-united"
     name="Manchester United FC"
     onPress={[Function]}
   />
-  <WithTrackEvents(Topic)
+  <WithTrackEvents(ArticleTopic)
     id="rugby-union"
     name="Rugby Union"
     onPress={[Function]}
@@ -38,12 +38,9 @@ exports[`1. Render a group of topics in the correct order 1`] = `
 </View>
 `;
 
-exports[`2. Render a single Topic 1`] = `
+exports[`2. Render a single topic 1`] = `
 <Link
-  index="0"
   onPress={[Function]}
-  responsiveLinkStyles={null}
-  target={null}
   url="/topic/football"
 >
   <View
@@ -52,16 +49,19 @@ exports[`2. Render a single Topic 1`] = `
         "borderColor": "#DBDBDB",
         "borderRadius": 1,
         "borderWidth": 1,
-        "marginRight": "10px",
-        "marginTop": "10px",
+        "marginRight": 10,
+        "marginTop": 10,
         "paddingBottom": 12,
-        "paddingLeft": "15px",
-        "paddingRight": "15px",
+        "paddingLeft": 15,
+        "paddingRight": 15,
         "paddingTop": 12,
       }
     }
   >
     <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -76,7 +76,7 @@ exports[`2. Render a single Topic 1`] = `
 </Link>
 `;
 
-exports[`Topic test on web:  onPress sends analytics 1`] = `
+exports[`Article Topics test on android:  onPress sends analytics 1`] = `
 Array [
   Array [
     Object {
