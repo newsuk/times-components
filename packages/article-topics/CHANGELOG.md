@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# 1.0.0 (2018-05-04)
+
+
+* BREAKING CHANGE: Rename `topics` package to `article-topics` (#915) ([d77e019](https://github.com/newsuk/times-components/commit/d77e019)), closes [#915](https://github.com/newsuk/times-components/issues/915)
+
+
+### BREAKING CHANGES
+
+* rename topics package to article-topics
+
+* fix: typo in readme
+
+* fix: update snapshots
+
+
+
+
 <a name="0.5.11"></a>
 ## [0.5.11](https://github.com/newsuk/times-components/compare/@times-components/topics@0.5.10...@times-components/topics@0.5.11) (2018-04-30)
 
