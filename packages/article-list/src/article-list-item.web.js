@@ -18,12 +18,10 @@ import {
 const ArticleListItem = props => {
   const {
     headline,
-    id,
     imageRatio,
     imageSize,
     isLoading,
     label,
-    leadAsset,
     longSummary,
     onPress,
     publicationName,

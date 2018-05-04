@@ -15,11 +15,9 @@ import styles from "./styles";
 const ArticleListItem = props => {
   const {
     headline,
-    id,
     imageRatio,
     isLoading,
     label,
-    leadAsset,
     onPress,
     publicationName,
     publishedTime,
