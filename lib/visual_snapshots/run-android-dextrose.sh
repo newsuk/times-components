@@ -12,3 +12,4 @@ npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &
 npx react-native run-android --variant=release --no-packager
 npx dextrose run --config ./dextrose/dextrose.android.js --timeout 600000  --snapshotWait 2000
 kill -9 $EMU_PID
+sleep 1
