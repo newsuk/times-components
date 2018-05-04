@@ -158,7 +158,8 @@ export default {
             request: {
               query: addTypenameToDocument(topicQuery),
               variables: {
-                slug: "animals"
+                slug: "animals",
+                imageRatio: "3:2"
               }
             },
             result: topicFixture
@@ -171,6 +172,7 @@ export default {
           <MockedProvider mocks={mocks}>
             <TopicProvider
               slug="animals"
+              imageRatio="3:2"
               debounceTimeMs={0}
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
