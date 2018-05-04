@@ -29,7 +29,7 @@ const AuthorProfile = ({
     return <AuthorProfileListPageError refetch={refetch} />;
   }
 
-  if (isLoading) {
+  if (isLoading || !author) {
     return (
       <AuthorProfileListContent
         articlesLoading
@@ -51,8 +51,7 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } =
-    author || {};
+  } = author;
 
   const SelectedProvider = hasLeadAssets
     ? AuthorArticlesWithImagesProvider
