@@ -66,6 +66,11 @@ exports[`ArticleList tests on ios:  should render an article list item 1`] = `
             >
               <Image
                 onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "/test-item-image-url&resize=1440",
+                  }
+                }
                 style={
                   Object {
                     "bottom": 0,

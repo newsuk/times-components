@@ -219,7 +219,7 @@ class ArticleList extends Component {
               );
             })}
         </View>
-        {paginationComponent({ hideResults: true, autoScroll: true })}
+        {paginationComponent({ autoScroll: true, hideResults: true })}
       </ListContentContainer>
     );
 

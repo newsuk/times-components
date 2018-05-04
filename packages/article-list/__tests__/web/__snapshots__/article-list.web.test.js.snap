@@ -2,7 +2,7 @@
 
 exports[`ArticleList tests on web:  should render an article list item 1`] = `
 <a
-  href="www.test-example.com"
+  href="/test-article-url"
   onClick={[Function]}
   style={
     Object {
@@ -33,7 +33,7 @@ exports[`ArticleList tests on web:  should render an article list item 1`] = `
             >
               <img
                 alt=""
-                src=""
+                src="/test-item-image-url&resize=100"
                 style={
                   Object {
                     "display": "block",
@@ -207,7 +207,7 @@ exports[`ArticleList tests on web:  should render an article list item loading s
 
 exports[`ArticleList tests on web:  should render an article list item without images 1`] = `
 <a
-  href="www.test-example.com"
+  href="/test-article-url"
   onClick={[Function]}
   style={
     Object {

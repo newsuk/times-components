@@ -2,9 +2,19 @@ import PropTypes from "prop-types";
 
 export const propTypes = {
   headline: PropTypes.string,
+  id: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
+  ]).isRequired,
   imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
   label: PropTypes.string,
+  leadAsset: PropTypes.shape({
+    crop: PropTypes.shape({
+      url: PropTypes.string
+    }),
+    title: PropTypes.string
+  }),
   longSummary: PropTypes.array,
   onPress: PropTypes.func,
   publicationName: PropTypes.string,

@@ -16,17 +16,27 @@ import {
 export default () => {
   const listItemProps = {
     headline: "test headline",
+    id: "test id",
     imageRatio: 3 / 2,
     imageSize: 100,
     isLoading: false,
     label: "TESTLABEL",
+    leadAsset: {
+      crop: {
+        url: "/test-item-image-url"
+      }
+    },
     longSummary,
     publicationName: "TIMES",
     shortSummary,
     showImage: true,
     summary,
-    url: "www.test-example.com"
+    url: "/test-article-url"
   };
+
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
 
   it("should render an article list page error correctly", () => {
     const refetchMock = jest.fn();
@@ -56,26 +66,40 @@ export default () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should handle the link to an article from an article list item", () => {
+  it("should handle the link to an article from an article list item with analytics", () => {
     const onPressMock = jest.fn();
+    const analyticsMock = jest.fn();
     const wrapper = shallow(
-      <ArticleListItem {...listItemProps} onPress={onPressMock} />
+      <ArticleListItem {...listItemProps} onPress={onPressMock} />,
+      {
+        context: { tracking: { analytics: analyticsMock } }
+      }
     );
 
     wrapper.simulate("press");
 
     expect(onPressMock).toHaveBeenCalled();
+    expect(analyticsMock).toHaveBeenCalledWith({
+      component: "ArticleListItem",
+      action: "Pressed",
+      attrs: {
+        articleId: "test id",
+        articleHeadline: "test headline"
+      }
+    });
   });
 
   it("should render an article list item loading state", () => {
-    const wrapper = renderer.create(<ArticleListItem {...listItemProps} isLoading />);
+    const wrapper = renderer.create(
+      <ArticleListItem {...listItemProps} isLoading />
+    );
 
     expect(wrapper).toMatchSnapshot();
   });
 
   it("should render an article list item without images", () => {
     const wrapper = renderer.create(
-      <ArticleListItem {...listItemProps} showImage={false} />
+      <ArticleListItem {...listItemProps} leadAsset={{}} showImage={false} />
     );
 
     expect(wrapper).toMatchSnapshot();
