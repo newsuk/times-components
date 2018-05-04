@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",
@@ -36,8 +36,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.6.2",
-    "@times-components/storybook": "0.9.4",
+    "@times-components/jest-configurator": "0.6.3",
+    "@times-components/storybook": "0.9.5",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -56,8 +56,8 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.6.5",
-    "@times-components/utils": "0.8.1",
+    "@times-components/styleguide": "0.6.6",
+    "@times-components/utils": "0.8.2",
     "prop-types": "15.6.0",
     "svgs": "3.2.1"
   },

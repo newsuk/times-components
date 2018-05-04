@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/jest-configurator": "0.6.2",
+    "@times-components/jest-configurator": "0.6.3",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -46,8 +46,8 @@
     "@storybook/addon-knobs": "3.4.1",
     "@storybook/addons": "3.4.1",
     "@storybook/react-native": "3.4.1",
-    "@times-components/jest-configurator": "0.6.2",
-    "@times-components/utils": "0.8.1",
+    "@times-components/jest-configurator": "0.6.3",
+    "@times-components/utils": "0.8.2",
     "apollo-cache-inmemory": "1.1.5",
     "apollo-client": "2.2.3",
     "apollo-link-http": "1.5.3",
