@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile test on web does not re-render the author head if the name changes 1`] = `
-<responsive-styles__component
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  aria-level="1"
-  testID="author-name"
->
-  Deborah Haynes
-</responsive-styles__component>
-`;
-
-exports[`AuthorProfile test on web does not render good quality images if the item is quickly scrolled passed 1`] = `
+exports[`AuthorProfile tests on web does not render good quality images if the item is quickly scrolled passed 1`] = `
 Array [
   <img
     alt=""
@@ -41,18 +30,7 @@ Array [
 ]
 `;
 
-exports[`AuthorProfile test on web does re-render the author head if the loading state changes 1`] = `
-<responsive-styles__component
-  accessibilityLabel="author-name"
-  accessibilityRole="heading"
-  aria-level="1"
-  testID="author-name"
->
-  second name
-</responsive-styles__component>
-`;
-
-exports[`AuthorProfile test on web renders a good quality image if it is visible 1`] = `
+exports[`AuthorProfile tests on web renders a good quality image if it is visible 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
@@ -75,7 +53,7 @@ exports[`AuthorProfile test on web renders a good quality image if it is visible
 </div>
 `;
 
-exports[`AuthorProfile test on web renders a poor quality image if it is not visible 1`] = `
+exports[`AuthorProfile tests on web renders a poor quality image if it is not visible 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
@@ -98,7 +76,7 @@ exports[`AuthorProfile test on web renders a poor quality image if it is not vis
 </div>
 `;
 
-exports[`AuthorProfile test on web renders good quality images if there is no IntersectionObserver 1`] = `
+exports[`AuthorProfile tests on web renders good quality images if there is no IntersectionObserver 1`] = `
 Array [
   <TimesImage
     aspectRatio={1.5}
@@ -277,141 +255,146 @@ Array [
 ]
 `;
 
-exports[`AuthorProfile test on web renders page error 1`] = `
-<AuthorProfileListingError
+exports[`AuthorProfile tests on web renders page error 1`] = `
+<AuthorProfileListError
   refetch={[Function]}
 >
-  <responsive-styles__component>
-    <View
-      className="responsive-styles__component-fbPFZZ kWpEOX"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ kWpEOX"
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "flexBasis": "50%",
+        "maxWidth": 548,
+      }
+    }
+  >
+    <div>
+      <Text
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#1D1D1B",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 35,
+            "marginBottom": "10px",
+            "marginTop": "20px",
+            "textAlign": "center",
+          }
+        }
       >
-        <responsive-styles__component>
-          <Text
-            className="responsive-styles__component-fbPFZZ egBQqt"
+        <div
+          dir="auto"
+        >
+          Something's gone wrong
+        </div>
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04-Regular",
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        <div
+          dir="auto"
+        >
+          We can't load the page you have requested. Please check your network connection and retry to continue
+        </div>
+      </Text>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxWidth": 300,
+            "paddingBottom": "10px",
+            "paddingTop": "40px",
+            "width": 200,
+          }
+        }
+      >
+        <div>
+          <TouchableOpacity
+            accessibilityLabel="Retry"
+            accessible={true}
+            activeOpacity={0.2}
+            focusedOpacity={0.7}
+            onPress={[Function]}
           >
-            <div
-              className="responsive-styles__component-fbPFZZ egBQqt"
-              dir="auto"
+            <View
+              accessibilityLabel="Retry"
+              accessible={true}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "touchAction": "manipulate",
+                  "transitionDuration": "0.15s",
+                  "transitionProperty": "opacity",
+                  "userSelect": "none",
+                }
+              }
             >
-              Something's gone wrong
-            </div>
-          </Text>
-        </responsive-styles__component>
-        <responsive-styles__component>
-          <Text
-            className="responsive-styles__component-fbPFZZ knwxCQ"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ knwxCQ"
-              dir="auto"
-            >
-              We can't load the page you have requested. Please check your network connection and retry to continue
-            </div>
-          </Text>
-        </responsive-styles__component>
-        <responsive-styles__component>
-          <View
-            className="responsive-styles__component-fbPFZZ kvPcCV"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ kvPcCV"
-            >
-              <Button
-                accessibilityLabel="Refresh the page"
-                color="#006699"
-                onPress={[Function]}
-                title="Retry"
+              <div
+                aria-label="Retry"
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                tabIndex="0"
               >
-                <TouchableOpacity
-                  accessibilityLabel="Refresh the page"
-                  accessibilityRole="button"
-                  activeOpacity={0.2}
-                  focusedOpacity={0.7}
-                  onPress={[Function]}
+                <View
                   style={
                     Object {
+                      "alignItems": "center",
                       "backgroundColor": "#006699",
-                      "borderRadius": 2,
+                      "flex": 1,
+                      "height": 44,
+                      "justifyContent": "center",
                     }
                   }
                 >
-                  <View
-                    accessibilityLabel="Refresh the page"
-                    accessibilityRole="button"
-                    accessible={true}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    style={
-                      Object {
-                        "backgroundColor": "#006699",
-                        "borderRadius": 2,
-                        "cursor": "pointer",
-                        "touchAction": "manipulate",
-                        "transitionDuration": "0.15s",
-                        "transitionProperty": "opacity",
-                        "userSelect": "none",
-                      }
-                    }
-                  >
-                    <div
-                      aria-label="Refresh the page"
-                      onKeyDown={[Function]}
-                      onKeyPress={[Function]}
-                      onKeyUp={[Function]}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
-                      role="button"
+                  <div>
+                    <Text
                       style={
                         Object {
-                          "backgroundColor": "rgba(0,102,153,1)",
+                          "color": "#FFF",
+                          "fontFamily": "GillSansMTStd-Medium",
                         }
                       }
-                      tabIndex="0"
                     >
-                      <Text
-                        style={
-                          Object {
-                            "color": "#fff",
-                            "fontWeight": "500",
-                            "padding": 8,
-                            "textAlign": "center",
-                            "textTransform": "uppercase",
-                          }
-                        }
+                      <div
+                        dir="auto"
                       >
-                        <div
-                          dir="auto"
-                        >
-                          Retry
-                        </div>
-                      </Text>
-                    </div>
-                  </View>
-                </TouchableOpacity>
-              </Button>
-            </div>
-          </View>
-        </responsive-styles__component>
-      </div>
-    </View>
-  </responsive-styles__component>
-</AuthorProfileListingError>
+                        RETRY
+                      </div>
+                    </Text>
+                  </div>
+                </View>
+              </div>
+            </View>
+          </TouchableOpacity>
+        </div>
+      </View>
+    </div>
+  </View>
+</AuthorProfileListError>
 `;
 
-exports[`AuthorProfile test on web renders profile 1`] = `
+exports[`AuthorProfile tests on web renders profile 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -530,7 +513,7 @@ exports[`AuthorProfile test on web renders profile 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -602,81 +585,79 @@ exports[`AuthorProfile test on web renders profile 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -687,81 +668,79 @@ exports[`AuthorProfile test on web renders profile 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -772,81 +751,79 @@ exports[`AuthorProfile test on web renders profile 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -910,7 +887,7 @@ exports[`AuthorProfile test on web renders profile 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content component 1`] = `
+exports[`AuthorProfile tests on web renders profile content component 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -985,7 +962,7 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -1026,101 +1003,98 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Top medal for forces dog who took a bite out of the Taliban
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Top medal for forces dog who took a bite out of the Taliban
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Friday November 17 2017, 12:01am, The Times
-                      </div>
+                        
+                        The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
                     </div>
                   </div>
                 </div>
@@ -1144,101 +1118,98 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Social media must raise game to beat terrorists, says UN chief
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Social media must raise game to beat terrorists, says UN chief
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Friday November 17 2017, 12:01am, The Times
-                      </div>
+                        
+                        The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
                     </div>
                   </div>
                 </div>
@@ -1262,101 +1233,98 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
             }
           }
         >
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ gBgAce"
+          >
             <div
-              className="responsive-styles__component-fbPFZZ yHfos"
+              className="responsive-styles__component-fbPFZZ woNlo"
             >
-              <div
-                className="responsive-styles__component-fbPFZZ woNlo"
-              >
-                <div>
-                  <div
-                    className="authorProfileImage"
-                  >
-                    <div>
-                      <div
+              <div>
+                <div
+                  className="authorProfileImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=100"
                         style={
                           Object {
-                            "display": "table",
-                            "height": 0,
-                            "overflow": "hidden",
-                            "paddingBottom": "66.66666666666667%",
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
                           }
                         }
-                      >
-                        <img
-                          alt=""
-                          src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=100"
+                      />
+                      <div>
+                        <div
                           style={
                             Object {
-                              "display": "block",
-                              "position": "absolute",
-                              "width": "100%",
-                              "zIndex": 1,
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                             }
                           }
                         />
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                              }
-                            }
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="authorProfileContent"
-                  >
-                    <div>
-                      <h3
-                        aria-level="3"
-                        dir="auto"
-                        role="heading"
-                        style={
-                          Object {
-                            "fontFamily": "TimesModern-Bold",
-                            "fontSize": "22px",
-                            "fontWeight": "400",
-                            "lineHeight": "22px",
-                            "marginBottom": "5px",
-                          }
+                </div>
+                <div
+                  className="authorProfileContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
                         }
-                      >
-                        Cuts have left the army 20 years out of date, says former general
-                      </h3>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "20px",
-                          }
+                      }
+                    >
+                      Cuts have left the army 20 years out of date, says former general
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
                         }
-                      >
-                        <span
-                          dir="auto"
-                        >
-                          
-                          Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
-                          ...
-                        </span>
-                      </div>
-                      <div
-                        aria-label="datePublication"
-                        data-testid="datePublication"
+                      }
+                    >
+                      <span
                         dir="auto"
-                        style={
-                          Object {
-                            "lineHeight": "15px",
-                            "marginBottom": "5px",
-                          }
-                        }
                       >
-                        Tuesday November 14 2017, 05:00pm, The Times
-                      </div>
+                        
+                        Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Tuesday November 14 2017, 05:00pm, The Times
                     </div>
                   </div>
                 </div>
@@ -1384,7 +1352,7 @@ exports[`AuthorProfile test on web renders profile content component 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content empty 1`] = `
+exports[`AuthorProfile tests on web renders profile content empty 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -1433,7 +1401,7 @@ exports[`AuthorProfile test on web renders profile content empty 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -1478,7 +1446,7 @@ exports[`AuthorProfile test on web renders profile content empty 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1488,85 +1456,81 @@ exports[`AuthorProfile test on web renders profile content item component 1`] = 
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1577,7 +1541,7 @@ exports[`AuthorProfile test on web renders profile content item component 1`] = 
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component with a specific image size 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component with a specific image size 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1587,85 +1551,81 @@ exports[`AuthorProfile test on web renders profile content item component with a
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1676,7 +1636,7 @@ exports[`AuthorProfile test on web renders profile content item component with a
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content item component with no image 1`] = `
+exports[`AuthorProfile tests on web renders profile content item component with no image 1`] = `
 <a
   href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
   onClick={[Function]}
@@ -1686,117 +1646,113 @@ exports[`AuthorProfile test on web renders profile content item component with n
     }
   }
 >
-  <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gBgAce"
+  >
     <div
-      className="responsive-styles__component-fbPFZZ yHfos"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <div
-        className="responsive-styles__component-fbPFZZ woNlo"
-      >
-        <div>
+      <div>
+        <div
+          className="authorProfileContent"
+        >
           <div
-            className="authorProfileContent"
+            className="responsive-styles__component-fbPFZZ dQznFS"
           >
-            <div
-              className="responsive-styles__component-fbPFZZ dQznFS"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "20px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "20px",
                   }
-                >
-                  <span
-                    dir="auto"
-                  >
-                    
-                    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                    ...
-                  </span>
-                </div>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
+                }
+              >
+                <span
                   dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
-                  }
                 >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                  
+                  The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
-            <div
-              className="responsive-styles__component-fbPFZZ jwwxoJ"
-            >
-              <div>
-                <h3
-                  aria-level="3"
-                  dir="auto"
-                  role="heading"
-                  style={
-                    Object {
-                      "fontFamily": "TimesModern-Bold",
-                      "fontSize": "22px",
-                      "fontWeight": "400",
-                      "lineHeight": "22px",
-                      "marginBottom": "5px",
-                    }
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ jwwxoJ"
+          >
+            <div>
+              <h3
+                aria-level="3"
+                dir="auto"
+                role="heading"
+                style={
+                  Object {
+                    "fontSize": "22px",
+                    "fontWeight": "400",
+                    "lineHeight": "22px",
+                    "marginBottom": "5px",
                   }
-                >
-                  Top medal for forces dog who took a bite out of the Taliban
-                </h3>
-                <div
-                  dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "20px",
-                    }
+                }
+              >
+                Top medal for forces dog who took a bite out of the Taliban
+              </h3>
+              <div
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "20px",
                   }
-                >
-                  <span
-                    dir="auto"
-                  >
-                    
-                    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                    ...
-                  </span>
-                </div>
-                <div
-                  aria-label="datePublication"
-                  data-testid="datePublication"
+                }
+              >
+                <span
                   dir="auto"
-                  style={
-                    Object {
-                      "lineHeight": "15px",
-                      "marginBottom": "5px",
-                    }
-                  }
                 >
-                  Friday November 17 2017, 12:01am, The Times
-                </div>
+                  
+                  The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                  ...
+                </span>
+              </div>
+              <div
+                aria-label="datePublication"
+                data-testid="datePublication"
+                dir="auto"
+                style={
+                  Object {
+                    "lineHeight": "15px",
+                    "marginBottom": "5px",
+                  }
+                }
+              >
+                Friday November 17 2017, 12:01am, The Times
               </div>
             </div>
           </div>
@@ -1807,7 +1763,7 @@ exports[`AuthorProfile test on web renders profile content item component with n
 </a>
 `;
 
-exports[`AuthorProfile test on web renders profile content loading 1`] = `
+exports[`AuthorProfile tests on web renders profile content loading 1`] = `
 <div>
   <div>
     <div />
@@ -1824,7 +1780,7 @@ exports[`AuthorProfile test on web renders profile content loading 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -1856,81 +1812,79 @@ exports[`AuthorProfile test on web renders profile content loading 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -1954,150 +1908,159 @@ exports[`AuthorProfile test on web renders profile content loading 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile error 1`] = `
-<AuthorProfileError
+exports[`AuthorProfile tests on web renders profile error 1`] = `
+<AuthorProfileListPageError
   refetch={[Function]}
 >
-  <responsive-styles__component>
+  <PageErrorContainer>
     <View
-      className="responsive-styles__component-fbPFZZ fkGisv"
+      className="responsive-styles__component-fbPFZZ hcvmyw"
     >
       <div
-        className="responsive-styles__component-fbPFZZ fkGisv"
+        className="responsive-styles__component-fbPFZZ hcvmyw"
       >
-        <responsive-styles__component>
+        <AuthorProfileListError
+          refetch={[Function]}
+        >
           <View
-            className="responsive-styles__component-fbPFZZ fnGrfx"
+            style={
+              Object {
+                "alignSelf": "center",
+                "flexBasis": "50%",
+                "maxWidth": 548,
+              }
+            }
           >
-            <div
-              className="responsive-styles__component-fbPFZZ fnGrfx"
-            >
-              <responsive-styles__component>
-                <Text
-                  className="responsive-styles__component-fbPFZZ gCSgGa"
+            <div>
+              <Text
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#1D1D1B",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 35,
+                    "marginBottom": "10px",
+                    "marginTop": "20px",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <div
+                  dir="auto"
                 >
-                  <div
-                    className="responsive-styles__component-fbPFZZ gCSgGa"
-                    dir="auto"
-                  >
-                    Something's gone wrong
-                  </div>
-                </Text>
-              </responsive-styles__component>
-              <responsive-styles__component>
-                <Text
-                  className="responsive-styles__component-fbPFZZ bDfrwz"
+                  Something's gone wrong
+                </div>
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "TimesDigitalW04-Regular",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <div
+                  dir="auto"
                 >
-                  <div
-                    className="responsive-styles__component-fbPFZZ bDfrwz"
-                    dir="auto"
+                  We can't load the page you have requested. Please check your network connection and retry to continue
+                </div>
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "maxWidth": 300,
+                    "paddingBottom": "10px",
+                    "paddingTop": "40px",
+                    "width": 200,
+                  }
+                }
+              >
+                <div>
+                  <TouchableOpacity
+                    accessibilityLabel="Retry"
+                    accessible={true}
+                    activeOpacity={0.2}
+                    focusedOpacity={0.7}
+                    onPress={[Function]}
                   >
-                    We can't load the page you have requested. Please check your network connection and retry to continue
-                  </div>
-                </Text>
-              </responsive-styles__component>
-              <responsive-styles__component>
-                <View
-                  className="responsive-styles__component-fbPFZZ hvuxLw"
-                >
-                  <div
-                    className="responsive-styles__component-fbPFZZ hvuxLw"
-                  >
-                    <Button
-                      accessibilityLabel="Refresh the page"
-                      color="#006699"
-                      onPress={[Function]}
-                      title="Retry"
-                    >
-                      <TouchableOpacity
-                        accessibilityLabel="Refresh the page"
-                        accessibilityRole="button"
-                        activeOpacity={0.2}
-                        focusedOpacity={0.7}
-                        onPress={[Function]}
-                        style={
-                          Object {
-                            "backgroundColor": "#006699",
-                            "borderRadius": 2,
-                          }
+                    <View
+                      accessibilityLabel="Retry"
+                      accessible={true}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "cursor": "pointer",
+                          "touchAction": "manipulate",
+                          "transitionDuration": "0.15s",
+                          "transitionProperty": "opacity",
+                          "userSelect": "none",
                         }
+                      }
+                    >
+                      <div
+                        aria-label="Retry"
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        tabIndex="0"
                       >
                         <View
-                          accessibilityLabel="Refresh the page"
-                          accessibilityRole="button"
-                          accessible={true}
-                          onKeyDown={[Function]}
-                          onKeyUp={[Function]}
-                          onResponderGrant={[Function]}
-                          onResponderMove={[Function]}
-                          onResponderRelease={[Function]}
-                          onResponderTerminate={[Function]}
-                          onResponderTerminationRequest={[Function]}
-                          onStartShouldSetResponder={[Function]}
                           style={
                             Object {
+                              "alignItems": "center",
                               "backgroundColor": "#006699",
-                              "borderRadius": 2,
-                              "cursor": "pointer",
-                              "touchAction": "manipulate",
-                              "transitionDuration": "0.15s",
-                              "transitionProperty": "opacity",
-                              "userSelect": "none",
+                              "flex": 1,
+                              "height": 44,
+                              "justifyContent": "center",
                             }
                           }
                         >
-                          <div
-                            aria-label="Refresh the page"
-                            onKeyDown={[Function]}
-                            onKeyPress={[Function]}
-                            onKeyUp={[Function]}
-                            onResponderGrant={[Function]}
-                            onResponderMove={[Function]}
-                            onResponderRelease={[Function]}
-                            onResponderTerminate={[Function]}
-                            onResponderTerminationRequest={[Function]}
-                            onStartShouldSetResponder={[Function]}
-                            role="button"
-                            style={
-                              Object {
-                                "backgroundColor": "rgba(0,102,153,1)",
-                              }
-                            }
-                            tabIndex="0"
-                          >
+                          <div>
                             <Text
                               style={
                                 Object {
-                                  "color": "#fff",
-                                  "fontWeight": "500",
-                                  "padding": 8,
-                                  "textAlign": "center",
-                                  "textTransform": "uppercase",
+                                  "color": "#FFF",
+                                  "fontFamily": "GillSansMTStd-Medium",
                                 }
                               }
                             >
                               <div
                                 dir="auto"
                               >
-                                Retry
+                                RETRY
                               </div>
                             </Text>
                           </div>
                         </View>
-                      </TouchableOpacity>
-                    </Button>
-                  </div>
-                </View>
-              </responsive-styles__component>
+                      </div>
+                    </View>
+                  </TouchableOpacity>
+                </div>
+              </View>
             </div>
           </View>
-        </responsive-styles__component>
-        <responsive-styles__component>
+        </AuthorProfileListError>
+        <PageErrorImageContainer>
           <View
-            className="responsive-styles__component-fbPFZZ dISvDf"
+            className="responsive-styles__component-fbPFZZ Xuekk"
           >
             <div
-              className="responsive-styles__component-fbPFZZ dISvDf"
+              className="responsive-styles__component-fbPFZZ Xuekk"
             >
               <TimesImage
                 aspectRatio={0.9090909090909091}
@@ -2188,14 +2151,14 @@ exports[`AuthorProfile test on web renders profile error 1`] = `
               </TimesImage>
             </div>
           </View>
-        </responsive-styles__component>
+        </PageErrorImageContainer>
       </div>
     </View>
-  </responsive-styles__component>
-</AuthorProfileError>
+  </PageErrorContainer>
+</AuthorProfileListPageError>
 `;
 
-exports[`AuthorProfile test on web renders profile loading 1`] = `
+exports[`AuthorProfile tests on web renders profile loading 1`] = `
 <div>
   <div>
     <div />
@@ -2212,7 +2175,7 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -2244,81 +2207,79 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2329,81 +2290,79 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2414,81 +2373,79 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
-              <div
-                className="authorProfileImage"
-              >
-                <div>
-                  <div
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
                     style={
                       Object {
-                        "display": "table",
-                        "height": 0,
-                        "overflow": "hidden",
-                        "paddingBottom": "66.66666666666667%",
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
                       }
                     }
-                  >
-                    <img
-                      alt=""
-                      src=""
+                  />
+                  <div>
+                    <div
                       style={
                         Object {
-                          "display": "block",
-                          "position": "absolute",
-                          "width": "100%",
-                          "zIndex": 1,
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                         }
                       }
                     />
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                          }
-                        }
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2512,85 +2469,16 @@ exports[`AuthorProfile test on web renders profile loading 1`] = `
 </div>
 `;
 
-exports[`AuthorProfile test on web renders profile separator 1`] = `<div />`;
+exports[`AuthorProfile tests on web renders profile separator 1`] = `<div />`;
 
-exports[`AuthorProfile test on web renders the author head 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ woNlo"
->
-  <div
-    data-testid="author-head"
-  >
-    <header
-      className="responsive-styles__component-fbPFZZ eNPgyU"
-      role="banner"
-    >
-      <div
-        className="responsive-styles__component-fbPFZZ fRtPsM"
-      />
-      <h1
-        aria-label="author-name"
-        aria-level="1"
-        className="responsive-styles__component-fbPFZZ dkRirA"
-        data-testid="author-name"
-        dir="auto"
-        role="heading"
-      >
-        Deborah Haynes
-      </h1>
-      <h2
-        aria-level="2"
-        dir="auto"
-        role="heading"
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-          }
-        }
-      >
-        
-      </h2>
-      <div>
-        <svg
-          height={15}
-          width={15}
-        >
-          <path
-            fill="#006699"
-          />
-        </svg>
-        <a
-          dir="auto"
-          href="https://twitter.com/jdoe"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="link"
-        >
-          @
-          jdoe
-        </a>
-      </div>
-      <div
-        className="responsive-styles__component-fbPFZZ yjaCW"
-      >
-        <div
-          data-testid="author-bio"
-          dir="auto"
-        />
-      </div>
-    </header>
-  </div>
-</div>
-`;
-
-exports[`AuthorProfile test on web renders with an intersection observer which uses the expected options 1`] = `
+exports[`AuthorProfile tests on web renders with an intersection observer which uses the expected options 1`] = `
 Object {
   "rootMargin": "50px",
   "threshold": 0.5,
 }
 `;
 
-exports[`AuthorProfile test on web renders with no author 1`] = `
+exports[`AuthorProfile tests on web renders with no author 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -2639,7 +2527,7 @@ exports[`AuthorProfile test on web renders with no author 1`] = `
     </div>
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ cvTinV"
+    className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
       <div>
@@ -2671,43 +2559,41 @@ exports[`AuthorProfile test on web renders with no author 1`] = `
         data-testid="empty.0"
         id="empty.0"
       >
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2718,43 +2604,41 @@ exports[`AuthorProfile test on web renders with no author 1`] = `
         id="empty.1"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>
@@ -2765,43 +2649,41 @@ exports[`AuthorProfile test on web renders with no author 1`] = `
         id="empty.2"
       >
         <div />
-        <div>
-          <div
-            className="responsive-styles__component-fbPFZZ yHfos"
-          >
-            <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gBgAce"
+        >
+          <div>
+            <div
+              className="authorProfileContent"
+            >
               <div
-                className="authorProfileContent"
-              >
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-                <div
-                  style={
-                    Object {
-                      "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                    }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
                   }
-                />
-              </div>
+                }
+              />
             </div>
           </div>
         </div>

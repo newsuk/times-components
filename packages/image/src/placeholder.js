@@ -3,7 +3,7 @@ import { View, ViewPropTypes } from "react-native";
 import { Svg, G, Path } from "svgs";
 import Gradient from "@times-components/gradient";
 import { colours } from "@times-components/styleguide";
-import styles from "../styles";
+import styles from "./styles";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 

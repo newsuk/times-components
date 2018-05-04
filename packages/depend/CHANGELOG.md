@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/depend@0.2.0...@times-components/depend@0.2.1) (2018-05-03)
+
+
+### Bug Fixes
+
+* adds support for picking namespaced packages ([#910](https://github.com/newsuk/times-components/issues/910)) ([f5600ea](https://github.com/newsuk/times-components/commit/f5600ea))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/depend@0.1.14...@times-components/depend@0.2.0) (2018-04-17)
 

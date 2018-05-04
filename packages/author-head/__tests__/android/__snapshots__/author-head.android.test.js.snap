@@ -93,6 +93,90 @@ exports[`AuthorHead test on android renders 1`] = `
 </View>
 `;
 
+exports[`AuthorHead test on android renders the loading state 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F8F3",
+        "minHeight": 264,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "height": 100,
+        "position": "absolute",
+        "top": 30,
+        "width": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "#FFFFFF",
+          "borderRadius": 50,
+          "height": 100,
+          "overflow": "hidden",
+          "width": 100,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.07922796533956822,
+              "y": 0.09442021232736122,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`AuthorHead test on android renders with data 1`] = `
 <View
   style={

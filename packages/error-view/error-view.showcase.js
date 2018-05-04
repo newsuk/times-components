@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 import { View, ViewPropTypes, Text, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
-import Video from "@times-components/video";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
 
@@ -89,29 +88,6 @@ export default {
               <ErrorState error={error} style={styles.customError} />
             ) : (
               <FiresOnError onError={onError} />
-            )
-          }
-        </ErrorView>
-      )
-    },
-    {
-      type: "story",
-      name: "handling a broken video",
-      component: () => (
-        <ErrorView>
-          {({ hasError, onError, error }) =>
-            hasError ? (
-              <ErrorState error={error} style={{ width: 400, height: 300 }} />
-            ) : (
-              <Video
-                style={{ width: 400, height: 300 }}
-                width={400}
-                height={300}
-                policyKey="x"
-                videoId="y"
-                accountId="z"
-                onError={onError}
-              />
             )
           }
         </ErrorView>

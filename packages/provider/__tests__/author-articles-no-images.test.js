@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { AuthorArticlesNoImagesProvider } from "../src/provider";
+import AuthorArticlesNoImagesProvider from "../src/author-articles-no-images-base";
 
 const renderComponent = child =>
   renderer.create(

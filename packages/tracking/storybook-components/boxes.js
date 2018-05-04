@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Text, FlatList } from "react-native";
 
@@ -7,7 +7,7 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-export default class Boxes extends React.Component {
+export default class Boxes extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);

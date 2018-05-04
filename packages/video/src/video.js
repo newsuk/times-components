@@ -1,22 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import Image from "@times-components/image";
 
 import Touchable from "./touchable";
 import PlayIcon from "./play-icon";
 import { propTypes, defaultProps } from "./video.proptypes";
-
-const styles = StyleSheet.create({
-  overlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});
+import styles from "./styles/video.styles";
 
 const Video = ({
   poster,

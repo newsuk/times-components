@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import gql from "graphql-tag";
@@ -198,7 +198,7 @@ describe("Provider Tests", () => {
 
     jest.spyOn(console, "error").mockImplementation(() => {});
 
-    class ErrorSpy extends React.Component {
+    class ErrorSpy extends Component {
       /* eslint class-methods-use-this: "off" */
       componentDidCatch(e) {
         expect(e.message).toEqual("debounceTimeMs prop required");

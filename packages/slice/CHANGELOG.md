@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.9"></a>
+## [0.18.9](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.8...@times-components/slice@0.18.9) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
 <a name="0.18.8"></a>
 ## [0.18.8](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.7...@times-components/slice@0.18.8) (2018-04-30)
 
