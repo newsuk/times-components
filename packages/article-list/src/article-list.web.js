@@ -10,7 +10,7 @@ import AuthorProfileListPagination from "./article-list-pagination";
 import AuthorProfileListItem from "./article-list-item";
 import AuthorProfileListItemSeparator from "./article-list-item-separator";
 import AuthorProfileListError from "./article-list-error";
-import { propTypes, defaultProps } from "./article-list-content-prop-types";
+import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
