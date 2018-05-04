@@ -2,6 +2,8 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
+import ArticleList from "../src/article-list.js";
 import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
@@ -12,6 +14,7 @@ import {
   shortSummary,
   summary
 } from "../fixtures/article-list-item-summaries.json";
+import pagedResult from "./paged-result";
 
 export default () => {
   const listItemProps = {
@@ -114,6 +117,32 @@ export default () => {
   it("should render the article list pagination correctly", () => {
     const tree = renderer.create(
       <ArticleListPagination count={20} page={1} pageSize={10} />
+    );
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  const articleListProps = {
+    analyticsStream: () => {},
+    onArticlePress: () => {},
+    onTwitterLinkPress: () => {},
+    refetch: () => {},
+    slug: "deborah-haynes"
+  };
+
+  it("should render an article list", () => {
+    const pageSize = 3;
+    const results = pagedResult(0, pageSize);
+    const tree = renderer.create(
+      <ArticleList
+        {...fixtureGenerator.makeAuthor({ withImages: true })}
+        articles={results.data.author.articles.list}
+        imageRatio={3 / 2}
+        page={1}
+        pageSize={pageSize}
+        showImages
+        {...articleListProps}
+      />
     );
 
     expect(tree).toMatchSnapshot();

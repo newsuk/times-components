@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ArticleList tests on web:  should render an article list 1`] = `
+<div
+  style={
+    Object {
+      "borderBottomColor": "red",
+      "borderLeftColor": "red",
+      "borderRightColor": "red",
+      "borderRightWidth": "1px",
+      "borderTopColor": "red",
+    }
+  }
+/>
+`;
+
 exports[`ArticleList tests on web:  should render an article list item 1`] = `
 <a
   href="/test-article-url"
@@ -92,7 +106,6 @@ exports[`ArticleList tests on web:  should render an article list item 1`] = `
               dir="auto"
               style={
                 Object {
-                  "fontFamily": "TimesDigitalW04",
                   "lineHeight": "20px",
                 }
               }
@@ -262,7 +275,6 @@ exports[`ArticleList tests on web:  should render an article list item without i
                 dir="auto"
                 style={
                   Object {
-                    "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
                 }
@@ -327,7 +339,6 @@ exports[`ArticleList tests on web:  should render an article list item without i
                 dir="auto"
                 style={
                   Object {
-                    "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
                 }

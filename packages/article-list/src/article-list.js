@@ -18,6 +18,7 @@ const viewabilityConfig = {
 class ArticleList extends Component {
   constructor(props) {
     super(props);
+    console.log("native");
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
