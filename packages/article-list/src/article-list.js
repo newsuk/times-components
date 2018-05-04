@@ -15,7 +15,7 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-class AuthorProfileListContent extends Component {
+class ArticleList extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
@@ -174,10 +174,8 @@ class AuthorProfileListContent extends Component {
   }
 }
 
-AuthorProfileListContent.propTypes = propTypes;
-AuthorProfileListContent.defaultProps = defaultProps;
+ArticleList.propTypes = propTypes;
+ArticleList.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(AuthorProfileListContent);
-export {
-  default as AuthorProfileListPageError
-} from "./article-list-page-error";
+export default withTrackScrollDepth(ArticleList);
+export { default as ArticleListPageError } from "./article-list-page-error";

@@ -5,7 +5,7 @@ import AuthorProfileListError from "./article-list-error";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
-const AuthorProfileListPageError = ({ refetch }) => (
+const ArticleListPageError = ({ refetch }) => (
   <View style={styles.pageErrorContainer}>
     <View style={styles.pageErrorImageContainer}>
       <Image
@@ -17,6 +17,6 @@ const AuthorProfileListPageError = ({ refetch }) => (
   </View>
 );
 
-AuthorProfileListPageError.propTypes = propTypes;
+ArticleListPageError.propTypes = propTypes;
 
-export default AuthorProfileListPageError;
+export default ArticleListPageError;

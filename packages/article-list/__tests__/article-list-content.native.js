@@ -8,7 +8,7 @@ import authorProfileFixture from "@times-components/provider-test-tools/fixtures
 import AuthorProfileItem from "../src/article-list-item";
 import pagedResult from "./paged-result";
 import test from "./helper";
-import AuthorProfileListContent from "../src/article-list.js";
+import ArticleList from "../src/article-list.js";
 
 // A hack until this is resolved: https://github.com/facebook/react-native/pull/13048
 jest.mock("ScrollView", () => {
@@ -50,7 +50,7 @@ export default () => {
 
   it("renders page error", () => {
     const wrapper = shallow(
-      <AuthorProfileListContent
+      <ArticleList
         count={0}
         articles={[]}
         author={fixtureGenerator.makeAuthor()}
@@ -79,7 +79,7 @@ export default () => {
     const reporter = jest.fn();
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
-      <AuthorProfileListContent
+      <ArticleList
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -128,7 +128,7 @@ export default () => {
     const reporter = jest.fn();
     const results = pagedResult(0, 3);
     const authorProfileContent = shallow(
-      <AuthorProfileListContent
+      <ArticleList
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -162,7 +162,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileListContent
+      <ArticleList
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -194,7 +194,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileListContent
+      <ArticleList
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -223,7 +223,7 @@ export default () => {
     const results = pagedResult(0, 3);
 
     const comp = RCT.create(
-      <AuthorProfileListContent
+      <ArticleList
         count={10}
         articles={results.data.author.articles.list}
         author={authorProfileFixture.data.author}
@@ -247,5 +247,5 @@ export default () => {
     expect(onNext).toHaveBeenCalled();
   });
 
-  test(AuthorProfileListContent);
+  test(ArticleList);
 };

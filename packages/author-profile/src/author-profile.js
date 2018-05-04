@@ -1,7 +1,7 @@
 import React from "react";
 import get from "lodash.get";
-import AuthorProfileListContent, {
-  AuthorProfileListPageError
+import ArticleList, {
+  ArticleListPageError
 } from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import {
@@ -26,12 +26,12 @@ const AuthorProfile = ({
   slug
 }) => {
   if (error) {
-    return <AuthorProfileListPageError refetch={refetch} />;
+    return <ArticleListPageError refetch={refetch} />;
   }
 
   if (isLoading || !author) {
     return (
-      <AuthorProfileListContent
+      <ArticleList
         articlesLoading
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
@@ -72,7 +72,7 @@ const AuthorProfile = ({
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
       }) => (
-        <AuthorProfileListContent
+        <ArticleList
           articles={get(data, "articles.list", [])}
           biography={biography}
           count={get(articles, "count", 0)}
