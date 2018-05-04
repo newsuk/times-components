@@ -5,7 +5,7 @@ import { LateralSpacingDecorator } from "@times-components/storybook";
 import Pagination, { withPageState } from "./src/pagination";
 import { PreviousPageIcon, NextPageIcon } from "./src/pagination-icons";
 
-export const pagination = {
+const pagination = {
   name: "Composed/Pagination",
   children: [
     {
@@ -172,3 +172,5 @@ export const icons = {
     }
   ]
 };
+
+export default pagination;

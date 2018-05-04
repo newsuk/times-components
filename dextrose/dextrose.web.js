@@ -11,7 +11,12 @@ const config = {
     "PaginationTracking",
     "Provider",
     "TrackingPage",
-    "TrackingEvent"
+    "TrackingEvent",
+    "Error",
+    "error",
+    "AuthorProfileLoading",
+    "Video",
+    "Tracking"
   ],
   breakpoints: [520]
 };

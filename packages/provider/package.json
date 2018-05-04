@@ -8,8 +8,6 @@
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -58,7 +56,6 @@
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
-    "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",

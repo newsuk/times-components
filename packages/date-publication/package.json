@@ -12,8 +12,6 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -44,7 +42,6 @@
     "babel-plugin-flow-react-proptypes": "22.0.0",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
-    "dextrose": "1.7.6",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
