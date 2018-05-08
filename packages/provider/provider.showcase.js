@@ -168,7 +168,11 @@ export default {
 
         return (
           <MockedProvider mocks={mocks}>
-            <TopicArticlesProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
+            <TopicArticlesProvider
+              slug="animals"
+              imageRatio="3:2"
+              debounceTimeMs={0}
+            >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </TopicArticlesProvider>
           </MockedProvider>
