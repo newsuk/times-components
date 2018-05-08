@@ -9,11 +9,11 @@ import { MockedProvider } from "@times-components/utils";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider,
-  TopicProvider
+  TopicArticlesProvider
 } from "./src/provider.js";
 import { query as authorProfileQuery } from "./src/author-profile";
 import { query as articleQuery } from "./src/article";
-import { query as topicQuery } from "./src/topic";
+import { query as topicArticlesQuery } from "./src/topic-articles";
 
 export default {
   name: "Helpers/Provider",
@@ -151,12 +151,12 @@ export default {
     },
     {
       type: "story",
-      name: "Topic",
+      name: "Topic Articles",
       component: () => {
         const mocks = [
           {
             request: {
-              query: addTypenameToDocument(topicQuery),
+              query: addTypenameToDocument(topicArticlesQuery),
               variables: {
                 slug: "animals",
                 imageRatio: "3:2"
@@ -168,9 +168,9 @@ export default {
 
         return (
           <MockedProvider mocks={mocks}>
-            <TopicProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
+            <TopicArticlesProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </TopicProvider>
+            </TopicArticlesProvider>
           </MockedProvider>
         );
       }

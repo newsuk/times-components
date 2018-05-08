@@ -3,13 +3,13 @@ import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { addTypenameToDocument } from "apollo-utilities";
 import fixture from "@times-components/provider-test-tools/fixtures/topic.json";
-import { TopicProvider } from "../src/provider";
-import { query as topicQuery } from "../src/topic";
+import { TopicArticlesProvider } from "../src/provider";
+import { query as topicArticlesQuery } from "../src/topic-articles";
 
 const mocks = [
   {
     request: {
-      query: addTypenameToDocument(topicQuery),
+      query: addTypenameToDocument(topicArticlesQuery),
       variables: {
         slug: "animals",
         imageRatio: "3:2"
@@ -22,9 +22,9 @@ const mocks = [
 const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <TopicProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
+      <TopicArticlesProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
         {child}
-      </TopicProvider>
+      </TopicArticlesProvider>
     </MockedProvider>
   );
 
