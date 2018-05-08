@@ -1,8 +1,18 @@
 import React from "react";
-import { Text } from "react-native";
+import PropTypes from "prop-types";
 import TopicHead from "./topic-head";
-import styles from "./styles";
 
-export default ({ name, description }) => (
+const Topic = ({ name, description }) => (
   <TopicHead name={name} description={description} />
 );
+
+Topic.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string
+};
+
+Topic.defaultProps = {
+  description: ""
+};
+
+export default Topic;

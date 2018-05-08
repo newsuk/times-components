@@ -10,6 +10,16 @@ export default {
       name: "Topic",
       component: () => {
         const props = {
+          name: "Animals"
+        };
+        return <Topic {...props} />;
+      }
+    },
+    {
+      type: "story",
+      name: "Topic with description",
+      component: () => {
+        const props = {
           name: "Animals",
           description:
             "Animals are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few  exceptions, animals consume organic materials."

@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { renderTrees, treePropType } from "@times-components/markup";
 import styles from "./styles";
 
 const TopicHead = ({ name, description }) => (
@@ -22,11 +21,11 @@ const TopicHead = ({ name, description }) => (
 
 TopicHead.propTypes = {
   name: PropTypes.string.isRequired,
-  description: PropTypes.arrayOf(treePropType)
+  description: PropTypes.string
 };
 
 TopicHead.defaultProps = {
-  description: []
+  description: ""
 };
 
 export default TopicHead;
