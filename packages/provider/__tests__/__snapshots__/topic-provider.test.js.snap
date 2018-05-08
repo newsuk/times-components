@@ -491,8 +491,6 @@ Object {
     ],
     Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"animals\\"}).articles({})",
   },
-  "description": "",
-  "name": "",
   Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"animals\\"})",
 }
 `;

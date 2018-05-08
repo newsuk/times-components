@@ -4,8 +4,6 @@ import connectGraphql from "./connect";
 export const query = gql`
   query TopicQuery($slug: Slug!, $first: Int, $skip: Int, $imageRatio: Ratio!) {
     topic(slug: $slug) {
-      name
-      description
       articles(first: $first, skip: $skip) {
         count
         list {
