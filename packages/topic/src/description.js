@@ -12,12 +12,7 @@ const Description = ({ description }) => (
   </View>
 );
 
-Description.propTypes = {
-  description: PropTypes.string
-};
-
-Description.defaultProps = {
-  description: ""
-};
+Description.propTypes = propTypes.description;
+Description.defaultProps = defaultProps.description;
 
 export default Description;
