@@ -11,7 +11,8 @@ const mocks = [
     request: {
       query: addTypenameToDocument(topicQuery),
       variables: {
-        slug: "animals"
+        slug: "animals",
+        imageRatio: "3:2"
       }
     },
     result: fixture
@@ -21,10 +22,7 @@ const mocks = [
 const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <TopicProvider
-        slug="animals"
-        debounceTimeMs={0}
-      >
+      <TopicProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
         {child}
       </TopicProvider>
     </MockedProvider>

@@ -17,7 +17,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/26402522-4a2d-11e8-8db5-58268675bbb1?crop=2787%2C1858%2C634%2C445",
-            Symbol(id): "$Image:22b95cda-d725-4467-c8f6-b24024369af8.crop({})",
+            Symbol(id): "$Image:22b95cda-d725-4467-c8f6-b24024369af8.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "22b95cda-d725-4467-c8f6-b24024369af8",
           "title": "This photo taken in Kenya and ha",
@@ -66,7 +66,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/41831018-47cd-11e8-bf76-d5da08923eed?crop=4702%2C3135%2C82%2C240",
-            Symbol(id): "$Image:05ff3160-764f-4aaa-b5fc-66327137b12d.crop({})",
+            Symbol(id): "$Image:05ff3160-764f-4aaa-b5fc-66327137b12d.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "05ff3160-764f-4aaa-b5fc-66327137b12d",
           "title": "Horse Racing - 5 Nov 2015",
@@ -115,7 +115,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e89ef488-478d-11e8-bf76-d5da08923eed?crop=4098%2C2732%2C0%2C0",
-            Symbol(id): "$Image:075be207-37b2-4cc7-e8c8-b3ea1408f08a.crop({})",
+            Symbol(id): "$Image:075be207-37b2-4cc7-e8c8-b3ea1408f08a.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "075be207-37b2-4cc7-e8c8-b3ea1408f08a",
           "title": "Summer weather Aug 2nd 2016",
@@ -164,7 +164,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/c341c788-462f-11e8-bf76-d5da08923eed?crop=4644%2C3096%2C0%2C0",
-            Symbol(id): "$Image:45e0d8ec-46cb-4c38-9b98-c4915bd43805.crop({})",
+            Symbol(id): "$Image:45e0d8ec-46cb-4c38-9b98-c4915bd43805.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "45e0d8ec-46cb-4c38-9b98-c4915bd43805",
           "title": "Edinburgh UK Apr 01 2018; Giant panda male Yang Guang at Edinburgh Zoo. credit steven scott taylor / alamy live news Credit: Steven Scott Taylor/Alamy Live News",
@@ -217,7 +217,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/884ada98-4594-11e8-b986-c5878a14d072?crop=1841%2C1227%2C0%2C0",
-            Symbol(id): "$Image:287ab247-5a1b-40e0-e9d9-799d907c0e33.crop({})",
+            Symbol(id): "$Image:287ab247-5a1b-40e0-e9d9-799d907c0e33.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "287ab247-5a1b-40e0-e9d9-799d907c0e33",
           "title": "Bathwick Tyres & EBF Race Day, Horse Racing, Salisbury Racecourse, Wiltshire, United Kingdom - 07 Sep 2017",
@@ -266,7 +266,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/1fe2875c-4400-11e8-99ea-a5dd07dd144b?crop=3304%2C2203%2C0%2C0",
-            Symbol(id): "$Image:71a40e87-2bd5-4c3a-f140-21ad64caff36.crop({})",
+            Symbol(id): "$Image:71a40e87-2bd5-4c3a-f140-21ad64caff36.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "71a40e87-2bd5-4c3a-f140-21ad64caff36",
           "title": "Wind turbines are seen at Thanet Offshore Wind Farm off the Kent coast in southern England",
@@ -315,7 +315,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/47ba6084-4341-11e8-9618-96ec7a8a2ce5?crop=4697%2C3131%2C128%2C100",
-            Symbol(id): "$Image:60d45156-7d5b-43f7-aef2-0ccda4cfbc16.crop({})",
+            Symbol(id): "$Image:60d45156-7d5b-43f7-aef2-0ccda4cfbc16.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "60d45156-7d5b-43f7-aef2-0ccda4cfbc16",
           "title": "VARIOUS",
@@ -364,7 +364,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/46d48c52-4261-11e8-9618-96ec7a8a2ce5?crop=5305%2C3537%2C0%2C0",
-            Symbol(id): "$Image:d4af1aa6-944b-42a9-fac2-594c32af6212.crop({})",
+            Symbol(id): "$Image:d4af1aa6-944b-42a9-fac2-594c32af6212.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "d4af1aa6-944b-42a9-fac2-594c32af6212",
           "title": "white-tailed sea eagle (Haliaeetus albicilla), landing on a post, United Kingdom, Scotland, Argyll, Mull",
@@ -413,7 +413,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/a9773ad4-4262-11e8-99ea-a5dd07dd144b?crop=3000%2C2000%2C0%2C0",
-            Symbol(id): "$Image:ddb82a77-858c-4a3b-86e8-f6240bc6fee3.crop({})",
+            Symbol(id): "$Image:ddb82a77-858c-4a3b-86e8-f6240bc6fee3.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "ddb82a77-858c-4a3b-86e8-f6240bc6fee3",
           "title": "2018 Randox Health Grand National",
@@ -462,7 +462,7 @@ Object {
           "crop": Object {
             "__typename": "Crop",
             "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/62bd0288-41a7-11e8-9618-96ec7a8a2ce5?crop=3493%2C2329%2C0%2C0",
-            Symbol(id): "$Image:57b02e73-0d34-405d-b094-5766a3fb8665.crop({})",
+            Symbol(id): "$Image:57b02e73-0d34-405d-b094-5766a3fb8665.crop({\\"ratio\\":\\"3:2\\"})",
           },
           "id": "57b02e73-0d34-405d-b094-5766a3fb8665",
           "title": "Badger cull",

@@ -166,20 +166,14 @@ export default {
           }
         ];
 
-        console.log(topicFixture);
-
         return (
           <MockedProvider mocks={mocks}>
-            <TopicProvider
-              slug="animals"
-              imageRatio="3:2"
-              debounceTimeMs={0}
-            >
+            <TopicProvider slug="animals" imageRatio="3:2" debounceTimeMs={0}>
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </TopicProvider>
           </MockedProvider>
         );
       }
-    },
+    }
   ]
 };
