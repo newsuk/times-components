@@ -2,14 +2,15 @@
 /* eslint-env browser */
 import React from "react";
 import { mount } from "enzyme";
-import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
+import articleListFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import ArticleList from "../../src/article-list";
+import { scrollUpToPaging } from "../../src/utils";
 import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-describe("Lazy loading and pagination tests on web: ", () => {
+describe("Lazy loading and pagination tests on web", () => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -29,7 +30,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
   afterAll(() => jest.useFakeTimers());
 
   const makeAuthor = ({ withImages } = {}) => ({
-    ...authorProfileFixture.data.author,
+    ...articleListFixture.data.author,
     hasLeadAssets: withImages,
     showImages: withImages
   });
@@ -77,7 +78,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
   });
 
   context("Lazy loading tests", () => {
-    it("renders with an intersection observer which uses the expected options", () => {
+    it("should render with an intersection observer using the expected options", () => {
       // IntersectionObserver is used twice by AuthorProfileContent, once for image
       // resizing and once for scroll tracking. We capture the opts passed so that
       // we can assert on them later.
@@ -94,7 +95,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
     });
 
-    it("renders a good quality image if it is visible", async () => {
+    it("should render a good quality image if it is visible", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const component = mount(<ArticleList {...articleListContentProps} />);
@@ -127,7 +128,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       ).toMatchSnapshot();
     });
 
-    it("renders a poor quality image if it is not visible", async () => {
+    it("should render a poor quality image if it is not visible", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const component = mount(<ArticleList {...articleListContentProps} />);
@@ -150,7 +151,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       ).toMatchSnapshot();
     });
 
-    it("renders good quality images if there is no IntersectionObserver", () => {
+    it("should render good quality images if there is no IntersectionObserver", () => {
       const component = mount(
         <ArticleList
           {...articleListContentProps}
@@ -187,7 +188,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(component.find("TimesImage")).toMatchSnapshot();
     });
 
-    it("does not render good quality images if the item is quickly scrolled passed", async () => {
+    it("should not render good quality images if the item is scrolled past quickly", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const component = mount(
@@ -221,7 +222,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(component.render().find("img")).toMatchSnapshot();
     });
 
-    it("does no work if there are no pending items", async () => {
+    it("should not work if there are no pending items", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const spy = jest.spyOn(ArticleList.prototype, "setState");
@@ -262,7 +263,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       spy.mockRestore();
     });
 
-    it("does not set state after unmounting", async () => {
+    it("should not set state after unmounting", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const setStateSpy = jest.spyOn(ArticleList.prototype, "setState");
@@ -304,7 +305,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       setStateSpy.mockRestore();
     });
 
-    it("disconnects from the IntersectionObserver when unmounting", async () => {
+    it("should disconnect from the IntersectionObserver when unmounting", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
       const disconnectSpy = jest.spyOn(
@@ -329,7 +330,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       disconnectSpy.mockRestore();
     });
 
-    it("does not throw when unmounting with no IntersectionObserver", async () => {
+    it("should not throw when unmounting with no IntersectionObserver", async () => {
       delete window.IntersectionObserver;
 
       const component = mount(
@@ -345,7 +346,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(component.unmount.bind(component)).not.toThrow();
     });
 
-    it("emits scroll tracking events for author profile content", () => {
+    it("should emit scroll tracking events for an article list", () => {
       window.IntersectionObserver = FakeIntersectionObserver;
       const reporter = jest.fn();
       const pageResults = pagedResult(0, 3);
@@ -390,7 +391,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
   });
 
   context("Pagination tests", () => {
-    it("scrolls to the top when moving to the previous page on bottom pagination click", () => {
+    it("should scroll to the top when moving to the previous page on bottom pagination click", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onPrev = jest.fn();
       const component = mount(
@@ -405,7 +406,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
     });
 
-    it("scrolls to the top when moving to the next page on bottom pagination click", () => {
+    it("should scroll to the top when moving to the next page on bottom pagination click", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onNext = jest.fn();
       const component = mount(
@@ -420,7 +421,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(onScroll).toHaveBeenCalledWith({ left: 0, top: 0 });
     });
 
-    it("doesnt scroll to the top when moving to the previous page on top pagination click", () => {
+    it("should scroll to the top when moving to the previous page on top pagination click", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onPrev = jest.fn();
       const component = mount(
@@ -435,7 +436,7 @@ describe("Lazy loading and pagination tests on web: ", () => {
       expect(onScroll).not.toHaveBeenCalledWith({ left: 0, top: 0 });
     });
 
-    it("doesnt scroll to the top when moving to the next page on top pagination click", () => {
+    it("should scroll to the top when moving to the next page on top pagination click", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onNext = jest.fn();
       const component = mount(
@@ -448,6 +449,24 @@ describe("Lazy loading and pagination tests on web: ", () => {
         .simulate("click");
 
       expect(onScroll).not.toHaveBeenCalledWith({ left: 0, top: 0 });
+    });
+
+    it("should scroll the window object", () => {
+      const scrollMock = jest.fn();
+      const windowObject = {
+        scroll: scrollMock
+      };
+
+      scrollUpToPaging(windowObject);
+
+      expect(scrollMock).toHaveBeenCalledWith({
+        left: 0,
+        top: 0
+      });
+    });
+
+    it("should return if the window object cannot be found", () => {
+      expect(scrollUpToPaging()).toEqual(undefined);
     });
   });
 });

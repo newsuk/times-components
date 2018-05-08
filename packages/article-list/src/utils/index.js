@@ -1,10 +1,3 @@
-import get from "lodash.get";
-
-const getImageUri = item =>
-  get(
-    item,
-    "leadAsset.crop.url",
-    get(item, "leadAsset.posterImage.crop.url", null)
-  );
+import getImageUri from "./index-base";
 
 export default getImageUri;

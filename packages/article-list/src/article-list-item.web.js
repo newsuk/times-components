@@ -8,7 +8,7 @@ import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
-import getImageUri from "./utils";
+import { getImageUri } from "./utils";
 import {
   ListItemWrapper,
   ListItemLongText,

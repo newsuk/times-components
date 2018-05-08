@@ -7,7 +7,7 @@ import articleListProps from "../default-article-list-props";
 import pagedResult from "../paged-result";
 import shared from "../shared";
 
-describe("ArticleList tests on web: ", () => {
+describe("ArticleList tests on web", () => {
   shared();
 
   it("should handle the link to an article from an article list", () => {

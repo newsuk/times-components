@@ -6,6 +6,7 @@ import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidth } from "@times-components/utils";
+import { scrollUpToPaging } from "./utils";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
@@ -13,17 +14,6 @@ import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
-
-const scrollUpToPaging = () => {
-  if (typeof window === "undefined") {
-    return;
-  }
-
-  window.scroll({
-    top: 0,
-    left: 0
-  });
-};
 
 class ArticleList extends Component {
   constructor(props) {
@@ -143,11 +133,11 @@ class ArticleList extends Component {
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          if (autoScroll) scrollUpToPaging();
+          if (autoScroll) scrollUpToPaging(window);
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          if (autoScroll) scrollUpToPaging();
+          if (autoScroll) scrollUpToPaging(window);
         }}
         page={page}
         pageSize={pageSize}

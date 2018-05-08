@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleList tests on web:  should render an article list 1`] = `
+exports[`ArticleList tests on web should render an article list 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ woNlo"
@@ -465,7 +465,7 @@ exports[`ArticleList tests on web:  should render an article list 1`] = `
 </div>
 `;
 
-exports[`ArticleList tests on web:  should render an article list item 1`] = `
+exports[`ArticleList tests on web should render an article list item 1`] = `
 <a
   href="/test-article-url"
   onClick={[Function]}
@@ -590,7 +590,7 @@ exports[`ArticleList tests on web:  should render an article list item 1`] = `
 </a>
 `;
 
-exports[`ArticleList tests on web:  should render an article list item loading state 1`] = `
+exports[`ArticleList tests on web should render an article list item loading state 1`] = `
 <div
   className="responsive-styles__component-fbPFZZ fXCtkJ"
 >
@@ -669,7 +669,7 @@ exports[`ArticleList tests on web:  should render an article list item loading s
 </div>
 `;
 
-exports[`ArticleList tests on web:  should render an article list item without images 1`] = `
+exports[`ArticleList tests on web should render an article list item without images 1`] = `
 <a
   href="/test-article-url"
   onClick={[Function]}
@@ -824,7 +824,7 @@ exports[`ArticleList tests on web:  should render an article list item without i
 </a>
 `;
 
-exports[`ArticleList tests on web:  should render an article list page error correctly 1`] = `
+exports[`ArticleList tests on web should render an article list page error correctly 1`] = `
 <View
   style={
     Object {
@@ -906,7 +906,7 @@ exports[`ArticleList tests on web:  should render an article list page error cor
 </View>
 `;
 
-exports[`ArticleList tests on web:  should render an article list that is loading 1`] = `
+exports[`ArticleList tests on web should render an article list that is loading 1`] = `
 <div>
   <div>
     <div />
@@ -1051,7 +1051,7 @@ exports[`ArticleList tests on web:  should render an article list that is loadin
 </div>
 `;
 
-exports[`ArticleList tests on web:  should render the article list item separator keyline correctly 1`] = `
+exports[`ArticleList tests on web should render the article list item separator keyline correctly 1`] = `
 <View
   style={
     Object {
@@ -1062,7 +1062,7 @@ exports[`ArticleList tests on web:  should render the article list item separato
 />
 `;
 
-exports[`ArticleList tests on web:  should render the article list page error correctly 1`] = `
+exports[`ArticleList tests on web should render the article list page error correctly 1`] = `
 <PageErrorContainer>
   <ArticleListError
     refetch={[Function]}
@@ -1076,7 +1076,7 @@ exports[`ArticleList tests on web:  should render the article list page error co
 </PageErrorContainer>
 `;
 
-exports[`ArticleList tests on web:  should render the article list pagination correctly 1`] = `
+exports[`ArticleList tests on web should render the article list pagination correctly 1`] = `
 <div>
   <div>
     <div

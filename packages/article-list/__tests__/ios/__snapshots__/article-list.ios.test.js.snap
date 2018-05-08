@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleList tests on ios:  should render an article list 1`] = `
+exports[`ArticleList tests on ios should render an article list 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -1164,7 +1164,7 @@ exports[`ArticleList tests on ios:  should render an article list 1`] = `
 </RCTScrollView>
 `;
 
-exports[`ArticleList tests on ios:  should render an article list item 1`] = `
+exports[`ArticleList tests on ios should render an article list item 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
@@ -1403,7 +1403,7 @@ exports[`ArticleList tests on ios:  should render an article list item 1`] = `
 </View>
 `;
 
-exports[`ArticleList tests on ios:  should render an article list item loading state 1`] = `
+exports[`ArticleList tests on ios should render an article list item loading state 1`] = `
 <View
   style={
     Object {
@@ -1686,7 +1686,7 @@ exports[`ArticleList tests on ios:  should render an article list item loading s
 </View>
 `;
 
-exports[`ArticleList tests on ios:  should render an article list item without images 1`] = `
+exports[`ArticleList tests on ios should render an article list item without images 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
@@ -1835,7 +1835,7 @@ exports[`ArticleList tests on ios:  should render an article list item without i
 </View>
 `;
 
-exports[`ArticleList tests on ios:  should render an article list page error correctly 1`] = `
+exports[`ArticleList tests on ios should render an article list page error correctly 1`] = `
 <View
   style={
     Object {
@@ -1922,7 +1922,7 @@ exports[`ArticleList tests on ios:  should render an article list page error cor
 </View>
 `;
 
-exports[`ArticleList tests on ios:  should render an article list that is loading 1`] = `
+exports[`ArticleList tests on ios should render an article list that is loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -2500,7 +2500,7 @@ exports[`ArticleList tests on ios:  should render an article list that is loadin
 </RCTScrollView>
 `;
 
-exports[`ArticleList tests on ios:  should render the article list item separator keyline correctly 1`] = `
+exports[`ArticleList tests on ios should render the article list item separator keyline correctly 1`] = `
 <View
   style={
     Object {
@@ -2511,7 +2511,7 @@ exports[`ArticleList tests on ios:  should render the article list item separato
 />
 `;
 
-exports[`ArticleList tests on ios:  should render the article list page error correctly 1`] = `
+exports[`ArticleList tests on ios should render the article list page error correctly 1`] = `
 <View
   style={
     Object {
@@ -2541,7 +2541,7 @@ exports[`ArticleList tests on ios:  should render the article list page error co
 </View>
 `;
 
-exports[`ArticleList tests on ios:  should render the article list pagination correctly 1`] = `
+exports[`ArticleList tests on ios should render the article list pagination correctly 1`] = `
 <View
   style={
     Object {
