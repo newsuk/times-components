@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import ArticleList from "../src/article-list.js";
+import ArticleList from "../src/article-list";
 import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
@@ -14,6 +14,7 @@ import {
   shortSummary,
   summary
 } from "../fixtures/article-list-item-summaries.json";
+import articleListProps from "./default-article-list-props";
 import pagedResult from "./paged-result";
 
 export default () => {
@@ -64,9 +65,9 @@ export default () => {
   });
 
   it("should render an article list item", () => {
-    const wrapper = renderer.create(<ArticleListItem {...listItemProps} />);
+    const tree = renderer.create(<ArticleListItem {...listItemProps} />);
 
-    expect(wrapper).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should handle the link to an article from an article list item with analytics", () => {
@@ -93,19 +94,19 @@ export default () => {
   });
 
   it("should render an article list item loading state", () => {
-    const wrapper = renderer.create(
+    const tree = renderer.create(
       <ArticleListItem {...listItemProps} isLoading />
     );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render an article list item without images", () => {
-    const wrapper = renderer.create(
+    const tree = renderer.create(
       <ArticleListItem {...listItemProps} leadAsset={{}} showImage={false} />
     );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render the article list page error correctly", () => {
@@ -122,29 +123,64 @@ export default () => {
     expect(tree).toMatchSnapshot();
   });
 
-  const articleListProps = {
-    analyticsStream: () => {},
-    onArticlePress: () => {},
-    onTwitterLinkPress: () => {},
-    refetch: () => {},
-    slug: "deborah-haynes"
-  };
-
   it("should render an article list", () => {
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
     const tree = renderer.create(
       <ArticleList
+        {...articleListProps}
         {...fixtureGenerator.makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
-        imageRatio={3 / 2}
         page={1}
         pageSize={pageSize}
-        showImages
-        {...articleListProps}
       />
     );
 
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should render an article list that is loading", () => {
+    const props = {
+      ...articleListProps,
+      articlesLoading: true,
+      articles: Array(3)
+        .fill()
+        .map((number, id) => ({
+          id,
+          loading: true
+        })),
+      isLoading: true
+    };
+
+    const tree = renderer.create(<ArticleList {...props} />);
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should retry getting the articles when clicking the retry button", () => {
+    const refetchMock = jest.fn();
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        {...fixtureGenerator.makeAuthor()}
+        articles={[]}
+        count={0}
+        error={new Error("Failed")}
+        onViewed={() => {}}
+        page={1}
+        pageSize={3}
+        refetch={refetchMock}
+      />
+    );
+
+    wrapper
+      .dive()
+      .dive()
+      .find("ArticleListError")
+      .dive()
+      .find("TouchableOpacity")
+      .simulate("press");
+
+    expect(refetchMock).toHaveBeenCalled();
   });
 };

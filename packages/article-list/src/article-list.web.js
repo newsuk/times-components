@@ -29,8 +29,6 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
 
-    console.log("asdasdasdasd");
-
     this.pending = new Set();
     this.pendingTimer = null;
     this.images = new Map();

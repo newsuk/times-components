@@ -93,7 +93,10 @@ export default () => {
     expect(reporter).toHaveBeenCalledWith(
       expect.objectContaining({
         object: "AuthorProfile",
+        component: "Page",
+        action: "Viewed",
         attrs: expect.objectContaining({
+          articlesCount: 20,
           authorName,
           page: 1,
           pageSize

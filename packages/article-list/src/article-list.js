@@ -18,7 +18,6 @@ const viewabilityConfig = {
 class ArticleList extends Component {
   constructor(props) {
     super(props);
-    console.log("native");
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
@@ -132,6 +131,9 @@ class ArticleList extends Component {
         keyExtractor={item => `${item.id}`}
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
+        ref={list => {
+          this.listRef = list;
+        }}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
@@ -149,9 +151,6 @@ class ArticleList extends Component {
             }
           </ErrorView>
         )}
-        ref={list => {
-          this.listRef = list;
-        }}
         scrollRenderAheadDistance={2}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
