@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic tests on android:  renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "paddingBottom": 40,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 30,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="topic-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 40,
+          "paddingBottom": 20,
+        }
+      }
+      testID="topic-name"
+    >
+      animals
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Topic tests on android:  renders correctly with a description 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "paddingBottom": 40,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 30,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="topic-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 40,
+          "paddingBottom": 20,
+        }
+      }
+      testID="topic-name"
+    >
+      animals
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderStyle": "solid",
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "justifyContent": "center",
+            "width": 199,
+          }
+        }
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 15,
+            "lineHeight": 26,
+            "paddingTop": 20,
+            "textAlign": "center",
+          }
+        }
+        testID="topic-description"
+      >
+        Animals are multicellular eukaryotic organisms.
+      </Text>
+    </View>
+  </View>
+</View>
+`;

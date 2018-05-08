@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic tests on web:  renders correctly 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ CHBUp"
+  >
+    <div>
+      <h1
+        aria-label="topic-name"
+        data-testid="topic-name"
+        dir="auto"
+        role="heading"
+      >
+        animals
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Topic tests on web:  renders correctly with a description 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ CHBUp"
+  >
+    <div>
+      <h1
+        aria-label="topic-name"
+        data-testid="topic-name"
+        dir="auto"
+        role="heading"
+      >
+        animals
+      </h1>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ sAowN"
+        />
+        <div
+          data-testid="topic-description"
+          dir="auto"
+        >
+          Animals are multicellular eukaryotic organisms.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
