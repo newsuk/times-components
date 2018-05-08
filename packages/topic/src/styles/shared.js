@@ -6,14 +6,14 @@ import {
 } from "@times-components/styleguide";
 
 const sharedStyle = {
-  container: {
+  wrapper: {
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: spacing(3),
+    paddingTop: spacing(6),
     paddingBottom: spacing(8),
-    paddingLeft: spacing(1),
-    paddingRight: spacing(1),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary
   },
   name: {
@@ -27,7 +27,18 @@ const sharedStyle = {
     textAlign: "center",
     fontSize: fontSizes.tertiary,
     lineHeight: 26,
-    color: colours.functional.primary
+    color: colours.functional.primary,
+    paddingTop: spacing(4)
+  },
+  divider: {
+    borderStyle: "solid",
+    borderTopColor: colours.functional.keyline,
+    borderTopWidth: 1,
+    width: 199,
+    justifyContent: "center"
+  },
+  container: {
+    alignItems: "center"
   }
 };
 

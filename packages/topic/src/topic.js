@@ -1,18 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { propTypes, defaultProps } from "./proptypes";
 import TopicHead from "./topic-head";
 
 const Topic = ({ name, description }) => (
   <TopicHead name={name} description={description} />
 );
 
-Topic.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string
-};
-
-Topic.defaultProps = {
-  description: ""
-};
+Topic.propTypes = propTypes;
+Topic.defaultProps = defaultProps;
 
 export default Topic;
