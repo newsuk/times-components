@@ -6,15 +6,24 @@ const { Group } = ART;
 
 const G = ({ fill, fillRule, stroke, strokeWidth, children }) => {
   const childrenWithProps = React.Children.map(children, child =>
-    React.cloneElement(child, { fill, fillRule, stroke, strokeWidth, ...child.props }));
-  return (<Group
-    fill={fill}
-    fillRule={fillRule}
-    stroke={stroke}
-    strokeWidth={strokeWidth}
-  >
-    {childrenWithProps}
-  </Group>);
+    React.cloneElement(child, {
+      fill,
+      fillRule,
+      stroke,
+      strokeWidth,
+      ...child.props
+    })
+  );
+  return (
+    <Group
+      fill={fill}
+      fillRule={fillRule}
+      stroke={stroke}
+      strokeWidth={strokeWidth}
+    >
+      {childrenWithProps}
+    </Group>
+  );
 };
 
 G.propTypes = {
