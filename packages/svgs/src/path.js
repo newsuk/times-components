@@ -8,7 +8,7 @@ const Path = ({ d, fill }) => <Shape fill={fill} d={d} />;
 
 Path.propTypes = {
   d: PropTypes.string.isRequired,
-  fill: PropTypes.string.isRequired
+  fill: PropTypes.string
 };
 
 export default Path;
