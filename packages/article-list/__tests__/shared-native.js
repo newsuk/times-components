@@ -9,24 +9,6 @@ import ArticleListItem from "../src/article-list-item";
 import articleListProps from "./default-article-list-props";
 import pagedResult from "./paged-result";
 
-// A hack until this is resolved: https://github.com/facebook/react-native/pull/13048
-jest.mock("ScrollView", () => {
-  const MockScrollView = require.requireMock("ScrollViewMock");
-  const React = require("React"); // eslint-disable-line
-  const RealScrollView = require.requireActual("ScrollView");
-  class ScrollView extends React.Component {
-    scrollTo() {
-      return this;
-    }
-
-    render() {
-      return <MockScrollView {...this.props} />;
-    }
-  }
-  ScrollView.propTypes = RealScrollView.propTypes;
-  return ScrollView;
-});
-
 export default () => {
   it("should emit scroll tracking events for an article list", () => {
     const reporter = jest.fn();
