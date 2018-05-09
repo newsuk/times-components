@@ -1,5 +1,5 @@
 import React from "react";
-import Topics from "@times-components/topics";
+import ArticleTopics from "@times-components/article-topics";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import { TopicsContainer, TopicsMetaContainer } from "./styles/responsive";
@@ -9,14 +9,14 @@ const ShowTopics = ({ topics, device }) => {
     if (device === "DESKTOP") {
       return (
         <TopicsMetaContainer>
-          <Topics topics={topics} style={styles.topicsMetaContainer} />
+          <ArticleTopics topics={topics} style={styles.topicsMetaContainer} />
         </TopicsMetaContainer>
       );
     }
 
     return (
       <TopicsContainer>
-        <Topics topics={topics} style={styles.topicsContainer} />
+        <ArticleTopics topics={topics} style={styles.topicsContainer} />
       </TopicsContainer>
     );
   }

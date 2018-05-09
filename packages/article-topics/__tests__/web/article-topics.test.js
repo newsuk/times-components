@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("Topic test on android: ", () => {
+describe("Article Topics test on web: ", () => {
   shared();
 });

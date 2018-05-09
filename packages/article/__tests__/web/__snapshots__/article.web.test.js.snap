@@ -1933,7 +1933,7 @@ Array [
       <div
         className="c7"
       >
-        <Topics
+        <ArticleTopics
           style={
             Object {
               "justifyContent": "flex-start",
@@ -2646,7 +2646,7 @@ Array [
 <div
     className="c0"
   >
-    <Topics
+    <ArticleTopics
       style={
         Object {
           "borderTopColor": "#DBDBDB",
@@ -3707,7 +3707,7 @@ Array [
       <div
         className="c7"
       >
-        <Topics
+        <ArticleTopics
           style={
             Object {
               "justifyContent": "flex-start",
@@ -3895,7 +3895,7 @@ Array [
 <div
     className="c0"
   >
-    <Topics
+    <ArticleTopics
       style={
         Object {
           "borderTopColor": "#DBDBDB",

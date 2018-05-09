@@ -1,9 +1,7 @@
 {
   "data": {
     "__schema": {
-      "queryType": {
-        "name": "Query"
-      },
+      "queryType": { "name": "Query" },
       "mutationType": null,
       "subscriptionType": null,
       "types": [
@@ -31,11 +29,7 @@
                   "defaultValue": null
                 }
               ],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Author",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "Author", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -46,11 +40,7 @@
               "type": {
                 "kind": "LIST",
                 "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "Author",
-                  "ofType": null
-                }
+                "ofType": { "kind": "OBJECT", "name": "Author", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -65,20 +55,12 @@
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "ID",
-                      "ofType": null
-                    }
+                    "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
                   },
                   "defaultValue": null
                 }
               ],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Article",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "Article", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -115,10 +97,30 @@
                   "defaultValue": null
                 }
               ],
+              "type": { "kind": "OBJECT", "name": "Articles", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "editions",
+              "description": "",
+              "args": [],
               "type": {
-                "kind": "OBJECT",
-                "name": "Articles",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Edition",
+                      "ofType": null
+                    }
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -157,11 +159,7 @@
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "ID",
-                      "ofType": null
-                    }
+                    "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
                   },
                   "defaultValue": null
                 }
@@ -171,6 +169,21 @@
                 "name": "SportCompetition",
                 "ofType": null
               },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "topic",
+              "description": "",
+              "args": [
+                {
+                  "name": "slug",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Slug", "ofType": null },
+                  "defaultValue": null
+                }
+              ],
+              "type": { "kind": "OBJECT", "name": "Topic", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -202,11 +215,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -227,11 +236,7 @@
               "name": "biography",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Markup",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -239,11 +244,7 @@
               "name": "image",
               "description": "URL for the image of an author",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -251,11 +252,7 @@
               "name": "jobTitle",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -266,11 +263,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -280,11 +273,7 @@
               "description":
                 "Some authors have poor article lead assets, this flag denotes that the lead assets are useful for presentation purposes",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -293,11 +282,7 @@
               "description":
                 "Twitter handle for an author (can be an empty string)",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -305,11 +290,7 @@
               "name": "slug",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -339,11 +320,7 @@
               "name": "count",
               "description": "The number of articles written by an author",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -355,22 +332,14 @@
                   "name": "first",
                   "description":
                     "The maximum number of articles you want to take, defaults to 10",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": "10"
                 },
                 {
                   "name": "skip",
                   "description":
                     "The number of articles to skip over, useful for paging, defaults to 0",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": "0"
                 }
               ],
@@ -417,11 +386,7 @@
               "description":
                 "An AST of one or more authors that may contain job titles and/or locations",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Markup",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -433,22 +398,14 @@
                   "name": "maxWordCount",
                   "description":
                     "If a teaser is required, use to truncate the article content by words. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": null
                 },
                 {
                   "name": "maxCharCount",
                   "description":
                     "If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": null
                 },
                 {
@@ -463,11 +420,7 @@
                   "defaultValue": null
                 }
               ],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Markup",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -478,11 +431,7 @@
               "type": {
                 "kind": "LIST",
                 "name": null,
-                "ofType": {
-                  "kind": "ENUM",
-                  "name": "Flag",
-                  "ofType": null
-                }
+                "ofType": { "kind": "ENUM", "name": "Flag", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -491,11 +440,7 @@
               "name": "headline",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -506,11 +451,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -519,11 +460,7 @@
               "name": "label",
               "description": "A free piece of text to describe an article",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -535,11 +472,7 @@
               "type": {
                 "kind": "LIST",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -549,11 +482,7 @@
               "description":
                 "The name of the segment that the article appears in, for example Sport in a newspaper",
               "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "SectionName",
-                "ofType": null
-              },
+              "type": { "kind": "ENUM", "name": "SectionName", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -561,11 +490,7 @@
               "name": "leadAsset",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "UNION",
-                "name": "Media",
-                "ofType": null
-              },
+              "type": { "kind": "UNION", "name": "Media", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -589,11 +514,7 @@
               "name": "publishedTime",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "DateTime",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "DateTime", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -601,11 +522,7 @@
               "name": "updatedTime",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "DateTime",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "DateTime", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -623,17 +540,25 @@
                   "ofType": null
                 }
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "use relatedArticleSlice instead"
             },
             {
               "name": "relatedArticlesLayout",
               "description":
                 "Presentational information on how the related articles should be displayed",
               "args": [],
+              "type": { "kind": "INTERFACE", "name": "Layout", "ofType": null },
+              "isDeprecated": true,
+              "deprecationReason": "use relatedArticleSlice instead"
+            },
+            {
+              "name": "relatedArticleSlice",
+              "description": "Related article slice",
+              "args": [],
               "type": {
                 "kind": "INTERFACE",
-                "name": "Layout",
+                "name": "ArticleSlice",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -644,11 +569,7 @@
               "description":
                 "A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -660,19 +581,11 @@
                 {
                   "name": "maxCharCount",
                   "description": "",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": null
                 }
               ],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Markup",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -680,11 +593,7 @@
               "name": "title",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": true,
               "deprecationReason":
                 "Use headline instead which is more descriptive in the context of an article"
@@ -693,11 +602,7 @@
               "name": "url",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -915,16 +820,8 @@
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": [
-            {
-              "kind": "OBJECT",
-              "name": "Image",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "Video",
-              "ofType": null
-            }
+            { "kind": "OBJECT", "name": "Image", "ofType": null },
+            { "kind": "OBJECT", "name": "Video", "ofType": null }
           ]
         },
         {
@@ -939,11 +836,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -952,11 +845,7 @@
               "name": "title",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -964,11 +853,7 @@
               "name": "caption",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -976,11 +861,7 @@
               "name": "credits",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1003,11 +884,7 @@
                   "defaultValue": null
                 }
               ],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Crop",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "Crop", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1036,11 +913,7 @@
               "name": "ratio",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Ratio",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Ratio", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1048,11 +921,7 @@
               "name": "url",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1084,11 +953,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1097,11 +962,7 @@
               "name": "caption",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1109,11 +970,7 @@
               "name": "brightcovePolicyKey",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1121,11 +978,7 @@
               "name": "brightcovePlayerId",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1133,11 +986,7 @@
               "name": "brightcoveVideoId",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1145,11 +994,7 @@
               "name": "canonicalidentifier",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1157,11 +1002,7 @@
               "name": "paidOnly",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1169,11 +1010,7 @@
               "name": "brightcoveAccountId",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1181,11 +1018,7 @@
               "name": "posterImage",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Image",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "Image", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1238,11 +1071,7 @@
               "name": "template",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "Template",
-                "ofType": null
-              },
+              "type": { "kind": "ENUM", "name": "Template", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1251,21 +1080,9 @@
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": [
-            {
-              "kind": "OBJECT",
-              "name": "LeadAndTwo",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "OpinionAndTwo",
-              "ofType": null
-            },
-            {
-              "kind": "OBJECT",
-              "name": "Default",
-              "ofType": null
-            }
+            { "kind": "OBJECT", "name": "LeadAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "OpinionAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "Default", "ofType": null }
           ]
         },
         {
@@ -1299,6 +1116,149 @@
           "possibleTypes": null
         },
         {
+          "kind": "INTERFACE",
+          "name": "ArticleSlice",
+          "description": "",
+          "fields": [
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "CommentLeadAndCartoon",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "LetterThundererPodcast",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "CommentTwoAndNotebook",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndColumnist",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "ObituariesLeadAndTwo", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Tile",
+          "description": "An article presentation",
+          "fields": [
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "strapline",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "leadAsset",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "UNION", "name": "Media", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "article",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Article",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "SCALAR",
           "name": "Boolean",
           "description":
@@ -1318,11 +1278,7 @@
               "name": "count",
               "description": "The number of articles that satisfy the filter",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1334,22 +1290,14 @@
                   "name": "first",
                   "description":
                     "The maximum number of articles you want to take, defaults to 10",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": "10"
                 },
                 {
                   "name": "skip",
                   "description":
                     "The number of articles to skip over, useful for paging, defaults to 0",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
                   "defaultValue": "0"
                 }
               ],
@@ -1377,6 +1325,279 @@
         },
         {
           "kind": "OBJECT",
+          "name": "Edition",
+          "description": "An edition for a single day",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "updateText",
+              "description":
+                "Journalist inputted text which denotes the last time an edition was published",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "date",
+              "description":
+                "The date that the edition is intended for, not necessarily the date it was published (contrast with `publishedTime`)",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Date", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "publication",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "ENUM",
+                  "name": "PublicationName",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "publishedTime",
+              "description":
+                "The date & time that the edition was published (contrast with `date`)",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "DateTime", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "updatedTime",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "DateTime",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "sections",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INTERFACE",
+                      "name": "Section",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Date",
+          "description":
+            "String formatted in ISO8601 as YYYY-MM-DD (e.g. 2018-04-18)",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INTERFACE",
+          "name": "Section",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSection", "ofType": null },
+            { "kind": "OBJECT", "name": "NewsSection", "ofType": null },
+            { "kind": "OBJECT", "name": "CommentSection", "ofType": null },
+            { "kind": "OBJECT", "name": "PuzzleSection", "ofType": null },
+            { "kind": "OBJECT", "name": "RegisterSection", "ofType": null },
+            { "kind": "OBJECT", "name": "MagazineSection", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Colour",
+          "description": "",
+          "fields": [
+            {
+              "name": "rgba",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "RGBA", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RGBA",
+          "description": "",
+          "fields": [
+            {
+              "name": "red",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "green",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "blue",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "alpha",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Int", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
           "name": "Sport",
           "description": "A sport in the sports video hub",
           "fields": [
@@ -1387,11 +1608,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1403,11 +1620,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1454,11 +1667,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1470,11 +1679,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1484,11 +1689,7 @@
               "description":
                 "Poster image of the most recent video of a competition",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1496,11 +1697,7 @@
               "name": "logoUrl",
               "description": "Non-vector logo for competition",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1548,11 +1745,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1601,11 +1794,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1617,11 +1806,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1630,11 +1815,7 @@
               "name": "subtitle",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1645,11 +1826,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "URL",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1658,11 +1835,7 @@
               "name": "posterImageOverlayUrl",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "URL",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "URL", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1705,11 +1878,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1721,10 +1890,101 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Topic",
+          "description": "",
+          "fields": [
+            {
+              "name": "name",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "description",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "articles",
+              "description": "",
+              "args": [
+                {
+                  "name": "first",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "10"
+                },
+                {
+                  "name": "skip",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "0"
+                }
+              ],
+              "type": { "kind": "OBJECT", "name": "articles", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "articles",
+          "description": "",
+          "fields": [
+            {
+              "name": "count",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "list",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
                 "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Article",
+                      "ofType": null
+                    }
+                  }
                 }
               },
               "isDeprecated": false,
@@ -1774,11 +2034,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "__Type",
-                  "ofType": null
-                }
+                "ofType": { "kind": "OBJECT", "name": "__Type", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1788,11 +2044,7 @@
               "description":
                 "If this server supports mutation, the type that mutation operations will be rooted at.",
               "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "__Type",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "__Type", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1801,11 +2053,7 @@
               "description":
                 "If this server support subscription, the type that subscription operations will be rooted at.",
               "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "__Type",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "__Type", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1866,11 +2114,7 @@
               "name": "name",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1878,11 +2122,7 @@
               "name": "description",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2012,11 +2252,7 @@
               "name": "ofType",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "__Type",
-                "ofType": null
-              },
+              "type": { "kind": "OBJECT", "name": "__Type", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2106,11 +2342,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2119,11 +2351,7 @@
               "name": "description",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2158,11 +2386,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "__Type",
-                  "ofType": null
-                }
+                "ofType": { "kind": "OBJECT", "name": "__Type", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2187,11 +2411,7 @@
               "name": "deprecationReason",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2214,11 +2434,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2227,11 +2443,7 @@
               "name": "description",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2242,11 +2454,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "__Type",
-                  "ofType": null
-                }
+                "ofType": { "kind": "OBJECT", "name": "__Type", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2256,11 +2464,7 @@
               "description":
                 "A GraphQL-formatted string representing the default value for this input value.",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2283,11 +2487,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2296,11 +2496,7 @@
               "name": "description",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2324,11 +2520,7 @@
               "name": "deprecationReason",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2351,11 +2543,7 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2364,11 +2552,7 @@
               "name": "description",
               "description": null,
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2598,6 +2782,148 @@
         },
         {
           "kind": "OBJECT",
+          "name": "DailyUniversalRegisterItem",
+          "description": "A piece of the daily universal register",
+          "fields": [
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "byline",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "content",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Markup", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DailyUniversalRegister",
+          "description": "The daily universal register slice",
+          "fields": [
+            {
+              "name": "briefing",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "DailyUniversalRegisterItem",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "onThisDay",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "DailyUniversalRegisterItem",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "natureNotes",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "DailyUniversalRegisterItem",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "birthdaysToday",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "DailyUniversalRegisterItem",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "DailyUniversalRegisterItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
           "name": "LeadAndTwo",
           "description":
             "Three articles with one that has more importance over the others denoted by the main ID. Would usually be associated with a list of articles",
@@ -2606,11 +2932,7 @@
               "name": "template",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "Template",
-                "ofType": null
-              },
+              "type": { "kind": "ENUM", "name": "Template", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2618,11 +2940,7 @@
               "name": "main",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2630,22 +2948,14 @@
               "name": "lead",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
               "isDeprecated": true,
               "deprecationReason": "use main instead"
             }
           ],
           "inputFields": null,
           "interfaces": [
-            {
-              "kind": "INTERFACE",
-              "name": "Layout",
-              "ofType": null
-            }
+            { "kind": "INTERFACE", "name": "Layout", "ofType": null }
           ],
           "enumValues": null,
           "possibleTypes": null
@@ -2660,11 +2970,7 @@
               "name": "template",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "Template",
-                "ofType": null
-              },
+              "type": { "kind": "ENUM", "name": "Template", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2672,11 +2978,7 @@
               "name": "main",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -2684,22 +2986,14 @@
               "name": "opinion",
               "description": "",
               "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "ID", "ofType": null },
               "isDeprecated": true,
               "deprecationReason": "use main instead"
             }
           ],
           "inputFields": null,
           "interfaces": [
-            {
-              "kind": "INTERFACE",
-              "name": "Layout",
-              "ofType": null
-            }
+            { "kind": "INTERFACE", "name": "Layout", "ofType": null }
           ],
           "enumValues": null,
           "possibleTypes": null
@@ -2714,10 +3008,174 @@
               "name": "template",
               "description": "",
               "args": [],
+              "type": { "kind": "ENUM", "name": "Template", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Layout", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "NamedLink",
+          "description": "",
+          "fields": [
+            {
+              "name": "name",
+              "description": "",
+              "args": [],
               "type": {
-                "kind": "ENUM",
-                "name": "Template",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "url",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Puzzle",
+          "description":
+            "A representation of a single puzzle for the puzzles section",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "url",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "image",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Image", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "StandardSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "StandardSlice",
+          "description":
+            "Fallback slice without any prescribed presentation, replaces standard related-links slice (related-links)",
+          "fields": [
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2725,11 +3183,2347 @@
           ],
           "inputFields": null,
           "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "PuffSlice",
+          "description": "A banner containing one or many articles/links",
+          "fields": [
             {
-              "kind": "INTERFACE",
-              "name": "Layout",
-              "ofType": null
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Puff",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Puff",
+          "description": "An article/link which is displayed in a puff",
+          "fields": [
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "mainLink",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "UNION",
+                  "name": "PuffMainLink",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "topicLink",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "UNION",
+                  "name": "PuffTopicLink",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "major",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "PuffMainLink",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "Tile", "ofType": null },
+            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
+          ]
+        },
+        {
+          "kind": "UNION",
+          "name": "PuffTopicLink",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSection", "ofType": null },
+            { "kind": "OBJECT", "name": "NewsSection", "ofType": null },
+            { "kind": "OBJECT", "name": "CommentSection", "ofType": null },
+            { "kind": "OBJECT", "name": "PuzzleSection", "ofType": null },
+            { "kind": "OBJECT", "name": "RegisterSection", "ofType": null },
+            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "StandardSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "StandardSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "NewsSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "NewsSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "NewsSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "InTheNewsSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "InTheNewsSlice",
+          "description":
+            "A special type of banner containing articles which is displayed at the top the new sections",
+          "fields": [
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "FocusSlice",
+          "description": "A focus article (focus)",
+          "fields": [
+            {
+              "name": "main",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadersSlice",
+          "description": "Three leader articles (leaders)",
+          "fields": [
+            {
+              "name": "leader1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "leader2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "leader3",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadOneAndFour",
+          "description":
+            "A lead article and four supporting articles (supplement-lead-and-4-stack)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support3",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support4",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadOneAndOne",
+          "description":
+            "A lead article and a supporting article (lead-1-and-1)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadOneAndTwo",
+          "description":
+            "A lead article and two supporting articles. This slice can also represent lead and opinion related articles slices of the same name (lead-1-and-2-puffs, related-links-lead-and-2, related-links-opinion-and-2)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadOneFullWidth",
+          "description":
+            "One full width lead article on its own (lead-1-full-width)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadOneNoPicAndOneAndPortrait",
+          "description":
+            "A lead module and supporting and portrait modules (lead-1-no-pic-and-1-and-portrait)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "portrait",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LeadTwoNoPicAndTwo",
+          "description":
+            "Two leads without pictures along and a pair of supporting articles (lead-2-no-pic-and-2)",
+          "fields": [
+            {
+              "name": "lead1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "lead2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryFour",
+          "description": "Four secondary modules (secondary-4)",
+          "fields": [
+            {
+              "name": "secondary1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary3",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary4",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryOne",
+          "description": "A singular secondary module (secondary-1)",
+          "fields": [
+            {
+              "name": "secondary",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryOneAndFour",
+          "description":
+            "A secondary module and four supporting articles (supplement-secondary-1-and-4)",
+          "fields": [
+            {
+              "name": "secondary",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support3",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support4",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryTwoAndTwo",
+          "description":
+            "Two secondary modules and supporting articles (secondary-2-and-2)",
+          "fields": [
+            {
+              "name": "secondary1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryTwoNoPicAndTwo",
+          "description":
+            "Two secondary modules, without an image, and supporting articles (secondary-2-no-pic-and-2)",
+          "fields": [
+            {
+              "name": "secondary1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "secondary2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "TwoPicAndSixNoPic",
+          "description":
+            "A slice and two leads and six supporting articles (list-2-and-6-no-pic)",
+          "fields": [
+            {
+              "name": "lead1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "lead2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support3",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support4",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support5",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support6",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "CommentSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "CommentSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "CommentSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "DailyUniversalRegister",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "CommentLeadAndCartoon",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "LetterThundererPodcast",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "CommentTwoAndNotebook",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndColumnist",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "CommentLeadAndCartoon",
+          "description":
+            "A leading comment article and a cartoon (comment-lead-and-cartoon)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "cartoon",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LetterThundererPodcast",
+          "description":
+            "Trio of letter, thunderer and podcast articles (comment-1-letters-thunderer)",
+          "fields": [
+            {
+              "name": "letter",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "thunderer",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "podcast",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "CommentTwoAndNotebook",
+          "description":
+            "Two comment articles and a notebook article (comment-2-and-notebook)",
+          "fields": [
+            {
+              "name": "main1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "main2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "notebook",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SecondaryOneAndColumnist",
+          "description":
+            "A secondary module and a special supporting columnist module (secondary-1-and-columnist)",
+          "fields": [
+            {
+              "name": "secondary",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "columnist",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "PuzzleSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "PuzzleSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "PuzzleSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "Puzzle", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RegisterSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "RegisterSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "RegisterSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "ObituariesLeadAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ObituariesLeadAndTwo",
+          "description":
+            "Special obituary lead and two support articles (obituaries-lead-and-2)",
+          "fields": [
+            {
+              "name": "lead",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support1",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "support2",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Tile", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "ArticleSlice", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "MagazineSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortrait",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwo",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MagazineSection",
+          "description": "A magazine section, e.g. Culture, Style, ST Magazine",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "cover",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Image", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "MagazineSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
           ],
           "enumValues": null,
           "possibleTypes": null
@@ -2790,11 +5584,7 @@
               "name": "reason",
               "description":
                 "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "defaultValue": "\"No longer supported\""
             }
           ]

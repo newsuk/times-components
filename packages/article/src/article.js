@@ -7,11 +7,11 @@ import ArticleRow from "./article-body/article-body-row";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
-import styles from "./styles/article-body";
-import Topics from "./topics";
+import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import styles from "./styles/article-body";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
@@ -92,7 +92,7 @@ class ArticlePage extends Component {
       }
 
       case "topics": {
-        return <Topics topics={rowData.data.topics} />;
+        return <ArticleTopics topics={rowData.data.topics} />;
       }
 
       default: {
