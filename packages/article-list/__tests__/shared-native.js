@@ -3,7 +3,6 @@ import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Link from "@times-components/link";
 import Pagination from "@times-components/pagination";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import ArticleList from "../src/article-list";
 import ArticleListItem from "../src/article-list-item";
 import articleListProps from "./default-article-list-props";
@@ -16,8 +15,7 @@ export default () => {
     const wrapper = shallow(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor({ withImages: true })}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         count={10}
         page={1}
         pageSize={3}
@@ -61,8 +59,7 @@ export default () => {
     const wrapper = shallow(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor()}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         count={10}
         page={1}
         pageSize={3}
@@ -90,8 +87,7 @@ export default () => {
     const comp = renderer.create(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor()}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         articlesLoading={false}
         count={10}
         isLoading={false}
@@ -117,8 +113,7 @@ export default () => {
     const comp = renderer.create(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor()}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         articlesLoading={false}
         count={10}
         isLoading={false}
@@ -140,8 +135,7 @@ export default () => {
     const comp = renderer.create(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor()}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         articlesLoading={false}
         count={10}
         isLoading={false}

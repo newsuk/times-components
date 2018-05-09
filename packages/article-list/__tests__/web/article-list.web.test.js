@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import ArticleList from "../../src/article-list";
 import ArticleListItem from "../../src/article-list-item";
 import articleListProps from "../default-article-list-props";
@@ -17,8 +16,7 @@ describe("ArticleList tests on web", () => {
     const wrapper = shallow(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor({ withImages: true })}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         onArticlePress={onArticlePressMock}
         page={1}
         pageSize={pageSize}

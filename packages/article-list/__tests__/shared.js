@@ -127,7 +127,7 @@ export default () => {
     const tree = renderer.create(
       <ArticleList
         {...articleListProps}
-        articles={results.data.author.articles.list}
+        articles={results.articles.list}
         page={1}
         pageSize={pageSize}
       />

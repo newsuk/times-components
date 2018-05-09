@@ -349,7 +349,7 @@ describe("Lazy loading and pagination tests on web", () => {
       mount(
         <ArticleList
           {...articleListContentProps}
-          articles={pageResults.data.author.articles.list}
+          articles={pageResults.articles.list}
         />,
         {
           context: {
