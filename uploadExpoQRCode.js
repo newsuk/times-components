@@ -10,10 +10,12 @@ const s3 = new AWS.S3();
 console.log(imagePath, bucket, accessKeyId, secretAccessKey)
 
 const file = fs.readFileSync(imagePath)
+
+const filename = imagePath.split('/')[1]
 const uploadQRcode = (file) => {
     const uploadParams = {
         Bucket: bucket,
-        Key: 'test',
+        Key: filename,
         Body: file,
         ContentType: 'image/png',
         ACL: 'public-read'
