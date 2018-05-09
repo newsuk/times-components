@@ -30,6 +30,7 @@ export default () => {
     },
     longSummary,
     publicationName: "TIMES",
+    publishedTime: "2017-11-17T00:01:00.000Z",
     shortSummary,
     showImage: true,
     summary,

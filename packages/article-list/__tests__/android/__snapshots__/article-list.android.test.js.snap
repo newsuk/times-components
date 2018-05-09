@@ -1215,7 +1215,7 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
               }
               testID="datePublication"
             >
-              Invalid Date, The Times
+              Friday November 17 2017, 12:01am, The Times
             </Text>
           </View>
         </View>
@@ -1648,7 +1648,7 @@ exports[`ArticleList tests on android should render an article list item without
               }
               testID="datePublication"
             >
-              Invalid Date, The Times
+              Friday November 17 2017, 12:01am, The Times
             </Text>
           </View>
         </View>
