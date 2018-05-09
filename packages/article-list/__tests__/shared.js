@@ -16,6 +16,8 @@ import articleListProps from "./default-article-list-props";
 import pagedResult from "./paged-result";
 
 export default () => {
+  const realIntl = Intl;
+
   const listItemProps = {
     headline: "test headline",
     id: "test id",
@@ -38,7 +40,16 @@ export default () => {
   };
 
   beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
     jest.useFakeTimers();
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
   });
 
   it("should render an article list page error correctly", () => {
