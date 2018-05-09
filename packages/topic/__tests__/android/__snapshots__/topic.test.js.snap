@@ -1,15 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic tests on android:  renders correctly 1`] = `
+exports[`Topic tests on android should render HeadContainer correctly 1`] = `
+<View
+  className="responsive-styles__component-fbPFZZ eMLchy"
+/>
+`;
+
+exports[`Topic tests on android should render ResponsiveDivider correctly 1`] = `
+<View
+  className="responsive-styles__component-fbPFZZ sAowN"
+/>
+`;
+
+exports[`Topic tests on android should render ResponsiveName correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  className="responsive-styles__component-fbPFZZ MUkSZ"
+  ellipsizeMode="tail"
+/>
+`;
+
+exports[`Topic tests on android should render correctly 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F9F8F3",
       "flexDirection": "column",
+      "minHeight": 120,
       "paddingBottom": 40,
-      "paddingLeft": 10,
-      "paddingRight": 10,
+      "paddingHorizontal": 10,
       "paddingTop": 30,
       "width": "100%",
     }
@@ -38,22 +59,39 @@ exports[`Topic tests on android:  renders correctly 1`] = `
       }
       testID="topic-name"
     >
-      animals
+      Animals
     </Text>
   </View>
 </View>
 `;
 
-exports[`Topic tests on android:  renders correctly with a description 1`] = `
+exports[`Topic tests on android should render correctly when loading 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F9F8F3",
       "flexDirection": "column",
+      "minHeight": 120,
       "paddingBottom": 40,
-      "paddingLeft": 10,
-      "paddingRight": 10,
+      "paddingHorizontal": 10,
+      "paddingTop": 30,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Topic tests on android should render correctly with a description 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "minHeight": 120,
+      "paddingBottom": 40,
+      "paddingHorizontal": 10,
       "paddingTop": 30,
       "width": "100%",
     }
@@ -82,45 +120,37 @@ exports[`Topic tests on android:  renders correctly with a description 1`] = `
       }
       testID="topic-name"
     >
-      animals
+      Animals
     </Text>
     <View
       style={
         Object {
-          "alignItems": "center",
+          "borderStyle": "solid",
+          "borderTopColor": "#DBDBDB",
+          "borderTopWidth": 1,
+          "justifyContent": "center",
+          "width": 199,
         }
       }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 15,
+          "lineHeight": 26,
+          "paddingTop": 20,
+          "textAlign": "center",
+        }
+      }
+      testID="topic-description"
     >
-      <View
-        style={
-          Object {
-            "borderStyle": "solid",
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "justifyContent": "center",
-            "width": 199,
-          }
-        }
-      />
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 15,
-            "lineHeight": 26,
-            "paddingTop": 20,
-            "textAlign": "center",
-          }
-        }
-        testID="topic-description"
-      >
-        Animals are multicellular eukaryotic organisms.
-      </Text>
-    </View>
+      Animals are multicellular eukaryotic organisms.
+    </Text>
   </View>
 </View>
 `;

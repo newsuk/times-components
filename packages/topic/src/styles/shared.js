@@ -12,8 +12,7 @@ const sharedStyle = {
     flexDirection: "column",
     paddingTop: spacing(6),
     paddingBottom: spacing(8),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2),
+    paddingHorizontal: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary,
     minHeight: 120
   },

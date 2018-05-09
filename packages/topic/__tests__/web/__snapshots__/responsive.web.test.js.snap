@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic responsive tests on web should render HeadContainer correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ CHBUp"
+/>
+`;
+
+exports[`Topic responsive tests on web should render ResponsiveDivider correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ sAowN"
+/>
+`;
+
+exports[`Topic responsive tests on web should render ResponsiveName correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ kfmhxW"
+  dir="auto"
+/>
+`;

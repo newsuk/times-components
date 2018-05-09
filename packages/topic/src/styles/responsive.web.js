@@ -2,7 +2,12 @@ import { Text, View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
-import { colours, fonts, fontSizes, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
 
 export const HeadContainer = withResponsiveStyles(View, {
   base: () => `

@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
+import { propTypes } from "./proptypes";
 import styles from "./styles";
 
 const Name = ({ name }) => (
@@ -12,5 +13,7 @@ const Name = ({ name }) => (
     {name}
   </Text>
 );
+
+Name.propTypes = propTypes.name;
 
 export default Name;

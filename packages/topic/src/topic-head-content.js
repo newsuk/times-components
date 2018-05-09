@@ -6,17 +6,15 @@ import Divider from "./divider";
 import Name from "./name";
 
 const HeadContent = ({ name, description }) => {
-  const showDescription = () => {
-    if (!description) return null;
-    return (
+  const showDescription = () =>
+    description ? (
       <Fragment>
         <Divider />
         <Text testID="topic-description" style={styles.description}>
           {description}
         </Text>
       </Fragment>
-    );
-  };
+    ) : null;
 
   return (
     <View style={styles.container}>
