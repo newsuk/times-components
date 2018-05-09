@@ -136,10 +136,12 @@ export default () => {
   it("should render an article list", () => {
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
+    const articles = results.articles.list;
     const tree = renderer.create(
       <ArticleList
         {...articleListProps}
-        articles={results.articles.list}
+        articles={articles}
+        count={articles.length}
         page={1}
         pageSize={pageSize}
       />
