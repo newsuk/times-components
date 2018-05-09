@@ -1,19 +1,21 @@
 import React from "react";
 import { ART } from "react-native";
-const { Shape, Transform, Path } = ART;
+import PropTypes from "prop-types";
+
+const { Shape, Path } = ART;
 
 const toCoordinates = points =>
   points
     .split(/,|\s+/)
     .map(n => Number.parseFloat(n))
-    .reduce((points, coordinate, index) => {
-      if (index % 2 == 0) {
-        return [...points, { x: coordinate }];
+    .reduce((currentPoints, coordinate, index) => {
+      if (index % 2 === 0) {
+        return [...currentPoints, { x: coordinate }];
       }
 
-      const point = points[points.length - 1];
+      const point = currentPoints[currentPoints.length - 1];
 
-      return [...points.slice(0, -1), { x: point.x, y: coordinate }];
+      return [...currentPoints.slice(0, -1), { x: point.x, y: coordinate }];
     }, []);
 
 const Polygon = ({ stroke, fill, points }) => {
@@ -21,12 +23,18 @@ const Polygon = ({ stroke, fill, points }) => {
 
   const d = new Path().moveTo(pointsCoordinates[0].x, pointsCoordinates[0].y);
 
-  for (i = 1; i < pointsCoordinates.length; i++) {
+  for (let i = 1; i < pointsCoordinates.length; i += 1) {
     const { x, y } = pointsCoordinates[i];
     d.lineTo(x, y);
   }
 
-  return <Shape fill={fill} d={d} />;
+  return <Shape stroke={stroke} fill={fill} d={d} />;
+};
+
+Polygon.propTypes = {
+  stroke: PropTypes.string,
+  fill: PropTypes.string,
+  points: PropTypes.string.isRequired // TODO validate they're even coordinates
 };
 
 export default Polygon;
