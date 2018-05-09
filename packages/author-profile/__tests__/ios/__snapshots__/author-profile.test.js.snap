@@ -1963,7 +1963,7 @@ exports[`3. Render an article list page error state 1`] = `
               "alignItems": "center",
               "backgroundColor": "#006699",
               "flex": 1,
-              "height": 44,
+              "height": 45,
               "justifyContent": "center",
             }
           }

@@ -47,7 +47,7 @@ const styles = {
     backgroundColor: colours.functional.action,
     flex: 1,
     justifyContent: "center",
-    height: 44
+    height: 45
   },
   listErrorButtonText: {
     color: "#FFF",

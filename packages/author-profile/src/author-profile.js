@@ -3,6 +3,7 @@ import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
+import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
@@ -32,10 +33,10 @@ const AuthorProfile = ({
   if (isLoading || !author) {
     return (
       <ArticleList
+        articleListHeader={<AuthorHead isLoading />}
         articlesLoading
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
-        onTwitterLinkPress={() => {}}
         pageSize={initPageSize}
         refetch={() => {}}
         showImages
@@ -52,6 +53,18 @@ const AuthorProfile = ({
     name,
     twitter
   } = author;
+
+  const articleListHeader = (
+    <AuthorHead
+      bio={biography}
+      isLoading={false}
+      name={name}
+      onTwitterLinkPress={onTwitterLinkPress}
+      title={jobTitle}
+      twitter={twitter}
+      uri={uri}
+    />
+  );
 
   const SelectedProvider = hasLeadAssets
     ? AuthorArticlesWithImagesProvider
@@ -73,23 +86,18 @@ const AuthorProfile = ({
         variables: { imageRatio = "3:2" }
       }) => (
         <ArticleList
+          articleListHeader={articleListHeader}
           articles={get(data, "articles.list", [])}
-          biography={biography}
           count={get(articles, "count", 0)}
           error={articlesError}
           imageRatio={ratioTextToFloat(imageRatio)}
-          jobTitle={jobTitle}
-          name={name}
           onArticlePress={onArticlePress}
           onNext={onNext}
           onPrev={onPrev}
-          onTwitterLinkPress={onTwitterLinkPress}
           page={page}
           pageSize={pageSize}
           refetch={refetchArticles}
           showImages={hasLeadAssets}
-          twitter={twitter}
-          uri={uri}
         />
       )}
     </SelectedProvider>

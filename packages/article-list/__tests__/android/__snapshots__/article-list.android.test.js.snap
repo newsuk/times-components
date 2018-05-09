@@ -14,45 +14,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
-          Array [
-            Object {
-              "attributes": Object {
-                "value": "Deborah Haynes is the defence editor at ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The Times",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": ", covering the most important defence & security news in the UK and around the world.",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ]
-        }
-        isLoading={false}
-        name="Deborah Haynes"
-        onTwitterLinkPress={[Function]}
-        title="Defence Editor"
-        twitter="jdoe"
-        uri=""
-      />
       <ArticleListPagination
         hideResults={false}
         onNext={[Function]}
@@ -213,150 +174,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
       onLayout={[Function]}
     >
       <View>
-        <View
-          style={
-            Object {
-              "opacity": 0,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-              }
-            }
-          >
-            <View
-              accessibilityRole="banner"
-              style={
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
-                }
-              }
-            >
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                Deborah Haynes
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                defence editor
-              </Text>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
-                  }
-                }
-              >
-                <svg
-                  height={15}
-                  width={15}
-                >
-                  <path
-                    fill="#006699"
-                  />
-                </svg>
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="https://twitter.com/jdoe"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingLeft": 5,
-                      "textDecorationLine": "none",
-                    }
-                  }
-                >
-                  @
-                  jdoe
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                >
-                  Deborah Haynes is the defence editor at 
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "fontStyle": "italic",
-                      }
-                    }
-                  >
-                    The Times
-                  </Text>
-                  , covering the most important defence & security news in the UK and around the world.
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
         <View
           style={
             Object {
@@ -1904,7 +1721,7 @@ exports[`ArticleList tests on android should render an article list page error c
             "alignItems": "center",
             "backgroundColor": "#006699",
             "flex": 1,
-            "height": 44,
+            "height": 45,
             "justifyContent": "center",
           }
         }
@@ -1940,15 +1757,6 @@ exports[`ArticleList tests on android should render an article list that is load
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
-        isLoading={true}
-        name=""
-        onTwitterLinkPress={[Function]}
-        title=""
-        twitter={null}
-        uri=""
-      />
       <ArticleListPagination
         hideResults={false}
         onNext={[Function]}
@@ -2012,87 +1820,6 @@ exports[`ArticleList tests on android should render an article list that is load
       onLayout={[Function]}
     >
       <View>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "minHeight": 264,
-                "width": "100%",
-              }
-            }
-          />
-          <View
-            style={
-              Object {
-                "height": 100,
-                "position": "absolute",
-                "top": 30,
-                "width": 100,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#FFFFFF",
-                  "borderRadius": 50,
-                  "height": 100,
-                  "overflow": "hidden",
-                  "width": 100,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.07922796533956822,
-                      "y": 0.09442021232736122,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                />
-              </View>
-            </View>
-          </View>
-        </View>
         <View
           style={
             Object {

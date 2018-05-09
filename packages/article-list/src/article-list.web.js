@@ -1,7 +1,6 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
-import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -103,26 +102,20 @@ class ArticleList extends Component {
 
   render() {
     const {
+      articleListHeader,
       articles,
       articlesLoading,
-      biography,
       count,
       error,
       imageRatio,
-      isLoading,
-      jobTitle,
-      name,
       onArticlePress,
       onNext,
       onPrev,
-      onTwitterLinkPress,
       page,
       pageSize,
       receiveChildList,
       refetch,
-      showImages,
-      twitter,
-      uri
+      showImages
     } = this.props;
 
     const paginationComponent = (
@@ -217,15 +210,7 @@ class ArticleList extends Component {
 
     return (
       <View>
-        <AuthorHead
-          bio={biography}
-          isLoading={isLoading}
-          name={name}
-          onTwitterLinkPress={onTwitterLinkPress}
-          title={jobTitle}
-          twitter={twitter}
-          uri={uri}
-        />
+        {articleListHeader}
         {error ? ErrorComponent : Contents}
       </View>
     );

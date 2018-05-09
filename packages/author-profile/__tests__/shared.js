@@ -24,12 +24,12 @@ export default () => {
         })}
       >
         <AuthorProfile
+          {...authorProfileProps}
           author={fixtureGenerator.makeAuthor({ withImages: true })}
           analyticsStream={() => {}}
           isLoading={false}
           page={1}
           pageSize={pageSize}
-          slug={authorProfileProps.slug}
         />
       </MockedProvider>
     );
@@ -60,12 +60,7 @@ export default () => {
 
   it("should render the article list page error state", () => {
     const tree = renderer.create(
-      <AuthorProfile
-        analyticsStream={() => {}}
-        error={{}}
-        refetch={jest.fn()}
-        slug={authorProfileProps.slug}
-      />
+      <AuthorProfile {...authorProfileProps} error={{}} />
     );
 
     expect(tree).toMatchSnapshot("3. Render an article list page error state");

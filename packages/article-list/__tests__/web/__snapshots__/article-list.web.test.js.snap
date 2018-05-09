@@ -3,78 +3,6 @@
 exports[`ArticleList tests on web should render an article list 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ woNlo"
-  >
-    <div
-      data-testid="author-head"
-    >
-      <header
-        className="responsive-styles__component-fbPFZZ eNPgyU"
-        role="banner"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fRtPsM"
-        />
-        <h1
-          aria-label="author-name"
-          aria-level="1"
-          className="responsive-styles__component-fbPFZZ dkRirA"
-          data-testid="author-name"
-          dir="auto"
-          role="heading"
-        >
-          Deborah Haynes
-        </h1>
-        <h2
-          aria-level="2"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-            }
-          }
-        >
-          defence editor
-        </h2>
-        <div>
-          <svg
-            height={15}
-            width={15}
-          >
-            <path
-              fill="#006699"
-            />
-          </svg>
-          <a
-            dir="auto"
-            href="https://twitter.com/jdoe"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="link"
-          >
-            @
-            jdoe
-          </a>
-        </div>
-        <div
-          className="responsive-styles__component-fbPFZZ yjaCW"
-        >
-          <div
-            data-testid="author-bio"
-            dir="auto"
-          >
-            Deborah Haynes is the defence editor at 
-            <em>
-              The Times
-            </em>
-            , covering the most important defence & security news in the UK and around the world.
-          </div>
-        </div>
-      </header>
-    </div>
-  </div>
-  <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
     <div>
@@ -184,6 +112,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontFamily": "TimesDigitalW04",
                           "lineHeight": "20px",
                         }
                       }
@@ -299,6 +228,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontFamily": "TimesDigitalW04",
                           "lineHeight": "20px",
                         }
                       }
@@ -414,6 +344,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontFamily": "TimesDigitalW04",
                           "lineHeight": "20px",
                         }
                       }
@@ -557,6 +488,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               dir="auto"
               style={
                 Object {
+                  "fontFamily": "TimesDigitalW04",
                   "lineHeight": "20px",
                 }
               }
@@ -726,6 +658,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
                 }
@@ -790,6 +723,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
                 }
@@ -885,7 +819,7 @@ exports[`ArticleList tests on web should render an article list page error corre
             "alignItems": "center",
             "backgroundColor": "#006699",
             "flex": 1,
-            "height": 44,
+            "height": 45,
             "justifyContent": "center",
           }
         }
@@ -908,20 +842,6 @@ exports[`ArticleList tests on web should render an article list page error corre
 
 exports[`ArticleList tests on web should render an article list that is loading 1`] = `
 <div>
-  <div>
-    <div />
-    <div>
-      <div>
-        <div
-          style={
-            Object {
-              "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >

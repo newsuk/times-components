@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { FlatList, View } from "react-native";
-import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleListError from "./article-list-error";
@@ -39,43 +38,25 @@ class ArticleList extends Component {
 
   render() {
     const {
+      articleListHeader,
       articles,
       articlesLoading,
-      biography,
       count,
       error,
       imageRatio,
-      isLoading,
-      jobTitle,
-      name,
       onArticlePress,
       onNext,
       onPrev,
-      onTwitterLinkPress,
       page,
       pageSize,
-      twitter,
-      uri,
       refetch,
       showImages
     } = this.props;
 
-    const ArticleListHead = (
-      <AuthorHead
-        bio={biography}
-        isLoading={isLoading}
-        name={name}
-        onTwitterLinkPress={onTwitterLinkPress}
-        title={jobTitle}
-        twitter={twitter}
-        uri={uri}
-      />
-    );
-
     if (error) {
       return (
         <View style={styles.listErrorContainer}>
-          {ArticleListHead}
+          {articleListHeader}
           <ArticleListError refetch={refetch} />
         </View>
       );
@@ -165,7 +146,7 @@ class ArticleList extends Component {
         })}
         ListHeaderComponent={
           <View>
-            {ArticleListHead}
+            {articleListHeader}
             {paginationComponent({ autoScroll: false, hideResults: false })}
           </View>
         }
