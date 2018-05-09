@@ -14,7 +14,8 @@ const sharedStyle = {
     paddingBottom: spacing(8),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    backgroundColor: colours.functional.backgroundPrimary
+    backgroundColor: colours.functional.backgroundPrimary,
+    minHeight: 120
   },
   name: {
     fontFamily: fonts.headline,

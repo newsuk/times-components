@@ -26,6 +26,17 @@ export default {
         };
         return <Topic {...props} />;
       }
+    },
+    {
+      type: "story",
+      name: "Topic is loading",
+      component: () => {
+        const props = {
+          name: "Animals",
+          isLoading: true
+        };
+        return <Topic {...props} />;
+      }
     }
   ]
 };

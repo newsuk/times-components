@@ -4,14 +4,21 @@ import { propTypes, defaultProps } from "./proptypes";
 import { HeadContainer } from "./styles/responsive";
 import styles from "./styles";
 import HeadContent from "./topic-head-content";
+import Loading from "./topic-head-loading";
 
-const TopicHead = ({ name, description }) => (
-  <View style={styles.wrapper}>
-    <HeadContainer>
-      <HeadContent name={name} description={description} />
-    </HeadContainer>
-  </View>
-);
+const TopicHead = ({ name, description, isLoading }) => {
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  return (
+    <View style={styles.wrapper}>
+      <HeadContainer>
+        <HeadContent name={name} description={description} />
+      </HeadContainer>
+    </View>
+  );
+};
 
 TopicHead.propTypes = propTypes;
 TopicHead.defaultProps = defaultProps;

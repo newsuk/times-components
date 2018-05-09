@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import withResponsiveStyles, {
   config
 } from "@times-components/responsive-styles";
-import { colours, spacing } from "@times-components/styleguide";
+import { colours, fonts, fontSizes, spacing } from "@times-components/styleguide";
 
 export const HeadContainer = withResponsiveStyles(View, {
   base: () => `
@@ -22,7 +22,21 @@ export const HeadContainer = withResponsiveStyles(View, {
 `
 });
 
-export const Divider = withResponsiveStyles(View, {
+export const ResponsiveName = withResponsiveStyles(Text, {
+  base: () => `
+    font-family: ${fonts.headline};
+    font-size: ${fontSizes.pageHeadline}px;
+    color: ${colours.functional.brandColour};
+    padding-bottom: ${spacing(4)};
+  `,
+  mediumUp: () => `
+    font-size: ${fontSizes.pageHeadlineLarge}px;
+`
+});
+
+ResponsiveName.displayName = "Name";
+
+export const ResponsiveDivider = withResponsiveStyles(View, {
   base: () => `
     border-top-color: ${colours.functional.keyline};
     border-top-style: solid;
@@ -34,4 +48,4 @@ export const Divider = withResponsiveStyles(View, {
 `
 });
 
-Divider.displayName = "Divider";
+ResponsiveDivider.displayName = "Divider";
