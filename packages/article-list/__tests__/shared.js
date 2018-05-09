@@ -1,7 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import ArticleList from "../src/article-list";
 import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
@@ -128,7 +127,6 @@ export default () => {
     const tree = renderer.create(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
         page={1}
         pageSize={pageSize}
@@ -161,7 +159,6 @@ export default () => {
     const wrapper = shallow(
       <ArticleList
         {...articleListProps}
-        {...fixtureGenerator.makeAuthor()}
         articles={[]}
         count={0}
         error={new Error("Failed")}

@@ -4,8 +4,7 @@ const articleListProps = {
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
   refetch: () => {},
-  showImages: true,
-  slug: "deborah-haynes"
+  showImages: true
 };
 
 export default articleListProps;

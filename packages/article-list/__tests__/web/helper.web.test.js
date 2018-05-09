@@ -2,7 +2,6 @@
 /* eslint-env browser */
 import React from "react";
 import { mount } from "enzyme";
-import articleListFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import ArticleList from "../../src/article-list";
 import { scrollUpToPaging } from "../../src/utils";
@@ -29,14 +28,7 @@ describe("Lazy loading and pagination tests on web", () => {
   beforeAll(() => jest.useRealTimers());
   afterAll(() => jest.useFakeTimers());
 
-  const makeAuthor = ({ withImages } = {}) => ({
-    ...articleListFixture.data.author,
-    hasLeadAssets: withImages,
-    showImages: withImages
-  });
-
   const articleListContentProps = {
-    ...makeAuthor({ withImages: true }),
     articles: articleListWithImagesFixture.data.author.articles.list,
     count: articleListWithImagesFixture.data.author.articles.list.length,
     imageRatio: 3 / 2,
