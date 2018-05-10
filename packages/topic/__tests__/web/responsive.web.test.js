@@ -2,13 +2,17 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 import {
-  HeadContainer,
+  getHeadContainer,
   ResponsiveName,
   ResponsiveDivider
 } from "../../src/styles/responsive.web";
 
 describe("Topic responsive tests on web", () => {
+
   it("should render HeadContainer correctly", () => {
+    let HeadContainer = getHeadContainer({ hasDescription: true });
+    expect(renderer.create(<HeadContainer />).toJSON()).toMatchSnapshot();
+    HeadContainer = getHeadContainer({ hasDescription: false });
     expect(renderer.create(<HeadContainer />).toJSON()).toMatchSnapshot();
   });
 
