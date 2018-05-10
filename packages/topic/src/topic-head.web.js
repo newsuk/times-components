@@ -1,13 +1,17 @@
 import React from "react";
 import { View } from "react-native";
 import { propTypes, defaultProps } from "./proptypes";
-import { HeadContainer } from "./styles/responsive";
+import { getHeadContainer } from "./styles/responsive";
 import styles from "./styles";
 import HeadContent from "./topic-head-content";
 import Loading from "./topic-head-loading";
 
-const TopicHead = ({ name, description, isLoading }) =>
-  isLoading ? (
+const TopicHead = ({ name, description, isLoading }) => {
+  const HeadContainer = getHeadContainer({
+    hasDescription: !!description
+  });
+
+  return isLoading ? (
     <Loading />
   ) : (
     <View style={styles.wrapper}>
@@ -16,6 +20,8 @@ const TopicHead = ({ name, description, isLoading }) =>
       </HeadContainer>
     </View>
   );
+};
+
 
 TopicHead.propTypes = propTypes;
 TopicHead.defaultProps = defaultProps;

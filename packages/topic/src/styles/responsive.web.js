@@ -9,23 +9,33 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const HeadContainer = withResponsiveStyles(View, {
-  base: () => `
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    padding-left: ${spacing(2)};
-    padding-right: ${spacing(2)};
-  `,
-  mediumUp: () => `
-    padding-left: 0;
-    padding-right: 0;
-    max-width: ${config.mediumBpWidth};
-  `,
-  wideUp: () => `
-    max-width: ${config.wideBpWidth};
-`
-});
+export const getHeadContainer = ({ hasDescription }) => {
+  const HeadContainer = withResponsiveStyles(View, {
+    base: () => `
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      padding-left: ${spacing(2)};
+      padding-right: ${spacing(2)};
+      padding-top: ${hasDescription ? spacing(1) : spacing(6)};
+    `,
+    mediumUp: () => `
+      padding-left: 0;
+      padding-right: 0;
+      max-width: ${config.mediumBpWidth};
+      padding-top: ${hasDescription ? spacing(1) : spacing(6)};
+      padding-bottom: ${hasDescription ? spacing(7) : spacing(2)};
+    `,
+    wideUp: () => ` 
+      max-width: ${config.wideBpWidth};
+      padding-top: ${hasDescription ? spacing(3) : spacing(10)};
+      padding-bottom: ${hasDescription ? spacing(8) : spacing(3)};
+    `
+  });
+
+  HeadContainer.displayName = "HeadContainer";
+  return HeadContainer;
+};
 
 export const ResponsiveName = withResponsiveStyles(Text, {
   base: () => `
@@ -46,10 +56,10 @@ export const ResponsiveDivider = withResponsiveStyles(View, {
     border-top-color: ${colours.functional.keyline};
     border-top-style: solid;
     border-top-width: 1px;
-    width: 199px;
+    width: 200px;
   `,
   mediumUp: () => `
-    width: 291px;
+    width: 290px;
 `
 });
 

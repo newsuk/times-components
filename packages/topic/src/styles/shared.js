@@ -10,11 +10,10 @@ const sharedStyle = {
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: spacing(6),
-    paddingBottom: spacing(8),
+    paddingTop: spacing(8),
     paddingHorizontal: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary,
-    minHeight: 120
+    minHeight: 100
   },
   name: {
     fontFamily: fonts.headline,
@@ -28,13 +27,14 @@ const sharedStyle = {
     fontSize: fontSizes.tertiary,
     lineHeight: 26,
     color: colours.functional.primary,
-    paddingTop: spacing(4)
+    paddingTop: spacing(4),
+    paddingBottom: spacing(4)
   },
   divider: {
     borderStyle: "solid",
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1,
-    width: 199,
+    width: 200,
     justifyContent: "center"
   },
   container: {
