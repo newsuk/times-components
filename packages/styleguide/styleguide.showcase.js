@@ -39,7 +39,6 @@ export default {
     {
       type: "story",
       name: "Functional Colours",
-      platform: "native",
       component: () => {
         const colourBoxes = Object.keys(colours.functional).map(colourName => (
           <ColourBox
@@ -49,29 +48,16 @@ export default {
           />
         ));
 
-        return <ScrollView>{colourBoxes}</ScrollView>;
-      }
-    },
-    {
-      type: "story",
-      name: "Functional Colours",
-      platform: "web",
-      component: () => {
-        const colourBoxes = Object.keys(colours.functional).map(colourName => (
-          <ColourBox
-            key={colourName}
-            name={colourName}
-            hex={colours.functional[colourName]}
-          />
-        ));
-
-        return <View style={styles.display}>{colourBoxes}</View>;
+        return (
+          <ScrollView>
+            <View style={styles.display}>{colourBoxes}</View>
+          </ScrollView>
+        );
       }
     },
     {
       type: "story",
       name: "Section Colours",
-      platform: "native",
       component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
@@ -81,23 +67,11 @@ export default {
           />
         ));
 
-        return <ScrollView>{colourBoxes}</ScrollView>;
-      }
-    },
-    {
-      type: "story",
-      name: "Section Colours",
-      platform: "web",
-      component: () => {
-        const colourBoxes = Object.keys(colours.section).map(colourName => (
-          <ColourBox
-            key={colourName}
-            name={colourName}
-            hex={colours.section[colourName]}
-          />
-        ));
-
-        return <View style={styles.display}>{colourBoxes}</View>;
+        return (
+          <ScrollView>
+            <View style={styles.display}>{colourBoxes}</View>
+          </ScrollView>
+        );
       }
     },
     {
