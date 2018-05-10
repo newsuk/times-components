@@ -8,7 +8,6 @@ import {
 } from "../../src/styles/responsive.web";
 
 describe("Topic responsive tests on web", () => {
-
   it("should render HeadContainer correctly", () => {
     let HeadContainer = getHeadContainer({ hasDescription: true });
     expect(renderer.create(<HeadContainer />).toJSON()).toMatchSnapshot();

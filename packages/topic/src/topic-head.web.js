@@ -22,7 +22,6 @@ const TopicHead = ({ name, description, isLoading }) => {
   );
 };
 
-
 TopicHead.propTypes = propTypes;
 TopicHead.defaultProps = defaultProps;
 
