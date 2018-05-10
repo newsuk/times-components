@@ -20,8 +20,8 @@ requires [Xcode](https://developer.apple.com/xcode),
 
 You can try without these requirements, but you'd be on your own.
 
-
 ## Viewing Our Components
+
 If you use Expo you are able to scan the QR code below
 
 <img src="https://s3.eu-west-1.amazonaws.com/nu-tools-expo/MasterExpo.png">
@@ -59,7 +59,6 @@ native Storybook bundles using Webpack, which we configure to honour our
 monorepo packages' respective `dev` entry points; this allows one to update a
 package's source code and preview the changes without having to manually
 re-transpile. Haul also automatically generates debuggable source maps.
-
 
 ### Fonts ⚠️
 
