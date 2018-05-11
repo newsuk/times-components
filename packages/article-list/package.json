@@ -56,7 +56,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.23.16",
+    "@times-components/article-summary": "0.23.17",
     "@times-components/card": "0.28.9",
     "@times-components/error-view": "0.11.9",
     "@times-components/image": "1.17.8",
