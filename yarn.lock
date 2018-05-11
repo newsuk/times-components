@@ -746,14 +746,14 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/fructose@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.5.8.tgz#769978152d3ca269b608c75e4905a104cf1c4c64"
+"@times-components/fructose@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.6.0.tgz#cef074fea948c5fb07b957e0978951cc6089f49f"
   dependencies:
     babel-polyfill "^6.26.0"
     callsite "^1.0.0"
     chromeless "^1.3.0"
-    commander "^2.12.2"
+    commander "^2.15.1"
     express "^4.16.2"
     html-webpack-plugin "^2.28.0"
     jimp "^0.2.28"
@@ -1392,6 +1392,21 @@ autoprefixer@^7.2.6:
     num2fraction "^1.2.2"
     postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
+
+aws-sdk@2.238.1:
+  version "2.238.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.238.1.tgz#a35fdec122ed915da490840e8828336da5be4e7f"
+  dependencies:
+    buffer "4.9.1"
+    events "1.1.1"
+    ieee754 "1.1.8"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.1.0"
+    xml2js "0.4.17"
+    xmlbuilder "4.2.1"
 
 aws-sdk@^2.177.0:
   version "2.229.1"
@@ -3599,7 +3614,7 @@ commander@2.14.1:
   version "2.14.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
 
-commander@2.15.x, commander@^2.11.0, commander@^2.12.2, commander@^2.15.0, commander@^2.9.0, commander@~2.15.0:
+commander@2.15.x, commander@^2.11.0, commander@^2.15.0, commander@^2.15.1, commander@^2.9.0, commander@~2.15.0:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
