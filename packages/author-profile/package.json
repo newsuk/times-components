@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "0.58.14",
+  "version": "1.0.0",
   "description": "Author profile information along with a list of articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -52,8 +52,8 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "0.0.1",
-    "@times-components/author-head": "0.25.13",
+    "@times-components/article-list": "1.0.0",
+    "@times-components/author-head": "1.0.0",
     "@times-components/pagination": "0.18.14",
     "@times-components/provider": "0.29.0",
     "@times-components/styleguide": "0.6.8",
