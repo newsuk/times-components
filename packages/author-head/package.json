@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-head",
-  "version": "0.25.12",
+  "version": "0.25.13",
   "main": "dist/author-head",
   "dev": "src/author-head",
   "scripts": {
@@ -70,7 +70,7 @@
     "@times-components/icons": "0.7.10",
     "@times-components/image": "1.17.8",
     "@times-components/link": "0.20.10",
-    "@times-components/markup": "0.26.13",
+    "@times-components/markup": "0.26.14",
     "@times-components/responsive-styles": "0.7.5",
     "@times-components/styleguide": "0.6.8",
     "@times-components/tracking": "0.12.12",
