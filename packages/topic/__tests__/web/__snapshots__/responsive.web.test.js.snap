@@ -2,13 +2,13 @@
 
 exports[`Topic responsive tests on web should render HeadContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ fZiZsn"
+  className="responsive-styles__component-fbPFZZ hKIDHg"
 />
 `;
 
 exports[`Topic responsive tests on web should render HeadContainer correctly 2`] = `
 <div
-  className="responsive-styles__component-fbPFZZ jbLlmr"
+  className="responsive-styles__component-fbPFZZ dzzdQH"
 />
 `;
 

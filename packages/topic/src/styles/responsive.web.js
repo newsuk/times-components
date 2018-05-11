@@ -18,7 +18,7 @@ export const getHeadContainer = ({ hasDescription }) =>
       align-items: center;
       padding-left: ${spacing(2)};
       padding-right: ${spacing(2)};
-      padding-top: ${hasDescription ? spacing(1) : spacing(6)};
+      padding-bottom: ${hasDescription ? spacing(4) : 0};
     `,
       mediumUp: () => `
       padding-left: 0;

@@ -10,10 +10,10 @@ const sharedStyle = {
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: spacing(8),
+    paddingTop: spacing(7),
     paddingHorizontal: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary,
-    minHeight: 100
+    minHeight: 90
   },
   name: {
     fontFamily: fonts.headline,

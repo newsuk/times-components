@@ -3,7 +3,7 @@
 exports[`Topic tests on web should render correctly 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ jbLlmr"
+    className="responsive-styles__component-fbPFZZ dzzdQH"
   >
     <div>
       <h1
@@ -25,7 +25,7 @@ exports[`Topic tests on web should render correctly when loading 1`] = `<div />`
 exports[`Topic tests on web should render correctly with a description 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ fZiZsn"
+    className="responsive-styles__component-fbPFZZ hKIDHg"
   >
     <div>
       <h1

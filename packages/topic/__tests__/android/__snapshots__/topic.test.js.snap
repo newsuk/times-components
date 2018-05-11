@@ -7,9 +7,9 @@ exports[`Topic tests on android should render correctly 1`] = `
       "alignItems": "center",
       "backgroundColor": "#F9F8F3",
       "flexDirection": "column",
-      "minHeight": 100,
+      "minHeight": 90,
       "paddingHorizontal": 10,
-      "paddingTop": 40,
+      "paddingTop": 35,
       "width": "100%",
     }
   }
@@ -50,9 +50,9 @@ exports[`Topic tests on android should render correctly when loading 1`] = `
       "alignItems": "center",
       "backgroundColor": "#F9F8F3",
       "flexDirection": "column",
-      "minHeight": 100,
+      "minHeight": 90,
       "paddingHorizontal": 10,
-      "paddingTop": 40,
+      "paddingTop": 35,
       "width": "100%",
     }
   }
@@ -66,10 +66,10 @@ exports[`Topic tests on android should render correctly with a description 1`] =
       "alignItems": "center",
       "backgroundColor": "#F9F8F3",
       "flexDirection": "column",
-      "minHeight": 100,
+      "minHeight": 90,
       "paddingBottom": 20,
       "paddingHorizontal": 10,
-      "paddingTop": 40,
+      "paddingTop": 35,
       "width": "100%",
     }
   }
