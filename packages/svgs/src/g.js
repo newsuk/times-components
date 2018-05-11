@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 
 const { Group } = ART;
 
-const G = ({ fill, fillRule, stroke, strokeWidth, children }) => {
+const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
   const childrenWithProps = React.Children.map(children, child =>
     React.cloneElement(child, {
       fill,
-      fillRule,
       stroke,
       strokeWidth,
+      opacity,
       ...child.props
     })
   );
@@ -28,9 +28,9 @@ const G = ({ fill, fillRule, stroke, strokeWidth, children }) => {
 
 G.propTypes = {
   fill: PropTypes.string,
-  fillRule: PropTypes.string,
   stroke: PropTypes.string,
   strokeWidth: PropTypes.string,
+  opacity: PropTypes.string,
   children: PropTypes.node.isRequired
 };
 
