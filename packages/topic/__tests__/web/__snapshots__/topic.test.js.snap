@@ -1,28 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic tests on web should render HeadContainer correctly 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ CHBUp"
-/>
-`;
-
-exports[`Topic tests on web should render ResponsiveDivider correctly 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ sAowN"
-/>
-`;
-
-exports[`Topic tests on web should render ResponsiveName correctly 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ kfmhxW"
-  dir="auto"
-/>
-`;
-
 exports[`Topic tests on web should render correctly 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ CHBUp"
+    className="responsive-styles__component-fbPFZZ jbLlmr"
   >
     <div>
       <h1
@@ -44,7 +25,7 @@ exports[`Topic tests on web should render correctly when loading 1`] = `<div />`
 exports[`Topic tests on web should render correctly with a description 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ CHBUp"
+    className="responsive-styles__component-fbPFZZ fZiZsn"
   >
     <div>
       <h1
@@ -57,7 +38,7 @@ exports[`Topic tests on web should render correctly with a description 1`] = `
         Animals
       </h1>
       <div
-        className="responsive-styles__component-fbPFZZ sAowN"
+        className="responsive-styles__component-fbPFZZ gUagh"
       />
       <div
         data-testid="topic-description"

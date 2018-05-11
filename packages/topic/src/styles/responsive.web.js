@@ -9,8 +9,8 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const getHeadContainer = ({ hasDescription }) => {
-  const HeadContainer = withResponsiveStyles(
+export const getHeadContainer = ({ hasDescription }) =>
+  withResponsiveStyles(
     View,
     {
       base: () => `
@@ -35,9 +35,6 @@ export const getHeadContainer = ({ hasDescription }) => {
     },
     "HeadContainer"
   );
-
-  return HeadContainer;
-};
 
 export const ResponsiveName = withResponsiveStyles(
   Text,

@@ -1,5 +1,5 @@
 import React from "react";
-import { propTypes } from "./proptypes";
+import PropTypes from "prop-types";
 import { ResponsiveName } from "./styles/responsive";
 
 const Name = ({ name }) => (
@@ -12,6 +12,8 @@ const Name = ({ name }) => (
   </ResponsiveName>
 );
 
-Name.propTypes = propTypes.name;
+Name.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
 export default Name;

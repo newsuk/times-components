@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { propTypes } from "./proptypes";
+import PropTypes from "prop-types";
 import styles from "./styles";
 
 const Name = ({ name }) => (
@@ -14,6 +14,8 @@ const Name = ({ name }) => (
   </Text>
 );
 
-Name.propTypes = propTypes.name.isRequired;
+Name.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
 export default Name;
