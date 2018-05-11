@@ -1,6 +1,4 @@
-import "react-native";
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
-import ArticleList from "./src/article-list";
+import { showcaseConverter } from "@times-components/storybook";
+import showcase from "./article-list.showcase";
 
-storiesOf("ArticleList", module).add("ArticleList", () => <ArticleList />);
+showcaseConverter(module, showcase);
