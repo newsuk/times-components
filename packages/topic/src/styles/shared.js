@@ -38,6 +38,9 @@ const sharedStyle = {
   },
   container: {
     alignItems: "center"
+  },
+  paddingBottom: {
+    paddingBottom: spacing(4)
   }
 };
 

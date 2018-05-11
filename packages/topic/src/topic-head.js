@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./proptypes";
 import styles from "./styles";
 import HeadContent from "./topic-head-content";
@@ -10,9 +9,7 @@ const TopicHead = ({ name, description, isLoading }) =>
   isLoading ? (
     <Loading />
   ) : (
-    <View
-      style={[styles.wrapper, description ? { paddingBottom: spacing(4) } : {}]}
-    >
+    <View style={[styles.wrapper, description ? styles.paddingBottom : {}]}>
       <HeadContent name={name} description={description} />
     </View>
   );
