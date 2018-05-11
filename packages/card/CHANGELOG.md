@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.28.9"></a>
+## [0.28.9](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.8...@times-components/card@0.28.9) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.28.8"></a>
+## [0.28.8](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.7...@times-components/card@0.28.8) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.28.7"></a>
+## [0.28.7](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.6...@times-components/card@0.28.7) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="0.28.6"></a>
+## [0.28.6](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.5...@times-components/card@0.28.6) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.28.5"></a>
+## [0.28.5](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.4...@times-components/card@0.28.5) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
+<a name="0.28.4"></a>
+## [0.28.4](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.3...@times-components/card@0.28.4) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/card
+
 <a name="0.28.3"></a>
 ## [0.28.3](https://github.com/newsuk/times-components/compare/@times-components/card@0.28.2...@times-components/card@0.28.3) (2018-04-26)
 

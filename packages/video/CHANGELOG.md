@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.8"></a>
+## [1.2.8](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.7...@times-components/video@1.2.8) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/video
+
+<a name="1.2.7"></a>
+## [1.2.7](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.6...@times-components/video@1.2.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/video
+
+<a name="1.2.6"></a>
+## [1.2.6](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.5...@times-components/video@1.2.6) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.4...@times-components/video@1.2.5) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/video
+
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.3...@times-components/video@1.2.4) (2018-04-30)
+
+
+### Bug Fixes
+
+* video package code review updates ([#898](https://github.com/newsuk/times-components/issues/898)) ([fab3593](https://github.com/newsuk/times-components/commit/fab3593))
+
+
+
+
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.2...@times-components/video@1.2.3) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/video
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/video@1.2.1...@times-components/video@1.2.2) (2018-04-26)
 

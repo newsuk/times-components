@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.8"></a>
+## [0.18.8](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.7...@times-components/ad@0.18.8) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.18.7"></a>
+## [0.18.7](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.6...@times-components/ad@0.18.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
+<a name="0.18.6"></a>
+## [0.18.6](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.5...@times-components/ad@0.18.6) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="0.18.5"></a>
+## [0.18.5](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.4...@times-components/ad@0.18.5) (2018-04-30)
+
+
+### Bug Fixes
+
+* video package code review updates ([#898](https://github.com/newsuk/times-components/issues/898)) ([fab3593](https://github.com/newsuk/times-components/commit/fab3593))
+
+
+
+
+<a name="0.18.4"></a>
+## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.3...@times-components/ad@0.18.4) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/ad
+
 <a name="0.18.3"></a>
 ## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.2...@times-components/ad@0.18.3) (2018-04-26)
 

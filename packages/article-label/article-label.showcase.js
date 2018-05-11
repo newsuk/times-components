@@ -7,7 +7,7 @@ import { colours } from "@times-components/styleguide";
 import ArticleLabel from "./src/article-label";
 
 export default {
-  name: "Primitives/ArticleLabel",
+  name: "Primitives/Article Label",
   children: [
     {
       type: "story",

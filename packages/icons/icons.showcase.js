@@ -35,20 +35,25 @@ const styles = StyleSheet.create({
   }
 });
 
-const renderIcon = color => ([name, Icon]) => (
-  <View style={styles.icon} key={name}>
-    <Icon
-      width={50}
-      height={50}
-      fillColour={color(`Icon ${name} fill`, Icon.defaultProps.fillColour)}
-      strokeColour={color(
-        `Icon ${name} strike`,
-        Icon.defaultProps.strokeColour
-      )}
-    />
-    <Text style={styles.label}>{name}</Text>
-  </View>
-);
+const renderIcon = color => args => {
+  const name = args[0];
+  const Icon = args[1];
+
+  return (
+    <View style={styles.icon} key={name}>
+      <Icon
+        width={50}
+        height={50}
+        fillColour={color(`Icon ${name} fill`, Icon.defaultProps.fillColour)}
+        strokeColour={color(
+          `Icon ${name} strike`,
+          Icon.defaultProps.strokeColour
+        )}
+      />
+      <Text style={styles.label}>{name}</Text>
+    </View>
+  );
+};
 
 export default {
   name: "Primitives/Icons",

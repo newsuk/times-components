@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`depend cli-parser tests should fail if too many @ symbol are used 1`] = `
+Array [
+  Array [
+    "\\"a@b@c@d\\" is an invalid rule. Format: \\"-p {[@namespace]name}@{ver}\\"",
+  ],
+]
+`;

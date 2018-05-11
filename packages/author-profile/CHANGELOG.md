@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.13"></a>
+## [0.58.13](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.12...@times-components/author-profile@0.58.13) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.12"></a>
+## [0.58.12](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.11...@times-components/author-profile@0.58.12) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.11"></a>
+## [0.58.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.10...@times-components/author-profile@0.58.11) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.10"></a>
+## [0.58.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.9...@times-components/author-profile@0.58.10) (2018-05-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.9"></a>
+## [0.58.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.8...@times-components/author-profile@0.58.9) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.8"></a>
+## [0.58.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.7...@times-components/author-profile@0.58.8) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="0.58.7"></a>
+## [0.58.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.6...@times-components/author-profile@0.58.7) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="0.58.6"></a>
 ## [0.58.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@0.58.5...@times-components/author-profile@0.58.6) (2018-04-26)
 

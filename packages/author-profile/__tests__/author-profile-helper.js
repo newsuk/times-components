@@ -1,25 +1,24 @@
 import React from "react";
 import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils";
-import set from "lodash.set";
 import cloneDeep from "lodash.clonedeep";
+import set from "lodash.set";
+import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
+import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
-import AuthorProfileItem from "../src/author-profile-item";
-import AuthorHead from "../src/author-profile-author-head";
-import AuthorProfileItemSeparator from "../src/author-profile-item-separator";
+import AuthorProfileListItem from "../src/author-profile-list-item";
+import AuthorProfileListItemSeparator from "../src/author-profile-list-item-separator";
 import pagedResult from "./paged-result";
 
 const authorProfileProps = {
-  slug: "deborah-haynes",
-  onTwitterLinkPress: () => {},
-  onArticlePress: () => {},
   analyticsStream: () => {},
-  refetch: () => {}
+  onArticlePress: () => {},
+  onTwitterLinkPress: () => {},
+  refetch: () => {},
+  slug: "deborah-haynes"
 };
 
-export default AuthorProfileContent => {
+export default AuthorProfileListContent => {
   const realIntl = Intl;
 
   beforeEach(() => {
@@ -133,7 +132,7 @@ export default AuthorProfileContent => {
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
     const component = renderer.create(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...fixtureGenerator.makeAuthor({ withImages: true })}
         articles={results.data.author.articles.list}
         page={1}
@@ -162,7 +161,7 @@ export default AuthorProfileContent => {
       imageRatio: 3 / 2
     };
 
-    const component = renderer.create(<AuthorProfileContent {...props} />);
+    const component = renderer.create(<AuthorProfileListContent {...props} />);
 
     expect(component).toMatchSnapshot();
   });
@@ -174,7 +173,7 @@ export default AuthorProfileContent => {
       isLoading: false
     };
 
-    const component = renderer.create(<AuthorProfileContent {...props} />);
+    const component = renderer.create(<AuthorProfileListContent {...props} />);
 
     expect(component).toMatchSnapshot();
   });
@@ -182,7 +181,7 @@ export default AuthorProfileContent => {
   it("renders profile content item component", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem
+      <AuthorProfileListItem
         {...item}
         imageRatio={8 / 5}
         imageSize={200}
@@ -196,7 +195,7 @@ export default AuthorProfileContent => {
   it("renders profile content item component with a specific image size", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const component = renderer.create(
-      <AuthorProfileItem
+      <AuthorProfileListItem
         {...item}
         imageRatio={8 / 5}
         imageSize={200}
@@ -213,7 +212,7 @@ export default AuthorProfileContent => {
     set(item, "shortSummary", item.summary);
     set(item, "longSummary", item.summary);
     const component = renderer.create(
-      <AuthorProfileItem {...item} imageRatio={20 / 3} onPress={() => {}} />
+      <AuthorProfileListItem {...item} imageRatio={20 / 3} onPress={() => {}} />
     );
 
     expect(component).toMatchSnapshot();
@@ -280,70 +279,14 @@ export default AuthorProfileContent => {
       imageRatio: 3 / 2
     };
 
-    const component = renderer.create(<AuthorProfileContent {...p} />);
-    expect(component.root.findAllByType(AuthorProfileItem)).toHaveLength(1);
+    const component = renderer.create(<AuthorProfileListContent {...p} />);
+    expect(component.root.findAllByType(AuthorProfileListItem)).toHaveLength(1);
   });
 
   it("renders profile separator", () => {
-    const component = renderer.create(<AuthorProfileItemSeparator />);
+    const component = renderer.create(<AuthorProfileListItemSeparator />);
 
     expect(component).toMatchSnapshot();
-  });
-
-  it("renders the author head", () => {
-    const component = renderer.create(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("does not re-render the author head if the name changes", () => {
-    const el = shallow(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    el.setProps({
-      name: "second name"
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
-  });
-
-  it("does re-render the author head if the loading state changes", () => {
-    const el = shallow(
-      <AuthorHead
-        {...fixtureGenerator.makeAuthor()}
-        onTwitterLinkPress={() => {}}
-      />
-    );
-
-    el.setProps({
-      name: "second name",
-      isLoading: false
-    });
-
-    expect(
-      el
-        .dive()
-        .dive()
-        .find("AuthorName")
-        .dive()
-        .find({ testID: "author-name" })
-    ).toMatchSnapshot();
   });
 
   it("tracks page view", () => {
@@ -382,7 +325,7 @@ export default AuthorProfileContent => {
   it("tracks author profile item interactions", () => {
     const item = pagedResult(0, 1).data.author.articles.list[0];
     const stream = jest.fn();
-    const component = shallow(<AuthorProfileItem {...item} />, {
+    const component = shallow(<AuthorProfileListItem {...item} />, {
       context: { tracking: { analytics: stream } }
     });
 
@@ -392,7 +335,7 @@ export default AuthorProfileContent => {
       .simulate("press");
 
     expect(stream).toHaveBeenCalledWith({
-      component: "AuthorProfileItem",
+      component: "AuthorProfileListItem",
       action: "Pressed",
       attrs: {
         articleId: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
@@ -416,19 +359,23 @@ export default AuthorProfileContent => {
       />
     );
 
-    const authProfileError = wrapper.dive().dive();
-    expect(authProfileError.type().name).toEqual("AuthorProfileError");
+    const authProfileListPageError = wrapper.dive().dive();
+    expect(authProfileListPageError.type().name).toEqual(
+      "AuthorProfileListPageError"
+    );
 
-    authProfileError
+    authProfileListPageError
       .dive()
       .dive()
-      .find("Button")
+      .find("AuthorProfileListError")
+      .dive()
+      .find("TouchableOpacity")
       .simulate("press");
   });
 
   it("calls refetch when retrying from articles error", done => {
     const wrapper = shallow(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={0}
         articles={[]}
         author={fixtureGenerator.makeAuthor()}
@@ -447,9 +394,9 @@ export default AuthorProfileContent => {
     wrapper
       .dive()
       .dive()
-      .find("AuthorProfileListingError")
+      .find("AuthorProfileListError")
       .dive()
-      .find("Button")
+      .find("TouchableOpacity")
       .simulate("press");
   });
 };

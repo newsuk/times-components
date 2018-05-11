@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 
-export default Component => {
-  class Helper extends React.Component {
+export default PaginatedComponent => {
+  class Helper extends Component {
     constructor(props) {
       super(props);
       this.state = props;
@@ -26,7 +26,7 @@ export default Component => {
 
     render() {
       return (
-        <Component
+        <PaginatedComponent
           {...this.state}
           onNext={this.handleChangePage}
           onPrev={this.handleChangePage}
@@ -35,7 +35,9 @@ export default Component => {
     }
   }
 
-  Helper.displayName = `Pagination Helper (${getDisplayName(Component)})`;
+  Helper.displayName = `Pagination Helper (${getDisplayName(
+    PaginatedComponent
+  )})`;
   Helper.propTypes = {
     page: PropTypes.number
   };

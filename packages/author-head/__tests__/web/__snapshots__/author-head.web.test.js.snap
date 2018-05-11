@@ -105,6 +105,23 @@ exports[`AuthorHead test on web renders 1`] = `
 </div>
 `;
 
+exports[`AuthorHead test on web renders the loading state 1`] = `
+<div>
+  <div />
+  <div>
+    <div>
+      <div
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`AuthorHead test on web renders with data 1`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;

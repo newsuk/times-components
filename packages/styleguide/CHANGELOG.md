@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.8"></a>
+## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.7...@times-components/styleguide@0.6.8) (2018-05-10)
+
+
+### Bug Fixes
+
+* dextrose failures on styleguide showcase ([#932](https://github.com/newsuk/times-components/issues/932)) ([9696553](https://github.com/newsuk/times-components/commit/9696553))
+
+
+
+
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.6...@times-components/styleguide@0.6.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.5...@times-components/styleguide@0.6.6) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.4...@times-components/styleguide@0.6.5) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.3...@times-components/styleguide@0.6.4) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.2...@times-components/styleguide@0.6.3) (2018-04-26)
 

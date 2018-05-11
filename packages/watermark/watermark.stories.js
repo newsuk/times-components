@@ -1,10 +1,4 @@
-import "react-native";
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
-import Watermark from "./src/watermark";
+import { showcaseConverter } from "@times-components/storybook";
+import showcase from "./watermark.showcase";
 
-storiesOf("Primitives/Watermark", module)
-  .add("MPU", () => <Watermark width={300} height={250} />)
-  .add("Full", () => (
-    <Watermark width={970} height={250} viewBox="0 0 1000 300" />
-  ));
+showcaseConverter(module, showcase);

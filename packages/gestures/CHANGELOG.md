@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.10"></a>
+## [1.3.10](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.9...@times-components/gestures@1.3.10) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.3.9"></a>
+## [1.3.9](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.8...@times-components/gestures@1.3.9) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.3.8"></a>
+## [1.3.8](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.7...@times-components/gestures@1.3.8) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="1.3.7"></a>
+## [1.3.7](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.6...@times-components/gestures@1.3.7) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
+<a name="1.3.6"></a>
+## [1.3.6](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.5...@times-components/gestures@1.3.6) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
 <a name="1.3.5"></a>
 ## [1.3.5](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.3.4...@times-components/gestures@1.3.5) (2018-04-26)
 

@@ -1,3 +1,3 @@
-import tests from "../author-profile-content.native";
+import shared from "../author-profile-list-content.native";
 
-describe("AuthorProfile test on ios", tests);
+describe("AuthorProfile tests on ios", shared);

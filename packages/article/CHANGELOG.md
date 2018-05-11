@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/newsuk/times-components/compare/@times-components/article@1.0.2...@times-components/article@1.0.3) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/newsuk/times-components/compare/@times-components/article@1.0.1...@times-components/article@1.0.2) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/newsuk/times-components/compare/@times-components/article@1.0.0...@times-components/article@1.0.1) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.12...@times-components/article@1.0.0) (2018-05-04)
+
+
+* BREAKING CHANGE: Rename `topics` package to `article-topics` (#915) ([d77e019](https://github.com/newsuk/times-components/commit/d77e019)), closes [#915](https://github.com/newsuk/times-components/issues/915)
+
+
+### BREAKING CHANGES
+
+* rename topics package to article-topics
+
+* fix: typo in readme
+
+* fix: update snapshots
+
+
+
+
+<a name="0.70.12"></a>
+## [0.70.12](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.11...@times-components/article@0.70.12) (2018-05-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.11"></a>
+## [0.70.11](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.10...@times-components/article@0.70.11) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.10"></a>
+## [0.70.10](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.9...@times-components/article@0.70.10) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.9"></a>
+## [0.70.9](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.8...@times-components/article@0.70.9) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="0.70.8"></a>
+## [0.70.8](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.7...@times-components/article@0.70.8) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="0.70.7"></a>
 ## [0.70.7](https://github.com/newsuk/times-components/compare/@times-components/article@0.70.6...@times-components/article@0.70.7) (2018-04-26)
 

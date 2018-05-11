@@ -84,10 +84,12 @@ describe("InlineVideoPlayer", () => {
     expect(dispose).toHaveBeenCalled();
   });
 
-  it("renders correctly if the script fails to load", () => {
+  it("throws an exception from render if the script fails to load", () => {
+    jest.spyOn(console, "error").mockImplementation();
     InlineVideoPlayer.scriptLoadError = true;
-    const tree = renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
-    expect(tree).toMatchSnapshot();
+    const render = () =>
+      renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
+    expect(render).toThrowError();
   });
 
   it("pauses other playing videos if play is called", () => {

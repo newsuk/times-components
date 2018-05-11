@@ -6,7 +6,7 @@ import Button from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import Image from "./image";
 import { defaultProps, propTypes } from "./image-prop-types";
-import styles from "../styles";
+import styles from "./styles";
 
 class ModalImage extends Component {
   constructor(props) {

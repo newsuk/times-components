@@ -1,9 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, StyleSheet, Platform } from "react-native";
 import PropTypes from "prop-types";
-
 import { TextLink } from "@times-components/link";
-import { withTrackEvents } from "@times-components/tracking";
 import { treePropType } from "@times-components/markup";
 import { IconTwitter } from "@times-components/icons";
 import {
@@ -12,12 +10,13 @@ import {
   fontSizes,
   spacing
 } from "@times-components/styleguide";
-
+import { withTrackEvents } from "@times-components/tracking";
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
+import AuthorHeadLoading from "./author-head-loading";
 
 const styles = StyleSheet.create({
   twitter: {
@@ -39,21 +38,38 @@ const styles = StyleSheet.create({
   }
 });
 
-const AuthorHead = props => {
-  const { name, title, twitter, bio, uri, onTwitterLinkPress } = props;
+class AuthorHead extends Component {
+  shouldComponentUpdate(nextProps) {
+    return this.props.isLoading !== nextProps.isLoading;
+  }
 
-  return (
-    <AuthorHeadContainer>
-      <AuthorPhoto uri={uri} />
-      <AuthorName name={name} />
-      <AuthorTitle title={title} />
-      <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-      <Bio bio={bio} />
-    </AuthorHeadContainer>
-  );
-};
+  render() {
+    const {
+      bio,
+      isLoading,
+      name,
+      onTwitterLinkPress,
+      title,
+      twitter,
+      uri
+    } = this.props;
+
+    if (isLoading) return <AuthorHeadLoading />;
+
+    return (
+      <AuthorHeadContainer>
+        <AuthorPhoto uri={uri} />
+        <AuthorName name={name} />
+        <AuthorTitle title={title} />
+        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
+        <Bio bio={bio} />
+      </AuthorHeadContainer>
+    );
+  }
+}
 
 AuthorHead.defaultProps = {
+  isLoading: false,
   name: "",
   title: "",
   uri: "",
@@ -62,6 +78,7 @@ AuthorHead.defaultProps = {
 };
 
 AuthorHead.propTypes = {
+  isLoading: PropTypes.bool,
   name: PropTypes.string,
   title: PropTypes.string,
   uri: PropTypes.string,

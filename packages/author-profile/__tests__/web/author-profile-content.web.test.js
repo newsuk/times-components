@@ -4,17 +4,17 @@ import authorProfileFixture from "@times-components/provider-test-tools/fixtures
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import test from "../author-profile-helper";
 import AuthorProfile from "../../src/author-profile";
-import AuthorProfileItem from "../../src/author-profile-item";
-import AuthorProfileContent from "../../src/author-profile-content.web.js";
+import AuthorProfileListItem from "../../src/author-profile-list-item";
+import AuthorProfileListContent from "../../src/author-profile-list-content.web.js";
 import pagedResult from "../paged-result";
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-describe("AuthorProfile test on web", () => {
+describe("AuthorProfile tests on web", () => {
   beforeAll(() => jest.useRealTimers());
   afterAll(() => jest.useFakeTimers());
 
-  test(AuthorProfileContent);
+  test(AuthorProfileListContent);
 
   const makeAuthor = ({ withImages } = {}) => ({
     ...authorProfileFixture.data.author,
@@ -75,12 +75,12 @@ describe("AuthorProfile test on web", () => {
     // in RNW that throws an exception when rendering Button
     const wrapper = mount(<AuthorProfile {...props} />);
 
-    expect(wrapper.find("AuthorProfileError")).toMatchSnapshot();
+    expect(wrapper.find("AuthorProfileListPageError")).toMatchSnapshot();
   });
 
   it("renders page error", () => {
     const wrapper = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         count={0}
         articles={[]}
         author={makeAuthor()}
@@ -96,12 +96,12 @@ describe("AuthorProfile test on web", () => {
       />
     );
 
-    expect(wrapper.find("AuthorProfileListingError")).toMatchSnapshot();
+    expect(wrapper.find("AuthorProfileListError")).toMatchSnapshot();
   });
 
   it("renders profile articles and invoke callback on article press", done => {
     const component = shallow(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         onArticlePress={done}
       />
@@ -112,7 +112,7 @@ describe("AuthorProfile test on web", () => {
       .find("ErrorView")
       .at(0)
       .dive()
-      .find(AuthorProfileItem)
+      .find(AuthorProfileListItem)
       .at(0)
       .dive()
       .dive()
@@ -132,7 +132,7 @@ describe("AuthorProfile test on web", () => {
       observe() {} // eslint-disable-line class-methods-use-this
     };
 
-    mount(<AuthorProfileContent {...authorProfileContentProps} />);
+    mount(<AuthorProfileListContent {...authorProfileContentProps} />);
 
     expect(optsSpy.mock.calls[1][0]).toMatchSnapshot();
   });
@@ -141,7 +141,7 @@ describe("AuthorProfile test on web", () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
     const component = mount(
-      <AuthorProfileContent {...authorProfileContentProps} />
+      <AuthorProfileListContent {...authorProfileContentProps} />
     );
 
     // prove the first image starts off as low quality
@@ -176,7 +176,7 @@ describe("AuthorProfile test on web", () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
     const component = mount(
-      <AuthorProfileContent {...authorProfileContentProps} />
+      <AuthorProfileListContent {...authorProfileContentProps} />
     );
 
     const makeEntries = nodes =>
@@ -199,7 +199,7 @@ describe("AuthorProfile test on web", () => {
 
   it("renders good quality images if there is no IntersectionObserver", () => {
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -210,7 +210,7 @@ describe("AuthorProfile test on web", () => {
 
     // not ideal as this relies on the actual implementation but there's no "nice" way of setting clientWidth
     const authorProfileInstance = component
-      .find("AuthorProfileContent")
+      .find("AuthorProfileListContent")
       .instance();
     const rn = authorProfileInstance.registerNode;
     authorProfileInstance.registerNode = node => {
@@ -240,7 +240,7 @@ describe("AuthorProfile test on web", () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -273,10 +273,10 @@ describe("AuthorProfile test on web", () => {
   it("does no work if there are no pending items", async () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
-    const spy = jest.spyOn(AuthorProfileContent.prototype, "setState");
+    const spy = jest.spyOn(AuthorProfileListContent.prototype, "setState");
 
     mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -314,10 +314,13 @@ describe("AuthorProfile test on web", () => {
   it("does not set state after unmounting", async () => {
     window.IntersectionObserver = FakeIntersectionObserver;
 
-    const setStateSpy = jest.spyOn(AuthorProfileContent.prototype, "setState");
+    const setStateSpy = jest.spyOn(
+      AuthorProfileListContent.prototype,
+      "setState"
+    );
 
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -362,7 +365,7 @@ describe("AuthorProfile test on web", () => {
     );
 
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -382,7 +385,7 @@ describe("AuthorProfile test on web", () => {
     delete window.IntersectionObserver;
 
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={articleListWithImagesFixture.data.author.articles.list.slice(
           0,
@@ -403,7 +406,7 @@ describe("AuthorProfile test on web", () => {
     document.body.appendChild(mountPoint);
 
     mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         articles={pageResults.data.author.articles.list}
       />,
@@ -441,7 +444,7 @@ describe("AuthorProfile test on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onPrev = jest.fn();
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         page={2}
         onPrev={onPrev}
@@ -460,7 +463,7 @@ describe("AuthorProfile test on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onNext = jest.fn();
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         page={2}
         onNext={onNext}
@@ -479,7 +482,7 @@ describe("AuthorProfile test on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onPrev = jest.fn();
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         page={2}
         onPrev={onPrev}
@@ -498,7 +501,7 @@ describe("AuthorProfile test on web", () => {
     const onScroll = jest.spyOn(window, "scroll");
     const onNext = jest.fn();
     const component = mount(
-      <AuthorProfileContent
+      <AuthorProfileListContent
         {...authorProfileContentProps}
         page={2}
         onNext={onNext}

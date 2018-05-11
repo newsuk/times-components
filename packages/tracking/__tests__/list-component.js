@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Text, FlatList } from "react-native";
 import PropTypes from "prop-types";
 
-class ListComponent extends React.Component {
+class ListComponent extends Component {
   static get propTypes() {
     return {
       onViewed: PropTypes.func.isRequired,

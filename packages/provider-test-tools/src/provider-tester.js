@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { ApolloProvider } from "react-apollo";
@@ -6,14 +6,14 @@ import clientTester from "./client-tester";
 
 export default function providerTester(
   requestHandler,
-  Component,
+  WrappedComponent,
   defaultProps = {}
 ) {
   const { link, client } = clientTester(requestHandler);
 
   let isMounted = false;
   let setProps = () => Promise.resolve();
-  class Stateful extends React.Component {
+  class Stateful extends Component {
     constructor(props) {
       super(props);
       this.state = defaultProps;
@@ -52,12 +52,12 @@ export default function providerTester(
       {
         <Stateful>
           {state => (
-            <Component {...state}>
+            <WrappedComponent {...state}>
               {props => {
                 link.pushEvent({ type: "render", props });
                 return null;
               }}
-            </Component>
+            </WrappedComponent>
           )}
         </Stateful>
       }

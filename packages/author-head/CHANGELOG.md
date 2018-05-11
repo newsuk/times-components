@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.12"></a>
+## [0.25.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.11...@times-components/author-head@0.25.12) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.25.11"></a>
+## [0.25.11](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.10...@times-components/author-head@0.25.11) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.25.10"></a>
+## [0.25.10](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.9...@times-components/author-head@0.25.10) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="0.25.9"></a>
+## [0.25.9](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.8...@times-components/author-head@0.25.9) (2018-05-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.25.8"></a>
+## [0.25.8](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.7...@times-components/author-head@0.25.8) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.25.7"></a>
+## [0.25.7](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.6...@times-components/author-head@0.25.7) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.25.6"></a>
+## [0.25.6](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.5...@times-components/author-head@0.25.6) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.25.5"></a>
 ## [0.25.5](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.25.4...@times-components/author-head@0.25.5) (2018-04-26)
 

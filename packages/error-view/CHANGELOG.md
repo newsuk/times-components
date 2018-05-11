@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.9"></a>
+## [0.11.9](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.8...@times-components/error-view@0.11.9) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/error-view
+
+<a name="0.11.8"></a>
+## [0.11.8](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.7...@times-components/error-view@0.11.8) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/error-view
+
+<a name="0.11.7"></a>
+## [0.11.7](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.6...@times-components/error-view@0.11.7) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="0.11.6"></a>
+## [0.11.6](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.5...@times-components/error-view@0.11.6) (2018-04-30)
+
+
+### Bug Fixes
+
+* video package code review updates ([#898](https://github.com/newsuk/times-components/issues/898)) ([fab3593](https://github.com/newsuk/times-components/commit/fab3593))
+
+
+
+
+<a name="0.11.5"></a>
+## [0.11.5](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.4...@times-components/error-view@0.11.5) (2018-04-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/error-view
+
 <a name="0.11.4"></a>
 ## [0.11.4](https://github.com/newsuk/times-components/compare/@times-components/error-view@0.11.3...@times-components/error-view@0.11.4) (2018-04-26)
 
