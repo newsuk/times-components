@@ -1,13 +1,15 @@
 import React from "react";
 import get from "lodash.get";
+import ArticleList, {
+  ArticleListPageError
+} from "@times-components/article-list";
+import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
-import AuthorProfileListContent from "./author-profile-list-content";
-import AuthorProfileListPageError from "./author-profile-list-page-error";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 
@@ -25,16 +27,16 @@ const AuthorProfile = ({
   slug
 }) => {
   if (error) {
-    return <AuthorProfileListPageError refetch={refetch} />;
+    return <ArticleListPageError refetch={refetch} />;
   }
 
-  if (isLoading) {
+  if (isLoading || !author) {
     return (
-      <AuthorProfileListContent
+      <ArticleList
+        articleListHeader={<AuthorHead isLoading />}
         articlesLoading
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
-        onTwitterLinkPress={() => {}}
         pageSize={initPageSize}
         refetch={() => {}}
         showImages
@@ -50,8 +52,19 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } =
-    author || {};
+  } = author;
+
+  const articleListHeader = (
+    <AuthorHead
+      bio={biography}
+      isLoading={false}
+      name={name}
+      onTwitterLinkPress={onTwitterLinkPress}
+      title={jobTitle}
+      twitter={twitter}
+      uri={uri}
+    />
+  );
 
   const SelectedProvider = hasLeadAssets
     ? AuthorArticlesWithImagesProvider
@@ -67,32 +80,24 @@ const AuthorProfile = ({
     >
       {({
         author: data,
-        pageSize,
-        isLoading: articlesLoading,
         error: articlesError,
+        pageSize,
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
       }) => (
-        <AuthorProfileListContent
+        <ArticleList
+          articleListHeader={articleListHeader}
           articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
-          biography={biography}
           count={get(articles, "count", 0)}
           error={articlesError}
           imageRatio={ratioTextToFloat(imageRatio)}
-          isLoading={isLoading}
-          jobTitle={jobTitle}
-          name={name}
           onArticlePress={onArticlePress}
           onNext={onNext}
           onPrev={onPrev}
-          onTwitterLinkPress={onTwitterLinkPress}
           page={page}
           pageSize={pageSize}
           refetch={refetchArticles}
           showImages={hasLeadAssets}
-          twitter={twitter}
-          uri={uri}
         />
       )}
     </SelectedProvider>

@@ -1,0 +1,2409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList tests on ios should render an article list 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <ArticleListPagination
+      count={3}
+      hideResults={true}
+      onNext={[Function]}
+      onPrev={[Function]}
+      page={1}
+      pageSize={3}
+    />
+  }
+  ListHeaderComponent={
+    <View>
+      <ArticleListPagination
+        count={3}
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+        page={1}
+        pageSize={3}
+      />
+    </View>
+  }
+  accessibilityID="scroll-view"
+  data={
+    Array [
+      Object {
+        "__typename": "Article",
+        "elementId": "d98c257c-cb16-11e7-b529-95e3fc05f40f.0",
+        "headline": "Top medal for forces dog who took a bite out of the Taliban",
+        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
+          },
+          "title": "Title",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "4e6894ec-cb18-11e7-b529-95e3fc05f40f.1",
+        "headline": "Social media must raise game to beat terrorists, says UN chief",
+        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
+          },
+          "title": "Title",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2",
+        "headline": "Cuts have left the army 20 years out of date, says former general",
+        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "label": "",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
+          },
+          "title": "Nad e Ali in Helmand province, Afghanistan.",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2017-11-14T17:00:00.000Z",
+        "summary": Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
+  pageSize={3}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={2}
+  stickyHeaderIndices={Array []}
+  testID="scroll-view"
+  updateCellsBatchingPeriod={50}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "stretch",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
+                  }
+                  testID="results-message"
+                >
+                  Showing 1 - 3 of 3 results
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View />
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "900",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Top medal for forces dog who took a bite out of the Taliban
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Friday November 17 2017, 12:01am, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "900",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Social media must raise game to beat terrorists, says UN chief
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Friday November 17 2017, 12:01am, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <BVLinearGradient
+                          colors={
+                            Array [
+                              "#F9F9F9",
+                              "#EDEDED",
+                            ]
+                          }
+                          end={
+                            Object {
+                              "x": -0.09302964577578221,
+                              "y": 0.11488204504197774,
+                            }
+                          }
+                          locations={
+                            Array [
+                              0,
+                              1,
+                            ]
+                          }
+                          start={
+                            Object {
+                              "x": 1,
+                              "y": 0,
+                            }
+                          }
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "900",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Cuts have left the army 20 years out of date, says former general
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Tuesday November 14 2017, 05:00pm, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#DBDBDB",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 50,
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`ArticleList tests on ios should render an article list item 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 10,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View
+            aspectRatio={1.5}
+          >
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  Object {
+                    "uri": "/test-item-image-url&resize=1440",
+                  }
+                }
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": "100%",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                onLayout={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <BVLinearGradient
+                    colors={
+                      Array [
+                        "#F9F9F9",
+                        "#EDEDED",
+                      ]
+                    }
+                    end={
+                      Object {
+                        "x": -0.09302964577578221,
+                        "y": 0.11488204504197774,
+                      }
+                    }
+                    locations={
+                      Array [
+                        0,
+                        1,
+                      ]
+                    }
+                    start={
+                      Object {
+                        "x": 1,
+                        "y": 0,
+                      }
+                    }
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                TESTLABEL
+              </Text>
+            </View>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="3"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "900",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
+              }
+            >
+              test headline
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
+                ...
+              </Text>
+            </Text>
+            <Text
+              accessibilityLabel="datePublication"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+              testID="datePublication"
+            >
+              Friday November 17 2017, 12:01am, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios should render an article list item loading state 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 15,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <View
+        aspectRatio={1.5}
+      >
+        <View
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            onLoad={[Function]}
+            style={
+              Object {
+                "bottom": 0,
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 24,
+            "marginBottom": 10,
+            "maxWidth": 300,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.09302964577578221,
+              "y": 0.11488204504197774,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 10,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "height": 10,
+            "marginBottom": 0,
+            "maxWidth": 240,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              "#F9F9F9",
+              "#EDEDED",
+            ]
+          }
+          end={
+            Object {
+              "x": -0.049525179317961854,
+              "y": 0.05500328394968961,
+            }
+          }
+          locations={
+            Array [
+              0,
+              1,
+            ]
+          }
+          start={
+            Object {
+              "x": 1,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios should render an article list item without images 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                TESTLABEL
+              </Text>
+            </View>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="3"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 22,
+                  "fontWeight": "900",
+                  "lineHeight": 22,
+                  "marginBottom": 5,
+                }
+              }
+            >
+              test headline
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "flexWrap": "wrap",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                
+                Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
+                ...
+              </Text>
+            </Text>
+            <Text
+              accessibilityLabel="datePublication"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                  "marginBottom": 5,
+                }
+              }
+              testID="datePublication"
+            >
+              Friday November 17 2017, 12:01am, The Times
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios should render an article list page error correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "margin": 15,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 35,
+        "marginBottom": 10,
+        "marginTop": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    Something's gone wrong
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesDigitalW04-Regular",
+        "fontSize": 18,
+        "textAlign": "center",
+      }
+    }
+  >
+    We can't load the page you have requested. Please check your network connection and retry to continue
+  </Text>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <TouchableOpacity
+      accessibilityLabel="Retry"
+      accessible={true}
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#006699",
+            "flex": 1,
+            "height": 45,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#FFF",
+              "fontFamily": "GillSansMTStd-Medium",
+            }
+          }
+        >
+          RETRY
+        </Text>
+      </View>
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`ArticleList tests on ios should render an article list that is loading 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <ArticleListPagination
+      hideResults={true}
+      onNext={[Function]}
+      onPrev={[Function]}
+    />
+  }
+  ListHeaderComponent={
+    <View>
+      <ArticleListPagination
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+      />
+    </View>
+  }
+  accessibilityID="scroll-view"
+  data={
+    Array [
+      Object {
+        "elementId": "empty.0",
+        "id": 0,
+        "isLoading": true,
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={2}
+  stickyHeaderIndices={Array []}
+  testID="scroll-view"
+  updateCellsBatchingPeriod={50}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "stretch",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
+                  }
+                  testID="results-message"
+                >
+                  Showing 0 - 0 of 0 results
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View />
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#DBDBDB",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 50,
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`ArticleList tests on ios should render the article list item separator keyline correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#DBDBDB",
+      "height": 1,
+    }
+  }
+/>
+`;
+
+exports[`ArticleList tests on ios should render the article list page error correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "margin": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "marginBottom": 20,
+        "marginTop": 20,
+        "width": "60%",
+      }
+    }
+  >
+    <TimesImage
+      aspectRatio={0.9090909090909091}
+      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+    />
+  </View>
+  <ArticleListError
+    refetch={[Function]}
+  />
+</View>
+`;
+
+exports[`ArticleList tests on ios should render the article list pagination correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "flexDirection": "row",
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "maxWidth": 800,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "stretch",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 15,
+              "paddingTop": 4,
+            }
+          }
+          testID="results-message"
+        >
+          Showing 1 - 10 of 20 results
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderStyle": "solid",
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View />
+        <View>
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "padding": 12,
+                }
+              }
+              testID="pagination-button-next"
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "height": 15,
+                    "marginRight": 10,
+                    "textAlign": "right",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Next
+                </Text>
+              </Text>
+              <svg
+                height={12}
+                width={7}
+              >
+                <g
+                  fill="#006699"
+                >
+                  <path />
+                </g>
+              </svg>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

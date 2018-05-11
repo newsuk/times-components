@@ -1,97 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuthorProfile tests on android renders page error 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-      "margin": 15,
-    }
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "alignSelf": "center",
-        "color": "#1D1D1B",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 35,
-        "marginBottom": 10,
-        "marginTop": 20,
-        "textAlign": "center",
-      }
-    }
-  >
-    Something's gone wrong
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "TimesDigitalW04-Regular",
-        "fontSize": 18,
-        "textAlign": "center",
-      }
-    }
-  >
-    We can't load the page you have requested. Please check your network connection and retry to continue
-  </Text>
-  <View
-    style={
-      Object {
-        "bottom": 0,
-        "position": "absolute",
-        "width": "100%",
-      }
-    }
-  >
-    <TouchableOpacity
-      accessibilityLabel="Retry"
-      accessible={true}
-      activeOpacity={0.2}
-      onPress={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#006699",
-            "flex": 1,
-            "height": 44,
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#FFF",
-              "fontFamily": "GillSansMTStd-Medium",
-            }
-          }
-        >
-          RETRY
-        </Text>
-      </View>
-    </TouchableOpacity>
-  </View>
-</View>
-`;
-
-exports[`AuthorProfile tests on android renders profile 1`] = `
+exports[`1. Render an author profile page 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfileListPagination
+    <ArticleListPagination
       count={20}
       hideResults={true}
       onNext={[Function]}
@@ -141,7 +54,7 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
-      <AuthorProfileListPagination
+      <ArticleListPagination
         count={20}
         hideResults={false}
         onNext={[Function]}
@@ -152,25 +65,7 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
     </View>
   }
   accessibilityID="scroll-view"
-  data={
-    Array [
-      Object {
-        "elementId": "empty.0",
-        "id": 0,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.1",
-        "id": 1,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.2",
-        "id": 2,
-        "isLoading": true,
-      },
-    ]
-  }
+  data={Array []}
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -596,892 +491,6 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
             "alignItems": "stretch",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -1592,1802 +601,15 @@ exports[`AuthorProfile tests on android renders profile 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile tests on android renders profile content component 1`] = `
+exports[`2. Render an article list loading state 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
-    <AuthorProfileListPagination
+    <ArticleListPagination
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={1}
       pageSize={3}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
-          Array [
-            Object {
-              "attributes": Object {
-                "value": "Deborah Haynes is the defence editor at ",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The Times",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": ", covering the most important defence & security news in the UK and around the world.",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ]
-        }
-        isLoading={false}
-        name="Deborah Haynes"
-        onTwitterLinkPress={[Function]}
-        title="Defence Editor"
-        twitter="jdoe"
-        uri=""
-      />
-      <AuthorProfileListPagination
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
-  }
-  accessibilityID="scroll-view"
-  data={
-    Array [
-      Object {
-        "__typename": "Article",
-        "elementId": "d98c257c-cb16-11e7-b529-95e3fc05f40f.0",
-        "headline": "Top medal for forces dog who took a bite out of the Taliban",
-        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
-          },
-          "title": "Title",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
-      },
-      Object {
-        "__typename": "Article",
-        "elementId": "4e6894ec-cb18-11e7-b529-95e3fc05f40f.1",
-        "headline": "Social media must raise game to beat terrorists, says UN chief",
-        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
-          },
-          "title": "Title",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
-      },
-      Object {
-        "__typename": "Article",
-        "elementId": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2",
-        "headline": "Cuts have left the army 20 years out of date, says former general",
-        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
-          },
-          "title": "Nad e Ali in Helmand province, Afghanistan.",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-14T17:00:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
-      },
-    ]
-  }
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
-  pageSize={3}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
-  stickyHeaderIndices={Array []}
-  testID="scroll-view"
-  updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
-  viewabilityConfigCallbackPairs={
-    Array [
-      Object {
-        "onViewableItemsChanged": [Function],
-        "viewabilityConfig": Object {
-          "viewAreaCoveragePercentThreshold": 100,
-          "waitForInteraction": false,
-        },
-      },
-    ]
-  }
-  windowSize={21}
->
-  <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "opacity": 0,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-              }
-            }
-          >
-            <View
-              accessibilityRole="banner"
-              style={
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
-                }
-              }
-            >
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                Deborah Haynes
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                defence editor
-              </Text>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
-                  }
-                }
-              >
-                <svg
-                  height={15}
-                  width={15}
-                >
-                  <path
-                    fill="#006699"
-                  />
-                </svg>
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="https://twitter.com/jdoe"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingLeft": 5,
-                      "textDecorationLine": "none",
-                    }
-                  }
-                >
-                  @
-                  jdoe
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                >
-                  Deborah Haynes is the defence editor at 
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "fontStyle": "italic",
-                      }
-                    }
-                  >
-                    The Times
-                  </Text>
-                  , covering the most important defence & security news in the UK and around the world.
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        accessible={true}
-        nativeBackgroundAndroid={
-          Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
-          }
-        }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
-      >
-        <View
-          style={
-            Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "opacity": 0,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Top medal for forces dog who took a bite out of the Taliban
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Friday November 17 2017, 12:01am, The Times
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        accessible={true}
-        nativeBackgroundAndroid={
-          Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
-          }
-        }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
-      >
-        <View
-          style={
-            Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "opacity": 0,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Social media must raise game to beat terrorists, says UN chief
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Friday November 17 2017, 12:01am, The Times
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        accessible={true}
-        nativeBackgroundAndroid={
-          Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
-          }
-        }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
-      >
-        <View
-          style={
-            Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "opacity": 0,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
-                  }
-                }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Cuts have left the army 20 years out of date, says former general
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Tuesday November 14 2017, 05:00pm, The Times
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`AuthorProfile tests on android renders profile content empty 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <AuthorProfileListPagination
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
-        isLoading={false}
-        name=""
-        onTwitterLinkPress={[Function]}
-        title=""
-        twitter={null}
-        uri=""
-      />
-      <AuthorProfileListPagination
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-      />
-    </View>
-  }
-  accessibilityID="scroll-view"
-  data={Array []}
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
-  stickyHeaderIndices={Array []}
-  testID="scroll-view"
-  updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
-  viewabilityConfigCallbackPairs={
-    Array [
-      Object {
-        "onViewableItemsChanged": [Function],
-        "viewabilityConfig": Object {
-          "viewAreaCoveragePercentThreshold": 100,
-          "waitForInteraction": false,
-        },
-      },
-    ]
-  }
-  windowSize={21}
->
-  <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "opacity": 0,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-              }
-            }
-          >
-            <View
-              accessibilityRole="banner"
-              style={
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
-                }
-              }
-            >
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                
-              </Text>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`AuthorProfile tests on android renders profile content item component 1`] = `
-<View
-  accessible={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 15,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 15,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "opacity": 0,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "flex-end",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 0,
-              "minWidth": "100%",
-            }
-          }
-        >
-          <View>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="3"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 5,
-                }
-              }
-            >
-              Top medal for forces dog who took a bite out of the Taliban
-            </Text>
-            <Text
-              accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginBottom": 5,
-                }
-              }
-              testID="datePublication"
-            >
-              Friday November 17 2017, 12:01am, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`AuthorProfile tests on android renders profile content item component with a specific image size 1`] = `
-<View
-  accessible={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 15,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 15,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "opacity": 0,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "flex-end",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 0,
-              "minWidth": "100%",
-            }
-          }
-        >
-          <View>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="3"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 5,
-                }
-              }
-            >
-              Top medal for forces dog who took a bite out of the Taliban
-            </Text>
-            <Text
-              accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginBottom": 5,
-                }
-              }
-              testID="datePublication"
-            >
-              Friday November 17 2017, 12:01am, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`AuthorProfile tests on android renders profile content item component with no image 1`] = `
-<View
-  accessible={true}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 15,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 15,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "opacity": 0,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "display": "flex",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "flex-end",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "marginBottom": 0,
-              "minWidth": "100%",
-            }
-          }
-        >
-          <View>
-            <Text
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              aria-level="3"
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 22,
-                  "fontWeight": "400",
-                  "lineHeight": 22,
-                  "marginBottom": 5,
-                }
-              }
-            >
-              Top medal for forces dog who took a bite out of the Taliban
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "flexWrap": "wrap",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                
-                The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                ...
-              </Text>
-            </Text>
-            <Text
-              accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginBottom": 5,
-                }
-              }
-              testID="datePublication"
-            >
-              Friday November 17 2017, 12:01am, The Times
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`AuthorProfile tests on android renders profile content loading 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <AuthorProfileListPagination
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
     />
   }
   ListHeaderComponent={
@@ -3401,10 +623,11 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
         twitter={null}
         uri=""
       />
-      <AuthorProfileListPagination
+      <ArticleListPagination
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
+        pageSize={3}
       />
     </View>
   }
@@ -3414,6 +637,16 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
       Object {
         "elementId": "empty.0",
         "id": 0,
+        "isLoading": true,
+      },
+      Object {
+        "elementId": "empty.1",
+        "id": 1,
+        "isLoading": true,
+      },
+      Object {
+        "elementId": "empty.2",
+        "id": 2,
         "isLoading": true,
       },
     ]
@@ -3434,6 +667,7 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
   onScrollBeginDrag={[Function]}
   onScrollEndDrag={[Function]}
   onViewableItemsChanged={[Function]}
+  pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
   scrollRenderAheadDistance={2}
@@ -3903,6 +1137,608 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
           </View>
         </View>
       </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
     </View>
     <View
       onLayout={[Function]}
@@ -3958,7 +1794,7 @@ exports[`AuthorProfile tests on android renders profile content loading 1`] = `
 </RCTScrollView>
 `;
 
-exports[`AuthorProfile tests on android renders profile error 1`] = `
+exports[`3. Render an article list page error state 1`] = `
 <View
   style={
     Object {
@@ -3977,2168 +1813,180 @@ exports[`AuthorProfile tests on android renders profile error 1`] = `
       }
     }
   >
-    <TimesImage
-      aspectRatio={0.9090909090909091}
-      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-    />
-  </View>
-  <AuthorProfileListError
-    refetch={[Function]}
-  />
-</View>
-`;
-
-exports[`AuthorProfile tests on android renders profile loading 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <AuthorProfileListPagination
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      pageSize={3}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
-        isLoading={true}
-        name=""
-        onTwitterLinkPress={[Function]}
-        title=""
-        twitter={null}
-        uri=""
-      />
-      <AuthorProfileListPagination
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        pageSize={3}
-      />
-    </View>
-  }
-  accessibilityID="scroll-view"
-  data={
-    Array [
-      Object {
-        "elementId": "empty.0",
-        "id": 0,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.1",
-        "id": 1,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.2",
-        "id": 2,
-        "isLoading": true,
-      },
-    ]
-  }
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
-  pageSize={3}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
-  stickyHeaderIndices={Array []}
-  testID="scroll-view"
-  updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
-  viewabilityConfigCallbackPairs={
-    Array [
-      Object {
-        "onViewableItemsChanged": [Function],
-        "viewabilityConfig": Object {
-          "viewAreaCoveragePercentThreshold": 100,
-          "waitForInteraction": false,
-        },
-      },
-    ]
-  }
-  windowSize={21}
->
-  <View>
     <View
-      onLayout={[Function]}
+      aspectRatio={0.9090909090909091}
     >
-      <View>
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png&resize=1440",
+            }
+          }
+          style={
+            Object {
+              "bottom": 0,
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        />
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <BVLinearGradient
+              colors={
+                Array [
+                  "#F9F9F9",
+                  "#EDEDED",
+                ]
+              }
+              end={
+                Object {
+                  "x": -0.09302964577578221,
+                  "y": 0.11488204504197774,
+                }
+              }
+              locations={
+                Array [
+                  0,
+                  1,
+                ]
+              }
+              start={
+                Object {
+                  "x": 1,
+                  "y": 0,
+                }
+              }
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "margin": 15,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "marginBottom": 10,
+          "marginTop": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      Something's gone wrong
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 18,
+          "textAlign": "center",
+        }
+      }
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Retry"
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
         <View
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "minHeight": 264,
-                "width": "100%",
-              }
-            }
-          />
-          <View
-            style={
-              Object {
-                "height": 100,
-                "position": "absolute",
-                "top": 30,
-                "width": 100,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderColor": "#FFFFFF",
-                  "borderRadius": 50,
-                  "height": 100,
-                  "overflow": "hidden",
-                  "width": 100,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.07922796533956822,
-                      "y": 0.09442021232736122,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
+              "backgroundColor": "#006699",
+              "flex": 1,
+              "height": 45,
               "justifyContent": "center",
             }
           }
         >
-          <View
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
-                "flex": 1,
-                "maxWidth": 800,
+                "color": "#FFF",
+                "fontFamily": "GillSansMTStd-Medium",
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
+            RETRY
+          </Text>
         </View>
       </View>
     </View>
   </View>
-</RCTScrollView>
-`;
-
-exports[`AuthorProfile tests on android renders profile separator 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#DBDBDB",
-      "height": 1,
-    }
-  }
-/>
-`;
-
-exports[`AuthorProfile tests on android renders with no author 1`] = `
-<RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <AuthorProfileListPagination
-      count={0}
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      page={1}
-      pageSize={3}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
-        isLoading={false}
-        name=""
-        onTwitterLinkPress={[Function]}
-        title=""
-        twitter={null}
-        uri=""
-      />
-      <AuthorProfileListPagination
-        count={0}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
-  }
-  accessibilityID="scroll-view"
-  data={
-    Array [
-      Object {
-        "elementId": "empty.0",
-        "id": 0,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.1",
-        "id": 1,
-        "isLoading": true,
-      },
-      Object {
-        "elementId": "empty.2",
-        "id": 2,
-        "isLoading": true,
-      },
-    ]
-  }
-  disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
-  pageSize={3}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
-  stickyHeaderIndices={Array []}
-  testID="scroll-view"
-  updateCellsBatchingPeriod={50}
-  viewabilityConfig={
-    Object {
-      "viewAreaCoveragePercentThreshold": 100,
-      "waitForInteraction": false,
-    }
-  }
-  viewabilityConfigCallbackPairs={
-    Array [
-      Object {
-        "onViewableItemsChanged": [Function],
-        "viewabilityConfig": Object {
-          "viewAreaCoveragePercentThreshold": 100,
-          "waitForInteraction": false,
-        },
-      },
-    ]
-  }
-  windowSize={21}
->
-  <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "opacity": 0,
-            }
-          }
-        >
-          <View
-            pointerEvents="box-none"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-              }
-            }
-          >
-            <View
-              accessibilityRole="banner"
-              style={
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
-                }
-              }
-            >
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                
-              </Text>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
+</View>
 `;
