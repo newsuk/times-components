@@ -1,22 +1,19 @@
-'use strict';
-
 const fs = require('fs');
 const AWS = require('aws-sdk');
-const path = require('path');
+
 const args = process.argv.slice(2);
 const [imagePath,bucket, accessKeyId, secretAccessKey]  = args;
 AWS.config.update({ region: 'eu-west-1', accessKeyId, secretAccessKey });
 const s3 = new AWS.S3();
-console.log(imagePath, bucket, accessKeyId, secretAccessKey)
 
 const file = fs.readFileSync(imagePath)
 
 const filename = imagePath.split('/')[1]
-const uploadQRcode = (file) => {
+const uploadQRcode = (qrcode) => {
     const uploadParams = {
         Bucket: bucket,
         Key: filename,
-        Body: file,
+        Body: qrcode,
         ContentType: 'image/png',
         ACL: 'public-read'
     };
@@ -24,10 +21,10 @@ const uploadQRcode = (file) => {
     // call S3 to retrieve upload file to specified bucket
     s3.upload(uploadParams, (err, data) => {
         if (err) {
-            console.log('upload qrcode error:', err);
+            console.log('upload qrcode error:', err); // eslint-disable-line no-console
         }
         if (data) {
-            console.log('upload qrcode success:', data.Key); 
+            console.log('upload qrcode success:', data.Key); // eslint-disable-line no-console
         }
     });
 
