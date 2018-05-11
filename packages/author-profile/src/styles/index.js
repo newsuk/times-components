@@ -27,6 +27,10 @@ const styles = StyleSheet.create({
   listErrorContainer: {
     flex: 1,
     margin: spacing(3)
+  },
+  loadingContainer: {
+    paddingTop: spacing(3),
+    paddingBottom: spacing(3)
   }
 });
 

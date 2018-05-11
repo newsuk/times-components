@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { FlatList, View } from "react-native";
+import { ActivityIndicator, FlatList, View } from "react-native";
 import AuthorHead from "@times-components/author-head";
 import ErrorView from "@times-components/error-view";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import AuthorProfileListPagination from "./author-profile-list-pagination";
 import AuthorProfileListItem from "./author-profile-list-item";
 import AuthorProfileListItemSeparator from "./author-profile-list-item-separator";
 import AuthorProfileListError from "./author-profile-list-error";
@@ -52,15 +51,13 @@ class AuthorProfileListContent extends Component {
       jobTitle,
       name,
       onArticlePress,
-      onNext,
-      onPrev,
       onTwitterLinkPress,
-      page,
       pageSize,
       twitter,
       uri,
       refetch,
-      showImages
+      showImages,
+      fetchMore
     } = this.props;
 
     const AuthorProfileHead = (
@@ -84,56 +81,53 @@ class AuthorProfileListContent extends Component {
       );
     }
 
-    const scrollToTopNextFrame = () => {
-      this.scrollAnimationFrame = global.requestAnimationFrame(() => {
-        this.listRef.scrollToOffset({
-          animated: true,
-          offset: 0
-        });
-      });
-    };
-
-    const paginationComponent = (
-      { autoScroll = false, hideResults = false } = {}
-    ) => (
-      <AuthorProfileListPagination
-        count={count}
-        hideResults={hideResults}
-        onNext={(...args) => {
-          onNext(...args);
-          if (autoScroll) scrollToTopNextFrame();
-        }}
-        onPrev={(...args) => {
-          onPrev(...args);
-          if (autoScroll) scrollToTopNextFrame();
-        }}
-        page={page}
-        pageSize={pageSize}
-      />
-    );
-
     const data = articlesLoading
       ? Array(pageSize)
-          .fill()
-          .map((number, index) => ({
-            elementId: `empty.${index}`,
-            id: index,
-            isLoading: true
-          }))
+        .fill()
+        .map((number, index) => ({
+          elementId: `empty.${index}`,
+          id: index,
+          isLoading: true
+        }))
       : articles.map((article, index) => ({
-          ...article,
-          elementId: `${article.id}.${index}`
-        }));
+        ...article,
+        elementId: `${article.id}.${index}`
+      }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
+
+    const fetchMoreOnEnd = () => {
+      fetchMore({
+        variables: {
+          skip: data.length
+        },
+        updateQuery: (prev, { fetchMoreResult }) => {
+          if (!fetchMoreResult) return prev;
+          return {
+            author: {
+              ...prev.author,
+              articles: {
+                ...prev.author.articles,
+                list: [
+                  ...prev.author.articles.list,
+                  ...fetchMoreResult.author.articles.list
+                ]
+              }
+            }
+          };
+        }
+      });
+    };
 
     return (
       <FlatList
         accessibilityID="scroll-view"
         data={data}
-        keyExtractor={item => `${item.id}`}
+        keyExtractor={item => `${item.elementId}`}
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
+        onEndReachedThreshold={0.2}
+        onEndReached={fetchMoreOnEnd}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
@@ -162,16 +156,12 @@ class AuthorProfileListContent extends Component {
             <AuthorProfileListItemSeparator />
           </View>
         )}
-        ListFooterComponent={paginationComponent({
-          hideResults: true,
-          autoScroll: true
-        })}
-        ListHeaderComponent={
-          <View>
-            {AuthorProfileHead}
-            {paginationComponent({ hideResults: false, autoScroll: false })}
-          </View>
+        ListFooterComponent={
+          data.length >= count ? null : (
+            <ActivityIndicator style={styles.loadingContainer} size="large" />
+          )
         }
+        ListHeaderComponent={AuthorProfileHead}
       />
     );
   }

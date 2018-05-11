@@ -37,6 +37,7 @@ const AuthorProfile = ({
         onTwitterLinkPress={() => {}}
         pageSize={initPageSize}
         refetch={() => {}}
+        loadMore={() => {}}
         showImages
       />
     );
@@ -71,6 +72,7 @@ const AuthorProfile = ({
         isLoading: articlesLoading,
         error: articlesError,
         refetch: refetchArticles,
+        fetchMore: fetchMoreArticles,
         variables: { imageRatio = "3:2" }
       }) => (
         <AuthorProfileListContent
@@ -90,6 +92,7 @@ const AuthorProfile = ({
           page={page}
           pageSize={pageSize}
           refetch={refetchArticles}
+          fetchMore={fetchMoreArticles}
           showImages={hasLeadAssets}
           twitter={twitter}
           uri={uri}
