@@ -14,6 +14,6 @@ const Name = ({ name }) => (
   </Text>
 );
 
-Name.propTypes = propTypes.name;
+Name.propTypes = propTypes.name.isRequired;
 
 export default Name;

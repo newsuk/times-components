@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
-const webStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   ...sharedStyles
 });
 
-export default webStyles;
+export default styles;

@@ -27,8 +27,7 @@ const sharedStyle = {
     fontSize: fontSizes.tertiary,
     lineHeight: 26,
     color: colours.functional.primary,
-    paddingTop: spacing(4),
-    paddingBottom: spacing(4)
+    paddingVertical: spacing(4)
   },
   divider: {
     borderStyle: "solid",
