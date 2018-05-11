@@ -1984,7 +1984,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -2008,7 +2015,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -2093,7 +2109,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div
               data-testid="video-component"
               style={
@@ -2174,7 +2197,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div
               data-testid="video-component"
               style={
@@ -3758,7 +3788,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -3782,7 +3819,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -4955,7 +5001,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div
               data-testid="video-component"
               style={
@@ -5514,7 +5567,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -5538,7 +5598,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -6868,7 +6937,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -6892,7 +6968,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -8214,7 +8299,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -8238,7 +8330,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -9552,7 +9653,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -9576,7 +9684,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -10883,7 +11000,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -10907,7 +11031,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -12238,7 +12371,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -12262,7 +12402,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -13585,7 +13734,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -13609,7 +13765,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {
@@ -14924,7 +15089,14 @@ Array [
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
@@ -14948,7 +15120,16 @@ Array [
                     }
                   }
                 />
-                <div>
+                <div
+                  style={
+                    Object {
+                      "bottom": "0px",
+                      "left": "0px",
+                      "right": "0px",
+                      "top": "0px",
+                    }
+                  }
+                >
                   <div
                     style={
                       Object {

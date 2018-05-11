@@ -67,6 +67,7 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
   role="heading"
   style={
     Object {
+      "color": "rgba(51,51,51,1)",
       "fontFamily": "TimesModern-Bold",
       "fontSize": "22px",
       "fontWeight": "400",
@@ -169,6 +170,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -184,6 +187,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -224,6 +228,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -236,6 +242,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -266,6 +274,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -281,6 +291,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -345,6 +356,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -357,6 +370,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -387,6 +402,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -402,6 +419,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -453,6 +471,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -465,6 +485,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -495,6 +517,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -510,6 +534,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -527,6 +552,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -544,6 +571,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -559,6 +588,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -576,6 +606,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -594,6 +626,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -640,6 +673,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -652,6 +687,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -683,6 +720,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -723,6 +761,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -740,6 +780,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -755,6 +797,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -793,6 +836,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -823,6 +868,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -862,6 +909,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -880,6 +929,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -920,6 +970,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -932,6 +984,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -962,6 +1016,8 @@ exports[`Article Summary tests on Web should render an article-summary with opin
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -1003,6 +1059,7 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -1043,6 +1100,8 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }

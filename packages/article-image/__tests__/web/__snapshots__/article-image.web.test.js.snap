@@ -25,7 +25,17 @@ exports[`Article Image test on web Renders Article Image with no caption 1`] = `
           }
         }
       />
-      <div>
+      <div
+        style={
+          Object {
+            "bottom": "0px",
+            "left": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "top": "0px",
+          }
+        }
+      >
         <div
           style={
             Object {
@@ -106,7 +116,17 @@ exports[`Article Image test on web does not render Caption on Article Image if b
           }
         }
       />
-      <div>
+      <div
+        style={
+          Object {
+            "bottom": "0px",
+            "left": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "top": "0px",
+          }
+        }
+      >
         <div
           style={
             Object {
@@ -148,7 +168,17 @@ Array [
             }
           }
         />
-        <div>
+        <div
+          style={
+            Object {
+              "bottom": "0px",
+              "left": "0px",
+              "position": "absolute",
+              "right": "0px",
+              "top": "0px",
+            }
+          }
+        >
           <div
             style={
               Object {
@@ -209,7 +239,17 @@ Array [
             }
           }
         />
-        <div>
+        <div
+          style={
+            Object {
+              "bottom": "0px",
+              "left": "0px",
+              "position": "absolute",
+              "right": "0px",
+              "top": "0px",
+            }
+          }
+        >
           <div
             style={
               Object {
@@ -268,7 +308,17 @@ Array [
             }
           }
         />
-        <div>
+        <div
+          style={
+            Object {
+              "bottom": "0px",
+              "left": "0px",
+              "position": "absolute",
+              "right": "0px",
+              "top": "0px",
+            }
+          }
+        >
           <div
             style={
               Object {
@@ -329,7 +379,17 @@ Array [
             }
           }
         />
-        <div>
+        <div
+          style={
+            Object {
+              "bottom": "0px",
+              "left": "0px",
+              "position": "absolute",
+              "right": "0px",
+              "top": "0px",
+            }
+          }
+        >
           <div
             style={
               Object {
