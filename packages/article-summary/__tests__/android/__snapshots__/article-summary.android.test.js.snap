@@ -155,8 +155,22 @@ exports[`Article Summary tests on Android should render an article-summary compo
       ellipsizeMode="tail"
     >
       
-      has warned the Home Office to expect an overhaul after the
-      as he ditches the policy of creating a “hostile
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Sajid Javid
+      </Text>
+       has warned the Home Office to expect an overhaul after the 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Windrush scandal
+      </Text>
+       as he ditches the policy of creating a “hostile
       ...
     </Text>
   </Text>
@@ -403,7 +417,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
         
 
       </Text>
-      ITV
+       ITV
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -440,7 +454,7 @@ exports[`Article Summary tests on Android should render an article-summary compo
         
 
       </Text>
-      BBC Two
+       BBC Two
       <Text
         accessible={true}
         allowFontScaling={true}
