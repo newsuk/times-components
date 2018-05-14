@@ -2446,8 +2446,7 @@ exports[`ArticleList tests on ios should render an article list that is loading 
         size="large"
         style={
           Object {
-            "paddingBottom": 15,
-            "paddingTop": 15,
+            "paddingVertical": 15,
           }
         }
       />

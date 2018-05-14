@@ -2451,8 +2451,7 @@ exports[`ArticleList tests on android should render an article list that is load
         size="large"
         style={
           Object {
-            "paddingBottom": 15,
-            "paddingTop": 15,
+            "paddingVertical": 15,
           }
         }
       />

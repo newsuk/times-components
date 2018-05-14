@@ -29,8 +29,7 @@ const styles = StyleSheet.create({
     margin: spacing(3)
   },
   loadingContainer: {
-    paddingTop: spacing(3),
-    paddingBottom: spacing(3)
+    paddingVertical: spacing(3)
   }
 });
 
