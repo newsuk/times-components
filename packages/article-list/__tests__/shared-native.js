@@ -1,4 +1,5 @@
 import React from "react";
+import { FlatList } from "react-native";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Link from "@times-components/link";
@@ -105,5 +106,82 @@ export default () => {
       url:
         "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
     });
+  });
+
+  it("should fetch more articles when scrolling to bottom", () => {
+    const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
+    const results = pagedResult(0, 3);
+    const tree = renderer.create(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+        fetchMore={fetchMore}
+      />
+    );
+
+    tree.root.findByType(FlatList).props.onEndReached();
+
+    expect(fetchMore).toHaveBeenCalled();
+  });
+
+  it("should display error when scrolling to bottom", () => {
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+      />
+    ).dive();
+    wrapper.setState({ loadMoreError: "Error" });
+
+    expect(
+      wrapper
+        .dive()
+        .dive()
+        .dive()
+        .dive()
+        .find("ListFooterComponent")
+        .dive()
+        .debug()
+    ).toEqual("<ArticleListRetryButton refetch={[Function: refetch]} />");
+  });
+
+  it("should re-fetch more when retry button clicked", () => {
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+      />
+    ).dive();
+    wrapper.setState({ loadMoreError: "Error" });
+
+    const button = wrapper
+      .dive()
+      .dive()
+      .dive()
+      .dive()
+      .find("ListFooterComponent")
+      .dive()
+      .find("ArticleListRetryButton");
+
+    button.props().refetch();
+
+    expect(wrapper.state().loadMoreError).toBe(null);
   });
 };
