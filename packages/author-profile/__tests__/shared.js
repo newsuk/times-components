@@ -1,12 +1,9 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
-
-jest.mock("@times-components/article-list", () => "ArticleList");
 
 export default () => {
   const authorProfileProps = {
@@ -17,9 +14,9 @@ export default () => {
     slug: "deborah-haynes"
   };
 
-  const realIntl = Intl;
-
   const delay = ms => new Promise(res => setTimeout(res, ms));
+
+  const realIntl = Intl;
 
   beforeEach(() => {
     global.Intl = {
@@ -27,7 +24,6 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
-    jest.useFakeTimers();
   });
 
   afterEach(() => {
@@ -36,26 +32,25 @@ export default () => {
 
   it("should render correctly", async () => {
     const pageSize = 3;
-    const tree = renderer
-      .create(
-        <MockedProvider
-          mocks={fixtureGenerator.makeArticleMocks({
-            pageSize,
-            withImages: true
-          })}
-        >
-          <AuthorProfile
-            {...authorProfileProps}
-            analyticsStream={() => {}}
-            author={fixtureGenerator.makeAuthor({ withImages: true })}
-            isLoading={false}
-            page={1}
-            pageSize={pageSize}
-          />
-        </MockedProvider>
-      );
+    const tree = renderer.create(
+      <MockedProvider
+        mocks={fixtureGenerator.makeArticleMocks({
+          pageSize,
+          withImages: true
+        })}
+      >
+        <AuthorProfile
+          {...authorProfileProps}
+          analyticsStream={() => {}}
+          author={fixtureGenerator.makeAuthor({ withImages: true })}
+          isLoading={false}
+          page={1}
+          pageSize={pageSize}
+        />
+      </MockedProvider>
+    );
 
-    await delay(1000);
+    await delay(1500);
 
     expect(tree).toMatchSnapshot("1. Render an author profile page");
   });
@@ -81,13 +76,13 @@ export default () => {
     expect(tree).toMatchSnapshot("2. Render an article list loading state");
   });
 
-  // it("should render the article list page error state", () => {
-  //   const wrapper = renderer.create(
-  //     <AuthorProfile {...authorProfileProps} error={{}} />
-  //   );
+  it("should render the article list page error state", () => {
+    const tree = renderer.create(
+      <AuthorProfile {...authorProfileProps} error={{}} />
+    );
 
-  //   expect(wrapper).toMatchSnapshot("3. Render an article list page error state");
-  // });
+    expect(tree).toMatchSnapshot("3. Render an article list page error state");
+  });
 
   it("should send analytics when rendering an author profile page", () => {
     const reporter = jest.fn();
