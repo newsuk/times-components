@@ -6,6 +6,8 @@ import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 
 export default () => {
+  const realIntl = Intl;
+
   const authorProfileProps = {
     analyticsStream: () => {},
     onArticlePress: () => {},
@@ -13,6 +15,19 @@ export default () => {
     refetch: () => {},
     slug: "deborah-haynes"
   };
+
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+    jest.useFakeTimers();
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
+  });
 
   it("should render correctly", () => {
     const pageSize = 3;
