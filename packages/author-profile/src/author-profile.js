@@ -39,7 +39,6 @@ const AuthorProfile = ({
         isLoading
         pageSize={initPageSize}
         refetch={() => {}}
-        loadMore={() => {}}
         showImages
       />
     );
