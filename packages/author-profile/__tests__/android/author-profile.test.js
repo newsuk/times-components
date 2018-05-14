@@ -1,3 +1,3 @@
-import shared from "../author-profile-list-content.native";
+import shared from "../shared";
 
 describe("AuthorProfile tests on android", shared);

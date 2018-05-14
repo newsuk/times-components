@@ -9,7 +9,7 @@ export const propTypes = {
     name: PropTypes.string,
     twitter: PropTypes.string
   }),
-  error: PropTypes.shape(),
+  error: PropTypes.object,
   isLoading: PropTypes.bool,
   page: PropTypes.number,
   pageSize: PropTypes.number,

@@ -1,0 +1,50 @@
+{
+  "shortSummary": [
+    {
+      "name": "paragraph",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value":
+              "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "name": "paragraph",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value":
+              "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "longSummary": [
+    {
+      "name": "paragraph",
+      "attributes": {},
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value":
+              "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

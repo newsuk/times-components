@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.23.17"></a>
+## [0.23.17](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.23.16...@times-components/article-summary@0.23.17) (2018-05-11)
+
+
+### Bug Fixes
+
+* implement link renderer ([#914](https://github.com/newsuk/times-components/issues/914)) ([bd944a3](https://github.com/newsuk/times-components/commit/bd944a3))
+
+
+
+
 <a name="0.23.16"></a>
 ## [0.23.16](https://github.com/newsuk/times-components/compare/@times-components/article-summary@0.23.15...@times-components/article-summary@0.23.16) (2018-05-10)
 
