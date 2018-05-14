@@ -17,7 +17,6 @@ const uploadQRcode = (qrcode) => {
         ACL: 'public-read'
     };
 
-    // call S3 to retrieve upload file to specified bucket
     s3.upload(uploadParams, (err, data) => {
         if (err) {
             console.log('upload qrcode error:', err); // eslint-disable-line no-console
