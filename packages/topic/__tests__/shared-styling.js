@@ -4,7 +4,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import Topic from "../src/topic";
 
-module.exports = () => {
+export default () => {
   it("should render styling correctly", () => {
     const tree = renderer.create(<Topic name="Animals" />).toJSON();
 

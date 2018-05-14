@@ -2,6 +2,8 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import Topic from "../src/topic";
+jest.mock('../src/topic-head-loading', () => "TopicHeadLoading");
+jest.mock('../src/divider', () => "Divider");
 
 module.exports = () => {
   it("should render correctly", () => {
