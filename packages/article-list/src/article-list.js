@@ -79,10 +79,10 @@ class ArticleList extends Component {
 
     const fetchMoreOnEndReached = () => {
       if (this.state.loadMoreError) {
-        return;
+        return null;
       }
 
-      fetchMore({
+      return fetchMore({
         variables: {
           skip: data.length
         },

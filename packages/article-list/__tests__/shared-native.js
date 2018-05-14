@@ -3,7 +3,6 @@ import { FlatList } from "react-native";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Link from "@times-components/link";
-import Pagination from "@times-components/pagination";
 import ArticleList from "../src/article-list";
 import ArticleListItem from "../src/article-list-item";
 import articleListProps from "./default-article-list-props";
@@ -129,7 +128,10 @@ export default () => {
     expect(fetchMore).toHaveBeenCalled();
   });
 
-  it("should display error when scrolling to bottom", () => {
+  it("should display error when fetch more fails", async () => {
+    const fetchMore = jest
+      .fn()
+      .mockReturnValue(Promise.reject(new Error("Error")));
     const results = pagedResult(0, 3);
     const wrapper = shallow(
       <ArticleList
@@ -140,11 +142,17 @@ export default () => {
         isLoading={false}
         page={1}
         pageSize={3}
+        fetchMore={fetchMore}
       />
     ).dive();
-    wrapper.setState({ loadMoreError: "Error" });
+    wrapper.setState({ loadMoreError: null });
 
-    expect(
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    return expect(
       wrapper
         .dive()
         .dive()
@@ -183,5 +191,37 @@ export default () => {
     button.props().refetch();
 
     expect(wrapper.state().loadMoreError).toBe(null);
+  });
+
+  it("should not call re-fetch after an error", async () => {
+    const fetchMore = jest
+      .fn()
+      .mockReturnValue(Promise.reject(new Error("Error")));
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+        fetchMore={fetchMore}
+      />
+    ).dive();
+    wrapper.setState({ loadMoreError: null });
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    return expect(fetchMore).toHaveBeenCalledTimes(1);
   });
 };
