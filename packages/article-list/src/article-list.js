@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
 import ErrorView from "@times-components/error-view";
+import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
@@ -137,7 +138,11 @@ class ArticleList extends Component {
             );
           }
           return (
-            <ActivityIndicator style={styles.loadingContainer} size="large" />
+            <ActivityIndicator
+              style={styles.loadingContainer}
+              size="large"
+              color={colours.functional.keyline}
+            />
           );
         }}
         ListHeaderComponent={articleListHeader}

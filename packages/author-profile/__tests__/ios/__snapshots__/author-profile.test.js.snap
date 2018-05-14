@@ -1842,7 +1842,7 @@ exports[`1. Render an author profile page 1`] = `
     >
       <ActivityIndicator
         animating={true}
-        color="#999999"
+        color="#DBDBDB"
         hidesWhenStopped={true}
         size="large"
         style={
@@ -3516,7 +3516,7 @@ exports[`2. Render an article list loading state 1`] = `
     >
       <ActivityIndicator
         animating={true}
-        color="#999999"
+        color="#DBDBDB"
         hidesWhenStopped={true}
         size="large"
         style={

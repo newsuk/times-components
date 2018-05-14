@@ -5,7 +5,7 @@ const functionalColours = {
   secondary: "#696969", // Bylines, dates and other auxiliary text
   tertiary: "#4D4D4D", // Sponsored article flag and icon fills
   action: "#006699", // Buttons and links
-  keyline: "#DBDBDB", // Keylines and borders
+  keyline: "#DBDBDB", // Keylines, borders and loading spinners
   backgroundPrimary: "#F9F8F3", // Author profile background
   backgroundSecondary: "#F9F9F9",
   backgroundTertiary: "#EDEDED",

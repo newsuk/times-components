@@ -2446,6 +2446,7 @@ exports[`ArticleList tests on android should render an article list that is load
     >
       <ActivityIndicator
         animating={true}
+        color="#DBDBDB"
         hidesWhenStopped={true}
         size="large"
         style={

@@ -2441,7 +2441,7 @@ exports[`ArticleList tests on ios should render an article list that is loading 
     >
       <ActivityIndicator
         animating={true}
-        color="#999999"
+        color="#DBDBDB"
         hidesWhenStopped={true}
         size="large"
         style={
