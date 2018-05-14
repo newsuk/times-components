@@ -231,7 +231,17 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     }
                   />
-                  <div>
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
                     <div
                       style={
                         Object {
@@ -319,6 +329,7 @@ exports[`1. Render an author profile page 1`] = `
                       Object {
                         "bottom": "0px",
                         "left": "0px",
+                        "position": "absolute",
                         "right": "0px",
                         "top": "0px",
                       }
@@ -411,6 +422,7 @@ exports[`1. Render an author profile page 1`] = `
                       Object {
                         "bottom": "0px",
                         "left": "0px",
+                        "position": "absolute",
                         "right": "0px",
                         "top": "0px",
                       }
@@ -692,7 +704,16 @@ exports[`2. Render an article list loading state 1`] = `
                       }
                     }
                   />
-                  <div>
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
                     <div
                       style={
                         Object {
@@ -775,7 +796,16 @@ exports[`2. Render an article list loading state 1`] = `
                       }
                     }
                   />
-                  <div>
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
                     <div
                       style={
                         Object {
