@@ -4299,25 +4299,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Article tests on android should render activity indicator  1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexBasis": "100%",
-      "justifyContent": "center",
-    }
-  }
->
-  <ActivityIndicator
-    animating={true}
-    hidesWhenStopped={true}
-    size="large"
-  />
-</View>
-`;
-
 exports[`Article tests on android should render an article with a video asset 1`] = `
 <RCTScrollView
   data={
