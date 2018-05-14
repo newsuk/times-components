@@ -1,4 +1,5 @@
 import React from "react";
+import jest from "jest";
 
 const mockReactNativeComponents = (...componentNames) =>
   componentNames.map(componentName =>
