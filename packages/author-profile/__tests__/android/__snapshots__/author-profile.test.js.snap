@@ -1848,8 +1848,7 @@ exports[`1. Render an author profile page 1`] = `
         size="large"
         style={
           Object {
-            "paddingBottom": 15,
-            "paddingTop": 15,
+            "paddingVertical": 15,
           }
         }
       />
@@ -3522,8 +3521,7 @@ exports[`2. Render an article list loading state 1`] = `
         size="large"
         style={
           Object {
-            "paddingBottom": 15,
-            "paddingTop": 15,
+            "paddingVertical": 15,
           }
         }
       />
