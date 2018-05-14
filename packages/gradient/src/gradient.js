@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { StyleSheet, View, ViewPropTypes } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
+import { StyleSheet, View, ViewPropTypes, ART } from "react-native";
 import { colours } from "@times-components/styleguide";
+
+const { Surface, Shape, LinearGradient, Path } = ART;
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  }
+  },
+  surface: { position: "absolute", top: 0, left: 0, bottom: 0, right: 0 }
 });
 
 function angleToPoints(angle) {
@@ -30,26 +32,55 @@ function angleToPoints(angle) {
   };
 }
 
-const Gradient = ({ degrees, children, style }) => {
-  const { start, end } = angleToPoints((degrees + 90) / 180 * Math.PI);
+class Gradient extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: 0,
+      height: 0
+    };
+  }
 
-  return (
-    <View style={style}>
-      <LinearGradient
-        start={start}
-        end={end}
-        locations={[0.0, 1.0]}
-        colors={[
-          colours.functional.backgroundSecondary,
-          colours.functional.backgroundTertiary
-        ]}
-        style={[styles.container]}
-      >
+  onLayout = ({ nativeEvent: { layout: { width, height } } }) => {
+    this.setState({ width, height });
+  };
+
+  render() {
+    const { width, height } = this.state;
+    const { degrees, children, style } = this.props;
+
+    const { start, end } = angleToPoints((degrees + 90) / 180 * Math.PI);
+
+    const d = new Path()
+      .line(width, 0)
+      .line(0, height)
+      .line(-width, 0)
+      .line(0, -height);
+
+    return (
+      <View style={[styles.container, style]} onLayout={this.onLayout}>
+        <Surface width={width} height={height} style={styles.surface}>
+          <Shape
+            fill={
+              new LinearGradient(
+                {
+                  "0": colours.functional.backgroundSecondary,
+                  "1": colours.functional.backgroundTertiary
+                },
+                width * start.x,
+                height * start.y,
+                width * end.x,
+                height * end.y
+              )
+            }
+            d={d}
+          />
+        </Surface>
         {children}
-      </LinearGradient>
-    </View>
-  );
-};
+      </View>
+    );
+  }
+}
 
 Gradient.defaultProps = {
   degrees: 265,

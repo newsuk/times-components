@@ -173,43 +173,80 @@ exports[`1. Render an author profile page 1`] = `
                   }
                 >
                   <View
+                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
                   >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
+                    <ARTSurfaceView
                       style={
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
                         }
                       }
-                    />
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
                   </View>
                 </View>
               </View>
@@ -471,43 +508,80 @@ exports[`2. Render an article list loading state 1`] = `
             }
           >
             <View
+              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.07922796533956822,
-                    "y": 0.09442021232736122,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
           </View>
         </View>
@@ -580,43 +654,80 @@ exports[`2. Render an article list loading state 1`] = `
                   }
                 >
                   <View
+                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
                   >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
+                    <ARTSurfaceView
                       style={
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
                         }
                       }
-                    />
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
                   </View>
                 </View>
               </View>
@@ -632,467 +743,318 @@ exports[`2. Render an article list loading state 1`] = `
             }
           >
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 24,
                   "marginBottom": 10,
                   "maxWidth": 300,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 10,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": 10,
-                  "marginBottom": 0,
-                  "maxWidth": 240,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 15,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "display": "flex",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "flex-end",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 10,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
               >
-                <Image
-                  onLoad={[Function]}
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
                   }
                 />
-                <View
-                  onLayout={[Function]}
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "marginBottom": 0,
-                "minWidth": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 24,
-                  "marginBottom": 10,
-                  "maxWidth": 300,
-                }
-              }
-            >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
-                style={
-                  Object {
-                    "flex": 1,
-                  }
-                }
-              />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 10,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 10,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 0,
                   "maxWidth": 240,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
           </View>
         </View>
@@ -1182,43 +1144,80 @@ exports[`2. Render an article list loading state 1`] = `
                   }
                 >
                   <View
+                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
                       }
                     }
                   >
-                    <BVLinearGradient
-                      colors={
-                        Array [
-                          "#F9F9F9",
-                          "#EDEDED",
-                        ]
-                      }
-                      end={
-                        Object {
-                          "x": -0.09302964577578221,
-                          "y": 0.11488204504197774,
-                        }
-                      }
-                      locations={
-                        Array [
-                          0,
-                          1,
-                        ]
-                      }
-                      start={
-                        Object {
-                          "x": 1,
-                          "y": 0,
-                        }
-                      }
+                    <ARTSurfaceView
                       style={
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
                         }
                       }
-                    />
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
                   </View>
                 </View>
               </View>
@@ -1234,166 +1233,808 @@ exports[`2. Render an article list loading state 1`] = `
             }
           >
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 24,
                   "marginBottom": 10,
                   "maxWidth": 300,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.09302964577578221,
-                    "y": 0.11488204504197774,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 10,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 10,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
             <View
+              onLayout={[Function]}
               style={
                 Object {
+                  "flex": 1,
                   "height": 10,
                   "marginBottom": 0,
                   "maxWidth": 240,
                 }
               }
             >
-              <BVLinearGradient
-                colors={
-                  Array [
-                    "#F9F9F9",
-                    "#EDEDED",
-                  ]
-                }
-                end={
-                  Object {
-                    "x": -0.049525179317961854,
-                    "y": 0.05500328394968961,
-                  }
-                }
-                locations={
-                  Array [
-                    0,
-                    1,
-                  ]
-                }
-                start={
-                  Object {
-                    "x": 1,
-                    "y": 0,
-                  }
-                }
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
-              />
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <ARTSurfaceView
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
           </View>
         </View>
@@ -1477,43 +2118,80 @@ exports[`3. Render an article list page error state 1`] = `
           }
         >
           <View
+            onLayout={[Function]}
             style={
               Object {
                 "flex": 1,
               }
             }
           >
-            <BVLinearGradient
-              colors={
-                Array [
-                  "#F9F9F9",
-                  "#EDEDED",
-                ]
-              }
-              end={
-                Object {
-                  "x": -0.09302964577578221,
-                  "y": 0.11488204504197774,
-                }
-              }
-              locations={
-                Array [
-                  0,
-                  1,
-                ]
-              }
-              start={
-                Object {
-                  "x": 1,
-                  "y": 0,
-                }
-              }
+            <ARTSurfaceView
               style={
                 Object {
-                  "flex": 1,
+                  "bottom": 0,
+                  "height": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
                 }
               }
-            />
+            >
+              <ARTShape
+                d={
+                  Array [
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                  ]
+                }
+                fill={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    -0,
+                    0,
+                    0.9764705882352941,
+                    0.9764705882352941,
+                    0.9764705882352941,
+                    1,
+                    0.9294117647058824,
+                    0.9294117647058824,
+                    0.9294117647058824,
+                    1,
+                    0,
+                    1,
+                  ]
+                }
+                opacity={1}
+                stroke={null}
+                strokeCap={1}
+                strokeDash={null}
+                strokeJoin={1}
+                strokeWidth={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              />
+            </ARTSurfaceView>
           </View>
         </View>
       </View>
