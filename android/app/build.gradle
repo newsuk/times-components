@@ -152,7 +152,6 @@ repositories {
 }
 
 dependencies {
-    implementation project(':react-native-linear-gradient')
     implementation project(':react-native-svg')
     implementation (project(':react-native-device-info')) {
       exclude group: "com.google.android.gms"
