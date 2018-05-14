@@ -5,7 +5,7 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
-import ArticleListPagination from "./article-list-pagination";
+import ArticleListRetryButton from "./article-list-retry-button";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 
@@ -18,6 +18,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+    this.state = { loadMoreError: null };
   }
 
   componentWillUnmount() {
@@ -48,7 +49,8 @@ class ArticleList extends Component {
       pageSize,
       refetch,
       showImages,
-      fetchMore
+      fetchMore,
+      updateQuery
     } = this.props;
 
     if (error) {
@@ -62,40 +64,30 @@ class ArticleList extends Component {
 
     const data = articlesLoading
       ? Array(pageSize)
-        .fill()
-        .map((number, index) => ({
-          elementId: `empty.${index}`,
-          id: index,
-          isLoading: true
-        }))
+          .fill()
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
+            isLoading: true
+          }))
       : articles.map((article, index) => ({
-        ...article,
-        elementId: `${article.id}.${index}`
-      }));
+          ...article,
+          elementId: `${article.id}.${index}`
+        }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
-    const fetchMoreOnEnd = () => {
+    const fetchMoreOnEndReached = () => {
+      if (this.state.loadMoreError) {
+        return;
+      }
+
       fetchMore({
         variables: {
           skip: data.length
         },
-        updateQuery: (prev, { fetchMoreResult }) => {
-          if (!fetchMoreResult) return prev;
-          return {
-            author: {
-              ...prev.author,
-              articles: {
-                ...prev.author.articles,
-                list: [
-                  ...prev.author.articles.list,
-                  ...fetchMoreResult.author.articles.list
-                ]
-              }
-            }
-          };
-        }
-      });
+        updateQuery
+      }).catch(err => this.setState({ loadMoreError: err }));
     };
 
     return (
@@ -106,10 +98,7 @@ class ArticleList extends Component {
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
         onEndReachedThreshold={0.2}
-        onEndReached={fetchMoreOnEnd}
-        ref={list => {
-          this.listRef = list;
-        }}
+        onEndReached={fetchMoreOnEndReached}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
@@ -135,12 +124,23 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
           </View>
         )}
-        ListFooterComponent={
-          data.length >= count ? null : (
+        ListFooterComponent={() => {
+          if (data.length >= count) {
+            return null;
+          } else if (this.state.loadMoreError) {
+            return (
+              <ArticleListRetryButton
+                refetch={() => {
+                  this.setState({ loadMoreError: null });
+                }}
+              />
+            );
+          }
+          return (
             <ActivityIndicator style={styles.loadingContainer} size="large" />
-          )
-        }
-        ListHeaderComponent={AuthorProfileHead}
+          );
+        }}
+        ListHeaderComponent={articleListHeader}
       />
     );
   }

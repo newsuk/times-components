@@ -67,6 +67,22 @@ const AuthorProfile = ({
     />
   );
 
+  const updateQuery = (prev, { fetchMoreResult }) =>
+    fetchMoreResult
+      ? {
+          author: {
+            ...prev.author,
+            articles: {
+              ...prev.author.articles,
+              list: [
+                ...prev.author.articles.list,
+                ...fetchMoreResult.author.articles.list
+              ]
+            }
+          }
+        }
+      : prev;
+
   const SelectedProvider = hasLeadAssets
     ? AuthorArticlesWithImagesProvider
     : AuthorArticlesNoImagesProvider;
@@ -101,6 +117,7 @@ const AuthorProfile = ({
           refetch={refetchArticles}
           fetchMore={fetchMoreArticles}
           showImages={hasLeadAssets}
+          updateQuery={updateQuery}
         />
       )}
     </SelectedProvider>
