@@ -68,109 +68,19 @@ exports[`1. Render an author profile page 1`] = `
   data={
     Array [
       Object {
-        "__typename": "Article",
-        "elementId": "d98c257c-cb16-11e7-b529-95e3fc05f40f.0",
-        "headline": "Top medal for forces dog who took a bite out of the Taliban",
-        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0",
-            Symbol(id): "$Article:d98c257c-cb16-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
-          },
-          "title": "Title",
-          Symbol(id): "$Article:d98c257c-cb16-11e7-b529-95e3fc05f40f.leadAsset",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
+        "elementId": "empty.0",
+        "id": 0,
+        "isLoading": true,
       },
       Object {
-        "__typename": "Article",
-        "elementId": "4e6894ec-cb18-11e7-b529-95e3fc05f40f.1",
-        "headline": "Social media must raise game to beat terrorists, says UN chief",
-        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745",
-            Symbol(id): "$Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
-          },
-          "title": "Title",
-          Symbol(id): "$Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f.leadAsset",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
+        "elementId": "empty.1",
+        "id": 1,
+        "isLoading": true,
       },
       Object {
-        "__typename": "Article",
-        "elementId": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2",
-        "headline": "Cuts have left the army 20 years out of date, says former general",
-        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
-        "label": "",
-        "leadAsset": Object {
-          "__typename": "Image",
-          "crop": Object {
-            "__typename": "Crop",
-            "url": "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0",
-            Symbol(id): "$Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f.leadAsset.crop({\\"ratio\\":\\"3:2\\"})",
-          },
-          "title": "Nad e Ali in Helmand province, Afghanistan.",
-          Symbol(id): "$Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f.leadAsset",
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2017-11-14T17:00:00.000Z",
-        "summary": Array [
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "paragraph",
-          },
-        ],
-        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
+        "elementId": "empty.2",
+        "id": 2,
+        "isLoading": true,
       },
     ]
   }
@@ -224,7 +134,7 @@ exports[`1. Render an author profile page 1`] = `
         <View
           style={
             Object {
-              "opacity": 1,
+              "opacity": 0,
             }
           }
         >
@@ -597,213 +507,281 @@ exports[`1. Render an author profile page 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessible={true}
-        nativeBackgroundAndroid={
+        style={
           Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
       >
         <View
           style={
             Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
           <View
             style={
               Object {
-                "opacity": 0,
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
                 }
               }
             >
-              <View
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Top medal for forces dog who took a bite out of the Taliban
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Friday November 17 2017, 12:01am, The Times
-                  </Text>
-                </View>
-              </View>
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -830,213 +808,281 @@ exports[`1. Render an author profile page 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessible={true}
-        nativeBackgroundAndroid={
+        style={
           Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
       >
         <View
           style={
             Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
           <View
             style={
               Object {
-                "opacity": 0,
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
                 }
               }
             >
-              <View
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Social media must raise game to beat terrorists, says UN chief
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Friday November 17 2017, 12:01am, The Times
-                  </Text>
-                </View>
-              </View>
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
             </View>
           </View>
         </View>
@@ -1063,213 +1109,281 @@ exports[`1. Render an author profile page 1`] = `
       onLayout={[Function]}
     >
       <View
-        accessible={true}
-        nativeBackgroundAndroid={
+        style={
           Object {
-            "attribute": "selectableItemBackground",
-            "type": "ThemeAttrAndroid",
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        pointerEvents="box-only"
       >
         <View
           style={
             Object {
-              "paddingBottom": 15,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 15,
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
             }
           }
         >
           <View
             style={
               Object {
-                "opacity": 0,
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        Array [
+                          "#F9F9F9",
+                          "#EDEDED",
+                        ]
+                      }
+                      end={
+                        Object {
+                          "x": -0.09302964577578221,
+                          "y": 0.11488204504197774,
+                        }
+                      }
+                      locations={
+                        Array [
+                          0,
+                          1,
+                        ]
+                      }
+                      start={
+                        Object {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "flex-start",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "justifyContent": "flex-end",
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
                 }
               }
             >
-              <View
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.09302964577578221,
+                    "y": 0.11488204504197774,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 10,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View
-                  aspectRatio={1.5}
-                >
-                  <View
-                    style={
-                      Object {
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    <Image
-                      onLoad={[Function]}
-                      source={
-                        Object {
-                          "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440",
-                        }
-                      }
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": "100%",
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": "100%",
-                        }
-                      }
-                    />
-                    <View
-                      onLayout={[Function]}
-                      style={
-                        Object {
-                          "flex": 1,
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
-                      >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        />
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
                 style={
                   Object {
                     "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
                   }
                 }
-              >
-                <View>
-                  <Text
-                    accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
-                    aria-level="3"
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#333333",
-                        "fontFamily": "TimesModern-Bold",
-                        "fontSize": 22,
-                        "fontWeight": "400",
-                        "lineHeight": 22,
-                        "marginBottom": 5,
-                      }
-                    }
-                  >
-                    Cuts have left the army 20 years out of date, says former general
-                  </Text>
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "flexWrap": "wrap",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 10,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
-                      
-                      Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
-                      ...
-                    </Text>
-                  </Text>
-                  <Text
-                    accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 15,
-                        "marginBottom": 5,
-                      }
-                    }
-                    testID="datePublication"
-                  >
-                    Tuesday November 14 2017, 05:00pm, The Times
-                  </Text>
-                </View>
-              </View>
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <BVLinearGradient
+                colors={
+                  Array [
+                    "#F9F9F9",
+                    "#EDEDED",
+                  ]
+                }
+                end={
+                  Object {
+                    "x": -0.049525179317961854,
+                    "y": 0.05500328394968961,
+                  }
+                }
+                locations={
+                  Array [
+                    0,
+                    1,
+                  ]
+                }
+                start={
+                  Object {
+                    "x": 1,
+                    "y": 0,
+                  }
+                }
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />
             </View>
           </View>
         </View>

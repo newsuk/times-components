@@ -5,9 +5,9 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 
-const delay = ms => new Promise(res => setTimeout(res, ms));
-
 export default () => {
+  const realIntl = Intl;
+
   const authorProfileProps = {
     analyticsStream: () => {},
     onArticlePress: () => {},
@@ -16,7 +16,20 @@ export default () => {
     slug: "deborah-haynes"
   };
 
-  it("should render correctly", async () => {
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
+    };
+    jest.useFakeTimers();
+  });
+
+  afterEach(() => {
+    global.Intl = realIntl;
+  });
+
+  it("should render correctly", () => {
     const pageSize = 3;
     const tree = renderer.create(
       <MockedProvider
@@ -35,8 +48,6 @@ export default () => {
         />
       </MockedProvider>
     );
-
-    await delay(1000);
 
     expect(tree).toMatchSnapshot("1. Render an author profile page");
   });
