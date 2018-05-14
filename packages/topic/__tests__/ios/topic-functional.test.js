@@ -1,7 +1,9 @@
-import { mockReactNativeComponents } from "@times-components/jest-configurator";
+import { mockReactNativeComponent } from "@times-components/jest-configurator";
 import sharedFunctional from "../shared-functional";
 
 describe("Topic functional tests on ios", () => {
-  mockReactNativeComponents("Text", "View");
+  jest.mock("Text", () => mockReactNativeComponent("Text"));
+  jest.mock("View", () => mockReactNativeComponent("View"));
+
   sharedFunctional();
 });

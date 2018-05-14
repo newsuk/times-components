@@ -3,10 +3,11 @@
 import findNodeModules from "find-node-modules";
 import path from "path";
 import getCoveragePaths from "./coverage";
-import mockRNComponents from "./react-native-mock-components";
+import mockRNComponent from "./react-native-mock-components";
 
 export type Platform = "node" | "android" | "ios" | "web";
-export const mockReactNativeComponents = mockRNComponents;
+
+export const mockReactNativeComponent = mockRNComponent;
 
 const nativeSpecific = (platform: Platform) => ({
   moduleNameMapper: {
