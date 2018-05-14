@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.0.1...@times-components/author-profile@1.0.2) (2018-05-14)
+
+
+### Bug Fixes
+
+* a temp fix for author profile snapshots as master is broken ([#938](https://github.com/newsuk/times-components/issues/938)) ([819d84d](https://github.com/newsuk/times-components/commit/819d84d))
+* articles list loading state ([#936](https://github.com/newsuk/times-components/issues/936)) ([f4c5131](https://github.com/newsuk/times-components/commit/f4c5131))
+
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.0.0...@times-components/author-profile@1.0.1) (2018-05-14)
 
