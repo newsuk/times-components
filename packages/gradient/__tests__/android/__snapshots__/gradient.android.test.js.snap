@@ -1,347 +1,719 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gradient tests on android renders a Gradient 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": -0.07922796533956822,
-        "y": 0.09442021232736122,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 0,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient using array prop styles 1`] = `
 <View
+  onLayout={[Function]}
   style={
     Object {
+      "flex": 1,
       "height": 200,
       "width": 200,
     }
   }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
-    }
-    end={
-      Object {
-        "x": -0.07922796533956822,
-        "y": 0.09442021232736122,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 0,
-      }
-    }
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient using prop styles 1`] = `
 <View
+  onLayout={[Function]}
   style={
     Object {
+      "flex": 1,
       "height": 200,
       "width": 200,
     }
   }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
-    }
-    end={
-      Object {
-        "x": -0.07922796533956822,
-        "y": 0.09442021232736122,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 0,
-      }
-    }
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient using stylesheets 1`] = `
 <View
+  onLayout={[Function]}
   style={
     Object {
+      "flex": 1,
       "height": 200,
       "margin": 10,
       "width": 200,
     }
   }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
-    }
-    end={
-      Object {
-        "x": -0.07922796533956822,
-        "y": 0.09442021232736122,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 0,
-      }
-    }
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient with an angle (-45) 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": -2.220446049250313e-16,
-        "y": 0,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 1,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient with an angle (45) 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": 1,
-        "y": -2.220446049250313e-16,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 0,
-        "y": 1,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          0,
+          -0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient with an angle (90) 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": 1.0000000000000002,
-        "y": 0.9999999999999999,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 0,
-        "y": 1,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient with an angle (180) 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": 1.8369701987210317e-16,
-        "y": 1.000000000000001,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 0,
-        "y": 0,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;
 
 exports[`Gradient tests on android renders a Gradient with an angle (270) 1`] = `
-<View>
-  <BVLinearGradient
-    colors={
-      Array [
-        "#F9F9F9",
-        "#EDEDED",
-      ]
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
     }
-    end={
-      Object {
-        "x": 6.661338147750939e-16,
-        "y": 2.449293598294705e-16,
-      }
-    }
-    locations={
-      Array [
-        0,
-        1,
-      ]
-    }
-    start={
-      Object {
-        "x": 1,
-        "y": 0,
-      }
-    }
+  }
+>
+  <ARTSurfaceView
     style={
       Object {
-        "flex": 1,
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
       }
     }
-  />
+  >
+    <ARTShape
+      d={
+        Array [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+        ]
+      }
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0,
+          1,
+        ]
+      }
+      opacity={1}
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTSurfaceView>
 </View>
 `;

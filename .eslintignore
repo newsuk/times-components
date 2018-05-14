@@ -3,3 +3,5 @@
 dist
 storybook-static
 packages
+dextrose/snappy
+fructose/components.js

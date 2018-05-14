@@ -74,7 +74,8 @@ AuthorHead.defaultProps = {
   title: "",
   uri: "",
   bio: [],
-  twitter: null
+  twitter: null,
+  onTwitterLinkPress: () => {}
 };
 
 AuthorHead.propTypes = {
@@ -84,7 +85,7 @@ AuthorHead.propTypes = {
   uri: PropTypes.string,
   bio: PropTypes.arrayOf(treePropType),
   twitter: PropTypes.string,
-  onTwitterLinkPress: PropTypes.func.isRequired
+  onTwitterLinkPress: PropTypes.func
 };
 
 const TwitterLink = ({ handle, onPress }) => {

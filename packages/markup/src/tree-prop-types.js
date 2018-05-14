@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const nodeShape = {
   name: PropTypes.string.isRequired,
-  attributes: PropTypes.object.isRequired
+  attributes: PropTypes.object
 };
 
 nodeShape.children = PropTypes.arrayOf(PropTypes.shape(nodeShape)).isRequired;
