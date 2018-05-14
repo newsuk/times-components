@@ -773,13 +773,6 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/gradient@0.10.11":
-  version "0.10.11"
-  resolved "https://registry.yarnpkg.com/@times-components/gradient/-/gradient-0.10.11.tgz#e5310e5e55ca27fe4dc310093177da764e255531"
-  dependencies:
-    "@times-components/styleguide" "0.6.8"
-    prop-types "15.6.0"
-
 "@types/async@2.0.47":
   version "2.0.47"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.47.tgz#f49ba1dd1f189486beb6e1d070a850f6ab4bd521"
