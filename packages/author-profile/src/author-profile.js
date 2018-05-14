@@ -98,6 +98,7 @@ const AuthorProfile = ({
       {({
         author: data,
         error: articlesError,
+        isLoading: articlesLoading,
         pageSize,
         refetch: refetchArticles,
         fetchMore: fetchMoreArticles,
@@ -106,6 +107,7 @@ const AuthorProfile = ({
         <ArticleList
           articleListHeader={articleListHeader}
           articles={get(data, "articles.list", [])}
+          articlesLoading={articlesLoading}
           count={get(articles, "count", 0)}
           error={articlesError}
           imageRatio={ratioTextToFloat(imageRatio)}
