@@ -106,48 +106,4 @@ export default () => {
         "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
     });
   });
-
-  it("should invoke onPrev when the previous link is pressed", () => {
-    const onPrev = jest.fn();
-    const results = pagedResult(0, 3);
-    const comp = renderer.create(
-      <ArticleList
-        {...articleListProps}
-        articles={results.articles.list}
-        articlesLoading={false}
-        count={10}
-        isLoading={false}
-        onPrev={onPrev}
-        page={2}
-        pageSize={3}
-      />
-    ).root;
-    comp
-      .findAllByType(Pagination)[0]
-      .findAllByType(Link)[0]
-      .props.onPress();
-    expect(onPrev).toHaveBeenCalled();
-  });
-
-  it("should invoke onNext when the next link is pressed", () => {
-    const onNext = jest.fn();
-    const results = pagedResult(0, 3);
-    const comp = renderer.create(
-      <ArticleList
-        {...articleListProps}
-        articles={results.articles.list}
-        articlesLoading={false}
-        count={10}
-        isLoading={false}
-        onNext={onNext}
-        page={2}
-        pageSize={3}
-      />
-    ).root;
-    comp
-      .findAllByType(Pagination)[0]
-      .findAllByType(Link)[1]
-      .props.onPress();
-    expect(onNext).toHaveBeenCalled();
-  });
 };

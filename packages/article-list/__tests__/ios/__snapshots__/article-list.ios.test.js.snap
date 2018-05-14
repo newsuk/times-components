@@ -3,28 +3,8 @@
 exports[`ArticleList tests on ios should render an article list 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      count={3}
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      page={1}
-      pageSize={3}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <ArticleListPagination
-        count={3}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
-  }
+  ListFooterComponent={[Function]}
+  ListHeaderComponent={null}
   accessibilityID="scroll-view"
   data={
     Array [
@@ -138,7 +118,8 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
+  onEndReached={[Function]}
+  onEndReachedThreshold={0.2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
@@ -172,85 +153,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 1 - 3 of 3 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
     <View
       onLayout={[Function]}
     >
@@ -932,54 +834,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
     </View>
     <View
       onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
+    />
   </View>
 </RCTScrollView>
 `;
@@ -1706,38 +1561,9 @@ exports[`ArticleList tests on ios should render an article list page error corre
       }
     }
   >
-    <TouchableOpacity
-      accessibilityLabel="Retry"
-      accessible={true}
-      activeOpacity={0.2}
-      onPress={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#006699",
-            "flex": 1,
-            "height": 45,
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#FFF",
-              "fontFamily": "GillSansMTStd-Medium",
-            }
-          }
-        >
-          RETRY
-        </Text>
-      </View>
-    </TouchableOpacity>
+    <ArticleListRetryButton
+      refetch={[Function]}
+    />
   </View>
 </View>
 `;
@@ -1745,22 +1571,8 @@ exports[`ArticleList tests on ios should render an article list page error corre
 exports[`ArticleList tests on ios should render an article list that is loading 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-    />
-  }
-  ListHeaderComponent={
-    <View>
-      <ArticleListPagination
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-      />
-    </View>
-  }
+  ListFooterComponent={[Function]}
+  ListHeaderComponent={null}
   accessibilityID="scroll-view"
   data={
     Array [
@@ -1780,7 +1592,8 @@ exports[`ArticleList tests on ios should render an article list that is loading 
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
+  onEndReached={[Function]}
+  onEndReachedThreshold={0.2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
@@ -1813,85 +1626,6 @@ exports[`ArticleList tests on ios should render an article list that is loading 
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
     <View
       onLayout={[Function]}
     >
@@ -2179,52 +1913,18 @@ exports[`ArticleList tests on ios should render an article list that is loading 
     <View
       onLayout={[Function]}
     >
-      <View
+      <ActivityIndicator
+        animating={true}
+        color="#999999"
+        hidesWhenStopped={true}
+        size="large"
         style={
           Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
+            "paddingBottom": 15,
+            "paddingTop": 15,
           }
         }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </RCTScrollView>

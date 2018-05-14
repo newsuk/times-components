@@ -63,7 +63,10 @@ export default () => {
     const refetchMock = jest.fn();
     const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
 
-    wrapper.find("TouchableOpacity").simulate("press");
+    wrapper
+      .find("ArticleListRetryButton")
+      .dive()
+      .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();
   });
@@ -188,7 +191,8 @@ export default () => {
       .dive()
       .find("ArticleListError")
       .dive()
-      .find("TouchableOpacity")
+      .find("ArticleListRetryButton")
+      .dive()
       .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();
