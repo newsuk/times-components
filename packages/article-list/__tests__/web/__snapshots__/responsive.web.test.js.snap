@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList responsive tests on web should render ListContentContainer correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ hkMMvo"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render ListItemLongText correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ dQznFS"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render ListItemShortText correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ jwwxoJ"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render ListItemWrapper correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ fXCtkJ"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render PageErrorContainer correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ hcvmyw"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render PageErrorImageContainer correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ Xuekk"
+/>
+`;

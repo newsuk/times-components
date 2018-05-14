@@ -1,9 +1,9 @@
 import React from "react";
-import { MockedProvider } from "@times-components/utils";
-import storybookReporter from "@times-components/tealium-utils";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { AuthorProfileProvider } from "@times-components/provider";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
+import StorybookProvider from "@times-components/storybook/storybook-provider";
+import storybookReporter from "@times-components/tealium-utils";
+import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "./src/author-profile";
 
 const preventDefaultedAction = decorateAction =>
@@ -14,8 +14,9 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const slug = "deborah-haynes";
+const page = 2;
 const pageSize = 5;
+const slug = "deborah-haynes";
 
 export default {
   name: "Pages/Author Profile",
@@ -25,27 +26,27 @@ export default {
       name: "Default with images",
       component: (_, { decorateAction }) => {
         const props = {
-          slug,
-          author: fixtureGenerator.makeAuthor({ withImages: true }),
+          analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
+          author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
-          page: 2,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          page,
+          pageSize,
+          slug
         };
 
         return (
           <MockedProvider
             mocks={fixtureGenerator.makeArticleMocks({
-              withImages: true,
+              pageSize,
               slug,
-              pageSize
+              withImages: true
             })}
           >
             <AuthorProfile {...props} />
@@ -58,19 +59,19 @@ export default {
       name: "Default without images",
       component: (_, { decorateAction }) => {
         const props = {
-          slug: "deborah-haynes",
-          author: fixtureGenerator.makeAuthor(),
+          analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
+          author: fixtureGenerator.makeAuthor(),
           isLoading: false,
-          page: 2,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          page,
+          pageSize,
+          slug: "deborah-haynes"
         };
 
         return (
@@ -87,19 +88,29 @@ export default {
       name: "Loading",
       component: (_, { decorateAction }) => {
         const props = {
-          slug: "deborah-haynes",
+          analyticsStream: storybookReporter,
           isLoading: true,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          pageSize,
+          slug: "deborah-haynes"
         };
 
-        return <AuthorProfile {...props} />;
+        return (
+          <MockedProvider
+            mocks={fixtureGenerator.makeArticleMocks({
+              pageSize,
+              slug,
+              withImages: true
+            })}
+          >
+            <AuthorProfile {...props} />
+          </MockedProvider>
+        );
       }
     },
     {
@@ -108,28 +119,28 @@ export default {
       component: (_, { decorateAction }) => (
         <MockedProvider
           mocks={fixtureGenerator.makeMocksWithAuthorError({
-            slug,
             pageSize,
+            slug,
             withImages: true
           })}
         >
           <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
-            {({ author, isLoading, error, refetch }) => (
+            {({ author, error, isLoading, refetch }) => (
               <AuthorProfile
+                analyticsStream={storybookReporter}
                 author={author}
-                page={1}
-                refetch={refetch}
-                pageSize={pageSize}
-                slug={slug}
-                isLoading={isLoading}
                 error={error}
-                onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-                  "onTwitterLinkPress"
-                )}
+                isLoading={isLoading}
                 onArticlePress={preventDefaultedAction(decorateAction)(
                   "onArticlePress"
                 )}
-                analyticsStream={storybookReporter}
+                onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                  "onTwitterLinkPress"
+                )}
+                page={1}
+                pageSize={pageSize}
+                refetch={refetch}
+                slug={slug}
               />
             )}
           </AuthorProfileProvider>
@@ -141,25 +152,25 @@ export default {
       name: "With an error getting articles",
       component: (_, { decorateAction }) => {
         const props = {
-          slug,
+          analyticsStream: storybookReporter,
           author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
-          page: 1,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          page: 1,
+          pageSize,
+          slug
         };
 
         return (
           <MockedProvider
             mocks={fixtureGenerator.makeMocksWithPageError({
-              withImages: true,
-              pageSize
+              pageSize,
+              withImages: true
             })}
           >
             <AuthorProfile {...props} />
@@ -172,26 +183,26 @@ export default {
       name: "With an error rendering a card",
       component: (_, { decorateAction }) => {
         const props = {
-          slug,
-          author: fixtureGenerator.makeAuthor({ withImages: true }),
+          analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
+          author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
-          page: 1,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          page: 1,
+          pageSize,
+          slug
         };
 
         return (
           <MockedProvider
             mocks={fixtureGenerator.makeBrokenMocks({
-              withImages: true,
-              pageSize
+              pageSize,
+              withImages: true
             })}
           >
             <AuthorProfile {...props} />
@@ -204,31 +215,31 @@ export default {
       name: "With Provider and Tracking",
       component: (_, { decorateAction }) => {
         const props = {
-          slug,
-          page: 2,
-          pageSize,
-          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          ),
+          analyticsStream: storybookReporter,
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
-          analyticsStream: storybookReporter
+          onTwitterLinkPress: preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          ),
+          page,
+          pageSize,
+          slug
         };
 
         const mocks = fixtureGenerator.makeArticleMocks({
-          withImages: true,
-          pageSize
+          pageSize,
+          withImages: true
         });
 
         return (
           <StorybookProvider mocks={mocks}>
             <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
-              {({ author, isLoading, error }) => (
+              {({ author, error, isLoading }) => (
                 <AuthorProfile
                   author={author}
-                  isLoading={isLoading}
                   error={error}
+                  isLoading={isLoading}
                   {...props}
                 />
               )}

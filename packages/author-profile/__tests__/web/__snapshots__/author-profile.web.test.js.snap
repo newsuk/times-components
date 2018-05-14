@@ -1,0 +1,635 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Render an author profile page 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ woNlo"
+  >
+    <div
+      data-testid="author-head"
+    >
+      <header
+        className="responsive-styles__component-fbPFZZ eNPgyU"
+        role="banner"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ fRtPsM"
+        >
+          <div
+            style={
+              Object {
+                "borderBottomLeftRadius": "50%",
+                "borderBottomRightRadius": "50%",
+                "borderTopLeftRadius": "50%",
+                "borderTopRightRadius": "50%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "table",
+                  "height": 0,
+                  "overflow": "hidden",
+                  "paddingBottom": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                src="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                style={
+                  Object {
+                    "display": "block",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+              <div>
+                <div
+                  style={
+                    Object {
+                      "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1
+          aria-label="author-name"
+          aria-level="1"
+          className="responsive-styles__component-fbPFZZ dkRirA"
+          data-testid="author-name"
+          dir="auto"
+          role="heading"
+        >
+          Deborah Haynes
+        </h1>
+        <h2
+          aria-level="2"
+          dir="auto"
+          role="heading"
+          style={
+            Object {
+              "WebkitFontSmoothing": "antialiased",
+            }
+          }
+        >
+          defence editor
+        </h2>
+        <div>
+          <svg
+            height={15}
+            width={15}
+          >
+            <path
+              fill="#006699"
+            />
+          </svg>
+          <a
+            dir="auto"
+            href="https://twitter.com/jdoe"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="link"
+          >
+            @
+            jdoe
+          </a>
+        </div>
+        <div
+          className="responsive-styles__component-fbPFZZ yjaCW"
+        >
+          <div
+            data-testid="author-bio"
+            dir="auto"
+          >
+            Deborah Haynes is the defence editor at 
+            <em>
+              The Times
+            </em>
+            , covering the most important defence & security news in the UK and around the world.
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ hkMMvo"
+  >
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ ldBdZT"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ exZFAC"
+          >
+            <div
+              data-testid="results-message"
+              dir="auto"
+            >
+              Showing 1 - 3 of 20 results
+            </div>
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ cePhpb"
+          >
+            <div />
+            <div>
+              <a
+                href="?page=2"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+              >
+                <div
+                  data-testid="pagination-button-next"
+                >
+                  <div
+                    dir="auto"
+                  >
+                    <span
+                      dir="auto"
+                    >
+                      Next
+                      <span
+                        className="responsive-styles__component-fbPFZZ hqaoTY"
+                        dir="auto"
+                      >
+                         page
+                      </span>
+                    </span>
+                  </div>
+                  <svg
+                    height={12}
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ kdgRsQ"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ciodUt"
+          >
+            <div />
+            <div>
+              <a
+                href="?page=2"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+              >
+                <div
+                  data-testid="pagination-button-next"
+                >
+                  <div
+                    dir="auto"
+                  >
+                    <span
+                      dir="auto"
+                    >
+                      Next
+                      <span
+                        className="responsive-styles__component-fbPFZZ hqaoTY"
+                        dir="auto"
+                      >
+                         page
+                      </span>
+                    </span>
+                  </div>
+                  <svg
+                    height={12}
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. Render an article list loading state 1`] = `
+<div>
+  <div>
+    <div />
+    <div>
+      <div>
+        <div
+          style={
+            Object {
+              "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ hkMMvo"
+  >
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ ldBdZT"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ exZFAC"
+          >
+            <div
+              data-testid="results-message"
+              dir="auto"
+            >
+              Showing 0 - 0 of 0 results
+            </div>
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ cePhpb"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        accessibility-label="empty.0"
+        data-testid="empty.0"
+        id="empty.0"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        accessibility-label="empty.1"
+        data-testid="empty.1"
+        id="empty.1"
+      >
+        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        accessibility-label="empty.2"
+        data-testid="empty.2"
+        id="empty.2"
+      >
+        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fXCtkJ"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ kdgRsQ"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ciodUt"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. Render an article list page error state 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ hcvmyw"
+>
+  <div>
+    <div
+      dir="auto"
+    >
+      Something's gone wrong
+    </div>
+    <div
+      dir="auto"
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </div>
+    <div>
+      <div
+        aria-label="Retry"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        tabIndex="0"
+      >
+        <div>
+          <div
+            dir="auto"
+          >
+            RETRY
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ Xuekk"
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "display": "table",
+            "height": 0,
+            "overflow": "hidden",
+            "paddingBottom": "110%",
+          }
+        }
+      >
+        <img
+          alt=""
+          src="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+          style={
+            Object {
+              "display": "block",
+              "position": "absolute",
+              "width": "100%",
+              "zIndex": 1,
+            }
+          }
+        />
+        <div>
+          <div
+            style={
+              Object {
+                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
