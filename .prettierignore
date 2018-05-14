@@ -24,3 +24,4 @@ packages
 coverage
 settings.gradle
 build.gradle
+dextrose/snappy
