@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic tests on web should render correctly 1`] = `
+exports[`Topic functional tests on web should render correctly 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ dzzdQH"
@@ -20,9 +20,9 @@ exports[`Topic tests on web should render correctly 1`] = `
 </div>
 `;
 
-exports[`Topic tests on web should render correctly when loading 1`] = `<div />`;
+exports[`Topic functional tests on web should render correctly when loading 1`] = `<div />`;
 
-exports[`Topic tests on web should render correctly with a description 1`] = `
+exports[`Topic functional tests on web should render correctly with a description 1`] = `
 <div>
   <div
     className="responsive-styles__component-fbPFZZ hKIDHg"
