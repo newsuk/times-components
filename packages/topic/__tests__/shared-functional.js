@@ -6,7 +6,7 @@ import Topic from "../src/topic";
 jest.mock("../src/topic-head-loading", () => "TopicHeadLoading");
 jest.mock("../src/divider", () => "Divider");
 
-module.exports = () => {
+export default () => {
   it("should render correctly", () => {
     const tree = renderer.create(<Topic name="Animals" />).toJSON();
 
