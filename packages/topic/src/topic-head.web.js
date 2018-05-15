@@ -3,8 +3,8 @@ import { View } from "react-native";
 import { propTypes, defaultProps } from "./topic-head-proptypes";
 import { getHeadContainer } from "./styles/responsive";
 import styles from "./styles";
-import HeadContent from "./content";
-import Loading from "./loading";
+import HeadContent from "./topic-head-content";
+import Loading from "./topic-head-loading";
 
 const TopicHead = ({ name, description, isLoading }) => {
   const HeadContainer = getHeadContainer({
