@@ -1,13 +1,10 @@
 import React from "react";
 import { AuthorProfileProvider } from "@times-components/provider";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "./src/author-profile";
-
-import mockArticles from "./fixtures/article-list-with-images.json";
-import mockArticlesWithoutImages from "./fixtures/article-list-no-images.json";
-import mockAuthor from "./fixtures/author-profile.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -31,7 +28,7 @@ export default {
         const props = {
           analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
-          author: mockAuthor,
+          author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
@@ -45,7 +42,13 @@ export default {
         };
 
         return (
-          <MockedProvider mocks={mockArticles}>
+          <MockedProvider
+            mocks={fixtureGenerator.makeArticleMocks({
+              pageSize,
+              slug,
+              withImages: true
+            })}
+          >
             <AuthorProfile {...props} />
           </MockedProvider>
         );
@@ -58,7 +61,7 @@ export default {
         const props = {
           analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
-          author: mockAuthor,
+          author: fixtureGenerator.makeAuthor(),
           isLoading: false,
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
@@ -72,7 +75,9 @@ export default {
         };
 
         return (
-          <MockedProvider mocks={mockArticlesWithoutImages}>
+          <MockedProvider
+            mocks={fixtureGenerator.makeArticleMocks({ pageSize })}
+          >
             <AuthorProfile {...props} />
           </MockedProvider>
         );
@@ -96,7 +101,13 @@ export default {
         };
 
         return (
-          <MockedProvider mocks={mockArticles}>
+          <MockedProvider
+            mocks={fixtureGenerator.makeArticleMocks({
+              pageSize,
+              slug,
+              withImages: true
+            })}
+          >
             <AuthorProfile {...props} />
           </MockedProvider>
         );
@@ -106,7 +117,13 @@ export default {
       type: "story",
       name: "With an error getting author",
       component: (_, { decorateAction }) => (
-        <MockedProvider mocks={mockArticles}>
+        <MockedProvider
+          mocks={fixtureGenerator.makeMocksWithAuthorError({
+            pageSize,
+            slug,
+            withImages: true
+          })}
+        >
           <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
             {({ author, error, isLoading, refetch }) => (
               <AuthorProfile
@@ -136,7 +153,7 @@ export default {
       component: (_, { decorateAction }) => {
         const props = {
           analyticsStream: storybookReporter,
-          author: mockAuthor,
+          author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
@@ -150,7 +167,12 @@ export default {
         };
 
         return (
-          <MockedProvider mocks={mockArticles}>
+          <MockedProvider
+            mocks={fixtureGenerator.makeMocksWithPageError({
+              pageSize,
+              withImages: true
+            })}
+          >
             <AuthorProfile {...props} />
           </MockedProvider>
         );
@@ -163,7 +185,7 @@ export default {
         const props = {
           analyticsStream: storybookReporter,
           articleImageRatio: "3:2",
-          author: mockAuthor,
+          author: fixtureGenerator.makeAuthor({ withImages: true }),
           isLoading: false,
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
@@ -177,7 +199,12 @@ export default {
         };
 
         return (
-          <MockedProvider mocks={mockArticles}>
+          <MockedProvider
+            mocks={fixtureGenerator.makeBrokenMocks({
+              pageSize,
+              withImages: true
+            })}
+          >
             <AuthorProfile {...props} />
           </MockedProvider>
         );
@@ -201,7 +228,12 @@ export default {
         };
 
         return (
-          <StorybookProvider mocks={mockArticles}>
+          <StorybookProvider
+            mocks={fixtureGenerator.makeArticleMocks({
+              pageSize,
+              withImages: true
+            })}
+          >
             <AuthorProfileProvider debounceTimeMs={0} slug={slug}>
               {({ author, error, isLoading }) => (
                 <AuthorProfile
