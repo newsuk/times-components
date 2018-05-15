@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -37,7 +37,7 @@
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.7.0",
-    "@times-components/storybook": "0.9.7",
+    "@times-components/storybook": "0.10.0",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
@@ -49,9 +49,9 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "0.10.12",
-    "@times-components/responsive-styles": "0.7.6",
-    "@times-components/styleguide": "0.7.0",
+    "@times-components/gradient": "0.10.13",
+    "@times-components/responsive-styles": "0.8.0",
+    "@times-components/styleguide": "0.7.1",
     "prop-types": "15.6.0",
     "styled-components": "3.2.2"
   },

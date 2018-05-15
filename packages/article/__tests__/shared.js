@@ -73,23 +73,6 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  it("should render activity indicator ", () => {
-    const tree = renderer
-      .create(
-        <Article
-          isLoading
-          analyticsStream={() => {}}
-          adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
-          onAuthorPress={() => {}}
-          onVideoPress={() => {}}
-          onLinkPress={() => {}}
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("should render an error", () => {
     const props = {
       error: { message: "An example error." }

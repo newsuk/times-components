@@ -77,7 +77,17 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                           }
                         }
                       />
-                      <div>
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
                         <div
                           style={
                             Object {
@@ -99,6 +109,8 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       role="heading"
                       style={
                         Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -131,6 +143,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontSize": "13px",
                           "lineHeight": "15px",
                           "marginBottom": "5px",
                         }
@@ -193,7 +206,17 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                           }
                         }
                       />
-                      <div>
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
                         <div
                           style={
                             Object {
@@ -215,6 +238,8 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       role="heading"
                       style={
                         Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -247,6 +272,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontSize": "13px",
                           "lineHeight": "15px",
                           "marginBottom": "5px",
                         }
@@ -309,7 +335,17 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                           }
                         }
                       />
-                      <div>
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
                         <div
                           style={
                             Object {
@@ -331,6 +367,8 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       role="heading"
                       style={
                         Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
                           "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
@@ -363,6 +401,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       dir="auto"
                       style={
                         Object {
+                          "fontSize": "13px",
                           "lineHeight": "15px",
                           "marginBottom": "5px",
                         }
@@ -439,7 +478,17 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
                   }
                 }
               />
-              <div>
+              <div
+                style={
+                  Object {
+                    "bottom": "0px",
+                    "left": "0px",
+                    "position": "absolute",
+                    "right": "0px",
+                    "top": "0px",
+                  }
+                }
+              >
                 <div
                   style={
                     Object {
@@ -460,6 +509,8 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
                 dir="auto"
                 style={
                   Object {
+                    "color": "rgba(51,51,51,1)",
+                    "fontFamily": "GillSansMTStd-Medium",
                     "fontSize": "12px",
                     "fontWeight": "400",
                     "letterSpacing": "1.2px",
@@ -475,6 +526,8 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               role="heading"
               style={
                 Object {
+                  "color": "rgba(51,51,51,1)",
+                  "fontFamily": "TimesModern-Bold",
                   "fontSize": "22px",
                   "fontWeight": "400",
                   "lineHeight": "22px",
@@ -488,6 +541,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               dir="auto"
               style={
                 Object {
+                  "color": "rgba(105,105,105,1)",
                   "fontFamily": "TimesDigitalW04",
                   "lineHeight": "20px",
                 }
@@ -507,6 +561,9 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               dir="auto"
               style={
                 Object {
+                  "color": "rgba(105,105,105,1)",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": "13px",
                   "lineHeight": "15px",
                   "marginBottom": "5px",
                 }
@@ -553,7 +610,17 @@ exports[`ArticleList tests on web should render an article list item loading sta
               }
             }
           />
-          <div>
+          <div
+            style={
+              Object {
+                "bottom": "0px",
+                "left": "0px",
+                "position": "absolute",
+                "right": "0px",
+                "top": "0px",
+              }
+            }
+          >
             <div
               style={
                 Object {
@@ -630,6 +697,8 @@ exports[`ArticleList tests on web should render an article list item without ima
                   dir="auto"
                   style={
                     Object {
+                      "color": "rgba(51,51,51,1)",
+                      "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": "12px",
                       "fontWeight": "400",
                       "letterSpacing": "1.2px",
@@ -645,6 +714,8 @@ exports[`ArticleList tests on web should render an article list item without ima
                 role="heading"
                 style={
                   Object {
+                    "color": "rgba(51,51,51,1)",
+                    "fontFamily": "TimesModern-Bold",
                     "fontSize": "22px",
                     "fontWeight": "400",
                     "lineHeight": "22px",
@@ -658,6 +729,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "color": "rgba(105,105,105,1)",
                     "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
@@ -677,6 +749,9 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "color": "rgba(105,105,105,1)",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": "13px",
                     "lineHeight": "15px",
                     "marginBottom": "5px",
                   }
@@ -695,6 +770,8 @@ exports[`ArticleList tests on web should render an article list item without ima
                   dir="auto"
                   style={
                     Object {
+                      "color": "rgba(51,51,51,1)",
+                      "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": "12px",
                       "fontWeight": "400",
                       "letterSpacing": "1.2px",
@@ -710,6 +787,8 @@ exports[`ArticleList tests on web should render an article list item without ima
                 role="heading"
                 style={
                   Object {
+                    "color": "rgba(51,51,51,1)",
+                    "fontFamily": "TimesModern-Bold",
                     "fontSize": "22px",
                     "fontWeight": "400",
                     "lineHeight": "22px",
@@ -723,6 +802,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "color": "rgba(105,105,105,1)",
                     "fontFamily": "TimesDigitalW04",
                     "lineHeight": "20px",
                   }
@@ -742,6 +822,9 @@ exports[`ArticleList tests on web should render an article list item without ima
                 dir="auto"
                 style={
                   Object {
+                    "color": "rgba(105,105,105,1)",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": "13px",
                     "lineHeight": "15px",
                     "marginBottom": "5px",
                   }
@@ -905,7 +988,17 @@ exports[`ArticleList tests on web should render an article list that is loading 
                       }
                     }
                   />
-                  <div>
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
                     <div
                       style={
                         Object {

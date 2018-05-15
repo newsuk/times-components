@@ -140,7 +140,7 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-storybook-loader": "1.5.1",
-    "react-native-web": "0.3.2",
+    "react-native-web": "0.5.1",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",

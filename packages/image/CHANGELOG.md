@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.18.0"></a>
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.10...@times-components/image@1.18.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="1.17.10"></a>
 ## [1.17.10](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.9...@times-components/image@1.17.10) (2018-05-15)
 
