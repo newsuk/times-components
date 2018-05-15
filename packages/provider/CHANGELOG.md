@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.30.1"></a>
+## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.0...@times-components/provider@0.30.1) (2018-05-15)
+
+
+### Bug Fixes
+
+* Missing headline in topics provider ([#943](https://github.com/newsuk/times-components/issues/943)) ([32b7270](https://github.com/newsuk/times-components/commit/32b7270))
+
+
+
+
 <a name="0.30.0"></a>
 # [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.29.1...@times-components/provider@0.30.0) (2018-05-15)
 

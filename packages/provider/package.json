@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.30.0",
+  "version": "0.30.1",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -47,7 +47,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/provider-test-tools": "0.5.0",
+    "@times-components/provider-test-tools": "0.5.1",
     "@times-components/storybook": "0.10.0",
     "@times-components/utils": "0.10.0",
     "apollo-utilities": "1.0.4",
