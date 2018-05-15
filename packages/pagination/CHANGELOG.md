@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.15...@times-components/pagination@0.19.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="0.18.15"></a>
 ## [0.18.15](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.14...@times-components/pagination@0.18.15) (2018-05-15)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/link@0.20.11...@times-components/link@0.21.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="0.20.11"></a>
 ## [0.20.11](https://github.com/newsuk/times-components/compare/@times-components/link@0.20.10...@times-components/link@0.20.11) (2018-05-15)
 
