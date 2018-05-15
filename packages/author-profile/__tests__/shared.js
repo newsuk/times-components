@@ -10,15 +10,22 @@ export default () => {
     analyticsStream: () => {},
     onArticlePress: () => {},
     onTwitterLinkPress: () => {},
+    page: 1,
+    pageSize: 3,
     refetch: () => {},
     slug: "deborah-haynes"
   };
+
+  const mocks = fixtureGenerator.makeArticleMocks({
+    pageSize: 3,
+    withImages: true
+  });
 
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
   const realIntl = Intl;
 
-  beforeEach(() => {
+  beforeAll(() => {
     global.Intl = {
       DateTimeFormat: () => ({
         resolvedOptions: () => ({ timeZone: "Europe/London" })
@@ -26,26 +33,20 @@ export default () => {
     };
   });
 
-  afterEach(() => {
+  afterAll(() => {
     global.Intl = realIntl;
   });
 
   it("should render correctly", async () => {
-    const pageSize = 3;
     const tree = renderer.create(
       <MockedProvider
-        mocks={fixtureGenerator.makeArticleMocks({
-          pageSize,
-          withImages: true
-        })}
+        mocks={mocks}
       >
         <AuthorProfile
           {...authorProfileProps}
           analyticsStream={() => {}}
           author={fixtureGenerator.makeAuthor({ withImages: true })}
           isLoading={false}
-          page={1}
-          pageSize={pageSize}
         />
       </MockedProvider>
     );
@@ -56,19 +57,13 @@ export default () => {
   });
 
   it("should render the loading state", () => {
-    const pageSize = 3;
     const tree = renderer.create(
       <MockedProvider
-        mocks={fixtureGenerator.makeArticleMocks({
-          pageSize,
-          withImages: true
-        })}
+        mocks={mocks}
       >
         <AuthorProfile
           {...authorProfileProps}
           isLoading
-          page={1}
-          pageSize={pageSize}
         />
       </MockedProvider>
     );
@@ -86,7 +81,6 @@ export default () => {
 
   it("should send analytics when rendering an author profile page", () => {
     const reporter = jest.fn();
-    const pageSize = 3;
     const author = fixtureGenerator.makeAuthor();
     const authorName = author.name;
 
@@ -97,8 +91,6 @@ export default () => {
           analyticsStream={reporter}
           author={author}
           isLoading={false}
-          page={1}
-          pageSize={pageSize}
         />
       </MockedProvider>
     );
@@ -112,7 +104,7 @@ export default () => {
           articlesCount: 20,
           authorName,
           page: 1,
-          pageSize
+          pageSize: 3
         })
       })
     );
