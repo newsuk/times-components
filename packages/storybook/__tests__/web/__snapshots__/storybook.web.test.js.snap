@@ -4,7 +4,16 @@ exports[`Storybook Decorator tests on web should render a Bar Spacing Decorator 
 <div
   style={
     Object {
+      "WebkitFlex": 1,
+      "WebkitFlexGrow": "1 !important",
+      "WebkitFlexShrink": "1 !important",
+      "flex": 1,
+      "flexGrow": "1 !important",
+      "flexShrink": "1 !important",
       "marginTop": "20px",
+      "msFlex": 1,
+      "msFlexNegative": "1 !important",
+      "msFlexPositive": "1 !important",
     }
   }
 >
@@ -17,7 +26,39 @@ exports[`Storybook Decorator tests on web should render a Bar Spacing Decorator 
 `;
 
 exports[`Storybook Decorator tests on web should render a Centered Decorator 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitBoxPack": "center",
+      "WebkitFlex": 1,
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": "1 !important",
+      "WebkitFlexShrink": "1 !important",
+      "WebkitJustifyContent": "center",
+      "alignItems": "center",
+      "bottom": "0px",
+      "flex": 1,
+      "flexDirection": "row",
+      "flexGrow": "1 !important",
+      "flexShrink": "1 !important",
+      "justifyContent": "center",
+      "left": "0px",
+      "msFlex": 1,
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+      "msFlexNegative": "1 !important",
+      "msFlexPack": "center",
+      "msFlexPositive": "1 !important",
+      "position": "absolute",
+      "right": "0px",
+      "top": "0px",
+    }
+  }
+>
   <div
     dir="auto"
   >
@@ -30,8 +71,17 @@ exports[`Storybook Decorator tests on web should render a Lateral Spacing Decora
 <div
   style={
     Object {
+      "WebkitFlex": 1,
+      "WebkitFlexGrow": "1 !important",
+      "WebkitFlexShrink": "1 !important",
+      "flex": 1,
+      "flexGrow": "1 !important",
+      "flexShrink": "1 !important",
       "marginLeft": "20px",
       "marginRight": "20px",
+      "msFlex": 1,
+      "msFlexNegative": "1 !important",
+      "msFlexPositive": "1 !important",
     }
   }
 >
@@ -47,7 +97,21 @@ exports[`Storybook Decorator tests on web should render a White Background Decor
 <div
   style={
     Object {
+      "WebkitFlex": 1,
+      "WebkitFlexGrow": "1 !important",
+      "WebkitFlexShrink": "1 !important",
       "backgroundColor": "white",
+      "bottom": "0px",
+      "flex": 1,
+      "flexGrow": "1 !important",
+      "flexShrink": "1 !important",
+      "left": "0px",
+      "msFlex": 1,
+      "msFlexNegative": "1 !important",
+      "msFlexPositive": "1 !important",
+      "position": "absolute",
+      "right": "0px",
+      "top": "0px",
     }
   }
 >
