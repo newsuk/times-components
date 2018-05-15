@@ -1,13 +1,10 @@
 import PropTypes from "prop-types";
-import AuthorHead from "@times-components/author-head";
+import { topicHeadPropTypes } from "./topic-head-proptypes";
 
 export const propTypes = {
-  author: PropTypes.shape({
-    biography: AuthorHead.propTypes.bio,
-    image: PropTypes.string,
-    jobTitle: PropTypes.string,
-    name: PropTypes.string,
-    twitter: PropTypes.string
+  topic: PropTypes.shape({
+    name: topicHeadPropTypes.name,
+    description: topicHeadPropTypes.description
   }),
   error: PropTypes.object,
   isLoading: PropTypes.bool,
@@ -16,13 +13,12 @@ export const propTypes = {
   onArticlePress: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
-  onTwitterLinkPress: PropTypes.func,
   refetch: PropTypes.func,
   slug: PropTypes.string.isRequired
 };
 
 export const defaultProps = {
-  author: null,
+  topic: null,
   error: null,
   isLoading: true,
   page: 1,
@@ -30,6 +26,5 @@ export const defaultProps = {
   onArticlePress: () => {},
   onNext: () => {},
   onPrev: () => {},
-  onTwitterLinkPress: () => {},
   refetch: () => {}
 };

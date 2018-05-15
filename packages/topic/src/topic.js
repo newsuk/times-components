@@ -3,26 +3,23 @@ import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
-import AuthorHead from "@times-components/author-head";
+import TopicHead from "./topic-head";
 import { withPageState } from "@times-components/pagination";
-import {
-  AuthorArticlesNoImagesProvider,
-  AuthorArticlesWithImagesProvider
-} from "@times-components/provider";
+import { TopicArticlesProvider } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
 
 const Topic = ({
-  author,
+  topic,
   error,
+  imageRatio,
   isLoading,
   page,
-  pageSize: initPageSize,
+  pageSize,
   onArticlePress,
   onNext,
   onPrev,
-  onTwitterLinkPress,
   refetch,
   slug
 }) => {
@@ -30,14 +27,14 @@ const Topic = ({
     return <ArticleListPageError refetch={refetch} />;
   }
 
-  if (isLoading || !author) {
+  if (isLoading) {
     return (
       <ArticleList
-        articleListHeader={<AuthorHead isLoading />}
+        articleListHeader={<TopicHead isLoading />}
         articlesLoading
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
-        pageSize={initPageSize}
+        pageSize={10}
         refetch={() => {}}
         showImages
       />
@@ -46,67 +43,36 @@ const Topic = ({
 
   const {
     articles,
-    biography,
-    hasLeadAssets,
-    image: uri,
-    jobTitle,
-    name,
-    twitter
-  } = author;
+    description,
+    name
+  } = topic;
 
   const articleListHeader = (
-    <AuthorHead
-      bio={biography}
-      isLoading={false}
+    <TopicHead
       name={name}
-      onTwitterLinkPress={onTwitterLinkPress}
-      title={jobTitle}
-      twitter={twitter}
-      uri={uri}
+      description={description}
+      isLoading={false}
     />
   );
 
-  const SelectedProvider = hasLeadAssets
-    ? AuthorArticlesWithImagesProvider
-    : AuthorArticlesNoImagesProvider;
-
   return (
-    <SelectedProvider
-      articleImageRatio="3:2"
-      debounceTimeMs={250}
+    <ArticleList
+      articleListHeader={articleListHeader}
+      articles={articles.list}
+      count={articles.count}
+      error={error}
+      imageRatio={ratioTextToFloat(imageRatio)}
+      onArticlePress={onArticlePress}
+      onNext={onNext}
+      onPrev={onPrev}
       page={page}
-      pageSize={initPageSize}
-      slug={slug}
-    >
-      {({
-        author: data,
-        error: articlesError,
-        isLoading: articlesLoading,
-        pageSize,
-        refetch: refetchArticles,
-        variables: { imageRatio = "3:2" }
-      }) => (
-        <ArticleList
-          articleListHeader={articleListHeader}
-          articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
-          count={get(articles, "count", 0)}
-          error={articlesError}
-          imageRatio={ratioTextToFloat(imageRatio)}
-          onArticlePress={onArticlePress}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          refetch={refetchArticles}
-          showImages={hasLeadAssets}
-        />
-      )}
-    </SelectedProvider>
-  );
+      pageSize={pageSize}
+      refetch={refetch}
+      showImages
+    />);
 };
 
 Topic.propTypes = propTypes;
 Topic.defaultProps = defaultProps;
 
-export default withPageState(topicTrackingContext(Topic));
+export default Topic;

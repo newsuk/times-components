@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import { propTypes, defaultProps } from "./proptypes";
+import { propTypes, defaultProps } from "./topic-head-proptypes";
 import styles from "./styles";
-import HeadContent from "./content";
-import Loading from "./loading";
+import HeadContent from "./topic-head-content";
+import Loading from "./topic-loading";
 
 const TopicHead = ({ name, description, isLoading }) =>
   isLoading ? (
