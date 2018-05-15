@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ArticleList tests on android should display error when fetch more fails 1`] = `"<ArticleListRetryButton refetch={[Function: refetch]} />"`;
+
 exports[`ArticleList tests on android should render an article list 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}

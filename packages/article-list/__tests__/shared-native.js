@@ -161,7 +161,7 @@ export default () => {
         .find("ListFooterComponent")
         .dive()
         .debug()
-    ).toEqual("<ArticleListRetryButton refetch={[Function: refetch]} />");
+    ).toMatchSnapshot();
   });
 
   it("should re-fetch more when retry button clicked", () => {
