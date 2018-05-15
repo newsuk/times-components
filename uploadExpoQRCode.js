@@ -2,11 +2,11 @@ const fs = require("fs");
 const AWS = require("aws-sdk");
 
 const args = process.argv.slice(2);
-const [imagePath, bucket, accessKeyId, secretAccessKey] = args;
+const [imagePath, bucket] = args;
 AWS.config.update({
   region: "eu-west-1",
-  accessKeyId,
-  secretAccessKey
+  aws_access_key_id: process.env.AWS_ACCESS_KEY_ID,
+  aws_secret_access_key: process.env.AWS_SECRET_ACCESS_KEY
 });
 const s3 = new AWS.S3();
 
