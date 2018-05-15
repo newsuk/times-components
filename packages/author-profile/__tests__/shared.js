@@ -1,13 +1,18 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 
+import mockArticles from "../fixtures/article-list-with-images.json";
+import mockArticlesWithoutImages from "../fixtures/article-list-no-images.json";
+import mockAuthor from "../fixtures/author-profile.json";
+
 export default () => {
-  const authorProfileProps = {
+  const props = {
     analyticsStream: () => {},
+    author: mockAuthor,
+    isLoading: false,
     onArticlePress: () => {},
     onTwitterLinkPress: () => {},
     page: 1,
@@ -15,13 +20,6 @@ export default () => {
     refetch: () => {},
     slug: "deborah-haynes"
   };
-
-  const mockArticles = fixtureGenerator.makeArticleMocks({
-    pageSize: 3,
-    withImages: true
-  });
-
-  const mockAuthor = fixtureGenerator.makeAuthor({ withImages: true });
 
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -39,16 +37,25 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  it("should render correctly", async () => {
+  it("should render with images", async () => {
     const tree = renderer.create(
-      <MockedProvider
-        mocks={mockArticles}
-      >
+      <MockedProvider mocks={mockArticles}>
         <AuthorProfile
-          {...authorProfileProps}
-          analyticsStream={() => {}}
-          author={mockAuthor}
-          isLoading={false}
+          {...props}
+        />
+      </MockedProvider>
+    );
+
+    await delay(1500);
+
+    expect(tree).toMatchSnapshot("1. Render an author profile page");
+  });
+
+  it("should render without images", async () => {
+    const tree = renderer.create(
+      <MockedProvider mocks={mockArticlesWithoutImages}>
+        <AuthorProfile
+          {...props}
         />
       </MockedProvider>
     );
@@ -60,13 +67,8 @@ export default () => {
 
   it("should render the loading state", () => {
     const tree = renderer.create(
-      <MockedProvider
-        mocks={mockArticles}
-      >
-        <AuthorProfile
-          {...authorProfileProps}
-          isLoading
-        />
+      <MockedProvider mocks={mockArticles}>
+        <AuthorProfile {...props} isLoading />
       </MockedProvider>
     );
 
@@ -74,9 +76,7 @@ export default () => {
   });
 
   it("should render the article list page error state", () => {
-    const tree = renderer.create(
-      <AuthorProfile {...authorProfileProps} error={{}} />
-    );
+    const tree = renderer.create(<AuthorProfile {...props} error={{}} />);
 
     expect(tree).toMatchSnapshot("3. Render an article list page error state");
   });
@@ -87,10 +87,8 @@ export default () => {
     renderer.create(
       <MockedProvider mocks={mockArticles}>
         <AuthorProfile
-          {...authorProfileProps}
+          {...props}
           analyticsStream={reporter}
-          author={mockAuthor}
-          isLoading={false}
         />
       </MockedProvider>
     );
