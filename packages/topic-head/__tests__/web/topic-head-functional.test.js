@@ -1,5 +1,5 @@
 import sharedFunctional from "../shared-functional";
 
-describe("Topic functional tests on web", () => {
+describe("TopicHead functional tests on web", () => {
   sharedFunctional();
 });

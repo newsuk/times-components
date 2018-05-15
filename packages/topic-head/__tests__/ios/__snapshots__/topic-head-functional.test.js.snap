@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic functional tests on ios should render correctly 1`] = `
+exports[`TopicHead functional tests on ios should render correctly 1`] = `
 <View>
   <View>
     <Text
@@ -14,9 +14,9 @@ exports[`Topic functional tests on ios should render correctly 1`] = `
 </View>
 `;
 
-exports[`Topic functional tests on ios should render correctly when loading 1`] = `<TopicHeadLoading />`;
+exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `<TopicHeadLoading />`;
 
-exports[`Topic functional tests on ios should render correctly with a description 1`] = `
+exports[`TopicHead functional tests on ios should render correctly with a description 1`] = `
 <View>
   <View>
     <Text

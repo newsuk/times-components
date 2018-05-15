@@ -1,5 +1,5 @@
 import sharedStyling from "../shared-styling";
 
-describe("Topic styling tests on ios", () => {
+describe("TopicHead styling tests on android", () => {
   sharedStyling();
 });
