@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 const changedComponents = require("./changedPackages.json");
 
 const componentDirectories = [];
