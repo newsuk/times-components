@@ -16,10 +16,12 @@ export default () => {
     slug: "deborah-haynes"
   };
 
-  const mocks = fixtureGenerator.makeArticleMocks({
+  const mockArticles = fixtureGenerator.makeArticleMocks({
     pageSize: 3,
     withImages: true
   });
+
+  const mockAuthor = fixtureGenerator.makeAuthor({ withImages: true });
 
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -40,12 +42,12 @@ export default () => {
   it("should render correctly", async () => {
     const tree = renderer.create(
       <MockedProvider
-        mocks={mocks}
+        mocks={mockArticles}
       >
         <AuthorProfile
           {...authorProfileProps}
           analyticsStream={() => {}}
-          author={fixtureGenerator.makeAuthor({ withImages: true })}
+          author={mockAuthor}
           isLoading={false}
         />
       </MockedProvider>
@@ -59,7 +61,7 @@ export default () => {
   it("should render the loading state", () => {
     const tree = renderer.create(
       <MockedProvider
-        mocks={mocks}
+        mocks={mockArticles}
       >
         <AuthorProfile
           {...authorProfileProps}
@@ -81,15 +83,13 @@ export default () => {
 
   it("should send analytics when rendering an author profile page", () => {
     const reporter = jest.fn();
-    const author = fixtureGenerator.makeAuthor();
-    const authorName = author.name;
 
     renderer.create(
-      <MockedProvider mocks={fixtureGenerator.makeArticleMocks()}>
+      <MockedProvider mocks={mockArticles}>
         <AuthorProfile
           {...authorProfileProps}
           analyticsStream={reporter}
-          author={author}
+          author={mockAuthor}
           isLoading={false}
         />
       </MockedProvider>
@@ -102,7 +102,7 @@ export default () => {
         action: "Viewed",
         attrs: expect.objectContaining({
           articlesCount: 20,
-          authorName,
+          authorName: mockAuthor.name,
           page: 1,
           pageSize: 3
         })
