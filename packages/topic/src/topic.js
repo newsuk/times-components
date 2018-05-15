@@ -32,7 +32,7 @@ const Topic = ({
       <ArticleList
         articleListHeader={<TopicHead isLoading />}
         articlesLoading
-        imageRatio={ratioTextToFloat("3:2")}
+        imageRatio={ratioTextToFloat(imageRatio)}
         isLoading
         pageSize={10}
         refetch={() => {}}
@@ -41,18 +41,10 @@ const Topic = ({
     );
   }
 
-  const {
-    articles,
-    description,
-    name
-  } = topic;
+  const { articles, description, name } = topic;
 
   const articleListHeader = (
-    <TopicHead
-      name={name}
-      description={description}
-      isLoading={false}
-    />
+    <TopicHead name={name} description={description} isLoading={false} />
   );
 
   return (
@@ -69,7 +61,8 @@ const Topic = ({
       pageSize={pageSize}
       refetch={refetch}
       showImages
-    />);
+    />
+  );
 };
 
 Topic.propTypes = propTypes;

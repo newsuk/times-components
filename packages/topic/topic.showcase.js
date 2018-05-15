@@ -21,7 +21,6 @@ const mocks = [
   }
 ];
 
-
 const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
@@ -33,8 +32,6 @@ const preventDefaultedAction = decorateAction =>
 const page = 2;
 const pageSize = 5;
 const slug = "animals";
-const name = "Animals";
-const description = "Animals are multicellular eukaryotic organisms.";
 
 export default {
   name: "Pages/Topic",
@@ -56,9 +53,7 @@ export default {
           pageSize
         };
 
-        return (
-          <Topic {...props} />
-        );
+        return <Topic {...props} />;
       }
     },
     {
@@ -70,6 +65,7 @@ export default {
           onArticlePress: preventDefaultedAction(decorateAction)(
             "onArticlePress"
           ),
+          imageRatio: "3:2",
           page,
           pageSize,
           slug
@@ -77,23 +73,29 @@ export default {
 
         return (
           <StorybookProvider mocks={mocks}>
-            <TopicArticlesProvider debounceTimeMs={0} imageRatio={"3:2"} slug={slug}>
+            <TopicArticlesProvider
+              debounceTimeMs={0}
+              imageRatio={props.imageRatio}
+              slug={slug}
+            >
               {({ error, topic, isLoading }) => {
-                console.log('props', topic);
                 return (
-                <Topic
-                  topic={topic}
-                  error={error}
-                  isLoading={isLoading}
-                  {...props}
-                />
-              )
-            }
-          }
-          </TopicArticlesProvider>
-        </StorybookProvider>
-      )
+                  <Topic
+                    topic={Object.assign({}, topic, {
+                      name: "Animals",
+                      description:
+                        "Animals are multicellular eukaryotic organisms."
+                    })}
+                    error={error}
+                    isLoading={isLoading}
+                    {...props}
+                  />
+                );
+              }}
+            </TopicArticlesProvider>
+          </StorybookProvider>
+        );
+      }
     }
-  }
   ]
 };
