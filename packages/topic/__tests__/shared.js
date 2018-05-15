@@ -61,7 +61,12 @@ export default () => {
           withImages: true
         })}
       >
-        <Topic {...authorProfileProps} isLoading page={1} pageSize={pageSize} />
+        <Topic
+          {...authorProfileProps}
+          isLoading
+          page={1}
+          pageSize={pageSize}
+        />
       </MockedProvider>
     );
 
@@ -69,7 +74,9 @@ export default () => {
   });
 
   it("should render the article list page error state", () => {
-    const tree = renderer.create(<Topic {...authorProfileProps} error={{}} />);
+    const tree = renderer.create(
+      <Topic {...authorProfileProps} error={{}} />
+    );
 
     expect(tree).toMatchSnapshot("3. Render an article list page error state");
   });

@@ -1,8 +1,6 @@
 import React from "react";
 import get from "lodash.get";
-import ArticleList, {
-  ArticleListPageError
-} from "@times-components/article-list";
+import ArticleList from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import { TopicArticlesProvider } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
@@ -11,61 +9,62 @@ import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";
 
 const Topic = ({
-  topic,
-  error,
-  imageRatio,
-  isLoading,
   page,
-  pageSize,
+  pageSize: initPageSize,
   onArticlePress,
   onNext,
   onPrev,
-  refetch,
-  slug
+  slug,
+  topic
 }) => {
-  if (error) {
-    return <ArticleListPageError refetch={refetch} />;
-  }
 
-  if (isLoading) {
-    return (
-      <ArticleList
-        articleListHeader={<TopicHead isLoading />}
-        articlesLoading
-        imageRatio={ratioTextToFloat(imageRatio)}
-        isLoading
-        pageSize={10}
-        refetch={() => {}}
-        showImages
-      />
-    );
-  }
-
-  const { articles, description, name } = topic;
+  const { name, description } = topic;
 
   const articleListHeader = (
-    <TopicHead name={name} description={description} isLoading={false} />
+    <TopicHead
+      name={name}
+      description={description}
+      isLoading={false}
+    />
   );
 
   return (
-    <ArticleList
-      articleListHeader={articleListHeader}
-      articles={articles.list}
-      count={articles.count}
-      error={error}
-      imageRatio={ratioTextToFloat(imageRatio)}
-      onArticlePress={onArticlePress}
-      onNext={onNext}
-      onPrev={onPrev}
+    <TopicArticlesProvider
+      articleImageRatio="3:2"
+      debounceTimeMs={250}
       page={page}
-      pageSize={pageSize}
-      refetch={refetch}
-      showImages
-    />
+      pageSize={initPageSize}
+      slug={slug}
+    >
+      {({
+        topic: data,
+        error: articlesError,
+        isLoading: articlesLoading,
+        pageSize,
+        refetch: refetchArticles,
+        variables: { imageRatio = "3:2" }
+      }) => (
+        <ArticleList
+          articleListHeader={articleListHeader}
+          articles={get(data, "articles.list", [])}
+          articlesLoading={articlesLoading}
+          count={get(data, "articles.count", 0)}
+          error={articlesError}
+          imageRatio={ratioTextToFloat(imageRatio)}
+          onArticlePress={onArticlePress}
+          onNext={onNext}
+          onPrev={onPrev}
+          page={page}
+          pageSize={pageSize}
+          refetch={refetchArticles}
+          showImages
+        />
+      )}
+    </TopicArticlesProvider>
   );
 };
 
 Topic.propTypes = propTypes;
 Topic.defaultProps = defaultProps;
 
-export default Topic;
+export default withPageState(topicTrackingContext(Topic));
