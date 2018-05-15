@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic responsive tests on web should render HeadContainer correctly 1`] = `
+.c0 {
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80.8%;
+    padding-top: 5px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    max-width: 56.2%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Topic responsive tests on web should render HeadContainer correctly 2`] = `
+.c0 {
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80.8%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    max-width: 56.2%;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Topic responsive tests on web should render ResponsiveDivider correctly 1`] = `
+.c0 {
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 200px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 290px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Topic responsive tests on web should render ResponsiveName correctly 1`] = `
+.c0 {
+  font-family: TimesModern-Bold;
+  font-size: 40px;
+  color: #1D1D1B;
+  padding-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 50px;
+  }
+}
+
+<div
+  className="c0"
+  dir="auto"
+/>
+`;

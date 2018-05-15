@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topic styling tests on ios should render styling correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 35,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="topic-name"
+      accessibilityRole="heading"
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 40,
+          "paddingBottom": 20,
+        }
+      }
+      testID="topic-name"
+    >
+      Animals
+    </Text>
+  </View>
+</View>
+`;
