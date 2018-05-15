@@ -1,11 +1,13 @@
-const changedComponents = require('./changedPackages.json');
+const changedComponents = require("./changedPackages.json");
 
 const componentDirectories = [];
 
-changedComponents.forEach((changedPackage) => {
-    componentDirectories.push(require.resolve(changedPackage.name).split('dist')[0]);
+changedComponents.forEach(changedPackage => {
+  componentDirectories.push(
+    require.resolve(changedPackage.name).split("dist")[0]
+  );
 });
 
-const output = componentDirectories.toString().replace(',', ' ');
+const output = componentDirectories.toString().replace(",", " ");
 
 console.log(`[ ${output} ]`);
