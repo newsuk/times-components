@@ -1,0 +1,67 @@
+{
+  "name": "@times-components/topic",
+  "version": "0.0.1",
+  "description": "Topic page component",
+  "main": "dist/topic",
+  "dev": "src/topic",
+  "scripts": {
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && npm run prettier:diff",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "prepublishOnly": "npm run transpile",
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "topic",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@storybook/react-native": "3.4.1",
+    "@times-components/eslint-config-thetimes": "0.4.1",
+    "@times-components/jest-configurator": "0.6.3",
+    "@times-components/storybook": "0.9.6",
+    "babel-cli": "6.26.0",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "jest-styled-components": "5.0.0",
+    "prettier": "1.8.2",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-native": "0.54.2",
+    "react-test-renderer": "16.3.1"
+  },
+  "dependencies": {
+    "@times-components/gradient": "0.10.11",
+    "@times-components/responsive-styles": "0.7.5",
+    "@times-components/styleguide": "0.6.8",
+    "prop-types": "15.6.0",
+    "styled-components": "3.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.50",
+    "react-native-web": ">=0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
