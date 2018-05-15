@@ -8,6 +8,7 @@ export const query = gql`
         count
         list {
           byline
+          headline
           id
           label
           leadAsset {
