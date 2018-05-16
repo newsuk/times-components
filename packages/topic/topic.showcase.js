@@ -1,12 +1,11 @@
 import React from "react";
-import topicFixture from "./fixtures/topic.json";
+import { addTypenameToDocument } from "apollo-utilities";
+import { topicArticlesQuery } from "@times-components/provider";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import { TopicArticlesProvider } from "@times-components/provider";
+import topicFixture from "./fixtures/topic.json";
 import Topic from "./src/topic";
-
-import { addTypenameToDocument } from "apollo-utilities";
-import { topicArticlesQuery } from "@times-components/provider";
 
 const mocks = [
   {
@@ -78,19 +77,17 @@ export default {
               imageRatio={props.imageRatio}
               slug={slug}
             >
-              {({ error, topic, isLoading }) => {
-                return (
-                  <Topic
-                    topic={Object.assign({}, topic, {
-                      name: "Animals",
-                      description:
-                        "Animals are multicellular eukaryotic organisms."
-                    })}
-                    error={error}
-                    isLoading={isLoading}
-                    {...props}
-                  />
-                );
+              {({ error, topic, isLoading }) => 
+                <Topic
+                  topic={Object.assign({}, topic, {
+                    name: "Animals",
+                    description:
+                      "Animals are multicellular eukaryotic organisms"
+                  })}
+                  error={error}
+                  isLoading={isLoading}
+                  {...props}
+                />
               }}
             </TopicArticlesProvider>
           </StorybookProvider>

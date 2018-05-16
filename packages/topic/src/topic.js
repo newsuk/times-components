@@ -3,12 +3,12 @@ import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
-import TopicHead from "./topic-head";
 import { withPageState } from "@times-components/pagination";
 import { TopicArticlesProvider } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
+import TopicHead from "./topic-head";
 
 const Topic = ({
   topic,
