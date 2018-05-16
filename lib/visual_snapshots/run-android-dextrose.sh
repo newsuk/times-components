@@ -14,10 +14,10 @@ npm run fetch-fonts
 npx lerna ls --json --since > fructose/changedPackages.json
 
 ##get array of changed components
-OUTPUT="$(node fructose/changedComponents.js)"
+node fructose/changedComponents.js
 
 ## create components file of all showcase file following pattern
-npx rnscl --searchDir ${OUTPUT} --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js
+npx rnscl --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
 
 ##packager
 npx react-native start --root fructose --projectRoots $(pwd)/fructose,$(pwd) &

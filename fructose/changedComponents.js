@@ -1,3 +1,4 @@
+const fs = require('fs');
 // eslint-disable-next-line import/no-unresolved
 const changedComponents = require("./changedPackages.json");
 
@@ -5,14 +6,10 @@ const changedComponentsList = () => {
   const componentDirectories = [];
 
   changedComponents.forEach(changedPackage => {
-    componentDirectories.push(
-      require.resolve(changedPackage.name).split("dist")[0]
-    );
+    componentDirectories.push(require.resolve(changedPackage.name).split("dist")[0].toString());
   });
 
-  const output = componentDirectories.toString();
-
-  return `[ ${output} ]`;
+  fs.writeFileSync('./fructose/rnscl.config', JSON.stringify(componentDirectories));
 };
 
-console.log(changedComponentsList().replace(/,/g, " "));
+changedComponentsList();
