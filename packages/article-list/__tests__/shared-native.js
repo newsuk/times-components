@@ -165,6 +165,7 @@ export default () => {
   });
 
   it("should re-fetch more when retry button clicked", () => {
+    const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
     const results = pagedResult(0, 3);
     const wrapper = shallow(
       <ArticleList
@@ -175,6 +176,7 @@ export default () => {
         isLoading={false}
         page={1}
         pageSize={3}
+        fetchMore={fetchMore}
       />
     ).dive();
     wrapper.setState({ loadMoreError: "Error" });

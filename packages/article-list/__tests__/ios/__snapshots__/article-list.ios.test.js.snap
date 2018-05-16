@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleList tests on ios should display error when fetch more fails 1`] = `"<ArticleListRetryButton refetch={[Function: refetch]} />"`;
+exports[`ArticleList tests on ios should display error when fetch more fails 1`] = `
+"<View>
+  <ArticleListItemSeparator />
+  <View style={{...}}>
+    <ArticleListRetryButton style={{...}} refetch={[Function: refetch]} />
+  </View>
+</View>"
+`;
 
 exports[`ArticleList tests on ios should render an article list 1`] = `
 <RCTScrollView
@@ -2441,17 +2448,27 @@ exports[`ArticleList tests on ios should render an article list that is loading 
     <View
       onLayout={[Function]}
     >
-      <ActivityIndicator
-        animating={true}
-        color="#DBDBDB"
-        hidesWhenStopped={true}
-        size="large"
-        style={
-          Object {
-            "paddingVertical": 15,
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
           }
-        }
-      />
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </RCTScrollView>

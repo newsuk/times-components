@@ -29,7 +29,14 @@ const styles = StyleSheet.create({
     margin: spacing(3)
   },
   loadingContainer: {
-    paddingVertical: spacing(3)
+    paddingVertical: spacing(5)
+  },
+  showMoreRetryContainer: {
+    paddingHorizontal: spacing(5),
+    paddingVertical: spacing(5)
+  },
+  showMoreRetryButton: {
+    elevation: 10
   }
 });
 

@@ -127,19 +127,30 @@ class ArticleList extends Component {
             return null;
           } else if (this.state.loadMoreError) {
             return (
-              <ArticleListRetryButton
-                refetch={() => {
-                  this.setState({ loadMoreError: null });
-                }}
-              />
+              <View>
+                <ArticleListItemSeparator />
+                <View style={styles.showMoreRetryContainer}>
+                  <ArticleListRetryButton
+                    style={styles.showMoreRetryButton}
+                    refetch={() => {
+                      this.setState({ loadMoreError: null }, () =>
+                        fetchMoreOnEndReached()
+                      );
+                    }}
+                  />
+                </View>
+              </View>
             );
           }
           return (
-            <ActivityIndicator
-              style={styles.loadingContainer}
-              size="large"
-              color={colours.functional.keyline}
-            />
+            <View>
+              <ArticleListItemSeparator />
+              <ActivityIndicator
+                style={styles.loadingContainer}
+                size="large"
+                color={colours.functional.keyline}
+              />
+            </View>
           );
         }}
         ListHeaderComponent={articleListHeader}
