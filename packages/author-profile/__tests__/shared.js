@@ -10,14 +10,11 @@ export default () => {
     pageSize: 3,
     withImages: true
   });
-
   const mockArticlesWithoutImages = fixtureGenerator.makeArticleMocks({
     pageSize: 3,
     withImages: false
   });
-
   const mockAuthor = fixtureGenerator.makeAuthor({ withImages: true });
-
   const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
     withImages: false
   });
