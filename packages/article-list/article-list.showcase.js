@@ -1,4 +1,7 @@
+import "react-native";
 import React from "react";
+import storybookReporter from "@times-components/tealium-utils";
+import { withTrackingContext } from "@times-components/tracking";
 import articleListNoImagesFixture from "./fixtures/article-list-no-images.json";
 import articleListWithImagesFixture from "./fixtures/article-list-with-images.json";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
@@ -12,6 +15,7 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const getProps = decorateAction => ({
+  analyticsStream: storybookReporter,
   articles: articleListWithImagesFixture.data.articles.list,
   count: articleListWithImagesFixture.data.articles.list.length,
   imageRatio: 3 / 2,
@@ -23,6 +27,10 @@ const getProps = decorateAction => ({
   refetch: preventDefaultedAction(decorateAction)("refetch")
 });
 
+const TrackedArticleList = withTrackingContext(ArticleList, {
+  trackingObjectName: "ArticleList"
+});
+
 export default {
   name: "Composed/Article List",
   children: [
@@ -30,14 +38,14 @@ export default {
       type: "story",
       name: "Default with images",
       component: (_, { decorateAction }) => (
-        <ArticleList {...getProps(decorateAction)} />
+        <TrackedArticleList {...getProps(decorateAction)} />
       )
     },
     {
       type: "story",
       name: "Default without images",
       component: (_, { decorateAction }) => (
-        <ArticleList
+        <TrackedArticleList
           {...getProps(decorateAction)}
           articles={articleListNoImagesFixture.data.articles.list}
           count={articleListNoImagesFixture.data.articles.list.length}
@@ -49,7 +57,7 @@ export default {
       type: "story",
       name: "Loading articles",
       component: (_, { decorateAction }) => (
-        <ArticleList {...getProps(decorateAction)} articlesLoading />
+        <TrackedArticleList {...getProps(decorateAction)} articlesLoading />
       )
     },
     {
@@ -65,7 +73,8 @@ export default {
       type: "story",
       name: "Error getting article list data",
       component: (_, { decorateAction }) => (
-        <ArticleList
+        <TrackedArticleList
+          analyticsStream={storybookReporter}
           error
           refetch={preventDefaultedAction(decorateAction)("refetch")}
         />
