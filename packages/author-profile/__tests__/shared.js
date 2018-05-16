@@ -4,6 +4,7 @@ import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
+import longSummaryLength from "../author-profile-constants";
 
 export default () => {
   const mockArticles = fixtureGenerator.makeArticleMocks({
@@ -11,6 +12,7 @@ export default () => {
     withImages: true
   });
   const mockArticlesWithoutImages = fixtureGenerator.makeArticleMocks({
+    longSummaryLength,
     pageSize: 3,
     withImages: false
   });
