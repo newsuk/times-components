@@ -10,7 +10,6 @@ const changedComponentsList = () => {
       require
         .resolve(changedPackage.name)
         .split("dist")[0]
-        .toString()
     );
   });
 
