@@ -1841,17 +1841,27 @@ exports[`1. Render an author profile page 1`] = `
     <View
       onLayout={[Function]}
     >
-      <ActivityIndicator
-        animating={true}
-        color="#DBDBDB"
-        hidesWhenStopped={true}
-        size="large"
-        style={
-          Object {
-            "paddingVertical": 15,
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
           }
-        }
-      />
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </RCTScrollView>
@@ -3514,17 +3524,27 @@ exports[`2. Render an article list loading state 1`] = `
     <View
       onLayout={[Function]}
     >
-      <ActivityIndicator
-        animating={true}
-        color="#DBDBDB"
-        hidesWhenStopped={true}
-        size="large"
-        style={
-          Object {
-            "paddingVertical": 15,
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
           }
-        }
-      />
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </RCTScrollView>
@@ -3739,7 +3759,7 @@ exports[`3. Render an article list page error state 1`] = `
               "alignItems": "center",
               "backgroundColor": "#006699",
               "flex": 1,
-              "height": 45,
+              "height": 36,
               "justifyContent": "center",
             }
           }
