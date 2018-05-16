@@ -9,7 +9,7 @@
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "jest --config='./__tests__/jest.config.js' && yarn test:web",
-    "prepublishOnly": "yarn transpile",
+    "prepublishOnly": "yarn transpile && webpack",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },

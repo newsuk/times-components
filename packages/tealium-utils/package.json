@@ -8,7 +8,7 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "prepublishOnly": "yarn transpile",
+    "prepublishOnly": "yarn transpile && webpack",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d dist"
   },

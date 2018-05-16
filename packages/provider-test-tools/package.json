@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",
-    "prepublishOnly": "yarn transpile",
+    "prepublishOnly": "yarn transpile && webpack",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },
