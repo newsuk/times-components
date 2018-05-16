@@ -103,6 +103,8 @@ class ArticleList extends Component {
               hasError ? null : (
                 <ArticleListItem
                   {...item}
+                  index={index}
+                  length={data.length}
                   imageRatio={imageRatio}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })

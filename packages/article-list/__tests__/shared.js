@@ -22,6 +22,8 @@ export default () => {
     headline: "test headline",
     id: "test id",
     imageRatio: 3 / 2,
+    index: 5,
+    length: 20,
     imageSize: 100,
     isLoading: false,
     label: "TESTLABEL",
@@ -101,7 +103,11 @@ export default () => {
       action: "Pressed",
       attrs: {
         articleId: "test id",
-        articleHeadline: "test headline"
+        articleHeadline: "test headline",
+        scrollDepth: {
+          itemNumber: 6,
+          total: 20
+        }
       }
     });
   });
