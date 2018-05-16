@@ -7,7 +7,11 @@ import AuthorArticlesNoImagesProvider from "../src/author-articles-no-images-bas
 const renderComponent = child =>
   renderer.create(
     <MockedProvider
-      mocks={fixtureGenerator.makeArticleMocks({ pageSize: 5, delay: 0 })}
+      mocks={fixtureGenerator.makeArticleMocks({
+        longSummaryLength: 360,
+        pageSize: 5,
+        delay: 0
+      })}
     >
       <AuthorArticlesNoImagesProvider
         slug="deborah-haynes"
