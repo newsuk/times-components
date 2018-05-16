@@ -1,9 +1,9 @@
-import "react-native";
+import { Text, View } from "react-native";
 import React from "react";
+import articleListNoImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-no-images.json";
+import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
-import articleListNoImagesFixture from "./fixtures/article-list-no-images.json";
-import articleListWithImagesFixture from "./fixtures/article-list-with-images.json";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 
 const preventDefaultedAction = decorateAction =>
@@ -16,8 +16,8 @@ const preventDefaultedAction = decorateAction =>
 
 const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
-  articles: articleListWithImagesFixture.data.articles.list,
-  count: articleListWithImagesFixture.data.articles.list.length,
+  articles: articleListWithImagesFixture.data.author.articles.list,
+  count: articleListWithImagesFixture.data.author.articles.list.length,
   imageRatio: 3 / 2,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   onNext: preventDefaultedAction(decorateAction)("onNext"),
@@ -47,11 +47,37 @@ export default {
       component: (_, { decorateAction }) => (
         <TrackedArticleList
           {...getProps(decorateAction)}
-          articles={articleListNoImagesFixture.data.articles.list}
-          count={articleListNoImagesFixture.data.articles.list.length}
+          articles={articleListNoImagesFixture.data.author.articles.list}
+          count={articleListNoImagesFixture.data.author.articles.list.length}
           showImages={false}
         />
       )
+    },
+    {
+      type: "story",
+      name: "With a header",
+      component: (_, { decorateAction }) => {
+        const ArticleListHeader = (
+          <View
+            style={{
+              alignItems: "center",
+              backgroundColor: "#999",
+              height: 100,
+              justifyContent: "center",
+              width: "100%"
+            }}
+          >
+            <Text style={{ color: "#FFF" }}>Article List Header</Text>
+          </View>
+        );
+
+        return (
+          <TrackedArticleList
+            {...getProps(decorateAction)}
+            articleListHeader={ArticleListHeader}
+          />
+        );
+      }
     },
     {
       type: "story",
