@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { MockedProvider } from "@times-components/utils";
+import { delay, MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 
 export default () => {
@@ -52,7 +52,7 @@ export default () => {
       </MockedProvider>
     );
 
-    await global.delayAsyncTest(1500);
+    await delay(1500);
 
     expect(tree).toMatchSnapshot("1. Render an author profile page");
   });
@@ -64,7 +64,7 @@ export default () => {
       </MockedProvider>
     );
 
-    await global.delayAsyncTest(1500);
+    await delay(1500);
 
     expect(tree).toMatchSnapshot(
       "2. Render an author profile page without images"
