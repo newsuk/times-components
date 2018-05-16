@@ -1,14 +1,18 @@
 // eslint-disable-next-line import/no-unresolved
 const changedComponents = require("./changedPackages.json");
 
-const componentDirectories = [];
+const changedComponentsList = () => {
+  const componentDirectories = [];
 
-changedComponents.forEach(changedPackage => {
-  componentDirectories.push(
-    require.resolve(changedPackage.name).split("dist")[0]
-  );
-});
+  changedComponents.forEach(changedPackage => {
+    componentDirectories.push(
+      require.resolve(changedPackage.name).split("dist")[0]
+    );
+  });
 
-const output = componentDirectories.toString().replace(",", " ");
+  const output = componentDirectories.toString();
 
-console.log(`[ ${output} ]`);
+  return `[ ${output} ]`;
+};
+
+console.log(changedComponentsList().replace(/,/g, " "));
