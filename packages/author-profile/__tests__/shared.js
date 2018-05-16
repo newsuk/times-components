@@ -31,8 +31,6 @@ export default () => {
     slug: "deborah-haynes"
   };
 
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-
   const realIntl = Intl;
 
   beforeAll(() => {
@@ -54,7 +52,7 @@ export default () => {
       </MockedProvider>
     );
 
-    await delay(1500);
+    await global.delayAsyncTest(1500);
 
     expect(tree).toMatchSnapshot("1. Render an author profile page");
   });
@@ -66,7 +64,7 @@ export default () => {
       </MockedProvider>
     );
 
-    await delay(1500);
+    await global.delayAsyncTest(1500);
 
     expect(tree).toMatchSnapshot(
       "2. Render an author profile page without images"
