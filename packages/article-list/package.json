@@ -39,6 +39,7 @@
     "@times-components/jest-configurator": "0.7.0",
     "@times-components/provider-test-tools": "0.5.2",
     "@times-components/storybook": "0.10.0",
+    "@times-components/tealium-utils": "0.3.0",
     "babel-cli": "6.26.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
