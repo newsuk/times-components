@@ -6,6 +6,7 @@ import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "./src/author-profile";
+import longSummaryLength from "./author-profile-constants";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -24,6 +25,7 @@ const mockArticles = fixtureGenerator.makeArticleMocks({
   withImages: true
 });
 const mockArticlesWithoutImages = fixtureGenerator.makeArticleMocks({
+  longSummaryLength,
   pageSize,
   slug,
   withImages: false
