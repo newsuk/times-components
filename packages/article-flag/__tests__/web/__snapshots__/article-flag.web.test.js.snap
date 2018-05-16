@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article Flag test on web renders Exclusive flag correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -41,7 +55,21 @@ exports[`Article Flag test on web renders Exclusive flag correctly 1`] = `
 `;
 
 exports[`Article Flag test on web renders New flag correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -81,7 +109,21 @@ exports[`Article Flag test on web renders New flag correctly 1`] = `
 `;
 
 exports[`Article Flag test on web renders Sponsored flag correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -121,7 +163,21 @@ exports[`Article Flag test on web renders Sponsored flag correctly 1`] = `
 `;
 
 exports[`Article Flag test on web renders Updated flag correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -161,7 +217,21 @@ exports[`Article Flag test on web renders Updated flag correctly 1`] = `
 `;
 
 exports[`Article Flag test on web renders correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <div
     style={
       Object {

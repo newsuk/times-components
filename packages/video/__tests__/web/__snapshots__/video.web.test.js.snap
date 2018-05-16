@@ -95,6 +95,7 @@ exports[`Video on web renders a paidOnly video correctly for unpaid users 1`] = 
   style={
     Object {
       "height": "200px",
+      "width": "300px",
     }
   }
 >
@@ -121,7 +122,17 @@ exports[`Video on web renders a paidOnly video correctly for unpaid users 1`] = 
           }
         }
       />
-      <div>
+      <div
+        style={
+          Object {
+            "bottom": "0px",
+            "left": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "top": "0px",
+          }
+        }
+      >
         <div
           style={
             Object {
