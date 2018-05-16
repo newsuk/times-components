@@ -50,7 +50,7 @@ module.exports = () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("does not render an error state if there is no error 1", () => {
+  it("does not render an error state if there is no error", () => {
     const tree = renderer
       .create(
         <ErrorView>
