@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium-utils",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.6.3",
+    "@times-components/jest-configurator": "0.7.0",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -33,10 +33,10 @@
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react-native-web": "0.3.2"
+    "react-native-web": "0.5.1"
   },
   "dependencies": {
-    "@times-components/tealium": "1.1.6"
+    "@times-components/tealium": "1.2.0"
   },
   "peerDependencies": {
     "react": ">=16",

@@ -14,6 +14,7 @@ const fontSizes = {
   meta: 14,
   pageComponentHeadline: 25,
   pageHeadline: 40,
+  pageHeadlineLarge: 50,
   pagingMeta: 15,
   puffLink: 11,
   secondary: 16,

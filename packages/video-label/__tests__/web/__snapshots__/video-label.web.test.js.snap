@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video Label test on web renders VideoLabel with an explicit title 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <svg
     height={12}
     width={20.64}
@@ -41,7 +55,21 @@ exports[`Video Label test on web renders VideoLabel with an explicit title 1`] =
 `;
 
 exports[`Video Label test on web renders VideoLabel without an explicit title 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "msFlexAlign": "center",
+      "msFlexDirection": "row",
+    }
+  }
+>
   <svg
     height={12}
     width={20.64}

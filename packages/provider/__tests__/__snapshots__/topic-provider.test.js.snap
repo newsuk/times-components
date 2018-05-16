@@ -10,6 +10,7 @@ Object {
       Object {
         "__typename": "Article",
         "byline": Array [],
+        "headline": "Dame Daphne Sheldrick obituary",
         "id": "5b48c89c-4a2c-11e8-8db5-58268675bbb1",
         "label": "obituary",
         "leadAsset": Object {
@@ -59,6 +60,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Racing chief Steve Harman’s future on line over new Tote",
         "id": "4034eff2-47cc-11e8-bf76-d5da08923eed",
         "label": "Racing",
         "leadAsset": Object {
@@ -108,6 +110,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Sick horses being dumped and left to die, says RSPCA",
         "id": "fb849670-478d-11e8-8db5-58268675bbb1",
         "label": "",
         "leadAsset": Object {
@@ -157,6 +160,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Development ‘could kill Edinburgh zoo’s pandas’",
         "id": "1cb67448-4668-11e8-bf76-d5da08923eed",
         "label": "",
         "leadAsset": Object {
@@ -210,6 +214,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Channon eyes shot at Guineas",
         "id": "9ef271f0-45aa-11e8-a171-006f480ab6fd",
         "label": "Racing",
         "leadAsset": Object {
@@ -259,6 +264,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "RSPB disputes research on turbine threat to seabirds",
         "id": "368f2544-4411-11e8-99ea-a5dd07dd144b",
         "label": "",
         "leadAsset": Object {
@@ -308,6 +314,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Gulls fly away from wind turbines",
         "id": "0b83d692-4353-11e8-9618-96ec7a8a2ce5",
         "label": "",
         "leadAsset": Object {
@@ -357,6 +364,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Opposing factions team up in hunt for missing eagle",
         "id": "28e2d8be-4268-11e8-9618-96ec7a8a2ce5",
         "label": "",
         "leadAsset": Object {
@@ -406,6 +414,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Fixture error angers Richard Johnson",
         "id": "ca2f566c-4262-11e8-99ea-a5dd07dd144b",
         "label": "Racing",
         "leadAsset": Object {
@@ -455,6 +464,7 @@ Object {
             "name": "inline",
           },
         ],
+        "headline": "Criminals getting away with attacks on wildlife",
         "id": "3b78a542-41bb-11e8-99ea-a5dd07dd144b",
         "label": "",
         "leadAsset": Object {

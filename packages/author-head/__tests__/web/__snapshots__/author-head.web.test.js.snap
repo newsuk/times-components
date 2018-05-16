@@ -224,7 +224,16 @@ exports[`AuthorHead test on web renders with data 1`] = `
                 }
               }
             />
-            <div>
+            <div
+              style={
+                Object {
+                  "bottom": "0px",
+                  "left": "0px",
+                  "right": "0px",
+                  "top": "0px",
+                }
+              }
+            >
               <div
                 style={
                   Object {
