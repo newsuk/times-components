@@ -78,18 +78,15 @@ class ArticleList extends Component {
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
-    const fetchMoreOnEndReached = () => {
-      if (this.state.loadMoreError) {
-        return null;
-      }
-
-      return fetchMore({
-        variables: {
-          skip: data.length
-        },
-        updateQuery
-      }).catch(err => this.setState({ loadMoreError: err }));
-    };
+    const fetchMoreOnEndReached = () =>
+      this.state.loadMoreError
+        ? null
+        : fetchMore({
+            variables: {
+              skip: data.length
+            },
+            updateQuery
+          }).catch(err => this.setState({ loadMoreError: err }));
 
     return (
       <FlatList
