@@ -7,9 +7,7 @@ const changedComponentsList = () => {
 
   changedComponents.forEach(changedPackage => {
     componentDirectories.push(
-      require
-        .resolve(changedPackage.name)
-        .split("dist")[0]
+      require.resolve(changedPackage.name).split("dist")[0]
     );
   });
 
