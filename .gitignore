@@ -66,6 +66,7 @@ dist
 
 fructose/components.js
 fructose/components.test.js
+fructose/changedPackages.json
 
 dextrose/snappy/**
 *.dextrose.tmp.js
