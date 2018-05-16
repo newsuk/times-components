@@ -11,8 +11,8 @@ const changedComponentsList = () => {
   });
 
   const output = componentDirectories.toString();
-  
+
   return `[ ${output} ]`;
-}
+};
 
 console.log(changedComponentsList().replace(/,/g, " "));
