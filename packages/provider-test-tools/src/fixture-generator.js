@@ -30,6 +30,18 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
+const makeTopic = ({ count = 20 } = {}) => {
+  return {
+    name: "Animals",
+    description: "Animals are multicellular eukaryotic organisms",
+    articles: {
+      count: count,
+      __typename: "Articles"
+    }
+  }
+}
+
+
 const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   const articles = withImages
     ? articleListWithImagesFixture.data.author.articles
@@ -133,6 +145,40 @@ const makeArticleMocks = (
   }))
 ];
 
+const makeTopicArticleMocks = (
+  {
+    count = 20,
+    first = 10,
+    skip = 0,
+    slug = "animals",
+    imageRatio = "3:2",
+    delay = 1000
+  } = {},
+  transform
+) => [
+  makeTopicMock({ count, slug, first, skip, imageRatio }),
+  ...new Array(Math.ceil(count / first)).fill(0).map((item, indx) => ({
+    delay,
+    request: {
+      query: addTypenameToDocument(topicArticlesQuery),
+      variables: {
+        imageRatio: "3:2",
+        first,
+        skip,
+        slug
+      }
+    },
+    result: makeTopicArticleList(
+      {
+        skip,
+        first
+      },
+      transform
+    )
+  }))
+];
+
+
 const makeBrokenMocks = ({ count, withImages, pageSize }) =>
   makeArticleMocks({ count, withImages, pageSize }, list =>
     list.map((card, indx) => ({
@@ -206,5 +252,6 @@ export default {
   makeArticleMocks,
   makeBrokenMocks,
   makeMocksWithPageError,
-  makeMocksWithAuthorError
+  makeMocksWithAuthorError,
+  makeTopicArticleMocks
 };
