@@ -32,12 +32,11 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
 
 const makeTopic = ({ count = 20 } = {}) => {
   return {
-    name: "Animals",
-    description: "Animals are multicellular eukaryotic organisms",
     articles: {
       count: count,
       __typename: "Articles"
-    }
+    },
+    __typename: "Topic"
   }
 }
 
