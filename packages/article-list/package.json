@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -37,7 +37,7 @@
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.7.0",
-    "@times-components/provider-test-tools": "0.5.1",
+    "@times-components/provider-test-tools": "0.5.2",
     "@times-components/storybook": "0.10.0",
     "babel-cli": "6.26.0",
     "babel-preset-react-native": "4.0.0",
