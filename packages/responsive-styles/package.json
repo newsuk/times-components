@@ -9,9 +9,10 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "prepublishOnly": "yarn transpile && webpack",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -49,7 +50,8 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0"
   },
   "dependencies": {
     "prop-types": "15.6.0",

@@ -60,6 +60,7 @@ buck-out/
 storybook-static
 coverage
 dist
+packages/*/rnw.js
 
 .fructose/components.js
 .fructose/components.test.js

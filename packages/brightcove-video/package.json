@@ -8,9 +8,10 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
-    "prepublishOnly": "yarn transpile && webpack",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "webpack"
   },
   "jest": {
     "preset": "react-native",
@@ -57,7 +58,8 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0"
   },
   "dependencies": {
     "@times-components/styleguide": "0.8.1",

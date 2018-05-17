@@ -1,7 +1,6 @@
 import { View } from "react-native";
-import withResponsiveStyles, {
-  keyframes
-} from "@times-components/responsive-styles";
+import withResponsiveStyles from "@times-components/responsive-styles";
+import { keyframes } from "styled-components";
 
 const fadingAnimation = keyframes`
   from {

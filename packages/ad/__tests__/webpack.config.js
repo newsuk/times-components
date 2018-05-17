@@ -30,7 +30,7 @@ function externals(ctx, path, cb) {
 }
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   target: "node",
   resolve: {
     alias: {
@@ -44,8 +44,8 @@ module.exports = {
     index: require.resolve('./'+dev),
   },
   output: {
-    path: path.resolve(__dirname, 'dist/rnw'),
-    filename: "[name].js",
+    path: path.resolve(__dirname),
+    filename: "rnw.js",
   },
   module: {
     rules: [

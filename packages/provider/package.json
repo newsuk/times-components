@@ -9,9 +9,10 @@
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "jest --config='./__tests__/jest.config.js' && yarn test:web",
-    "prepublishOnly": "yarn transpile && webpack",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -52,7 +53,8 @@
     "react": "16.3.1",
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0"
   },
   "dependencies": {
     "graphql-tag": "2.8.0",

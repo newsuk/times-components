@@ -12,9 +12,10 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "prepublishOnly": "yarn transpile && webpack",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -53,7 +54,8 @@
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0"
   },
   "peerDependencies": {
     "react": ">=16.2",

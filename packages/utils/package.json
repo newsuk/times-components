@@ -10,8 +10,9 @@
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest --config='./__tests__/jest.config.js'",
-    "prepublishOnly": "yarn transpile",
-    "transpile": "babel src -d dist && cp src/schema.json dist"
+    "prepublishOnly": "yarn transpile && yarn bundle",
+    "transpile": "babel src -d dist && cp src/schema.json dist",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,8 @@
     "jest": "21.2.1",
     "mkdirp": "0.5.1",
     "node-fetch": "1.7.2",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "webpack": "4.6.0"
   },
   "dependencies": {
     "apollo-cache-inmemory": "1.1.10",
