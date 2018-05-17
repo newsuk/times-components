@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopicHead functional tests on web should render correctly 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ dzzdQH"
+  >
+    <div>
+      <h1
+        aria-label="topic-name"
+        className="responsive-styles__component-fbPFZZ kfmhxW"
+        data-testid="topic-name"
+        dir="auto"
+        role="heading"
+      >
+        Animals
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TopicHead functional tests on web should render correctly when loading 1`] = `<TopicHeadLoading />`;
+
+exports[`TopicHead functional tests on web should render correctly with a description 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ hKIDHg"
+  >
+    <div>
+      <h1
+        aria-label="topic-name"
+        className="responsive-styles__component-fbPFZZ kfmhxW"
+        data-testid="topic-name"
+        dir="auto"
+        role="heading"
+      >
+        Animals
+      </h1>
+      <Divider />
+      <div
+        data-testid="topic-description"
+        dir="auto"
+      >
+        Animals are multicellular eukaryotic organisms.
+      </div>
+    </div>
+  </div>
+</div>
+`;

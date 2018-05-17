@@ -3,8 +3,8 @@ import React from "react";
 import renderer from "react-test-renderer";
 import TopicHead from "../src/topic-head";
 
-jest.mock("../src/loading", () => "TopicHeadLoading");
-jest.mock("../src/divider", () => "Divider");
+jest.mock("../src/topic-head-loading", () => "TopicHeadLoading");
+jest.mock("../src/topic-head-divider", () => "Divider");
 
 export default () => {
   it("should render correctly", () => {
