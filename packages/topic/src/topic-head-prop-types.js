@@ -1,13 +1,12 @@
 import PropTypes from "prop-types";
 
-export const topicHeadPropTypes = {
-  name: PropTypes.string,
+export const propTypes = {
+  name: PropTypes.string.isRequired,
   description: PropTypes.string,
   isLoading: PropTypes.bool
 };
 
-export const topicHeadDefaultProps = {
-  name: "Animals",
-  description: "Animals are multicellular eukaryotic organisms.",
+export const defaultProps = {
+  description: "",
   isLoading: true
 };

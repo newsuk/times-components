@@ -1,22 +1,43 @@
-import React from "react";
-import { View } from "react-native";
+import React, { Fragment } from "react";
+import { Text, View } from "react-native";
 import { propTypes, defaultProps } from "./topic-head-prop-types";
-import { getHeadContainer } from "./styles/responsive";
+import {
+  getHeadContainer,
+  ResponsiveDivider,
+  ResponsiveName
+} from "./styles/responsive";
 import styles from "./styles";
-import HeadContent from "./topic-head-content";
-import Loading from "./topic-head-loading";
 
 const TopicHead = ({ name, description, isLoading }) => {
   const HeadContainer = getHeadContainer({
     hasDescription: !!description
   });
 
+  const showDescription = () =>
+    description ? (
+      <Fragment>
+        <ResponsiveDivider />
+        <Text testID="topic-description" style={styles.description}>
+          {description}
+        </Text>
+      </Fragment>
+    ) : null;
+
   return isLoading ? (
-    <Loading />
+    <View style={styles.wrapper} />
   ) : (
     <View style={styles.wrapper}>
       <HeadContainer>
-        <HeadContent name={name} description={description} />
+        <View style={styles.container}>
+          <ResponsiveName
+            testID="topic-name"
+            accessibilityLabel="topic-name"
+            accessibilityRole="heading"
+          >
+            {name}
+          </ResponsiveName>
+          {showDescription()}
+        </View>
       </HeadContainer>
     </View>
   );
