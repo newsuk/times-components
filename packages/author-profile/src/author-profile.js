@@ -17,12 +17,12 @@ const AuthorProfile = ({
   author,
   error,
   isLoading,
-  page,
-  pageSize: initPageSize,
   onArticlePress,
   onNext,
   onPrev,
   onTwitterLinkPress,
+  page,
+  pageSize: initPageSize,
   refetch,
   slug
 }) => {

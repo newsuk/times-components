@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 // eslint-disable-next-line import/no-unresolved
 const changedComponents = require("./changedPackages.json");
 
