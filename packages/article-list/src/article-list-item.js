@@ -14,7 +14,7 @@ import styles from "./styles";
 
 const ArticleListItem = props => {
   const {
-    byline
+    byline,
     headline,
     imageRatio,
     isLoading,
