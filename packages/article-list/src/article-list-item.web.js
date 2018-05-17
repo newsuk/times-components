@@ -51,10 +51,12 @@ const ArticleListItem = props => {
   }
 
   const childProps = {
-    bylineProps: byline ? {
-      ast: byline,
-      color: colours.section[section] || colours.section.default,
-    } : null,
+    bylineProps: byline
+      ? {
+          ast: byline,
+          color: colours.section[section] || colours.section.default
+        }
+      : null,
     datePublicationProps: {
       date: publishedTime,
       publication: publicationName

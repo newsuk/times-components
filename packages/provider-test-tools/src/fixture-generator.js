@@ -7,7 +7,7 @@ import {
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
-import topicChelsea from "../fixtures/topicChelsea.json";
+import topicFixture from "../fixtures/topic.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
@@ -31,16 +31,13 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 10 } = {}) => {
-  return {
-    articles: {
-      count: count,
-      __typename: "Articles"
-    },
-    __typename: "Topic"
-  }
-}
-
+const makeTopic = ({ count = 10 } = {}) => ({
+  articles: {
+    count,
+    __typename: "Articles"
+  },
+  __typename: "Topic"
+});
 
 const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   const articles = withImages
@@ -61,7 +58,7 @@ const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
 };
 
 const makeTopicArticleList = ({ skip, first }, transform = id => id) => {
-  const articles = topicChelsea.data.topic.articles;
+  const { articles } = topicFixture.data.topic;
 
   return {
     data: {
@@ -99,7 +96,7 @@ const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
   request: {
     query: addTypenameToDocument(topicArticlesQuery),
     variables: {
-      slug,
+      slug
     }
   },
   result: {
@@ -211,7 +208,6 @@ const makeTopicArticleMocks = (
     )
   }))
 ];
-
 
 const makeBrokenMocks = ({ count, withImages, pageSize }) =>
   makeArticleMocks({ count, withImages, pageSize }, list =>

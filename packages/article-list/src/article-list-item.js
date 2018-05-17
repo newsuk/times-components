@@ -54,10 +54,14 @@ const ArticleListItem = props => {
           showImage={showImage}
         >
           <ArticleSummary
-            bylineProps={byline ? {
-              ast: byline,
-              color: colours.section[section] || colours.section.default,
-            } : null}
+            bylineProps={
+              byline
+                ? {
+                    ast: byline,
+                    color: colours.section[section] || colours.section.default
+                  }
+                : null
+            }
             content={() => <ArticleSummaryContent ast={content} />}
             datePublicationProps={{
               date: publishedTime,
