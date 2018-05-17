@@ -40,11 +40,7 @@ export default () => {
           withImages: true
         })}
       >
-        <Topic
-          {...topicProps}
-          page={1}
-          pageSize={pageSize}
-        />
+        <Topic {...topicProps} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
 
