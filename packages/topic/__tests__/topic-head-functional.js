@@ -3,9 +3,6 @@ import React from "react";
 import renderer from "react-test-renderer";
 import TopicHead from "../src/topic-head";
 
-jest.mock("../src/topic-head-loading", () => "TopicHeadLoading");
-jest.mock("../src/topic-head-divider", () => "Divider");
-
 export default () => {
   it("should render correctly", () => {
     const tree = renderer.create(<TopicHead name="Animals" />).toJSON();
