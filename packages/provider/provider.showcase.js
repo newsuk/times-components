@@ -2,10 +2,10 @@ import React from "react";
 import { Text } from "react-native";
 import fixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
 import articleFixture from "@times-components/provider-test-tools/fixtures/article.json";
-import topicFixture from "@times-components/provider-test-tools/fixtures/topic.json";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider,
@@ -14,8 +14,6 @@ import connectGraphql, {
 } from "./src/provider.js";
 import { query as authorProfileQuery } from "./src/author-profile";
 import { query as articleQuery } from "./src/article";
-import { query as topicArticlesQuery } from "./src/topic-articles";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 
 export default {
   name: "Helpers/Provider",
@@ -161,18 +159,16 @@ export default {
           delay: 0
         });
         return (
-          <MockedProvider
-          mocks={mocks}
-        >
-          <AuthorArticlesWithImagesProvider
-            slug="deborah-haynes"
-            pageSize={5}
-            page={1}
-            debounceTimeMs={0}
-          >
-            {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-          </AuthorArticlesWithImagesProvider>
-        </MockedProvider>
+          <MockedProvider mocks={mocks}>
+            <AuthorArticlesWithImagesProvider
+              slug="deborah-haynes"
+              pageSize={5}
+              page={1}
+              debounceTimeMs={0}
+            >
+              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+            </AuthorArticlesWithImagesProvider>
+          </MockedProvider>
         );
       }
     },
@@ -186,9 +182,7 @@ export default {
           delay: 0
         });
         return (
-          <MockedProvider
-            mocks={mocks}
-          >
+          <MockedProvider mocks={mocks}>
             <TopicArticlesProvider
               slug="chelsea"
               pageSize={5}
