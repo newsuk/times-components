@@ -152,7 +152,7 @@ export default () => {
       .props()
       .onEndReached();
 
-    return expect(
+    expect(
       wrapper
         .dive()
         .dive()
@@ -224,6 +224,6 @@ export default () => {
       .props()
       .onEndReached();
 
-    return expect(fetchMore).toHaveBeenCalledTimes(1);
+    expect(fetchMore).toHaveBeenCalledTimes(1);
   });
 };

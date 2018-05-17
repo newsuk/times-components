@@ -17,6 +17,6 @@ export default () => {
 
     expect(flatList.props.data.length).toBe(pageSize);
     await flatList.instance.props.onEndReached();
-    return expect(flatList.props.data.length).toBe(pageSize * 2);
+    expect(flatList.props.data.length).toBe(pageSize * 2);
   });
 };
