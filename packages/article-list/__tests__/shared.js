@@ -6,7 +6,6 @@ import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
 import ArticleListPageError from "../src/article-list-page-error";
-import ArticleListPagination from "../src/article-list-pagination";
 import {
   longSummary,
   shortSummary,
@@ -132,14 +131,6 @@ export default () => {
     const wrapper = shallow(<ArticleListPageError refetch={jest.fn()} />);
 
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it("should render the article list pagination correctly", () => {
-    const tree = renderer.create(
-      <ArticleListPagination count={20} page={1} pageSize={10} />
-    );
-
-    expect(tree).toMatchSnapshot();
   });
 
   it("should render an article list", () => {
