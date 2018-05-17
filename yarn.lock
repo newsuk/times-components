@@ -773,15 +773,34 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/tealium-utils@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@times-components/tealium-utils/-/tealium-utils-0.2.8.tgz#e24fa5299326b775c46b9027d86deb7b3ee92f55"
+"@times-components/provider-test-tools@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@times-components/provider-test-tools/-/provider-test-tools-0.5.2.tgz#8b1e31b8955799cac4b3acc471fec4c8d8d6335e"
   dependencies:
-    "@times-components/tealium" "1.1.7"
+    "@times-components/provider" "0.30.2"
+    apollo-cache-inmemory "1.1.10"
+    apollo-client "2.2.6"
+    apollo-link "1.2.0"
+    apollo-utilities "1.0.4"
+    graphql "0.13.1"
+    graphql-tag "2.8.0"
+    lodash.isequal "4.4.0"
+    prop-types "15.6.0"
+    react "16.3.1"
+    react-apollo "2.1.0-rc.3"
+    react-test-renderer "16.3.1"
 
-"@times-components/tealium@1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@times-components/tealium/-/tealium-1.1.7.tgz#d865e5e6a2491c7b711c0d2433b85c1d8702ae57"
+"@times-components/provider@0.30.2":
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.30.2.tgz#4bdf1c0626555849fbc8eaf0e020a120eae77c0c"
+  dependencies:
+    graphql-tag "2.8.0"
+    hoist-non-react-statics "2.3.1"
+    lodash.isequal "4.4.0"
+    lodash.pick "4.4.0"
+    prop-types "15.6.0"
+    react-apollo "2.1.0-rc.3"
+    react-display-name "0.2.3"
 
 "@types/async@2.0.47":
   version "2.0.47"
