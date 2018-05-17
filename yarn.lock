@@ -10867,9 +10867,9 @@ react-native-safe-module@^1.1.0:
   dependencies:
     dedent "^0.6.0"
 
-react-native-showcase-loader@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-showcase-loader/-/react-native-showcase-loader-1.0.1.tgz#8208ee469ac238ae02ac0a9c6207d23858f4b544"
+react-native-showcase-loader@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-showcase-loader/-/react-native-showcase-loader-1.1.0.tgz#8b9f2293f1e772cc5614c5ad47f4d495e611ffbc"
   dependencies:
     colors "^1.1.2"
     dot "^1.1.1"

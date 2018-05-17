@@ -70,7 +70,14 @@ const query = ({ withImages }) =>
     withImages ? articleListWithImagesQuery : articleListNoImagesQuery
   );
 
-const makeVariables = ({ withImages, skip, pageSize, slug }) => {
+const makeVariables = ({
+  longSummaryLength,
+  pageSize,
+  shortSummaryLength,
+  skip,
+  slug,
+  withImages
+}) => {
   if (withImages) {
     return {
       slug,
@@ -84,18 +91,20 @@ const makeVariables = ({ withImages, skip, pageSize, slug }) => {
     slug,
     first: pageSize,
     skip,
-    shortSummaryLength: 220,
-    longSummaryLength: 360
+    shortSummaryLength,
+    longSummaryLength
   };
 };
 
 const makeArticleMocks = (
   {
     count = 20,
+    delay = 1000,
+    longSummaryLength = 220,
     pageSize = 5,
-    withImages = false,
+    shortSummaryLength = 220,
     slug = "deborah-haynes",
-    delay = 1000
+    withImages = false
   } = {},
   transform
 ) => [
@@ -105,10 +114,12 @@ const makeArticleMocks = (
     request: {
       query: query({ withImages }),
       variables: makeVariables({
-        withImages,
-        skip: indx * pageSize,
+        longSummaryLength,
         pageSize,
-        slug
+        shortSummaryLength,
+        skip: indx * pageSize,
+        slug,
+        withImages
       })
     },
     result: makeArticleList(

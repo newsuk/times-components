@@ -1,3 +1,4 @@
+const fs = require("fs");
 // eslint-disable-next-line import/no-unresolved
 const changedComponents = require("./changedPackages.json");
 
@@ -10,9 +11,10 @@ const changedComponentsList = () => {
     );
   });
 
-  const output = componentDirectories.toString();
-
-  return `[ ${output} ]`;
+  fs.writeFileSync(
+    "./fructose/rnscl.config",
+    JSON.stringify(componentDirectories)
+  );
 };
 
-console.log(changedComponentsList().replace(/,/g, " "));
+changedComponentsList();
