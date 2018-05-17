@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+
+import "react-native";
 import React from "react";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
@@ -13,9 +16,24 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const page = 1;
+const topicHeadDescription =
+  "Animals are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few  exceptions, animals consume organic materials.";
 const pageSize = 5;
-const slug = "chelsea";
+
+const props = {
+  analyticsStream: storybookReporter,
+  name: "Animals",
+  onArticlePress: preventDefaultedAction(decorateAction)(
+    "onArticlePress"
+  ),
+  page: 1,
+  pageSize,
+  slug: "chelsea",
+  topic: {
+    name: "Chelsea",
+    description: "A swanky part of town."
+  }
+};
 
 export default {
   name: "Pages/Topic",
@@ -23,21 +41,7 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: (_, { decorateAction }) => {
-        const props = {
-          analyticsStream: storybookReporter,
-          onArticlePress: preventDefaultedAction(decorateAction)(
-            "onArticlePress"
-          ),
-          slug,
-          page,
-          pageSize,
-          topic: {
-            name: "Chelsea",
-            description: "A swanky part of town."
-          }
-        };
-
+      component: (_, { decorateAction, text }) => {
         const mocks = fixtureGenerator.makeTopicArticleMocks({
           withImages: true,
           pageSize
@@ -45,10 +49,18 @@ export default {
 
         return (
           <StorybookProvider mocks={mocks}>
-            <Topic {...props} />
+            <Topic
+              {...props}
+              description={text("Topic head description:", topicHeadDescription)}
+            />
           </StorybookProvider>
         );
       }
+    },
+    {
+      type: "story",
+      name: "Loading",
+      component: () => <Topic {...props} isLoading />
     }
   ]
 };
