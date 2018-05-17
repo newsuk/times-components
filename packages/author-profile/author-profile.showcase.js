@@ -44,7 +44,7 @@ const getProps = decorateAction => ({
   onTwitterLinkPress: preventDefaultedAction(decorateAction)(
     "onTwitterLinkPress"
   ),
-  page: 2,
+  page: 1,
   pageSize,
   slug
 });
@@ -110,6 +110,20 @@ export default {
     {
       type: "story",
       name: "With an error getting articles",
+      component: (_, { decorateAction }) => (
+        <MockedProvider
+          mocks={fixtureGenerator.makeMocksWithPageError({
+            pageSize,
+            withImages: true
+          })}
+        >
+          <AuthorProfile {...getProps(decorateAction)} page={2} />
+        </MockedProvider>
+      )
+    },
+    {
+      type: "story",
+      name: "With an error on pagination",
       component: (_, { decorateAction }) => (
         <MockedProvider
           mocks={fixtureGenerator.makeMocksWithPageError({
