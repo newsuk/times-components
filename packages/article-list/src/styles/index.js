@@ -32,8 +32,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacing(5)
   },
   showMoreRetryContainer: {
-    paddingHorizontal: spacing(5),
-    paddingVertical: spacing(5)
+    padding: spacing(5)
   },
   showMoreRetryButton: {
     elevation: 10
