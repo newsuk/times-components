@@ -15,8 +15,8 @@ exports[`1. Render an author profile page 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
+      <WithTrackEvents(AuthorProfileHead)
+        biography={
           Array [
             Object {
               "attributes": Object {
@@ -415,8 +415,7 @@ exports[`1. Render an author profile page 1`] = `
                 style={
                   Object {
                     "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
+                    "paddingVertical": 8,
                   }
                 }
               >
@@ -1548,8 +1547,8 @@ exports[`2. Render an author profile page without images 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
+      <WithTrackEvents(AuthorProfileHead)
+        biography={
           Array [
             Object {
               "attributes": Object {
@@ -2041,8 +2040,7 @@ exports[`2. Render an author profile page without images 1`] = `
                 style={
                   Object {
                     "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
+                    "paddingVertical": 8,
                   }
                 }
               >
@@ -2815,8 +2813,8 @@ exports[`3. Render an author profile page loading state 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
+      <WithTrackEvents(AuthorProfileHead)
+        biography={Array []}
         isLoading={true}
         name=""
         onTwitterLinkPress={[Function]}

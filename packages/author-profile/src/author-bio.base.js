@@ -14,15 +14,15 @@ const styles = StyleSheet.create({
   }
 });
 
-const Bio = ({ bio }) => (
+const Bio = ({ biography }) => (
   <Text testID="author-bio" style={styles.bio}>
-    {renderTrees(bio)}
+    {renderTrees(biography)}
   </Text>
 );
 
 Bio.propTypes = {
-  bio: PropTypes.arrayOf(treePropType)
+  biography: PropTypes.arrayOf(treePropType)
 };
-Bio.defaultProps = { bio: [] };
+Bio.defaultProps = { biography: [] };
 
 export default Bio;

@@ -1,15 +1,7 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Platform } from "react-native";
-import PropTypes from "prop-types";
+import { View } from "react-native";
 import { TextLink } from "@times-components/link";
-import { treePropType } from "@times-components/markup";
 import { IconTwitter } from "@times-components/icons";
-import {
-  colours,
-  fonts,
-  fontSizes,
-  spacing
-} from "@times-components/styleguide";
 import { withTrackEvents } from "@times-components/tracking";
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";
@@ -17,26 +9,8 @@ import AuthorName from "./author-name";
 import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import AuthorHeadLoading from "./author-head-loading";
-
-const styles = StyleSheet.create({
-  twitter: {
-    paddingTop: 8,
-    paddingBottom: 8,
-    flexDirection: "row",
-    ...Platform.select({
-      android: {
-        alignItems: "center"
-      }
-    })
-  },
-  twitterLink: {
-    fontSize: fontSizes.tertiary,
-    fontFamily: fonts.supporting,
-    color: colours.functional.action,
-    textDecorationLine: "none",
-    paddingLeft: spacing(1)
-  }
-});
+import { propTypes, defaultProps } from "./author-profile-head-prop-types";
+import styles from "./styles";
 
 class AuthorProfileHead extends Component {
   shouldComponentUpdate(nextProps) {
@@ -45,7 +19,7 @@ class AuthorProfileHead extends Component {
 
   render() {
     const {
-      bio,
+      biography,
       isLoading,
       name,
       onTwitterLinkPress,
@@ -56,66 +30,31 @@ class AuthorProfileHead extends Component {
 
     if (isLoading) return <AuthorHeadLoading />;
 
+    const url = `https://twitter.com/${twitter}`;
+
     return (
       <AuthorHeadContainer>
         <AuthorPhoto uri={uri} />
         <AuthorName name={name} />
         <AuthorTitle title={title} />
-        <TwitterLink handle={twitter} onPress={onTwitterLinkPress} />
-        <Bio bio={bio} />
+        <View style={styles.twitter}>
+          <IconTwitter width={15} height={15} />
+          <TextLink
+            style={styles.twitterLink}
+            url={url}
+            onPress={e => onTwitterLinkPress(e, { twitter, url })}
+          >
+            @{twitter}
+          </TextLink>
+        </View>
+        <Bio biography={biography} />
       </AuthorHeadContainer>
     );
   }
 }
 
-AuthorProfileHead.defaultProps = {
-  isLoading: false,
-  name: "",
-  title: "",
-  uri: "",
-  bio: [],
-  twitter: null,
-  onTwitterLinkPress: () => {}
-};
-
-AuthorProfileHead.propTypes = {
-  isLoading: PropTypes.bool,
-  name: PropTypes.string,
-  title: PropTypes.string,
-  uri: PropTypes.string,
-  bio: PropTypes.arrayOf(treePropType),
-  twitter: PropTypes.string,
-  onTwitterLinkPress: PropTypes.func
-};
-
-const TwitterLink = ({ handle, onPress }) => {
-  if (!handle) {
-    return null;
-  }
-  const url = `https://twitter.com/${handle}`;
-
-  return (
-    <View style={styles.twitter}>
-      <IconTwitter width={15} height={15} />
-      <TextLink
-        style={styles.twitterLink}
-        url={url}
-        onPress={e => onPress(e, { handle, url })}
-      >
-        @{handle}
-      </TextLink>
-    </View>
-  );
-};
-
-TwitterLink.propTypes = {
-  handle: AuthorProfileHead.propTypes.twitter,
-  onPress: PropTypes.func.isRequired
-};
-
-TwitterLink.defaultProps = {
-  handle: AuthorProfileHead.defaultProps.twitter
-};
+AuthorProfileHead.propTypes = propTypes;
+AuthorProfileHead.defaultProps = defaultProps;
 
 export default withTrackEvents(AuthorProfileHead, {
   analyticsEvents: [

@@ -56,7 +56,7 @@ const AuthorProfile = ({
 
   const articleListHeader = (
     <AuthorProfileHead
-      bio={biography}
+      biography={biography}
       isLoading={false}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}

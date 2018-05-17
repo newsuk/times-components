@@ -11,12 +11,12 @@ export const propTypes = {
   }),
   error: PropTypes.object,
   isLoading: PropTypes.bool,
-  page: PropTypes.number,
-  pageSize: PropTypes.number,
   onArticlePress: PropTypes.func,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   onTwitterLinkPress: PropTypes.func,
+  page: PropTypes.number,
+  pageSize: PropTypes.number,
   refetch: PropTypes.func,
   slug: PropTypes.string.isRequired
 };
@@ -25,11 +25,11 @@ export const defaultProps = {
   author: null,
   error: null,
   isLoading: true,
-  page: 1,
-  pageSize: 10,
   onArticlePress: () => {},
   onNext: () => {},
   onPrev: () => {},
   onTwitterLinkPress: () => {},
+  page: 1,
+  pageSize: 10,
   refetch: () => {}
 };
