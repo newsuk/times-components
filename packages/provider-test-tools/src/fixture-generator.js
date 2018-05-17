@@ -31,7 +31,7 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 21 } = {}) => {
+const makeTopic = ({ count = 10 } = {}) => {
   return {
     articles: {
       count: count,
@@ -181,7 +181,7 @@ const makeArticleMocks = (
 
 const makeTopicArticleMocks = (
   {
-    count = 21,
+    count = 10,
     pageSize = 5,
     withImages = true,
     slug = "chelsea",
