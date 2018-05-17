@@ -128,7 +128,7 @@ export default () => {
     expect(fetchMore).toHaveBeenCalled();
   });
 
-  it("should display error when fetch more fails", async () => {
+  it("should display retry button when fetch more fails", async () => {
     const fetchMore = jest
       .fn()
       .mockReturnValue(Promise.reject(new Error("Error")));
