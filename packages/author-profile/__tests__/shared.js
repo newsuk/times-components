@@ -1,38 +1,17 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
-import longSummaryLength from "../author-profile-constants";
+import {
+  mockArticles,
+  mockArticlesWithoutImages,
+  mockAuthor,
+  mockAuthorWithoutImages,
+  props
+} from "./mocks";
 
 export default () => {
-  const mockArticles = fixtureGenerator.makeArticleMocks({
-    pageSize: 3,
-    withImages: true
-  });
-  const mockArticlesWithoutImages = fixtureGenerator.makeArticleMocks({
-    longSummaryLength,
-    pageSize: 3,
-    withImages: false
-  });
-  const mockAuthor = fixtureGenerator.makeAuthor({ withImages: true });
-  const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
-    withImages: false
-  });
-
-  const props = {
-    analyticsStream: () => {},
-    author: mockAuthor,
-    isLoading: false,
-    onArticlePress: () => {},
-    onTwitterLinkPress: () => {},
-    page: 1,
-    pageSize: 3,
-    refetch: () => {},
-    slug: "deborah-haynes"
-  };
-
   const realIntl = Intl;
 
   beforeAll(() => {
