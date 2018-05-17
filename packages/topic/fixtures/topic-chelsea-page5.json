@@ -1,0 +1,60 @@
+{
+  "data": {
+    "topic": {
+      "articles": {
+        "count": 21,
+        "list": [
+          {
+            "byline": [
+              {
+                "name": "inline",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "France Adam Sage Paris"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "headline": "‘Pork or nothing’ on school dinner menu",
+            "id": "eec045ee-ccd2-11e4-81dd-064fe933cd41",
+            "label": "Asia",
+            "leadAsset": {
+              "id": "29b16c62-dc69-4c1b-86b3-a5e66de3fe98",
+              "title": "‘Pork or nothing’ on school dinner menu",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/a021b9ec0c558aeb88510ecb8092f864d624f8e6.jpg?crop=780%2C520%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T18:25:23.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "A French mayor is at the centre of a political storm after infuriating Muslims and Jews with the introduction of a"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/pork-or-nothing-on-school-dinner-menu-m357l2bss",
+            "__typename": "Article"
+          }
+        ],
+        "__typename": "Articles"
+      },
+      "__typename": "Topic"
+    }
+  }
+}

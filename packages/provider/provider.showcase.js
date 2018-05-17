@@ -9,11 +9,13 @@ import { MockedProvider } from "@times-components/utils";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider,
-  TopicArticlesProvider
+  TopicArticlesProvider,
+  AuthorArticlesWithImagesProvider
 } from "./src/provider.js";
 import { query as authorProfileQuery } from "./src/author-profile";
 import { query as articleQuery } from "./src/article";
 import { query as topicArticlesQuery } from "./src/topic-articles";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
 
 export default {
   name: "Helpers/Provider",
@@ -151,26 +153,46 @@ export default {
     },
     {
       type: "story",
+      name: "Author Profile Articles with Images",
+      component: () => {
+        const mocks = fixtureGenerator.makeArticleMocks({
+          withImages: true,
+          pageSize: 5,
+          delay: 0
+        });
+        return (
+          <MockedProvider
+          mocks={mocks}
+        >
+          <AuthorArticlesWithImagesProvider
+            slug="deborah-haynes"
+            pageSize={5}
+            page={1}
+            debounceTimeMs={0}
+          >
+            {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+          </AuthorArticlesWithImagesProvider>
+        </MockedProvider>
+        );
+      }
+    },
+    {
+      type: "story",
       name: "Topic Articles",
       component: () => {
-        const mocks = [
-          {
-            request: {
-              query: addTypenameToDocument(topicArticlesQuery),
-              variables: {
-                slug: "animals",
-                imageRatio: "3:2"
-              }
-            },
-            result: topicFixture
-          }
-        ];
-
+        const mocks = fixtureGenerator.makeTopicArticleMocks({
+          withImages: true,
+          pageSize: 5,
+          delay: 0
+        });
         return (
-          <MockedProvider mocks={mocks}>
+          <MockedProvider
+            mocks={mocks}
+          >
             <TopicArticlesProvider
-              slug="animals"
-              imageRatio="3:2"
+              slug="chelsea"
+              pageSize={5}
+              page={1}
               debounceTimeMs={0}
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}

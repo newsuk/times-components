@@ -1,0 +1,308 @@
+{
+  "data": {
+    "topic": {
+      "articles": {
+        "count": 21,
+        "list": [
+          {
+            "byline": [
+              {
+                "name": "inline",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Russia Ben Hoyle Moscow David Taylor Washington"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "headline": "Splits in Europe may end Russian sanctions",
+            "id": "77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+            "label": "Middle East",
+            "leadAsset": {
+              "id": "86ee3055-9780-4732-a210-1e3987d84099",
+              "title": "Splits in Europe may end Russian sanctions",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/e21fcb53756c321b9894c0650968fb9bc74197fb.jpg?crop=780%2C520%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T18:57:58.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/splits-in-europe-may-end-russian-sanctions-kstdpq5rn",
+            "__typename": "Article"
+          },
+          {
+            "byline": [
+              {
+                "name": "inline",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Michael Savage Chief Political Correspondent"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "headline": "Inheritance tax cut will ‘push up house prices’",
+            "id": "4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+            "label": "Science",
+            "leadAsset": {
+              "id": "732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+              "title": "Inheritance tax cut will ‘push up house prices’",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/246222037c44938c896781cf5039564ae3e80a36.jpg?crop=780%2C520%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T21:27:12.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/inheritance-tax-cut-will-push-up-house-prices-gbzqbdgcz",
+            "__typename": "Article"
+          },
+          {
+            "byline": [
+              {
+                "name": "inline",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Sean O’Neill, Richard Ford, David Brown"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "headline": "Immunity offer over VIP child abuse ring",
+            "id": "10f461fc-cce4-11e4-81dd-064fe933cd41",
+            "label": "Environment",
+            "leadAsset": {
+              "id": "ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+              "title": "Immunity offer over VIP child abuse ring",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/1dbbbb8ee63d9059405323011d8cb261412d2645.jpg?crop=780%2C520%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T20:28:04.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/immunity-offer-over-vip-child-abuse-ring-kpvvhb6mn",
+            "__typename": "Article"
+          },
+          {
+            "byline": [],
+            "headline": "What becomes of the broken-hearted?",
+            "id": "14f3dd0c-cce2-11e4-81dd-064fe933cd41",
+            "label": "Health",
+            "leadAsset": {
+              "id": "5e4c86d1-81fc-46f5-9730-ea59aa2f04bb",
+              "title": "What becomes of the broken-hearted?",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/842c4eba7c037cb39fb8957f008511d7233fa34f.jpg?crop=780%2C520%2C0%2C0",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T20:13:57.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "inline",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Sam Smith"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "inline",
+                    "children": [
+                      {
+                        "name": "break",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "inline",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "O2 Academy, Glasgow"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "inline",
+                    "children": [
+                      {
+                        "name": "break",
+                        "children": []
+                      },
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "★★★★★"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Sam Smith’s gratitude to the audience at the first night of his British tour was"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/what-becomes-of-the-broken-hearted-j7dzppbzg",
+            "__typename": "Article"
+          },
+          {
+            "byline": [
+              {
+                "name": "inline",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Georgie Keate, John Simpson, "
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "author",
+                "attributes": {
+                  "slug": "fiona-hamilton"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Fiona Hamilton"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "headline": "Fourth Briton is seized trying to join Isis",
+            "id": "89bd6c18-ccf9-11e4-81dd-064fe933cd41",
+            "label": "Health",
+            "leadAsset": {
+              "id": "2934e985-e957-4dec-bdfb-953c9024a78f",
+              "title": "Fourth Briton is seized trying to join Isis",
+              "crop": {
+                "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/32c8f8856543fac1733907189c9ada3457b1baa3.jpg?crop=520%2C347%2C0%2C216",
+                "__typename": "Crop"
+              },
+              "__typename": "Image"
+            },
+            "section": null,
+            "publicationName": "TIMES",
+            "publishedTime": "2015-03-17T23:01:44.000Z",
+            "summary": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "A 21-year-old woman became the fourth Briton in less than a week last night to be detained by the Turkish"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/fourth-briton-is-seized-trying-to-join-isis-c8229nkpq",
+            "__typename": "Article"
+          }
+        ],
+        "__typename": "Articles"
+      },
+      "__typename": "Topic"
+    }
+  }
+}

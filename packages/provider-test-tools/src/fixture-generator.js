@@ -7,6 +7,7 @@ import {
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
+import topicChelsea from "../fixtures/topicChelsea.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
@@ -30,7 +31,7 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 20 } = {}) => {
+const makeTopic = ({ count = 21 } = {}) => {
   return {
     articles: {
       count: count,
@@ -59,6 +60,23 @@ const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   };
 };
 
+const makeTopicArticleList = ({ skip, first }, transform = id => id) => {
+  const articles = topicChelsea.data.topic.articles;
+
+  return {
+    data: {
+      topic: {
+        articles: {
+          ...articles,
+          list: transform(articles.list.slice(skip, skip + first)),
+          __typename: "Articles"
+        },
+        __typename: "Topic"
+      }
+    }
+  };
+};
+
 const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   delay,
   request: {
@@ -71,6 +89,23 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
     data: {
       author: {
         ...makeAuthor({ count, withImages })
+      }
+    }
+  }
+});
+
+const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
+  delay,
+  request: {
+    query: addTypenameToDocument(topicArticlesQuery),
+    variables: {
+      slug,
+    }
+  },
+  result: {
+    data: {
+      topic: {
+        ...makeTopic({ count })
       }
     }
   }
@@ -146,31 +181,31 @@ const makeArticleMocks = (
 
 const makeTopicArticleMocks = (
   {
-    count = 20,
-    first = 10,
-    skip = 0,
-    slug = "animals",
-    imageRatio = "3:2",
+    count = 21,
+    pageSize = 5,
+    withImages = true,
+    slug = "chelsea",
     delay = 1000
   } = {},
   transform
 ) => [
-  makeTopicMock({ count, slug, first, skip, imageRatio }),
-  ...new Array(Math.ceil(count / first)).fill(0).map((item, indx) => ({
+  makeTopicMock({ count, withImages, slug }),
+  ...new Array(Math.ceil(count / pageSize)).fill(0).map((item, indx) => ({
     delay,
     request: {
       query: addTypenameToDocument(topicArticlesQuery),
-      variables: {
-        imageRatio: "3:2",
-        first,
-        skip,
+      variables: makeVariables({
+        withImages,
+        skip: indx * pageSize,
+        pageSize,
         slug
-      }
+      })
     },
     result: makeTopicArticleList(
       {
-        skip,
-        first
+        skip: indx * pageSize,
+        first: pageSize,
+        withImages
       },
       transform
     )
