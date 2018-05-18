@@ -36,41 +36,57 @@ class AuthorProfileHead extends Component {
       );
     }
 
-    const url = `https://twitter.com/${twitter}`;
+    const renderTwitterLink = () => {
+      if (!twitter) return null;
 
-    return (
-      <AuthorHeadContainer>
-        <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
-        <Text
-          accessibilityLabel="author-name"
-          accessibilityRole="heading"
-          style={styles.name}
-          testID="author-name"
-        >
-          {name}
-        </Text>
-        <Text
-          accessibilityRole="heading"
-          aria-level="2"
-          style={styles.jobTitle}
-        >
-          {jobTitle && jobTitle.toLowerCase()}
-        </Text>
+      const twitterUrl = `https://twitter.com/${twitter}`;
+
+      return (
         <View style={styles.twitter}>
           <IconTwitter width={15} height={15} />
           <TextLink
             style={styles.twitterLink}
-            url={url}
-            onPress={e => onTwitterLinkPress(e, { twitter, url })}
+            url={twitterUrl}
+            onPress={e => onTwitterLinkPress(e, { twitter, twitterUrl })}
           >
             @{twitter}
           </TextLink>
         </View>
-        <View style={styles.biographyContainer}>
-          <Text testID="author-bio" style={styles.biography}>
-            {renderTrees(biography)}
+      );
+    };
+
+    return (
+      <AuthorHeadContainer>
+        {uri ? (
+          <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
+        ) : null}
+        {name ? (
+          <Text
+            accessibilityLabel="author-name"
+            accessibilityRole="heading"
+            style={styles.name}
+            testID="author-name"
+          >
+            {name}
           </Text>
-        </View>
+        ) : null}
+        {jobTitle ? (
+          <Text
+            accessibilityRole="heading"
+            aria-level="2"
+            style={styles.jobTitle}
+          >
+            {jobTitle.toLowerCase()}
+          </Text>
+        ) : null}
+        {renderTwitterLink()}
+        {biography ? (
+          <View style={styles.biographyContainer}>
+            <Text testID="author-bio" style={styles.biography}>
+              {renderTrees(biography)}
+            </Text>
+          </View>
+        ) : null}
       </AuthorHeadContainer>
     );
   }

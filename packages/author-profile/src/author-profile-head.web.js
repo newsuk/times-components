@@ -41,43 +41,59 @@ class AuthorProfileHead extends Component {
       );
     }
 
-    const url = `https://twitter.com/${twitter}`;
+    const renderTwitterLink = () => {
+      if (!twitter) return null;
 
-    return (
-      <AuthorHeadContainer>
-        <ImageContainer>
-          <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
-        </ImageContainer>
-        <AuthorNameWrapper
-          accessibilityLabel="author-name"
-          accessibilityRole="heading"
-          aria-level="1"
-          testID="author-name"
-        >
-          {name}
-        </AuthorNameWrapper>
-        <Text
-          accessibilityRole="heading"
-          aria-level="2"
-          style={styles.jobTitle}
-        >
-          {jobTitle && jobTitle.toLowerCase()}
-        </Text>
+      const twitterUrl = `https://twitter.com/${twitter}`;
+
+      return (
         <View style={styles.twitter}>
           <IconTwitter width={15} height={15} />
           <TextLink
             style={styles.twitterLink}
-            url={url}
-            onPress={e => onTwitterLinkPress(e, { twitter, url })}
+            url={twitterUrl}
+            onPress={e => onTwitterLinkPress(e, { twitter, twitterUrl })}
           >
             @{twitter}
           </TextLink>
         </View>
-        <BioContainer>
-          <Text testID="author-bio" style={styles.biography}>
-            {renderTrees(biography)}
+      );
+    };
+
+    return (
+      <AuthorHeadContainer>
+        {uri ? (
+          <ImageContainer>
+            <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
+          </ImageContainer>
+        ) : null}
+        {name ? (
+          <AuthorNameWrapper
+            accessibilityLabel="author-name"
+            accessibilityRole="heading"
+            aria-level="1"
+            testID="author-name"
+          >
+            {name}
+          </AuthorNameWrapper>
+        ) : null}
+        {jobTitle ? (
+          <Text
+            accessibilityRole="heading"
+            aria-level="2"
+            style={styles.jobTitle}
+          >
+            {jobTitle.toLowerCase()}
           </Text>
-        </BioContainer>
+        ) : null}
+        {renderTwitterLink()}
+        {biography ? (
+          <BioContainer>
+            <Text testID="author-bio" style={styles.biography}>
+              {renderTrees(biography)}
+            </Text>
+          </BioContainer>
+        ) : null}
       </AuthorHeadContainer>
     );
   }
