@@ -7,6 +7,19 @@ import {
   spacing
 } from "@times-components/styleguide";
 
+export const AuthorHeadWrapper = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+    padding-top: 30px;
+  `,
+    mediumUp: () => `
+    padding-top: 60px;
+  `
+  },
+  "AuthorHeadWrapper"
+);
+
 export const AuthorNameWrapper = withResponsiveStyles(
   Text,
   {

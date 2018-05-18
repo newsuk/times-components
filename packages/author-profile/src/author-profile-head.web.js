@@ -5,11 +5,12 @@ import { IconTwitter } from "@times-components/icons";
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
-import AuthorHeadContainer from "./author-head-container";
+import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 import {
+  AuthorHeadWrapper,
   AuthorNameWrapper,
   BioContainer,
   ImageContainer
@@ -61,40 +62,51 @@ class AuthorProfileHead extends Component {
     };
 
     return (
-      <AuthorHeadContainer>
-        {uri ? (
-          <ImageContainer>
-            <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
-          </ImageContainer>
-        ) : null}
-        {name ? (
-          <AuthorNameWrapper
-            accessibilityLabel="author-name"
-            accessibilityRole="heading"
-            aria-level="1"
-            testID="author-name"
+      <Animations.FadeIn>
+        <View
+          pointerEvents="box-none"
+          style={styles.authorHeadWrapper}
+          testID="author-head"
+        >
+          <AuthorHeadWrapper
+            accessibilityRole="banner"
+            style={styles.authorHeadContainer}
           >
-            {name}
-          </AuthorNameWrapper>
-        ) : null}
-        {jobTitle ? (
-          <Text
-            accessibilityRole="heading"
-            aria-level="2"
-            style={styles.jobTitle}
-          >
-            {jobTitle.toLowerCase()}
-          </Text>
-        ) : null}
-        {renderTwitterLink()}
-        {biography ? (
-          <BioContainer>
-            <Text testID="author-bio" style={styles.biography}>
-              {renderTrees(biography)}
-            </Text>
-          </BioContainer>
-        ) : null}
-      </AuthorHeadContainer>
+            {uri ? (
+              <ImageContainer>
+                <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
+              </ImageContainer>
+            ) : null}
+            {name ? (
+              <AuthorNameWrapper
+                accessibilityLabel="author-name"
+                accessibilityRole="heading"
+                aria-level="1"
+                testID="author-name"
+              >
+                {name}
+              </AuthorNameWrapper>
+            ) : null}
+            {jobTitle ? (
+              <Text
+                accessibilityRole="heading"
+                aria-level="2"
+                style={styles.jobTitle}
+              >
+                {jobTitle.toLowerCase()}
+              </Text>
+            ) : null}
+            {renderTwitterLink()}
+            {biography ? (
+              <BioContainer>
+                <Text testID="author-bio" style={styles.biography}>
+                  {renderTrees(biography)}
+                </Text>
+              </BioContainer>
+            ) : null}
+          </AuthorHeadWrapper>
+        </View>
+      </Animations.FadeIn>
     );
   }
 }

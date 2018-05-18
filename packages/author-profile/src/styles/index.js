@@ -25,6 +25,17 @@ const styles = StyleSheet.create({
     top: spacing(6),
     width: 100
   },
+  authorHeadWrapper: {
+    alignItems: "center",
+    backgroundColor: "transparent"
+  },
+  authorHeadContainer: {
+    width: "100%",
+    alignItems: "center",
+    flexDirection: "column",
+    paddingBottom: spacing(8),
+    backgroundColor: colours.functional.backgroundPrimary
+  },
   authorPhoto: {
     borderColor: colours.functional.contrast,
     borderRadius: 50,

@@ -5,7 +5,7 @@ import { IconTwitter } from "@times-components/icons";
 import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
-import AuthorHeadContainer from "./author-head-container";
+import { Animations, spacing } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
@@ -56,38 +56,45 @@ class AuthorProfileHead extends Component {
     };
 
     return (
-      <AuthorHeadContainer>
-        {uri ? (
-          <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
-        ) : null}
-        {name ? (
-          <Text
-            accessibilityLabel="author-name"
-            accessibilityRole="heading"
-            style={styles.name}
-            testID="author-name"
+      <Animations.FadeIn>
+        <View pointerEvents="box-none" style={styles.authorHeadWrapper}>
+          <View
+            accessibilityRole="banner"
+            style={[styles.authorHeadContainer, { paddingTop: spacing(6) }]}
           >
-            {name}
-          </Text>
-        ) : null}
-        {jobTitle ? (
-          <Text
-            accessibilityRole="heading"
-            aria-level="2"
-            style={styles.jobTitle}
-          >
-            {jobTitle.toLowerCase()}
-          </Text>
-        ) : null}
-        {renderTwitterLink()}
-        {biography ? (
-          <View style={styles.biographyContainer}>
-            <Text testID="author-bio" style={styles.biography}>
-              {renderTrees(biography)}
-            </Text>
+            {uri ? (
+              <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
+            ) : null}
+            {name ? (
+              <Text
+                accessibilityLabel="author-name"
+                accessibilityRole="heading"
+                style={styles.name}
+                testID="author-name"
+              >
+                {name}
+              </Text>
+            ) : null}
+            {jobTitle ? (
+              <Text
+                accessibilityRole="heading"
+                aria-level="2"
+                style={styles.jobTitle}
+              >
+                {jobTitle.toLowerCase()}
+              </Text>
+            ) : null}
+            {renderTwitterLink()}
+            {biography ? (
+              <View style={styles.biographyContainer}>
+                <Text testID="author-bio" style={styles.biography}>
+                  {renderTrees(biography)}
+                </Text>
+              </View>
+            ) : null}
           </View>
-        ) : null}
-      </AuthorHeadContainer>
+        </View>
+      </Animations.FadeIn>
     );
   }
 }
