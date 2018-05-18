@@ -1,5 +1,5 @@
-import sharedStyling from "../topic-functional";
+import sharedFunctional from "../topic-functional";
 
 describe("Topic functional tests on web", () => {
-  sharedStyling();
+  sharedFunctional();
 });
