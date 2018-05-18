@@ -21,9 +21,9 @@ class AuthorProfileHead extends Component {
     const {
       biography,
       isLoading,
+      jobTitle,
       name,
       onTwitterLinkPress,
-      title,
       twitter,
       uri
     } = this.props;
@@ -36,7 +36,7 @@ class AuthorProfileHead extends Component {
       <AuthorHeadContainer>
         <AuthorPhoto uri={uri} />
         <AuthorName name={name} />
-        <AuthorTitle title={title} />
+        <AuthorTitle title={jobTitle} />
         <View style={styles.twitter}>
           <IconTwitter width={15} height={15} />
           <TextLink

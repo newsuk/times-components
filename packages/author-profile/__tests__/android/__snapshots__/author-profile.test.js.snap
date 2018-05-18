@@ -48,9 +48,9 @@ exports[`1. Render an author profile page 1`] = `
           ]
         }
         isLoading={false}
+        jobTitle="Defence Editor"
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Defence Editor"
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
@@ -1586,9 +1586,9 @@ exports[`2. Render an author profile page without images 1`] = `
           ]
         }
         isLoading={false}
+        jobTitle="Defence Editor"
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Defence Editor"
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
@@ -2828,9 +2828,9 @@ exports[`3. Render an author profile page loading state 1`] = `
       <WithTrackEvents(AuthorProfileHead)
         biography={Array []}
         isLoading={true}
+        jobTitle=""
         name=""
         onTwitterLinkPress={[Function]}
-        title=""
         twitter={null}
         uri=""
       />

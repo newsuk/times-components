@@ -4,19 +4,19 @@ import { treePropType } from "@times-components/markup";
 export const propTypes = {
   biography: PropTypes.arrayOf(treePropType),
   isLoading: PropTypes.bool,
+  jobTitle: PropTypes.string,
   name: PropTypes.string,
   onTwitterLinkPress: PropTypes.func,
-  title: PropTypes.string,
   twitter: PropTypes.string,
   uri: PropTypes.string
 };
 
 export const defaultProps = {
   biography: [],
-  isLoading: false,
+  isLoading: true,
+  jobTitle: "",
   name: "",
   onTwitterLinkPress: () => {},
-  title: "",
   twitter: null,
   uri: ""
 };

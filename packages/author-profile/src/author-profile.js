@@ -60,7 +60,7 @@ const AuthorProfile = ({
       isLoading={false}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
-      title={jobTitle}
+      jobTitle={jobTitle}
       twitter={twitter}
       uri={uri}
     />
