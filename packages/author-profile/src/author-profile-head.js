@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import Gradient from "@times-components/gradient";
-import { TextLink } from "@times-components/link";
 import { IconTwitter } from "@times-components/icons";
-import { withTrackEvents } from "@times-components/tracking";
+import { TextLink } from "@times-components/link";
 import AuthorTitle from "./author-title";
 import Bio from "./author-bio";
 import AuthorName from "./author-name";
 import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
+import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 
 class AuthorProfileHead extends Component {
@@ -64,16 +64,4 @@ class AuthorProfileHead extends Component {
 AuthorProfileHead.propTypes = propTypes;
 AuthorProfileHead.defaultProps = defaultProps;
 
-export default withTrackEvents(AuthorProfileHead, {
-  analyticsEvents: [
-    {
-      eventName: "onTwitterLinkPress",
-      actionName: "Pressed",
-      trackingName: "TwitterLink",
-      getAttrs: (props, eventArgs) => ({
-        twitterHandle: props.twitter,
-        url: eventArgs[1] && eventArgs[1].url
-      })
-    }
-  ]
-});
+export default authorProfileHeadTrackingEvents(AuthorProfileHead);
