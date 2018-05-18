@@ -9,5 +9,5 @@ export const topicHeadPropTypes = {
 export const topicHeadDefaultProps = {
   name: "Animals",
   description: "Animals are multicellular eukaryotic organisms.",
-  isLoading: false
+  isLoading: true
 };

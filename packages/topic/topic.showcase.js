@@ -13,7 +13,7 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const page = 2;
+const page = 1;
 const pageSize = 5;
 const slug = "chelsea";
 

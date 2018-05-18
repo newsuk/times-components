@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { topicHeadPropTypes } from "./topic-head-proptypes";
+import { topicHeadPropTypes } from "./topic-head-prop-types";
 
 export const propTypes = {
   topic: PropTypes.shape({
