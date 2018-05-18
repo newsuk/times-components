@@ -15,7 +15,11 @@ export default () => {
     analyticsStream: () => {},
     onArticlePress: () => {},
     refetch: () => {},
-    slug: "chelsea"
+    slug: "chelsea",
+    topic: {
+      name: "Chelsea",
+      description: "A swanky part of town."
+    }
   };
 
   beforeEach(() => {
