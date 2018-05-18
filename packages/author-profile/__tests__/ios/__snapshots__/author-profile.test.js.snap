@@ -2901,24 +2901,19 @@ exports[`3. Render an author profile page loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
+              "backgroundColor": "#F9F8F3",
+              "minHeight": 264,
+              "width": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
-                "minHeight": 264,
-                "width": "100%",
-              }
-            }
-          />
-          <View
-            style={
-              Object {
+                "borderColor": "#FFFFFF",
+                "borderRadius": 50,
                 "height": 100,
+                "overflow": "hidden",
                 "position": "absolute",
                 "top": 30,
                 "width": 100,
@@ -2926,92 +2921,80 @@ exports[`3. Render an author profile page loading state 1`] = `
             }
           >
             <View
+              onLayout={[Function]}
               style={
                 Object {
-                  "borderColor": "#FFFFFF",
-                  "borderRadius": 50,
-                  "height": 100,
-                  "overflow": "hidden",
-                  "width": 100,
+                  "flex": 1,
                 }
               }
             >
-              <View
-                onLayout={[Function]}
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
               >
-                <ARTSurfaceView
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
                   }
-                >
-                  <ARTShape
-                    d={
-                      Array [
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                      ]
-                    }
-                    fill={
-                      Array [
-                        1,
-                        0,
-                        0,
-                        -0,
-                        0,
-                        0.9764705882352941,
-                        0.9764705882352941,
-                        0.9764705882352941,
-                        1,
-                        0.9294117647058824,
-                        0.9294117647058824,
-                        0.9294117647058824,
-                        1,
-                        0,
-                        1,
-                      ]
-                    }
-                    opacity={1}
-                    stroke={null}
-                    strokeCap={1}
-                    strokeDash={null}
-                    strokeJoin={1}
-                    strokeWidth={1}
-                    transform={
-                      Array [
-                        1,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                      ]
-                    }
-                  />
-                </ARTSurfaceView>
-              </View>
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
             </View>
           </View>
         </View>

@@ -58,9 +58,9 @@ const AuthorProfile = ({
     <AuthorProfileHead
       biography={biography}
       isLoading={false}
+      jobTitle={jobTitle}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
-      jobTitle={jobTitle}
       twitter={twitter}
       uri={uri}
     />

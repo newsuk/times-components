@@ -7,6 +7,24 @@ import {
 import { StyleSheet, Platform } from "react-native";
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    alignItems: "center",
+    backgroundColor: colours.functional.backgroundPrimary,
+    minHeight: 264,
+    width: "100%"
+  },
+  loadingGradient: {
+    flex: 1
+  },
+  loadingRoundImage: {
+    borderColor: colours.functional.contrast,
+    borderRadius: 50,
+    height: 100,
+    overflow: "hidden",
+    position: "absolute",
+    top: spacing(6),
+    width: 100
+  },
   twitter: {
     flexDirection: "row",
     ...Platform.select({
