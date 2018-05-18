@@ -6,10 +6,15 @@ const changedComponentsList = () => {
   const componentDirectories = [];
 
   changedComponents.forEach(changedPackage => {
-    componentDirectories.push(require.resolve(changedPackage.name).split("dist")[0].toString());
+    componentDirectories.push(
+      require.resolve(changedPackage.name).split("dist")[0]
+    );
   });
 
-  fs.writeFileSync('./fructose/rnscl.config', JSON.stringify(componentDirectories));
+  fs.writeFileSync(
+    "./fructose/rnscl.config",
+    JSON.stringify(componentDirectories)
+  );
 };
 
 changedComponentsList();
