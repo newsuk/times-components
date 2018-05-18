@@ -452,9 +452,8 @@ exports[`1. Render an author profile page 1`] = `
               <View
                 style={
                   Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
+                    "paddingBottom": 30,
+                    "paddingHorizontal": 10,
                   }
                 }
               >
@@ -2083,9 +2082,8 @@ exports[`2. Render an author profile page without images 1`] = `
               <View
                 style={
                   Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
+                    "paddingBottom": 30,
+                    "paddingHorizontal": 10,
                   }
                 }
               >

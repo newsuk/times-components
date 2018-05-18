@@ -3,8 +3,7 @@ import { Text, View } from "react-native";
 import Gradient from "@times-components/gradient";
 import { IconTwitter } from "@times-components/icons";
 import { TextLink } from "@times-components/link";
-import Bio from "./author-bio";
-import AuthorName from "./author-name";
+import { renderTrees } from "@times-components/markup";
 import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
@@ -42,7 +41,14 @@ class AuthorProfileHead extends Component {
     return (
       <AuthorHeadContainer>
         <AuthorPhoto uri={uri} />
-        <AuthorName name={name} />
+        <Text
+          accessibilityLabel="author-name"
+          accessibilityRole="heading"
+          style={styles.name}
+          testID="author-name"
+        >
+          {name}
+        </Text>
         <Text
           accessibilityRole="heading"
           aria-level="2"
@@ -60,7 +66,11 @@ class AuthorProfileHead extends Component {
             @{twitter}
           </TextLink>
         </View>
-        <Bio biography={biography} />
+        <View style={styles.biographyContainer}>
+          <Text testID="author-bio" style={styles.biography}>
+            {renderTrees(biography)}
+          </Text>
+        </View>
       </AuthorHeadContainer>
     );
   }

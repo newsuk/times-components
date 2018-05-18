@@ -4,7 +4,7 @@ import {
   fontSizes,
   spacing
 } from "@times-components/styleguide";
-import { StyleSheet, Platform } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   loadingContainer: {
@@ -25,10 +25,26 @@ const styles = StyleSheet.create({
     top: spacing(6),
     width: 100
   },
+  name: {
+    color: colours.functional.brandColour,
+    fontFamily: fonts.headline,
+    fontSize: fontSizes.headline
+  },
   jobTitle: {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegularSmallCaps,
     fontSize: fontSizes.meta
+  },
+  biographyContainer: {
+    paddingBottom: spacing(6),
+    paddingHorizontal: spacing(2)
+  },
+  biography: {
+    color: colours.functional.primary,
+    fontFamily: fonts.body,
+    fontSize: fontSizes.secondary,
+    lineHeight: 26,
+    textAlign: "center"
   },
   twitter: {
     flexDirection: "row",

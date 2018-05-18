@@ -3,13 +3,13 @@ import { Text, View } from "react-native";
 import Gradient from "@times-components/gradient";
 import { IconTwitter } from "@times-components/icons";
 import { TextLink } from "@times-components/link";
-import Bio from "./author-bio";
-import AuthorName from "./author-name";
+import { renderTrees } from "@times-components/markup";
 import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
+import { AuthorNameWrapper, BioContainer } from "./styles/responsive";
 
 class AuthorProfileHead extends Component {
   shouldComponentUpdate(nextProps) {
@@ -42,7 +42,14 @@ class AuthorProfileHead extends Component {
     return (
       <AuthorHeadContainer>
         <AuthorPhoto uri={uri} />
-        <AuthorName name={name} />
+        <AuthorNameWrapper
+          accessibilityLabel="author-name"
+          accessibilityRole="heading"
+          aria-level="1"
+          testID="author-name"
+        >
+          {name}
+        </AuthorNameWrapper>
         <Text
           accessibilityRole="heading"
           aria-level="2"
@@ -60,7 +67,11 @@ class AuthorProfileHead extends Component {
             @{twitter}
           </TextLink>
         </View>
-        <Bio biography={biography} />
+        <BioContainer>
+          <Text testID="author-bio" style={styles.biography}>
+            {renderTrees(biography)}
+          </Text>
+        </BioContainer>
       </AuthorHeadContainer>
     );
   }
