@@ -4,7 +4,7 @@ exports[`1. Render a Topic page 1`] = `
 <ArticleList
   articleListHeader={
     <TopicHead
-      description="A swanky part of town"
+      description="A swanky part of town."
       isLoading={false}
       name="Chelsea"
     />

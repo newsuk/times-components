@@ -17,15 +17,10 @@ const Topic = ({
   slug,
   topic
 }) => {
-
   const { name, description } = topic;
 
   const articleListHeader = (
-    <TopicHead
-      name={name}
-      description={description}
-      isLoading={false}
-    />
+    <TopicHead name={name} description={description} isLoading={false} />
   );
 
   return (

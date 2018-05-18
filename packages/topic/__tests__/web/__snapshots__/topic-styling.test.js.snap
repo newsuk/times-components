@@ -223,7 +223,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
           data-testid="topic-description"
           dir="auto"
         >
-          A swanky part of town
+          A swanky part of town.
         </div>
       </div>
     </div>

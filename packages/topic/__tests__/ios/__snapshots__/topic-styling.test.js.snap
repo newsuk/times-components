@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic styling tests on web should render styling correctly 1`] = `
+exports[`Topic styling tests on ios should render styling correctly 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
@@ -16,7 +16,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   ListHeaderComponent={
     <View>
       <TopicHead
-        description="A swanky part of town"
+        description="A swanky part of town."
         isLoading={false}
         name="Chelsea"
       />
@@ -163,7 +163,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
               }
               testID="topic-description"
             >
-              A swanky part of town
+              A swanky part of town.
             </Text>
           </View>
         </View>
