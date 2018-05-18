@@ -83,11 +83,6 @@ exports[`1. Render an author profile page 1`] = `
           aria-level="2"
           dir="auto"
           role="heading"
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-            }
-          }
         >
           defence editor
         </h2>
@@ -718,11 +713,6 @@ exports[`2. Render an author profile page without images 1`] = `
           aria-level="2"
           dir="auto"
           role="heading"
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-            }
-          }
         >
           defence editor
         </h2>

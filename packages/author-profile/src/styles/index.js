@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
     top: spacing(6),
     width: 100
   },
+  jobTitle: {
+    color: colours.functional.secondary,
+    fontFamily: fonts.bodyRegularSmallCaps,
+    fontSize: fontSizes.meta
+  },
   twitter: {
     flexDirection: "row",
     ...Platform.select({
