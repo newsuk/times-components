@@ -25,6 +25,15 @@ const styles = StyleSheet.create({
     top: spacing(6),
     width: 100
   },
+  authorPhoto: {
+    borderColor: colours.functional.contrast,
+    borderRadius: 50,
+    marginBottom: spacing(4),
+    marginLeft: "auto",
+    marginRight: "auto",
+    overflow: "hidden",
+    width: 100
+  },
   name: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,

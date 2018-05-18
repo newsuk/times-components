@@ -15,16 +15,7 @@ exports[`1. Render an author profile page 1`] = `
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
         >
-          <div
-            style={
-              Object {
-                "borderBottomLeftRadius": "50%",
-                "borderBottomRightRadius": "50%",
-                "borderTopLeftRadius": "50%",
-                "borderTopRightRadius": "50%",
-              }
-            }
-          >
+          <div>
             <div
               style={
                 Object {
@@ -645,16 +636,7 @@ exports[`2. Render an author profile page without images 1`] = `
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
         >
-          <div
-            style={
-              Object {
-                "borderBottomLeftRadius": "50%",
-                "borderBottomRightRadius": "50%",
-                "borderTopLeftRadius": "50%",
-                "borderTopRightRadius": "50%",
-              }
-            }
-          >
+          <div>
             <div
               style={
                 Object {

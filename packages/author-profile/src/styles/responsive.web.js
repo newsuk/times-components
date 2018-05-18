@@ -36,3 +36,16 @@ export const BioContainer = withResponsiveStyles(
   },
   "BioContainer"
 );
+
+export const ImageContainer = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+    width: 100px;
+  `,
+    mediumUp: () => `
+    width: 116px;
+  `
+  },
+  "ImageContainer"
+);

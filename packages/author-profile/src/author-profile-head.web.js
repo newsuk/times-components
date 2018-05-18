@@ -2,14 +2,18 @@ import React, { Component } from "react";
 import { Text, View } from "react-native";
 import Gradient from "@times-components/gradient";
 import { IconTwitter } from "@times-components/icons";
+import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
-import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
-import { AuthorNameWrapper, BioContainer } from "./styles/responsive";
+import {
+  AuthorNameWrapper,
+  BioContainer,
+  ImageContainer
+} from "./styles/responsive";
 
 class AuthorProfileHead extends Component {
   shouldComponentUpdate(nextProps) {
@@ -41,7 +45,9 @@ class AuthorProfileHead extends Component {
 
     return (
       <AuthorHeadContainer>
-        <AuthorPhoto uri={uri} />
+        <ImageContainer>
+          <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
+        </ImageContainer>
         <AuthorNameWrapper
           accessibilityLabel="author-name"
           accessibilityRole="heading"

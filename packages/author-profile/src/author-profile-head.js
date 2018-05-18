@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Text, View } from "react-native";
 import Gradient from "@times-components/gradient";
 import { IconTwitter } from "@times-components/icons";
+import Image from "@times-components/image";
 import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
-import AuthorPhoto from "./author-photo";
 import AuthorHeadContainer from "./author-head-container";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
@@ -40,7 +40,7 @@ class AuthorProfileHead extends Component {
 
     return (
       <AuthorHeadContainer>
-        <AuthorPhoto uri={uri} />
+        <Image uri={uri} style={styles.authorPhoto} aspectRatio={1} />
         <Text
           accessibilityLabel="author-name"
           accessibilityRole="heading"
