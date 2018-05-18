@@ -22,7 +22,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "Default Topics Page",
+      name: "Default",
       component: (_, { decorateAction }) => {
         const props = {
           analyticsStream: storybookReporter,
