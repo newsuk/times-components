@@ -1,41 +1,53 @@
-import "react-native";
 import React from "react";
+import StorybookProvider from "@times-components/storybook/storybook-provider";
+import storybookReporter from "@times-components/tealium-utils";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
+
 import Topic from "./src/topic";
+
+const preventDefaultedAction = decorateAction =>
+  decorateAction([
+    ([e, ...args]) => {
+      e.preventDefault();
+      return ["[SyntheticEvent (storybook prevented default)]", ...args];
+    }
+  ]);
+
+const page = 1;
+const pageSize = 5;
+const slug = "chelsea";
 
 export default {
   name: "Pages/Topic",
   children: [
     {
       type: "story",
-      name: "Topic",
-      component: () => {
+      name: "Default",
+      component: (_, { decorateAction }) => {
         const props = {
-          name: "Animals"
+          analyticsStream: storybookReporter,
+          onArticlePress: preventDefaultedAction(decorateAction)(
+            "onArticlePress"
+          ),
+          slug,
+          page,
+          pageSize,
+          topic: {
+            name: "Chelsea",
+            description: "A swanky part of town."
+          }
         };
-        return <Topic {...props} />;
-      }
-    },
-    {
-      type: "story",
-      name: "Topic with description",
-      component: () => {
-        const props = {
-          name: "Animals",
-          description:
-            "Animals are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few  exceptions, animals consume organic materials."
-        };
-        return <Topic {...props} />;
-      }
-    },
-    {
-      type: "story",
-      name: "Topic is loading",
-      component: () => {
-        const props = {
-          name: "Animals",
-          isLoading: true
-        };
-        return <Topic {...props} />;
+
+        const mocks = fixtureGenerator.makeTopicArticleMocks({
+          withImages: true,
+          pageSize
+        });
+
+        return (
+          <StorybookProvider mocks={mocks}>
+            <Topic {...props} />
+          </StorybookProvider>
+        );
       }
     }
   ]

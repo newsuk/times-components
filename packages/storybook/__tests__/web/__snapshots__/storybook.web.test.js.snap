@@ -4,6 +4,7 @@ exports[`Storybook Decorator tests on web should render a Bar Spacing Decorator 
 <div
   style={
     Object {
+      "WebkitBoxFlex": "1 !important",
       "WebkitFlex": 1,
       "WebkitFlexGrow": "1 !important",
       "WebkitFlexShrink": "1 !important",
@@ -32,6 +33,7 @@ exports[`Storybook Decorator tests on web should render a Centered Decorator 1`]
       "WebkitAlignItems": "center",
       "WebkitBoxAlign": "center",
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": "1 !important",
       "WebkitBoxOrient": "horizontal",
       "WebkitBoxPack": "center",
       "WebkitFlex": 1,
@@ -71,6 +73,7 @@ exports[`Storybook Decorator tests on web should render a Lateral Spacing Decora
 <div
   style={
     Object {
+      "WebkitBoxFlex": "1 !important",
       "WebkitFlex": 1,
       "WebkitFlexGrow": "1 !important",
       "WebkitFlexShrink": "1 !important",
@@ -97,6 +100,7 @@ exports[`Storybook Decorator tests on web should render a White Background Decor
 <div
   style={
     Object {
+      "WebkitBoxFlex": "1 !important",
       "WebkitFlex": 1,
       "WebkitFlexGrow": "1 !important",
       "WebkitFlexShrink": "1 !important",

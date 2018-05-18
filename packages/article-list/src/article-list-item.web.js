@@ -17,6 +17,7 @@ import {
 
 const ArticleListItem = props => {
   const {
+    byline,
     headline,
     imageRatio,
     imageSize,
@@ -26,6 +27,7 @@ const ArticleListItem = props => {
     onPress,
     publicationName,
     publishedTime,
+    section,
     shortSummary,
     showImage,
     summary,
@@ -49,6 +51,12 @@ const ArticleListItem = props => {
   }
 
   const childProps = {
+    bylineProps: byline
+      ? {
+          ast: byline,
+          color: colours.section[section] || colours.section.default
+        }
+      : null,
     datePublicationProps: {
       date: publishedTime,
       publication: publicationName

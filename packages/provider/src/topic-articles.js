@@ -39,4 +39,16 @@ export const query = gql`
   }
 `;
 
-export default connectGraphql(query);
+const propsToVariables = ({
+  slug,
+  pageSize,
+  page,
+  articleImageRatio = "3:2"
+}) => ({
+  slug,
+  first: pageSize,
+  skip: pageSize * (page - 1),
+  imageRatio: articleImageRatio
+});
+
+export default connectGraphql(query, propsToVariables);

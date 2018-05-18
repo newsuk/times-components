@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { propTypes, defaultProps } from "./proptypes";
+import { propTypes, defaultProps } from "./topic-head-prop-types";
 import { getHeadContainer } from "./styles/responsive";
 import styles from "./styles";
 import HeadContent from "./topic-head-content";

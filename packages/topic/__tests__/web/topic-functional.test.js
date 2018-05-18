@@ -1,4 +1,4 @@
-import sharedFunctional from "../shared-functional";
+import sharedFunctional from "../topic-functional";
 
 describe("Topic functional tests on web", () => {
   sharedFunctional();
