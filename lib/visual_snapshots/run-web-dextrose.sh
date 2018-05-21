@@ -5,7 +5,6 @@ npx selenium-standalone install &&
 npx selenium-standalone start 2>> selenium.log & 
 npm run fetch-fonts
 
-
 ##construct list of changed packages
 npx lerna ls --json --since > fructose/changedPackages.json
 
@@ -17,7 +16,6 @@ npx rnscl --pattern '*.showcase*' --outputFile ./fructose/components.js --config
 
 ## build vendor package
 npx webpack --config fructose/vendor.webpack.config.js
-
 
 ##start bundler
 npx react-native start --reset-cache &
