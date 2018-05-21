@@ -3,6 +3,7 @@ import {
   authorProfileQuery,
   articleListNoImagesQuery,
   articleListWithImagesQuery,
+  topicQuery,
   topicArticlesQuery
 } from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
@@ -32,11 +33,9 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 10 } = {}) => ({
-  articles: {
-    count,
-    __typename: "Articles"
-  },
+const makeTopic = () => ({
+  name: "Chelsea",
+  description: "A swanky part of town.",
   __typename: "Topic"
 });
 
@@ -95,7 +94,7 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
 const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
   delay,
   request: {
-    query: addTypenameToDocument(topicArticlesQuery),
+    query: addTypenameToDocument(topicQuery),
     variables: {
       slug
     }

@@ -8,6 +8,7 @@ import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
 
 import Topic from "./src/topic";
+import TopicProvider from "../provider/src/topic";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -21,16 +22,10 @@ const pageSize = 5;
 
 const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
-  isLoading: false,
-  name: "Animals",
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
   slug: "chelsea",
-  topic: {
-    name: "Chelsea",
-    description: "A swanky part of town."
-  }
 });
 
 const mocks = fixtureGenerator.makeTopicArticleMocks({
@@ -46,7 +41,16 @@ export default {
       name: "Default",
       component: (_, { decorateAction }) => (
         <StorybookProvider mocks={mocks}>
-          <Topic {...getProps(decorateAction)} />
+          <TopicProvider debounceTimeMs={0} slug={slug}>
+              {({ topic, error, isLoading }) => (
+                <Topic
+                  {...getProps(decorateAction)}
+                  topic={topic}
+                  error={error}
+                  isLoading={isLoading}
+                />
+              )}
+            </TopicProvider>
         </StorybookProvider>
       )
     },
