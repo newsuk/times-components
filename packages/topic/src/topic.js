@@ -23,6 +23,22 @@ const Topic = ({
     <TopicHead name={name} description={description} isLoading={false} />
   );
 
+  const updateQuery = (prev, { fetchMoreResult }) =>
+    fetchMoreResult
+      ? {
+          topic: {
+            ...prev.topic,
+            articles: {
+              ...prev.topic.articles,
+              list: [
+                ...prev.topic.articles.list,
+                ...fetchMoreResult.topic.articles.list
+              ]
+            }
+          }
+        }
+      : prev;
+
   return (
     <TopicArticlesProvider
       articleImageRatio="3:2"
@@ -34,6 +50,7 @@ const Topic = ({
       {({
         topic: data,
         error: articlesError,
+        fetchMore: fetchMoreArticles,
         isLoading: articlesLoading,
         pageSize,
         refetch: refetchArticles,
@@ -45,6 +62,7 @@ const Topic = ({
           articlesLoading={articlesLoading}
           count={get(data, "articles.count", 0)}
           error={articlesError}
+          fetchMore={fetchMoreArticles}
           imageRatio={ratioTextToFloat(imageRatio)}
           onArticlePress={onArticlePress}
           onNext={onNext}
@@ -53,6 +71,7 @@ const Topic = ({
           pageSize={pageSize}
           refetch={refetchArticles}
           showImages
+          updateQuery={updateQuery}
         />
       )}
     </TopicArticlesProvider>

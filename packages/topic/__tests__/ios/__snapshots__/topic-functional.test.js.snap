@@ -12,6 +12,7 @@ exports[`1. Render a Topic page 1`] = `
   articles={Array []}
   articlesLoading={true}
   count={0}
+  fetchMore={[Function]}
   imageRatio={1.5}
   onArticlePress={[Function]}
   onNext={[Function]}
@@ -20,5 +21,6 @@ exports[`1. Render a Topic page 1`] = `
   pageSize={3}
   refetch={[Function]}
   showImages={true}
+  updateQuery={[Function]}
 />
 `;
