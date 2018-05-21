@@ -8,6 +8,7 @@ import AuthorArticlesWithImagesProvider, {
   query as articleListWithImagesQuery
 } from "./author-articles-with-images";
 import ArticleProvider, { query as articleQuery } from "./article";
+import TopicProvider, { query as TopicQuery } from "./topic";
 import TopicArticlesProvider, {
   query as topicArticlesQuery
 } from "./topic-articles";
@@ -23,6 +24,8 @@ export {
   authorProfileQuery,
   articleListNoImagesQuery,
   articleListWithImagesQuery,
+  TopicProvider,
+  TopicQuery,
   TopicArticlesProvider,
   topicArticlesQuery
 };

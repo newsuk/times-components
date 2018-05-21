@@ -8,7 +8,7 @@ import {
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
-import topicFixture from "../fixtures/topic.json";
+import topicFixture from "../fixtures/topic-articles.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
