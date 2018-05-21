@@ -193,3 +193,9 @@ exports[`2. Render an topics page loading state 1`] = `
   showImages={true}
 />
 `;
+
+exports[`3. Render an topics page error state with an invalid Topic Query 1`] = `
+<ArticleListPageError
+  refetch={[Function]}
+/>
+`;

@@ -274,6 +274,28 @@ const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
   ];
 };
 
+const makeMocksWithTopicError = ({ withImages, slug, pageSize }) => {
+  const [, ...articles] = makeTopicArticleMocks({
+    withImages,
+    slug,
+    pageSize
+  });
+
+  return [
+    {
+      request: {
+        query: addTypenameToDocument(topicQuery),
+        variables: {
+          slug
+        }
+      },
+      error: new Error("Could not get topic")
+    },
+    makeTopicMock({ withImages, slug }),
+    ...articles
+  ];
+};
+
 export default {
   makeAuthor,
   makeArticleList,
@@ -283,5 +305,6 @@ export default {
   makeBrokenMocks,
   makeMocksWithPageError,
   makeMocksWithAuthorError,
-  makeTopicArticleMocks
+  makeTopicArticleMocks,
+  makeMocksWithTopicError
 };
