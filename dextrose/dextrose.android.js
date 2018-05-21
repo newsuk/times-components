@@ -1,23 +1,11 @@
 const path = require("path");
 
+const ignoredShowcases = require("./ignored-showcases");
+
 const config = {
   snapPath: path.join(__dirname, "/snappy"),
   platformName: "Android",
-  ignoredStories: [
-    "Advertisement",
-    "AuthorHeadTracking",
-    "AuthorProfileTracking",
-    "Brightcove",
-    "PaginationTracking",
-    "Provider",
-    "TrackingPage",
-    "TrackingEvent",
-    "Error",
-    "error",
-    "AuthorProfileLoading",
-    "Video",
-    "Tracking"
-  ]
+  ignoredShowcases
 };
 
 module.exports = config;
