@@ -3,8 +3,6 @@ const ignoredStories = [
   "brightcove",
   "Provider",
   "provider",
-  "Error",
-  "error",
   "Video",
   "video",
   "Tracking",
