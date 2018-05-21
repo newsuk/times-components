@@ -1,4 +1,4 @@
-const ignoredStories = [
+const ignoredShowcases = [
   "Brightcove",
   "brightcove",
   "Provider",
@@ -9,4 +9,4 @@ const ignoredStories = [
   "tracking"
 ];
 
-module.exports = ignoredStories;
+module.exports = ignoredShowcases;

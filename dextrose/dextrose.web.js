@@ -1,11 +1,11 @@
 const path = require("path");
 
-const ignoredStories = require("./ignored-showcases");
+const ignoredShowcases = require("./ignored-showcases");
 
 const config = {
   snapPath: path.join(__dirname, "/snappy"),
   platformName: "web",
-  ignoredStories,
+  ignoredShowcases,
   breakpoints: [520]
 };
 
