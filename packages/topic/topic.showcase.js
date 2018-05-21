@@ -21,6 +21,7 @@ const pageSize = 5;
 
 const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
+  isLoading: false,
   name: "Animals",
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
