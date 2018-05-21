@@ -1,7 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopicHead functional tests on ios should render correctly 1`] = `<View />`;
+exports[`TopicHead functional tests on ios should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 35,
+      "width": "100%",
+    }
+  }
+/>
+`;
 
-exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `<View />`;
+exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 35,
+      "width": "100%",
+    }
+  }
+/>
+`;
 
-exports[`TopicHead functional tests on ios should render correctly with a description 1`] = `<View />`;
+exports[`TopicHead functional tests on ios should render correctly with a description 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F8F3",
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingHorizontal": 10,
+      "paddingTop": 35,
+      "width": "100%",
+    }
+  }
+/>
+`;
