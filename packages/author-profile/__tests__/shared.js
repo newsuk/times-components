@@ -1,9 +1,10 @@
-import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
+import AuthorProfileHeadTwitter from "../src/author-profile-head-twitter";
 import longSummaryLength from "../author-profile-constants";
 
 export default () => {
@@ -91,6 +92,22 @@ export default () => {
     expect(tree).toMatchSnapshot(
       "4. Render an author profile page error state"
     );
+  });
+
+  it("should handle the twitter link when pressed", () => {
+    const mockOnPress = jest.fn();
+
+    const twitterProps = {
+      onTwitterLinkPress: mockOnPress,
+      twitter: "testTwitterHandle",
+      url: "www.twitter.com/"
+    };
+
+    const wrapper = shallow(<AuthorProfileHeadTwitter {...twitterProps} />);
+
+    wrapper.find("TextLink").simulate("press");
+
+    expect(mockOnPress).toHaveBeenCalled();
   });
 
   it("should send analytics when rendering an author profile page", () => {

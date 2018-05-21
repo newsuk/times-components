@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import Gradient from "@times-components/gradient";
-import { IconTwitter } from "@times-components/icons";
 import Image from "@times-components/image";
-import { TextLink } from "@times-components/link";
 import { renderTrees } from "@times-components/markup";
 import { Animations, spacing } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
+import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 
@@ -42,16 +41,11 @@ class AuthorProfileHead extends Component {
       const twitterUrl = `https://twitter.com/${twitter}`;
 
       return (
-        <View style={styles.twitter}>
-          <IconTwitter width={15} height={15} />
-          <TextLink
-            style={styles.twitterLink}
-            url={twitterUrl}
-            onPress={e => onTwitterLinkPress(e, { twitter, twitterUrl })}
-          >
-            @{twitter}
-          </TextLink>
-        </View>
+        <AuthorProfileHeadTwitter
+          onTwitterLinkPress={onTwitterLinkPress}
+          twitter={twitter}
+          url={twitterUrl}
+        />
       );
     };
 
