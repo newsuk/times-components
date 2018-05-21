@@ -64,23 +64,25 @@ class ArticleList extends Component {
 
     const data = articlesLoading
       ? Array(pageSize)
-        .fill()
-        .map((number, index) => ({
-          elementId: `empty.${index}`,
-          id: index,
-          isLoading: true
-        }))
+          .fill()
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
+            isLoading: true
+          }))
       : articles.map((article, index) => ({
-        ...article,
-        elementId: `${article.id}.${index}`
-      }));
+          ...article,
+          elementId: `${article.id}.${index}`
+        }));
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
     const fetchMoreOnEndReached = () =>
       this.state.loadMoreError
         ? null
-        : fetchMore(data.length).catch(loadMoreError => this.setState({ loadMoreError }));
+        : fetchMore(data.length).catch(loadMoreError =>
+            this.setState({ loadMoreError })
+          );
 
     const articleListFooter = () => {
       if (data.length >= count) {

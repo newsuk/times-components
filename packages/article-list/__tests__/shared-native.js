@@ -179,7 +179,7 @@ export default () => {
       />
     ).dive();
     wrapper.setState({ loadMoreError: "Error" });
-      
+
     const button = wrapper
       .dive()
       .dive()
