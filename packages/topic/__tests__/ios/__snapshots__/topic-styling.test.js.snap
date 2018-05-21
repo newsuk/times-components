@@ -5,27 +5,23 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
   ItemSeparatorComponent={[Function]}
   ListFooterComponent={
     <ArticleListPagination
-      count={0}
       hideResults={true}
       onNext={[Function]}
       onPrev={[Function]}
-      page={1}
       pageSize={3}
     />
   }
   ListHeaderComponent={
     <View>
       <TopicHead
-        description="A swanky part of town."
-        isLoading={false}
-        name="Chelsea"
+        description=""
+        isLoading={true}
+        name=""
       />
       <ArticleListPagination
-        count={0}
         hideResults={false}
         onNext={[Function]}
         onPrev={[Function]}
-        page={1}
         pageSize={3}
       />
     </View>
@@ -104,69 +100,12 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               "backgroundColor": "#F9F8F3",
               "flexDirection": "column",
               "minHeight": 90,
-              "paddingBottom": 20,
               "paddingHorizontal": 10,
               "paddingTop": 35,
               "width": "100%",
             }
           }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-              }
-            }
-          >
-            <Text
-              accessibilityLabel="topic-name"
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#1D1D1B",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 40,
-                  "paddingBottom": 20,
-                }
-              }
-              testID="topic-name"
-            >
-              Chelsea
-            </Text>
-            <View
-              style={
-                Object {
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "justifyContent": "center",
-                  "width": 200,
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 15,
-                  "lineHeight": 26,
-                  "paddingVertical": 20,
-                  "textAlign": "center",
-                }
-              }
-              testID="topic-description"
-            >
-              A swanky part of town.
-            </Text>
-          </View>
-        </View>
+        />
         <View
           style={
             Object {

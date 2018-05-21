@@ -1,24 +1,3427 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render a Topic page 1`] = `
-<ArticleList
-  articleListHeader={
-    <TopicHead
-      description="A swanky part of town."
-      isLoading={false}
-      name="Chelsea"
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <ArticleListPagination
+      count={10}
+      hideResults={true}
+      onNext={[Function]}
+      onPrev={[Function]}
+      page={1}
+      pageSize={3}
     />
   }
-  articles={Array []}
-  articlesLoading={true}
-  count={0}
-  imageRatio={1.5}
-  onArticlePress={[Function]}
-  onNext={[Function]}
-  onPrev={[Function]}
-  page={1}
+  ListHeaderComponent={
+    <View>
+      <TopicHead
+        description="A swanky part of town."
+        isLoading={false}
+        name="Chelsea"
+      />
+      <ArticleListPagination
+        count={10}
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+        page={1}
+        pageSize={3}
+      />
+    </View>
+  }
+  accessibilityID="scroll-view"
+  data={
+    Array [
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Russia Ben Hoyle Moscow David Taylor Washington",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "elementId": "77d22dd0-ccd7-11e4-81dd-064fe933cd41.0",
+        "headline": "Splits in Europe may end Russian sanctions",
+        "id": "77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+        "label": "Middle East",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7f41fd78-3fd6-11e8-bcc9-66c6aab151ca.jpg?crop=1600%2C900%2C0%2C0",
+            Symbol(id): "$Image:86ee3055-9780-4732-a210-1e3987d84099.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "86ee3055-9780-4732-a210-1e3987d84099",
+          "title": "Splits in Europe may end Russian sanctions",
+          Symbol(id): "Image:86ee3055-9780-4732-a210-1e3987d84099",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T18:57:58.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/splits-in-europe-may-end-russian-sanctions-kstdpq5rn",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Michael Savage Chief Political Correspondent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "elementId": "4fe43ad8-ccec-11e4-81dd-064fe933cd41.1",
+        "headline": "Inheritance tax cut will ‘push up house prices’",
+        "id": "4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fece26c23-6333-3b2c-9b7f-dc6fb6c80eca.jpg?crop=780%2C520%2C0%2C0",
+            Symbol(id): "$Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+          "title": "Inheritance tax cut will ‘push up house prices’",
+          Symbol(id): "Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T21:27:12.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/inheritance-tax-cut-will-push-up-house-prices-gbzqbdgcz",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Sean O’Neill, Richard Ford, David Brown",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "elementId": "10f461fc-cce4-11e4-81dd-064fe933cd41.2",
+        "headline": "Immunity offer over VIP child abuse ring",
+        "id": "10f461fc-cce4-11e4-81dd-064fe933cd41",
+        "label": "Environment",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa7e876c-06d9-11e8-8e80-008642e5faa1.jpg?crop=3000%2C1687%2C0%2C156",
+            Symbol(id): "$Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+          "title": "Immunity offer over VIP child abuse ring",
+          Symbol(id): "Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T20:28:04.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/immunity-offer-over-vip-child-abuse-ring-kpvvhb6mn",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
   pageSize={3}
-  refetch={[Function]}
-  showImages={true}
-/>
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={2}
+  stickyHeaderIndices={Array []}
+  testID="scroll-view"
+  updateCellsBatchingPeriod={50}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "minHeight": 90,
+              "paddingBottom": 20,
+              "paddingHorizontal": 10,
+              "paddingTop": 35,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+              }
+            }
+          >
+            <Text
+              accessibilityLabel="topic-name"
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 40,
+                  "paddingBottom": 20,
+                }
+              }
+              testID="topic-name"
+            >
+              Chelsea
+            </Text>
+            <View
+              style={
+                Object {
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "justifyContent": "center",
+                  "width": 200,
+                }
+              }
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 15,
+                  "lineHeight": 26,
+                  "paddingVertical": 20,
+                  "textAlign": "center",
+                }
+              }
+              testID="topic-description"
+            >
+              A swanky part of town.
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "stretch",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
+                  }
+                  testID="results-message"
+                >
+                  Showing 1 - 3 of 10 results
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View />
+                <View>
+                  <View
+                    accessible={true}
+                    nativeBackgroundAndroid={
+                      Object {
+                        "attribute": "selectableItemBackground",
+                        "type": "ThemeAttrAndroid",
+                      }
+                    }
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    pointerEvents="box-only"
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "baseline",
+                          "flexDirection": "row",
+                          "padding": 12,
+                        }
+                      }
+                      testID="pagination-button-next"
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#006699",
+                            "fontFamily": "GillSansMTStd-Medium",
+                            "fontSize": 15,
+                            "height": 15,
+                            "marginRight": 10,
+                            "textAlign": "right",
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          Next
+                        </Text>
+                      </Text>
+                      <svg
+                        height={12}
+                        width={7}
+                      >
+                        <g
+                          fill="#006699"
+                        >
+                          <path />
+                        </g>
+                      </svg>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7f41fd78-3fd6-11e8-bcc9-66c6aab151ca.jpg?crop=1600%2C900%2C0%2C0&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <ARTSurfaceView
+                          style={
+                            Object {
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": 0,
+                        }
+                      }
+                    >
+                      M I D D L E   E A S T
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Splits in Europe may end Russian sanctions
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Tuesday March 17 2015, 06:57pm, The Times
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                        }
+                      }
+                    >
+                      Russia Ben Hoyle Moscow David Taylor Washington
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fece26c23-6333-3b2c-9b7f-dc6fb6c80eca.jpg?crop=780%2C520%2C0%2C0&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <ARTSurfaceView
+                          style={
+                            Object {
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": 0,
+                        }
+                      }
+                    >
+                      S C I E N C E
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Inheritance tax cut will ‘push up house prices’
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Tuesday March 17 2015, 09:27pm, The Times
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                        }
+                      }
+                    >
+                      Michael Savage Chief Political Correspondent
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 10,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View
+                  aspectRatio={1.5}
+                >
+                  <View
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <Image
+                      onLoad={[Function]}
+                      source={
+                        Object {
+                          "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa7e876c-06d9-11e8-8e80-008642e5faa1.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
+                        }
+                      }
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        onLayout={[Function]}
+                        style={
+                          Object {
+                            "flex": 1,
+                          }
+                        }
+                      >
+                        <ARTSurfaceView
+                          style={
+                            Object {
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "letterSpacing": 1.2,
+                          "marginBottom": 0,
+                        }
+                      }
+                    >
+                      E N V I R O N M E N T
+                    </Text>
+                  </View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Immunity offer over VIP child abuse ring
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Tuesday March 17 2015, 08:28pm, The Times
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#333333",
+                        }
+                      }
+                    >
+                      Sean O’Neill, Richard Ford, David Brown
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#DBDBDB",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 50,
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <View />
+              <View>
+                <View
+                  accessible={true}
+                  nativeBackgroundAndroid={
+                    Object {
+                      "attribute": "selectableItemBackground",
+                      "type": "ThemeAttrAndroid",
+                    }
+                  }
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  pointerEvents="box-only"
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "baseline",
+                        "flexDirection": "row",
+                        "padding": 12,
+                      }
+                    }
+                    testID="pagination-button-next"
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 15,
+                          "height": 15,
+                          "marginRight": 10,
+                          "textAlign": "right",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        Next
+                      </Text>
+                    </Text>
+                    <svg
+                      height={12}
+                      width={7}
+                    >
+                      <g
+                        fill="#006699"
+                      >
+                        <path />
+                      </g>
+                    </svg>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`2. Render an topics page loading state 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  ListFooterComponent={
+    <ArticleListPagination
+      hideResults={true}
+      onNext={[Function]}
+      onPrev={[Function]}
+      pageSize={3}
+    />
+  }
+  ListHeaderComponent={
+    <View>
+      <TopicHead
+        description=""
+        isLoading={true}
+        name=""
+      />
+      <ArticleListPagination
+        hideResults={false}
+        onNext={[Function]}
+        onPrev={[Function]}
+        pageSize={3}
+      />
+    </View>
+  }
+  accessibilityID="scroll-view"
+  data={
+    Array [
+      Object {
+        "elementId": "empty.0",
+        "id": 0,
+        "isLoading": true,
+      },
+      Object {
+        "elementId": "empty.1",
+        "id": 1,
+        "isLoading": true,
+      },
+      Object {
+        "elementId": "empty.2",
+        "id": 2,
+        "isLoading": true,
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onViewableItemsChanged={[Function]}
+  pageSize={3}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={2}
+  stickyHeaderIndices={Array []}
+  testID="scroll-view"
+  updateCellsBatchingPeriod={50}
+  viewabilityConfig={
+    Object {
+      "viewAreaCoveragePercentThreshold": 100,
+      "waitForInteraction": false,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "viewAreaCoveragePercentThreshold": 100,
+          "waitForInteraction": false,
+        },
+      },
+    ]
+  }
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "minHeight": 90,
+              "paddingHorizontal": 10,
+              "paddingTop": 35,
+              "width": "100%",
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "maxWidth": 800,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "stretch",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 15,
+                      "paddingTop": 4,
+                    }
+                  }
+                  testID="results-message"
+                >
+                  Showing 0 - 0 of 0 results
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderStyle": "solid",
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <View />
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <ARTSurfaceView
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <ARTSurfaceView
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 15,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 10,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              aspectRatio={1.5}
+            >
+              <View
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  onLoad={[Function]}
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <View
+                    onLayout={[Function]}
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <ARTSurfaceView
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
+                        }
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 0,
+                "minWidth": "100%",
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 24,
+                  "marginBottom": 10,
+                  "maxWidth": 300,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 10,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                  "height": 10,
+                  "marginBottom": 0,
+                  "maxWidth": 240,
+                }
+              }
+            >
+              <ARTSurfaceView
+                style={
+                  Object {
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTSurfaceView>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "maxWidth": 800,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "stretch",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomColor": "#DBDBDB",
+                  "borderBottomWidth": 1,
+                  "borderStyle": "solid",
+                  "borderTopColor": "#DBDBDB",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "height": 50,
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <View />
+              <View />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`3. Render an topics page error state 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "margin": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "marginBottom": 20,
+        "marginTop": 20,
+        "width": "60%",
+      }
+    }
+  >
+    <View
+      aspectRatio={0.9090909090909091}
+    >
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          source={
+            Object {
+              "uri": "https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png&resize=1440",
+            }
+          }
+          style={
+            Object {
+              "bottom": 0,
+              "height": "100%",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        />
+        <View
+          onLayout={[Function]}
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <ARTSurfaceView
+              style={
+                Object {
+                  "bottom": 0,
+                  "height": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            >
+              <ARTShape
+                d={
+                  Array [
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                  ]
+                }
+                fill={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    -0,
+                    0,
+                    0.9764705882352941,
+                    0.9764705882352941,
+                    0.9764705882352941,
+                    1,
+                    0.9294117647058824,
+                    0.9294117647058824,
+                    0.9294117647058824,
+                    1,
+                    0,
+                    1,
+                  ]
+                }
+                opacity={1}
+                stroke={null}
+                strokeCap={1}
+                strokeDash={null}
+                strokeJoin={1}
+                strokeWidth={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              />
+            </ARTSurfaceView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "margin": 15,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "marginBottom": 10,
+          "marginTop": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      Something's gone wrong
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 18,
+          "textAlign": "center",
+        }
+      }
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Retry"
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#006699",
+              "flex": 1,
+              "height": 45,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#FFF",
+                "fontFamily": "GillSansMTStd-Medium",
+              }
+            }
+          >
+            RETRY
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
 `;
