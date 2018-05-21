@@ -160,7 +160,6 @@ export default () => {
         .dive()
         .find("ListFooterComponent")
         .dive()
-        .debug()
     ).toMatchSnapshot();
   });
 

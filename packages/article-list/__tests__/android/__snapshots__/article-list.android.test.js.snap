@@ -1,12 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleList tests on android should display retry button when fetch more fails 1`] = `
-"<View>
+<View>
   <ArticleListItemSeparator />
-  <View style={{...}}>
-    <ArticleListRetryButton style={{...}} refetch={[Function: refetch]} />
+  <View
+    style={
+      Object {
+        "padding": 25,
+      }
+    }
+  >
+    <ArticleListRetryButton
+      refetch={[Function]}
+      style={
+        Object {
+          "elevation": 10,
+        }
+      }
+    />
   </View>
-</View>"
+</View>
 `;
 
 exports[`ArticleList tests on android should render an article list 1`] = `
