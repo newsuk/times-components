@@ -19,6 +19,7 @@ export const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
 export const props = {
   analyticsStream: () => {},
   author: mockAuthor,
+  fetchMore: () => {},
   isLoading: false,
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},

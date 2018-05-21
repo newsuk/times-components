@@ -21,6 +21,5 @@ exports[`1. Render a Topic page 1`] = `
   pageSize={3}
   refetch={[Function]}
   showImages={true}
-  updateQuery={[Function]}
 />
 `;

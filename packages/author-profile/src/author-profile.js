@@ -66,22 +66,6 @@ const AuthorProfile = ({
     />
   );
 
-  const updateQuery = (prev, { fetchMoreResult }) =>
-    fetchMoreResult
-      ? {
-          author: {
-            ...prev.author,
-            articles: {
-              ...prev.author.articles,
-              list: [
-                ...prev.author.articles.list,
-                ...fetchMoreResult.author.articles.list
-              ]
-            }
-          }
-        }
-      : prev;
-
   const SelectedProvider = hasLeadAssets
     ? AuthorArticlesWithImagesProvider
     : AuthorArticlesNoImagesProvider;
@@ -100,27 +84,50 @@ const AuthorProfile = ({
         isLoading: articlesLoading,
         pageSize,
         refetch: refetchArticles,
-        fetchMore: fetchMoreArticles,
+        fetchMore,
         variables: { imageRatio = "3:2" }
-      }) => (
-        <ArticleList
-          articleListHeader={articleListHeader}
-          articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
-          count={get(articles, "count", 0)}
-          error={articlesError}
-          imageRatio={ratioTextToFloat(imageRatio)}
-          onArticlePress={onArticlePress}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          refetch={refetchArticles}
-          fetchMore={fetchMoreArticles}
-          showImages={hasLeadAssets}
-          updateQuery={updateQuery}
-        />
-      )}
+      }) => {
+        const fetchMoreArticles = length =>
+          fetchMore({
+            variables: {
+              skip: length
+            },
+            updateQuery: (prev, { fetchMoreResult }) =>
+              fetchMoreResult
+                ? {
+                    author: {
+                      ...prev.author,
+                      articles: {
+                        ...prev.author.articles,
+                        list: [
+                          ...prev.author.articles.list,
+                          ...fetchMoreResult.author.articles.list
+                        ]
+                      }
+                    }
+                  }
+                : prev
+          });
+
+        return (
+          <ArticleList
+            articleListHeader={articleListHeader}
+            articles={get(data, "articles.list", [])}
+            articlesLoading={articlesLoading}
+            count={get(articles, "count", 0)}
+            error={articlesError}
+            imageRatio={ratioTextToFloat(imageRatio)}
+            onArticlePress={onArticlePress}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            refetch={refetchArticles}
+            fetchMore={fetchMoreArticles}
+            showImages={hasLeadAssets}
+          />
+        );
+      }}
     </SelectedProvider>
   );
 };

@@ -151,7 +151,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
@@ -1966,7 +1965,6 @@ exports[`ArticleList tests on android should render an article list that is load
   onViewableItemsChanged={[Function]}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}

@@ -23,22 +23,6 @@ const Topic = ({
     <TopicHead name={name} description={description} isLoading={false} />
   );
 
-  const updateQuery = (prev, { fetchMoreResult }) =>
-    fetchMoreResult
-      ? {
-          topic: {
-            ...prev.topic,
-            articles: {
-              ...prev.topic.articles,
-              list: [
-                ...prev.topic.articles.list,
-                ...fetchMoreResult.topic.articles.list
-              ]
-            }
-          }
-        }
-      : prev;
-
   return (
     <TopicArticlesProvider
       articleImageRatio="3:2"
@@ -50,30 +34,54 @@ const Topic = ({
       {({
         topic: data,
         error: articlesError,
-        fetchMore: fetchMoreArticles,
+        fetchMore,
         isLoading: articlesLoading,
         pageSize,
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
-      }) => (
-        <ArticleList
-          articleListHeader={articleListHeader}
-          articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
-          count={get(data, "articles.count", 0)}
-          error={articlesError}
-          fetchMore={fetchMoreArticles}
-          imageRatio={ratioTextToFloat(imageRatio)}
-          onArticlePress={onArticlePress}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          refetch={refetchArticles}
-          showImages
-          updateQuery={updateQuery}
-        />
-      )}
+      }) => {
+        const fetchMoreArticles = length => {
+          fetchMore({
+            variables: {
+              skip: length
+            },
+            updateQuery: (prev, { fetchMoreResult }) =>
+              fetchMoreResult
+                ? {
+                    topic: {
+                      ...prev.topic,
+                      articles: {
+                        ...prev.topic.articles,
+                        list: [
+                          ...prev.topic.articles.list,
+                          ...fetchMoreResult.topic.articles.list
+                        ]
+                      }
+                    }
+                  }
+                : prev
+          });
+        };
+
+        return (
+          <ArticleList
+            articleListHeader={articleListHeader}
+            articles={get(data, "articles.list", [])}
+            articlesLoading={articlesLoading}
+            count={get(data, "articles.count", 0)}
+            error={articlesError}
+            fetchMore={fetchMoreArticles}
+            imageRatio={ratioTextToFloat(imageRatio)}
+            onArticlePress={onArticlePress}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            refetch={refetchArticles}
+            showImages
+          />
+        );
+      }}
     </TopicArticlesProvider>
   );
 };

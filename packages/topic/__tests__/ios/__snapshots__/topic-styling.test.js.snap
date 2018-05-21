@@ -51,7 +51,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}

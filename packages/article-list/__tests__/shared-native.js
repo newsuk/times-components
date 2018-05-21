@@ -158,7 +158,7 @@ export default () => {
         .dive()
         .dive()
         .dive()
-        .find("ListFooterComponent")
+        .find("articleListFooter")
         .dive()
     ).toMatchSnapshot();
   });
@@ -179,13 +179,13 @@ export default () => {
       />
     ).dive();
     wrapper.setState({ loadMoreError: "Error" });
-
+      
     const button = wrapper
       .dive()
       .dive()
       .dive()
       .dive()
-      .find("ListFooterComponent")
+      .find("articleListFooter")
       .dive()
       .find("ArticleListRetryButton");
 
