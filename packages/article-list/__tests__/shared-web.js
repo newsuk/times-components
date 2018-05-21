@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import ArticleListPagination from "../src/article-list-pagination";
 import ArticleList from "./../src/article-list";
 import ArticleListItem from "./../src/article-list-item";
@@ -21,7 +21,7 @@ export default () => {
     const onArticlePressMock = jest.fn();
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
-    const wrapper = shallow(
+    const wrapper = mount(
       <ArticleList
         {...articleListProps}
         articles={results.articles.list}
@@ -32,16 +32,11 @@ export default () => {
     );
 
     wrapper
-      .dive()
-      .find("ErrorView")
-      .at(0)
-      .dive()
       .find(ArticleListItem)
       .at(0)
-      .dive()
-      .dive()
       .find("Link")
-      .simulate("press");
+      .props()
+      .onPress();
 
     expect(onArticlePressMock).toHaveBeenCalled();
   });

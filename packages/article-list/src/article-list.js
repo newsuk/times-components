@@ -86,7 +86,37 @@ class ArticleList extends Component {
               skip: data.length
             },
             updateQuery
-          }).catch(err => this.setState({ loadMoreError: err }));
+          }).catch(loadMoreError => this.setState({ loadMoreError }));
+
+    const articleListFooter = () => {
+      if (data.length >= count) {
+        return null;
+      } else if (this.state.loadMoreError) {
+        return (
+          <View>
+            <ArticleListItemSeparator />
+            <View style={styles.showMoreRetryContainer}>
+              <ArticleListRetryButton
+                style={styles.showMoreRetryButton}
+                refetch={() => {
+                  this.setState({ loadMoreError: null }, fetchMoreOnEndReached);
+                }}
+              />
+            </View>
+          </View>
+        );
+      }
+      return (
+        <View>
+          <ArticleListItemSeparator />
+          <ActivityIndicator
+            style={styles.loadingContainer}
+            size="large"
+            color={colours.functional.keyline}
+          />
+        </View>
+      );
+    };
 
     return (
       <FlatList
@@ -116,7 +146,6 @@ class ArticleList extends Component {
             }
           </ErrorView>
         )}
-        scrollRenderAheadDistance={2}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
         ItemSeparatorComponent={() => (
@@ -124,37 +153,7 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
           </View>
         )}
-        ListFooterComponent={() => {
-          if (data.length >= count) {
-            return null;
-          } else if (this.state.loadMoreError) {
-            return (
-              <View>
-                <ArticleListItemSeparator />
-                <View style={styles.showMoreRetryContainer}>
-                  <ArticleListRetryButton
-                    style={styles.showMoreRetryButton}
-                    refetch={() => {
-                      this.setState({ loadMoreError: null }, () =>
-                        fetchMoreOnEndReached()
-                      );
-                    }}
-                  />
-                </View>
-              </View>
-            );
-          }
-          return (
-            <View>
-              <ArticleListItemSeparator />
-              <ActivityIndicator
-                style={styles.loadingContainer}
-                size="large"
-                color={colours.functional.keyline}
-              />
-            </View>
-          );
-        }}
+        ListFooterComponent={articleListFooter}
         ListHeaderComponent={articleListHeader}
       />
     );
