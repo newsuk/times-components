@@ -8,6 +8,7 @@ import Topic from "../src/topic";
 export default () => {
   const props = {
     analyticsStream: () => {},
+    isLoading: false,
     onArticlePress: () => {},
     refetch: () => {},
     slug: "chelsea",

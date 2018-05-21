@@ -2,6 +2,31 @@
 
 exports[`Topic styling tests on web should render styling correctly 1`] = `
 .c0 {
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.c1 {
+  font-family: TimesModern-Bold;
+  font-size: 40px;
+  color: #1D1D1B;
+  padding-bottom: 20px;
+}
+
+.c2 {
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 200px;
+}
+
+.c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -11,7 +36,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c4 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -21,7 +46,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   flex-direction: column;
 }
 
-.c2 {
+.c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -36,7 +61,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   height: 50px;
 }
 
-.c3 {
+.c6 {
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -56,12 +81,12 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   border-top-width: 1px;
 }
 
-.c4 {
+.c7 {
   padding-bottom: 15px;
   padding-top: 15px;
 }
 
-.c5 {
+.c8 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -71,7 +96,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c9 {
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -95,23 +120,53 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   .c0 {
     padding-left: 0;
     padding-right: 0;
+    max-width: 80.8%;
+    padding-top: 5px;
+    padding-bottom: 35px;
   }
 }
 
-@media (min-width:1320px) {
+@media (min-width:1024px) {
   .c0 {
-    max-width: 760px;
+    max-width: 56.2%;
+    padding-top: 15px;
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width:768px) {
   .c1 {
-    margin-top: 30px;
+    font-size: 50px;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
+    width: 290px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c3 {
+    max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     left: 0;
     right: 0;
     position: absolute;
@@ -119,13 +174,13 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c6 {
     border-top-width: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 .articleListImage {
+  .c7 .articleListImage {
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
@@ -135,7 +190,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     padding-right: 15px;
   }
 
-  .c4 .articleListContent {
+  .c7 .articleListContent {
     -webkit-flex: 2.7;
     -ms-flex: 2.7;
     flex: 2.7;
@@ -147,17 +202,42 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
 }
 
 <div>
-  <div />
+  <div>
+    <div
+      className="c0"
+    >
+      <div>
+        <h1
+          aria-label="topic-name"
+          className="c1"
+          data-testid="topic-name"
+          dir="auto"
+          role="heading"
+        >
+          Chelsea
+        </h1>
+        <div
+          className="c2"
+        />
+        <div
+          data-testid="topic-description"
+          dir="auto"
+        >
+          A swanky part of town.
+        </div>
+      </div>
+    </div>
+  </div>
   <div
-    className="c0"
+    className="c3"
   >
     <div>
       <div>
         <div
-          className="c1"
+          className="c4"
         >
           <div
-            className="c2"
+            className="c5"
           >
             <div
               data-testid="results-message"
@@ -167,7 +247,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
             </div>
           </div>
           <div
-            className="c3"
+            className="c6"
           >
             <div />
             <div />
@@ -182,7 +262,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         id="empty.0"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <div>
             <div
@@ -275,7 +355,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
       >
         <div />
         <div
-          className="c4"
+          className="c7"
         >
           <div>
             <div
@@ -368,7 +448,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
       >
         <div />
         <div
-          className="c4"
+          className="c7"
         >
           <div>
             <div
@@ -458,10 +538,10 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     <div>
       <div>
         <div
-          className="c5"
+          className="c8"
         >
           <div
-            className="c6"
+            className="c9"
           >
             <div />
             <div />
