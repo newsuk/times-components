@@ -1,6 +1,8 @@
 import React from "react";
 import get from "lodash.get";
-import ArticleList from "@times-components/article-list";
+import ArticleList, {
+  ArticleListPageError
+} from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
 import { TopicArticlesProvider } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
@@ -9,14 +11,35 @@ import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";
 
 const Topic = ({
+  error,
+  isLoading,
   page,
   pageSize: initPageSize,
   onArticlePress,
   onNext,
   onPrev,
+  refetch,
   slug,
   topic
 }) => {
+  if (error) {
+    return <ArticleListPageError refetch={refetch} />;
+  }
+
+  if (isLoading || !topic) {
+    return (
+      <ArticleList
+        articleListHeader={<TopicHead isLoading />}
+        articlesLoading
+        imageRatio={ratioTextToFloat("3:2")}
+        isLoading
+        pageSize={initPageSize}
+        refetch={() => {}}
+        showImages
+      />
+    );
+  }
+
   const { name, description } = topic;
 
   const articleListHeader = (

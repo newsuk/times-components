@@ -9,14 +9,185 @@ exports[`1. Render a Topic page 1`] = `
       name="Chelsea"
     />
   }
-  articles={Array []}
-  articlesLoading={true}
-  count={0}
+  articles={
+    Array [
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Russia Ben Hoyle Moscow David Taylor Washington",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Splits in Europe may end Russian sanctions",
+        "id": "77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+        "label": "Middle East",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7f41fd78-3fd6-11e8-bcc9-66c6aab151ca.jpg?crop=1600%2C900%2C0%2C0",
+            Symbol(id): "$Image:86ee3055-9780-4732-a210-1e3987d84099.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "86ee3055-9780-4732-a210-1e3987d84099",
+          "title": "Splits in Europe may end Russian sanctions",
+          Symbol(id): "Image:86ee3055-9780-4732-a210-1e3987d84099",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T18:57:58.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/splits-in-europe-may-end-russian-sanctions-kstdpq5rn",
+        Symbol(id): "Article:77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Michael Savage Chief Political Correspondent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Inheritance tax cut will ‘push up house prices’",
+        "id": "4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fece26c23-6333-3b2c-9b7f-dc6fb6c80eca.jpg?crop=780%2C520%2C0%2C0",
+            Symbol(id): "$Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+          "title": "Inheritance tax cut will ‘push up house prices’",
+          Symbol(id): "Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T21:27:12.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/inheritance-tax-cut-will-push-up-house-prices-gbzqbdgcz",
+        Symbol(id): "Article:4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Sean O’Neill, Richard Ford, David Brown",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Immunity offer over VIP child abuse ring",
+        "id": "10f461fc-cce4-11e4-81dd-064fe933cd41",
+        "label": "Environment",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa7e876c-06d9-11e8-8e80-008642e5faa1.jpg?crop=3000%2C1687%2C0%2C156",
+            Symbol(id): "$Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+          "title": "Immunity offer over VIP child abuse ring",
+          Symbol(id): "Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T20:28:04.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/immunity-offer-over-vip-child-abuse-ring-kpvvhb6mn",
+        Symbol(id): "Article:10f461fc-cce4-11e4-81dd-064fe933cd41",
+      },
+    ]
+  }
+  articlesLoading={false}
+  count={10}
   imageRatio={1.5}
   onArticlePress={[Function]}
   onNext={[Function]}
   onPrev={[Function]}
   page={1}
+  pageSize={3}
+  refetch={[Function]}
+  showImages={true}
+/>
+`;
+
+exports[`2. Render an topics page loading state 1`] = `
+<ArticleList
+  articleListHeader={
+    <TopicHead
+      description=""
+      isLoading={true}
+      name=""
+    />
+  }
+  articlesLoading={true}
+  imageRatio={1.5}
+  isLoading={true}
   pageSize={3}
   refetch={[Function]}
   showImages={true}

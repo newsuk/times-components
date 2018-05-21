@@ -14,7 +14,7 @@ exports[`TopicHead functional tests on android should render correctly 1`] = `
 </View>
 `;
 
-exports[`TopicHead functional tests on android should render correctly when loading 1`] = `<TopicHeadLoading />`;
+exports[`TopicHead functional tests on android should render correctly when loading 1`] = `<View />`;
 
 exports[`TopicHead functional tests on android should render correctly with a description 1`] = `
 <View>
@@ -26,7 +26,7 @@ exports[`TopicHead functional tests on android should render correctly with a de
     >
       Animals
     </Text>
-    <Divider />
+    <View />
     <Text
       testID="topic-description"
     >

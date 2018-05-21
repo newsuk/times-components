@@ -14,7 +14,7 @@ exports[`TopicHead functional tests on ios should render correctly 1`] = `
 </View>
 `;
 
-exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `<TopicHeadLoading />`;
+exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `<View />`;
 
 exports[`TopicHead functional tests on ios should render correctly with a description 1`] = `
 <View>
@@ -26,7 +26,7 @@ exports[`TopicHead functional tests on ios should render correctly with a descri
     >
       Animals
     </Text>
-    <Divider />
+    <View />
     <Text
       testID="topic-description"
     >
