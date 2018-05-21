@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.11.11",
+  "version": "0.11.12",
   "description": "Handles errors",
   "main": "dist/error-view",
   "dev": "src/error-view",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.4.1",
     "@times-components/jest-configurator": "0.7.0",
-    "@times-components/storybook": "0.10.0",
+    "@times-components/storybook": "0.10.1",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -51,7 +51,7 @@
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.7.1",
+    "@times-components/styleguide": "0.7.2",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
