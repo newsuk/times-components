@@ -1,14 +1,14 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Topic from "../src/topic";
+import TopicHead from "../src/topic-head";
 
 jest.mock("../src/topic-head-loading", () => "TopicHeadLoading");
-jest.mock("../src/divider", () => "Divider");
+jest.mock("../src/topic-head-divider", () => "Divider");
 
 export default () => {
   it("should render correctly", () => {
-    const tree = renderer.create(<Topic name="Animals" />).toJSON();
+    const tree = renderer.create(<TopicHead name="Animals" />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -16,7 +16,7 @@ export default () => {
   it("should render correctly with a description", () => {
     const tree = renderer
       .create(
-        <Topic
+        <TopicHead
           name="Animals"
           description="Animals are multicellular eukaryotic organisms."
         />
@@ -27,7 +27,9 @@ export default () => {
   });
 
   it("should render correctly when loading", () => {
-    const tree = renderer.create(<Topic name="Animals" isLoading />).toJSON();
+    const tree = renderer
+      .create(<TopicHead name="Animals" isLoading />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });

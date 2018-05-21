@@ -1,50 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic functional tests on web should render correctly 1`] = `
-<div>
-  <div
-    className="responsive-styles__component-fbPFZZ dzzdQH"
-  >
-    <div>
-      <h1
-        aria-label="topic-name"
-        className="responsive-styles__component-fbPFZZ kfmhxW"
-        data-testid="topic-name"
-        dir="auto"
-        role="heading"
-      >
-        Animals
-      </h1>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Topic functional tests on web should render correctly when loading 1`] = `<TopicHeadLoading />`;
-
-exports[`Topic functional tests on web should render correctly with a description 1`] = `
-<div>
-  <div
-    className="responsive-styles__component-fbPFZZ hKIDHg"
-  >
-    <div>
-      <h1
-        aria-label="topic-name"
-        className="responsive-styles__component-fbPFZZ kfmhxW"
-        data-testid="topic-name"
-        dir="auto"
-        role="heading"
-      >
-        Animals
-      </h1>
-      <Divider />
-      <div
-        data-testid="topic-description"
-        dir="auto"
-      >
-        Animals are multicellular eukaryotic organisms.
-      </div>
-    </div>
-  </div>
-</div>
+exports[`1. Render a Topic page 1`] = `
+<ArticleList
+  articleListHeader={
+    <TopicHead
+      description="A swanky part of town."
+      isLoading={false}
+      name="Chelsea"
+    />
+  }
+  articles={Array []}
+  articlesLoading={true}
+  count={0}
+  imageRatio={1.5}
+  onArticlePress={[Function]}
+  onNext={[Function]}
+  onPrev={[Function]}
+  page={1}
+  pageSize={3}
+  refetch={[Function]}
+  showImages={true}
+/>
 `;

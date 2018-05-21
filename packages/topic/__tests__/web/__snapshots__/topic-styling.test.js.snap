@@ -9,7 +9,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .c1 {
@@ -19,21 +19,118 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   padding-bottom: 20px;
 }
 
+.c2 {
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 200px;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 680px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.c4 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.c6 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+.c7 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.c8 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
 @media (min-width:768px) {
   .c0 {
     padding-left: 0;
     padding-right: 0;
     max-width: 80.8%;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 35px;
   }
 }
 
 @media (min-width:1024px) {
   .c0 {
     max-width: 56.2%;
-    padding-top: 50px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
   }
 }
 
@@ -43,20 +140,414 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c2 {
+    width: 290px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c3 {
+    max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    border-top-width: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 .articleListImage {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-bottom: 0;
+    max-width: 285px;
+    min-width: auto;
+    padding-right: 15px;
+  }
+
+  .c7 .articleListContent {
+    -webkit-flex: 2.7;
+    -ms-flex: 2.7;
+    flex: 2.7;
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    min-width: 380px;
+  }
+}
+
 <div>
+  <div>
+    <div
+      className="c0"
+    >
+      <div>
+        <h1
+          aria-label="topic-name"
+          className="c1"
+          data-testid="topic-name"
+          dir="auto"
+          role="heading"
+        >
+          Chelsea
+        </h1>
+        <div
+          className="c2"
+        />
+        <div
+          data-testid="topic-description"
+          dir="auto"
+        >
+          A swanky part of town.
+        </div>
+      </div>
+    </div>
+  </div>
   <div
-    className="c0"
+    className="c3"
   >
     <div>
-      <h1
-        aria-label="topic-name"
-        className="c1"
-        data-testid="topic-name"
-        dir="auto"
-        role="heading"
+      <div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              data-testid="results-message"
+              dir="auto"
+            >
+              Showing 0 - 0 of 0 results
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        accessibility-label="empty.0"
+        data-testid="empty.0"
+        id="empty.0"
       >
-        Animals
-      </h1>
+        <div
+          className="c7"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        accessibility-label="empty.1"
+        data-testid="empty.1"
+        id="empty.1"
+      >
+        <div />
+        <div
+          className="c7"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        accessibility-label="empty.2"
+        data-testid="empty.2"
+        id="empty.2"
+      >
+        <div />
+        <div
+          className="c7"
+        >
+          <div>
+            <div
+              className="articleListImage"
+            >
+              <div>
+                <div
+                  style={
+                    Object {
+                      "display": "table",
+                      "height": 0,
+                      "overflow": "hidden",
+                      "paddingBottom": "66.66666666666667%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    src=""
+                    style={
+                      Object {
+                        "display": "block",
+                        "position": "absolute",
+                        "width": "100%",
+                        "zIndex": 1,
+                      }
+                    }
+                  />
+                  <div
+                    style={
+                      Object {
+                        "bottom": "0px",
+                        "left": "0px",
+                        "position": "absolute",
+                        "right": "0px",
+                        "top": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="articleListContent"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div
+          className="c8"
+        >
+          <div
+            className="c9"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -14,6 +14,7 @@ import styles from "./styles";
 
 const ArticleListItem = props => {
   const {
+    byline,
     headline,
     imageRatio,
     isLoading,
@@ -21,6 +22,7 @@ const ArticleListItem = props => {
     onPress,
     publicationName,
     publishedTime,
+    section,
     shortSummary,
     showImage,
     summary,
@@ -52,6 +54,14 @@ const ArticleListItem = props => {
           showImage={showImage}
         >
           <ArticleSummary
+            bylineProps={
+              byline
+                ? {
+                    ast: byline,
+                    color: colours.section[section] || colours.section.default
+                  }
+                : null
+            }
             content={() => <ArticleSummaryContent ast={content} />}
             datePublicationProps={{
               date: publishedTime,

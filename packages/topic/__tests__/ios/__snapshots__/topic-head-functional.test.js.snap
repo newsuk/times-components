@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopicHead functional tests on ios should render correctly 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityLabel="topic-name"
+      accessibilityRole="heading"
+      testID="topic-name"
+    >
+      Animals
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TopicHead functional tests on ios should render correctly when loading 1`] = `<TopicHeadLoading />`;
+
+exports[`TopicHead functional tests on ios should render correctly with a description 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityLabel="topic-name"
+      accessibilityRole="heading"
+      testID="topic-name"
+    >
+      Animals
+    </Text>
+    <Divider />
+    <Text
+      testID="topic-description"
+    >
+      Animals are multicellular eukaryotic organisms.
+    </Text>
+  </View>
+</View>
+`;

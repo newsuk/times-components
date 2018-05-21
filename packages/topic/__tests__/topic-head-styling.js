@@ -2,11 +2,18 @@ import "react-native";
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Topic from "../src/topic";
+import TopicHead from "../src/topic-head";
 
 export default () => {
   it("should render styling correctly", () => {
-    const tree = renderer.create(<Topic name="Animals" />).toJSON();
+    const tree = renderer
+      .create(
+        <TopicHead
+          name="Animals"
+          description="Animals are multicellular eukaryotic organisms."
+        />
+      )
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });

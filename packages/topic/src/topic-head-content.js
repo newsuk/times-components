@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import { Text, View } from "react-native";
-import { propTypes, defaultProps } from "./proptypes";
+import { propTypes, defaultProps } from "./topic-head-prop-types";
 import styles from "./styles";
-import Divider from "./divider";
-import Name from "./name";
+import Divider from "./topic-head-divider";
+import Name from "./topic-head-name";
 
 const HeadContent = ({ name, description }) => {
   const showDescription = () =>
