@@ -1,1043 +1,195 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render a Topic page 1`] = `
-<div>
-  <div>
-    <div
-      className="responsive-styles__component-fbPFZZ hKIDHg"
-    >
-      <div>
-        <h1
-          aria-label="topic-name"
-          className="responsive-styles__component-fbPFZZ kfmhxW"
-          data-testid="topic-name"
-          dir="auto"
-          role="heading"
-        >
-          Chelsea
-        </h1>
-        <div
-          className="responsive-styles__component-fbPFZZ gUagh"
-        />
-        <div
-          data-testid="topic-description"
-          dir="auto"
-        >
-          A swanky part of town.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
-  >
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ ldBdZT"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ exZFAC"
-          >
-            <div
-              data-testid="results-message"
-              dir="auto"
-            >
-              Showing 1 - 3 of 10 results
-            </div>
-          </div>
-          <div
-            className="responsive-styles__component-fbPFZZ cePhpb"
-          >
-            <div />
-            <div>
-              <a
-                href="?page=2"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                <div
-                  data-testid="pagination-button-next"
-                >
-                  <div
-                    dir="auto"
-                  >
-                    <span
-                      dir="auto"
-                    >
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                        dir="auto"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path />
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div
-        accessibility-label="77d22dd0-ccd7-11e4-81dd-064fe933cd41.0"
-        data-testid="77d22dd0-ccd7-11e4-81dd-064fe933cd41.0"
-        id="77d22dd0-ccd7-11e4-81dd-064fe933cd41.0"
-      >
-        <a
-          href="http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/splits-in-europe-may-end-russian-sanctions-kstdpq5rn"
-          onClick={[Function]}
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7f41fd78-3fd6-11e8-bcc9-66c6aab151ca.jpg?crop=1600%2C900%2C0%2C0&resize=100"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <div>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "fontSize": "12px",
-                            "fontWeight": "400",
-                            "letterSpacing": "1.2px",
-                          }
-                        }
-                      >
-                        MIDDLE EAST
-                      </div>
-                    </div>
-                    <h3
-                      aria-level="3"
-                      dir="auto"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Splits in Europe may end Russian sanctions
-                    </h3>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        
-                        Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      aria-label="datePublication"
-                      data-testid="datePublication"
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Tuesday March 17 2015, 06:57pm, The Times
-                    </div>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        Russia Ben Hoyle Moscow David Taylor Washington
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        accessibility-label="4fe43ad8-ccec-11e4-81dd-064fe933cd41.1"
-        data-testid="4fe43ad8-ccec-11e4-81dd-064fe933cd41.1"
-        id="4fe43ad8-ccec-11e4-81dd-064fe933cd41.1"
-      >
-        <div />
-        <a
-          href="http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/inheritance-tax-cut-will-push-up-house-prices-gbzqbdgcz"
-          onClick={[Function]}
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fece26c23-6333-3b2c-9b7f-dc6fb6c80eca.jpg?crop=780%2C520%2C0%2C0&resize=100"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <div>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "fontSize": "12px",
-                            "fontWeight": "400",
-                            "letterSpacing": "1.2px",
-                          }
-                        }
-                      >
-                        SCIENCE
-                      </div>
-                    </div>
-                    <h3
-                      aria-level="3"
-                      dir="auto"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Inheritance tax cut will ‘push up house prices’
-                    </h3>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        
-                        Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      aria-label="datePublication"
-                      data-testid="datePublication"
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Tuesday March 17 2015, 09:27pm, The Times
-                    </div>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        Michael Savage Chief Political Correspondent
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        accessibility-label="10f461fc-cce4-11e4-81dd-064fe933cd41.2"
-        data-testid="10f461fc-cce4-11e4-81dd-064fe933cd41.2"
-        id="10f461fc-cce4-11e4-81dd-064fe933cd41.2"
-      >
-        <div />
-        <a
-          href="http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/immunity-offer-over-vip-child-abuse-ring-kpvvhb6mn"
-          onClick={[Function]}
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ woNlo"
-            >
-              <div>
-                <div
-                  className="articleListImage"
-                >
-                  <div>
-                    <div
-                      style={
-                        Object {
-                          "display": "table",
-                          "height": 0,
-                          "overflow": "hidden",
-                          "paddingBottom": "66.66666666666667%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa7e876c-06d9-11e8-8e80-008642e5faa1.jpg?crop=3000%2C1687%2C0%2C156&resize=100"
-                        style={
-                          Object {
-                            "display": "block",
-                            "position": "absolute",
-                            "width": "100%",
-                            "zIndex": 1,
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
-                            "top": "0px",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                            }
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="articleListContent"
-                >
-                  <div>
-                    <div>
-                      <div
-                        dir="auto"
-                        style={
-                          Object {
-                            "fontSize": "12px",
-                            "fontWeight": "400",
-                            "letterSpacing": "1.2px",
-                          }
-                        }
-                      >
-                        ENVIRONMENT
-                      </div>
-                    </div>
-                    <h3
-                      aria-level="3"
-                      dir="auto"
-                      role="heading"
-                      style={
-                        Object {
-                          "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
-                          "fontWeight": "400",
-                          "lineHeight": "22px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Immunity offer over VIP child abuse ring
-                    </h3>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "lineHeight": "20px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        
-                        An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent
-                        ...
-                      </span>
-                    </div>
-                    <div
-                      aria-label="datePublication"
-                      data-testid="datePublication"
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      Tuesday March 17 2015, 08:28pm, The Times
-                    </div>
-                    <div
-                      dir="auto"
-                      style={
-                        Object {
-                          "fontSize": "13px",
-                          "lineHeight": "15px",
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      <span
-                        dir="auto"
-                      >
-                        Sean O’Neill, Richard Ford, David Brown
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ kdgRsQ"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ ciodUt"
-          >
-            <div />
-            <div>
-              <a
-                href="?page=2"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                <div
-                  data-testid="pagination-button-next"
-                >
-                  <div
-                    dir="auto"
-                  >
-                    <span
-                      dir="auto"
-                    >
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                        dir="auto"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path />
-                    </g>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<ArticleList
+  articleListHeader={
+    <TopicHead
+      description="A swanky part of town."
+      isLoading={false}
+      name="Chelsea"
+    />
+  }
+  articles={
+    Array [
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Russia Ben Hoyle Moscow David Taylor Washington",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Splits in Europe may end Russian sanctions",
+        "id": "77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+        "label": "Middle East",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7f41fd78-3fd6-11e8-bcc9-66c6aab151ca.jpg?crop=1600%2C900%2C0%2C0",
+            Symbol(id): "$Image:86ee3055-9780-4732-a210-1e3987d84099.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "86ee3055-9780-4732-a210-1e3987d84099",
+          "title": "Splits in Europe may end Russian sanctions",
+          Symbol(id): "Image:86ee3055-9780-4732-a210-1e3987d84099",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T18:57:58.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Europe is so split over punishing President Putin’s aggression in Ukraine that the EU sanctions package is in",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/splits-in-europe-may-end-russian-sanctions-kstdpq5rn",
+        Symbol(id): "Article:77d22dd0-ccd7-11e4-81dd-064fe933cd41",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Michael Savage Chief Political Correspondent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Inheritance tax cut will ‘push up house prices’",
+        "id": "4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+        "label": "Science",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodmigration%2Fweb%2Fbin%2Fece26c23-6333-3b2c-9b7f-dc6fb6c80eca.jpg?crop=780%2C520%2C0%2C0",
+            Symbol(id): "$Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+          "title": "Inheritance tax cut will ‘push up house prices’",
+          Symbol(id): "Image:732d963c-a6d1-4fbb-b9f6-02eb2478ef37",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T21:27:12.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Tory plans to allow more parents to pass on their homes without paying inheritance tax will lock young families out",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/inheritance-tax-cut-will-push-up-house-prices-gbzqbdgcz",
+        Symbol(id): "Article:4fe43ad8-ccec-11e4-81dd-064fe933cd41",
+      },
+      Object {
+        "__typename": "Article",
+        "byline": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Sean O’Neill, Richard Ford, David Brown",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ],
+        "headline": "Immunity offer over VIP child abuse ring",
+        "id": "10f461fc-cce4-11e4-81dd-064fe933cd41",
+        "label": "Environment",
+        "leadAsset": Object {
+          "__typename": "Image",
+          "crop": Object {
+            "__typename": "Crop",
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa7e876c-06d9-11e8-8e80-008642e5faa1.jpg?crop=3000%2C1687%2C0%2C156",
+            Symbol(id): "$Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9.crop({\\"ratio\\":\\"3:2\\"})",
+          },
+          "id": "ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+          "title": "Immunity offer over VIP child abuse ring",
+          Symbol(id): "Image:ec9e2c5b-1d8f-493c-8b5c-f33da45187b9",
+        },
+        "publicationName": "TIMES",
+        "publishedTime": "2015-03-17T20:28:04.000Z",
+        "section": null,
+        "summary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "An investigation has been ordered into claims that detectives were told to limit their inquiries into a prominent",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/immunity-offer-over-vip-child-abuse-ring-kpvvhb6mn",
+        Symbol(id): "Article:10f461fc-cce4-11e4-81dd-064fe933cd41",
+      },
+    ]
+  }
+  articlesLoading={false}
+  count={10}
+  imageRatio={1.5}
+  onArticlePress={[Function]}
+  onNext={[Function]}
+  onPrev={[Function]}
+  page={1}
+  pageSize={3}
+  refetch={[Function]}
+  showImages={true}
+/>
 `;
 
 exports[`2. Render an topics page loading state 1`] = `
-<div>
-  <div />
-  <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
-  >
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ ldBdZT"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ exZFAC"
-          >
-            <div
-              data-testid="results-message"
-              dir="auto"
-            >
-              Showing 0 - 0 of 0 results
-            </div>
-          </div>
-          <div
-            className="responsive-styles__component-fbPFZZ cePhpb"
-          >
-            <div />
-            <div />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div
-        accessibility-label="empty.0"
-        data-testid="empty.0"
-        id="empty.0"
-      >
-        <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        accessibility-label="empty.1"
-        data-testid="empty.1"
-        id="empty.1"
-      >
-        <div />
-        <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        accessibility-label="empty.2"
-        data-testid="empty.2"
-        id="empty.2"
-      >
-        <div />
-        <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
-        >
-          <div>
-            <div
-              className="articleListImage"
-            >
-              <div>
-                <div
-                  style={
-                    Object {
-                      "display": "table",
-                      "height": 0,
-                      "overflow": "hidden",
-                      "paddingBottom": "66.66666666666667%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    src=""
-                    style={
-                      Object {
-                        "display": "block",
-                        "position": "absolute",
-                        "width": "100%",
-                        "zIndex": 1,
-                      }
-                    }
-                  />
-                  <div
-                    style={
-                      Object {
-                        "bottom": "0px",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="articleListContent"
-            >
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "backgroundImage": "linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%)",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div
-          className="responsive-styles__component-fbPFZZ kdgRsQ"
-        >
-          <div
-            className="responsive-styles__component-fbPFZZ ciodUt"
-          >
-            <div />
-            <div />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`3. Render an topics page error state 1`] = `
-<div
-  className="responsive-styles__component-fbPFZZ hcvmyw"
->
-  <div>
-    <div
-      dir="auto"
-    >
-      Something's gone wrong
-    </div>
-    <div
-      dir="auto"
-    >
-      We can't load the page you have requested. Please check your network connection and retry to continue
-    </div>
-    <div>
-      <div
-        aria-label="Retry"
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        tabIndex="0"
-      >
-        <div>
-          <div
-            dir="auto"
-          >
-            RETRY
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="responsive-styles__component-fbPFZZ Xuekk"
-  >
-    <div>
-      <div
-        style={
-          Object {
-            "display": "table",
-            "height": 0,
-            "overflow": "hidden",
-            "paddingBottom": "110%",
-          }
-        }
-      >
-        <img
-          alt=""
-          src="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
-          style={
-            Object {
-              "display": "block",
-              "position": "absolute",
-              "width": "100%",
-              "zIndex": 1,
-            }
-          }
-        />
-        <div
-          style={
-            Object {
-              "bottom": "0px",
-              "left": "0px",
-              "position": "absolute",
-              "right": "0px",
-              "top": "0px",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-              }
-            }
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<ArticleList
+  articleListHeader={
+    <TopicHead
+      description=""
+      isLoading={true}
+      name=""
+    />
+  }
+  articlesLoading={true}
+  imageRatio={1.5}
+  isLoading={true}
+  pageSize={3}
+  refetch={[Function]}
+  showImages={true}
+/>
 `;

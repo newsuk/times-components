@@ -4,6 +4,8 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
+jest.mock("@times-components/article-list", () => "ArticleList");
+
 export default () => {
   const pageSize = 3;
 
@@ -60,11 +62,5 @@ export default () => {
     );
 
     expect(tree).toMatchSnapshot("2. Render an topics page loading state");
-  });
-
-  it("should render the topics page with an article list page error state", () => {
-    const tree = renderer.create(<Topic {...props} error={{}} />);
-
-    expect(tree).toMatchSnapshot("3. Render an topics page error state");
   });
 };
