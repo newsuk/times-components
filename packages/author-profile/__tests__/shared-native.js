@@ -19,4 +19,22 @@ export default () => {
     await flatList.instance.props.onEndReached();
     expect(flatList.props.data.length).toBe(pageSize * 2);
   });
+
+  it("should fetch correct articles on scroll", async () => {
+    const tree = renderer.create(
+      <MockedProvider mocks={mockArticles}>
+        <AuthorProfile {...props} />
+      </MockedProvider>
+    );
+    const [, ...articles] = mockArticles;
+    const firstArticleInSecondPage =
+      articles[1].result.data.author.articles.list[0];
+
+    const flatList = tree.root.findByType(FlatList);
+    await flatList.instance.props.onEndReached();
+
+    expect(flatList.instance.props.data[pageSize].id).toBe(
+      firstArticleInSecondPage.id
+    );
+  });
 };
