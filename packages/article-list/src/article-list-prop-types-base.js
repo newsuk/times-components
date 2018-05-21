@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import { propTypesBase as articleItemPropTypes } from "./article-list-item-prop-types";
 
 export const propTypes = {
   articleListHeader: PropTypes.element,
-  articles: PropTypes.arrayOf(PropTypes.shape()),
+  articles: PropTypes.arrayOf(PropTypes.shape(articleItemPropTypes)),
   articlesLoading: PropTypes.bool,
   isLoading: PropTypes.bool.isRequired,
   onArticlePress: PropTypes.func.isRequired,
