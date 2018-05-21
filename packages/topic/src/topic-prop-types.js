@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
+import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
 export const propTypes = {
-  name: PropTypes.string,
-  description: PropTypes.string,
-  isLoading: PropTypes.bool
+  name: topicHeadPropTypes.name,
+  description: topicHeadPropTypes.description,
+  isLoading: topicHeadPropTypes.isLoading
 };
 
 export const defaultProps = {
