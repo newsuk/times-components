@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Platform } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import Svg, { G, Path } from "svgs";
 import {
   colours,
@@ -18,18 +18,8 @@ const textStyle = {
 };
 
 const container = {
-  flexDirection: "row",
-  ...Platform.select({
-    web: {
-      alignItems: "center"
-    },
-    android: {
-      alignItems: "baseline"
-    },
-    ios: {
-      alignItems: "center"
-    }
-  })
+  alignItems: "center",
+  flexDirection: "row"
 };
 
 const styles = StyleSheet.create({
