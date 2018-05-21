@@ -4,7 +4,8 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
-jest.mock('@times-components/article-list', () => require('./articleListMock'))
+// eslint-disable-next-line global-require
+jest.mock("@times-components/article-list", () => require("./articleListMock"));
 
 export default () => {
   const pageSize = 3;
@@ -56,9 +57,7 @@ export default () => {
   });
 
   it("should render the loading state", () => {
-    const tree = renderer.create(
-        <Topic {...props} isLoading />
-    );
+    const tree = renderer.create(<Topic {...props} isLoading />);
 
     expect(tree).toMatchSnapshot("2. Render an topics page loading state");
   });
@@ -68,6 +67,8 @@ export default () => {
       <Topic {...props} error={{}} refetch={() => null} />
     );
 
-    expect(tree).toMatchSnapshot("3. Render an topics page error state with an invalid Topic Query");
+    expect(tree).toMatchSnapshot(
+      "3. Render an topics page error state with an invalid Topic Query"
+    );
   });
 };

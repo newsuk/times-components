@@ -26,7 +26,7 @@ const getProps = decorateAction => ({
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
-  slug,
+  slug
 });
 
 const mocks = fixtureGenerator.makeTopicArticleMocks({
@@ -43,15 +43,15 @@ export default {
       component: (_, { decorateAction }) => (
         <StorybookProvider mocks={mocks}>
           <TopicProvider debounceTimeMs={0} slug={slug}>
-              {({ topic, error, isLoading }) => (
-                <Topic
-                  {...getProps(decorateAction)}
-                  topic={topic}
-                  error={error}
-                  isLoading={isLoading}
-                />
-              )}
-            </TopicProvider>
+            {({ topic, error, isLoading }) => (
+              <Topic
+                {...getProps(decorateAction)}
+                topic={topic}
+                error={error}
+                isLoading={isLoading}
+              />
+            )}
+          </TopicProvider>
         </StorybookProvider>
       )
     },
@@ -88,6 +88,6 @@ export default {
           </TopicProvider>
         </MockedProvider>
       )
-    },
+    }
   ]
 };
