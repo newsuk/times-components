@@ -7,7 +7,7 @@ import { MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
 export default () => {
-  const topicProps = {
+  const props = {
     analyticsStream: () => {},
     onArticlePress: () => {},
     refetch: () => {},
@@ -27,12 +27,7 @@ export default () => {
           withImages: true
         })}
       >
-        <Topic
-          {...topicProps}
-          analyticsStream={() => {}}
-          page={1}
-          pageSize={pageSize}
-        />
+        <Topic {...props} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
 

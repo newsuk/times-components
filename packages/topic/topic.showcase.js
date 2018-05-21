@@ -2,9 +2,10 @@
 
 import "react-native";
 import React from "react";
+import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
+import { MockedProvider } from "@times-components/utils";
 
 import Topic from "./src/topic";
 
@@ -16,16 +17,12 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const topicHeadDescription =
-  "Animals are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few  exceptions, animals consume organic materials.";
 const pageSize = 5;
 
-const props = {
+const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
   name: "Animals",
-  onArticlePress: preventDefaultedAction(decorateAction)(
-    "onArticlePress"
-  ),
+  onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
   slug: "chelsea",
@@ -33,7 +30,12 @@ const props = {
     name: "Chelsea",
     description: "A swanky part of town."
   }
-};
+});
+
+const mocks = fixtureGenerator.makeTopicArticleMocks({
+  withImages: true,
+  pageSize
+});
 
 export default {
   name: "Pages/Topic",
@@ -41,26 +43,20 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: (_, { decorateAction, text }) => {
-        const mocks = fixtureGenerator.makeTopicArticleMocks({
-          withImages: true,
-          pageSize
-        });
-
-        return (
-          <StorybookProvider mocks={mocks}>
-            <Topic
-              {...props}
-              description={text("Topic head description:", topicHeadDescription)}
-            />
-          </StorybookProvider>
-        );
-      }
+      component: (_, { decorateAction }) => (
+        <StorybookProvider mocks={mocks}>
+          <Topic {...getProps(decorateAction)} />
+        </StorybookProvider>
+      )
     },
     {
       type: "story",
       name: "Loading",
-      component: () => <Topic {...props} isLoading />
+      component: (_, { decorateAction }) => (
+        <MockedProvider mocks={mocks}>
+          <Topic {...getProps(decorateAction)} isLoading />
+        </MockedProvider>
+      )
     }
   ]
 };

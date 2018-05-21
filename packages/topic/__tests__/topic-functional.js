@@ -5,13 +5,12 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
-jest.mock("../src/topic-head-divider", () => "Divider");
 jest.mock("@times-components/article-list", () => "ArticleList");
 
 export default () => {
   const realIntl = Intl;
 
-  const topicProps = {
+  const props = {
     analyticsStream: () => {},
     onArticlePress: () => {},
     refetch: () => {},
@@ -44,7 +43,7 @@ export default () => {
           withImages: true
         })}
       >
-        <Topic {...topicProps} page={1} pageSize={pageSize} />
+        <Topic {...props} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
 
