@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/utils@0.10.0...@times-components/utils@0.10.1) (2018-05-21)
+
+
+### Bug Fixes
+
+* mocked provider ([#952](https://github.com/newsuk/times-components/issues/952)) ([db89e49](https://github.com/newsuk/times-components/commit/db89e49))
+
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/utils@0.9.1...@times-components/utils@0.10.0) (2018-05-15)
 

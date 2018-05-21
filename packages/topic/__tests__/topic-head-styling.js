@@ -1,4 +1,3 @@
-import "react-native";
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -9,6 +8,7 @@ export default () => {
     const tree = renderer
       .create(
         <TopicHead
+          isLoading={false}
           name="Animals"
           description="Animals are multicellular eukaryotic organisms."
         />

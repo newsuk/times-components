@@ -20,7 +20,7 @@ exports[`TopicHead functional tests on web should render correctly 1`] = `
 </div>
 `;
 
-exports[`TopicHead functional tests on web should render correctly when loading 1`] = `<TopicHeadLoading />`;
+exports[`TopicHead functional tests on web should render correctly when loading 1`] = `<div />`;
 
 exports[`TopicHead functional tests on web should render correctly with a description 1`] = `
 <div>
@@ -37,7 +37,9 @@ exports[`TopicHead functional tests on web should render correctly with a descri
       >
         Animals
       </h1>
-      <Divider />
+      <div
+        className="responsive-styles__component-fbPFZZ gUagh"
+      />
       <div
         data-testid="topic-description"
         dir="auto"
