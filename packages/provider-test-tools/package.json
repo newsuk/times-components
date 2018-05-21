@@ -61,7 +61,7 @@
   "dependencies": {
     "@times-components/provider": "0.30.3",
     "apollo-cache-inmemory": "1.1.10",
-    "apollo-client": "2.2.6",
+    "apollo-client": "2.3.1",
     "apollo-link": "1.2.0",
     "apollo-utilities": "1.0.4",
     "graphql": "0.13.1",
