@@ -72,4 +72,27 @@ export default () => {
       "3. Render a topics page error state with an invalid Topic Query"
     );
   });
+
+  it("should send analytics when rendering a topic page", () => {
+    const reporter = jest.fn();
+
+    renderer.create(
+      <MockedProvider mocks={mockArticles}>
+        <Topic {...props} page={1} pageSize={pageSize} analyticsStream={reporter} />
+      </MockedProvider>
+    );
+
+    expect(reporter).toHaveBeenCalledWith(
+      expect.objectContaining({
+        object: "Topic",
+        component: "Page",
+        action: "Viewed",
+        attrs: expect.objectContaining({
+          topicName: "Chelsea",
+          page: 1,
+          pageSize
+        })
+      })
+    );
+  });
 };
