@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
@@ -10,6 +9,8 @@ jest.mock("@times-components/article-list", () => "ArticleList");
 export default () => {
   const realIntl = Intl;
 
+  const pageSize = 3;
+
   const props = {
     analyticsStream: () => {},
     onArticlePress: () => {},
@@ -20,6 +21,11 @@ export default () => {
       description: "A swanky part of town."
     }
   };
+
+  const mocks = fixtureGenerator.makeTopicArticleMocks({
+    pageSize,
+    withImages: true
+  });
 
   beforeEach(() => {
     global.Intl = {
@@ -35,14 +41,8 @@ export default () => {
   });
 
   it("should render correctly", () => {
-    const pageSize = 3;
     const tree = renderer.create(
-      <MockedProvider
-        mocks={fixtureGenerator.makeTopicArticleMocks({
-          pageSize,
-          withImages: true
-        })}
-      >
+      <MockedProvider mocks={mocks}>
         <Topic {...props} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
