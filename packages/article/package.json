@@ -43,6 +43,7 @@
     "@times-components/jest-configurator": "0.7.1",
     "@times-components/storybook": "0.10.3",
     "@times-components/tealium-utils": "0.3.2",
+    "@times-components/webpack-configurator": "0.0.1",
     "apollo-utilities": "1.0.12",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",

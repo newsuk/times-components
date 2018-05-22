@@ -40,6 +40,7 @@
     "@times-components/provider-test-tools": "0.6.3",
     "@times-components/storybook": "0.10.3",
     "@times-components/tealium-utils": "0.3.2",
+    "@times-components/webpack-configurator": "0.0.1",
     "babel-core": "6.26.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
