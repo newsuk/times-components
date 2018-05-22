@@ -51,10 +51,10 @@ class AuthorProfileHead extends Component {
             accessibilityRole="banner"
             style={[styles.authorHeadContainer, { paddingTop: spacing(6) }]}
           >
-            {uri ? (
+            {!!uri && (
               <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
-            ) : null}
-            {name ? (
+            )}
+            {!!name && (
               <Text
                 accessibilityLabel="author-name"
                 accessibilityRole="heading"
@@ -63,16 +63,16 @@ class AuthorProfileHead extends Component {
               >
                 {name}
               </Text>
-            ) : null}
-            {jobTitle ? <AuthorProfileHeadJobTitle jobTitle={jobTitle} /> : null}
+            )}
+            {!!jobTitle && <AuthorProfileHeadJobTitle jobTitle={jobTitle} />}
             {renderTwitterLink()}
-            {biography ? (
+            {!!biography && (
               <View style={styles.biographyContainer}>
                 <Text testID="author-bio" style={styles.biography}>
                   {renderTrees(biography)}
                 </Text>
               </View>
-            ) : null}
+            )}
           </View>
         </View>
       </Animations.FadeIn>
