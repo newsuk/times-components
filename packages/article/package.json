@@ -34,8 +34,7 @@
     "url": "https://github.com/newsuk/times-components/issues"
   },
   "files": [
-    "dist/article.js",
-    "dist/rnw/index.js"
+    "dist/article.js"
   ],
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {

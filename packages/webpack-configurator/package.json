@@ -1,7 +1,7 @@
 {
   "name": "@times-components/webpack-configurator",
   "version": "0.0.1",
-  "description": "times-comopnents webpack-configurator ",
+  "description": "webpack-configurator for times-components",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
