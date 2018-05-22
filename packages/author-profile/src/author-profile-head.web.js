@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
-import Gradient from "@times-components/gradient";
 import Image from "@times-components/image";
 import { renderTrees } from "@times-components/markup";
 import { Animations } from "@times-components/styleguide";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
+import AuthorProfileHeadLoading from "./author-profile-head-loading";
+import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
@@ -32,13 +33,7 @@ class AuthorProfileHead extends Component {
     } = this.props;
 
     if (isLoading) {
-      return (
-        <View style={styles.loadingContainer}>
-          <View style={styles.loadingRoundImage}>
-            <Gradient style={styles.loadingGradient} />
-          </View>
-        </View>
-      );
+      return <AuthorProfileHeadLoading />;
     }
 
     const renderTwitterLink = () => {
@@ -66,12 +61,12 @@ class AuthorProfileHead extends Component {
             accessibilityRole="banner"
             style={styles.authorHeadContainer}
           >
-            {uri ? (
+            {!!uri && (
               <ImageContainer>
                 <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
               </ImageContainer>
-            ) : null}
-            {name ? (
+            )}
+            {!!name && (
               <AuthorNameWrapper
                 accessibilityLabel="author-name"
                 accessibilityRole="heading"
@@ -80,24 +75,16 @@ class AuthorProfileHead extends Component {
               >
                 {name}
               </AuthorNameWrapper>
-            ) : null}
-            {jobTitle ? (
-              <Text
-                accessibilityRole="heading"
-                aria-level="2"
-                style={styles.jobTitle}
-              >
-                {jobTitle.toLowerCase()}
-              </Text>
-            ) : null}
+            )}
+            {!!jobTitle && <AuthorProfileHeadJobTitle jobTitle={jobTitle} />}
             {renderTwitterLink()}
-            {biography ? (
+            {!!biography && (
               <BioContainer>
                 <Text testID="author-bio" style={styles.biography}>
                   {renderTrees(biography)}
                 </Text>
               </BioContainer>
-            ) : null}
+            )}
           </AuthorHeadWrapper>
         </View>
       </Animations.FadeIn>

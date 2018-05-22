@@ -17,6 +17,6 @@ export const defaultProps = {
   jobTitle: "",
   name: "",
   onTwitterLinkPress: () => {},
-  twitter: null,
+  twitter: "",
   uri: ""
 };

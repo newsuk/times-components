@@ -2817,7 +2817,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         jobTitle=""
         name=""
         onTwitterLinkPress={[Function]}
-        twitter={null}
+        twitter=""
         uri=""
       />
       <ArticleListPagination
