@@ -2,3 +2,4 @@
 **/coverage/*
 dist
 flow-typed
+rnw.js

@@ -1,15 +1,15 @@
-const path = require("path");
-const webpack = require("webpack");
-const {readFileSync, existsSync} = require("fs");
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
+
+const { resolve } = require("path");
+const { readFileSync, existsSync } = require("fs");
+const { dev } = require("./package.json");
+
 const babelrc = JSON.parse(readFileSync("./.babelrc", "utf8"));
-const {dev} = require('./package.json');
 
 const babelConfig = {
   ...babelrc,
-  plugins: [
-    ...babelrc.plugins,
-    "react-native-web"
-  ]
+  plugins: [...babelrc.plugins, "react-native-web"]
 };
 
 function getEntry(entry) {
@@ -19,15 +19,15 @@ function getEntry(entry) {
 }
 
 function externals(ctx, path, cb) {
-  if ( path.match(/\./) ) {
+  if (path.match(/\./)) {
     return cb();
   }
 
-  if ( path.match(/^@times-components/) ) {
-    return cb(null, 'commonjs2 ' + path+"/rnw");
+  if (path.match(/^@times-components/)) {
+    return cb(null, `commonjs2 ${path}/rnw`);
   }
 
-  cb(null, 'commonjs2 ' + path);
+  return cb(null, `commonjs2 ${path}`);
 }
 
 module.exports = {
@@ -40,10 +40,10 @@ module.exports = {
   },
   externals,
   entry: {
-    index: getEntry(dev),
+    index: getEntry(dev)
   },
   output: {
-    path: path.resolve(__dirname),
+    path: resolve(__dirname),
     filename: "rnw.js",
     libraryTarget: "commonjs2"
   },
@@ -53,7 +53,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_module)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
             cacheDirectory: true,
             ...babelConfig
