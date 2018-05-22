@@ -59,7 +59,7 @@ export default () => {
   it("should render the loading state", () => {
     const tree = renderer.create(<Topic {...props} isLoading />);
 
-    expect(tree).toMatchSnapshot("2. Render an topics page loading state");
+    expect(tree).toMatchSnapshot("2. Render a topics page loading state");
   });
 
   it("should render an error state with an invalid Topic Query", () => {
@@ -68,7 +68,7 @@ export default () => {
     );
 
     expect(tree).toMatchSnapshot(
-      "3. Render an topics page error state with an invalid Topic Query"
+      "3. Render a topics page error state with an invalid Topic Query"
     );
   });
 };
