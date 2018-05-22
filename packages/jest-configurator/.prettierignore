@@ -1,5 +1,6 @@
 **/node_modules/*
 dist
+lib
 __snapshots__
 android/*
 ios/*
@@ -10,6 +11,5 @@ CHANGELOG.md
 **/coverage/*
 LICENSE
 yarn.lock
-*.log
-rnw.js
 *.sh
+*.log
