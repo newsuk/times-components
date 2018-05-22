@@ -176,7 +176,7 @@ exports[`1. Render a Topic page 1`] = `
 />
 `;
 
-exports[`2. Render an topics page loading state 1`] = `
+exports[`2. Render a topics page loading state 1`] = `
 <ArticleList
   articleListHeader={
     <TopicHead
@@ -191,5 +191,11 @@ exports[`2. Render an topics page loading state 1`] = `
   pageSize={3}
   refetch={[Function]}
   showImages={true}
+/>
+`;
+
+exports[`3. Render a topics page error state with an invalid Topic Query 1`] = `
+<ArticleListPageError
+  refetch={[Function]}
 />
 `;

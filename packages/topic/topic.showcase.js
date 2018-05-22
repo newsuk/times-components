@@ -8,6 +8,7 @@ import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
 
 import Topic from "./src/topic";
+import TopicProvider from "../provider/src/topic";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -18,19 +19,14 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const pageSize = 5;
+const slug = "chelsea";
 
 const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
-  isLoading: false,
-  name: "Animals",
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
-  slug: "chelsea",
-  topic: {
-    name: "Chelsea",
-    description: "A swanky part of town."
-  }
+  slug
 });
 
 const mocks = fixtureGenerator.makeTopicArticleMocks({
@@ -46,7 +42,16 @@ export default {
       name: "Default",
       component: (_, { decorateAction }) => (
         <StorybookProvider mocks={mocks}>
-          <Topic {...getProps(decorateAction)} />
+          <TopicProvider debounceTimeMs={0} slug={slug}>
+            {({ topic, error, isLoading }) => (
+              <Topic
+                {...getProps(decorateAction)}
+                topic={topic}
+                error={error}
+                isLoading={isLoading}
+              />
+            )}
+          </TopicProvider>
         </StorybookProvider>
       )
     },
@@ -56,6 +61,31 @@ export default {
       component: (_, { decorateAction }) => (
         <MockedProvider mocks={mocks}>
           <Topic {...getProps(decorateAction)} isLoading />
+        </MockedProvider>
+      )
+    },
+    {
+      type: "story",
+      name: "With an error getting Topic",
+      component: (_, { decorateAction }) => (
+        <MockedProvider
+          mocks={fixtureGenerator.makeMocksWithTopicError({
+            pageSize,
+            slug,
+            withImages: true
+          })}
+        >
+          <TopicProvider debounceTimeMs={0} slug={slug}>
+            {({ topic, error, isLoading, refetch }) => (
+              <Topic
+                {...getProps(decorateAction)}
+                topic={topic}
+                error={error}
+                isLoading={isLoading}
+                refetch={refetch}
+              />
+            )}
+          </TopicProvider>
         </MockedProvider>
       )
     }

@@ -1,28 +1,29 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { TopicArticlesProvider } from "../src/provider";
+import { addTypenameToDocument } from "apollo-utilities";
+import fixture from "@times-components/provider-test-tools/fixtures/topic.json";
+import { TopicProvider } from "../src/provider";
+import { query as topicQuery } from "../src/topic";
 
-const pageSize = 5;
-
-const mocks = fixtureGenerator.makeTopicArticleMocks({
-  withImages: true,
-  pageSize,
-  delay: 0
-});
+const mocks = [
+  {
+    request: {
+      query: addTypenameToDocument(topicQuery),
+      variables: {
+        slug: "chelsea"
+      }
+    },
+    result: fixture
+  }
+];
 
 const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <TopicArticlesProvider
-        slug="chelsea"
-        pageSize={pageSize}
-        page={1}
-        debounceTimeMs={0}
-      >
+      <TopicProvider slug="chelsea" debounceTimeMs={0}>
         {child}
-      </TopicArticlesProvider>
+      </TopicProvider>
     </MockedProvider>
   );
 

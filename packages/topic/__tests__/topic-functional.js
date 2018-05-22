@@ -4,10 +4,13 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
-jest.mock("@times-components/article-list", () => "ArticleList");
+// This is the only possible way for this to work... :'-(
+// eslint-disable-next-line global-require
+jest.mock("@times-components/article-list", () => require("./articleListMock"));
 
 export default () => {
   const pageSize = 3;
+  const slug = "chelsea";
 
   const mockArticles = fixtureGenerator.makeTopicArticleMocks({
     pageSize,
@@ -21,7 +24,7 @@ export default () => {
     page: 1,
     pageSize,
     refetch: () => {},
-    slug: "chelsea",
+    slug,
     topic: {
       name: "Chelsea",
       description: "A swanky part of town."
@@ -55,12 +58,18 @@ export default () => {
   });
 
   it("should render the loading state", () => {
+    const tree = renderer.create(<Topic {...props} isLoading />);
+
+    expect(tree).toMatchSnapshot("2. Render a topics page loading state");
+  });
+
+  it("should render an error state with an invalid Topic Query", () => {
     const tree = renderer.create(
-      <MockedProvider mocks={mockArticles}>
-        <Topic {...props} isLoading />
-      </MockedProvider>
+      <Topic {...props} error={{}} refetch={() => null} />
     );
 
-    expect(tree).toMatchSnapshot("2. Render an topics page loading state");
+    expect(tree).toMatchSnapshot(
+      "3. Render a topics page error state with an invalid Topic Query"
+    );
   });
 };
