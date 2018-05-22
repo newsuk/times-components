@@ -20,7 +20,7 @@ const listViewPageSize = 1;
 const listViewSize = 10;
 const listViewScrollRenderAheadDistance = 10;
 
-class ArticlePage   extends Component {
+class ArticlePage extends Component {
   static renderRow(
     rowData,
     onRelatedArticlePress,
