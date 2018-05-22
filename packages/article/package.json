@@ -38,7 +38,7 @@
     "@times-components/jest-configurator": "0.7.0",
     "@times-components/storybook": "0.10.2",
     "@times-components/tealium-utils": "0.3.1",
-    "apollo-utilities": "1.0.4",
+    "apollo-utilities": "1.0.12",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -55,7 +55,7 @@
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
     "react-test-renderer": "16.3.1",
-    "styled-components": "3.2.2"
+    "styled-components": "3.2.6"
   },
   "dependencies": {
     "@times-components/ad": "0.18.12",
