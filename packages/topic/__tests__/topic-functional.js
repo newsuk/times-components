@@ -4,6 +4,7 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
+// This is the only possible way for this to work... :'-(
 // eslint-disable-next-line global-require
 jest.mock("@times-components/article-list", () => require("./articleListMock"));
 
