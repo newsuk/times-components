@@ -1,8 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
-import mockDate from "mockdate";
 import Topic from "../src/topic";
 
 // This is the only possible way for this to work... :'-(
@@ -93,7 +93,7 @@ export default () => {
     const call = reporter.mock.calls[0][0];
 
     expect(call).toMatchSnapshot(
-      "3. Send analytics when rendering a topics page (with null event time)"
+      "4. Send analytics when rendering a topics page (with null event time)"
     );
   });
 };
