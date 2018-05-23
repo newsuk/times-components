@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/newsuk/times-components/compare/@times-components/topic@0.2.1...@times-components/topic@0.2.2) (2018-05-23)
+
+
+### Bug Fixes
+
+* Get Topic "Viewed" analytics working ([#954](https://github.com/newsuk/times-components/issues/954)) ([1507be4](https://github.com/newsuk/times-components/commit/1507be4))
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/topic@0.2.0...@times-components/topic@0.2.1) (2018-05-23)
 
