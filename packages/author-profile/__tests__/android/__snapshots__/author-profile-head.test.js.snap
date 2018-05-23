@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Should not re-render when twitter prop is changed 1`] = `
+<AuthorProfileHeadTwitter
+  onTwitterLinkPress={[Function]}
+  twitter="testTwitter"
+  url="https://twitter.com/testTwitter"
+/>
+`;
+
+exports[`2. Should not re-render when twitter prop is changed 1`] = `
+<AuthorProfileHeadTwitter
+  onTwitterLinkPress={[Function]}
+  twitter="testTwitter"
+  url="https://twitter.com/testTwitter"
+/>
+`;
+
+exports[`3. Should re-render when isLoading prop is changed 1`] = `
+<FadeIn>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+      }
+    }
+  >
+    <View
+      accessibilityRole="banner"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": 40,
+          "paddingTop": 30,
+          "width": "100%",
+        }
+      }
+    >
+      <AuthorProfileHeadTwitter
+        onTwitterLinkPress={[Function]}
+        twitter="testTwitter"
+        url="https://twitter.com/testTwitter"
+      />
+      <View
+        style={
+          Object {
+            "paddingBottom": 30,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            }
+          }
+          testID="author-bio"
+        />
+      </View>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`4. Should re-render when isLoading prop is changed 1`] = `<AuthorProfileHeadLoading />`;
