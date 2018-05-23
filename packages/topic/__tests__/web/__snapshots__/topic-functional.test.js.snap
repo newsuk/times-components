@@ -199,3 +199,17 @@ exports[`3. Render a topics page error state with an invalid Topic Query 1`] = `
   refetch={[Function]}
 />
 `;
+
+exports[`4. Send analytics when rendering a topics page (with null event time) 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "page": 1,
+    "pageSize": 3,
+    "topicName": "Chelsea",
+  },
+  "component": "Page",
+  "object": "Topic",
+}
+`;

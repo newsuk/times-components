@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
@@ -39,10 +40,12 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+    mockDate.set(1514764800000, 0);
   });
 
   afterEach(() => {
     global.Intl = realIntl;
+    mockDate.reset();
   });
 
   it("should render correctly", async () => {
@@ -70,6 +73,27 @@ export default () => {
 
     expect(tree).toMatchSnapshot(
       "3. Render a topics page error state with an invalid Topic Query"
+    );
+  });
+
+  it("should send analytics when rendering a topic page", () => {
+    const reporter = jest.fn();
+
+    renderer.create(
+      <MockedProvider mocks={mockArticles}>
+        <Topic
+          {...props}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={reporter}
+        />
+      </MockedProvider>
+    );
+
+    const call = reporter.mock.calls[0][0];
+
+    expect(call).toMatchSnapshot(
+      "4. Send analytics when rendering a topics page (with null event time)"
     );
   });
 };
