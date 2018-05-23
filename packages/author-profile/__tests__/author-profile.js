@@ -95,7 +95,7 @@ export default () => {
     );
   });
 
-  it("should send analytics when rendering an author profile page", () => {
+  it("should send analytics when rendering an Author Profile page", () => {
     const reporter = jest.fn();
 
     renderer.create(
