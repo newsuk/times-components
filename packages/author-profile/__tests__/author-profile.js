@@ -109,3 +109,4 @@ export default () => {
     expect(call).toMatchSnapshot("5. Author profile page analytics");
   });
 };
+
