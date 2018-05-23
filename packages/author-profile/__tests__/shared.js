@@ -99,6 +99,7 @@ export default () => {
   context("AuthorProfileHead shared tests", () => {
     const mockOnPress = jest.fn();
     const twitterProps = {
+      isLoading: false,
       onTwitterLinkPress: mockOnPress,
       twitter: "testTwitterHandle",
       url: "www.twitter.com/"
@@ -142,6 +143,14 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(reporter.mock.calls[0]).toMatchSnapshot();
+    const call = reporter.mock.calls[0][0];
+    const callWithoutEventTime =
+      call.attrs && call.attrs.eventTime
+        ? [{ ...call, attrs: { ...call.attrs, eventTime: null } }]
+        : call;
+
+    expect(callWithoutEventTime).toMatchSnapshot(
+      "8. Author profile page analytics"
+    );
   });
 };

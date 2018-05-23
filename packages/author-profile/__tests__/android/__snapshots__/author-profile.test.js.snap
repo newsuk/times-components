@@ -4827,7 +4827,7 @@ exports[`4. Render an author profile page error state 1`] = `
 exports[`5. Render an author profile header with a twitter link 1`] = `
 <AuthorProfileHead
   biography={Array []}
-  isLoading={true}
+  isLoading={false}
   jobTitle=""
   name=""
   onTwitterLinkPress={[Function]}
@@ -4840,7 +4840,7 @@ exports[`5. Render an author profile header with a twitter link 1`] = `
 exports[`6. Render an author profile header without a twitter link 1`] = `
 <AuthorProfileHead
   biography={Array []}
-  isLoading={true}
+  isLoading={false}
   jobTitle=""
   name=""
   onTwitterLinkPress={[Function]}
@@ -4850,14 +4850,14 @@ exports[`6. Render an author profile header without a twitter link 1`] = `
 />
 `;
 
-exports[`AuthorProfile tests on android should send analytics when rendering an author profile page 1`] = `
+exports[`8. Author profile page analytics 1`] = `
 Array [
   Object {
     "action": "Viewed",
     "attrs": Object {
       "articlesCount": 20,
       "authorName": "Deborah Haynes",
-      "eventTime": "2018-05-23T10:06:22.721Z",
+      "eventTime": null,
       "page": 1,
       "pageSize": 3,
     },
