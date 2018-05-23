@@ -226,7 +226,9 @@ exports[`1. Render an author profile page 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
+              "backgroundColor": "#F9F9F9",
+              "borderBottomColor": "#F0F0F0",
+              "borderBottomWidth": 0.5,
               "flexDirection": "column",
               "paddingBottom": 40,
               "paddingTop": 30,
@@ -1851,7 +1853,9 @@ exports[`2. Render an author profile page without images 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
+              "backgroundColor": "#F9F9F9",
+              "borderBottomColor": "#F0F0F0",
+              "borderBottomWidth": 0.5,
               "flexDirection": "column",
               "paddingBottom": 40,
               "paddingTop": 30,
@@ -2902,7 +2906,9 @@ exports[`3. Render an author profile page loading state 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
+              "backgroundColor": "#F9F9F9",
+              "borderBottomColor": "#F0F0F0",
+              "borderBottomWidth": 0.5,
               "flexDirection": "column",
               "paddingBottom": 40,
               "paddingTop": 30,
@@ -2914,7 +2920,9 @@ exports[`3. Render an author profile page loading state 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#F9F8F3",
+                "backgroundColor": "#F9F9F9",
+                "borderBottomColor": "#F0F0F0",
+                "borderBottomWidth": 0.5,
                 "minHeight": 264,
                 "width": "100%",
               }
