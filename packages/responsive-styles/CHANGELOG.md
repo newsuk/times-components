@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.3"></a>
+## [0.8.3](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@0.8.2...@times-components/responsive-styles@0.8.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/responsive-styles
+
 <a name="0.8.2"></a>
 ## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@0.8.1...@times-components/responsive-styles@0.8.2) (2018-05-21)
 
