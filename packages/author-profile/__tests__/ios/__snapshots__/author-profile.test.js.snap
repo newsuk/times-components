@@ -4811,3 +4811,46 @@ exports[`4. Render an author profile page error state 1`] = `
   </View>
 </View>
 `;
+
+exports[`5. Render an author profile header with a twitter link 1`] = `
+<AuthorProfileHead
+  biography={Array []}
+  isLoading={true}
+  jobTitle=""
+  name=""
+  onTwitterLinkPress={[Function]}
+  twitter="sdasdasd"
+  uri=""
+  url="www.twitter.com/"
+/>
+`;
+
+exports[`6. Render an author profile header without a twitter link 1`] = `
+<AuthorProfileHead
+  biography={Array []}
+  isLoading={true}
+  jobTitle=""
+  name=""
+  onTwitterLinkPress={[Function]}
+  twitter=""
+  uri=""
+  url="www.twitter.com/"
+/>
+`;
+
+exports[`AuthorProfile tests on ios should send analytics when rendering an author profile page 1`] = `
+Array [
+  Object {
+    "action": "Viewed",
+    "attrs": Object {
+      "articlesCount": 20,
+      "authorName": "Deborah Haynes",
+      "eventTime": "2018-05-23T10:06:14.642Z",
+      "page": 1,
+      "pageSize": 3,
+    },
+    "component": "Page",
+    "object": "AuthorProfile",
+  },
+]
+`;

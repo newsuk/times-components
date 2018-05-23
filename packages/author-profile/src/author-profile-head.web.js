@@ -16,7 +16,7 @@ import {
   ImageContainer
 } from "./styles/responsive";
 
-class AuthorProfileHead extends Component {
+export class AuthorProfileHead extends Component {
   shouldComponentUpdate(nextProps) {
     return this.props.isLoading !== nextProps.isLoading;
   }
@@ -37,8 +37,6 @@ class AuthorProfileHead extends Component {
     }
 
     const renderTwitterLink = () => {
-      if (!twitter) return null;
-
       const twitterUrl = `https://twitter.com/${twitter}`;
 
       return (
@@ -77,7 +75,7 @@ class AuthorProfileHead extends Component {
               </AuthorNameWrapper>
             )}
             {!!jobTitle && <AuthorProfileHeadJobTitle jobTitle={jobTitle} />}
-            {renderTwitterLink()}
+            {!!twitter && renderTwitterLink()}
             {!!biography && (
               <BioContainer>
                 <Text testID="author-bio" style={styles.biography}>

@@ -10,7 +10,7 @@ import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 
-class AuthorProfileHead extends Component {
+export class AuthorProfileHead extends Component {
   shouldComponentUpdate(nextProps) {
     return this.props.isLoading !== nextProps.isLoading;
   }
@@ -31,8 +31,6 @@ class AuthorProfileHead extends Component {
     }
 
     const renderTwitterLink = () => {
-      if (!twitter) return null;
-
       const twitterUrl = `https://twitter.com/${twitter}`;
 
       return (
@@ -65,7 +63,7 @@ class AuthorProfileHead extends Component {
               </Text>
             )}
             {!!jobTitle && <AuthorProfileHeadJobTitle jobTitle={jobTitle} />}
-            {renderTwitterLink()}
+            {!!twitter && renderTwitterLink()}
             {!!biography && (
               <View style={styles.biographyContainer}>
                 <Text testID="author-bio" style={styles.biography}>

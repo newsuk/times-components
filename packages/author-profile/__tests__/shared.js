@@ -1,9 +1,11 @@
+/* global context */
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
+import AuthorProfileHead from "../src/author-profile-head"; // eslint-disable-line import/no-named-as-default
 import AuthorProfileHeadTwitter from "../src/author-profile-head-twitter";
 import longSummaryLength from "../author-profile-constants";
 
@@ -94,20 +96,41 @@ export default () => {
     );
   });
 
-  it("should handle the twitter link when pressed", () => {
+  context("AuthorProfileHead shared tests", () => {
     const mockOnPress = jest.fn();
-
     const twitterProps = {
       onTwitterLinkPress: mockOnPress,
       twitter: "testTwitterHandle",
       url: "www.twitter.com/"
     };
 
-    const wrapper = shallow(<AuthorProfileHeadTwitter {...twitterProps} />);
+    it("should render with no twitter handle", () => {
+      const wrapper = shallow(
+        <AuthorProfileHead {...twitterProps} twitter="sdasdasd" />
+      );
 
-    wrapper.find("TextLink").simulate("press");
+      expect(wrapper).toMatchSnapshot(
+        "5. Render an author profile header with a twitter link"
+      );
+    });
 
-    expect(mockOnPress).toHaveBeenCalled();
+    it("should render with no twitter handle", () => {
+      const wrapper = shallow(
+        <AuthorProfileHead {...twitterProps} twitter="" />
+      );
+
+      expect(wrapper).toMatchSnapshot(
+        "6. Render an author profile header without a twitter link"
+      );
+    });
+
+    it("should handle the twitter link when pressed", () => {
+      const wrapper = shallow(<AuthorProfileHeadTwitter {...twitterProps} />);
+
+      wrapper.find("TextLink").simulate("press");
+
+      expect(mockOnPress).toHaveBeenCalled();
+    });
   });
 
   it("should send analytics when rendering an author profile page", () => {
@@ -119,18 +142,6 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        object: "AuthorProfile",
-        component: "Page",
-        action: "Viewed",
-        attrs: expect.objectContaining({
-          articlesCount: 20,
-          authorName: mockAuthor.name,
-          page: 1,
-          pageSize: 3
-        })
-      })
-    );
+    expect(reporter.mock.calls[0]).toMatchSnapshot();
   });
 };

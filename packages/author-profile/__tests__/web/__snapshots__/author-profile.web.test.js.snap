@@ -1724,3 +1724,192 @@ exports[`4. Render an author profile page error state 1`] = `
   </div>
 </div>
 `;
+
+exports[`5. Render an author profile header with a twitter link 1`] = `
+<AuthorProfileHead
+  biography={Array []}
+  isLoading={true}
+  jobTitle=""
+  name=""
+  onTwitterLinkPress={[Function]}
+  twitter="sdasdasd"
+  uri=""
+  url="www.twitter.com/"
+/>
+`;
+
+exports[`6. Render an author profile header without a twitter link 1`] = `
+<AuthorProfileHead
+  biography={Array []}
+  isLoading={true}
+  jobTitle=""
+  name=""
+  onTwitterLinkPress={[Function]}
+  twitter=""
+  uri=""
+  url="www.twitter.com/"
+/>
+`;
+
+exports[`AuthorProfile tests on web AuthorProfileHead web tests should not re-render when twitter is changed 1`] = `
+<FadeIn>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+      }
+    }
+    testID="author-head"
+  >
+    <AuthorHeadWrapper
+      accessibilityRole="banner"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": "40px",
+          "width": "100%",
+        }
+      }
+    >
+      <AuthorProfileHeadTwitter
+        onTwitterLinkPress={[Function]}
+        twitter="testTwitter"
+        url="https://twitter.com/testTwitter"
+      />
+      <BioContainer>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            }
+          }
+          testID="author-bio"
+        />
+      </BioContainer>
+    </AuthorHeadWrapper>
+  </View>
+</FadeIn>
+`;
+
+exports[`AuthorProfile tests on web AuthorProfileHead web tests should not re-render when twitter is changed 2`] = `
+<FadeIn>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+      }
+    }
+    testID="author-head"
+  >
+    <AuthorHeadWrapper
+      accessibilityRole="banner"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": "40px",
+          "width": "100%",
+        }
+      }
+    >
+      <AuthorProfileHeadTwitter
+        onTwitterLinkPress={[Function]}
+        twitter="testTwitter"
+        url="https://twitter.com/testTwitter"
+      />
+      <BioContainer>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            }
+          }
+          testID="author-bio"
+        />
+      </BioContainer>
+    </AuthorHeadWrapper>
+  </View>
+</FadeIn>
+`;
+
+exports[`AuthorProfile tests on web AuthorProfileHead web tests should only re-render when isLoading is changed 1`] = `
+<FadeIn>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+      }
+    }
+    testID="author-head"
+  >
+    <AuthorHeadWrapper
+      accessibilityRole="banner"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F9F8F3",
+          "flexDirection": "column",
+          "paddingBottom": "40px",
+          "width": "100%",
+        }
+      }
+    >
+      <AuthorProfileHeadTwitter
+        onTwitterLinkPress={[Function]}
+        twitter="testTwitter"
+        url="https://twitter.com/testTwitter"
+      />
+      <BioContainer>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            }
+          }
+          testID="author-bio"
+        />
+      </BioContainer>
+    </AuthorHeadWrapper>
+  </View>
+</FadeIn>
+`;
+
+exports[`AuthorProfile tests on web AuthorProfileHead web tests should only re-render when isLoading is changed 2`] = `<AuthorProfileHeadLoading />`;
+
+exports[`AuthorProfile tests on web should send analytics when rendering an author profile page 1`] = `
+Array [
+  Object {
+    "action": "Viewed",
+    "attrs": Object {
+      "articlesCount": 20,
+      "authorName": "Deborah Haynes",
+      "eventTime": "2018-05-23T10:06:07.779Z",
+      "page": 1,
+      "pageSize": 3,
+    },
+    "component": "Page",
+    "object": "AuthorProfile",
+  },
+]
+`;

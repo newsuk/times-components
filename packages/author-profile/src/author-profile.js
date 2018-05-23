@@ -9,7 +9,7 @@ import {
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
-import AuthorProfileHead from "./author-profile-head";
+import AuthorProfileHead from "./author-profile-head"; // eslint-disable-line import/no-named-as-default
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 
