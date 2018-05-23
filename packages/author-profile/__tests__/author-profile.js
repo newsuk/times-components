@@ -106,7 +106,9 @@ export default () => {
 
     const call = reporter.mock.calls[0][0];
 
-    expect(call).toMatchSnapshot("5. Author profile page analytics");
+    expect(call).toMatchSnapshot(
+      "5. Send analytics when rendering an Auhtor Profile page"
+    );
   });
 };
 
