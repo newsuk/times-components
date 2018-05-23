@@ -82,17 +82,9 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        object: "Topic",
-        component: "Page",
-        action: "Viewed",
-        attrs: expect.objectContaining({
-          topicName: "Chelsea",
-          page: 1,
-          pageSize
-        })
-      })
-    );
+    const call = reporter.mock.calls[0][0];
+    const callWithoutEventTime = call.attrs && call.attrs.eventTime ? [{ ...call, attrs: {...call.attrs, eventTime: null}}] : call;
+
+    expect(callWithoutEventTime).toMatchSnapshot("3. Send analytics when rendering a topics page (with null event time)");
   });
 };
