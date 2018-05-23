@@ -753,9 +753,9 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/fructose@3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.6.3.tgz#1b30dd6457f3ca5cb8281860d2e7469b4f67c629"
+"@times-components/fructose@3.6.4":
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.6.4.tgz#112479d245a1a8e247cdbd2e18a2d8b42a047a0b"
   dependencies:
     babel-polyfill "^6.26.0"
     callsite "^1.0.0"
