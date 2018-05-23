@@ -2,6 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
+import mockDate from "mockdate";
 import Topic from "../src/topic";
 
 // This is the only possible way for this to work... :'-(
@@ -39,10 +40,12 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+    mockDate.set(1514764800000, 0);
   });
 
   afterEach(() => {
     global.Intl = realIntl;
+    mockDate.reset();
   });
 
   it("should render correctly", async () => {
@@ -78,13 +81,19 @@ export default () => {
 
     renderer.create(
       <MockedProvider mocks={mockArticles}>
-        <Topic {...props} page={1} pageSize={pageSize} analyticsStream={reporter} />
+        <Topic
+          {...props}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={reporter}
+        />
       </MockedProvider>
     );
 
     const call = reporter.mock.calls[0][0];
-    const callWithoutEventTime = call.attrs && call.attrs.eventTime ? [{ ...call, attrs: {...call.attrs, eventTime: null}}] : call;
 
-    expect(callWithoutEventTime).toMatchSnapshot("3. Send analytics when rendering a topics page (with null event time)");
+    expect(call).toMatchSnapshot(
+      "3. Send analytics when rendering a topics page (with null event time)"
+    );
   });
 };
