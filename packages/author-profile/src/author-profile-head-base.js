@@ -77,7 +77,7 @@ AuthorProfileHeadBase.propTypes = {
 AuthorProfileHeadBase.defaultProps = {
   isLoading: true,
   jobTitle: "",
-  onTwitterLinkPress: () => null,
+  onTwitterLinkPress: () => {},
   twitter: ""
 };
 
