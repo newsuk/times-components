@@ -2,15 +2,15 @@
 
 exports[`1. Render an author profile page 1`] = `
 <div>
-  <div
-    className="responsive-styles__component-fbPFZZ woNlo"
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
   >
     <div
-      data-testid="author-head"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <header
-        className="responsive-styles__component-fbPFZZ eNPgyU"
-        role="banner"
+      <div
+        data-testid="author-head"
       >
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
@@ -111,9 +111,9 @@ exports[`1. Render an author profile page 1`] = `
             , covering the most important defence & security news in the UK and around the world.
           </div>
         </div>
-      </header>
+      </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
@@ -623,15 +623,15 @@ exports[`1. Render an author profile page 1`] = `
 
 exports[`2. Render an author profile page without images 1`] = `
 <div>
-  <div
-    className="responsive-styles__component-fbPFZZ woNlo"
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
   >
     <div
-      data-testid="author-head"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <header
-        className="responsive-styles__component-fbPFZZ eNPgyU"
-        role="banner"
+      <div
+        data-testid="author-head"
       >
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
@@ -732,9 +732,9 @@ exports[`2. Render an author profile page without images 1`] = `
             , covering the most important defence & security news in the UK and around the world.
           </div>
         </div>
-      </header>
+      </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
@@ -1304,17 +1304,22 @@ exports[`2. Render an author profile page without images 1`] = `
 
 exports[`3. Render an author profile page loading state 1`] = `
 <div>
-  <div>
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
+  >
     <div>
-      <div
-        style={
-          Object {
-            "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
+      <div>
+        <div
+          style={
+            Object {
+              "backgroundImage": "linear-gradient(265deg, #F9F9F9 0%, #EDEDED 100%)",
+            }
           }
-        }
-      />
+        />
+      </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >

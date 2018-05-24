@@ -3,16 +3,16 @@
 exports[`1. Should not re-render when twitter prop is changed 1`] = `
 <AuthorProfileHeadTwitter
   onTwitterLinkPress={[Function]}
-  twitter="testTwitter"
-  url="https://twitter.com/testTwitter"
+  twitter="testTwitterHandle"
+  url="https://twitter.com/testTwitterHandle"
 />
 `;
 
 exports[`2. Should not re-render when twitter prop is changed 1`] = `
 <AuthorProfileHeadTwitter
   onTwitterLinkPress={[Function]}
-  twitter="testTwitter"
-  url="https://twitter.com/testTwitter"
+  twitter="testTwitterHandle"
+  url="https://twitter.com/testTwitterHandle"
 />
 `;
 
@@ -28,38 +28,14 @@ exports[`3. Should re-render when isLoading prop is changed 1`] = `
     }
     testID="author-head"
   >
-    <AuthorHeadWrapper
-      accessibilityRole="banner"
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#F9F8F3",
-          "flexDirection": "column",
-          "paddingBottom": "40px",
-          "width": "100%",
-        }
-      }
-    >
-      <AuthorProfileHeadTwitter
-        onTwitterLinkPress={[Function]}
-        twitter="testTwitter"
-        url="https://twitter.com/testTwitter"
-      />
-      <BioContainer>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 16,
-              "lineHeight": 26,
-              "textAlign": "center",
-            }
-          }
-          testID="author-bio"
-        />
-      </BioContainer>
-    </AuthorHeadWrapper>
+    <AuthorProfileHeadJobTitle
+      jobTitle="testJobTitle"
+    />
+    <AuthorProfileHeadTwitter
+      onTwitterLinkPress={[Function]}
+      twitter="testTwitterHandle"
+      url="https://twitter.com/testTwitterHandle"
+    />
   </View>
 </FadeIn>
 `;

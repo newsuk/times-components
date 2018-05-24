@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
     paddingBottom: spacing(8),
     backgroundColor: colours.functional.backgroundPrimary
   },
+  authorHeadContainerNative: {
+    paddingTop: spacing(6)
+  },
   authorPhoto: {
     borderColor: colours.functional.contrast,
     borderRadius: 50,

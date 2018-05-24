@@ -15,7 +15,7 @@ exports[`1. Render an author profile page 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorProfileHead)
+      <AuthorProfileHead
         biography={
           Array [
             Object {
@@ -222,33 +222,34 @@ exports[`1. Render an author profile page 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
-              "opacity": 0,
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
+              "width": "100%",
             }
           }
         >
           <View
-            pointerEvents="box-none"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
+                "opacity": 0,
               }
             }
           >
             <View
-              accessibilityRole="banner"
+              pointerEvents="box-none"
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
+                  "backgroundColor": "transparent",
                 }
               }
+              testID="author-head"
             >
               <View
                 aspectRatio={1}
@@ -1546,7 +1547,7 @@ exports[`2. Render an author profile page without images 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorProfileHead)
+      <AuthorProfileHead
         biography={
           Array [
             Object {
@@ -1846,33 +1847,34 @@ exports[`2. Render an author profile page without images 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
-              "opacity": 0,
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
+              "width": "100%",
             }
           }
         >
           <View
-            pointerEvents="box-none"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
+                "opacity": 0,
               }
             }
           >
             <View
-              accessibilityRole="banner"
+              pointerEvents="box-none"
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
+                  "backgroundColor": "transparent",
                 }
               }
+              testID="author-head"
             >
               <View
                 aspectRatio={1}
@@ -2811,7 +2813,7 @@ exports[`3. Render an author profile page loading state 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorProfileHead)
+      <AuthorProfileHead
         biography={Array []}
         isLoading={true}
         jobTitle=""
@@ -2896,11 +2898,14 @@ exports[`3. Render an author profile page loading state 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#F9F8F3",
-              "minHeight": 264,
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
               "width": "100%",
             }
           }
@@ -2908,91 +2913,102 @@ exports[`3. Render an author profile page loading state 1`] = `
           <View
             style={
               Object {
-                "borderColor": "#FFFFFF",
-                "borderRadius": 50,
-                "height": 100,
-                "overflow": "hidden",
-                "position": "absolute",
-                "top": 30,
-                "width": 100,
+                "alignItems": "center",
+                "backgroundColor": "#F9F8F3",
+                "minHeight": 264,
+                "width": "100%",
               }
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
-                  "flex": 1,
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 50,
+                  "height": 100,
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "top": 30,
+                  "width": 100,
                 }
               }
             >
-              <ARTSurfaceView
+              <View
+                onLayout={[Function]}
                 style={
                   Object {
-                    "bottom": 0,
-                    "height": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
+                    "flex": 1,
                   }
                 }
               >
-                <ARTShape
-                  d={
-                    Array [
-                      2,
-                      0,
-                      0,
-                      2,
-                      0,
-                      0,
-                      2,
-                      0,
-                      0,
-                      2,
-                      0,
-                      0,
-                    ]
+                <ARTSurfaceView
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
                   }
-                  fill={
-                    Array [
-                      1,
-                      0,
-                      0,
-                      -0,
-                      0,
-                      0.9764705882352941,
-                      0.9764705882352941,
-                      0.9764705882352941,
-                      1,
-                      0.9294117647058824,
-                      0.9294117647058824,
-                      0.9294117647058824,
-                      1,
-                      0,
-                      1,
-                    ]
-                  }
-                  opacity={1}
-                  stroke={null}
-                  strokeCap={1}
-                  strokeDash={null}
-                  strokeJoin={1}
-                  strokeWidth={1}
-                  transform={
-                    Array [
-                      1,
-                      0,
-                      0,
-                      1,
-                      0,
-                      0,
-                    ]
-                  }
-                />
-              </ARTSurfaceView>
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
+              </View>
             </View>
           </View>
         </View>

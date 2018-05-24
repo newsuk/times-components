@@ -1,17 +1,22 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { AuthorProfileHead as AuthorProfileHeadWithoutTracking } from "../src/author-profile-head";
+import { AuthorProfileHeadBase as AuthorProfileHeadBaseWithoutTracking } from "../src/author-profile-head-base";
 import AuthorProfileHeadTwitter from "../src/author-profile-head-twitter";
 
 export default () => {
   const headProps = {
-    twitter: "testTwitter",
-    isLoading: false
+    isLoading: false,
+    jobTitle: "testJobTitle",
+    onTwitterLinkPress: () => null,
+    renderBiography: () => null,
+    renderImage: () => null,
+    renderName: () => null,
+    twitter: "testTwitterHandle"
   };
 
   it("should not re-render when twitter is changed", () => {
     const wrapper = shallow(
-      <AuthorProfileHeadWithoutTracking {...headProps} />
+      <AuthorProfileHeadBaseWithoutTracking {...headProps} />
     );
 
     expect(wrapper.find("AuthorProfileHeadTwitter")).toMatchSnapshot(
@@ -29,7 +34,7 @@ export default () => {
 
   it("should only re-render when isLoading is changed", () => {
     const wrapper = shallow(
-      <AuthorProfileHeadWithoutTracking {...headProps} />
+      <AuthorProfileHeadBaseWithoutTracking {...headProps} />
     );
 
     expect(wrapper).toMatchSnapshot(

@@ -1,13 +1,8 @@
-import React, { Component } from "react";
-import { Text, View } from "react-native";
-import Image from "@times-components/image";
-import { renderTrees } from "@times-components/markup";
-import { Animations } from "@times-components/styleguide";
+import React from "react";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
-import AuthorProfileHeadLoading from "./author-profile-head-loading";
-import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
-import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
-import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
+import AuthorProfileHeadBaseWithTracking from "./author-profile-head-base";
+import AuthorProfileHeadBiography from "./author-profile-head-biography";
+import AuthorProfileHeadImage from "./author-profile-head-image";
 import styles from "./styles";
 import {
   AuthorHeadWrapper,
@@ -16,81 +11,66 @@ import {
   ImageContainer
 } from "./styles/responsive";
 
-export class AuthorProfileHead extends Component {
-  shouldComponentUpdate(nextProps) {
-    return this.props.isLoading !== nextProps.isLoading;
-  }
-
-  render() {
-    const {
-      biography,
-      isLoading,
-      jobTitle,
-      name,
-      onTwitterLinkPress,
-      twitter,
-      uri
-    } = this.props;
-
-    if (isLoading) {
-      return <AuthorProfileHeadLoading />;
-    }
-
-    const renderTwitterLink = () => {
-      const twitterUrl = `https://twitter.com/${twitter}`;
-
-      return (
-        <AuthorProfileHeadTwitter
-          onTwitterLinkPress={onTwitterLinkPress}
-          twitter={twitter}
-          url={twitterUrl}
-        />
-      );
-    };
-
+const AuthorProfileHead = ({
+  biography,
+  isLoading,
+  jobTitle,
+  name,
+  onTwitterLinkPress,
+  twitter,
+  uri
+}) => {
+  const renderBiography = () => {
+    if (!biography) return null;
     return (
-      <Animations.FadeIn>
-        <View
-          pointerEvents="box-none"
-          style={styles.authorHeadWrapper}
-          testID="author-head"
-        >
-          <AuthorHeadWrapper
-            accessibilityRole="banner"
-            style={styles.authorHeadContainer}
-          >
-            {!!uri && (
-              <ImageContainer>
-                <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
-              </ImageContainer>
-            )}
-            {!!name && (
-              <AuthorNameWrapper
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                aria-level="1"
-                testID="author-name"
-              >
-                {name}
-              </AuthorNameWrapper>
-            )}
-            {!!jobTitle && <AuthorProfileHeadJobTitle jobTitle={jobTitle} />}
-            {!!twitter && renderTwitterLink()}
-            {!!biography && (
-              <BioContainer>
-                <Text testID="author-bio" style={styles.biography}>
-                  {renderTrees(biography)}
-                </Text>
-              </BioContainer>
-            )}
-          </AuthorHeadWrapper>
-        </View>
-      </Animations.FadeIn>
+      <BioContainer>
+        <AuthorProfileHeadBiography biography={biography} />
+      </BioContainer>
     );
-  }
-}
+  };
+
+  const renderImage = () => {
+    if (!uri) return null;
+    return (
+      <ImageContainer>
+        <AuthorProfileHeadImage uri={uri} />
+      </ImageContainer>
+    );
+  };
+
+  const renderName = () => {
+    if (!name) return null;
+    return (
+      <AuthorNameWrapper
+        accessibilityLabel="author-name"
+        accessibilityRole="heading"
+        aria-level="1"
+        testID="author-name"
+      >
+        {name}
+      </AuthorNameWrapper>
+    );
+  };
+
+  return (
+    <AuthorHeadWrapper
+      accessibilityRole="banner"
+      style={styles.authorHeadContainer}
+    >
+      <AuthorProfileHeadBaseWithTracking
+        isLoading={isLoading}
+        jobTitle={jobTitle}
+        onTwitterLinkPress={onTwitterLinkPress}
+        renderBiography={renderBiography}
+        renderImage={renderImage}
+        renderName={renderName}
+        twitter={twitter}
+      />
+    </AuthorHeadWrapper>
+  );
+};
 
 AuthorProfileHead.propTypes = propTypes;
 AuthorProfileHead.defaultProps = defaultProps;
 
-export default authorProfileHeadTrackingEvents(AuthorProfileHead);
+export default AuthorProfileHead;
