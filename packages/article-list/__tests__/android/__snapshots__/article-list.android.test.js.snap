@@ -141,7 +141,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   numColumns={1}
   onContentSizeChange={[Function]}
   onEndReached={[Function]}
-  onEndReachedThreshold={0.2}
+  onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
@@ -1956,7 +1956,7 @@ exports[`ArticleList tests on android should render an article list that is load
   numColumns={1}
   onContentSizeChange={[Function]}
   onEndReached={[Function]}
-  onEndReachedThreshold={0.2}
+  onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}

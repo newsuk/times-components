@@ -63,7 +63,7 @@ const Topic = ({
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
       }) => {
-        const fetchMoreArticles = length => {
+        const fetchMoreArticles = length =>
           fetchMore({
             variables: {
               skip: length
@@ -84,7 +84,6 @@ const Topic = ({
                   }
                 : prev
           });
-        };
 
         return (
           <ArticleList

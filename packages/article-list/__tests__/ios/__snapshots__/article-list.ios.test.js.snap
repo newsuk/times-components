@@ -141,7 +141,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
   numColumns={1}
   onContentSizeChange={[Function]}
   onEndReached={[Function]}
-  onEndReachedThreshold={0.2}
+  onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
@@ -1951,7 +1951,7 @@ exports[`ArticleList tests on ios should render an article list that is loading 
   numColumns={1}
   onContentSizeChange={[Function]}
   onEndReached={[Function]}
-  onEndReachedThreshold={0.2}
+  onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}

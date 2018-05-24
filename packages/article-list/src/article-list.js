@@ -121,7 +121,7 @@ class ArticleList extends Component {
         keyExtractor={item => `${item.elementId}`}
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
-        onEndReachedThreshold={0.2}
+        onEndReachedThreshold={2}
         onEndReached={fetchMoreOnEndReached}
         renderItem={({ item, index }) => (
           <ErrorView>
