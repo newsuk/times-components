@@ -132,12 +132,12 @@ export default {
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, { fixture: articleWithVideoFixture })
     },
-    // {
-    //   type: "story",
-    //   name: "Long Article",
-    //   component: (_, { decorateAction }) =>
-    //     renderArticle(decorateAction, { fixture: fullLongArticleFixture })
-    // },
+    {
+      type: "story",
+      name: "Long Article",
+      component: (_, { decorateAction }) =>
+        renderArticle(decorateAction, { fixture: fullLongArticleFixture })
+    },
     {
       type: "story",
       name: "Loading",
