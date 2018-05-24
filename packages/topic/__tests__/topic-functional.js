@@ -1,26 +1,38 @@
-import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { MockedProvider } from "@times-components/utils";
+import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
-jest.mock("../src/topic-head-divider", () => "Divider");
-jest.mock("@times-components/article-list", () => "ArticleList");
+// This is the only possible way for this to work... :'-(
+// eslint-disable-next-line global-require
+jest.mock("@times-components/article-list", () => require("./articleListMock"));
 
 export default () => {
-  const realIntl = Intl;
+  const pageSize = 3;
+  const slug = "chelsea";
 
-  const topicProps = {
+  const mockArticles = fixtureGenerator.makeTopicArticleMocks({
+    pageSize,
+    withImages: true
+  });
+
+  const props = {
     analyticsStream: () => {},
+    isLoading: false,
     onArticlePress: () => {},
+    page: 1,
+    pageSize,
     refetch: () => {},
-    slug: "chelsea",
+    slug,
     topic: {
       name: "Chelsea",
       description: "A swanky part of town."
     }
   };
+
+  const realIntl = Intl;
 
   beforeEach(() => {
     global.Intl = {
@@ -28,26 +40,60 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
-    jest.useFakeTimers();
+    mockDate.set(1514764800000, 0);
   });
 
   afterEach(() => {
     global.Intl = realIntl;
+    mockDate.reset();
   });
 
-  it("should render correctly", () => {
-    const pageSize = 3;
+  it("should render correctly", async () => {
     const tree = renderer.create(
-      <MockedProvider
-        mocks={fixtureGenerator.makeTopicArticleMocks({
-          pageSize,
-          withImages: true
-        })}
-      >
-        <Topic {...topicProps} page={1} pageSize={pageSize} />
+      <MockedProvider mocks={mockArticles}>
+        <Topic {...props} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
 
+    await delay(1500);
+
     expect(tree).toMatchSnapshot("1. Render a Topic page");
+  });
+
+  it("should render the loading state", () => {
+    const tree = renderer.create(<Topic {...props} isLoading />);
+
+    expect(tree).toMatchSnapshot("2. Render a topics page loading state");
+  });
+
+  it("should render an error state with an invalid Topic Query", () => {
+    const tree = renderer.create(
+      <Topic {...props} error={{}} refetch={() => null} />
+    );
+
+    expect(tree).toMatchSnapshot(
+      "3. Render a topics page error state with an invalid Topic Query"
+    );
+  });
+
+  it("should send analytics when rendering a topic page", () => {
+    const reporter = jest.fn();
+
+    renderer.create(
+      <MockedProvider mocks={mockArticles}>
+        <Topic
+          {...props}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={reporter}
+        />
+      </MockedProvider>
+    );
+
+    const call = reporter.mock.calls[0][0];
+
+    expect(call).toMatchSnapshot(
+      "4. Send analytics when rendering a topics page (with null event time)"
+    );
   });
 };

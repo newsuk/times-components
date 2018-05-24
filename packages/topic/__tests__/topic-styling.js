@@ -1,4 +1,3 @@
-import "react-native";
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -7,8 +6,9 @@ import { MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
 export default () => {
-  const topicProps = {
+  const props = {
     analyticsStream: () => {},
+    isLoading: false,
     onArticlePress: () => {},
     refetch: () => {},
     slug: "chelsea",
@@ -27,12 +27,7 @@ export default () => {
           withImages: true
         })}
       >
-        <Topic
-          {...topicProps}
-          analyticsStream={() => {}}
-          page={1}
-          pageSize={pageSize}
-        />
+        <Topic {...props} page={1} pageSize={pageSize} />
       </MockedProvider>
     );
 
