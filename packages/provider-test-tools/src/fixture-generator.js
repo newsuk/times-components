@@ -3,12 +3,13 @@ import {
   authorProfileQuery,
   articleListNoImagesQuery,
   articleListWithImagesQuery,
+  topicQuery,
   topicArticlesQuery
 } from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
-import topicFixture from "../fixtures/topic.json";
+import topicFixture from "../fixtures/topic-articles.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
@@ -32,11 +33,9 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 10 } = {}) => ({
-  articles: {
-    count,
-    __typename: "Articles"
-  },
+const makeTopic = () => ({
+  name: "Chelsea",
+  description: "A swanky part of town.",
   __typename: "Topic"
 });
 
@@ -95,7 +94,7 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
 const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
   delay,
   request: {
-    query: addTypenameToDocument(topicArticlesQuery),
+    query: addTypenameToDocument(topicQuery),
     variables: {
       slug
     }
@@ -275,6 +274,28 @@ const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
   ];
 };
 
+const makeMocksWithTopicError = ({ withImages, slug, pageSize }) => {
+  const [, ...articles] = makeTopicArticleMocks({
+    withImages,
+    slug,
+    pageSize
+  });
+
+  return [
+    {
+      request: {
+        query: addTypenameToDocument(topicQuery),
+        variables: {
+          slug
+        }
+      },
+      error: new Error("Could not get topic")
+    },
+    makeTopicMock({ withImages, slug }),
+    ...articles
+  ];
+};
+
 export default {
   makeAuthor,
   makeArticleList,
@@ -284,5 +305,6 @@ export default {
   makeBrokenMocks,
   makeMocksWithPageError,
   makeMocksWithAuthorError,
-  makeTopicArticleMocks
+  makeTopicArticleMocks,
+  makeMocksWithTopicError
 };

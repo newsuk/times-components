@@ -1,19 +1,22 @@
 import React from "react";
 import { Text } from "react-native";
-import fixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
+import authorProfileFixture from "@times-components/provider-test-tools/fixtures/author-profile/author-profile.json";
+import topicFixture from "@times-components/provider-test-tools/fixtures/topic.json";
 import articleFixture from "@times-components/provider-test-tools/fixtures/article.json";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import { MockedProvider } from "@times-components/utils";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import connectGraphql, {
-  AuthorProfileProvider,
   ArticleProvider,
-  TopicArticlesProvider,
-  AuthorArticlesWithImagesProvider
+  AuthorProfileProvider,
+  AuthorArticlesWithImagesProvider,
+  TopicProvider,
+  TopicArticlesProvider
 } from "./src/provider.js";
-import { query as authorProfileQuery } from "./src/author-profile";
 import { query as articleQuery } from "./src/article";
+import { query as authorProfileQuery } from "./src/author-profile";
+import { query as topicQuery } from "./src/topic";
 
 export default {
   name: "Helpers/Provider",
@@ -102,7 +105,7 @@ export default {
                 slug: "fiona-hamilton"
               }
             },
-            result: fixture
+            result: authorProfileFixture
           }
         ];
 
@@ -168,6 +171,31 @@ export default {
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </AuthorArticlesWithImagesProvider>
+          </MockedProvider>
+        );
+      }
+    },
+    {
+      type: "story",
+      name: "Topic",
+      component: () => {
+        const mocks = [
+          {
+            request: {
+              query: addTypenameToDocument(topicQuery),
+              variables: {
+                slug: "chelsea"
+              }
+            },
+            result: topicFixture
+          }
+        ];
+
+        return (
+          <MockedProvider mocks={mocks}>
+            <TopicProvider slug="chelsea" debounceTimeMs={0}>
+              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+            </TopicProvider>
           </MockedProvider>
         );
       }

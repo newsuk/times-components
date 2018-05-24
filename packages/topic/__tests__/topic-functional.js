@@ -1,13 +1,17 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import { delay, MockedProvider } from "@times-components/utils";
 import Topic from "../src/topic";
 
-jest.mock("@times-components/article-list", () => "ArticleList");
+// This is the only possible way for this to work... :'-(
+// eslint-disable-next-line global-require
+jest.mock("@times-components/article-list", () => require("./articleListMock"));
 
 export default () => {
   const pageSize = 3;
+  const slug = "chelsea";
 
   const mockArticles = fixtureGenerator.makeTopicArticleMocks({
     pageSize,
@@ -21,7 +25,7 @@ export default () => {
     page: 1,
     pageSize,
     refetch: () => {},
-    slug: "chelsea",
+    slug,
     topic: {
       name: "Chelsea",
       description: "A swanky part of town."
@@ -36,10 +40,12 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+    mockDate.set(1514764800000, 0);
   });
 
   afterEach(() => {
     global.Intl = realIntl;
+    mockDate.reset();
   });
 
   it("should render correctly", async () => {
@@ -55,12 +61,39 @@ export default () => {
   });
 
   it("should render the loading state", () => {
+    const tree = renderer.create(<Topic {...props} isLoading />);
+
+    expect(tree).toMatchSnapshot("2. Render a topics page loading state");
+  });
+
+  it("should render an error state with an invalid Topic Query", () => {
     const tree = renderer.create(
+      <Topic {...props} error={{}} refetch={() => null} />
+    );
+
+    expect(tree).toMatchSnapshot(
+      "3. Render a topics page error state with an invalid Topic Query"
+    );
+  });
+
+  it("should send analytics when rendering a topic page", () => {
+    const reporter = jest.fn();
+
+    renderer.create(
       <MockedProvider mocks={mockArticles}>
-        <Topic {...props} isLoading />
+        <Topic
+          {...props}
+          page={1}
+          pageSize={pageSize}
+          analyticsStream={reporter}
+        />
       </MockedProvider>
     );
 
-    expect(tree).toMatchSnapshot("2. Render an topics page loading state");
+    const call = reporter.mock.calls[0][0];
+
+    expect(call).toMatchSnapshot(
+      "4. Send analytics when rendering a topics page (with null event time)"
+    );
   });
 };

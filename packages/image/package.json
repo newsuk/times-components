@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -53,10 +53,10 @@
     "react-native-web": "0.5.1"
   },
   "dependencies": {
-    "@times-components/gestures": "1.4.2",
-    "@times-components/gradient": "0.10.15",
-    "@times-components/link": "0.21.2",
-    "@times-components/styleguide": "0.7.3",
+    "@times-components/gestures": "1.4.3",
+    "@times-components/gradient": "0.10.16",
+    "@times-components/link": "0.21.3",
+    "@times-components/styleguide": "0.7.4",
     "@times-components/utils": "0.10.1",
     "prop-types": "15.6.0",
     "react-native-svg": "5.5.1",
