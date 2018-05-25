@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes, { Component } from "prop-types";
 import React from "react";
 import { StyleSheet, View, ViewPropTypes, ART } from "react-native";
 import { colours } from "@times-components/styleguide";
@@ -32,7 +32,7 @@ function angleToPoints(angle) {
   };
 }
 
-class Gradient extends React.Component {
+class Gradient extends Component {
   constructor(props) {
     super(props);
     this.state = {
