@@ -101,7 +101,9 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F9F8F3",
+              "backgroundColor": "#F9F9F9",
+              "borderBottomColor": "#F0F0F0",
+              "borderBottomWidth": 0.5,
               "flexDirection": "column",
               "minHeight": 90,
               "paddingBottom": 20,

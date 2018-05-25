@@ -64,8 +64,8 @@ class Gradient extends React.Component {
             fill={
               new LinearGradient(
                 {
-                  "0": colours.functional.backgroundSecondary,
-                  "1": colours.functional.backgroundTertiary
+                  "0": colours.functional.backgroundPrimary,
+                  "1": colours.functional.backgroundSecondary
                 },
                 width * start.x,
                 height * start.y,

@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
   loadingContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundPrimary,
+    borderBottomColor: colours.functional.border,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     minHeight: 264,
     width: "100%"
   },
@@ -34,7 +36,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     paddingBottom: spacing(8),
-    backgroundColor: colours.functional.backgroundPrimary
+    backgroundColor: colours.functional.backgroundPrimary,
+    borderBottomColor: colours.functional.border,
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   authorHeadContainerNative: {
     paddingTop: spacing(6)
