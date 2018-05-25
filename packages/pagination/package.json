@@ -60,7 +60,7 @@
     "@times-components/tracking": "0.12.17",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
-    "react-native-svg": "5.5.1",
+    "react-native-svg": "6.3.1",
     "svgs": "3.2.1"
   },
   "peerDependencies": {
