@@ -7,7 +7,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest --config='./__tests__/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test": "jest --config='./__tests__/jest.config.js' && yarn test:web",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"

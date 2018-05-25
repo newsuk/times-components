@@ -1,37 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Enzyme, { shallow, mount } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
-
+import { shallow } from "enzyme";
+import Inner from "./inner";
 import withDebounce from "../src/debounce";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 jest.useFakeTimers();
 
 // Alias the confusingly misnamed runTimersToTime to advanceTimersByTime
 // Jest has done this in v22, so this can be removed if we upgrade
 jest.advanceTimersByTime = jest.runTimersToTime;
-
-class Inner extends Component {
-  constructor(props) {
-    super(props);
-    this.numberOfDebouncedPropsUpdates = 0;
-  }
-
-  componentWillReceiveProps({ debouncedProps }) {
-    if (debouncedProps !== this.props.debouncedProps) {
-      this.numberOfDebouncedPropsUpdates += 1;
-    }
-  }
-
-  render() {
-    return "hello";
-  }
-}
-Inner.propTypes = {
-  debouncedProps: PropTypes.shape({}).isRequired
-};
 
 describe("Debounce", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
@@ -101,30 +78,6 @@ describe("Debounce", () => {
 
   it("handles zero debounce delay", () => {
     testUpdateInnerPropsAfterDelay(0);
-  });
-
-  it("updates debounceProps once for many closely spaced props updates", () => {
-    const Outer = withDebounce(Inner);
-    const component = mount(<Outer foo="initialFoo" debounceTimeMs={1000} />);
-
-    const numberOfDebouncedPropsUpdates = () =>
-      component
-        .update()
-        .find("Inner")
-        .instance().numberOfDebouncedPropsUpdates;
-
-    expect(numberOfDebouncedPropsUpdates()).toEqual(0);
-
-    component.setProps({ foo: "updatedFoo1" });
-    jest.advanceTimersByTime(600);
-    component.setProps({ foo: "updatedFoo2" });
-    jest.advanceTimersByTime(600);
-    component.setProps({ foo: "updatedFoo3" });
-    jest.advanceTimersByTime(600);
-    component.setProps({ foo: "updatedFoo4" });
-    jest.advanceTimersByTime(1200);
-
-    expect(numberOfDebouncedPropsUpdates()).toEqual(1);
   });
 
   it("does not atttempt to update props after unmount", () => {
