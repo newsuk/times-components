@@ -9,7 +9,7 @@ const BigSquare = props => (
     style={{
       width: 100,
       height: 100,
-      backgroundColor: colours.functional.backgroundTertiary
+      backgroundColor: colours.functional.backgroundSecondary
     }}
     {...props}
   />
@@ -32,7 +32,7 @@ export default {
             style={{
               width: 100,
               height: 100,
-              backgroundColor: colours.functional.backgroundTertiary
+              backgroundColor: colours.functional.backgroundSecondary
             }}
           />
         </Link>

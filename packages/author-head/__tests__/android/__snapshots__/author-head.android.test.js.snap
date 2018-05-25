@@ -22,7 +22,7 @@ exports[`AuthorHead test on android renders 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#F9F8F3",
+          "backgroundColor": "#F9F9F9",
           "flexDirection": "column",
           "paddingBottom": 40,
           "paddingTop": 30,
@@ -106,7 +106,7 @@ exports[`AuthorHead test on android renders the loading state 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9F8F3",
+        "backgroundColor": "#F9F9F9",
         "minHeight": 264,
         "width": "100%",
       }
@@ -236,7 +236,7 @@ exports[`AuthorHead test on android renders with data 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#F9F8F3",
+          "backgroundColor": "#F9F9F9",
           "flexDirection": "column",
           "paddingBottom": 40,
           "paddingTop": 30,
@@ -524,7 +524,7 @@ exports[`AuthorHead test on android renders without profile picture 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#F9F8F3",
+          "backgroundColor": "#F9F9F9",
           "flexDirection": "column",
           "paddingBottom": 40,
           "paddingTop": 30,

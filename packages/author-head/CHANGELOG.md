@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@1.1.4...@times-components/author-head@1.2.0) (2018-05-25)
+
+
+### Features
+
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/newsuk/times-components/compare/@times-components/author-head@1.1.3...@times-components/author-head@1.1.4) (2018-05-25)
 
