@@ -22,20 +22,20 @@ describe("webpack-configurator", () => {
     expect(declaration).toEqual("commonjs2 @times-components/package/rnw");
   });
 
-  it("should return babelconfig with rnw-plugin none found", () => {
-    const existsSync = jest.fn(() => false);
+  it("should return babelconfig with rnw-plugin none found", async () => {
+    const exists = jest.fn(() => false);
     const { getBabelConfig } = create({
-      existsSync
+      exists
     });
 
-    const { plugins } = getBabelConfig(".");
+    const { plugins } = await getBabelConfig(".");
     expect(plugins).toEqual(["react-native-web"]);
-    expect(existsSync.mock.calls[0][0]).toMatch(/\.babelrc$/);
+    expect(exists.mock.calls[0][0]).toMatch(/\.babelrc$/);
   });
 
-  it("should extend babelconfig with rnw-plugin", () => {
-    const existsSync = jest.fn(() => true);
-    const readFileSync = jest.fn(
+  it("should extend babelconfig with rnw-plugin", async () => {
+    const exists = jest.fn(() => true);
+    const readFile = jest.fn(
       () => `{
       "presets": ["stage-0"],
       "plugins": ["foo", "bar"]
@@ -43,22 +43,22 @@ describe("webpack-configurator", () => {
     );
 
     const { getBabelConfig } = create({
-      existsSync,
-      readFileSync
+      exists,
+      readFile
     });
 
-    const config = getBabelConfig(".");
+    const config = await getBabelConfig(".");
     expect(config).toMatchObject({
       presets: ["stage-0"],
       plugins: ["foo", "bar", "react-native-web"]
     });
 
-    expect(readFileSync.mock).toMatchObject(existsSync.mock);
+    expect(readFile.mock).toMatchObject(exists.mock);
   });
 
-  it("should get the web entry if available", () => {
-    const existsSync = jest.fn(() => true);
-    const readFileSync = jest.fn(
+  it("should get the web entry if available", async () => {
+    const exists = jest.fn(() => true);
+    const readFile = jest.fn(
       () => `{
       "devEntry": "foo/index"
     }`
@@ -68,27 +68,27 @@ describe("webpack-configurator", () => {
 
     const { getEntry } = create(
       {
-        existsSync,
-        readFileSync
+        exists,
+        readFile
       },
       resolver
     );
 
-    const entry = getEntry("/root", "devEntry");
+    const entry = await getEntry("/root", "devEntry");
     expect(entry).toEqual("/root/foo/index.web.js");
   });
 
-  it("should throw if package.json not found", () => {
-    const existsSync = () => false;
-    const { getEntry } = create({ existsSync });
+  it("should throw if package.json not found", async () => {
+    const exists = () => false;
+    const { getEntry } = create({ exists });
 
-    const get = () => getEntry("/root", "devEntry");
-    expect(get).toThrowErrorMatchingSnapshot();
+    const entry = await getEntry("/root", "devEntry").catch(e => e);
+    expect(entry).toMatchSnapshot();
   });
 
-  it("should throw if entry could not be resolved", () => {
-    const existsSync = jest.fn(() => true);
-    const readFileSync = jest.fn(
+  it("should throw if entry could not be resolved", async () => {
+    const exists = jest.fn(() => true);
+    const readFile = jest.fn(
       () => `{
       "devEntry": "foo/index"
     }`
@@ -98,15 +98,15 @@ describe("webpack-configurator", () => {
       throw new Error("not found");
     };
 
-    const { getEntry } = create({ existsSync, readFileSync }, resolver);
+    const { getEntry } = create({ exists, readFile }, resolver);
 
-    const get = () => getEntry("/root", "devEntry");
-    expect(get).toThrowErrorMatchingSnapshot();
+    const entry = await getEntry("/root", "devEntry").catch(e => e);
+    expect(entry).toMatchSnapshot();
   });
 
-  it("should get the generic entry if web entry not available", () => {
-    const existsSync = jest.fn(path => !path.match(/index\.web\.js$/));
-    const readFileSync = jest.fn(
+  it("should get the generic entry if web entry not available", async () => {
+    const exists = jest.fn(path => !path.match(/index\.web\.js$/));
+    const readFile = jest.fn(
       () => `{
       "devEntry": "foo/index"
     }`
@@ -116,19 +116,19 @@ describe("webpack-configurator", () => {
 
     const { getEntry } = create(
       {
-        existsSync,
-        readFileSync
+        exists,
+        readFile
       },
       resolver
     );
 
-    const entry = getEntry("/root", "devEntry");
+    const entry = await getEntry("/root", "devEntry");
     expect(entry).toEqual("/root/foo/index.js");
   });
 
-  it("should create a sensible webpackConfig", () => {
-    const existsSync = jest.fn(path => path.match(/package\.json$/));
-    const readFileSync = jest.fn(
+  it("should create a sensible webpackConfig", async () => {
+    const exists = jest.fn(path => path.match(/package\.json$/));
+    const readFile = jest.fn(
       () => `{
       "devEntry": "foo/index"
     }`
@@ -137,12 +137,14 @@ describe("webpack-configurator", () => {
     const resolver = file => `${file}.js`;
     const configurator = create(
       {
-        existsSync,
-        readFileSync
+        exists,
+        readFile
       },
       resolver
     );
 
-    expect(configurator("/root", "devEntry")).toMatchSnapshot();
+    const config = configurator("/root", "devEntry"); 
+
+    expect(await config()).toMatchSnapshot();
   });
 });

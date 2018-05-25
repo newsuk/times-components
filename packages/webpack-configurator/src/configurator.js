@@ -1,21 +1,24 @@
 import path from "path";
 
-export default ({ readFileSync, existsSync }, resolve) => {
-  const parseJson = pathToJson =>
-    existsSync(pathToJson) ? JSON.parse(readFileSync(path).toString()) : {};
 
-  const getBabelConfig = dir => {
+export default ({ readFile, exists }, resolve) => {
+  const parseJson = async (pathToJson) =>
+    (await exists(pathToJson))
+      ? JSON.parse((await readFile(pathToJson, "utf8")).toString()) 
+      : {};
+
+  const getBabelConfig = async (dir) => {
     const babelrcPath = path.resolve(dir, ".babelrc");
-    const babelrc = parseJson(babelrcPath);
+    const babelrc = await parseJson(babelrcPath);
     return {
       ...babelrc,
       plugins: [...(babelrc.plugins || []), "react-native-web"]
     };
   };
 
-  const getEntry = (dir, entry) => {
+  const getEntry = async (dir, entry) => {
     const pathToPackage = path.resolve(dir, "package.json");
-    const packageJson = parseJson(pathToPackage);
+    const packageJson = await parseJson(pathToPackage);
     const entryPoint = packageJson[entry];
 
     if (!entryPoint) {
@@ -28,7 +31,7 @@ export default ({ readFileSync, existsSync }, resolve) => {
       const generic = resolve(main);
 
       const web = generic.replace(".js", ".web.js");
-      return existsSync(web) ? web : generic;
+      return (await exists(web)) ? web : generic;
     } catch (_) {
       throw new Error(
         `could not resolve "${main}". Make sure "${entry}" in "${
@@ -50,7 +53,7 @@ export default ({ readFileSync, existsSync }, resolve) => {
     return cb(null, `commonjs2 ${filePath}`);
   }
 
-  const configurator = (dir, entry) => ({
+  const configurator = (dir, entry) => async () => ({
     target: "node",
     devtool: false,
     mode: "production",
@@ -60,7 +63,7 @@ export default ({ readFileSync, existsSync }, resolve) => {
     },
     externals,
     entry: {
-      index: getEntry(dir, entry)
+      index: await getEntry(dir, entry)
     },
     output: {
       path: dir,
@@ -76,7 +79,7 @@ export default ({ readFileSync, existsSync }, resolve) => {
             loader: "babel-loader",
             options: {
               cacheDirectory: true,
-              ...getBabelConfig(dir)
+              ...(await getBabelConfig(dir))
             }
           }
         }

@@ -1,4 +1,5 @@
-import { readFileSync, existsSync } from "fs";
+import "babel-polyfill";
+import { readFile, exists } from "fs-extra";
 import create from "./configurator";
 
-module.exports = create({ readFileSync, existsSync }, require.resolve);
+module.exports = create({ readFile, exists }, require.resolve);

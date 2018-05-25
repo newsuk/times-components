@@ -45,6 +45,6 @@ Object {
 }
 `;
 
-exports[`webpack-configurator should throw if entry could not be resolved 1`] = `"could not resolve \\"/root/foo/index\\". Make sure \\"devEntry\\" in \\"/root/package.json\\" points to the right file"`;
+exports[`webpack-configurator should throw if entry could not be resolved 1`] = `[Error: could not resolve "/root/foo/index". Make sure "devEntry" in "/root/package.json" points to the right file]`;
 
-exports[`webpack-configurator should throw if package.json not found 1`] = `"entrypoint \\"devEntry\\" not found in \\"/root/package.json\\"."`;
+exports[`webpack-configurator should throw if package.json not found 1`] = `[Error: entrypoint "devEntry" not found in "/root/package.json".]`;
