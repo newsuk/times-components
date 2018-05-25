@@ -55,7 +55,8 @@
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react-test-renderer": "16.3.1",
-    "webpack": "4.6.0"
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "peerDependencies": {
     "react": ">=16.2",

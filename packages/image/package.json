@@ -53,7 +53,8 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
-    "webpack": "4.6.0"
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "@times-components/gestures": "1.4.5",
