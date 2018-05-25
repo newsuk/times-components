@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.18.17",
+  "version": "0.18.18",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/responsive-styles": "0.8.3",
-    "@times-components/styleguide": "0.7.4",
+    "@times-components/styleguide": "0.8.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

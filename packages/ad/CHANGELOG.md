@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.14...@times-components/ad@0.19.0) (2018-05-25)
+
+
+### Features
+
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+
+
 <a name="0.18.14"></a>
 ## [0.18.14](https://github.com/newsuk/times-components/compare/@times-components/ad@0.18.13...@times-components/ad@0.18.14) (2018-05-25)
 
