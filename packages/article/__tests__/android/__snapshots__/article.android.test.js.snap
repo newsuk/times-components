@@ -18407,3 +18407,44 @@ exports[`Article tests on android should render an error 1`] = `
   </Text>
 </View>
 `;
+
+exports[`Send analytics when rendering an Article page 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "byline": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+    "publishedTime": "2015-03-13T18:54:58.000Z",
+    "topics": Array [
+      Object {
+        "id": "football",
+        "name": "Football",
+        "order": 1,
+      },
+      Object {
+        "id": "manchester-united",
+        "name": "Manchester United FC",
+        "order": 4,
+      },
+      Object {
+        "id": "chelsea",
+        "name": "Chelsea FC",
+        "order": 2,
+      },
+      Object {
+        "id": "arsenal",
+        "name": "Arsenal",
+        "order": 3,
+      },
+      Object {
+        "id": "rugby-union",
+        "name": "Rugby Union",
+        "order": 5,
+      },
+    ],
+  },
+  "component": "Page",
+  "object": "Article",
+}
+`;

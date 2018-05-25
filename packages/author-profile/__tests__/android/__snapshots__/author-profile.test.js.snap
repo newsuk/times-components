@@ -4840,7 +4840,7 @@ exports[`4. Render an author profile page error state 1`] = `
 </View>
 `;
 
-exports[`5. Author profile page analytics 1`] = `
+exports[`5. Send analytics when rendering an Author Profile page 1`] = `
 Object {
   "action": "Viewed",
   "attrs": Object {

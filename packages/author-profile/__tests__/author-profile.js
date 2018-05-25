@@ -95,7 +95,7 @@ export default () => {
     );
   });
 
-  it("should send analytics when rendering an author profile page", () => {
+  it("should send analytics when rendering an Author Profile page", () => {
     const reporter = jest.fn();
 
     renderer.create(
@@ -106,6 +106,8 @@ export default () => {
 
     const call = reporter.mock.calls[0][0];
 
-    expect(call).toMatchSnapshot("5. Author profile page analytics");
+    expect(call).toMatchSnapshot(
+      "5. Send analytics when rendering an Author Profile page"
+    );
   });
 };
