@@ -1,16 +1,24 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import Article from "../src/article";
 import { adConfig } from "./shared";
 
 import fullArticleFixture from "../fixtures/full-article.json";
 
 export default () => {
+  beforeEach(() => {
+    mockDate.set(1514764800000, 0);
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+  });
+
   it("should track page view", () => {
     const stream = jest.fn();
 
-    const { topics } = fullArticleFixture.data.article;
     renderer.create(
       <Article
         {...fullArticleFixture.data}
@@ -22,18 +30,10 @@ export default () => {
         onLinkPress={() => {}}
       />
     );
-    expect(stream).toHaveBeenCalledWith({
-      object: "Article",
-      component: "Page",
-      action: "Viewed",
-      attrs: expect.objectContaining({
-        headline:
-          "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
-        byline:
-          "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
-        publishedTime: "2015-03-13T18:54:58.000Z",
-        topics
-      })
-    });
+    const call = stream.mock.calls[0][0];
+
+    expect(call).toMatchSnapshot(
+      "Send analytics when rendering an Article page"
+    );
   });
 };

@@ -1,12 +1,11 @@
-import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import { delay, MockedProvider } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 import {
   mockArticles,
   mockArticlesWithoutImages,
-  mockAuthor,
   mockAuthorWithoutImages,
   props
 } from "./mocks";
@@ -20,10 +19,12 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+    mockDate.set(1514764800000, 0);
   });
 
   afterAll(() => {
     global.Intl = realIntl;
+    mockDate.reset();
   });
 
   it("should render with images", async () => {
@@ -72,7 +73,7 @@ export default () => {
     );
   });
 
-  it("should send analytics when rendering an author profile page", () => {
+  it("should send analytics when rendering an Author Profile page", () => {
     const reporter = jest.fn();
 
     renderer.create(
@@ -81,18 +82,10 @@ export default () => {
       </MockedProvider>
     );
 
-    expect(reporter).toHaveBeenCalledWith(
-      expect.objectContaining({
-        object: "AuthorProfile",
-        component: "Page",
-        action: "Viewed",
-        attrs: expect.objectContaining({
-          articlesCount: 20,
-          authorName: mockAuthor.name,
-          page: 1,
-          pageSize: 3
-        })
-      })
+    const call = reporter.mock.calls[0][0];
+
+    expect(call).toMatchSnapshot(
+      "5. Send analytics when rendering an Author Profile page"
     );
   });
 };

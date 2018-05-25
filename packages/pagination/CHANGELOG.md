@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.4"></a>
+## [0.19.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.3...@times-components/pagination@0.19.4) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
 <a name="0.19.3"></a>
 ## [0.19.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.2...@times-components/pagination@0.19.3) (2018-05-23)
 
