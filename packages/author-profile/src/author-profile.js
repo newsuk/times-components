@@ -3,13 +3,13 @@ import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
-import AuthorHead from "@times-components/author-head";
 import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
 } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
+import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 
@@ -33,7 +33,7 @@ const AuthorProfile = ({
   if (isLoading || !author) {
     return (
       <ArticleList
-        articleListHeader={<AuthorHead isLoading />}
+        articleListHeader={<AuthorProfileHead isLoading />}
         articlesLoading
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
@@ -55,12 +55,12 @@ const AuthorProfile = ({
   } = author;
 
   const articleListHeader = (
-    <AuthorHead
-      bio={biography}
+    <AuthorProfileHead
+      biography={biography}
       isLoading={false}
+      jobTitle={jobTitle}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
-      title={jobTitle}
       twitter={twitter}
       uri={uri}
     />

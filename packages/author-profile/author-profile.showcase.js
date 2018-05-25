@@ -44,7 +44,7 @@ const getProps = decorateAction => ({
   onTwitterLinkPress: preventDefaultedAction(decorateAction)(
     "onTwitterLinkPress"
   ),
-  page: 2,
+  page: 1,
   pageSize,
   slug
 });

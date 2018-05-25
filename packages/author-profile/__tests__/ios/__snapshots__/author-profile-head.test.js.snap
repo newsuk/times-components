@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Should not re-render when twitter prop is changed 1`] = `
+<AuthorProfileHeadTwitter
+  onTwitterLinkPress={[Function]}
+  twitter="testTwitterHandle"
+  url="https://twitter.com/testTwitterHandle"
+/>
+`;
+
+exports[`2. Should not re-render when twitter prop is changed 1`] = `
+<AuthorProfileHeadTwitter
+  onTwitterLinkPress={[Function]}
+  twitter="testTwitterHandle"
+  url="https://twitter.com/testTwitterHandle"
+/>
+`;
+
+exports[`3. Should re-render when isLoading prop is changed 1`] = `
+<FadeIn>
+  <View
+    pointerEvents="box-none"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+      }
+    }
+    testID="author-head"
+  >
+    <AuthorProfileHeadJobTitle
+      jobTitle="testJobTitle"
+    />
+    <AuthorProfileHeadTwitter
+      onTwitterLinkPress={[Function]}
+      twitter="testTwitterHandle"
+      url="https://twitter.com/testTwitterHandle"
+    />
+  </View>
+</FadeIn>
+`;
+
+exports[`4. Should re-render when isLoading prop is changed 1`] = `<AuthorProfileHeadLoading />`;

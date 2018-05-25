@@ -2,29 +2,20 @@
 
 exports[`1. Render an author profile page 1`] = `
 <div>
-  <div
-    className="responsive-styles__component-fbPFZZ woNlo"
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
   >
     <div
-      data-testid="author-head"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <header
-        className="responsive-styles__component-fbPFZZ eNPgyU"
-        role="banner"
+      <div
+        data-testid="author-head"
       >
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
         >
-          <div
-            style={
-              Object {
-                "borderBottomLeftRadius": "50%",
-                "borderBottomRightRadius": "50%",
-                "borderTopLeftRadius": "50%",
-                "borderTopRightRadius": "50%",
-              }
-            }
-          >
+          <div>
             <div
               style={
                 Object {
@@ -72,7 +63,7 @@ exports[`1. Render an author profile page 1`] = `
         <h1
           aria-label="author-name"
           aria-level="1"
-          className="responsive-styles__component-fbPFZZ dkRirA"
+          className="responsive-styles__component-fbPFZZ jMuMhk"
           data-testid="author-name"
           dir="auto"
           role="heading"
@@ -83,11 +74,6 @@ exports[`1. Render an author profile page 1`] = `
           aria-level="2"
           dir="auto"
           role="heading"
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-            }
-          }
         >
           defence editor
         </h2>
@@ -125,9 +111,9 @@ exports[`1. Render an author profile page 1`] = `
             , covering the most important defence & security news in the UK and around the world.
           </div>
         </div>
-      </header>
+      </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
@@ -637,29 +623,20 @@ exports[`1. Render an author profile page 1`] = `
 
 exports[`2. Render an author profile page without images 1`] = `
 <div>
-  <div
-    className="responsive-styles__component-fbPFZZ woNlo"
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
   >
     <div
-      data-testid="author-head"
+      className="responsive-styles__component-fbPFZZ woNlo"
     >
-      <header
-        className="responsive-styles__component-fbPFZZ eNPgyU"
-        role="banner"
+      <div
+        data-testid="author-head"
       >
         <div
           className="responsive-styles__component-fbPFZZ fRtPsM"
         >
-          <div
-            style={
-              Object {
-                "borderBottomLeftRadius": "50%",
-                "borderBottomRightRadius": "50%",
-                "borderTopLeftRadius": "50%",
-                "borderTopRightRadius": "50%",
-              }
-            }
-          >
+          <div>
             <div
               style={
                 Object {
@@ -707,7 +684,7 @@ exports[`2. Render an author profile page without images 1`] = `
         <h1
           aria-label="author-name"
           aria-level="1"
-          className="responsive-styles__component-fbPFZZ dkRirA"
+          className="responsive-styles__component-fbPFZZ jMuMhk"
           data-testid="author-name"
           dir="auto"
           role="heading"
@@ -718,11 +695,6 @@ exports[`2. Render an author profile page without images 1`] = `
           aria-level="2"
           dir="auto"
           role="heading"
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-            }
-          }
         >
           defence editor
         </h2>
@@ -760,9 +732,9 @@ exports[`2. Render an author profile page without images 1`] = `
             , covering the most important defence & security news in the UK and around the world.
           </div>
         </div>
-      </header>
+      </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
@@ -1332,8 +1304,10 @@ exports[`2. Render an author profile page without images 1`] = `
 
 exports[`3. Render an author profile page loading state 1`] = `
 <div>
-  <div>
-    <div />
+  <header
+    className="responsive-styles__component-fbPFZZ eNPgyU"
+    role="banner"
+  >
     <div>
       <div>
         <div
@@ -1345,7 +1319,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         />
       </div>
     </div>
-  </div>
+  </header>
   <div
     className="responsive-styles__component-fbPFZZ hkMMvo"
   >
@@ -1754,4 +1728,19 @@ exports[`4. Render an author profile page error state 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`5. Author profile page analytics 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "articlesCount": 20,
+    "authorName": "Deborah Haynes",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "page": 1,
+    "pageSize": 3,
+  },
+  "component": "Page",
+  "object": "AuthorProfile",
+}
 `;

@@ -15,8 +15,8 @@ exports[`1. Render an author profile page 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
+      <AuthorProfileHead
+        biography={
           Array [
             Object {
               "attributes": Object {
@@ -48,9 +48,9 @@ exports[`1. Render an author profile page 1`] = `
           ]
         }
         isLoading={false}
+        jobTitle="Defence Editor"
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Defence Editor"
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
@@ -222,33 +222,34 @@ exports[`1. Render an author profile page 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
-              "opacity": 1,
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
+              "width": "100%",
             }
           }
         >
           <View
-            pointerEvents="box-none"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
+                "opacity": 0,
               }
             }
           >
             <View
-              accessibilityRole="banner"
+              pointerEvents="box-none"
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
+                  "backgroundColor": "transparent",
                 }
               }
+              testID="author-head"
             >
               <View
                 aspectRatio={1}
@@ -416,8 +417,7 @@ exports[`1. Render an author profile page 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
+                    "paddingVertical": 8,
                   }
                 }
               >
@@ -453,9 +453,8 @@ exports[`1. Render an author profile page 1`] = `
               <View
                 style={
                   Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
+                    "paddingBottom": 30,
+                    "paddingHorizontal": 10,
                   }
                 }
               >
@@ -662,7 +661,7 @@ exports[`1. Render an author profile page 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -932,7 +931,7 @@ exports[`1. Render an author profile page 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -1202,7 +1201,7 @@ exports[`1. Render an author profile page 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -1554,8 +1553,8 @@ exports[`2. Render an author profile page without images 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={
+      <AuthorProfileHead
+        biography={
           Array [
             Object {
               "attributes": Object {
@@ -1587,9 +1586,9 @@ exports[`2. Render an author profile page without images 1`] = `
           ]
         }
         isLoading={false}
+        jobTitle="Defence Editor"
         name="Deborah Haynes"
         onTwitterLinkPress={[Function]}
-        title="Defence Editor"
         twitter="jdoe"
         uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       />
@@ -1854,33 +1853,34 @@ exports[`2. Render an author profile page without images 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
-              "opacity": 1,
+              "alignItems": "center",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
+              "width": "100%",
             }
           }
         >
           <View
-            pointerEvents="box-none"
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
+                "opacity": 0,
               }
             }
           >
             <View
-              accessibilityRole="banner"
+              pointerEvents="box-none"
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#F9F8F3",
-                  "flexDirection": "column",
-                  "paddingBottom": 40,
-                  "paddingTop": 30,
-                  "width": "100%",
+                  "backgroundColor": "transparent",
                 }
               }
+              testID="author-head"
             >
               <View
                 aspectRatio={1}
@@ -2048,8 +2048,7 @@ exports[`2. Render an author profile page without images 1`] = `
                   Object {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "paddingBottom": 8,
-                    "paddingTop": 8,
+                    "paddingVertical": 8,
                   }
                 }
               >
@@ -2085,9 +2084,8 @@ exports[`2. Render an author profile page without images 1`] = `
               <View
                 style={
                   Object {
-                    "paddingBottom": 32,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
+                    "paddingBottom": 30,
+                    "paddingHorizontal": 10,
                   }
                 }
               >
@@ -2294,7 +2292,7 @@ exports[`2. Render an author profile page without images 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -2445,7 +2443,7 @@ exports[`2. Render an author profile page without images 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -2596,7 +2594,7 @@ exports[`2. Render an author profile page without images 1`] = `
           <View
             style={
               Object {
-                "opacity": 1,
+                "opacity": 0,
               }
             }
           >
@@ -2827,13 +2825,13 @@ exports[`3. Render an author profile page loading state 1`] = `
   }
   ListHeaderComponent={
     <View>
-      <WithTrackEvents(AuthorHead)
-        bio={Array []}
+      <AuthorProfileHead
+        biography={Array []}
         isLoading={true}
+        jobTitle=""
         name=""
         onTwitterLinkPress={[Function]}
-        title=""
-        twitter={null}
+        twitter=""
         uri=""
       />
       <ArticleListPagination
@@ -2912,10 +2910,15 @@ exports[`3. Render an author profile page loading state 1`] = `
     >
       <View>
         <View
+          accessibilityRole="banner"
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
+              "backgroundColor": "#F9F8F3",
+              "flexDirection": "column",
+              "paddingBottom": 40,
+              "paddingTop": 30,
+              "width": "100%",
             }
           }
         >
@@ -2928,16 +2931,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                 "width": "100%",
               }
             }
-          />
-          <View
-            style={
-              Object {
-                "height": 100,
-                "position": "absolute",
-                "top": 30,
-                "width": 100,
-              }
-            }
           >
             <View
               style={
@@ -2946,6 +2939,8 @@ exports[`3. Render an author profile page loading state 1`] = `
                   "borderRadius": 50,
                   "height": 100,
                   "overflow": "hidden",
+                  "position": "absolute",
+                  "top": 30,
                   "width": 100,
                 }
               }
@@ -4843,4 +4838,19 @@ exports[`4. Render an author profile page error state 1`] = `
     </View>
   </View>
 </View>
+`;
+
+exports[`5. Author profile page analytics 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "articlesCount": 20,
+    "authorName": "Deborah Haynes",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "page": 1,
+    "pageSize": 3,
+  },
+  "component": "Page",
+  "object": "AuthorProfile",
+}
 `;
