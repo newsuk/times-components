@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.4.1...@times-components/eslint-config-thetimes@0.5.0) (2018-05-25)
+
+
+### Features
+
+* enforce destruct of Component from React ([#970](https://github.com/newsuk/times-components/issues/970)) ([b6424be](https://github.com/newsuk/times-components/commit/b6424be))
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.4.0...@times-components/eslint-config-thetimes@0.4.1) (2018-04-12)
 

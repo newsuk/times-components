@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.11.0...@times-components/gradient@0.12.0) (2018-05-25)
+
+
+### Features
+
+* enforce destruct of Component from React ([#970](https://github.com/newsuk/times-components/issues/970)) ([b6424be](https://github.com/newsuk/times-components/commit/b6424be))
+
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@0.10.17...@times-components/gradient@0.11.0) (2018-05-25)
 

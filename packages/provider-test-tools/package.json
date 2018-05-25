@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -46,8 +46,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/utils": "0.10.1",
+    "@times-components/eslint-config-thetimes": "0.5.0",
+    "@times-components/utils": "0.10.2",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -59,7 +59,7 @@
     "prettier": "1.8.2"
   },
   "dependencies": {
-    "@times-components/provider": "0.31.2",
+    "@times-components/provider": "0.31.3",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.1",
     "apollo-link": "1.2.0",
