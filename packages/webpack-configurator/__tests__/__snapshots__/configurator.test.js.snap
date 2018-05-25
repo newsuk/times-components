@@ -28,7 +28,7 @@ Object {
   "output": Object {
     "filename": "rnw.js",
     "libraryTarget": "commonjs2",
-    "path": "/root.js",
+    "path": "/root",
   },
   "resolve": Object {
     "extensions": Array [

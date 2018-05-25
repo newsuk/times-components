@@ -1,19 +1,15 @@
 import path from "path";
 
-export default ({readFileSync, existsSync}, resolve) => {
-  
-  const parseJson = path => {
-    return existsSync(path)
-      ? JSON.parse(readFileSync(path).toString())
-      : {};
-  }
+export default ({ readFileSync, existsSync }, resolve) => {
+  const parseJson = pathToJson =>
+    existsSync(pathToJson) ? JSON.parse(readFileSync(path).toString()) : {};
 
-  const getBabelConfig =  dir => {
-    const babelrcPath = path.resolve(dir, '.babelrc');
+  const getBabelConfig = dir => {
+    const babelrcPath = path.resolve(dir, ".babelrc");
     const babelrc = parseJson(babelrcPath);
     return {
       ...babelrc,
-      plugins: [...(babelrc.plugins||[]), "react-native-web"]
+      plugins: [...(babelrc.plugins || []), "react-native-web"]
     };
   };
 
@@ -34,9 +30,13 @@ export default ({readFileSync, existsSync}, resolve) => {
       const web = generic.replace(".js", ".web.js");
       return existsSync(web) ? web : generic;
     } catch (_) {
-      throw new Error(`could not resolve "${main}". Make sure "${entry}" in "${pathToPackage}" points to the right file`);
+      throw new Error(
+        `could not resolve "${main}". Make sure "${entry}" in "${
+          pathToPackage
+        }" points to the right file`
+      );
     }
-  }
+  };
 
   function externals(_, filePath, cb) {
     if (filePath.match(/\./)) {
@@ -63,7 +63,7 @@ export default ({readFileSync, existsSync}, resolve) => {
       index: getEntry(dir, entry)
     },
     output: {
-      path: resolve(dir),
+      path: dir,
       filename: "rnw.js",
       libraryTarget: "commonjs2"
     },
@@ -90,4 +90,4 @@ export default ({readFileSync, existsSync}, resolve) => {
     parseJson,
     externals
   });
-}
+};

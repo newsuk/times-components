@@ -1,6 +1,7 @@
 # Webpack Configurator
 
-The purpose of this package is to create a webpack-configuration that creates a React-Native-Web bundle.
+The purpose of this package is to create a webpack-configuration that creates a
+React-Native-Web bundle.
 
 ## Usage
 

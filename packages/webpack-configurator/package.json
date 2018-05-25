@@ -11,8 +11,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "test": "jest --coverage",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "webpack"
+    "transpile": "yarn cleanup-dist && babel src -d dist"
   },
   "jest": {
     "preset": "react-native",
@@ -40,6 +39,12 @@
     "url": "https://github.com/newsuk/times-components/issues"
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.4.1",
+    "eslint": "4.9.0",
+    "jest": "21.2.1",
+    "prettier": "1.8.2"
+  },
   "peerDependencies": {
     "webpack": ">=4.2.0",
     "react-native-web": ">=0.3"
