@@ -1,4 +1,3 @@
-import "babel-polyfill";
 import { readFile, exists } from "fs-extra";
 import create from "./configurator";
 

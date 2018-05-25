@@ -53,7 +53,7 @@ describe("webpack-configurator", () => {
       plugins: ["foo", "bar", "react-native-web"]
     });
 
-    expect(readFile.mock).toMatchObject(exists.mock);
+    expect(readFile.mock.calls).toMatchObject(exists.mock.calls);
   });
 
   it("should get the web entry if available", async () => {
@@ -143,7 +143,7 @@ describe("webpack-configurator", () => {
       resolver
     );
 
-    const config = configurator("/root", "devEntry"); 
+    const config = configurator("/root", "devEntry");
 
     expect(await config()).toMatchSnapshot();
   });

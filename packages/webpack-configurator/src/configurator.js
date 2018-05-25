@@ -1,13 +1,12 @@
 import path from "path";
 
-
 export default ({ readFile, exists }, resolve) => {
-  const parseJson = async (pathToJson) =>
+  const parseJson = async pathToJson =>
     (await exists(pathToJson))
-      ? JSON.parse((await readFile(pathToJson, "utf8")).toString()) 
+      ? JSON.parse((await readFile(pathToJson, "utf8")).toString())
       : {};
 
-  const getBabelConfig = async (dir) => {
+  const getBabelConfig = async dir => {
     const babelrcPath = path.resolve(dir, ".babelrc");
     const babelrc = await parseJson(babelrcPath);
     return {
