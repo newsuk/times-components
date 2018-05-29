@@ -37,22 +37,6 @@ const styles = {
     fontSize: fontSizes.body,
     textAlign: "center"
   },
-  listErrorButtonContainer: {
-    bottom: 0,
-    position: "absolute",
-    width: "100%"
-  },
-  listErrorButton: {
-    alignItems: "center",
-    backgroundColor: colours.functional.action,
-    flex: 1,
-    justifyContent: "center",
-    height: 36
-  },
-  listErrorButtonText: {
-    color: "#FFF",
-    fontFamily: fonts.supporting
-  },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1
