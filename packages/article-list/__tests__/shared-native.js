@@ -163,7 +163,7 @@ export default () => {
     ).toMatchSnapshot();
   });
 
-  it("should re-fetch more when retry button clicked", () => {
+  it("should clear errors and fetch more when retry button clicked", () => {
     const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
     const results = pagedResult(0, 3);
     const wrapper = shallow(
@@ -180,18 +180,19 @@ export default () => {
     ).dive();
     wrapper.setState({ loadMoreError: "Error" });
 
-    const button = wrapper
+    wrapper
       .dive()
       .dive()
       .dive()
       .dive()
       .find("articleListFooter")
       .dive()
-      .find("ArticleListRetryButton");
-
-    button.props().refetch();
+      .find("ArticleListRetryButton")
+      .dive()
+      .simulate("press");
 
     expect(wrapper.state().loadMoreError).toBe(null);
+    expect(fetchMore).toHaveBeenCalled();
   });
 
   it("should not call re-fetch after an error", async () => {
