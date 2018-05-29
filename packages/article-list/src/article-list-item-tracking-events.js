@@ -6,9 +6,13 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onPress",
-        getAttrs: ({ headline, id }) => ({
+        getAttrs: ({ headline, id, index, length }) => ({
           articleHeadline: headline,
-          articleId: id
+          articleId: id,
+          scrollDepth: {
+            itemNumber: index + 1,
+            total: length
+          }
         })
       }
     ]

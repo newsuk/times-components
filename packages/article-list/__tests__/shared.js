@@ -6,7 +6,6 @@ import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
 import ArticleListPageError from "../src/article-list-page-error";
-import ArticleListPagination from "../src/article-list-pagination";
 import {
   longSummary,
   shortSummary,
@@ -22,6 +21,8 @@ export default () => {
     headline: "test headline",
     id: "test id",
     imageRatio: 3 / 2,
+    index: 5,
+    length: 20,
     imageSize: 100,
     isLoading: false,
     label: "TESTLABEL",
@@ -63,7 +64,10 @@ export default () => {
     const refetchMock = jest.fn();
     const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
 
-    wrapper.find("TouchableOpacity").simulate("press");
+    wrapper
+      .find("ArticleListRetryButton")
+      .dive()
+      .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();
   });
@@ -98,7 +102,11 @@ export default () => {
       action: "Pressed",
       attrs: {
         articleId: "test id",
-        articleHeadline: "test headline"
+        articleHeadline: "test headline",
+        scrollDepth: {
+          itemNumber: 6,
+          total: 20
+        }
       }
     });
   });
@@ -123,14 +131,6 @@ export default () => {
     const wrapper = shallow(<ArticleListPageError refetch={jest.fn()} />);
 
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it("should render the article list pagination correctly", () => {
-    const tree = renderer.create(
-      <ArticleListPagination count={20} page={1} pageSize={10} />
-    );
-
-    expect(tree).toMatchSnapshot();
   });
 
   it("should render an article list", () => {
@@ -188,7 +188,8 @@ export default () => {
       .dive()
       .find("ArticleListError")
       .dive()
-      .find("TouchableOpacity")
+      .find("ArticleListRetryButton")
+      .dive()
       .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();

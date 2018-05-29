@@ -117,6 +117,20 @@ export default {
             withImages: true
           })}
         >
+          <AuthorProfile {...getProps(decorateAction)} page={2} />
+        </MockedProvider>
+      )
+    },
+    {
+      type: "story",
+      name: "With an error on pagination",
+      component: (_, { decorateAction }) => (
+        <MockedProvider
+          mocks={fixtureGenerator.makeMocksWithPageError({
+            pageSize,
+            withImages: true
+          })}
+        >
           <AuthorProfile {...getProps(decorateAction)} />
         </MockedProvider>
       )

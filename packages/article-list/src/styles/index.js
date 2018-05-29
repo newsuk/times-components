@@ -27,6 +27,15 @@ const styles = StyleSheet.create({
   listErrorContainer: {
     flex: 1,
     margin: spacing(3)
+  },
+  loadingContainer: {
+    paddingVertical: spacing(5)
+  },
+  showMoreRetryContainer: {
+    padding: spacing(5)
+  },
+  showMoreRetryButton: {
+    elevation: 10
   }
 });
 

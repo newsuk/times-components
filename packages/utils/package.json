@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "0.10.2",
+  "version": "0.11.0",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -54,7 +54,7 @@
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.0",
     "react": "16.3.1",
-    "react-apollo": "2.1.0-rc.3"
+    "react-apollo": "2.1.4"
   },
   "peerDependencies": {
     "react": ">=16.2",

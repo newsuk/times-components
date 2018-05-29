@@ -165,6 +165,7 @@ exports[`1. Render a Topic page 1`] = `
   }
   articlesLoading={false}
   count={10}
+  fetchMore={[Function]}
   imageRatio={1.5}
   onArticlePress={[Function]}
   onNext={[Function]}
