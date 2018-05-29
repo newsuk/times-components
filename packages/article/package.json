@@ -15,7 +15,7 @@
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "webpack"
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",

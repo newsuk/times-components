@@ -11,7 +11,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d dist",
-    "bundle": "webpack"
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",

@@ -12,7 +12,7 @@
     "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "transpile": "babel src -d dist && cp src/schema.json dist",
-    "bundle": "webpack"
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
