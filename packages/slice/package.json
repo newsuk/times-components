@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.18.21",
+  "version": "0.19.0",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.5.0",
-    "@times-components/jest-configurator": "0.7.1",
-    "@times-components/storybook": "0.11.0",
+    "@times-components/eslint-config-thetimes": "0.6.0",
+    "@times-components/jest-configurator": "0.8.0",
+    "@times-components/storybook": "0.12.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -56,8 +56,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.8.5",
-    "@times-components/styleguide": "0.8.2",
+    "@times-components/responsive-styles": "0.9.0",
+    "@times-components/styleguide": "0.9.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

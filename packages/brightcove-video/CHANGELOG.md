@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.7...@times-components/brightcove-video@2.4.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
 <a name="2.3.7"></a>
 ## [2.3.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.6...@times-components/brightcove-video@2.3.7) (2018-05-29)
 
