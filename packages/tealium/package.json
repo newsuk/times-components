@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "React component for tealium reporter",
   "main": "dist",
   "dev": "src",
@@ -24,9 +24,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@storybook/addon-actions": "3.4.1",
-    "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/jest-configurator": "0.7.0",
-    "@times-components/utils": "0.10.1",
+    "@times-components/eslint-config-thetimes": "0.5.0",
+    "@times-components/jest-configurator": "0.7.1",
+    "@times-components/utils": "0.10.2",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",

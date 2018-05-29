@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
     paddingTop: spacing(7),
     paddingHorizontal: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary,
+    borderBottomColor: colours.functional.border,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     minHeight: 90
   },
   name: {
