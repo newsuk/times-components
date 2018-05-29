@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { FlatList, View } from "react-native";
+import { ActivityIndicator, FlatList, View } from "react-native";
 import ErrorView from "@times-components/error-view";
+import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
-import ArticleListPagination from "./article-list-pagination";
+import ArticleListRetryButton from "./article-list-retry-button";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 
@@ -18,6 +19,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+    this.state = { loadMoreError: null };
   }
 
   componentWillUnmount() {
@@ -45,12 +47,10 @@ class ArticleList extends Component {
       error,
       imageRatio,
       onArticlePress,
-      onNext,
-      onPrev,
-      page,
       pageSize,
       refetch,
-      showImages
+      showImages,
+      fetchMore
     } = this.props;
 
     if (error) {
@@ -61,34 +61,6 @@ class ArticleList extends Component {
         </View>
       );
     }
-
-    const scrollToTopNextFrame = () => {
-      this.scrollAnimationFrame = global.requestAnimationFrame(() => {
-        this.listRef.scrollToOffset({
-          animated: true,
-          offset: 0
-        });
-      });
-    };
-
-    const paginationComponent = (
-      { autoScroll = false, hideResults = false } = {}
-    ) => (
-      <ArticleListPagination
-        count={count}
-        hideResults={hideResults}
-        onNext={(...args) => {
-          onNext(...args);
-          if (autoScroll) scrollToTopNextFrame();
-        }}
-        onPrev={(...args) => {
-          onPrev(...args);
-          if (autoScroll) scrollToTopNextFrame();
-        }}
-        page={page}
-        pageSize={pageSize}
-      />
-    );
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -105,22 +77,60 @@ class ArticleList extends Component {
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
+    const fetchMoreOnEndReached = () =>
+      this.state.loadMoreError
+        ? null
+        : fetchMore(data.length).catch(loadMoreError =>
+            this.setState({ loadMoreError })
+          );
+
+    const articleListFooter = () => {
+      if (data.length >= count) {
+        return null;
+      } else if (this.state.loadMoreError) {
+        return (
+          <View>
+            <ArticleListItemSeparator />
+            <View style={styles.showMoreRetryContainer}>
+              <ArticleListRetryButton
+                style={styles.showMoreRetryButton}
+                refetch={() => {
+                  this.setState({ loadMoreError: null }, fetchMoreOnEndReached);
+                }}
+              />
+            </View>
+          </View>
+        );
+      }
+      return (
+        <View>
+          <ArticleListItemSeparator />
+          <ActivityIndicator
+            style={styles.loadingContainer}
+            size="large"
+            color={colours.functional.keyline}
+          />
+        </View>
+      );
+    };
+
     return (
       <FlatList
         accessibilityID="scroll-view"
         data={data}
-        keyExtractor={item => `${item.id}`}
+        keyExtractor={item => `${item.elementId}`}
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
-        ref={list => {
-          this.listRef = list;
-        }}
+        onEndReachedThreshold={2}
+        onEndReached={fetchMoreOnEndReached}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
               hasError ? null : (
                 <ArticleListItem
                   {...item}
+                  index={index}
+                  length={data.length}
                   imageRatio={imageRatio}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })
@@ -132,7 +142,6 @@ class ArticleList extends Component {
             }
           </ErrorView>
         )}
-        scrollRenderAheadDistance={2}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
         ItemSeparatorComponent={() => (
@@ -140,16 +149,8 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
           </View>
         )}
-        ListFooterComponent={paginationComponent({
-          autoScroll: true,
-          hideResults: true
-        })}
-        ListHeaderComponent={
-          <View>
-            {articleListHeader}
-            {paginationComponent({ autoScroll: false, hideResults: false })}
-          </View>
-        }
+        ListFooterComponent={articleListFooter}
+        ListHeaderComponent={articleListHeader}
       />
     );
   }

@@ -57,27 +57,53 @@ const Topic = ({
       {({
         topic: data,
         error: articlesError,
+        fetchMore,
         isLoading: articlesLoading,
         pageSize,
         refetch: refetchArticles,
         variables: { imageRatio = "3:2" }
-      }) => (
-        <ArticleList
-          articleListHeader={articleListHeader}
-          articles={get(data, "articles.list", [])}
-          articlesLoading={articlesLoading}
-          count={get(data, "articles.count", 0)}
-          error={articlesError}
-          imageRatio={ratioTextToFloat(imageRatio)}
-          onArticlePress={onArticlePress}
-          onNext={onNext}
-          onPrev={onPrev}
-          page={page}
-          pageSize={pageSize}
-          refetch={refetchArticles}
-          showImages
-        />
-      )}
+      }) => {
+        const fetchMoreArticles = length =>
+          fetchMore({
+            variables: {
+              skip: length
+            },
+            updateQuery: (prev, { fetchMoreResult }) =>
+              fetchMoreResult
+                ? {
+                    topic: {
+                      ...prev.topic,
+                      articles: {
+                        ...prev.topic.articles,
+                        list: [
+                          ...prev.topic.articles.list,
+                          ...fetchMoreResult.topic.articles.list
+                        ]
+                      }
+                    }
+                  }
+                : prev
+          });
+
+        return (
+          <ArticleList
+            articleListHeader={articleListHeader}
+            articles={get(data, "articles.list", [])}
+            articlesLoading={articlesLoading}
+            count={get(data, "articles.count", 0)}
+            error={articlesError}
+            fetchMore={fetchMoreArticles}
+            imageRatio={ratioTextToFloat(imageRatio)}
+            onArticlePress={onArticlePress}
+            onNext={onNext}
+            onPrev={onPrev}
+            page={page}
+            pageSize={pageSize}
+            refetch={refetchArticles}
+            showImages
+          />
+        );
+      }}
     </TopicArticlesProvider>
   );
 };

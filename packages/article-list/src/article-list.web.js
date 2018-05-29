@@ -189,6 +189,8 @@ class ArticleList extends Component {
                           {separatorComponent}
                           <ArticleListItem
                             {...article}
+                            index={index}
+                            length={data.length}
                             imageRatio={imageRatio}
                             imageSize={this.getImageSize(elementId) || 100}
                             onPress={e => onArticlePress(e, { id, url })}

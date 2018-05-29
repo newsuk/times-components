@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
+export const propTypesBase = {
   headline: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-  imageRatio: PropTypes.number,
   imageSize: PropTypes.number,
   label: PropTypes.string,
   leadAsset: PropTypes.shape({
@@ -13,13 +12,20 @@ export const propTypes = {
     title: PropTypes.string
   }),
   longSummary: PropTypes.array,
-  onPress: PropTypes.func,
   publicationName: PropTypes.string,
   publishedTime: PropTypes.string,
   shortSummary: PropTypes.array,
-  showImage: PropTypes.bool,
   summary: PropTypes.array,
   url: PropTypes.string
+};
+
+export const propTypes = {
+  ...propTypesBase,
+  imageRatio: PropTypes.number,
+  index: PropTypes.number.isRequired,
+  length: PropTypes.number.isRequired,
+  onPress: PropTypes.func,
+  showImage: PropTypes.bool
 };
 
 export const defaultProps = {
