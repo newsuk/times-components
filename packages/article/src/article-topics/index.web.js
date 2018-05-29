@@ -27,9 +27,9 @@ const ShowTopics = ({ topics, device }) => {
 ShowTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      order: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
-      order: PropTypes.number.isRequired
+      slug: PropTypes.string.isRequired,
     }).isRequired
   ),
   device: PropTypes.oneOf(["DESKTOP", null])

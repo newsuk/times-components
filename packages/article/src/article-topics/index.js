@@ -19,9 +19,9 @@ const ShowTopics = ({ topics }) => {
 ShowTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      order: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
-      order: PropTypes.number.isRequired
+      slug: PropTypes.string.isRequired,
     }).isRequired
   )
 };

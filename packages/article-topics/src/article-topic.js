@@ -5,8 +5,8 @@ import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
 
-const ArticleTopic = ({ id, name, onPress }) => (
-  <Link url={`/topic/${id}`} onPress={e => onPress(e, { id, name })}>
+const ArticleTopic = ({ name, onPress, slug }) => (
+  <Link url={`/topic/${slug}`} onPress={e => onPress(e, { name, slug })}>
     <View style={styles.container}>
       <Text style={styles.text}>{name}</Text>
     </View>
@@ -14,9 +14,9 @@ const ArticleTopic = ({ id, name, onPress }) => (
 );
 
 ArticleTopic.propTypes = {
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  onPress: PropTypes.func
+  onPress: PropTypes.func,
+  slug: PropTypes.string.isRequired,
 };
 
 ArticleTopic.defaultProps = {
@@ -29,9 +29,9 @@ export default withTrackEvents(ArticleTopic, {
       eventName: "onPress",
       actionName: "Pressed",
       trackingName: "TopicLink",
-      getAttrs: ({ id, name }) => ({
-        id,
-        name
+      getAttrs: ({ name, slug }) => ({
+        name,
+        slug
       })
     }
   ]

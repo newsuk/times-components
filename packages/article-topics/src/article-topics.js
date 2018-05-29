@@ -12,8 +12,8 @@ const ArticleTopics = ({ topics, style, onPress }) => {
 
   return (
     <View style={[styles.topicGroup, style]}>
-      {orderedTopics.map(({ id, name }) => (
-        <ArticleTopic key={id} id={id} name={name} onPress={onPress} />
+      {orderedTopics.map(({ name, slug }) => (
+        <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
       ))}
     </View>
   );
@@ -22,9 +22,9 @@ const ArticleTopics = ({ topics, style, onPress }) => {
 ArticleTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      order: PropTypes.number.isRequired
+      order: PropTypes.number.isRequired,
+      slug: PropTypes.string.isRequired
     }).isRequired
   ).isRequired,
   onPress: PropTypes.func,
