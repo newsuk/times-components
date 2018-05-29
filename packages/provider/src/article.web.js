@@ -73,6 +73,10 @@ export const query = gql`
           main
         }
       }
+      topics {
+        name
+        slug
+      }
     }
   }
 

@@ -12,6 +12,18 @@
       "standfirst":
         "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",
       "flags": ["NEW", "EXCLUSIVE"],
+      "topics": [
+        {
+          "name": "Islington",
+          "slug": "islington",
+          "__typename": "ArticleTopic"
+        },
+        {
+          "name": "Chelsea",
+          "slug": "chelsea",
+          "__typename": "ArticleTopic"
+        }
+      ],
       "byline": [
         {
           "name": "inline",
@@ -535,7 +547,7 @@
             "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F94d46672-d8e2-11e7-9b16-edd3826708d6.jpg?crop=1155%2C650%2C46%2C248",
           "__typename": "Crop"
         },
-        "__typename": "Image"
+        "__typename": "LeadAsset"
       },
       "relatedArticlesLayout": {
         "template": "DEFAULT",
