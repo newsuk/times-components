@@ -11,7 +11,7 @@ export const query = gql`
     topic(slug: $slug) {
       articles(first: $first, skip: $skip) {
         count
-        list {
+        list(first: $first, skip: $skip) {
           byline
           headline
           id
