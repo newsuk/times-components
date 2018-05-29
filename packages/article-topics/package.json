@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.5.0",
     "@times-components/jest-configurator": "0.7.1",
-    "@times-components/storybook": "0.10.3",
-    "@times-components/tealium-utils": "0.3.2",
+    "@times-components/storybook": "0.11.0",
+    "@times-components/tealium-utils": "0.3.3",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
@@ -52,9 +52,9 @@
     "react-native": "0.54.2"
   },
   "dependencies": {
-    "@times-components/link": "0.22.1",
-    "@times-components/styleguide": "0.8.1",
-    "@times-components/tracking": "0.12.18",
+    "@times-components/link": "0.22.2",
+    "@times-components/styleguide": "0.8.2",
+    "@times-components/tracking": "0.12.19",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.3...@times-components/provider-test-tools@0.7.0) (2018-05-29)
+
+
+### Features
+
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.2...@times-components/provider-test-tools@0.6.3) (2018-05-25)
 
