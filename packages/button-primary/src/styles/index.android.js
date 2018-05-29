@@ -5,11 +5,13 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   listErrorButton: {
   	...sharedStyles.listErrorButton,
-  	height: 36
-  },
-  listErrorButtonText: {
-  	...sharedStyles.listErrorButtonText,
-  	letterSpacing: 5.5
+  	borderRadius: 4,
+  	height: 36,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    elevation: 10,
+    position:'relative'
   }
 });
 

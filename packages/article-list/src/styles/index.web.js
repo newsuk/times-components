@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
   retryButton: {
     alignSelf: "center",
     paddingBottom: spacing(2),
-    paddingTop: spacing(8)
+    paddingTop: spacing(8),
+    width: 160
   }
 });
 

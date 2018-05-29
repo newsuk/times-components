@@ -6,13 +6,11 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 export const propTypes = {
   onPress: PropTypes.func,
   style: ViewPropTypesStyle,
-  title: PropTypes.string,
-  width: PropTypes.number
+  title: PropTypes.string
 };
 
 export const defaultProps = {
   onPress: () => null,
   style: null,
-  title: "",
-  width: 165
+  title: ""
 };

@@ -10,14 +10,11 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const getProps = (decorateAction, knobs) => {
-  const { number, text } = knobs;
-  return {
-    onPress: preventDefaultedAction(decorateAction)("onPress"),
-    title: text("Button title:", "submit"),
-    width: number("Button width in pixels:", 165)
-  }
-};
+const getProps = (decorateAction, text) => ({
+  onPress: preventDefaultedAction(decorateAction)("onPress"),
+  style: { width: 200 },
+  title: text("Button title:", "submit")
+});
 
 export default {
   name: "Primitives/ButtonPrimary",
@@ -25,8 +22,8 @@ export default {
     {
       type: "story",
       name: "ButtonPrimary",
-      component: ({ number, text }, { decorateAction }) => (
-      	<ButtonPrimary {...getProps(decorateAction, { number, text })} />
+      component: ({ text }, { decorateAction }) => (
+      	<ButtonPrimary {...getProps(decorateAction, text)} />
       )
     }
   ]

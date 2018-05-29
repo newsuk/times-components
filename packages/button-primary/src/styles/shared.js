@@ -6,7 +6,8 @@ import {
 
 const styles = {
   listErrorButtonContainer: {
-    justifyContent: "center"
+    justifyContent: "center",
+    width: "100%"
   },
   listErrorButton: {
     alignItems: "center",

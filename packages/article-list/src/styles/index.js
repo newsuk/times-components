@@ -34,8 +34,10 @@ const styles = StyleSheet.create({
   showMoreRetryContainer: {
     padding: spacing(5)
   },
-  showMoreRetryButton: {
-    elevation: 10
+  retryButton: {
+    alignSelf: "center",
+    bottom: 0,
+    position: "absolute"
   }
 });
 
