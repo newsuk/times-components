@@ -12,9 +12,10 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
-    "prepublishOnly": "yarn transpile",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,10 @@
     "@times-components/provider-test-tools": "0.7.0",
     "@times-components/storybook": "0.11.0",
     "@times-components/tealium-utils": "0.3.3",
+    "@times-components/webpack-configurator": "0.0.1",
     "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
+    "babel-plugin-react-native-web": "0.6.1",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
@@ -50,7 +54,9 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "@times-components/article-list": "1.2.0",

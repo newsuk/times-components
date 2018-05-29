@@ -8,9 +8,10 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
-    "prepublishOnly": "yarn transpile",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {
     "preset": "react-native",
@@ -45,9 +46,12 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.5.0",
     "@times-components/storybook": "0.11.0",
+    "@times-components/webpack-configurator": "0.0.1",
     "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
@@ -57,7 +61,9 @@
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-web": "0.5.1",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "@times-components/styleguide": "0.8.2",
