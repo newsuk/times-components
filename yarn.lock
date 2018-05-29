@@ -753,15 +753,16 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/fructose@3.6.4":
-  version "3.6.4"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.6.4.tgz#112479d245a1a8e247cdbd2e18a2d8b42a047a0b"
+"@times-components/fructose@3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.8.0.tgz#4830c6f9c7925366f950424b13216fe53ee2d30c"
   dependencies:
     babel-polyfill "^6.26.0"
     callsite "^1.0.0"
     chromeless "^1.3.0"
     commander "^2.15.1"
     express "^4.16.2"
+    github-comment-manager "^1.1.4"
     html-webpack-plugin "^2.28.0"
     jimp "^0.2.28"
     ngrok "^2.2.24"
@@ -770,7 +771,6 @@
     pngjs "^3.3.1"
     prop-types "^15.6.0"
     react-native "0.54.2"
-    react-native-nested-listview "^0.3.0"
     react-native-side-menu "^1.1.3"
     request "^2.82.0"
     server-destroy "^1.0.1"
@@ -6049,6 +6049,12 @@ gitconfiglocal@^1.0.0:
   dependencies:
     ini "^1.3.2"
 
+github-comment-manager@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/github-comment-manager/-/github-comment-manager-1.1.4.tgz#36dccc945a9be54f94c550d98d278b280608e2f8"
+  dependencies:
+    request "^2.87.0"
+
 glamor@^2.20.40:
   version "2.20.40"
   resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.40.tgz#f606660357b7cf18dface731ad1a2cfa93817f05"
@@ -10732,12 +10738,6 @@ react-native-iphone-x-helper@^1.0.2:
     babel-plugin-module-resolver "^2.3.0"
     babel-preset-react-native "1.9.0"
 
-react-native-nested-listview@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-nested-listview/-/react-native-nested-listview-0.3.0.tgz#0b9e76fa086919425820dad97ff42da854173381"
-  dependencies:
-    shortid "^2.2.8"
-
 react-native-safe-module@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-module/-/react-native-safe-module-1.2.0.tgz#a23824ca24edc2901913694a76646475113d570d"
@@ -11293,7 +11293,7 @@ request@2.79.0:
     tunnel-agent "~0.4.1"
     uuid "^3.0.0"
 
-request@^2.55.0, request@^2.65.0, request@^2.79.0, request@^2.82.0, request@^2.83.0:
+request@^2.55.0, request@^2.65.0, request@^2.79.0, request@^2.82.0, request@^2.83.0, request@^2.87.0:
   version "2.87.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
   dependencies:
@@ -11721,10 +11721,6 @@ shelljs@^0.8.1:
 shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
-
-shortid@^2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.8.tgz#033b117d6a2e975804f6f0969dbe7d3d0b355131"
 
 sigmund@~1.0.0:
   version "1.0.1"
