@@ -1,8 +1,8 @@
 import React from "react";
+import { FlatList } from "react-native";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Link from "@times-components/link";
-import Pagination from "@times-components/pagination";
 import ArticleList from "../src/article-list";
 import ArticleListItem from "../src/article-list-item";
 import articleListProps from "./default-article-list-props";
@@ -107,47 +107,123 @@ export default () => {
     });
   });
 
-  it("should invoke onPrev when the previous link is pressed", () => {
-    const onPrev = jest.fn();
+  it("should fetch more articles when scrolling to bottom", () => {
+    const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
     const results = pagedResult(0, 3);
-    const comp = renderer.create(
+    const tree = renderer.create(
       <ArticleList
         {...articleListProps}
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
         isLoading={false}
-        onPrev={onPrev}
-        page={2}
+        page={1}
         pageSize={3}
+        fetchMore={fetchMore}
       />
-    ).root;
-    comp
-      .findAllByType(Pagination)[0]
-      .findAllByType(Link)[0]
-      .props.onPress();
-    expect(onPrev).toHaveBeenCalled();
+    );
+
+    tree.root.findByType(FlatList).props.onEndReached();
+
+    expect(fetchMore).toHaveBeenCalled();
   });
 
-  it("should invoke onNext when the next link is pressed", () => {
-    const onNext = jest.fn();
+  it("should display retry button when fetch more fails", async () => {
+    const fetchMore = jest
+      .fn()
+      .mockReturnValue(Promise.reject(new Error("Error")));
     const results = pagedResult(0, 3);
-    const comp = renderer.create(
+    const wrapper = shallow(
       <ArticleList
         {...articleListProps}
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
         isLoading={false}
-        onNext={onNext}
-        page={2}
+        page={1}
         pageSize={3}
+        fetchMore={fetchMore}
       />
-    ).root;
-    comp
-      .findAllByType(Pagination)[0]
-      .findAllByType(Link)[1]
-      .props.onPress();
-    expect(onNext).toHaveBeenCalled();
+    ).dive();
+    wrapper.setState({ loadMoreError: null });
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    expect(
+      wrapper
+        .dive()
+        .dive()
+        .dive()
+        .dive()
+        .find("articleListFooter")
+        .dive()
+    ).toMatchSnapshot();
+  });
+
+  it("should clear errors and fetch more when retry button clicked", () => {
+    const fetchMore = jest.fn().mockReturnValue(Promise.resolve());
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+        fetchMore={fetchMore}
+      />
+    ).dive();
+    wrapper.setState({ loadMoreError: "Error" });
+
+    wrapper
+      .dive()
+      .dive()
+      .dive()
+      .dive()
+      .find("articleListFooter")
+      .dive()
+      .find("ArticleListRetryButton")
+      .dive()
+      .simulate("press");
+
+    expect(wrapper.state().loadMoreError).toBe(null);
+    expect(fetchMore).toHaveBeenCalled();
+  });
+
+  it("should not call re-fetch after an error", async () => {
+    const fetchMore = jest
+      .fn()
+      .mockReturnValue(Promise.reject(new Error("Error")));
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+        fetchMore={fetchMore}
+      />
+    ).dive();
+    wrapper.setState({ loadMoreError: null });
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    expect(fetchMore).toHaveBeenCalledTimes(1);
   });
 };

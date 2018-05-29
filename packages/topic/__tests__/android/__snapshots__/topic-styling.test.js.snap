@@ -3,32 +3,13 @@
 exports[`Topic styling tests on android should render styling correctly 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      count={0}
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      page={1}
-      pageSize={3}
-    />
-  }
+  ListFooterComponent={[Function]}
   ListHeaderComponent={
-    <View>
-      <TopicHead
-        description="A swanky part of town."
-        isLoading={false}
-        name="Chelsea"
-      />
-      <ArticleListPagination
-        count={0}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
+    <TopicHead
+      description="A swanky part of town."
+      isLoading={false}
+      name="Chelsea"
+    />
   }
   accessibilityID="scroll-view"
   data={
@@ -59,6 +40,7 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
+  onEndReached={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
@@ -69,7 +51,6 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
@@ -96,151 +77,76 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 0.5,
+            "flexDirection": "column",
+            "minHeight": 90,
+            "paddingBottom": 20,
+            "paddingHorizontal": 10,
+            "paddingTop": 35,
+            "width": "100%",
+          }
+        }
+      >
         <View
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F9F9F9",
-              "borderBottomColor": "#F0F0F0",
-              "borderBottomWidth": 0.5,
-              "flexDirection": "column",
-              "minHeight": 90,
-              "paddingBottom": 20,
-              "paddingHorizontal": 10,
-              "paddingTop": 35,
-              "width": "100%",
             }
           }
         >
+          <Text
+            accessibilityLabel="topic-name"
+            accessibilityRole="heading"
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#1D1D1B",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 40,
+                "paddingBottom": 20,
+              }
+            }
+            testID="topic-name"
+          >
+            Chelsea
+          </Text>
           <View
             style={
               Object {
-                "alignItems": "center",
+                "borderStyle": "solid",
+                "borderTopColor": "#DBDBDB",
+                "borderTopWidth": 1,
+                "justifyContent": "center",
+                "width": 200,
               }
             }
-          >
-            <Text
-              accessibilityLabel="topic-name"
-              accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#1D1D1B",
-                  "fontFamily": "TimesModern-Bold",
-                  "fontSize": 40,
-                  "paddingBottom": 20,
-                }
-              }
-              testID="topic-name"
-            >
-              Chelsea
-            </Text>
-            <View
-              style={
-                Object {
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "justifyContent": "center",
-                  "width": 200,
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 15,
-                  "lineHeight": 26,
-                  "paddingVertical": 20,
-                  "textAlign": "center",
-                }
-              }
-              testID="topic-description"
-            >
-              A swanky part of town.
-            </Text>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
             style={
               Object {
-                "flex": 1,
-                "maxWidth": 800,
+                "color": "#333333",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 15,
+                "lineHeight": 26,
+                "paddingVertical": 20,
+                "textAlign": "center",
               }
             }
+            testID="topic-description"
           >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
-                  }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
-            </View>
-          </View>
+            A swanky part of town.
+          </Text>
         </View>
       </View>
     </View>
@@ -1699,54 +1605,7 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
     </View>
     <View
       onLayout={[Function]}
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-              "maxWidth": 800,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
+    />
   </View>
 </RCTScrollView>
 `;

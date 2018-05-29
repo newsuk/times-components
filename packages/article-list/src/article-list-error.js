@@ -1,7 +1,8 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, View } from "react-native";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
+import ArticleListRetryButton from "./article-list-retry-button";
 
 const ArticleListError = ({ refetch }) => (
   <View style={styles.listErrorContainer}>
@@ -11,11 +12,7 @@ const ArticleListError = ({ refetch }) => (
       connection and retry to continue
     </Text>
     <View style={styles.listErrorButtonContainer}>
-      <TouchableOpacity accessible accessibilityLabel="Retry" onPress={refetch}>
-        <View style={styles.listErrorButton}>
-          <Text style={styles.listErrorButtonText}>RETRY</Text>
-        </View>
-      </TouchableOpacity>
+      <ArticleListRetryButton refetch={refetch} />
     </View>
   </View>
 );

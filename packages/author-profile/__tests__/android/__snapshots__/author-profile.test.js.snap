@@ -3,66 +3,47 @@
 exports[`1. Render an author profile page 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      count={20}
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      page={1}
-      pageSize={3}
-    />
-  }
+  ListFooterComponent={[Function]}
   ListHeaderComponent={
-    <View>
-      <AuthorProfileHead
-        biography={
-          Array [
-            Object {
-              "attributes": Object {
-                "value": "Deborah Haynes is the defence editor at ",
-              },
-              "children": Array [],
-              "name": "text",
+    <AuthorProfileHead
+      biography={
+        Array [
+          Object {
+            "attributes": Object {
+              "value": "Deborah Haynes is the defence editor at ",
             },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The Times",
-                  },
-                  "children": Array [],
-                  "name": "text",
+            "children": Array [],
+            "name": "text",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The Times",
                 },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": ", covering the most important defence & security news in the UK and around the world.",
+                "children": Array [],
+                "name": "text",
               },
-              "children": Array [],
-              "name": "text",
+            ],
+            "name": "italic",
+          },
+          Object {
+            "attributes": Object {
+              "value": ", covering the most important defence & security news in the UK and around the world.",
             },
-          ]
-        }
-        isLoading={false}
-        jobTitle="Defence Editor"
-        name="Deborah Haynes"
-        onTwitterLinkPress={[Function]}
-        twitter="jdoe"
-        uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-      />
-      <ArticleListPagination
-        count={20}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
+            "children": Array [],
+            "name": "text",
+          },
+        ]
+      }
+      isLoading={false}
+      jobTitle="Defence Editor"
+      name="Deborah Haynes"
+      onTwitterLinkPress={[Function]}
+      twitter="jdoe"
+      uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+    />
   }
   accessibilityID="scroll-view"
   data={
@@ -183,6 +164,7 @@ exports[`1. Render an author profile page 1`] = `
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
+  onEndReached={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
@@ -193,7 +175,6 @@ exports[`1. Render an author profile page 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
@@ -220,80 +201,87 @@ exports[`1. Render an author profile page 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View>
+      <View
+        accessibilityRole="banner"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 0.5,
+            "flexDirection": "column",
+            "paddingBottom": 40,
+            "paddingTop": 30,
+            "width": "100%",
+          }
+        }
+      >
         <View
-          accessibilityRole="banner"
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F9F9",
-              "borderBottomColor": "#F0F0F0",
-              "borderBottomWidth": 0.5,
-              "flexDirection": "column",
-              "paddingBottom": 40,
-              "paddingTop": 30,
-              "width": "100%",
+              "opacity": 0,
             }
           }
         >
           <View
+            pointerEvents="box-none"
             style={
               Object {
-                "opacity": 0,
+                "alignItems": "center",
+                "backgroundColor": "transparent",
               }
             }
+            testID="author-head"
           >
             <View
-              pointerEvents="box-none"
+              aspectRatio={1}
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 50,
+                  "marginBottom": 20,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "overflow": "hidden",
+                  "width": 100,
                 }
               }
-              testID="author-head"
             >
               <View
-                aspectRatio={1}
                 style={
                   Object {
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 50,
-                    "marginBottom": 20,
-                    "marginLeft": "auto",
-                    "marginRight": "auto",
-                    "overflow": "hidden",
-                    "width": 100,
+                    "height": "100%",
+                    "width": "100%",
                   }
                 }
               >
-                <View
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
+                    }
+                  }
                   style={
                     Object {
+                      "bottom": 0,
                       "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
                       "width": "100%",
                     }
                   }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
                 >
-                  <Image
-                    onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
-                      }
-                    }
-                    style={
-                      Object {
-                        "bottom": 0,
-                        "height": "100%",
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                        "width": "100%",
-                      }
-                    }
-                  />
                   <View
                     onLayout={[Function]}
                     style={
@@ -302,330 +290,186 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     }
                   >
-                    <View
-                      onLayout={[Function]}
+                    <ARTSurfaceView
                       style={
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
                         }
                       }
                     >
-                      <ARTSurfaceView
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": 0,
-                          }
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
                         }
-                      >
-                        <ARTShape
-                          d={
-                            Array [
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                            ]
-                          }
-                          fill={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              -0,
-                              0,
-                              0.9764705882352941,
-                              0.9764705882352941,
-                              0.9764705882352941,
-                              1,
-                              0.9294117647058824,
-                              0.9294117647058824,
-                              0.9294117647058824,
-                              1,
-                              0,
-                              1,
-                            ]
-                          }
-                          opacity={1}
-                          stroke={null}
-                          strokeCap={1}
-                          strokeDash={null}
-                          strokeJoin={1}
-                          strokeWidth={1}
-                          transform={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                            ]
-                          }
-                        />
-                      </ARTSurfaceView>
-                    </View>
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
                   </View>
                 </View>
               </View>
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                Deborah Haynes
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                defence editor
-              </Text>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingVertical": 8,
-                  }
-                }
-              >
-                <svg
-                  height={15}
-                  width={15}
-                >
-                  <path
-                    fill="#006699"
-                  />
-                </svg>
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="https://twitter.com/jdoe"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingLeft": 5,
-                      "textDecorationLine": "none",
-                    }
-                  }
-                >
-                  @
-                  jdoe
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 30,
-                    "paddingHorizontal": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                >
-                  Deborah Haynes is the defence editor at 
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "fontStyle": "italic",
-                      }
-                    }
-                  >
-                    The Times
-                  </Text>
-                  , covering the most important defence & security news in the UK and around the world.
-                </Text>
-              </View>
             </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
+            <Text
+              accessibilityLabel="author-name"
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
               style={
                 Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 30,
+                }
+              }
+              testID="author-name"
+            >
+              Deborah Haynes
+            </Text>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="2"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "TimesDigitalW04-RegularSC",
+                  "fontSize": 14,
                 }
               }
             >
-              <View
+              defence editor
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              <svg
+                height={15}
+                width={15}
+              >
+                <path
+                  fill="#006699"
+                />
+              </svg>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="https://twitter.com/jdoe"
+                onPress={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "paddingLeft": 5,
+                    "textDecorationLine": "none",
                   }
                 }
               >
+                @
+                jdoe
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "paddingBottom": 30,
+                  "paddingHorizontal": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
+                  }
+                }
+                testID="author-bio"
+              >
+                Deborah Haynes is the defence editor at 
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
+                      "fontStyle": "italic",
                     }
                   }
-                  testID="results-message"
                 >
-                  Showing 1 - 3 of 20 results
+                  The Times
                 </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View>
-                  <View
-                    accessible={true}
-                    nativeBackgroundAndroid={
-                      Object {
-                        "attribute": "selectableItemBackground",
-                        "type": "ThemeAttrAndroid",
-                      }
-                    }
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    pointerEvents="box-only"
-                  >
-                    <View
-                      style={
-                        Object {
-                          "alignItems": "baseline",
-                          "flexDirection": "row",
-                          "padding": 12,
-                        }
-                      }
-                      testID="pagination-button-next"
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#006699",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 15,
-                            "height": 15,
-                            "marginRight": 10,
-                            "textAlign": "right",
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          Next
-                        </Text>
-                      </Text>
-                      <svg
-                        height={12}
-                        width={7}
-                      >
-                        <g
-                          fill="#006699"
-                        >
-                          <path />
-                        </g>
-                      </svg>
-                    </View>
-                  </View>
-                </View>
-              </View>
+                , covering the most important defence & security news in the UK and around the world.
+              </Text>
             </View>
           </View>
         </View>
@@ -1427,113 +1271,26 @@ exports[`1. Render an author profile page 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "maxWidth": 800,
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
             }
           }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
             }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View>
-                <View
-                  accessible={true}
-                  nativeBackgroundAndroid={
-                    Object {
-                      "attribute": "selectableItemBackground",
-                      "type": "ThemeAttrAndroid",
-                    }
-                  }
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  pointerEvents="box-only"
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "baseline",
-                        "flexDirection": "row",
-                        "padding": 12,
-                      }
-                    }
-                    testID="pagination-button-next"
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#006699",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 15,
-                          "height": 15,
-                          "marginRight": 10,
-                          "textAlign": "right",
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        Next
-                      </Text>
-                    </Text>
-                    <svg
-                      height={12}
-                      width={7}
-                    >
-                      <g
-                        fill="#006699"
-                      >
-                        <path />
-                      </g>
-                    </svg>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
   </View>
@@ -1543,66 +1300,47 @@ exports[`1. Render an author profile page 1`] = `
 exports[`2. Render an author profile page without images 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      count={20}
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      page={1}
-      pageSize={3}
-    />
-  }
+  ListFooterComponent={[Function]}
   ListHeaderComponent={
-    <View>
-      <AuthorProfileHead
-        biography={
-          Array [
-            Object {
-              "attributes": Object {
-                "value": "Deborah Haynes is the defence editor at ",
-              },
-              "children": Array [],
-              "name": "text",
+    <AuthorProfileHead
+      biography={
+        Array [
+          Object {
+            "attributes": Object {
+              "value": "Deborah Haynes is the defence editor at ",
             },
-            Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "The Times",
-                  },
-                  "children": Array [],
-                  "name": "text",
+            "children": Array [],
+            "name": "text",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The Times",
                 },
-              ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": ", covering the most important defence & security news in the UK and around the world.",
+                "children": Array [],
+                "name": "text",
               },
-              "children": Array [],
-              "name": "text",
+            ],
+            "name": "italic",
+          },
+          Object {
+            "attributes": Object {
+              "value": ", covering the most important defence & security news in the UK and around the world.",
             },
-          ]
-        }
-        isLoading={false}
-        jobTitle="Defence Editor"
-        name="Deborah Haynes"
-        onTwitterLinkPress={[Function]}
-        twitter="jdoe"
-        uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-      />
-      <ArticleListPagination
-        count={20}
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        page={1}
-        pageSize={3}
-      />
-    </View>
+            "children": Array [],
+            "name": "text",
+          },
+        ]
+      }
+      isLoading={false}
+      jobTitle="Defence Editor"
+      name="Deborah Haynes"
+      onTwitterLinkPress={[Function]}
+      twitter="jdoe"
+      uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+    />
   }
   accessibilityID="scroll-view"
   data={
@@ -1816,6 +1554,7 @@ exports[`2. Render an author profile page without images 1`] = `
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
+  onEndReached={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
@@ -1826,7 +1565,6 @@ exports[`2. Render an author profile page without images 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
@@ -1853,80 +1591,87 @@ exports[`2. Render an author profile page without images 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View>
+      <View
+        accessibilityRole="banner"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 0.5,
+            "flexDirection": "column",
+            "paddingBottom": 40,
+            "paddingTop": 30,
+            "width": "100%",
+          }
+        }
+      >
         <View
-          accessibilityRole="banner"
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F9F9",
-              "borderBottomColor": "#F0F0F0",
-              "borderBottomWidth": 0.5,
-              "flexDirection": "column",
-              "paddingBottom": 40,
-              "paddingTop": 30,
-              "width": "100%",
+              "opacity": 0,
             }
           }
         >
           <View
+            pointerEvents="box-none"
             style={
               Object {
-                "opacity": 0,
+                "alignItems": "center",
+                "backgroundColor": "transparent",
               }
             }
+            testID="author-head"
           >
             <View
-              pointerEvents="box-none"
+              aspectRatio={1}
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 50,
+                  "marginBottom": 20,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "overflow": "hidden",
+                  "width": 100,
                 }
               }
-              testID="author-head"
             >
               <View
-                aspectRatio={1}
                 style={
                   Object {
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 50,
-                    "marginBottom": 20,
-                    "marginLeft": "auto",
-                    "marginRight": "auto",
-                    "overflow": "hidden",
-                    "width": 100,
+                    "height": "100%",
+                    "width": "100%",
                   }
                 }
               >
-                <View
+                <Image
+                  onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
+                    }
+                  }
                   style={
                     Object {
+                      "bottom": 0,
                       "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
                       "width": "100%",
                     }
                   }
+                />
+                <View
+                  onLayout={[Function]}
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
                 >
-                  <Image
-                    onLoad={[Function]}
-                    source={
-                      Object {
-                        "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
-                      }
-                    }
-                    style={
-                      Object {
-                        "bottom": 0,
-                        "height": "100%",
-                        "left": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                        "width": "100%",
-                      }
-                    }
-                  />
                   <View
                     onLayout={[Function]}
                     style={
@@ -1935,330 +1680,186 @@ exports[`2. Render an author profile page without images 1`] = `
                       }
                     }
                   >
-                    <View
-                      onLayout={[Function]}
+                    <ARTSurfaceView
                       style={
                         Object {
-                          "flex": 1,
+                          "bottom": 0,
+                          "height": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
                         }
                       }
                     >
-                      <ARTSurfaceView
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "height": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": 0,
-                          }
+                      <ARTShape
+                        d={
+                          Array [
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                            2,
+                            0,
+                            0,
+                          ]
                         }
-                      >
-                        <ARTShape
-                          d={
-                            Array [
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                              2,
-                              0,
-                              0,
-                            ]
-                          }
-                          fill={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              -0,
-                              0,
-                              0.9764705882352941,
-                              0.9764705882352941,
-                              0.9764705882352941,
-                              1,
-                              0.9294117647058824,
-                              0.9294117647058824,
-                              0.9294117647058824,
-                              1,
-                              0,
-                              1,
-                            ]
-                          }
-                          opacity={1}
-                          stroke={null}
-                          strokeCap={1}
-                          strokeDash={null}
-                          strokeJoin={1}
-                          strokeWidth={1}
-                          transform={
-                            Array [
-                              1,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                            ]
-                          }
-                        />
-                      </ARTSurfaceView>
-                    </View>
+                        fill={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            -0,
+                            0,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            0.9764705882352941,
+                            1,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            0.9294117647058824,
+                            1,
+                            0,
+                            1,
+                          ]
+                        }
+                        opacity={1}
+                        stroke={null}
+                        strokeCap={1}
+                        strokeDash={null}
+                        strokeJoin={1}
+                        strokeWidth={1}
+                        transform={
+                          Array [
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                          ]
+                        }
+                      />
+                    </ARTSurfaceView>
                   </View>
                 </View>
               </View>
-              <Text
-                accessibilityLabel="author-name"
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#1D1D1B",
-                    "fontFamily": "TimesModern-Bold",
-                    "fontSize": 30,
-                  }
-                }
-                testID="author-name"
-              >
-                Deborah Haynes
-              </Text>
-              <Text
-                accessibilityRole="heading"
-                accessible={true}
-                allowFontScaling={true}
-                aria-level="2"
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#696969",
-                    "fontFamily": "TimesDigitalW04-RegularSC",
-                    "fontSize": 14,
-                  }
-                }
-              >
-                defence editor
-              </Text>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "paddingVertical": 8,
-                  }
-                }
-              >
-                <svg
-                  height={15}
-                  width={15}
-                >
-                  <path
-                    fill="#006699"
-                  />
-                </svg>
-                <Text
-                  accessibilityRole="link"
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  href="https://twitter.com/jdoe"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#006699",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingLeft": 5,
-                      "textDecorationLine": "none",
-                    }
-                  }
-                >
-                  @
-                  jdoe
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "paddingBottom": 30,
-                    "paddingHorizontal": 10,
-                  }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 16,
-                      "lineHeight": 26,
-                      "textAlign": "center",
-                    }
-                  }
-                  testID="author-bio"
-                >
-                  Deborah Haynes is the defence editor at 
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "fontStyle": "italic",
-                      }
-                    }
-                  >
-                    The Times
-                  </Text>
-                  , covering the most important defence & security news in the UK and around the world.
-                </Text>
-              </View>
             </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
+            <Text
+              accessibilityLabel="author-name"
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
               style={
                 Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
+                  "color": "#1D1D1B",
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 30,
+                }
+              }
+              testID="author-name"
+            >
+              Deborah Haynes
+            </Text>
+            <Text
+              accessibilityRole="heading"
+              accessible={true}
+              allowFontScaling={true}
+              aria-level="2"
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#696969",
+                  "fontFamily": "TimesDigitalW04-RegularSC",
+                  "fontSize": 14,
                 }
               }
             >
-              <View
+              defence editor
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              <svg
+                height={15}
+                width={15}
+              >
+                <path
+                  fill="#006699"
+                />
+              </svg>
+              <Text
+                accessibilityRole="link"
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                href="https://twitter.com/jdoe"
+                onPress={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
+                    "color": "#006699",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "paddingLeft": 5,
+                    "textDecorationLine": "none",
                   }
                 }
               >
+                @
+                jdoe
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "paddingBottom": 30,
+                  "paddingHorizontal": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 16,
+                    "lineHeight": 26,
+                    "textAlign": "center",
+                  }
+                }
+                testID="author-bio"
+              >
+                Deborah Haynes is the defence editor at 
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
+                      "fontStyle": "italic",
                     }
                   }
-                  testID="results-message"
                 >
-                  Showing 1 - 3 of 20 results
+                  The Times
                 </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View>
-                  <View
-                    accessible={true}
-                    nativeBackgroundAndroid={
-                      Object {
-                        "attribute": "selectableItemBackground",
-                        "type": "ThemeAttrAndroid",
-                      }
-                    }
-                    onResponderGrant={[Function]}
-                    onResponderMove={[Function]}
-                    onResponderRelease={[Function]}
-                    onResponderTerminate={[Function]}
-                    onResponderTerminationRequest={[Function]}
-                    onStartShouldSetResponder={[Function]}
-                    pointerEvents="box-only"
-                  >
-                    <View
-                      style={
-                        Object {
-                          "alignItems": "baseline",
-                          "flexDirection": "row",
-                          "padding": 12,
-                        }
-                      }
-                      testID="pagination-button-next"
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#006699",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": 15,
-                            "height": 15,
-                            "marginRight": 10,
-                            "textAlign": "right",
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          Next
-                        </Text>
-                      </Text>
-                      <svg
-                        height={12}
-                        width={7}
-                      >
-                        <g
-                          fill="#006699"
-                        >
-                          <path />
-                        </g>
-                      </svg>
-                    </View>
-                  </View>
-                </View>
-              </View>
+                , covering the most important defence & security news in the UK and around the world.
+              </Text>
             </View>
           </View>
         </View>
@@ -2703,113 +2304,26 @@ exports[`2. Render an author profile page without images 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "maxWidth": 800,
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
             }
           }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
             }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View>
-                <View
-                  accessible={true}
-                  nativeBackgroundAndroid={
-                    Object {
-                      "attribute": "selectableItemBackground",
-                      "type": "ThemeAttrAndroid",
-                    }
-                  }
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  pointerEvents="box-only"
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "baseline",
-                        "flexDirection": "row",
-                        "padding": 12,
-                      }
-                    }
-                    testID="pagination-button-next"
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#006699",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": 15,
-                          "height": 15,
-                          "marginRight": 10,
-                          "textAlign": "right",
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
-                        Next
-                      </Text>
-                    </Text>
-                    <svg
-                      height={12}
-                      width={7}
-                    >
-                      <g
-                        fill="#006699"
-                      >
-                        <path />
-                      </g>
-                    </svg>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
   </View>
@@ -2819,32 +2333,17 @@ exports[`2. Render an author profile page without images 1`] = `
 exports[`3. Render an author profile page loading state 1`] = `
 <RCTScrollView
   ItemSeparatorComponent={[Function]}
-  ListFooterComponent={
-    <ArticleListPagination
-      hideResults={true}
-      onNext={[Function]}
-      onPrev={[Function]}
-      pageSize={3}
-    />
-  }
+  ListFooterComponent={[Function]}
   ListHeaderComponent={
-    <View>
-      <AuthorProfileHead
-        biography={Array []}
-        isLoading={true}
-        jobTitle=""
-        name=""
-        onTwitterLinkPress={[Function]}
-        twitter=""
-        uri=""
-      />
-      <ArticleListPagination
-        hideResults={false}
-        onNext={[Function]}
-        onPrev={[Function]}
-        pageSize={3}
-      />
-    </View>
+    <AuthorProfileHead
+      biography={Array []}
+      isLoading={true}
+      jobTitle=""
+      name=""
+      onTwitterLinkPress={[Function]}
+      twitter=""
+      uri=""
+    />
   }
   accessibilityID="scroll-view"
   data={
@@ -2875,6 +2374,7 @@ exports[`3. Render an author profile page loading state 1`] = `
   maxToRenderPerBatch={10}
   numColumns={1}
   onContentSizeChange={[Function]}
+  onEndReached={[Function]}
   onEndReachedThreshold={2}
   onLayout={[Function]}
   onMomentumScrollEnd={[Function]}
@@ -2885,7 +2385,6 @@ exports[`3. Render an author profile page loading state 1`] = `
   pageSize={3}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  scrollRenderAheadDistance={2}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
@@ -2912,18 +2411,29 @@ exports[`3. Render an author profile page loading state 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View>
+      <View
+        accessibilityRole="banner"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 0.5,
+            "flexDirection": "column",
+            "paddingBottom": 40,
+            "paddingTop": 30,
+            "width": "100%",
+          }
+        }
+      >
         <View
-          accessibilityRole="banner"
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#F9F9F9",
               "borderBottomColor": "#F0F0F0",
               "borderBottomWidth": 0.5,
-              "flexDirection": "column",
-              "paddingBottom": 40,
-              "paddingTop": 30,
+              "minHeight": 264,
               "width": "100%",
             }
           }
@@ -2931,177 +2441,91 @@ exports[`3. Render an author profile page loading state 1`] = `
           <View
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F9F9F9",
-                "borderBottomColor": "#F0F0F0",
-                "borderBottomWidth": 0.5,
-                "minHeight": 264,
-                "width": "100%",
+                "borderColor": "#FFFFFF",
+                "borderRadius": 50,
+                "height": 100,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 30,
+                "width": 100,
               }
             }
           >
             <View
+              onLayout={[Function]}
               style={
                 Object {
-                  "borderColor": "#FFFFFF",
-                  "borderRadius": 50,
-                  "height": 100,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "top": 30,
-                  "width": 100,
+                  "flex": 1,
                 }
               }
             >
-              <View
-                onLayout={[Function]}
+              <ARTSurfaceView
                 style={
                   Object {
-                    "flex": 1,
+                    "bottom": 0,
+                    "height": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
                   }
                 }
               >
-                <ARTSurfaceView
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
+                <ARTShape
+                  d={
+                    Array [
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                      2,
+                      0,
+                      0,
+                    ]
                   }
-                >
-                  <ARTShape
-                    d={
-                      Array [
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                        2,
-                        0,
-                        0,
-                      ]
-                    }
-                    fill={
-                      Array [
-                        1,
-                        0,
-                        0,
-                        -0,
-                        0,
-                        0.9764705882352941,
-                        0.9764705882352941,
-                        0.9764705882352941,
-                        1,
-                        0.9294117647058824,
-                        0.9294117647058824,
-                        0.9294117647058824,
-                        1,
-                        0,
-                        1,
-                      ]
-                    }
-                    opacity={1}
-                    stroke={null}
-                    strokeCap={1}
-                    strokeDash={null}
-                    strokeJoin={1}
-                    strokeWidth={1}
-                    transform={
-                      Array [
-                        1,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                      ]
-                    }
-                  />
-                </ARTSurfaceView>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "stretch",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "flex": 1,
-                "maxWidth": 800,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "stretch",
-                  "flexDirection": "column",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
+                  fill={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      -0,
+                      0,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      0.9764705882352941,
+                      1,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      0.9294117647058824,
+                      1,
+                      0,
+                      1,
+                    ]
                   }
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 15,
-                      "paddingTop": 4,
-                    }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
                   }
-                  testID="results-message"
-                >
-                  Showing 0 - 0 of 0 results
-                </Text>
-              </View>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "borderBottomColor": "#DBDBDB",
-                    "borderBottomWidth": 1,
-                    "borderStyle": "solid",
-                    "borderTopColor": "#DBDBDB",
-                    "borderTopWidth": 1,
-                    "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "space-between",
-                  }
-                }
-              >
-                <View />
-                <View />
-              </View>
+                />
+              </ARTSurfaceView>
             </View>
           </View>
         </View>
@@ -4563,51 +3987,26 @@ exports[`3. Render an author profile page loading state 1`] = `
     <View
       onLayout={[Function]}
     >
-      <View
-        style={
-          Object {
-            "alignItems": "stretch",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "maxWidth": 800,
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
             }
           }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "stretch",
-                "flexDirection": "column",
-              }
+        />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Object {
+              "paddingVertical": 25,
             }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderBottomColor": "#DBDBDB",
-                  "borderBottomWidth": 1,
-                  "borderStyle": "solid",
-                  "borderTopColor": "#DBDBDB",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "height": 50,
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              <View />
-              <View />
-            </View>
-          </View>
-        </View>
+          }
+        />
       </View>
     </View>
   </View>
@@ -4823,7 +4222,7 @@ exports[`4. Render an author profile page error state 1`] = `
               "alignItems": "center",
               "backgroundColor": "#006699",
               "flex": 1,
-              "height": 45,
+              "height": 36,
               "justifyContent": "center",
             }
           }
