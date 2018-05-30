@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.2"></a>
+## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.5.0...@times-components/gestures@1.5.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/gestures
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/gestures@1.4.6...@times-components/gestures@1.5.0) (2018-05-29)
 

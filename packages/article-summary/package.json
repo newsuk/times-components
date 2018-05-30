@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "0.25.1",
+  "version": "0.25.2",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.0",
     "@times-components/jest-configurator": "0.8.0",
-    "@times-components/storybook": "0.12.0",
+    "@times-components/storybook": "0.12.1",
     "@times-components/webpack-configurator": "0.1.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -57,12 +57,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-byline": "0.17.1",
-    "@times-components/article-label": "0.15.1",
-    "@times-components/date-publication": "0.16.1",
-    "@times-components/markup": "0.28.1",
-    "@times-components/responsive-styles": "0.9.1",
-    "@times-components/styleguide": "0.9.1",
+    "@times-components/article-byline": "0.17.2",
+    "@times-components/article-label": "0.15.2",
+    "@times-components/date-publication": "0.16.2",
+    "@times-components/markup": "0.28.2",
+    "@times-components/responsive-styles": "0.9.2",
+    "@times-components/styleguide": "0.9.2",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
