@@ -33,7 +33,9 @@ const styles = StyleSheet.create({
     paddingVertical: spacing(5)
   },
   showMoreRetryContainer: {
-    padding: spacing(5)
+    alignSelf: "center",
+    padding: spacing(5),
+    width: "100%"
   },
   retryButton: {
     alignSelf: "center",
