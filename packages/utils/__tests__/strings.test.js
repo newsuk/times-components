@@ -2,7 +2,9 @@ import { androidLetterSpacing, capitalise, ratioTextToFloat } from "../src";
 
 describe("androidLetterSpacing should", () => {
   it("seperate each letter of a word to support letterSpacing and capitalise it", () => {
-    expect(androidLetterSpacing("my test")).toEqual("M\u200AY\u200A \u200AT\u200AE\u200AS\u200AT");
+    expect(androidLetterSpacing("my test")).toEqual(
+      "M\u200AY\u200A \u200AT\u200AE\u200AS\u200AT"
+    );
   });
 });
 

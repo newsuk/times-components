@@ -10,7 +10,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  onPress: () => null,
+  onPress: () => {},
   style: null,
   title: ""
 };

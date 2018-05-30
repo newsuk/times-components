@@ -1,4 +1,4 @@
-import sharedFontSizes from "./font-sizes-base";  
+import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = {
   ...sharedFontSizes
