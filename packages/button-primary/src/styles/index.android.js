@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 1.0,
     shadowRadius: 5,
+    minWidth: 100,
     width: "100%"
   },
   textStyle: {
