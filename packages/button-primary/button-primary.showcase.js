@@ -11,11 +11,14 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const getProps = (decorateAction, knobs) => ({
-  onPress: preventDefaultedAction(decorateAction)("onPress"),
-  style: { width: knobs.number("Button width: ", 200) },
-  title: knobs.text("Button title:", "submit")
-});
+const getProps = (decorateAction, knobs) => {
+  const { number, text } = knobs;
+  return {
+    onPress: preventDefaultedAction(decorateAction)("onPress"),
+    style: { width: number("Button width: ", 200) },
+    title: text("Button title:", "submit")
+  };
+};
 
 export default {
   name: "Primitives/ButtonPrimary",
