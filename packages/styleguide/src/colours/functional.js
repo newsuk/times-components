@@ -5,8 +5,8 @@ const functionalColours = {
   secondary: "#696969", // Bylines, dates and other auxiliary text
   tertiary: "#4D4D4D", // Sponsored article flag and icon fills
   action: "#006699", // Buttons and links
-  buttonHover: "#0077b3",
-  buttonPressed: "#0083c4",
+  buttonHover: "#0077b3", // Web hover and native pressed state
+  buttonVisited: "#0083c4", // Web visited state
   keyline: "#DBDBDB",
   border: "#F0F0F0",
   backgroundPrimary: "#F9F9F9",

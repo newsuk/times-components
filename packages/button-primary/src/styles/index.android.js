@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     elevation: 3,
     height: 36,
     justifyContent: "center",
+    minWidth: 100,
     shadowColor: "#000000",
     shadowOffset: {
       width: 0,
@@ -23,7 +24,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 1.0,
     shadowRadius: 5,
-    minWidth: 100,
     width: "100%"
   },
   textStyle: {

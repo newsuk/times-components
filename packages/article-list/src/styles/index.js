@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   },
   listErrorContainer: {
     flex: 1,
+    justifyContent: "space-between",
     margin: spacing(3)
   },
   loadingContainer: {
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
     padding: spacing(5)
   },
   retryButton: {
-    alignSelf: "center"
+    alignSelf: "center",
+    width: "100%"
   }
 });
 
