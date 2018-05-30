@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {

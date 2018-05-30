@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -33,9 +33,6 @@
   "bugs": {
     "url": "https://github.com/newsuk/times-components/issues"
   },
-  "files": [
-    "dist/article.js"
-  ],
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.0",
