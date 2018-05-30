@@ -35,9 +35,7 @@ const styles = StyleSheet.create({
     padding: spacing(5)
   },
   retryButton: {
-    alignSelf: "center",
-    bottom: 0,
-    position: "absolute"
+    alignSelf: "center"
   }
 });
 
