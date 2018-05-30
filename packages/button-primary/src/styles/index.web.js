@@ -4,7 +4,7 @@ import sharedStyles from "./shared";
 const styles = StyleSheet.create({
   ...sharedStyles,
   listErrorButtonText: {
-  	...sharedStyles.listErrorButtonText,
+    ...sharedStyles.listErrorButtonText,
     paddingTop: 3
   }
 });

@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ButtonPrimary from "../button-primary";
+import ButtonPrimary from "../src/button-primary";
 
 module.exports = () => {
   it("renders correctly", () => {

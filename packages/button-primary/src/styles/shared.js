@@ -1,8 +1,4 @@
-import {
-  colours,
-  fonts,
-  fontSizes
-} from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = {
   listErrorButtonContainer: {
@@ -20,7 +16,7 @@ const styles = {
     color: "#FFF",
     fontFamily: fonts.supporting,
     fontSize: fontSizes.buttonPrimary
-  },
+  }
 };
 
 export default styles;

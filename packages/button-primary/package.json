@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "prop-types": "15.6.0",
+    "@times-components/styleguide": "0.8.1",
     "@times-components/utils": "0.10.2"
   },
   "peerDependencies": {

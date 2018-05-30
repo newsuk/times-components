@@ -1,4 +1,5 @@
-import "react-native";
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import ButtonPrimary from "./src/button-primary";
 
@@ -23,7 +24,7 @@ export default {
       type: "story",
       name: "ButtonPrimary",
       component: ({ text }, { decorateAction }) => (
-      	<ButtonPrimary {...getProps(decorateAction, text)} />
+        <ButtonPrimary {...getProps(decorateAction, text)} />
       )
     }
   ]
