@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     flex: 1,
     height: 36,
-    justifyContent: "center",
-    width: "100%"
+    justifyContent: "center"
   },
   buttonContainer: {
     alignItems: "center",
@@ -23,7 +22,8 @@ const styles = StyleSheet.create({
       height: 3
     },
     shadowOpacity: 1.0,
-    shadowRadius: 5
+    shadowRadius: 5,
+    width: "100%"
   },
   textStyle: {
     color: "#FFFFFF",

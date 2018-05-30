@@ -1,18 +1,19 @@
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
 
 const styles = {
-  listErrorButtonContainer: {
-    justifyContent: "center",
-    width: "100%"
+  button: {
+    justifyContent: "center"
   },
-  listErrorButton: {
+  buttonContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.action,
     borderRadius: 2,
     height: 45,
-    justifyContent: "center"
+    justifyContent: "center",
+    minWidth: 100,
+    width: 160
   },
-  listErrorButtonText: {
+  textStyle: {
     color: "#FFF",
     fontFamily: fonts.supporting,
     fontSize: fontSizes.buttonPrimary

@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import ButtonPrimary from "../src/button-primary";
 
-module.exports = () => {
+export default () => {
   it("renders correctly", () => {
     const tree = renderer.create(<ButtonPrimary />).toJSON();
 

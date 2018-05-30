@@ -3,8 +3,8 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  listErrorButtonText: {
-    ...sharedStyles.listErrorButtonText,
+  textStyle: {
+    ...sharedStyles.textStyle,
     paddingTop: 3
   }
 });
