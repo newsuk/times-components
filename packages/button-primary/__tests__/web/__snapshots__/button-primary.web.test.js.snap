@@ -31,7 +31,7 @@ exports[`1. Render the button 1`] = `
         Object {
           "color": "#FFF",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 15,
+          "fontSize": 16,
           "paddingTop": 3,
         }
       }

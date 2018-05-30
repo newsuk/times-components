@@ -6,11 +6,6 @@ exports[`1. Render the button 1`] = `
   accessible={true}
   activeOpacity={0.2}
   onPress={[Function]}
-  style={
-    Object {
-      "justifyContent": "center",
-    }
-  }
 >
   <View
     style={
@@ -21,7 +16,7 @@ exports[`1. Render the button 1`] = `
         "height": 45,
         "justifyContent": "center",
         "minWidth": 100,
-        "width": 160,
+        "width": "100%",
       }
     }
   >
@@ -33,7 +28,8 @@ exports[`1. Render the button 1`] = `
         Object {
           "color": "#FFF",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 15,
+          "fontSize": 16,
+          "paddingTop": 5,
         }
       }
     >

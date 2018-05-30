@@ -11,11 +11,7 @@ const ArticleListError = ({ refetch }) => (
       We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
     </Text>
-    <ButtonPrimary
-      onPress={refetch}
-      style={styles.retryButton}
-      title="Retry"
-    />
+    <ButtonPrimary onPress={refetch} style={styles.retryButton} title="Retry" />
   </View>
 );
 
