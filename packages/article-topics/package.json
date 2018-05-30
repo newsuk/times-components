@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
@@ -58,9 +58,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/link": "0.23.0",
-    "@times-components/styleguide": "0.9.0",
-    "@times-components/tracking": "0.13.0",
+    "@times-components/link": "0.23.5",
+    "@times-components/styleguide": "0.9.1",
+    "@times-components/tracking": "0.13.1",
     "lodash.orderby": "4.6.0",
     "prop-types": "15.6.0"
   },

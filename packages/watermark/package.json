@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",
@@ -56,7 +56,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.9.0",
+    "@times-components/styleguide": "0.9.1",
     "prop-types": "15.6.0",
     "react-native-svg": "6.3.1",
     "svgs": "3.2.1"

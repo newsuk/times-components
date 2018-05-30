@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Handles errors",
   "main": "dist/error-view",
   "dev": "src/error-view",
@@ -57,7 +57,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.9.0",
+    "@times-components/styleguide": "0.9.1",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
