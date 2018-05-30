@@ -1,6 +1,7 @@
 ## generic
 **/node_modules/*
 **/coverage/*
+**/rnw.js
 dist
 __snapshots__
 android/*

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.2.0...@times-components/article-list@1.3.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.1.11...@times-components/article-list@1.2.0) (2018-05-29)
 

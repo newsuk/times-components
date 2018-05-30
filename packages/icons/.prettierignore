@@ -1,12 +1,14 @@
 **/node_modules/*
-**/coverage/*
 dist
 __snapshots__
-**/package.json
 android/*
 ios/*
 CHANGELOG.md
 .*
+!*.json
+**/package.json
+**/coverage/*
 LICENSE
 yarn.lock
 *.log
+rnw.js
