@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import cleanUpTitle from "../utils";
 import { propTypes, defaultProps } from "./button-primary-prop-types";
 import styles from "./styles";
@@ -8,14 +8,16 @@ const ButtonPrimary = ({ onPress, style, title }) => {
   const cleanTitle = cleanUpTitle(title);
   return (
     <TouchableOpacity
-      accessible
+      accessibilityComponentType="button"
       accessibilityLabel={cleanTitle}
+      accessibilityRole="button"
+      accessibilityTraits="button"
       onPress={onPress}
-      style={styles.button}
+      style={[styles.button, style]}
     >
-      <View style={[styles.buttonContainer, style]}>
-        <Text style={styles.textStyle}>{cleanTitle}</Text>
-      </View>
+      <Text style={styles.textStyle} title={cleanTitle}>
+        {cleanTitle}
+      </Text>
     </TouchableOpacity>
   );
 };

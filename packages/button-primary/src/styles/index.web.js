@@ -2,7 +2,10 @@ import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
-  ...sharedStyles,
+  button: {
+    ...sharedStyles.button,
+    width: 160
+  },
   textStyle: {
     ...sharedStyles.textStyle,
     paddingTop: 3

@@ -2,55 +2,47 @@
 
 exports[`1. Render the button 1`] = `
 <TouchableOpacity
+  accessibilityComponentType="button"
   accessibilityLabel="T E S T   B U T T O N"
-  accessible={true}
+  accessibilityRole="button"
+  accessibilityTraits="button"
   activeOpacity={0.2}
   onPress={[Function]}
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#FFFFFF",
-      "flex": 1,
+      "backgroundColor": "#006699",
+      "borderRadius": 4,
+      "elevation": 3,
       "height": 36,
       "justifyContent": "center",
+      "minWidth": 100,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "height": 3,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 5,
+      "width": "100%",
     }
   }
 >
-  <View
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#006699",
-        "borderRadius": 4,
-        "elevation": 3,
-        "height": 36,
-        "justifyContent": "center",
-        "minWidth": 100,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 3,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 5,
-        "width": "100%",
+        "color": "#FFFFFF",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 14,
+        "paddingTop": 0,
       }
     }
+    title="T E S T   B U T T O N"
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#FFFFFF",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 14,
-        }
-      }
-    >
-      T E S T   B U T T O N
-    </Text>
-  </View>
+    T E S T   B U T T O N
+  </Text>
 </TouchableOpacity>
 `;

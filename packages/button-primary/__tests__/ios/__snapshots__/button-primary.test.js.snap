@@ -2,39 +2,39 @@
 
 exports[`1. Render the button 1`] = `
 <TouchableOpacity
+  accessibilityComponentType="button"
   accessibilityLabel="Test Button"
-  accessible={true}
+  accessibilityRole="button"
+  accessibilityTraits="button"
   activeOpacity={0.2}
   onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "height": 45,
+      "justifyContent": "center",
+      "minWidth": 100,
+      "width": "100%",
+    }
+  }
 >
-  <View
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#006699",
-        "borderRadius": 2,
-        "height": 45,
-        "justifyContent": "center",
-        "minWidth": 100,
-        "width": "100%",
+        "color": "#FFF",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 16,
+        "paddingTop": 5,
       }
     }
+    title="Test Button"
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#FFF",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 16,
-          "paddingTop": 5,
-        }
-      }
-    >
-      Test Button
-    </Text>
-  </View>
+    Test Button
+  </Text>
 </TouchableOpacity>
 `;
