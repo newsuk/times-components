@@ -4193,7 +4193,9 @@ exports[`4. Render an author profile page error state 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
     <View
+      accessibilityComponentType="button"
       accessibilityLabel="R E T R Y"
+      accessibilityTraits="button"
       accessible={true}
       isTVSelectable={true}
       onResponderGrant={[Function]}
@@ -4205,51 +4207,41 @@ exports[`4. Render an author profile page error state 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flex": 1,
+          "alignSelf": "center",
+          "backgroundColor": "#006699",
+          "borderRadius": 4,
+          "elevation": 3,
           "height": 36,
           "justifyContent": "center",
+          "minWidth": 100,
           "opacity": 1,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 5,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "#006699",
-            "borderRadius": 4,
-            "elevation": 3,
-            "height": 36,
-            "justifyContent": "center",
-            "minWidth": 100,
-            "shadowColor": "#000000",
-            "shadowOffset": Object {
-              "height": 3,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 5,
-            "width": "100%",
+            "color": "#FFFFFF",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "paddingTop": 0,
           }
         }
+        title="R E T R Y"
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 14,
-            }
-          }
-        >
-          R E T R Y
-        </Text>
-      </View>
+        R E T R Y
+      </Text>
     </View>
   </View>
 </View>

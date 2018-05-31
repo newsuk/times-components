@@ -4185,7 +4185,9 @@ exports[`4. Render an author profile page error state 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
     <View
+      accessibilityComponentType="button"
       accessibilityLabel="Retry"
+      accessibilityTraits="button"
       accessible={true}
       isTVSelectable={true}
       onResponderGrant={[Function]}
@@ -4196,40 +4198,34 @@ exports[`4. Render an author profile page error state 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#006699",
+          "borderRadius": 2,
+          "height": 45,
+          "justifyContent": "center",
+          "minWidth": 100,
           "opacity": 1,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "#006699",
-            "borderRadius": 2,
-            "height": 45,
-            "justifyContent": "center",
-            "minWidth": 100,
-            "width": "100%",
+            "color": "#FFF",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 16,
+            "paddingTop": 5,
           }
         }
+        title="Retry"
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#FFF",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 16,
-              "paddingTop": 5,
-            }
-          }
-        >
-          Retry
-        </Text>
-      </View>
+        Retry
+      </Text>
     </View>
   </View>
 </View>
