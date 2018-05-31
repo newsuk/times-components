@@ -1,6 +1,6 @@
 {
   "name": "@times-components/eslint-config-thetimes",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "The eslint config for Times Components",
   "main": "index.js",
   "scripts": {
@@ -37,4 +37,3 @@
     "access": "public"
   }
 }
-
