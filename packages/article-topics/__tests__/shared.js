@@ -69,12 +69,12 @@ module.exports = () => {
       <ArticleTopic
         name={topicData[0].name}
         slug={topicData[0].slug}
-        onPress={() => {}}
+        onPress={() => events}
       />,
       {
         context
       }
-    ).simulate("press", "events");
+    ).simulate("press");
 
     expect(events.mock.calls).toMatchSnapshot();
   });
