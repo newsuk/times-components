@@ -122,10 +122,10 @@ class ArticleList extends Component {
         onViewableItemsChanged={this.onViewableItemsChanged}
         pageSize={pageSize}
         onEndReachedThreshold={2}
-        onEndReached={() => {
+        onEndReached={() =>
           // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
-          if (data.length > 0) fetchMoreOnEndReached();
-        }}
+          data.length > 0 ? fetchMoreOnEndReached() : null
+        }
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
