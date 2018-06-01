@@ -15,12 +15,8 @@ const ArticleTopic = ({ name, onPress, slug }) => (
 
 ArticleTopic.propTypes = {
   name: PropTypes.string.isRequired,
-  onPress: PropTypes.func,
-  slug: PropTypes.string.isRequired,
-};
-
-ArticleTopic.defaultProps = {
-  onPress: () => {}
+  onPress: PropTypes.func.isRequired,
+  slug: PropTypes.string.isRequired
 };
 
 export default withTrackEvents(ArticleTopic, {

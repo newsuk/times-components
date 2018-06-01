@@ -37,7 +37,7 @@ export default {
       type: "story",
       name: "Single Topic",
       component: () => (
-        <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: "row", justifyContent: "center" }}>
           <ArticleTopic
             id={topicsData[0].id}
             name={topicsData[0].name}
