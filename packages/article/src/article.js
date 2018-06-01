@@ -23,10 +23,11 @@ const listViewScrollRenderAheadDistance = 10;
 class ArticlePage extends Component {
   static renderRow(
     rowData,
-    onRelatedArticlePress,
     onAuthorPress,
-    onVideoPress,
-    onLinkPress
+    onLinkPress,
+    onRelatedArticlePress,
+    onTopicPress,
+    onVideoPress
   ) {
     switch (rowData.type) {
       case "leadAsset": {
@@ -92,7 +93,9 @@ class ArticlePage extends Component {
       }
 
       case "topics": {
-        return <ArticleTopics topics={rowData.data.topics} />;
+        return (
+          <ArticleTopics topics={rowData.data.topics} onPress={onTopicPress} />
+        );
       }
 
       default: {
@@ -138,10 +141,11 @@ class ArticlePage extends Component {
         data={this.state.dataSource}
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
-        onRelatedArticlePress={this.props.onRelatedArticlePress}
         onAuthorPress={this.props.onAuthorPress}
-        onVideoPress={this.props.onVideoPress}
         onLinkPress={this.props.onLinkPress}
+        onRelatedArticlePress={this.props.onRelatedArticlePress}
+        onTopicPress={this.props.onTopicPress}
+        onVideoPress={this.props.onVideoPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -156,8 +160,8 @@ class ArticlePage extends Component {
 ArticlePage.propTypes = {
   ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired
+  onLinkPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articleDefaultProps;
 

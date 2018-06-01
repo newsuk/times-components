@@ -506,29 +506,24 @@ exports[`Article tests on android should render a full article 1`] = `
         "data": Object {
           "topics": Array [
             Object {
-              "id": "football",
               "name": "Football",
-              "order": 1,
+              "slug": "football",
             },
             Object {
-              "id": "manchester-united",
               "name": "Manchester United FC",
-              "order": 4,
+              "slug": "manchester-united",
             },
             Object {
-              "id": "chelsea",
               "name": "Chelsea FC",
-              "order": 2,
+              "slug": "chelsea",
             },
             Object {
-              "id": "arsenal",
               "name": "Arsenal",
-              "order": 3,
+              "slug": "arsenal",
             },
             Object {
-              "id": "rugby-union",
               "name": "Rugby Union",
-              "order": 5,
+              "slug": "rugby-union",
             },
           ],
         },
@@ -2451,29 +2446,24 @@ exports[`Article tests on android should render a smaller article 1`] = `
         "data": Object {
           "topics": Array [
             Object {
-              "id": "football",
               "name": "Football",
-              "order": 1,
+              "slug": "football",
             },
             Object {
-              "id": "manchester-united",
               "name": "Manchester United FC",
-              "order": 4,
+              "slug": "manchester-united",
             },
             Object {
-              "id": "chelsea",
               "name": "Chelsea FC",
-              "order": 2,
+              "slug": "chelsea",
             },
             Object {
-              "id": "arsenal",
               "name": "Arsenal",
-              "order": 3,
+              "slug": "arsenal",
             },
             Object {
-              "id": "rugby-union",
               "name": "Rugby Union",
-              "order": 5,
+              "slug": "rugby-union",
             },
           ],
         },
@@ -3707,32 +3697,28 @@ exports[`Article tests on android should render a smaller article 1`] = `
         }
       >
         <ArticleTopics
+          onPress={[Function]}
           topics={
             Array [
               Object {
-                "id": "football",
                 "name": "Football",
-                "order": 1,
+                "slug": "football",
               },
               Object {
-                "id": "manchester-united",
                 "name": "Manchester United FC",
-                "order": 4,
+                "slug": "manchester-united",
               },
               Object {
-                "id": "chelsea",
                 "name": "Chelsea FC",
-                "order": 2,
+                "slug": "chelsea",
               },
               Object {
-                "id": "arsenal",
                 "name": "Arsenal",
-                "order": 3,
+                "slug": "arsenal",
               },
               Object {
-                "id": "rugby-union",
                 "name": "Rugby Union",
-                "order": 5,
+                "slug": "rugby-union",
               },
             ]
           }
@@ -18418,29 +18404,24 @@ Object {
     "publishedTime": "2015-03-13T18:54:58.000Z",
     "topics": Array [
       Object {
-        "id": "football",
         "name": "Football",
-        "order": 1,
+        "slug": "football",
       },
       Object {
-        "id": "manchester-united",
         "name": "Manchester United FC",
-        "order": 4,
+        "slug": "manchester-united",
       },
       Object {
-        "id": "chelsea",
         "name": "Chelsea FC",
-        "order": 2,
+        "slug": "chelsea",
       },
       Object {
-        "id": "arsenal",
         "name": "Arsenal",
-        "order": 3,
+        "slug": "arsenal",
       },
       Object {
-        "id": "rugby-union",
         "name": "Rugby Union",
-        "order": 5,
+        "slug": "rugby-union",
       },
     ],
   },

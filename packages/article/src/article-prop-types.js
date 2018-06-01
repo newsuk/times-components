@@ -16,7 +16,8 @@ const articlePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
-  onRelatedArticlePress: PropTypes.func.isRequired
+  onRelatedArticlePress: PropTypes.func.isRequired,
+  onTopicPress: PropTypes.func.isRequired
 };
 
 const articleDefaultProps = {

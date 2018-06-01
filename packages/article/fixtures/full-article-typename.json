@@ -31,12 +31,12 @@
         {
           "name": "Islington",
           "slug": "islington",
-          "__typename": "ArticleTopic"
+          "__typename": "Topic"
         },
         {
           "name": "Chelsea",
           "slug": "chelsea",
-          "__typename": "ArticleTopic"
+          "__typename": "Topic"
         }
       ],
       "content": [

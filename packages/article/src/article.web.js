@@ -28,9 +28,10 @@ const adStyle = {
 class ArticlePage extends Component {
   static renderArticle(
     articleData,
-    onRelatedArticlePress,
     onAuthorPress,
-    onLinkPress
+    onLinkPress,
+    onRelatedArticlePress,
+    onTopicPress
   ) {
     const {
       headline,
@@ -81,7 +82,11 @@ class ArticlePage extends Component {
               publicationName={publicationName}
               onAuthorPress={onAuthorPress}
             />
-            <ArticleTopics topics={topics} device="DESKTOP" />
+            <ArticleTopics
+              topics={topics}
+              device="DESKTOP"
+              onPress={onTopicPress}
+            />
           </MetaContainer>
           <LeadAssetContainer>
             <LeadAssetComponent {...leadAssetProps} />
@@ -95,7 +100,7 @@ class ArticlePage extends Component {
             />
           </BodyContainer>
         </MainContainer>
-        <ArticleTopics topics={topics} />
+        <ArticleTopics topics={topics} onPress={onTopicPress} />
         {displayRelatedArticles}
         <Ad pos="pixel" section={section} contextUrl={url} />
         <Ad pos="pixelteads" section={section} contextUrl={url} />
@@ -108,9 +113,10 @@ class ArticlePage extends Component {
     const {
       error,
       isLoading,
-      onRelatedArticlePress,
       onAuthorPress,
-      onLinkPress
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress
     } = this.props;
 
     if (error) {
@@ -125,9 +131,10 @@ class ArticlePage extends Component {
       <AdComposer adConfig={this.props.adConfig}>
         {ArticlePage.renderArticle(
           this.props.article,
-          onRelatedArticlePress,
           onAuthorPress,
-          onLinkPress
+          onLinkPress,
+          onRelatedArticlePress,
+          onTopicPress
         )}
       </AdComposer>
     );

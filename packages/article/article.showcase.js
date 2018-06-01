@@ -108,12 +108,13 @@ const renderArticle = (
     analyticsStream={analyticsStream}
     adConfig={adConfig}
     error={error}
+    onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+    onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
     onRelatedArticlePress={preventDefaultedAction(decorateAction)(
       "onRelatedArticlePress"
     )}
-    onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
+    onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
     onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-    onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
   />
 );
 
@@ -176,19 +177,22 @@ export default {
             >
               {({ article, isLoading, error }) => (
                 <Article
-                  article={article}
-                  isLoading={isLoading}
-                  error={error}
-                  analyticsStream={storybookReporter}
                   adConfig={defaultAdConfig}
-                  onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                    "onRelatedArticlePress"
-                  )}
+                  analyticsStream={storybookReporter}
+                  article={article}
+                  error={error}
+                  isLoading={isLoading}
                   onAuthorPress={preventDefaultedAction(decorateAction)(
                     "onAuthorPress"
                   )}
                   onLinkPress={preventDefaultedAction(decorateAction)(
                     "onLinkPress"
+                  )}
+                  onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                    "onRelatedArticlePress"
+                  )}
+                  onTopicPress={preventDefaultedAction(decorateAction)(
+                    "onTopicPress"
                   )}
                 />
               )}
