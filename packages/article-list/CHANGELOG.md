@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.4"></a>
+## [1.3.4](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.3.3...@times-components/article-list@1.3.4) (2018-06-01)
+
+
+### Bug Fixes
+
+* not call end reached before load ([#987](https://github.com/newsuk/times-components/issues/987)) ([14f5e20](https://github.com/newsuk/times-components/commit/14f5e20))
+
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.3.2...@times-components/article-list@1.3.3) (2018-05-31)
 
