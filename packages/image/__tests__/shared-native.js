@@ -22,6 +22,12 @@ export default () => {
       modalImage = null;
     });
 
+    it("should ensure image url query string is formed correctly", () => {
+      expect(image.find("ImageBackground").props().source.uri).toEqual(
+        "http://example.com/image.jpg?resize=1440"
+      );
+    });
+
     it("should handle onPress event on the link", () => {
       const imageLink = modalImage
         .dive()
