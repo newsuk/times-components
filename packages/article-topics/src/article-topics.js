@@ -6,15 +6,13 @@ import styles from "./styles";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-const ArticleTopics = ({ topics, style, onPress }) => {
-  return (
-    <View style={[styles.topicGroup, style]}>
-      {topics.map(({ name, slug }) => (
-        <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
-      ))}
-    </View>
-  );
-};
+const ArticleTopics = ({ topics, style, onPress }) => (
+  <View style={[styles.topicGroup, style]}>
+    {topics.map(({ name, slug }) => (
+      <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
+    ))}
+  </View>
+);
 
 ArticleTopics.propTypes = {
   topics: PropTypes.arrayOf(
