@@ -68,7 +68,7 @@
     "@times-components/provider": "0.34.1",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.2",
-    "apollo-link": "1.2.0",
+    "apollo-link": "1.2.2",
     "apollo-utilities": "1.0.12",
     "graphql": "0.13.1",
     "graphql-tag": "2.8.0",
