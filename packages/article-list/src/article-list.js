@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
-import ButtonPrimary from "@times-components/button-primary";
+import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -92,7 +92,7 @@ class ArticleList extends Component {
           <View>
             <ArticleListItemSeparator />
             <View style={styles.showMoreRetryContainer}>
-              <ButtonPrimary
+              <Button
                 onPress={() => {
                   this.setState({ loadMoreError: null }, fetchMoreOnEndReached);
                 }}

@@ -878,7 +878,7 @@ exports[`ArticleList tests on web should render an article list page error corre
   >
     We can't load the page you have requested. Please check your network connection and retry to continue
   </Text>
-  <ButtonPrimary
+  <Button
     onPress={[Function]}
     style={
       Object {

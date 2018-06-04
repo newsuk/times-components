@@ -65,7 +65,7 @@ export default () => {
     const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
 
     wrapper
-      .find("ButtonPrimary")
+      .find("Button")
       .dive()
       .find("TouchableOpacity")
       .simulate("press");
@@ -189,7 +189,7 @@ export default () => {
       .dive()
       .find("ArticleListError")
       .dive()
-      .find("ButtonPrimary")
+      .find("Button")
       .dive()
       .simulate("press");
 

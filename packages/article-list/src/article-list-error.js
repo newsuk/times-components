@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import ButtonPrimary from "@times-components/button-primary";
+import Button from "@times-components/button";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
 
@@ -11,7 +11,7 @@ const ArticleListError = ({ refetch }) => (
       We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
     </Text>
-    <ButtonPrimary onPress={refetch} style={styles.retryButton} title="Retry" />
+    <Button onPress={refetch} style={styles.retryButton} title="Retry" />
   </View>
 );
 

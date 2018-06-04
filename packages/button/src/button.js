@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 import cleanUpTitle from "../utils";
-import { propTypes, defaultProps } from "./button-primary-prop-types";
+import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 
-const ButtonPrimary = ({ onPress, style, title }) => {
+const Button = ({ onPress, style, title }) => {
   const cleanTitle = cleanUpTitle(title);
   return (
     <TouchableOpacity
@@ -22,7 +22,7 @@ const ButtonPrimary = ({ onPress, style, title }) => {
   );
 };
 
-ButtonPrimary.propTypes = propTypes;
-ButtonPrimary.defaultProps = defaultProps;
+Button.propTypes = propTypes;
+Button.defaultProps = defaultProps;
 
-export default ButtonPrimary;
+export default Button;

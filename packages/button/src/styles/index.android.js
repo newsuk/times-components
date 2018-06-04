@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   textStyle: {
     color: "#FFFFFF",
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.buttonPrimary,
+    fontSize: fontSizes.button,
     paddingTop: 0
   }
 });

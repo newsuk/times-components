@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import ButtonPrimary from "./src/button-primary";
+import Button from "./src/button";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -21,13 +21,13 @@ const getProps = (decorateAction, knobs) => {
 };
 
 export default {
-  name: "Primitives/ButtonPrimary",
+  name: "Primitives/Button",
   children: [
     {
       type: "story",
-      name: "ButtonPrimary",
+      name: "Button",
       component: ({ number, text }, { decorateAction }) => (
-        <ButtonPrimary {...getProps(decorateAction, { number, text })} />
+        <Button {...getProps(decorateAction, { number, text })} />
       )
     }
   ]

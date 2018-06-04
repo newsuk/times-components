@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("ButtonPrimary tests on web", () => {
+describe("Button tests on android", () => {
   shared();
 });

@@ -3,7 +3,7 @@ const fontSizes = {
   articleMeta: 15,
   body: 18,
   bodyMobile: 17,
-  buttonPrimary: 16,
+  button: 16,
   caption: 13,
   cardHeadline: 27,
   cardMeta: 13,

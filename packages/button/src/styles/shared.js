@@ -13,7 +13,7 @@ const styles = {
   textStyle: {
     color: "#FFF",
     fontFamily: fonts.supporting,
-    fontSize: fontSizes.buttonPrimary,
+    fontSize: fontSizes.button,
     paddingTop: 5
   }
 };
