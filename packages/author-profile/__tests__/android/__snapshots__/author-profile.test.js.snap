@@ -4068,6 +4068,7 @@ exports[`4. Render an author profile page error state 1`] = `
     style={
       Object {
         "flex": 1,
+        "justifyContent": "space-between",
         "margin": 15,
       }
     }
@@ -4106,56 +4107,55 @@ exports[`4. Render an author profile page error state 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
     <View
+      accessibilityComponentType="button"
+      accessibilityLabel="R E T R Y"
+      accessibilityTraits="button"
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "bottom": 0,
-          "position": "absolute",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#006699",
+          "borderRadius": 4,
+          "elevation": 3,
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 100,
+          "opacity": 1,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 5,
           "width": "100%",
         }
       }
     >
-      <View
-        accessibilityLabel="Retry"
+      <Text
         accessible={true}
-        isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "opacity": 1,
+            "color": "#FFFFFF",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 14,
+            "paddingTop": 0,
           }
         }
+        title="R E T R Y"
       >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#006699",
-              "flex": 1,
-              "height": 36,
-              "justifyContent": "center",
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#FFF",
-                "fontFamily": "GillSansMTStd-Medium",
-              }
-            }
-          >
-            RETRY
-          </Text>
-        </View>
-      </View>
+        R E T R Y
+      </Text>
     </View>
   </View>
 </View>

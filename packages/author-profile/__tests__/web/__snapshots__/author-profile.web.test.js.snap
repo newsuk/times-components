@@ -1657,26 +1657,25 @@ exports[`4. Render an author profile page error state 1`] = `
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
-    <div>
+    <div
+      aria-label="Retry"
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      tabIndex="0"
+    >
       <div
-        aria-label="Retry"
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        tabIndex="0"
+        dir="auto"
+        title="Retry"
       >
-        <div>
-          <div
-            dir="auto"
-          >
-            RETRY
-          </div>
-        </div>
+        Retry
       </div>
     </div>
   </div>

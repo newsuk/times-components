@@ -187,7 +187,7 @@ export default () => {
       .dive()
       .find("articleListFooter")
       .dive()
-      .find("ArticleListRetryButton")
+      .find("Button")
       .dive()
       .simulate("press");
 

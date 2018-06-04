@@ -65,8 +65,9 @@ export default () => {
     const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
 
     wrapper
-      .find("ArticleListRetryButton")
+      .find("Button")
       .dive()
+      .find("TouchableOpacity")
       .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();
@@ -188,7 +189,7 @@ export default () => {
       .dive()
       .find("ArticleListError")
       .dive()
-      .find("ArticleListRetryButton")
+      .find("Button")
       .dive()
       .simulate("press");
 

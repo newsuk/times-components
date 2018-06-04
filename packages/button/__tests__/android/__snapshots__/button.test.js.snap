@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Render the button 1`] = `
+<TouchableOpacity
+  accessibilityComponentType="button"
+  accessibilityLabel="T E S T   B U T T O N"
+  accessibilityRole="button"
+  accessibilityTraits="button"
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 4,
+      "elevation": 3,
+      "height": 36,
+      "justifyContent": "center",
+      "minWidth": 100,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "height": 3,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 5,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 14,
+        "paddingTop": 0,
+      }
+    }
+    title="T E S T   B U T T O N"
+  >
+    T E S T   B U T T O N
+  </Text>
+</TouchableOpacity>
+`;

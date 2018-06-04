@@ -36,6 +36,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/styleguide": "0.9.5",
+    "@times-components/utils": "0.13.1",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.0"
   },

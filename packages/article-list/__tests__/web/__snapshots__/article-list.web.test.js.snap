@@ -878,21 +878,17 @@ exports[`ArticleList tests on web should render an article list page error corre
   >
     We can't load the page you have requested. Please check your network connection and retry to continue
   </Text>
-  <View
+  <Button
+    onPress={[Function]}
     style={
       Object {
         "alignSelf": "center",
-        "maxWidth": 300,
-        "paddingBottom": "10px",
-        "paddingTop": "40px",
-        "width": 200,
+        "marginBottom": "10px",
+        "marginTop": "40px",
       }
     }
-  >
-    <ArticleListRetryButton
-      refetch={[Function]}
-    />
-  </View>
+    title="Retry"
+  />
 </View>
 `;
 

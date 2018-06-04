@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, View } from "react-native";
+import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { colours } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
-import ArticleListRetryButton from "./article-list-retry-button";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import styles from "./styles";
 
@@ -92,11 +92,12 @@ class ArticleList extends Component {
           <View>
             <ArticleListItemSeparator />
             <View style={styles.showMoreRetryContainer}>
-              <ArticleListRetryButton
-                style={styles.showMoreRetryButton}
-                refetch={() => {
+              <Button
+                onPress={() => {
                   this.setState({ loadMoreError: null }, fetchMoreOnEndReached);
                 }}
+                style={styles.showMoreRetryButton}
+                title="Retry"
               />
             </View>
           </View>

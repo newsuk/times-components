@@ -6,17 +6,15 @@ exports[`ArticleList tests on ios should display retry button when fetch more fa
   <View
     style={
       Object {
+        "alignSelf": "center",
         "padding": 25,
+        "width": "100%",
       }
     }
   >
-    <ArticleListRetryButton
-      refetch={[Function]}
-      style={
-        Object {
-          "elevation": 10,
-        }
-      }
+    <Button
+      onPress={[Function]}
+      title="Retry"
     />
   </View>
 </View>
@@ -1878,6 +1876,7 @@ exports[`ArticleList tests on ios should render an article list page error corre
   style={
     Object {
       "flex": 1,
+      "justifyContent": "space-between",
       "margin": 15,
     }
   }
@@ -1915,19 +1914,16 @@ exports[`ArticleList tests on ios should render an article list page error corre
   >
     We can't load the page you have requested. Please check your network connection and retry to continue
   </Text>
-  <View
+  <Button
+    onPress={[Function]}
     style={
       Object {
-        "bottom": 0,
-        "position": "absolute",
+        "alignSelf": "center",
         "width": "100%",
       }
     }
-  >
-    <ArticleListRetryButton
-      refetch={[Function]}
-    />
-  </View>
+    title="Retry"
+  />
 </View>
 `;
 

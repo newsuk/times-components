@@ -1,7 +1,8 @@
 import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = {
-  ...sharedFontSizes
+  ...sharedFontSizes,
+  button: 14
 };
 
 export default fontSizes;

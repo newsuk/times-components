@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
+import Button from "@times-components/button";
 import propTypes from "./article-list-error-prop-types";
 import styles from "./styles";
-import ArticleListRetryButton from "./article-list-retry-button";
 
 const ArticleListError = ({ refetch }) => (
   <View style={styles.listErrorContainer}>
@@ -11,9 +11,7 @@ const ArticleListError = ({ refetch }) => (
       We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
     </Text>
-    <View style={styles.listErrorButtonContainer}>
-      <ArticleListRetryButton refetch={refetch} />
-    </View>
+    <Button onPress={refetch} style={styles.retryButton} title="Retry" />
   </View>
 );
 

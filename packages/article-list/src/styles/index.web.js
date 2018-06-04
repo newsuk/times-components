@@ -9,19 +9,17 @@ const styles = StyleSheet.create({
     flexBasis: "50%",
     maxWidth: 548
   },
-  listErrorButtonContainer: {
-    alignSelf: "center",
-    maxWidth: 300,
-    paddingTop: spacing(8),
-    paddingBottom: spacing(2),
-    width: 200
-  },
   listContentContainer: {
     width: "100%"
   },
   listContentErrorContainer: {
     flex: 1,
     margin: spacing(3)
+  },
+  retryButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
+    marginTop: spacing(8)
   }
 });
 
