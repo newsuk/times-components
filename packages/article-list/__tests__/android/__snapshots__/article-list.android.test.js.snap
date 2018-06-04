@@ -2531,7 +2531,7 @@ exports[`ArticleList tests on android should render the article list page error 
     }
   >
     <Image
-      accessibilityLabel="Server error image"
+      accessibilityLabel="Server error"
       accessible={true}
       resizeMode="contain"
       source={
