@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.19.5"></a>
+## [1.19.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.4...@times-components/image@1.19.5) (2018-06-04)
+
+
+### Bug Fixes
+
+* image component resize query string params ([#985](https://github.com/newsuk/times-components/issues/985)) ([79be184](https://github.com/newsuk/times-components/commit/79be184))
+
+
+
+
 <a name="1.19.4"></a>
 ## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.3...@times-components/image@1.19.4) (2018-06-04)
 
