@@ -2577,6 +2577,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
@@ -3067,6 +3072,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
@@ -3557,6 +3567,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
