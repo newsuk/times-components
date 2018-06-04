@@ -1,22 +1,22 @@
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
-import cleanUpTitle from "../utils";
+import transformTitle from "../utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 
 const Button = ({ onPress, style, title }) => {
-  const cleanTitle = cleanUpTitle(title);
+  const transformedTitle = transformTitle(title);
   return (
     <TouchableOpacity
       accessibilityComponentType="button"
-      accessibilityLabel={cleanTitle}
+      accessibilityLabel={transformedTitle}
       accessibilityRole="button"
       accessibilityTraits="button"
       onPress={onPress}
       style={[styles.button, style]}
     >
-      <Text style={styles.textStyle} title={cleanTitle}>
-        {cleanTitle}
+      <Text style={styles.textStyle} title={transformedTitle}>
+        {transformedTitle}
       </Text>
     </TouchableOpacity>
   );
