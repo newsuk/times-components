@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "0.21.3",
+  "version": "0.21.4",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.1",
-    "@times-components/storybook": "0.12.2",
+    "@times-components/storybook": "0.12.3",
     "@times-components/webpack-configurator": "0.1.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -60,10 +60,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/link": "0.23.7",
-    "@times-components/responsive-styles": "0.9.3",
-    "@times-components/styleguide": "0.9.3",
-    "@times-components/tracking": "0.13.3",
+    "@times-components/link": "0.23.8",
+    "@times-components/responsive-styles": "0.9.4",
+    "@times-components/styleguide": "0.9.4",
+    "@times-components/tracking": "0.13.4",
     "prop-types": "15.6.0",
     "react-display-name": "0.2.3",
     "react-native-svg": "6.3.1",

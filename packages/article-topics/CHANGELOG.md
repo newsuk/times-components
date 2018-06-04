@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-topics@1.1.3...@times-components/article-topics@1.2.0) (2018-06-04)
+
+
+### Features
+
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/newsuk/times-components/compare/@times-components/article-topics@1.1.2...@times-components/article-topics@1.1.3) (2018-05-31)
 

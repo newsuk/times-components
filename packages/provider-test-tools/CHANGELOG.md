@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.8.2...@times-components/provider-test-tools@0.9.0) (2018-06-04)
+
+
+### Features
+
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+
+
+
+
 <a name="0.8.2"></a>
 ## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.8.1...@times-components/provider-test-tools@0.8.2) (2018-05-31)
 

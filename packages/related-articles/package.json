@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -37,8 +37,8 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.1",
-    "@times-components/storybook": "0.12.2",
-    "@times-components/tealium-utils": "0.4.2",
+    "@times-components/storybook": "0.12.3",
+    "@times-components/tealium-utils": "0.4.3",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -59,13 +59,13 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.25.3",
-    "@times-components/card": "0.30.3",
-    "@times-components/link": "0.23.7",
-    "@times-components/markup": "0.28.3",
-    "@times-components/slice": "0.19.3",
-    "@times-components/styleguide": "0.9.3",
-    "@times-components/tracking": "0.13.3",
+    "@times-components/article-summary": "0.25.4",
+    "@times-components/card": "0.30.4",
+    "@times-components/link": "0.23.8",
+    "@times-components/markup": "0.28.4",
+    "@times-components/slice": "0.19.4",
+    "@times-components/styleguide": "0.9.4",
+    "@times-components/tracking": "0.13.4",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },

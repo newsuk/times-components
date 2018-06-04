@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.4"></a>
+## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/caption@0.18.3...@times-components/caption@0.18.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/caption
+
 <a name="0.18.3"></a>
 ## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/caption@0.18.2...@times-components/caption@0.18.3) (2018-05-31)
 
