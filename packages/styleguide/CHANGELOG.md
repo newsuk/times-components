@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.5...@times-components/styleguide@0.10.0) (2018-06-04)
+
+
+### Features
+
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+
+
+
+
 <a name="0.9.5"></a>
 ## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.4...@times-components/styleguide@0.9.5) (2018-06-04)
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video-label",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "A label for articles with videos",
   "main": "dist/video-label",
   "dev": "src/video-label",
@@ -35,15 +35,15 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "0.9.5",
-    "@times-components/styleguide": "0.9.5",
+    "@times-components/icons": "0.9.6",
+    "@times-components/styleguide": "0.10.0",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.0"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.1",
-    "@times-components/storybook": "0.12.4",
+    "@times-components/storybook": "0.13.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
