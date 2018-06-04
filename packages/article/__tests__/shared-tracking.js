@@ -22,12 +22,13 @@ export default () => {
     renderer.create(
       <Article
         {...fullArticleFixture.data}
-        analyticsStream={stream}
         adConfig={adConfig}
-        onRelatedArticlePress={() => {}}
+        analyticsStream={stream}
         onAuthorPress={() => {}}
-        onVideoPress={() => {}}
         onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onVideoPress={() => {}}
       />
     );
     const call = stream.mock.calls[0][0];

@@ -186,6 +186,14 @@
               "type": { "kind": "OBJECT", "name": "Topic", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "viewer",
+              "description": "The currently authenticated user",
+              "args": [],
+              "type": { "kind": "OBJECT", "name": "User", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -404,19 +412,8 @@
                 {
                   "name": "maxCharCount",
                   "description":
-                    "If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum",
+                    "If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum. Has no effect if maxWordCount is specified",
                   "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": null
-                },
-                {
-                  "name": "markupType",
-                  "description":
-                    "A filter on the article content as Markup, for unauthorised users it will default to \"paragraph\"",
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  },
                   "defaultValue": null
                 }
               ],
@@ -461,6 +458,23 @@
               "description": "A free piece of text to describe an article",
               "args": [],
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "commentsEnabled",
+              "description":
+                "A flag set outside of the commenting system, usually used for controversial articles",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "commentCount",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -565,6 +579,14 @@
               "deprecationReason": null
             },
             {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "standfirst",
               "description":
                 "A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article",
@@ -599,6 +621,18 @@
                 "Use headline instead which is more descriptive in the context of an article"
             },
             {
+              "name": "topics",
+              "description": "Topics that the requested article belong to",
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Topic", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "url",
               "description": "",
               "args": [],
@@ -616,17 +650,6 @@
           "kind": "SCALAR",
           "name": "Markup",
           "description": "An AST representing cross platform UI",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "String",
-          "description":
-            "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -669,6 +692,28 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "String",
+          "description":
+            "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "description":
+            "The `Boolean` scalar type represents `true` or `false`.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "ENUM",
           "name": "SectionName",
           "description": "",
@@ -677,13 +722,7 @@
           "interfaces": null,
           "enumValues": [
             {
-              "name": "news",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "world",
+              "name": "bricksmortar",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -695,73 +734,13 @@
               "deprecationReason": null
             },
             {
-              "name": "sport",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "register",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "Comment",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "comment",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "times2",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "thegame",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "bricksmortar",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "weekend",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "saturdayreview",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "money",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "thetimesmagazine",
-              "description": "",
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "puzzle",
+              "name": "Comment",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -779,7 +758,13 @@
               "deprecationReason": null
             },
             {
-              "name": "thesundaytimesmagazine",
+              "name": "money",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "news",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -791,7 +776,61 @@
               "deprecationReason": null
             },
             {
+              "name": "puzzle",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "register",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "saturdayreview",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "sport",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "style",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "thedish",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "thegame",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "thesundaytimesmagazine",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "thetimesmagazine",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "times2",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -803,7 +842,13 @@
               "deprecationReason": null
             },
             {
-              "name": "thedish",
+              "name": "weekend",
+              "description": "",
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "world",
               "description": "",
               "isDeprecated": false,
               "deprecationReason": null
@@ -991,18 +1036,18 @@
               "deprecationReason": null
             },
             {
-              "name": "canonicalidentifier",
+              "name": "paidOnly",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "paidOnly",
+              "name": "skySports",
               "description": "",
               "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "type": { "kind": "SCALAR", "name": "Boolean", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -1152,47 +1197,71 @@
             { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
             { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
             { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
-              "ofType": null
-            },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
-            {
-              "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
-              "ofType": null
-            },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null },
-            {
-              "kind": "OBJECT",
-              "name": "CommentLeadAndCartoon",
+              "name": "LeadOneFullWidthSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "LetterThundererPodcast",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "CommentTwoAndNotebook",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "SecondaryOneAndColumnist",
+              "name": "SecondaryTwoAndTwoSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "ObituariesLeadAndTwo", "ofType": null }
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "CommentLeadAndCartoonSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "LetterThundererPodcastSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "CommentTwoAndNotebookSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndColumnistSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "ObituariesLeadAndTwoSlice",
+              "ofType": null
+            }
           ]
         },
         {
@@ -1200,42 +1269,6 @@
           "name": "Tile",
           "description": "An article presentation",
           "fields": [
-            {
-              "name": "title",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "strapline",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "leadAsset",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "UNION", "name": "Media", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
             {
               "name": "article",
               "description": "",
@@ -1251,6 +1284,45 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "headline",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "leadAsset",
+              "description": "",
+              "args": [],
+              "type": { "kind": "UNION", "name": "Media", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "strapline",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "teaser",
+              "description": "",
+              "args": [
+                {
+                  "name": "maxCharCount",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": null
+                }
+              ],
+              "type": { "kind": "SCALAR", "name": "Markup", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -1259,13 +1331,66 @@
           "possibleTypes": null
         },
         {
-          "kind": "SCALAR",
-          "name": "Boolean",
-          "description":
-            "The `Boolean` scalar type represents `true` or `false`.",
-          "fields": null,
+          "kind": "OBJECT",
+          "name": "Topic",
+          "description": "",
+          "fields": [
+            {
+              "name": "articles",
+              "description": "",
+              "args": [
+                {
+                  "name": "first",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "10"
+                },
+                {
+                  "name": "skip",
+                  "description": "",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "0"
+                }
+              ],
+              "type": { "kind": "OBJECT", "name": "Articles", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "description",
+              "description": "",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "name",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
           "inputFields": null,
-          "interfaces": null,
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1361,7 +1486,11 @@
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "Date", "ofType": null }
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ShortDate",
+                  "ofType": null
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1439,7 +1568,7 @@
         },
         {
           "kind": "SCALAR",
-          "name": "Date",
+          "name": "ShortDate",
           "description":
             "String formatted in ISO8601 as YYYY-MM-DD (e.g. 2018-04-18)",
           "fields": null,
@@ -1903,90 +2032,30 @@
         },
         {
           "kind": "OBJECT",
-          "name": "Topic",
+          "name": "User",
           "description": "",
           "fields": [
             {
-              "name": "name",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "description",
-              "description": "",
-              "args": [],
-              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "articles",
-              "description": "",
+              "name": "spotimCodeB",
+              "description":
+                "a code used for Spot.IM's Single Sign On auth. Details here: https://github.com/SpotIM/spotim-integration-docs/blob/master/api/single-sign-on/README.md",
               "args": [
                 {
-                  "name": "first",
+                  "name": "codeA",
                   "description": "",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": "10"
-                },
-                {
-                  "name": "skip",
-                  "description": "",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": "0"
-                }
-              ],
-              "type": { "kind": "OBJECT", "name": "articles", "ofType": null },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "articles",
-          "description": "",
-          "fields": [
-            {
-              "name": "count",
-              "description": "",
-              "args": [],
-              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "list",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
+                  "type": {
                     "kind": "NON_NULL",
                     "name": null,
                     "ofType": {
-                      "kind": "OBJECT",
-                      "name": "Article",
+                      "kind": "SCALAR",
+                      "name": "String",
                       "ofType": null
                     }
-                  }
+                  },
+                  "defaultValue": null
                 }
-              },
+              ],
+              "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2781,6 +2850,26 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "RichText",
+          "description": "An AST representing cross platform UI",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Dictionary",
+          "description": "An dictionary of string-based key-value pairs",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "OBJECT",
           "name": "DailyUniversalRegisterItem",
           "description": "A piece of the daily universal register",
@@ -3056,10 +3145,39 @@
           "possibleTypes": null
         },
         {
+          "kind": "UNION",
+          "name": "PuffMainLink",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "Tile", "ofType": null },
+            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
+          ]
+        },
+        {
+          "kind": "UNION",
+          "name": "PuffTopicLink",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSection", "ofType": null },
+            { "kind": "OBJECT", "name": "NewsSection", "ofType": null },
+            { "kind": "OBJECT", "name": "CommentSection", "ofType": null },
+            { "kind": "OBJECT", "name": "PuzzleSection", "ofType": null },
+            { "kind": "OBJECT", "name": "RegisterSection", "ofType": null },
+            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
+          ]
+        },
+        {
           "kind": "OBJECT",
-          "name": "Puzzle",
-          "description":
-            "A representation of a single puzzle for the puzzles section",
+          "name": "StandardSection",
+          "description": "",
           "fields": [
             {
               "name": "id",
@@ -3086,32 +3204,58 @@
               "deprecationReason": null
             },
             {
-              "name": "url",
+              "name": "slug",
               "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "image",
+              "name": "colour",
               "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
-                "ofType": { "kind": "OBJECT", "name": "Image", "ofType": null }
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "StandardSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
             }
           ],
           "inputFields": null,
-          "interfaces": [],
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3128,26 +3272,46 @@
             { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
             { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
             { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
+              "name": "LeadOneFullWidthSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+            {
+              "kind": "OBJECT",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            }
           ]
         },
         {
@@ -3307,278 +3471,6 @@
           "possibleTypes": null
         },
         {
-          "kind": "UNION",
-          "name": "PuffMainLink",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            { "kind": "OBJECT", "name": "Tile", "ofType": null },
-            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
-          ]
-        },
-        {
-          "kind": "UNION",
-          "name": "PuffTopicLink",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            { "kind": "OBJECT", "name": "StandardSection", "ofType": null },
-            { "kind": "OBJECT", "name": "NewsSection", "ofType": null },
-            { "kind": "OBJECT", "name": "CommentSection", "ofType": null },
-            { "kind": "OBJECT", "name": "PuzzleSection", "ofType": null },
-            { "kind": "OBJECT", "name": "RegisterSection", "ofType": null },
-            { "kind": "OBJECT", "name": "NamedLink", "ofType": null }
-          ]
-        },
-        {
-          "kind": "OBJECT",
-          "name": "StandardSection",
-          "description": "",
-          "fields": [
-            {
-              "name": "id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "title",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "slug",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "colour",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "items",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "UNION",
-                      "name": "StandardSectionItem",
-                      "ofType": null
-                    }
-                  }
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [
-            { "kind": "INTERFACE", "name": "Section", "ofType": null }
-          ],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "NewsSection",
-          "description": "",
-          "fields": [
-            {
-              "name": "id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "title",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "slug",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "colour",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "items",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "UNION",
-                      "name": "NewsSectionItem",
-                      "ofType": null
-                    }
-                  }
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [
-            { "kind": "INTERFACE", "name": "Section", "ofType": null }
-          ],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "UNION",
-          "name": "NewsSectionItem",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": [
-            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "InTheNewsSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
-            {
-              "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
-              "ofType": null
-            },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
-            {
-              "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
-              "ofType": null
-            },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
-          ]
-        },
-        {
-          "kind": "OBJECT",
-          "name": "InTheNewsSlice",
-          "description":
-            "A special type of banner containing articles which is displayed at the top the new sections",
-          "fields": [
-            {
-              "name": "items",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "OBJECT",
-                      "name": "Tile",
-                      "ofType": null
-                    }
-                  }
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "FocusSlice",
           "description": "A focus article (focus)",
@@ -3702,7 +3594,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadOneAndFour",
+          "name": "LeadOneAndFourSlice",
           "description":
             "A lead article and four supporting articles (supplement-lead-and-4-stack)",
           "fields": [
@@ -3800,7 +3692,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadOneAndOne",
+          "name": "LeadOneAndOneSlice",
           "description":
             "A lead article and a supporting article (lead-1-and-1)",
           "fields": [
@@ -3862,7 +3754,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadOneAndTwo",
+          "name": "LeadOneAndTwoSlice",
           "description":
             "A lead article and two supporting articles. This slice can also represent lead and opinion related articles slices of the same name (lead-1-and-2-puffs, related-links-lead-and-2, related-links-opinion-and-2)",
           "fields": [
@@ -3936,7 +3828,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadOneFullWidth",
+          "name": "LeadOneFullWidthSlice",
           "description":
             "One full width lead article on its own (lead-1-full-width)",
           "fields": [
@@ -3986,7 +3878,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadOneNoPicAndOneAndPortrait",
+          "name": "LeadOneNoPicAndOneAndPortraitSlice",
           "description":
             "A lead module and supporting and portrait modules (lead-1-no-pic-and-1-and-portrait)",
           "fields": [
@@ -4060,7 +3952,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LeadTwoNoPicAndTwo",
+          "name": "LeadTwoNoPicAndTwoSlice",
           "description":
             "Two leads without pictures along and a pair of supporting articles (lead-2-no-pic-and-2)",
           "fields": [
@@ -4146,7 +4038,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryFour",
+          "name": "SecondaryFourSlice",
           "description": "Four secondary modules (secondary-4)",
           "fields": [
             {
@@ -4231,7 +4123,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryOne",
+          "name": "SecondaryOneSlice",
           "description": "A singular secondary module (secondary-1)",
           "fields": [
             {
@@ -4280,7 +4172,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryOneAndFour",
+          "name": "SecondaryOneAndFourSlice",
           "description":
             "A secondary module and four supporting articles (supplement-secondary-1-and-4)",
           "fields": [
@@ -4378,7 +4270,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryTwoAndTwo",
+          "name": "SecondaryTwoAndTwoSlice",
           "description":
             "Two secondary modules and supporting articles (secondary-2-and-2)",
           "fields": [
@@ -4464,7 +4356,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryTwoNoPicAndTwo",
+          "name": "SecondaryTwoNoPicAndTwoSlice",
           "description":
             "Two secondary modules, without an image, and supporting articles (secondary-2-no-pic-and-2)",
           "fields": [
@@ -4550,7 +4442,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "TwoPicAndSixNoPic",
+          "name": "TwoPicAndSixNoPicSlice",
           "description":
             "A slice and two leads and six supporting articles (list-2-and-6-no-pic)",
           "fields": [
@@ -4684,6 +4576,183 @@
         },
         {
           "kind": "OBJECT",
+          "name": "NewsSection",
+          "description": "",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "slug",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "colour",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Colour", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "UNION",
+                      "name": "NewsSectionItem",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            { "kind": "INTERFACE", "name": "Section", "ofType": null }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "NewsSectionItem",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": [
+            { "kind": "OBJECT", "name": "StandardSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "InTheNewsSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneFullWidthSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "InTheNewsSlice",
+          "description":
+            "A special type of banner containing articles which is displayed at the top the new sections",
+          "fields": [
+            {
+              "name": "items",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Tile",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
           "name": "CommentSection",
           "description": "",
           "fields": [
@@ -4785,51 +4854,71 @@
             },
             {
               "kind": "OBJECT",
-              "name": "CommentLeadAndCartoon",
+              "name": "CommentLeadAndCartoonSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "LetterThundererPodcast",
+              "name": "LetterThundererPodcastSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "CommentTwoAndNotebook",
+              "name": "CommentTwoAndNotebookSlice",
               "ofType": null
             },
             {
               "kind": "OBJECT",
-              "name": "SecondaryOneAndColumnist",
+              "name": "SecondaryOneAndColumnistSlice",
               "ofType": null
             },
             { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
             { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
+              "name": "LeadOneFullWidthSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+            {
+              "kind": "OBJECT",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            }
           ]
         },
         {
           "kind": "OBJECT",
-          "name": "CommentLeadAndCartoon",
+          "name": "CommentLeadAndCartoonSlice",
           "description":
             "A leading comment article and a cartoon (comment-lead-and-cartoon)",
           "fields": [
@@ -4891,7 +4980,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "LetterThundererPodcast",
+          "name": "LetterThundererPodcastSlice",
           "description":
             "Trio of letter, thunderer and podcast articles (comment-1-letters-thunderer)",
           "fields": [
@@ -4965,7 +5054,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "CommentTwoAndNotebook",
+          "name": "CommentTwoAndNotebookSlice",
           "description":
             "Two comment articles and a notebook article (comment-2-and-notebook)",
           "fields": [
@@ -5039,7 +5128,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "SecondaryOneAndColumnist",
+          "name": "SecondaryOneAndColumnistSlice",
           "description":
             "A secondary module and a special supporting columnist module (secondary-1-and-columnist)",
           "fields": [
@@ -5199,6 +5288,66 @@
         },
         {
           "kind": "OBJECT",
+          "name": "Puzzle",
+          "description":
+            "A representation of a single puzzle for the puzzles section",
+          "fields": [
+            {
+              "name": "id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "ID", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "title",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "String", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "url",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "SCALAR", "name": "URL", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "image",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": { "kind": "OBJECT", "name": "Image", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
           "name": "RegisterSection",
           "description": "",
           "fields": [
@@ -5295,36 +5444,56 @@
             { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "ObituariesLeadAndTwo",
+              "name": "ObituariesLeadAndTwoSlice",
               "ofType": null
             },
             { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
             { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
+              "name": "LeadOneFullWidthSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+            {
+              "kind": "OBJECT",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            }
           ]
         },
         {
           "kind": "OBJECT",
-          "name": "ObituariesLeadAndTwo",
+          "name": "ObituariesLeadAndTwoSlice",
           "description":
             "Special obituary lead and two support articles (obituaries-lead-and-2)",
           "fields": [
@@ -5409,26 +5578,46 @@
             { "kind": "OBJECT", "name": "PuffSlice", "ofType": null },
             { "kind": "OBJECT", "name": "FocusSlice", "ofType": null },
             { "kind": "OBJECT", "name": "LeadersSlice", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndOne", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "LeadOneFullWidth", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndOneSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "LeadOneAndTwoSlice", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "LeadOneNoPicAndOneAndPortrait",
+              "name": "LeadOneFullWidthSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "LeadTwoNoPicAndTwo", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOne", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryOneAndFour", "ofType": null },
-            { "kind": "OBJECT", "name": "SecondaryTwoAndTwo", "ofType": null },
             {
               "kind": "OBJECT",
-              "name": "SecondaryTwoNoPicAndTwo",
+              "name": "LeadOneNoPicAndOneAndPortraitSlice",
               "ofType": null
             },
-            { "kind": "OBJECT", "name": "TwoPicAndSixNoPic", "ofType": null }
+            {
+              "kind": "OBJECT",
+              "name": "LeadTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            { "kind": "OBJECT", "name": "SecondaryFourSlice", "ofType": null },
+            { "kind": "OBJECT", "name": "SecondaryOneSlice", "ofType": null },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryOneAndFourSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "SecondaryTwoNoPicAndTwoSlice",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "TwoPicAndSixNoPicSlice",
+              "ofType": null
+            }
           ]
         },
         {

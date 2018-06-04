@@ -196,6 +196,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -1679,6 +1680,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -1934,6 +1936,7 @@ Array [
         className="c7"
       >
         <ArticleTopics
+          onPress={[Function]}
           style={
             Object {
               "justifyContent": "flex-start",
@@ -1942,29 +1945,24 @@ Array [
           topics={
             Array [
               Object {
-                "id": "football",
                 "name": "Football",
-                "order": 1,
+                "slug": "football",
               },
               Object {
-                "id": "manchester-united",
                 "name": "Manchester United FC",
-                "order": 4,
+                "slug": "manchester-united",
               },
               Object {
-                "id": "chelsea",
                 "name": "Chelsea FC",
-                "order": 2,
+                "slug": "chelsea",
               },
               Object {
-                "id": "arsenal",
                 "name": "Arsenal",
-                "order": 3,
+                "slug": "arsenal",
               },
               Object {
-                "id": "rugby-union",
                 "name": "Rugby Union",
-                "order": 5,
+                "slug": "rugby-union",
               },
             ]
           }
@@ -2677,6 +2675,7 @@ Array [
     className="c0"
   >
     <ArticleTopics
+      onPress={[Function]}
       style={
         Object {
           "borderTopColor": "#DBDBDB",
@@ -2686,29 +2685,24 @@ Array [
       topics={
         Array [
           Object {
-            "id": "football",
             "name": "Football",
-            "order": 1,
+            "slug": "football",
           },
           Object {
-            "id": "manchester-united",
             "name": "Manchester United FC",
-            "order": 4,
+            "slug": "manchester-united",
           },
           Object {
-            "id": "chelsea",
             "name": "Chelsea FC",
-            "order": 2,
+            "slug": "chelsea",
           },
           Object {
-            "id": "arsenal",
             "name": "Arsenal",
-            "order": 3,
+            "slug": "arsenal",
           },
           Object {
-            "id": "rugby-union",
             "name": "Rugby Union",
-            "order": 5,
+            "slug": "rugby-union",
           },
         ]
       }
@@ -3532,6 +3526,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -3738,6 +3733,7 @@ Array [
         className="c7"
       >
         <ArticleTopics
+          onPress={[Function]}
           style={
             Object {
               "justifyContent": "flex-start",
@@ -3746,29 +3742,24 @@ Array [
           topics={
             Array [
               Object {
-                "id": "football",
                 "name": "Football",
-                "order": 1,
+                "slug": "football",
               },
               Object {
-                "id": "manchester-united",
                 "name": "Manchester United FC",
-                "order": 4,
+                "slug": "manchester-united",
               },
               Object {
-                "id": "chelsea",
                 "name": "Chelsea FC",
-                "order": 2,
+                "slug": "chelsea",
               },
               Object {
-                "id": "arsenal",
                 "name": "Arsenal",
-                "order": 3,
+                "slug": "arsenal",
               },
               Object {
-                "id": "rugby-union",
                 "name": "Rugby Union",
-                "order": 5,
+                "slug": "rugby-union",
               },
             ]
           }
@@ -3942,6 +3933,7 @@ Array [
     className="c0"
   >
     <ArticleTopics
+      onPress={[Function]}
       style={
         Object {
           "borderTopColor": "#DBDBDB",
@@ -3951,29 +3943,24 @@ Array [
       topics={
         Array [
           Object {
-            "id": "football",
             "name": "Football",
-            "order": 1,
+            "slug": "football",
           },
           Object {
-            "id": "manchester-united",
             "name": "Manchester United FC",
-            "order": 4,
+            "slug": "manchester-united",
           },
           Object {
-            "id": "chelsea",
             "name": "Chelsea FC",
-            "order": 2,
+            "slug": "chelsea",
           },
           Object {
-            "id": "arsenal",
             "name": "Arsenal",
-            "order": 3,
+            "slug": "arsenal",
           },
           Object {
-            "id": "rugby-union",
             "name": "Rugby Union",
-            "order": 5,
+            "slug": "rugby-union",
           },
         ]
       }
@@ -4782,6 +4769,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -5375,6 +5363,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -6724,6 +6713,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -8088,6 +8078,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -9450,6 +9441,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -10804,6 +10796,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -12157,6 +12150,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -13528,6 +13522,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -14885,6 +14880,7 @@ Array [
     position: absolute;
     left: 0;
     width: 20.8333%;
+    z-index: 1;
   }
 }
 
@@ -16108,29 +16104,24 @@ Object {
     "publishedTime": "2015-03-13T18:54:58.000Z",
     "topics": Array [
       Object {
-        "id": "football",
         "name": "Football",
-        "order": 1,
+        "slug": "football",
       },
       Object {
-        "id": "manchester-united",
         "name": "Manchester United FC",
-        "order": 4,
+        "slug": "manchester-united",
       },
       Object {
-        "id": "chelsea",
         "name": "Chelsea FC",
-        "order": 2,
+        "slug": "chelsea",
       },
       Object {
-        "id": "arsenal",
         "name": "Arsenal",
-        "order": 3,
+        "slug": "arsenal",
       },
       Object {
-        "id": "rugby-union",
         "name": "Rugby Union",
-        "order": 5,
+        "slug": "rugby-union",
       },
     ],
   },

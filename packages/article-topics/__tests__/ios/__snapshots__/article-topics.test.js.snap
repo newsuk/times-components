@@ -11,29 +11,29 @@ exports[`1. Render a group of topics in the correct order 1`] = `
   }
 >
   <WithTrackEvents(ArticleTopic)
-    id="football"
     name="Football"
     onPress={[Function]}
+    slug="football"
   />
   <WithTrackEvents(ArticleTopic)
-    id="chelsea"
-    name="Chelsea FC"
-    onPress={[Function]}
-  />
-  <WithTrackEvents(ArticleTopic)
-    id="arsenal"
-    name="Arsenal"
-    onPress={[Function]}
-  />
-  <WithTrackEvents(ArticleTopic)
-    id="manchester-united"
     name="Manchester United FC"
     onPress={[Function]}
+    slug="manchester-united"
   />
   <WithTrackEvents(ArticleTopic)
-    id="rugby-union"
+    name="Chelsea FC"
+    onPress={[Function]}
+    slug="chelsea"
+  />
+  <WithTrackEvents(ArticleTopic)
+    name="Arsenal"
+    onPress={[Function]}
+    slug="arsenal"
+  />
+  <WithTrackEvents(ArticleTopic)
     name="Rugby Union"
     onPress={[Function]}
+    slug="rugby-union"
   />
 </View>
 `;
@@ -82,8 +82,8 @@ Array [
     Object {
       "action": "Pressed",
       "attrs": Object {
-        "id": "football",
         "name": "Football",
+        "slug": "football",
       },
       "component": "TopicLink",
     },

@@ -985,29 +985,24 @@
       ],
       "topics": [
         {
-          "id": "football",
           "name": "Football",
-          "order": 1
+          "slug": "football"
         },
         {
-          "id": "manchester-united",
           "name": "Manchester United FC",
-          "order": 4
+          "slug": "manchester-united"
         },
         {
-          "id": "chelsea",
           "name": "Chelsea FC",
-          "order": 2
+          "slug": "chelsea"
         },
         {
-          "id": "arsenal",
           "name": "Arsenal",
-          "order": 3
+          "slug": "arsenal"
         },
         {
-          "id": "rugby-union",
           "name": "Rugby Union",
-          "order": 5
+          "slug": "rugby-union"
         }
       ]
     },

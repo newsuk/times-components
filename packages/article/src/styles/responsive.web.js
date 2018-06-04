@@ -66,6 +66,7 @@ export const MetaContainer = withResponsiveStyles(
       position: absolute;
       left: 0;
       width: 20.8333%;
+      z-index: 1
     `
   },
   "MetaContainer"

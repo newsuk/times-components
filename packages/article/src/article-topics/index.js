@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import ArticleTopics from "@times-components/article-topics";
 import styles from "./styles";
 
-const ShowTopics = ({ topics }) => {
+const ShowTopics = ({ topics, onPress }) => {
   if (topics && topics.length > 0) {
     return (
       <View style={styles.topicsContainer}>
-        <ArticleTopics topics={topics} />
+        <ArticleTopics topics={topics} onPress={onPress} />
       </View>
     );
   }
@@ -19,11 +19,11 @@ const ShowTopics = ({ topics }) => {
 ShowTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      order: PropTypes.number.isRequired
+      slug: PropTypes.string.isRequired
     }).isRequired
-  )
+  ),
+  onPress: PropTypes.func.isRequired
 };
 
 ShowTopics.defaultProps = {

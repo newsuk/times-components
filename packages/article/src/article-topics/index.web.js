@@ -4,19 +4,27 @@ import PropTypes from "prop-types";
 import styles from "./styles";
 import { TopicsContainer, TopicsMetaContainer } from "./styles/responsive";
 
-const ShowTopics = ({ topics, device }) => {
+const ShowTopics = ({ device, onPress, topics }) => {
   if (topics && topics.length > 0) {
     if (device === "DESKTOP") {
       return (
         <TopicsMetaContainer>
-          <ArticleTopics topics={topics} style={styles.topicsMetaContainer} />
+          <ArticleTopics
+            topics={topics}
+            style={styles.topicsMetaContainer}
+            onPress={onPress}
+          />
         </TopicsMetaContainer>
       );
     }
 
     return (
       <TopicsContainer>
-        <ArticleTopics topics={topics} style={styles.topicsContainer} />
+        <ArticleTopics
+          topics={topics}
+          style={styles.topicsContainer}
+          onPress={onPress}
+        />
       </TopicsContainer>
     );
   }
@@ -25,14 +33,14 @@ const ShowTopics = ({ topics, device }) => {
 };
 
 ShowTopics.propTypes = {
+  device: PropTypes.oneOf(["DESKTOP", null]),
+  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      order: PropTypes.number.isRequired
+      slug: PropTypes.string.isRequired
     }).isRequired
-  ),
-  device: PropTypes.oneOf(["DESKTOP", null])
+  )
 };
 
 ShowTopics.defaultProps = {

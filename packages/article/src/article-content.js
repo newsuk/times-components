@@ -5,10 +5,11 @@ import { FlatList } from "react-native";
 const ArticleContent = ({
   data,
   renderRow,
-  onRelatedArticlePress,
   onAuthorPress,
-  onVideoPress,
-  onLinkPress
+  onLinkPress,
+  onRelatedArticlePress,
+  onTopicPress,
+  onVideoPress
 }) => (
   <FlatList
     testID="flat-list-article"
@@ -17,10 +18,11 @@ const ArticleContent = ({
     renderItem={({ item }) =>
       renderRow(
         item,
-        onRelatedArticlePress,
         onAuthorPress,
-        onVideoPress,
-        onLinkPress
+        onLinkPress,
+        onRelatedArticlePress,
+        onTopicPress,
+        onVideoPress
       )
     }
   />
@@ -35,10 +37,11 @@ ArticleContent.propTypes = {
     })
   ).isRequired,
   renderRow: PropTypes.func.isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired
+  onLinkPress: PropTypes.func.isRequired,
+  onRelatedArticlePress: PropTypes.func.isRequired,
+  onTopicPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 
 export default ArticleContent;

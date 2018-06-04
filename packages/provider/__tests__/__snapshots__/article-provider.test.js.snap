@@ -704,6 +704,20 @@ Object {
   },
   "section": "business",
   "standfirst": "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",
+  "topics": Array [
+    Object {
+      "__typename": "Topic",
+      "name": "Islington",
+      "slug": "islington",
+      Symbol(id): "Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.topics.0",
+    },
+    Object {
+      "__typename": "Topic",
+      "name": "Chelsea",
+      "slug": "chelsea",
+      Symbol(id): "Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.topics.1",
+    },
+  ],
   "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
   Symbol(id): "Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44",
 }

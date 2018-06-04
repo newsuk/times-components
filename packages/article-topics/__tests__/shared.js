@@ -16,7 +16,9 @@ module.exports = () => {
   });
 
   it("renders a group of topics in the correct order", () => {
-    const wrapper = shallow(<ArticleTopics topics={topicData} />);
+    const wrapper = shallow(
+      <ArticleTopics topics={topicData} onPress={() => {}} />
+    );
 
     expect(wrapper).toMatchSnapshot(
       "1. Render a group of topics in the correct order"
@@ -25,25 +27,29 @@ module.exports = () => {
 
   it("renders a single topic", () => {
     const wrapper = shallow(
-      <ArticleTopic id={topicData[0].id} name={topicData[0].name} />
+      <ArticleTopic
+        name={topicData[0].name}
+        slug={topicData[0].slug}
+        onPress={() => {}}
+      />
     ).dive();
 
     expect(wrapper).toMatchSnapshot("2. Render a single topic");
   });
 
   it("onPress handler is working", done => {
-    const onPress = (e, { id, name }) => {
+    const onPress = (e, { name, slug }) => {
       expect(e).toBe("event");
-      expect(id).toBe(id);
+      expect(slug).toBe(slug);
       expect(name).toBe(name);
       done();
     };
 
     shallow(
       <ArticleTopic
-        id={topicData[0].id}
         name={topicData[0].name}
         onPress={(e, data) => onPress(e, data)}
+        slug={topicData[0].slug}
       />
     )
       .dive()
@@ -59,9 +65,16 @@ module.exports = () => {
       }
     };
 
-    shallow(<ArticleTopic id={topicData[0].id} name={topicData[0].name} />, {
-      context
-    }).simulate("press", "events");
+    shallow(
+      <ArticleTopic
+        name={topicData[0].name}
+        slug={topicData[0].slug}
+        onPress={() => events}
+      />,
+      {
+        context
+      }
+    ).simulate("press");
 
     expect(events.mock.calls).toMatchSnapshot();
   });
