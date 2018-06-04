@@ -259,7 +259,7 @@ exports[`1. Render an author profile page 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=1440",
                     }
                   }
                   style={
@@ -1645,7 +1645,7 @@ exports[`2. Render an author profile page without images 1`] = `
                   onLoad={[Function]}
                   source={
                     Object {
-                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg&resize=1440",
+                      "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=1440",
                     }
                   }
                   style={
@@ -2569,6 +2569,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
@@ -3059,6 +3064,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
@@ -3549,6 +3559,11 @@ exports[`3. Render an author profile page loading state 1`] = `
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,
@@ -4039,7 +4054,7 @@ exports[`4. Render an author profile page error state 1`] = `
           onLoad={[Function]}
           source={
             Object {
-              "uri": "https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png&resize=1440",
+              "uri": "https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png?resize=1440",
             }
           }
           style={

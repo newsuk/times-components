@@ -1043,7 +1043,7 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
                 onLoad={[Function]}
                 source={
                   Object {
-                    "uri": "/test-item-image-url&resize=1440",
+                    "uri": "/test-item-image-url?resize=1440",
                   }
                 }
                 style={
@@ -1295,6 +1295,11 @@ exports[`ArticleList tests on android should render an article list item loading
         >
           <Image
             onLoad={[Function]}
+            source={
+              Object {
+                "uri": "",
+              }
+            }
             style={
               Object {
                 "bottom": 0,
@@ -2034,6 +2039,11 @@ exports[`ArticleList tests on android should render an article list that is load
               >
                 <Image
                   onLoad={[Function]}
+                  source={
+                    Object {
+                      "uri": "",
+                    }
+                  }
                   style={
                     Object {
                       "bottom": 0,

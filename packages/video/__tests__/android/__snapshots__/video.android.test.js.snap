@@ -65,7 +65,7 @@ exports[`Video on native renders correctly 1`] = `
         onLoad={[Function]}
         source={
           Object {
-            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&resize=1440",
+            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
           }
         }
         style={
