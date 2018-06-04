@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "apollo-cache-inmemory": "1.1.10",
-    "apollo-client": "2.3.1",
+    "apollo-client": "2.3.2",
     "graphql": "0.13.1",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.0",
