@@ -31,6 +31,7 @@ const Topic = ({
       <ArticleList
         articleListHeader={<TopicHead isLoading />}
         articlesLoading
+        fetchMore={() => Promise.resolve()}
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
         pageSize={initPageSize}

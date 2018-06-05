@@ -35,6 +35,7 @@ const AuthorProfile = ({
       <ArticleList
         articleListHeader={<AuthorProfileHead isLoading />}
         articlesLoading
+        fetchMore={() => Promise.resolve()}
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
         pageSize={initPageSize}
