@@ -1293,11 +1293,6 @@ exports[`ArticleList tests on android should render an article list item loading
         >
           <Image
             onLoad={[Function]}
-            source={
-              Object {
-                "uri": "",
-              }
-            }
             style={
               Object {
                 "bottom": 0,
@@ -2035,11 +2030,6 @@ exports[`ArticleList tests on android should render an article list that is load
               >
                 <Image
                   onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "",
-                    }
-                  }
                   style={
                     Object {
                       "bottom": 0,
