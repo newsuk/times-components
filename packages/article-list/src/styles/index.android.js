@@ -29,6 +29,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     margin: spacing(3)
   },
+  listErrorHeading: {
+    ...sharedStyles.listErrorHeading,
+    marginTop: spacing(8)
+  },
   loadingContainer: {
     paddingVertical: spacing(5)
   },
