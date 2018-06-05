@@ -27,7 +27,6 @@ const styles = {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
     fontSize: fontSizes.leadHeadline,
-    marginBottom: spacing(2),
     marginTop: spacing(4),
     textAlign: "center"
   },
@@ -35,7 +34,9 @@ const styles = {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.body,
-    textAlign: "center"
+    position: "relative",
+    textAlign: "center",
+    top: -spacing(4)
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
