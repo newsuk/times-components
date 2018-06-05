@@ -9,6 +9,15 @@ const styles = StyleSheet.create({
     flexBasis: "50%",
     maxWidth: 548
   },
+  listErrorHeading: {
+    ...sharedStyles.listErrorHeading,
+    marginBottom: spacing(2),
+    marginTop: spacing(4)
+  },
+  listErrorMessage: {
+    ...sharedStyles.listErrorMessage,
+    top: 0
+  },
   listContentContainer: {
     width: "100%"
   },

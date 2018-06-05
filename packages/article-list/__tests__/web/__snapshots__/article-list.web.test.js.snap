@@ -852,7 +852,7 @@ exports[`ArticleList tests on web should render an article list page error corre
         "alignSelf": "center",
         "color": "#1D1D1B",
         "fontFamily": "TimesModern-Bold",
-        "fontSize": 35,
+        "fontSize": 26,
         "marginBottom": "10px",
         "marginTop": "20px",
         "textAlign": "center",
@@ -867,7 +867,9 @@ exports[`ArticleList tests on web should render an article list page error corre
         "color": "#696969",
         "fontFamily": "TimesDigitalW04-Regular",
         "fontSize": 18,
+        "position": "relative",
         "textAlign": "center",
+        "top": 0,
       }
     }
   >

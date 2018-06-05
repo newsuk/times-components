@@ -1688,7 +1688,6 @@ exports[`4. Render an author profile page error state 1`] = `
               "bottom": "0px",
               "left": "0px",
               "right": "0px",
-              "top": "0px",
             }
           }
         >
