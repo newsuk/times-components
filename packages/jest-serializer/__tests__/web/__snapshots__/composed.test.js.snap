@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The serializers should minimalise and create styles 1`] = `
+<style>
+{
+  "S1": {
+    "color": "red",
+  },
+}
+</style>
+
+<div
+  className="S1"
+  dir="auto"
+/>
+`;

@@ -40,7 +40,7 @@ describe("Jest Configurator Tests", () => {
       const config = jestConfigurator(
         "android",
         path.resolve(__dirname, "../fixtures/ignore"),
-        ["data-helper.js"]
+        { coverageIgnoreGlobs: ["data-helper.js"] }
       );
       expect(config.collectCoverageFrom).toEqual([
         "**/fixtures/ignore/src/ignore.js"

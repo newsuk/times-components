@@ -1,11 +1,13 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import {
+  compose,
+  flattenStyleTransform,
+  rnwTransform,
+  rnwPrinter
+} from "@times-components/jest-serializer";
 
 import Ad, { AdComposer } from "../../src/ad";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 // prevent function sources appearing in snapshots
 jest.mock("../../src/webview-event-callback-setup", () => "mockErrorHandler");
@@ -13,6 +15,10 @@ jest.mock("../../src/ad-init", () => () => "mockInit");
 
 jest.mock("../../src/placeholder", () => "Placeholder"); // prevent SVG in snapshots
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
+
+expect.addSnapshotSerializer(
+  compose(rnwPrinter, flattenStyleTransform, rnwTransform())
+);
 
 describe("Ad", () => {
   const adProps = {

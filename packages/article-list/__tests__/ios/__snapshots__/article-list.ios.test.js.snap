@@ -135,7 +135,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
   onEndReachedThreshold={2}
   pageSize={3}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
   viewabilityConfig={
@@ -1856,7 +1855,6 @@ exports[`ArticleList tests on ios should render an article list that is loading 
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
   viewabilityConfig={
