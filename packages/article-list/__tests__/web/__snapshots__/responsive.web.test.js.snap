@@ -26,7 +26,7 @@ exports[`ArticleList responsive tests on web should render ListItemWrapper corre
 
 exports[`ArticleList responsive tests on web should render PageErrorContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ hcvmyw"
+  className="responsive-styles__component-fbPFZZ NudQU"
 />
 `;
 

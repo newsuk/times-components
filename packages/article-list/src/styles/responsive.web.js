@@ -71,7 +71,7 @@ export const PageErrorContainer = withResponsiveStyles(
   {
     base: () => `
     flex: 1;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
@@ -82,7 +82,7 @@ export const PageErrorContainer = withResponsiveStyles(
     padding-right: 15%;
   `,
     wideUp: () => `
-    flex-direction: row;
+    flex-direction: row-reverse;
   `
   },
   "PageErrorContainer"
@@ -102,6 +102,17 @@ export const PageErrorImageContainer = withResponsiveStyles(
   `,
     wideUp: () => `
     max-width: none;
+  `
+  },
+  "PageErrorImageContainer"
+);
+
+export const PageErrorContentContainer = withResponsiveStyles(
+  View,
+  {
+    wideUp: () => `
+    align-self: center;
+    max-width: 428px;
   `
   },
   "PageErrorImageContainer"
