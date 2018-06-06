@@ -16,7 +16,29 @@ const linkStyles = StyleSheet.create({
   }
 });
 
-const ArticleByline = ({ ast, color, style, onAuthorPress }) => {
+const ArticleByline = ({ ast, color, style }) => {
+  const styles = [linkStyles.link, color && { color }, style.link];
+
+  return renderTrees(ast, {
+    author(key, attributes, children) {
+      return (
+        <Text style={styles} key={key}>
+          {children}
+        </Text>
+      );
+    },
+
+    inline(key, attributes, children) {
+      return (
+        <Text style={styles} key={key}>
+          {children}
+        </Text>
+      );
+    }
+  });
+};
+
+const ArticleBylineWithLinks = ({ ast, color, style, onAuthorPress }) => {
   const styles = [linkStyles.link, color && { color }, style.link];
 
   return renderTrees(ast, {
@@ -46,6 +68,7 @@ const ArticleByline = ({ ast, color, style, onAuthorPress }) => {
 
 ArticleByline.propTypes = articleBylinePropTypes;
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;
+ArticleBylineWithLinks.propTypes = articleBylinePropTypes;
+ArticleBylineWithLinks.defaultProps = articleBylineDefaultPropTypes;
 
-export { articleBylinePropTypes };
-export default ArticleByline;
+export { ArticleByline, ArticleBylineWithLinks, articleBylinePropTypes };

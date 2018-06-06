@@ -3,7 +3,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import ArticleByline from "./src/article-byline";
+import { ArticleByline, ArticleBylineWithLinks } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
@@ -109,6 +109,18 @@ export default {
           <ArticleByline
             ast={authorsAST.multipleAuthorsCommaSeparated}
             style={bylineLinkStyles}
+            {...getCommonProps(selectV2, decorateAction)}
+          />
+        </Text>
+      )
+    },
+    {
+      type: "story",
+      name: "Article Byline with links",
+      component: ({ selectV2 }, { decorateAction }) => (
+        <Text style={bylineStyles}>
+          <ArticleBylineWithLinks
+            ast={authorsAST.singleAuthor}
             {...getCommonProps(selectV2, decorateAction)}
           />
         </Text>

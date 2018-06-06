@@ -21,8 +21,14 @@ export default {
     },
     {
       type: "story",
-      name: "With links",
+      name: "With links in summary",
       component: () => story(<ArticleSummary {...withLinksFixture} />)
+    },
+    {
+      type: "story",
+      name: "With byline links",
+      component: () =>
+        story(<ArticleSummary {...defaultFixture} renderBylineLinks />)
     },
     {
       type: "story",

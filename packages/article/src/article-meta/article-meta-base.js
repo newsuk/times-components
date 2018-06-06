@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
-import ArticleByline from "@times-components/article-byline";
+import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import styles from "../styles/article-meta";
 
@@ -31,7 +31,7 @@ const ArticleMetaBase = ({
     return [
       ArticleMetaRow(
         styles.byline,
-        <ArticleByline ast={byline} onAuthorPress={onAuthorPress} />,
+        <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
       ),
