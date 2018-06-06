@@ -115,5 +115,5 @@ export const PageErrorContentContainer = withResponsiveStyles(
     max-width: 428px;
   `
   },
-  "PageErrorImageContainer"
+  "PageErrorContentContainer"
 );

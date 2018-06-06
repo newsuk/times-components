@@ -844,7 +844,7 @@ exports[`ArticleList tests on web should render an article list page error corre
       uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
     />
   </PageErrorImageContainer>
-  <PageErrorImageContainer>
+  <PageErrorContentContainer>
     <ArticleListError />
     <Button
       style={
@@ -856,7 +856,7 @@ exports[`ArticleList tests on web should render an article list page error corre
       }
       title="Retry"
     />
-  </PageErrorImageContainer>
+  </PageErrorContentContainer>
 </PageErrorContainer>
 `;
 
@@ -1020,7 +1020,7 @@ exports[`ArticleList tests on web should render the article list page error corr
       uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
     />
   </PageErrorImageContainer>
-  <PageErrorImageContainer>
+  <PageErrorContentContainer>
     <ArticleListError />
     <Button
       style={
@@ -1032,7 +1032,7 @@ exports[`ArticleList tests on web should render the article list page error corr
       }
       title="Retry"
     />
-  </PageErrorImageContainer>
+  </PageErrorContentContainer>
 </PageErrorContainer>
 `;
 
