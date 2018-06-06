@@ -26,12 +26,6 @@ exports[`Video on native renders correctly 1`] = `
   accessibilityLabel="splash-component"
   accessible={true}
   isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "opacity": 1,
@@ -64,7 +58,6 @@ exports[`Video on native renders correctly 1`] = `
         }
       >
         <Image
-          onLoad={[Function]}
           source={
             Object {
               "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
@@ -83,7 +76,6 @@ exports[`Video on native renders correctly 1`] = `
           }
         />
         <View
-          onLayout={[Function]}
           style={
             Object {
               "flex": 1,
@@ -91,7 +83,6 @@ exports[`Video on native renders correctly 1`] = `
           }
         >
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "flex": 1,
@@ -211,12 +202,6 @@ exports[`Video on native renders correctly without a poster image 1`] = `
   accessibilityLabel="splash-component"
   accessible={true}
   isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "opacity": 1,

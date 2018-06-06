@@ -48,7 +48,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -261,7 +260,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -419,7 +417,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -642,7 +639,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -819,7 +815,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -1009,7 +1004,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -1267,7 +1261,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -1473,7 +1466,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -1628,7 +1620,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",
@@ -1821,7 +1812,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -1995,7 +1985,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/take-expensive-trident-out-of-mod-budget-hammond-urged-ztsxlskj2"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",
@@ -2123,7 +2112,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",
@@ -2323,7 +2311,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -2552,7 +2539,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -2749,7 +2735,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",
@@ -2942,7 +2927,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
         >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",
@@ -3120,7 +3104,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/take-expensive-trident-out-of-mod-budget-hammond-urged-ztsxlskj2"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",
@@ -3248,7 +3231,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
           >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
-              onClick={[Function]}
               style={
                 Object {
                   "textDecoration": "none",

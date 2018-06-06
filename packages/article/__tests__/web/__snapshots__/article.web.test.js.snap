@@ -364,7 +364,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -824,7 +823,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -1372,7 +1370,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -1917,7 +1914,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -1936,7 +1932,6 @@ Array [
         className="c7"
       >
         <ArticleTopics
-          onPress={[Function]}
           style={
             Object {
               "justifyContent": "flex-start",
@@ -2079,7 +2074,6 @@ Array [
           <a
             className="c14"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "underline",
@@ -2611,7 +2605,6 @@ Array [
           <a
             className="c14"
             href="https://www.cam.ac.uk/"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "underline",
@@ -2675,7 +2668,6 @@ Array [
     className="c0"
   >
     <ArticleTopics
-      onPress={[Function]}
       style={
         Object {
           "borderTopColor": "#DBDBDB",
@@ -2709,7 +2701,6 @@ Array [
     />
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -3257,7 +3248,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -3714,7 +3704,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -3733,7 +3722,6 @@ Array [
         className="c7"
       >
         <ArticleTopics
-          onPress={[Function]}
           style={
             Object {
               "justifyContent": "flex-start",
@@ -3876,7 +3864,6 @@ Array [
           <a
             className="c14"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "underline",
@@ -3933,7 +3920,6 @@ Array [
     className="c0"
   >
     <ArticleTopics
-      onPress={[Function]}
       style={
         Object {
           "borderTopColor": "#DBDBDB",
@@ -3967,7 +3953,6 @@ Array [
     />
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -4515,7 +4500,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -4915,7 +4899,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -5919,7 +5902,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -6467,7 +6449,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -6853,7 +6834,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -7290,7 +7270,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -7838,7 +7817,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -8216,7 +8194,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -8653,7 +8630,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -9201,7 +9177,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -9571,7 +9546,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -10008,7 +9982,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -10556,7 +10529,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -10919,7 +10891,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -11356,7 +11327,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -11904,7 +11874,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -12291,7 +12260,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -12728,7 +12696,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -13276,7 +13243,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -13655,7 +13621,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -14092,7 +14057,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -14640,7 +14604,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>
@@ -15011,7 +14974,6 @@ Array [
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </span>
         </div>
@@ -15448,7 +15410,6 @@ Array [
     </div>
   </div>,
   <RelatedArticles
-    analyticsStream={[Function]}
     articles={
       Array [
         Object {
@@ -15996,7 +15957,6 @@ Array [
         },
       ]
     }
-    onPress={[Function]}
     template="DEFAULT"
   />,
   <div>

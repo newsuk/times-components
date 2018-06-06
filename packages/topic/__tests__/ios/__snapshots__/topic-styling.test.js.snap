@@ -2,8 +2,6 @@
 
 exports[`Topic styling tests on ios should render styling correctly 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={
     <TopicHead
       description="A swanky part of town."
@@ -32,24 +30,12 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
   pageSize={3}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -74,9 +60,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -150,9 +134,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -195,7 +177,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -209,7 +190,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -217,7 +197,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -306,7 +285,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -385,7 +363,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -463,7 +440,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -541,7 +517,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -640,9 +615,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -685,7 +658,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -699,7 +671,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -707,7 +678,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -796,7 +766,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -875,7 +844,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -953,7 +921,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1031,7 +998,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1130,9 +1096,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -1175,7 +1139,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -1189,7 +1152,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -1197,7 +1159,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -1286,7 +1247,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1365,7 +1325,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1443,7 +1402,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1521,7 +1479,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1603,9 +1560,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    />
+    <View />
   </View>
 </RCTScrollView>
 `;

@@ -3,9 +3,9 @@ import { StyleSheet } from "react-native-web";
 import omit from "lodash.omit";
 import omitBy from "lodash.omitby";
 
-function withoutProps(node) {
-  return { ...node, props: {} };
-}
+const withoutProps = node => ({ ...node, props: {} });
+
+const excludeProps = x => x === undefined || typeof x === "function";
 
 function getType({ type }) {
   if (type instanceof Function) {
@@ -48,11 +48,9 @@ function transformRenderProps(propsToTransform, transformer) {
 function transform(node) {
   if (!node || !node.props) return node;
 
-  const { className, style: styles, ...props } = { ...node.props };
+  const { className, style: styles, ...props } = node.props;
 
-  const children = []
-    .concat(node.children || node.props.children)
-    .map(transform);
+  const children = (node.children || node.props.children || []).map(transform);
 
   const flattened = StyleSheet.flatten(styles);
   const style = Object.keys(flattened || {}).length ? { style: flattened } : {};
@@ -66,18 +64,15 @@ function transform(node) {
         ...cleanClassNames(className),
         ...style
       },
-      x => x === undefined
+      excludeProps
     ),
     ...children
   );
 }
 
-function test(value) {
-  return !!value && value.$$typeof === Symbol.for("react.test.json");
-}
+const test = value =>
+  !!value && value.$$typeof === Symbol.for("react.test.json");
 
-function print(node, serialize) {
-  return serialize(transform(node));
-}
+const print = (node, serialize) => serialize(transform(node));
 
 module.exports = { test, print };

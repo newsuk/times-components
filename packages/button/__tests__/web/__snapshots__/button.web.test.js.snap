@@ -8,7 +8,6 @@ exports[`1. Render the button 1`] = `
   accessibilityTraits="button"
   activeOpacity={0.2}
   focusedOpacity={0.7}
-  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",

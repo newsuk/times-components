@@ -2,8 +2,6 @@
 
 exports[`1. Render an author profile page 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={
     <AuthorProfileHead
       biography={
@@ -40,7 +38,6 @@ exports[`1. Render an author profile page 1`] = `
       isLoading={false}
       jobTitle="Defence Editor"
       name="Deborah Haynes"
-      onTwitterLinkPress={[Function]}
       twitter="jdoe"
       uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
     />
@@ -156,24 +153,12 @@ exports[`1. Render an author profile page 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
   pageSize={3}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -198,9 +183,7 @@ exports[`1. Render an author profile page 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityRole="banner"
         style={
@@ -256,7 +239,6 @@ exports[`1. Render an author profile page 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=1440",
@@ -275,7 +257,6 @@ exports[`1. Render an author profile page 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -283,7 +264,6 @@ exports[`1. Render an author profile page 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -416,7 +396,6 @@ exports[`1. Render an author profile page 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 href="https://twitter.com/jdoe"
-                onPress={[Function]}
                 style={
                   Object {
                     "color": "#006699",
@@ -474,18 +453,10 @@ exports[`1. Render an author profile page 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -541,7 +512,6 @@ exports[`1. Render an author profile page 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440",
@@ -560,7 +530,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -568,7 +537,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -743,18 +711,10 @@ exports[`1. Render an author profile page 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -810,7 +770,6 @@ exports[`1. Render an author profile page 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440",
@@ -829,7 +788,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -837,7 +795,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -1012,18 +969,10 @@ exports[`1. Render an author profile page 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -1079,7 +1028,6 @@ exports[`1. Render an author profile page 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440",
@@ -1098,7 +1046,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -1106,7 +1053,6 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -1264,9 +1210,7 @@ exports[`1. Render an author profile page 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <View
           style={
@@ -1295,8 +1239,6 @@ exports[`1. Render an author profile page 1`] = `
 
 exports[`2. Render an author profile page without images 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={
     <AuthorProfileHead
       biography={
@@ -1333,7 +1275,6 @@ exports[`2. Render an author profile page without images 1`] = `
       isLoading={false}
       jobTitle="Defence Editor"
       name="Deborah Haynes"
-      onTwitterLinkPress={[Function]}
       twitter="jdoe"
       uri="//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
     />
@@ -1542,24 +1483,12 @@ exports[`2. Render an author profile page without images 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
   pageSize={3}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -1584,9 +1513,7 @@ exports[`2. Render an author profile page without images 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityRole="banner"
         style={
@@ -1642,7 +1569,6 @@ exports[`2. Render an author profile page without images 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg?resize=1440",
@@ -1661,7 +1587,6 @@ exports[`2. Render an author profile page without images 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -1669,7 +1594,6 @@ exports[`2. Render an author profile page without images 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -1802,7 +1726,6 @@ exports[`2. Render an author profile page without images 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 href="https://twitter.com/jdoe"
-                onPress={[Function]}
                 style={
                   Object {
                     "color": "#006699",
@@ -1860,18 +1783,10 @@ exports[`2. Render an author profile page without images 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -2010,18 +1925,10 @@ exports[`2. Render an author profile page without images 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -2160,18 +2067,10 @@ exports[`2. Render an author profile page without images 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "opacity": 1,
@@ -2293,9 +2192,7 @@ exports[`2. Render an author profile page without images 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <View
           style={
@@ -2324,15 +2221,12 @@ exports[`2. Render an author profile page without images 1`] = `
 
 exports[`3. Render an author profile page loading state 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={
     <AuthorProfileHead
       biography={Array []}
       isLoading={true}
       jobTitle=""
       name=""
-      onTwitterLinkPress={[Function]}
       twitter=""
       uri=""
     />
@@ -2358,24 +2252,12 @@ exports[`3. Render an author profile page loading state 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
   pageSize={3}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -2400,9 +2282,7 @@ exports[`3. Render an author profile page loading state 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityRole="banner"
         style={
@@ -2444,7 +2324,6 @@ exports[`3. Render an author profile page loading state 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2523,9 +2402,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -2568,7 +2445,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -2582,7 +2458,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -2590,7 +2465,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -2679,7 +2553,6 @@ exports[`3. Render an author profile page loading state 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2758,7 +2631,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2836,7 +2708,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2914,7 +2785,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3013,9 +2883,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -3058,7 +2926,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -3072,7 +2939,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -3080,7 +2946,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -3169,7 +3034,6 @@ exports[`3. Render an author profile page loading state 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3248,7 +3112,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3326,7 +3189,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3404,7 +3266,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3503,9 +3364,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -3548,7 +3407,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -3562,7 +3420,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -3570,7 +3427,6 @@ exports[`3. Render an author profile page loading state 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -3659,7 +3515,6 @@ exports[`3. Render an author profile page loading state 1`] = `
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3738,7 +3593,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3816,7 +3670,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3894,7 +3747,6 @@ exports[`3. Render an author profile page loading state 1`] = `
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -3976,9 +3828,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <View
           style={
@@ -4089,12 +3939,6 @@ exports[`4. Render an author profile page error state 1`] = `
       accessibilityTraits="button"
       accessible={true}
       isTVSelectable={true}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
         Object {
           "alignItems": "center",

@@ -9,12 +9,6 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
 >
   <Text
@@ -36,12 +30,6 @@ exports[`Link test on android Link renders correctly 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
 >
   The Times
@@ -55,7 +43,6 @@ exports[`Link test on android TextLink renders correctly with children 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
-  onPress={[Function]}
   style={
     Object {
       "textDecorationLine": "underline",
@@ -73,7 +60,6 @@ exports[`Link test on android TextLink renders correctly with multiple styles 1`
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
-  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "blue",
@@ -93,7 +79,6 @@ exports[`Link test on android TextLink renders correctly with specific styles 1`
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="http://thetimes.co.uk"
-  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "blue",
