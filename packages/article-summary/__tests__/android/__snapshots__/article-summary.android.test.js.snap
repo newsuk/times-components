@@ -304,7 +304,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -513,7 +512,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -663,7 +661,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -915,7 +912,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -1099,7 +1095,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -1282,7 +1277,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
@@ -1354,7 +1348,6 @@ exports[`Article Summary tests on Android should render an article-summary with 
       allowFontScaling={true}
       ellipsizeMode="tail"
       href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",

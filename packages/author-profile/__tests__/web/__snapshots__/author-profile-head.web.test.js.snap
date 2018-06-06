@@ -2,7 +2,6 @@
 
 exports[`1. Should not re-render when twitter prop is changed 1`] = `
 <AuthorProfileHeadTwitter
-  onTwitterLinkPress={[Function]}
   twitter="testTwitterHandle"
   url="https://twitter.com/testTwitterHandle"
 />
@@ -10,7 +9,6 @@ exports[`1. Should not re-render when twitter prop is changed 1`] = `
 
 exports[`2. Should not re-render when twitter prop is changed 1`] = `
 <AuthorProfileHeadTwitter
-  onTwitterLinkPress={[Function]}
   twitter="testTwitterHandle"
   url="https://twitter.com/testTwitterHandle"
 />
@@ -32,7 +30,6 @@ exports[`3. Should re-render when isLoading prop is changed 1`] = `
       jobTitle="testJobTitle"
     />
     <AuthorProfileHeadTwitter
-      onTwitterLinkPress={[Function]}
       twitter="testTwitterHandle"
       url="https://twitter.com/testTwitterHandle"
     />

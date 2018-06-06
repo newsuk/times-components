@@ -37,7 +37,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
       >
         <a
           href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -166,7 +165,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -295,7 +293,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -438,7 +435,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
 exports[`ArticleList tests on web should render an article list item 1`] = `
 <a
   href="/test-article-url"
-  onClick={[Function]}
   style={
     Object {
       "textDecoration": "none",
@@ -671,7 +667,6 @@ exports[`ArticleList tests on web should render an article list item loading sta
 exports[`ArticleList tests on web should render an article list item without images 1`] = `
 <a
   href="/test-article-url"
-  onClick={[Function]}
   style={
     Object {
       "textDecoration": "none",
@@ -879,7 +874,6 @@ exports[`ArticleList tests on web should render an article list page error corre
     We can't load the page you have requested. Please check your network connection and retry to continue
   </Text>
   <Button
-    onPress={[Function]}
     style={
       Object {
         "alignSelf": "center",
@@ -1046,9 +1040,7 @@ exports[`ArticleList tests on web should render the article list item separator 
 
 exports[`ArticleList tests on web should render the article list page error correctly 1`] = `
 <PageErrorContainer>
-  <ArticleListError
-    refetch={[Function]}
-  />
+  <ArticleListError />
   <PageErrorImageContainer>
     <TimesImage
       aspectRatio={0.9090909090909091}
@@ -1081,7 +1073,6 @@ exports[`ArticleList tests on web should render the article list pagination corr
         <div>
           <a
             href="?page=2"
-            onClick={[Function]}
             style={
               Object {
                 "textDecoration": "none",

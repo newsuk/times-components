@@ -4,8 +4,6 @@ exports[`Article Byline test on web renders correctly with a section colour 1`] 
 <a
   dir="auto"
   href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
   style={
     Object {
@@ -21,8 +19,6 @@ exports[`Article Byline test on web renders correctly with a single author 1`] =
 <a
   dir="auto"
   href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
 >
   Alexandra Frean
@@ -44,8 +40,6 @@ Array [
   <a
     dir="auto"
     href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Camilla Long
@@ -58,8 +52,6 @@ Array [
   <a
     dir="auto"
     href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Mike Atherton
@@ -72,8 +64,6 @@ Array [
   <a
     dir="auto"
     href="/profile/alexandra-frean"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Alexandra Frean
@@ -86,8 +76,6 @@ Array [
   <a
     dir="auto"
     href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Camilla Long
@@ -100,8 +88,6 @@ Array [
   <a
     dir="auto"
     href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Mike Atherton
@@ -114,8 +100,6 @@ Array [
   <a
     dir="auto"
     href="/profile/alexandra-frean"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Alexandra Frean
@@ -127,8 +111,6 @@ exports[`Article Byline test on web renders correctly with styles 1`] = `
 <a
   dir="auto"
   href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
   style={
     Object {
@@ -150,8 +132,6 @@ Array [
   <a
     dir="auto"
     href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Mike Atherton
@@ -164,8 +144,6 @@ Array [
   <a
     dir="auto"
     href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
     role="link"
   >
     Camilla Long

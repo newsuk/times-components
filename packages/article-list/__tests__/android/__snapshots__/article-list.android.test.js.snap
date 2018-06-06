@@ -13,7 +13,6 @@ exports[`ArticleList tests on android should display retry button when fetch mor
     }
   >
     <Button
-      onPress={[Function]}
       title="Retry"
     />
   </View>
@@ -22,8 +21,6 @@ exports[`ArticleList tests on android should display retry button when fetch mor
 
 exports[`ArticleList tests on android should render an article list 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={null}
   accessibilityID="scroll-view"
   data={
@@ -130,24 +127,12 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
   pageSize={3}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -172,9 +157,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         nativeBackgroundAndroid={
@@ -183,12 +166,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -240,7 +217,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440",
@@ -259,7 +235,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -267,7 +242,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -442,9 +416,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         nativeBackgroundAndroid={
@@ -453,12 +425,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -510,7 +476,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440",
@@ -529,7 +494,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -537,7 +501,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -712,9 +675,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessible={true}
         nativeBackgroundAndroid={
@@ -723,12 +684,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -780,7 +735,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440",
@@ -799,7 +753,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -807,7 +760,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     >
                       <View
-                        onLayout={[Function]}
                         style={
                           Object {
                             "flex": 1,
@@ -965,9 +917,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    />
+    <View />
   </View>
 </RCTScrollView>
 `;
@@ -981,12 +931,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
 >
   <View
@@ -1038,7 +982,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
               }
             >
               <Image
-                onLoad={[Function]}
                 source={
                   Object {
                     "uri": "/test-item-image-url?resize=1440",
@@ -1057,7 +1000,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
                 }
               />
               <View
-                onLayout={[Function]}
                 style={
                   Object {
                     "flex": 1,
@@ -1065,7 +1007,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
                 }
               >
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -1292,7 +1233,6 @@ exports[`ArticleList tests on android should render an article list item loading
           }
         >
           <Image
-            onLoad={[Function]}
             style={
               Object {
                 "bottom": 0,
@@ -1306,7 +1246,6 @@ exports[`ArticleList tests on android should render an article list item loading
             }
           />
           <View
-            onLayout={[Function]}
             style={
               Object {
                 "flex": 1,
@@ -1314,7 +1253,6 @@ exports[`ArticleList tests on android should render an article list item loading
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1403,7 +1341,6 @@ exports[`ArticleList tests on android should render an article list item loading
       }
     >
       <View
-        onLayout={[Function]}
         style={
           Object {
             "flex": 1,
@@ -1482,7 +1419,6 @@ exports[`ArticleList tests on android should render an article list item loading
         </ARTSurfaceView>
       </View>
       <View
-        onLayout={[Function]}
         style={
           Object {
             "flex": 1,
@@ -1560,7 +1496,6 @@ exports[`ArticleList tests on android should render an article list item loading
         </ARTSurfaceView>
       </View>
       <View
-        onLayout={[Function]}
         style={
           Object {
             "flex": 1,
@@ -1638,7 +1573,6 @@ exports[`ArticleList tests on android should render an article list item loading
         </ARTSurfaceView>
       </View>
       <View
-        onLayout={[Function]}
         style={
           Object {
             "flex": 1,
@@ -1730,12 +1664,6 @@ exports[`ArticleList tests on android should render an article list item without
       "type": "ThemeAttrAndroid",
     }
   }
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   pointerEvents="box-only"
 >
   <View
@@ -1915,7 +1843,6 @@ exports[`ArticleList tests on android should render an article list page error c
     We can't load the page you have requested. Please check your network connection and retry to continue
   </Text>
   <Button
-    onPress={[Function]}
     style={
       Object {
         "alignSelf": "center",
@@ -1929,8 +1856,6 @@ exports[`ArticleList tests on android should render an article list page error c
 
 exports[`ArticleList tests on android should render an article list that is loading 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
-  ListFooterComponent={[Function]}
   ListHeaderComponent={null}
   accessibilityID="scroll-view"
   data={
@@ -1943,23 +1868,11 @@ exports[`ArticleList tests on android should render an article list that is load
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
-  onEndReached={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  onViewableItemsChanged={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="scroll-view"
@@ -1984,9 +1897,7 @@ exports[`ArticleList tests on android should render an article list that is load
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -2029,7 +1940,6 @@ exports[`ArticleList tests on android should render an article list that is load
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   style={
                     Object {
                       "bottom": 0,
@@ -2043,7 +1953,6 @@ exports[`ArticleList tests on android should render an article list that is load
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -2051,7 +1960,6 @@ exports[`ArticleList tests on android should render an article list that is load
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -2140,7 +2048,6 @@ exports[`ArticleList tests on android should render an article list that is load
             }
           >
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2219,7 +2126,6 @@ exports[`ArticleList tests on android should render an article list that is load
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2297,7 +2203,6 @@ exports[`ArticleList tests on android should render an article list that is load
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2375,7 +2280,6 @@ exports[`ArticleList tests on android should render an article list that is load
               </ARTSurfaceView>
             </View>
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2457,9 +2361,7 @@ exports[`ArticleList tests on android should render an article list that is load
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <View
           style={
@@ -2533,8 +2435,6 @@ exports[`ArticleList tests on android should render the article list page error 
       }
     />
   </View>
-  <ArticleListError
-    refetch={[Function]}
-  />
+  <ArticleListError />
 </View>
 `;

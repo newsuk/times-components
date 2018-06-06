@@ -12,27 +12,22 @@ exports[`1. Render a group of topics in the correct order 1`] = `
 >
   <WithTrackEvents(ArticleTopic)
     name="Football"
-    onPress={[Function]}
     slug="football"
   />
   <WithTrackEvents(ArticleTopic)
     name="Manchester United FC"
-    onPress={[Function]}
     slug="manchester-united"
   />
   <WithTrackEvents(ArticleTopic)
     name="Chelsea FC"
-    onPress={[Function]}
     slug="chelsea"
   />
   <WithTrackEvents(ArticleTopic)
     name="Arsenal"
-    onPress={[Function]}
     slug="arsenal"
   />
   <WithTrackEvents(ArticleTopic)
     name="Rugby Union"
-    onPress={[Function]}
     slug="rugby-union"
   />
 </View>
@@ -41,7 +36,6 @@ exports[`1. Render a group of topics in the correct order 1`] = `
 exports[`2. Render a single topic 1`] = `
 <Link
   index="0"
-  onPress={[Function]}
   responsiveLinkStyles={null}
   target={null}
   url="/topic/football"

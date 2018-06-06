@@ -89,8 +89,6 @@ exports[`1. Render an author profile page 1`] = `
           <a
             dir="auto"
             href="https://twitter.com/jdoe"
-            onClick={[Function]}
-            onKeyDown={[Function]}
             role="link"
           >
             @
@@ -139,7 +137,6 @@ exports[`1. Render an author profile page 1`] = `
             <div>
               <a
                 href="?page=2"
-                onClick={[Function]}
                 style={
                   Object {
                     "textDecoration": "none",
@@ -189,7 +186,6 @@ exports[`1. Render an author profile page 1`] = `
       >
         <a
           href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -316,7 +312,6 @@ exports[`1. Render an author profile page 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -443,7 +438,6 @@ exports[`1. Render an author profile page 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -575,7 +569,6 @@ exports[`1. Render an author profile page 1`] = `
             <div>
               <a
                 href="?page=2"
-                onClick={[Function]}
                 style={
                   Object {
                     "textDecoration": "none",
@@ -710,8 +703,6 @@ exports[`2. Render an author profile page without images 1`] = `
           <a
             dir="auto"
             href="https://twitter.com/jdoe"
-            onClick={[Function]}
-            onKeyDown={[Function]}
             role="link"
           >
             @
@@ -760,7 +751,6 @@ exports[`2. Render an author profile page without images 1`] = `
             <div>
               <a
                 href="?page=2"
-                onClick={[Function]}
                 style={
                   Object {
                     "textDecoration": "none",
@@ -810,7 +800,6 @@ exports[`2. Render an author profile page without images 1`] = `
       >
         <a
           href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -957,7 +946,6 @@ exports[`2. Render an author profile page without images 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -1104,7 +1092,6 @@ exports[`2. Render an author profile page without images 1`] = `
         <div />
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
-          onClick={[Function]}
           style={
             Object {
               "textDecoration": "none",
@@ -1256,7 +1243,6 @@ exports[`2. Render an author profile page without images 1`] = `
             <div>
               <a
                 href="?page=2"
-                onClick={[Function]}
                 style={
                   Object {
                     "textDecoration": "none",
@@ -1659,15 +1645,6 @@ exports[`4. Render an author profile page error state 1`] = `
     </div>
     <div
       aria-label="Retry"
-      onKeyDown={[Function]}
-      onKeyPress={[Function]}
-      onKeyUp={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       role="button"
       tabIndex="0"
     >

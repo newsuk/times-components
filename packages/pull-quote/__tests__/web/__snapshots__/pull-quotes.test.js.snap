@@ -107,8 +107,6 @@ exports[`3. Renders with a twitter handle 1`] = `
       <a
         dir="auto"
         href="https://twitter.com/@henrywinter"
-        onClick={[Function]}
-        onKeyDown={[Function]}
         rel=" noopener noreferrer"
         role="link"
         target="_blank"

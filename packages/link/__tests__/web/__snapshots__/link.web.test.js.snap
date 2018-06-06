@@ -3,7 +3,6 @@
 exports[`Link tests on Web Link doesnt change inner text styles 1`] = `
 <a
   href="http://thetimes.co.uk"
-  onClick={[Function]}
   style={
     Object {
       "textDecoration": "none",
@@ -19,7 +18,6 @@ exports[`Link tests on Web Link doesnt change inner text styles 1`] = `
 exports[`Link tests on Web Link renders correctly 1`] = `
 <a
   href="http://thetimes.co.uk"
-  onClick={[Function]}
   style={
     Object {
       "textDecoration": "none",
@@ -34,8 +32,6 @@ exports[`Link tests on Web TextLink renders correctly with children 1`] = `
 <a
   dir="auto"
   href="http://thetimes.co.uk"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
 >
   The Times
@@ -46,8 +42,6 @@ exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] =
 <a
   dir="auto"
   href="http://thetimes.co.uk"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
   style={
     Object {
@@ -64,8 +58,6 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 <a
   dir="auto"
   href="http://thetimes.co.uk"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
   style={
     Object {
@@ -80,7 +72,6 @@ exports[`Link tests on Web TextLink renders correctly with specific styles 1`] =
 exports[`Link tests on Web renders with a target 1`] = `
 <a
   href="http://thetimes.co.uk"
-  onClick={[Function]}
   style={
     Object {
       "textDecoration": "none",

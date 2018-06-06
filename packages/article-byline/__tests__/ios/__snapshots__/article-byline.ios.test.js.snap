@@ -7,7 +7,6 @@ exports[`Article Byline test on iOS renders correctly with a section colour 1`] 
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="/profile/alexandra-frean"
-  onPress={[Function]}
   style={
     Object {
       "color": "blue",
@@ -26,7 +25,6 @@ exports[`Article Byline test on iOS renders correctly with a single author 1`] =
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="/profile/alexandra-frean"
-  onPress={[Function]}
   style={
     Object {
       "color": "#006699",
@@ -63,7 +61,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/camilla-long"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -91,7 +88,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/mike-atherton"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -119,7 +115,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/alexandra-frean"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -140,7 +135,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/camilla-long"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -168,7 +162,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/mike-atherton"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -196,7 +189,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/alexandra-frean"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -216,7 +208,6 @@ exports[`Article Byline test on iOS renders correctly with styles 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   href="/profile/alexandra-frean"
-  onPress={[Function]}
   style={
     Object {
       "color": "red",
@@ -248,7 +239,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/mike-atherton"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",
@@ -269,7 +259,6 @@ Array [
     allowFontScaling={true}
     ellipsizeMode="tail"
     href="/profile/camilla-long"
-    onPress={[Function]}
     style={
       Object {
         "color": "#006699",

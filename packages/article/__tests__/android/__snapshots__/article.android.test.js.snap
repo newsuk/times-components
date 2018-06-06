@@ -1085,21 +1085,11 @@ exports[`Article tests on android should render a full article 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -1108,16 +1098,13 @@ exports[`Article tests on android should render a full article 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -1139,12 +1126,6 @@ exports[`Article tests on android should render a full article 1`] = `
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -1162,18 +1143,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -1182,12 +1151,6 @@ exports[`Article tests on android should render a full article 1`] = `
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -1230,7 +1193,6 @@ exports[`Article tests on android should render a full article 1`] = `
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -1249,7 +1211,6 @@ exports[`Article tests on android should render a full article 1`] = `
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -1257,7 +1218,6 @@ exports[`Article tests on android should render a full article 1`] = `
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -1348,12 +1308,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -1368,7 +1322,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -1387,7 +1340,6 @@ exports[`Article tests on android should render a full article 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -1395,7 +1347,6 @@ exports[`Article tests on android should render a full article 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -1477,9 +1428,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -1568,9 +1517,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -1626,7 +1573,6 @@ exports[`Article tests on android should render a full article 1`] = `
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -1658,9 +1604,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -1693,7 +1637,6 @@ exports[`Article tests on android should render a full article 1`] = `
             allowFontScaling={true}
             ellipsizeMode="tail"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
-            onPress={[Function]}
             style={
               Object {
                 "color": "#006699",
@@ -1736,9 +1679,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -1757,12 +1698,6 @@ exports[`Article tests on android should render a full article 1`] = `
               "type": "ThemeAttrAndroid",
             }
           }
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "height": 421.875,
@@ -1788,7 +1723,6 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             >
               <Image
-                onLoad={[Function]}
                 source={
                   Object {
                     "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
@@ -1807,7 +1741,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               />
               <View
-                onLayout={[Function]}
                 style={
                   Object {
                     "flex": 1,
@@ -1815,7 +1748,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               >
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -1955,9 +1887,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -1998,9 +1928,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -2019,12 +1947,6 @@ exports[`Article tests on android should render a full article 1`] = `
               "type": "ThemeAttrAndroid",
             }
           }
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "height": 421.875,
@@ -2050,7 +1972,6 @@ exports[`Article tests on android should render a full article 1`] = `
               }
             >
               <Image
-                onLoad={[Function]}
                 source={
                   Object {
                     "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
@@ -2069,7 +1990,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               />
               <View
-                onLayout={[Function]}
                 style={
                   Object {
                     "flex": 1,
@@ -2077,7 +1997,6 @@ exports[`Article tests on android should render a full article 1`] = `
                 }
               >
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -2217,9 +2136,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <ArticleImage
           captionOptions={
@@ -2238,9 +2155,7 @@ exports[`Article tests on android should render a full article 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -2270,9 +2185,7 @@ exports[`Article tests on android should render a full article 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -3025,21 +2938,11 @@ exports[`Article tests on android should render a smaller article 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -3048,16 +2951,13 @@ exports[`Article tests on android should render a smaller article 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -3079,12 +2979,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -3102,18 +2996,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -3122,12 +3004,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -3170,7 +3046,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -3189,7 +3064,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -3197,7 +3071,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -3288,12 +3161,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -3308,7 +3175,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -3327,7 +3193,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -3335,7 +3200,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -3417,9 +3281,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -3508,9 +3370,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -3566,7 +3426,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -3598,9 +3457,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -3633,7 +3490,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             allowFontScaling={true}
             ellipsizeMode="tail"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
-            onPress={[Function]}
             style={
               Object {
                 "color": "#006699",
@@ -3683,9 +3539,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -3697,7 +3551,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
         }
       >
         <ArticleTopics
-          onPress={[Function]}
           topics={
             Array [
               Object {
@@ -3725,11 +3578,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <RelatedArticles
-        analyticsStream={[Function]}
         articles={
           Array [
             Object {
@@ -4277,7 +4127,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             },
           ]
         }
-        onPress={[Function]}
         template="DEFAULT"
       />
     </View>
@@ -4435,21 +4284,11 @@ exports[`Article tests on android should render an article with a video asset 1`
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -4458,9 +4297,7 @@ exports[`Article tests on android should render an article with a video asset 1`
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
@@ -4473,12 +4310,6 @@ exports[`Article tests on android should render an article with a video asset 1`
               "type": "ThemeAttrAndroid",
             }
           }
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "height": 421.875,
@@ -4504,7 +4335,6 @@ exports[`Article tests on android should render an article with a video asset 1`
               }
             >
               <Image
-                onLoad={[Function]}
                 source={
                   Object {
                     "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
@@ -4523,7 +4353,6 @@ exports[`Article tests on android should render an article with a video asset 1`
                 }
               />
               <View
-                onLayout={[Function]}
                 style={
                   Object {
                     "flex": 1,
@@ -4531,7 +4360,6 @@ exports[`Article tests on android should render an article with a video asset 1`
                 }
               >
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -4645,9 +4473,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -4690,9 +4516,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -4748,7 +4572,6 @@ exports[`Article tests on android should render an article with a video asset 1`
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -4780,9 +4603,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -4812,9 +4633,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -4844,9 +4663,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -4876,9 +4693,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View>
         <ArticleImage
           captionOptions={
@@ -4897,9 +4712,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         />
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -4929,9 +4742,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    />
+    <View />
   </View>
 </RCTScrollView>
 `;
@@ -5797,21 +5608,11 @@ exports[`Article tests on android should render an article with no byline 1`] = 
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -5820,16 +5621,13 @@ exports[`Article tests on android should render an article with no byline 1`] = 
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -5851,12 +5649,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -5874,18 +5666,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -5894,12 +5674,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -5942,7 +5716,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -5961,7 +5734,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -5969,7 +5741,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -6060,12 +5831,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -6080,7 +5845,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -6099,7 +5863,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -6107,7 +5870,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -6189,9 +5951,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -6280,9 +6040,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -6325,9 +6083,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -6382,9 +6138,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -6425,9 +6179,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -6457,9 +6209,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -6489,9 +6239,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -6521,9 +6269,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -6553,9 +6299,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -7468,21 +7212,11 @@ exports[`Article tests on android should render an article with no flags 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -7491,16 +7225,13 @@ exports[`Article tests on android should render an article with no flags 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -7522,12 +7253,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -7545,18 +7270,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -7565,12 +7278,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -7613,7 +7320,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -7632,7 +7338,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -7640,7 +7345,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -7731,12 +7435,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -7751,7 +7449,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -7770,7 +7467,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -7778,7 +7474,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -7860,9 +7555,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -7924,9 +7617,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -7982,7 +7673,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -8014,9 +7704,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -8071,9 +7759,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -8114,9 +7800,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -8146,9 +7830,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -8178,9 +7860,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -8210,9 +7890,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -8242,9 +7920,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -9160,21 +8836,11 @@ exports[`Article tests on android should render an article with no label 1`] = `
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -9183,16 +8849,13 @@ exports[`Article tests on android should render an article with no label 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -9214,12 +8877,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -9237,18 +8894,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -9257,12 +8902,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -9305,7 +8944,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -9324,7 +8962,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -9332,7 +8969,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -9423,12 +9059,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -9443,7 +9073,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -9462,7 +9091,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -9470,7 +9098,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -9552,9 +9179,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -9628,9 +9253,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -9686,7 +9309,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -9718,9 +9340,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -9775,9 +9395,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -9818,9 +9436,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -9850,9 +9466,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -9882,9 +9496,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -9914,9 +9526,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -9946,9 +9556,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -10861,21 +10469,11 @@ exports[`Article tests on android should render an article with no label and no 
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -10884,16 +10482,13 @@ exports[`Article tests on android should render an article with no label and no 
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -10915,12 +10510,6 @@ exports[`Article tests on android should render an article with no label and no 
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -10938,18 +10527,6 @@ exports[`Article tests on android should render an article with no label and no 
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -10958,12 +10535,6 @@ exports[`Article tests on android should render an article with no label and no 
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -11006,7 +10577,6 @@ exports[`Article tests on android should render an article with no label and no 
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -11025,7 +10595,6 @@ exports[`Article tests on android should render an article with no label and no 
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -11033,7 +10602,6 @@ exports[`Article tests on android should render an article with no label and no 
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -11124,12 +10692,6 @@ exports[`Article tests on android should render an article with no label and no 
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -11144,7 +10706,6 @@ exports[`Article tests on android should render an article with no label and no 
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -11163,7 +10724,6 @@ exports[`Article tests on android should render an article with no label and no 
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -11171,7 +10731,6 @@ exports[`Article tests on android should render an article with no label and no 
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -11253,9 +10812,7 @@ exports[`Article tests on android should render an article with no label and no 
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -11302,9 +10859,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -11360,7 +10915,6 @@ exports[`Article tests on android should render an article with no label and no 
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -11392,9 +10946,7 @@ exports[`Article tests on android should render an article with no label and no 
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -11449,9 +11001,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -11492,9 +11042,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -11524,9 +11072,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -11556,9 +11102,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -11588,9 +11132,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -11620,9 +11162,7 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -12535,21 +12075,11 @@ exports[`Article tests on android should render an article with no label, no fla
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -12558,16 +12088,13 @@ exports[`Article tests on android should render an article with no label, no fla
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -12589,12 +12116,6 @@ exports[`Article tests on android should render an article with no label, no fla
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -12612,18 +12133,6 @@ exports[`Article tests on android should render an article with no label, no fla
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -12632,12 +12141,6 @@ exports[`Article tests on android should render an article with no label, no fla
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -12680,7 +12183,6 @@ exports[`Article tests on android should render an article with no label, no fla
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -12699,7 +12201,6 @@ exports[`Article tests on android should render an article with no label, no fla
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -12707,7 +12208,6 @@ exports[`Article tests on android should render an article with no label, no fla
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -12798,12 +12298,6 @@ exports[`Article tests on android should render an article with no label, no fla
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -12818,7 +12312,6 @@ exports[`Article tests on android should render an article with no label, no fla
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -12837,7 +12330,6 @@ exports[`Article tests on android should render an article with no label, no fla
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -12845,7 +12337,6 @@ exports[`Article tests on android should render an article with no label, no fla
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -12927,9 +12418,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -12957,9 +12446,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -13015,7 +12502,6 @@ exports[`Article tests on android should render an article with no label, no fla
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -13047,9 +12533,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -13104,9 +12588,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -13147,9 +12629,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -13179,9 +12659,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -13211,9 +12689,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -13243,9 +12719,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -13275,9 +12749,7 @@ exports[`Article tests on android should render an article with no label, no fla
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -14193,21 +13665,11 @@ exports[`Article tests on android should render an article with no standfirst 1`
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -14216,16 +13678,13 @@ exports[`Article tests on android should render an article with no standfirst 1`
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -14247,12 +13706,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -14270,18 +13723,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -14290,12 +13731,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -14338,7 +13773,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -14357,7 +13791,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -14365,7 +13798,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -14456,12 +13888,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -14476,7 +13902,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -14495,7 +13920,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -14503,7 +13927,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -14585,9 +14008,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -14657,9 +14078,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -14715,7 +14134,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -14747,9 +14165,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -14804,9 +14220,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -14847,9 +14261,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -14879,9 +14291,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -14911,9 +14321,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -14943,9 +14351,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -14975,9 +14381,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -15890,21 +15294,11 @@ exports[`Article tests on android should render an article with no standfirst an
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -15913,16 +15307,13 @@ exports[`Article tests on android should render an article with no standfirst an
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -15944,12 +15335,6 @@ exports[`Article tests on android should render an article with no standfirst an
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -15967,18 +15352,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -15987,12 +15360,6 @@ exports[`Article tests on android should render an article with no standfirst an
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -16035,7 +15402,6 @@ exports[`Article tests on android should render an article with no standfirst an
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -16054,7 +15420,6 @@ exports[`Article tests on android should render an article with no standfirst an
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -16062,7 +15427,6 @@ exports[`Article tests on android should render an article with no standfirst an
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -16153,12 +15517,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -16173,7 +15531,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -16192,7 +15549,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -16200,7 +15556,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -16282,9 +15637,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -16327,9 +15680,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -16385,7 +15736,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -16417,9 +15767,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -16474,9 +15822,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -16517,9 +15863,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -16549,9 +15893,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -16581,9 +15923,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -16613,9 +15953,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -16645,9 +15983,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={
@@ -17563,21 +16899,11 @@ exports[`Article tests on android should render an article with no standfirst an
     ]
   }
   disableVirtualization={false}
-  getItem={[Function]}
-  getItemCount={[Function]}
   horizontal={false}
   initialNumToRender={10}
-  keyExtractor={[Function]}
   maxToRenderPerBatch={10}
   numColumns={1}
-  onContentSizeChange={[Function]}
   onEndReachedThreshold={2}
-  onLayout={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
   testID="flat-list-article"
@@ -17586,16 +16912,13 @@ exports[`Article tests on android should render an article with no standfirst an
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         testID="leadAsset"
       >
         <View>
           <Modal
             hardwareAccelerated={false}
-            onRequestClose={[Function]}
             presentationStyle="fullScreen"
             visible={false}
           >
@@ -17617,12 +16940,6 @@ exports[`Article tests on android should render an article with no standfirst an
                     "type": "ThemeAttrAndroid",
                   }
                 }
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 pointerEvents="box-only"
               >
                 <svg
@@ -17640,18 +16957,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 </svg>
               </View>
               <View
-                onMoveShouldSetResponder={[Function]}
-                onMoveShouldSetResponderCapture={[Function]}
-                onResponderEnd={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderReject={[Function]}
-                onResponderRelease={[Function]}
-                onResponderStart={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                onStartShouldSetResponderCapture={[Function]}
                 style={
                   Object {
                     "flexGrow": 1,
@@ -17660,12 +16965,6 @@ exports[`Article tests on android should render an article with no standfirst an
               >
                 <View
                   accessible={true}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -17708,7 +17007,6 @@ exports[`Article tests on android should render an article with no standfirst an
                         }
                       >
                         <Image
-                          onLoad={[Function]}
                           source={
                             Object {
                               "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -17727,7 +17025,6 @@ exports[`Article tests on android should render an article with no standfirst an
                           }
                         />
                         <View
-                          onLayout={[Function]}
                           style={
                             Object {
                               "flex": 1,
@@ -17735,7 +17032,6 @@ exports[`Article tests on android should render an article with no standfirst an
                           }
                         >
                           <View
-                            onLayout={[Function]}
                             style={
                               Object {
                                 "flex": 1,
@@ -17826,12 +17122,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <View
@@ -17846,7 +17136,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <Image
-                  onLoad={[Function]}
                   source={
                     Object {
                       "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
@@ -17865,7 +17154,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   }
                 />
                 <View
-                  onLayout={[Function]}
                   style={
                     Object {
                       "flex": 1,
@@ -17873,7 +17161,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   }
                 >
                   <View
-                    onLayout={[Function]}
                     style={
                       Object {
                         "flex": 1,
@@ -17955,9 +17242,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -18012,9 +17297,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Object {
@@ -18070,7 +17353,6 @@ exports[`Article tests on android should render an article with no standfirst an
                   },
                 ]
               }
-              onAuthorPress={[Function]}
             />
           </Text>
         </View>
@@ -18102,9 +17384,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </View>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-0"
         style={
@@ -18159,9 +17439,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-1"
         style={
@@ -18202,9 +17480,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-2"
         style={
@@ -18234,9 +17510,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-3"
         style={
@@ -18266,9 +17540,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-4"
         style={
@@ -18298,9 +17570,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-5"
         style={
@@ -18330,9 +17600,7 @@ exports[`Article tests on android should render an article with no standfirst an
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         accessibilityLabel="paragraph-6"
         style={

@@ -252,7 +252,6 @@ exports[`3. Renders with a twitter handle 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
         href="https://twitter.com/@henrywinter"
-        onPress={[Function]}
         style={
           Object {
             "color": "#006699",

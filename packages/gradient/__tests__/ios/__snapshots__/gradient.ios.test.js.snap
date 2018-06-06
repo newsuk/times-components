@@ -2,7 +2,6 @@
 
 exports[`Gradient tests on iOS renders a Gradient 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -81,7 +80,6 @@ exports[`Gradient tests on iOS renders a Gradient 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -162,7 +160,6 @@ exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = 
 
 exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -243,7 +240,6 @@ exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient using stylesheets 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -325,7 +321,6 @@ exports[`Gradient tests on iOS renders a Gradient using stylesheets 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (-45) 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -404,7 +399,6 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (-45) 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (45) 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -483,7 +477,6 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (45) 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (90) 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -562,7 +555,6 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (90) 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (180) 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -641,7 +633,6 @@ exports[`Gradient tests on iOS renders a Gradient with an angle (180) 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient with an angle (270) 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
