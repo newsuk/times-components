@@ -4,6 +4,7 @@ import { shallow } from "enzyme";
 import ArticleList from "../src/article-list";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
+import ArticleListError from "../src/article-list-error";
 import ArticleListPageError from "../src/article-list-page-error";
 import {
   longSummary,
@@ -50,6 +51,12 @@ export default () => {
 
   afterEach(() => {
     global.Intl = realIntl;
+  });
+
+  it("should render the article list error content correctly", () => {
+    const wrapper = shallow(<ArticleListError />);
+
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("should render an article list page error correctly", () => {

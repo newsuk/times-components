@@ -2374,6 +2374,43 @@ exports[`ArticleList tests on android should render an article list that is load
 </RCTScrollView>
 `;
 
+exports[`ArticleList tests on android should render the article list error content correctly 1`] = `
+<React.Fragment>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 26,
+        "marginBottom": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    Something's gone wrong
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesDigitalW04-Regular",
+        "fontSize": 15,
+        "textAlign": "center",
+      }
+    }
+  >
+    We can't load the page you have requested. Please check your network connection and retry to continue
+  </Text>
+</React.Fragment>
+`;
+
 exports[`ArticleList tests on android should render the article list item separator keyline correctly 1`] = `
 <View
   style={

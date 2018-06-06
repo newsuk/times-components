@@ -7,7 +7,8 @@ import {
   ListItemLongText,
   ListItemShortText,
   PageErrorContainer,
-  PageErrorImageContainer
+  PageErrorImageContainer,
+  PageErrorContentContainer
 } from "../../src/styles/responsive";
 
 describe("ArticleList responsive tests on web", () => {
@@ -36,6 +37,12 @@ describe("ArticleList responsive tests on web", () => {
   it("should render PageErrorImageContainer correctly", () => {
     expect(
       renderer.create(<PageErrorImageContainer />).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("should render PageErrorContentContainer correctly", () => {
+    expect(
+      renderer.create(<PageErrorContentContainer />).toJSON()
     ).toMatchSnapshot();
   });
 });

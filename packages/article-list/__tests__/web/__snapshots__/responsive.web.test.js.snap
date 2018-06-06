@@ -30,6 +30,12 @@ exports[`ArticleList responsive tests on web should render PageErrorContainer co
 />
 `;
 
+exports[`ArticleList responsive tests on web should render PageErrorContentContainer correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ kHDyWV"
+/>
+`;
+
 exports[`ArticleList responsive tests on web should render PageErrorImageContainer correctly 1`] = `
 <div
   className="responsive-styles__component-fbPFZZ Xuekk"
