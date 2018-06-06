@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -60,8 +60,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-list": "1.4.1",
-    "@times-components/gradient": "0.13.6",
+    "@times-components/article-list": "1.4.2",
+    "@times-components/gradient": "0.13.7",
     "@times-components/pagination": "0.21.6",
     "@times-components/provider": "0.34.3",
     "@times-components/responsive-styles": "0.9.6",

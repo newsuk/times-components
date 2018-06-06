@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.4.1...@times-components/article-list@1.4.2) (2018-06-06)
+
+
+### Bug Fixes
+
+* image component warnings on native for empty source.uri props ([#991](https://github.com/newsuk/times-components/issues/991)) ([1feefc2](https://github.com/newsuk/times-components/commit/1feefc2))
+
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.4.0...@times-components/article-list@1.4.1) (2018-06-05)
 
