@@ -92,6 +92,7 @@ const RelatedArticleItem = ({
             color: colours.section[section] || colours.section.default,
             title: label
           }}
+          renderBylineLinks
         />
       </Card>
     </Link>
