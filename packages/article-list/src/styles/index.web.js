@@ -15,8 +15,7 @@ const styles = StyleSheet.create({
     marginTop: spacing(4)
   },
   listErrorMessage: {
-    ...sharedStyles.listErrorMessage,
-    top: 0
+    ...sharedStyles.listErrorMessage
   },
   listContentContainer: {
     width: "100%"

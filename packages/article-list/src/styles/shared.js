@@ -12,31 +12,34 @@ const styles = {
     justifyContent: "center"
   },
   paginationSpacing: {
-    flex: 1,
     maxWidth: 800
   },
   listErrorContainer: {
-    alignItems: "center",
-    flex: 1,
-    maxWidth: 548,
-    paddingLeft: spacing(1),
-    paddingRight: spacing(1)
+    height: "100%",
+    justifyContent: "space-between",
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
+  },
+  pageErrorImageContainer: {
+    alignSelf: "center",
+    marginBottom: spacing(4),
+    marginTop: spacing(4)
   },
   listErrorHeading: {
     alignSelf: "center",
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
     fontSize: fontSizes.leadHeadline,
-    marginTop: spacing(4),
+    marginBottom: 10,
     textAlign: "center"
   },
   listErrorMessage: {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,
-    fontSize: fontSizes.body,
-    position: "relative",
-    textAlign: "center",
-    top: -spacing(4)
+    fontSize: fontSizes.infoSubText,
+    textAlign: "center"
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,

@@ -57,7 +57,10 @@ class ArticleList extends Component {
       return (
         <View style={styles.listErrorContainer}>
           {articleListHeader}
-          <ArticleListError refetch={refetch} />
+          <View>
+            <ArticleListError />
+          </View>
+          <Button onPress={refetch} style={styles.retryButton} title="Retry" />
         </View>
       );
     }
