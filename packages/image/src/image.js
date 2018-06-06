@@ -35,25 +35,23 @@ class TimesImage extends Component {
       onLoad: this.handleLoad
     };
 
-    const regExImageDataUrl = new RegExp("data:", "gi");
-    const isDataImageUrl = regExImageDataUrl.test(uri);
+    const isDataImageUrl = uri.indexOf("data:") > -1;
 
-    if (cleanUri && width > 0 && !isDataImageUrl) {
+    if (isDataImageUrl) {
+      props.source = {
+        uri: cleanUri
+      };
+    } else if (cleanUri && width > 0) {
       const regExResize = new RegExp("([?&])resize", "gi");
       const hasResizeParameter = regExResize.test(cleanUri);
 
-      const regExQueryString = new RegExp("[?]", "gi");
-      const hasQueryString = regExQueryString.test(cleanUri);
+      const hasQueryString = cleanUri.indexOf("?") > -1;
       const delimiter = hasQueryString ? "&" : "?";
 
       props.source = {
         uri: hasResizeParameter
           ? cleanUri
           : `${cleanUri}${delimiter}resize=${width}`
-      };
-    } else {
-      props.source = {
-        uri: cleanUri
       };
     }
 

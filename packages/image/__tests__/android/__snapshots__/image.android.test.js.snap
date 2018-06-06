@@ -29,11 +29,6 @@ exports[`2. Renders default layout without uri 1`] = `
 >
   <ImageBackground
     onLoad={[Function]}
-    source={
-      Object {
-        "uri": "",
-      }
-    }
     style={
       Object {
         "height": "100%",

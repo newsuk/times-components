@@ -1289,11 +1289,6 @@ exports[`ArticleList tests on ios should render an article list item loading sta
         >
           <Image
             onLoad={[Function]}
-            source={
-              Object {
-                "uri": "",
-              }
-            }
             style={
               Object {
                 "bottom": 0,
@@ -2030,11 +2025,6 @@ exports[`ArticleList tests on ios should render an article list that is loading 
               >
                 <Image
                   onLoad={[Function]}
-                  source={
-                    Object {
-                      "uri": "",
-                    }
-                  }
                   style={
                     Object {
                       "bottom": 0,
