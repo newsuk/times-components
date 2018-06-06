@@ -1,8 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import {
-  ArticleByline,
+import ArticleByline, {
   ArticleBylineWithLinks,
   articleBylinePropTypes
 } from "@times-components/article-byline";
@@ -28,7 +27,7 @@ const ArticleSummary = props => {
     datePublicationProps,
     headline,
     labelProps,
-    renderBylineLinks
+    hasBylineLinks
   } = props;
 
   const renderByline = () => {
@@ -41,7 +40,7 @@ const ArticleSummary = props => {
           bylineProps.bylineStyle
         ]}
       >
-        {renderBylineLinks ? (
+        {hasBylineLinks ? (
           <ArticleBylineWithLinks {...bylineProps} />
         ) : (
           <ArticleByline {...bylineProps} />
@@ -92,7 +91,7 @@ ArticleSummary.propTypes = {
     publication: PropTypes.string
   }),
   isOpinionByline: PropTypes.bool,
-  renderBylineLinks: PropTypes.bool
+  hasBylineLinks: PropTypes.bool
 };
 
 ArticleSummary.defaultProps = {
@@ -102,7 +101,7 @@ ArticleSummary.defaultProps = {
   labelProps: null,
   datePublicationProps: null,
   isOpinionByline: false,
-  renderBylineLinks: false
+  hasBylineLinks: false
 };
 
 export {

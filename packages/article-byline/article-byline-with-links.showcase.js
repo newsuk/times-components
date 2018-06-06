@@ -3,7 +3,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import ArticleByline from "./src/article-byline";
+import { ArticleBylineWithLinks } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
@@ -39,14 +39,14 @@ const getCommonProps = (selectV2, decorateAction) => ({
 });
 
 export default {
-  name: "Primitives/Article Byline",
+  name: "Primitives/Article Byline With Links",
   children: [
     {
       type: "story",
       name: "Article Byline with a single author",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.singleAuthor}
             {...getCommonProps(selectV2, decorateAction)}
           />
@@ -58,7 +58,7 @@ export default {
       name: "Article Byline with a text only element",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.singleInlineElement}
             {...getCommonProps(selectV2, decorateAction)}
           />
@@ -70,7 +70,7 @@ export default {
       name: "Article Byline with multiple authors",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.multipleAuthorsCommaSeparated}
             {...getCommonProps(selectV2, decorateAction)}
           />
@@ -82,7 +82,7 @@ export default {
       name: "Article Byline with author in the beginning",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.authorInTheBeginning}
             {...getCommonProps(selectV2, decorateAction)}
           />
@@ -94,7 +94,7 @@ export default {
       name: "Article Byline with author at the end",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.authorAtTheEnd}
             {...getCommonProps(selectV2, decorateAction)}
           />
@@ -106,7 +106,7 @@ export default {
       name: "Article Byline with styles",
       component: ({ selectV2 }, { decorateAction }) => (
         <Text style={bylineStyles}>
-          <ArticleByline
+          <ArticleBylineWithLinks
             ast={authorsAST.multipleAuthorsCommaSeparated}
             style={bylineLinkStyles}
             {...getCommonProps(selectV2, decorateAction)}

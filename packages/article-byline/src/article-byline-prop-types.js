@@ -7,11 +7,13 @@ export const articleBylinePropTypes = {
   onAuthorPress: PropTypes.func,
   style: PropTypes.shape({
     link: Text.propTypes.style
-  })
+  }),
+  color: PropTypes.string
 };
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
   onAuthorPress: () => null,
-  style: {}
+  style: {},
+  color: ""
 };
