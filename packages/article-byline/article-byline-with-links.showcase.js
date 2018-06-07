@@ -31,9 +31,6 @@ const bylineLinkStyles = {
 };
 
 const getProps = (selectV2, decorateAction) => ({
-  /* We're using selectV2 over our own select abstraction as
-   * it flips the keys and values. We don't want that behaviour.
-   */
   color: selectV2("Section colours", colours.section),
   onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress")
 });
