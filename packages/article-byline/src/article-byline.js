@@ -20,5 +20,5 @@ const ArticleByline = ({ ast, style, color }) => {
 ArticleByline.propTypes = articleBylinePropTypes;
 ArticleByline.defaultProps = articleBylineDefaultPropTypes;
 
-export default ArticleByline;
 export { default as ArticleBylineWithLinks } from "./article-byline-with-links";
+export default ArticleByline;

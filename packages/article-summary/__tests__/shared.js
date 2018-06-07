@@ -6,7 +6,7 @@ import ArticleSummary, {
   renderAst
 } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
-import withLinksFixture from "../fixtures/with-links";
+import withSummaryLinksFixture from "../fixtures/with-summary-links";
 import opinionBylineFixture from "../fixtures/opinion-byline";
 import articleMultiFixture from "../fixtures/article-multi";
 import emptyParagraphFixture from "../fixtures/article-empty-paragraph";
@@ -67,7 +67,7 @@ export default () => {
 
   it("should render an article-summary component containing links", () => {
     const tree = renderer
-      .create(<ArticleSummary {...withLinksFixture} />)
+      .create(<ArticleSummary {...withSummaryLinksFixture} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

@@ -26,8 +26,7 @@ const ArticleSummary = props => {
     content,
     datePublicationProps,
     headline,
-    labelProps,
-    hasBylineLinks
+    labelProps
   } = props;
 
   const renderByline = () => {
@@ -40,7 +39,7 @@ const ArticleSummary = props => {
           bylineProps.bylineStyle
         ]}
       >
-        {hasBylineLinks ? (
+        {bylineProps.hasBylineLinks ? (
           <ArticleBylineWithLinks {...bylineProps} />
         ) : (
           <ArticleByline {...bylineProps} />
@@ -84,14 +83,14 @@ ArticleSummary.propTypes = {
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
     bylineStyle: TextPropTypesStyle,
-    isOpinionByline: PropTypes.bool
+    isOpinionByline: PropTypes.bool,
+    hasBylineLinks: PropTypes.bool
   }),
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
     publication: PropTypes.string
   }),
-  isOpinionByline: PropTypes.bool,
-  hasBylineLinks: PropTypes.bool
+  isOpinionByline: PropTypes.bool
 };
 
 ArticleSummary.defaultProps = {
@@ -100,8 +99,7 @@ ArticleSummary.defaultProps = {
   bylineProps: null,
   labelProps: null,
   datePublicationProps: null,
-  isOpinionByline: false,
-  hasBylineLinks: false
+  isOpinionByline: false
 };
 
 export {

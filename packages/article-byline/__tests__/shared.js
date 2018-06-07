@@ -80,7 +80,10 @@ module.exports = () => {
   it("renders correctly with byline link", () => {
     const tree = renderer
       .create(
-        <ArticleBylineWithLinks ast={authorsAST.singleAuthor} />
+        <ArticleBylineWithLinks
+          ast={authorsAST.singleAuthor}
+          onAuthorPress={() => {}}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
