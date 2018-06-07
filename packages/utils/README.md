@@ -7,5 +7,4 @@ This package contains shared utilities for other packages, such as string utils,
 In order to fetch the latest graphql schema, follow these steps:
 
 1. `export GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql` (Omit this step to use local server instead)
-2. `cd packages/utils`
-3. `yarn make-schema`
+2. `yarn make-schema`
