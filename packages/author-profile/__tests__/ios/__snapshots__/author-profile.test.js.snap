@@ -3946,10 +3946,21 @@ exports[`4. Render an author profile page error state 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
+<<<<<<< HEAD
           "color": "#FFF",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 16,
           "paddingTop": 5,
+=======
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#006699",
+          "borderRadius": 2,
+          "height": 45,
+          "justifyContent": "center",
+          "minWidth": 100,
+          "width": "100%",
+>>>>>>> feat: add button onPress styles
         }
       }
       title="Retry"
