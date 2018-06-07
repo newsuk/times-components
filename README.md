@@ -70,7 +70,7 @@ when trying to use a broken font.
 
 ### Schema
 
-See [packages/utils/README.md] on how to update the schema
+See [utils package](packages/utils/README.md) on how to update the schema
 
 ## Debugging
 
