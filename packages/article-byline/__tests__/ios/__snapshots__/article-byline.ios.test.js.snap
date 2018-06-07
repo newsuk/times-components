@@ -47,6 +47,24 @@ exports[`Article Byline test on iOS renders correctly with a single inline eleme
 
 exports[`Article Byline test on iOS renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
 
+exports[`Article Byline test on iOS renders correctly with byline link 1`] = `
+<Text
+  accessibilityRole="link"
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  href="/profile/alexandra-frean"
+  style={
+    Object {
+      "color": "#006699",
+      "textDecorationLine": "underline",
+    }
+  }
+>
+  Alexandra Frean
+</Text>
+`;
+
 exports[`Article Byline test on iOS renders correctly with multiple authors separated by spaces 1`] = `
 Array [
   <Text

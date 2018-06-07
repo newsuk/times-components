@@ -31,6 +31,16 @@ exports[`Article Byline test on web renders correctly with a single inline eleme
 
 exports[`Article Byline test on web renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
 
+exports[`Article Byline test on web renders correctly with byline link 1`] = `
+<a
+  dir="auto"
+  href="/profile/alexandra-frean"
+  role="link"
+>
+  Alexandra Frean
+</a>
+`;
+
 exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 1`] = `
 Array [
   <div

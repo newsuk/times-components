@@ -2,7 +2,7 @@ import "raf/polyfill";
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import ArticleByline from "../src/article-byline";
+import ArticleByline, { ArticleBylineWithLinks } from "../src/article-byline";
 
 const authorsAST = require("../fixtures/authors.json");
 
@@ -72,6 +72,15 @@ module.exports = () => {
     const tree = renderer
       .create(
         <ArticleByline ast={authorsAST.singleAuthor} style={bylineStyles} />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders correctly with byline link", () => {
+    const tree = renderer
+      .create(
+        <ArticleBylineWithLinks ast={authorsAST.singleAuthor} />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
