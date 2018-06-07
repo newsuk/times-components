@@ -3944,7 +3944,6 @@ exports[`4. Render an author profile page error state 1`] = `
         "height": 36,
         "justifyContent": "center",
         "minWidth": 100,
-        "opacity": 1,
         "shadowColor": "#000000",
         "shadowOffset": Object {
           "height": 3,
@@ -3962,29 +3961,10 @@ exports[`4. Render an author profile page error state 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-<<<<<<< HEAD
           "color": "#FFFFFF",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 14,
           "paddingTop": 0,
-=======
-          "alignItems": "center",
-          "alignSelf": "center",
-          "backgroundColor": "#006699",
-          "borderRadius": 4,
-          "elevation": 3,
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 100,
-          "shadowColor": "#000000",
-          "shadowOffset": Object {
-            "height": 3,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 5,
-          "width": "100%",
->>>>>>> feat: add button onPress styles
         }
       }
       title="R E T R Y"
