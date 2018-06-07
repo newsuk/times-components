@@ -68,6 +68,10 @@ requires that [fontforge](http://fontforge.github.io/en-US/) is installed,
 otherwise the fix won't be applied and you'll get the classic red error screen
 when trying to use a broken font.
 
+### Schema
+
+See [utils package](packages/utils/README.md) on how to update the schema
+
 ## Debugging
 
 The components in this project can be debugged through your browser's developer
