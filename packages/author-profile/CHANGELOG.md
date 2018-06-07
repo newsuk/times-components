@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.5.2...@times-components/author-profile@1.6.0) (2018-06-07)
+
+
+### Bug Fixes
+
+* article list page layout ([#995](https://github.com/newsuk/times-components/issues/995)) ([a763150](https://github.com/newsuk/times-components/commit/a763150))
+
+
+### Features
+
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+
+
+
+
 <a name="1.5.2"></a>
 ## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.5.1...@times-components/author-profile@1.5.2) (2018-06-06)
 

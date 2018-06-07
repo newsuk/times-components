@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.10.0...@times-components/styleguide@0.10.1) (2018-06-07)
+
+
+### Bug Fixes
+
+* article list page layout ([#995](https://github.com/newsuk/times-components/issues/995)) ([a763150](https://github.com/newsuk/times-components/commit/a763150))
+
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.5...@times-components/styleguide@0.10.0) (2018-06-04)
 

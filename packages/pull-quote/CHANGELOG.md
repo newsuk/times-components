@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.8.6...@times-components/pull-quote@0.9.0) (2018-06-07)
+
+
+### Features
+
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+
+
+
+
 <a name="0.8.6"></a>
 ## [0.8.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.8.5...@times-components/pull-quote@0.8.6) (2018-06-04)
 

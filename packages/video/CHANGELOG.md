@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/video@1.4.7...@times-components/video@1.5.0) (2018-06-07)
+
+
+### Features
+
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+
+
+
+
 <a name="1.4.7"></a>
 ## [1.4.7](https://github.com/newsuk/times-components/compare/@times-components/video@1.4.6...@times-components/video@1.4.7) (2018-06-06)
 
