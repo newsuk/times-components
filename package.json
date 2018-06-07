@@ -139,7 +139,7 @@
     "prop-types": "15.6.0",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.55.0",
+    "react-native": "0.55.4",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.5.1",
     "rimraf": "2.6.1",
