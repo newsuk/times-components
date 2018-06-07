@@ -68,6 +68,14 @@ requires that [fontforge](http://fontforge.github.io/en-US/) is installed,
 otherwise the fix won't be applied and you'll get the classic red error screen
 when trying to use a broken font.
 
+### Schema
+
+In order to fetch the latest graphql schema, follow these steps:
+
+1. `export GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql` (Omit this step to use local server instead)
+2. `cd packages/utils`
+3. `yarn make-schema`
+
 ## Debugging
 
 The components in this project can be debugged through your browser's developer
