@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
-import transformTitle from "../utils";
+import transformTitle from "./utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 
