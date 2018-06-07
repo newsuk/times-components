@@ -30,7 +30,7 @@ const bylineLinkStyles = {
   }
 };
 
-const getCommonProps = (selectV2, decorateAction) => ({
+const getProps = (selectV2, decorateAction) => ({
   /* We're using selectV2 over our own select abstraction as
    * it flips the keys and values. We don't want that behaviour.
    */
@@ -48,7 +48,7 @@ export default {
         <Text style={bylineStyles}>
           <ArticleBylineWithLinks
             ast={authorsAST.singleAuthor}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
@@ -60,7 +60,7 @@ export default {
         <Text style={bylineStyles}>
           <ArticleBylineWithLinks
             ast={authorsAST.singleInlineElement}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
@@ -72,7 +72,7 @@ export default {
         <Text style={bylineStyles}>
           <ArticleBylineWithLinks
             ast={authorsAST.multipleAuthorsCommaSeparated}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
@@ -84,7 +84,7 @@ export default {
         <Text style={bylineStyles}>
           <ArticleBylineWithLinks
             ast={authorsAST.authorInTheBeginning}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
@@ -96,7 +96,7 @@ export default {
         <Text style={bylineStyles}>
           <ArticleBylineWithLinks
             ast={authorsAST.authorAtTheEnd}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
@@ -109,7 +109,7 @@ export default {
           <ArticleBylineWithLinks
             ast={authorsAST.multipleAuthorsCommaSeparated}
             style={bylineLinkStyles}
-            {...getCommonProps(selectV2, decorateAction)}
+            {...getProps(selectV2, decorateAction)}
           />
         </Text>
       )
