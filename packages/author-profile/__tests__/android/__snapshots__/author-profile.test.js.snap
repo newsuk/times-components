@@ -3867,21 +3867,16 @@ exports[`4. Render an author profile page error state 1`] = `
 <View
   style={
     Object {
-      "flex": 1,
-      "margin": 10,
+      "height": "100%",
+      "justifyContent": "space-between",
+      "marginLeft": 10,
+      "marginRight": 10,
+      "paddingBottom": 10,
+      "paddingTop": 10,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "marginBottom": 20,
-        "marginTop": 20,
-        "width": "60%",
-      }
-    }
-  >
+  <View>
     <Image
       accessibilityLabel="Server error"
       accessible={true}
@@ -3893,21 +3888,14 @@ exports[`4. Render an author profile page error state 1`] = `
       }
       style={
         Object {
+          "alignSelf": "center",
           "height": 270,
-          "width": 250,
+          "marginBottom": 20,
+          "marginTop": 20,
+          "width": 240,
         }
       }
     />
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "justifyContent": "space-between",
-        "margin": 15,
-      }
-    }
-  >
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -3917,9 +3905,8 @@ exports[`4. Render an author profile page error state 1`] = `
           "alignSelf": "center",
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 35,
+          "fontSize": 26,
           "marginBottom": 10,
-          "marginTop": 20,
           "textAlign": "center",
         }
       }
@@ -3934,58 +3921,57 @@ exports[`4. Render an author profile page error state 1`] = `
         Object {
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 18,
+          "fontSize": 15,
           "textAlign": "center",
         }
       }
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
-    <View
-      accessibilityComponentType="button"
-      accessibilityLabel="R E T R Y"
-      accessibilityTraits="button"
+  </View>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="R E T R Y"
+    accessibilityTraits="button"
+    accessible={true}
+    isTVSelectable={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#006699",
+        "borderRadius": 4,
+        "elevation": 3,
+        "height": 36,
+        "justifyContent": "center",
+        "minWidth": 100,
+        "opacity": 1,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 3,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 5,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
       accessible={true}
-      isTVSelectable={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
       style={
         Object {
-          "alignItems": "center",
-          "alignSelf": "center",
-          "backgroundColor": "#006699",
-          "borderRadius": 4,
-          "elevation": 3,
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 100,
-          "opacity": 1,
-          "shadowColor": "#000000",
-          "shadowOffset": Object {
-            "height": 3,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 5,
-          "width": "100%",
+          "color": "#FFFFFF",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 14,
+          "paddingTop": 0,
         }
       }
+      title="R E T R Y"
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 14,
-            "paddingTop": 0,
-          }
-        }
-        title="R E T R Y"
-      >
-        R E T R Y
-      </Text>
-    </View>
+      R E T R Y
+    </Text>
   </View>
 </View>
 `;

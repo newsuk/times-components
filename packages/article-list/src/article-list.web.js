@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
+import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -146,7 +147,8 @@ class ArticleList extends Component {
             styles.listContentErrorContainer
           ]}
         >
-          <ArticleListError refetch={refetch} />
+          <ArticleListError />
+          <Button onPress={refetch} style={styles.retryButton} title="Retry" />
         </View>
       </ListContentContainer>
     );

@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import {
   colours,
   fonts,
@@ -6,31 +5,36 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
+const styles = {
+  loadingContainer: {
+    paddingVertical: spacing(5)
+  },
   paginationContainer: {
     alignItems: "stretch",
     flexDirection: "row",
     justifyContent: "center"
   },
   paginationSpacing: {
-    flex: 1,
     maxWidth: 800
   },
-  listContentContainer: {
-    width: "100%"
+  listItemContainer: {
+    paddingBottom: spacing(3),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
+    paddingTop: spacing(3)
+  },
+  listItemSeparatorContainer: {
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1
   },
-  retryButton: {
+  showMoreRetryContainer: {
     alignSelf: "center",
-    marginBottom: spacing(2),
-    marginTop: spacing(8)
-  },
-  listContentErrorContainer: {
-    flex: 1,
-    margin: spacing(3)
+    padding: spacing(5),
+    width: "100%"
   },
   listErrorContainer: {
     height: "100%",
@@ -40,13 +44,17 @@ const styles = StyleSheet.create({
     paddingTop: spacing(2),
     paddingBottom: spacing(2)
   },
+  listErrorImageContainer: {
+    alignSelf: "center",
+    marginBottom: spacing(4),
+    marginTop: spacing(4)
+  },
   listErrorHeading: {
     alignSelf: "center",
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
     fontSize: fontSizes.leadHeadline,
-    marginBottom: spacing(2),
-    marginTop: spacing(4),
+    marginBottom: 10,
     textAlign: "center"
   },
   listErrorMessage: {
@@ -55,6 +63,6 @@ const styles = StyleSheet.create({
     fontSize: fontSizes.infoSubText,
     textAlign: "center"
   }
-});
+};
 
 export default styles;

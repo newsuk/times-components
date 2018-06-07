@@ -1630,32 +1630,8 @@ exports[`3. Render an author profile page loading state 1`] = `
 
 exports[`4. Render an author profile page error state 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ hcvmyw"
+  className="responsive-styles__component-fbPFZZ NudQU"
 >
-  <div>
-    <div
-      dir="auto"
-    >
-      Something's gone wrong
-    </div>
-    <div
-      dir="auto"
-    >
-      We can't load the page you have requested. Please check your network connection and retry to continue
-    </div>
-    <div
-      aria-label="Retry"
-      role="button"
-      tabIndex="0"
-    >
-      <div
-        dir="auto"
-        title="Retry"
-      >
-        Retry
-      </div>
-    </div>
-  </div>
   <div
     className="responsive-styles__component-fbPFZZ Xuekk"
   >
@@ -1700,6 +1676,32 @@ exports[`4. Render an author profile page error state 1`] = `
             }
           />
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ kHDyWV"
+  >
+    <div
+      dir="auto"
+    >
+      Something's gone wrong
+    </div>
+    <div
+      dir="auto"
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </div>
+    <div
+      aria-label="Retry"
+      role="button"
+      tabIndex="0"
+    >
+      <div
+        dir="auto"
+        title="Retry"
+      >
+        Retry
       </div>
     </div>
   </div>

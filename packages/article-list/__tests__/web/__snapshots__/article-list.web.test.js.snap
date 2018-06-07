@@ -837,53 +837,27 @@ exports[`ArticleList tests on web should render an article list item without ima
 `;
 
 exports[`ArticleList tests on web should render an article list page error correctly 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexBasis": "50%",
-      "maxWidth": 548,
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "alignSelf": "center",
-        "color": "#1D1D1B",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 35,
-        "marginBottom": "10px",
-        "marginTop": "20px",
-        "textAlign": "center",
+<PageErrorContainer>
+  <PageErrorImageContainer>
+    <TimesImage
+      aspectRatio={0.9090909090909091}
+      uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+    />
+  </PageErrorImageContainer>
+  <PageErrorContentContainer>
+    <ArticleListError />
+    <Button
+      style={
+        Object {
+          "alignSelf": "center",
+          "marginBottom": "10px",
+          "marginTop": "40px",
+        }
       }
-    }
-  >
-    Something's gone wrong
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "TimesDigitalW04-Regular",
-        "fontSize": 18,
-        "textAlign": "center",
-      }
-    }
-  >
-    We can't load the page you have requested. Please check your network connection and retry to continue
-  </Text>
-  <Button
-    style={
-      Object {
-        "alignSelf": "center",
-        "marginBottom": "10px",
-        "marginTop": "40px",
-      }
-    }
-    title="Retry"
-  />
-</View>
+      title="Retry"
+    />
+  </PageErrorContentContainer>
+</PageErrorContainer>
 `;
 
 exports[`ArticleList tests on web should render an article list that is loading 1`] = `
@@ -1027,6 +1001,38 @@ exports[`ArticleList tests on web should render an article list that is loading 
 </div>
 `;
 
+exports[`ArticleList tests on web should render the article list error content correctly 1`] = `
+<React.Fragment>
+  <Text
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#1D1D1B",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 35,
+        "marginBottom": "10px",
+        "marginTop": "20px",
+        "textAlign": "center",
+      }
+    }
+  >
+    Something's gone wrong
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesDigitalW04-Regular",
+        "fontSize": 18,
+        "textAlign": "center",
+      }
+    }
+  >
+    We can't load the page you have requested. Please check your network connection and retry to continue
+  </Text>
+</React.Fragment>
+`;
+
 exports[`ArticleList tests on web should render the article list item separator keyline correctly 1`] = `
 <View
   style={
@@ -1040,13 +1046,25 @@ exports[`ArticleList tests on web should render the article list item separator 
 
 exports[`ArticleList tests on web should render the article list page error correctly 1`] = `
 <PageErrorContainer>
-  <ArticleListError />
   <PageErrorImageContainer>
     <TimesImage
       aspectRatio={0.9090909090909091}
       uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
     />
   </PageErrorImageContainer>
+  <PageErrorContentContainer>
+    <ArticleListError />
+    <Button
+      style={
+        Object {
+          "alignSelf": "center",
+          "marginBottom": "10px",
+          "marginTop": "40px",
+        }
+      }
+      title="Retry"
+    />
+  </PageErrorContentContainer>
 </PageErrorContainer>
 `;
 

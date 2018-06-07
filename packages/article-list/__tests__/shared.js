@@ -2,9 +2,9 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import ArticleList from "../src/article-list";
-import ArticleListError from "../src/article-list-error";
 import ArticleListItemSeparator from "../src/article-list-item-separator";
 import ArticleListItem from "../src/article-list-item";
+import ArticleListError from "../src/article-list-error";
 import ArticleListPageError from "../src/article-list-page-error";
 import {
   longSummary,
@@ -53,16 +53,22 @@ export default () => {
     global.Intl = realIntl;
   });
 
+  it("should render the article list error content correctly", () => {
+    const wrapper = shallow(<ArticleListError />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("should render an article list page error correctly", () => {
     const refetchMock = jest.fn();
-    const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
+    const wrapper = shallow(<ArticleListPageError refetch={refetchMock} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
   it("should handle the retry button in the article list page error correctly", () => {
     const refetchMock = jest.fn();
-    const wrapper = shallow(<ArticleListError refetch={refetchMock} />);
+    const wrapper = shallow(<ArticleListPageError refetch={refetchMock} />);
 
     wrapper
       .find("Button")
@@ -186,11 +192,7 @@ export default () => {
 
     wrapper
       .dive()
-      .dive()
-      .find("ArticleListError")
-      .dive()
       .find("Button")
-      .dive()
       .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();
