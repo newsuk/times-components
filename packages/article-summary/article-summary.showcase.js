@@ -28,7 +28,7 @@ export default {
       type: "story",
       name: "With byline links",
       component: () =>
-        story(<ArticleSummary {...defaultFixture} renderBylineLinks />)
+        story(<ArticleSummary {...defaultFixture} hasBylineLinks />)
     },
     {
       type: "story",
