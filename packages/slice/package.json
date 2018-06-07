@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice",
-  "version": "0.19.7",
+  "version": "0.19.8",
   "description": "Slice",
   "main": "dist/slice",
   "scripts": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.2",
-    "@times-components/storybook": "0.13.1",
+    "@times-components/storybook": "0.13.2",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -56,8 +56,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/responsive-styles": "0.9.7",
-    "@times-components/styleguide": "0.10.1",
+    "@times-components/responsive-styles": "0.9.8",
+    "@times-components/styleguide": "0.11.0",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

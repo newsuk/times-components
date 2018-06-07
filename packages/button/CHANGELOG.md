@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/button@0.2.0...@times-components/button@0.3.0) (2018-06-07)
+
+
+### Features
+
+* add button onPress styles ([#997](https://github.com/newsuk/times-components/issues/997)) ([98a86fe](https://github.com/newsuk/times-components/commit/98a86fe))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/button@0.1.0...@times-components/button@0.2.0) (2018-06-07)
 
