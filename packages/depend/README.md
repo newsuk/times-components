@@ -72,7 +72,7 @@ Consider following repo:
   "name": "foo",
   "version": "0.0.1",
   "dependencies": {
-    "react-native": "0.55.0",
+    "react-native": "0.55.4",
     "bar": "0.0.1"
   }
 }
