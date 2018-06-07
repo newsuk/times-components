@@ -3944,7 +3944,6 @@ exports[`4. Render an author profile page error state 1`] = `
         "height": 36,
         "justifyContent": "center",
         "minWidth": 100,
-        "opacity": 1,
         "shadowColor": "#000000",
         "shadowOffset": Object {
           "height": 3,

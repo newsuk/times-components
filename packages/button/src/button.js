@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableHighlight } from "react-native";
+import { colours } from "@times-components/styleguide";
 import transformTitle from "./utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
@@ -7,18 +8,20 @@ import styles from "./styles";
 const Button = ({ onPress, style, title }) => {
   const transformedTitle = transformTitle(title);
   return (
-    <TouchableOpacity
+    <TouchableHighlight
       accessibilityComponentType="button"
       accessibilityLabel={transformedTitle}
       accessibilityRole="button"
       accessibilityTraits="button"
+      activeOpacity={1}
       onPress={onPress}
       style={[styles.button, style]}
+      underlayColor={colours.functional.actionPressed}
     >
       <Text style={styles.textStyle} title={transformedTitle}>
         {transformedTitle}
       </Text>
-    </TouchableOpacity>
+    </TouchableHighlight>
   );
 };
 

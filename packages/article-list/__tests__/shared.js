@@ -73,7 +73,7 @@ export default () => {
     wrapper
       .find("Button")
       .dive()
-      .find("TouchableOpacity")
+      .find("TouchableHighlight")
       .simulate("press");
 
     expect(refetchMock).toHaveBeenCalled();

@@ -1,13 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render the button 1`] = `
-<TouchableOpacity
+<TouchableHighlight
   accessibilityComponentType="button"
   accessibilityLabel="Test Button"
   accessibilityRole="button"
   accessibilityTraits="button"
-  activeOpacity={0.2}
-  focusedOpacity={0.7}
+  activeOpacity={1}
   style={
     Object {
       "alignItems": "center",
@@ -19,6 +18,7 @@ exports[`1. Render the button 1`] = `
       "width": 160,
     }
   }
+  underlayColor="#0077B3"
 >
   <Text
     style={
@@ -33,5 +33,5 @@ exports[`1. Render the button 1`] = `
   >
     Test Button
   </Text>
-</TouchableOpacity>
+</TouchableHighlight>
 `;
