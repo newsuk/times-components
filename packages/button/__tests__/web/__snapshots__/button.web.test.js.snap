@@ -18,7 +18,7 @@ exports[`1. Render the button 1`] = `
       "width": 160,
     }
   }
-  underlayColor="#0077b3"
+  underlayColor="#0077B3"
 >
   <Text
     style={

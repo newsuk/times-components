@@ -19,7 +19,7 @@ exports[`1. Render the button 1`] = `
       "width": "100%",
     }
   }
-  underlayColor="#0077b3"
+  underlayColor="#0077B3"
 >
   <Text
     accessible={true}
