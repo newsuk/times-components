@@ -45,7 +45,7 @@
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.54.2"
+    "react-native": "0.55.0"
   },
   "dependencies": {
     "@times-components/styleguide": "0.10.1",
