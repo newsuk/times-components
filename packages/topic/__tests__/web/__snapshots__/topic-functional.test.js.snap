@@ -15,10 +15,26 @@ exports[`1. Render a Topic page 1`] = `
         "__typename": "Article",
         "byline": Array [
           Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Russia Ben Hoyle Moscow David Taylor Washington",
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
                 },
                 "children": Array [],
                 "name": "text",

@@ -2,15 +2,12 @@
 
 exports[`Article Byline test on android renders correctly with a section colour 1`] = `
 <Text
-  accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
   style={
     Object {
       "color": "blue",
-      "textDecorationLine": "underline",
     }
   }
 >
@@ -20,15 +17,12 @@ exports[`Article Byline test on android renders correctly with a section colour 
 
 exports[`Article Byline test on android renders correctly with a single author 1`] = `
 <Text
-  accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
   style={
     Object {
       "color": "#006699",
-      "textDecorationLine": "underline",
     }
   }
 >
@@ -56,15 +50,12 @@ exports[`Article Byline test on android renders correctly with an empty AST (emp
 exports[`Article Byline test on android renders correctly with multiple authors separated by spaces 1`] = `
 Array [
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -83,15 +74,12 @@ Array [
      
   </Text>,
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -110,15 +98,12 @@ Array [
      
   </Text>,
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -130,15 +115,12 @@ Array [
 exports[`Article Byline test on android renders correctly with multiple authors separated by text with commas 1`] = `
 Array [
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -157,15 +139,12 @@ Array [
     , 
   </Text>,
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -184,15 +163,12 @@ Array [
     , 
   </Text>,
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -203,11 +179,9 @@ Array [
 
 exports[`Article Byline test on android renders correctly with styles 1`] = `
 <Text
-  accessibilityRole="link"
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
   style={
     Object {
       "color": "red",
@@ -234,15 +208,12 @@ Array [
     RBS Six Nations 
   </Text>,
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -254,15 +225,12 @@ Array [
 exports[`Article Byline test on android renders correctly with the author in the begining 1`] = `
 Array [
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >

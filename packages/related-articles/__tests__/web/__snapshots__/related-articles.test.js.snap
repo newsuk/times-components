@@ -189,7 +189,17 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                           }
                         }
                       >
-                        Camilla Long, Environment Editor
+                        Camilla Long
+                      </span>
+                      <span
+                        dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(219,19,59,1)",
+                          }
+                        }
+                      >
+                        , Environment Editor
                       </span>
                     </div>
                   </div>
@@ -212,7 +222,7 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Camilla Long",
             "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",

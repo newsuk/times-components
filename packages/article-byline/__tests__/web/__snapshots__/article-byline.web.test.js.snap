@@ -1,10 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article Byline test on web renders correctly with a section colour 1`] = `
-<a
+<div
   dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
   style={
     Object {
       "color": "blue",
@@ -12,17 +10,15 @@ exports[`Article Byline test on web renders correctly with a section colour 1`] 
   }
 >
   Alexandra Frean
-</a>
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with a single author 1`] = `
-<a
+<div
   dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
 >
   Alexandra Frean
-</a>
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
@@ -37,89 +33,76 @@ exports[`Article Byline test on web renders correctly with an empty AST (empty b
 
 exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
      
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
      
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/alexandra-frean"
-    role="link"
   >
     Alexandra Frean
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with multiple authors separated by text with commas 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
     , 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
     , 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/alexandra-frean"
-    role="link"
   >
     Alexandra Frean
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with styles 1`] = `
-<a
+<div
   dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
   style={
     Object {
       "color": "red",
+      "textDecoration": "underline",
     }
   }
 >
   Alexandra Frean
-</a>
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with the author at the end 1`] = `
@@ -129,25 +112,21 @@ Array [
   >
     RBS Six Nations 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with the author in the begining 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >

@@ -254,13 +254,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -380,13 +378,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -493,13 +489,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -693,13 +687,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -840,13 +832,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -986,13 +976,11 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -1031,13 +1019,11 @@ exports[`Article Summary tests on Web should render an article-summary with opin
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >

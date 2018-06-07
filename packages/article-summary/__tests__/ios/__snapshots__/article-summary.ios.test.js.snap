@@ -299,15 +299,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -507,15 +504,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -656,15 +650,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -907,15 +898,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -1090,15 +1078,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -1272,15 +1257,12 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
@@ -1343,15 +1325,12 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
         }
       }
     >
