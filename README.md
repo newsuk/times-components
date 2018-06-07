@@ -70,11 +70,7 @@ when trying to use a broken font.
 
 ### Schema
 
-In order to fetch the latest graphql schema, follow these steps:
-
-1. `export GRAPHQL_ENDPOINT=https://api.thetimes.co.uk/graphql` (Omit this step to use local server instead)
-2. `cd packages/utils`
-3. `yarn make-schema`
+See [packages/utils/README.md] on how to update the schema
 
 ## Debugging
 
