@@ -92,7 +92,6 @@ const RelatedArticleItem = ({
             color: colours.section[section] || colours.section.default,
             title: label
           }}
-          hasBylineLinks
         />
       </Card>
     </Link>

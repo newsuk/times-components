@@ -28,7 +28,7 @@ export const renderByline = (
 
     inline(key, attributes, children) {
       return (
-        <Text style={styles} key={key}>
+        <Text style={bylineStyles} key={key}>
           {children}
         </Text>
       );
