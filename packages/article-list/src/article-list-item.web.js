@@ -27,7 +27,6 @@ const ArticleListItem = props => {
     onPress,
     publicationName,
     publishedTime,
-    section,
     shortSummary,
     showImage,
     summary,
