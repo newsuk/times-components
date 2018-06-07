@@ -11,7 +11,9 @@ import sharedTracking from "../shared-tracking";
 
 import articleFixtureNoLeadAsset from "../../fixtures/no-lead-asset.json";
 
-jest.mock("@times-components/article-byline", () => "ArticleByline");
+// This is the only possible way for this to work... :'-(
+// eslint-disable-next-line global-require
+jest.mock("@times-components/article-byline", () => require("../articleBylineMock"));
 jest.mock("@times-components/article-flag", () => ({
   ExclusiveArticleFlag: "ExclusiveArticleFlag",
   NewArticleFlag: "NewArticleFlag",
