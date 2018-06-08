@@ -23,7 +23,9 @@ module.exports = () => {
 
   it("renders byline with links correctly with a section colour", () => {
     const tree = renderer
-      .create(<ArticleBylineWithLinks ast={authorsAST.singleAuthor} color="blue" />)
+      .create(
+        <ArticleBylineWithLinks ast={authorsAST.singleAuthor} color="blue" />
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -51,14 +53,22 @@ module.exports = () => {
 
   it("renders byline with links correctly with multiple authors separated by text with commas", () => {
     const tree = renderer
-      .create(<ArticleBylineWithLinks ast={authorsAST.multipleAuthorsCommaSeparated} />)
+      .create(
+        <ArticleBylineWithLinks
+          ast={authorsAST.multipleAuthorsCommaSeparated}
+        />
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("renders byline with links correctly with multiple authors separated by spaces", () => {
     const tree = renderer
-      .create(<ArticleBylineWithLinks ast={authorsAST.multipleAuthorsSpaceSeparated} />)
+      .create(
+        <ArticleBylineWithLinks
+          ast={authorsAST.multipleAuthorsSpaceSeparated}
+        />
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -71,10 +81,12 @@ module.exports = () => {
   it("renders byline with links correctly with styles", () => {
     const tree = renderer
       .create(
-        <ArticleBylineWithLinks ast={authorsAST.singleAuthor} style={bylineStyles} />
+        <ArticleBylineWithLinks
+          ast={authorsAST.singleAuthor}
+          style={bylineStyles}
+        />
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 };

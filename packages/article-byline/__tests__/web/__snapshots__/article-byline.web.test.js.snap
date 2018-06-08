@@ -169,37 +169,12 @@ exports[`Article Byline test on web renders correctly with a section colour 1`] 
 </div>
 `;
 
-exports[`Article Byline test on web renders correctly with a section colour 2`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
-  style={
-    Object {
-      "color": "blue",
-    }
-  }
->
-  Alexandra Frean
-</a>
-`;
-
 exports[`Article Byline test on web renders correctly with a single author 1`] = `
 <div
   dir="auto"
 >
   Alexandra Frean
 </div>
-`;
-
-exports[`Article Byline test on web renders correctly with a single author 2`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
->
-  Alexandra Frean
-</a>
 `;
 
 exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
@@ -210,27 +185,7 @@ exports[`Article Byline test on web renders correctly with a single inline eleme
 </div>
 `;
 
-exports[`Article Byline test on web renders correctly with a single inline element 2`] = `
-<div
-  dir="auto"
->
-  Lindsay McIntosh Scottish Political Editor
-</div>
-`;
-
 exports[`Article Byline test on web renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
-
-exports[`Article Byline test on web renders correctly with an empty AST (empty byline on DB) 2`] = `null`;
-
-exports[`Article Byline test on web renders correctly with byline link 1`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
->
-  Alexandra Frean
-</a>
-`;
 
 exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 1`] = `
 Array [
@@ -259,42 +214,6 @@ Array [
   >
     Alexandra Frean
   </div>,
-]
-`;
-
-exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 2`] = `
-Array [
-  <a
-    dir="auto"
-    href="/profile/camilla-long"
-    role="link"
-  >
-    Camilla Long
-  </a>,
-  <div
-    dir="auto"
-  >
-     
-  </div>,
-  <a
-    dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
-  >
-    Mike Atherton
-  </a>,
-  <div
-    dir="auto"
-  >
-     
-  </div>,
-  <a
-    dir="auto"
-    href="/profile/alexandra-frean"
-    role="link"
-  >
-    Alexandra Frean
-  </a>,
 ]
 `;
 
@@ -328,42 +247,6 @@ Array [
 ]
 `;
 
-exports[`Article Byline test on web renders correctly with multiple authors separated by text with commas 2`] = `
-Array [
-  <a
-    dir="auto"
-    href="/profile/camilla-long"
-    role="link"
-  >
-    Camilla Long
-  </a>,
-  <div
-    dir="auto"
-  >
-    , 
-  </div>,
-  <a
-    dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
-  >
-    Mike Atherton
-  </a>,
-  <div
-    dir="auto"
-  >
-    , 
-  </div>,
-  <a
-    dir="auto"
-    href="/profile/alexandra-frean"
-    role="link"
-  >
-    Alexandra Frean
-  </a>,
-]
-`;
-
 exports[`Article Byline test on web renders correctly with styles 1`] = `
 <div
   dir="auto"
@@ -376,21 +259,6 @@ exports[`Article Byline test on web renders correctly with styles 1`] = `
 >
   Alexandra Frean
 </div>
-`;
-
-exports[`Article Byline test on web renders correctly with styles 2`] = `
-<a
-  dir="auto"
-  href="/profile/alexandra-frean"
-  role="link"
-  style={
-    Object {
-      "color": "red",
-    }
-  }
->
-  Alexandra Frean
-</a>
 `;
 
 exports[`Article Byline test on web renders correctly with the author at the end 1`] = `
@@ -408,23 +276,6 @@ Array [
 ]
 `;
 
-exports[`Article Byline test on web renders correctly with the author at the end 2`] = `
-Array [
-  <div
-    dir="auto"
-  >
-    RBS Six Nations 
-  </div>,
-  <a
-    dir="auto"
-    href="/profile/mike-atherton"
-    role="link"
-  >
-    Mike Atherton
-  </a>,
-]
-`;
-
 exports[`Article Byline test on web renders correctly with the author in the begining 1`] = `
 Array [
   <div
@@ -432,23 +283,6 @@ Array [
   >
     Camilla Long
   </div>,
-  <div
-    dir="auto"
-  >
-    , Environment Editor
-  </div>,
-]
-`;
-
-exports[`Article Byline test on web renders correctly with the author in the begining 2`] = `
-Array [
-  <a
-    dir="auto"
-    href="/profile/camilla-long"
-    role="link"
-  >
-    Camilla Long
-  </a>,
   <div
     dir="auto"
   >

@@ -298,24 +298,6 @@ exports[`Article Byline test on iOS renders correctly with a section colour 1`] 
 </Text>
 `;
 
-exports[`Article Byline test on iOS renders correctly with a section colour 2`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "blue",
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
 exports[`Article Byline test on iOS renders correctly with a single author 1`] = `
 <Text
   accessible={true}
@@ -324,24 +306,6 @@ exports[`Article Byline test on iOS renders correctly with a single author 1`] =
   style={
     Object {
       "color": "#006699",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with a single author 2`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "#006699",
-      "textDecorationLine": "underline",
     }
   }
 >
@@ -364,42 +328,7 @@ exports[`Article Byline test on iOS renders correctly with a single inline eleme
 </Text>
 `;
 
-exports[`Article Byline test on iOS renders correctly with a single inline element 2`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#006699",
-    }
-  }
->
-  Lindsay McIntosh Scottish Political Editor
-</Text>
-`;
-
 exports[`Article Byline test on iOS renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
-
-exports[`Article Byline test on iOS renders correctly with an empty AST (empty byline on DB) 2`] = `null`;
-
-exports[`Article Byline test on iOS renders correctly with byline link 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "#006699",
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
 
 exports[`Article Byline test on iOS renders correctly with multiple authors separated by spaces 1`] = `
 Array [
@@ -458,80 +387,6 @@ Array [
     style={
       Object {
         "color": "#006699",
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>,
-]
-`;
-
-exports[`Article Byline test on iOS renders correctly with multiple authors separated by spaces 2`] = `
-Array [
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/camilla-long"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
@@ -605,103 +460,11 @@ Array [
 ]
 `;
 
-exports[`Article Byline test on iOS renders correctly with multiple authors separated by text with commas 2`] = `
-Array [
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/camilla-long"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>,
-]
-`;
-
 exports[`Article Byline test on iOS renders correctly with styles 1`] = `
 <Text
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "red",
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with styles 2`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
   style={
     Object {
       "color": "red",
@@ -742,38 +505,6 @@ Array [
 ]
 `;
 
-exports[`Article Byline test on iOS renders correctly with the author at the end 2`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-    RBS Six Nations 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-]
-`;
-
 exports[`Article Byline test on iOS renders correctly with the author in the begining 1`] = `
 Array [
   <Text
@@ -783,38 +514,6 @@ Array [
     style={
       Object {
         "color": "#006699",
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-      }
-    }
-  >
-    , Environment Editor
-  </Text>,
-]
-`;
-
-exports[`Article Byline test on iOS renders correctly with the author in the begining 2`] = `
-Array [
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/camilla-long"
-    style={
-      Object {
-        "color": "#006699",
-        "textDecorationLine": "underline",
       }
     }
   >
