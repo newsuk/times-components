@@ -305,6 +305,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -317,6 +321,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -510,6 +518,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -522,6 +534,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -656,6 +672,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -668,6 +688,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -904,6 +928,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -916,6 +944,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1084,6 +1116,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1096,6 +1132,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1263,6 +1303,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1275,6 +1319,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1331,6 +1379,10 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1343,6 +1395,10 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >

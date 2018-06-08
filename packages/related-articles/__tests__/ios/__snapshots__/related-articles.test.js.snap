@@ -352,6 +352,10 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -364,6 +368,10 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -741,6 +749,10 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1061,6 +1073,10 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       style={
                         Object {
                           "color": "#008347",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1321,6 +1337,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1517,6 +1537,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#008347",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1713,6 +1737,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#6C6C69",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2104,6 +2132,10 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2481,6 +2513,10 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2636,6 +2672,10 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3020,6 +3060,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3175,6 +3219,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3330,6 +3378,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3534,6 +3586,10 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3926,6 +3982,10 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4283,6 +4343,10 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4480,6 +4544,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4837,6 +4905,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4992,6 +5064,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >

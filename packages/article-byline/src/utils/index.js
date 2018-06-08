@@ -4,6 +4,7 @@ import { renderTrees } from "@times-components/markup";
 import styles from "../styles";
 
 export const getBylineStyles = (style, color) => [
+  styles.text,
   styles.link,
   color && { color },
   style.link

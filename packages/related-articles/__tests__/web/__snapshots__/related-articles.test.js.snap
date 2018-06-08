@@ -338,7 +338,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -361,7 +360,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -382,9 +380,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -395,9 +390,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -495,7 +487,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -518,7 +509,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -543,9 +533,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -556,9 +543,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -717,7 +701,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -740,7 +723,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -759,7 +741,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -780,9 +761,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -793,9 +771,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -893,7 +868,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -916,7 +890,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -939,7 +912,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -969,9 +941,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -982,9 +951,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1082,7 +1048,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         style={
                           Object {
                             "color": "rgba(108,108,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -1105,7 +1070,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1128,7 +1092,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1158,9 +1121,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1171,9 +1131,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1338,7 +1295,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -1361,7 +1317,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1382,9 +1337,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1395,9 +1347,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1543,7 +1492,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         dir="auto"
                         style={
                           Object {
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -1566,7 +1514,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1587,9 +1534,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1600,9 +1544,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1697,7 +1638,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -1720,9 +1660,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -1733,9 +1670,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -1889,7 +1823,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -1912,7 +1845,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1931,7 +1863,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -1952,9 +1883,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -1965,9 +1893,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -2062,7 +1987,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -2085,9 +2009,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2098,9 +2019,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2189,7 +2107,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -2212,9 +2129,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2225,9 +2139,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2341,7 +2252,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -2384,7 +2294,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -2403,7 +2312,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -2424,9 +2332,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -2569,7 +2474,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -2612,7 +2516,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -2631,7 +2534,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -2650,7 +2552,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -2671,9 +2572,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -2812,7 +2710,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -2835,9 +2732,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2848,9 +2742,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -2957,7 +2848,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
                             "fontSize": "12px",
                             "letterSpacing": "1.2px",
                           }
@@ -3000,7 +2890,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -3019,7 +2908,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
                             "fontFamily": "TimesDigitalW04",
                             "lineHeight": "20px",
                           }
@@ -3040,9 +2928,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       dir="auto"
                       style={
                         Object {
-                          "color": "rgba(105,105,105,1)",
-                          "fontFamily": "GillSansMTStd-Medium",
-                          "fontSize": "13px",
                           "lineHeight": "15px",
                         }
                       }
@@ -3181,7 +3066,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -3204,9 +3088,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -3217,9 +3098,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -3308,7 +3186,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                           dir="auto"
                           style={
                             Object {
-                              "fontFamily": "GillSansMTStd-Medium",
                               "fontSize": "12px",
                               "letterSpacing": "1.2px",
                             }
@@ -3331,9 +3208,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }
@@ -3344,9 +3218,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         dir="auto"
                         style={
                           Object {
-                            "color": "rgba(105,105,105,1)",
-                            "fontFamily": "GillSansMTStd-Medium",
-                            "fontSize": "13px",
                             "lineHeight": "15px",
                           }
                         }

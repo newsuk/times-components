@@ -10,6 +10,10 @@ exports[`Article Byline test on iOS renders byline with links correctly with a s
   style={
     Object {
       "color": "blue",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
       "textDecorationLine": "underline",
     }
   }
@@ -28,6 +32,10 @@ exports[`Article Byline test on iOS renders byline with links correctly with a s
   style={
     Object {
       "color": "#006699",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
       "textDecorationLine": "underline",
     }
   }
@@ -44,6 +52,10 @@ exports[`Article Byline test on iOS renders byline with links correctly with a s
   style={
     Object {
       "color": "#006699",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
     }
   }
 >
@@ -64,6 +76,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -77,6 +93,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -91,6 +111,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -104,6 +128,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -118,6 +146,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -138,6 +170,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -151,6 +187,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -165,6 +205,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -178,6 +222,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -192,6 +240,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -211,6 +263,10 @@ exports[`Article Byline test on iOS renders byline with links correctly with sty
   style={
     Object {
       "color": "red",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
       "textDecorationLine": "underline",
     }
   }
@@ -228,6 +284,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -242,6 +302,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -262,6 +326,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
         "textDecorationLine": "underline",
       }
     }
@@ -275,6 +343,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -291,6 +363,10 @@ exports[`Article Byline test on iOS renders correctly with a section colour 1`] 
   style={
     Object {
       "color": "blue",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
     }
   }
 >
@@ -306,6 +382,10 @@ exports[`Article Byline test on iOS renders correctly with a single author 1`] =
   style={
     Object {
       "color": "#006699",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
     }
   }
 >
@@ -321,6 +401,10 @@ exports[`Article Byline test on iOS renders correctly with a single inline eleme
   style={
     Object {
       "color": "#006699",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
     }
   }
 >
@@ -339,6 +423,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -351,6 +439,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -363,6 +455,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -375,6 +471,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -387,6 +487,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -404,6 +508,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -416,6 +524,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -428,6 +540,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -440,6 +556,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -452,6 +572,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -468,6 +592,10 @@ exports[`Article Byline test on iOS renders correctly with styles 1`] = `
   style={
     Object {
       "color": "red",
+      "flexDirection": "row",
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 13,
+      "lineHeight": 13,
       "textDecorationLine": "underline",
     }
   }
@@ -485,6 +613,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -497,6 +629,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -514,6 +650,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
@@ -526,6 +666,10 @@ Array [
     style={
       Object {
         "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
       }
     }
   >
