@@ -4,7 +4,7 @@ import sharedTracking from "../shared-tracking";
 
 jest.mock("@times-components/article-byline", () =>
   // eslint-disable-next-line global-require
-  require("../articleBylineMock")
+  require("../article-byline-mock")
 );
 jest.mock("@times-components/article-flag", () => ({
   ExclusiveArticleFlag: "ExclusiveArticleFlag",
