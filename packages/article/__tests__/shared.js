@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import Article from "../src/article";
 
 import fullArticleFixture from "../fixtures/full-article.json";
@@ -94,20 +95,18 @@ export default () => {
   });
 
   it("should render a full article", () => {
-    const tree = renderer
-      .create(
-        <Article
-          {...fullArticleFixture.data}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-          onVideoPress={() => {}}
-        />
-      )
-      .toJSON();
+    const tree = shallow(
+      <Article
+        {...fullArticleFixture.data}
+        adConfig={adConfig}
+        analyticsStream={() => {}}
+        onAuthorPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onVideoPress={() => {}}
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 

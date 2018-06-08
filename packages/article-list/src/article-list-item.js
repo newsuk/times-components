@@ -22,7 +22,6 @@ const ArticleListItem = props => {
     onPress,
     publicationName,
     publishedTime,
-    section,
     shortSummary,
     showImage,
     summary,
@@ -58,7 +57,7 @@ const ArticleListItem = props => {
               byline
                 ? {
                     ast: byline,
-                    color: colours.section[section] || colours.section.default
+                    color: colours.section.default
                   }
                 : null
             }

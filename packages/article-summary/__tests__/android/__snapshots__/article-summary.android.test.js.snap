@@ -299,15 +299,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -320,6 +321,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -507,15 +512,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -528,6 +534,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -656,15 +666,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -677,6 +688,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -907,15 +922,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -928,6 +944,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1090,15 +1110,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1111,6 +1132,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1272,15 +1297,16 @@ exports[`Article Summary tests on Android should render an article-summary compo
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1293,6 +1319,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1343,15 +1373,16 @@ exports[`Article Summary tests on Android should render an article-summary with 
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1364,6 +1395,10 @@ exports[`Article Summary tests on Android should render an article-summary with 
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >

@@ -6,12 +6,15 @@ export const articleBylinePropTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
   onAuthorPress: PropTypes.func,
   style: PropTypes.shape({
+    text: Text.propTypes.style,
     link: Text.propTypes.style
-  })
+  }),
+  color: PropTypes.string
 };
 
 export const articleBylineDefaultPropTypes = {
   ast: {},
   onAuthorPress: () => null,
-  style: {}
+  style: {},
+  color: ""
 };

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import ArticleByline from "./src/article-byline";
+import { ArticleBylineWithLinks } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
@@ -27,13 +27,13 @@ const getProps = (selectV2, decorateAction) => ({
 });
 
 export default {
-  name: "Primitives/Article Byline",
+  name: "Primitives/Article Byline With Links",
   children: [
     {
       type: "story",
       name: "Article Byline with a single author",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.singleAuthor}
           {...getProps(selectV2, decorateAction)}
         />
@@ -43,7 +43,7 @@ export default {
       type: "story",
       name: "Article Byline with a text only element",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.singleInlineElement}
           {...getProps(selectV2, decorateAction)}
         />
@@ -53,7 +53,7 @@ export default {
       type: "story",
       name: "Article Byline with multiple authors",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.multipleAuthorsCommaSeparated}
           {...getProps(selectV2, decorateAction)}
         />
@@ -63,7 +63,7 @@ export default {
       type: "story",
       name: "Article Byline with author in the beginning",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.authorInTheBeginning}
           {...getProps(selectV2, decorateAction)}
         />
@@ -73,7 +73,7 @@ export default {
       type: "story",
       name: "Article Byline with author at the end",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.authorAtTheEnd}
           {...getProps(selectV2, decorateAction)}
         />
@@ -83,7 +83,7 @@ export default {
       type: "story",
       name: "Article Byline with styles",
       component: ({ selectV2 }, { decorateAction }) => (
-        <ArticleByline
+        <ArticleBylineWithLinks
           ast={authorsAST.multipleAuthorsCommaSeparated}
           style={bylineLinkStyles}
           {...getProps(selectV2, decorateAction)}

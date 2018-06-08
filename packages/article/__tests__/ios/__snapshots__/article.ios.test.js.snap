@@ -30,60 +30,88 @@ Array [
 `;
 
 exports[`Article tests on ios should render a full article 1`] = `
-<RCTScrollView
-  data={
-    Array [
-      Object {
-        "data": Object {
-          "caption": "Chris Reynolds Gordon at one of his party venues in London",
-          "credits": null,
-          "crop": Object {
-            "ratio": "16:9",
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
+<ArticlePage
+  adConfig={
+    Object {
+      "adUnit": "mockAdUnit",
+      "bidderSlots": Array [
+        "ad-header",
+        "ad-article-inline",
+      ],
+      "biddersConfig": Object {
+        "bidders": Object {
+          "amazon": Object {
+            "accountId": "3360",
           },
-          "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
-          "isVideo": false,
-          "title": "Chris Reynolds Gordon at one of his party venues in London",
+          "appnexus": Object {
+            "placementId": "5823281",
+          },
+          "criteo": Object {
+            "zoneMap": Object {
+              "120x600": "764877",
+            },
+          },
+          "indexExchange": Object {
+            "siteId": "188830",
+          },
+          "pubmatic": Object {
+            "accountId": "156034",
+            "adSlotPrefix": "Thetimes",
+          },
+          "rubicon": Object {
+            "accountId": "14062",
+            "siteId": "70608",
+            "zoneId": "335918",
+          },
         },
-        "type": "leadAsset",
+        "bucketSize": 0.25,
+        "maxBid": 15,
+        "minPrice": 0.01,
+        "timeout": 3000,
       },
-      Object {
-        "data": Object {
-          "flags": Array [
-            "NEW",
-            "EXCLUSIVE",
-          ],
-          "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
-          "isVideo": false,
-          "label": "HURRICANE IRMA",
-          "standfirst": "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",
-        },
-        "type": "header",
+      "networkId": "mockNetwork",
+      "pageTargeting": Object {
+        "title": "Title",
       },
-      Object {
-        "data": Object {
-          "byline": Array [
+      "slotTargeting": Object {
+        "path": "/news",
+      },
+    }
+  }
+  article={
+    Object {
+      "byline": Array [
+        Object {
+          "attributes": Object {
+            "slug": "camilla-long",
+          },
+          "children": Array [
             Object {
-              "attributes": Object {},
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "inline",
+              "attributes": Object {
+                "value": "Camilla Long",
+              },
+              "children": Array [],
+              "name": "text",
             },
           ],
-          "publicationName": "TIMES",
-          "publishedTime": "2015-03-13T18:54:58.000Z",
+          "name": "author",
         },
-        "type": "middleContainer",
-      },
-      Object {
-        "data": Object {
+        Object {
+          "attributes": Object {},
+          "children": Array [
+            Object {
+              "attributes": Object {
+                "value": ", Environment Editor",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+          ],
+          "name": "inline",
+        },
+      ],
+      "content": Array [
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -144,11 +172,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 0,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "brightcoveAccountId": "57838016001",
             "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
@@ -162,11 +186,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "video",
         },
-        "index": 1,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -185,11 +205,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 2,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "brightcoveAccountId": "57838016001",
             "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
@@ -202,11 +218,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "video",
         },
-        "index": 3,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
@@ -217,11 +229,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 4,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -234,11 +242,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 5,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -251,11 +255,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 6,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
@@ -266,11 +266,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 7,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -283,23 +279,12 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 8,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
-          "attributes": Object {
-            "contextUrl": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
-            "section": "news",
-          },
+        Object {
+          "attributes": Object {},
           "children": Array [],
           "name": "ad",
         },
-        "index": 9,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -312,11 +297,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 10,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
@@ -327,11 +308,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 11,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -344,11 +321,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 12,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "caption": "All the latest stories in culture and books.",
             "credits": "The credits",
@@ -359,11 +332,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "image",
         },
-        "index": 13,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -376,11 +345,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 14,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {
             "caption": Object {
               "name": "JudgeSapnara",
@@ -391,11 +356,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           "children": Array [],
           "name": "pullQuote",
         },
-        "index": 15,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -408,11 +369,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 16,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -425,11 +382,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 17,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -442,11 +395,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 18,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -482,11 +431,7 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 19,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
+        Object {
           "attributes": Object {},
           "children": Array [
             Object {
@@ -499,1730 +444,604 @@ exports[`Article tests on ios should render a full article 1`] = `
           ],
           "name": "paragraph",
         },
-        "index": 20,
-        "type": "articleBodyRow",
-      },
-      Object {
-        "data": Object {
-          "topics": Array [
-            Object {
-              "name": "Football",
-              "slug": "football",
-            },
-            Object {
-              "name": "Manchester United FC",
-              "slug": "manchester-united",
-            },
-            Object {
-              "name": "Chelsea FC",
-              "slug": "chelsea",
-            },
-            Object {
-              "name": "Arsenal",
-              "slug": "arsenal",
-            },
-            Object {
-              "name": "Rugby Union",
-              "slug": "rugby-union",
-            },
-          ],
+      ],
+      "flags": Array [
+        "NEW",
+        "EXCLUSIVE",
+      ],
+      "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+      "label": "HURRICANE IRMA",
+      "leadAsset": Object {
+        "caption": "Chris Reynolds Gordon at one of his party venues in London",
+        "credits": null,
+        "crop": Object {
+          "ratio": "16:9",
+          "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
         },
-        "type": "topics",
+        "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
+        "title": "Chris Reynolds Gordon at one of his party venues in London",
       },
-      Object {
-        "data": Object {
-          "relatedArticles": Array [
-            Object {
-              "byline": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Patrick Kidd",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "inline",
-                },
-              ],
-              "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
-              "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-              "label": "Health",
-              "leadAsset": Object {
-                "crop169": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-                },
-                "crop32": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-                },
-                "title": "TMS: Pratchett’s law of the jungle",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-23T19:39:39.000Z",
-              "summary105": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary125": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the paper recalls in a",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary145": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary160": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary175": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary225": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Terry Pratchett, who died last week, began his career on the ",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Bucks Free Press",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "italic",
-                    },
-                    Object {
-                      "attributes": Object {
-                        "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-            },
-            Object {
-              "byline": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Graeme Paton Transport Correspondent",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "inline",
-                },
-              ],
-              "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-              "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
-              "label": "Science",
-              "leadAsset": Object {
-                "crop169": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
-                },
-                "crop32": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
-                },
-                "title": "Rise of centenarian drivers as elderly push on",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-23T20:42:27.000Z",
-              "summary105": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary125": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary145": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [],
-                  "name": "paragraph",
-                },
-              ],
-              "summary160": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Figures from the",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary175": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Figures from the Driver and Vehicle",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary225": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-            },
-            Object {
-              "byline": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "Jack Malvern Arts Correspondent Dominic Kennedy",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "inline",
-                },
-              ],
-              "headline": "Syndicated url: At long last, a burial place fit for a king",
-              "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-              "label": "Science",
-              "leadAsset": Object {
-                "crop169": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
-                },
-                "crop32": Object {
-                  "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
-                },
-                "title": "At long last, a burial place fit for a king",
-              },
-              "publicationName": "TIMES",
-              "publishedTime": "2015-03-23T20:56:09.000Z",
-              "summary105": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary125": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary145": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary160": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary175": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "summary225": Array [
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time.",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-                Object {
-                  "attributes": Object {},
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "His coffin has been",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                },
-              ],
-              "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
-            },
-          ],
-          "relatedArticlesLayout": Object {
-            "template": "DEFAULT",
-          },
-        },
-        "type": "relatedArticles",
-      },
-    ]
-  }
-  disableVirtualization={false}
-  horizontal={false}
-  initialNumToRender={10}
-  maxToRenderPerBatch={10}
-  numColumns={1}
-  onEndReachedThreshold={2}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
-  testID="flat-list-article"
-  updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
-  windowSize={21}
->
-  <View>
-    <View>
-      <View
-        testID="leadAsset"
-      >
-        <View>
-          <Modal
-            hardwareAccelerated={false}
-            presentationStyle="fullScreen"
-            visible={false}
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#1D1D1B",
-                  "flexDirection": "column",
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                style={
-                  Object {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <svg
-                  height="24"
-                  width="24"
-                >
-                  <g
-                    fill="rgba(255, 255, 255, 0.8)"
-                  >
-                    <path />
-                    <path
-                      fill="none"
-                    />
-                  </g>
-                </svg>
-              </View>
-              <View
-                style={
-                  Object {
-                    "flexGrow": 1,
-                  }
-                }
-              >
-                <View
-                  accessible={true}
-                  style={
-                    Object {
-                      "flexGrow": 1,
-                      "justifyContent": "center",
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "transform": Array [
-                          Object {
-                            "scale": 1,
-                          },
-                          Object {
-                            "rotate": "0 deg",
-                          },
-                          Object {
-                            "perspective": 1000,
-                          },
-                        ],
-                      }
-                    }
-                  >
-                    <View
-                      aspectRatio={1.7777777777777777}
-                      style={
-                        Object {
-                          "opacity": 1,
-                          "width": "100%",
-                        }
-                      }
-                    >
-                      <View
-                        style={
-                          Object {
-                            "height": "100%",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        <Image
-                          source={
-                            Object {
-                              "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
-                            }
-                          }
-                          style={
-                            Object {
-                              "bottom": 0,
-                              "height": "100%",
-                              "left": 0,
-                              "position": "absolute",
-                              "right": 0,
-                              "top": 0,
-                              "width": "100%",
-                            }
-                          }
-                        />
-                        <View
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                        >
-                          <View
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                          >
-                            <ARTSurfaceView
-                              style={
-                                Object {
-                                  "bottom": 0,
-                                  "height": 0,
-                                  "left": 0,
-                                  "position": "absolute",
-                                  "right": 0,
-                                  "top": 0,
-                                  "width": 0,
-                                }
-                              }
-                            >
-                              <ARTShape
-                                d={
-                                  Array [
-                                    2,
-                                    0,
-                                    0,
-                                    2,
-                                    0,
-                                    0,
-                                    2,
-                                    0,
-                                    0,
-                                    2,
-                                    0,
-                                    0,
-                                  ]
-                                }
-                                fill={
-                                  Array [
-                                    1,
-                                    0,
-                                    0,
-                                    -0,
-                                    0,
-                                    0.9764705882352941,
-                                    0.9764705882352941,
-                                    0.9764705882352941,
-                                    1,
-                                    0.9294117647058824,
-                                    0.9294117647058824,
-                                    0.9294117647058824,
-                                    1,
-                                    0,
-                                    1,
-                                  ]
-                                }
-                                opacity={1}
-                                stroke={null}
-                                strokeCap={1}
-                                strokeDash={null}
-                                strokeJoin={1}
-                                strokeWidth={1}
-                                transform={
-                                  Array [
-                                    1,
-                                    0,
-                                    0,
-                                    1,
-                                    0,
-                                    0,
-                                  ]
-                                }
-                              />
-                            </ARTSurfaceView>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </Modal>
-          <View
-            accessible={true}
-            isTVSelectable={true}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              aspectRatio={1.7777777777777777}
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156&resize=1440",
-                    }
-                  }
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <ARTSurfaceView
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": 0,
-                        }
-                      }
-                    >
-                      <ARTShape
-                        d={
-                          Array [
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                          ]
-                        }
-                        fill={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            -0,
-                            0,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            1,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            1,
-                            0,
-                            1,
-                          ]
-                        }
-                        opacity={1}
-                        stroke={null}
-                        strokeCap={1}
-                        strokeDash={null}
-                        strokeJoin={1}
-                        strokeWidth={1}
-                        transform={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            1,
-                            0,
-                            0,
-                          ]
-                        }
-                      />
-                    </ARTSurfaceView>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-      >
-        <View
-          accessibilityLabel="label"
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingTop": 4,
-            }
-          }
-          testID="label"
-        >
-          <ArticleLabel
-            color="#333333"
-            title="HURRICANE IRMA"
-          />
-        </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1D1D1B",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "700",
-              "lineHeight": 32,
-              "marginBottom": 7,
-            }
-          }
-        >
-          Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
-        </Text>
-        <Text
-          accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Regular",
-              "fontSize": 20,
-              "lineHeight": 25,
-              "paddingBottom": 9,
-            }
-          }
-          testID="standfirst"
-        >
-          How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life
-        </Text>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "marginBottom": 11,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <NewArticleFlag />
-          </View>
-          <View
-            style={
-              Object {
-                "marginRight": 14,
-              }
-            }
-          >
-            <ExclusiveArticleFlag />
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 0.5,
-            "marginBottom": 20,
-            "marginLeft": 10,
-            "marginRight": 10,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 9,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 14,
-              }
-            }
-          >
-            <ArticleByline
-              ast={
-                Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ]
-              }
-            />
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "borderTopColor": "#DBDBDB",
-              "borderTopWidth": 0.5,
-              "paddingBottom": 4,
-              "paddingTop": 9,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Friday March 13 2015, 06:54pm, The Times
-          </Text>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityLabel="paragraph-0"
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-        testID="paragraph-0"
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-          <Text
-            accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
-            style={
-              Object {
-                "color": "#006699",
-                "fontFamily": "TimesDigitalW04-Regular",
-                "fontSize": 17,
-                "lineHeight": 26,
-                "marginBottom": 25,
-                "marginTop": 0,
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            police disclosure of evidence
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontStyle": "italic",
-              }
-            }
-          >
-             Telegraph 
-          </Text>
-          last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontWeight": "bold",
-              }
-            }
-          >
-            When Thatcher joined the campaign trail for the 2001 general election...
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          accessibilityLabel="splash-component"
-          accessible={true}
-          isTVSelectable={true}
-          style={
-            Object {
-              "opacity": 1,
-            }
-          }
-          testID="splash-component"
-        >
-          <View
-            style={
-              Object {
-                "height": 421.875,
-                "width": 750,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 421.875,
-                  "width": 750,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
-                    }
-                  }
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <ARTSurfaceView
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": 0,
-                        }
-                      }
-                    >
-                      <ARTShape
-                        d={
-                          Array [
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                          ]
-                        }
-                        fill={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            -0,
-                            0,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            1,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            1,
-                            0,
-                            1,
-                          ]
-                        }
-                        opacity={1}
-                        stroke={null}
-                        strokeCap={1}
-                        strokeDash={null}
-                        strokeJoin={1}
-                        strokeWidth={1}
-                        transform={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            1,
-                            0,
-                            0,
-                          ]
-                        }
-                      />
-                    </ARTSurfaceView>
-                  </View>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "height": 421.875,
-                  "justifyContent": "center",
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 750,
-                }
-              }
-            >
-              <View>
-                <svg
-                  height={70}
-                  width={70}
-                >
-                  <rect
-                    fill="rgba(0,0,0)"
-                    fillOpacity="0.4"
-                    height="100"
-                    stroke="rgb(255,255,255)"
-                    strokeWidth="8"
-                    width="100"
-                  />
-                  <polygon
-                    fill="rgb(255,255,255)"
-                  />
-                </svg>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View>
-          <View
-            style={
-              Object {
-                "paddingLeft": 10,
-                "paddingTop": 10,
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              This is video caption
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityLabel="paragraph-2"
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-        testID="paragraph-2"
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontWeight": "bold",
-              }
-            }
-          >
-            Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-            "paddingBottom": 25,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          accessibilityLabel="splash-component"
-          accessible={true}
-          isTVSelectable={true}
-          style={
-            Object {
-              "opacity": 1,
-            }
-          }
-          testID="splash-component"
-        >
-          <View
-            style={
-              Object {
-                "height": 421.875,
-                "width": 750,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "height": 421.875,
-                  "width": 750,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0&resize=1440",
-                    }
-                  }
-                  style={
-                    Object {
-                      "bottom": 0,
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <View
-                  style={
-                    Object {
-                      "flex": 1,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <ARTSurfaceView
-                      style={
-                        Object {
-                          "bottom": 0,
-                          "height": 0,
-                          "left": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": 0,
-                        }
-                      }
-                    >
-                      <ARTShape
-                        d={
-                          Array [
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                            2,
-                            0,
-                            0,
-                          ]
-                        }
-                        fill={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            -0,
-                            0,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            0.9764705882352941,
-                            1,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            0.9294117647058824,
-                            1,
-                            0,
-                            1,
-                          ]
-                        }
-                        opacity={1}
-                        stroke={null}
-                        strokeCap={1}
-                        strokeDash={null}
-                        strokeJoin={1}
-                        strokeWidth={1}
-                        transform={
-                          Array [
-                            1,
-                            0,
-                            0,
-                            1,
-                            0,
-                            0,
-                          ]
-                        }
-                      />
-                    </ARTSurfaceView>
-                  </View>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
-                  "flex": 1,
-                  "height": 421.875,
-                  "justifyContent": "center",
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 750,
-                }
-              }
-            >
-              <View>
-                <svg
-                  height={70}
-                  width={70}
-                >
-                  <rect
-                    fill="rgba(0,0,0)"
-                    fillOpacity="0.4"
-                    height="100"
-                    stroke="rgb(255,255,255)"
-                    strokeWidth="8"
-                    width="100"
-                  />
-                  <polygon
-                    fill="rgb(255,255,255)"
-                  />
-                </svg>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View>
-          <View
-            style={
-              Object {
-                "paddingLeft": 10,
-                "paddingTop": 10,
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 16,
-                }
-              }
-            >
-              This is video caption secondary
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "All the latest stories in culture and books.",
-              "credits": "The credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "primary",
-              "ratio": "1500:1000",
-              "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0",
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityLabel="paragraph-5"
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-        testID="paragraph-5"
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View
-        accessibilityLabel="paragraph-6"
-        style={
-          Object {
-            "paddingLeft": 10,
-            "paddingRight": 10,
-          }
-        }
-        testID="paragraph-6"
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 17,
-              "lineHeight": 26,
-              "marginBottom": 20,
-            }
-          }
-        >
-          Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
-        </Text>
-      </View>
-    </View>
-    <View
-      style={
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-13T18:54:58.000Z",
+      "relatedArticles": Array [
         Object {
-          "height": 0,
-        }
-      }
-    />
-  </View>
-</RCTScrollView>
+          "byline": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Patrick Kidd",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "inline",
+            },
+          ],
+          "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+          "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
+          "label": "Health",
+          "leadAsset": Object {
+            "crop169": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+            },
+            "crop32": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+            },
+            "title": "TMS: Pratchett’s law of the jungle",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T19:39:39.000Z",
+          "summary105": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary125": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary145": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary160": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary175": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary225": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+        },
+        Object {
+          "byline": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Graeme Paton Transport Correspondent",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "inline",
+            },
+          ],
+          "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+          "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
+          "label": "Science",
+          "leadAsset": Object {
+            "crop169": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
+            },
+            "crop32": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
+            },
+            "title": "Rise of centenarian drivers as elderly push on",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T20:42:27.000Z",
+          "summary105": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary125": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary145": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [],
+              "name": "paragraph",
+            },
+          ],
+          "summary160": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Figures from the",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary175": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Figures from the Driver and Vehicle",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary225": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+        },
+        Object {
+          "byline": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Jack Malvern Arts Correspondent Dominic Kennedy",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "inline",
+            },
+          ],
+          "headline": "Syndicated url: At long last, a burial place fit for a king",
+          "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
+          "label": "Science",
+          "leadAsset": Object {
+            "crop169": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
+            },
+            "crop32": Object {
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
+            },
+            "title": "At long last, a burial place fit for a king",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T20:56:09.000Z",
+          "summary105": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary125": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary145": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary160": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary175": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "summary225": Array [
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "His coffin has been",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
+            },
+          ],
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+        },
+      ],
+      "relatedArticlesLayout": Object {
+        "template": "DEFAULT",
+      },
+      "section": "news",
+      "standfirst": "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",
+      "topics": Array [
+        Object {
+          "name": "Football",
+          "slug": "football",
+        },
+        Object {
+          "name": "Manchester United FC",
+          "slug": "manchester-united",
+        },
+        Object {
+          "name": "Chelsea FC",
+          "slug": "chelsea",
+        },
+        Object {
+          "name": "Arsenal",
+          "slug": "arsenal",
+        },
+        Object {
+          "name": "Rugby Union",
+          "slug": "rugby-union",
+        },
+      ],
+      "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
+    }
+  }
+  error={null}
+  isLoading={false}
+/>
 `;
 
 exports[`Article tests on ios should render a smaller article 1`] = `
@@ -3404,7 +2223,7 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -4552,7 +3371,7 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -7636,7 +6455,7 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -9262,7 +8081,7 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -10858,7 +9677,7 @@ exports[`Article tests on ios should render an article with no label and no flag
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -12436,7 +11255,7 @@ exports[`Article tests on ios should render an article with no label, no flags a
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -14059,7 +12878,7 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -15652,7 +14471,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -17260,7 +16079,7 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             }
           >
-            <ArticleByline
+            <ArticleBylineWithLinks
               ast={
                 Array [
                   Object {
@@ -17584,7 +16403,7 @@ exports[`Send analytics when rendering an Article page 1`] = `
 Object {
   "action": "Viewed",
   "attrs": Object {
-    "byline": "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent",
+    "byline": "Camilla Long",
     "eventTime": "2018-01-01T00:00:00.000Z",
     "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
     "publishedTime": "2015-03-13T18:54:58.000Z",

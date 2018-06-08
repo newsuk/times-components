@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Byline, {
+import ArticleByline, {
+  ArticleBylineWithLinks,
   articleBylinePropTypes
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
@@ -38,7 +39,11 @@ const ArticleSummary = props => {
           bylineProps.bylineStyle
         ]}
       >
-        <Byline {...bylineProps} />
+        {bylineProps.hasBylineLinks ? (
+          <ArticleBylineWithLinks {...bylineProps} />
+        ) : (
+          <ArticleByline {...bylineProps} />
+        )}
       </Text>
     );
   };
@@ -78,7 +83,8 @@ ArticleSummary.propTypes = {
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
     bylineStyle: TextPropTypesStyle,
-    isOpinionByline: PropTypes.bool
+    isOpinionByline: PropTypes.bool,
+    hasBylineLinks: PropTypes.bool
   }),
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,

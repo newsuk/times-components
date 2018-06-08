@@ -12,14 +12,28 @@
       "section": "news",
       "byline": [
         {
+          "name": "author",
+          "attributes": {
+            "slug": "camilla-long"
+          },
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "inline",
           "attributes": {},
           "children": [
             {
               "name": "text",
               "attributes": {
-                "value":
-                  "Rosemary Bennett, Education Editor | Nicola Woolcock, Education Correspondent"
+                "value": ", Environment Editor"
               },
               "children": []
             }

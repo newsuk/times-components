@@ -7,12 +7,28 @@
           {
             "byline": [
               {
-                "name": "inline",
+                "name": "author",
+                "attributes": {
+                  "slug": "camilla-long"
+                },
                 "children": [
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "Russia Ben Hoyle Moscow David Taylor Washington"
+                      "value": "Camilla Long"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "inline",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": ", Environment Editor"
                     },
                     "children": []
                   }

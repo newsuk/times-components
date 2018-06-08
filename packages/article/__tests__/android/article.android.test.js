@@ -2,7 +2,10 @@ import shared from "../shared";
 import nativeShared from "../shared-native";
 import sharedTracking from "../shared-tracking";
 
-jest.mock("@times-components/article-byline", () => "ArticleByline");
+jest.mock("@times-components/article-byline", () =>
+  // eslint-disable-next-line global-require
+  require("../article-byline-mock")
+);
 jest.mock("@times-components/article-flag", () => ({
   ExclusiveArticleFlag: "ExclusiveArticleFlag",
   NewArticleFlag: "NewArticleFlag",
