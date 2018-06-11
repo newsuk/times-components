@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import { shallow } from "enzyme";
+import transformTitle from "../src/utils";
 import Button from "../src/button";
 
 export default () => {
