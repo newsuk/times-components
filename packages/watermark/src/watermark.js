@@ -5,7 +5,7 @@ import { colours } from "@times-components/styleguide";
 
 const Watermark = ({ width, height }) => (
   <Image
-    source={require("./watermark.png")}
+    source={require("../assets/watermark.png")}
     resizeMode="contain"
     style={{ width: width, height: height }}
   />
