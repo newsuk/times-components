@@ -1,7 +1,5 @@
 import shared from "../shared";
-import sharedBylineWithLinks from "../shared-byline-with-links";
 
-describe("Article Byline test on android", () => {
+describe("ArticleByline tests on android", () => {
   shared();
-  sharedBylineWithLinks();
 });

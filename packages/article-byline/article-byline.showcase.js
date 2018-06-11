@@ -14,7 +14,7 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const bylineLinkStyles = {
+const styles = {
   link: {
     color: colours.functional.action,
     textDecorationLine: "none"
@@ -22,7 +22,7 @@ const bylineLinkStyles = {
 };
 
 const getProps = (selectV2, decorateAction) => ({
-  color: selectV2("Section colours", colours.section),
+  color: selectV2("Section colours: ", colours.section),
   onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress")
 });
 
@@ -85,7 +85,7 @@ export default {
       component: ({ selectV2 }, { decorateAction }) => (
         <ArticleByline
           ast={authorsAST.multipleAuthorsCommaSeparated}
-          style={bylineLinkStyles}
+          style={styles}
           {...getProps(selectV2, decorateAction)}
         />
       )

@@ -1,10 +1,7 @@
 import React from "react";
 import { TextLink } from "@times-components/link";
 import { getBylineStyles, renderByline } from "./utils";
-import {
-  articleBylinePropTypes,
-  articleBylineDefaultPropTypes
-} from "./article-byline-prop-types";
+import { propTypes, defaultProps } from "./article-byline-prop-types";
 
 const renderAuthorComponent = (
   children,
@@ -31,7 +28,7 @@ const ArticleBylineWithLinks = ({ ast, style, color, onAuthorPress }) => {
   return renderByline(renderAuthorComponent, ast, bylineStyles, onAuthorPress);
 };
 
-ArticleBylineWithLinks.propTypes = articleBylinePropTypes;
-ArticleBylineWithLinks.defaultProps = articleBylineDefaultPropTypes;
+ArticleBylineWithLinks.propTypes = propTypes;
+ArticleBylineWithLinks.defaultProps = defaultProps;
 
 export default ArticleBylineWithLinks;

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Text } from "react-native";
 import { treePropType } from "@times-components/markup";
 
-export const articleBylinePropTypes = {
+export const propTypes = {
   ast: PropTypes.arrayOf(treePropType).isRequired,
   onAuthorPress: PropTypes.func,
   style: PropTypes.shape({
@@ -12,9 +12,8 @@ export const articleBylinePropTypes = {
   color: PropTypes.string
 };
 
-export const articleBylineDefaultPropTypes = {
-  ast: {},
-  onAuthorPress: () => null,
+export const defaultProps = {
+  onAuthorPress: null,
   style: {},
   color: ""
 };
