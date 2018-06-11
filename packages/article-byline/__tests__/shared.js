@@ -1,7 +1,8 @@
 import "raf/polyfill";
-import "react-native";
 import React from "react";
+import { View } from "react-native";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
 
@@ -12,55 +13,89 @@ const styles = {
   }
 };
 
-export default () => {
-  it("should render with a single author", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.singleAuthor} />
+export default Component => {
+  const renderArticleByline = props =>
+    renderer.create(
+      <View>
+        <Component {...props} />
+      </View>
     );
+
+  it("should render with a single author", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor
+    });
     expect(tree).toMatchSnapshot("1. Render a single author");
   });
 
+  if (Component.displayName === "ArticleBylineWithLinks") {
+    it("should handle the onPress event", () => {
+      const onAuthorPressMock = jest.fn();
+      const wrapper = shallow(
+        <Component
+          ast={authorsFixture.singleAuthor}
+          onAuthorPress={onAuthorPressMock}
+        />
+      );
+
+      wrapper
+        .at(0)
+        .dive()
+        .find("Text")
+        .simulate("press");
+
+      expect(onAuthorPressMock).toHaveBeenCalled();
+    });
+  }
+
   it("should render with a given section colour", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.singleAuthor} color="blue" />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor,
+      color: "blue"
+    });
+
     expect(tree).toMatchSnapshot("2. Render a given section colour");
   });
 
   it("should render with a single inline element", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.singleInlineElement} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleInlineElement
+    });
+
     expect(tree).toMatchSnapshot("3. Render an inline element");
   });
 
   it("should render with the author in the begining", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.authorInTheBeginning} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.authorInTheBeginning
+    });
+
     expect(tree).toMatchSnapshot("4. Render an author first");
   });
 
   it("should render with the author at the end", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.authorAtTheEnd} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.authorAtTheEnd
+    });
+
     expect(tree).toMatchSnapshot("5. Render an author last");
   });
 
   it("should render with multiple authors separated by text with commas", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.multipleAuthorsCommaSeparated} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.multipleAuthorsCommaSeparated
+    });
+
     expect(tree).toMatchSnapshot(
       "6. Render multiple authors separated by commas"
     );
   });
 
   it("should render with multiple authors separated by spaces", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.multipleAuthorsSpaceSeparated} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.multipleAuthorsSpaceSeparated
+    });
+
     expect(tree).toMatchSnapshot(
       "7. Render multiple authors separated by spaces"
     );
@@ -68,13 +103,16 @@ export default () => {
 
   it("should render null with an empty AST", () => {
     const tree = renderer.create(<ArticleByline ast={[]} />);
+
     expect(tree).toMatchSnapshot("8. Render null when AST is empty");
   });
 
   it("should render with given styles", () => {
-    const tree = renderer.create(
-      <ArticleByline ast={authorsFixture.singleAuthor} style={styles} />
-    );
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor,
+      style: styles
+    });
+
     expect(tree).toMatchSnapshot("9. Render an author with given styles");
   });
 };

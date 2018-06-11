@@ -1,5 +1,6 @@
-import shared from "../shared-with-links";
+import { ArticleBylineWithLinks } from "../../src/article-byline";
+import shared from "../shared";
 
 describe("ArticleBylineWithLinks tests on ios", () => {
-  shared();
+  shared(ArticleBylineWithLinks);
 });

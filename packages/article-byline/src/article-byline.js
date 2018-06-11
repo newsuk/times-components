@@ -13,6 +13,7 @@ const ArticleByline = ({ ast, style, color }) => {
   const bylineStyles = getBylineStyles(style, color);
   return renderByline(renderAuthorComponent, ast, bylineStyles);
 };
+ArticleByline.displayName = "ArticleByline";
 
 ArticleByline.propTypes = propTypes;
 ArticleByline.defaultProps = defaultProps;

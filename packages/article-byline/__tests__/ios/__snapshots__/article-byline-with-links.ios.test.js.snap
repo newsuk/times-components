@@ -1,70 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render a single author 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
+<View>
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+        "textDecorationLine": "underline",
+      }
     }
-  }
->
-  Alexandra Frean
-</Text>
+  >
+    Alexandra Frean
+  </Text>
+</View>
 `;
 
 exports[`2. Render a given section colour 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "blue",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
+<View>
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
+    style={
+      Object {
+        "color": "blue",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+        "textDecorationLine": "underline",
+      }
     }
-  }
->
-  Alexandra Frean
-</Text>
+  >
+    Alexandra Frean
+  </Text>
+</View>
 `;
 
-exports[`3. Render an inline element when no author provided 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
+exports[`3. Render an inline element 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
     }
-  }
->
-  Lindsay McIntosh Scottish Political Editor
-</Text>
+  >
+    Lindsay McIntosh Scottish Political Editor
+  </Text>
+</View>
 `;
 
 exports[`4. Render an author first 1`] = `
-Array [
+<View>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -83,7 +89,7 @@ Array [
     }
   >
     Camilla Long
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -99,12 +105,12 @@ Array [
     }
   >
     , Environment Editor
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`5. Render an author last 1`] = `
-Array [
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -120,7 +126,7 @@ Array [
     }
   >
     RBS Six Nations 
-  </Text>,
+  </Text>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -139,12 +145,12 @@ Array [
     }
   >
     Mike Atherton
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`6. Render multiple authors separated by commas 1`] = `
-Array [
+<View>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -163,7 +169,7 @@ Array [
     }
   >
     Camilla Long
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -179,7 +185,7 @@ Array [
     }
   >
     , 
-  </Text>,
+  </Text>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -198,7 +204,7 @@ Array [
     }
   >
     Mike Atherton
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -214,7 +220,7 @@ Array [
     }
   >
     , 
-  </Text>,
+  </Text>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -233,12 +239,12 @@ Array [
     }
   >
     Alexandra Frean
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`7. Render multiple authors separated by spaces 1`] = `
-Array [
+<View>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -257,7 +263,7 @@ Array [
     }
   >
     Camilla Long
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -273,7 +279,7 @@ Array [
     }
   >
      
-  </Text>,
+  </Text>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -292,7 +298,7 @@ Array [
     }
   >
     Mike Atherton
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -308,7 +314,7 @@ Array [
     }
   >
      
-  </Text>,
+  </Text>
   <Text
     accessibilityRole="link"
     accessible={true}
@@ -327,30 +333,32 @@ Array [
     }
   >
     Alexandra Frean
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
 exports[`8. Render null when AST is empty 1`] = `null`;
 
 exports[`9. Render an author with given styles 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "red",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
+<View>
+  <Text
+    accessibilityRole="link"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
+    style={
+      Object {
+        "color": "red",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+        "textDecorationLine": "underline",
+      }
     }
-  }
->
-  Alexandra Frean
-</Text>
+  >
+    Alexandra Frean
+  </Text>
+</View>
 `;

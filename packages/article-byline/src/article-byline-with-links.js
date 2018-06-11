@@ -27,6 +27,7 @@ const ArticleBylineWithLinks = ({ ast, style, color, onAuthorPress }) => {
   const bylineStyles = getBylineStyles(style, color);
   return renderByline(renderAuthorComponent, ast, bylineStyles, onAuthorPress);
 };
+ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";
 
 ArticleBylineWithLinks.propTypes = propTypes;
 ArticleBylineWithLinks.defaultProps = defaultProps;
