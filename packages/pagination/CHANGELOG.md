@@ -3,6 +3,184 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.1"></a>
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.22.0...@times-components/pagination@0.22.1) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.6...@times-components/pagination@0.22.0) (2018-06-07)
+
+
+### Features
+
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+
+
+
+
+<a name="0.21.6"></a>
+## [0.21.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.5...@times-components/pagination@0.21.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.21.5"></a>
+## [0.21.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.4...@times-components/pagination@0.21.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.21.4"></a>
+## [0.21.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.3...@times-components/pagination@0.21.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.21.3"></a>
+## [0.21.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.2...@times-components/pagination@0.21.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.21.2"></a>
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.21.0...@times-components/pagination@0.21.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.20.0...@times-components/pagination@0.21.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.6...@times-components/pagination@0.20.0) (2018-05-29)
+
+
+### Features
+
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+
+
+
+
+<a name="0.19.6"></a>
+## [0.19.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.5...@times-components/pagination@0.19.6) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.19.5"></a>
+## [0.19.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.4...@times-components/pagination@0.19.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.19.4"></a>
+## [0.19.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.3...@times-components/pagination@0.19.4) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
+<a name="0.19.3"></a>
+## [0.19.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.2...@times-components/pagination@0.19.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.19.2"></a>
+## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.1...@times-components/pagination@0.19.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.19.1"></a>
+## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.19.0...@times-components/pagination@0.19.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.15...@times-components/pagination@0.19.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.18.15"></a>
+## [0.18.15](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.14...@times-components/pagination@0.18.15) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.18.14"></a>
+## [0.18.14](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.13...@times-components/pagination@0.18.14) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.18.13"></a>
+## [0.18.13](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.12...@times-components/pagination@0.18.13) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/pagination
+
+<a name="0.18.12"></a>
+## [0.18.12](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.11...@times-components/pagination@0.18.12) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.18.11"></a>
 ## [0.18.11](https://github.com/newsuk/times-components/compare/@times-components/pagination@0.18.10...@times-components/pagination@0.18.11) (2018-04-30)
 

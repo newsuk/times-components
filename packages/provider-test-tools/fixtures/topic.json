@@ -1,0 +1,9 @@
+{
+  "data": {
+    "topic": {
+      "name": "Chelsea",
+      "description": "A swanky part of town.",
+      "__typename": "Topic"
+    }
+  }
+}

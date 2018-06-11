@@ -7,11 +7,11 @@ import ArticleRow from "./article-body/article-body-row";
 import ArticleHeader from "./article-header/article-header";
 import ArticleLeadAsset from "./article-lead-asset/article-lead-asset";
 import ArticleMeta from "./article-meta/article-meta";
-import styles from "./styles/article-body";
-import Topics from "./topics";
+import ArticleTopics from "./article-topics";
 import ArticleContent from "./article-content";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
+import styles from "./styles/article-body";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
@@ -23,10 +23,11 @@ const listViewScrollRenderAheadDistance = 10;
 class ArticlePage extends Component {
   static renderRow(
     rowData,
-    onRelatedArticlePress,
     onAuthorPress,
-    onVideoPress,
-    onLinkPress
+    onLinkPress,
+    onRelatedArticlePress,
+    onTopicPress,
+    onVideoPress
   ) {
     switch (rowData.type) {
       case "leadAsset": {
@@ -92,7 +93,9 @@ class ArticlePage extends Component {
       }
 
       case "topics": {
-        return <Topics topics={rowData.data.topics} />;
+        return (
+          <ArticleTopics topics={rowData.data.topics} onPress={onTopicPress} />
+        );
       }
 
       default: {
@@ -138,10 +141,11 @@ class ArticlePage extends Component {
         data={this.state.dataSource}
         renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
-        onRelatedArticlePress={this.props.onRelatedArticlePress}
         onAuthorPress={this.props.onAuthorPress}
-        onVideoPress={this.props.onVideoPress}
         onLinkPress={this.props.onLinkPress}
+        onRelatedArticlePress={this.props.onRelatedArticlePress}
+        onTopicPress={this.props.onTopicPress}
+        onVideoPress={this.props.onVideoPress}
         scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
       />
@@ -156,8 +160,8 @@ class ArticlePage extends Component {
 ArticlePage.propTypes = {
   ...articlePropTypes,
   onAuthorPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired
+  onLinkPress: PropTypes.func.isRequired,
+  onVideoPress: PropTypes.func.isRequired
 };
 ArticlePage.defaultProps = articleDefaultProps;
 

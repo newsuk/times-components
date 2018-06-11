@@ -3,6 +3,178 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.8"></a>
+## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.7...@times-components/watermark@0.7.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.7"></a>
+## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.6...@times-components/watermark@0.7.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.6"></a>
+## [0.7.6](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.5...@times-components/watermark@0.7.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.5"></a>
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.4...@times-components/watermark@0.7.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.4"></a>
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.3...@times-components/watermark@0.7.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.2...@times-components/watermark@0.7.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.7.0...@times-components/watermark@0.7.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.6.2...@times-components/watermark@0.7.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.6.1...@times-components/watermark@0.6.2) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.6.0...@times-components/watermark@0.6.1) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.14...@times-components/watermark@0.6.0) (2018-05-25)
+
+
+### Features
+
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+
+
+<a name="0.5.14"></a>
+## [0.5.14](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.13...@times-components/watermark@0.5.14) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
+<a name="0.5.13"></a>
+## [0.5.13](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.12...@times-components/watermark@0.5.13) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.12"></a>
+## [0.5.12](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.11...@times-components/watermark@0.5.12) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.11"></a>
+## [0.5.11](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.10...@times-components/watermark@0.5.11) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.10"></a>
+## [0.5.10](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.9...@times-components/watermark@0.5.10) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.9"></a>
+## [0.5.9](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.8...@times-components/watermark@0.5.9) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.8"></a>
+## [0.5.8](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.7...@times-components/watermark@0.5.8) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.6...@times-components/watermark@0.5.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/watermark
+
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.5...@times-components/watermark@0.5.6) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.5.5"></a>
 ## [0.5.5](https://github.com/newsuk/times-components/compare/@times-components/watermark@0.5.4...@times-components/watermark@0.5.5) (2018-04-30)
 

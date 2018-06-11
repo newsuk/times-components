@@ -27,6 +27,18 @@
           ]
         }
       ],
+      "topics": [
+        {
+          "name": "Islington",
+          "slug": "islington",
+          "__typename": "Topic"
+        },
+        {
+          "name": "Chelsea",
+          "slug": "chelsea",
+          "__typename": "Topic"
+        }
+      ],
       "content": [
         {
           "name": "paragraph",

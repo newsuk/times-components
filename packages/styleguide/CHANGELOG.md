@@ -3,6 +3,179 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.10.1...@times-components/styleguide@0.11.0) (2018-06-07)
+
+
+### Features
+
+* add button onPress styles ([#997](https://github.com/newsuk/times-components/issues/997)) ([98a86fe](https://github.com/newsuk/times-components/commit/98a86fe))
+
+
+
+
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.10.0...@times-components/styleguide@0.10.1) (2018-06-07)
+
+
+### Bug Fixes
+
+* article list page layout ([#995](https://github.com/newsuk/times-components/issues/995)) ([a763150](https://github.com/newsuk/times-components/commit/a763150))
+
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.5...@times-components/styleguide@0.10.0) (2018-06-04)
+
+
+### Features
+
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+
+
+
+
+<a name="0.9.5"></a>
+## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.4...@times-components/styleguide@0.9.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.9.4"></a>
+## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.3...@times-components/styleguide@0.9.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.9.3"></a>
+## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.2...@times-components/styleguide@0.9.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.9.2"></a>
+## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.9.0...@times-components/styleguide@0.9.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.8.2...@times-components/styleguide@0.9.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.8.2"></a>
+## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.8.1...@times-components/styleguide@0.8.2) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.8.0...@times-components/styleguide@0.8.1) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.7.4...@times-components/styleguide@0.8.0) (2018-05-25)
+
+
+### Features
+
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+
+
+<a name="0.7.4"></a>
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.7.3...@times-components/styleguide@0.7.4) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.7.2...@times-components/styleguide@0.7.3) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.7.1...@times-components/styleguide@0.7.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.7.0...@times-components/styleguide@0.7.1) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.8...@times-components/styleguide@0.7.0) (2018-05-15)
+
+
+### Features
+
+* Topic header ([#928](https://github.com/newsuk/times-components/issues/928)) ([7a718e8](https://github.com/newsuk/times-components/commit/7a718e8))
+
+
+
+
+<a name="0.6.8"></a>
+## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.7...@times-components/styleguide@0.6.8) (2018-05-10)
+
+
+### Bug Fixes
+
+* dextrose failures on styleguide showcase ([#932](https://github.com/newsuk/times-components/issues/932)) ([9696553](https://github.com/newsuk/times-components/commit/9696553))
+
+
+
+
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.6...@times-components/styleguide@0.6.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.5...@times-components/styleguide@0.6.6) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/styleguide
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@0.6.4...@times-components/styleguide@0.6.5) (2018-04-30)
 

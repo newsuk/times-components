@@ -3,6 +3,178 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.8"></a>
+## [2.4.8](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.7...@times-components/brightcove-video@2.4.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.7"></a>
+## [2.4.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.6...@times-components/brightcove-video@2.4.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.6"></a>
+## [2.4.6](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.5...@times-components/brightcove-video@2.4.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.5"></a>
+## [2.4.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.4...@times-components/brightcove-video@2.4.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.4"></a>
+## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.3...@times-components/brightcove-video@2.4.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.3"></a>
+## [2.4.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.2...@times-components/brightcove-video@2.4.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.2"></a>
+## [2.4.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.0...@times-components/brightcove-video@2.4.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.7...@times-components/brightcove-video@2.4.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="2.3.7"></a>
+## [2.3.7](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.6...@times-components/brightcove-video@2.3.7) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.6"></a>
+## [2.3.6](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.5...@times-components/brightcove-video@2.3.6) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.5"></a>
+## [2.3.5](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.4...@times-components/brightcove-video@2.3.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.4"></a>
+## [2.3.4](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.3...@times-components/brightcove-video@2.3.4) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
+<a name="2.3.3"></a>
+## [2.3.3](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.2...@times-components/brightcove-video@2.3.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.2"></a>
+## [2.3.2](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.1...@times-components/brightcove-video@2.3.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.1"></a>
+## [2.3.1](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.3.0...@times-components/brightcove-video@2.3.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.12...@times-components/brightcove-video@2.3.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="2.2.12"></a>
+## [2.2.12](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.11...@times-components/brightcove-video@2.2.12) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.2.11"></a>
+## [2.2.11](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.10...@times-components/brightcove-video@2.2.11) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.2.10"></a>
+## [2.2.10](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.9...@times-components/brightcove-video@2.2.10) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+<a name="2.2.9"></a>
+## [2.2.9](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.8...@times-components/brightcove-video@2.2.9) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="2.2.8"></a>
 ## [2.2.8](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.2.7...@times-components/brightcove-video@2.2.8) (2018-04-30)
 

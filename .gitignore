@@ -60,12 +60,15 @@ buck-out/
 storybook-static
 coverage
 dist
+packages/*/rnw.js
 
 .fructose/components.js
 .fructose/components.test.js
 
 fructose/components.js
 fructose/components.test.js
+fructose/changedPackages.json
+fructose/rnscl.config
 
 dextrose/snappy/**
 *.dextrose.tmp.js

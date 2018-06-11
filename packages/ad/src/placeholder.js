@@ -19,7 +19,7 @@ const getStyles = (width, height) =>
     wrapper: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: colours.functional.backgroundSecondary,
+      backgroundColor: colours.functional.backgroundPrimary,
       width,
       height,
       borderColor: colours.functional.keyline,
@@ -29,7 +29,7 @@ const getStyles = (width, height) =>
     placeholderText: {
       fontSize: fontSizes.puffLink,
       fontFamily: fonts.body,
-      backgroundColor: colours.functional.backgroundSecondary,
+      backgroundColor: colours.functional.backgroundPrimary,
       color: colours.functional.secondary,
       borderColor: colours.functional.keyline,
       borderWidth: 1,

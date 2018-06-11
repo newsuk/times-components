@@ -82,12 +82,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -133,7 +127,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
@@ -152,7 +145,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -166,37 +158,73 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -324,10 +352,30 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
-                      Camilla Long, Environment Editor
+                      Camilla Long
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
+                        }
+                      }
+                    >
+                      , Environment Editor
                     </Text>
                   </Text>
                 </View>
@@ -349,7 +397,7 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Camilla Long",
             "headline": "Now for a new battle: bringing the fragile masterpiece over safely",
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
@@ -431,12 +479,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -482,7 +524,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104&resize=1440",
@@ -501,7 +542,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -515,37 +555,73 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -673,6 +749,10 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -710,12 +790,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -761,7 +835,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108&resize=1440",
@@ -780,7 +853,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -794,37 +866,73 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -908,7 +1016,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
@@ -965,6 +1073,10 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       style={
                         Object {
                           "color": "#008347",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1079,12 +1191,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -1231,6 +1337,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#DB133B",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1268,12 +1378,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -1376,7 +1480,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
@@ -1433,6 +1537,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#008347",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1470,12 +1578,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -1578,7 +1680,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         ellipsizeMode="tail"
                       >
                         
-                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by
+                        The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
@@ -1635,6 +1737,10 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       style={
                         Object {
                           "color": "#6C6C69",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -1756,12 +1862,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -1807,7 +1907,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
@@ -1826,7 +1925,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -1840,37 +1938,73 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -1998,6 +2132,10 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2105,12 +2243,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -2156,7 +2288,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
@@ -2175,7 +2306,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -2189,37 +2319,73 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -2347,6 +2513,10 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2384,12 +2554,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -2508,6 +2672,10 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2622,12 +2790,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -2673,7 +2835,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe42e32fe-d14c-11e7-b1ec-8503a5941b97.jpg?crop=6250%2C3516%2C0%2C326&resize=1440",
@@ -2692,7 +2853,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -2706,37 +2866,73 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -2864,6 +3060,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -2901,12 +3101,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -3025,6 +3219,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3062,12 +3260,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -3186,6 +3378,10 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3307,12 +3503,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -3396,6 +3586,10 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3503,7 +3697,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
@@ -3522,7 +3715,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -3536,37 +3728,73 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -3671,12 +3899,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -3760,6 +3982,10 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -3867,7 +4093,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
@@ -3886,7 +4111,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -3900,37 +4124,73 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -3965,12 +4225,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -4089,6 +4343,10 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4203,12 +4461,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -4292,6 +4544,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#850029",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4399,7 +4655,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.uat-thetimes.co.uk/imageserver/image/opiniontwo_2x3crop.jpg?crop=354%2C580%2C0%2C0&resize=1440",
@@ -4418,7 +4673,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -4432,37 +4686,73 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -4497,12 +4787,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -4621,6 +4905,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >
@@ -4658,12 +4946,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
         <View
           accessible={true}
           isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "opacity": 1,
@@ -4782,6 +5064,10 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       style={
                         Object {
                           "color": "#333333",
+                          "flexDirection": "row",
+                          "fontFamily": "GillSansMTStd-Medium",
+                          "fontSize": 13,
+                          "lineHeight": 13,
                         }
                       }
                     >

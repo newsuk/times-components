@@ -16,6 +16,12 @@ exports[`Jest serializer should not remove styles 1`] = `
 
 exports[`Jest serializer should remove d-prop from path 1`] = `<path />`;
 
+exports[`Jest serializer should remove functions as props 1`] = `
+<View>
+  <Dummy />
+</View>
+`;
+
 exports[`Jest serializer should remove rnw-classnames 1`] = `
 <View
   className="rn-notprop main main2"

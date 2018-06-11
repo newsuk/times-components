@@ -3,6 +3,211 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.20.1"></a>
+## [1.20.1](https://github.com/newsuk/times-components/compare/@times-components/image@1.20.0...@times-components/image@1.20.1) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.20.0"></a>
+# [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.7...@times-components/image@1.20.0) (2018-06-07)
+
+
+### Features
+
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+
+
+
+
+<a name="1.19.7"></a>
+## [1.19.7](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.6...@times-components/image@1.19.7) (2018-06-06)
+
+
+### Bug Fixes
+
+* image component warnings on native for empty source.uri props ([#991](https://github.com/newsuk/times-components/issues/991)) ([1feefc2](https://github.com/newsuk/times-components/commit/1feefc2))
+
+
+
+
+<a name="1.19.6"></a>
+## [1.19.6](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.5...@times-components/image@1.19.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.19.5"></a>
+## [1.19.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.4...@times-components/image@1.19.5) (2018-06-04)
+
+
+### Bug Fixes
+
+* image component resize query string params ([#985](https://github.com/newsuk/times-components/issues/985)) ([79be184](https://github.com/newsuk/times-components/commit/79be184))
+
+
+
+
+<a name="1.19.4"></a>
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.3...@times-components/image@1.19.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.19.3"></a>
+## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.2...@times-components/image@1.19.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.19.2"></a>
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/image@1.19.0...@times-components/image@1.19.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.19.0"></a>
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.7...@times-components/image@1.19.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="1.18.7"></a>
+## [1.18.7](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.6...@times-components/image@1.18.7) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.6"></a>
+## [1.18.6](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.5...@times-components/image@1.18.6) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.5"></a>
+## [1.18.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.4...@times-components/image@1.18.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.4"></a>
+## [1.18.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.3...@times-components/image@1.18.4) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
+<a name="1.18.3"></a>
+## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.2...@times-components/image@1.18.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.2"></a>
+## [1.18.2](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.1...@times-components/image@1.18.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.1"></a>
+## [1.18.1](https://github.com/newsuk/times-components/compare/@times-components/image@1.18.0...@times-components/image@1.18.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.18.0"></a>
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.10...@times-components/image@1.18.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="1.17.10"></a>
+## [1.17.10](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.9...@times-components/image@1.17.10) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.17.9"></a>
+## [1.17.9](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.8...@times-components/image@1.17.9) (2018-05-14)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.17.8"></a>
+## [1.17.8](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.7...@times-components/image@1.17.8) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.17.7"></a>
+## [1.17.7](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.6...@times-components/image@1.17.7) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
+<a name="1.17.6"></a>
+## [1.17.6](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.5...@times-components/image@1.17.6) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="1.17.5"></a>
+## [1.17.5](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.4...@times-components/image@1.17.5) (2018-05-01)
+
+
+
+
+**Note:** Version bump only for package @times-components/image
+
 <a name="1.17.4"></a>
 ## [1.17.4](https://github.com/newsuk/times-components/compare/@times-components/image@1.17.3...@times-components/image@1.17.4) (2018-04-30)
 

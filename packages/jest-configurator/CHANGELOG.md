@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.2"></a>
+## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.8.1...@times-components/jest-configurator@0.8.2) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.8.0...@times-components/jest-configurator@0.8.1) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.7.1...@times-components/jest-configurator@0.8.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.7.0...@times-components/jest-configurator@0.7.1) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.6.3...@times-components/jest-configurator@0.7.0) (2018-05-15)
+
+
+### Features
+
+* Topic header ([#928](https://github.com/newsuk/times-components/issues/928)) ([7a718e8](https://github.com/newsuk/times-components/commit/7a718e8))
+
+
+
+
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.6.2...@times-components/jest-configurator@0.6.3) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/jest-configurator
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@0.6.1...@times-components/jest-configurator@0.6.2) (2018-04-25)
 

@@ -1,3 +1,7 @@
-import tests from "../author-profile-content.native";
+import sharedNative from "../shared-native";
+import shared from "../author-profile";
 
-describe("AuthorProfile test on android", tests);
+describe("AuthorProfile tests on android", () => {
+  shared();
+  sharedNative();
+});

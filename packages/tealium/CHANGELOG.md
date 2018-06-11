@@ -3,6 +3,132 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.8"></a>
+## [1.3.8](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.7...@times-components/tealium@1.3.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.7"></a>
+## [1.3.7](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.6...@times-components/tealium@1.3.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.6"></a>
+## [1.3.6](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.5...@times-components/tealium@1.3.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.5"></a>
+## [1.3.5](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.4...@times-components/tealium@1.3.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.4"></a>
+## [1.3.4](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.3...@times-components/tealium@1.3.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.3"></a>
+## [1.3.3](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.2...@times-components/tealium@1.3.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.0...@times-components/tealium@1.3.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.2.3...@times-components/tealium@1.3.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.2.2...@times-components/tealium@1.2.3) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.2.1...@times-components/tealium@1.2.2) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.2.0...@times-components/tealium@1.2.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.1.7...@times-components/tealium@1.2.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="1.1.7"></a>
+## [1.1.7](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.1.6...@times-components/tealium@1.1.7) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.1.5...@times-components/tealium@1.1.6) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.1.4...@times-components/tealium@1.1.5) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/tealium
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.1.3...@times-components/tealium@1.1.4) (2018-04-25)
 

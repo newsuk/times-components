@@ -3,6 +3,225 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.4"></a>
+## [0.10.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.3...@times-components/provider-test-tools@0.10.4) (2018-06-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.10.3"></a>
+## [0.10.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.2...@times-components/provider-test-tools@0.10.3) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.10.2"></a>
+## [0.10.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.1...@times-components/provider-test-tools@0.10.2) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.0...@times-components/provider-test-tools@0.10.1) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.9.1...@times-components/provider-test-tools@0.10.0) (2018-06-04)
+
+
+### Features
+
+* update apollo-link ([#982](https://github.com/newsuk/times-components/issues/982)) ([c7b3bad](https://github.com/newsuk/times-components/commit/c7b3bad))
+
+
+
+
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.9.0...@times-components/provider-test-tools@0.9.1) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.8.2...@times-components/provider-test-tools@0.9.0) (2018-06-04)
+
+
+### Features
+
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+
+
+
+
+<a name="0.8.2"></a>
+## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.8.1...@times-components/provider-test-tools@0.8.2) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.8.0...@times-components/provider-test-tools@0.8.1) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.7.0...@times-components/provider-test-tools@0.8.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.3...@times-components/provider-test-tools@0.7.0) (2018-05-29)
+
+
+### Features
+
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+
+
+
+
+<a name="0.6.3"></a>
+## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.2...@times-components/provider-test-tools@0.6.3) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.1...@times-components/provider-test-tools@0.6.2) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.6.0...@times-components/provider-test-tools@0.6.1) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.5.4...@times-components/provider-test-tools@0.6.0) (2018-05-22)
+
+
+### Features
+
+* REPLAT-2167 Topic name query ([#956](https://github.com/newsuk/times-components/issues/956)) ([f398f51](https://github.com/newsuk/times-components/commit/f398f51))
+
+
+
+
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.5.3...@times-components/provider-test-tools@0.5.4) (2018-05-21)
+
+
+### Bug Fixes
+
+* mocked provider ([#952](https://github.com/newsuk/times-components/issues/952)) ([db89e49](https://github.com/newsuk/times-components/commit/db89e49))
+
+
+
+
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.5.2...@times-components/provider-test-tools@0.5.3) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.5.1...@times-components/provider-test-tools@0.5.2) (2018-05-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.5.0...@times-components/provider-test-tools@0.5.1) (2018-05-15)
+
+
+### Bug Fixes
+
+* Missing headline in topics provider ([#943](https://github.com/newsuk/times-components/issues/943)) ([32b7270](https://github.com/newsuk/times-components/commit/32b7270))
+
+
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.4.1...@times-components/provider-test-tools@0.5.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.4.0...@times-components/provider-test-tools@0.4.1) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.3.8...@times-components/provider-test-tools@0.4.0) (2018-05-08)
+
+
+### Features
+
+* Topic provider ([#926](https://github.com/newsuk/times-components/issues/926)) ([d982278](https://github.com/newsuk/times-components/commit/d982278))
+
+
+
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.3.7...@times-components/provider-test-tools@0.3.8) (2018-05-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.3.6...@times-components/provider-test-tools@0.3.7) (2018-05-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.3.5...@times-components/provider-test-tools@0.3.6) (2018-04-30)
 

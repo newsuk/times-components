@@ -3,6 +3,172 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.19.8"></a>
+## [0.19.8](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.7...@times-components/slice@0.19.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.7"></a>
+## [0.19.7](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.6...@times-components/slice@0.19.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.6"></a>
+## [0.19.6](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.5...@times-components/slice@0.19.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.5"></a>
+## [0.19.5](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.4...@times-components/slice@0.19.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.4"></a>
+## [0.19.4](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.3...@times-components/slice@0.19.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.3"></a>
+## [0.19.3](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.2...@times-components/slice@0.19.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.2"></a>
+## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/slice@0.19.0...@times-components/slice@0.19.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.21...@times-components/slice@0.19.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.18.21"></a>
+## [0.18.21](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.20...@times-components/slice@0.18.21) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.20"></a>
+## [0.18.20](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.19...@times-components/slice@0.18.20) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.19"></a>
+## [0.18.19](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.18...@times-components/slice@0.18.19) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.18"></a>
+## [0.18.18](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.17...@times-components/slice@0.18.18) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.17"></a>
+## [0.18.17](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.16...@times-components/slice@0.18.17) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.16"></a>
+## [0.18.16](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.15...@times-components/slice@0.18.16) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.15"></a>
+## [0.18.15](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.14...@times-components/slice@0.18.15) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.14"></a>
+## [0.18.14](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.13...@times-components/slice@0.18.14) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.13"></a>
+## [0.18.13](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.12...@times-components/slice@0.18.13) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.12"></a>
+## [0.18.12](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.11...@times-components/slice@0.18.12) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.11"></a>
+## [0.18.11](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.10...@times-components/slice@0.18.11) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.18.10"></a>
+## [0.18.10](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.9...@times-components/slice@0.18.10) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.18.9"></a>
 ## [0.18.9](https://github.com/newsuk/times-components/compare/@times-components/slice@0.18.8...@times-components/slice@0.18.9) (2018-04-30)
 

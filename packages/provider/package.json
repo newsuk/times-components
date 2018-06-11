@@ -1,34 +1,18 @@
 {
   "name": "@times-components/provider",
-  "version": "0.28.6",
+  "version": "0.34.6",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest",
-    "dextrose-stories": "dextrose generate-stories $(pwd)",
-    "dextrose-clean": "dextrose clean-stories $(pwd)",
-    "prepublishOnly": "yarn transpile",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test": "jest --config='./__tests__/jest.config.js' && yarn test:web",
+    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "testEnvironment": "jsdom",
-    "coverageDirectory": "<rootDir>/packages/provider/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/provider/*.js",
-      "!**/packages/provider/*stories.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/provider/__tests__/**.test.js"
-    ]
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -48,36 +32,41 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.4.1",
-    "@times-components/provider-test-tools": "0.3.6",
-    "@times-components/storybook": "0.9.4",
-    "@times-components/utils": "0.8.1",
-    "apollo-utilities": "1.0.4",
+    "@times-components/eslint-config-thetimes": "0.6.1",
+    "@times-components/jest-configurator": "0.8.2",
+    "@times-components/provider-test-tools": "0.10.4",
+    "@times-components/storybook": "0.13.2",
+    "@times-components/utils": "0.14.2",
+    "@times-components/webpack-configurator": "0.1.1",
+    "apollo-utilities": "1.0.12",
     "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-react-native-web": "0.6.1",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
-    "dextrose": "1.7.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "eslint-plugin-graphql": "1.5.0",
-    "graphql": "0.12.3",
+    "graphql": "0.13.1",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "16.3.1",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "graphql-tag": "2.8.0",
-    "hoist-non-react-statics": "2.3.1",
+    "hoist-non-react-statics": "2.5.0",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.0",
-    "react-apollo": "2.1.0-rc.3",
+    "react-apollo": "2.1.4",
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {

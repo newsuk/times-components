@@ -7,7 +7,7 @@ import {
 } from "@times-components/utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
-import styles from "../styles";
+import styles from "./styles";
 
 class TimesImage extends Component {
   constructor(props) {
@@ -35,12 +35,24 @@ class TimesImage extends Component {
       onLoad: this.handleLoad
     };
 
-    if (cleanUri && width > 0) {
-      const resizedUri =
-        cleanUri.indexOf("&resize") === -1
-          ? `${cleanUri}&resize=${width}`
-          : cleanUri;
-      props.source = { uri: resizedUri };
+    const isDataImageUrl = uri.indexOf("data:") > -1;
+
+    if (isDataImageUrl) {
+      props.source = {
+        uri: cleanUri
+      };
+    } else if (cleanUri && width > 0) {
+      const regExResize = new RegExp("([?&])resize", "gi");
+      const hasResizeParameter = regExResize.test(cleanUri);
+
+      const hasQueryString = cleanUri.indexOf("?") > -1;
+      const delimiter = hasQueryString ? "&" : "?";
+
+      props.source = {
+        uri: hasResizeParameter
+          ? cleanUri
+          : `${cleanUri}${delimiter}resize=${width}`
+      };
     }
 
     return (

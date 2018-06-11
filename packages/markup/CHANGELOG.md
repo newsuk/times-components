@@ -3,6 +3,186 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.28.8"></a>
+## [0.28.8](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.7...@times-components/markup@0.28.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.7"></a>
+## [0.28.7](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.6...@times-components/markup@0.28.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.6"></a>
+## [0.28.6](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.5...@times-components/markup@0.28.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.5"></a>
+## [0.28.5](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.4...@times-components/markup@0.28.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.4"></a>
+## [0.28.4](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.3...@times-components/markup@0.28.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.3"></a>
+## [0.28.3](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.2...@times-components/markup@0.28.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.2"></a>
+## [0.28.2](https://github.com/newsuk/times-components/compare/@times-components/markup@0.28.0...@times-components/markup@0.28.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.7...@times-components/markup@0.28.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.27.7"></a>
+## [0.27.7](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.6...@times-components/markup@0.27.7) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.6"></a>
+## [0.27.6](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.5...@times-components/markup@0.27.6) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.5"></a>
+## [0.27.5](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.4...@times-components/markup@0.27.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.4"></a>
+## [0.27.4](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.3...@times-components/markup@0.27.4) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.3"></a>
+## [0.27.3](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.2...@times-components/markup@0.27.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.2"></a>
+## [0.27.2](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.1...@times-components/markup@0.27.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.1"></a>
+## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/markup@0.27.0...@times-components/markup@0.27.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.27.0"></a>
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.15...@times-components/markup@0.27.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.26.15"></a>
+## [0.26.15](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.14...@times-components/markup@0.26.15) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.26.14"></a>
+## [0.26.14](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.13...@times-components/markup@0.26.14) (2018-05-11)
+
+
+### Bug Fixes
+
+* implement link renderer ([#914](https://github.com/newsuk/times-components/issues/914)) ([bd944a3](https://github.com/newsuk/times-components/commit/bd944a3))
+
+
+
+
+<a name="0.26.13"></a>
+## [0.26.13](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.12...@times-components/markup@0.26.13) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.26.12"></a>
+## [0.26.12](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.11...@times-components/markup@0.26.12) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/markup
+
+<a name="0.26.11"></a>
+## [0.26.11](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.10...@times-components/markup@0.26.11) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.26.10"></a>
 ## [0.26.10](https://github.com/newsuk/times-components/compare/@times-components/markup@0.26.9...@times-components/markup@0.26.10) (2018-04-30)
 

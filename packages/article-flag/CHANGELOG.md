@@ -3,6 +3,178 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.8"></a>
+## [0.14.8](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.7...@times-components/article-flag@0.14.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.7"></a>
+## [0.14.7](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.6...@times-components/article-flag@0.14.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.6"></a>
+## [0.14.6](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.5...@times-components/article-flag@0.14.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.5"></a>
+## [0.14.5](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.4...@times-components/article-flag@0.14.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.4"></a>
+## [0.14.4](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.3...@times-components/article-flag@0.14.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.3"></a>
+## [0.14.3](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.2...@times-components/article-flag@0.14.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.2"></a>
+## [0.14.2](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.14.0...@times-components/article-flag@0.14.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.7...@times-components/article-flag@0.14.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.13.7"></a>
+## [0.13.7](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.6...@times-components/article-flag@0.13.7) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.6"></a>
+## [0.13.6](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.5...@times-components/article-flag@0.13.6) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.5"></a>
+## [0.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.4...@times-components/article-flag@0.13.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.4"></a>
+## [0.13.4](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.3...@times-components/article-flag@0.13.4) (2018-05-25)
+
+
+### Bug Fixes
+
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+
+
+
+
+<a name="0.13.3"></a>
+## [0.13.3](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.2...@times-components/article-flag@0.13.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.2"></a>
+## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.1...@times-components/article-flag@0.13.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.1"></a>
+## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.13.0...@times-components/article-flag@0.13.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.11...@times-components/article-flag@0.13.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.12.11"></a>
+## [0.12.11](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.10...@times-components/article-flag@0.12.11) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.12.10"></a>
+## [0.12.10](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.9...@times-components/article-flag@0.12.10) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.12.9"></a>
+## [0.12.9](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.8...@times-components/article-flag@0.12.9) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-flag
+
+<a name="0.12.8"></a>
+## [0.12.8](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.7...@times-components/article-flag@0.12.8) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.12.7"></a>
 ## [0.12.7](https://github.com/newsuk/times-components/compare/@times-components/article-flag@0.12.6...@times-components/article-flag@0.12.7) (2018-04-30)
 

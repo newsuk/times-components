@@ -1,13 +1,26 @@
-#!/bin/bash
+# #!/bin/bash
 xcrun simctl boot 'iPhone 7'
-./node_modules/.bin/lerna run dextrose-clean
-./node_modules/.bin/lerna run dextrose-stories --since
+
+# ##font crap
 npm run fetch-fonts
-./node_modules/.bin/rnstl --searchDir ./packages --pattern '**/*/*.stories!(.web).dextrose.tmp.js' --outputFile ./fructose/components.js
-./node_modules/.bin/react-native bundle --platform ios --dev false --reset-cache --entry-file fructose/index.js --bundle-output ios/main.jsbundle
-mkdir -p ios/build/Build/Products/Release-iphonesimulator/storybooknative.app/
-./node_modules/.bin/react-native run-ios --no-packager --configuration Release
+
+##construct list of changed packages
+npx lerna ls --json --since > fructose/changedPackages.json
+
+##get array of changed components
+node fructose/changedComponents.js
+
+## create components file of all showcase file following pattern
+npx rnscl --pattern '*.showcase!(.web|.styles).js' --outputFile ./fructose/components.js --config ./fructose/rnscl.config
+
+##create bundle
+./node_modules/.bin/react-native bundle --platform ios --dev false --reset-cache --entry-file ./fructose/index.js --bundle-output ios/main.jsbundle
 PACKAGER_PID=$!
-./node_modules/.bin/dextrose run --config ./dextrose/dextrose.ios.js --snapshotWait 2000
+
+##build app
+./node_modules/.bin/react-native run-ios --configuration Release --no-packager
+
+##run dextrose
+./node_modules/.bin/dextrose run --config ./dextrose/dextrose.ios.js --snapshotWait 2000 --loglevel verbose
 kill -9 $PACKAGER_PID
 xcrun simctl shutdown booted

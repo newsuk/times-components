@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopicProvider returns query result 1`] = `
+Object {
+  "__typename": "Topic",
+  "description": "A swanky part of town.",
+  "name": "Chelsea",
+  Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"})",
+}
+`;

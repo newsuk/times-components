@@ -3,6 +3,222 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.6"></a>
+## [0.34.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.5...@times-components/provider@0.34.6) (2018-06-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.5"></a>
+## [0.34.5](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.4...@times-components/provider@0.34.5) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.4"></a>
+## [0.34.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.3...@times-components/provider@0.34.4) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.3"></a>
+## [0.34.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.2...@times-components/provider@0.34.3) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.2"></a>
+## [0.34.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.1...@times-components/provider@0.34.2) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.1"></a>
+## [0.34.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.0...@times-components/provider@0.34.1) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.33.3...@times-components/provider@0.34.0) (2018-06-04)
+
+
+### Features
+
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+
+
+
+
+<a name="0.33.3"></a>
+## [0.33.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.33.2...@times-components/provider@0.33.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.33.2"></a>
+## [0.33.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.33.0...@times-components/provider@0.33.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.33.0"></a>
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.32.0...@times-components/provider@0.33.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.32.0"></a>
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.31.3...@times-components/provider@0.32.0) (2018-05-29)
+
+
+### Features
+
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+
+
+
+
+<a name="0.31.3"></a>
+## [0.31.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.31.2...@times-components/provider@0.31.3) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.31.2"></a>
+## [0.31.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.31.1...@times-components/provider@0.31.2) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.31.1"></a>
+## [0.31.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.31.0...@times-components/provider@0.31.1) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.31.0"></a>
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.4...@times-components/provider@0.31.0) (2018-05-22)
+
+
+### Features
+
+* REPLAT-2167 Topic name query ([#956](https://github.com/newsuk/times-components/issues/956)) ([f398f51](https://github.com/newsuk/times-components/commit/f398f51))
+
+
+
+
+<a name="0.30.4"></a>
+## [0.30.4](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.3...@times-components/provider@0.30.4) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.30.3"></a>
+## [0.30.3](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.2...@times-components/provider@0.30.3) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.30.2"></a>
+## [0.30.2](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.1...@times-components/provider@0.30.2) (2018-05-16)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.30.1"></a>
+## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.30.0...@times-components/provider@0.30.1) (2018-05-15)
+
+
+### Bug Fixes
+
+* Missing headline in topics provider ([#943](https://github.com/newsuk/times-components/issues/943)) ([32b7270](https://github.com/newsuk/times-components/commit/32b7270))
+
+
+
+
+<a name="0.30.0"></a>
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.29.1...@times-components/provider@0.30.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.29.1"></a>
+## [0.29.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.29.0...@times-components/provider@0.29.1) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
+<a name="0.29.0"></a>
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.28.8...@times-components/provider@0.29.0) (2018-05-08)
+
+
+### Features
+
+* Topic provider ([#926](https://github.com/newsuk/times-components/issues/926)) ([d982278](https://github.com/newsuk/times-components/commit/d982278))
+
+
+
+
+<a name="0.28.8"></a>
+## [0.28.8](https://github.com/newsuk/times-components/compare/@times-components/provider@0.28.7...@times-components/provider@0.28.8) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
+<a name="0.28.7"></a>
+## [0.28.7](https://github.com/newsuk/times-components/compare/@times-components/provider@0.28.6...@times-components/provider@0.28.7) (2018-05-03)
+
+
+
+
+**Note:** Version bump only for package @times-components/provider
+
 <a name="0.28.6"></a>
 ## [0.28.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.28.5...@times-components/provider@0.28.6) (2018-04-30)
 

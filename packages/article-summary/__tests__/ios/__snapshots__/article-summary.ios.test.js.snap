@@ -88,6 +88,113 @@ exports[`Article Summary tests on ios should render an ArticleSummaryHeadline co
 </Text>
 `;
 
+exports[`Article Summary tests on ios should render an article-summary component containing links 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.2,
+          "marginBottom": 0,
+        }
+      }
+    >
+      FRANCIS ELLIOTT
+    </Text>
+  </View>
+  <Text
+    accessibilityRole="heading"
+    accessible={true}
+    allowFontScaling={true}
+    aria-level="3"
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "900",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
+    }
+  >
+    Sajid Javid to end hostile era for illegal immigrants
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Sajid Javid
+      </Text>
+       has warned the Home Office to expect an overhaul after the 
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Windrush scandal
+      </Text>
+       as he ditches the policy of creating a “hostile
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+</View>
+`;
+
 exports[`Article Summary tests on ios should render an article-summary component with a single paragraph 1`] = `
 <View>
   <View
@@ -192,16 +299,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -214,6 +321,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -310,7 +421,7 @@ exports[`Article Summary tests on ios should render an article-summary component
         
 
       </Text>
-      ITV
+       ITV
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -347,7 +458,7 @@ exports[`Article Summary tests on ios should render an article-summary component
         
 
       </Text>
-      BBC Two
+       BBC Two
       <Text
         accessible={true}
         allowFontScaling={true}
@@ -401,16 +512,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -423,6 +534,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -551,16 +666,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -573,6 +688,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -803,16 +922,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -825,6 +944,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -987,16 +1110,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1009,6 +1132,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1170,16 +1297,16 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1192,6 +1319,10 @@ exports[`Article Summary tests on ios should render an article-summary component
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1242,16 +1373,16 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     }
   >
     <Text
-      accessibilityRole="link"
       accessible={true}
       allowFontScaling={true}
       ellipsizeMode="tail"
-      href="/profile/camilla-long"
-      onPress={[Function]}
       style={
         Object {
           "color": "#006699",
-          "textDecorationLine": "underline",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >
@@ -1264,6 +1395,10 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       style={
         Object {
           "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
         }
       }
     >

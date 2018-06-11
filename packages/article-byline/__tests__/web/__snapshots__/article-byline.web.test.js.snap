@@ -1,11 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline test on web renders correctly with a section colour 1`] = `
+exports[`Article Byline test on web renders byline with links correctly with a section colour 1`] = `
 <a
   dir="auto"
   href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
   style={
     Object {
@@ -17,16 +15,166 @@ exports[`Article Byline test on web renders correctly with a section colour 1`] 
 </a>
 `;
 
-exports[`Article Byline test on web renders correctly with a single author 1`] = `
+exports[`Article Byline test on web renders byline with links correctly with a single author 1`] = `
 <a
   dir="auto"
   href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
   role="link"
 >
   Alexandra Frean
 </a>
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with a single inline element 1`] = `
+<div
+  dir="auto"
+>
+  Lindsay McIntosh Scottish Political Editor
+</div>
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with an empty AST (empty byline on DB) 1`] = `null`;
+
+exports[`Article Byline test on web renders byline with links correctly with multiple authors separated by spaces 1`] = `
+Array [
+  <a
+    dir="auto"
+    href="/profile/camilla-long"
+    role="link"
+  >
+    Camilla Long
+  </a>,
+  <div
+    dir="auto"
+  >
+     
+  </div>,
+  <a
+    dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
+  >
+    Mike Atherton
+  </a>,
+  <div
+    dir="auto"
+  >
+     
+  </div>,
+  <a
+    dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
+  >
+    Alexandra Frean
+  </a>,
+]
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with multiple authors separated by text with commas 1`] = `
+Array [
+  <a
+    dir="auto"
+    href="/profile/camilla-long"
+    role="link"
+  >
+    Camilla Long
+  </a>,
+  <div
+    dir="auto"
+  >
+    , 
+  </div>,
+  <a
+    dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
+  >
+    Mike Atherton
+  </a>,
+  <div
+    dir="auto"
+  >
+    , 
+  </div>,
+  <a
+    dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
+  >
+    Alexandra Frean
+  </a>,
+]
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with styles 1`] = `
+<a
+  dir="auto"
+  href="/profile/alexandra-frean"
+  role="link"
+  style={
+    Object {
+      "color": "red",
+    }
+  }
+>
+  Alexandra Frean
+</a>
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with the author at the end 1`] = `
+Array [
+  <div
+    dir="auto"
+  >
+    RBS Six Nations 
+  </div>,
+  <a
+    dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
+  >
+    Mike Atherton
+  </a>,
+]
+`;
+
+exports[`Article Byline test on web renders byline with links correctly with the author in the begining 1`] = `
+Array [
+  <a
+    dir="auto"
+    href="/profile/camilla-long"
+    role="link"
+  >
+    Camilla Long
+  </a>,
+  <div
+    dir="auto"
+  >
+    , Environment Editor
+  </div>,
+]
+`;
+
+exports[`Article Byline test on web renders correctly with a section colour 1`] = `
+<div
+  dir="auto"
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  Alexandra Frean
+</div>
+`;
+
+exports[`Article Byline test on web renders correctly with a single author 1`] = `
+<div
+  dir="auto"
+>
+  Alexandra Frean
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with a single inline element 1`] = `
@@ -41,103 +189,76 @@ exports[`Article Byline test on web renders correctly with an empty AST (empty b
 
 exports[`Article Byline test on web renders correctly with multiple authors separated by spaces 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
      
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
      
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/alexandra-frean"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Alexandra Frean
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with multiple authors separated by text with commas 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
     , 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
   <div
     dir="auto"
   >
     , 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/alexandra-frean"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Alexandra Frean
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with styles 1`] = `
-<a
+<div
   dir="auto"
-  href="/profile/alexandra-frean"
-  onClick={[Function]}
-  onKeyDown={[Function]}
-  role="link"
   style={
     Object {
       "color": "red",
+      "textDecoration": "underline",
     }
   }
 >
   Alexandra Frean
-</a>
+</div>
 `;
 
 exports[`Article Byline test on web renders correctly with the author at the end 1`] = `
@@ -147,29 +268,21 @@ Array [
   >
     RBS Six Nations 
   </div>,
-  <a
+  <div
     dir="auto"
-    href="/profile/mike-atherton"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Mike Atherton
-  </a>,
+  </div>,
 ]
 `;
 
 exports[`Article Byline test on web renders correctly with the author in the begining 1`] = `
 Array [
-  <a
+  <div
     dir="auto"
-    href="/profile/camilla-long"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="link"
   >
     Camilla Long
-  </a>,
+  </div>,
   <div
     dir="auto"
   >

@@ -1,17 +1,16 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
-
-import ArticleError from "./article-error";
-import ArticleLoading from "./article-loading";
-import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
-import ArticleHeader from "./article-header/article-header";
-import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
+import ArticleError from "./article-error";
+import ArticleHeader from "./article-header/article-header";
+import ArticleLoading from "./article-loading";
+import ArticleMeta from "./article-meta/article-meta";
+import ArticleTopics from "./article-topics";
 import LeadAssetComponent from "./article-lead-asset/article-lead-asset";
 import getLeadAsset from "./article-lead-asset/get-lead-asset";
 import articleTrackingContext from "./article-tracking-context";
-import Topics from "./topics";
+import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 
 import {
   MainContainer,
@@ -29,9 +28,10 @@ const adStyle = {
 class ArticlePage extends Component {
   static renderArticle(
     articleData,
-    onRelatedArticlePress,
     onAuthorPress,
-    onLinkPress
+    onLinkPress,
+    onRelatedArticlePress,
+    onTopicPress
   ) {
     const {
       headline,
@@ -82,7 +82,11 @@ class ArticlePage extends Component {
               publicationName={publicationName}
               onAuthorPress={onAuthorPress}
             />
-            <Topics topics={topics} device="DESKTOP" />
+            <ArticleTopics
+              topics={topics}
+              device="DESKTOP"
+              onPress={onTopicPress}
+            />
           </MetaContainer>
           <LeadAssetContainer>
             <LeadAssetComponent {...leadAssetProps} />
@@ -96,7 +100,7 @@ class ArticlePage extends Component {
             />
           </BodyContainer>
         </MainContainer>
-        <Topics topics={topics} />
+        <ArticleTopics topics={topics} onPress={onTopicPress} />
         {displayRelatedArticles}
         <Ad pos="pixel" section={section} contextUrl={url} />
         <Ad pos="pixelteads" section={section} contextUrl={url} />
@@ -109,9 +113,10 @@ class ArticlePage extends Component {
     const {
       error,
       isLoading,
-      onRelatedArticlePress,
       onAuthorPress,
-      onLinkPress
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress
     } = this.props;
 
     if (error) {
@@ -126,9 +131,10 @@ class ArticlePage extends Component {
       <AdComposer adConfig={this.props.adConfig}>
         {ArticlePage.renderArticle(
           this.props.article,
-          onRelatedArticlePress,
           onAuthorPress,
-          onLinkPress
+          onLinkPress,
+          onRelatedArticlePress,
+          onTopicPress
         )}
       </AdComposer>
     );

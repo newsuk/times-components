@@ -1,5 +1,5 @@
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import React from "react";
 import { StyleSheet, View, ViewPropTypes, ART } from "react-native";
 import { colours } from "@times-components/styleguide";
 
@@ -32,7 +32,7 @@ function angleToPoints(angle) {
   };
 }
 
-class Gradient extends React.Component {
+class Gradient extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -64,8 +64,8 @@ class Gradient extends React.Component {
             fill={
               new LinearGradient(
                 {
-                  "0": colours.functional.backgroundSecondary,
-                  "1": colours.functional.backgroundTertiary
+                  "0": colours.functional.backgroundPrimary,
+                  "1": colours.functional.backgroundSecondary
                 },
                 width * start.x,
                 height * start.y,

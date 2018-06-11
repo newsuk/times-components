@@ -68,4 +68,16 @@ describe("Jest serializer", () => {
     const tree = shallow(<DummyRenderer />);
     expect(tree).toMatchSnapshot();
   });
+
+  it("should remove functions as props", () => {
+    const Dummy = () => null;
+    const DummyRenderer = () => (
+      <View>
+        <Dummy testFunc={() => 42} />
+      </View>
+    );
+
+    const tree = shallow(<DummyRenderer />);
+    expect(tree).toMatchSnapshot();
+  });
 });

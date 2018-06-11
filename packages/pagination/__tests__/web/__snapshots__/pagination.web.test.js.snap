@@ -96,7 +96,6 @@ exports[`Pagination on Web renders correctly 1`] = `
     <div>
       <a
         href="./2"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -234,7 +233,6 @@ exports[`Pagination on Web renders next link 1`] = `
     <div>
       <a
         href="./2"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -371,7 +369,6 @@ exports[`Pagination on Web renders prev and next link 1`] = `
     <div>
       <a
         href="./1"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -412,7 +409,6 @@ exports[`Pagination on Web renders prev and next link 1`] = `
     <div>
       <a
         href="./3"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -549,7 +545,6 @@ exports[`Pagination on Web renders prev link 1`] = `
     <div>
       <a
         href="./2"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -688,7 +683,6 @@ exports[`Pagination on Web renders results message 1`] = `
     <div>
       <a
         href="./2"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",
@@ -781,7 +775,6 @@ exports[`Pagination on Web renders with hidden results 1`] = `
     <div>
       <a
         href="./2"
-        onClick={[Function]}
         style={
           Object {
             "textDecoration": "none",

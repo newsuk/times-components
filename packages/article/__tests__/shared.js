@@ -1,6 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import Article from "../src/article";
 
 import fullArticleFixture from "../fixtures/full-article.json";
@@ -73,23 +74,6 @@ export default () => {
     global.Intl = realIntl;
   });
 
-  it("should render activity indicator ", () => {
-    const tree = renderer
-      .create(
-        <Article
-          isLoading
-          analyticsStream={() => {}}
-          adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
-          onAuthorPress={() => {}}
-          onVideoPress={() => {}}
-          onLinkPress={() => {}}
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("should render an error", () => {
     const props = {
       error: { message: "An example error." }
@@ -98,31 +82,31 @@ export default () => {
     const tree = renderer.create(
       <Article
         {...props}
-        analyticsStream={() => {}}
         adConfig={adConfig}
-        onRelatedArticlePress={() => {}}
+        analyticsStream={() => {}}
         onAuthorPress={() => {}}
-        onVideoPress={() => {}}
         onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onVideoPress={() => {}}
       />
     );
     expect(tree).toMatchSnapshot();
   });
 
   it("should render a full article", () => {
-    const tree = renderer
-      .create(
-        <Article
-          {...fullArticleFixture.data}
-          analyticsStream={() => {}}
-          adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
-          onAuthorPress={() => {}}
-          onVideoPress={() => {}}
-          onLinkPress={() => {}}
-        />
-      )
-      .toJSON();
+    const tree = shallow(
+      <Article
+        {...fullArticleFixture.data}
+        adConfig={adConfig}
+        analyticsStream={() => {}}
+        onAuthorPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onVideoPress={() => {}}
+      />
+    );
     expect(tree).toMatchSnapshot();
   });
 
@@ -131,12 +115,13 @@ export default () => {
       .create(
         <Article
           {...shortArticleFixture.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -148,12 +133,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoFlags.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -165,12 +151,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoByline.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -182,12 +169,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoLabel.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -199,12 +187,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoStandfirst.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -216,12 +205,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoStandfirstNoFlags.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -233,12 +223,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoStandfirstNoLabel.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -250,12 +241,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoLabelNoFlags.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -267,12 +259,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();
@@ -284,12 +277,13 @@ export default () => {
       .create(
         <Article
           {...articleFixtureWithVideo.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
-          onRelatedArticlePress={() => {}}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
-          onVideoPress={() => {}}
           onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onVideoPress={() => {}}
         />
       )
       .toJSON();

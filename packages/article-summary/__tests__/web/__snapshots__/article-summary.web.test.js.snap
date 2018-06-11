@@ -7,7 +7,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
     Object {
       "WebkitBoxLines": "multiple",
       "WebkitFlexWrap": "wrap",
-      "color": "rgba(105,105,105,1)",
       "flexWrap": "wrap",
       "fontFamily": "TimesDigitalW04",
       "lineHeight": "20px",
@@ -35,7 +34,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryContent com
     Object {
       "WebkitBoxLines": "multiple",
       "WebkitFlexWrap": "wrap",
-      "color": "rgba(105,105,105,1)",
       "flexWrap": "wrap",
       "fontFamily": "TimesDigitalW04",
       "lineHeight": "20px",
@@ -67,6 +65,7 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
   role="heading"
   style={
     Object {
+      "color": "rgba(51,51,51,1)",
       "fontFamily": "TimesModern-Bold",
       "fontSize": "22px",
       "fontWeight": "400",
@@ -79,6 +78,89 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
 </h3>
 `;
 
+exports[`Article Summary tests on Web should render an article-summary component containing links 1`] = `
+<div>
+  <div>
+    <div
+      dir="auto"
+      style={
+        Object {
+          "color": "rgba(51,51,51,1)",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "letterSpacing": "1.2px",
+        }
+      }
+    >
+      FRANCIS ELLIOTT
+    </div>
+  </div>
+  <h3
+    aria-level="3"
+    dir="auto"
+    role="heading"
+    style={
+      Object {
+        "color": "rgba(51,51,51,1)",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Sajid Javid to end hostile era for illegal immigrants
+  </h3>
+  <div
+    dir="auto"
+    style={
+      Object {
+        "WebkitBoxLines": "multiple",
+        "WebkitFlexWrap": "wrap",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "lineHeight": "20px",
+        "marginBottom": "10px",
+        "msFlexWrap": "wrap",
+      }
+    }
+  >
+    <span
+      dir="auto"
+    >
+      
+      <span
+        dir="auto"
+      >
+        Sajid Javid
+      </span>
+       has warned the Home Office to expect an overhaul after the 
+      <span
+        dir="auto"
+      >
+        Windrush scandal
+      </span>
+       as he ditches the policy of creating a “hostile
+      ...
+    </span>
+  </div>
+  <div
+    aria-label="datePublication"
+    data-testid="datePublication"
+    dir="auto"
+    style={
+      Object {
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </div>
+</div>
+`;
+
 exports[`Article Summary tests on Web should render an article-summary component with a single paragraph 1`] = `
 <div>
   <div>
@@ -86,6 +168,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
+          "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -101,6 +185,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -141,6 +226,8 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -153,20 +240,18 @@ exports[`Article Summary tests on Web should render an article-summary component
     style={
       Object {
         "color": "rgba(105,105,105,1)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "13px",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -183,6 +268,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -198,6 +284,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -214,7 +301,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -231,7 +317,7 @@ exports[`Article Summary tests on Web should render an article-summary component
         Victoria
       </strong>
       <br />
-      ITV
+       ITV
       <br />
       ★★★★☆
     </span>
@@ -243,7 +329,7 @@ exports[`Article Summary tests on Web should render an article-summary component
         Lucy Worsley’s Nights at the Opera
       </strong>
       <br />
-      BBC Two
+       BBC Two
       <br />
       ★★★☆☆
     </span>
@@ -261,7 +347,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -273,21 +358,16 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -304,6 +384,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -319,6 +400,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -335,7 +417,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -369,7 +450,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -381,21 +461,16 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -412,6 +487,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -427,6 +503,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -443,7 +520,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -461,6 +537,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -476,6 +553,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -492,7 +570,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -511,6 +588,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -527,7 +605,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -556,7 +633,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -568,21 +644,16 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -600,6 +671,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -616,7 +688,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -639,7 +710,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -657,6 +727,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -672,6 +743,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -688,7 +760,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -709,21 +780,16 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -740,6 +806,7 @@ exports[`Article Summary tests on Web should render an article-summary component
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -755,7 +822,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -778,7 +844,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -797,6 +862,7 @@ exports[`Article Summary tests on Web should render an article-summary component
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -813,7 +879,6 @@ exports[`Article Summary tests on Web should render an article-summary component
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -836,7 +901,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
@@ -848,21 +912,16 @@ exports[`Article Summary tests on Web should render an article-summary component
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -879,6 +938,7 @@ exports[`Article Summary tests on Web should render an article-summary with opin
       dir="auto"
       style={
         Object {
+          "color": "rgba(51,51,51,1)",
           "fontSize": "12px",
           "fontWeight": "400",
           "letterSpacing": "1.2px",
@@ -899,15 +959,11 @@ exports[`Article Summary tests on Web should render an article-summary with opin
       }
     }
   >
-    <a
+    <span
       dir="auto"
-      href="/profile/camilla-long"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="link"
     >
       Camilla Long
-    </a>
+    </span>
     <span
       dir="auto"
     >
@@ -920,6 +976,7 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     role="heading"
     style={
       Object {
+        "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
         "fontWeight": "400",
@@ -936,7 +993,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
       Object {
         "WebkitBoxLines": "multiple",
         "WebkitFlexWrap": "wrap",
-        "color": "rgba(105,105,105,1)",
         "flexWrap": "wrap",
         "fontFamily": "TimesDigitalW04",
         "lineHeight": "20px",
@@ -959,7 +1015,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     dir="auto"
     style={
       Object {
-        "color": "rgba(105,105,105,1)",
         "lineHeight": "15px",
         "marginBottom": "5px",
       }

@@ -30,13 +30,14 @@ export const makeGraphqlOptions = (
 const connectGraphql = (query, propsToVariables) => {
   const variableNames = getQueryVariables(query.definitions);
   const Wrapper = ({
-    data: { error, loading, refetch, ...result },
+    data: { error, loading, refetch, fetchMore, ...result },
     children,
     ...props
   }) =>
     children({
       error,
-      refetch: () => refetch(), // using shorthand causes a rect-native error
+      refetch: () => refetch(), // using shorthand causes a react-native error
+      fetchMore,
       isLoading: loading,
       ...result,
       ...props

@@ -3,6 +3,167 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.8"></a>
+## [0.5.8](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.7...@times-components/video-label@0.5.8) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.6...@times-components/video-label@0.5.7) (2018-06-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.5...@times-components/video-label@0.5.6) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.4...@times-components/video-label@0.5.5) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.3...@times-components/video-label@0.5.4) (2018-06-04)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.2...@times-components/video-label@0.5.3) (2018-05-31)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.5.0...@times-components/video-label@0.5.2) (2018-05-30)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.6...@times-components/video-label@0.5.0) (2018-05-29)
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+
+
+<a name="0.4.6"></a>
+## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.5...@times-components/video-label@0.4.6) (2018-05-29)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.5"></a>
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.4...@times-components/video-label@0.4.5) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.3...@times-components/video-label@0.4.4) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.2...@times-components/video-label@0.4.3) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.2"></a>
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.1...@times-components/video-label@0.4.2) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.4.0...@times-components/video-label@0.4.1) (2018-05-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.11...@times-components/video-label@0.4.0) (2018-05-15)
+
+
+### Features
+
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
+<a name="0.3.11"></a>
+## [0.3.11](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.10...@times-components/video-label@0.3.11) (2018-05-15)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.3.10"></a>
+## [0.3.10](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.9...@times-components/video-label@0.3.10) (2018-05-10)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.3.9"></a>
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.8...@times-components/video-label@0.3.9) (2018-05-08)
+
+
+
+
+**Note:** Version bump only for package @times-components/video-label
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.7...@times-components/video-label@0.3.8) (2018-05-04)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+
+
+
+
 <a name="0.3.7"></a>
 ## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/video-label@0.3.6...@times-components/video-label@0.3.7) (2018-04-30)
 

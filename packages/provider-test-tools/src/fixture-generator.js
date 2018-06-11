@@ -2,11 +2,14 @@ import { addTypenameToDocument } from "apollo-utilities";
 import {
   authorProfileQuery,
   articleListNoImagesQuery,
-  articleListWithImagesQuery
+  articleListWithImagesQuery,
+  topicQuery,
+  topicArticlesQuery
 } from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
+import topicFixture from "../fixtures/topic-articles.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
@@ -30,6 +33,12 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
+const makeTopic = () => ({
+  name: "Chelsea",
+  description: "A swanky part of town.",
+  __typename: "Topic"
+});
+
 const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   const articles = withImages
     ? articleListWithImagesFixture.data.author.articles
@@ -43,6 +52,23 @@ const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
           __typename: "Articles"
         },
         __typename: "Author"
+      }
+    }
+  };
+};
+
+const makeTopicArticleList = ({ skip, first }, transform = id => id) => {
+  const { articles } = topicFixture.data.topic;
+
+  return {
+    data: {
+      topic: {
+        articles: {
+          ...articles,
+          list: transform(articles.list.slice(skip, skip + first)),
+          __typename: "Articles"
+        },
+        __typename: "Topic"
       }
     }
   };
@@ -65,12 +91,36 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   }
 });
 
+const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
+  delay,
+  request: {
+    query: addTypenameToDocument(topicQuery),
+    variables: {
+      slug
+    }
+  },
+  result: {
+    data: {
+      topic: {
+        ...makeTopic({ count })
+      }
+    }
+  }
+});
+
 const query = ({ withImages }) =>
   addTypenameToDocument(
     withImages ? articleListWithImagesQuery : articleListNoImagesQuery
   );
 
-const makeVariables = ({ withImages, skip, pageSize, slug }) => {
+const makeVariables = ({
+  longSummaryLength,
+  pageSize,
+  shortSummaryLength,
+  skip,
+  slug,
+  withImages
+}) => {
   if (withImages) {
     return {
       slug,
@@ -84,18 +134,20 @@ const makeVariables = ({ withImages, skip, pageSize, slug }) => {
     slug,
     first: pageSize,
     skip,
-    shortSummaryLength: 220,
-    longSummaryLength: 360
+    shortSummaryLength,
+    longSummaryLength
   };
 };
 
 const makeArticleMocks = (
   {
     count = 20,
+    delay = 1000,
+    longSummaryLength = 220,
     pageSize = 5,
-    withImages = false,
+    shortSummaryLength = 220,
     slug = "deborah-haynes",
-    delay = 1000
+    withImages = false
   } = {},
   transform
 ) => [
@@ -105,13 +157,48 @@ const makeArticleMocks = (
     request: {
       query: query({ withImages }),
       variables: makeVariables({
+        longSummaryLength,
+        pageSize,
+        shortSummaryLength,
+        skip: indx * pageSize,
+        slug,
+        withImages
+      })
+    },
+    result: makeArticleList(
+      {
+        skip: indx * pageSize,
+        first: pageSize,
+        withImages
+      },
+      transform
+    )
+  }))
+];
+
+const makeTopicArticleMocks = (
+  {
+    count = 10,
+    pageSize = 5,
+    withImages = true,
+    slug = "chelsea",
+    delay = 1000
+  } = {},
+  transform
+) => [
+  makeTopicMock({ count, withImages, slug }),
+  ...new Array(Math.ceil(count / pageSize)).fill(0).map((item, indx) => ({
+    delay,
+    request: {
+      query: addTypenameToDocument(topicArticlesQuery),
+      variables: makeVariables({
         withImages,
         skip: indx * pageSize,
         pageSize,
         slug
       })
     },
-    result: makeArticleList(
+    result: makeTopicArticleList(
       {
         skip: indx * pageSize,
         first: pageSize,
@@ -187,6 +274,28 @@ const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
   ];
 };
 
+const makeMocksWithTopicError = ({ withImages, slug, pageSize }) => {
+  const [, ...articles] = makeTopicArticleMocks({
+    withImages,
+    slug,
+    pageSize
+  });
+
+  return [
+    {
+      request: {
+        query: addTypenameToDocument(topicQuery),
+        variables: {
+          slug
+        }
+      },
+      error: new Error("Could not get topic")
+    },
+    makeTopicMock({ withImages, slug }),
+    ...articles
+  ];
+};
+
 export default {
   makeAuthor,
   makeArticleList,
@@ -195,5 +304,7 @@ export default {
   makeArticleMocks,
   makeBrokenMocks,
   makeMocksWithPageError,
-  makeMocksWithAuthorError
+  makeMocksWithAuthorError,
+  makeTopicArticleMocks,
+  makeMocksWithTopicError
 };

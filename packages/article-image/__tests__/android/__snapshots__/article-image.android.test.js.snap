@@ -14,7 +14,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -36,12 +35,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -59,18 +52,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -79,12 +60,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -127,7 +102,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0&resize=1440",
@@ -146,7 +120,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -160,37 +133,73 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -208,12 +217,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -228,7 +231,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0&resize=1440",
@@ -247,7 +249,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -261,37 +262,73 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>
@@ -423,7 +460,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -445,12 +481,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -468,18 +498,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -488,12 +506,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -536,7 +548,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0&resize=1440",
@@ -555,7 +566,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -569,37 +579,73 @@ exports[`Article Image test on android does not render Caption on Article Image 
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -617,12 +663,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -637,7 +677,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c029716-97a2-11e7-8c3c-cb45202c3d59.jpg?crop=160%2C90%2C-0%2C-0&resize=1440",
@@ -656,7 +695,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -670,37 +708,73 @@ exports[`Article Image test on android does not render Caption on Article Image 
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>
@@ -734,7 +808,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -756,12 +829,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -779,18 +846,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -799,12 +854,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -847,7 +896,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0&resize=1440",
@@ -866,7 +914,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -880,37 +927,73 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -928,12 +1011,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -948,7 +1025,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0&resize=1440",
@@ -967,7 +1043,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -981,37 +1056,73 @@ exports[`Article Image test on android renders inline image (landscape) correctl
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>
@@ -1097,7 +1208,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -1119,12 +1229,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -1142,18 +1246,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -1162,12 +1254,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1210,7 +1296,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0&resize=1440",
@@ -1229,7 +1314,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -1243,37 +1327,73 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -1291,12 +1411,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -1311,7 +1425,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0&resize=1440",
@@ -1330,7 +1443,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1344,37 +1456,73 @@ exports[`Article Image test on android renders inline image (portrait) correctly
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>
@@ -1451,7 +1599,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -1473,12 +1620,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -1496,18 +1637,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -1516,12 +1645,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1564,7 +1687,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0&resize=1440",
@@ -1583,7 +1705,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -1597,37 +1718,73 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -1645,12 +1802,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -1665,7 +1816,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0&resize=1440",
@@ -1684,7 +1834,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -1698,37 +1847,73 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>
@@ -1807,7 +1992,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
     <View>
       <Modal
         hardwareAccelerated={false}
-        onRequestClose={[Function]}
         presentationStyle="fullScreen"
         visible={false}
       >
@@ -1829,12 +2013,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                 "type": "ThemeAttrAndroid",
               }
             }
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             pointerEvents="box-only"
           >
             <svg
@@ -1852,18 +2030,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             </svg>
           </View>
           <View
-            onMoveShouldSetResponder={[Function]}
-            onMoveShouldSetResponderCapture={[Function]}
-            onResponderEnd={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderReject={[Function]}
-            onResponderRelease={[Function]}
-            onResponderStart={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "flexGrow": 1,
@@ -1872,12 +2038,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           >
             <View
               accessible={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1920,7 +2080,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                     }
                   >
                     <Image
-                      onLoad={[Function]}
                       source={
                         Object {
                           "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0&resize=1440",
@@ -1939,7 +2098,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                       }
                     />
                     <View
-                      onLayout={[Function]}
                       style={
                         Object {
                           "flex": 1,
@@ -1953,37 +2111,73 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                           }
                         }
                       >
-                        <BVLinearGradient
-                          colors={
-                            Array [
-                              "#F9F9F9",
-                              "#EDEDED",
-                            ]
-                          }
-                          end={
-                            Object {
-                              "x": -0.09302964577578221,
-                              "y": 0.11488204504197774,
-                            }
-                          }
-                          locations={
-                            Array [
-                              0,
-                              1,
-                            ]
-                          }
-                          start={
-                            Object {
-                              "x": 1,
-                              "y": 0,
-                            }
-                          }
+                        <ARTSurfaceView
                           style={
                             Object {
-                              "flex": 1,
+                              "bottom": 0,
+                              "height": 0,
+                              "left": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
                             }
                           }
-                        />
+                        >
+                          <ARTShape
+                            d={
+                              Array [
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                                2,
+                                0,
+                                0,
+                              ]
+                            }
+                            fill={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                -0,
+                                0,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                0.9764705882352941,
+                                1,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                0.9294117647058824,
+                                1,
+                                0,
+                                1,
+                              ]
+                            }
+                            opacity={1}
+                            stroke={null}
+                            strokeCap={1}
+                            strokeDash={null}
+                            strokeJoin={1}
+                            strokeWidth={1}
+                            transform={
+                              Array [
+                                1,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                              ]
+                            }
+                          />
+                        </ARTSurfaceView>
                       </View>
                     </View>
                   </View>
@@ -2001,12 +2195,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             "type": "ThemeAttrAndroid",
           }
         }
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         pointerEvents="box-only"
       >
         <View
@@ -2021,7 +2209,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             }
           >
             <Image
-              onLoad={[Function]}
               source={
                 Object {
                   "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0&resize=1440",
@@ -2040,7 +2227,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
               }
             />
             <View
-              onLayout={[Function]}
               style={
                 Object {
                   "flex": 1,
@@ -2054,37 +2240,73 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
                   }
                 }
               >
-                <BVLinearGradient
-                  colors={
-                    Array [
-                      "#F9F9F9",
-                      "#EDEDED",
-                    ]
-                  }
-                  end={
-                    Object {
-                      "x": -0.09302964577578221,
-                      "y": 0.11488204504197774,
-                    }
-                  }
-                  locations={
-                    Array [
-                      0,
-                      1,
-                    ]
-                  }
-                  start={
-                    Object {
-                      "x": 1,
-                      "y": 0,
-                    }
-                  }
+                <ARTSurfaceView
                   style={
                     Object {
-                      "flex": 1,
+                      "bottom": 0,
+                      "height": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
                     }
                   }
-                />
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        -0,
+                        0,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        0.9764705882352941,
+                        1,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        0.9294117647058824,
+                        1,
+                        0,
+                        1,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTSurfaceView>
               </View>
             </View>
           </View>

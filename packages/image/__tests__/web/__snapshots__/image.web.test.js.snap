@@ -128,7 +128,6 @@ exports[`3. Renders with a passed style prop 1`] = `
 
 exports[`4. Renders a placeholder 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,

@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Should handle empty child array and a zero item count 1`] = `""`;
+
+exports[`2. Standard template renders a single child element 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-1"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. Standard template renders two child elements 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-1"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-2"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. Standard template renders three child elements 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-1"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-2"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <ExampleChild
+        id="standard-3"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. Standard tracking roles 1`] = `
+Array [
+  "standard-1",
+  "standard-2",
+  "standard-3",
+]
+`;
