@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/button@0.3.0...@times-components/button@0.3.1) (2018-06-11)
+
+
+### Bug Fixes
+
+* add bundle step to button package ([#1003](https://github.com/newsuk/times-components/issues/1003)) ([cba4ff0](https://github.com/newsuk/times-components/commit/cba4ff0))
+* add rnw.js to prettier and lint ignore files ([#1006](https://github.com/newsuk/times-components/issues/1006)) ([28d50a6](https://github.com/newsuk/times-components/commit/28d50a6))
+* button package json dev deps ([#1004](https://github.com/newsuk/times-components/issues/1004)) ([8ea1de1](https://github.com/newsuk/times-components/commit/8ea1de1))
+
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/button@0.2.0...@times-components/button@0.3.0) (2018-06-07)
 
