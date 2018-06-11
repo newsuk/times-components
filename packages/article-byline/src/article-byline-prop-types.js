@@ -13,7 +13,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  onAuthorPress: null,
+  onAuthorPress: () => null,
   style: {},
   color: ""
 };

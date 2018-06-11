@@ -45,6 +45,18 @@ export default Component => {
 
       expect(onAuthorPressMock).toHaveBeenCalled();
     });
+
+    it("should handle an empty onPress event", () => {
+      const wrapper = shallow(<Component ast={authorsFixture.singleAuthor} />);
+
+      expect(() =>
+        wrapper
+          .at(0)
+          .dive()
+          .find("Text")
+          .simulate("press")
+      ).not.toThrow();
+    });
   }
 
   it("should render with a given section colour", () => {
