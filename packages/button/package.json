@@ -35,18 +35,27 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.2",
     "@times-components/storybook": "0.13.2",
+    "@times-components/webpack-configurator": "0.1.1",
     "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-flow-react-proptypes": "22.0.0",
+    "babel-plugin-react-native-web": "0.6.1",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
-    "react-native": "0.54.2"
+    "react-native": "0.54.2",
+    "webpack": "4.6.0",
+    "webpack-cli": "2.1.4"
   },
   "dependencies": {
     "@times-components/styleguide": "0.11.0",
@@ -54,9 +63,9 @@
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react": ">=16.2",
+    "react-dom": ">=16.2",
+    "react-native": ">=0.54",
     "react-native-web": ">=0.3"
   },
   "publishConfig": {
