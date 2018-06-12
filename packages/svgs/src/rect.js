@@ -1,8 +1,9 @@
 import React from "react";
 import { ART } from "react-native";
 import PropTypes from "prop-types";
+import SVGPath from "./path";
 
-const { Shape, Path } = ART;
+const { Path } = ART;
 
 const Rect = ({ stroke, fill, x, y, width, height }) => {
   const d = new Path()
@@ -12,7 +13,7 @@ const Rect = ({ stroke, fill, x, y, width, height }) => {
     .line(-width, 0)
     .line(0, -height);
 
-  return <Shape stroke={stroke} fill={fill} d={d} />;
+  return <SVGPath stroke={stroke} fill={fill} d={d} />;
 };
 
 Rect.propTypes = {

@@ -1,8 +1,9 @@
 import React from "react";
 import { ART } from "react-native";
 import PropTypes from "prop-types";
+import SVGPath from "./path";
 
-const { Shape, Path } = ART;
+const { Path } = ART;
 
 const toCoordinates = points =>
   points
@@ -28,7 +29,7 @@ const Polygon = ({ stroke, fill, points }) => {
     d.lineTo(x, y);
   }
 
-  return <Shape stroke={stroke} fill={fill} d={d} />;
+  return <SVGPath stroke={stroke} fill={fill} d={d} />;
 };
 
 Polygon.propTypes = {
