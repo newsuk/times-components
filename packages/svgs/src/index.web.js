@@ -1,4 +1,4 @@
-import { Svg, G, Path } from "svgs";
+import { Svg, G, Path, Rect, Polygon } from "svgs";
 
 export default Svg;
-export { Svg, G, Path };
+export { Svg, G, Path, Rect, Polygon };
