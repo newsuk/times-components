@@ -18,7 +18,7 @@ function iconRenderTest(name, Icon) {
 
 function iconColourTest(Icon) {
   return () => {
-    const stroke = "#coffee";
+    const stroke = "#c0ffee";
     const fill = "#facade";
 
     const tree = render(<Icon strokeColour={stroke} fillColour={fill} />);
