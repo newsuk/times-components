@@ -22,6 +22,7 @@ const ArticleListItem = props => {
     onPress,
     publicationName,
     publishedTime,
+    section,
     shortSummary,
     showImage,
     summary,
@@ -68,7 +69,7 @@ const ArticleListItem = props => {
             }}
             headline={() => <ArticleSummaryHeadline headline={headline} />}
             labelProps={{
-              color: colours.functional.primary,
+              color: colours.section[section] || colours.section.default,
               title: label
             }}
           />

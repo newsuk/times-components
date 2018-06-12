@@ -379,7 +379,7 @@ exports[`1. Render an author profile page 1`] = `
                 Object {
                   "alignItems": "center",
                   "flexDirection": "row",
-                  "paddingVertical": 8,
+                  "paddingVertical": 10,
                 }
               }
             >
@@ -1713,7 +1713,7 @@ exports[`2. Render an author profile page without images 1`] = `
                 Object {
                   "alignItems": "center",
                   "flexDirection": "row",
-                  "paddingVertical": 8,
+                  "paddingVertical": 10,
                 }
               }
             >
