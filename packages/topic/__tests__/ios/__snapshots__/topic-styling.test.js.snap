@@ -70,9 +70,8 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
             "borderBottomWidth": 0.5,
             "flexDirection": "column",
             "minHeight": 90,
-            "paddingBottom": 20,
             "paddingHorizontal": 10,
-            "paddingTop": 35,
+            "paddingVertical": 35,
             "width": "100%",
           }
         }
@@ -95,7 +94,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 "color": "#1D1D1B",
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 40,
-                "paddingBottom": 20,
               }
             }
             testID="topic-name"
@@ -109,6 +107,7 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 "borderTopColor": "#DBDBDB",
                 "borderTopWidth": 1,
                 "justifyContent": "center",
+                "marginVertical": 20,
                 "width": 200,
               }
             }
@@ -123,7 +122,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
                 "fontFamily": "TimesDigitalW04",
                 "fontSize": 15,
                 "lineHeight": 26,
-                "paddingVertical": 20,
                 "textAlign": "center",
               }
             }

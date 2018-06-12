@@ -17,7 +17,7 @@ const TopicHead = ({ name, description, isLoading }) => {
   return isLoading ? (
     <View style={styles.wrapper} />
   ) : (
-    <View style={[styles.wrapper, description ? styles.paddingBottom : {}]}>
+    <View style={styles.wrapper}>
       <View style={styles.container}>
         <Text
           testID="topic-name"

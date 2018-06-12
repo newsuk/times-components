@@ -59,7 +59,7 @@ exports[`1. Render a Topic page 1`] = `
         },
         "publicationName": "TIMES",
         "publishedTime": "2015-03-17T18:57:58.000Z",
-        "section": null,
+        "section": "world",
         "summary": Array [
           Object {
             "children": Array [
