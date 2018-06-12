@@ -21,7 +21,7 @@ function iconColourTest(Icon) {
     const stroke = "#c0ffee";
     const fill = "#facade";
 
-    const tree = shallow(<Icon strokeColour={stroke} fillColour={fill} />);
+    const tree = shallow(<Icon strokeColour={stroke} height={50} fillColour={fill} />);
 
     expect(tree.find({stroke: stroke}).length).toBeGreaterThan(0);
     expect(tree.find({fill: fill}).length).toBeGreaterThan(0);
