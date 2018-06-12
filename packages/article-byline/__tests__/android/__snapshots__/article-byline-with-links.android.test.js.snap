@@ -3,9 +3,11 @@
 exports[`1. Render a single author 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "#006699",
@@ -13,6 +15,7 @@ exports[`1. Render a single author 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -24,9 +27,11 @@ exports[`1. Render a single author 1`] = `
 exports[`2. Render a given section colour 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "blue",
@@ -34,6 +39,7 @@ exports[`2. Render a given section colour 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -66,9 +72,11 @@ exports[`3. Render an inline element 1`] = `
 exports[`4. Render an author first 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
@@ -76,6 +84,7 @@ exports[`4. Render an author first 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -119,9 +128,11 @@ exports[`5. Render an author last 1`] = `
     RBS Six Nations 
   </Text>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
@@ -129,6 +140,7 @@ exports[`5. Render an author last 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -140,9 +152,11 @@ exports[`5. Render an author last 1`] = `
 exports[`6. Render multiple authors separated by commas 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
@@ -150,6 +164,7 @@ exports[`6. Render multiple authors separated by commas 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -172,9 +187,11 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     , 
   </Text>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
@@ -182,6 +199,7 @@ exports[`6. Render multiple authors separated by commas 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -204,9 +222,11 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     , 
   </Text>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "#006699",
@@ -214,6 +234,7 @@ exports[`6. Render multiple authors separated by commas 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -225,9 +246,11 @@ exports[`6. Render multiple authors separated by commas 1`] = `
 exports[`7. Render multiple authors separated by spaces 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
@@ -235,6 +258,7 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -257,9 +281,11 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
      
   </Text>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/mike-atherton"
     style={
       Object {
         "color": "#006699",
@@ -267,6 +293,7 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -289,9 +316,11 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
      
   </Text>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "#006699",
@@ -299,6 +328,7 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
+        "textDecorationLine": "underline",
       }
     }
   >
@@ -312,9 +342,11 @@ exports[`8. Render null when AST is empty 1`] = `null`;
 exports[`9. Render an author with given styles 1`] = `
 <View>
   <Text
+    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
+    href="/profile/alexandra-frean"
     style={
       Object {
         "color": "red",

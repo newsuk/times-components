@@ -1,91 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Byline test on iOS renders byline with links correctly with a section colour 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "blue",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders byline with links correctly with a single author 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders byline with links correctly with a single inline element 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-    }
-  }
->
-  Lindsay McIntosh Scottish Political Editor
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders byline with links correctly with an empty AST (empty byline on DB) 1`] = `null`;
-
-exports[`Article Byline test on iOS renders byline with links correctly with multiple authors separated by spaces 1`] = `
-Array [
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/camilla-long"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
+exports[`1. Render a single author 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -97,186 +13,37 @@ Array [
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
       }
     }
   >
     Alexandra Frean
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
-exports[`Article Byline test on iOS renders byline with links correctly with multiple authors separated by text with commas 1`] = `
-Array [
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/camilla-long"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
+exports[`2. Render a given section colour 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
       Object {
-        "color": "#006699",
+        "color": "blue",
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/alexandra-frean"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
       }
     }
   >
     Alexandra Frean
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
-exports[`Article Byline test on iOS renders byline with links correctly with styles 1`] = `
-<Text
-  accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  href="/profile/alexandra-frean"
-  style={
-    Object {
-      "color": "red",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders byline with links correctly with the author at the end 1`] = `
-Array [
+exports[`3. Render an inline element 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -291,38 +58,17 @@ Array [
       }
     }
   >
-    RBS Six Nations 
-  </Text>,
-  <Text
-    accessibilityRole="link"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    href="/profile/mike-atherton"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-        "textDecorationLine": "underline",
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-]
+    Lindsay McIntosh Scottish Political Editor
+  </Text>
+</View>
 `;
 
-exports[`Article Byline test on iOS renders byline with links correctly with the author in the begining 1`] = `
-Array [
+exports[`4. Render an author first 1`] = `
+<View>
   <Text
-    accessibilityRole="link"
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    href="/profile/camilla-long"
     style={
       Object {
         "color": "#006699",
@@ -330,12 +76,11 @@ Array [
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 13,
-        "textDecorationLine": "underline",
       }
     }
   >
     Camilla Long
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -351,261 +96,12 @@ Array [
     }
   >
     , Environment Editor
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
-exports[`Article Byline test on iOS renders correctly with a section colour 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "blue",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with a single author 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with a single inline element 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "#006699",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-    }
-  }
->
-  Lindsay McIntosh Scottish Political Editor
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with an empty AST (empty byline on DB) 1`] = `null`;
-
-exports[`Article Byline test on iOS renders correctly with multiple authors separated by spaces 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-     
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>,
-]
-`;
-
-exports[`Article Byline test on iOS renders correctly with multiple authors separated by text with commas 1`] = `
-Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Camilla Long
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Mike Atherton
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    , 
-  </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#006699",
-        "flexDirection": "row",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 13,
-      }
-    }
-  >
-    Alexandra Frean
-  </Text>,
-]
-`;
-
-exports[`Article Byline test on iOS renders correctly with styles 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
-  style={
-    Object {
-      "color": "red",
-      "flexDirection": "row",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 13,
-      "lineHeight": 13,
-      "textDecorationLine": "underline",
-    }
-  }
->
-  Alexandra Frean
-</Text>
-`;
-
-exports[`Article Byline test on iOS renders correctly with the author at the end 1`] = `
-Array [
+exports[`5. Render an author last 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -621,7 +117,7 @@ Array [
     }
   >
     RBS Six Nations 
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -637,12 +133,12 @@ Array [
     }
   >
     Mike Atherton
-  </Text>,
-]
+  </Text>
+</View>
 `;
 
-exports[`Article Byline test on iOS renders correctly with the author in the begining 1`] = `
-Array [
+exports[`6. Render multiple authors separated by commas 1`] = `
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -658,7 +154,7 @@ Array [
     }
   >
     Camilla Long
-  </Text>,
+  </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -673,7 +169,164 @@ Array [
       }
     }
   >
-    , Environment Editor
-  </Text>,
-]
+    , 
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    Mike Atherton
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    , 
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    Alexandra Frean
+  </Text>
+</View>
+`;
+
+exports[`7. Render multiple authors separated by spaces 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    Camilla Long
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+     
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    Mike Atherton
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+     
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#006699",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+      }
+    }
+  >
+    Alexandra Frean
+  </Text>
+</View>
+`;
+
+exports[`8. Render null when AST is empty 1`] = `null`;
+
+exports[`9. Render an author with given styles 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "red",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 13,
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Alexandra Frean
+  </Text>
+</View>
 `;
