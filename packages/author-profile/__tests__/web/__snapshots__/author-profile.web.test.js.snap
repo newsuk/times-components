@@ -193,7 +193,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -319,7 +319,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -445,7 +445,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -807,7 +807,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -953,7 +953,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1099,7 +1099,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1340,7 +1340,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         id="empty.0"
       >
         <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
+          className="responsive-styles__component-fbPFZZ ereXyn"
         >
           <div>
             <div
@@ -1432,7 +1432,7 @@ exports[`3. Render an author profile page loading state 1`] = `
       >
         <div />
         <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
+          className="responsive-styles__component-fbPFZZ ereXyn"
         >
           <div>
             <div
@@ -1524,7 +1524,7 @@ exports[`3. Render an author profile page loading state 1`] = `
       >
         <div />
         <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
+          className="responsive-styles__component-fbPFZZ ereXyn"
         >
           <div>
             <div

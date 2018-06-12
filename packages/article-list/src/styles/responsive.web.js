@@ -41,7 +41,7 @@ export const ListItemWrapper = withResponsiveStyles(
     .articleListContent {
       flex: 2.7;
       flex-basis: 0 !important;
-      min-width: 380px;
+      min-width: auto;
     }
   `
   },
