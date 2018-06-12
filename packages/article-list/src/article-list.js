@@ -166,5 +166,5 @@ class ArticleList extends Component {
 ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(ArticleList);
 export { default as ArticleListPageError } from "./article-list-page-error";
+export default withTrackScrollDepth(ArticleList);

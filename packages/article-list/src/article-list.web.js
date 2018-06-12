@@ -56,7 +56,7 @@ class ArticleList extends Component {
       return this.state.images.get(nodeId);
     }
 
-    return this.images.get(nodeId);
+    return normaliseWidth(window.clientWidth);
   }
 
   handleObservation(entries) {
@@ -90,15 +90,11 @@ class ArticleList extends Component {
   }
 
   registerNode(node) {
-    if (!node) {
+    if (!node || !this.observer) {
       return;
     }
 
-    if (this.observer) {
-      this.observer.observe(node);
-    } else {
-      this.images.set(node.id, normaliseWidth(node.clientWidth));
-    }
+    this.observer.observe(node);
   }
 
   render() {
@@ -224,5 +220,5 @@ class ArticleList extends Component {
 ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(ArticleList);
 export { default as ArticleListPageError } from "./article-list-page-error";
+export default withTrackScrollDepth(ArticleList);
