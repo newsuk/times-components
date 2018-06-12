@@ -334,7 +334,7 @@ Object {
         Symbol(id): "Article:89bd6c18-ccf9-11e4-81dd-064fe933cd41",
       },
     ],
-    Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"}).articles({\\"first\\":5,\\"skip\\":0})",
+    Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"}).articles",
   },
   Symbol(id): "$ROOT_QUERY.topic({\\"slug\\":\\"chelsea\\"})",
 }

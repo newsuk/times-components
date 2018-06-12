@@ -1338,27 +1338,18 @@
             {
               "name": "articles",
               "description": "",
-              "args": [
-                {
-                  "name": "first",
-                  "description": "",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": "10"
-                },
-                {
-                  "name": "skip",
-                  "description": "",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
-                  "defaultValue": "0"
-                }
-              ],
-              "type": { "kind": "OBJECT", "name": "Articles", "ofType": null },
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "TopicArticles",
+                "ofType": null
+              },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "description",
-              "description": "",
+              "description": "A short sentence to describe the topic",
               "args": [],
               "type": { "kind": "SCALAR", "name": "String", "ofType": null },
               "isDeprecated": false,
@@ -1384,6 +1375,60 @@
                 "kind": "NON_NULL",
                 "name": null,
                 "ofType": { "kind": "SCALAR", "name": "Slug", "ofType": null }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "TopicArticles",
+          "description": "",
+          "fields": [
+            {
+              "name": "count",
+              "description": "The number of articles in a given topic",
+              "args": [],
+              "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "list",
+              "description": "List of articles associated with that topic",
+              "args": [
+                {
+                  "name": "first",
+                  "description":
+                    "The maximum number of articles you want to take, defaults to 10",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "10"
+                },
+                {
+                  "name": "skip",
+                  "description":
+                    "The number of articles to skip over, useful for paging, defaults to 0",
+                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "defaultValue": "0"
+                }
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Article",
+                    "ofType": null
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
