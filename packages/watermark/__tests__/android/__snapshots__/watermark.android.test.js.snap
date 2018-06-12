@@ -3,7 +3,7 @@
 exports[`Watermark tests on android renders correctly 1`] = `
 <Image
   resizeMode="contain"
-  source={null}
+  source={1}
   style={
     Object {
       "height": 250,
