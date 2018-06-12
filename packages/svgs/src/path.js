@@ -4,15 +4,20 @@ import PropTypes from "prop-types";
 
 const { Shape } = ART;
 
-const Path = ({ d, fill, stroke, strokeWidth, opacity }) => (
-  <Shape
-    fill={fill}
-    stroke={stroke}
-    strokeWidth={strokeWidth}
-    d={d}
-    opacity={opacity}
-  />
-);
+const Path = ({ d, fill, stroke, strokeWidth, opacity }) => {
+  const artStroke = stroke === "none" ? undefined : stroke;
+  const artFill = fill === "none" ? undefined : fill;
+
+  return (
+    <Shape
+      fill={artFill}
+      stroke={artStroke}
+      strokeWidth={strokeWidth}
+      d={d}
+      opacity={opacity}
+    />
+  );
+};
 
 Path.propTypes = {
   d: PropTypes.string.isRequired,
