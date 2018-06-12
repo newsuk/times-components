@@ -24,4 +24,9 @@ Rect.propTypes = {
   height: PropTypes.string.isRequired
 };
 
+Rect.defaultProps = {
+  stroke: undefined,
+  fill: undefined
+};
+
 export default Rect;

@@ -5,7 +5,13 @@ import PropTypes from "prop-types";
 const { Shape } = ART;
 
 const Path = ({ d, fill, stroke, strokeWidth, opacity }) => (
-  <Shape fill={fill} stroke={stroke} strokeWidth={strokeWidth} d={d} opacity={opacity} />
+  <Shape
+    fill={fill}
+    stroke={stroke}
+    strokeWidth={strokeWidth}
+    d={d}
+    opacity={opacity}
+  />
 );
 
 Path.propTypes = {
@@ -14,6 +20,13 @@ Path.propTypes = {
   stroke: PropTypes.string,
   strokeWidth: PropTypes.string,
   opacity: PropTypes.string
+};
+
+Path.defaultProps = {
+  fill: undefined,
+  stroke: undefined,
+  strokeWidth: undefined,
+  opacity: undefined
 };
 
 export default Path;

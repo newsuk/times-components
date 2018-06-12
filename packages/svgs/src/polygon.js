@@ -37,4 +37,9 @@ Polygon.propTypes = {
   points: PropTypes.string.isRequired // TODO validate they're even coordinates
 };
 
+Polygon.defaultProps = {
+  stroke: undefined,
+  fill: undefined
+};
+
 export default Polygon;
