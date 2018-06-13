@@ -26,7 +26,7 @@ exports[`1. Render the button 1`] = `
         "color": "#FFF",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 16,
-        "paddingTop": 3,
+        "paddingTop": 1,
       }
     }
     title="Test Button"

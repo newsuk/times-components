@@ -41,6 +41,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
         },
         "publicationName": "TIMES",
         "publishedTime": "2017-11-17T00:01:00.000Z",
+        "section": "world",
         "summary": Array [
           Object {
             "attributes": Object {},

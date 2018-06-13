@@ -35,7 +35,7 @@ exports[`TopicHead functional tests on web should render correctly with a descri
       Animals
     </h1>
     <div
-      className="responsive-styles__component-fbPFZZ bhZXSN"
+      className="responsive-styles__component-fbPFZZ kiIcTU"
     />
     <div
       data-testid="topic-description"

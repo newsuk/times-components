@@ -378,7 +378,7 @@ exports[`1. Render an author profile page 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
-                  "paddingVertical": 8,
+                  "paddingVertical": 10,
                 }
               }
             >
@@ -1708,7 +1708,7 @@ exports[`2. Render an author profile page without images 1`] = `
               style={
                 Object {
                   "flexDirection": "row",
-                  "paddingVertical": 8,
+                  "paddingVertical": 10,
                 }
               }
             >
