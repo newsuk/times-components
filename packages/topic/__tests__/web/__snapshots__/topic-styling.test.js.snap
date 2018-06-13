@@ -20,10 +20,8 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px auto;
   width: 200px;
-  margin: 0 auto;
 }
 
 .c3 {
