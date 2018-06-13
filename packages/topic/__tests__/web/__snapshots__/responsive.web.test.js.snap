@@ -67,11 +67,8 @@ exports[`Topic responsive tests on web should render ResponsiveDivider correctly
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px auto;
   width: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width:768px) {
