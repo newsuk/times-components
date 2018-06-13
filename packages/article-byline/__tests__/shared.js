@@ -1,79 +1,129 @@
-import "raf/polyfill";
-import "react-native";
 import React from "react";
+import { View } from "react-native";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import ArticleByline from "../src/article-byline";
+import authorsFixture from "../fixtures/authors.json";
 
-const authorsAST = require("../fixtures/authors.json");
-
-const bylineStyles = {
+const styles = {
   link: {
     color: "red",
     textDecorationLine: "underline"
   }
 };
 
-module.exports = () => {
-  it("renders correctly with a single author", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.singleAuthor} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+export default Component => {
+  const renderArticleByline = props =>
+    renderer.create(
+      <View>
+        <Component {...props} />
+      </View>
+    );
+
+  it("should render with a single author", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor
+    });
+    expect(tree).toMatchSnapshot("1. Render a single author");
   });
 
-  it("renders correctly with a section colour", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.singleAuthor} color="blue" />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  if (Component.displayName === "ArticleBylineWithLinks") {
+    it("should handle the onPress event", () => {
+      const onAuthorPressMock = jest.fn();
+      const wrapper = shallow(
+        <Component
+          ast={authorsFixture.singleAuthor}
+          onAuthorPress={onAuthorPressMock}
+        />
+      );
+
+      wrapper
+        .at(0)
+        .dive()
+        .find("Text")
+        .simulate("press");
+
+      expect(onAuthorPressMock).toHaveBeenCalled();
+    });
+
+    it("should handle an empty onPress event", () => {
+      const wrapper = shallow(<Component ast={authorsFixture.singleAuthor} />);
+
+      expect(() =>
+        wrapper
+          .at(0)
+          .dive()
+          .find("Text")
+          .simulate("press")
+      ).not.toThrow();
+    });
+  }
+
+  it("should render with a given section colour", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor,
+      color: "blue"
+    });
+
+    expect(tree).toMatchSnapshot("2. Render a given section colour");
   });
 
-  it("renders correctly with a single inline element", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.singleInlineElement} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with a single inline element", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleInlineElement
+    });
+
+    expect(tree).toMatchSnapshot("3. Render an inline element");
   });
 
-  it("renders correctly with the author in the begining", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.authorInTheBeginning} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with the author in the begining", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.authorInTheBeginning
+    });
+
+    expect(tree).toMatchSnapshot("4. Render an author first");
   });
 
-  it("renders correctly with the author at the end", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.authorAtTheEnd} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with the author at the end", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.authorAtTheEnd
+    });
+
+    expect(tree).toMatchSnapshot("5. Render an author last");
   });
 
-  it("renders correctly with multiple authors separated by text with commas", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.multipleAuthorsCommaSeparated} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with multiple authors separated by text with commas", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.multipleAuthorsCommaSeparated
+    });
+
+    expect(tree).toMatchSnapshot(
+      "6. Render multiple authors separated by commas"
+    );
   });
 
-  it("renders correctly with multiple authors separated by spaces", () => {
-    const tree = renderer
-      .create(<ArticleByline ast={authorsAST.multipleAuthorsSpaceSeparated} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with multiple authors separated by spaces", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.multipleAuthorsSpaceSeparated
+    });
+
+    expect(tree).toMatchSnapshot(
+      "7. Render multiple authors separated by spaces"
+    );
   });
 
-  it("renders correctly with an empty AST (empty byline on DB)", () => {
-    const tree = renderer.create(<ArticleByline ast={[]} />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render null with an empty AST", () => {
+    const tree = renderer.create(<ArticleByline ast={[]} />);
+
+    expect(tree).toMatchSnapshot("8. Render null when AST is empty");
   });
 
-  it("renders correctly with styles", () => {
-    const tree = renderer
-      .create(
-        <ArticleByline ast={authorsAST.singleAuthor} style={bylineStyles} />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should render with given styles", () => {
+    const tree = renderArticleByline({
+      ast: authorsFixture.singleAuthor,
+      style: styles
+    });
+
+    expect(tree).toMatchSnapshot("9. Render an author with given styles");
   });
 };

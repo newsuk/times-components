@@ -2,18 +2,22 @@
 
 exports[`1. Render a single author 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
   >
     Alexandra Frean
-  </div>
+  </a>
 </div>
 `;
 
 exports[`2. Render a given section colour 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
     style={
       Object {
         "color": "blue",
@@ -21,7 +25,7 @@ exports[`2. Render a given section colour 1`] = `
     }
   >
     Alexandra Frean
-  </div>
+  </a>
 </div>
 `;
 
@@ -37,11 +41,13 @@ exports[`3. Render an inline element 1`] = `
 
 exports[`4. Render an author first 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/camilla-long"
+    role="link"
   >
     Camilla Long
-  </div>
+  </a>
   <div
     dir="auto"
   >
@@ -57,71 +63,85 @@ exports[`5. Render an author last 1`] = `
   >
     RBS Six Nations 
   </div>
-  <div
+  <a
     dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
   >
     Mike Atherton
-  </div>
+  </a>
 </div>
 `;
 
 exports[`6. Render multiple authors separated by commas 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/camilla-long"
+    role="link"
   >
     Camilla Long
-  </div>
+  </a>
   <div
     dir="auto"
   >
     , 
   </div>
-  <div
+  <a
     dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
   >
     Mike Atherton
-  </div>
+  </a>
   <div
     dir="auto"
   >
     , 
   </div>
-  <div
+  <a
     dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
   >
     Alexandra Frean
-  </div>
+  </a>
 </div>
 `;
 
 exports[`7. Render multiple authors separated by spaces 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/camilla-long"
+    role="link"
   >
     Camilla Long
-  </div>
+  </a>
   <div
     dir="auto"
   >
      
   </div>
-  <div
+  <a
     dir="auto"
+    href="/profile/mike-atherton"
+    role="link"
   >
     Mike Atherton
-  </div>
+  </a>
   <div
     dir="auto"
   >
      
   </div>
-  <div
+  <a
     dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
   >
     Alexandra Frean
-  </div>
+  </a>
 </div>
 `;
 
@@ -129,16 +149,17 @@ exports[`8. Render null when AST is empty 1`] = `null`;
 
 exports[`9. Render an author with given styles 1`] = `
 <div>
-  <div
+  <a
     dir="auto"
+    href="/profile/alexandra-frean"
+    role="link"
     style={
       Object {
         "color": "red",
-        "textDecoration": "underline",
       }
     }
   >
     Alexandra Frean
-  </div>
+  </a>
 </div>
 `;

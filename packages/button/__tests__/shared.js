@@ -5,9 +5,8 @@ import Button from "../src/button";
 
 export default () => {
   it("should render the button correctly", () => {
-    const onPressMock = () => {};
     const wrapper = shallow(
-      <Button onPress={onPressMock} title="test button" />
+      <Button onPress={() => null} title="test button" />
     );
 
     expect(wrapper).toMatchSnapshot("1. Render the button");

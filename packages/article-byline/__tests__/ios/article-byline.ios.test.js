@@ -1,7 +1,6 @@
+import ArticleByline from "../../src/article-byline";
 import shared from "../shared";
-import sharedBylineWithLinks from "../shared-byline-with-links";
 
-describe("Article Byline test on iOS", () => {
-  shared();
-  sharedBylineWithLinks();
+describe("ArticleByline tests on iOS", () => {
+  shared(ArticleByline);
 });

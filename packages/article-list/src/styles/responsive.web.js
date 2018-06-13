@@ -41,7 +41,7 @@ export const ListItemWrapper = withResponsiveStyles(
     .articleListContent {
       flex: 2.7;
       flex-basis: 0 !important;
-      min-width: 380px;
+      min-width: auto;
     }
   `
   },
@@ -93,8 +93,7 @@ export const PageErrorImageContainer = withResponsiveStyles(
   {
     base: () => `
     align-self: center;
-    flex-basis: 50% !important;
-    max-width: 75%;
+    max-width: 300px;
     width: 100%;
   `,
     mediumUp: () => `
@@ -102,6 +101,7 @@ export const PageErrorImageContainer = withResponsiveStyles(
   `,
     wideUp: () => `
     max-width: none;
+    width: 50%;
   `
   },
   "PageErrorImageContainer"

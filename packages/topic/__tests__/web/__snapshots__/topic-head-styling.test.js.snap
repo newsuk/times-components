@@ -3,10 +3,6 @@
 exports[`TopicHead styling tests on web should render styling correctly 1`] = `
 .c0 {
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
@@ -17,6 +13,7 @@ exports[`TopicHead styling tests on web should render styling correctly 1`] = `
   font-size: 40px;
   color: #1D1D1B;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .c2 {
@@ -24,6 +21,7 @@ exports[`TopicHead styling tests on web should render styling correctly 1`] = `
   border-top-style: solid;
   border-top-width: 1px;
   width: 200px;
+  margin: 0 auto;
 }
 
 @media (min-width:768px) {
@@ -60,25 +58,23 @@ exports[`TopicHead styling tests on web should render styling correctly 1`] = `
   <div
     className="c0"
   >
-    <div>
-      <h1
-        aria-label="topic-name"
-        className="c1"
-        data-testid="topic-name"
-        dir="auto"
-        role="heading"
-      >
-        Animals
-      </h1>
-      <div
-        className="c2"
-      />
-      <div
-        data-testid="topic-description"
-        dir="auto"
-      >
-        Animals are multicellular eukaryotic organisms.
-      </div>
+    <h1
+      aria-label="topic-name"
+      className="c1"
+      data-testid="topic-name"
+      dir="auto"
+      role="heading"
+    >
+      Animals
+    </h1>
+    <div
+      className="c2"
+    />
+    <div
+      data-testid="topic-description"
+      dir="auto"
+    >
+      Animals are multicellular eukaryotic organisms.
     </div>
   </div>
 </div>

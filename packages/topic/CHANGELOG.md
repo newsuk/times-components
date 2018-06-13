@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.8"></a>
+## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.7...@times-components/topic@0.6.8) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/topic
+
+<a name="0.6.7"></a>
+## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.6...@times-components/topic@0.6.7) (2018-06-13)
+
+
+### Bug Fixes
+
+* Topic head in IE ([#1016](https://github.com/newsuk/times-components/issues/1016)) ([c5f8bc8](https://github.com/newsuk/times-components/commit/c5f8bc8))
+
+
+
+
+<a name="0.6.6"></a>
+## [0.6.6](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.5...@times-components/topic@0.6.6) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/topic
+
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.4...@times-components/topic@0.6.5) (2018-06-13)
+
+
+### Bug Fixes
+
+* article list layout fixed ([#1012](https://github.com/newsuk/times-components/issues/1012)) ([c77ab31](https://github.com/newsuk/times-components/commit/c77ab31))
+
+
+
+
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.3...@times-components/topic@0.6.4) (2018-06-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/topic
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.2...@times-components/topic@0.6.3) (2018-06-11)
 

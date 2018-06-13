@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.7"></a>
+## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.6...@times-components/article-list@1.6.7) (2018-06-13)
+
+
+### Bug Fixes
+
+* not use flex for IE article list page error layout ([#1017](https://github.com/newsuk/times-components/issues/1017)) ([f4bf368](https://github.com/newsuk/times-components/commit/f4bf368))
+
+
+
+
+<a name="1.6.6"></a>
+## [1.6.6](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.5...@times-components/article-list@1.6.6) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-list
+
+<a name="1.6.5"></a>
+## [1.6.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.4...@times-components/article-list@1.6.5) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-list
+
+<a name="1.6.4"></a>
+## [1.6.4](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.3...@times-components/article-list@1.6.4) (2018-06-13)
+
+
+### Bug Fixes
+
+* article list layout fixed ([#1012](https://github.com/newsuk/times-components/issues/1012)) ([c77ab31](https://github.com/newsuk/times-components/commit/c77ab31))
+
+
+
+
+<a name="1.6.3"></a>
+## [1.6.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.2...@times-components/article-list@1.6.3) (2018-06-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/article-list
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.1...@times-components/article-list@1.6.2) (2018-06-11)
 

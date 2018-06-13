@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.7"></a>
+## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.6...@times-components/author-profile@1.7.7) (2018-06-13)
+
+
+### Bug Fixes
+
+* not use flex for IE article list page error layout ([#1017](https://github.com/newsuk/times-components/issues/1017)) ([f4bf368](https://github.com/newsuk/times-components/commit/f4bf368))
+
+
+
+
+<a name="1.7.6"></a>
+## [1.7.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.5...@times-components/author-profile@1.7.6) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="1.7.5"></a>
+## [1.7.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.4...@times-components/author-profile@1.7.5) (2018-06-13)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.3...@times-components/author-profile@1.7.4) (2018-06-13)
+
+
+### Bug Fixes
+
+* article list layout fixed ([#1012](https://github.com/newsuk/times-components/issues/1012)) ([c77ab31](https://github.com/newsuk/times-components/commit/c77ab31))
+
+
+
+
+<a name="1.7.3"></a>
+## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.2...@times-components/author-profile@1.7.3) (2018-06-12)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-profile
+
 <a name="1.7.2"></a>
 ## [1.7.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.1...@times-components/author-profile@1.7.2) (2018-06-11)
 

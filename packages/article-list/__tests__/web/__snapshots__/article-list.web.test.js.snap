@@ -44,7 +44,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -172,7 +172,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -300,7 +300,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ fXCtkJ"
+            className="responsive-styles__component-fbPFZZ ereXyn"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -442,7 +442,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
   }
 >
   <div
-    className="responsive-styles__component-fbPFZZ fXCtkJ"
+    className="responsive-styles__component-fbPFZZ ereXyn"
   >
     <div
       className="responsive-styles__component-fbPFZZ woNlo"
@@ -577,7 +577,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
 
 exports[`ArticleList tests on web should render an article list item loading state 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ fXCtkJ"
+  className="responsive-styles__component-fbPFZZ ereXyn"
 >
   <div>
     <div
@@ -674,7 +674,7 @@ exports[`ArticleList tests on web should render an article list item without ima
   }
 >
   <div
-    className="responsive-styles__component-fbPFZZ fXCtkJ"
+    className="responsive-styles__component-fbPFZZ ereXyn"
   >
     <div
       className="responsive-styles__component-fbPFZZ woNlo"
@@ -896,7 +896,7 @@ exports[`ArticleList tests on web should render an article list that is loading 
         id="empty.0"
       >
         <div
-          className="responsive-styles__component-fbPFZZ fXCtkJ"
+          className="responsive-styles__component-fbPFZZ ereXyn"
         >
           <div>
             <div
