@@ -59,8 +59,8 @@ export const ResponsiveDivider = withResponsiveStyles(
     border-top-color: ${colours.functional.keyline};
     border-top-style: solid;
     border-top-width: 1px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: ${spacing(4)};;
+    margin-top: ${spacing(4)};;
     width: 200px;
     margin: 0 auto;
   `,
