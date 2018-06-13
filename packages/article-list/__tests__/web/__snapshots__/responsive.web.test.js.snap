@@ -38,6 +38,6 @@ exports[`ArticleList responsive tests on web should render PageErrorContentConta
 
 exports[`ArticleList responsive tests on web should render PageErrorImageContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ Xuekk"
+  className="responsive-styles__component-fbPFZZ iLwaDB"
 />
 `;
