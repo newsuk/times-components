@@ -1791,6 +1791,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -1973,6 +1974,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -3122,6 +3124,7 @@ exports[`Article tests on android should render an article with a video asset 1`
         <View
           accessibilityLabel="splash-component"
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -4461,6 +4464,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -4643,6 +4647,7 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -6065,6 +6070,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -6247,6 +6253,7 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -7689,6 +7696,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -7871,6 +7879,7 @@ exports[`Article tests on android should render an article with no label 1`] = `
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -9322,6 +9331,7 @@ exports[`Article tests on android should render an article with no label and no 
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -9504,6 +9514,7 @@ exports[`Article tests on android should render an article with no label and no 
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -10928,6 +10939,7 @@ exports[`Article tests on android should render an article with no label, no fla
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -11110,6 +11122,7 @@ exports[`Article tests on android should render an article with no label, no fla
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -12518,6 +12531,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -12700,6 +12714,7 @@ exports[`Article tests on android should render an article with no standfirst 1`
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -14147,6 +14162,7 @@ exports[`Article tests on android should render an article with no standfirst an
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -14329,6 +14345,7 @@ exports[`Article tests on android should render an article with no standfirst an
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -15752,6 +15769,7 @@ exports[`Article tests on android should render an article with no standfirst an
             >
               <View
                 accessible={true}
+                isTVSelectable={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -15934,6 +15952,7 @@ exports[`Article tests on android should render an article with no standfirst an
           </Modal>
           <View
             accessible={true}
+            isTVSelectable={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",

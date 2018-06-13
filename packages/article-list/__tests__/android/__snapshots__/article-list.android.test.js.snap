@@ -160,6 +160,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -419,6 +420,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -678,6 +680,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -925,6 +928,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
 exports[`ArticleList tests on android should render an article list item 1`] = `
 <View
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -1658,6 +1662,7 @@ exports[`ArticleList tests on android should render an article list item loading
 exports[`ArticleList tests on android should render an article list item without images 1`] = `
 <View
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",

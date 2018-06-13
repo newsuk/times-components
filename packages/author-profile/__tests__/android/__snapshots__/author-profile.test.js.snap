@@ -457,6 +457,7 @@ exports[`1. Render an author profile page 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -716,6 +717,7 @@ exports[`1. Render an author profile page 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -975,6 +977,7 @@ exports[`1. Render an author profile page 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -1791,6 +1794,7 @@ exports[`2. Render an author profile page without images 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -1934,6 +1938,7 @@ exports[`2. Render an author profile page without images 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -2077,6 +2082,7 @@ exports[`2. Render an author profile page without images 1`] = `
     <View>
       <View
         accessible={true}
+        isTVSelectable={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",

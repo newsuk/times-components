@@ -81,6 +81,7 @@ exports[`2a. Standard template: Render a single related article 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -479,6 +480,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -791,6 +793,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -1193,6 +1196,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -1381,6 +1385,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -1582,6 +1587,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -1867,6 +1873,7 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -2249,6 +2256,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -2561,6 +2569,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -2798,6 +2807,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -3110,6 +3120,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -3270,6 +3281,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -3514,6 +3526,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -3911,6 +3924,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -4238,6 +4252,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -4475,6 +4490,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -4802,6 +4818,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -4962,6 +4979,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
       >
         <View
           accessible={true}
+          isTVSelectable={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
