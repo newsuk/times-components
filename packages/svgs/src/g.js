@@ -5,17 +5,17 @@ import PropTypes from "prop-types";
 const { Group } = ART;
 
 const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
+  const onlyAssignedProps = props => key => props[key] !== null;
+  const reconstructProps = props => (obj, key) => ({
+    [key]: props[key],
+    ...obj
+  });
+
   const childrenWithProps = React.Children.map(children, child => {
     const originalProps = child.props;
     const cleanProps = Object.keys(originalProps)
-      .filter(key => originalProps[key] !== null)
-      .reduce(
-        (obj, key) => ({
-          [key]: originalProps[key],
-          ...obj
-        }),
-        {}
-      );
+      .filter(onlyAssignedProps(originalProps))
+      .reduce(reconstructProps(originalProps), {});
 
     return React.cloneElement(child, {
       fill,
