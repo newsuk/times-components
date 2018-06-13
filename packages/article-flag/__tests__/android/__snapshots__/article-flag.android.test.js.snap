@@ -17,16 +17,87 @@ exports[`Article Flag test on android renders Exclusive flag correctly 1`] = `
       }
     }
   >
-    <svg
-      height={8}
-      width={8}
+    <ARTSurfaceView
+      style={
+        Object {
+          "height": 8,
+          "width": 8,
+        }
+      }
     >
-      <g
-        fill="#C51D24"
+      <ARTGroup
+        opacity={1}
+        transform={
+          Array [
+            0.4,
+            0,
+            0,
+            0.4,
+            0,
+            0,
+          ]
+        }
       >
-        <path />
-      </g>
-    </svg>
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+        >
+          <ARTShape
+            d={
+              Array [
+                0,
+                0,
+                10,
+                2,
+                10,
+                20,
+                2,
+                20,
+                10,
+                2,
+                10,
+                0,
+                1,
+              ]
+            }
+            fill={
+              Array [
+                0,
+                0.7725490196078432,
+                0.11372549019607843,
+                0.1411764705882353,
+                1,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTGroup>
+      </ARTGroup>
+    </ARTSurfaceView>
   </View>
   <Text
     accessibilityLabel="flag-exclusive"
@@ -66,16 +137,87 @@ exports[`Article Flag test on android renders New flag correctly 1`] = `
       }
     }
   >
-    <svg
-      height={8}
-      width={8}
+    <ARTSurfaceView
+      style={
+        Object {
+          "height": 8,
+          "width": 8,
+        }
+      }
     >
-      <g
-        fill="#E34605"
+      <ARTGroup
+        opacity={1}
+        transform={
+          Array [
+            0.4,
+            0,
+            0,
+            0.4,
+            0,
+            0,
+          ]
+        }
       >
-        <path />
-      </g>
-    </svg>
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+        >
+          <ARTShape
+            d={
+              Array [
+                0,
+                0,
+                10,
+                2,
+                10,
+                20,
+                2,
+                20,
+                10,
+                2,
+                10,
+                0,
+                1,
+              ]
+            }
+            fill={
+              Array [
+                0,
+                0.8901960784313725,
+                0.27450980392156865,
+                0.0196078431372549,
+                1,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTGroup>
+      </ARTGroup>
+    </ARTSurfaceView>
   </View>
   <Text
     accessibilityLabel="flag-new"
@@ -115,16 +257,87 @@ exports[`Article Flag test on android renders Sponsored flag correctly 1`] = `
       }
     }
   >
-    <svg
-      height={8}
-      width={8}
+    <ARTSurfaceView
+      style={
+        Object {
+          "height": 8,
+          "width": 8,
+        }
+      }
     >
-      <g
-        fill="#4D4D4D"
+      <ARTGroup
+        opacity={1}
+        transform={
+          Array [
+            0.4,
+            0,
+            0,
+            0.4,
+            0,
+            0,
+          ]
+        }
       >
-        <path />
-      </g>
-    </svg>
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+        >
+          <ARTShape
+            d={
+              Array [
+                0,
+                0,
+                10,
+                2,
+                10,
+                20,
+                2,
+                20,
+                10,
+                2,
+                10,
+                0,
+                1,
+              ]
+            }
+            fill={
+              Array [
+                0,
+                0.30196078431372547,
+                0.30196078431372547,
+                0.30196078431372547,
+                1,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTGroup>
+      </ARTGroup>
+    </ARTSurfaceView>
   </View>
   <Text
     accessibilityLabel="flag-sponsored"
@@ -164,16 +377,87 @@ exports[`Article Flag test on android renders Updated flag correctly 1`] = `
       }
     }
   >
-    <svg
-      height={8}
-      width={8}
+    <ARTSurfaceView
+      style={
+        Object {
+          "height": 8,
+          "width": 8,
+        }
+      }
     >
-      <g
-        fill="#3C81BE"
+      <ARTGroup
+        opacity={1}
+        transform={
+          Array [
+            0.4,
+            0,
+            0,
+            0.4,
+            0,
+            0,
+          ]
+        }
       >
-        <path />
-      </g>
-    </svg>
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+        >
+          <ARTShape
+            d={
+              Array [
+                0,
+                0,
+                10,
+                2,
+                10,
+                20,
+                2,
+                20,
+                10,
+                2,
+                10,
+                0,
+                1,
+              ]
+            }
+            fill={
+              Array [
+                0,
+                0.23529411764705882,
+                0.5058823529411764,
+                0.7450980392156863,
+                1,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTGroup>
+      </ARTGroup>
+    </ARTSurfaceView>
   </View>
   <Text
     accessibilityLabel="flag-updated"
@@ -213,16 +497,87 @@ exports[`Article Flag test on android renders correctly 1`] = `
       }
     }
   >
-    <svg
-      height={8}
-      width={8}
+    <ARTSurfaceView
+      style={
+        Object {
+          "height": 8,
+          "width": 8,
+        }
+      }
     >
-      <g
-        fill="black"
+      <ARTGroup
+        opacity={1}
+        transform={
+          Array [
+            0.4,
+            0,
+            0,
+            0.4,
+            0,
+            0,
+          ]
+        }
       >
-        <path />
-      </g>
-    </svg>
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+        >
+          <ARTShape
+            d={
+              Array [
+                0,
+                0,
+                10,
+                2,
+                10,
+                20,
+                2,
+                20,
+                10,
+                2,
+                10,
+                0,
+                1,
+              ]
+            }
+            fill={
+              Array [
+                0,
+                0,
+                0,
+                0,
+                1,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTGroup>
+      </ARTGroup>
+    </ARTSurfaceView>
   </View>
   <Text
     accessibilityLabel="flag-articleFlag"

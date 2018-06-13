@@ -9,24 +9,161 @@ exports[`Video Label test on android renders VideoLabel with an explicit title 1
     }
   }
 >
-  <svg
-    height={12}
-    width={20.64}
+  <ARTSurfaceView
+    style={
+      Object {
+        "height": 11.66608695652174,
+        "width": 20.64,
+      }
+    }
   >
-    <rect
-      fill="#1D1D1B"
-      height="13.5721404"
-      width="15.4550103"
-      x="0.154639175"
-      y="0.139754386"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-  </svg>
+    <ARTGroup
+      opacity={1}
+      transform={
+        Array [
+          0.8973913043478261,
+          0,
+          0,
+          0.8973913043478261,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d={
+          Array [
+            0,
+            0.154639175,
+            0.139754386,
+            2,
+            15.609649475,
+            0.139754386,
+            2,
+            15.609649475,
+            13.711894786,
+            2,
+            0.1546391749999998,
+            13.711894786,
+            2,
+            0.1546391749999998,
+            0.1397543859999999,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+      <ARTShape
+        d={
+          Array [
+            0,
+            16.3405361,
+            4.14989474,
+            2,
+            16.3405361,
+            9.66442105,
+            2,
+            22.0216082,
+            12.8146667,
+            2,
+            22.0216082,
+            0.999894737,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+      <ARTShape
+        d={
+          Array [
+            0,
+            23.7538144,
+            0.0496140351,
+            2,
+            22.7616495,
+            0.643508772,
+            2,
+            22.7616495,
+            13.1902105,
+            2,
+            23.7538144,
+            13.7782105,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTSurfaceView>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -61,24 +198,161 @@ exports[`Video Label test on android renders VideoLabel without an explicit titl
     }
   }
 >
-  <svg
-    height={12}
-    width={20.64}
+  <ARTSurfaceView
+    style={
+      Object {
+        "height": 11.66608695652174,
+        "width": 20.64,
+      }
+    }
   >
-    <rect
-      fill="#1D1D1B"
-      height="13.5721404"
-      width="15.4550103"
-      x="0.154639175"
-      y="0.139754386"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-  </svg>
+    <ARTGroup
+      opacity={1}
+      transform={
+        Array [
+          0.8973913043478261,
+          0,
+          0,
+          0.8973913043478261,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d={
+          Array [
+            0,
+            0.154639175,
+            0.139754386,
+            2,
+            15.609649475,
+            0.139754386,
+            2,
+            15.609649475,
+            13.711894786,
+            2,
+            0.1546391749999998,
+            13.711894786,
+            2,
+            0.1546391749999998,
+            0.1397543859999999,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+      <ARTShape
+        d={
+          Array [
+            0,
+            16.3405361,
+            4.14989474,
+            2,
+            16.3405361,
+            9.66442105,
+            2,
+            22.0216082,
+            12.8146667,
+            2,
+            22.0216082,
+            0.999894737,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+      <ARTShape
+        d={
+          Array [
+            0,
+            23.7538144,
+            0.0496140351,
+            2,
+            22.7616495,
+            0.643508772,
+            2,
+            22.7616495,
+            13.1902105,
+            2,
+            23.7538144,
+            13.7782105,
+          ]
+        }
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        opacity={1}
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTSurfaceView>
   <Text
     accessible={true}
     allowFontScaling={true}

@@ -80,7 +80,6 @@ exports[`Gradient tests on iOS renders a Gradient 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -161,7 +160,6 @@ exports[`Gradient tests on iOS renders a Gradient using array prop styles 1`] = 
 
 exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
@@ -242,7 +240,6 @@ exports[`Gradient tests on iOS renders a Gradient using prop styles 1`] = `
 
 exports[`Gradient tests on iOS renders a Gradient using stylesheets 1`] = `
 <View
-  onLayout={[Function]}
   style={
     Object {
       "flex": 1,
