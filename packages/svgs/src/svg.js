@@ -6,7 +6,17 @@ import PropTypes from "prop-types";
 
 const { Surface, Group, Transform } = ART;
 
+/*
+x and y can be negative
+all of them can have decimals
+*/
+const viewBoxPattern = /^-?\d+(\.\d+)? -?\d+(\.\d+)? \d+(\.\d+)? \d+(\.\d+)?$/;
+
 const Svg = ({ width, viewBox, children }) => {
+  if (!viewBoxPattern.test(viewBox)) {
+    throw new Error(`Invalid viewBox ${viewBox}`);
+  }
+
   const [shapeX, shapeY, shapeWidth, shapeHeight] = viewBox
     .split(" ")
     .map(n => Number.parseInt(n, 10));
