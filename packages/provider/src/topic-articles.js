@@ -9,9 +9,9 @@ export const query = gql`
     $imageRatio: Ratio!
   ) {
     topic(slug: $slug) {
-      articles(first: $first, skip: $skip) {
+      articles {
         count
-        list {
+        list(first: $first, skip: $skip) {
           byline
           headline
           id
