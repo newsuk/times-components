@@ -10,8 +10,9 @@ exports[`TopicHead styling tests on ios should render styling correctly 1`] = `
       "borderBottomWidth": 0.5,
       "flexDirection": "column",
       "minHeight": 90,
+      "paddingBottom": 20,
       "paddingHorizontal": 10,
-      "paddingVertical": 35,
+      "paddingTop": 50,
       "width": "100%",
     }
   }
