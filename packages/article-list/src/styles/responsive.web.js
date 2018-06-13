@@ -93,8 +93,7 @@ export const PageErrorImageContainer = withResponsiveStyles(
   {
     base: () => `
     align-self: center;
-    flex-basis: 50% !important;
-    max-width: 75%;
+    max-width: 300px;
     width: 100%;
   `,
     mediumUp: () => `
@@ -102,6 +101,7 @@ export const PageErrorImageContainer = withResponsiveStyles(
   `,
     wideUp: () => `
     max-width: none;
+    width: 50%;
   `
   },
   "PageErrorImageContainer"
