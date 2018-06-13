@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.10"></a>
+## [0.6.10](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.9...@times-components/topic@0.6.10) (2018-06-13)
+
+
+### Bug Fixes
+
+* topic header layout ([#1018](https://github.com/newsuk/times-components/issues/1018)) ([98aced6](https://github.com/newsuk/times-components/commit/98aced6))
+
+
+
+
 <a name="0.6.9"></a>
 ## [0.6.9](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.8...@times-components/topic@0.6.9) (2018-06-13)
 
