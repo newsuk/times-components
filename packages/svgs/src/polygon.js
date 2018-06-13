@@ -39,8 +39,8 @@ Polygon.propTypes = {
 };
 
 Polygon.defaultProps = {
-  stroke: undefined,
-  fill: undefined
+  stroke: null,
+  fill: null
 };
 
 export default Polygon;

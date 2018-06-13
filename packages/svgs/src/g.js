@@ -8,7 +8,7 @@ const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
   const childrenWithProps = React.Children.map(children, child => {
     const originalProps = child.props;
     const cleanProps = Object.keys(originalProps)
-      .filter(key => originalProps[key] !== undefined)
+      .filter(key => originalProps[key] !== null)
       .reduce(
         (obj, key) => ({
           [key]: originalProps[key],
@@ -41,10 +41,10 @@ G.propTypes = {
 };
 
 G.defaultProps = {
-  fill: undefined,
-  stroke: undefined,
-  strokeWidth: undefined,
-  opacity: undefined
+  fill: null,
+  stroke: null,
+  strokeWidth: null,
+  opacity: null
 };
 
 export default G;

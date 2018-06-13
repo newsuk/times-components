@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 const { Shape, Path: ARTPath } = ART;
 
 const Path = ({ d, fill, stroke, strokeWidth, opacity }) => {
-  const artStroke = stroke === "none" ? undefined : stroke;
-  const artFill = fill === "none" ? undefined : fill;
+  const artStroke = stroke === "none" ? null : stroke;
+  const artFill = fill === "none" ? null : fill;
 
   return (
     <Shape
@@ -29,10 +29,10 @@ Path.propTypes = {
 };
 
 Path.defaultProps = {
-  fill: undefined,
-  stroke: undefined,
-  strokeWidth: undefined,
-  opacity: undefined
+  fill: null,
+  stroke: null,
+  strokeWidth: null,
+  opacity: null
 };
 
 export default Path;
