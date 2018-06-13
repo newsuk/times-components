@@ -28,7 +28,8 @@ export default () => {
     slug,
     topic: {
       name: "Chelsea",
-      description: "A swanky part of town."
+      description:
+        "Chelsea is known for its affluent residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores."
     }
   };
 

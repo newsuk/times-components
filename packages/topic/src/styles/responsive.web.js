@@ -15,7 +15,6 @@ export const getHeadContainer = ({ hasDescription }) =>
     {
       base: () => `
       width: 100%;
-      align-items: center;
       padding-left: ${spacing(2)};
       padding-right: ${spacing(2)};
       padding-bottom: ${hasDescription ? spacing(4) : 0};
@@ -44,6 +43,7 @@ export const ResponsiveName = withResponsiveStyles(
     font-size: ${fontSizes.pageHeadline}px;
     color: ${colours.functional.brandColour};
     padding-bottom: ${spacing(4)};
+    text-align: center;
   `,
     mediumUp: () => `
     font-size: ${fontSizes.pageHeadlineLarge}px;
@@ -60,6 +60,7 @@ export const ResponsiveDivider = withResponsiveStyles(
     border-top-style: solid;
     border-top-width: 1px;
     width: 200px;
+    margin: 0 auto;
   `,
     mediumUp: () => `
     width: 290px;

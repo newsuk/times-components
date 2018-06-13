@@ -3,10 +3,6 @@
 exports[`Topic styling tests on web should render styling correctly 1`] = `
 .c0 {
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
@@ -17,6 +13,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   font-size: 40px;
   color: #1D1D1B;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .c2 {
@@ -24,6 +21,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   border-top-style: solid;
   border-top-width: 1px;
   width: 200px;
+  margin: 0 auto;
 }
 
 .c3 {
@@ -206,25 +204,23 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     <div
       className="c0"
     >
-      <div>
-        <h1
-          aria-label="topic-name"
-          className="c1"
-          data-testid="topic-name"
-          dir="auto"
-          role="heading"
-        >
-          Chelsea
-        </h1>
-        <div
-          className="c2"
-        />
-        <div
-          data-testid="topic-description"
-          dir="auto"
-        >
-          A swanky part of town.
-        </div>
+      <h1
+        aria-label="topic-name"
+        className="c1"
+        data-testid="topic-name"
+        dir="auto"
+        role="heading"
+      >
+        Chelsea
+      </h1>
+      <div
+        className="c2"
+      />
+      <div
+        data-testid="topic-description"
+        dir="auto"
+      >
+        Chelsea is known for its affluent residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores.
       </div>
     </div>
   </div>

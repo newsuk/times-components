@@ -28,16 +28,14 @@ const TopicHead = ({ name, description, isLoading }) => {
   ) : (
     <View style={styles.wrapper}>
       <HeadContainer>
-        <View style={styles.container}>
-          <ResponsiveName
-            testID="topic-name"
-            accessibilityLabel="topic-name"
-            accessibilityRole="heading"
-          >
-            {name}
-          </ResponsiveName>
-          {showDescription()}
-        </View>
+        <ResponsiveName
+          testID="topic-name"
+          accessibilityLabel="topic-name"
+          accessibilityRole="heading"
+        >
+          {name}
+        </ResponsiveName>
+        {showDescription()}
       </HeadContainer>
     </View>
   );
