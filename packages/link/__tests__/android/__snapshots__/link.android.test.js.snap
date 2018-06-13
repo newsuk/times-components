@@ -3,6 +3,7 @@
 exports[`Link test on android Link doesnt change inner text styles 1`] = `
 <View
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -24,6 +25,7 @@ exports[`Link test on android Link doesnt change inner text styles 1`] = `
 exports[`Link test on android Link renders correctly 1`] = `
 <View
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",

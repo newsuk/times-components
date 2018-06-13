@@ -25,6 +25,7 @@ exports[`Video on native renders correctly 1`] = `
 <View
   accessibilityLabel="splash-component"
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -198,6 +199,7 @@ exports[`Video on native renders correctly without a poster image 1`] = `
 <View
   accessibilityLabel="splash-component"
   accessible={true}
+  isTVSelectable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
