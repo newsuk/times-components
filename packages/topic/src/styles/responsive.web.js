@@ -62,7 +62,8 @@ export const ResponsiveDivider = withResponsiveStyles(
     margin-bottom: ${spacing(4)};;
     margin-top: ${spacing(4)};;
     width: 200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   `,
     mediumUp: () => `
     width: 290px;

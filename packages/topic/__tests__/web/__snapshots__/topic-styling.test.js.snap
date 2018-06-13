@@ -23,7 +23,8 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   margin-bottom: 20px;
   margin-top: 20px;
   width: 200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .c3 {

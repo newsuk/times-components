@@ -70,7 +70,8 @@ exports[`Topic responsive tests on web should render ResponsiveDivider correctly
   margin-bottom: 20px;
   margin-top: 20px;
   width: 200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width:768px) {
