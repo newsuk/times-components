@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.8...@times-components/author-profile@1.8.0) (2018-06-13)
+
+
+### Bug Fixes
+
+* use normalised width when no IO ([#1013](https://github.com/newsuk/times-components/issues/1013)) ([e20144e](https://github.com/newsuk/times-components/commit/e20144e))
+
+
+### Features
+
+* use ART for SVGs (REPLAT-2285) ([#1009](https://github.com/newsuk/times-components/issues/1009)) ([795cb3f](https://github.com/newsuk/times-components/commit/795cb3f))
+
+
+
+
 <a name="1.7.8"></a>
 ## [1.7.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.7...@times-components/author-profile@1.7.8) (2018-06-13)
 
