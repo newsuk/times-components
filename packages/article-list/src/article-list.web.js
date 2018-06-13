@@ -21,7 +21,6 @@ class ArticleList extends Component {
 
     this.pending = new Set();
     this.pendingTimer = null;
-    this.images = new Map();
     this.state = {
       images: new Map()
     };
@@ -48,15 +47,14 @@ class ArticleList extends Component {
 
     clearTimeout(this.pendingTimer);
     this.pending.clear();
-    this.images.clear();
   }
 
   getImageSize(nodeId) {
-    if (this.observer) {
+    if (this.observer && nodeId) {
       return this.state.images.get(nodeId);
     }
 
-    return this.images.get(nodeId);
+    return normaliseWidth(window.clientWidth);
   }
 
   handleObservation(entries) {
@@ -90,15 +88,11 @@ class ArticleList extends Component {
   }
 
   registerNode(node) {
-    if (!node) {
+    if (!node || !this.observer) {
       return;
     }
 
-    if (this.observer) {
-      this.observer.observe(node);
-    } else {
-      this.images.set(node.id, normaliseWidth(node.clientWidth));
-    }
+    this.observer.observe(node);
   }
 
   render() {
@@ -224,5 +218,5 @@ class ArticleList extends Component {
 ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(ArticleList);
 export { default as ArticleListPageError } from "./article-list-page-error";
+export default withTrackScrollDepth(ArticleList);
