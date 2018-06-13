@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.35.1"></a>
+## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/provider@0.35.0...@times-components/provider@0.35.1) (2018-06-13)
+
+
+### Bug Fixes
+
+* Topic head in IE ([#1016](https://github.com/newsuk/times-components/issues/1016)) ([c5f8bc8](https://github.com/newsuk/times-components/commit/c5f8bc8))
+
+
+
+
 <a name="0.35.0"></a>
 # [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.6...@times-components/provider@0.35.0) (2018-06-13)
 
