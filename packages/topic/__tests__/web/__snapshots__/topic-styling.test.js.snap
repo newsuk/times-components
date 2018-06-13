@@ -197,7 +197,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
-    min-width: 380px;
+    min-width: auto;
   }
 }
 

@@ -20,7 +20,7 @@ exports[`ArticleList responsive tests on web should render ListItemShortText cor
 
 exports[`ArticleList responsive tests on web should render ListItemWrapper correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ fXCtkJ"
+  className="responsive-styles__component-fbPFZZ ereXyn"
 />
 `;
 
