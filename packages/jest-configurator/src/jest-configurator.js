@@ -11,7 +11,7 @@ export const mockReactNativeComponent = mockRNComponent;
 
 const nativeSpecific = (platform: Platform) => ({
   moduleNameMapper: {
-    "\\.(png)$": "identity-obj-proxy"
+    "\\.(png)$": "RelativeImageStub"
   },
   haste: {
     defaultPlatform: platform,

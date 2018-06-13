@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Modal, View } from "react-native";
-import Svg, { Path, G } from "svgs";
+import Svg, { Path, G } from "@times-components/svgs";
 import Gestures from "@times-components/gestures";
 import Button from "@times-components/link";
 import { colours } from "@times-components/styleguide";
@@ -28,7 +28,7 @@ class ModalImage extends Component {
 
   render() {
     const closeButton = (
-      <Svg height="24" viewBox="0 0 24 24" width="24">
+      <Svg height={24} viewBox="0 0 24 24" width={24}>
         <G fill={colours.functional.cancel}>
           <Path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           <Path d="M0 0h24v24H0z" fill="none" />

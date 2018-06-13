@@ -60,8 +60,7 @@
     "@times-components/icons": "0.9.9",
     "@times-components/styleguide": "0.11.1",
     "prop-types": "15.6.0",
-    "react-native-svg": "6.3.1",
-    "svgs": "3.2.1"
+    "react-native-svg": "6.3.1"
   },
   "peerDependencies": {
     "react": ">=16.2",

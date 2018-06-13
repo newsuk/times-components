@@ -151,22 +151,9 @@ exports[`4. Renders a placeholder 1`] = `
         }
       }
     >
-      <Svg
-        height={82.23350253807106}
-        version="1.1"
-        width={82.23350253807106}
-      >
-        <G
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <Path
-            fill="#FFFFFF"
-          />
-        </G>
-      </Svg>
+      <T
+        width={300}
+      />
     </View>
   </Gradient>
 </View>

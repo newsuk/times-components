@@ -37,19 +37,147 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={
@@ -483,19 +611,147 @@ exports[`Article Image test on android does not render Caption on Article Image 
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={
@@ -831,19 +1087,147 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={
@@ -1231,19 +1615,147 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={
@@ -1622,19 +2134,147 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={
@@ -2015,19 +2655,147 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             }
             pointerEvents="box-only"
           >
-            <svg
-              height="24"
-              width="24"
+            <ARTSurfaceView
+              style={
+                Object {
+                  "height": 24,
+                  "width": 24,
+                }
+              }
             >
-              <g
-                fill="rgba(255, 255, 255, 0.8)"
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
               >
-                <path />
-                <path
-                  fill="none"
-                />
-              </g>
-            </svg>
+                <ARTGroup
+                  opacity={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        19,
+                        6.41,
+                        2,
+                        17.59,
+                        5,
+                        2,
+                        12,
+                        10.59,
+                        2,
+                        6.41,
+                        5,
+                        2,
+                        5,
+                        6.41,
+                        2,
+                        10.59,
+                        12,
+                        2,
+                        5,
+                        17.59,
+                        2,
+                        6.41,
+                        19,
+                        2,
+                        12,
+                        13.41,
+                        2,
+                        17.59,
+                        19,
+                        2,
+                        19,
+                        17.59,
+                        2,
+                        13.41,
+                        12,
+                        1,
+                      ]
+                    }
+                    fill={
+                      Array [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0.8,
+                      ]
+                    }
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                  <ARTShape
+                    d={
+                      Array [
+                        0,
+                        0,
+                        0,
+                        2,
+                        24,
+                        0,
+                        2,
+                        24,
+                        24,
+                        2,
+                        0,
+                        24,
+                        1,
+                      ]
+                    }
+                    fill={null}
+                    opacity={1}
+                    stroke={null}
+                    strokeCap={1}
+                    strokeDash={null}
+                    strokeJoin={1}
+                    strokeWidth={1}
+                    transform={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                  />
+                </ARTGroup>
+              </ARTGroup>
+            </ARTSurfaceView>
           </View>
           <View
             style={

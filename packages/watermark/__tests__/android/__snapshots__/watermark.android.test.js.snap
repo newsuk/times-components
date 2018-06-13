@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Watermark tests on android renders correctly 1`] = `
-<View
+<Image
+  resizeMode="contain"
+  source={1}
   style={
     Object {
-      "backgroundColor": "#EDEDED",
-      "borderColor": "#DBDBDB",
-      "borderWidth": 0.5,
       "height": 250,
       "width": 300,
     }

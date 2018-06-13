@@ -1,22 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Watermark tests on iOS renders correctly 1`] = `
-<svg
-  height={250}
-  width={300}
->
-  <g
-    fill="none"
-    fillRule="evenodd"
-    id="Page-1"
-    opacity="0.07"
-    stroke="none"
-    strokeWidth="1"
-  >
-    <path
-      fill="#1D1D1B"
-      id="Shape"
-    />
-  </g>
-</svg>
+<Image
+  resizeMode="contain"
+  source={1}
+  style={
+    Object {
+      "height": 250,
+      "width": 300,
+    }
+  }
+/>
 `;

@@ -3,7 +3,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { render, shallow } from "enzyme";
+import { shallow } from "enzyme";
 import * as Icons from "../src/icons";
 
 function iconRenderTest(name, Icon) {
@@ -18,13 +18,15 @@ function iconRenderTest(name, Icon) {
 
 function iconColourTest(Icon) {
   return () => {
-    const stroke = "#coffee";
+    const stroke = "#c0ffee";
     const fill = "#facade";
 
-    const tree = render(<Icon strokeColour={stroke} fillColour={fill} />);
+    const tree = shallow(
+      <Icon strokeColour={stroke} height={50} fillColour={fill} />
+    );
 
-    expect(tree.find(`[stroke="${stroke}"]`).length > 0).toEqual(true);
-    expect(tree.find(`[fill="${fill}"]`).length > 0).toEqual(true);
+    expect(tree.find({ stroke }).length).toBeGreaterThan(0);
+    expect(tree.find({ fill }).length).toBeGreaterThan(0);
   };
 }
 
