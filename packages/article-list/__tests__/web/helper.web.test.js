@@ -144,6 +144,9 @@ describe("Lazy loading and pagination tests on web", () => {
     });
 
     it("should render good quality images if there is no IntersectionObserver", () => {
+      Object.defineProperty(window, "clientWidth", {
+        value: 600
+      });
       const component = mount(
         <ArticleList
           {...articleListContentProps}
@@ -153,19 +156,6 @@ describe("Lazy loading and pagination tests on web", () => {
           )}
         />
       );
-
-      // not ideal as this relies on the actual implementation but there's no "nice" way of setting clientWidth
-      const authorProfileInstance = component.find("ArticleList").instance();
-      const rn = authorProfileInstance.registerNode;
-      authorProfileInstance.registerNode = node => {
-        if (node) {
-          Object.defineProperty(node, "clientWidth", {
-            value: 600
-          });
-        }
-
-        rn.call(authorProfileInstance, node);
-      };
 
       // we have to force the render lifecycle that the lazy images rely on, in that first the nodes are registered
       // and then when we render again after loading, we show the sized images

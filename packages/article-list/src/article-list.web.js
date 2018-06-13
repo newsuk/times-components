@@ -21,7 +21,6 @@ class ArticleList extends Component {
 
     this.pending = new Set();
     this.pendingTimer = null;
-    this.images = new Map();
     this.state = {
       images: new Map()
     };
@@ -48,11 +47,10 @@ class ArticleList extends Component {
 
     clearTimeout(this.pendingTimer);
     this.pending.clear();
-    this.images.clear();
   }
 
   getImageSize(nodeId) {
-    if (this.observer) {
+    if (this.observer && nodeId) {
       return this.state.images.get(nodeId);
     }
 
