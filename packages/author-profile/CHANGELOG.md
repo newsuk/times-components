@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.7"></a>
+## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.6...@times-components/author-profile@1.7.7) (2018-06-13)
+
+
+### Bug Fixes
+
+* not use flex for IE article list page error layout ([#1017](https://github.com/newsuk/times-components/issues/1017)) ([f4bf368](https://github.com/newsuk/times-components/commit/f4bf368))
+
+
+
+
 <a name="1.7.6"></a>
 ## [1.7.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@1.7.5...@times-components/author-profile@1.7.6) (2018-06-13)
 
