@@ -219,10 +219,6 @@
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.0.0-beta.49.tgz#944d0c5ba2812bb159edbd226743afd265179bdc"
 
-"@babel/plugin-check-constants@^7.0.0-beta":
-  version "7.0.0-beta.38"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-check-constants/-/plugin-check-constants-7.0.0-beta.38.tgz#bbda6306d45a4f097ccb416c0b52d6503f6502cf"
-
 "@babel/plugin-external-helpers@^7.0.0-beta":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-external-helpers/-/plugin-external-helpers-7.0.0-beta.49.tgz#c67ffa9e23d7063810b0d4304857bf5c16f8a35b"
@@ -809,9 +805,9 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/fructose@3.8.0":
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.8.0.tgz#4830c6f9c7925366f950424b13216fe53ee2d30c"
+"@times-components/fructose@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.8.2.tgz#ea9c890846fb71043dc498a887fc739b4f86e8fd"
   dependencies:
     babel-polyfill "^6.26.0"
     callsite "^1.0.0"
@@ -826,7 +822,7 @@
     pixelmatch "^4.0.2"
     pngjs "^3.3.1"
     prop-types "^15.6.0"
-    react-native "0.54.2"
+    react-native "0.55.4"
     react-native-side-menu "^1.1.3"
     request "^2.82.0"
     server-destroy "^1.0.1"
@@ -9013,24 +9009,11 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-metro-babylon7@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-babylon7/-/metro-babylon7-0.28.0.tgz#cf9701ffdc1992d1562b4cb667d9692164950df4"
-  dependencies:
-    babylon "^7.0.0-beta"
-
 metro-babylon7@0.30.2:
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/metro-babylon7/-/metro-babylon7-0.30.2.tgz#73784a958916bf5541b6a930598b62460fc376f5"
   dependencies:
     babylon "^7.0.0-beta"
-
-metro-cache@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.28.0.tgz#c5164a361985fc0294059fccdf4ea824e3173c1d"
-  dependencies:
-    jest-serializer "^22.4.0"
-    mkdirp "^0.5.1"
 
 metro-cache@0.30.2:
   version "0.30.2"
@@ -9039,12 +9022,6 @@ metro-cache@0.30.2:
     jest-serializer "^22.4.0"
     mkdirp "^0.5.1"
 
-metro-core@0.28.0, metro-core@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.28.0.tgz#e1ced4cf07ca8fb5196a6e5ca853b5d893f06038"
-  dependencies:
-    lodash.throttle "^4.1.1"
-
 metro-core@0.30.2, metro-core@^0.30.0:
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.30.2.tgz#380ae13cceee29e5be166df7acca9f1daa19fd7e"
@@ -9052,23 +9029,11 @@ metro-core@0.30.2, metro-core@^0.30.0:
     lodash.throttle "^4.1.1"
     wordwrap "^1.0.0"
 
-metro-minify-uglify@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.28.0.tgz#c9aecb8e893430d2fd58e00cf799c00b99dc0f79"
-  dependencies:
-    uglify-es "^3.1.9"
-
 metro-minify-uglify@0.30.2:
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.30.2.tgz#7299a0376ad6340e9acf415912d54b5309702040"
   dependencies:
     uglify-es "^3.1.9"
-
-metro-resolver@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.28.0.tgz#813802d60fc762772927c81d02e01c7eec84bad8"
-  dependencies:
-    absolute-path "^0.0.0"
 
 metro-resolver@0.30.2:
   version "0.30.2"
@@ -9076,100 +9041,11 @@ metro-resolver@0.30.2:
   dependencies:
     absolute-path "^0.0.0"
 
-metro-source-map@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.28.0.tgz#ec8c3161d8516ad3c4e7149f2c3d4802f4fd6fa2"
-  dependencies:
-    source-map "^0.5.6"
-
 metro-source-map@0.30.2:
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.30.2.tgz#4ac056642a2c521d974d42a617c8731d094365bb"
   dependencies:
     source-map "^0.5.6"
-
-metro@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro/-/metro-0.28.0.tgz#22999c96c3129682a76acd4e1f2adc17f7d77cac"
-  dependencies:
-    "@babel/core" "^7.0.0-beta"
-    "@babel/generator" "^7.0.0-beta"
-    "@babel/helper-remap-async-to-generator" "^7.0.0-beta"
-    "@babel/plugin-check-constants" "^7.0.0-beta"
-    "@babel/plugin-external-helpers" "^7.0.0-beta"
-    "@babel/plugin-proposal-class-properties" "^7.0.0-beta"
-    "@babel/plugin-proposal-object-rest-spread" "^7.0.0-beta"
-    "@babel/plugin-syntax-dynamic-import" "^7.0.0-beta"
-    "@babel/plugin-transform-arrow-functions" "^7.0.0-beta"
-    "@babel/plugin-transform-block-scoping" "^7.0.0-beta"
-    "@babel/plugin-transform-classes" "^7.0.0-beta"
-    "@babel/plugin-transform-computed-properties" "^7.0.0-beta"
-    "@babel/plugin-transform-destructuring" "^7.0.0-beta"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0-beta"
-    "@babel/plugin-transform-for-of" "^7.0.0-beta"
-    "@babel/plugin-transform-function-name" "^7.0.0-beta"
-    "@babel/plugin-transform-literals" "^7.0.0-beta"
-    "@babel/plugin-transform-modules-commonjs" "^7.0.0-beta"
-    "@babel/plugin-transform-object-assign" "^7.0.0-beta"
-    "@babel/plugin-transform-parameters" "^7.0.0-beta"
-    "@babel/plugin-transform-react-display-name" "^7.0.0-beta"
-    "@babel/plugin-transform-react-jsx" "^7.0.0-beta"
-    "@babel/plugin-transform-react-jsx-source" "^7.0.0-beta"
-    "@babel/plugin-transform-regenerator" "^7.0.0-beta"
-    "@babel/plugin-transform-shorthand-properties" "^7.0.0-beta"
-    "@babel/plugin-transform-spread" "^7.0.0-beta"
-    "@babel/plugin-transform-template-literals" "^7.0.0-beta"
-    "@babel/template" "^7.0.0-beta"
-    "@babel/traverse" "^7.0.0-beta"
-    "@babel/types" "^7.0.0-beta"
-    absolute-path "^0.0.0"
-    async "^2.4.0"
-    babel-core "^6.24.1"
-    babel-generator "^6.26.0"
-    babel-plugin-external-helpers "^6.22.0"
-    babel-preset-es2015-node "^6.1.1"
-    babel-preset-fbjs "^2.1.4"
-    babel-preset-react-native "^4.0.0"
-    babel-register "^6.24.1"
-    babylon "^6.18.0"
-    chalk "^1.1.1"
-    concat-stream "^1.6.0"
-    connect "^3.6.5"
-    core-js "^2.2.2"
-    debug "^2.2.0"
-    denodeify "^1.2.1"
-    eventemitter3 "^3.0.0"
-    fbjs "^0.8.14"
-    fs-extra "^1.0.0"
-    graceful-fs "^4.1.3"
-    image-size "^0.6.0"
-    jest-docblock "22.4.0"
-    jest-haste-map "22.4.2"
-    jest-worker "22.2.2"
-    json-stable-stringify "^1.0.1"
-    json5 "^0.4.0"
-    left-pad "^1.1.3"
-    lodash.throttle "^4.1.1"
-    merge-stream "^1.0.1"
-    metro-babylon7 "0.28.0"
-    metro-cache "0.28.0"
-    metro-core "0.28.0"
-    metro-minify-uglify "0.28.0"
-    metro-resolver "0.28.0"
-    metro-source-map "0.28.0"
-    mime-types "2.1.11"
-    mkdirp "^0.5.1"
-    request "^2.79.0"
-    rimraf "^2.5.4"
-    serialize-error "^2.1.0"
-    source-map "^0.5.6"
-    temp "0.8.3"
-    throat "^4.1.0"
-    wordwrap "^1.0.0"
-    write-file-atomic "^1.2.0"
-    ws "^1.1.0"
-    xpipe "^1.0.5"
-    yargs "^9.0.0"
 
 metro@^0.30.0:
   version "0.30.2"
@@ -9718,7 +9594,7 @@ node-modules-regexp@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
 
-node-notifier@^5.0.2, node-notifier@^5.1.2, node-notifier@^5.2.1:
+node-notifier@^5.0.2, node-notifier@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/node-notifier/-/node-notifier-5.2.1.tgz#fa313dd08f5517db0e2502e5758d664ac69f9dea"
   dependencies:
@@ -11476,69 +11352,6 @@ react-native-web@0.5.1:
     prop-types "^15.6.0"
     react-art "^16.2.0"
     react-timer-mixin "^0.13.3"
-
-react-native@0.54.2:
-  version "0.54.2"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.54.2.tgz#73786e7bf3f80b0b060ca0bfe5b192f9c2f253da"
-  dependencies:
-    absolute-path "^0.0.0"
-    art "^0.10.0"
-    babel-core "^6.24.1"
-    babel-plugin-syntax-trailing-function-commas "^6.20.0"
-    babel-plugin-transform-async-to-generator "6.16.0"
-    babel-plugin-transform-class-properties "^6.18.0"
-    babel-plugin-transform-exponentiation-operator "^6.5.0"
-    babel-plugin-transform-flow-strip-types "^6.21.0"
-    babel-plugin-transform-object-rest-spread "^6.20.2"
-    babel-register "^6.24.1"
-    babel-runtime "^6.23.0"
-    base64-js "^1.1.2"
-    chalk "^1.1.1"
-    commander "^2.9.0"
-    compression "^1.7.1"
-    connect "^3.6.5"
-    create-react-class "^15.6.3"
-    debug "^2.2.0"
-    denodeify "^1.2.1"
-    envinfo "^3.0.0"
-    errorhandler "^1.5.0"
-    event-target-shim "^1.0.5"
-    fbjs "^0.8.14"
-    fbjs-scripts "^0.8.1"
-    fs-extra "^1.0.0"
-    glob "^7.1.1"
-    graceful-fs "^4.1.3"
-    inquirer "^3.0.6"
-    lodash "^4.17.5"
-    metro "^0.28.0"
-    metro-core "^0.28.0"
-    mime "^1.3.4"
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
-    morgan "^1.9.0"
-    node-fetch "^1.3.3"
-    node-notifier "^5.1.2"
-    npmlog "^2.0.4"
-    opn "^3.0.2"
-    optimist "^0.6.1"
-    plist "^1.2.0"
-    pretty-format "^4.2.1"
-    promise "^7.1.1"
-    prop-types "^15.5.8"
-    react-clone-referenced-element "^1.0.1"
-    react-devtools-core "3.1.0"
-    react-timer-mixin "^0.13.2"
-    regenerator-runtime "^0.11.0"
-    rimraf "^2.5.4"
-    semver "^5.0.3"
-    serve-static "^1.13.1"
-    shell-quote "1.6.1"
-    stacktrace-parser "^0.1.3"
-    whatwg-fetch "^1.0.0"
-    ws "^1.1.0"
-    xcode "^0.9.1"
-    xmldoc "^0.4.0"
-    yargs "^9.0.0"
 
 react-native@0.55.4:
   version "0.55.4"
