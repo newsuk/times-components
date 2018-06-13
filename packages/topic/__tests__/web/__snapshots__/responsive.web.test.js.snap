@@ -3,10 +3,6 @@
 exports[`Topic responsive tests on web should render HeadContainer correctly 1`] = `
 .c0 {
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
@@ -38,10 +34,6 @@ exports[`Topic responsive tests on web should render HeadContainer correctly 1`]
 exports[`Topic responsive tests on web should render HeadContainer correctly 2`] = `
 .c0 {
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 0;
@@ -76,6 +68,7 @@ exports[`Topic responsive tests on web should render ResponsiveDivider correctly
   border-top-style: solid;
   border-top-width: 1px;
   width: 200px;
+  margin: 0 auto;
 }
 
 @media (min-width:768px) {
@@ -95,6 +88,7 @@ exports[`Topic responsive tests on web should render ResponsiveName correctly 1`
   font-size: 40px;
   color: #1D1D1B;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 @media (min-width:768px) {
