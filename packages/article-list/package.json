@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -38,7 +38,7 @@
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.8.2",
-    "@times-components/provider-test-tools": "0.10.6",
+    "@times-components/provider-test-tools": "0.10.7",
     "@times-components/storybook": "0.13.3",
     "@times-components/tealium-utils": "0.4.8",
     "@times-components/webpack-configurator": "0.1.1",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@times-components/article-summary": "0.26.4",
-    "@times-components/button": "0.3.3",
+    "@times-components/button": "0.3.4",
     "@times-components/card": "0.30.10",
     "@times-components/error-view": "0.12.9",
     "@times-components/image": "1.20.2",
