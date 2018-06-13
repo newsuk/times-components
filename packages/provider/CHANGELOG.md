@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.6...@times-components/provider@0.35.0) (2018-06-13)
+
+
+### Features
+
+* Update the topic articles provider ([#1008](https://github.com/newsuk/times-components/issues/1008)) ([6ec475d](https://github.com/newsuk/times-components/commit/6ec475d))
+
+
+
+
 <a name="0.34.6"></a>
 ## [0.34.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.34.5...@times-components/provider@0.34.6) (2018-06-08)
 
