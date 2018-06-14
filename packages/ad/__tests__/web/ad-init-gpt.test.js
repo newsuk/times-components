@@ -1,6 +1,6 @@
 import merge from "lodash.merge";
 
-import { makeAdInitMocks, adInit } from "./ad-init-mocks";
+import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 
 describe("AdInit.gpt", () => {
   let mock;

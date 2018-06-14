@@ -1,5 +1,5 @@
-import adInit from "../src/ad-init";
-import { makeAdInitMocks } from "./ad-init-mocks";
+import adInit from "../../src/ad-init";
+import { makeAdInitMocks } from "../../fixtures/ad-init-mocks";
 
 describe("AdInit.grapeshot", () => {
   let mock;

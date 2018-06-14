@@ -1,6 +1,6 @@
-import adInitOriginal from "../src/ad-init";
-import { makeAdInitMocks, adInit } from "./ad-init-mocks";
-import { expectFunctionToBeSelfContained } from "./check-self-contained-function";
+import adInitOriginal from "../../src/ad-init";
+import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
+import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
 
 jest.useFakeTimers();
 
