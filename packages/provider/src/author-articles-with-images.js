@@ -16,6 +16,7 @@ export const query = gql`
           id
           label
           leadAsset {
+            type: __typename
             ... on Image {
               title
               crop(ratio: $imageRatio) {
