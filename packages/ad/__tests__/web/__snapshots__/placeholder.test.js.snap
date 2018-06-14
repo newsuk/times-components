@@ -3,7 +3,9 @@
 exports[`Placeholder renders a large placeholder 1`] = `
 <div>
   <div>
-    watermark
+    <div>
+      watermark
+    </div>
     <div
       dir="auto"
     >
@@ -16,7 +18,9 @@ exports[`Placeholder renders a large placeholder 1`] = `
 exports[`Placeholder renders a medium placeholder 1`] = `
 <div>
   <div>
-    watermark
+    <div>
+      watermark
+    </div>
     <div
       dir="auto"
     >
@@ -29,7 +33,9 @@ exports[`Placeholder renders a medium placeholder 1`] = `
 exports[`Placeholder renders a small placeholder 1`] = `
 <div>
   <div>
-    watermark
+    <div>
+      watermark
+    </div>
     <div
       dir="auto"
     >
@@ -42,7 +48,9 @@ exports[`Placeholder renders a small placeholder 1`] = `
 exports[`Placeholder renders a tiny placeholder 1`] = `
 <div>
   <div>
-    watermark
+    <div>
+      watermark
+    </div>
     <div
       dir="auto"
     >
