@@ -173,12 +173,11 @@ class ArticleList extends Component {
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
               return (
-                <Fragment>
+                <Fragment key={elementId}>
                   <div
                     accessibility-label={elementId}
                     data-testid={elementId}
                     id={elementId}
-                    key={elementId}
                     ref={node => this.registerNode(node)}
                   >
                     <ErrorView>
@@ -200,11 +199,11 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {
-                    index === 4
-                      ? <AdComposer adConfig={adConfig}><Ad pos="inline-ad" /></AdComposer>
-                      : null
-                  }
+                  {(index === 4 && Object.keys(adConfig).length !== 0) ? (
+                    <AdComposer adConfig={adConfig}>
+                      <Ad pos="inline-ad" />
+                    </AdComposer>
+                  ) : null}
                 </Fragment>
               );
             })}
