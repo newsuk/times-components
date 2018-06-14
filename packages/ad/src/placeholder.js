@@ -24,7 +24,13 @@ const getStyles = (width, height) =>
       height,
       borderColor: colours.functional.keyline,
       borderWidth: 1,
-      borderStyle: "solid"
+      borderStyle: "solid",
+      overflow: "hidden"
+    },
+    watermarkContainer: {
+      position: "absolute",
+      top: 0,
+      left: 0
     },
     placeholderText: {
       fontSize: fontSizes.puffLink,
@@ -34,12 +40,12 @@ const getStyles = (width, height) =>
       borderColor: colours.functional.keyline,
       borderWidth: 1,
       borderStyle: "solid",
-      position: "absolute",
       paddingTop: spacing(1),
       paddingBottom: spacing(1),
       paddingLeft: spacing(2),
       paddingRight: spacing(2),
-      letterSpacing: 1.5
+      letterSpacing: 1.5,
+      zIndex: 1
     }
   });
 
@@ -48,7 +54,9 @@ const Placeholder = ({ width, height, style }) => {
   return (
     <View style={[styles.container, style]}>
       <View style={styles.wrapper}>
-        <TimesWatermark width={width} height={height} />
+        <View style={styles.watermarkContainer}>
+          <TimesWatermark width={width} height={height} />
+        </View>
         <Text style={styles.placeholderText}>ADVERTISEMENT</Text>
       </View>
     </View>
