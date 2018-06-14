@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
+import Ad, { AdComposer } from "@times-components/ad";
 import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
@@ -97,6 +98,7 @@ class ArticleList extends Component {
 
   render() {
     const {
+      adConfig,
       articleListHeader,
       articles,
       articlesLoading,
@@ -171,32 +173,38 @@ class ArticleList extends Component {
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
               return (
-                <div
-                  accessibility-label={elementId}
-                  data-testid={elementId}
-                  id={elementId}
-                  key={elementId}
-                  ref={node => this.registerNode(node)}
-                >
-                  <ErrorView>
-                    {({ hasError }) =>
-                      hasError ? null : (
-                        <Fragment>
-                          {separatorComponent}
-                          <ArticleListItem
-                            {...article}
-                            index={index}
-                            length={data.length}
-                            imageRatio={imageRatio}
-                            imageSize={this.getImageSize(elementId) || 100}
-                            onPress={e => onArticlePress(e, { id, url })}
-                            showImage={showImages}
-                          />
-                        </Fragment>
-                      )
-                    }
-                  </ErrorView>
-                </div>
+                <Fragment key={elementId}>
+                  <div
+                    accessibility-label={elementId}
+                    data-testid={elementId}
+                    id={elementId}
+                    ref={node => this.registerNode(node)}
+                  >
+                    <ErrorView>
+                      {({ hasError }) =>
+                        hasError ? null : (
+                          <Fragment>
+                            {separatorComponent}
+                            <ArticleListItem
+                              {...article}
+                              index={index}
+                              length={data.length}
+                              imageRatio={imageRatio}
+                              imageSize={this.getImageSize(elementId) || 100}
+                              onPress={e => onArticlePress(e, { id, url })}
+                              showImage={showImages}
+                            />
+                          </Fragment>
+                        )
+                      }
+                    </ErrorView>
+                  </div>
+                  {index === 4 && Object.keys(adConfig).length !== 0 ? (
+                    <AdComposer adConfig={adConfig}>
+                      <Ad pos="inline-ad" />
+                    </AdComposer>
+                  ) : null}
+                </Fragment>
               );
             })}
         </View>

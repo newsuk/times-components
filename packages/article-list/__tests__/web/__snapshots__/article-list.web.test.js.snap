@@ -1133,3 +1133,876 @@ exports[`ArticleList tests on web should render the article list pagination corr
   </div>
 </div>
 `;
+
+exports[`ArticleList tests on web should show an advert after the fifth article 1`] = `
+<div>
+  <div
+    className="responsive-styles__component-fbPFZZ hkMMvo"
+  >
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ ldBdZT"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ exZFAC"
+          >
+            <div
+              data-testid="results-message"
+              dir="auto"
+            >
+              Showing 0 - 0 of 0 results
+            </div>
+          </div>
+          <div
+            className="responsive-styles__component-fbPFZZ cePhpb"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+        data-testid="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+        id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+      >
+        <a
+          href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b5afe88-cb0d-11e7-9ee9-e45ae7e1cdd4.jpg?crop=4252%2C2835%2C0%2C0&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Top medal for forces dog who took a bite out of the Taliban
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontFamily": "TimesDigitalW04",
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+        data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+        id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+      >
+        <div />
+        <a
+          href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd1fe3000-cb0e-11e7-9ee9-e45ae7e1cdd4.jpg?crop=2887%2C1925%2C562%2C745&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Social media must raise game to beat terrorists, says UN chief
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontFamily": "TimesDigitalW04",
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 17 2017, 12:01am, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        accessibility-label="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+        data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+        id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+      >
+        <div />
+        <a
+          href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F459f7782-c950-11e7-9ee9-e45ae7e1cdd4.jpg?crop=5448%2C3632%2C0%2C0&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Cuts have left the army 20 years out of date, says former general
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontFamily": "TimesDigitalW04",
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Tuesday November 14 2017, 05:00pm, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        accessibility-label="21627e52-c651-11e7-92dc-06edfbca4aab.3"
+        data-testid="21627e52-c651-11e7-92dc-06edfbca4aab.3"
+        id="21627e52-c651-11e7-92dc-06edfbca4aab.3"
+      >
+        <div />
+        <a
+          href="https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06c0e50a-c667-11e7-9914-a38dcc178fcd.jpg?crop=3600%2C2400%2C0%2C0&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      MoD recruits more civilians as Royal Marines face axe
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontFamily": "TimesDigitalW04",
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        Britain’s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Saturday November 11 2017, 12:01am, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        accessibility-label="9c4991b8-c657-11e7-92dc-06edfbca4aab.4"
+        data-testid="9c4991b8-c657-11e7-92dc-06edfbca4aab.4"
+        id="9c4991b8-c657-11e7-92dc-06edfbca4aab.4"
+      >
+        <div />
+        <a
+          href="https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1d663086-c625-11e7-9914-a38dcc178fcd.jpg?crop=907%2C605%2C87%2C93&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "position": "absolute",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Suits you: poppy power is branching out for Remembrance appeal
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontFamily": "TimesDigitalW04",
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago.
+                      </span>
+                      <span
+                        dir="auto"
+                      >
+                         
+                        But when a group of
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Saturday November 11 2017, 12:01am, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <div
+          style={
+            Object {
+              "height": 0,
+              "overflow": "hidden",
+              "width": 0,
+            }
+          }
+        />
+        <div>
+          <div>
+            <svg
+              height={90}
+              width={728}
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+                id="Page-1"
+                opacity="0.07"
+                stroke="none"
+                strokeWidth="1"
+              >
+                <path
+                  fill="#1D1D1B"
+                  id="Shape"
+                />
+              </g>
+            </svg>
+            <div
+              dir="auto"
+            >
+              ADVERTISEMENT
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        accessibility-label="937bc97c-c597-11e7-92dc-06edfbca4aab.5"
+        data-testid="937bc97c-c597-11e7-92dc-06edfbca4aab.5"
+        id="937bc97c-c597-11e7-92dc-06edfbca4aab.5"
+      >
+        <div />
+        <a
+          href="https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs"
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ereXyn"
+          >
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
+              <div>
+                <div
+                  className="articleListImage"
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "display": "table",
+                          "height": 0,
+                          "overflow": "hidden",
+                          "paddingBottom": "66.66666666666667%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c580c5a-c597-11e7-92dc-06edfbca4aab.jpg?crop=3656%2C2437%2C0%2C0&resize=1440"
+                        style={
+                          Object {
+                            "display": "block",
+                            "position": "absolute",
+                            "width": "100%",
+                            "zIndex": 1,
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "bottom": "0px",
+                            "left": "0px",
+                            "right": "0px",
+                            "top": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="articleListContent"
+                >
+                  <div>
+                    <div>
+                      <div
+                        dir="auto"
+                        style={
+                          Object {
+                            "color": "rgba(51,51,51,1)",
+                            "fontSize": "12px",
+                            "fontWeight": "400",
+                            "letterSpacing": "1.2px",
+                          }
+                        }
+                      >
+                        POLITICS
+                      </div>
+                    </div>
+                    <h3
+                      aria-level="3"
+                      dir="auto"
+                      role="heading"
+                      style={
+                        Object {
+                          "color": "rgba(51,51,51,1)",
+                          "fontFamily": "TimesModern-Bold",
+                          "fontSize": "22px",
+                          "fontWeight": "400",
+                          "lineHeight": "22px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      MoD heralds a ‘renewed’ US special relationship
+                    </h3>
+                    <div
+                      dir="auto"
+                      style={
+                        Object {
+                          "lineHeight": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        dir="auto"
+                      >
+                        
+                        The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending
+                        ...
+                      </span>
+                    </div>
+                    <div
+                      aria-label="datePublication"
+                      data-testid="datePublication"
+                      dir="auto"
+                      style={
+                        Object {
+                          "fontSize": "13px",
+                          "lineHeight": "15px",
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
+                      Friday November 10 2017, 12:01am, The Times
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div
+          className="responsive-styles__component-fbPFZZ kdgRsQ"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ ciodUt"
+          >
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

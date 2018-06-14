@@ -63,6 +63,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
+    "@times-components/ad": "0.21.9",
     "@times-components/article-summary": "0.26.5",
     "@times-components/button": "0.3.5",
     "@times-components/card": "0.30.11",

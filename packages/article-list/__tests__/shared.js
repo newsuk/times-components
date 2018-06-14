@@ -147,6 +147,7 @@ export default () => {
     const tree = renderer.create(
       <ArticleList
         {...articleListProps}
+        adConfig={{}}
         articles={articles}
         count={articles.length}
         page={1}
@@ -160,6 +161,7 @@ export default () => {
   it("should render an article list that is loading", () => {
     const props = {
       ...articleListProps,
+      adConfig: {},
       articlesLoading: true,
       articles: Array(3)
         .fill()
@@ -180,6 +182,7 @@ export default () => {
     const wrapper = shallow(
       <ArticleList
         {...articleListProps}
+        adConfig={{}}
         articles={[]}
         count={0}
         error={new Error("Failed")}

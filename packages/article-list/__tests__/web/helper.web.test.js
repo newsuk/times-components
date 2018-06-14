@@ -29,6 +29,7 @@ describe("Lazy loading and pagination tests on web", () => {
   afterAll(() => jest.useFakeTimers());
 
   const articleListContentProps = {
+    adConfig: {},
     articles: articleListWithImagesFixture.data.author.articles.list,
     count: articleListWithImagesFixture.data.author.articles.list.length,
     imageRatio: 3 / 2,
