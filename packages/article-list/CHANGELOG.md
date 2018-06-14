@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.9...@times-components/article-list@1.7.0) (2018-06-14)
+
+
+### Bug Fixes
+
+* update article-list snapshot ([#1023](https://github.com/newsuk/times-components/issues/1023)) ([075f040](https://github.com/newsuk/times-components/commit/075f040))
+
+
+### Features
+
+* article list ads ([#1022](https://github.com/newsuk/times-components/issues/1022)) ([b9e1413](https://github.com/newsuk/times-components/commit/b9e1413))
+
+
+
+
 <a name="1.6.9"></a>
 ## [1.6.9](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.8...@times-components/article-list@1.6.9) (2018-06-13)
 

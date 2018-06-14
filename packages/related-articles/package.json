@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -59,10 +59,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-summary": "0.26.5",
+    "@times-components/article-summary": "0.26.6",
     "@times-components/card": "0.30.11",
     "@times-components/link": "0.24.3",
-    "@times-components/markup": "0.28.10",
+    "@times-components/markup": "0.28.11",
     "@times-components/slice": "0.19.10",
     "@times-components/styleguide": "0.11.2",
     "@times-components/tracking": "0.13.10",
