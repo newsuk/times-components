@@ -14,6 +14,7 @@ import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 
 const AuthorProfile = ({
+  adConfig,
   author,
   error,
   isLoading,
@@ -33,6 +34,7 @@ const AuthorProfile = ({
   if (isLoading || !author) {
     return (
       <ArticleList
+        adConfig={{}}
         articleListHeader={<AuthorProfileHead isLoading />}
         articlesLoading
         fetchMore={() => Promise.resolve()}
@@ -112,6 +114,7 @@ const AuthorProfile = ({
 
         return (
           <ArticleList
+            adConfig={adConfig}
             articleListHeader={articleListHeader}
             articles={get(data, "articles.list", [])}
             articlesLoading={articlesLoading}
