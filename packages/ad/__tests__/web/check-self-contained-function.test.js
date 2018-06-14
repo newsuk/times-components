@@ -1,7 +1,7 @@
 import {
   getSelfContainedFunctionErrors,
   reportErrors
-} from "./check-self-contained-function";
+} from "../../fixtures/check-self-contained-function";
 
 describe("checkSelfContainedFunction", () => {
   it("does not find errors in function that does not use global variables", () => {

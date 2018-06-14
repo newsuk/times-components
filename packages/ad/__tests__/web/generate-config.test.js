@@ -1,4 +1,4 @@
-import { getMaxSizes } from "../src/generate-config";
+import { getMaxSizes } from "../../src/generate-config";
 
 describe("Generate Config test", () => {
   it("getMaxSizes has default values if no size is sent", () => {

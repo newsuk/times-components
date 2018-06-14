@@ -3,7 +3,7 @@ import React from "react";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16";
 
-import DOMContext from "../src/dom-context.web";
+import DOMContext from "../../src/dom-context.web";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Placeholder renders a large placeholder 1`] = `
+<div>
+  <div>
+    watermark
+    <div
+      dir="auto"
+    >
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Placeholder renders a medium placeholder 1`] = `
+<div>
+  <div>
+    watermark
+    <div
+      dir="auto"
+    >
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Placeholder renders a small placeholder 1`] = `
+<div>
+  <div>
+    watermark
+    <div
+      dir="auto"
+    >
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Placeholder renders a tiny placeholder 1`] = `
+<div>
+  <div>
+    watermark
+    <div
+      dir="auto"
+    >
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
