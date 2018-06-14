@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { mount, shallow } from "enzyme";
+import { mount } from "enzyme";
 import ArticleListPagination from "../src/article-list-pagination";
 import ArticleList from "./../src/article-list";
 import ArticleListItem from "./../src/article-list-item";
@@ -88,7 +88,7 @@ export default () => {
   it("should show an advert after the fifth article", () => {
     const pageSize = 6;
     const results = pagedResult(0, pageSize);
-    const wrapper = shallow(
+    const tree = renderer.create(
       <ArticleList
         {...articleListProps}
         adConfig={adConfig}
@@ -98,6 +98,6 @@ export default () => {
       />
     );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 };

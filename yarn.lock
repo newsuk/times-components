@@ -776,16 +776,6 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@times-components/ad@0.21.8":
-  version "0.21.8"
-  resolved "https://registry.yarnpkg.com/@times-components/ad/-/ad-0.21.8.tgz#39be3aa682f6f6bacd2c89cf5b74801582d3f710"
-  dependencies:
-    "@times-components/styleguide" "0.11.1"
-    "@times-components/utils" "0.15.0"
-    "@times-components/watermark" "0.7.9"
-    prop-types "15.6.0"
-    react-broadcast "0.5.2"
-
 "@times-components/fructose@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.8.0.tgz#4830c6f9c7925366f950424b13216fe53ee2d30c"
@@ -812,41 +802,6 @@
     webpack "^3.8.1"
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
-
-"@times-components/responsive-styles@0.9.9":
-  version "0.9.9"
-  resolved "https://registry.yarnpkg.com/@times-components/responsive-styles/-/responsive-styles-0.9.9.tgz#2895b16a94ae644d5478e7007e826ad231f822a9"
-  dependencies:
-    prop-types "15.6.0"
-    styled-components "3.2.6"
-
-"@times-components/styleguide@0.11.1":
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-0.11.1.tgz#ad7f79c272d8c6535d1c9d05ad5a87a19f056505"
-  dependencies:
-    "@times-components/responsive-styles" "0.9.9"
-    prop-types "15.6.0"
-
-"@times-components/utils@0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-0.15.0.tgz#3b52a611bd785649bf61c7c1977c7c4c6528a5b6"
-  dependencies:
-    apollo-cache-inmemory "1.1.10"
-    apollo-client "2.3.2"
-    graphql "0.13.1"
-    lodash.omitby "4.6.0"
-    prop-types "15.6.0"
-    react "16.3.1"
-    react-apollo "2.1.4"
-
-"@times-components/watermark@0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@times-components/watermark/-/watermark-0.7.9.tgz#2ceee71ebc37cda1809202f0c8a799d42ce15766"
-  dependencies:
-    "@times-components/styleguide" "0.11.1"
-    prop-types "15.6.0"
-    react-native-svg "6.3.1"
-    svgs "3.2.1"
 
 "@types/async@2.0.49":
   version "2.0.49"

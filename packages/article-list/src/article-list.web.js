@@ -199,7 +199,7 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {(index === 4 && Object.keys(adConfig).length !== 0) ? (
+                  {index === 4 && Object.keys(adConfig).length !== 0 ? (
                     <AdComposer adConfig={adConfig}>
                       <Ad pos="inline-ad" />
                     </AdComposer>
