@@ -106,6 +106,7 @@ const renderArticle = (
     {...data}
     isLoading={isLoading}
     analyticsStream={analyticsStream}
+    adConfig={adConfig}
     error={error}
     onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
     onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
@@ -176,6 +177,7 @@ export default {
             >
               {({ article, isLoading, error }) => (
                 <Article
+                  adConfig={defaultAdConfig}
                   analyticsStream={storybookReporter}
                   article={article}
                   error={error}
