@@ -80,7 +80,13 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
 
 exports[`Article Summary tests on Web should render an article-summary component containing links 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -163,7 +169,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with a single paragraph 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -263,7 +275,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with content including line breaks 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -379,7 +397,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with empty content at the end trimmed 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -482,7 +506,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and blank content 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -532,7 +562,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and no content 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -722,7 +758,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with no date publication 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -801,7 +843,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with no headline 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -933,7 +981,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary with opinion byline 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={

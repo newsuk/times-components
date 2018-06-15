@@ -93,7 +93,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -200,7 +200,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -339,7 +339,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -552,7 +552,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -706,7 +706,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -773,7 +773,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1029,7 +1029,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1150,7 +1150,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1337,7 +1337,7 @@ exports[`Article Summary tests on ios should render an article-summary with opin
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
