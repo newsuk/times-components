@@ -1,24 +1,22 @@
 import { fonts } from "@times-components/styleguide";
 
-const shared = {
-  fontFamily: fonts.supporting,
-  fontSize: 12,
-  lineHeight: 12,
-  fontWeight: "400",
-  letterSpacing: 1.2,
-  padding: 0,
-  margin: 0,
-  position: "relative"
-};
-
 const styles = {
   title: {
-    ...shared,
-    top: 2
+    top: 2,
+    fontFamily: fonts.supporting,
+    fontSize: 12,
+    lineHeight: 12,
+    fontWeight: "400",
+    letterSpacing: 1.2,
+    padding: 0,
+    margin: 0,
+    position: "relative"
   },
-  pipe: {
-    ...shared,
-    top: 1
+  iconContainer: {
+    paddingBottom: 2
+  },
+  icon: {
+    iconSize: 8
   }
 };
 
