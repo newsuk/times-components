@@ -7,6 +7,7 @@ import Placeholder from "./src/placeholder";
 import NativeDOMContext from "./src/dom-context";
 import WebDOMContext from "./src/dom-context.web";
 import pageTargeting from "./fixtures/page-options.json";
+import topicPageTargeting from "./fixtures/topic-page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
 import domContextInit from "./ad.stories-domcontext-init";
 
@@ -29,6 +30,25 @@ const adConfig = () =>
     { biddersConfig },
     { bidderSlots: ["ad-header", "ad-article-inline"] }
   );
+
+const topicAdConfig = () =>
+  Object.assign(
+    {},
+    adConfigBase,
+    { topicPageTargeting },
+    {
+      slotTargeting: {
+        sec_id: "null",
+        section: "topic/chelsea",
+        path: "/topic/chelsea/",
+        zone: "topic",
+        slot: "home"
+      }
+    },
+    { biddersConfig },
+    { bidderSlots: ["ad-inline"] }
+  );
+
 let DOMContext;
 if (window.document) {
   DOMContext = WebDOMContext;
@@ -37,8 +57,9 @@ if (window.document) {
 }
 const articleUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const topicUrl = "https://www.thetimes.co.uk/topic/chelsea";
 
-const withOpenInNewWindow = children => {
+const withOpenInNewWindow = (children, page) => {
   const link = typeof document === "object" &&
     window !== window.top && (
       <a
@@ -49,8 +70,10 @@ const withOpenInNewWindow = children => {
         Open in new window
       </a>
     );
+
+  const config = page === "topic" ? topicAdConfig : adConfig;
   return (
-    <AdComposer adConfig={adConfig(children.props.pos)}>
+    <AdComposer adConfig={config(children.props.pos)}>
       <View>
         {link}
         {children}
@@ -102,6 +125,17 @@ export default {
             <Ad section="news" pos="header" contextUrl={articleUrl} />
             <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
           </View>
+        )
+    },
+    {
+      type: "story",
+      name: "render topic ad - inline",
+      component: () =>
+        withOpenInNewWindow(
+          <View>
+            <Ad section="news" pos="inline-ad" contextUrl={topicUrl} />
+          </View>,
+          "topic"
         )
     },
     {
