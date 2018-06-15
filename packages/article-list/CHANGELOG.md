@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.7.0...@times-components/article-list@1.7.1) (2018-06-15)
+
+
+### Bug Fixes
+
+* topic and author profile stories ([#1025](https://github.com/newsuk/times-components/issues/1025)) ([0c947e7](https://github.com/newsuk/times-components/commit/0c947e7))
+
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@1.6.9...@times-components/article-list@1.7.0) (2018-06-14)
 
