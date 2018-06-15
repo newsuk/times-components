@@ -28,7 +28,15 @@ const RelatedArticleItem = ({
   showSummary,
   summaryConfig
 }) => {
-  const { byline, headline, label, leadAsset, publishedTime, section, url } = article;
+  const {
+    byline,
+    headline,
+    label,
+    leadAsset,
+    publishedTime,
+    section,
+    url
+  } = article;
   const {
     lengths: summaryLengths = [],
     style: summaryStyle = {},
