@@ -1,5 +1,7 @@
-const { rnw } = require("@times-components/jest-serializer");
-const { createSerializer } = require("enzyme-to-json");
+const {
+  addSerializers,
+  enzymeDeepSerializer,
+  rnw
+} = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(createSerializer({ mode: "deep" }));
-expect.addSnapshotSerializer(rnw());
+addSerializers(enzymeDeepSerializer, rnw());

@@ -1,12 +1,14 @@
 const {
+  addSerializers,
   compose,
-  minimalNativeTransform,
+  enzymeDeepSerializer,
   flattenStyleTransform,
+  minimalNativeTransform,
   print
 } = require("@times-components/jest-serializer");
-const { createSerializer } = require("enzyme-to-json");
 
-expect.addSnapshotSerializer(createSerializer({ mode: "deep" }));
-expect.addSnapshotSerializer(
-  compose(print, minimalNativeTransform, flattenStyleTransform)
+addSerializers(
+  expect,
+  enzymeDeepSerializer,
+  compose(print, flattenStyleTransform, minimalNativeTransform)
 );

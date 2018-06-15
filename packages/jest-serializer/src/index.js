@@ -47,8 +47,14 @@ const compose = (printer, ...transformers) =>
 const minimalRnw = includeStyleProps =>
   compose(rnwPrinter, minimalWebTransform, rnwTransform(includeStyleProps));
 
+const addSerializers = () => {};
+
+const enzymeDeepSerializer = () => {};
+
 export {
+  addSerializers,
   compose,
+  enzymeDeepSerializer,
   flattenStyle,
   flattenStyleTransform,
   minimalNative,
