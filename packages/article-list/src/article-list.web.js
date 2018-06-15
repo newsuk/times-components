@@ -20,6 +20,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
 
+    this.counter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
@@ -48,6 +49,7 @@ class ArticleList extends Component {
 
     clearTimeout(this.pendingTimer);
     this.pending.clear();
+    this.counter = 0;
   }
 
   getImageSize(nodeId) {
@@ -105,6 +107,7 @@ class ArticleList extends Component {
       count,
       error,
       imageRatio,
+      isLoading,
       onArticlePress,
       onNext,
       onPrev,
@@ -172,19 +175,28 @@ class ArticleList extends Component {
               const separatorComponent =
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
-              const renderArticle = () => {
-                if (
-                  articlesLoading ||
-                  index !== 4 ||
-                  Object.keys(adConfig).length === 0
-                ) {
+              const renderAd = () => {
+                if (index !== 4 || Object.keys(adConfig).length === 0) {
                   return null;
                 }
-                return (
+
+                const renderPosTag = () => {
+                  if (isLoading) {
+                    return "inline-ad-header-loading";
+                  }
+                  if (articlesLoading) {
+                    return "inline-articles-loading";
+                  }
+                  return "inline-ad";
+                };
+
+                const AdComponent = (
                   <AdComposer adConfig={adConfig}>
-                    <Ad pos="inline-ad" />
+                    <Ad counter={this.counter} pos={renderPosTag()} />
                   </AdComposer>
                 );
+                this.counter = this.counter + 1;
+                return AdComponent;
               };
 
               return (
@@ -214,7 +226,7 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {renderArticle()}
+                  {renderAd()}
                 </Fragment>
               );
             })}

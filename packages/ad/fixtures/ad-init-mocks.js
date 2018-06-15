@@ -54,6 +54,7 @@ export const makeAdInitMocks = () => {
     ]
   };
   const initOptions = {
+    counter: 0,
     el: document.createElement("div"),
     data: {
       config: slotConfig,

@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 /* eslint-env browser */
-export default class DOMContext extends React.PureComponent {
+class DOMContext extends Component {
   componentDidMount() {
-    const { init, data } = this.props;
+    const { counter, init, data } = this.props;
 
     this.initExecuting = true;
 
     const adInit = init({
+      counter,
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
@@ -23,6 +24,10 @@ export default class DOMContext extends React.PureComponent {
 
     this.initExecuting = false;
     this.processEventQueue();
+  }
+
+  componentWillUnmount() {
+    this.processEvent = () => false;
   }
 
   eventQueue = [];
@@ -62,3 +67,5 @@ export default class DOMContext extends React.PureComponent {
 
 DOMContext.propTypes = propTypes;
 DOMContext.defaultProps = defaultProps;
+
+export default DOMContext;

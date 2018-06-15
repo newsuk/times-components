@@ -71,6 +71,7 @@ class Ad extends Component {
 
     const webviewComponent = (
       <DOMContext
+        counter={this.props.counter}
         data={data}
         baseUrl={this.props.baseUrl}
         init={adInit}
@@ -105,6 +106,7 @@ class Ad extends Component {
 }
 
 Ad.propTypes = {
+  counter: PropTypes.number,
   networkId: PropTypes.string,
   adUnit: PropTypes.string,
   pos: PropTypes.string.isRequired,
@@ -118,6 +120,7 @@ Ad.propTypes = {
 // NOTE, these values are temporary, adding real values (or removing defaults
 // altogether) will be done in REPLAT-591 and REPLAT-592
 Ad.defaultProps = {
+  counter: 0,
   networkId: "3048",
   adUnit: "d.thetimes.co.uk",
   section: "news",
