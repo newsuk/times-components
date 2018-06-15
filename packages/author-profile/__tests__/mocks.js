@@ -17,6 +17,7 @@ export const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
 });
 
 export const props = {
+  adConfig: {},
   analyticsStream: () => {},
   author: mockAuthor,
   fetchMore: () => {},

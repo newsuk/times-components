@@ -1,5 +1,6 @@
 import "react-native";
 import React from "react";
+import { AdComposer } from "@times-components/ad";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
@@ -35,7 +36,10 @@ const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
   withImages: false
 });
 
+const { defaultProps: { adConfig } } = AdComposer;
+
 const getProps = decorateAction => ({
+  adConfig,
   analyticsStream: storybookReporter,
   articleImageRatio: "3:2",
   author: mockAuthor,

@@ -2,11 +2,11 @@
 
 import "react-native";
 import React from "react";
+import { AdComposer } from "@times-components/ad";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
-
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
 
@@ -21,7 +21,10 @@ const preventDefaultedAction = decorateAction =>
 const pageSize = 5;
 const slug = "chelsea";
 
+const { defaultProps: { adConfig } } = AdComposer;
+
 const getProps = decorateAction => ({
+  adConfig,
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,

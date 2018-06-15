@@ -172,6 +172,21 @@ class ArticleList extends Component {
               const separatorComponent =
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
+              const renderArticle = () => {
+                if (
+                  articlesLoading ||
+                  index !== 4 ||
+                  Object.keys(adConfig).length === 0
+                ) {
+                  return null;
+                }
+                return (
+                  <AdComposer adConfig={adConfig}>
+                    <Ad pos="inline-ad" />
+                  </AdComposer>
+                );
+              };
+
               return (
                 <Fragment key={elementId}>
                   <div
@@ -199,11 +214,7 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {index === 4 && Object.keys(adConfig).length !== 0 ? (
-                    <AdComposer adConfig={adConfig}>
-                      <Ad pos="inline-ad" />
-                    </AdComposer>
-                  ) : null}
+                  {renderArticle()}
                 </Fragment>
               );
             })}

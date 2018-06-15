@@ -11,6 +11,7 @@ import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";
 
 const Topic = ({
+  adConfig,
   error,
   isLoading,
   page,
@@ -29,6 +30,7 @@ const Topic = ({
   if (isLoading || !topic) {
     return (
       <ArticleList
+        adConfig={{}}
         articleListHeader={<TopicHead isLoading />}
         articlesLoading
         fetchMore={() => Promise.resolve()}
@@ -88,6 +90,7 @@ const Topic = ({
 
         return (
           <ArticleList
+            adConfig={adConfig}
             articleListHeader={articleListHeader}
             articles={get(data, "articles.list", [])}
             articlesLoading={articlesLoading}

@@ -7,6 +7,7 @@ import Topic from "../src/topic";
 
 export default () => {
   const props = {
+    adConfig: {},
     analyticsStream: () => {},
     isLoading: false,
     onArticlePress: () => {},
