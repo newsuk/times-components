@@ -135,7 +135,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   onEndReachedThreshold={2}
   pageSize={3}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
   viewabilityConfig={
@@ -1861,7 +1860,6 @@ exports[`ArticleList tests on android should render an article list that is load
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
   viewabilityConfig={

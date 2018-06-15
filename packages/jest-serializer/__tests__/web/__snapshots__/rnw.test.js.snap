@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The React Native Web serializer should effect children 1`] = `
+<style>
+{
+  "S1": {
+    "font-size": "9px",
+  },
+  "S2": {
+    "-ms-flex": "1",
+    "-webkit-flex": "1",
+    "flex": "1",
+  },
+}
+</style>
+
+<div
+  className="S2"
+>
+  <div
+    className="S1"
+    dir="auto"
+  >
+    Hello World!
+  </div>
+</div>
+`;
+
+exports[`The React Native Web serializer should effect multiple children 1`] = `
+<style>
+{
+  "S1": {
+    "font-size": "9px",
+  },
+  "S2": {
+    "font-size": "10px",
+  },
+  "S3": {
+    "font-size": "11px",
+  },
+  "S4": {
+    "-ms-flex": "1",
+    "-webkit-flex": "1",
+    "flex": "1",
+  },
+}
+</style>
+
+<div
+  className="S4"
+>
+  <div
+    className="S1"
+    dir="auto"
+  >
+    child 1
+  </div>
+  <div
+    className="S2"
+    dir="auto"
+  >
+    child 2
+  </div>
+  <div>
+    <div
+      className="S3"
+      dir="auto"
+    >
+      child 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The React Native Web serializer should effect render props 1`] = `
+<style>
+{
+  "S1": {
+    "-ms-flex": "1",
+    "-webkit-flex": "1",
+    "flex": "1",
+  },
+}
+</style>
+
+<div
+  className="S1"
+>
+  <div
+    prop={
+      <Text
+        style={80}
+      />
+    }
+  />
+</div>
+`;
+
+exports[`The React Native Web serializer should remove rnw-classnames and hoist the styles 1`] = `
+<style>
+{
+  "S1": {
+    "-ms-flex": "1",
+    "-webkit-flex": "1",
+    "color": "red",
+    "flex": "1",
+  },
+}
+</style>
+
+<div
+  className="S1"
+  dir="auto"
+  testFunc={[Function]}
+/>
+`;

@@ -12,7 +12,8 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
+    "test:all":
+      "yarn test:android --coverage & yarn test:ios --coverage & yarn test:web --coverage",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.9.0",
+    "@times-components/jest-serializer": "0.3.1",
     "@times-components/storybook": "0.13.4",
     "@times-components/webpack-configurator": "0.1.1",
     "babel-cli": "6.26.0",

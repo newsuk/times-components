@@ -52,7 +52,6 @@
     "babel-jest": "22.4.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
-    "enzyme-to-json": "3.3.0",
     "find-node-modules": "1.0.4",
     "jest": "21.2.1",
     "jest-plugin-context": "2.6.0",

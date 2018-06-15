@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The minimal serializer should for native not remove styles 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "red",
+      },
+      Object {
+        "padding": 1,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`The minimal serializer should for native remove d-prop from path 1`] = `<path />`;
+
+exports[`The minimal serializer should for native remove empty objects as props 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  />
+</View>
+`;
+
+exports[`The minimal serializer should for native remove functions as props 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  />
+</View>
+`;
+
+exports[`The minimal serializer should for native remove undefined props 1`] = `
+<View>
+  <Text
+    False={false}
+    Null={null}
+    Zero={0}
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  />
+</View>
+`;
+
+exports[`The minimal serializer should for native transform render props 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    prop={<Path />}
+  >
+    Nested
+  </Text>
+</View>
+`;

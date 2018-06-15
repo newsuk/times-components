@@ -1,11 +1,14 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { addSerializers, rnw } from "@times-components/jest-serializer";
 
 import Placeholder from "../../src/placeholder";
 
 jest.mock("@times-components/watermark", () => () => "watermark");
 
 describe("Placeholder", () => {
+  addSerializers(expect, rnw(["height", "width"]));
+
   afterEach(() => {
     jest.clearAllMocks();
   });

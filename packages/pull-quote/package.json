@@ -37,6 +37,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "0.9.0",
+    "@times-components/jest-serializer": "0.3.1",
     "@times-components/storybook": "0.13.4",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -46,7 +47,6 @@
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
-    "enzyme-to-json": "3.3.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",

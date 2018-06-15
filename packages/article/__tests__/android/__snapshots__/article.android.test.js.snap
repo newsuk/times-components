@@ -1762,10 +1762,8 @@ exports[`Article tests on android should render a smaller article 1`] = `
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -3236,10 +3234,8 @@ exports[`Article tests on android should render an article with a video asset 1`
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -4560,10 +4556,8 @@ exports[`Article tests on android should render an article with no byline 1`] = 
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -6292,10 +6286,8 @@ exports[`Article tests on android should render an article with no flags 1`] = `
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -8044,10 +8036,8 @@ exports[`Article tests on android should render an article with no label 1`] = `
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -9805,10 +9795,8 @@ exports[`Article tests on android should render an article with no label and no 
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -11539,10 +11527,8 @@ exports[`Article tests on android should render an article with no label, no fla
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -13257,10 +13243,8 @@ exports[`Article tests on android should render an article with no standfirst 1`
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -15014,10 +14998,8 @@ exports[`Article tests on android should render an article with no standfirst an
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
@@ -16747,10 +16729,8 @@ exports[`Article tests on android should render an article with no standfirst an
   numColumns={1}
   onEndReachedThreshold={2}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="flat-list-article"
   updateCellsBatchingPeriod={50}
-  viewabilityConfigCallbackPairs={Array []}
   windowSize={21}
 >
   <View>
