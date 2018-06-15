@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",
@@ -36,9 +36,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "0.9.0",
-    "@times-components/jest-serializer": "0.3.1",
-    "@times-components/storybook": "0.13.4",
+    "@times-components/jest-configurator": "1.0.0",
+    "@times-components/jest-serializer": "1.0.0",
+    "@times-components/storybook": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -57,7 +57,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "0.11.2",
+    "@times-components/styleguide": "1.0.0",
     "prop-types": "15.6.0",
     "react-native-svg": "6.3.1",
     "svgs": "3.2.1"

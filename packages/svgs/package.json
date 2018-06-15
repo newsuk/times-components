@@ -1,6 +1,6 @@
 {
   "name": "@times-components/svgs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
@@ -38,8 +38,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "0.9.0",
-    "@times-components/jest-serializer": "0.3.1",
+    "@times-components/jest-configurator": "1.0.0",
+    "@times-components/jest-serializer": "1.0.0",
     "babel-cli": "6.26.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
