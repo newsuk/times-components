@@ -1484,7 +1484,434 @@ exports[`2. Render an author profile page without images 1`] = `
     />
   }
   accessibilityID="scroll-view"
-  data={Array []}
+  data={
+    Array [
+      Object {
+        "__typename": "Article",
+        "elementId": "7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0",
+        "headline": "Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant",
+        "id": "7225cd6a-701c-11e8-bea3-bf1a5a054f3a",
+        "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:7225cd6a-701c-11e8-bea3-bf1a5a054f3a.leadAsset",
+        },
+        "longSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " last night.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "publicationName": "TIMES",
+        "publishedTime": "2018-06-14T23:01:00.000Z",
+        "shortSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " last night.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1",
+        "headline": "Trump pressuring Britain to pay more towards Nato",
+        "id": "d67c536e-6f5a-11e8-bea3-bf1a5a054f3a",
+        "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.leadAsset",
+        },
+        "longSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/donald-trump",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": " Trump",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The White House push is being used in Whitehall to put pressure on ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/philip-hammond",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Philip Hammond",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "publicationName": "TIMES",
+        "publishedTime": "2018-06-13T23:01:00.000Z",
+        "shortSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/donald-trump",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": " Trump",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The White House push is being used in Whitehall to put pressure on ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/philip-hammond",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Philip Hammond",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3",
+      },
+      Object {
+        "__typename": "Article",
+        "elementId": "b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2",
+        "headline": "British troops to protect Bosnia election from Russian meddling",
+        "id": "b2e4cd1a-6a9a-11e8-996c-7589300f03c9",
+        "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:b2e4cd1a-6a9a-11e8-996c-7589300f03c9.leadAsset",
+        },
+        "longSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "“This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "publicationName": "TIMES",
+        "publishedTime": "2018-06-07T23:01:00.000Z",
+        "shortSummary": Array [
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "“This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+        ],
+        "url": "https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx",
+      },
+    ]
+  }
   disableVirtualization={false}
   horizontal={false}
   initialNumToRender={10}
@@ -1979,6 +2406,479 @@ exports[`2. Render an author profile page without images 1`] = `
                 </Text>
                 , covering the most important defence & security news in the UK and around the world.
               </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "fontStyle": "italic",
+                          }
+                        }
+                      >
+                        The Times
+                      </Text>
+                       last night.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Friday June 15 2018, 12:01am, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    Trump pressuring Britain to pay more towards Nato
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      The
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                         Trump
+                      </Text>
+                       administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      The White House push is being used in Whitehall to put pressure on 
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                      >
+                        Philip Hammond
+                      </Text>
+                       to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Thursday June 14 2018, 12:01am, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingLeft": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        accessible={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        pointerEvents="box-only"
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 15,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "opacity": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-end",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityRole="heading"
+                    accessible={true}
+                    allowFontScaling={true}
+                    aria-level="3"
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesModern-Bold",
+                        "fontSize": 22,
+                        "fontWeight": "400",
+                        "lineHeight": 22,
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    British troops to protect Bosnia election from Russian meddling
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexWrap": "wrap",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                      
+                      Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                    >
+                       
+                      “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
+                      ...
+                    </Text>
+                  </Text>
+                  <Text
+                    accessibilityLabel="datePublication"
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginBottom": 5,
+                      }
+                    }
+                    testID="datePublication"
+                  >
+                    Friday June 08 2018, 12:01am, The Times
+                  </Text>
+                </View>
+              </View>
             </View>
           </View>
         </View>
