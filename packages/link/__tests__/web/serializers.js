@@ -4,4 +4,4 @@ const {
   minimalRnw
 } = require("@times-components/jest-serializer");
 
-addSerializers(expect, enzymeDeepSerializer, minimalRnw());
+addSerializers(expect, enzymeDeepSerializer(), minimalRnw());

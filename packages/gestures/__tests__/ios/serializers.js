@@ -3,4 +3,4 @@ const {
   enzymeDeepSerializer
 } = require("@times-components/jest-serializer");
 
-addSerializers(expect, enzymeDeepSerializer);
+addSerializers(expect, enzymeDeepSerializer());

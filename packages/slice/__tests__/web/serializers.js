@@ -4,4 +4,4 @@ const {
   rnw
 } = require("@times-components/jest-serializer");
 
-addSerializers(enzymeDeepSerializer, rnw());
+addSerializers(expect, enzymeDeepSerializer(), rnw());

@@ -10,7 +10,7 @@ const {
 
 addSerializers(
   expect,
-  enzymeDeepSerializer,
+  enzymeDeepSerializer(),
   compose(
     rnwPrinter,
     flattenStyleTransform,

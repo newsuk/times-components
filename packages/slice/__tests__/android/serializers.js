@@ -4,4 +4,4 @@ const {
   flattenStyle
 } = require("@times-components/jest-serializer");
 
-addSerializers(expect, enzymeDeepSerializer, flattenStyle);
+addSerializers(expect, enzymeDeepSerializer(), flattenStyle);
