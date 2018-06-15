@@ -1,7 +1,7 @@
 const {
   addSerializers,
   compose,
-  enzymeDeepSerializer,
+  enzymeRenderedSerializer,
   flattenStyleTransform,
   minimalNativeTransform,
   print
@@ -9,6 +9,6 @@ const {
 
 addSerializers(
   expect,
-  enzymeDeepSerializer(),
+  enzymeRenderedSerializer(),
   compose(print, flattenStyleTransform, minimalNativeTransform)
 );

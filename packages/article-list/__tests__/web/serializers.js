@@ -1,7 +1,7 @@
 const {
   addSerializers,
   compose,
-  enzymeShallowSerializer,
+  enzymeTreeSerializer,
   flattenStyleTransform,
   minimalWebTransform,
   rnwTransform,
@@ -10,7 +10,7 @@ const {
 
 addSerializers(
   expect,
-  enzymeShallowSerializer(),
+  enzymeTreeSerializer(),
   compose(
     rnwPrinter,
     flattenStyleTransform,

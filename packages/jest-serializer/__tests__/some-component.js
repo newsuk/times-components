@@ -1,9 +1,14 @@
 import React from "react";
-import { Text, ViewPropTypes } from "react-native";
+import { Text, View, ViewPropTypes } from "react-native";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
-const SomeComponent = ({ style }) => <Text style={style} />;
+const SomeComponent = ({ style, children }) => (
+  <View style={style}>
+    {children}
+    <Text>deeply nested</Text>
+  </View>
+);
 
 SomeComponent.propTypes = {
   style: ViewPropTypesStyle
@@ -12,3 +17,5 @@ SomeComponent.propTypes = {
 SomeComponent.defaultProps = {
   style: null
 };
+
+export default SomeComponent;

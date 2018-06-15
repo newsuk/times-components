@@ -1,5 +1,4 @@
 import { createSerializer } from "enzyme-to-json";
-import chalk from "chalk";
 import minimalise from "./minimalise";
 import { transformProps as rnwTransform, printer as rnwPrinter } from "./rnw";
 import flattenStyleTransform from "./flatten-style";
@@ -53,22 +52,18 @@ const addSerializers = (expect, ...serializers) => {
   serializers.forEach(serializer => expect.addSnapshotSerializer(serializer));
 };
 
-const enzymeDeepSerializer = () => {
-  console.log(
-    chalk.yellow(
-      "Using Enzyme to deeply serialize generally results in unmanageable snapshots, reconsider what you're testing"
-    )
-  );
-  return createSerializer({ mode: "deep" });
-};
+const enzymeRenderedSerializer = () => createSerializer({ mode: "deep" });
 
-const enzymeShallowSerializer = () => createSerializer();
+const enzymeRootSerializer = () => createSerializer({ mode: "shallow" });
+
+const enzymeTreeSerializer = () => createSerializer();
 
 export {
   addSerializers,
   compose,
-  enzymeDeepSerializer,
-  enzymeShallowSerializer,
+  enzymeRenderedSerializer,
+  enzymeRootSerializer,
+  enzymeTreeSerializer,
   flattenStyle,
   flattenStyleTransform,
   minimalNative,
