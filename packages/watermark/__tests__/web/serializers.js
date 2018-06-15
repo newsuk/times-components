@@ -1,10 +1,12 @@
 const {
+  addSerializers,
   compose,
   flattenStyleTransform,
   minimalWebTransform,
   print
 } = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(
+addSerializers(
+  expect,
   compose(print, flattenStyleTransform, minimalWebTransform)
 );

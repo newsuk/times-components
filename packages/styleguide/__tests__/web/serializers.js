@@ -1,3 +1,3 @@
-const { rnw } = require("@times-components/jest-serializer");
+const { addSerializers, rnw } = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(rnw());
+addSerializers(expect, rnw());

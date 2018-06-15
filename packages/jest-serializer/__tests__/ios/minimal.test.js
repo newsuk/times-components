@@ -1,12 +1,12 @@
 import { Text, StyleSheet } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { minimalNative } from "../../src";
+import { addSerializers, minimalNative } from "../../src";
 import shared from "../shared.minimal";
 
 describe("The minimal serializer should", () => {
   describe("for native", () => {
-    expect.addSnapshotSerializer(minimalNative);
+    addSerializers(expect, minimalNative);
 
     it("not remove styles", () => {
       const { colored, padded } = StyleSheet.create({

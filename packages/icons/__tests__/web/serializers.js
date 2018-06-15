@@ -1,3 +1,6 @@
-const { minimalWeb } = require("@times-components/jest-serializer");
+const {
+  addSerializers,
+  minimalWeb
+} = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(minimalWeb);
+addSerializers(expect, minimalWeb);

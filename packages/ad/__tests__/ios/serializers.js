@@ -1,3 +1,6 @@
-const { minimalNative } = require("@times-components/jest-serializer");
+const {
+  addSerializers,
+  minimalNative
+} = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(minimalNative);
+addSerializers(expect, minimalNative);

@@ -1,4 +1,5 @@
 const {
+  addSerializers,
   compose,
   flattenStyleTransform,
   minimalWebTransform,
@@ -6,7 +7,8 @@ const {
   rnwPrinter
 } = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(
+addSerializers(
+  expect,
   compose(
     rnwPrinter,
     flattenStyleTransform,

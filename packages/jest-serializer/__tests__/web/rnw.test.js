@@ -3,11 +3,11 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import renderer from "react-test-renderer";
-import { rnw } from "../../src/index";
+import { addSerializers, rnw } from "../../src/index";
 
 describe("The React Native Web serializer should", () => {
   it("remove rnw-classnames and hoist the styles", () => {
-    expect.addSnapshotSerializer(rnw(["color", "flex"]));
+    addSerializers(expect, rnw(["color", "flex"]));
 
     const styles = StyleSheet.create({
       test: {
@@ -24,7 +24,7 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect children", () => {
-    expect.addSnapshotSerializer(rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {
@@ -46,7 +46,7 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect multiple children", () => {
-    expect.addSnapshotSerializer(rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {
@@ -79,7 +79,7 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect render props", () => {
-    expect.addSnapshotSerializer(rnw(["flex", "fontSize"]));
+    addSerializers(expect, rnw(["flex", "fontSize"]));
 
     const styles = StyleSheet.create({
       parent: {

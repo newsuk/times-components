@@ -1,3 +1,6 @@
-const { flattenStyle } = require("@times-components/jest-serializer");
+const {
+  addSerializers,
+  flattenStyle
+} = require("@times-components/jest-serializer");
 
-expect.addSnapshotSerializer(flattenStyle);
+addSerializers(expect, flattenStyle);

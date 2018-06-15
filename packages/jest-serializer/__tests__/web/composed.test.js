@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import renderer from "react-test-renderer";
 import {
+  addSerializers,
   compose,
   minimalWebTransform,
   rnwTransform,
@@ -10,7 +11,8 @@ import {
 
 describe("The serializers should", () => {
   it("minimalise and create styles", () => {
-    expect.addSnapshotSerializer(
+    addSerializers(
+      expect,
       compose(rnwPrinter, minimalWebTransform, rnwTransform(["color"]))
     );
 
