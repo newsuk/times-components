@@ -2,54 +2,14 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
+import { AdComposer } from "@times-components/ad";
 import ArticleListPagination from "../src/article-list-pagination";
 import ArticleList from "./../src/article-list";
 import ArticleListItem from "./../src/article-list-item";
 import articleListProps from "./default-article-list-props";
 import pagedResult from "./paged-result";
 
-const adConfig = {
-  networkId: "mockNetwork",
-  adUnit: "mockAdUnit",
-  pageTargeting: {
-    title: "Title"
-  },
-  slotTargeting: {
-    path: "/news"
-  },
-  biddersConfig: {
-    timeout: 3000,
-    minPrice: 0.01,
-    maxBid: 15,
-    bucketSize: 0.25,
-    bidders: {
-      appnexus: {
-        placementId: "5823281"
-      },
-      rubicon: {
-        accountId: "14062",
-        siteId: "70608",
-        zoneId: "335918"
-      },
-      amazon: {
-        accountId: "3360"
-      },
-      criteo: {
-        zoneMap: {
-          "120x600": "764877"
-        }
-      },
-      pubmatic: {
-        accountId: "156034",
-        adSlotPrefix: "Thetimes"
-      },
-      indexExchange: {
-        siteId: "188830"
-      }
-    }
-  },
-  bidderSlots: ["ad-header", "ad-article-inline"]
-};
+const { defaultProps: { adConfig } } = AdComposer;
 
 export default () => {
   it("should render the article list pagination correctly", () => {

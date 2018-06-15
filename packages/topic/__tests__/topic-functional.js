@@ -19,6 +19,7 @@ export default () => {
   });
 
   const props = {
+    adConfig: {},
     analyticsStream: () => {},
     isLoading: false,
     onArticlePress: () => {},

@@ -1,5 +1,6 @@
 import "react-native";
 import React from "react";
+import { AdComposer } from "@times-components/ad";
 import { AuthorProfileProvider } from "@times-components/provider";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
@@ -15,54 +16,6 @@ const preventDefaultedAction = decorateAction =>
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
     }
   ]);
-
-const adConfig = {
-  networkId: "25436805",
-  adUnit: "d.thetimes.co.uk",
-  pageTargeting: {
-    title: "Title",
-    label: "Label"
-  },
-  slotTargeting: {
-    path: "/news",
-    sec_id: "null",
-    section: "news",
-    zone: "current_edition",
-    slot: "news"
-  },
-  biddersConfig: {
-    timeout: 3000,
-    minPrice: 0.01,
-    maxBid: 15,
-    bucketSize: 0.25,
-    bidders: {
-      appnexus: {
-        placementId: "5823281"
-      },
-      rubicon: {
-        accountId: "14062",
-        siteId: "70608",
-        zoneId: "335918"
-      },
-      amazon: {
-        accountId: "3360"
-      },
-      criteo: {
-        zoneMap: {
-          "120x600": "764877"
-        }
-      },
-      pubmatic: {
-        accountId: "156034",
-        adSlotPrefix: "Thetimes"
-      },
-      indexExchange: {
-        siteId: "188830"
-      }
-    }
-  },
-  bidderSlots: ["ad-header", "ad-article-inline"]
-};
 
 const slug = "deborah-haynes";
 const pageSize = 5;
@@ -83,7 +36,10 @@ const mockAuthorWithoutImages = fixtureGenerator.makeAuthor({
   withImages: false
 });
 
+const { defaultProps: { adConfig } } = AdComposer;
+
 const getProps = decorateAction => ({
+  adConfig,
   analyticsStream: storybookReporter,
   articleImageRatio: "3:2",
   author: mockAuthor,
