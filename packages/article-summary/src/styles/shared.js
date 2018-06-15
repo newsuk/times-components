@@ -28,7 +28,7 @@ const sharedStyles = {
     marginBottom: spacing(1)
   },
   labelWrapper: {
-    marginBottom: 0
+    marginBottom: spacing(1)
   },
   headline: {
     color: colours.functional.primary,
