@@ -26,10 +26,6 @@ class DOMContext extends Component {
     this.processEventQueue();
   }
 
-  componentWillUnmount() {
-    this.processEvent = () => false;
-  }
-
   eventQueue = [];
 
   eventCallback = (type, detail) => {
