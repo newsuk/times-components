@@ -11,6 +11,7 @@ const fontSizes = {
   credits: 9,
   headline: 30,
   infoSubText: 15,
+  infoTitle: 22,
   leadHeadline: 26,
   link: 13,
   meta: 14,

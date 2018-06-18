@@ -62,6 +62,23 @@ const styles = {
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.infoSubText,
     textAlign: "center"
+  },
+  listEmptyStateContainer: {
+    flex: 1
+  },
+  listEmptyMessage: {
+    color: colours.functional.secondary,
+    fontFamily: fonts.bodyRegular,
+    fontSize: fontSizes.infoTitle,
+    marginTop: spacing(12),
+    marginLeft: spacing(8),
+    marginRight: spacing(8),
+    textAlign: "center"
+  },
+  listEmptyWatermark: {
+    position: "absolute",
+    bottom: 0,
+    right: 0
   }
 };
 

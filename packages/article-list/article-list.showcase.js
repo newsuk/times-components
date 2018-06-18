@@ -5,7 +5,10 @@ import articleListNoImagesFixture from "@times-components/provider-test-tools/fi
 import articleListWithImagesFixture from "@times-components/provider-test-tools/fixtures/author-profile/article-list-with-images.json";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
-import ArticleList, { ArticleListPageError } from "./src/article-list";
+import ArticleList, {
+  ArticleListPageError,
+  ArticleListEmptyState
+} from "./src/article-list";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -110,6 +113,11 @@ export default {
           refetch={preventDefaultedAction(decorateAction)("refetch")}
         />
       )
+    },
+    {
+      type: "story",
+      name: "Empty article list",
+      component: () => <ArticleListEmptyState />
     }
   ]
 };

@@ -54,6 +54,26 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.infoSubText,
     textAlign: "center"
+  },
+  listEmptyStateContainer: {
+    height: 400
+  },
+  listEmptyMessage: {
+    color: colours.functional.secondary,
+    fontFamily: fonts.bodyRegular,
+    fontSize: fontSizes.infoTitle,
+    marginTop: spacing(28),
+    textAlign: "center"
+  },
+  listEmptyWatermark: {
+    position: "absolute",
+    bottom: 0,
+    right: 0
+  },
+  listEmptyBackButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
+    marginTop: spacing(4)
   }
 });
 

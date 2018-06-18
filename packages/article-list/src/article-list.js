@@ -167,4 +167,5 @@ ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
 export { default as ArticleListPageError } from "./article-list-page-error";
+export { default as ArticleListEmptyState } from "./article-list-empty-state";
 export default withTrackScrollDepth(ArticleList);
