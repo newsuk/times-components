@@ -34,7 +34,7 @@ const AuthorProfile = ({
   if (isLoading || !author) {
     return (
       <ArticleList
-        adConfig={{}}
+        adConfig={adConfig}
         articleListHeader={<AuthorProfileHead isLoading />}
         articlesLoading
         fetchMore={() => Promise.resolve()}

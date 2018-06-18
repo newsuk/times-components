@@ -4,7 +4,7 @@
 // defined outside the function, so that it can be passed into a WebView.
 
 const adInit = args => {
-  const { el, data, platform, eventCallback, window } = args;
+  const { slotSuffix, el, data, platform, eventCallback, window } = args;
   const { document, setTimeout, Promise } = window;
 
   const scriptsInserted = {};
@@ -99,7 +99,11 @@ const adInit = args => {
         } = data;
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
-          const { pos: containerID, sizes, mappings } = slotConfig;
+          const { slotName, sizes, mappings } = slotConfig;
+          const containerID = slotSuffix
+            ? `${slotName}-${slotSuffix}`
+            : slotName;
+
           const slot = window.googletag.defineSlot(
             adUnitPath,
             sizes,
@@ -114,7 +118,7 @@ const adInit = args => {
           }
           slot.addService(window.googletag.pubads());
           /* eslint-disable no-param-reassign */
-          el.id = `wrapper-${containerID}`;
+          el.id = `wrapper-${slotName}`;
           el.innerHTML = `<div id="${containerID}"></div>`;
           el.style.display = "flex";
           el.style.alignItems = "center";
@@ -136,6 +140,7 @@ const adInit = args => {
           slot.setTargeting("timestestgroup", randomTestingGroup);
           slot.setTargeting("pos", containerID);
           window.googletag.display(containerID);
+          window.googletag.pubads().refresh();
         });
       },
 

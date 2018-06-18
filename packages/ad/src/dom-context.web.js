@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 /* eslint-env browser */
-export default class DOMContext extends React.PureComponent {
+class DOMContext extends Component {
   componentDidMount() {
-    const { init, data } = this.props;
+    const { slotSuffix, init, data } = this.props;
 
     this.initExecuting = true;
 
     const adInit = init({
+      slotSuffix,
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
@@ -62,3 +63,5 @@ export default class DOMContext extends React.PureComponent {
 
 DOMContext.propTypes = propTypes;
 DOMContext.defaultProps = defaultProps;
+
+export default DOMContext;

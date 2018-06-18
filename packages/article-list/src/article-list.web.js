@@ -20,6 +20,8 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
 
+    this.advertPosition = 4;
+    this.advertPositionCounter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
@@ -105,6 +107,7 @@ class ArticleList extends Component {
       count,
       error,
       imageRatio,
+      isLoading,
       onArticlePress,
       onNext,
       onPrev,
@@ -114,6 +117,8 @@ class ArticleList extends Component {
       refetch,
       showImages
     } = this.props;
+
+    const hasAdvertConfig = Object.keys(adConfig).length > 0;
 
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
@@ -172,19 +177,31 @@ class ArticleList extends Component {
               const separatorComponent =
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
-              const renderArticle = () => {
-                if (
-                  articlesLoading ||
-                  index !== 4 ||
-                  Object.keys(adConfig).length === 0
-                ) {
+              const renderAd = () => {
+                if (index !== this.advertPosition || !hasAdvertConfig) {
                   return null;
                 }
-                return (
+
+                const renderSlotName = () => {
+                  if (isLoading) {
+                    return "inline-ad-header-loading";
+                  }
+                  if (articlesLoading) {
+                    return "inline-articles-loading";
+                  }
+                  return "inline-ad";
+                };
+
+                const AdComponent = (
                   <AdComposer adConfig={adConfig}>
-                    <Ad pos="inline-ad" />
+                    <Ad
+                      slotSuffix={this.advertPositionCounter.toString()}
+                      slotName={renderSlotName()}
+                    />
                   </AdComposer>
                 );
+                this.advertPositionCounter = this.advertPositionCounter + 1;
+                return AdComponent;
               };
 
               return (
@@ -214,7 +231,7 @@ class ArticleList extends Component {
                       }
                     </ErrorView>
                   </div>
-                  {renderArticle()}
+                  {renderAd()}
                 </Fragment>
               );
             })}
