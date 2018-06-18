@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/ad@1.0.0...@times-components/ad@1.1.0) (2018-06-18)
+
+
+### Features
+
+* add topic page ad config to ad stories ([#1030](https://github.com/newsuk/times-components/issues/1030)) ([3f4bc0f](https://github.com/newsuk/times-components/commit/3f4bc0f))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/ad@0.21.10...@times-components/ad@1.0.0) (2018-06-15)
 

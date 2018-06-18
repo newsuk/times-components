@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/ad": "1.0.0",
+    "@times-components/ad": "1.1.0",
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "1.0.0",
     "@times-components/jest-serializer": "1.0.0",
@@ -62,7 +62,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-list": "2.0.0",
+    "@times-components/article-list": "2.0.1",
     "@times-components/gradient": "1.0.0",
     "@times-components/pagination": "1.0.0",
     "@times-components/provider": "0.35.4",
