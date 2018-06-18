@@ -1,15 +1,10 @@
 import sharedStyles from "./shared";
 
 const styles = {
-  title: {
-    ...sharedStyles.title
-  },
+  ...sharedStyles,
   iconContainer: {
     ...sharedStyles.iconContainer,
     paddingBottom: 2
-  },
-  icon: {
-    ...sharedStyles.icon
   }
 };
 
