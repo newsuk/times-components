@@ -118,6 +118,8 @@ class ArticleList extends Component {
       showImages
     } = this.props;
 
+    const hasAdvertConfig = Object.keys(adConfig).length > 0;
+
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
@@ -178,7 +180,7 @@ class ArticleList extends Component {
               const renderAd = () => {
                 if (
                   index !== this.advertPosition ||
-                  Object.keys(adConfig).length === 0
+                  !hasAdvertConfig
                 ) {
                   return null;
                 }
