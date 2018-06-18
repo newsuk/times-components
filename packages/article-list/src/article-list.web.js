@@ -20,6 +20,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
 
+    this.advertPosition = 4;
     this.counter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
@@ -176,7 +177,7 @@ class ArticleList extends Component {
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
               const renderAd = () => {
-                if (index !== 4 || Object.keys(adConfig).length === 0) {
+                if (index !== this.advertPosition || Object.keys(adConfig).length === 0) {
                   return null;
                 }
 
