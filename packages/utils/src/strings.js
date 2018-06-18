@@ -12,6 +12,8 @@ export const androidLetterSpacing = title =>
 
 export const capitalise = title => title.replace(/\b\w/g, l => l.toUpperCase());
 
+export const capitaliseFirstLetter = title => title.charAt(0).toUpperCase() + title.slice(1);
+
 export const ratioTextToFloat = s => {
   if (!s || !s.length) {
     return 1;

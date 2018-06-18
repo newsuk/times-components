@@ -1,4 +1,4 @@
-import { androidLetterSpacing, capitalise, ratioTextToFloat } from "../src";
+import { androidLetterSpacing, capitalise, ratioTextToFloat, capitaliseFirstLetter } from "../src";
 
 describe("androidLetterSpacing should", () => {
   it("seperate each letter of a word to support letterSpacing and capitalise it", () => {
@@ -23,6 +23,20 @@ describe("capitalise should", () => {
 
   it("keep the capitalised first letters of multiple words", () => {
     expect(capitalise("My Test")).toEqual("My Test");
+  });
+});
+
+describe("capitaliseFirstLetter should", () => {
+  it("capitalise the first letter of a sentence", () => {
+    expect(capitaliseFirstLetter("test")).toEqual("Test");
+  });
+
+  it("keep the capitalised first letter of a sentence", () => {
+    expect(capitaliseFirstLetter("Test")).toEqual("Test");
+  });
+
+  it("only capitalise first letter of sentence and keep the rest", () => {
+    expect(capitaliseFirstLetter("my test")).toEqual("My test");
   });
 });
 
