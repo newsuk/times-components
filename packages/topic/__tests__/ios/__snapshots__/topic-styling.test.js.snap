@@ -37,7 +37,6 @@ exports[`Topic styling tests on ios should render styling correctly 1`] = `
   onEndReachedThreshold={2}
   pageSize={3}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
   testID="scroll-view"
   updateCellsBatchingPeriod={50}
   viewabilityConfig={

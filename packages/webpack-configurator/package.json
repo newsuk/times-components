@@ -1,6 +1,6 @@
 {
   "name": "@times-components/webpack-configurator",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "webpack-configurator for times-components",
   "main": "dist",
   "dev": "src",
@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "prepublishOnly": "yarn transpile",
-    "test": "jest --coverage",
+    "test": "jest",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },

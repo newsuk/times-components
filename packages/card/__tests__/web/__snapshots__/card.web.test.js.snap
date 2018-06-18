@@ -14,6 +14,7 @@ exports[`1. Renders default layout 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -28,6 +29,7 @@ exports[`1. Renders default layout 1`] = `
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -58,6 +60,7 @@ exports[`2. Renders default layout with placeholder 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -72,6 +75,7 @@ exports[`2. Renders default layout with placeholder 1`] = `
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -102,6 +106,7 @@ exports[`3. Renders without an image (null) 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -116,6 +121,7 @@ exports[`3. Renders without an image (null) 1`] = `
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -146,6 +152,7 @@ exports[`4. Renders without an image (showImage is false) 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -176,6 +183,7 @@ exports[`5. Renders without an image (uri is null) 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -190,6 +198,7 @@ exports[`5. Renders without an image (uri is null) 1`] = `
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -221,6 +230,7 @@ exports[`6. Renders with a reversed layout 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -234,6 +244,7 @@ exports[`6. Renders with a reversed layout 1`] = `
       </Text>
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -266,6 +277,7 @@ exports[`7. Renders with a reversed layout with no image 1`] = `
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -305,6 +317,7 @@ exports[`9. Renders a loading component 1`] = `
   }
 >
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -319,6 +332,7 @@ exports[`9. Renders a loading component 1`] = `
     />
   </View>
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -382,6 +396,7 @@ exports[`10. Renders a loading component with no image 1`] = `
   }
 >
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -445,6 +460,7 @@ exports[`11. Renders a reversed loading component 1`] = `
   }
 >
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -493,6 +509,7 @@ exports[`11. Renders a reversed loading component 1`] = `
     />
   </View>
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -522,6 +539,7 @@ exports[`12. Renders a reversed loading component with no image 1`] = `
   }
 >
   <View
+    className=""
     style={
       Object {
         "flex": 1,
@@ -586,6 +604,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -600,6 +619,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -630,6 +650,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
     }
   >
     <View
+      className=""
       style={
         Object {
           "flex": 1,
@@ -644,6 +665,7 @@ exports[`Card tests on web should not re-render when imageRatio prop is changed 
       />
     </View>
     <View
+      className=""
       style={
         Object {
           "flex": 1,

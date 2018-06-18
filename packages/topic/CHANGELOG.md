@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.13...@times-components/topic@1.0.0) (2018-06-15)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
+<a name="0.6.13"></a>
+## [0.6.13](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.12...@times-components/topic@0.6.13) (2018-06-15)
+
+
+### Bug Fixes
+
+* topic and author profile stories ([#1025](https://github.com/newsuk/times-components/issues/1025)) ([0c947e7](https://github.com/newsuk/times-components/commit/0c947e7))
+
+
+
+
 <a name="0.6.12"></a>
 ## [0.6.12](https://github.com/newsuk/times-components/compare/@times-components/topic@0.6.11...@times-components/topic@0.6.12) (2018-06-14)
 
