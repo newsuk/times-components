@@ -3,7 +3,7 @@
 exports[`1. Render the button 1`] = `
 <TouchableHighlight
   accessibilityComponentType="button"
-  accessibilityLabel="Test Button"
+  accessibilityLabel="Test button"
   accessibilityRole="button"
   accessibilityTraits="button"
   activeOpacity={1}
@@ -33,9 +33,9 @@ exports[`1. Render the button 1`] = `
         "paddingTop": 5,
       }
     }
-    title="Test Button"
+    title="Test button"
   >
-    Test Button
+    Test button
   </Text>
 </TouchableHighlight>
 `;

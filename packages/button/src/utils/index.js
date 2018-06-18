@@ -1,3 +1,3 @@
-import { capitalise } from "@times-components/utils";
+import { capitaliseFirstLetter } from "@times-components/utils";
 
-export default capitalise;
+export default capitaliseFirstLetter;
