@@ -1,4 +1,9 @@
-import { androidLetterSpacing, capitalise, ratioTextToFloat, capitaliseFirstLetter } from "../src";
+import {
+  androidLetterSpacing,
+  capitalise,
+  ratioTextToFloat,
+  capitaliseFirstLetter
+} from "../src";
 
 describe("androidLetterSpacing should", () => {
   it("seperate each letter of a word to support letterSpacing and capitalise it", () => {
