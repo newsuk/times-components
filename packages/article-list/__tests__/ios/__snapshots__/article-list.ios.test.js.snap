@@ -2376,43 +2376,51 @@ exports[`ArticleList tests on ios should render an empty state 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "TimesDigitalW04-Regular",
-        "fontSize": 22,
-        "marginLeft": 40,
-        "marginRight": 40,
-        "marginTop": 60,
-        "textAlign": "center",
-      }
-    }
-  >
-    Unfortunately, there are no articles relating to this topic
-  </Text>
   <View
     style={
       Object {
-        "bottom": 0,
-        "position": "absolute",
-        "right": 0,
+        "flex": 1,
       }
     }
   >
-    <Image
-      resizeMode="contain"
-      source={1}
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
       style={
         Object {
-          "height": 250,
-          "width": 300,
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 22,
+          "marginLeft": 40,
+          "marginRight": 40,
+          "marginTop": 60,
+          "textAlign": "center",
         }
       }
-    />
+    >
+      Unfortunately, there are no articles relating to this topic
+    </Text>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "height": 250,
+            "width": 300,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
