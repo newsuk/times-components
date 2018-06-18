@@ -28,7 +28,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -118,7 +117,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       }
                     >
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -135,7 +133,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Now for a new battle: bringing the fragile masterpiece over safely
@@ -143,7 +140,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(105,105,105,1)",
@@ -152,9 +148,7 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                           ...
@@ -164,7 +158,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "color": "rgba(105,105,105,1)",
@@ -177,7 +170,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       March 13 2015, 06:54pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "color": "rgba(105,105,105,1)",
@@ -188,7 +180,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -198,7 +189,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                         Camilla Long
                       </span>
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -256,7 +246,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -340,7 +329,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -355,7 +343,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Now for a new battle: bringing the fragile masterpiece over safely
@@ -363,7 +350,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -371,9 +357,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                           ...
@@ -383,7 +367,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -393,7 +376,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       March 13 2015, 06:54pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -401,7 +383,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -489,7 +470,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
@@ -504,7 +484,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Bayeux Tapestry to be displayed in Britain
@@ -512,7 +491,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -520,9 +498,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                           <em>
@@ -536,7 +512,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -546,7 +521,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       January 17 2018, 12:00pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -554,7 +528,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
@@ -619,7 +592,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -703,7 +675,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -718,7 +689,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Now for a new battle: bringing the fragile masterpiece over safely
@@ -726,7 +696,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -734,9 +703,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                           ...
@@ -744,7 +711,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       </div>
                       <div
                         className="summaryHidden summary145Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -752,9 +718,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed
                           ...
@@ -764,7 +728,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -774,7 +737,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       March 13 2015, 06:54pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -782,7 +744,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(219,19,59,1)",
@@ -870,7 +831,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
@@ -885,7 +845,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Bayeux Tapestry to be displayed in Britain
@@ -893,7 +852,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -901,9 +859,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                           <em>
@@ -915,7 +871,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       </div>
                       <div
                         className="summaryHidden summary145Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -923,9 +878,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                           <em>
@@ -933,9 +886,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           </em>
                           , is expected to be to the British Museum in 2022
                         </span>
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                            
                           ...
                         </span>
@@ -944,7 +895,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -954,7 +904,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       January 17 2018, 12:00pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -962,7 +911,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(0,131,71,1)",
@@ -1050,7 +998,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(108,108,105,1)",
@@ -1065,7 +1012,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <h3
                       aria-level="3"
                       className="headlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Bayeux Tapestry to be displayed in Britain
@@ -1073,7 +1019,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div>
                       <div
                         className="summaryHidden summary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1081,9 +1026,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                           <em>
@@ -1095,7 +1038,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       </div>
                       <div
                         className="summaryHidden summary145Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1103,9 +1045,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by 
                           <em>
@@ -1113,9 +1053,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                           </em>
                           , is expected to be to the British Museum in 2022
                         </span>
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                            
                           ...
                         </span>
@@ -1124,7 +1062,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -1134,7 +1071,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       January 17 2018, 12:00pm
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -1142,7 +1078,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(108,108,105,1)",
@@ -1214,7 +1149,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -1298,7 +1232,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "fontSize": "12px",
@@ -1312,7 +1245,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     <h3
                       aria-level="3"
                       className="leadHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Defence of the Realm
@@ -1320,7 +1252,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     <div>
                       <div
                         className="summaryHidden leadSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1328,9 +1259,7 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -1340,7 +1269,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -1350,16 +1278,13 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                       November 25 2017, 12:01am
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         Deborah Haynes
                       </span>
                     </div>
@@ -1411,7 +1336,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -1495,7 +1419,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "fontSize": "12px",
@@ -1509,7 +1432,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     <h3
                       aria-level="3"
                       className="leadHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Defence of the Realm
@@ -1517,7 +1439,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     <div>
                       <div
                         className="summaryHidden leadSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1525,9 +1446,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -1537,7 +1456,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -1547,16 +1465,13 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       November 25 2017, 12:01am
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         Deborah Haynes
                       </span>
                     </div>
@@ -1641,7 +1556,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -1654,7 +1568,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         Size matters, say very tiny ministers Size matters, say very tiny ministers
@@ -1663,7 +1576,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -1673,16 +1585,13 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>
@@ -1742,7 +1651,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -1826,7 +1734,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "fontSize": "12px",
@@ -1840,7 +1747,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     <h3
                       aria-level="3"
                       className="leadHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Defence of the Realm
@@ -1848,7 +1754,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     <div>
                       <div
                         className="summaryHidden leadSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1856,9 +1761,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -1866,7 +1769,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       </div>
                       <div
                         className="summaryHidden leadSummary175Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -1874,9 +1776,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the
                           ...
@@ -1886,7 +1786,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -1896,16 +1795,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       November 25 2017, 12:01am
                     </div>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         Deborah Haynes
                       </span>
                     </div>
@@ -1990,7 +1886,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -2003,7 +1898,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         Trident gets out of MoD budget, Hammond urged
@@ -2012,7 +1906,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -2022,16 +1915,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>
@@ -2110,7 +2000,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -2123,7 +2012,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         Size matters, say tiny ministers
@@ -2132,7 +2020,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -2142,16 +2029,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>
@@ -2218,7 +2102,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -2254,7 +2137,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2268,7 +2150,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     </div>
                     <div
                       className="opinionBylineClass"
-                      dir="auto"
                       style={
                         Object {
                           "color": "rgba(133,0,41,1)",
@@ -2276,7 +2157,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2289,7 +2169,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     <h3
                       aria-level="3"
                       className="opinionHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       Nothing proves Jeremy Corbyn is anti-semitic — just everything he says and does
@@ -2297,7 +2176,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     <div>
                       <div
                         className="summaryHidden opinionSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2305,9 +2183,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -2315,7 +2191,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       </div>
                       <div
                         className="summaryHidden opinionSummary160Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2323,9 +2198,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
                           ...
@@ -2335,7 +2208,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -2440,7 +2312,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -2476,7 +2347,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2490,7 +2360,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     </div>
                     <div
                       className="opinionBylineClass"
-                      dir="auto"
                       style={
                         Object {
                           "color": "rgba(133,0,41,1)",
@@ -2498,7 +2367,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2511,7 +2379,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     <h3
                       aria-level="3"
                       className="opinionHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       High score for labour in football club election
@@ -2519,7 +2386,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     <div>
                       <div
                         className="summaryHidden opinionSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2527,9 +2393,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -2537,7 +2401,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       </div>
                       <div
                         className="summaryHidden opinionSummary145Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2545,9 +2408,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it
                           ...
@@ -2555,7 +2416,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       </div>
                       <div
                         className="summaryHidden opinionSummary225Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2563,9 +2423,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias Ellwood, the veterans minister and a lieutenant-colonel in the
                           ...
@@ -2575,7 +2433,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -2713,7 +2570,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -2726,7 +2582,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         An example of a really really really really really really really really really really long headline
@@ -2735,7 +2590,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -2745,16 +2599,13 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>
@@ -2814,7 +2665,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
   <div>
     <h3
       aria-level="3"
-      dir="auto"
       role="heading"
     >
       Related articles
@@ -2850,7 +2700,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                   <div>
                     <div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2864,7 +2713,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     </div>
                     <div
                       className="opinionBylineClass"
-                      dir="auto"
                       style={
                         Object {
                           "color": "rgba(133,0,41,1)",
@@ -2872,7 +2720,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       }
                     >
                       <span
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(133,0,41,1)",
@@ -2885,7 +2732,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     <h3
                       aria-level="3"
                       className="opinionHeadlineClass"
-                      dir="auto"
                       role="heading"
                     >
                       High score for labour in football club election
@@ -2893,7 +2739,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     <div>
                       <div
                         className="summaryHidden opinionSummary125Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2901,9 +2746,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and
                           ...
@@ -2911,7 +2754,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                       <div
                         className="summaryHidden opinionSummary160Class"
-                        dir="auto"
                         style={
                           Object {
                             "fontFamily": "TimesDigitalW04",
@@ -2919,9 +2761,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           
                           The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
                           ...
@@ -2931,7 +2771,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "15px",
@@ -3069,7 +2908,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -3082,7 +2920,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         Trident out of MoD budget, Hammond urged
@@ -3091,7 +2928,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -3101,16 +2937,13 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>
@@ -3189,7 +3022,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     <div>
                       <div>
                         <div
-                          dir="auto"
                           style={
                             Object {
                               "fontSize": "12px",
@@ -3202,7 +3034,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                       <h3
                         aria-level="3"
-                        dir="auto"
                         role="heading"
                       >
                         An example of a really really really really really really really really really really really really really really really really really really really really long headline
@@ -3211,7 +3042,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       <div
                         aria-label="datePublication"
                         data-testid="datePublication"
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
@@ -3221,16 +3051,13 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         November 25 2017, 12:01am
                       </div>
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "lineHeight": "15px",
                           }
                         }
                       >
-                        <span
-                          dir="auto"
-                        >
+                        <span>
                           Deborah Haynes
                         </span>
                       </div>

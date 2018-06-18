@@ -28,7 +28,6 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -186,7 +185,6 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -337,7 +335,6 @@ exports[`Article Image test on ios Renders Article Image with no caption 1`] = `
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -477,9 +474,6 @@ exports[`Article Image test on ios does not render Article Image if display is n
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -492,9 +486,6 @@ exports[`Article Image test on ios does not render Article Image if display is n
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -535,9 +526,6 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -550,9 +538,6 @@ exports[`Article Image test on ios does not render Article Image if ratio is not
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -600,7 +585,6 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -758,7 +742,6 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -909,7 +892,6 @@ exports[`Article Image test on ios does not render Caption on Article Image if b
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -1074,7 +1056,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -1232,7 +1213,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1383,7 +1363,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -1526,9 +1505,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -1541,9 +1517,6 @@ exports[`Article Image test on ios renders inline image (landscape) correctly 1`
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -1600,7 +1573,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -1758,7 +1730,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1909,7 +1880,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -2052,9 +2022,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -2067,9 +2034,6 @@ exports[`Article Image test on ios renders inline image (portrait) correctly 1`]
           President Kennedy’s death in 1963 has spawned countless conspiracy theories
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2117,7 +2081,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -2275,7 +2238,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -2426,7 +2388,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -2562,9 +2523,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -2577,9 +2535,6 @@ exports[`Article Image test on ios renders primary image correctly 1`] = `
           From the spreadsheet: 1 Sir Michael Fallon, Admitted placing hand on knee of journalist 15 years ago. 2 Jake Berry, announced he had a baby with a Tory aide after an amicable divorce from his wife. 3 Amber Rudd, had a relationship with Kwasi Kwarteng, who is now an aide to the chancellor. 4 Liam Fox, had to resign over breach of ministerial code after suggestions that his position had benefited his friend Adam Werritty. No allegations were of a sexual nature. 5 Stephen Crabb, sent explicit messages to young women while married. 6 Mark Garnier, admitted asking his secretary to buy sex toys. 7 Liz Truss, had affair with Tory MP Mark Field
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2636,7 +2591,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
           }
         >
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -2794,7 +2748,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -2945,7 +2898,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -3088,9 +3040,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -3103,9 +3052,6 @@ exports[`Article Image test on ios renders secondary image correctly 1`] = `
           Sebastian Schwarz, Glyndbourne’s general director, took issue with the BBC
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",

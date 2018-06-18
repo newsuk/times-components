@@ -9,7 +9,6 @@ exports[`TopicHead functional tests on web should render correctly 1`] = `
       aria-label="topic-name"
       className="responsive-styles__component-fbPFZZ gVyUxj"
       data-testid="topic-name"
-      dir="auto"
       role="heading"
     >
       Animals
@@ -29,7 +28,6 @@ exports[`TopicHead functional tests on web should render correctly with a descri
       aria-label="topic-name"
       className="responsive-styles__component-fbPFZZ gVyUxj"
       data-testid="topic-name"
-      dir="auto"
       role="heading"
     >
       Animals
@@ -39,7 +37,6 @@ exports[`TopicHead functional tests on web should render correctly with a descri
     />
     <div
       data-testid="topic-description"
-      dir="auto"
     >
       Animals are multicellular eukaryotic organisms.
     </div>

@@ -3,7 +3,6 @@
 exports[`1. Renders default layout 1`] = `
 <div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(105,105,105,1)",
@@ -14,13 +13,11 @@ exports[`1. Renders default layout 1`] = `
   </div>
   <div
     className="responsive-styles__component-fbPFZZ kssypV"
-    dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
   </div>
   <div>
     <div
-      dir="auto"
       style={
         Object {
           "color": "rgba(105,105,105,1)",
@@ -36,7 +33,6 @@ exports[`1. Renders default layout 1`] = `
 exports[`2. Renders without a caption 1`] = `
 <div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(105,105,105,1)",
@@ -47,13 +43,11 @@ exports[`2. Renders without a caption 1`] = `
   </div>
   <div
     className="responsive-styles__component-fbPFZZ kssypV"
-    dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
   </div>
   <div>
     <div
-      dir="auto"
       style={
         Object {
           "color": "rgba(105,105,105,1)",
@@ -69,7 +63,6 @@ exports[`2. Renders without a caption 1`] = `
 exports[`3. Renders with a twitter handle 1`] = `
 <div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(105,105,105,1)",
@@ -80,13 +73,11 @@ exports[`3. Renders with a twitter handle 1`] = `
   </div>
   <div
     className="responsive-styles__component-fbPFZZ kssypV"
-    dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
   </div>
   <div>
     <div
-      dir="auto"
       style={
         Object {
           "color": "rgba(105,105,105,1)",
@@ -105,7 +96,6 @@ exports[`3. Renders with a twitter handle 1`] = `
         />
       </svg>
       <a
-        dir="auto"
         href="https://twitter.com/@henrywinter"
         rel=" noopener noreferrer"
         role="link"
@@ -121,7 +111,6 @@ exports[`3. Renders with a twitter handle 1`] = `
 exports[`4. Renders with different colours 1`] = `
 <div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(133,0,41,1)",
@@ -132,13 +121,11 @@ exports[`4. Renders with different colours 1`] = `
   </div>
   <div
     className="responsive-styles__component-fbPFZZ kssypV"
-    dir="auto"
   >
     [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
   </div>
   <div>
     <div
-      dir="auto"
       style={
         Object {
           "color": "rgba(133,0,41,1)",

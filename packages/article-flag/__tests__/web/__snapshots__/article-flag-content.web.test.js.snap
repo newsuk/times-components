@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Article flag 1`] = `
+<style>
+{
+  "IS1": {
+    "marginBottom": "1px",
+    "marginRight": "5px",
+  },
+  "IS2": {
+    "color": "black",
+    "fontFamily": "TimesDigitalW04-RegularSC",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.4px",
+  },
+  "IS3": {
+    "WebkitAlignItems": "center",
+    "WebkitBoxAlign": "center",
+    "WebkitBoxDirection": "normal",
+    "WebkitBoxOrient": "horizontal",
+    "WebkitFlexDirection": "row",
+    "alignItems": "center",
+    "flexDirection": "row",
+    "msFlexAlign": "center",
+    "msFlexDirection": "row",
+  },
+}
+</style>
+
+<div
+  className="IS3"
+>
+  <div
+    className="IS1"
+  >
+    <IconDiamond
+      fillColour="black"
+      height={8}
+      width={8}
+    />
+  </div>
+  <div
+    aria-label="flag-No Colour"
+    className="IS2"
+    data-testid="flag-No Colour"
+  >
+    no colour
+  </div>
+</div>
+`;
+
+exports[`2. Red Article flag 1`] = `
+<style>
+{
+  "IS1": {
+    "marginBottom": "1px",
+    "marginRight": "5px",
+  },
+  "IS2": {
+    "color": "red",
+    "fontFamily": "TimesDigitalW04-RegularSC",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.4px",
+  },
+  "IS3": {
+    "WebkitAlignItems": "center",
+    "WebkitBoxAlign": "center",
+    "WebkitBoxDirection": "normal",
+    "WebkitBoxOrient": "horizontal",
+    "WebkitFlexDirection": "row",
+    "alignItems": "center",
+    "flexDirection": "row",
+    "msFlexAlign": "center",
+    "msFlexDirection": "row",
+  },
+}
+</style>
+
+<div
+  className="IS3"
+>
+  <div
+    className="IS1"
+  >
+    <IconDiamond
+      fillColour="red"
+      height={8}
+      width={8}
+    />
+  </div>
+  <div
+    aria-label="flag-Coloured Red"
+    className="IS2"
+    data-testid="flag-Coloured Red"
+  >
+    coloured red
+  </div>
+</div>
+`;

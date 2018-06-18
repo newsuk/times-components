@@ -28,7 +28,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -187,7 +186,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -338,7 +336,6 @@ exports[`Article Image test on android Renders Article Image with no caption 1`]
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -479,9 +476,6 @@ exports[`Article Image test on android does not render Article Image if display 
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -494,9 +488,6 @@ exports[`Article Image test on android does not render Article Image if display 
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -537,9 +528,6 @@ exports[`Article Image test on android does not render Article Image if ratio is
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -552,9 +540,6 @@ exports[`Article Image test on android does not render Article Image if ratio is
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -602,7 +587,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -761,7 +745,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -912,7 +895,6 @@ exports[`Article Image test on android does not render Caption on Article Image 
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -1078,7 +1060,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -1237,7 +1218,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1388,7 +1368,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -1532,9 +1511,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -1547,9 +1523,6 @@ exports[`Article Image test on android renders inline image (landscape) correctl
           All the latest stories in culture and books.
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -1606,7 +1579,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -1765,7 +1737,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -1916,7 +1887,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -2060,9 +2030,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -2075,9 +2042,6 @@ exports[`Article Image test on android renders inline image (portrait) correctly
           President Kennedy’s death in 1963 has spawned countless conspiracy theories
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2125,7 +2089,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -2284,7 +2247,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -2435,7 +2397,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -2572,9 +2533,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -2587,9 +2545,6 @@ exports[`Article Image test on android renders primary image correctly 1`] = `
           From the spreadsheet: 1 Sir Michael Fallon, Admitted placing hand on knee of journalist 15 years ago. 2 Jake Berry, announced he had a baby with a Tory aide after an amicable divorce from his wife. 3 Amber Rudd, had a relationship with Kwasi Kwarteng, who is now an aide to the chancellor. 4 Liam Fox, had to resign over breach of ministerial code after suggestions that his position had benefited his friend Adam Werritty. No allegations were of a sexual nature. 5 Stephen Crabb, sent explicit messages to young women while married. 6 Mark Garnier, admitted asking his secretary to buy sex toys. 7 Liz Truss, had affair with Tory MP Mark Field
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2646,7 +2601,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           }
         >
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -2805,7 +2759,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
             }
           >
             <View
-              accessible={true}
               style={
                 Object {
                   "flexGrow": 1,
@@ -2956,7 +2909,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
         </View>
       </Modal>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -3100,9 +3052,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#696969",
@@ -3115,9 +3064,6 @@ exports[`Article Image test on android renders secondary image correctly 1`] = `
           Sebastian Schwarz, Glyndbourne’s general director, took issue with the BBC
         </Text>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",

@@ -53,9 +53,6 @@ exports[`2. Render a single topic 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",

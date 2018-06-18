@@ -2,6 +2,8 @@ import React from "react";
 import { AppRegistry } from "react-native-web";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
+import traverse from "./traverse";
+import { stylePrinter } from "./printers";
 
 const cleanClassNames = names => {
   const className = (names || "")
@@ -91,19 +93,27 @@ const updateMap = (cssStyles, styleMap, classNames) => {
     return m;
   }, {});
 
-  const key = `S${Object.keys(styleMap).length + 1}`;
+  const key = `S${Object.keys(styleMap.rnw || {}).length + 1}`;
 
   return {
     key,
     styleMap: {
       ...styleMap,
-      [key]: mergedStyle
+      rnw: {
+        ...styleMap.rnw,
+        [key]: mergedStyle
+      }
     }
   };
 };
 
-export const transformProps = includeStyleProps => (accum, node) => {
-  const { className, ...other } = node.props;
+export const rnwTransform = includeStyleProps => (
+  accum,
+  node,
+  props,
+  children
+) => {
+  const { className, ...other } = props;
 
   const cssStyles = classNamesToStyles(className);
   const filteredNames = filterNames(className, new Set(includeStyleProps));
@@ -115,24 +125,18 @@ export const transformProps = includeStyleProps => (accum, node) => {
   };
 
   if (updatedMap.key) {
-    newProps.className = updatedMap.key;
+    newProps.className = newProps.className
+      ? `${newProps.className} ${updatedMap.key}`
+      : updatedMap.key;
   }
 
   return {
     accum: updatedMap.styleMap,
-    props: newProps
+    node,
+    props: newProps,
+    children
   };
 };
 
-export const printer = (serialize, accum, element) => {
-  const styleBlock =
-    Object.keys(accum).length > 0
-      ? `<style>
-${serialize(accum).replace(/Object\s{/g, "{")}
-</style>
-
-`
-      : "";
-
-  return `${styleBlock}${serialize(element)}`;
-};
+export default includeStyleProps =>
+  traverse(stylePrinter, rnwTransform(includeStyleProps));

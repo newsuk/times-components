@@ -14,9 +14,6 @@ exports[`1. Renders default layout 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -30,9 +27,6 @@ exports[`1. Renders default layout 1`] = `
     “
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -56,9 +50,6 @@ exports[`1. Renders default layout 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -90,9 +81,6 @@ exports[`2. Renders without a caption 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -106,9 +94,6 @@ exports[`2. Renders without a caption 1`] = `
     “
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -132,9 +117,6 @@ exports[`2. Renders without a caption 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -166,9 +148,6 @@ exports[`3. Renders with a twitter handle 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -182,9 +161,6 @@ exports[`3. Renders with a twitter handle 1`] = `
     “
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -208,9 +184,6 @@ exports[`3. Renders with a twitter handle 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -445,9 +418,6 @@ exports[`3. Renders with a twitter handle 1`] = `
       </ARTSurfaceView>
       <Text
         accessibilityRole="link"
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         href="https://twitter.com/@henrywinter"
         style={
           Object {
@@ -483,9 +453,6 @@ exports[`4. Renders with different colours 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#850029",
@@ -499,9 +466,6 @@ exports[`4. Renders with different colours 1`] = `
     “
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -525,9 +489,6 @@ exports[`4. Renders with different colours 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#850029",

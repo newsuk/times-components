@@ -1788,7 +1788,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -1946,7 +1945,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -2097,7 +2095,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -2248,9 +2245,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -2266,9 +2260,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2337,9 +2328,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -2381,9 +2369,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -2410,9 +2395,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2426,9 +2408,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
             style={
               Object {
@@ -2445,9 +2424,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
             police disclosure of evidence
           </Text>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -2458,9 +2434,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -3241,7 +3214,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
       >
         <View
           accessibilityLabel="splash-component"
-          accessible={true}
           isTVSelectable={true}
           style={
             Object {
@@ -3439,9 +3411,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -3483,9 +3452,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -3527,9 +3493,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -3556,9 +3519,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3585,9 +3545,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3614,9 +3571,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3662,9 +3616,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -4577,7 +4528,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -4735,7 +4685,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -4886,7 +4835,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -5037,9 +4985,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -5055,9 +5000,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5126,9 +5068,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -5155,9 +5094,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5170,9 +5106,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -5183,9 +5116,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -5209,9 +5139,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5223,9 +5150,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -5249,9 +5173,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5278,9 +5199,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5307,9 +5225,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5336,9 +5251,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5365,9 +5277,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6297,7 +6206,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -6455,7 +6363,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -6606,7 +6513,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -6757,9 +6663,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -6775,9 +6678,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6819,9 +6719,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -6863,9 +6760,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -6892,9 +6786,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6907,9 +6798,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -6920,9 +6808,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -6946,9 +6831,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6960,9 +6842,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -6986,9 +6865,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7015,9 +6891,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7044,9 +6917,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7073,9 +6943,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7102,9 +6969,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8037,7 +7901,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -8195,7 +8058,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -8346,7 +8208,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -8482,9 +8343,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -8500,9 +8358,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8571,9 +8426,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -8615,9 +8467,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -8644,9 +8493,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8659,9 +8505,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -8672,9 +8515,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -8698,9 +8538,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8712,9 +8549,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -8738,9 +8572,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8767,9 +8598,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8796,9 +8624,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8825,9 +8650,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8854,9 +8676,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -9786,7 +9605,6 @@ exports[`Article tests on ios should render an article with no label and no flag
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -9944,7 +9762,6 @@ exports[`Article tests on ios should render an article with no label and no flag
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -10095,7 +9912,6 @@ exports[`Article tests on ios should render an article with no label and no flag
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -10231,9 +10047,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -10249,9 +10062,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10293,9 +10103,6 @@ exports[`Article tests on ios should render an article with no label and no flag
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -10337,9 +10144,6 @@ exports[`Article tests on ios should render an article with no label and no flag
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -10366,9 +10170,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10381,9 +10182,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -10394,9 +10192,6 @@ exports[`Article tests on ios should render an article with no label and no flag
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -10420,9 +10215,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10434,9 +10226,6 @@ exports[`Article tests on ios should render an article with no label and no flag
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -10460,9 +10249,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10489,9 +10275,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10518,9 +10301,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10547,9 +10327,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10576,9 +10353,6 @@ exports[`Article tests on ios should render an article with no label and no flag
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -11508,7 +11282,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -11666,7 +11439,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -11817,7 +11589,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -11953,9 +11724,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -11997,9 +11765,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -12041,9 +11806,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -12070,9 +11832,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12085,9 +11844,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -12098,9 +11854,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -12124,9 +11877,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12138,9 +11888,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -12164,9 +11911,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12193,9 +11937,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12222,9 +11963,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12251,9 +11989,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12280,9 +12015,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13215,7 +12947,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -13373,7 +13104,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -13524,7 +13254,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -13675,9 +13404,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -13746,9 +13472,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -13790,9 +13513,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -13819,9 +13539,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13834,9 +13551,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -13847,9 +13561,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -13873,9 +13584,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13887,9 +13595,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -13913,9 +13618,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13942,9 +13644,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13971,9 +13670,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14000,9 +13696,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14029,9 +13722,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14961,7 +14651,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -15119,7 +14808,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -15270,7 +14958,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -15421,9 +15108,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -15465,9 +15149,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -15509,9 +15190,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -15538,9 +15216,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15553,9 +15228,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -15566,9 +15238,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -15592,9 +15261,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15606,9 +15272,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -15632,9 +15295,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15661,9 +15321,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15690,9 +15347,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15719,9 +15373,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15748,9 +15399,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -16683,7 +16331,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
               }
             >
               <View
-                accessible={true}
                 isTVSelectable={true}
                 style={
                   Object {
@@ -16841,7 +16488,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -16992,7 +16638,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
             </View>
           </Modal>
           <View
-            accessible={true}
             isTVSelectable={true}
             style={
               Object {
@@ -17128,9 +16773,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -17199,9 +16841,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -17243,9 +16882,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -17272,9 +16908,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17287,9 +16920,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -17300,9 +16930,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -17326,9 +16953,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17340,9 +16964,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -17366,9 +16987,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17395,9 +17013,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17424,9 +17039,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17453,9 +17065,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17482,9 +17091,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17512,18 +17118,10 @@ exports[`Article tests on ios should render an article with no standfirst and no
 
 exports[`Article tests on ios should render an error 1`] = `
 <View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     An error occurred
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     {
   "message": "An example error."
 }

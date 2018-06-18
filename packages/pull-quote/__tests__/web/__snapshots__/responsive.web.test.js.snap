@@ -3,6 +3,5 @@
 exports[`PullQuote responsive components tests on web should render PullQuoteContent correctly 1`] = `
 <div
   className="responsive-styles__component-fbPFZZ kssypV"
-  dir="auto"
 />
 `;

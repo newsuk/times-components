@@ -159,7 +159,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
   <View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -331,10 +330,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -349,9 +345,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     Top medal for forces dog who took a bite out of the Taliban
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -363,11 +356,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                       ...
@@ -375,9 +364,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -417,7 +403,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -589,10 +574,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -607,9 +589,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     Social media must raise game to beat terrorists, says UN chief
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -621,11 +600,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                       ...
@@ -633,9 +608,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -675,7 +647,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -847,10 +818,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -865,9 +833,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     Cuts have left the army 20 years out of date, says former general
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -879,11 +844,7 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                       ...
@@ -891,9 +852,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -921,7 +879,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
 
 exports[`ArticleList tests on ios should render an article list item 1`] = `
 <View
-  accessible={true}
   isTVSelectable={true}
   style={
     Object {
@@ -1099,9 +1056,6 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -1118,10 +1072,7 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
             </View>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="3"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#333333",
@@ -1136,9 +1087,6 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
               test headline
             </Text>
             <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1150,11 +1098,7 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
+              <Text>
                 
                 Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                 ...
@@ -1162,9 +1106,6 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
             </Text>
             <Text
               accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1653,7 +1594,6 @@ exports[`ArticleList tests on ios should render an article list item loading sta
 
 exports[`ArticleList tests on ios should render an article list item without images 1`] = `
 <View
-  accessible={true}
   isTVSelectable={true}
   style={
     Object {
@@ -1707,9 +1647,6 @@ exports[`ArticleList tests on ios should render an article list item without ima
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -1726,10 +1663,7 @@ exports[`ArticleList tests on ios should render an article list item without ima
             </View>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="3"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#333333",
@@ -1744,9 +1678,6 @@ exports[`ArticleList tests on ios should render an article list item without ima
               test headline
             </Text>
             <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1758,11 +1689,7 @@ exports[`ArticleList tests on ios should render an article list item without ima
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
+              <Text>
                 
                 Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
                 ...
@@ -1770,9 +1697,6 @@ exports[`ArticleList tests on ios should render an article list item without ima
             </Text>
             <Text
               accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1810,7 +1734,6 @@ exports[`ArticleList tests on ios should render an article list page error corre
   <View>
     <Image
       accessibilityLabel="Server error"
-      accessible={true}
       resizeMode="contain"
       source={
         Object {
@@ -2428,9 +2351,6 @@ exports[`ArticleList tests on ios should render an empty state 1`] = `
 exports[`ArticleList tests on ios should render the article list error content correctly 1`] = `
 <React.Fragment>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "alignSelf": "center",
@@ -2445,9 +2365,6 @@ exports[`ArticleList tests on ios should render the article list error content c
     Something's gone wrong
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -2489,7 +2406,6 @@ exports[`ArticleList tests on ios should render the article list page error corr
   <View>
     <Image
       accessibilityLabel="Server error"
-      accessible={true}
       resizeMode="contain"
       source={
         Object {

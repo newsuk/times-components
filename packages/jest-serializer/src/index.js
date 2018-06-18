@@ -1,52 +1,49 @@
 import { createSerializer } from "enzyme-to-json";
-import minimalise from "./minimalise";
-import { transformProps as rnwTransform, printer as rnwPrinter } from "./rnw";
-import flattenStyleTransform from "./flatten-style";
+import {
+  minimaliseTransform,
+  minimalWebTransform,
+  minimalWeb,
+  minimalNative,
+  minimalNativeTransform
+} from "./minimalise";
+import rnw, { rnwTransform } from "./rnw";
+import flattenStyle, { flattenStyleTransform } from "./flatten-style";
+import replace, {
+  justChildren,
+  meltNative,
+  propsNoChildren,
+  replaceTransform
+} from "./replace";
+import hoistStyle, { hoistStyleTransform } from "./hoist-style";
 import traverse from "./traverse";
-
-const print = (serialize, accum, element) => serialize(element);
-
-const flattenStyle = traverse(flattenStyleTransform, print);
-
-const isEmptyObject = obj =>
-  obj && typeof obj === "object" && Object.keys(obj).length === 0;
-
-const minimalWebTransform = minimalise(
-  value =>
-    value === undefined || typeof value === "function" || isEmptyObject(value)
-);
-
-const minimalWeb = traverse(minimalWebTransform, print);
-
-const minimalNativeTransform = minimalise(
-  (value, key) =>
-    value === undefined ||
-    typeof value === "function" ||
-    key === "className" ||
-    isEmptyObject(value)
-);
-
-const minimalNative = traverse(minimalNativeTransform, print);
-
-const rnw = includeStyleProps =>
-  traverse(rnwTransform(includeStyleProps), rnwPrinter);
+import print, { stylePrinter } from "./printers";
 
 const compose = (printer, ...transformers) =>
-  traverse(
-    (accum, node) =>
-      transformers.reduce(
-        ({ accum: a, props: p }, transformer) =>
-          transformer(a, { ...node, props: p }),
-        {
-          accum,
-          props: node.props
+  traverse(printer, (accum, node, props, children) =>
+    transformers.reduce(
+      ({ accum: a, node: n, props: p, children: c }, transformer) => {
+        if (!n) {
+          return {
+            accum: a,
+            node: n,
+            props: p,
+            children: c
+          };
         }
-      ),
-    printer
+
+        return transformer(a, n, p, c);
+      },
+      {
+        accum,
+        node,
+        props,
+        children
+      }
+    )
   );
 
 const minimalRnw = includeStyleProps =>
-  compose(rnwPrinter, minimalWebTransform, rnwTransform(includeStyleProps));
+  compose(stylePrinter, minimalWebTransform, rnwTransform(includeStyleProps));
 
 const addSerializers = (expect, ...serializers) => {
   serializers.forEach(serializer => expect.addSnapshotSerializer(serializer));
@@ -66,13 +63,21 @@ export {
   enzymeTreeSerializer,
   flattenStyle,
   flattenStyleTransform,
+  hoistStyle,
+  hoistStyleTransform,
+  justChildren,
+  meltNative,
+  minimaliseTransform,
   minimalNative,
   minimalNativeTransform,
   minimalRnw,
   minimalWeb,
   minimalWebTransform,
   print,
+  propsNoChildren,
+  replace,
+  replaceTransform,
   rnw,
-  rnwPrinter,
-  rnwTransform
+  rnwTransform,
+  stylePrinter
 };

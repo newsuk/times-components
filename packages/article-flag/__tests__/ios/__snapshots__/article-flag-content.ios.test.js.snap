@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Article flag 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <IconDiamond
+      fillColour="black"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="flag-No Colour"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "black",
+        },
+      ]
+    }
+    testID="flag-No Colour"
+  >
+    no colour
+  </Text>
+</View>
+`;
+
+exports[`2. Red Article flag 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 1,
+        "marginRight": 5,
+      }
+    }
+  >
+    <IconDiamond
+      fillColour="red"
+      height={8}
+      width={8}
+    />
+  </View>
+  <Text
+    accessibilityLabel="flag-Coloured Red"
+    style={
+      Array [
+        Object {
+          "fontFamily": "TimesDigitalW04-RegularSC",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 1.4,
+        },
+        Object {
+          "color": "red",
+        },
+      ]
+    }
+    testID="flag-Coloured Red"
+  >
+    coloured red
+  </Text>
+</View>
+`;

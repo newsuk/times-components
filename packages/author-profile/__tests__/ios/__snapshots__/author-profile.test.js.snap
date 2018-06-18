@@ -347,9 +347,6 @@ exports[`1. Render an author profile page 1`] = `
             <Text
               accessibilityLabel="author-name"
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#1D1D1B",
@@ -363,10 +360,7 @@ exports[`1. Render an author profile page 1`] = `
             </Text>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="2"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -594,9 +588,6 @@ exports[`1. Render an author profile page 1`] = `
               </View>
               <Text
                 accessibilityRole="link"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 href="https://twitter.com/jdoe"
                 style={
                   Object {
@@ -622,9 +613,6 @@ exports[`1. Render an author profile page 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -638,9 +626,6 @@ exports[`1. Render an author profile page 1`] = `
               >
                 Deborah Haynes is the defence editor at 
                 <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
                   style={
                     Object {
                       "fontStyle": "italic",
@@ -658,7 +643,6 @@ exports[`1. Render an author profile page 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -830,10 +814,7 @@ exports[`1. Render an author profile page 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -848,9 +829,6 @@ exports[`1. Render an author profile page 1`] = `
                     Top medal for forces dog who took a bite out of the Taliban
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -862,11 +840,7 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                       ...
@@ -874,9 +848,6 @@ exports[`1. Render an author profile page 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -916,7 +887,6 @@ exports[`1. Render an author profile page 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -1088,10 +1058,7 @@ exports[`1. Render an author profile page 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -1106,9 +1073,6 @@ exports[`1. Render an author profile page 1`] = `
                     Social media must raise game to beat terrorists, says UN chief
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -1120,11 +1084,7 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                       ...
@@ -1132,9 +1092,6 @@ exports[`1. Render an author profile page 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -1174,7 +1131,6 @@ exports[`1. Render an author profile page 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -1346,10 +1302,7 @@ exports[`1. Render an author profile page 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -1364,9 +1317,6 @@ exports[`1. Render an author profile page 1`] = `
                     Cuts have left the army 20 years out of date, says former general
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -1378,11 +1328,7 @@ exports[`1. Render an author profile page 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                       ...
@@ -1390,9 +1336,6 @@ exports[`1. Render an author profile page 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2103,9 +2046,6 @@ exports[`2. Render an author profile page without images 1`] = `
             <Text
               accessibilityLabel="author-name"
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#1D1D1B",
@@ -2119,10 +2059,7 @@ exports[`2. Render an author profile page without images 1`] = `
             </Text>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="2"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -2350,9 +2287,6 @@ exports[`2. Render an author profile page without images 1`] = `
               </View>
               <Text
                 accessibilityRole="link"
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 href="https://twitter.com/jdoe"
                 style={
                   Object {
@@ -2378,9 +2312,6 @@ exports[`2. Render an author profile page without images 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -2394,9 +2325,6 @@ exports[`2. Render an author profile page without images 1`] = `
               >
                 Deborah Haynes is the defence editor at 
                 <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
                   style={
                     Object {
                       "fontStyle": "italic",
@@ -2414,7 +2342,6 @@ exports[`2. Render an author profile page without images 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -2462,10 +2389,7 @@ exports[`2. Render an author profile page without images 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -2480,9 +2404,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2494,17 +2415,10 @@ exports[`2. Render an author profile page without images 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
                       <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
                         style={
                           Object {
                             "fontStyle": "italic",
@@ -2515,19 +2429,11 @@ exports[`2. Render an author profile page without images 1`] = `
                       </Text>
                        last night.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
                       ...
@@ -2535,9 +2441,6 @@ exports[`2. Render an author profile page without images 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2577,7 +2480,6 @@ exports[`2. Render an author profile page without images 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -2625,10 +2527,7 @@ exports[`2. Render an author profile page without images 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -2643,9 +2542,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     Trump pressuring Britain to pay more towards Nato
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2657,51 +2553,27 @@ exports[`2. Render an author profile page without images 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
+                      <Text>
                          Trump
                       </Text>
                        administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       The White House push is being used in Whitehall to put pressure on 
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                      >
+                      <Text>
                         Philip Hammond
                       </Text>
                        to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
                       ...
@@ -2709,9 +2581,6 @@ exports[`2. Render an author profile page without images 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2751,7 +2620,6 @@ exports[`2. Render an author profile page without images 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         isTVSelectable={true}
         style={
           Object {
@@ -2799,10 +2667,7 @@ exports[`2. Render an author profile page without images 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -2817,9 +2682,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     British troops to protect Bosnia election from Russian meddling
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -2831,27 +2693,15 @@ exports[`2. Render an author profile page without images 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
                     </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                        
                       “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
                       ...
@@ -2859,9 +2709,6 @@ exports[`2. Render an author profile page without images 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -4559,7 +4406,6 @@ exports[`4. Render an author profile page error state 1`] = `
   <View>
     <Image
       accessibilityLabel="Server error"
-      accessible={true}
       resizeMode="contain"
       source={
         Object {
@@ -4577,9 +4423,6 @@ exports[`4. Render an author profile page error state 1`] = `
       }
     />
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "alignSelf": "center",
@@ -4594,9 +4437,6 @@ exports[`4. Render an author profile page error state 1`] = `
       Something's gone wrong
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -4613,7 +4453,6 @@ exports[`4. Render an author profile page error state 1`] = `
     accessibilityComponentType="button"
     accessibilityLabel="Retry"
     accessibilityTraits="button"
-    accessible={true}
     isTVSelectable={true}
     style={
       Object {
@@ -4628,9 +4467,6 @@ exports[`4. Render an author profile page error state 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#FFF",

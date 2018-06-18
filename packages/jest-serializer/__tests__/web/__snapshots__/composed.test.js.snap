@@ -11,6 +11,5 @@ exports[`The serializers should minimalise and create styles 1`] = `
 
 <div
   className="S1"
-  dir="auto"
 />
 `;

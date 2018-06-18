@@ -5,7 +5,7 @@ import {
   compose,
   flattenStyleTransform,
   rnwTransform,
-  rnwPrinter
+  stylePrinter
 } from "@times-components/jest-serializer";
 
 import Ad, { AdComposer } from "../../src/ad";
@@ -19,7 +19,7 @@ jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-nati
 
 addSerializers(
   expect,
-  compose(rnwPrinter, flattenStyleTransform, rnwTransform())
+  compose(stylePrinter, flattenStyleTransform, rnwTransform())
 );
 
 describe("Ad", () => {

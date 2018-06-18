@@ -24,6 +24,13 @@ describe("The minimal serializer should", () => {
       expect(tree.toJSON()).toMatchSnapshot();
     });
 
+    it("remove redundant native props", () => {
+      const component = <Text />;
+      const tree = renderer.create(component);
+
+      expect(tree.toJSON()).toMatchSnapshot();
+    });
+
     shared();
   });
 });

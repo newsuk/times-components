@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The replace serializer should provide a helper to remove native elements from a web tree 1`] = `
+<WrapperComponent>
+  <div>
+    <ChildComponent
+      text="Hello world!"
+    >
+      <div
+        dir="auto"
+      >
+        Hello world!
+      </div>
+    </ChildComponent>
+  </div>
+</WrapperComponent>
+`;
+
+exports[`The replace serializer should provide a helper to return the child of an element only 1`] = `
+<WrapperComponent>
+  <View>
+    <div>
+      <Text>
+        <div
+          dir="auto"
+        >
+          Hello world!
+        </div>
+      </Text>
+    </div>
+  </View>
+</WrapperComponent>
+`;
+
+exports[`The replace serializer should provide a helper to return the children of an element only 1`] = `
+Array [
+  <ChildComponent
+    text="Hello world1!"
+  >
+    <Text>
+      Hello world1!
+    </Text>
+  </ChildComponent>,
+  <ChildComponent
+    text="Hello world2!"
+  >
+    <Text>
+      Hello world2!
+    </Text>
+  </ChildComponent>,
+  <ChildComponent
+    text="Hello world3!"
+  >
+    <Text>
+      Hello world3!
+    </Text>
+  </ChildComponent>,
+]
+`;
+
+exports[`The replace serializer should provide a helper to return the component with props and no children 1`] = `
+<WrapperComponent>
+  <View>
+    <div>
+      <ChildComponent
+        text="Hello world!"
+      />
+    </div>
+  </View>
+</WrapperComponent>
+`;
+
+exports[`The replace serializer should replace the expected component 1`] = `
+<WrapperComponent>
+  <View>
+    <div
+      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+    >
+      <Placeholder>
+        <Text>
+          Replaced
+        </Text>
+      </Placeholder>
+    </div>
+  </View>
+</WrapperComponent>
+`;
