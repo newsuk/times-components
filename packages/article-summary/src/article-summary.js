@@ -111,10 +111,7 @@ ArticleSummary.defaultProps = {
   content: () => null,
   headline: () => null,
   bylineProps: null,
-  labelProps: {
-    color: colours.section.default,
-    isVideo: false
-  },
+  labelProps: null,
   datePublicationProps: null,
   isOpinionByline: false
 };
