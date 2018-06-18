@@ -47,7 +47,7 @@ export class AuthorProfileHeadBase extends Component {
     };
 
     return (
-      <Animations.FadeIn>
+      <Animations.FadeIn style={{ width: "100%" }}>
         <View
           pointerEvents="box-none"
           style={styles.authorHeadWrapper}

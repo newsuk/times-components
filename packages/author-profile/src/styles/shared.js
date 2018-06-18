@@ -28,6 +28,7 @@ const styles = {
     width: 100
   },
   authorHeadWrapper: {
+    width: "100%",
     alignItems: "center",
     backgroundColor: "transparent"
   },
@@ -64,7 +65,8 @@ const styles = {
   },
   biographyContainer: {
     paddingBottom: spacing(6),
-    paddingHorizontal: spacing(2)
+    paddingHorizontal: spacing(2),
+    width: "100%"
   },
   biography: {
     color: colours.functional.primary,
