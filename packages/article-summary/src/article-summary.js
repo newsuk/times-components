@@ -6,7 +6,6 @@ import ArticleByline, {
   articleBylinePropTypes
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
-import { colours } from "@times-components/styleguide";
 import VideoLabel from "@times-components/video-label";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
