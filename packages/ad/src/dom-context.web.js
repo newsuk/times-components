@@ -5,12 +5,12 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 class DOMContext extends Component {
   componentDidMount() {
-    const { counter, init, data } = this.props;
+    const { slotSuffix, init, data } = this.props;
 
     this.initExecuting = true;
 
     const adInit = init({
-      counter,
+      slotSuffix,
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",

@@ -21,7 +21,7 @@ class ArticleList extends Component {
     super(props);
 
     this.advertPosition = 4;
-    this.counter = 0;
+    this.advertPositionCounter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
@@ -50,7 +50,6 @@ class ArticleList extends Component {
 
     clearTimeout(this.pendingTimer);
     this.pending.clear();
-    this.counter = 0;
   }
 
   getImageSize(nodeId) {
@@ -193,10 +192,10 @@ class ArticleList extends Component {
 
                 const AdComponent = (
                   <AdComposer adConfig={adConfig}>
-                    <Ad counter={this.counter} pos={renderPosTag()} />
+                    <Ad slotSuffix={this.advertPositionCounter.toString()} pos={renderPosTag()} />
                   </AdComposer>
                 );
-                this.counter = this.counter + 1;
+                this.advertPositionCounter = this.advertPositionCounter + 1;
                 return AdComponent;
               };
 

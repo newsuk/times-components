@@ -4,8 +4,7 @@
 // defined outside the function, so that it can be passed into a WebView.
 
 const adInit = args => {
-  let { counter } = args;
-  const { el, data, platform, eventCallback, window } = args;
+  const { slotSuffix, el, data, platform, eventCallback, window } = args;
   const { document, setTimeout, Promise } = window;
 
   const scriptsInserted = {};
@@ -101,7 +100,8 @@ const adInit = args => {
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
           const { pos, sizes, mappings } = slotConfig;
-          const containerID = `${pos}-${counter}`;
+          const containerID = slotSuffix ? `${pos}-${slotSuffix}` : pos;
+
           const slot = window.googletag.defineSlot(
             adUnitPath,
             sizes,
@@ -139,7 +139,6 @@ const adInit = args => {
           slot.setTargeting("pos", containerID);
           window.googletag.display(containerID);
           window.googletag.pubads().refresh();
-          counter = counter + 1; // eslint-disable-line operator-assignment
         });
       },
 
