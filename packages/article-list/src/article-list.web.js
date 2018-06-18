@@ -176,11 +176,14 @@ class ArticleList extends Component {
                 index > 0 ? <ArticleListItemSeparator /> : null;
 
               const renderAd = () => {
-                if (index !== this.advertPosition || Object.keys(adConfig).length === 0) {
+                if (
+                  index !== this.advertPosition ||
+                  Object.keys(adConfig).length === 0
+                ) {
                   return null;
                 }
 
-                const renderPosTag = () => {
+                const renderSlotName = () => {
                   if (isLoading) {
                     return "inline-ad-header-loading";
                   }
@@ -192,7 +195,10 @@ class ArticleList extends Component {
 
                 const AdComponent = (
                   <AdComposer adConfig={adConfig}>
-                    <Ad slotSuffix={this.advertPositionCounter.toString()} pos={renderPosTag()} />
+                    <Ad
+                      slotSuffix={this.advertPositionCounter.toString()}
+                      slotName={renderSlotName()}
+                    />
                   </AdComposer>
                 );
                 this.advertPositionCounter = this.advertPositionCounter + 1;

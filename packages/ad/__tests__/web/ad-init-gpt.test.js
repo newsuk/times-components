@@ -48,7 +48,9 @@ describe("AdInit.gpt", () => {
       "slotOptionName",
       "slotOptionValue"
     );
-    expect(mock.googletag.display).toHaveBeenCalledWith("mock-code-test-suffix");
+    expect(mock.googletag.display).toHaveBeenCalledWith(
+      "mock-code-test-suffix"
+    );
   });
 
   it("does not error with a null slot targeting value", () => {

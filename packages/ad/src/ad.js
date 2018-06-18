@@ -19,8 +19,11 @@ const styles = StyleSheet.create({
 class Ad extends Component {
   constructor(props) {
     super(props);
+
+    const { section, slotName } = props;
+
     this.windowWidth = screenWidth();
-    this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
+    this.config = getSlotConfig(section, slotName, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
@@ -34,7 +37,14 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const { pos, contextUrl, section, slotSuffix, baseUrl, style } = this.props;
+    const {
+      slotName,
+      contextUrl,
+      section,
+      slotSuffix,
+      baseUrl,
+      style
+    } = this.props;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -55,12 +65,12 @@ class Ad extends Component {
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
       slots: this.slots || [],
-      pos,
+      slotName,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
       contextUrl,
       section,
-      sizingMap: getSizeMaps(pos),
+      sizingMap: getSizeMaps(slotName),
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };

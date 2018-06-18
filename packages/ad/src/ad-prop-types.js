@@ -7,7 +7,7 @@ export const propTypes = {
   slotSuffix: PropTypes.string,
   networkId: PropTypes.string,
   adUnit: PropTypes.string,
-  pos: PropTypes.string.isRequired,
+  slotName: PropTypes.string.isRequired,
   section: PropTypes.string,
   baseUrl: PropTypes.string,
   contextUrl: PropTypes.string,

@@ -99,8 +99,10 @@ const adInit = args => {
         } = data;
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
-          const { pos, sizes, mappings } = slotConfig;
-          const containerID = slotSuffix ? `${pos}-${slotSuffix}` : pos;
+          const { slotName, sizes, mappings } = slotConfig;
+          const containerID = slotSuffix
+            ? `${slotName}-${slotSuffix}`
+            : slotName;
 
           const slot = window.googletag.defineSlot(
             adUnitPath,
@@ -116,7 +118,7 @@ const adInit = args => {
           }
           slot.addService(window.googletag.pubads());
           /* eslint-disable no-param-reassign */
-          el.id = `wrapper-${pos}`;
+          el.id = `wrapper-${slotName}`;
           el.innerHTML = `<div id="${containerID}"></div>`;
           el.style.display = "flex";
           el.style.alignItems = "center";
