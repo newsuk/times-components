@@ -200,4 +200,12 @@ export default () => {
 
     expect(refetchMock).toHaveBeenCalled();
   });
+
+  it("should render an empty state", () => {
+    const tree = renderer.create(
+      <ArticleList {...articleListProps} articles={[]} />
+    );
+
+    expect(tree).toMatchSnapshot();
+  });
 };

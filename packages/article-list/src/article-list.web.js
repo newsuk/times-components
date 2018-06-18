@@ -13,6 +13,7 @@ import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
+import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
@@ -118,21 +119,21 @@ class ArticleList extends Component {
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
-      <ArticleListPagination
-        count={count}
-        hideResults={hideResults}
-        onNext={(...args) => {
-          onNext(...args);
-          if (autoScroll) scrollUpToPaging(window);
-        }}
-        onPrev={(...args) => {
-          onPrev(...args);
-          if (autoScroll) scrollUpToPaging(window);
-        }}
-        page={page}
-        pageSize={pageSize}
-      />
-    );
+        <ArticleListPagination
+          count={count}
+          hideResults={hideResults}
+          onNext={(...args) => {
+            onNext(...args);
+            if (autoScroll) scrollUpToPaging(window);
+          }}
+          onPrev={(...args) => {
+            onPrev(...args);
+            if (autoScroll) scrollUpToPaging(window);
+          }}
+          page={page}
+          pageSize={pageSize}
+        />
+      );
 
     const ErrorComponent = (
       <ListContentContainer>
@@ -151,16 +152,16 @@ class ArticleList extends Component {
 
     const data = articlesLoading
       ? Array(pageSize)
-          .fill()
-          .map((number, index) => ({
-            elementId: `empty.${index}`,
-            id: index,
-            isLoading: true
-          }))
+        .fill()
+        .map((number, index) => ({
+          elementId: `empty.${index}`,
+          id: index,
+          isLoading: true
+        }))
       : articles.map((article, index) => ({
-          ...article,
-          elementId: `${article.id}.${index}`
-        }));
+        ...article,
+        elementId: `${article.id}.${index}`
+      }));
 
     const Contents = (
       <ListContentContainer>
@@ -225,6 +226,10 @@ class ArticleList extends Component {
 
     if (!articlesLoading) receiveChildList(data);
 
+    if (!articlesLoading && !error && data.length === 0) {
+      return <ArticleListEmptyState />;
+    }
+
     return (
       <View>
         {articleListHeader}
@@ -238,5 +243,5 @@ ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
 export { default as ArticleListPageError } from "./article-list-page-error";
-export { default as ArticleListEmptyState } from "./article-list-empty-state";
+export { ArticleListEmptyState };
 export default withTrackScrollDepth(ArticleList);
