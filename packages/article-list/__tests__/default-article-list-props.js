@@ -1,4 +1,5 @@
 const articleListProps = {
+  adConfig: {},
   analyticsStream: () => {},
   imageRatio: 3 / 2,
   onArticlePress: () => {},

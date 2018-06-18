@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { Subscriber } from "react-broadcast";
-import { View, ViewPropTypes, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
@@ -9,8 +8,7 @@ import Placeholder from "./placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+import { propTypes, defaultProps } from "./ad-prop-types";
 
 const styles = StyleSheet.create({
   children: {
@@ -21,8 +19,11 @@ const styles = StyleSheet.create({
 class Ad extends Component {
   constructor(props) {
     super(props);
+
+    const { section, slotName } = props;
+
     this.windowWidth = screenWidth();
-    this.config = getSlotConfig(props.section, props.pos, this.windowWidth);
+    this.config = getSlotConfig(section, slotName, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
@@ -36,6 +37,15 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
+    const {
+      slotName,
+      contextUrl,
+      section,
+      slotSuffix,
+      baseUrl,
+      style
+    } = this.props;
+
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
@@ -55,12 +65,12 @@ class Ad extends Component {
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
       slots: this.slots || [],
-      pos: this.props.pos,
+      slotName,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
-      contextUrl: this.props.contextUrl,
-      section: this.props.section,
-      sizingMap: getSizeMaps(this.props.pos),
+      contextUrl,
+      section,
+      sizingMap: getSizeMaps(slotName),
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
@@ -71,8 +81,9 @@ class Ad extends Component {
 
     const webviewComponent = (
       <DOMContext
+        slotSuffix={slotSuffix}
         data={data}
-        baseUrl={this.props.baseUrl}
+        baseUrl={baseUrl}
         init={adInit}
         onRenderComplete={this.setAdReady}
         {...sizeProps}
@@ -88,7 +99,7 @@ class Ad extends Component {
     ) : null;
 
     return (
-      <View style={[this.props.style]}>
+      <View style={[style]}>
         {webviewComponent}
         {placeholderComponent}
       </View>
@@ -104,29 +115,8 @@ class Ad extends Component {
   }
 }
 
-Ad.propTypes = {
-  networkId: PropTypes.string,
-  adUnit: PropTypes.string,
-  pos: PropTypes.string.isRequired,
-  section: PropTypes.string,
-  baseUrl: PropTypes.string,
-  contextUrl: PropTypes.string,
-  style: ViewPropTypesStyle,
-  amazonAccountID: PropTypes.string
-};
-
-// NOTE, these values are temporary, adding real values (or removing defaults
-// altogether) will be done in REPLAT-591 and REPLAT-592
-Ad.defaultProps = {
-  networkId: "3048",
-  adUnit: "d.thetimes.co.uk",
-  section: "news",
-  baseUrl: "https://www.thetimes.co.uk/",
-  contextUrl: "",
-  style: null,
-  amazonAccountID: null
-};
-
-export default Ad;
+Ad.propTypes = propTypes;
+Ad.defaultProps = defaultProps;
 
 export { AdComposer };
+export default Ad;

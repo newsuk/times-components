@@ -182,6 +182,7 @@ exports[`1. Render a Topic page 1`] = `
   articlesLoading={false}
   count={10}
   imageRatio={1.5}
+  isLoading={false}
   page={1}
   pageSize={3}
   showImages={true}

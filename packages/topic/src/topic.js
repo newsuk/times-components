@@ -30,7 +30,7 @@ const Topic = ({
   if (isLoading || !topic) {
     return (
       <ArticleList
-        adConfig={{}}
+        adConfig={adConfig}
         articleListHeader={<TopicHead isLoading />}
         articlesLoading
         fetchMore={() => Promise.resolve()}
@@ -98,6 +98,7 @@ const Topic = ({
             error={articlesError}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
+            isLoading={isLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}

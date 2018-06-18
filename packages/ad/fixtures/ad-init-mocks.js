@@ -39,7 +39,7 @@ export const makeAdInitMocks = () => {
   };
   const slotConfig = {
     containerID: "mock-code",
-    pos: "mock-code",
+    slotName: "mock-code",
     sizes: [],
     maxSizes: {
       width: 0,
@@ -54,6 +54,7 @@ export const makeAdInitMocks = () => {
     ]
   };
   const initOptions = {
+    slotSuffix: "test-suffix",
     el: document.createElement("div"),
     data: {
       config: slotConfig,
@@ -67,7 +68,7 @@ export const makeAdInitMocks = () => {
       slotTargeting: {
         slotOptionName: "slotOptionValue"
       },
-      pos: "mockCode",
+      slotName: "mockCode",
       prebidConfig: {
         timeout: 0,
         minPrice: 0,
