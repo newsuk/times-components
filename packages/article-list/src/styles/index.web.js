@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   listEmptyStateContainer: {
-    height: 400
+    flex: 1,
+    minHeight: 400
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
