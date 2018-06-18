@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/newsuk/times-components/compare/@times-components/ad@1.1.0...@times-components/ad@1.1.1) (2018-06-18)
+
+
+### Bug Fixes
+
+* ads in article list for pagination and loading states ([#1028](https://github.com/newsuk/times-components/issues/1028)) ([6e233d9](https://github.com/newsuk/times-components/commit/6e233d9))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/ad@1.0.0...@times-components/ad@1.1.0) (2018-06-18)
 
