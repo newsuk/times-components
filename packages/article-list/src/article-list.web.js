@@ -119,21 +119,21 @@ class ArticleList extends Component {
     const paginationComponent = (
       { hideResults = false, autoScroll = false } = {}
     ) => (
-        <ArticleListPagination
-          count={count}
-          hideResults={hideResults}
-          onNext={(...args) => {
-            onNext(...args);
-            if (autoScroll) scrollUpToPaging(window);
-          }}
-          onPrev={(...args) => {
-            onPrev(...args);
-            if (autoScroll) scrollUpToPaging(window);
-          }}
-          page={page}
-          pageSize={pageSize}
-        />
-      );
+      <ArticleListPagination
+        count={count}
+        hideResults={hideResults}
+        onNext={(...args) => {
+          onNext(...args);
+          if (autoScroll) scrollUpToPaging(window);
+        }}
+        onPrev={(...args) => {
+          onPrev(...args);
+          if (autoScroll) scrollUpToPaging(window);
+        }}
+        page={page}
+        pageSize={pageSize}
+      />
+    );
 
     const ErrorComponent = (
       <ListContentContainer>
@@ -152,83 +152,82 @@ class ArticleList extends Component {
 
     const data = articlesLoading
       ? Array(pageSize)
-        .fill()
-        .map((number, index) => ({
-          elementId: `empty.${index}`,
-          id: index,
-          isLoading: true
-        }))
+          .fill()
+          .map((number, index) => ({
+            elementId: `empty.${index}`,
+            id: index,
+            isLoading: true
+          }))
       : articles.map((article, index) => ({
-        ...article,
-        elementId: `${article.id}.${index}`
-      }));
+          ...article,
+          elementId: `${article.id}.${index}`
+        }));
 
-    const Contents = (
-      <ListContentContainer>
-        {paginationComponent({ autoScroll: false, hideResults: false })}
-        <View style={styles.listContentContainer}>
-          {data &&
-            data.map((article, index) => {
-              const { id, elementId, url } = article;
-              const separatorComponent =
-                index > 0 ? <ArticleListItemSeparator /> : null;
+    const Contents =
+      data.length === 0 ? (
+        <ArticleListEmptyState />
+      ) : (
+        <ListContentContainer>
+          {paginationComponent({ autoScroll: false, hideResults: false })}
+          <View style={styles.listContentContainer}>
+            {data &&
+              data.map((article, index) => {
+                const { id, elementId, url } = article;
+                const separatorComponent =
+                  index > 0 ? <ArticleListItemSeparator /> : null;
 
-              const renderArticle = () => {
-                if (
-                  articlesLoading ||
-                  index !== 4 ||
-                  Object.keys(adConfig).length === 0
-                ) {
-                  return null;
-                }
+                const renderArticle = () => {
+                  if (
+                    articlesLoading ||
+                    index !== 4 ||
+                    Object.keys(adConfig).length === 0
+                  ) {
+                    return null;
+                  }
+                  return (
+                    <AdComposer adConfig={adConfig}>
+                      <Ad pos="inline-ad" />
+                    </AdComposer>
+                  );
+                };
+
                 return (
-                  <AdComposer adConfig={adConfig}>
-                    <Ad pos="inline-ad" />
-                  </AdComposer>
+                  <Fragment key={elementId}>
+                    <div
+                      accessibility-label={elementId}
+                      data-testid={elementId}
+                      id={elementId}
+                      ref={node => this.registerNode(node)}
+                    >
+                      <ErrorView>
+                        {({ hasError }) =>
+                          hasError ? null : (
+                            <Fragment>
+                              {separatorComponent}
+                              <ArticleListItem
+                                {...article}
+                                index={index}
+                                length={data.length}
+                                imageRatio={imageRatio}
+                                imageSize={this.getImageSize(elementId) || 100}
+                                onPress={e => onArticlePress(e, { id, url })}
+                                showImage={showImages}
+                              />
+                            </Fragment>
+                          )
+                        }
+                      </ErrorView>
+                    </div>
+                    {renderArticle()}
+                  </Fragment>
                 );
-              };
-
-              return (
-                <Fragment key={elementId}>
-                  <div
-                    accessibility-label={elementId}
-                    data-testid={elementId}
-                    id={elementId}
-                    ref={node => this.registerNode(node)}
-                  >
-                    <ErrorView>
-                      {({ hasError }) =>
-                        hasError ? null : (
-                          <Fragment>
-                            {separatorComponent}
-                            <ArticleListItem
-                              {...article}
-                              index={index}
-                              length={data.length}
-                              imageRatio={imageRatio}
-                              imageSize={this.getImageSize(elementId) || 100}
-                              onPress={e => onArticlePress(e, { id, url })}
-                              showImage={showImages}
-                            />
-                          </Fragment>
-                        )
-                      }
-                    </ErrorView>
-                  </div>
-                  {renderArticle()}
-                </Fragment>
-              );
-            })}
-        </View>
-        {paginationComponent({ autoScroll: true, hideResults: true })}
-      </ListContentContainer>
-    );
+              })}
+          </View>
+          {paginationComponent({ autoScroll: true, hideResults: true })}
+        </ListContentContainer>
+      );
 
     if (!articlesLoading) receiveChildList(data);
-
-    if (!articlesLoading && !error && data.length === 0) {
-      return <ArticleListEmptyState />;
-    }
 
     return (
       <View>

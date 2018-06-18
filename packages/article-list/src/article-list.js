@@ -120,7 +120,12 @@ class ArticleList extends Component {
     };
 
     if (!articlesLoading && !error && data.length === 0) {
-      return <ArticleListEmptyState />;
+      return (
+        <View style={styles.listEmptyStateContainer}>
+          {articleListHeader}
+          <ArticleListEmptyState />
+        </View>
+      );
     }
 
     return (
