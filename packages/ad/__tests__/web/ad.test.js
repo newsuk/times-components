@@ -42,17 +42,17 @@ describe("Ad", () => {
     });
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} pos="header" />
+        <Ad {...adProps} slotName="header" />
       </AdComposer>
     );
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} pos="pixel" />
+        <Ad {...adProps} slotName="pixel" />
       </AdComposer>
     );
     renderer.create(
       <AdComposer>
-        <Ad {...adProps} pos="ad-unknown-code" />
+        <Ad {...adProps} slotName="ad-unknown-code" />
       </AdComposer>
     );
   });
@@ -61,7 +61,7 @@ describe("Ad", () => {
     const tree = renderer
       .create(
         <AdComposer>
-          <Ad {...adProps} pos="header" />
+          <Ad {...adProps} slotName="header" />
         </AdComposer>
       )
       .toJSON();
@@ -74,8 +74,8 @@ describe("Ad", () => {
       .create(
         <AdComposer>
           <div>
-            <Ad {...adProps} pos="header" />
-            <Ad {...adProps} pos="intervention" />
+            <Ad {...adProps} slotName="header" />
+            <Ad {...adProps} slotName="intervention" />
           </div>
         </AdComposer>
       )
