@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     marginTop: spacing(28),
     textAlign: "center"
   },
-  listEmptyWatermark: {
+  listEmptyWatermarkContainer: {
     position: "absolute",
     bottom: 0,
     right: 0
@@ -78,4 +78,11 @@ const styles = StyleSheet.create({
   }
 });
 
+const watermarkStyles = {
+  width: 500,
+  height: 350,
+  viewBox: "0 0 350 200"
+};
+
+export { watermarkStyles };
 export default styles;

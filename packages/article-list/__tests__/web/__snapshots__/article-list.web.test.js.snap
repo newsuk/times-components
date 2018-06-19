@@ -1028,29 +1028,6 @@ exports[`ArticleList tests on web should render an empty state 1`] = `
       Unfortunately, there are no articles relating to this page
     </div>
     <div>
-      <a
-        href="https://thetimes.co.uk"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
-      >
-        <div
-          aria-label="Back to home"
-          role="button"
-          tabIndex="0"
-        >
-          <div
-            dir="auto"
-            title="Back to home"
-          >
-            Back to home
-          </div>
-        </div>
-      </a>
-    </div>
-    <div>
       <svg
         height={350}
         width={500}
