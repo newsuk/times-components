@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.0.3...@times-components/author-profile@2.1.0) (2018-06-19)
+
+
+### Bug Fixes
+
+* ie layout issues in author profile ([#1034](https://github.com/newsuk/times-components/issues/1034)) ([5dc7c1b](https://github.com/newsuk/times-components/commit/5dc7c1b))
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.0.2...@times-components/author-profile@2.0.3) (2018-06-19)
 

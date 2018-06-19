@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.9...@times-components/provider-test-tools@0.11.0) (2018-06-19)
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+
+
+
+
 <a name="0.10.9"></a>
 ## [0.10.9](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.8...@times-components/provider-test-tools@0.10.9) (2018-06-15)
 
