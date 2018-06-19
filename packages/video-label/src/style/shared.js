@@ -16,7 +16,7 @@ const styles = {
     paddingBottom: 0
   },
   icon: {
-    iconSize: 8
+    height: 8
   }
 };
 
