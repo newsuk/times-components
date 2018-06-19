@@ -110,7 +110,13 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                   className="contentContainerClass"
                 >
                   <div>
-                    <div>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
                       <div
                         dir="auto"
                         style={

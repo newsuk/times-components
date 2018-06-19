@@ -464,6 +464,16 @@
     lodash "^4.17.4"
     react-native-vector-icons "4.5.0"
 
+"@expo/websql@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@expo/websql/-/websql-1.0.1.tgz#fff0cf9c1baa1f70f9e1d658b7c39a420d9b10a9"
+  dependencies:
+    argsarray "^0.0.1"
+    immediate "^3.2.2"
+    noop-fn "^1.0.0"
+    pouchdb-collections "^1.0.1"
+    tiny-queue "^0.2.1"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -5588,28 +5598,29 @@ expect@^21.2.1:
     jest-message-util "^21.2.1"
     jest-regex-util "^21.2.0"
 
-expo@26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-26.0.0.tgz#19636fbcf760d284313d6e8cd891ae186baa48be"
+expo@28.0.0:
+  version "28.0.0"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-28.0.0.tgz#1552008392dbe662ff5596d1102a22e2dcb748ed"
   dependencies:
     "@expo/vector-icons" "^6.3.1"
+    "@expo/websql" "^1.0.1"
     babel-preset-expo "^4.0.0"
     fbemitter "^2.1.1"
     invariant "^2.2.2"
     lodash.map "^4.6.0"
     lodash.omit "^4.5.0"
     lodash.zipobject "^4.1.3"
-    lottie-react-native "2.3.2"
+    lottie-react-native "2.5.0"
     md5-file "^3.2.3"
     pretty-format "^21.2.1"
     prop-types "^15.6.0"
     qs "^6.5.0"
-    react-native-branch "2.0.0-beta.3"
-    react-native-gesture-handler "1.0.0-alpha.41"
-    react-native-maps "https://github.com/expo/react-native-maps/archive/0.20.1-exp.0.tar.gz"
+    react-native-branch "2.2.5"
+    react-native-gesture-handler "1.0.4"
+    react-native-maps "0.21.0"
+    react-native-reanimated "1.0.0-alpha.3"
     react-native-svg "6.2.2"
     uuid-js "^0.7.5"
-    websql "https://github.com/expo/node-websql/archive/18.0.0.tar.gz"
 
 express@^4.15.2, express@^4.16.2, express@^4.16.3:
   version "4.16.3"
@@ -8763,16 +8774,16 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
-lottie-ios@^2.1.5:
+lottie-ios@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-2.5.0.tgz#55c808e785d4a6933b0c10b395530b17098b05de"
 
-lottie-react-native@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-2.3.2.tgz#c9b751e1c121708cd6f50f7770cb5aa0e1042a29"
+lottie-react-native@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-2.5.0.tgz#0711b8b34bec7741552c24b71efd3d4cab347571"
   dependencies:
     invariant "^2.2.2"
-    lottie-ios "^2.1.5"
+    lottie-ios "^2.5.0"
     prop-types "^15.5.10"
     react-native-safe-module "^1.1.0"
 
@@ -11207,9 +11218,9 @@ react-modal@^3.3.2:
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
 
-react-native-branch@2.0.0-beta.3:
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.0.0-beta.3.tgz#2167af86bbc9f964bd45bd5f37684e5b54965e32"
+react-native-branch@2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
 
 react-native-compat@^1.0.0:
   version "1.0.0"
@@ -11221,9 +11232,9 @@ react-native-device-info@0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-0.13.0.tgz#81051eebd3db6959e4f1d2cb0ae8df74105040cf"
 
-react-native-gesture-handler@1.0.0-alpha.41:
-  version "1.0.0-alpha.41"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.0-alpha.41.tgz#5667a1977ab148339ec2e7b0a94ad4b959cf09e5"
+react-native-gesture-handler@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.4.tgz#1cc13eeffe34dcd6fe4f415c05b08823de9c7584"
   dependencies:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
@@ -11233,12 +11244,16 @@ react-native-iphone-x-helper@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.3.tgz#7a2f1e0574e899a0f1d426e6167fd98990083214"
 
-"react-native-maps@https://github.com/expo/react-native-maps/archive/0.20.1-exp.0.tar.gz":
-  version "0.20.1"
-  resolved "https://github.com/expo/react-native-maps/archive/0.20.1-exp.0.tar.gz#81d607e2d77481c0441aecfdbc303389a34084c0"
+react-native-maps@0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.21.0.tgz#005f58e93d7623ad59667e8002101970ddf235c2"
   dependencies:
     babel-plugin-module-resolver "^2.3.0"
     babel-preset-react-native "1.9.0"
+
+react-native-reanimated@1.0.0-alpha.3:
+  version "1.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.0.0-alpha.3.tgz#42983aa41911791cd3186fd3a18a788c3d4c3601"
 
 react-native-safe-module@^1.1.0:
   version "1.2.0"
@@ -13930,16 +13945,6 @@ websocket-stream@^5.1.2:
     safe-buffer "^5.1.1"
     ws "^3.2.0"
     xtend "^4.0.0"
-
-"websql@https://github.com/expo/node-websql/archive/18.0.0.tar.gz":
-  version "0.4.4"
-  resolved "https://github.com/expo/node-websql/archive/18.0.0.tar.gz#39b12a08b0180495de1412d8a64a529e21ad554e"
-  dependencies:
-    argsarray "^0.0.1"
-    immediate "^3.2.2"
-    noop-fn "^1.0.0"
-    pouchdb-collections "^1.0.1"
-    tiny-queue "^0.2.1"
 
 whatwg-encoding@^1.0.1:
   version "1.0.3"

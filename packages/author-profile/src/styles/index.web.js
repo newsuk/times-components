@@ -10,8 +10,15 @@ const styles = StyleSheet.create({
   },
   twitter: {
     ...sharedStyles.twitter,
+    alignItems: "flex-end",
     paddingBottom: spacing(2),
     paddingTop: spacing(3)
+  },
+  twitterIcon: {
+    alignSelf: "center"
+  },
+  twitterLink: {
+    ...sharedStyles.twitterLink
   }
 });
 

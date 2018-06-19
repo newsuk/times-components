@@ -17,6 +17,7 @@ import blankFixture from "../fixtures/blank";
 import noContentFixture from "../fixtures/no-content";
 import noHeadline from "../fixtures/no-headline";
 import noDatePublication from "../fixtures/no-datepublication";
+import videoLabelFixture from "../fixtures/video-label";
 
 export default () => {
   const realIntl = Intl;
@@ -184,6 +185,14 @@ export default () => {
       }
     ];
     const tree = renderer.create(<ArticleSummaryContent ast={ast} />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render an article-summary component with a video label", () => {
+    const tree = renderer
+      .create(<ArticleSummary {...videoLabelFixture} />)
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });

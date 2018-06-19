@@ -28,7 +28,15 @@ const RelatedArticleItem = ({
   showSummary,
   summaryConfig
 }) => {
-  const { byline, headline, label, publishedTime, section, url } = article;
+  const {
+    byline,
+    headline,
+    label,
+    leadAsset,
+    publishedTime,
+    section,
+    url
+  } = article;
   const {
     lengths: summaryLengths = [],
     style: summaryStyle = {},
@@ -90,6 +98,7 @@ const RelatedArticleItem = ({
           )}
           labelProps={{
             color: colours.section[section] || colours.section.default,
+            isVideo: leadAsset && leadAsset.type === "Video",
             title: label
           }}
         />

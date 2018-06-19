@@ -7,7 +7,9 @@ import beautifyTitle from "./beautify-title";
 
 const VideoLabel = ({ title, color }) => (
   <View style={{ flexDirection: "row", alignItems: "center" }}>
-    <IconVideo height={styles.title.fontSize} fillColor={color} />
+    <View style={styles.iconContainer}>
+      <IconVideo height={styles.icon.iconSize} fillColour={color} />
+    </View>
     <Text style={[styles.title, { color, marginLeft: 5 }]}>
       {beautifyTitle(title || "VIDEO")}
     </Text>

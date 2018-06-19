@@ -6,6 +6,7 @@ import ArticleByline, {
   articleBylinePropTypes
 } from "@times-components/article-byline";
 import ArticleLabel from "@times-components/article-label";
+import VideoLabel from "@times-components/video-label";
 import DatePublication from "@times-components/date-publication";
 import { renderTrees } from "@times-components/markup";
 import ArticleSummaryContent from "./article-summary-content";
@@ -48,13 +49,24 @@ const ArticleSummary = props => {
     );
   };
 
+  const renderLabel = () => {
+    if (labelProps && labelProps.title) {
+      return (
+        <View style={styles.labelWrapper}>
+          {labelProps.isVideo ? (
+            <VideoLabel {...labelProps} />
+          ) : (
+            <ArticleLabel {...labelProps} />
+          )}
+        </View>
+      );
+    }
+    return null;
+  };
+
   return (
     <View>
-      {labelProps && labelProps.title ? (
-        <View style={styles.labelWrapper}>
-          <ArticleLabel {...labelProps} />
-        </View>
-      ) : null}
+      {renderLabel()}
       {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
       {headline()}
       {content()}
@@ -75,7 +87,8 @@ const ArticleSummary = props => {
 ArticleSummary.propTypes = {
   labelProps: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    color: PropTypes.string
+    color: PropTypes.string,
+    isVideo: PropTypes.bool
   }),
   headline: PropTypes.func,
   content: PropTypes.func,

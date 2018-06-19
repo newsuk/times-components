@@ -8,6 +8,7 @@ import withBylineLinksFixture from "./fixtures/with-byline-links";
 import articleMultiFixture from "./fixtures/article-multi";
 import noBylineFixture from "./fixtures/no-byline";
 import noLabelFixture from "./fixtures/no-label";
+import videoLabelFixture from "./fixtures/video-label";
 import reviewFixture from "./fixtures/review";
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
@@ -39,6 +40,11 @@ export default {
       type: "story",
       name: "Summary with multiple paragraphs",
       component: () => story(<ArticleSummary {...articleMultiFixture} />)
+    },
+    {
+      type: "story",
+      name: "Video label",
+      component: () => story(<ArticleSummary {...videoLabelFixture} />)
     },
     {
       type: "story",

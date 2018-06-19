@@ -11,6 +11,7 @@ export const AuthorHeadWrapper = withResponsiveStyles(
   View,
   {
     base: () => `
+    width: 100%;
     padding-top: 30px;
   `,
     mediumUp: () => `
@@ -37,6 +38,7 @@ export const BioContainer = withResponsiveStyles(
   View,
   {
     base: () => `
+    width: 100%;
     padding-left: ${spacing(2)};
     padding-right: ${spacing(2)};
   `,

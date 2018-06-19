@@ -16,24 +16,32 @@ exports[`Video Label test on web renders VideoLabel with an explicit title 1`] =
     }
   }
 >
-  <svg
-    height={12}
-    width={20.64}
+  <div
+    style={
+      Object {
+        "paddingBottom": "2px",
+      }
+    }
   >
-    <rect
-      fill="#1D1D1B"
-      height="13.5721404"
-      width="15.4550103"
-      x="0.154639175"
-      y="0.139754386"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-  </svg>
+    <svg
+      height={8}
+      width={13.76}
+    >
+      <rect
+        fill="#008347"
+        height="13.5721404"
+        width="15.4550103"
+        x="0.154639175"
+        y="0.139754386"
+      />
+      <polygon
+        fill="#008347"
+      />
+      <polygon
+        fill="#008347"
+      />
+    </svg>
+  </div>
   <div
     dir="auto"
     style={
@@ -70,24 +78,32 @@ exports[`Video Label test on web renders VideoLabel without an explicit title 1`
     }
   }
 >
-  <svg
-    height={12}
-    width={20.64}
+  <div
+    style={
+      Object {
+        "paddingBottom": "2px",
+      }
+    }
   >
-    <rect
-      fill="#1D1D1B"
-      height="13.5721404"
-      width="15.4550103"
-      x="0.154639175"
-      y="0.139754386"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-    <polygon
-      fill="#1D1D1B"
-    />
-  </svg>
+    <svg
+      height={8}
+      width={13.76}
+    >
+      <rect
+        fill="#008347"
+        height="13.5721404"
+        width="15.4550103"
+        x="0.154639175"
+        y="0.139754386"
+      />
+      <polygon
+        fill="#008347"
+      />
+      <polygon
+        fill="#008347"
+      />
+    </svg>
+  </div>
   <div
     dir="auto"
     style={

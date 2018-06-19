@@ -5,20 +5,42 @@ Object {
   "__typename": "Author",
   "articles": Object {
     "__typename": "Articles",
-    "count": 20,
+    "count": 2566,
     "list": Array [
       Object {
         "__typename": "Article",
-        "headline": "Top medal for forces dog who took a bite out of the Taliban",
-        "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "headline": "Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant",
+        "id": "7225cd6a-701c-11e8-bea3-bf1a5a054f3a",
         "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:7225cd6a-701c-11e8-bea3-bf1a5a054f3a.leadAsset",
+        },
         "longSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.",
+                  "value": "A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " last night.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -27,11 +49,22 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen",
+                  "value": "Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has",
                 },
                 "children": Array [],
                 "name": "text",
@@ -41,14 +74,32 @@ Object {
           },
         ],
         "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "publishedTime": "2018-06-14T23:01:00.000Z",
         "shortSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.",
+                  "value": "A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " last night.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -57,11 +108,22 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Mali sniffed out explosives and insurgents during a",
+                  "value": "Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has",
                 },
                 "children": Array [],
                 "name": "text",
@@ -70,21 +132,47 @@ Object {
             "name": "paragraph",
           },
         ],
-        "url": "https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f",
-        Symbol(id): "Article:d98c257c-cb16-11e7-b529-95e3fc05f40f",
+        "url": "https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm",
+        Symbol(id): "Article:7225cd6a-701c-11e8-bea3-bf1a5a054f3a",
       },
       Object {
         "__typename": "Article",
-        "headline": "Social media must raise game to beat terrorists, says UN chief",
-        "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "headline": "Trump pressuring Britain to pay more towards Nato",
+        "id": "d67c536e-6f5a-11e8-bea3-bf1a5a054f3a",
         "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.leadAsset",
+        },
         "longSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online.",
+                  "value": "The",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/donald-trump",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": " Trump",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -93,11 +181,57 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "António Guterres said last night that Islamic State and other terrorist groups were losing physical ground in Iraq and Syria but were growing their presence in cyberspace. He described terrorism as",
+                  "value": "The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The White House push is being used in Whitehall to put pressure on ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/philip-hammond",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Philip Hammond",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence",
                 },
                 "children": Array [],
                 "name": "text",
@@ -107,14 +241,36 @@ Object {
           },
         ],
         "publicationName": "TIMES",
-        "publishedTime": "2017-11-17T00:01:00.000Z",
+        "publishedTime": "2018-06-13T23:01:00.000Z",
         "shortSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online.",
+                  "value": "The",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/donald-trump",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": " Trump",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -123,11 +279,57 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "António Guterres said last night that Islamic State and",
+                  "value": "The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The White House push is being used in Whitehall to put pressure on ",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+              Object {
+                "attributes": Object {
+                  "href": "https://www.thetimes.co.uk/topic/philip-hammond",
+                  "type": "topic",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Philip Hammond",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "link",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence",
                 },
                 "children": Array [],
                 "name": "text",
@@ -136,21 +338,24 @@ Object {
             "name": "paragraph",
           },
         ],
-        "url": "https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0",
-        Symbol(id): "Article:4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+        "url": "https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3",
+        Symbol(id): "Article:d67c536e-6f5a-11e8-bea3-bf1a5a054f3a",
       },
       Object {
         "__typename": "Article",
-        "headline": "Cuts have left the army 20 years out of date, says former general",
-        "id": "f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "headline": "British troops to protect Bosnia election from Russian meddling",
+        "id": "b2e4cd1a-6a9a-11e8-996c-7589300f03c9",
         "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:b2e4cd1a-6a9a-11e8-996c-7589300f03c9.leadAsset",
+        },
         "longSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today.",
+                  "value": "Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -159,11 +364,22 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "General Sir Richard Barrons, the commander of Joint Forces Command until last year, warned that the entire armed forces were on the brink of operational or institutional failure unless",
+                  "value": "Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "“This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in",
                 },
                 "children": Array [],
                 "name": "text",
@@ -173,14 +389,13 @@ Object {
           },
         ],
         "publicationName": "TIMES",
-        "publishedTime": "2017-11-14T17:00:00.000Z",
+        "publishedTime": "2018-06-07T23:01:00.000Z",
         "shortSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today.",
+                  "value": "Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -189,11 +404,22 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "General Sir Richard Barrons, the commander of",
+                  "value": "Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "“This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in",
                 },
                 "children": Array [],
                 "name": "text",
@@ -202,21 +428,24 @@ Object {
             "name": "paragraph",
           },
         ],
-        "url": "https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn",
-        Symbol(id): "Article:f79c9d8c-c95c-11e7-b529-95e3fc05f40f",
+        "url": "https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx",
+        Symbol(id): "Article:b2e4cd1a-6a9a-11e8-996c-7589300f03c9",
       },
       Object {
         "__typename": "Article",
-        "headline": "MoD recruits more civilians as Royal Marines face axe",
-        "id": "21627e52-c651-11e7-92dc-06edfbca4aab",
+        "headline": "Tory MP Johnny Mercer swings into action to protect shopkeeper",
+        "id": "4cf714d4-6a9c-11e8-996c-7589300f03c9",
         "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:4cf714d4-6a9c-11e8-996c-7589300f03c9.leadAsset",
+        },
         "longSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Britain’s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000 frontline Royal Marines to save money.",
+                  "value": "A Tory MP and former army officer pinned an alleged racist thief to the ground after the man hurled a bottle at a shopkeeper in London.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -225,11 +454,34 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Ruth Smeeth, a Labour member of the Commons defence select committee, has written to Gavin Williamson expressing her “concerns over the staffing priorities of the Ministry of",
+                  "value": "The scuffle took place outside a 24-hour off-licence and convenience store near Westminster in the early hours of Wednesday morning as Johnny Mercer, whose constituency is in Plymouth, was returning after a night out to the hotel where he stays during the week.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Speaking last night, Mr Mercer, 36, who served three tours in Afghanistan before turning to politics, said that he did what anyone else would have done. “I just threw him on the floor and told him to stop being a prick,” he said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The drama began when Mr Mercer entered the shop at about 2am to",
                 },
                 "children": Array [],
                 "name": "text",
@@ -239,14 +491,13 @@ Object {
           },
         ],
         "publicationName": "TIMES",
-        "publishedTime": "2017-11-11T00:01:00.000Z",
+        "publishedTime": "2018-06-07T23:01:00.000Z",
         "shortSummary": Array [
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Britain’s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000 frontline Royal Marines to save money.",
+                  "value": "A Tory MP and former army officer pinned an alleged racist thief to the ground after the man hurled a bottle at a shopkeeper in London.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -255,11 +506,34 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Ruth Smeeth, a Labour member of the",
+                  "value": "The scuffle took place outside a 24-hour off-licence and convenience store near Westminster in the early hours of Wednesday morning as Johnny Mercer, whose constituency is in Plymouth, was returning after a night out to the hotel where he stays during the week.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Speaking last night, Mr Mercer, 36, who served three tours in Afghanistan before turning to politics, said that he did what anyone else would have done. “I just threw him on the floor and told him to stop being a prick,” he said.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "The drama began when Mr Mercer entered the shop at about 2am to",
                 },
                 "children": Array [],
                 "name": "text",
@@ -268,23 +542,24 @@ Object {
             "name": "paragraph",
           },
         ],
-        "url": "https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd",
-        Symbol(id): "Article:21627e52-c651-11e7-92dc-06edfbca4aab",
+        "url": "https://www.thetimes.co.uk/article/tory-mp-johnny-mercer-swings-into-action-to-protect-shopkeeper-5np83297k",
+        Symbol(id): "Article:4cf714d4-6a9c-11e8-996c-7589300f03c9",
       },
       Object {
         "__typename": "Article",
-        "headline": "Suits you: poppy power is branching out for Remembrance appeal",
-        "id": "9c4991b8-c657-11e7-92dc-06edfbca4aab",
+        "headline": "Afghan chief in plea for British troops",
+        "id": "568e8e94-6aa3-11e8-996c-7589300f03c9",
         "label": "",
+        "leadAsset": Object {
+          "type": "Image",
+          Symbol(id): "$Article:568e8e94-6aa3-11e8-996c-7589300f03c9.leadAsset",
+        },
         "longSummary": Array [
           Object {
-            "attributes": Object {
-              "class": "dropcap@1",
-            },
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago.",
+                  "value": "Afghanistan needs more British troops to help quell a resurgent Taliban, strengthened by the mistaken and premature exit of Nato-led combat forces in 2014, one of the country’s leaders has said.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -293,11 +568,10 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "But when a group of Royal Navy sailors asked the Royal British Legion (RBL) to produce adult “onesies” emblazoned with poppies for this weekend the response was: “Why not!”",
+                  "value": "Abdullah Abdullah, the Afghan government’s chief executive, said that Britain and other Nato allies needed to offer additional personnel to train and advise the 300,000-strong Afghan security and defence forces instead of leaving the United States to do most of the work.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -306,11 +580,34 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "Charles Byrne, the RBL’s director general, said that a decision to",
+                  "value": "“It is necessary yes,” Dr Abdullah, 57, said in an interview yesterday while on a trip to London when asked about the prospect of extra UK troops almost 17 years after British and US forces first deployed to the country.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " revealed last month that Theresa May is considering almost doubling",
                 },
                 "children": Array [],
                 "name": "text",
@@ -320,16 +617,13 @@ Object {
           },
         ],
         "publicationName": "TIMES",
-        "publishedTime": "2017-11-11T00:01:00.000Z",
+        "publishedTime": "2018-06-07T23:01:00.000Z",
         "shortSummary": Array [
           Object {
-            "attributes": Object {
-              "class": "dropcap@1",
-            },
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago.",
+                  "value": "Afghanistan needs more British troops to help quell a resurgent Taliban, strengthened by the mistaken and premature exit of Nato-led combat forces in 2014, one of the country’s leaders has said.",
                 },
                 "children": Array [],
                 "name": "text",
@@ -338,11 +632,46 @@ Object {
             "name": "paragraph",
           },
           Object {
-            "attributes": Object {},
             "children": Array [
               Object {
                 "attributes": Object {
-                  "value": "But when a group of Royal Navy sailors asked the Royal British Legion (RBL) to produce adult",
+                  "value": "Abdullah Abdullah, the Afghan government’s chief executive, said that Britain and other Nato allies needed to offer additional personnel to train and advise the 300,000-strong Afghan security and defence forces instead of leaving the United States to do most of the work.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "“It is necessary yes,” Dr Abdullah, 57, said in an interview yesterday while on a trip to London when asked about the prospect of extra UK troops almost 17 years after British and US forces first deployed to the country.",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "paragraph",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "The Times",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "italic",
+              },
+              Object {
+                "attributes": Object {
+                  "value": " revealed last month that Theresa May is considering almost doubling",
                 },
                 "children": Array [],
                 "name": "text",
@@ -351,8 +680,8 @@ Object {
             "name": "paragraph",
           },
         ],
-        "url": "https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x",
-        Symbol(id): "Article:9c4991b8-c657-11e7-92dc-06edfbca4aab",
+        "url": "https://www.thetimes.co.uk/article/afghan-chief-in-plea-for-british-troops-jkh6hzfvs",
+        Symbol(id): "Article:568e8e94-6aa3-11e8-996c-7589300f03c9",
       },
     ],
     Symbol(id): "$ROOT_QUERY.author({\\"slug\\":\\"deborah-haynes\\"}).articles",

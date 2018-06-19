@@ -7,7 +7,7 @@
       "A complete list of all of The Times components brought to you by the Times Tooling Team 🔥",
     "slug": "times-components",
     "privacy": "public",
-    "sdkVersion": "26.0.0",
+    "sdkVersion": "28.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",

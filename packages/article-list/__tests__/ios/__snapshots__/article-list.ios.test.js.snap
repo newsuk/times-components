@@ -1094,7 +1094,7 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
             <View
               style={
                 Object {
-                  "marginBottom": 0,
+                  "marginBottom": 5,
                 }
               }
             >
@@ -1702,7 +1702,7 @@ exports[`ArticleList tests on ios should render an article list item without ima
             <View
               style={
                 Object {
-                  "marginBottom": 0,
+                  "marginBottom": 5,
                 }
               }
             >

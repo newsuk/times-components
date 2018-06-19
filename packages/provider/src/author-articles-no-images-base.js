@@ -17,6 +17,9 @@ export const query = gql`
           longSummary: summary(maxCharCount: $longSummaryLength)
           id
           label
+          leadAsset {
+            type: __typename
+          }
           publicationName
           publishedTime
           headline
