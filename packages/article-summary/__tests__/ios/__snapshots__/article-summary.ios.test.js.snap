@@ -93,7 +93,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -200,7 +200,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -334,12 +334,328 @@ exports[`Article Summary tests on ios should render an article-summary component
 </View>
 `;
 
+exports[`Article Summary tests on ios should render an article-summary component with a video label 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 2,
+          }
+        }
+      >
+        <ARTSurfaceView
+          style={
+            Object {
+              "height": 7.777391304347827,
+              "width": 13.76,
+            }
+          }
+        >
+          <ARTGroup
+            opacity={1}
+            transform={
+              Array [
+                0.5982608695652174,
+                0,
+                0,
+                0.5982608695652174,
+                0,
+                0,
+              ]
+            }
+          >
+            <ARTShape
+              d={
+                Array [
+                  0,
+                  0.154639175,
+                  0.139754386,
+                  2,
+                  15.609649475,
+                  0.139754386,
+                  2,
+                  15.609649475,
+                  13.711894786,
+                  2,
+                  0.1546391749999998,
+                  13.711894786,
+                  2,
+                  0.1546391749999998,
+                  0.1397543859999999,
+                ]
+              }
+              fill={
+                Array [
+                  0,
+                  0.2,
+                  0.2,
+                  0.2,
+                  1,
+                ]
+              }
+              opacity={1}
+              stroke={null}
+              strokeCap={1}
+              strokeDash={null}
+              strokeJoin={1}
+              strokeWidth={1}
+              transform={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+            />
+            <ARTShape
+              d={
+                Array [
+                  0,
+                  16.3405361,
+                  4.14989474,
+                  2,
+                  16.3405361,
+                  9.66442105,
+                  2,
+                  22.0216082,
+                  12.8146667,
+                  2,
+                  22.0216082,
+                  0.999894737,
+                ]
+              }
+              fill={
+                Array [
+                  0,
+                  0.2,
+                  0.2,
+                  0.2,
+                  1,
+                ]
+              }
+              opacity={1}
+              stroke={null}
+              strokeCap={1}
+              strokeDash={null}
+              strokeJoin={1}
+              strokeWidth={1}
+              transform={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+            />
+            <ARTShape
+              d={
+                Array [
+                  0,
+                  23.7538144,
+                  0.0496140351,
+                  2,
+                  22.7616495,
+                  0.643508772,
+                  2,
+                  22.7616495,
+                  13.1902105,
+                  2,
+                  23.7538144,
+                  13.7782105,
+                ]
+              }
+              fill={
+                Array [
+                  0,
+                  0.2,
+                  0.2,
+                  0.2,
+                  1,
+                ]
+              }
+              opacity={1}
+              stroke={null}
+              strokeCap={1}
+              strokeDash={null}
+              strokeJoin={1}
+              strokeWidth={1}
+              transform={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+            />
+          </ARTGroup>
+        </ARTSurfaceView>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 1.2,
+            "lineHeight": 12,
+            "margin": 0,
+            "marginLeft": 5,
+            "padding": 0,
+            "position": "relative",
+            "top": 2,
+          }
+        }
+      >
+        CAMILLA LONG
+      </Text>
+    </View>
+  </View>
+  <Text
+    accessibilityRole="heading"
+    accessible={true}
+    allowFontScaling={true}
+    aria-level="3"
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 22,
+        "fontWeight": "900",
+        "lineHeight": 22,
+        "marginBottom": 5,
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginBottom": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </Text>
+  </Text>
+  <Text
+    accessibilityLabel="datePublication"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+    testID="datePublication"
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 13,
+        "lineHeight": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+        }
+      }
+    >
+      Camilla Long
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#006699",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 13,
+        }
+      }
+    >
+      , Environment Editor
+    </Text>
+  </Text>
+</View>
+`;
+
 exports[`Article Summary tests on ios should render an article-summary component with content including line breaks 1`] = `
 <View>
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -552,7 +868,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -706,7 +1022,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -773,7 +1089,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1029,7 +1345,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1150,7 +1466,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >
@@ -1337,7 +1653,7 @@ exports[`Article Summary tests on ios should render an article-summary with opin
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 5,
       }
     }
   >

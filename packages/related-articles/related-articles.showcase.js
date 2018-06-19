@@ -4,6 +4,7 @@ import storybookReporter from "@times-components/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
 import standard1RelatedArticleFixture from "./fixtures/standard/1-article.json";
+import standard1RelatedArticleFixtureVideoLead from "./fixtures/standard/1-article-video-lead.json";
 import standard1RelatedArticleNoImageFixture from "./fixtures/standard/1-article-no-image.json";
 import standard1RelatedArticleNoLabelFixture from "./fixtures/standard/1-article-no-label.json";
 import standard1RelatedArticleNoBylineFixture from "./fixtures/standard/1-article-no-byline.json";
@@ -49,6 +50,15 @@ export default {
         createRelatedArticles(
           decorateAction,
           standard1RelatedArticleFixture.data
+        )
+    },
+    {
+      type: "story",
+      name: "Standard template with one related article with video lead",
+      component: (_, { decorateAction }) =>
+        createRelatedArticles(
+          decorateAction,
+          standard1RelatedArticleFixtureVideoLead.data
         )
     },
     {

@@ -23,6 +23,7 @@ const ArticleListItem = props => {
     imageSize,
     isLoading,
     label,
+    leadAsset,
     longSummary,
     onPress,
     publicationName,
@@ -64,7 +65,8 @@ const ArticleListItem = props => {
     headline: () => <ArticleSummaryHeadline headline={headline} />,
     labelProps: {
       title: label,
-      color: colours.section[section] || colours.section.default
+      color: colours.section[section] || colours.section.default,
+      isVideo: leadAsset && leadAsset.type === "Video"
     }
   };
 

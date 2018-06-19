@@ -500,7 +500,13 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
           className="articleListContent"
         >
           <div>
-            <div>
+            <div
+              style={
+                Object {
+                  "marginBottom": "5px",
+                }
+              }
+            >
               <div
                 dir="auto"
                 style={
@@ -687,7 +693,13 @@ exports[`ArticleList tests on web should render an article list item without ima
             className="responsive-styles__component-fbPFZZ dQznFS"
           >
             <div>
-              <div>
+              <div
+                style={
+                  Object {
+                    "marginBottom": "5px",
+                  }
+                }
+              >
                 <div
                   dir="auto"
                   style={
@@ -760,7 +772,13 @@ exports[`ArticleList tests on web should render an article list item without ima
             className="responsive-styles__component-fbPFZZ jwwxoJ"
           >
             <div>
-              <div>
+              <div
+                style={
+                  Object {
+                    "marginBottom": "5px",
+                  }
+                }
+              >
                 <div
                   dir="auto"
                   style={
@@ -1919,7 +1937,13 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   className="articleListContent"
                 >
                   <div>
-                    <div>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "5px",
+                        }
+                      }
+                    >
                       <div
                         dir="auto"
                         style={

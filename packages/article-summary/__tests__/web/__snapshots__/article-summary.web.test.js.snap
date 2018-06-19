@@ -80,7 +80,13 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
 
 exports[`Article Summary tests on Web should render an article-summary component containing links 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -163,7 +169,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with a single paragraph 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -261,9 +273,160 @@ exports[`Article Summary tests on Web should render an article-summary component
 </div>
 `;
 
+exports[`Article Summary tests on Web should render an article-summary component with a video label 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "WebkitAlignItems": "center",
+          "WebkitBoxAlign": "center",
+          "alignItems": "center",
+          "msFlexAlign": "center",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "2px",
+          }
+        }
+      >
+        <svg
+          height={8}
+          style={Object {}}
+          viewBox="0.15463916957378387 0.049614034593105316 23.59917640686035 13.728596687316895"
+          width={13.76}
+        >
+          <rect
+            fill="#333333"
+            height="13.5721404"
+            style={Object {}}
+            width="15.4550103"
+            x="0.154639175"
+            y="0.139754386"
+          />
+          <polygon
+            fill="#333333"
+            points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
+            style={Object {}}
+          />
+          <polygon
+            fill="#333333"
+            points="23.7538144 0.0496140351 22.7616495 0.643508772 22.7616495 13.1902105 23.7538144 13.7782105"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+      <div
+        dir="auto"
+        style={
+          Object {
+            "color": "rgba(51,51,51,1)",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "letterSpacing": "1.2px",
+            "lineHeight": "12px",
+            "marginLeft": "5px",
+            "top": "2px",
+          }
+        }
+      >
+        CAMILLA LONG
+      </div>
+    </div>
+  </div>
+  <h3
+    aria-level="3"
+    dir="auto"
+    role="heading"
+    style={
+      Object {
+        "color": "rgba(51,51,51,1)",
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Top medal for forces dog who took a bite out of the Taliban
+  </h3>
+  <div
+    dir="auto"
+    style={
+      Object {
+        "WebkitBoxLines": "multiple",
+        "WebkitFlexWrap": "wrap",
+        "flexWrap": "wrap",
+        "fontFamily": "TimesDigitalW04",
+        "lineHeight": "20px",
+        "marginBottom": "10px",
+        "msFlexWrap": "wrap",
+      }
+    }
+  >
+    <span
+      dir="auto"
+    >
+      
+      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+      ...
+    </span>
+  </div>
+  <div
+    aria-label="datePublication"
+    data-testid="datePublication"
+    dir="auto"
+    style={
+      Object {
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    Friday November 17 2017, 12:01am, The Times
+  </div>
+  <div
+    dir="auto"
+    style={
+      Object {
+        "lineHeight": "15px",
+        "marginBottom": "5px",
+      }
+    }
+  >
+    <span
+      dir="auto"
+    >
+      Camilla Long
+    </span>
+    <span
+      dir="auto"
+    >
+      , Environment Editor
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Article Summary tests on Web should render an article-summary component with content including line breaks 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -379,7 +542,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with empty content at the end trimmed 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -482,7 +651,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and blank content 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -532,7 +707,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with headline and no content 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -722,7 +903,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with no date publication 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -801,7 +988,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary component with no headline 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={
@@ -933,7 +1126,13 @@ exports[`Article Summary tests on Web should render an article-summary component
 
 exports[`Article Summary tests on Web should render an article-summary with opinion byline 1`] = `
 <div>
-  <div>
+  <div
+    style={
+      Object {
+        "marginBottom": "5px",
+      }
+    }
+  >
     <div
       dir="auto"
       style={

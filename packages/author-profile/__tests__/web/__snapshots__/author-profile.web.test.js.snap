@@ -794,12 +794,12 @@ exports[`2. Render an author profile page without images 1`] = `
     </div>
     <div>
       <div
-        accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-        data-testid="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-        id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+        accessibility-label="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+        data-testid="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+        id="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
       >
         <a
-          href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
+          href="https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm"
           style={
             Object {
               "textDecoration": "none",
@@ -834,7 +834,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Top medal for forces dog who took a bite out of the Taliban
+                        Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
                       </h3>
                       <div
                         dir="auto"
@@ -848,13 +848,23 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+                          A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
+                          <em>
+                            The Times
+                          </em>
+                           last night.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
+                          Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
                           ...
                         </span>
                       </div>
@@ -870,7 +880,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Friday November 17 2017, 12:01am, The Times
+                        Friday June 15 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
@@ -892,7 +902,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Top medal for forces dog who took a bite out of the Taliban
+                        Rolls-Royce ‘spy’ Bryn Jones was Chinese consultant
                       </h3>
                       <div
                         dir="auto"
@@ -906,13 +916,23 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
+                          A 73-year-old engineer at the centre of a police investigation into Chinese spying fears did consultancy work for a gas turbine company in China, a source told 
+                          <em>
+                            The Times
+                          </em>
+                           last night.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          Mali sniffed out explosives and insurgents during a
+                          Bryn Jones, a former chief combustion technologist at Rolls-Royce, which builds parts for the UK’s most advanced warplanes including the F-35 Lightning II and the Eurofighter Typhoon, would travel to China as part of this work, according to the source, who knows him.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          Police are focusing on whether the married father of five, who lives in Derby and is a visiting professor at a university in China, received gifts from the Chinese while in the country, security sources said. A financial motive is also being explored. It is understood that Mr Jones, who has
                           ...
                         </span>
                       </div>
@@ -928,7 +948,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Friday November 17 2017, 12:01am, The Times
+                        Friday June 15 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
@@ -939,13 +959,13 @@ exports[`2. Render an author profile page without images 1`] = `
         </a>
       </div>
       <div
-        accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-        data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-        id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+        accessibility-label="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+        data-testid="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+        id="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
       >
         <div />
         <a
-          href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
+          href="https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3"
           style={
             Object {
               "textDecoration": "none",
@@ -980,7 +1000,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Social media must raise game to beat terrorists, says UN chief
+                        Trump pressuring Britain to pay more towards Nato
                       </h3>
                       <div
                         dir="auto"
@@ -994,13 +1014,37 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online.
+                          The
+                          <span
+                            dir="auto"
+                          >
+                             Trump
+                          </span>
+                           administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          António Guterres said last night that Islamic State and other terrorist groups were losing physical ground in Iraq and Syria but were growing their presence in cyberspace. He described terrorism as
+                          The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          The White House push is being used in Whitehall to put pressure on 
+                          <span
+                            dir="auto"
+                          >
+                            Philip Hammond
+                          </span>
+                           to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
                           ...
                         </span>
                       </div>
@@ -1016,7 +1060,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Friday November 17 2017, 12:01am, The Times
+                        Thursday June 14 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
@@ -1038,7 +1082,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Social media must raise game to beat terrorists, says UN chief
+                        Trump pressuring Britain to pay more towards Nato
                       </h3>
                       <div
                         dir="auto"
@@ -1052,13 +1096,37 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist material online.
+                          The
+                          <span
+                            dir="auto"
+                          >
+                             Trump
+                          </span>
+                           administration is urging Britain to contribute more towards Nato even though it already meets the alliance’s defence spending target.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          António Guterres said last night that Islamic State and
+                          The American president appears keen for his closest ally to increase expenditure above 2 per cent of GDP as part of a wider effort to make Europe contribute more towards the alliance, according to a senior source.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          The White House push is being used in Whitehall to put pressure on 
+                          <span
+                            dir="auto"
+                          >
+                            Philip Hammond
+                          </span>
+                           to increase defence spending. The chancellor is set for a showdown with Gavin Williamson, the defence secretary, next week over how to fund a blueprint for the military, two sources said.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          It is understood that Mr Williamson needs Mr Hammond, a former defence secretary, to commit to a significant increase in defence
                           ...
                         </span>
                       </div>
@@ -1074,7 +1142,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Friday November 17 2017, 12:01am, The Times
+                        Thursday June 14 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
@@ -1085,13 +1153,13 @@ exports[`2. Render an author profile page without images 1`] = `
         </a>
       </div>
       <div
-        accessibility-label="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-        data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-        id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+        accessibility-label="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+        data-testid="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+        id="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
       >
         <div />
         <a
-          href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
+          href="https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx"
           style={
             Object {
               "textDecoration": "none",
@@ -1126,7 +1194,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Cuts have left the army 20 years out of date, says former general
+                        British troops to protect Bosnia election from Russian meddling
                       </h3>
                       <div
                         dir="auto"
@@ -1140,13 +1208,19 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today.
+                          Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          General Sir Richard Barrons, the commander of Joint Forces Command until last year, warned that the entire armed forces were on the brink of operational or institutional failure unless
+                          Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
                           ...
                         </span>
                       </div>
@@ -1162,7 +1236,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Tuesday November 14 2017, 05:00pm, The Times
+                        Friday June 08 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
@@ -1184,7 +1258,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Cuts have left the army 20 years out of date, says former general
+                        British troops to protect Bosnia election from Russian meddling
                       </h3>
                       <div
                         dir="auto"
@@ -1198,13 +1272,19 @@ exports[`2. Render an author profile page without images 1`] = `
                           dir="auto"
                         >
                           
-                          Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a former military chief said today.
+                          Britain will send about 40 military personnel to join an EU-Nato mission in Bosnia and Herzegovina to help prevent Russian meddling in a presidential election in October, the defence secretary will announce today.
                         </span>
                         <span
                           dir="auto"
                         >
                            
-                          General Sir Richard Barrons, the commander of
+                          Gavin Williamson will tell his 28 counterparts at a meeting of Nato defence ministers in Brussels that the move will also demonstrate the important role played by the UK in European security, according to comments released in advance by the Ministry of Defence.
+                        </span>
+                        <span
+                          dir="auto"
+                        >
+                           
+                          “This deployment demonstrates our commitment to making sure the elections in Bosnia are free and fair — and take place uninterrupted from malign external influence,” the defence secretary said before the second day of a two-day gathering at Nato headquarters. “Our armed forces are playing a leading role in
                           ...
                         </span>
                       </div>
@@ -1220,7 +1300,7 @@ exports[`2. Render an author profile page without images 1`] = `
                           }
                         }
                       >
-                        Tuesday November 14 2017, 05:00pm, The Times
+                        Friday June 08 2018, 12:01am, The Times
                       </div>
                     </div>
                   </div>
