@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/newsuk/times-components/compare/@times-components/svgs@1.0.0...@times-components/svgs@1.0.1) (2018-06-19)
+
+
+### Bug Fixes
+
+* bundling in svgs package ([#1033](https://github.com/newsuk/times-components/issues/1033)) ([8142a79](https://github.com/newsuk/times-components/commit/8142a79))
+* the build by removing typo ([#1036](https://github.com/newsuk/times-components/issues/1036)) ([4d10ed4](https://github.com/newsuk/times-components/commit/4d10ed4))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/newsuk/times-components/compare/@times-components/svgs@0.1.0...@times-components/svgs@1.0.0) (2018-06-15)
 
