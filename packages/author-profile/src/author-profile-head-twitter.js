@@ -7,7 +7,9 @@ import styles from "./styles";
 
 const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
   <View style={styles.twitter}>
-    <IconTwitter width={15} height={15} />
+    <View style={styles.twitterIcon}>
+      <IconTwitter width={15} height={15} />
+    </View>
     <TextLink
       style={styles.twitterLink}
       url={url}

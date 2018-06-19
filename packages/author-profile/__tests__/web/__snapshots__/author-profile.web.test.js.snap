@@ -3,7 +3,7 @@
 exports[`1. Render an author profile page 1`] = `
 <div>
   <header
-    className="responsive-styles__component-fbPFZZ eNPgyU"
+    className="responsive-styles__component-fbPFZZ dornVt"
     role="banner"
   >
     <div
@@ -78,14 +78,16 @@ exports[`1. Render an author profile page 1`] = `
           defence editor
         </h2>
         <div>
-          <svg
-            height={15}
-            width={15}
-          >
-            <path
-              fill="#006699"
-            />
-          </svg>
+          <div>
+            <svg
+              height={15}
+              width={15}
+            >
+              <path
+                fill="#006699"
+              />
+            </svg>
+          </div>
           <a
             dir="auto"
             href="https://twitter.com/jdoe"
@@ -96,7 +98,7 @@ exports[`1. Render an author profile page 1`] = `
           </a>
         </div>
         <div
-          className="responsive-styles__component-fbPFZZ yjaCW"
+          className="responsive-styles__component-fbPFZZ bDNiMK"
         >
           <div
             data-testid="author-bio"
@@ -617,7 +619,7 @@ exports[`1. Render an author profile page 1`] = `
 exports[`2. Render an author profile page without images 1`] = `
 <div>
   <header
-    className="responsive-styles__component-fbPFZZ eNPgyU"
+    className="responsive-styles__component-fbPFZZ dornVt"
     role="banner"
   >
     <div
@@ -692,14 +694,16 @@ exports[`2. Render an author profile page without images 1`] = `
           defence editor
         </h2>
         <div>
-          <svg
-            height={15}
-            width={15}
-          >
-            <path
-              fill="#006699"
-            />
-          </svg>
+          <div>
+            <svg
+              height={15}
+              width={15}
+            >
+              <path
+                fill="#006699"
+              />
+            </svg>
+          </div>
           <a
             dir="auto"
             href="https://twitter.com/jdoe"
@@ -710,7 +714,7 @@ exports[`2. Render an author profile page without images 1`] = `
           </a>
         </div>
         <div
-          className="responsive-styles__component-fbPFZZ yjaCW"
+          className="responsive-styles__component-fbPFZZ bDNiMK"
         >
           <div
             data-testid="author-bio"
@@ -1371,7 +1375,7 @@ exports[`2. Render an author profile page without images 1`] = `
 exports[`3. Render an author profile page loading state 1`] = `
 <div>
   <header
-    className="responsive-styles__component-fbPFZZ eNPgyU"
+    className="responsive-styles__component-fbPFZZ dornVt"
     role="banner"
   >
     <div>
