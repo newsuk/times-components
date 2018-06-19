@@ -23,8 +23,9 @@ const Topic = ({
   slug,
   topic
 }) => {
-  const emptyStateMessage = "Unfortunately, there are no articles relating to this topic";
-  
+  const emptyStateMessage =
+    "Unfortunately, there are no articles relating to this topic";
+
   if (error) {
     return <ArticleListPageError refetch={refetch} />;
   }
