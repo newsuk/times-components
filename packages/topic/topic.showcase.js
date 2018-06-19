@@ -71,7 +71,7 @@ export default {
       type: "story",
       name: "Empty State",
       component: (_, { decorateAction }) => (
-        <StorybookProvider
+        <MockedProvider
           mocks={fixtureGenerator.makeTopicArticleMocks({ empty: true })}
         >
           <TopicProvider debounceTimeMs={0} slug={slug}>
@@ -84,7 +84,7 @@ export default {
               />
             )}
           </TopicProvider>
-        </StorybookProvider>
+        </MockedProvider>
       )
     },
     {

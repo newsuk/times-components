@@ -813,6 +813,31 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
+"@times-components/icons@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-1.0.0.tgz#f3f8b5ba147bab663663e7ccb168541e4844ec52"
+  dependencies:
+    "@times-components/styleguide" "1.0.0"
+    "@times-components/svgs" "1.0.0"
+    "@times-components/utils" "1.0.0"
+    prop-types "15.6.0"
+
+"@times-components/svgs@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-1.0.0.tgz#c890bf054757fa73d49226fbcdfadab82c97dfab"
+  dependencies:
+    prop-types "15.6.0"
+    svgs "3.2.1"
+
+"@times-components/video-label@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@times-components/video-label/-/video-label-1.0.0.tgz#481d02806b10cbe1e08f47de5a54f8ff5d8d37a8"
+  dependencies:
+    "@times-components/icons" "1.0.0"
+    "@times-components/styleguide" "1.0.0"
+    lodash.invert "4.3.0"
+    prop-types "15.6.0"
+
 "@types/async@2.0.49":
   version "2.0.49"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"
