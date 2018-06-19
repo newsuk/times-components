@@ -4,12 +4,11 @@ import Button from "@times-components/button";
 import Link from "@times-components/link";
 import Watermark from "@times-components/watermark";
 import styles from "./styles";
+import propTypes from "./article-list-empty-state-prop-types";
 
-const ArticleListEmptyState = () => (
+const ArticleListEmptyState = ({ message }) => (
   <View style={styles.listEmptyStateContainer}>
-    <Text style={styles.listEmptyMessage}>
-      Unfortunately, there are no articles relating to this topic
-    </Text>
+    <Text style={styles.listEmptyMessage}>{message}</Text>
     <View style={styles.listEmptyBackButton}>
       <Link onPress={() => {}} url="https://thetimes.co.uk">
         <Button onPress={() => {}} title="Back to home" />
@@ -21,4 +20,5 @@ const ArticleListEmptyState = () => (
   </View>
 );
 
+ArticleListEmptyState.propTypes = propTypes;
 export default ArticleListEmptyState;

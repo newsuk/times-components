@@ -106,6 +106,7 @@ class ArticleList extends Component {
       articles,
       articlesLoading,
       count,
+      emptyStateMessage,
       error,
       imageRatio,
       isLoading,
@@ -170,7 +171,7 @@ class ArticleList extends Component {
 
     const Contents =
       data.length === 0 ? (
-        <ArticleListEmptyState />
+        <ArticleListEmptyState message={emptyStateMessage} />
       ) : (
         <ListContentContainer>
           {paginationComponent({ autoScroll: false, hideResults: false })}

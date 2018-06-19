@@ -27,6 +27,9 @@ const AuthorProfile = ({
   refetch,
   slug
 }) => {
+  const emptyStateMessage =
+    "Unfortunately, there are no articles relating to this author";
+
   if (error) {
     return <ArticleListPageError refetch={refetch} />;
   }
@@ -37,6 +40,7 @@ const AuthorProfile = ({
         adConfig={adConfig}
         articleListHeader={<AuthorProfileHead isLoading />}
         articlesLoading
+        emptyStateMessage={emptyStateMessage}
         fetchMore={() => Promise.resolve()}
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
@@ -119,6 +123,7 @@ const AuthorProfile = ({
             articles={get(data, "articles.list", [])}
             articlesLoading={articlesLoading}
             count={get(articles, "count", 0)}
+            emptyStateMessage={emptyStateMessage}
             error={articlesError}
             imageRatio={ratioTextToFloat(imageRatio)}
             onArticlePress={onArticlePress}

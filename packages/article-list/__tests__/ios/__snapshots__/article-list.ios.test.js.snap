@@ -2399,7 +2399,7 @@ exports[`ArticleList tests on ios should render an empty state 1`] = `
         }
       }
     >
-      Unfortunately, there are no articles relating to this topic
+      Unfortunately, there are no articles relating to this page
     </Text>
     <View
       style={

@@ -45,6 +45,7 @@ class ArticleList extends Component {
       articles,
       articlesLoading,
       count,
+      emptyStateMessage,
       error,
       imageRatio,
       onArticlePress,
@@ -123,7 +124,7 @@ class ArticleList extends Component {
       return (
         <View style={styles.listEmptyStateContainer}>
           {articleListHeader}
-          <ArticleListEmptyState />
+          <ArticleListEmptyState message={emptyStateMessage} />
         </View>
       );
     }

@@ -22,6 +22,8 @@ const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
   articles: articleListWithImagesFixture.data.author.articles.list,
   count: articleListWithImagesFixture.data.author.articles.list.length,
+  emptyStateMessage:
+    "Unfortunately, there are no articles relating to this page",
   fetchMore: () => Promise.resolve(),
   imageRatio: 3 / 2,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),

@@ -1025,7 +1025,7 @@ exports[`ArticleList tests on web should render an empty state 1`] = `
     <div
       dir="auto"
     >
-      Unfortunately, there are no articles relating to this topic
+      Unfortunately, there are no articles relating to this page
     </div>
     <div>
       <a
