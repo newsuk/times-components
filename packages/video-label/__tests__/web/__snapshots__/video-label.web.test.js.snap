@@ -23,7 +23,6 @@ exports[`Video Label test on web renders VideoLabel with an explicit title 1`] =
     </svg>
   </div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(0,131,71,1)",
@@ -58,7 +57,6 @@ exports[`Video Label test on web renders VideoLabel without an explicit title 1`
     </svg>
   </div>
   <div
-    dir="auto"
     style={
       Object {
         "color": "rgba(0,131,71,1)",

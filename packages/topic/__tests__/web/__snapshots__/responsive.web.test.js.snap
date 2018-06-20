@@ -99,6 +99,5 @@ exports[`Topic responsive tests on web should render ResponsiveName correctly 1`
 
 <div
   className="c0"
-  dir="auto"
 />
 `;

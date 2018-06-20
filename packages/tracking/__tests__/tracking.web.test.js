@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
+import { mount } from "enzyme";
 import { withTrackScrollDepth } from "../src/tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 class FakeIntersectionObserver {
   static clearObserving() {

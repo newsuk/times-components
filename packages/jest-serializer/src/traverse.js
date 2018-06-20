@@ -5,13 +5,13 @@ const withoutProps = node => ({ ...node, props: {} });
 const isReactElement = ([key, value]) =>
   key !== "children" && React.isValidElement(value);
 
-const mergeTransformation = (transform, transformProps) => (
+const mergeTransformation = (transform, transformElement) => (
   transformed,
   [key, prop]
 ) => {
   const { accum: propAccum, element } = transform(
     transformed.accum,
-    transformProps,
+    transformElement,
     prop
   );
 
@@ -24,7 +24,7 @@ const mergeTransformation = (transform, transformProps) => (
   };
 };
 
-const transformRenderProps = (transform, accum, transformProps, props) => {
+const transformRenderProps = (transform, accum, transformElement, props) => {
   const renderProps = Object.entries(props).filter(isReactElement);
 
   if (renderProps.length === 0) {
@@ -34,14 +34,14 @@ const transformRenderProps = (transform, accum, transformProps, props) => {
     };
   }
 
-  return renderProps.reduce(mergeTransformation(transform, transformProps), {
+  return renderProps.reduce(mergeTransformation(transform, transformElement), {
     accum,
     props
   });
 };
 
-const transformChildren = (transform, transformProps) => (merged, child) => {
-  const { accum, element } = transform(merged.accum, transformProps, child);
+const transformChildren = (transform, transformElement) => (merged, child) => {
+  const { accum, element } = transform(merged.accum, transformElement, child);
 
   return {
     accum,
@@ -49,7 +49,7 @@ const transformChildren = (transform, transformProps) => (merged, child) => {
   };
 };
 
-const transform = (accum, transformProps, node) => {
+const transform = (accum, transformElement, node) => {
   if (!node || !node.props)
     return {
       accum,
@@ -60,40 +60,48 @@ const transform = (accum, transformProps, node) => {
     node.children ||
     node.props.children ||
     []
-  ).reduce(transformChildren(transform, transformProps), {
+  ).reduce(transformChildren(transform, transformElement), {
     accum,
     children: []
   });
 
-  const updated = transformProps(childAccum || accum, node);
-
-  const transformedRenderProps = transformRenderProps(
+  const trp = transformRenderProps(
     transform,
-    updated.accum,
-    transformProps,
-    updated.props
+    childAccum || accum,
+    transformElement,
+    node.props
   );
 
+  const u = transformElement(
+    trp.accum,
+    withoutProps(node),
+    trp.props,
+    children
+  );
+
+  if (!u.node) {
+    return {
+      accum: u.accum,
+      element: u.children.length === 1 ? u.children[0] : u.children
+    };
+  }
+
   return {
-    accum: transformedRenderProps.accum,
-    element: React.cloneElement(
-      withoutProps(node),
-      transformedRenderProps.props,
-      ...children
-    )
+    accum: u.accum,
+    element: React.cloneElement(u.node, u.props, ...u.children)
   };
 };
 
 const test = value =>
   !!value && value.$$typeof === Symbol.for("react.test.json");
 
-const print = (transformProps, printer) => (node, serialize) => {
-  const { accum, element } = transform({}, transformProps, node);
+const print = (printer, transformElement) => (node, serialize) => {
+  const { accum, element } = transform({}, transformElement, node);
 
   return printer(serialize, accum, element);
 };
 
-module.exports = (transformProps, printer) => ({
+module.exports = (printer, transformElement) => ({
   test,
-  print: print(transformProps, printer)
+  print: print(printer, transformElement)
 });

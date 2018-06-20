@@ -162,7 +162,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
   <View>
     <View>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -335,10 +334,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -353,9 +349,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     Top medal for forces dog who took a bite out of the Taliban
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -367,11 +360,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                       ...
@@ -379,9 +368,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -421,7 +407,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -594,10 +579,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -612,9 +594,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     Social media must raise game to beat terrorists, says UN chief
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -626,11 +605,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                       ...
@@ -638,9 +613,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -680,7 +652,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
     </View>
     <View>
       <View
-        accessible={true}
         nativeBackgroundAndroid={
           Object {
             "attribute": "selectableItemBackground",
@@ -853,10 +824,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                 <View>
                   <Text
                     accessibilityRole="heading"
-                    accessible={true}
-                    allowFontScaling={true}
                     aria-level="3"
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#333333",
@@ -871,9 +839,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                     Cuts have left the army 20 years out of date, says former general
                   </Text>
                   <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -885,11 +850,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                       }
                     }
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                    >
+                    <Text>
                       
                       Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                       ...
@@ -897,9 +858,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
                   </Text>
                   <Text
                     accessibilityLabel="datePublication"
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
                     style={
                       Object {
                         "color": "#696969",
@@ -927,7 +885,6 @@ exports[`ArticleList tests on android should render an article list 1`] = `
 
 exports[`ArticleList tests on android should render an article list item 1`] = `
 <View
-  accessible={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -1106,9 +1063,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -1125,10 +1079,7 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
             </View>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="3"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#333333",
@@ -1143,9 +1094,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
               test headline
             </Text>
             <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1157,11 +1105,7 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
+              <Text>
                 
                 Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                 ...
@@ -1169,9 +1113,6 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
             </Text>
             <Text
               accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1660,7 +1601,6 @@ exports[`ArticleList tests on android should render an article list item loading
 
 exports[`ArticleList tests on android should render an article list item without images 1`] = `
 <View
-  accessible={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -1715,9 +1655,6 @@ exports[`ArticleList tests on android should render an article list item without
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "#333333",
@@ -1734,10 +1671,7 @@ exports[`ArticleList tests on android should render an article list item without
             </View>
             <Text
               accessibilityRole="heading"
-              accessible={true}
-              allowFontScaling={true}
               aria-level="3"
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#333333",
@@ -1752,9 +1686,6 @@ exports[`ArticleList tests on android should render an article list item without
               test headline
             </Text>
             <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1766,11 +1697,7 @@ exports[`ArticleList tests on android should render an article list item without
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
+              <Text>
                 
                 Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
                 ...
@@ -1778,9 +1705,6 @@ exports[`ArticleList tests on android should render an article list item without
             </Text>
             <Text
               accessibilityLabel="datePublication"
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
               style={
                 Object {
                   "color": "#696969",
@@ -1818,7 +1742,6 @@ exports[`ArticleList tests on android should render an article list page error c
   <View>
     <Image
       accessibilityLabel="Server error"
-      accessible={true}
       resizeMode="contain"
       source={
         Object {
@@ -2392,9 +2315,6 @@ exports[`ArticleList tests on android should render an empty state 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -2436,9 +2356,6 @@ exports[`ArticleList tests on android should render an empty state 1`] = `
 exports[`ArticleList tests on android should render the article list error content correctly 1`] = `
 <React.Fragment>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "alignSelf": "center",
@@ -2453,9 +2370,6 @@ exports[`ArticleList tests on android should render the article list error conte
     Something's gone wrong
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -2497,7 +2411,6 @@ exports[`ArticleList tests on android should render the article list page error 
   <View>
     <Image
       accessibilityLabel="Server error"
-      accessible={true}
       resizeMode="contain"
       source={
         Object {

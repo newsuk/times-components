@@ -30,7 +30,6 @@ exports[`Link tests on Web Link renders correctly 1`] = `
 
 exports[`Link tests on Web TextLink renders correctly with children 1`] = `
 <a
-  dir="auto"
   href="http://thetimes.co.uk"
   role="link"
 >
@@ -40,7 +39,6 @@ exports[`Link tests on Web TextLink renders correctly with children 1`] = `
 
 exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] = `
 <a
-  dir="auto"
   href="http://thetimes.co.uk"
   role="link"
   style={
@@ -56,7 +54,6 @@ exports[`Link tests on Web TextLink renders correctly with multiple styles 1`] =
 
 exports[`Link tests on Web TextLink renders correctly with specific styles 1`] = `
 <a
-  dir="auto"
   href="http://thetimes.co.uk"
   role="link"
   style={

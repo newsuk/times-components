@@ -1,8 +1,11 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
-
-import ArticleFlag, {
+import { shallow } from "enzyme";
+import {
+  addSerializers,
+  enzymeRootSerializer
+} from "@times-components/jest-serializer";
+import {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
@@ -10,28 +13,31 @@ import ArticleFlag, {
 } from "../src/article-flag";
 
 module.exports = () => {
-  it("renders correctly", () => {
-    const tree = renderer.create(<ArticleFlag title="articleFlag" />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  describe("should render the", () => {
+    addSerializers(expect, enzymeRootSerializer());
 
-  it("renders New flag correctly", () => {
-    const tree = renderer.create(<NewArticleFlag />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+    it("New flag", () => {
+      const wrapper = shallow(<NewArticleFlag />);
 
-  it("renders Updated flag correctly", () => {
-    const tree = renderer.create(<UpdatedArticleFlag />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+      expect(wrapper).toMatchSnapshot("2. New flag");
+    });
 
-  it("renders Exclusive flag correctly", () => {
-    const tree = renderer.create(<ExclusiveArticleFlag />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+    it("Updated flag", () => {
+      const wrapper = shallow(<UpdatedArticleFlag />);
 
-  it("renders Sponsored flag correctly", () => {
-    const tree = renderer.create(<SponsoredArticleFlag />).toJSON();
-    expect(tree).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot("3. Updated flag");
+    });
+
+    it("Exclusive flag", () => {
+      const wrapper = shallow(<ExclusiveArticleFlag />);
+
+      expect(wrapper).toMatchSnapshot("4. Exclusive flag");
+    });
+
+    it("Sponsored flag", () => {
+      const wrapper = shallow(<SponsoredArticleFlag />);
+
+      expect(wrapper).toMatchSnapshot("5. Sponsored flag");
+    });
   });
 };

@@ -10,5 +10,7 @@ module.exports = {
     "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
   ],
   testMatch: [`**/jest-serializer/__tests__/web/**.test.js`],
-  rootDir: "../../"
+  rootDir: "../../",
+  coverageDirectory: `packages/jest-serializer/coverage/web`,
+  collectCoverageFrom: ["**/jest-serializer/src/**"]
 };

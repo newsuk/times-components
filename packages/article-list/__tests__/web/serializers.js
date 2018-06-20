@@ -5,14 +5,14 @@ const {
   flattenStyleTransform,
   minimalWebTransform,
   rnwTransform,
-  rnwPrinter
+  stylePrinter
 } = require("@times-components/jest-serializer");
 
 addSerializers(
   expect,
   enzymeTreeSerializer(),
   compose(
-    rnwPrinter,
+    stylePrinter,
     flattenStyleTransform,
     minimalWebTransform,
     rnwTransform()

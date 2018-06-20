@@ -124,9 +124,6 @@ exports[`Caption on Android renders an image with a caption 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -139,9 +136,6 @@ exports[`Caption on Android renders an image with a caption 1`] = `
       Some caption text goes in here
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -169,9 +163,6 @@ exports[`Caption on Android renders correctly with credits 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
@@ -184,9 +175,6 @@ exports[`Caption on Android renders correctly with credits 1`] = `
       Some caption text goes in here
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -214,9 +202,6 @@ exports[`Caption on Android renders correctly with credits only 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -245,9 +230,6 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "green",
@@ -260,9 +242,6 @@ exports[`Caption on Android renders correctly with specific styles 1`] = `
       Some caption text goes in here
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "green",
@@ -290,9 +269,6 @@ exports[`Caption on Android renders correctly without credits 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",

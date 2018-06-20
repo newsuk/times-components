@@ -15,7 +15,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           >
             <div
               data-testid="results-message"
-              dir="auto"
             >
               Showing 1 - 3 of 3 results
             </div>
@@ -104,7 +103,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -120,7 +118,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       Top medal for forces dog who took a bite out of the Taliban
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -128,9 +125,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                         ...
@@ -139,7 +134,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -232,7 +226,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -248,7 +241,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       Social media must raise game to beat terrorists, says UN chief
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -256,9 +248,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                         ...
@@ -267,7 +257,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -360,7 +349,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -376,7 +364,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       Cuts have left the army 20 years out of date, says former general
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -384,9 +371,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                         ...
@@ -395,7 +380,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -508,7 +492,6 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               }
             >
               <div
-                dir="auto"
                 style={
                   Object {
                     "color": "rgba(51,51,51,1)",
@@ -524,7 +507,6 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
             </div>
             <h3
               aria-level="3"
-              dir="auto"
               role="heading"
               style={
                 Object {
@@ -540,7 +522,6 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               test headline
             </h3>
             <div
-              dir="auto"
               style={
                 Object {
                   "color": "rgba(105,105,105,1)",
@@ -549,9 +530,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
                 }
               }
             >
-              <span
-                dir="auto"
-              >
+              <span>
                 
                 Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany
                 ...
@@ -560,7 +539,6 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
             <div
               aria-label="datePublication"
               data-testid="datePublication"
-              dir="auto"
               style={
                 Object {
                   "color": "rgba(105,105,105,1)",
@@ -701,7 +679,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 }
               >
                 <div
-                  dir="auto"
                   style={
                     Object {
                       "color": "rgba(51,51,51,1)",
@@ -717,7 +694,6 @@ exports[`ArticleList tests on web should render an article list item without ima
               </div>
               <h3
                 aria-level="3"
-                dir="auto"
                 role="heading"
                 style={
                   Object {
@@ -733,7 +709,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 test headline
               </h3>
               <div
-                dir="auto"
                 style={
                   Object {
                     "color": "rgba(105,105,105,1)",
@@ -742,9 +717,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                   }
                 }
               >
-                <span
-                  dir="auto"
-                >
+                <span>
                   
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed
                   ...
@@ -753,7 +726,6 @@ exports[`ArticleList tests on web should render an article list item without ima
               <div
                 aria-label="datePublication"
                 data-testid="datePublication"
-                dir="auto"
                 style={
                   Object {
                     "color": "rgba(105,105,105,1)",
@@ -780,7 +752,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 }
               >
                 <div
-                  dir="auto"
                   style={
                     Object {
                       "color": "rgba(51,51,51,1)",
@@ -796,7 +767,6 @@ exports[`ArticleList tests on web should render an article list item without ima
               </div>
               <h3
                 aria-level="3"
-                dir="auto"
                 role="heading"
                 style={
                   Object {
@@ -812,7 +782,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 test headline
               </h3>
               <div
-                dir="auto"
                 style={
                   Object {
                     "color": "rgba(105,105,105,1)",
@@ -821,9 +790,7 @@ exports[`ArticleList tests on web should render an article list item without ima
                   }
                 }
               >
-                <span
-                  dir="auto"
-                >
+                <span>
                   
                   Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab
                   ...
@@ -832,7 +799,6 @@ exports[`ArticleList tests on web should render an article list item without ima
               <div
                 aria-label="datePublication"
                 data-testid="datePublication"
-                dir="auto"
                 style={
                   Object {
                     "color": "rgba(105,105,105,1)",
@@ -893,7 +859,6 @@ exports[`ArticleList tests on web should render an article list that is loading 
           >
             <div
               data-testid="results-message"
-              dir="auto"
             >
               Showing 0 - 0 of 0 results
             </div>
@@ -1022,9 +987,7 @@ exports[`ArticleList tests on web should render an article list that is loading 
 exports[`ArticleList tests on web should render an empty state 1`] = `
 <div>
   <div>
-    <div
-      dir="auto"
-    >
+    <div>
       Unfortunately, there are no articles relating to this page
     </div>
     <div>
@@ -1129,7 +1092,6 @@ exports[`ArticleList tests on web should render the article list pagination corr
       >
         <div
           data-testid="results-message"
-          dir="auto"
         >
           Showing 1 - 10 of 20 results
         </div>
@@ -1150,16 +1112,11 @@ exports[`ArticleList tests on web should render the article list pagination corr
             <div
               data-testid="pagination-button-next"
             >
-              <div
-                dir="auto"
-              >
-                <span
-                  dir="auto"
-                >
+              <div>
+                <span>
                   Next
                   <span
                     className="responsive-styles__component-fbPFZZ hqaoTY"
-                    dir="auto"
                   >
                      page
                   </span>
@@ -1199,7 +1156,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           >
             <div
               data-testid="results-message"
-              dir="auto"
             >
               Showing 0 - 0 of 0 results
             </div>
@@ -1285,7 +1241,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1300,7 +1255,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       Top medal for forces dog who took a bite out of the Taliban
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -1308,9 +1262,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and
                         ...
@@ -1319,7 +1271,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -1409,7 +1360,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1424,7 +1374,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       Social media must raise game to beat terrorists, says UN chief
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -1432,9 +1381,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The head of the United Nations has added his voice to calls for Facebook, YouTube, Microsoft and Twitter to help to stop the spread of terrorist
                         ...
@@ -1443,7 +1390,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -1533,7 +1479,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1548,7 +1493,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       Cuts have left the army 20 years out of date, says former general
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -1556,9 +1500,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         Britain’s cash-strapped army is 20 years out of date and would be incapable of surviving Russian artillery and air strikes in a conflict, a
                         ...
@@ -1567,7 +1509,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -1657,7 +1598,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1672,7 +1612,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       MoD recruits more civilians as Royal Marines face axe
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -1680,9 +1619,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         Britain’s new defence secretary is facing questions over why his department has hired hundreds of civilians while it considers cutting 1,000
                         ...
@@ -1691,7 +1628,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -1781,7 +1717,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                   <div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1796,7 +1731,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       Suits you: poppy power is branching out for Remembrance appeal
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "fontFamily": "TimesDigitalW04",
@@ -1804,15 +1738,11 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The idea of selling anything other than a traditional paper poppy to mark Remembrance Sunday was unheard of a decade ago.
                       </span>
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                          
                         But when a group of
                         ...
@@ -1821,7 +1751,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",
@@ -1871,9 +1800,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                 </g>
               </svg>
             </div>
-            <div
-              dir="auto"
-            >
+            <div>
               ADVERTISEMENT
             </div>
           </div>
@@ -1950,7 +1877,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       }
                     >
                       <div
-                        dir="auto"
                         style={
                           Object {
                             "color": "rgba(51,51,51,1)",
@@ -1965,7 +1891,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     </div>
                     <h3
                       aria-level="3"
-                      dir="auto"
                       role="heading"
                       style={
                         Object {
@@ -1980,16 +1905,13 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       MoD heralds a ‘renewed’ US special relationship
                     </h3>
                     <div
-                      dir="auto"
                       style={
                         Object {
                           "lineHeight": "20px",
                         }
                       }
                     >
-                      <span
-                        dir="auto"
-                      >
+                      <span>
                         
                         The defence secretary will hold his first bilateral meeting in London today with James Mattis, his US counterpart, amid concerns over impending
                         ...
@@ -1998,7 +1920,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                     <div
                       aria-label="datePublication"
                       data-testid="datePublication"
-                      dir="auto"
                       style={
                         Object {
                           "fontSize": "13px",

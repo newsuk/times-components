@@ -6,14 +6,14 @@ import {
   compose,
   minimalWebTransform,
   rnwTransform,
-  rnwPrinter
+  stylePrinter
 } from "../../src";
 
 describe("The serializers should", () => {
   it("minimalise and create styles", () => {
     addSerializers(
       expect,
-      compose(rnwPrinter, minimalWebTransform, rnwTransform(["color"]))
+      compose(stylePrinter, minimalWebTransform, rnwTransform(["color"]))
     );
 
     const styles = StyleSheet.create({

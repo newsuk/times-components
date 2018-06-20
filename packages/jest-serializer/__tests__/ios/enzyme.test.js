@@ -11,7 +11,9 @@ const Component = () => (
   <View>
     <Text>Hello World!</Text>
     <View>
-      <SomeComponent />
+      <SomeComponent>
+        <Text>Hello world!</Text>
+      </SomeComponent>
     </View>
   </View>
 );

@@ -173,9 +173,6 @@ exports[`Video Label test on ios renders VideoLabel with an explicit title 1`] =
     </ARTSurfaceView>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#008347",
@@ -369,9 +366,6 @@ exports[`Video Label test on ios renders VideoLabel without an explicit title 1`
     </ARTSurfaceView>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#008347",

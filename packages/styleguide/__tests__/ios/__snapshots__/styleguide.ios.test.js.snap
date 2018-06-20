@@ -8,11 +8,7 @@ exports[`Styleguide tests for ios should render a FadeIn animation wrapper compo
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello World
   </Text>
 </View>

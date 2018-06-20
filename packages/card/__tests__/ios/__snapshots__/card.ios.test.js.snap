@@ -36,11 +36,7 @@ exports[`1. Renders default layout 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         A card
       </Text>
     </View>
@@ -84,11 +80,7 @@ exports[`2. Renders default layout with placeholder 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         A card
       </Text>
     </View>
@@ -132,11 +124,7 @@ exports[`3. Renders without an image (null) 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         No image
       </Text>
     </View>
@@ -166,11 +154,7 @@ exports[`4. Renders without an image (showImage is false) 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         No image
       </Text>
     </View>
@@ -214,11 +198,7 @@ exports[`5. Renders without an image (uri is null) 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         No URL
       </Text>
     </View>
@@ -249,11 +229,7 @@ exports[`6. Renders with a reversed layout 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         A card
       </Text>
     </View>
@@ -298,11 +274,7 @@ exports[`7. Renders with a reversed layout with no image 1`] = `
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         A card
       </Text>
     </View>
@@ -636,11 +608,7 @@ exports[`Card tests on ios should not re-render when imageRatio prop is changed 
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Do not re-render me
       </Text>
     </View>
@@ -684,11 +652,7 @@ exports[`Card tests on ios should not re-render when imageRatio prop is changed 
         }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Do not re-render me
       </Text>
     </View>

@@ -84,7 +84,6 @@ exports[`Pagination on Web renders correctly 1`] = `
   >
     <div
       data-testid="results-message"
-      dir="auto"
     >
       Showing 1 - 20 of 21 results
     </div>
@@ -105,16 +104,11 @@ exports[`Pagination on Web renders correctly 1`] = `
         <div
           data-testid="pagination-button-next"
         >
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Next
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -221,7 +215,6 @@ exports[`Pagination on Web renders next link 1`] = `
   >
     <div
       data-testid="results-message"
-      dir="auto"
     >
       Showing 1 - 20 of 41 results
     </div>
@@ -242,16 +235,11 @@ exports[`Pagination on Web renders next link 1`] = `
         <div
           data-testid="pagination-button-next"
         >
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Next
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -358,7 +346,6 @@ exports[`Pagination on Web renders prev and next link 1`] = `
   >
     <div
       data-testid="results-message"
-      dir="auto"
     >
       Showing 21 - 40 of 41 results
     </div>
@@ -388,16 +375,11 @@ exports[`Pagination on Web renders prev and next link 1`] = `
               <path />
             </g>
           </svg>
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Previous
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -418,16 +400,11 @@ exports[`Pagination on Web renders prev and next link 1`] = `
         <div
           data-testid="pagination-button-next"
         >
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Next
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -534,7 +511,6 @@ exports[`Pagination on Web renders prev link 1`] = `
   >
     <div
       data-testid="results-message"
-      dir="auto"
     >
       Showing 41 - 41 of 41 results
     </div>
@@ -564,16 +540,11 @@ exports[`Pagination on Web renders prev link 1`] = `
               <path />
             </g>
           </svg>
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Previous
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -671,7 +642,6 @@ exports[`Pagination on Web renders results message 1`] = `
   >
     <div
       data-testid="results-message"
-      dir="auto"
     >
       Showing 1 - 20 of 21 results
     </div>
@@ -692,16 +662,11 @@ exports[`Pagination on Web renders results message 1`] = `
         <div
           data-testid="pagination-button-next"
         >
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Next
               <span
                 className="c3"
-                dir="auto"
               >
                  page
               </span>
@@ -784,16 +749,11 @@ exports[`Pagination on Web renders with hidden results 1`] = `
         <div
           data-testid="pagination-button-next"
         >
-          <div
-            dir="auto"
-          >
-            <span
-              dir="auto"
-            >
+          <div>
+            <span>
               Next
               <span
                 className="c2"
-                dir="auto"
               >
                  page
               </span>

@@ -1,271 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Flag test on web renders Exclusive flag correctly 1`] = `
-<div
-  style={
-    Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "alignItems": "center",
-      "flexDirection": "row",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginBottom": "1px",
-        "marginRight": "5px",
-      }
-    }
-  >
-    <svg
-      height={8}
-      width={8}
-    >
-      <g
-        fill="#C51D24"
-      >
-        <path />
-      </g>
-    </svg>
-  </div>
-  <div
-    aria-label="flag-exclusive"
-    data-testid="flag-exclusive"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(197,29,36,1)",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.4px",
-      }
-    }
-  >
-    exclusive
-  </div>
-</div>
+exports[`2. New flag 1`] = `
+<ArticleFlag
+  color="#E34605"
+  title="new"
+/>
 `;
 
-exports[`Article Flag test on web renders New flag correctly 1`] = `
-<div
-  style={
-    Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "alignItems": "center",
-      "flexDirection": "row",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginBottom": "1px",
-        "marginRight": "5px",
-      }
-    }
-  >
-    <svg
-      height={8}
-      width={8}
-    >
-      <g
-        fill="#E34605"
-      >
-        <path />
-      </g>
-    </svg>
-  </div>
-  <div
-    aria-label="flag-new"
-    data-testid="flag-new"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(227,70,5,1)",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.4px",
-      }
-    }
-  >
-    new
-  </div>
-</div>
+exports[`3. Updated flag 1`] = `
+<ArticleFlag
+  color="#3C81BE"
+  title="updated"
+/>
 `;
 
-exports[`Article Flag test on web renders Sponsored flag correctly 1`] = `
-<div
-  style={
-    Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "alignItems": "center",
-      "flexDirection": "row",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginBottom": "1px",
-        "marginRight": "5px",
-      }
-    }
-  >
-    <svg
-      height={8}
-      width={8}
-    >
-      <g
-        fill="#4D4D4D"
-      >
-        <path />
-      </g>
-    </svg>
-  </div>
-  <div
-    aria-label="flag-sponsored"
-    data-testid="flag-sponsored"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(77,77,77,1)",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.4px",
-      }
-    }
-  >
-    sponsored
-  </div>
-</div>
+exports[`4. Exclusive flag 1`] = `
+<ArticleFlag
+  color="#C51D24"
+  title="exclusive"
+/>
 `;
 
-exports[`Article Flag test on web renders Updated flag correctly 1`] = `
-<div
-  style={
-    Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "alignItems": "center",
-      "flexDirection": "row",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginBottom": "1px",
-        "marginRight": "5px",
-      }
-    }
-  >
-    <svg
-      height={8}
-      width={8}
-    >
-      <g
-        fill="#3C81BE"
-      >
-        <path />
-      </g>
-    </svg>
-  </div>
-  <div
-    aria-label="flag-updated"
-    data-testid="flag-updated"
-    dir="auto"
-    style={
-      Object {
-        "color": "rgba(60,129,190,1)",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.4px",
-      }
-    }
-  >
-    updated
-  </div>
-</div>
-`;
-
-exports[`Article Flag test on web renders correctly 1`] = `
-<div
-  style={
-    Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "alignItems": "center",
-      "flexDirection": "row",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginBottom": "1px",
-        "marginRight": "5px",
-      }
-    }
-  >
-    <svg
-      height={8}
-      width={8}
-    >
-      <g
-        fill="black"
-      >
-        <path />
-      </g>
-    </svg>
-  </div>
-  <div
-    aria-label="flag-articleFlag"
-    data-testid="flag-articleFlag"
-    dir="auto"
-    style={
-      Object {
-        "color": "black",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": "12px",
-        "fontWeight": "400",
-        "letterSpacing": "1.4px",
-      }
-    }
-  >
-    articleflag
-  </div>
-</div>
+exports[`5. Sponsored flag 1`] = `
+<ArticleFlag
+  color="#4D4D4D"
+  title="sponsored"
+/>
 `;

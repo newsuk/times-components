@@ -3,9 +3,6 @@
 exports[`1. Render a single author 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -24,9 +21,6 @@ exports[`1. Render a single author 1`] = `
 exports[`2. Render a given section colour 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "blue",
@@ -45,9 +39,6 @@ exports[`2. Render a given section colour 1`] = `
 exports[`3. Render an inline element 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -66,9 +57,6 @@ exports[`3. Render an inline element 1`] = `
 exports[`4. Render an author first 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -82,9 +70,6 @@ exports[`4. Render an author first 1`] = `
     Camilla Long
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -103,9 +88,6 @@ exports[`4. Render an author first 1`] = `
 exports[`5. Render an author last 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -119,9 +101,6 @@ exports[`5. Render an author last 1`] = `
     RBS Six Nations 
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -140,9 +119,6 @@ exports[`5. Render an author last 1`] = `
 exports[`6. Render multiple authors separated by commas 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -156,9 +132,6 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     Camilla Long
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -172,9 +145,6 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     , 
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -188,9 +158,6 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     Mike Atherton
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -204,9 +171,6 @@ exports[`6. Render multiple authors separated by commas 1`] = `
     , 
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -225,9 +189,6 @@ exports[`6. Render multiple authors separated by commas 1`] = `
 exports[`7. Render multiple authors separated by spaces 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -241,9 +202,6 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
     Camilla Long
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -257,9 +215,6 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
      
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -273,9 +228,6 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
     Mike Atherton
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -289,9 +241,6 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
      
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#006699",
@@ -312,9 +261,6 @@ exports[`8. Render null when AST is empty 1`] = `null`;
 exports[`9. Render an author with given styles 1`] = `
 <View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "red",

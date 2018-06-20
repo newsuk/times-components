@@ -3,7 +3,6 @@
 exports[`1. Render a single author 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -15,7 +14,6 @@ exports[`1. Render a single author 1`] = `
 exports[`2. Render a given section colour 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/alexandra-frean"
     role="link"
     style={
@@ -31,9 +29,7 @@ exports[`2. Render a given section colour 1`] = `
 
 exports[`3. Render an inline element 1`] = `
 <div>
-  <div
-    dir="auto"
-  >
+  <div>
     Lindsay McIntosh Scottish Political Editor
   </div>
 </div>
@@ -42,15 +38,12 @@ exports[`3. Render an inline element 1`] = `
 exports[`4. Render an author first 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div
-    dir="auto"
-  >
+  <div>
     , Environment Editor
   </div>
 </div>
@@ -58,13 +51,10 @@ exports[`4. Render an author first 1`] = `
 
 exports[`5. Render an author last 1`] = `
 <div>
-  <div
-    dir="auto"
-  >
+  <div>
     RBS Six Nations 
   </div>
   <a
-    dir="auto"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -76,31 +66,24 @@ exports[`5. Render an author last 1`] = `
 exports[`6. Render multiple authors separated by commas 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div
-    dir="auto"
-  >
+  <div>
     , 
   </div>
   <a
-    dir="auto"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
-  <div
-    dir="auto"
-  >
+  <div>
     , 
   </div>
   <a
-    dir="auto"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -112,31 +95,24 @@ exports[`6. Render multiple authors separated by commas 1`] = `
 exports[`7. Render multiple authors separated by spaces 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div
-    dir="auto"
-  >
+  <div>
      
   </div>
   <a
-    dir="auto"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
-  <div
-    dir="auto"
-  >
+  <div>
      
   </div>
   <a
-    dir="auto"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -150,7 +126,6 @@ exports[`8. Render null when AST is empty 1`] = `null`;
 exports[`9. Render an author with given styles 1`] = `
 <div>
   <a
-    dir="auto"
     href="/profile/alexandra-frean"
     role="link"
     style={

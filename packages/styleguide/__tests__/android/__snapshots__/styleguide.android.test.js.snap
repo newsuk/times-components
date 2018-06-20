@@ -8,11 +8,7 @@ exports[`Styleguide tests for android should render a FadeIn animation wrapper c
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello World
   </Text>
 </View>

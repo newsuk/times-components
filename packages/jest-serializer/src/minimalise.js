@@ -1,5 +1,7 @@
 import omit from "lodash.omit";
 import omitBy from "lodash.omitby";
+import traverse from "./traverse";
+import print from "./printers";
 
 function getType({ type }) {
   if (type instanceof Function) {
@@ -18,16 +20,53 @@ function cleanSvgProps(node, props) {
     : props;
 }
 
-export default excludeProps => (accum, node) => {
-  const { ...other } = node.props;
+export const minimaliseTransform = excludeProps => (
+  accum,
+  node,
+  props,
+  children
+) => {
+  const { ...other } = props;
 
   return {
     accum,
+    node,
     props: omitBy(
       {
         ...cleanSvgProps(node, other)
       },
       excludeProps
-    )
+    ),
+    children
   };
 };
+
+const isEmptyObject = obj =>
+  obj && typeof obj === "object" && Object.keys(obj).length === 0;
+
+export const minimalWebTransform = minimaliseTransform(
+  (value, key) =>
+    value === undefined ||
+    typeof value === "function" ||
+    isEmptyObject(value) ||
+    key === "dir"
+);
+
+export const minimalWeb = traverse(print, minimalWebTransform);
+
+const redundantNativeKeys = new Set([
+  "className",
+  "accessible",
+  "allowFontScaling",
+  "ellipsizeMode"
+]);
+
+export const minimalNativeTransform = minimaliseTransform(
+  (value, key) =>
+    value === undefined ||
+    typeof value === "function" ||
+    isEmptyObject(value) ||
+    redundantNativeKeys.has(key)
+);
+
+export const minimalNative = traverse(print, minimalNativeTransform);

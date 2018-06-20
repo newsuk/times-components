@@ -48,7 +48,6 @@
     "babel-plugin-react-native-web": "0.6.1",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
-    "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "lodash.clonedeep": "4.5.0",

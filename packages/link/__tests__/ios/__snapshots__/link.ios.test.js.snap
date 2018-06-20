@@ -2,7 +2,6 @@
 
 exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 <View
-  accessible={true}
   isTVSelectable={true}
   style={
     Object {
@@ -10,11 +9,7 @@ exports[`Link test on ios Link doesnt change inner text styles 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello
   </Text>
 </View>
@@ -22,7 +17,6 @@ exports[`Link test on ios Link doesnt change inner text styles 1`] = `
 
 exports[`Link test on ios Link renders correctly 1`] = `
 <View
-  accessible={true}
   isTVSelectable={true}
   style={
     Object {
@@ -37,9 +31,6 @@ exports[`Link test on ios Link renders correctly 1`] = `
 exports[`Link test on ios TextLink renders correctly with children 1`] = `
 <Text
   accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   style={
     Object {
@@ -54,9 +45,6 @@ exports[`Link test on ios TextLink renders correctly with children 1`] = `
 exports[`Link test on ios TextLink renders correctly with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   style={
     Object {
@@ -73,9 +61,6 @@ exports[`Link test on ios TextLink renders correctly with multiple styles 1`] = 
 exports[`Link test on ios TextLink renders correctly with specific styles 1`] = `
 <Text
   accessibilityRole="link"
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   href="http://thetimes.co.uk"
   style={
     Object {

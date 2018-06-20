@@ -12,7 +12,15 @@ exports[`On native the Enzyme shallow serializer should render the expected snap
   <View>
     <SomeComponent
       style={null}
-    />
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Hello world!
+      </Text>
+    </SomeComponent>
   </View>
 </View>
 `;

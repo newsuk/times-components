@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The replace serializer should provide a helper to return the child of an element only 1`] = `
+<View>
+  Hello world!
+</View>
+`;
+
+exports[`The replace serializer should provide a helper to return the children of an element only 1`] = `
+Array [
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world1!
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world2!
+  </Text>,
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Hello world3!
+  </Text>,
+]
+`;
+
+exports[`The replace serializer should provide a helper to return the component with props and no children 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  />
+</View>
+`;
+
+exports[`The replace serializer should replace the expected component 1`] = `
+<View>
+  <Placeholder>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      Replaced
+    </Text>
+  </Placeholder>
+</View>
+`;

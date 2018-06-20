@@ -3,10 +3,10 @@ const {
   compose,
   minimalWebTransform,
   rnwTransform,
-  rnwPrinter
+  stylePrinter
 } = require("@times-components/jest-serializer");
 
 addSerializers(
   expect,
-  compose(rnwPrinter, minimalWebTransform, rnwTransform())
+  compose(stylePrinter, minimalWebTransform, rnwTransform())
 );

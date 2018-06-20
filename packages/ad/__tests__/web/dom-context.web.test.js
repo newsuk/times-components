@@ -1,11 +1,6 @@
 import React from "react";
-
-import Enzyme, { mount } from "enzyme";
-import React16Adapter from "enzyme-adapter-react-16";
-
+import { mount } from "enzyme";
 import DOMContext from "../../src/dom-context.web";
-
-Enzyme.configure({ adapter: new React16Adapter() });
 
 describe("DOMContext Web", () => {
   it("passes an element to the init function", () => {

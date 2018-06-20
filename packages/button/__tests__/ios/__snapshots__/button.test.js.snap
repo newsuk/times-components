@@ -22,9 +22,6 @@ exports[`1. Render the button 1`] = `
   underlayColor="#0077B3"
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#FFF",

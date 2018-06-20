@@ -1788,7 +1788,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -1947,7 +1946,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -2098,7 +2096,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -2250,9 +2247,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -2268,9 +2262,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2340,9 +2331,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -2384,9 +2372,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -2413,9 +2398,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -2430,9 +2412,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessibilityRole="link"
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
             style={
               Object {
@@ -2449,9 +2428,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
             police disclosure of evidence
           </Text>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -2462,9 +2438,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -3245,7 +3218,6 @@ exports[`Article tests on android should render an article with a video asset 1`
       >
         <View
           accessibilityLabel="splash-component"
-          accessible={true}
           nativeBackgroundAndroid={
             Object {
               "attribute": "selectableItemBackground",
@@ -3440,9 +3412,6 @@ exports[`Article tests on android should render an article with a video asset 1`
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -3484,9 +3453,6 @@ exports[`Article tests on android should render an article with a video asset 1`
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -3528,9 +3494,6 @@ exports[`Article tests on android should render an article with a video asset 1`
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -3557,9 +3520,6 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3587,9 +3547,6 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3617,9 +3574,6 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -3666,9 +3620,6 @@ exports[`Article tests on android should render an article with a video asset 1`
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -4582,7 +4533,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -4741,7 +4691,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -4892,7 +4841,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -5044,9 +4992,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -5062,9 +5007,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5134,9 +5076,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -5163,9 +5102,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5179,9 +5115,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -5192,9 +5125,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -5218,9 +5148,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5233,9 +5160,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -5259,9 +5183,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5289,9 +5210,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5319,9 +5237,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5349,9 +5264,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -5379,9 +5291,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6312,7 +6221,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -6471,7 +6379,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -6622,7 +6529,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -6774,9 +6680,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -6792,9 +6695,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6837,9 +6737,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -6881,9 +6778,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -6910,9 +6804,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6926,9 +6817,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -6939,9 +6827,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -6965,9 +6850,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -6980,9 +6862,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -7006,9 +6885,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7036,9 +6912,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7066,9 +6939,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7096,9 +6966,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -7126,9 +6993,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8062,7 +7926,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -8221,7 +8084,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -8372,7 +8234,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -8509,9 +8370,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -8527,9 +8385,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8599,9 +8454,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -8643,9 +8495,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -8672,9 +8521,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8688,9 +8534,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -8701,9 +8544,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -8727,9 +8567,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8742,9 +8579,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -8768,9 +8602,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8798,9 +8629,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8828,9 +8656,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8858,9 +8683,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -8888,9 +8710,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -9821,7 +9640,6 @@ exports[`Article tests on android should render an article with no label and no 
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -9980,7 +9798,6 @@ exports[`Article tests on android should render an article with no label and no 
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -10131,7 +9948,6 @@ exports[`Article tests on android should render an article with no label and no 
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -10268,9 +10084,6 @@ exports[`Article tests on android should render an article with no label and no 
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -10286,9 +10099,6 @@ exports[`Article tests on android should render an article with no label and no 
         </Text>
         <Text
           accessibilityLabel="standfirst"
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10331,9 +10141,6 @@ exports[`Article tests on android should render an article with no label and no 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -10375,9 +10182,6 @@ exports[`Article tests on android should render an article with no label and no 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -10404,9 +10208,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10420,9 +10221,6 @@ exports[`Article tests on android should render an article with no label and no 
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -10433,9 +10231,6 @@ exports[`Article tests on android should render an article with no label and no 
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -10459,9 +10254,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10474,9 +10266,6 @@ exports[`Article tests on android should render an article with no label and no 
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -10500,9 +10289,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10530,9 +10316,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10560,9 +10343,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10590,9 +10370,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -10620,9 +10397,6 @@ exports[`Article tests on android should render an article with no label and no 
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -11553,7 +11327,6 @@ exports[`Article tests on android should render an article with no label, no fla
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -11712,7 +11485,6 @@ exports[`Article tests on android should render an article with no label, no fla
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -11863,7 +11635,6 @@ exports[`Article tests on android should render an article with no label, no fla
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -12000,9 +11771,6 @@ exports[`Article tests on android should render an article with no label, no fla
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -12044,9 +11812,6 @@ exports[`Article tests on android should render an article with no label, no fla
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -12088,9 +11853,6 @@ exports[`Article tests on android should render an article with no label, no fla
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -12117,9 +11879,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12133,9 +11892,6 @@ exports[`Article tests on android should render an article with no label, no fla
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -12146,9 +11902,6 @@ exports[`Article tests on android should render an article with no label, no fla
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -12172,9 +11925,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12187,9 +11937,6 @@ exports[`Article tests on android should render an article with no label, no fla
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -12213,9 +11960,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12243,9 +11987,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12273,9 +12014,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12303,9 +12041,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -12333,9 +12068,6 @@ exports[`Article tests on android should render an article with no label, no fla
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13269,7 +13001,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -13428,7 +13159,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -13579,7 +13309,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -13731,9 +13460,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -13802,9 +13528,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -13846,9 +13569,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -13875,9 +13595,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13891,9 +13608,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -13904,9 +13618,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -13930,9 +13641,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -13945,9 +13653,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -13971,9 +13676,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14001,9 +13703,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14031,9 +13730,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14061,9 +13757,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -14091,9 +13784,6 @@ exports[`Article tests on android should render an article with no standfirst 1`
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15024,7 +14714,6 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -15183,7 +14872,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -15334,7 +15022,6 @@ exports[`Article tests on android should render an article with no standfirst an
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -15486,9 +15173,6 @@ exports[`Article tests on android should render an article with no standfirst an
           />
         </View>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -15530,9 +15214,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -15574,9 +15255,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -15603,9 +15281,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15619,9 +15294,6 @@ exports[`Article tests on android should render an article with no standfirst an
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -15632,9 +15304,6 @@ exports[`Article tests on android should render an article with no standfirst an
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -15658,9 +15327,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15673,9 +15339,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -15699,9 +15362,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15729,9 +15389,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15759,9 +15416,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15789,9 +15443,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -15819,9 +15470,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -16755,7 +16403,6 @@ exports[`Article tests on android should render an article with no standfirst an
               }
             >
               <View
-                accessible={true}
                 nativeBackgroundAndroid={
                   Object {
                     "attribute": "selectableItemBackground",
@@ -16914,7 +16561,6 @@ exports[`Article tests on android should render an article with no standfirst an
                 }
               >
                 <View
-                  accessible={true}
                   style={
                     Object {
                       "flexGrow": 1,
@@ -17065,7 +16711,6 @@ exports[`Article tests on android should render an article with no standfirst an
             </View>
           </Modal>
           <View
-            accessible={true}
             nativeBackgroundAndroid={
               Object {
                 "attribute": "selectableItemBackground",
@@ -17202,9 +16847,6 @@ exports[`Article tests on android should render an article with no standfirst an
         }
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#1D1D1B",
@@ -17273,9 +16915,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -17317,9 +16956,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "color": "#696969",
@@ -17346,9 +16982,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-0"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17362,9 +16995,6 @@ exports[`Article tests on android should render an article with no standfirst an
         >
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontStyle": "italic",
@@ -17375,9 +17005,6 @@ exports[`Article tests on android should render an article with no standfirst an
           </Text>
           last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -17401,9 +17028,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-1"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17416,9 +17040,6 @@ exports[`Article tests on android should render an article with no standfirst an
           }
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Object {
                 "fontWeight": "bold",
@@ -17442,9 +17063,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-2"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17472,9 +17090,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-3"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17502,9 +17117,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-4"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17532,9 +17144,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-5"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17562,9 +17171,6 @@ exports[`Article tests on android should render an article with no standfirst an
         testID="paragraph-6"
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "#333333",
@@ -17593,18 +17199,10 @@ exports[`Article tests on android should render an article with no standfirst an
 
 exports[`Article tests on android should render an error 1`] = `
 <View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     An error occurred
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     {
   "message": "An example error."
 }
