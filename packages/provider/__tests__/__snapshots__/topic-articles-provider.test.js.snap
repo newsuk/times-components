@@ -5,7 +5,7 @@ Object {
   "__typename": "Topic",
   "articles": Object {
     "__typename": "Articles",
-    "count": 236,
+    "count": 50,
     "list": Array [
       Object {
         "__typename": "Article",
