@@ -33,13 +33,13 @@ describe("Article Flag on web", () => {
   );
 
   describe("should render the", () => {
-    it("Article flag with no colour", () => {
+    it("flag with no colour", () => {
       const wrapper = mount(<ArticleFlag title="No Colour" />);
 
       expect(wrapper).toMatchSnapshot("1. Article flag");
     });
 
-    it("Article flag with a colour", () => {
+    it("flag with a colour", () => {
       const wrapper = mount(<ArticleFlag title="Coloured Red" color="red" />);
 
       expect(wrapper).toMatchSnapshot("2. Red Article flag");

@@ -10,13 +10,13 @@ export default () => {
   describe("should render the", () => {
     addSerializers(expect, enzymeTreeSerializer());
 
-    it("Article flag with no colour", () => {
+    it("flag with no colour", () => {
       const wrapper = shallow(<ArticleFlag title="No Colour" />);
 
       expect(wrapper).toMatchSnapshot("1. Article flag");
     });
 
-    it("Article flag with a colour", () => {
+    it("flag with a colour", () => {
       const wrapper = shallow(<ArticleFlag title="Coloured Red" color="red" />);
 
       expect(wrapper).toMatchSnapshot("2. Red Article flag");

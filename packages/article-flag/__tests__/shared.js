@@ -16,25 +16,25 @@ module.exports = () => {
   describe("should render the", () => {
     addSerializers(expect, enzymeRootSerializer());
 
-    it("New flag correctly", () => {
+    it("New flag", () => {
       const wrapper = shallow(<NewArticleFlag />);
 
       expect(wrapper).toMatchSnapshot("2. New flag");
     });
 
-    it("Updated flag correctly", () => {
+    it("Updated flag", () => {
       const wrapper = shallow(<UpdatedArticleFlag />);
 
       expect(wrapper).toMatchSnapshot("3. Update flag");
     });
 
-    it("Exclusive flag correctly", () => {
+    it("Exclusive flag", () => {
       const wrapper = shallow(<ExclusiveArticleFlag />);
 
       expect(wrapper).toMatchSnapshot("4. Exclusive flag");
     });
 
-    it("Sponsored flag correctly", () => {
+    it("Sponsored flag", () => {
       const wrapper = shallow(<SponsoredArticleFlag />);
 
       expect(wrapper).toMatchSnapshot("5. Sponsored flag");
