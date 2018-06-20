@@ -232,7 +232,7 @@ export default {
           </ScrollView>
         )
     },
-    { 
+    {
       type: "story",
       name: "DOMContext",
       platform: "web",
