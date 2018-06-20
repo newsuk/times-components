@@ -340,14 +340,22 @@
                   "name": "first",
                   "description":
                     "The maximum number of articles you want to take, defaults to 10",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "10"
                 },
                 {
                   "name": "skip",
                   "description":
                     "The number of articles to skip over, useful for paging, defaults to 0",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "0"
                 }
               ],
@@ -378,6 +386,17 @@
           "name": "Int",
           "description":
             "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. ",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "PagingNumber",
+          "description":
+            "Acts like an integer but only allows positive and zero whole numbers less than to equal to 1,000,000",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -1406,14 +1425,22 @@
                   "name": "first",
                   "description":
                     "The maximum number of articles you want to take, defaults to 10",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "10"
                 },
                 {
                   "name": "skip",
                   "description":
                     "The number of articles to skip over, useful for paging, defaults to 0",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "0"
                 }
               ],
@@ -1460,14 +1487,22 @@
                   "name": "first",
                   "description":
                     "The maximum number of articles you want to take, defaults to 10",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "10"
                 },
                 {
                   "name": "skip",
                   "description":
                     "The number of articles to skip over, useful for paging, defaults to 0",
-                  "type": { "kind": "SCALAR", "name": "Int", "ofType": null },
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "PagingNumber",
+                    "ofType": null
+                  },
                   "defaultValue": "0"
                 }
               ],

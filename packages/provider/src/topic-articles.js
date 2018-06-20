@@ -4,8 +4,8 @@ import connectGraphql from "./connect";
 export const query = gql`
   query TopicArticlesQuery(
     $slug: Slug!
-    $first: Int
-    $skip: Int
+    $first: PagingNumber
+    $skip: PagingNumber
     $imageRatio: Ratio!
   ) {
     topic(slug: $slug) {
