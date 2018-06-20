@@ -1,5 +1,5 @@
 import shared from "../shared";
 
-describe("Article Flag on web", () => {
+describe("Web", () => {
   shared();
 });
