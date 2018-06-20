@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "2.4.11",
+  "version": "2.4.12",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -45,7 +45,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/storybook": "1.0.0",
+    "@times-components/storybook": "1.0.1",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -66,8 +66,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "1.0.0",
-    "@times-components/utils": "1.0.0",
+    "@times-components/styleguide": "1.1.0",
+    "@times-components/utils": "1.1.0",
     "prop-types": "15.6.0",
     "react-native-svg": "6.3.1",
     "svgs": "3.2.1"

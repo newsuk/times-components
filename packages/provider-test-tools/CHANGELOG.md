@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.11.0...@times-components/provider-test-tools@0.12.0) (2018-06-20)
+
+
+### Features
+
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.10.9...@times-components/provider-test-tools@0.11.0) (2018-06-19)
 
