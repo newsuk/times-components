@@ -7,7 +7,7 @@ exports[`2. New flag 1`] = `
 />
 `;
 
-exports[`3. Update flag 1`] = `
+exports[`3. Updated flag 1`] = `
 <ArticleFlag
   color="#3C81BE"
   title="updated"

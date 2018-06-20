@@ -25,7 +25,7 @@ module.exports = () => {
     it("Updated flag", () => {
       const wrapper = shallow(<UpdatedArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("3. Update flag");
+      expect(wrapper).toMatchSnapshot("3. Updated flag");
     });
 
     it("Exclusive flag", () => {

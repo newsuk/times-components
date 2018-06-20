@@ -15,7 +15,7 @@ import {
 } from "@times-components/jest-serializer";
 import ArticleFlag from "../../src/article-flag";
 
-describe("Article Flag on web", () => {
+describe("web", () => {
   addSerializers(
     expect,
     enzymeTreeSerializer(),
