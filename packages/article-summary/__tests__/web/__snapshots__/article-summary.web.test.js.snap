@@ -68,7 +68,6 @@ exports[`Article Summary tests on Web should render an ArticleSummaryHeadline co
       "color": "rgba(51,51,51,1)",
       "fontFamily": "TimesModern-Bold",
       "fontSize": "22px",
-      "fontWeight": "400",
       "lineHeight": "22px",
       "marginBottom": "5px",
     }
@@ -282,23 +281,8 @@ exports[`Article Summary tests on Web should render an article-summary component
       }
     }
   >
-    <div
-      style={
-        Object {
-          "WebkitAlignItems": "center",
-          "WebkitBoxAlign": "center",
-          "alignItems": "center",
-          "msFlexAlign": "center",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "paddingBottom": "2px",
-          }
-        }
-      >
+    <div>
+      <div>
         <svg
           height={8}
           style={Object {}}
@@ -330,12 +314,6 @@ exports[`Article Summary tests on Web should render an article-summary component
         style={
           Object {
             "color": "rgba(51,51,51,1)",
-            "fontSize": "12px",
-            "fontWeight": "400",
-            "letterSpacing": "1.2px",
-            "lineHeight": "12px",
-            "marginLeft": "5px",
-            "top": "2px",
           }
         }
       >
@@ -352,7 +330,6 @@ exports[`Article Summary tests on Web should render an article-summary component
         "color": "rgba(51,51,51,1)",
         "fontFamily": "TimesModern-Bold",
         "fontSize": "22px",
-        "fontWeight": "400",
         "lineHeight": "22px",
         "marginBottom": "5px",
       }

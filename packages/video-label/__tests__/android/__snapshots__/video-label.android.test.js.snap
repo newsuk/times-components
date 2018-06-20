@@ -184,11 +184,10 @@ exports[`Video Label test on android renders VideoLabel with an explicit title 1
         "fontWeight": "400",
         "letterSpacing": 1.2,
         "lineHeight": 12,
-        "margin": 0,
         "marginLeft": 5,
         "padding": 0,
         "position": "relative",
-        "top": 2,
+        "top": 1,
       }
     }
   >
@@ -381,11 +380,10 @@ exports[`Video Label test on android renders VideoLabel without an explicit titl
         "fontWeight": "400",
         "letterSpacing": 1.2,
         "lineHeight": 12,
-        "margin": 0,
         "marginLeft": 5,
         "padding": 0,
         "position": "relative",
-        "top": 2,
+        "top": 1,
       }
     }
   >
