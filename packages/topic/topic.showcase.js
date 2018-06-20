@@ -18,7 +18,7 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const pageSize = 5;
+const pageSize = 20;
 const slug = "chelsea";
 
 const { defaultProps: { adConfig } } = AdComposer;
