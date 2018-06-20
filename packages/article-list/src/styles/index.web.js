@@ -54,7 +54,35 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.infoSubText,
     textAlign: "center"
+  },
+  listEmptyStateContainer: {
+    flex: 1,
+    minHeight: 400
+  },
+  listEmptyMessage: {
+    color: colours.functional.secondary,
+    fontFamily: fonts.bodyRegular,
+    fontSize: fontSizes.infoTitle,
+    marginTop: spacing(28),
+    textAlign: "center"
+  },
+  listEmptyWatermarkContainer: {
+    position: "absolute",
+    bottom: 0,
+    right: 0
+  },
+  listEmptyBackButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
+    marginTop: spacing(4)
   }
 });
 
+const watermarkStyles = {
+  width: 500,
+  height: 350,
+  viewBox: "0 0 350 200"
+};
+
+export { watermarkStyles };
 export default styles;

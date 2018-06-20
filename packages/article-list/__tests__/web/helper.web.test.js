@@ -32,6 +32,8 @@ describe("Lazy loading and pagination tests on web", () => {
     adConfig: {},
     articles: articleListWithImagesFixture.data.author.articles.list,
     count: articleListWithImagesFixture.data.author.articles.list.length,
+    emptyStateMessage:
+      "Unfortunately, there are no articles relating to this page",
     imageRatio: 3 / 2,
     onArticlePress: () => {},
     onTwitterLinkPress: () => {},

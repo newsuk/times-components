@@ -10,7 +10,8 @@ export const androidLetterSpacing = title =>
     .split("")
     .join("\u200A");
 
-export const capitalise = title => title.replace(/\b\w/g, l => l.toUpperCase());
+export const capitalise = title =>
+  title.charAt(0).toUpperCase() + title.slice(1);
 
 export const ratioTextToFloat = s => {
   if (!s || !s.length) {

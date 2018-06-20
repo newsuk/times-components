@@ -23,6 +23,9 @@ const Topic = ({
   slug,
   topic
 }) => {
+  const emptyStateMessage =
+    "Unfortunately, there are no articles relating to this topic";
+
   if (error) {
     return <ArticleListPageError refetch={refetch} />;
   }
@@ -33,6 +36,7 @@ const Topic = ({
         adConfig={adConfig}
         articleListHeader={<TopicHead isLoading />}
         articlesLoading
+        emptyStateMessage={emptyStateMessage}
         fetchMore={() => Promise.resolve()}
         imageRatio={ratioTextToFloat("3:2")}
         isLoading
@@ -95,6 +99,7 @@ const Topic = ({
             articles={get(data, "articles.list", [])}
             articlesLoading={articlesLoading}
             count={get(data, "articles.count", 0)}
+            emptyStateMessage={emptyStateMessage}
             error={articlesError}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}

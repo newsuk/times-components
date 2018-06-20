@@ -8,6 +8,7 @@ import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import { propTypes, defaultProps } from "./article-list-prop-types";
+import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
 
 const viewabilityConfig = {
@@ -44,6 +45,7 @@ class ArticleList extends Component {
       articles,
       articlesLoading,
       count,
+      emptyStateMessage,
       error,
       imageRatio,
       onArticlePress,
@@ -118,6 +120,15 @@ class ArticleList extends Component {
       );
     };
 
+    if (!articlesLoading && !error && data.length === 0) {
+      return (
+        <View style={styles.listEmptyStateContainer}>
+          {articleListHeader}
+          <ArticleListEmptyState message={emptyStateMessage} />
+        </View>
+      );
+    }
+
     return (
       <FlatList
         accessibilityID="scroll-view"
@@ -167,4 +178,5 @@ ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
 export { default as ArticleListPageError } from "./article-list-page-error";
+export { ArticleListEmptyState };
 export default withTrackScrollDepth(ArticleList);

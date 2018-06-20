@@ -183,7 +183,8 @@ const makeTopicArticleMocks = (
     pageSize = 5,
     withImages = true,
     slug = "chelsea",
-    delay = 1000
+    delay = 1000,
+    empty = false
   } = {},
   transform
 ) => [
@@ -202,7 +203,7 @@ const makeTopicArticleMocks = (
     result: makeTopicArticleList(
       {
         skip: indx * pageSize,
-        first: pageSize,
+        first: empty ? 0 : pageSize,
         withImages
       },
       transform

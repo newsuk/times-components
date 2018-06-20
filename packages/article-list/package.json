@@ -75,6 +75,7 @@
     "@times-components/styleguide": "1.0.0",
     "@times-components/tracking": "1.0.0",
     "@times-components/utils": "1.0.0",
+    "@times-components/watermark": "1.0.0",
     "lodash.get": "4.4.2",
     "prop-types": "15.6.0"
   },

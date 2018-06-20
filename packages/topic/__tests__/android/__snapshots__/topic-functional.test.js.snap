@@ -183,6 +183,7 @@ exports[`1. Render a Topic page 1`] = `
   }
   articlesLoading={false}
   count={236}
+  emptyStateMessage="Unfortunately, there are no articles relating to this topic"
   imageRatio={1.5}
   isLoading={false}
   page={1}
@@ -201,6 +202,7 @@ exports[`2. Render a topics page loading state 1`] = `
     />
   }
   articlesLoading={true}
+  emptyStateMessage="Unfortunately, there are no articles relating to this topic"
   imageRatio={1.5}
   isLoading={true}
   pageSize={3}

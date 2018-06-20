@@ -13,6 +13,7 @@ import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
+import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
@@ -105,6 +106,7 @@ class ArticleList extends Component {
       articles,
       articlesLoading,
       count,
+      emptyStateMessage,
       error,
       imageRatio,
       isLoading,
@@ -167,78 +169,81 @@ class ArticleList extends Component {
           elementId: `${article.id}.${index}`
         }));
 
-    const Contents = (
-      <ListContentContainer>
-        {paginationComponent({ autoScroll: false, hideResults: false })}
-        <View style={styles.listContentContainer}>
-          {data &&
-            data.map((article, index) => {
-              const { id, elementId, url } = article;
-              const separatorComponent =
-                index > 0 ? <ArticleListItemSeparator /> : null;
+    const Contents =
+      data.length === 0 ? (
+        <ArticleListEmptyState message={emptyStateMessage} />
+      ) : (
+        <ListContentContainer>
+          {paginationComponent({ autoScroll: false, hideResults: false })}
+          <View style={styles.listContentContainer}>
+            {data &&
+              data.map((article, index) => {
+                const { id, elementId, url } = article;
+                const separatorComponent =
+                  index > 0 ? <ArticleListItemSeparator /> : null;
 
-              const renderAd = () => {
-                if (index !== this.advertPosition || !hasAdvertConfig) {
-                  return null;
-                }
+                const renderAd = () => {
+                  if (index !== this.advertPosition || !hasAdvertConfig) {
+                    return null;
+                  }
 
-                const renderSlotName = () => {
-                  if (isLoading) {
-                    return "inline-ad-header-loading";
-                  }
-                  if (articlesLoading) {
-                    return "inline-articles-loading";
-                  }
-                  return "inline-ad";
+                  const renderSlotName = () => {
+                    if (isLoading) {
+                      return "inline-ad-header-loading";
+                    }
+                    if (articlesLoading) {
+                      return "inline-articles-loading";
+                    }
+                    return "inline-ad";
+                  };
+
+                  const AdComponent = (
+                    <AdComposer adConfig={adConfig}>
+                      <Ad
+                        slotSuffix={this.advertPositionCounter.toString()}
+                        slotName={renderSlotName()}
+                      />
+                    </AdComposer>
+                  );
+                  this.advertPositionCounter = this.advertPositionCounter + 1;
+                  return AdComponent;
                 };
 
-                const AdComponent = (
-                  <AdComposer adConfig={adConfig}>
-                    <Ad
-                      slotSuffix={this.advertPositionCounter.toString()}
-                      slotName={renderSlotName()}
-                    />
-                  </AdComposer>
+                return (
+                  <Fragment key={elementId}>
+                    <div
+                      accessibility-label={elementId}
+                      data-testid={elementId}
+                      id={elementId}
+                      ref={node => this.registerNode(node)}
+                    >
+                      <ErrorView>
+                        {({ hasError }) =>
+                          hasError ? null : (
+                            <Fragment>
+                              {separatorComponent}
+                              <ArticleListItem
+                                {...article}
+                                index={index}
+                                length={data.length}
+                                imageRatio={imageRatio}
+                                imageSize={this.getImageSize(elementId) || 100}
+                                onPress={e => onArticlePress(e, { id, url })}
+                                showImage={showImages}
+                              />
+                            </Fragment>
+                          )
+                        }
+                      </ErrorView>
+                    </div>
+                    {renderAd()}
+                  </Fragment>
                 );
-                this.advertPositionCounter = this.advertPositionCounter + 1;
-                return AdComponent;
-              };
-
-              return (
-                <Fragment key={elementId}>
-                  <div
-                    accessibility-label={elementId}
-                    data-testid={elementId}
-                    id={elementId}
-                    ref={node => this.registerNode(node)}
-                  >
-                    <ErrorView>
-                      {({ hasError }) =>
-                        hasError ? null : (
-                          <Fragment>
-                            {separatorComponent}
-                            <ArticleListItem
-                              {...article}
-                              index={index}
-                              length={data.length}
-                              imageRatio={imageRatio}
-                              imageSize={this.getImageSize(elementId) || 100}
-                              onPress={e => onArticlePress(e, { id, url })}
-                              showImage={showImages}
-                            />
-                          </Fragment>
-                        )
-                      }
-                    </ErrorView>
-                  </div>
-                  {renderAd()}
-                </Fragment>
-              );
-            })}
-        </View>
-        {paginationComponent({ autoScroll: true, hideResults: true })}
-      </ListContentContainer>
-    );
+              })}
+          </View>
+          {paginationComponent({ autoScroll: true, hideResults: true })}
+        </ListContentContainer>
+      );
 
     if (!articlesLoading) receiveChildList(data);
 
@@ -255,4 +260,5 @@ ArticleList.propTypes = propTypes;
 ArticleList.defaultProps = defaultProps;
 
 export { default as ArticleListPageError } from "./article-list-page-error";
+export { ArticleListEmptyState };
 export default withTrackScrollDepth(ArticleList);

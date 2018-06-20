@@ -69,6 +69,26 @@ export default {
     },
     {
       type: "story",
+      name: "Empty State",
+      component: (_, { decorateAction }) => (
+        <MockedProvider
+          mocks={fixtureGenerator.makeTopicArticleMocks({ empty: true })}
+        >
+          <TopicProvider debounceTimeMs={0} slug={slug}>
+            {({ topic, error, isLoading }) => (
+              <Topic
+                {...getProps(decorateAction)}
+                topic={topic}
+                error={error}
+                isLoading={isLoading}
+              />
+            )}
+          </TopicProvider>
+        </MockedProvider>
+      )
+    },
+    {
+      type: "story",
       name: "With an error getting Topic",
       component: (_, { decorateAction }) => (
         <MockedProvider

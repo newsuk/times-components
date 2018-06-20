@@ -1019,6 +1019,38 @@ exports[`ArticleList tests on web should render an article list that is loading 
 </div>
 `;
 
+exports[`ArticleList tests on web should render an empty state 1`] = `
+<div>
+  <div>
+    <div
+      dir="auto"
+    >
+      Unfortunately, there are no articles relating to this page
+    </div>
+    <div>
+      <svg
+        height={350}
+        width={500}
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+          id="Page-1"
+          opacity="0.07"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <path
+            fill="#1D1D1B"
+            id="Shape"
+          />
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`ArticleList tests on web should render the article list error content correctly 1`] = `
 <React.Fragment>
   <Text
@@ -1231,10 +1263,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       <div
                         style={
                           Object {
-                            "bottom": "0px",
                             "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
                             "top": "0px",
                           }
                         }
@@ -1262,7 +1291,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",
@@ -1359,10 +1387,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       <div
                         style={
                           Object {
-                            "bottom": "0px",
                             "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
                             "top": "0px",
                           }
                         }
@@ -1390,7 +1415,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",
@@ -1487,10 +1511,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       <div
                         style={
                           Object {
-                            "bottom": "0px",
                             "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
                             "top": "0px",
                           }
                         }
@@ -1518,7 +1539,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",
@@ -1615,10 +1635,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       <div
                         style={
                           Object {
-                            "bottom": "0px",
                             "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
                             "top": "0px",
                           }
                         }
@@ -1646,7 +1663,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",
@@ -1743,10 +1759,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       <div
                         style={
                           Object {
-                            "bottom": "0px",
                             "left": "0px",
-                            "position": "absolute",
-                            "right": "0px",
                             "top": "0px",
                           }
                         }
@@ -1774,7 +1787,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",
@@ -1914,14 +1926,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                           }
                         }
                       />
-                      <div
-                        style={
-                          Object {
-                            "bottom": "0px",
-                            "right": "0px",
-                          }
-                        }
-                      >
+                      <div>
                         <div
                           style={
                             Object {
@@ -1966,7 +1971,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                         Object {
                           "color": "rgba(51,51,51,1)",
                           "fontFamily": "TimesModern-Bold",
-                          "fontSize": "22px",
                           "fontWeight": "400",
                           "lineHeight": "22px",
                           "marginBottom": "5px",

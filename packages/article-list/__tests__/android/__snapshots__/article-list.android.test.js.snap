@@ -2373,6 +2373,63 @@ exports[`ArticleList tests on android should render an article list that is load
 </RCTScrollView>
 `;
 
+exports[`ArticleList tests on android should render an empty state 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 22,
+          "marginLeft": 40,
+          "marginRight": 40,
+          "marginTop": 60,
+          "textAlign": "center",
+        }
+      }
+    >
+      Unfortunately, there are no articles relating to this page
+    </Text>
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "height": 250,
+            "width": 300,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`ArticleList tests on android should render the article list error content correctly 1`] = `
 <React.Fragment>
   <Text

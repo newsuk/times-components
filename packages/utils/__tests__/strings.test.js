@@ -9,20 +9,16 @@ describe("androidLetterSpacing should", () => {
 });
 
 describe("capitalise should", () => {
-  it("capitalise the first letter of a word", () => {
+  it("capitalise the first letter of a sentence", () => {
     expect(capitalise("test")).toEqual("Test");
   });
 
-  it("keep the capitalised first letter of a word", () => {
+  it("keep the capitalised first letter of a sentence", () => {
     expect(capitalise("Test")).toEqual("Test");
   });
 
-  it("capitalised first letter of multiple words", () => {
-    expect(capitalise("my test")).toEqual("My Test");
-  });
-
-  it("keep the capitalised first letters of multiple words", () => {
-    expect(capitalise("My Test")).toEqual("My Test");
+  it("only capitalise first letter of sentence and keep the rest", () => {
+    expect(capitalise("my test")).toEqual("My test");
   });
 });
 
