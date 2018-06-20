@@ -987,9 +987,7 @@ exports[`ArticleList tests on web should render an article list that is loading 
 exports[`ArticleList tests on web should render an empty state 1`] = `
 <div>
   <div>
-    <div
-      dir="auto"
-    >
+    <div>
       Unfortunately, there are no articles relating to this page
     </div>
     <div>

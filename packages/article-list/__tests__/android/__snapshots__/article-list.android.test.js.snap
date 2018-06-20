@@ -2312,9 +2312,6 @@ exports[`ArticleList tests on android should render an empty state 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#696969",
