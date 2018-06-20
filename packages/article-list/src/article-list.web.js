@@ -183,25 +183,20 @@ class ArticleList extends Component {
                   index > 0 ? <ArticleListItemSeparator /> : null;
 
                 const renderAd = () => {
-                  if (index !== this.advertPosition || !hasAdvertConfig) {
+                  if (
+                    index !== this.advertPosition ||
+                    !hasAdvertConfig ||
+                    isLoading ||
+                    articlesLoading
+                  ) {
                     return null;
                   }
-
-                  const renderSlotName = () => {
-                    if (isLoading) {
-                      return "inline-ad-header-loading";
-                    }
-                    if (articlesLoading) {
-                      return "inline-articles-loading";
-                    }
-                    return "inline-ad";
-                  };
 
                   const AdComponent = (
                     <AdComposer adConfig={adConfig}>
                       <Ad
                         slotSuffix={this.advertPositionCounter.toString()}
-                        slotName={renderSlotName()}
+                        slotName="inline-ad"
                       />
                     </AdComposer>
                   );
