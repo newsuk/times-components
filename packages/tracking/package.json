@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -35,10 +35,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.0",
-    "@times-components/jest-serializer": "1.0.0",
-    "@times-components/storybook": "1.0.1",
-    "@times-components/tealium-utils": "0.4.11",
+    "@times-components/jest-configurator": "1.0.1",
+    "@times-components/jest-serializer": "1.0.1",
+    "@times-components/storybook": "1.0.2",
+    "@times-components/tealium-utils": "0.4.12",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
