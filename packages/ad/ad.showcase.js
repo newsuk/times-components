@@ -105,7 +105,7 @@ export default {
       name: "render one ad - intervention",
       component: () =>
         withOpenInNewWindow(
-          <Ad pos="intervention" contextUrl={articleUrl} section="news" />
+          <Ad slotName="intervention" contextUrl={articleUrl} section="news" />
         )
     },
     {
@@ -113,7 +113,7 @@ export default {
       name: "render one ad - header",
       component: () =>
         withOpenInNewWindow(
-          <Ad pos="header" contextUrl={articleUrl} section="news" />
+          <Ad slotName="header" contextUrl={articleUrl} section="news" />
         )
     },
     {
@@ -122,8 +122,8 @@ export default {
       component: () =>
         withOpenInNewWindow(
           <View>
-            <Ad section="news" pos="header" contextUrl={articleUrl} />
-            <Ad section="news" pos="inline-ad" contextUrl={articleUrl} />
+            <Ad section="news" slotName="header" contextUrl={articleUrl} />
+            <Ad section="news" slotName="inline-ad" contextUrl={articleUrl} />
           </View>
         )
     },
@@ -133,7 +133,7 @@ export default {
       component: () =>
         withOpenInNewWindow(
           <View>
-            <Ad section="news" pos="inline-ad" contextUrl={topicUrl} />
+            <Ad section="news" slotName="inline-ad" contextUrl={topicUrl} />
           </View>,
           "topic"
         )
@@ -145,7 +145,7 @@ export default {
         withOpenInNewWindow(
           <View>
             <Text>The pixel ad is below. It&rsquo;s invisible.</Text>
-            <Ad section="news" pos="pixel" contextUrl={articleUrl} />
+            <Ad section="news" slotName="pixel" contextUrl={articleUrl} />
           </View>
         )
     },
@@ -156,7 +156,7 @@ export default {
         withOpenInNewWindow(
           <View>
             <Text>The pixelteads ad is below. It&rsquo;s invisible.</Text>
-            <Ad section="news" pos="pixelteads" contextUrl={articleUrl} />
+            <Ad section="news" slotName="pixelteads" contextUrl={articleUrl} />
           </View>
         )
     },
@@ -167,7 +167,7 @@ export default {
         withOpenInNewWindow(
           <View>
             <Text>The pixelskin ad is below. It&rsquo;s invisible.</Text>
-            <Ad section="news" pos="pixelskin" contextUrl={articleUrl} />
+            <Ad section="news" slotName="pixelskin" contextUrl={articleUrl} />
           </View>
         )
     },
@@ -182,7 +182,7 @@ export default {
               elementum ex id diam eleifend convallis. Nulla faucibus nec nibh
               sed condimentum.
             </Text>
-            <Ad pos="inline-ad" section="news" contextUrl={articleUrl} />
+            <Ad slotName="inline-ad" section="news" contextUrl={articleUrl} />
             <Text style={{ color: "red" }}>
               Class aptent taciti sociosqu ad litora torquent per conubia
               nostra, per inceptos himenaeos. Curabitur non sem ut sapien
@@ -206,7 +206,11 @@ export default {
               enim. Orci varius natoque penatibus et magnis dis parturient
               montes, nascetur ridiculus mus.
             </Text>
-            <Ad pos="intervention" section="news" contextUrl={articleUrl} />
+            <Ad
+              slotName="intervention"
+              section="news"
+              contextUrl={articleUrl}
+            />
             <Text>
               Donec convallis enim sit amet elit pharetra, et aliquet augue
               blandit. Integer suscipit mollis libero, et imperdiet nunc. Aenean
@@ -215,7 +219,7 @@ export default {
               congue tortor erat vitae erat. Nulla eget nulla rhoncus,
               sollicitudin ipsum et, volutpat ligula.
             </Text>
-            <Ad pos="inline-ad" section="news" contextUrl={articleUrl} />
+            <Ad slotName="inline-ad" section="news" contextUrl={articleUrl} />
             <Text>
               Aliquam dapibus risus a leo euismod, sed dignissim nibh commodo.
               Donec vitae justo aliquam, pellentesque risus laoreet, hendrerit
