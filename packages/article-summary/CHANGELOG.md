@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/newsuk/times-components/compare/@times-components/article-summary@1.1.1...@times-components/article-summary@1.1.2) (2018-06-20)
+
+
+### Bug Fixes
+
+* video label layout on web, ios and android ([#1040](https://github.com/newsuk/times-components/issues/1040)) ([e90cdb7](https://github.com/newsuk/times-components/commit/e90cdb7))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/newsuk/times-components/compare/@times-components/article-summary@1.1.0...@times-components/article-summary@1.1.1) (2018-06-20)
 

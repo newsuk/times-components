@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/video-label@1.2.0...@times-components/video-label@1.2.1) (2018-06-20)
+
+
+### Bug Fixes
+
+* video label layout on web, ios and android ([#1040](https://github.com/newsuk/times-components/issues/1040)) ([e90cdb7](https://github.com/newsuk/times-components/commit/e90cdb7))
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@1.1.0...@times-components/video-label@1.2.0) (2018-06-20)
 
