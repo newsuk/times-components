@@ -206,7 +206,11 @@ export default {
               enim. Orci varius natoque penatibus et magnis dis parturient
               montes, nascetur ridiculus mus.
             </Text>
-            <Ad slotName="intervention" section="news" contextUrl={articleUrl} />
+            <Ad
+              slotName="intervention"
+              section="news"
+              contextUrl={articleUrl}
+            />
             <Text>
               Donec convallis enim sit amet elit pharetra, et aliquet augue
               blandit. Integer suscipit mollis libero, et imperdiet nunc. Aenean
