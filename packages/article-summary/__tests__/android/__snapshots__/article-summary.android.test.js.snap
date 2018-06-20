@@ -526,11 +526,10 @@ exports[`Article Summary tests on Android should render an article-summary compo
             "fontWeight": "400",
             "letterSpacing": 1.2,
             "lineHeight": 12,
-            "margin": 0,
             "marginLeft": 5,
             "padding": 0,
             "position": "relative",
-            "top": 2,
+            "top": 1,
           }
         }
       >

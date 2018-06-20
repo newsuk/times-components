@@ -5,11 +5,11 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   title: {
     ...sharedStyles.title,
-    top: 1
+    lineHeight: 11
   },
   iconContainer: {
     ...sharedStyles.iconContainer,
-    paddingBottom: 0
+    paddingBottom: 1
   }
 });
 

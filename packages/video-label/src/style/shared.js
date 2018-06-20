@@ -1,6 +1,10 @@
 import { fonts } from "@times-components/styleguide";
 
 const styles = {
+  container: {
+    alignItems: "center",
+    flexDirection: "row"
+  },
   title: {
     top: 2,
     fontFamily: fonts.supporting,
@@ -9,14 +13,11 @@ const styles = {
     fontWeight: "400",
     letterSpacing: 1.2,
     padding: 0,
-    margin: 0,
+    marginLeft: 5,
     position: "relative"
   },
   iconContainer: {
-    paddingBottom: 0
-  },
-  icon: {
-    height: 8
+    paddingBottom: 2
   }
 };
 

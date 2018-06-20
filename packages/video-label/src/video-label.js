@@ -6,11 +6,11 @@ import styles from "./style";
 import beautifyTitle from "./beautify-title";
 
 const VideoLabel = ({ title, color }) => (
-  <View style={{ flexDirection: "row", alignItems: "center" }}>
+  <View style={styles.container}>
     <View style={styles.iconContainer}>
-      <IconVideo height={styles.icon.height} fillColour={color} />
+      <IconVideo height={8} fillColour={color} />
     </View>
-    <Text style={[styles.title, { color, marginLeft: 5 }]}>
+    <Text style={[styles.title, { color }]}>
       {beautifyTitle(title || "VIDEO")}
     </Text>
   </View>
