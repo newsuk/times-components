@@ -8,6 +8,7 @@ class DOMContext extends Component {
     const { slotSuffix, init, data } = this.props;
 
     this.initExecuting = true;
+    this.hasUnmounted = false;
 
     const adInit = init({
       slotSuffix,
@@ -26,6 +27,11 @@ class DOMContext extends Component {
     this.processEventQueue();
   }
 
+  componentWillUnmount() {
+    this.eventQueue = [];
+    this.hasUnmounted = true;
+  }
+
   eventQueue = [];
 
   eventCallback = (type, detail) => {
@@ -34,13 +40,14 @@ class DOMContext extends Component {
   };
 
   processEventQueue() {
-    if (!this.initExecuting) {
+    if (!this.initExecuting && !this.hasUnmounted) {
       this.eventQueue.forEach(this.processEvent);
       this.eventQueue = [];
     }
   }
 
   processEvent = ({ type, detail }) => {
+    if (this.eventQueue.length === 0) return;
     if (type === "error") {
       throw new Error(`DomContext error: ${detail}`);
     } else if (type === "renderComplete") {
