@@ -179,8 +179,8 @@ const makeArticleMocks = (
 
 const makeTopicArticleMocks = (
   {
-    count = 10,
-    pageSize = 5,
+    count = 50,
+    pageSize = 20,
     withImages = true,
     slug = "chelsea",
     delay = 1000,
