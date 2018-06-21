@@ -75,7 +75,7 @@ export default Component => {
     });
 
     expect(tree).toMatchSnapshot(
-      "6. Render multiple authors separated by commas"
+      "4. Render multiple authors separated by commas"
     );
   });
 
@@ -85,13 +85,13 @@ export default Component => {
     });
 
     expect(tree).toMatchSnapshot(
-      "7. Render multiple authors separated by spaces"
+      "5. Render multiple authors separated by spaces"
     );
   });
 
   it("should render null with an empty AST", () => {
     const tree = renderer.create(<ArticleByline ast={[]} />);
 
-    expect(tree).toMatchSnapshot("4. Render null when AST is empty");
+    expect(tree).toMatchSnapshot("6. Render null when AST is empty");
   });
 };

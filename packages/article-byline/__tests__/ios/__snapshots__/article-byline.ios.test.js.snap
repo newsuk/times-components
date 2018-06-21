@@ -30,9 +30,7 @@ exports[`3. Render an author last 1`] = `
 </View>
 `;
 
-exports[`4. Render null when AST is empty 1`] = `null`;
-
-exports[`6. Render multiple authors separated by commas 1`] = `
+exports[`4. Render multiple authors separated by commas 1`] = `
 <View>
   <Text>
     Camilla Long
@@ -52,7 +50,7 @@ exports[`6. Render multiple authors separated by commas 1`] = `
 </View>
 `;
 
-exports[`7. Render multiple authors separated by spaces 1`] = `
+exports[`5. Render multiple authors separated by spaces 1`] = `
 <View>
   <Text>
     Camilla Long
@@ -71,3 +69,5 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
   </Text>
 </View>
 `;
+
+exports[`6. Render null when AST is empty 1`] = `null`;
