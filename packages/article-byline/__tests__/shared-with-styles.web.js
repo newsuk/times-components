@@ -15,7 +15,13 @@ export default Component => {
       stylePrinter,
       hoistStyleTransform,
       minimalWebTransform,
-      rnwTransform()
+      rnwTransform([
+        "fontSize",
+        "fontFamily",
+        "color",
+        "lineHeight",
+        "flexDirection"
+      ])
     )
   );
 
