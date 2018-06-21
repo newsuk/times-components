@@ -2,14 +2,11 @@ import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
-import { AdComposer } from "@times-components/ad";
 import ArticleListPagination from "../src/article-list-pagination";
 import ArticleList from "./../src/article-list";
 import ArticleListItem from "./../src/article-list-item";
 import articleListProps from "./default-article-list-props";
 import pagedResult from "./paged-result";
-
-const { defaultProps: { adConfig } } = AdComposer;
 
 export default () => {
   it("should render the article list pagination correctly", () => {
@@ -27,7 +24,6 @@ export default () => {
     const wrapper = mount(
       <ArticleList
         {...articleListProps}
-        adConfig={adConfig}
         articles={results.articles.list}
         onArticlePress={onArticlePressMock}
         page={1}
@@ -51,7 +47,6 @@ export default () => {
     const tree = renderer.create(
       <ArticleList
         {...articleListProps}
-        adConfig={adConfig}
         articles={results.articles.list}
         page={1}
         pageSize={pageSize}

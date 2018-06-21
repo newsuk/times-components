@@ -17,7 +17,7 @@ import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
-class ArticleList extends Component {
+export class ArticleList extends Component {
   constructor(props) {
     super(props);
 
@@ -42,6 +42,10 @@ class ArticleList extends Component {
       this.handleObservation.bind(this),
       options
     );
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return this.props.page === nextProps.page;
   }
 
   componentWillUnmount() {
@@ -156,6 +160,15 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
+    const AdComponent = (
+      <AdComposer adConfig={adConfig}>
+        <Ad
+          slotName="inline-ad"
+          slotSuffix={this.advertPositionCounter.toString()}
+        />
+      </AdComposer>
+    );
+
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
@@ -192,15 +205,9 @@ class ArticleList extends Component {
                     return null;
                   }
 
-                  const AdComponent = (
-                    <AdComposer adConfig={adConfig}>
-                      <Ad
-                        slotSuffix={this.advertPositionCounter.toString()}
-                        slotName="inline-ad"
-                      />
-                    </AdComposer>
-                  );
-                  this.advertPositionCounter = this.advertPositionCounter + 1;
+                  if (this.pending.size === 0) {
+                    this.advertPositionCounter = this.advertPositionCounter + 1;
+                  }
                   return AdComponent;
                 };
 

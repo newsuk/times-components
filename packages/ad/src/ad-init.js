@@ -104,19 +104,6 @@ const adInit = args => {
             ? `${slotName}-${slotSuffix}`
             : slotName;
 
-          const slot = window.googletag.defineSlot(
-            adUnitPath,
-            sizes,
-            containerID
-          );
-          if (!slot) {
-            throw new Error(
-              `Ad slot ${containerID} ${
-                adUnitPath
-              } could not be defined, probably it was already defined`
-            );
-          }
-          slot.addService(window.googletag.pubads());
           /* eslint-disable no-param-reassign */
           el.id = `wrapper-${slotName}`;
           el.innerHTML = `<div id="${containerID}"></div>`;
@@ -126,6 +113,25 @@ const adInit = args => {
           el.style.margin = "0 auto";
           el.style.height = "100%";
           /* eslint-enable no-param-reassign */
+
+          console.log("DEFINE SLOT: ", containerID);
+
+          const slot = window.googletag.defineSlot(
+            adUnitPath,
+            sizes,
+            containerID
+          );
+
+          console.log("SLOT: ", slot);
+
+          if (!slot) {
+            throw new Error(
+              `Ad slot ${containerID} ${
+                adUnitPath
+              } could not be defined, probably it was already defined`
+            );
+          }
+          slot.addService(window.googletag.pubads());
 
           const gptMapping = window.googletag.sizeMapping();
           mappings.forEach(size =>
@@ -367,7 +373,6 @@ const adInit = args => {
         this.prebid.applyPrebidTargeting();
         this.prebid.applyAmazonTargeting();
       }
-      this.gpt.displayAds();
     },
 
     init() {
