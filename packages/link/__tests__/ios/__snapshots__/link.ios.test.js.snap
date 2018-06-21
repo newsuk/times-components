@@ -31,7 +31,6 @@ exports[`Link test on ios Link renders correctly 1`] = `
 exports[`Link test on ios TextLink renders correctly with children 1`] = `
 <Text
   accessibilityRole="link"
-  href="http://thetimes.co.uk"
   style={
     Object {
       "textDecorationLine": "underline",
@@ -45,7 +44,6 @@ exports[`Link test on ios TextLink renders correctly with children 1`] = `
 exports[`Link test on ios TextLink renders correctly with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
-  href="http://thetimes.co.uk"
   style={
     Object {
       "backgroundColor": "blue",
@@ -61,7 +59,6 @@ exports[`Link test on ios TextLink renders correctly with multiple styles 1`] = 
 exports[`Link test on ios TextLink renders correctly with specific styles 1`] = `
 <Text
   accessibilityRole="link"
-  href="http://thetimes.co.uk"
   style={
     Object {
       "backgroundColor": "blue",

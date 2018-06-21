@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Render a single author 1`] = `
+<div>
+  <div>
+    Alexandra Frean
+  </div>
+</div>
+`;
+
+exports[`2. Render a given section colour 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "blue",
+  },
+}
+</style>
+
+<div>
+  <div
+    className="IS1"
+  >
+    Alexandra Frean
+  </div>
+</div>
+`;
+
+exports[`3. Render an author with given styles 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "red",
+    "textDecoration": "underline",
+  },
+}
+</style>
+
+<div>
+  <div
+    className="IS1"
+  >
+    Alexandra Frean
+  </div>
+</div>
+`;

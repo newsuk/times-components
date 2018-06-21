@@ -25,7 +25,7 @@ describe("The minimal serializer should", () => {
     });
 
     it("remove redundant native props", () => {
-      const component = <Text />;
+      const component = <Text href="some/web/link" />;
       const tree = renderer.create(component);
 
       expect(tree.toJSON()).toMatchSnapshot();

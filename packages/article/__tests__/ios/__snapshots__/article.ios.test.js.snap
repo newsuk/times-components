@@ -2408,7 +2408,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
           Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
           <Text
             accessibilityRole="link"
-            href="https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
             style={
               Object {
                 "color": "#006699",

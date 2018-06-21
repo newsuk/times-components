@@ -588,7 +588,6 @@ exports[`1. Render an author profile page 1`] = `
               </View>
               <Text
                 accessibilityRole="link"
-                href="https://twitter.com/jdoe"
                 style={
                   Object {
                     "color": "#006699",
@@ -2287,7 +2286,6 @@ exports[`2. Render an author profile page without images 1`] = `
               </View>
               <Text
                 accessibilityRole="link"
-                href="https://twitter.com/jdoe"
                 style={
                   Object {
                     "color": "#006699",
