@@ -20,7 +20,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-    this.state = { loadMoreError: null };
+    this.state = { loadMoreError: null, loadingMore: false };
   }
 
   componentWillUnmount() {
@@ -82,12 +82,18 @@ class ArticleList extends Component {
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
-    const fetchMoreOnEndReached = () =>
-      this.state.loadMoreError
-        ? null
-        : fetchMore(data.length).catch(loadMoreError =>
-            this.setState({ loadMoreError })
-          );
+    const fetchMoreOnEndReached = () => {
+      if (this.state.loadMoreError || this.state.loadingMore) {
+        return null;
+      }
+
+      this.setState({ loadingMore: true });
+      return fetchMore(data.length)
+        .then(() => this.setState({ loadingMore: false }))
+        .catch(loadMoreError =>
+          this.setState({ loadMoreError, loadingMore: false })
+        );
+    };
 
     const articleListFooter = () => {
       if (data.length >= count) {
