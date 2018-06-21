@@ -54,6 +54,10 @@ class ArticleList extends Component {
   }
 
   getImageSize(nodeId) {
+    if (typeof window === "undefined") {
+      return 100;
+    }
+
     if (this.observer && nodeId) {
       return this.state.images.get(nodeId);
     }
