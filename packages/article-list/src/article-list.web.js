@@ -17,7 +17,7 @@ import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
 import { ListContentContainer } from "./styles/responsive";
 
-export class ArticleList extends Component {
+class ArticleList extends Component {
   constructor(props) {
     super(props);
 
