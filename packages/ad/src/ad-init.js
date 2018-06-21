@@ -104,25 +104,11 @@ const adInit = args => {
             ? `${slotName}-${slotSuffix}`
             : slotName;
 
-          /* eslint-disable no-param-reassign */
-          el.id = `wrapper-${slotName}`;
-          el.innerHTML = `<div id="${containerID}"></div>`;
-          el.style.display = "flex";
-          el.style.alignItems = "center";
-          el.style.justifyContent = "center";
-          el.style.margin = "0 auto";
-          el.style.height = "100%";
-          /* eslint-enable no-param-reassign */
-
-          console.log("DEFINE SLOT: ", containerID);
-
           const slot = window.googletag.defineSlot(
             adUnitPath,
             sizes,
             containerID
           );
-
-          console.log("SLOT: ", slot);
 
           if (!slot) {
             throw new Error(
@@ -132,6 +118,15 @@ const adInit = args => {
             );
           }
           slot.addService(window.googletag.pubads());
+          /* eslint-disable no-param-reassign */
+          el.id = `wrapper-${slotName}`;
+          el.innerHTML = `<div id="${containerID}"></div>`;
+          el.style.display = "flex";
+          el.style.alignItems = "center";
+          el.style.justifyContent = "center";
+          el.style.margin = "0 auto";
+          el.style.height = "100%";
+          /* eslint-enable no-param-reassign */
 
           const gptMapping = window.googletag.sizeMapping();
           mappings.forEach(size =>
