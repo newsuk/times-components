@@ -5,13 +5,11 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 class DOMContext extends Component {
   componentDidMount() {
-    const { slotSuffix, init, data } = this.props;
+    const { init, data } = this.props;
 
     this.initExecuting = true;
     this.hasUnmounted = false;
-
-    const adInit = init({
-      slotSuffix,
+    this.adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
@@ -19,8 +17,8 @@ class DOMContext extends Component {
       window
     });
 
-    if (adInit && adInit.init) {
-      adInit.init();
+    if (this.adInit && this.adInit.init) {
+      this.adInit.init();
     }
 
     this.initExecuting = false;
@@ -30,6 +28,7 @@ class DOMContext extends Component {
   componentWillUnmount() {
     this.eventQueue = [];
     this.hasUnmounted = true;
+    this.adInit.destroySlots();
   }
 
   eventQueue = [];

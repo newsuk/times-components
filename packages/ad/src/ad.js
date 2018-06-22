@@ -37,14 +37,7 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const {
-      slotName,
-      contextUrl,
-      section,
-      slotSuffix,
-      baseUrl,
-      style
-    } = this.props;
+    const { slotName, contextUrl, section, baseUrl, style } = this.props;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -81,7 +74,6 @@ class Ad extends Component {
 
     const webviewComponent = (
       <DOMContext
-        slotSuffix={slotSuffix}
         data={data}
         baseUrl={baseUrl}
         init={adInit}

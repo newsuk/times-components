@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import { mount, shallow } from "enzyme";
 import DOMContext from "../../src/dom-context.web";
 
 describe("DOMContext Web", () => {
@@ -96,5 +96,20 @@ describe("DOMContext Web", () => {
     expect(() => {
       component.instance().processEvent({ type: "invalid" });
     }).not.toThrowError();
+  });
+
+  it("should destroy all ad slots when unmounting", () => {
+    const mockDestroySlots = jest.fn();
+    const mockInit = jest.fn();
+    mockInit.mockReturnValue({
+      init: () => {},
+      destroySlots: mockDestroySlots
+    });
+
+    const wrapper = shallow(<DOMContext init={mockInit} data={{}} />);
+
+    wrapper.unmount();
+
+    expect(mockDestroySlots).toHaveBeenCalled();
   });
 });

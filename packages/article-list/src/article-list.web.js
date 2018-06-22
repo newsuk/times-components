@@ -22,7 +22,6 @@ class ArticleList extends Component {
     super(props);
 
     this.advertPosition = 4;
-    this.advertPositionCounter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
@@ -162,10 +161,7 @@ class ArticleList extends Component {
 
     const AdComponent = (
       <AdComposer adConfig={adConfig}>
-        <Ad
-          slotName="inline-ad"
-          slotSuffix={this.advertPositionCounter.toString()}
-        />
+        <Ad slotName="inline-ad" />
       </AdComposer>
     );
 

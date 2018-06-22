@@ -26,6 +26,7 @@ export const makeAdInitMocks = () => {
   };
   const googletag = {
     cmd: [],
+    destroySlots: jest.fn(),
     display: jest.fn(),
     pubads: jest.fn().mockImplementation(() => pubAds),
     defineSlot: jest.fn().mockImplementation(() => slot),
@@ -54,7 +55,6 @@ export const makeAdInitMocks = () => {
     ]
   };
   const initOptions = {
-    slotSuffix: "test-suffix",
     el: document.createElement("div"),
     data: {
       config: slotConfig,

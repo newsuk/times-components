@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  slotSuffix: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
   init: PropTypes.func.isRequired,
@@ -10,7 +9,6 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  slotSuffix: "",
   data: {},
   onRenderComplete: () => {}
 };

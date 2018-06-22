@@ -48,9 +48,7 @@ describe("AdInit.gpt", () => {
       "slotOptionName",
       "slotOptionValue"
     );
-    expect(mock.googletag.display).toHaveBeenCalledWith(
-      "mock-code-test-suffix"
-    );
+    expect(mock.googletag.display).toHaveBeenCalledWith("mock-code");
   });
 
   it("does not error with a null slot targeting value", () => {
@@ -68,13 +66,21 @@ describe("AdInit.gpt", () => {
     expect(mock.pubAds.refresh).toHaveBeenCalled();
   });
 
+  it("destroys all slots", () => {
+    const init = adInit(initOptions);
+
+    init.gpt.destroySlots();
+
+    expect(mock.googletag.destroySlots).toHaveBeenCalled();
+  });
+
   it("throws if defineSlot returns null", () => {
     const init = adInit(initOptions);
     mock.googletag.defineSlot.mockImplementation(() => null);
     init.init();
     expect(() => mock.processGoogletagCommandQueue()).toThrowError(
       new Error(
-        "Ad slot mock-code-test-suffix /mockNetwork/mockAdUnit/mockSection could not be defined, probably it was already defined"
+        "Ad slot mock-code /mockNetwork/mockAdUnit/mockSection could not be defined, probably it was already defined"
       )
     );
   });
