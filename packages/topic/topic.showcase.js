@@ -1,14 +1,12 @@
 /* eslint-disable react/prop-types */
-
-import "react-native";
 import React from "react";
-import { AdComposer } from "@times-components/ad";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockedProvider } from "@times-components/utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
+import adConfig from "./fixtures/topic-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -20,8 +18,6 @@ const preventDefaultedAction = decorateAction =>
 
 const pageSize = 20;
 const slug = "chelsea";
-
-const { defaultProps: { adConfig } } = AdComposer;
 
 const getProps = decorateAction => ({
   adConfig,
