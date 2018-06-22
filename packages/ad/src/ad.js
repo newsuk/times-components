@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
@@ -9,12 +9,7 @@ import DOMContext from "./dom-context";
 import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
 import { propTypes, defaultProps } from "./ad-prop-types";
-
-const styles = StyleSheet.create({
-  children: {
-    flex: 1
-  }
-});
+import styles from "./styles";
 
 class Ad extends Component {
   constructor(props) {
