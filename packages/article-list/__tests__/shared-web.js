@@ -45,7 +45,7 @@ export default () => {
     expect(onArticlePressMock).toHaveBeenCalled();
   });
 
-  it("should not rerender if the page prop changes", () => {
+  it("should not re-render if the page prop changes", () => {
     const onArticlePressMock = jest.fn();
     const pageSize = 3;
     const results = pagedResult(0, pageSize);
@@ -60,11 +60,11 @@ export default () => {
       />
     );
 
-    expect(wrapper.prop("page")).toMatchSnapshot();
+    expect(wrapper.prop("page")).toEqual(1);
 
     wrapper.setProps({ isLoading: true });
 
-    expect(wrapper.prop("page")).toMatchSnapshot();
+    expect(wrapper.prop("page")).toEqual(1);
   });
 
   it("should show an advert after the fifth article", () => {

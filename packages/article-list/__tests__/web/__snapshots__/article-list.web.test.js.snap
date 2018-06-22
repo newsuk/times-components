@@ -1,9 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleList tests on web should not rerender if the page prop changes 1`] = `1`;
-
-exports[`ArticleList tests on web should not rerender if the page prop changes 2`] = `1`;
-
 exports[`ArticleList tests on web should render an article list 1`] = `
 <div>
   <div
