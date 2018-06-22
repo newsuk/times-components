@@ -32,6 +32,6 @@ const withResponsiveStyles = (Component, styles = {}, displayName = null) => {
     component.displayName = displayName;
   }
   return component;
-}
+};
 
 export default withResponsiveStyles;

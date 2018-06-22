@@ -1,13 +1,15 @@
 import "react-native";
 import React from "react";
 import ArticleImage from "./src/article-image";
+import primaryImageFixture from "./fixtures/primary-image";
+import secondaryImageFixture from "./fixtures/secondary-image";
+import landscapeInlineImageFixture from "./fixtures/landscape-inline-image";
+import portraitInlineImageFixture from "./fixtures/portrait-inline-image";
 
-const primaryImage = require("./fixtures/primary-image.json").fixture;
-const secondaryImage = require("./fixtures/secondary-image.json").fixture;
-const landscapeInlineImage = require("./fixtures/landscape-inline-image.json")
-  .fixture;
-const portraitInlineImage = require("./fixtures/portrait-inline-image.json")
-  .fixture;
+const primaryImage = primaryImageFixture();
+const secondaryImage = secondaryImageFixture();
+const landscapeInlineImage = landscapeInlineImageFixture();
+const portraitInlineImage = portraitInlineImageFixture();
 
 export default {
   name: "Primitives/Article Image",

@@ -1,5 +1,5 @@
 import { createSerializer } from "enzyme-to-json";
-import {
+import minimalise, {
   minimaliseTransform,
   minimalWebTransform,
   minimalWeb,
@@ -67,6 +67,7 @@ export {
   hoistStyleTransform,
   justChildren,
   meltNative,
+  minimalise,
   minimaliseTransform,
   minimalNative,
   minimalNativeTransform,

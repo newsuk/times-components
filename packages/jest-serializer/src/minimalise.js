@@ -41,6 +41,9 @@ export const minimaliseTransform = excludeProps => (
   };
 };
 
+export default excludeProps =>
+  traverse(print, minimaliseTransform(excludeProps));
+
 const isEmptyObject = obj =>
   obj && typeof obj === "object" && Object.keys(obj).length === 0;
 
