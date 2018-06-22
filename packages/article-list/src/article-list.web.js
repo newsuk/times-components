@@ -201,9 +201,6 @@ class ArticleList extends Component {
                     return null;
                   }
 
-                  if (this.pending.size === 0) {
-                    this.advertPositionCounter = this.advertPositionCounter + 1;
-                  }
                   return AdComponent;
                 };
 

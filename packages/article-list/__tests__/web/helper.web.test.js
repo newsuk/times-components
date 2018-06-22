@@ -209,30 +209,6 @@ describe("Lazy loading and pagination tests on web", () => {
       expect(component.render().find("img")).toMatchSnapshot();
     });
 
-    it("should not increment the ad slot counter when lazy loading is re-rendering", async () => {
-      window.IntersectionObserver = FakeIntersectionObserver;
-
-      const component = mount(<ArticleList {...articleListContentProps} />);
-
-      expect(
-        component.find("ArticleList").instance().advertPositionCounter
-      ).toEqual(0);
-
-      const makeEntries = nodes =>
-        [...nodes].map((node, indx) => ({
-          target: node,
-          intersectionRatio: indx === 0 ? 0.75 : 0
-        }));
-
-      window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
-
-      await delay(100);
-
-      expect(
-        component.find("ArticleList").instance().advertPositionCounter
-      ).toEqual(0);
-    });
-
     it("should not work if there are no pending items", async () => {
       window.IntersectionObserver = FakeIntersectionObserver;
 
