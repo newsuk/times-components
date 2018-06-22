@@ -4,8 +4,7 @@ import { Text, ScrollView, View } from "react-native";
 import { spacing, fontSizes, colours } from "@times-components/styleguide";
 import Ad, { AdComposer } from "./src/ad";
 import Placeholder from "./src/placeholder";
-import NativeDOMContext from "./src/dom-context";
-import WebDOMContext from "./src/dom-context.web";
+import DOMContext from "./src/dom-context";
 import pageTargeting from "./fixtures/page-options.json";
 import topicPageTargeting from "./fixtures/topic-page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
@@ -13,48 +12,34 @@ import domContextInit from "./ad.stories-domcontext-init";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
-const adConfig = () =>
-  Object.assign(
-    {},
-    adConfigBase,
-    { pageTargeting },
-    {
-      slotTargeting: {
-        sec_id: "null",
-        section: "news",
-        path: "/edition/news/",
-        zone: "current_edition",
-        slot: "news"
-      }
-    },
-    { biddersConfig },
-    { bidderSlots: ["ad-header", "ad-article-inline"] }
-  );
+const adConfig = () => ({
+  ...adConfigBase,
+  pageTargeting,
+  slotTargeting: {
+    sec_id: "null",
+    section: "news",
+    path: "/edition/news/",
+    zone: "current_edition",
+    slot: "news"
+  },
+  biddersConfig,
+  bidderSlots: ["ad-header", "ad-article-inline"]
+});
 
-const topicAdConfig = () =>
-  Object.assign(
-    {},
-    adConfigBase,
-    { topicPageTargeting },
-    {
-      slotTargeting: {
-        sec_id: "null",
-        section: "topic/chelsea",
-        path: "/topic/chelsea/",
-        zone: "topic",
-        slot: "home"
-      }
-    },
-    { biddersConfig },
-    { bidderSlots: ["ad-inline"] }
-  );
+const topicAdConfig = () => ({
+  ...adConfigBase,
+  topicPageTargeting,
+  slotTargeting: {
+    sec_id: "null",
+    section: "topic/chelsea",
+    path: "/topic/chelsea/",
+    zone: "topic",
+    slot: "home"
+  },
+  biddersConfig,
+  bidderSlots: ["ad-inline"]
+});
 
-let DOMContext;
-if (window.document) {
-  DOMContext = WebDOMContext;
-} else {
-  DOMContext = NativeDOMContext;
-}
 const articleUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 const topicUrl = "https://www.thetimes.co.uk/topic/chelsea";
