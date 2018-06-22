@@ -4,7 +4,7 @@ import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, getSizeMaps } from "./generate-config";
 import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
-import Placeholder from "./placeholder";
+import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
@@ -78,10 +78,10 @@ class Ad extends Component {
     );
 
     const placeholderComponent = !this.state.adReady ? (
-      <Placeholder
-        width={this.config.maxSizes.width}
+      <AdPlaceholder
         height={this.config.maxSizes.height}
         style={styles.children}
+        width={this.config.maxSizes.width}
       />
     ) : null;
 

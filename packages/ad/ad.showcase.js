@@ -3,7 +3,6 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { spacing, fontSizes, colours } from "@times-components/styleguide";
 import Ad, { AdComposer } from "./src/ad";
-import Placeholder from "./src/placeholder";
 import DOMContext from "./src/dom-context";
 import pageTargeting from "./fixtures/page-options.json";
 import topicPageTargeting from "./fixtures/topic-page-options.json";
@@ -26,6 +25,8 @@ const adConfig = () => ({
   bidderSlots: ["ad-header", "ad-article-inline"]
 });
 
+// @TODO: get topic ad config from the topic package
+// https://github.com/newsuk/times-components/pull/1049
 const topicAdConfig = () => ({
   ...adConfigBase,
   topicPageTargeting,
@@ -70,21 +71,6 @@ const withOpenInNewWindow = (children, page) => {
 export default {
   name: "Primitives/Advertisement",
   children: [
-    {
-      type: "story",
-      name: "Placeholder (300x250 - MPU)",
-      component: () => <Placeholder width={300} height={250} />
-    },
-    {
-      type: "story",
-      name: "Placeholder (728x90 - Default)",
-      component: () => <Placeholder width={728} height={90} />
-    },
-    {
-      type: "story",
-      name: "Placeholder (970x250 - Billboard)",
-      component: () => <Placeholder width={970} height={250} />
-    },
     {
       type: "story",
       name: "render one ad - intervention",
