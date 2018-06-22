@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/newsuk/times-components/compare/@times-components/ad@1.1.5...@times-components/ad@1.1.6) (2018-06-22)
+
+
+### Bug Fixes
+
+* tear down ad slots ([#1046](https://github.com/newsuk/times-components/issues/1046)) ([669ab04](https://github.com/newsuk/times-components/commit/669ab04))
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/newsuk/times-components/compare/@times-components/ad@1.1.4...@times-components/ad@1.1.5) (2018-06-22)
 
