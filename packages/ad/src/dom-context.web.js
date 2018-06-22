@@ -1,8 +1,7 @@
+/* eslint-env browser */
 import React, { Component } from "react";
-
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
-/* eslint-env browser */
 class DOMContext extends Component {
   componentDidMount() {
     const { init, data } = this.props;

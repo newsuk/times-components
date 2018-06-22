@@ -49,7 +49,7 @@ const getStyles = (width, height) =>
     }
   });
 
-const Placeholder = ({ width, height, style }) => {
+const AdPlaceholder = ({ width, height, style }) => {
   const styles = getStyles(width, height);
   return (
     <View style={[styles.container, style]}>
@@ -63,14 +63,14 @@ const Placeholder = ({ width, height, style }) => {
   );
 };
 
-Placeholder.propTypes = {
+AdPlaceholder.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   style: ViewPropTypes.style
 };
 
-Placeholder.defaultProps = {
+AdPlaceholder.defaultProps = {
   style: null
 };
 
-export default Placeholder;
+export default AdPlaceholder;
