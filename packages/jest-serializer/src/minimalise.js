@@ -55,10 +55,11 @@ export const minimalWebTransform = minimaliseTransform(
 export const minimalWeb = traverse(print, minimalWebTransform);
 
 const redundantNativeKeys = new Set([
-  "className",
   "accessible",
   "allowFontScaling",
-  "ellipsizeMode"
+  "className",
+  "ellipsizeMode",
+  "href"
 ]);
 
 export const minimalNativeTransform = minimaliseTransform(

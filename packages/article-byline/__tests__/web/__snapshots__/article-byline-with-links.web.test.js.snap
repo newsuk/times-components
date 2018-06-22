@@ -1,33 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a single author 1`] = `
-<div>
-  <a
-    href="/profile/alexandra-frean"
-    role="link"
-  >
-    Alexandra Frean
-  </a>
-</div>
-`;
-
-exports[`2. Render a given section colour 1`] = `
-<div>
-  <a
-    href="/profile/alexandra-frean"
-    role="link"
-    style={
-      Object {
-        "color": "blue",
-      }
-    }
-  >
-    Alexandra Frean
-  </a>
-</div>
-`;
-
-exports[`3. Render an inline element 1`] = `
+exports[`1. Render an inline element 1`] = `
 <div>
   <div>
     Lindsay McIntosh Scottish Political Editor
@@ -35,7 +8,7 @@ exports[`3. Render an inline element 1`] = `
 </div>
 `;
 
-exports[`4. Render an author first 1`] = `
+exports[`2. Render an author first 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -49,7 +22,7 @@ exports[`4. Render an author first 1`] = `
 </div>
 `;
 
-exports[`5. Render an author last 1`] = `
+exports[`3. Render an author last 1`] = `
 <div>
   <div>
     RBS Six Nations 
@@ -63,7 +36,7 @@ exports[`5. Render an author last 1`] = `
 </div>
 `;
 
-exports[`6. Render multiple authors separated by commas 1`] = `
+exports[`4. Render multiple authors separated by commas 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -92,7 +65,7 @@ exports[`6. Render multiple authors separated by commas 1`] = `
 </div>
 `;
 
-exports[`7. Render multiple authors separated by spaces 1`] = `
+exports[`5. Render multiple authors separated by spaces 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -121,20 +94,4 @@ exports[`7. Render multiple authors separated by spaces 1`] = `
 </div>
 `;
 
-exports[`8. Render null when AST is empty 1`] = `null`;
-
-exports[`9. Render an author with given styles 1`] = `
-<div>
-  <a
-    href="/profile/alexandra-frean"
-    role="link"
-    style={
-      Object {
-        "color": "red",
-      }
-    }
-  >
-    Alexandra Frean
-  </a>
-</div>
-`;
+exports[`6. Render null when AST is empty 1`] = `null`;

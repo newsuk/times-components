@@ -409,7 +409,6 @@ exports[`3. Renders with a twitter handle 1`] = `
       </ARTSurfaceView>
       <Text
         accessibilityRole="link"
-        href="https://twitter.com/@henrywinter"
         style={
           Object {
             "color": "#006699",
