@@ -22,7 +22,6 @@ class ArticleList extends Component {
     super(props);
 
     this.advertPosition = 4;
-    this.advertPositionCounter = 0;
     this.pending = new Set();
     this.pendingTimer = null;
     this.state = {
@@ -42,6 +41,10 @@ class ArticleList extends Component {
       this.handleObservation.bind(this),
       options
     );
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return this.props.page === nextProps.page;
   }
 
   componentWillUnmount() {
@@ -160,6 +163,12 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
+    const AdComponent = (
+      <AdComposer adConfig={adConfig}>
+        <Ad slotName="inline-ad" />
+      </AdComposer>
+    );
+
     const data = articlesLoading
       ? Array(pageSize)
           .fill()
@@ -187,29 +196,15 @@ class ArticleList extends Component {
                   index > 0 ? <ArticleListItemSeparator /> : null;
 
                 const renderAd = () => {
-                  if (index !== this.advertPosition || !hasAdvertConfig) {
+                  if (
+                    index !== this.advertPosition ||
+                    !hasAdvertConfig ||
+                    isLoading ||
+                    articlesLoading
+                  ) {
                     return null;
                   }
 
-                  const renderSlotName = () => {
-                    if (isLoading) {
-                      return "inline-ad-header-loading";
-                    }
-                    if (articlesLoading) {
-                      return "inline-articles-loading";
-                    }
-                    return "inline-ad";
-                  };
-
-                  const AdComponent = (
-                    <AdComposer adConfig={adConfig}>
-                      <Ad
-                        slotSuffix={this.advertPositionCounter.toString()}
-                        slotName={renderSlotName()}
-                      />
-                    </AdComposer>
-                  );
-                  this.advertPositionCounter = this.advertPositionCounter + 1;
                   return AdComponent;
                 };
 

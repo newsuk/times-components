@@ -4,7 +4,7 @@
 // defined outside the function, so that it can be passed into a WebView.
 
 const adInit = args => {
-  const { slotSuffix, el, data, platform, eventCallback, window } = args;
+  const { el, data, platform, eventCallback, window } = args;
   const { document, setTimeout, Promise } = window;
 
   const scriptsInserted = {};
@@ -100,18 +100,12 @@ const adInit = args => {
         this.scheduleAction(() => {
           const adUnitPath = `/${networkId}/${adUnit}/${section}`;
           const { slotName, sizes, mappings } = slotConfig;
-          const containerID = slotSuffix
-            ? `${slotName}-${slotSuffix}`
-            : slotName;
 
-          const slot = window.googletag.defineSlot(
-            adUnitPath,
-            sizes,
-            containerID
-          );
+          const slot = window.googletag.defineSlot(adUnitPath, sizes, slotName);
+
           if (!slot) {
             throw new Error(
-              `Ad slot ${containerID} ${
+              `Ad slot ${slotName} ${
                 adUnitPath
               } could not be defined, probably it was already defined`
             );
@@ -119,7 +113,7 @@ const adInit = args => {
           slot.addService(window.googletag.pubads());
           /* eslint-disable no-param-reassign */
           el.id = `wrapper-${slotName}`;
-          el.innerHTML = `<div id="${containerID}"></div>`;
+          el.innerHTML = `<div id="${slotName}"></div>`;
           el.style.display = "flex";
           el.style.alignItems = "center";
           el.style.justifyContent = "center";
@@ -138,8 +132,8 @@ const adInit = args => {
           );
           const randomTestingGroup = Math.floor(Math.random() * 10).toString();
           slot.setTargeting("timestestgroup", randomTestingGroup);
-          slot.setTargeting("pos", containerID);
-          window.googletag.display(containerID);
+          slot.setTargeting("pos", slotName);
+          window.googletag.display(slotName);
           window.googletag.pubads().refresh();
         });
       },
@@ -154,6 +148,10 @@ const adInit = args => {
 
       displayAds() {
         window.googletag.pubads().refresh();
+      },
+
+      destroySlots() {
+        window.googletag.destroySlots();
       }
     },
 
@@ -367,7 +365,10 @@ const adInit = args => {
         this.prebid.applyPrebidTargeting();
         this.prebid.applyAmazonTargeting();
       }
-      this.gpt.displayAds();
+    },
+
+    destroySlots() {
+      this.gpt.destroySlots();
     },
 
     init() {

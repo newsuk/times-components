@@ -30,11 +30,13 @@ describe("Lazy loading and pagination tests on web", () => {
 
   const articleListContentProps = {
     adConfig: {},
+    articlesLoading: false,
     articles: articleListWithImagesFixture.data.author.articles.list,
     count: articleListWithImagesFixture.data.author.articles.list.length,
     emptyStateMessage:
       "Unfortunately, there are no articles relating to this page",
     imageRatio: 3 / 2,
+    isLoading: false,
     onArticlePress: () => {},
     onTwitterLinkPress: () => {},
     page: 1,

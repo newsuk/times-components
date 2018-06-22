@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { mount } from "enzyme";
+import { mount, shallow } from "enzyme";
 import { AdComposer } from "@times-components/ad";
 import ArticleListPagination from "../src/article-list-pagination";
 import ArticleList from "./../src/article-list";
@@ -43,6 +43,28 @@ export default () => {
       .onPress();
 
     expect(onArticlePressMock).toHaveBeenCalled();
+  });
+
+  it("should not re-render if the page prop changes", () => {
+    const onArticlePressMock = jest.fn();
+    const pageSize = 3;
+    const results = pagedResult(0, pageSize);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        adConfig={adConfig}
+        articles={results.articles.list}
+        onArticlePress={onArticlePressMock}
+        page={1}
+        pageSize={pageSize}
+      />
+    );
+
+    expect(wrapper.prop("page")).toEqual(1);
+
+    wrapper.setProps({ isLoading: true });
+
+    expect(wrapper.prop("page")).toEqual(1);
   });
 
   it("should show an advert after the fifth article", () => {

@@ -5,12 +5,11 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 /* eslint-env browser */
 class DOMContext extends Component {
   componentDidMount() {
-    const { slotSuffix, init, data } = this.props;
+    const { init, data } = this.props;
 
     this.initExecuting = true;
-
-    const adInit = init({
-      slotSuffix,
+    this.hasUnmounted = false;
+    this.adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
@@ -18,12 +17,18 @@ class DOMContext extends Component {
       window
     });
 
-    if (adInit && adInit.init) {
-      adInit.init();
+    if (this.adInit && this.adInit.init) {
+      this.adInit.init();
     }
 
     this.initExecuting = false;
     this.processEventQueue();
+  }
+
+  componentWillUnmount() {
+    this.eventQueue = [];
+    this.hasUnmounted = true;
+    this.adInit.destroySlots();
   }
 
   eventQueue = [];
@@ -34,13 +39,14 @@ class DOMContext extends Component {
   };
 
   processEventQueue() {
-    if (!this.initExecuting) {
+    if (!this.initExecuting && !this.hasUnmounted) {
       this.eventQueue.forEach(this.processEvent);
       this.eventQueue = [];
     }
   }
 
   processEvent = ({ type, detail }) => {
+    if (this.eventQueue.length === 0) return;
     if (type === "error") {
       throw new Error(`DomContext error: ${detail}`);
     } else if (type === "renderComplete") {
