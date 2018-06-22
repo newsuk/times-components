@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -35,9 +35,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.1",
-    "@times-components/jest-serializer": "1.0.1",
-    "@times-components/storybook": "1.0.2",
+    "@times-components/jest-configurator": "1.0.2",
+    "@times-components/jest-serializer": "1.0.2",
+    "@times-components/storybook": "1.0.3",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -58,13 +58,13 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/article-byline": "1.0.6",
-    "@times-components/article-label": "1.0.2",
-    "@times-components/date-publication": "0.16.13",
-    "@times-components/markup": "1.0.6",
-    "@times-components/responsive-styles": "1.0.2",
-    "@times-components/styleguide": "1.1.1",
-    "@times-components/video-label": "1.2.2",
+    "@times-components/article-byline": "1.0.7",
+    "@times-components/article-label": "1.0.3",
+    "@times-components/date-publication": "0.16.14",
+    "@times-components/markup": "1.0.7",
+    "@times-components/responsive-styles": "1.0.3",
+    "@times-components/styleguide": "1.1.2",
+    "@times-components/video-label": "1.2.3",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

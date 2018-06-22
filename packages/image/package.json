@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -36,9 +36,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.1",
-    "@times-components/jest-serializer": "1.0.1",
-    "@times-components/storybook": "1.0.2",
+    "@times-components/jest-configurator": "1.0.2",
+    "@times-components/jest-serializer": "1.0.2",
+    "@times-components/storybook": "1.0.3",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -59,12 +59,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/gestures": "2.0.2",
-    "@times-components/gradient": "1.0.3",
-    "@times-components/link": "1.0.2",
-    "@times-components/styleguide": "1.1.1",
-    "@times-components/svgs": "1.0.2",
-    "@times-components/utils": "1.1.1",
+    "@times-components/gestures": "2.0.3",
+    "@times-components/gradient": "1.0.4",
+    "@times-components/link": "1.0.3",
+    "@times-components/styleguide": "1.1.2",
+    "@times-components/svgs": "1.0.3",
+    "@times-components/utils": "1.1.2",
     "prop-types": "15.6.0",
     "react-native-svg": "6.3.1"
   },
