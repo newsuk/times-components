@@ -4,15 +4,15 @@ import sizes from "./sizes";
 // for the element
 const getMaxSizes = adSizes => {
   if (!adSizes) {
-    return { width: 0, height: 0 };
+    return { height: 0, width: 0 };
   }
 
   return adSizes.reduce(
-    (max, [curWidth, curHeight]) => ({
-      width: Math.max(max.width, curWidth),
-      height: Math.max(max.height, curHeight)
+    (max, [curHeight, curWidth]) => ({
+      height: Math.max(max.height, curHeight),
+      width: Math.max(max.width, curWidth)
     }),
-    { width: 0, height: 0 }
+    { height: 0, width: 0 }
   );
 };
 
