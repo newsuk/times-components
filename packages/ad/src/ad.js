@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
 import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
-import { getSlotConfig, getSizeMaps } from "./utils/generate-config";
-import { prebidConfig, getPrebidSlotConfig } from "./utils/prebid-config";
+import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
 import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
@@ -58,7 +57,7 @@ class Ad extends Component {
       adUnit: adConfig.adUnit,
       contextUrl,
       section,
-      sizingMap: getSizeMaps(slotName),
+      sizingMap: this.config.mappings,
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
