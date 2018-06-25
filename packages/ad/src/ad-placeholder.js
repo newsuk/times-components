@@ -19,7 +19,7 @@ const AdPlaceholder = ({ height, style, width }) => {
       </View>
     </View>
   );
-}
+};
 
 AdPlaceholder.propTypes = propTypes;
 AdPlaceholder.defaultProps = defaultProps;
