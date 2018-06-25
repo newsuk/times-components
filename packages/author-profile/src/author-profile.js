@@ -126,6 +126,7 @@ const AuthorProfile = ({
             emptyStateMessage={emptyStateMessage}
             error={articlesError}
             imageRatio={ratioTextToFloat(imageRatio)}
+            isLoading={isLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}
