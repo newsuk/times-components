@@ -8,6 +8,7 @@ import {
   print,
   rnwTransform
 } from "@times-components/jest-serializer";
+import shared from "../ad-placeholder.shared";
 import AdPlaceholder from "../../src/ad-placeholder";
 
 describe("Web", () => {
@@ -25,4 +26,6 @@ describe("Web", () => {
 
     expect(wrapper).toMatchSnapshot("1. Advert placeholder");
   });
+
+  shared();
 });
