@@ -87,7 +87,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "AdPlaceholder",
+      name: "Placeholder",
       component: ({ selectV2 }) =>
         renderAdPlaceholder(
           selectV2(
