@@ -1,6 +1,8 @@
-export {
+import {
   getAdSizes,
+  getMaxSizes,
   getSizeMaps,
-  getSlotConfig,
-  getMaxSizes
+  getSlotConfig
 } from "./generate-config";
+
+export { getAdSizes, getMaxSizes, getSizeMaps, getSlotConfig };

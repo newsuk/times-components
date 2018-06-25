@@ -64,8 +64,11 @@ class Ad extends Component {
     };
 
     const sizeProps = !this.state.adReady
-      ? { width: 0, height: 0 }
-      : { height: this.config.maxSizes.height };
+      ? { height: 0, width: 0 }
+      : {
+          height: this.config.maxSizes.height,
+          width: this.config.maxSizes.width
+        };
 
     const webviewComponent = (
       <DOMContext
