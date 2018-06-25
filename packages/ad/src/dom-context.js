@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import { WebView, View, Linking, Platform } from "react-native";
-
-import webviewEventCallbackSetup from "./webview-event-callback-setup";
+import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 export default class DOMContext extends PureComponent {
