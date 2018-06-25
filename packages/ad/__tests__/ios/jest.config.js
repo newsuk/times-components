@@ -6,11 +6,10 @@ module.exports = jestConfigurator("ios", __dirname, {
     "ad.js",
     "ad-composer.js",
     "ad-init.js",
-    "ad-watermark.js",
-    "generate-config.js",
+    "utils/generate-config.js",
+    "utils/sizes.js",
     "placeholder.js",
     "prebid-config.js",
-    "sizes.js",
     "webview-event-callback-setup.js"
   ],
   setupTestFrameworkScriptFile: path.join(__dirname, "./serializers")
