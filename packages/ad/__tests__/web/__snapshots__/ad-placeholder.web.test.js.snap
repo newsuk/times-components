@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert placeholder 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "height": "300px",
+        "width": "970px",
+      }
+    }
+  >
+    <div>
+      <svg
+        height={300}
+        width={970}
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+          id="Page-1"
+          opacity="0.07"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <path
+            fill="#1D1D1B"
+            id="Shape"
+          />
+        </g>
+      </svg>
+    </div>
+    <div>
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Web should return a billboard viewbox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;
+
+exports[`Web should return a default viewbox config 1`] = `
+Object {
+  "marginLeft": 50,
+  "marginTop": 0,
+  "svgHeight": 50,
+  "svgWidth": 700,
+}
+`;
+
+exports[`Web should return a mpu viewbox config 1`] = `
+Object {
+  "marginLeft": 15,
+  "marginTop": 0,
+  "svgHeight": 250,
+  "svgWidth": 269,
+}
+`;
+
+exports[`Web should return a small viewbox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;

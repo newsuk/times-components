@@ -6,6 +6,42 @@ import {
   spacing
 } from "@times-components/styleguide";
 
+export const calculateViewBox = ({ height, width }) => {
+  if (height >= 90 && width >= 728) {
+    return {
+      marginLeft: 630,
+      marginTop: -120,
+      svgHeight: 50,
+      svgWidth: 1200
+    };
+  }
+
+  if (height >= 250 && width >= 300) {
+    return {
+      marginLeft: 15,
+      marginTop: 0,
+      svgHeight: 250,
+      svgWidth: 269
+    };
+  }
+
+  if (height >= 250 && width >= 970) {
+    return {
+      marginLeft: 205,
+      marginTop: -40,
+      svgHeight: 220,
+      svgWidth: 584
+    };
+  }
+
+  return {
+    marginLeft: 50,
+    marginTop: 0,
+    svgHeight: height,
+    svgWidth: width
+  };
+};
+
 const styles = StyleSheet.create({
   children: {
     flex: 1

@@ -2,12 +2,23 @@
 import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { spacing, fontSizes, colours } from "@times-components/styleguide";
+import AdPlaceholder from "./src/ad-placeholder";
 import Ad, { AdComposer } from "./src/ad";
 import DOMContext from "./src/dom-context";
 import pageTargeting from "./fixtures/page-options.json";
 import topicPageTargeting from "./fixtures/topic-page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
 import domContextInit from "./ad.stories-domcontext-init";
+
+const placeholderSizes = ["default", "small", "mpu", "billboard"];
+
+const renderAdPlaceholder = size => {
+  if (size === placeholderSizes[1]) return <AdPlaceholder height={90} width={728} />;
+  if (size === placeholderSizes[2]) return <AdPlaceholder height={250} width={300} />;
+  if (size === placeholderSizes[3]) return <AdPlaceholder height={250} width={970} />;
+
+  return <AdPlaceholder height={50} width={700} />;
+};
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
@@ -71,6 +82,14 @@ const withOpenInNewWindow = (children, page) => {
 export default {
   name: "Primitives/Advertisement",
   children: [
+    {
+      type: "story",
+      name: "AdPlaceholder",
+      component: ({ selectV2 }) =>
+        renderAdPlaceholder(
+          selectV2("Size of ad placeholder:", placeholderSizes, placeholderSizes[0])
+        )
+    },
     {
       type: "story",
       name: "render one ad - intervention",
