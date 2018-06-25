@@ -13,9 +13,12 @@ import domContextInit from "./ad.stories-domcontext-init";
 const placeholderSizes = ["default", "small", "mpu", "billboard"];
 
 const renderAdPlaceholder = size => {
-  if (size === placeholderSizes[1]) return <AdPlaceholder height={90} width={728} />;
-  if (size === placeholderSizes[2]) return <AdPlaceholder height={250} width={300} />;
-  if (size === placeholderSizes[3]) return <AdPlaceholder height={250} width={970} />;
+  if (size === placeholderSizes[1])
+    return <AdPlaceholder height={90} width={728} />;
+  if (size === placeholderSizes[2])
+    return <AdPlaceholder height={250} width={300} />;
+  if (size === placeholderSizes[3])
+    return <AdPlaceholder height={250} width={970} />;
 
   return <AdPlaceholder height={50} width={700} />;
 };
@@ -87,7 +90,11 @@ export default {
       name: "AdPlaceholder",
       component: ({ selectV2 }) =>
         renderAdPlaceholder(
-          selectV2("Size of ad placeholder:", placeholderSizes, placeholderSizes[0])
+          selectV2(
+            "Size of ad placeholder:",
+            placeholderSizes,
+            placeholderSizes[0]
+          )
         )
     },
     {
