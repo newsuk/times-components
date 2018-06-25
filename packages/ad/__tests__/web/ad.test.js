@@ -14,7 +14,6 @@ import Ad, { AdComposer } from "../../src/ad";
 jest.mock("../../src/webview-event-callback-setup", () => "mockErrorHandler");
 jest.mock("../../src/ad-init", () => () => "mockInit");
 
-jest.mock("../../src/placeholder", () => "Placeholder"); // prevent SVG in snapshots
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 addSerializers(

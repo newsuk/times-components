@@ -1,43 +1,28 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { addSerializers, rnw } from "@times-components/jest-serializer";
-
+import { shallow } from "enzyme";
+import {
+  addSerializers,
+  compose,
+  minimalWebTransform,
+  print,
+  rnwTransform
+} from "@times-components/jest-serializer";
 import AdPlaceholder from "../../src/ad-placeholder";
 
-jest.mock("@times-components/watermark", () => () => "watermark");
+describe("Web", () => {
+  addSerializers(
+    expect,
+    compose(
+      print,
+      minimalWebTransform,
+      rnwTransform()
+    )
+  );
 
-describe("AdPlaceholder", () => {
-  addSerializers(expect, rnw(["height", "width"]));
+  it("should render an advert placeholder", () => {
+    const wrapper = renderer.create(<AdPlaceholder height={300} width={970} />);
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
-
-  it("renders a tiny placeholder", () => {
-    const tree = renderer
-      .create(<AdPlaceholder width={100} height={100} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders a small placeholder", () => {
-    const tree = renderer
-      .create(<AdPlaceholder width={300} height={300} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders a medium placeholder", () => {
-    const tree = renderer
-      .create(<AdPlaceholder width={728} height={300} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders a large placeholder", () => {
-    const tree = renderer
-      .create(<AdPlaceholder width={970} height={300} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot("1. Advert placeholder");
   });
 });
