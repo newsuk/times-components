@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.6"></a>
+## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/article-list@2.2.5...@times-components/article-list@2.2.6) (2018-06-25)
+
+
+### Bug Fixes
+
+* add loading state to article-list to avoid duplicate requests ([#1048](https://github.com/newsuk/times-components/issues/1048)) ([2c8c6a3](https://github.com/newsuk/times-components/commit/2c8c6a3))
+
+
+
+
 <a name="2.2.5"></a>
 ## [2.2.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@2.2.4...@times-components/article-list@2.2.5) (2018-06-22)
 
