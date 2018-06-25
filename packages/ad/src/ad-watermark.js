@@ -44,12 +44,12 @@ const AdWatermark = ({ width, height }) => {
   const viewBox = `${-box.marginLeft} ${-box.marginTop} ${box.svgWidth} ${
     box.svgHeight
   }`;
-  return <Watermark width={width} height={height} viewBox={viewBox} />;
+  return <Watermark height={height} viewBox={viewBox} width={width} />;
 };
 
 AdWatermark.propTypes = {
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired
 };
 
 export default AdWatermark;
