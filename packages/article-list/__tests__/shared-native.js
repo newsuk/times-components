@@ -226,4 +226,36 @@ export default () => {
 
     expect(fetchMore).toHaveBeenCalledTimes(1);
   });
+
+  it("should not fetch more if a previous fetch is in progress", async () => {
+    const fetchMore = jest
+      .fn()
+      .mockReturnValue(new Promise(resolve => setTimeout(resolve, 100)));
+    const results = pagedResult(0, 3);
+    const wrapper = shallow(
+      <ArticleList
+        {...articleListProps}
+        articles={results.articles.list}
+        articlesLoading={false}
+        count={10}
+        isLoading={false}
+        page={1}
+        pageSize={3}
+        fetchMore={fetchMore}
+      />
+    ).dive();
+
+    wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+    expect(wrapper.state().loadingMore).toBe(true);
+
+    await wrapper
+      .find("FlatList")
+      .props()
+      .onEndReached();
+
+    expect(fetchMore).toHaveBeenCalledTimes(1);
+  });
 };
