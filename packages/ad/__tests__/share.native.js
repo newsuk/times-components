@@ -5,7 +5,10 @@ import renderer from "react-test-renderer";
 import DOMContextNative from "../src/dom-context";
 
 // prevent function sources appearing in snapshots
-jest.mock("../src/webview-event-callback-setup", () => "mockErrorHandler");
+jest.mock(
+  "../src/utils/webview-event-callback-setup",
+  () => "mockErrorHandler"
+);
 
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
@@ -71,7 +74,12 @@ export default () => {
 
     it("renders correctly", () => {
       const component = renderer.create(
-        <DOMContextNative init={() => {}} data={{ foo: "bar" }} />
+        <DOMContextNative
+          height={200}
+          width={200}
+          init={() => {}}
+          data={{ foo: "bar" }}
+        />
       );
       const s = component.toJSON();
 

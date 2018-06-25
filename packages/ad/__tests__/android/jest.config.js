@@ -7,7 +7,6 @@ module.exports = jestConfigurator("android", __dirname, {
     "ad-composer.js",
     "ad-init.js",
     "utils/generate-config.js",
-    "utils/sizes.js",
     "placeholder.js",
     "prebid-config.js",
     "webview-event-callback-setup.js"
