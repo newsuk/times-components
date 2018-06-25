@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  width: PropTypes.number,
+  data: PropTypes.shape({}),
   height: PropTypes.number,
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,
-  data: PropTypes.shape({})
+  width: PropTypes.number
 };
 
 export const defaultProps = {
   data: {},
-  onRenderComplete: () => {}
+  height: 0,
+  onRenderComplete: () => {},
+  width: 0
 };

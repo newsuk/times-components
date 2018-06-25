@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired,
   adConfig: PropTypes.shape({
     networkId: PropTypes.string.isRequired,
     adUnit: PropTypes.string.isRequired,
@@ -12,7 +8,11 @@ export const propTypes = {
     slotTargeting: PropTypes.shape({}),
     biddersConfig: PropTypes.shape({}),
     bidderSlots: PropTypes.arrayOf(PropTypes.string)
-  })
+  }),
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
 };
 
 export const defaultProps = {
