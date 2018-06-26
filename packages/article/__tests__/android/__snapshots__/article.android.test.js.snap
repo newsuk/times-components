@@ -2261,7 +2261,6 @@ exports[`Article tests on android should render a smaller article 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <Text
-          accessibilityLabel="standfirst"
           style={
             Object {
               "color": "#333333",
@@ -5005,7 +5004,6 @@ exports[`Article tests on android should render an article with no byline 1`] = 
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <Text
-          accessibilityLabel="standfirst"
           style={
             Object {
               "color": "#333333",
@@ -6693,7 +6691,6 @@ exports[`Article tests on android should render an article with no flags 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <Text
-          accessibilityLabel="standfirst"
           style={
             Object {
               "color": "#333333",
@@ -8383,7 +8380,6 @@ exports[`Article tests on android should render an article with no label 1`] = `
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <Text
-          accessibilityLabel="standfirst"
           style={
             Object {
               "color": "#333333",
@@ -10097,7 +10093,6 @@ exports[`Article tests on android should render an article with no label and no 
           Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
         </Text>
         <Text
-          accessibilityLabel="standfirst"
           style={
             Object {
               "color": "#333333",

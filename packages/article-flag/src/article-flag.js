@@ -13,7 +13,7 @@ const ArticleFlag = ({ title, color }) => (
       <IconDiamond height={8} width={8} fillColour={color} />
     </View>
     <Text
-      accessibilityLabel={`flag-${title}`}
+      accessibilityLabel={`${title} Flag`}
       testID={`flag-${title}`}
       style={[styles.title, { color }]}
     >

@@ -7,7 +7,6 @@ const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
   return (
     <Text
-      accessibilityLabel="standfirst"
       testID="standfirst"
       style={[styles.standFirst]}
     >

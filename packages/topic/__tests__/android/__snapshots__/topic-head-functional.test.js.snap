@@ -4,7 +4,6 @@ exports[`TopicHead functional tests on android should render correctly 1`] = `
 <View>
   <View>
     <Text
-      accessibilityLabel="topic-name"
       accessibilityRole="heading"
       testID="topic-name"
     >
@@ -20,7 +19,6 @@ exports[`TopicHead functional tests on android should render correctly with a de
 <View>
   <View>
     <Text
-      accessibilityLabel="topic-name"
       accessibilityRole="heading"
       testID="topic-name"
     >

@@ -30,7 +30,6 @@ const TopicHead = ({ name, description, isLoading }) => {
       <HeadContainer>
         <ResponsiveName
           testID="topic-name"
-          accessibilityLabel="topic-name"
           accessibilityRole="heading"
         >
           {name}

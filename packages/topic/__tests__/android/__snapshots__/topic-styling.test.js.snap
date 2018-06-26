@@ -84,7 +84,6 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
           }
         >
           <Text
-            accessibilityLabel="topic-name"
             accessibilityRole="heading"
             style={
               Object {
