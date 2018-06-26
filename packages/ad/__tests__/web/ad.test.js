@@ -37,63 +37,59 @@ describe("Ad", () => {
     jest.clearAllMocks();
   });
 
-  it("sksl", () => {
-    expect(1).toBe(1);
+  it("renders without error", () => {
+    jest.spyOn(console, "error").mockImplementationOnce(message => {
+      console.error(message); // eslint-disable-line no-console
+      throw new Error(message);
+    });
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} slotName="header" />
+      </AdComposer>
+    );
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} slotName="pixel" />
+      </AdComposer>
+    );
+    renderer.create(
+      <AdComposer>
+        <Ad {...adProps} slotName="ad-unknown-code" />
+      </AdComposer>
+    );
   });
 
-  // it("renders without error", () => {
-  //   jest.spyOn(console, "error").mockImplementationOnce(message => {
-  //     console.error(message); // eslint-disable-line no-console
-  //     throw new Error(message);
-  //   });
-  //   renderer.create(
-  //     <AdComposer>
-  //       <Ad {...adProps} slotName="header" />
-  //     </AdComposer>
-  //   );
-  //   renderer.create(
-  //     <AdComposer>
-  //       <Ad {...adProps} slotName="pixel" />
-  //     </AdComposer>
-  //   );
-  //   renderer.create(
-  //     <AdComposer>
-  //       <Ad {...adProps} slotName="ad-unknown-code" />
-  //     </AdComposer>
-  //   );
-  // });
+  it("renders with one ad slot", () => {
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <Ad {...adProps} slotName="header" />
+        </AdComposer>
+      )
+      .toJSON();
 
-  // it("renders with one ad slot", () => {
-  //   const tree = renderer
-  //     .create(
-  //       <AdComposer>
-  //         <Ad {...adProps} slotName="header" />
-  //       </AdComposer>
-  //     )
-  //     .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  //   expect(tree).toMatchSnapshot();
-  // });
+  it("renders with more than one ad slot", () => {
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <div>
+            <Ad {...adProps} slotName="header" />
+            <Ad {...adProps} slotName="intervention" />
+          </div>
+        </AdComposer>
+      )
+      .toJSON();
 
-  // it("renders with more than one ad slot", () => {
-  //   const tree = renderer
-  //     .create(
-  //       <AdComposer>
-  //         <div>
-  //           <Ad {...adProps} slotName="header" />
-  //           <Ad {...adProps} slotName="intervention" />
-  //         </div>
-  //       </AdComposer>
-  //     )
-  //     .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  //   expect(tree).toMatchSnapshot();
-  // });
-
-  // it("displays the ad when setAdReady is called", () => {
-  //   const component = new Ad(adProps);
-  //   jest.spyOn(component, "setState").mockImplementation();
-  //   component.setAdReady();
-  //   expect(component.setState).toHaveBeenCalledWith({ adReady: true });
-  // });
+  it("displays the ad when setAdReady is called", () => {
+    const component = new Ad(adProps);
+    jest.spyOn(component, "setState").mockImplementation();
+    component.setAdReady();
+    expect(component.setState).toHaveBeenCalledWith({ adReady: true });
+  });
 });
