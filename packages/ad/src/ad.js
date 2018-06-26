@@ -14,10 +14,10 @@ class Ad extends Component {
   constructor(props) {
     super(props);
 
-    const { section, slotName } = props;
+    const { slotName } = props;
 
     this.windowWidth = screenWidth();
-    this.config = getSlotConfig(section, slotName, this.windowWidth);
+    this.config = getSlotConfig(slotName, this.windowWidth);
     this.prebidConfig = prebidConfig;
     this.state = {
       adReady: false
@@ -71,8 +71,8 @@ class Ad extends Component {
 
     const webviewComponent = (
       <DOMContext
-        data={data}
         baseUrl={baseUrl}
+        data={data}
         init={adInit}
         onRenderComplete={this.setAdReady}
         {...sizeProps}

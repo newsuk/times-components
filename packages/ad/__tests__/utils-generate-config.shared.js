@@ -12,7 +12,7 @@ export default () => {
     it("returns the maximum height and width from an array of arrays of sizes", () => {
       const highestHeight = 300;
       const highestWidth = 300;
-      const sizes = [[highestHeight, 100], [200, highestWidth], [100, 200]];
+      const sizes = [[100, highestHeight], [highestWidth, 200], [100, 200]];
 
       expect(getMaxSizes(sizes)).toEqual({
         height: highestHeight,
