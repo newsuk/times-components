@@ -87,7 +87,9 @@ const slotNames = [
 const renderAd = ({ articleUrl, slotName }) => (
   <Fragment>
     {slotName.indexOf("pixel") !== -1 && (
-      <Text style={{ display: "block" }}>The pixel ad is below. It&rsquo;s invisible.</Text>
+      <Text style={{ display: "block" }}>
+        The pixel ad is below. It&rsquo;s invisible.
+      </Text>
     )}
     <Ad contextUrl={articleUrl} section="news" slotName={slotName} />
   </Fragment>
