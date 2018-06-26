@@ -133,7 +133,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -209,7 +208,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -499,7 +497,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -657,7 +654,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -778,7 +774,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -874,7 +869,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -932,7 +926,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -990,7 +983,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -1082,7 +1074,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -1241,7 +1232,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -1295,7 +1285,6 @@ exports[`Article Summary tests on Android should render an article-summary compo
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",
@@ -1446,7 +1435,6 @@ exports[`Article Summary tests on Android should render an article-summary with 
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
     style={
       Object {
         "color": "#696969",

@@ -132,7 +132,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -255,7 +254,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -378,7 +376,6 @@ exports[`ArticleList tests on web should render an article list 1`] = `
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -537,7 +534,6 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
               </span>
             </div>
             <div
-              aria-label="datePublication"
               data-testid="datePublication"
               style={
                 Object {
@@ -724,7 +720,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 </span>
               </div>
               <div
-                aria-label="datePublication"
                 data-testid="datePublication"
                 style={
                   Object {
@@ -797,7 +792,6 @@ exports[`ArticleList tests on web should render an article list item without ima
                 </span>
               </div>
               <div
-                aria-label="datePublication"
                 data-testid="datePublication"
                 style={
                   Object {
@@ -1269,7 +1263,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -1388,7 +1381,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -1507,7 +1499,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -1626,7 +1617,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -1749,7 +1739,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {
@@ -1918,7 +1907,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
                       </span>
                     </div>
                     <div
-                      aria-label="datePublication"
                       data-testid="datePublication"
                       style={
                         Object {

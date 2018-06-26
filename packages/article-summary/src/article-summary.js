@@ -71,11 +71,7 @@ const ArticleSummary = props => {
       {headline()}
       {content()}
       {datePublicationProps ? (
-        <Text
-          accessibilityLabel="datePublication"
-          style={styles.metaText}
-          testID="datePublication"
-        >
+        <Text style={styles.metaText} testID="datePublication">
           <DatePublication {...datePublicationProps} />
         </Text>
       ) : null}

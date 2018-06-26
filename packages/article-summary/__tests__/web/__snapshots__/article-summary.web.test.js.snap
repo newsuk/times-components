@@ -151,7 +151,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -231,7 +230,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -360,7 +358,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -482,7 +479,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -591,7 +587,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -667,7 +662,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -723,7 +717,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </h3>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -786,7 +779,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -863,7 +855,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -1009,7 +1000,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -1066,7 +1056,6 @@ exports[`Article Summary tests on Web should render an article-summary component
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={
@@ -1186,7 +1175,6 @@ exports[`Article Summary tests on Web should render an article-summary with opin
     </span>
   </div>
   <div
-    aria-label="datePublication"
     data-testid="datePublication"
     dir="auto"
     style={

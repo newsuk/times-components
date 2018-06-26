@@ -2,9 +2,6 @@
 
 exports[`Article Summary tests on ios should render an ArticleSummaryContent component with a AST 1`] = `
 <Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   style={
     Object {
       "color": "#696969",
@@ -16,11 +13,7 @@ exports[`Article Summary tests on ios should render an ArticleSummaryContent com
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     
     Victoria
     ...
@@ -32,9 +25,6 @@ exports[`Article Summary tests on ios should render an ArticleSummaryContent com
 
 exports[`Article Summary tests on ios should render an ArticleSummaryContent component with two paragraphs 1`] = `
 <Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   style={
     Object {
       "color": "#696969",
@@ -46,19 +36,11 @@ exports[`Article Summary tests on ios should render an ArticleSummaryContent com
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     
     The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
   </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
      
     Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
     ...
@@ -69,10 +51,7 @@ exports[`Article Summary tests on ios should render an ArticleSummaryContent com
 exports[`Article Summary tests on ios should render an ArticleSummaryHeadline component with a blank AST 1`] = `
 <Text
   accessibilityRole="heading"
-  accessible={true}
-  allowFontScaling={true}
   aria-level="3"
-  ellipsizeMode="tail"
   style={
     Object {
       "color": "#333333",
@@ -98,9 +77,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -117,10 +93,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -135,9 +108,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Sajid Javid to end hostile era for illegal immigrants
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -149,25 +119,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Sajid Javid
       </Text>
        has warned the Home Office to expect an overhaul after the 
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Windrush scandal
       </Text>
        as he ditches the policy of creating a “hostile
@@ -175,10 +133,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -205,9 +159,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -224,10 +175,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -242,9 +190,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -256,21 +201,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -285,9 +222,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -299,9 +233,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -315,9 +246,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -515,9 +443,6 @@ exports[`Article Summary tests on ios should render an article-summary component
         </ARTSurfaceView>
       </View>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Object {
             "color": "#333333",
@@ -526,7 +451,6 @@ exports[`Article Summary tests on ios should render an article-summary component
             "fontWeight": "400",
             "letterSpacing": 1.2,
             "lineHeight": 12,
-            "margin": 0,
             "marginLeft": 5,
             "padding": 0,
             "position": "relative",
@@ -540,10 +464,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -558,9 +479,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -572,21 +490,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -601,9 +511,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -615,9 +522,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -631,9 +535,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -660,9 +561,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -679,10 +577,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -697,9 +592,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -711,16 +603,9 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Object {
             "fontWeight": "bold",
@@ -729,35 +614,20 @@ exports[`Article Summary tests on ios should render an article-summary component
       >
         Victoria
       </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         
 
       </Text>
        ITV
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         
 
       </Text>
       ★★★★☆
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
        
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Object {
             "fontWeight": "bold",
@@ -766,40 +636,24 @@ exports[`Article Summary tests on ios should render an article-summary component
       >
         Lucy Worsley’s Nights at the Opera
       </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         
 
       </Text>
        BBC Two
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         
 
       </Text>
       ★★★☆☆
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
        
       Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -814,9 +668,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -828,9 +679,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -844,9 +692,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -873,9 +718,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -892,10 +734,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -910,9 +749,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -924,36 +760,20 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
        
       The former punk
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
        
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -968,9 +788,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Saturday July 01 2017, 03:32pm, The Sunday Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -982,9 +799,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -998,9 +812,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1027,9 +838,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -1046,10 +854,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1064,10 +869,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1094,9 +895,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -1113,10 +911,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1131,10 +926,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     OK, so Putin’s not a lady, but he does have the wildest man‑PMT
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1155,10 +946,7 @@ exports[`Article Summary tests on ios should render an article-summary component
 <View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1173,9 +961,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1187,29 +972,17 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
        
       Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1224,9 +997,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1238,9 +1008,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1254,9 +1021,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1277,10 +1041,7 @@ exports[`Article Summary tests on ios should render an article-summary component
 <View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1295,9 +1056,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1309,21 +1067,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1350,9 +1100,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -1369,10 +1116,7 @@ exports[`Article Summary tests on ios should render an article-summary component
   </View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1387,9 +1131,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1401,20 +1142,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1426,9 +1160,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1442,9 +1173,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1471,9 +1199,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -1489,9 +1214,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     </Text>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1503,21 +1225,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1538,10 +1252,7 @@ exports[`Article Summary tests on ios should render an article-summary component
 <View>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1556,9 +1267,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1570,21 +1278,13 @@ exports[`Article Summary tests on ios should render an article-summary component
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1599,9 +1299,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     Friday November 17 2017, 12:01am, The Times
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1613,9 +1310,6 @@ exports[`Article Summary tests on ios should render an article-summary component
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1629,9 +1323,6 @@ exports[`Article Summary tests on ios should render an article-summary component
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1658,9 +1349,6 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#333333",
@@ -1676,9 +1364,6 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     </Text>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#850029",
@@ -1689,9 +1374,6 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1705,9 +1387,6 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       Camilla Long
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#006699",
@@ -1723,10 +1402,7 @@ exports[`Article Summary tests on ios should render an article-summary with opin
   </Text>
   <Text
     accessibilityRole="heading"
-    accessible={true}
-    allowFontScaling={true}
     aria-level="3"
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#333333",
@@ -1741,9 +1417,6 @@ exports[`Article Summary tests on ios should render an article-summary with opin
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",
@@ -1755,21 +1428,13 @@ exports[`Article Summary tests on ios should render an article-summary with opin
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...
     </Text>
   </Text>
   <Text
-    accessibilityLabel="datePublication"
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#696969",

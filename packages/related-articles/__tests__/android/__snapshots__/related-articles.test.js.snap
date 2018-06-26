@@ -297,7 +297,6 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -665,7 +664,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -963,7 +961,6 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1201,7 +1198,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1375,7 +1371,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1549,7 +1544,6 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1918,7 +1912,6 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2273,7 +2266,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2417,7 +2409,6 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     Size matters, say very tiny ministers Size matters, say very tiny ministers
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2779,7 +2770,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2923,7 +2913,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     Trident gets out of MoD budget, Hammond urged
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -3067,7 +3056,6 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     Size matters, say tiny ministers
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -3347,7 +3335,6 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -3717,7 +3704,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -3965,7 +3951,6 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     An example of a really really really really really really really really really really long headline
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -4238,7 +4223,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     </Text>
                   </View>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -4486,7 +4470,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     Trident out of MoD budget, Hammond urged
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -4630,7 +4613,6 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     An example of a really really really really really really really really really really really really really really really really really really really really long headline
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",

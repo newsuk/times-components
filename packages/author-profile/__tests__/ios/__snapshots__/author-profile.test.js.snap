@@ -846,7 +846,6 @@ exports[`1. Render an author profile page 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1090,7 +1089,6 @@ exports[`1. Render an author profile page 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1334,7 +1332,6 @@ exports[`1. Render an author profile page 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2438,7 +2435,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2578,7 +2574,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -2706,7 +2701,6 @@ exports[`2. Render an author profile page without images 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
