@@ -813,6 +813,21 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
+"@times-components/topic@1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@times-components/topic/-/topic-1.2.7.tgz#155b33e535fff51577b73de962630c79db639f61"
+  dependencies:
+    "@times-components/article-list" "2.2.6"
+    "@times-components/gradient" "1.0.4"
+    "@times-components/pagination" "1.0.3"
+    "@times-components/provider" "0.36.4"
+    "@times-components/responsive-styles" "1.0.3"
+    "@times-components/styleguide" "1.1.2"
+    "@times-components/tracking" "1.0.3"
+    "@times-components/utils" "1.1.2"
+    lodash.get "4.4.2"
+    prop-types "15.6.0"
+
 "@types/async@2.0.49":
   version "2.0.49"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"
