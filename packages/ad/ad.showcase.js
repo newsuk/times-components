@@ -2,10 +2,10 @@
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
 import { Text } from "react-native";
+import topicAdConfig from "@times-components/topic/fixtures/topic-ad-config.json";
 import AdPlaceholder from "./src/ad-placeholder";
 import Ad, { AdComposer } from "./src/ad";
 import pageTargeting from "./fixtures/page-options.json";
-import topicPageTargeting from "./fixtures/topic-page-options.json";
 import biddersConfig from "./fixtures/bidders-config.json";
 
 const placeholderSizes = ["default", "small", "mpu", "billboard"];
@@ -23,7 +23,9 @@ const renderAdPlaceholder = size => {
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };
-const adConfig = () => ({
+
+// @TODO: move this to the article package much the same as the topic example config
+const articleConfig = {
   ...adConfigBase,
   pageTargeting,
   slotTargeting: {
@@ -35,23 +37,7 @@ const adConfig = () => ({
   },
   biddersConfig,
   bidderSlots: ["ad-header", "ad-article-inline"]
-});
-
-// @TODO: get topic ad config from the topic package
-// https://github.com/newsuk/times-components/pull/1049
-const topicAdConfig = () => ({
-  ...adConfigBase,
-  topicPageTargeting,
-  slotTargeting: {
-    sec_id: "null",
-    section: "topic/chelsea",
-    path: "/topic/chelsea/",
-    zone: "topic",
-    slot: "home"
-  },
-  biddersConfig,
-  bidderSlots: ["ad-inline"]
-});
+};
 
 const withOpenInNewWindow = (children, page) => {
   const link = typeof document === "object" &&
@@ -65,9 +51,9 @@ const withOpenInNewWindow = (children, page) => {
       </a>
     );
 
-  const config = page === "topic" ? topicAdConfig : adConfig;
+  const adConfig = page === "topic" ? topicAdConfig : articleConfig;
   return (
-    <AdComposer adConfig={config(children.props.pos)}>
+    <AdComposer adConfig={adConfig}>
       <Fragment>
         {link}
         {children}

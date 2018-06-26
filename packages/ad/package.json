@@ -35,6 +35,7 @@
     "@times-components/jest-configurator": "1.0.2",
     "@times-components/jest-serializer": "1.0.2",
     "@times-components/storybook": "1.0.3",
+    "@times-components/topic": "1.2.7",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
