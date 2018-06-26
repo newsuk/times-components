@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.8"></a>
+## [1.2.8](https://github.com/newsuk/times-components/compare/@times-components/topic@1.2.7...@times-components/topic@1.2.8) (2018-06-26)
+
+
+### Bug Fixes
+
+* remove redundant slot targetting key-value pair ([#1052](https://github.com/newsuk/times-components/issues/1052)) ([1a64595](https://github.com/newsuk/times-components/commit/1a64595))
+
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/newsuk/times-components/compare/@times-components/topic@1.2.6...@times-components/topic@1.2.7) (2018-06-25)
 
