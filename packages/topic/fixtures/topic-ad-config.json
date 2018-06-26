@@ -28,7 +28,6 @@
   "slotTargeting": {
     "zone": "topic",
     "section": "topic/chelsea",
-    "iuPartsSuffix": "topic",
     "path": "topic/chelsea",
     "slot": "home"
   },
