@@ -11,16 +11,25 @@ import { propTypes, defaultProps } from "./ad-prop-types";
 import styles from "./styles";
 
 class Ad extends Component {
+  static getDerivedStateFromProps(nextProps) {
+    const { slotName } = nextProps;
+
+    return {
+      adReady: false,
+      config: getSlotConfig(slotName, screenWidth())
+    };
+  }
+
   constructor(props) {
     super(props);
 
     const { slotName } = props;
 
-    this.windowWidth = screenWidth();
-    this.config = getSlotConfig(slotName, this.windowWidth);
     this.prebidConfig = prebidConfig;
+
     this.state = {
-      adReady: false
+      adReady: false,
+      config: getSlotConfig(slotName, screenWidth())
     };
   }
 
@@ -31,19 +40,20 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const { slotName, contextUrl, section, baseUrl, style } = this.props;
+    const { baseUrl, contextUrl, section, slotName, style } = this.props;
+    const { windowWidth } = this.state;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
         "article",
-        this.windowWidth,
+        windowWidth,
         adConfig.biddersConfig.bidders
       )
     );
 
     const data = {
-      config: this.config,
+      config: this.state.config,
       prebidConfig: Object.assign(this.prebidConfig, {
         bidders: adConfig.biddersConfig.bidders,
         timeout: adConfig.biddersConfig.timeout,
@@ -57,7 +67,7 @@ class Ad extends Component {
       adUnit: adConfig.adUnit,
       contextUrl,
       section,
-      sizingMap: this.config.mappings,
+      sizingMap: this.state.config.mappings,
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
@@ -65,8 +75,8 @@ class Ad extends Component {
     const sizeProps = !this.state.adReady
       ? { height: 0, width: 0 }
       : {
-          height: this.config.maxSizes.height,
-          width: this.config.maxSizes.width
+          height: this.state.config.maxSizes.height,
+          width: this.state.config.maxSizes.width
         };
 
     const webviewComponent = (
@@ -81,9 +91,9 @@ class Ad extends Component {
 
     const placeholderComponent = !this.state.adReady ? (
       <AdPlaceholder
-        height={this.config.maxSizes.height}
+        height={this.state.config.maxSizes.height}
         style={styles.children}
-        width={this.config.maxSizes.width}
+        width={this.state.config.maxSizes.width}
       />
     ) : null;
 
