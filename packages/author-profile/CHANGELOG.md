@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.7"></a>
+## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.2.6...@times-components/author-profile@2.2.7) (2018-06-26)
+
+
+### Bug Fixes
+
+* ads in author-profile ([#1051](https://github.com/newsuk/times-components/issues/1051)) ([740b465](https://github.com/newsuk/times-components/commit/740b465))
+
+
+
+
 <a name="2.2.6"></a>
 ## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.2.5...@times-components/author-profile@2.2.6) (2018-06-25)
 
