@@ -5,7 +5,9 @@ import { androidLetterSpacing } from "@times-components/utils";
 import styles from "./style";
 
 const ArticleLabel = ({ title, color }) => (
-  <Text style={[styles.title, { color }]}>{androidLetterSpacing(title)}</Text>
+  <Text accessibilityLabel={title} style={[styles.title, { color }]}>
+    {androidLetterSpacing(title)}
+  </Text>
 );
 
 ArticleLabel.propTypes = {

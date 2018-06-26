@@ -245,6 +245,7 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#DB133B",
@@ -612,6 +613,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#DB133B",
@@ -899,6 +901,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#008347",
@@ -1146,6 +1149,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#DB133B",
@@ -1309,6 +1313,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#008347",
@@ -1482,6 +1487,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="BAYEUX TAPESTRY"
                       style={
                         Object {
                           "color": "#6C6C69",
@@ -1860,6 +1866,7 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     }
                   >
                     <Text
+                      accessibilityLabel="leading article"
                       style={
                         Object {
                           "color": "#333333",
@@ -2214,6 +2221,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     }
                   >
                     <Text
+                      accessibilityLabel="leading article"
                       style={
                         Object {
                           "color": "#333333",
@@ -2377,6 +2385,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts | analysis"
                       style={
                         Object {
                           "color": "#333333",
@@ -2718,6 +2727,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     }
                   >
                     <Text
+                      accessibilityLabel="leading article"
                       style={
                         Object {
                           "color": "#333333",
@@ -2881,6 +2891,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts"
                       style={
                         Object {
                           "color": "#333333",
@@ -3024,6 +3035,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts | analysis"
                       style={
                         Object {
                           "color": "#333333",
@@ -3249,6 +3261,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     }
                   >
                     <Text
+                      accessibilityLabel="opinion"
                       style={
                         Object {
                           "color": "#850029",
@@ -3618,6 +3631,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     }
                   >
                     <Text
+                      accessibilityLabel="opinion"
                       style={
                         Object {
                           "color": "#850029",
@@ -3919,6 +3933,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts | analysis"
                       style={
                         Object {
                           "color": "#333333",
@@ -4137,6 +4152,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     }
                   >
                     <Text
+                      accessibilityLabel="opinion"
                       style={
                         Object {
                           "color": "#850029",
@@ -4438,6 +4454,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts"
                       style={
                         Object {
                           "color": "#333333",
@@ -4581,6 +4598,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     }
                   >
                     <Text
+                      accessibilityLabel="defence cuts | analysis"
                       style={
                         Object {
                           "color": "#333333",

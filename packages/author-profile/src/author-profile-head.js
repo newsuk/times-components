@@ -33,7 +33,6 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <Text
-        accessibilityLabel="author-name"
         accessibilityRole="heading"
         style={styles.name}
         testID="author-name"
