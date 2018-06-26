@@ -42,7 +42,6 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <AuthorNameWrapper
-        accessibilityLabel="author-name"
         accessibilityRole="heading"
         aria-level="1"
         testID="author-name"

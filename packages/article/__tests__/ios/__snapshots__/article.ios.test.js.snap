@@ -2384,7 +2384,6 @@ exports[`Article tests on ios should render a smaller article 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -3507,7 +3506,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -3533,7 +3531,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -3559,7 +3556,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -3604,7 +3600,6 @@ exports[`Article tests on ios should render an article with a video asset 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -5081,7 +5076,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -5126,7 +5120,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -5160,7 +5153,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -5186,7 +5178,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -5212,7 +5203,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -5238,7 +5228,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -5264,7 +5253,6 @@ exports[`Article tests on ios should render an article with no byline 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -6772,7 +6760,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -6817,7 +6804,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -6851,7 +6837,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -6877,7 +6862,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -6903,7 +6887,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -6929,7 +6912,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -6955,7 +6937,6 @@ exports[`Article tests on ios should render an article with no flags 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -8478,7 +8459,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -8523,7 +8503,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -8557,7 +8536,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -8583,7 +8561,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -8609,7 +8586,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -8635,7 +8611,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -8661,7 +8636,6 @@ exports[`Article tests on ios should render an article with no label 1`] = `
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -10154,7 +10128,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -10199,7 +10172,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -10233,7 +10205,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -10259,7 +10230,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -10285,7 +10255,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -10311,7 +10280,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -10337,7 +10305,6 @@ exports[`Article tests on ios should render an article with no label and no flag
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -11816,7 +11783,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -11861,7 +11827,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -11895,7 +11860,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -11921,7 +11885,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -11947,7 +11910,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -11973,7 +11935,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -11999,7 +11960,6 @@ exports[`Article tests on ios should render an article with no label, no flags a
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -13523,7 +13483,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -13568,7 +13527,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -13602,7 +13560,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -13628,7 +13585,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -13654,7 +13610,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -13680,7 +13635,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -13706,7 +13660,6 @@ exports[`Article tests on ios should render an article with no standfirst 1`] = 
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -15200,7 +15153,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -15245,7 +15197,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -15279,7 +15230,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -15305,7 +15255,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -15331,7 +15280,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -15357,7 +15305,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -15383,7 +15330,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
@@ -16892,7 +16838,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-0"
         style={
           Object {
             "paddingLeft": 10,
@@ -16937,7 +16882,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-1"
         style={
           Object {
             "paddingLeft": 10,
@@ -16971,7 +16915,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-2"
         style={
           Object {
             "paddingLeft": 10,
@@ -16997,7 +16940,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-3"
         style={
           Object {
             "paddingLeft": 10,
@@ -17023,7 +16965,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-4"
         style={
           Object {
             "paddingLeft": 10,
@@ -17049,7 +16990,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-5"
         style={
           Object {
             "paddingLeft": 10,
@@ -17075,7 +17015,6 @@ exports[`Article tests on ios should render an article with no standfirst and no
     </View>
     <View>
       <View
-        accessibilityLabel="paragraph-6"
         style={
           Object {
             "paddingLeft": 10,
