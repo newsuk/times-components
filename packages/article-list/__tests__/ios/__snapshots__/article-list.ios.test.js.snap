@@ -366,7 +366,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -610,7 +609,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -854,7 +852,6 @@ exports[`ArticleList tests on ios should render an article list 1`] = `
                     </Text>
                   </Text>
                   <Text
-                    accessibilityLabel="datePublication"
                     style={
                       Object {
                         "color": "#696969",
@@ -1108,7 +1105,6 @@ exports[`ArticleList tests on ios should render an article list item 1`] = `
               </Text>
             </Text>
             <Text
-              accessibilityLabel="datePublication"
               style={
                 Object {
                   "color": "#696969",
@@ -1699,7 +1695,6 @@ exports[`ArticleList tests on ios should render an article list item without ima
               </Text>
             </Text>
             <Text
-              accessibilityLabel="datePublication"
               style={
                 Object {
                   "color": "#696969",
