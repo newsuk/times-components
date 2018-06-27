@@ -3,11 +3,16 @@ import { mount, shallow } from "enzyme";
 import DOMContext from "../../src/dom-context.web";
 
 describe("DOMContext Web", () => {
+  const props = {
+    height: 200,
+    width: 200
+  };
+
   it("passes an element to the init function", () => {
     const init = jest.fn(() => {
       return { init: () => {} };
     });
-    mount(<DOMContext init={init} />);
+    mount(<DOMContext {...props} init={init} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -21,7 +26,7 @@ describe("DOMContext Web", () => {
       return { init: () => {} };
     });
 
-    mount(<DOMContext init={init} data={{ foo: "bar" }} />);
+    mount(<DOMContext {...props} init={init} data={{ foo: "bar" }} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -77,6 +82,7 @@ describe("DOMContext Web", () => {
     const f = () =>
       mount(
         <DOMContext
+          {...props}
           init={({ eventCallback }) => eventCallback("renderComplete")}
         />
       );
@@ -87,6 +93,7 @@ describe("DOMContext Web", () => {
     /* eslint arrow-body-style: ["error", "as-needed", { "requireReturnForObjectLiteral": true }] */
     const component = mount(
       <DOMContext
+        {...props}
         init={() => {
           return { init: () => {} };
         }}
@@ -106,7 +113,9 @@ describe("DOMContext Web", () => {
       destroySlots: mockDestroySlots
     });
 
-    const wrapper = shallow(<DOMContext init={mockInit} data={{}} />);
+    const wrapper = shallow(
+      <DOMContext {...props} init={mockInit} data={{}} />
+    );
 
     wrapper.unmount();
 
