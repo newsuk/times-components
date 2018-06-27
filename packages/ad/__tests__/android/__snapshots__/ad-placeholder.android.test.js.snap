@@ -20,7 +20,7 @@ exports[`1. Advert placeholder 1`] = `
 </View>
 `;
 
-exports[`2. Small viewbox config 1`] = `
+exports[`2. Small ViewBox config 1`] = `
 Object {
   "marginLeft": 630,
   "marginTop": -120,
@@ -29,7 +29,7 @@ Object {
 }
 `;
 
-exports[`3. Billboard viewbox config 1`] = `
+exports[`3. Billboard ViewBox config 1`] = `
 Object {
   "marginLeft": 630,
   "marginTop": -120,
@@ -38,7 +38,7 @@ Object {
 }
 `;
 
-exports[`3. MPU viewbox config 1`] = `
+exports[`3. MPU ViewBox config 1`] = `
 Object {
   "marginLeft": 15,
   "marginTop": 0,
@@ -47,7 +47,7 @@ Object {
 }
 `;
 
-exports[`4. Default viewbox config 1`] = `
+exports[`4. Default ViewBox config 1`] = `
 Object {
   "marginLeft": 50,
   "marginTop": 0,
