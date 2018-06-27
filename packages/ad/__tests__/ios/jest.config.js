@@ -1,5 +1,4 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
-const path = require("path");
 
 module.exports = jestConfigurator("ios", __dirname, {
   coverageIgnoreGlobs: [
@@ -7,9 +6,7 @@ module.exports = jestConfigurator("ios", __dirname, {
     "ad-composer.js",
     "ad-init.js",
     "utils/generate-config.js",
-    "placeholder.js",
-    "prebid-config.js",
-    "webview-event-callback-setup.js"
-  ],
-  setupTestFrameworkScriptFile: path.join(__dirname, "../serializers.native")
+    "utils/prebid-config.js",
+    "utils/webview-event-callback-setup.js"
+  ]
 });

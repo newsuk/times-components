@@ -3,33 +3,26 @@
 exports[`1. Advert placeholder 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      },
-      null,
-    ]
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
   }
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#F9F9F9",
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "justifyContent": "center",
-          "overflow": "hidden",
-        },
-        Object {
-          "height": 300,
-          "width": 970,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F9F9",
+        "borderColor": "#DBDBDB",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 300,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "width": 970,
+      }
     }
   >
     <View

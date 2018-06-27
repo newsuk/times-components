@@ -3,6 +3,7 @@ import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
+  flattenStyleTransform,
   minimaliseTransform,
   minimalNativeTransform,
   print
@@ -15,7 +16,8 @@ export default () => {
     compose(
       print,
       minimaliseTransform((value, key) => key === "style"),
-      minimalNativeTransform
+      minimalNativeTransform,
+      flattenStyleTransform
     )
   );
 
