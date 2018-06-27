@@ -2,15 +2,19 @@ import {
   addSerializers,
   compose,
   minimalWebTransform,
-  rnwTransform,
-  stylePrinter
+  minimaliseTransform,
+  print
 } from "@times-components/jest-serializer";
 import shared from "../ad-shared";
 
-describe("web", () => {
+describe("android", () => {
   addSerializers(
     expect,
-    compose(stylePrinter, minimalWebTransform, rnwTransform())
+    compose(
+      print,
+      minimalWebTransform,
+      minimaliseTransform((value, key) => key === "style")
+    )
   );
 
   shared();
