@@ -1,5 +1,5 @@
 import shared from "../shared-with-style.native";
 
-describe("Android", () => {
+describe("android", () => {
   shared();
 });

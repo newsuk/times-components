@@ -1,5 +1,5 @@
 import shared from "../shared.web";
 
-describe("Web", () => {
+describe("web", () => {
   shared();
 });
