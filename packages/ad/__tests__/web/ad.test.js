@@ -16,7 +16,7 @@ jest.mock(
   () => "mockErrorHandler"
 );
 jest.mock("../../src/ad-init", () => () => "mockInit");
-
+jest.mock("@times-components/watermark", () => "WaterMark");
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 addSerializers(
