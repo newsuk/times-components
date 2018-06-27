@@ -1,32 +1,35 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
-import { getSlotConfig, getSizeMaps } from "./generate-config";
-import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
-import Placeholder from "./placeholder";
+import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
+import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
 import { propTypes, defaultProps } from "./ad-prop-types";
-
-const styles = StyleSheet.create({
-  children: {
-    flex: 1
-  }
-});
+import styles from "./styles";
 
 class Ad extends Component {
+  static getDerivedStateFromProps(nextProps) {
+    const { slotName } = nextProps;
+
+    return {
+      adReady: false,
+      config: getSlotConfig(slotName, screenWidth())
+    };
+  }
+
   constructor(props) {
     super(props);
 
-    const { section, slotName } = props;
+    const { slotName } = props;
 
-    this.windowWidth = screenWidth();
-    this.config = getSlotConfig(section, slotName, this.windowWidth);
     this.prebidConfig = prebidConfig;
+
     this.state = {
-      adReady: false
+      adReady: false,
+      config: getSlotConfig(slotName, screenWidth())
     };
   }
 
@@ -37,19 +40,20 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const { slotName, contextUrl, section, baseUrl, style } = this.props;
+    const { baseUrl, contextUrl, section, slotName, style } = this.props;
+    const { windowWidth } = this.state;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
         "article",
-        this.windowWidth,
+        windowWidth,
         adConfig.biddersConfig.bidders
       )
     );
 
     const data = {
-      config: this.config,
+      config: this.state.config,
       prebidConfig: Object.assign(this.prebidConfig, {
         bidders: adConfig.biddersConfig.bidders,
         timeout: adConfig.biddersConfig.timeout,
@@ -63,19 +67,22 @@ class Ad extends Component {
       adUnit: adConfig.adUnit,
       contextUrl,
       section,
-      sizingMap: getSizeMaps(slotName),
+      sizingMap: this.state.config.mappings,
       pageTargeting: adConfig.pageTargeting,
       slotTargeting: adConfig.slotTargeting
     };
 
     const sizeProps = !this.state.adReady
-      ? { width: 0, height: 0 }
-      : { height: this.config.maxSizes.height };
+      ? { height: 0, width: 0 }
+      : {
+          height: this.state.config.maxSizes.height,
+          width: this.state.config.maxSizes.width
+        };
 
     const webviewComponent = (
       <DOMContext
-        data={data}
         baseUrl={baseUrl}
+        data={data}
         init={adInit}
         onRenderComplete={this.setAdReady}
         {...sizeProps}
@@ -83,10 +90,10 @@ class Ad extends Component {
     );
 
     const placeholderComponent = !this.state.adReady ? (
-      <Placeholder
-        width={this.config.maxSizes.width}
-        height={this.config.maxSizes.height}
+      <AdPlaceholder
+        height={this.state.config.maxSizes.height}
         style={styles.children}
+        width={this.state.config.maxSizes.width}
       />
     ) : null;
 

@@ -11,10 +11,12 @@ import {
 import Ad, { AdComposer } from "../../src/ad";
 
 // prevent function sources appearing in snapshots
-jest.mock("../../src/webview-event-callback-setup", () => "mockErrorHandler");
+jest.mock(
+  "../../src/utils/webview-event-callback-setup",
+  () => "mockErrorHandler"
+);
 jest.mock("../../src/ad-init", () => () => "mockInit");
-
-jest.mock("../../src/placeholder", () => "Placeholder"); // prevent SVG in snapshots
+jest.mock("@times-components/watermark", () => "WaterMark");
 jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 addSerializers(

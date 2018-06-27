@@ -1,8 +1,7 @@
+/* eslint-env browser */
 import React, { Component } from "react";
-
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
-/* eslint-env browser */
 class DOMContext extends Component {
   componentDidMount() {
     const { init, data } = this.props;
@@ -55,10 +54,10 @@ class DOMContext extends Component {
   };
 
   render() {
-    const { width, height } = this.props;
+    const { height, width } = this.props;
     return (
       <div
-        style={{ width, height, overflow: "hidden" }}
+        style={{ height, width, overflow: "hidden" }}
         ref={div => {
           this.div = div;
         }}

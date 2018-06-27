@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert placeholder 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F9F9",
+        "borderColor": "#DBDBDB",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 300,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "width": 970,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      <Watermark
+        height={300}
+        viewBox="-630 120 1200 50"
+        width={970}
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "backgroundColor": "#F9F9F9",
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 11,
+          "letterSpacing": 1.5,
+          "paddingBottom": 5,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 5,
+          "zIndex": 1,
+        }
+      }
+    >
+      ADVERTISEMENT
+    </Text>
+  </View>
+</View>
+`;

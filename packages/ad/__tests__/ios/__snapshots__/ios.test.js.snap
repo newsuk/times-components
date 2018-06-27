@@ -4,20 +4,22 @@ exports[`On iOS DOMContext Native renders correctly 1`] = `
 <View
   style={
     Object {
-      "height": undefined,
-      "width": undefined,
+      "height": 200,
+      "width": 200,
     }
   }
 >
   <WebView
     injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+    onMessage={[Function]}
+    onNavigationStateChange={[Function]}
     source={
       Object {
         "baseUrl": undefined,
         "html": "
       <html>
         <head>
-        <meta name=\\"viewport\\" content=\\"width=undefined,height=undefined,initial-scale=1,user-scalable=no\\">
+        <meta name=\\"viewport\\" content=\\"width=200,height=200,initial-scale=1,user-scalable=no\\">
         <style>
           html, body {
             height: 100%;

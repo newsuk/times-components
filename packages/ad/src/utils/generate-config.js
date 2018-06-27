@@ -4,15 +4,15 @@ import sizes from "./sizes";
 // for the element
 const getMaxSizes = adSizes => {
   if (!adSizes) {
-    return { width: 0, height: 0 };
+    return { height: 0, width: 0 };
   }
 
   return adSizes.reduce(
     (max, [curWidth, curHeight]) => ({
-      width: Math.max(max.width, curWidth),
-      height: Math.max(max.height, curHeight)
+      height: Math.max(max.height, curHeight),
+      width: Math.max(max.width, curWidth)
     }),
-    { width: 0, height: 0 }
+    { height: 0, width: 0 }
   );
 };
 
@@ -41,7 +41,7 @@ const getAdSizes = (slotName, width) => {
   return [];
 };
 
-const getSlotConfig = (section, slotName, width) => {
+const getSlotConfig = (slotName, width) => {
   const adSizes = getAdSizes(slotName, width);
   const mappings = getSizeMaps(slotName);
   const maxSizes = getMaxSizes(adSizes);

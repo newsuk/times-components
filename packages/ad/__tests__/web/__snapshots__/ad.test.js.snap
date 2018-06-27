@@ -12,15 +12,29 @@ exports[`Ad renders with more than one ad slot 1`] = `
         }
       }
     />
-    <Placeholder
-      height={90}
-      style={
-        Object {
-          "flex": 1,
+    <div>
+      <div
+        style={
+          Object {
+            "height": "90px",
+            "width": "728px",
+          }
         }
-      }
-      width={728}
-    />
+      >
+        <div>
+          <WaterMark
+            height={90}
+            viewBox="-630 120 1200 50"
+            width={728}
+          />
+        </div>
+        <div
+          dir="auto"
+        >
+          ADVERTISEMENT
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <div
@@ -32,15 +46,29 @@ exports[`Ad renders with more than one ad slot 1`] = `
         }
       }
     />
-    <Placeholder
-      height={90}
-      style={
-        Object {
-          "flex": 1,
+    <div>
+      <div
+        style={
+          Object {
+            "height": "90px",
+            "width": "728px",
+          }
         }
-      }
-      width={728}
-    />
+      >
+        <div>
+          <WaterMark
+            height={90}
+            viewBox="-630 120 1200 50"
+            width={728}
+          />
+        </div>
+        <div
+          dir="auto"
+        >
+          ADVERTISEMENT
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -56,14 +84,28 @@ exports[`Ad renders with one ad slot 1`] = `
       }
     }
   />
-  <Placeholder
-    height={90}
-    style={
-      Object {
-        "flex": 1,
+  <div>
+    <div
+      style={
+        Object {
+          "height": "90px",
+          "width": "728px",
+        }
       }
-    }
-    width={728}
-  />
+    >
+      <div>
+        <WaterMark
+          height={90}
+          viewBox="-630 120 1200 50"
+          width={728}
+        />
+      </div>
+      <div
+        dir="auto"
+      >
+        ADVERTISEMENT
+      </div>
+    </div>
+  </div>
 </div>
 `;

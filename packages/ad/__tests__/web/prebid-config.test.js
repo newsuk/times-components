@@ -1,4 +1,4 @@
-import { prebidConfig } from "../../src/prebid-config";
+import { prebidConfig } from "../../src/utils";
 
 describe("Prebid Config test", () => {
   const maxBid = 15;

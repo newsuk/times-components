@@ -1,14 +1,12 @@
 import PropTypes from "prop-types";
+import { ViewPropTypes } from "react-native";
 
 export const propTypes = {
-  data: PropTypes.shape({}),
   height: PropTypes.number.isRequired,
-  init: PropTypes.func.isRequired,
-  onRenderComplete: PropTypes.func,
+  style: ViewPropTypes.style,
   width: PropTypes.number.isRequired
 };
 
 export const defaultProps = {
-  data: {},
-  onRenderComplete: () => {}
+  style: null
 };

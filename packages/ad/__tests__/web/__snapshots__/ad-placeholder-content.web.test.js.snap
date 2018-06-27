@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert placeholder 1`] = `
+<style>
+{
+  "IS1": {
+    "height": "300px",
+    "width": "970px",
+  },
+}
+</style>
+
+<div>
+  <div
+    className="IS1"
+  >
+    <div>
+      <Watermark
+        height={300}
+        viewBox="-630 120 1200 50"
+        width={970}
+      />
+    </div>
+    <div>
+      ADVERTISEMENT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. Small ViewBox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;
+
+exports[`3. Billboard ViewBox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;
+
+exports[`3. MPU ViewBox config 1`] = `
+Object {
+  "marginLeft": 15,
+  "marginTop": 0,
+  "svgHeight": 250,
+  "svgWidth": 269,
+}
+`;
+
+exports[`4. Default ViewBox config 1`] = `
+Object {
+  "marginLeft": 50,
+  "marginTop": 0,
+  "svgHeight": 50,
+  "svgWidth": 700,
+}
+`;
