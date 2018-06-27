@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders primary image with caption and credits 1`] = `
+.c0 {
+  padding-left: 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0px;
+  }
+}
+
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.25}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div>
+    <div
+      className="c0"
+    >
+      <div>
+        <div>
+          <div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDITS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`2. renders secondary image with caption and credits 1`] = `
+Array [
+  <div>
+    <TimesImage
+      aspectRatio={1.5}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div>
+    <div>
+      <div>
+        <div>
+          Another caption
+        </div>
+        <div>
+          OTHER CREDITS
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`3. renders inline image (landscape) with caption and credits 1`] = `
+.c0 {
+  width: 50%;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c1 {
+  width: 50%;
+  margin-top: -10px;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 30%;
+    clear: left;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 35.71429%;
+    clear: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+    width: 30%;
+    clear: left;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-left: 0px;
+    width: 35.71429%;
+  }
+}
+
+Array [
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={1.5}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div
+    className="c1"
+  >
+    <div>
+      <div>
+        <div>
+          Landscape caption
+        </div>
+        <div>
+          LANDSCAPE CREDITS
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`4. renders inline image (portrait) with caption and credits 1`] = `
+.c0 {
+  width: 50%;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c1 {
+  width: 50%;
+  margin-top: -10px;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 30%;
+    clear: left;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 35.71429%;
+    clear: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+    width: 30%;
+    clear: left;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-left: 0px;
+    width: 35.71429%;
+  }
+}
+
+Array [
+  <div
+    className="c0"
+  >
+    <TimesImage
+      aspectRatio={0.6666666666666666}
+      uri="https://imageserver/someImage"
+    />
+  </div>,
+  <div
+    className="c1"
+  >
+    <div>
+      <div>
+        <div>
+          Portrait caption
+        </div>
+        <div>
+          PORTRAIT CREDITS
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
