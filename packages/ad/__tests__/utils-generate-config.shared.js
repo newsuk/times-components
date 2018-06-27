@@ -10,13 +10,12 @@ jest.mock("../src/utils/sizes", () => ({
 export default () => {
   context("getMaxSizes", () => {
     it("returns the maximum height and width from an array of arrays of sizes", () => {
-      const highestHeight = 300;
-      const highestWidth = 300;
-      const sizes = [[100, highestHeight], [highestWidth, 200], [100, 200]];
+      const biggestValue = 300;
+      const sizes = [[100, biggestValue], [biggestValue, 200], [100, 200]];
 
       expect(getMaxSizes(sizes)).toEqual({
-        height: highestHeight,
-        width: highestWidth
+        height: biggestValue,
+        width: biggestValue
       });
     });
 
