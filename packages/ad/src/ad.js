@@ -15,7 +15,6 @@ class Ad extends Component {
     const { slotName } = nextProps;
 
     return {
-      adReady: false,
       config: getSlotConfig(slotName, screenWidth())
     };
   }
