@@ -1,4 +1,4 @@
-import shared from "../share.native";
+import shared from "../dom-context.native";
 
 describe("android", () => {
   shared();
