@@ -11,5 +11,5 @@ module.exports = jestConfigurator("ios", __dirname, {
     "prebid-config.js",
     "webview-event-callback-setup.js"
   ],
-  setupTestFrameworkScriptFile: path.join(__dirname, "./serializers")
+  setupTestFrameworkScriptFile: path.join(__dirname, "../serializers.native")
 });

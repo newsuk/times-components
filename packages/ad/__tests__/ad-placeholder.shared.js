@@ -1,17 +1,6 @@
-import React from "react";
-import renderer from "react-test-renderer";
 import { calculateViewBox } from "../src/styles";
-import AdPlaceholder from "../src/ad-placeholder";
 
 export default () => {
-  it("should render an advert placeholder", () => {
-    const testInstance = renderer.create(
-      <AdPlaceholder height={300} width={970} />
-    );
-
-    expect(testInstance).toMatchSnapshot("1. Advert placeholder");
-  });
-
   it("should return a small ViewBox config", () => {
     const height = 90;
     const width = 728;

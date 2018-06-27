@@ -1,34 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Advert placeholder 1`] = `
+<style>
+{
+  "IS1": {
+    "height": "300px",
+    "width": "970px",
+  },
+}
+</style>
+
 <div>
   <div
-    style={
-      Object {
-        "height": "300px",
-        "width": "970px",
-      }
-    }
+    className="IS1"
   >
     <div>
-      <svg
+      <Watermark
         height={300}
+        viewBox="-630 120 1200 50"
         width={970}
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          id="Page-1"
-          opacity="0.07"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            fill="#1D1D1B"
-            id="Shape"
-          />
-        </g>
-      </svg>
+      />
     </div>
     <div>
       ADVERTISEMENT
