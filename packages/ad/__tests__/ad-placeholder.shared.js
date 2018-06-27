@@ -5,9 +5,11 @@ import AdPlaceholder from "../src/ad-placeholder";
 
 export default () => {
   it("should render an advert placeholder", () => {
-    const wrapper = renderer.create(<AdPlaceholder height={300} width={970} />);
+    const testInstance = renderer.create(
+      <AdPlaceholder height={300} width={970} />
+    );
 
-    expect(wrapper).toMatchSnapshot("1. Advert placeholder");
+    expect(testInstance).toMatchSnapshot("1. Advert placeholder");
   });
 
   it("should return a small viewbox config", () => {
