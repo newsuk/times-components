@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/article@2.0.12...@times-components/article@2.1.0) (2018-06-27)
+
+
+### Features
+
+* ad refactor ([#1053](https://github.com/newsuk/times-components/issues/1053)) ([0d4981a](https://github.com/newsuk/times-components/commit/0d4981a))
+
+
+
+
 <a name="2.0.12"></a>
 ## [2.0.12](https://github.com/newsuk/times-components/compare/@times-components/article@2.0.11...@times-components/article@2.0.12) (2018-06-27)
 
