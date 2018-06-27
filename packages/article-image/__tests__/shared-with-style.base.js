@@ -36,7 +36,7 @@ export default makeTest => {
           captionOptions={primaryImage.captionOptions}
         />
       )
-    ).toMatchSnapshot());
+    ).toMatchSnapshot("1. renders primary image with caption and credits"));
 
   it("renders secondary image with caption and credits", () =>
     expect(
@@ -46,7 +46,7 @@ export default makeTest => {
           captionOptions={secondaryImage.captionOptions}
         />
       )
-    ).toMatchSnapshot());
+    ).toMatchSnapshot("2. renders secondary image with caption and credits"));
 
   it("renders inline image (landscape) with caption and credits", () =>
     expect(
@@ -56,7 +56,9 @@ export default makeTest => {
           captionOptions={landscapeInlineImage.captionOptions}
         />
       )
-    ).toMatchSnapshot());
+    ).toMatchSnapshot(
+      "3. renders inline image (landscape) with caption and credits"
+    ));
 
   it("renders inline image (portrait) with caption and credits", () =>
     expect(
@@ -66,5 +68,7 @@ export default makeTest => {
           captionOptions={portraitInlineImage.captionOptions}
         />
       )
-    ).toMatchSnapshot());
+    ).toMatchSnapshot(
+      "4. renders inline image (portrait) with caption and credits"
+    ));
 };

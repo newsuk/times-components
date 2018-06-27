@@ -1,10 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Web does not render an image if display is not received 1`] = `Array []`;
+exports[`1. does not render an image if display is not received 1`] = `Array []`;
 
-exports[`Web does not render an image if ratio is not received 1`] = `Array []`;
+exports[`2. does not render an image if ratio is not received 1`] = `Array []`;
 
-exports[`Web renders a caption if received 1`] = `
+exports[`3. renders an image with no caption 1`] = `
+<div>
+  <TimesImage
+    aspectRatio={1.7777777777777777}
+    uri="https://imageserver/someImage"
+  />
+</div>
+`;
+
+exports[`4. renders a caption if received 1`] = `
 <div>
   <div>
     <div>
@@ -16,7 +25,7 @@ exports[`Web renders a caption if received 1`] = `
 </div>
 `;
 
-exports[`Web renders a credit if received 1`] = `
+exports[`5. renders a credit if received 1`] = `
 <div>
   <div>
     <div>
@@ -25,14 +34,5 @@ exports[`Web renders a credit if received 1`] = `
       </div>
     </div>
   </div>
-</div>
-`;
-
-exports[`Web renders an image with no caption 1`] = `
-<div>
-  <TimesImage
-    aspectRatio={1.7777777777777777}
-    uri="https://imageserver/someImage"
-  />
 </div>
 `;

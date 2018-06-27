@@ -16,7 +16,7 @@ export default makeTest => {
 
     expect(
       makeTest(<ArticleImage imageOptions={noDisplay.imageOptions} />)
-    ).toMatchSnapshot();
+    ).toMatchSnapshot("1. does not render an image if display is not received");
   });
 
   it("does not render an image if ratio is not received", () => {
@@ -30,7 +30,7 @@ export default makeTest => {
 
     expect(
       makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
-    ).toMatchSnapshot();
+    ).toMatchSnapshot("2. does not render an image if ratio is not received");
   });
 
   it("renders an image with no caption", () => {
@@ -46,7 +46,7 @@ export default makeTest => {
       makeTest(
         <ArticleImage imageOptions={primaryImageNoCaptionProps.imageOptions} />
       )
-    ).toMatchSnapshot();
+    ).toMatchSnapshot("3. renders an image with no caption");
   });
 
   it("renders a caption if received", () => {
@@ -69,7 +69,7 @@ export default makeTest => {
           captionOptions={noCredits.captionOptions}
         />
       )
-    ).toMatchSnapshot();
+    ).toMatchSnapshot("4. renders a caption if received");
   });
 
   it("renders a credit if received", () => {
@@ -92,6 +92,6 @@ export default makeTest => {
           captionOptions={noCredits.captionOptions}
         />
       )
-    ).toMatchSnapshot();
+    ).toMatchSnapshot("5. renders a credit if received");
   });
 };
