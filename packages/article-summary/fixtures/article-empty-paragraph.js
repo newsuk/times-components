@@ -2,35 +2,32 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
-export default {
+const defaultHeadline =
+  "OK, so Putin’s not a lady, but he does have the wildest man‑PMT";
+const defaultLabel = "Camilla Long";
+const defaultParagraph1 =
+  "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.";
+const defaultParagraph2 = "The former punk";
+
+export default (
+  {
+    headline = defaultHeadline,
+    label = defaultLabel,
+    paragraph1 = defaultParagraph1,
+    paragraph2 = defaultParagraph2
+  } = {}
+) => ({
   labelProps: {
-    title: "Camilla Long",
+    title: label,
     color: colours.functional.primary
   },
   datePublicationProps: {
     date: "2017-07-01T14:32:00.000Z",
     publication: "SUNDAYTIMES"
   },
-  headline: () => (
-    <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
-  ),
+  headline: () => <ArticleSummaryHeadline headline={headline} />,
   bylineProps: {
     ast: [
-      {
-        name: "author",
-        attributes: {
-          slug: "camilla-long"
-        },
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Camilla Long"
-            },
-            children: []
-          }
-        ]
-      },
       {
         name: "inline",
         attributes: {},
@@ -38,7 +35,7 @@ export default {
           {
             name: "text",
             attributes: {
-              value: ", Environment Editor"
+              value: "A byline"
             },
             children: []
           }
@@ -56,8 +53,7 @@ export default {
             {
               name: "text",
               attributes: {
-                value:
-                  "Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night."
+                value: paragraph1
               },
               children: []
             }
@@ -70,7 +66,7 @@ export default {
             {
               name: "text",
               attributes: {
-                value: "The former punk"
+                value: paragraph2
               },
               children: []
             }
@@ -84,4 +80,4 @@ export default {
       ]}
     />
   )
-};
+});

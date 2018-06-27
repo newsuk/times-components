@@ -2,31 +2,26 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
-export default {
+const defaultHeadline =
+  "Top medal for forces dog who took a bite out of the Taliban";
+const defaultLabel = "Camilla Long";
+const defaultParagraph =
+  "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.";
+
+export default (
+  {
+    headline = defaultHeadline,
+    label = defaultLabel,
+    paragraph = defaultParagraph
+  } = {}
+) => ({
   labelProps: {
-    title: "Camilla Long",
+    title: label,
     color: colours.functional.primary
   },
-  headline: () => (
-    <ArticleSummaryHeadline headline="Top medal for forces dog who took a bite out of the Taliban" />
-  ),
+  headline: () => <ArticleSummaryHeadline headline={headline} />,
   bylineProps: {
     ast: [
-      {
-        name: "author",
-        attributes: {
-          slug: "camilla-long"
-        },
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Camilla Long"
-            },
-            children: []
-          }
-        ]
-      },
       {
         name: "inline",
         attributes: {},
@@ -34,7 +29,7 @@ export default {
           {
             name: "text",
             attributes: {
-              value: ", Environment Editor"
+              value: "A byline"
             },
             children: []
           }
@@ -52,8 +47,7 @@ export default {
             {
               name: "text",
               attributes: {
-                value:
-                  "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear."
+                value: paragraph
               },
               children: []
             }
@@ -62,4 +56,4 @@ export default {
       ]}
     />
   )
-};
+});

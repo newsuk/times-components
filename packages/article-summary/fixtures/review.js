@@ -1,51 +1,18 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
-import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
+import { ArticleSummaryContent } from "../";
 
-export default {
-  labelProps: {
-    title: "Camilla Long",
-    color: colours.functional.primary
-  },
-  datePublicationProps: {
-    date: "2017-07-01T14:32:00.000Z",
-    publication: "SUNDAYTIMES"
-  },
-  headline: () => (
-    <ArticleSummaryHeadline headline="OK, so Putin’s not a lady, but he does have the wildest man‑PMT" />
-  ),
-  bylineProps: {
-    ast: [
-      {
-        name: "author",
-        attributes: {
-          slug: "camilla-long"
-        },
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "Camilla Long"
-            },
-            children: []
-          }
-        ]
-      },
-      {
-        name: "inline",
-        attributes: {},
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: ", Environment Editor"
-            },
-            children: []
-          }
-        ]
-      }
-    ]
-  },
+const defaultReview1Title = "Victoria";
+const defaultReview2Title = "Lucy Worsley’s Nights at the Opera";
+const defaultParagraph =
+  "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a";
+
+export default (
+  {
+    paragraph = defaultParagraph,
+    review1Title = defaultReview1Title,
+    review2Title = defaultReview2Title
+  } = {}
+) => ({
   content: () => (
     <ArticleSummaryContent
       ast={[
@@ -60,7 +27,7 @@ export default {
                 {
                   name: "text",
                   attributes: {
-                    value: "Victoria"
+                    value: review1Title
                   },
                   children: []
                 }
@@ -103,7 +70,7 @@ export default {
                 {
                   name: "text",
                   attributes: {
-                    value: "Lucy Worsley’s Nights at the Opera"
+                    value: review2Title
                   },
                   children: []
                 }
@@ -142,8 +109,7 @@ export default {
             {
               name: "text",
               attributes: {
-                value:
-                  "Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a"
+                value: paragraph
               },
               children: []
             }
@@ -152,4 +118,4 @@ export default {
       ]}
     />
   )
-};
+});
