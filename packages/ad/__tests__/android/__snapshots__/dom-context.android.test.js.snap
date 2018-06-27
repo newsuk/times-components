@@ -1,14 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`On android DOMContext Native renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "height": 200,
-      "width": 200,
-    }
-  }
->
+exports[`android renders correctly 1`] = `
+<View>
   <WebView
     source={
       Object {
@@ -44,11 +37,6 @@ exports[`On android DOMContext Native renders correctly 1`] = `
         </body>
       </html>
     ",
-      }
-    }
-    style={
-      Object {
-        "backgroundColor": "transparent",
       }
     }
   />
