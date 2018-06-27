@@ -4,8 +4,7 @@ import React, { Fragment } from "react";
 import { Text } from "react-native";
 import AdPlaceholder from "./src/ad-placeholder";
 import Ad, { AdComposer } from "./src/ad";
-import pageTargeting from "./fixtures/page-options.json";
-import biddersConfig from "./fixtures/bidders-config.json";
+import adConfig from "./fixtures/article-ad-config.json";
 
 const placeholderSizes = ["default", "small", "mpu", "billboard"];
 
@@ -18,21 +17,6 @@ const renderAdPlaceholder = size => {
     return <AdPlaceholder height={250} width={970} />;
 
   return <AdPlaceholder height={50} width={700} />;
-};
-
-const adConfig = {
-  networkId: "25436805",
-  adUnit: "d.thetimes.co.uk",
-  pageTargeting,
-  slotTargeting: {
-    sec_id: "null",
-    section: "news",
-    path: "/edition/news/",
-    zone: "current_edition",
-    slot: "news"
-  },
-  biddersConfig,
-  bidderSlots: ["ad-header", "ad-article-inline"]
 };
 
 const withOpenInNewWindow = children => {
