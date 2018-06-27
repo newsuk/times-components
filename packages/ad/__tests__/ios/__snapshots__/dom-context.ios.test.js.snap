@@ -1,14 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ios renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "height": 200,
-      "width": 200,
-    }
-  }
->
+<View>
   <WebView
     injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
     source={
@@ -45,11 +38,6 @@ exports[`ios renders correctly 1`] = `
         </body>
       </html>
     ",
-      }
-    }
-    style={
-      Object {
-        "backgroundColor": "transparent",
       }
     }
   />

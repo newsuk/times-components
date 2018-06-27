@@ -39,7 +39,6 @@ const Topic = ({
         emptyStateMessage={emptyStateMessage}
         fetchMore={() => Promise.resolve()}
         imageRatio={ratioTextToFloat("3:2")}
-        isLoading
         pageSize={initPageSize}
         refetch={() => {}}
         showImages
@@ -103,7 +102,6 @@ const Topic = ({
             error={articlesError}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
-            isLoading={isLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}

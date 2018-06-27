@@ -1779,7 +1779,14 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         />
         <div>
-          <div>
+          <div
+            style={
+              Object {
+                "height": "90px",
+                "width": "728px",
+              }
+            }
+          >
             <div>
               <svg
                 height={90}
