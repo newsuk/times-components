@@ -1,0 +1,56 @@
+import React from "react";
+import renderer from "react-test-renderer";
+import {
+  addSerializers,
+  compose,
+  minimalWebTransform,
+  rnwTransform,
+  stylePrinter
+} from "@times-components/jest-serializer";
+import Ad, { AdComposer } from "../../src/ad";
+
+describe("web", () => {
+  addSerializers(
+    expect,
+    compose(stylePrinter, minimalWebTransform, rnwTransform())
+  );
+
+  it("renders with one ad slot", () => {
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <Ad slotName="header" />
+        </AdComposer>
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot("1. Advert");
+  });
+
+  it("renders with more than one ad slot", () => {
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <div>
+            <Ad slotName="header" />
+            <Ad slotName="intervention" />
+          </div>
+        </AdComposer>
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot("2. Two adverts");
+  });
+
+  it("renders placeholder when isLoading prop is true", () => {
+    const tree = renderer
+      .create(
+        <AdComposer>
+          <Ad isLoading slotName="header" />
+        </AdComposer>
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot("3. Advert loading state placeholder");
+  });
+});
