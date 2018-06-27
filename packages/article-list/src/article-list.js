@@ -20,6 +20,7 @@ class ArticleList extends Component {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
+    this.fetchMoreOnEndReached = this.fetchMoreOnEndReached.bind(this);
     this.state = { loadMoreError: null, loadingMore: false };
   }
 
@@ -39,6 +40,20 @@ class ArticleList extends Component {
       );
   }
 
+  fetchMoreOnEndReached(data) {
+    if (this.state.loadMoreError || this.state.loadingMore) {
+      return null;
+    }
+
+    this.setState({ loadingMore: true });
+    return this.props
+      .fetchMore(data.length)
+      .then(() => this.setState({ loadingMore: false }))
+      .catch(loadMoreError =>
+        this.setState({ loadMoreError, loadingMore: false })
+      );
+  }
+
   render() {
     const {
       articleListHeader,
@@ -51,8 +66,7 @@ class ArticleList extends Component {
       onArticlePress,
       pageSize,
       refetch,
-      showImages,
-      fetchMore
+      showImages
     } = this.props;
 
     if (error) {
@@ -82,19 +96,6 @@ class ArticleList extends Component {
 
     if (!articlesLoading) this.props.receiveChildList(data);
 
-    const fetchMoreOnEndReached = () => {
-      if (this.state.loadMoreError || this.state.loadingMore) {
-        return null;
-      }
-
-      this.setState({ loadingMore: true });
-      return fetchMore(data.length)
-        .then(() => this.setState({ loadingMore: false }))
-        .catch(loadMoreError =>
-          this.setState({ loadMoreError, loadingMore: false })
-        );
-    };
-
     const articleListFooter = () => {
       if (data.length >= count) {
         return null;
@@ -105,7 +106,9 @@ class ArticleList extends Component {
             <View style={styles.showMoreRetryContainer}>
               <Button
                 onPress={() => {
-                  this.setState({ loadMoreError: null }, fetchMoreOnEndReached);
+                  this.setState({ loadMoreError: null }, () =>
+                    this.fetchMoreOnEndReached(data)
+                  );
                 }}
                 style={styles.showMoreRetryButton}
                 title="Retry"
@@ -145,7 +148,7 @@ class ArticleList extends Component {
         onEndReachedThreshold={2}
         onEndReached={() =>
           // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
-          data.length > 0 ? fetchMoreOnEndReached() : null
+          data.length > 0 ? this.fetchMoreOnEndReached(data) : null
         }
         renderItem={({ item, index }) => (
           <ErrorView>
