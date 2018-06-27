@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 const Button = props => (
   <TouchableOpacity
     testID={props.testID}
-    accessibilityLabel={props.testID}
     style={{
       backgroundColor: "blue",
       padding: 5,

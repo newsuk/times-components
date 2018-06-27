@@ -205,7 +205,6 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
       className="c0"
     >
       <h1
-        aria-label="topic-name"
         className="c1"
         data-testid="topic-name"
         role="heading"

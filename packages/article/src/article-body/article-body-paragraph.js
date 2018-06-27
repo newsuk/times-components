@@ -6,7 +6,6 @@ import styles from "../styles/article-body";
 const BodyParagraph = props => (
   <View
     testID={`paragraph-${props.uid}`}
-    accessibilityLabel={`paragraph-${props.uid}`}
     key={`paragraph-${props.uid}`}
     style={[styles.articleMainContentRow]}
   >

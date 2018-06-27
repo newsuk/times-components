@@ -171,7 +171,6 @@ exports[`renders poster with custom play icon if specified 1`] = `
 
 exports[`the player can trigger errors 1`] = `
 <View
-  accessibilityLabel="error-component"
   testID="error-component"
 >
   <Image
@@ -326,7 +325,6 @@ exports[`the player can trigger errors 1`] = `
 
 exports[`will handle an error properly 1`] = `
 <View
-  accessibilityLabel="error-component"
   testID="error-component"
 >
   <Image

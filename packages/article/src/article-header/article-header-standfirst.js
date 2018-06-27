@@ -6,11 +6,7 @@ import styles from "../styles/article-header";
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
   return (
-    <Text
-      accessibilityLabel="standfirst"
-      testID="standfirst"
-      style={[styles.standFirst]}
-    >
+    <Text testID="standfirst" style={[styles.standFirst]}>
       {standfirst}
     </Text>
   );

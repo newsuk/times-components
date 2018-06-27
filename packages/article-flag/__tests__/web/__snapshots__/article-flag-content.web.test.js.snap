@@ -41,7 +41,7 @@ exports[`1. Article flag 1`] = `
     />
   </div>
   <div
-    aria-label="flag-No Colour"
+    aria-label="No Colour Flag"
     className="IS2"
     data-testid="flag-No Colour"
   >
@@ -91,7 +91,7 @@ exports[`2. Red Article flag 1`] = `
     />
   </div>
   <div
-    aria-label="flag-Coloured Red"
+    aria-label="Coloured Red Flag"
     className="IS2"
     data-testid="flag-Coloured Red"
   >

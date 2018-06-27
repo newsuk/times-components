@@ -61,7 +61,6 @@ exports[`1. Render an author profile page 1`] = `
           </div>
         </div>
         <h1
-          aria-label="author-name"
           aria-level="1"
           className="responsive-styles__component-fbPFZZ jMuMhk"
           data-testid="author-name"
@@ -644,7 +643,6 @@ exports[`2. Render an author profile page without images 1`] = `
           </div>
         </div>
         <h1
-          aria-label="author-name"
           aria-level="1"
           className="responsive-styles__component-fbPFZZ jMuMhk"
           data-testid="author-name"

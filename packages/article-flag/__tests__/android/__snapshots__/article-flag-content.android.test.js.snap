@@ -24,7 +24,7 @@ exports[`1. Article flag 1`] = `
     />
   </View>
   <Text
-    accessibilityLabel="flag-No Colour"
+    accessibilityLabel="No Colour Flag"
     style={
       Array [
         Object {
@@ -69,7 +69,7 @@ exports[`2. Red Article flag 1`] = `
     />
   </View>
   <Text
-    accessibilityLabel="flag-Coloured Red"
+    accessibilityLabel="Coloured Red Flag"
     style={
       Array [
         Object {

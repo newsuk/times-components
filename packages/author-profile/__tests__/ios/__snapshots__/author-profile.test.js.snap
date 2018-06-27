@@ -345,7 +345,6 @@ exports[`1. Render an author profile page 1`] = `
               </View>
             </View>
             <Text
-              accessibilityLabel="author-name"
               accessibilityRole="heading"
               style={
                 Object {
@@ -2040,7 +2039,6 @@ exports[`2. Render an author profile page without images 1`] = `
               </View>
             </View>
             <Text
-              accessibilityLabel="author-name"
               accessibilityRole="heading"
               style={
                 Object {

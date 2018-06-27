@@ -2,6 +2,7 @@
 
 exports[`Article Label test on android renders ArticleLabel 1`] = `
 <Text
+  accessibilityLabel="swimming"
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"

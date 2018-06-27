@@ -1060,6 +1060,7 @@ exports[`ArticleList tests on android should render an article list item 1`] = `
               }
             >
               <Text
+                accessibilityLabel="TESTLABEL"
                 style={
                   Object {
                     "color": "#333333",
@@ -1651,6 +1652,7 @@ exports[`ArticleList tests on android should render an article list item without
               }
             >
               <Text
+                accessibilityLabel="TESTLABEL"
                 style={
                   Object {
                     "color": "#333333",

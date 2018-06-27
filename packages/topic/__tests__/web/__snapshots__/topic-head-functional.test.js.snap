@@ -6,7 +6,6 @@ exports[`TopicHead functional tests on web should render correctly 1`] = `
     className="responsive-styles__component-fbPFZZ kPljll"
   >
     <h1
-      aria-label="topic-name"
       className="responsive-styles__component-fbPFZZ gVyUxj"
       data-testid="topic-name"
       role="heading"
@@ -25,7 +24,6 @@ exports[`TopicHead functional tests on web should render correctly with a descri
     className="responsive-styles__component-fbPFZZ fqtkRE"
   >
     <h1
-      aria-label="topic-name"
       className="responsive-styles__component-fbPFZZ gVyUxj"
       data-testid="topic-name"
       role="heading"

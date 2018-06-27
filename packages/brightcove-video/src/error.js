@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 });
 
 const VideoError = ({ poster, width, height, onReset }) => (
-  <View testID="error-component" accessibilityLabel="error-component">
+  <View testID="error-component">
     {poster ? (
       <Image
         source={poster}
