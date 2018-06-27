@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "2.4.14",
+  "version": "2.4.15",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
