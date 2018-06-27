@@ -24,10 +24,7 @@ const AuthorProfileHead = ({
     );
   };
 
-  const renderImage = () => {
-    if (!uri) return null;
-    return <AuthorProfileHeadImage uri={uri} />;
-  };
+  const renderImage = () => <AuthorProfileHeadImage uri={uri} />;
 
   const renderName = () => {
     if (!name) return null;
