@@ -40,7 +40,14 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const { baseUrl, contextUrl, section, slotName, style } = this.props;
+    const {
+      baseUrl,
+      contextUrl,
+      isLoading,
+      section,
+      slotName,
+      style
+    } = this.props;
     const { windowWidth } = this.state;
 
     this.slots = adConfig.bidderSlots.map(slot =>
@@ -99,7 +106,7 @@ class Ad extends Component {
 
     return (
       <View style={[style]}>
-        {webviewComponent}
+        {isLoading ? webviewComponent : null}
         {placeholderComponent}
       </View>
     );
