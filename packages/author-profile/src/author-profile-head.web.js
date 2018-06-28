@@ -29,14 +29,11 @@ const AuthorProfileHead = ({
     );
   };
 
-  const renderImage = () => {
-    if (!uri) return null;
-    return (
-      <ImageContainer>
-        <AuthorProfileHeadImage uri={uri} />
-      </ImageContainer>
-    );
-  };
+  const image = (
+    <ImageContainer>
+      <AuthorProfileHeadImage uri={uri} />
+    </ImageContainer>
+  );
 
   const renderName = () => {
     if (!name) return null;
@@ -61,7 +58,7 @@ const AuthorProfileHead = ({
         jobTitle={jobTitle}
         onTwitterLinkPress={onTwitterLinkPress}
         renderBiography={renderBiography}
-        renderImage={renderImage}
+        image={image}
         renderName={renderName}
         twitter={twitter}
       />

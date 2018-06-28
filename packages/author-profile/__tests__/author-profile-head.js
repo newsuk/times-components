@@ -9,7 +9,7 @@ export default () => {
     jobTitle: "testJobTitle",
     onTwitterLinkPress: () => null,
     renderBiography: () => null,
-    renderImage: () => null,
+    image: "",
     renderName: () => null,
     twitter: "testTwitterHandle"
   };
