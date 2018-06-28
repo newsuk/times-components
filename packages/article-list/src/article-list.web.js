@@ -116,7 +116,6 @@ class ArticleList extends Component {
       emptyStateMessage,
       error,
       imageRatio,
-      isLoading,
       onArticlePress,
       onNext,
       onPrev,
@@ -196,10 +195,7 @@ class ArticleList extends Component {
                   index > 0 ? <ArticleListItemSeparator /> : null;
 
                 const renderAd = () => {
-                  if (
-                    index !== this.advertPosition ||
-                    !hasAdvertConfig
-                  ) {
+                  if (index !== this.advertPosition || !hasAdvertConfig) {
                     return null;
                   }
 
