@@ -30,10 +30,12 @@ const Topic = ({
     return <ArticleListPageError refetch={refetch} />;
   }
 
-  const { name, description } = topic || { name: "", description: "" };
+  const { name, description } = isLoading
+    ? { name: "", description: "" }
+    : topic;
 
   const articleListHeader = (
-    <TopicHead name={name} description={description} isLoading={false} />
+    <TopicHead name={name} description={description} isLoading={isLoading} />
   );
 
   return (

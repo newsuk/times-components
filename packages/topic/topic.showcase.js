@@ -58,7 +58,7 @@ export default {
       type: "story",
       name: "Loading",
       component: (_, { decorateAction }) => (
-        <MockedProvider mocks={mocks}>
+        <MockedProvider mocks={mocks} isLoading>
           <Topic {...getProps(decorateAction)} isLoading />
         </MockedProvider>
       )

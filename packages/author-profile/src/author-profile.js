@@ -42,15 +42,16 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } = author || {
-    articles: [],
-    biography: "",
-    hasLeadAssets: false,
-    image: "",
-    jobTitle: "",
-    name: "",
-    twitter: ""
-  };
+  } = isLoading
+    ? {
+        articles: [],
+        hasLeadAssets: true,
+        image: "",
+        jobTitle: "",
+        name: "",
+        twitter: ""
+      }
+    : author;
 
   const articleListHeader = (
     <AuthorProfileHead

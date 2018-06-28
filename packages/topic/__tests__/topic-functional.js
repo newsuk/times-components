@@ -63,7 +63,11 @@ export default () => {
   });
 
   it("should render the loading state", () => {
-    const tree = renderer.create(<Topic {...props} isLoading />);
+    const tree = renderer.create(
+      <MockedProvider mocks={mockArticles} isLoading>
+        <Topic {...props} topic={{}} isLoading />
+      </MockedProvider>
+    );
 
     expect(tree).toMatchSnapshot("2. Render a topics page loading state");
   });
