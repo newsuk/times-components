@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert 1`] = `
+<View
+  style={
+    Array [
+      null,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 0,
+        "width": 0,
+      }
+    }
+  >
+    <WebView
+      injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+      onMessage={[Function]}
+      onNavigationStateChange={[Function]}
+      source={
+        Object {
+          "baseUrl": "https://www.thetimes.co.uk/",
+          "html": "
+      <html>
+        <head>
+        <meta name=\\"viewport\\" content=\\"width=0,height=0,initial-scale=1,user-scalable=no\\">
+        <style>
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+        </style>
+        </head>
+        <body>
+          <div></div>
+          <script>
+            (mockErrorHandler)(window);
+          </script>
+          <script>
+          (function (){return\\"mockAdInit\\";})({
+            el: document.getElementsByTagName(\\"div\\")[0],
+            eventCallback: eventCallback,
+            data: {\\"config\\":{\\"slotName\\":\\"header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"height\\":50,\\"width\\":320},\\"mappings\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}]},\\"prebidConfig\\":{\\"bidders\\":{\\"appnexus\\":{\\"placementId\\":\\"5823281\\"},\\"rubicon\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\"},\\"amazon\\":{\\"accountId\\":\\"3360\\"},\\"indexExchange\\":{\\"siteId\\":\\"188830\\"}},\\"timeout\\":3000,\\"minPrice\\":0.01,\\"maxBid\\":15,\\"bucketSize\\":0.25},\\"slots\\":[{\\"code\\":\\"ad-header\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-header\\",\\"siteID\\":\\"188830\\"}}]},{\\"code\\":\\"ad-article-inline\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-article-inline\\",\\"siteID\\":\\"188830\\"}}]}],\\"slotName\\":\\"header\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"\\",\\"sizingMap\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\"}},
+            platform: \\"native\\",
+            window
+          }).init();
+          </script>
+        </body>
+      </html>
+    ",
+        }
+      }
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+        Object {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 50,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+          style={
+            Object {
+              "height": 50,
+              "width": 320,
+            }
+          }
+        />
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "#F9F9F9",
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 11,
+            "letterSpacing": 1.5,
+            "paddingBottom": 5,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 5,
+            "zIndex": 1,
+          }
+        }
+      >
+        ADVERTISEMENT
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. Two adverts 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "width": 0,
+        }
+      }
+    >
+      <WebView
+        injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+        onMessage={[Function]}
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+      <html>
+        <head>
+        <meta name=\\"viewport\\" content=\\"width=0,height=0,initial-scale=1,user-scalable=no\\">
+        <style>
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+        </style>
+        </head>
+        <body>
+          <div></div>
+          <script>
+            (mockErrorHandler)(window);
+          </script>
+          <script>
+          (function (){return\\"mockAdInit\\";})({
+            el: document.getElementsByTagName(\\"div\\")[0],
+            eventCallback: eventCallback,
+            data: {\\"config\\":{\\"slotName\\":\\"header\\",\\"sizes\\":[[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"height\\":50,\\"width\\":320},\\"mappings\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}]},\\"prebidConfig\\":{\\"bidders\\":{\\"appnexus\\":{\\"placementId\\":\\"5823281\\"},\\"rubicon\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\"},\\"amazon\\":{\\"accountId\\":\\"3360\\"},\\"indexExchange\\":{\\"siteId\\":\\"188830\\"}},\\"timeout\\":3000,\\"minPrice\\":0.01,\\"maxBid\\":15,\\"bucketSize\\":0.25},\\"slots\\":[{\\"code\\":\\"ad-header\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-header\\",\\"siteID\\":\\"188830\\"}}]},{\\"code\\":\\"ad-article-inline\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-article-inline\\",\\"siteID\\":\\"188830\\"}}]}],\\"slotName\\":\\"header\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"\\",\\"sizingMap\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\"}},
+            platform: \\"native\\",
+            window
+          }).init();
+          </script>
+        </body>
+      </html>
+    ",
+          }
+        }
+        style={
+          Object {
+            "backgroundColor": "transparent",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F9F9F9",
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "overflow": "hidden",
+            },
+            Object {
+              "height": 50,
+              "width": 320,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+            style={
+              Object {
+                "height": 50,
+                "width": 320,
+              }
+            }
+          />
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "backgroundColor": "#F9F9F9",
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 11,
+              "letterSpacing": 1.5,
+              "paddingBottom": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 5,
+              "zIndex": 1,
+            }
+          }
+        >
+          ADVERTISEMENT
+        </Text>
+      </View>
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        null,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 0,
+          "width": 0,
+        }
+      }
+    >
+      <WebView
+        injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
+        onMessage={[Function]}
+        onNavigationStateChange={[Function]}
+        source={
+          Object {
+            "baseUrl": "https://www.thetimes.co.uk/",
+            "html": "
+      <html>
+        <head>
+        <meta name=\\"viewport\\" content=\\"width=0,height=0,initial-scale=1,user-scalable=no\\">
+        <style>
+          html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+        </style>
+        </head>
+        <body>
+          <div></div>
+          <script>
+            (mockErrorHandler)(window);
+          </script>
+          <script>
+          (function (){return\\"mockAdInit\\";})({
+            el: document.getElementsByTagName(\\"div\\")[0],
+            eventCallback: eventCallback,
+            data: {\\"config\\":{\\"slotName\\":\\"intervention\\",\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"maxSizes\\":{\\"height\\":250,\\"width\\":320},\\"mappings\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}]},\\"prebidConfig\\":{\\"bidders\\":{\\"appnexus\\":{\\"placementId\\":\\"5823281\\"},\\"rubicon\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\"},\\"amazon\\":{\\"accountId\\":\\"3360\\"},\\"indexExchange\\":{\\"siteId\\":\\"188830\\"}},\\"timeout\\":3000,\\"minPrice\\":0.01,\\"maxBid\\":15,\\"bucketSize\\":0.25},\\"slots\\":[{\\"code\\":\\"ad-header\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-header\\",\\"siteID\\":\\"188830\\"}}]},{\\"code\\":\\"ad-article-inline\\",\\"sizes\\":[],\\"bids\\":[{\\"bidder\\":\\"appnexus\\",\\"params\\":{\\"placementId\\":\\"5823281\\",\\"section\\":\\"article\\"}},{\\"bidder\\":\\"rubicon\\",\\"params\\":{\\"accountId\\":\\"14062\\",\\"siteId\\":\\"70608\\",\\"zoneId\\":\\"335918\\",\\"inventory\\":{\\"section\\":\\"article\\"}}},{\\"bidder\\":\\"indexExchange\\",\\"params\\":{\\"id\\":\\"ad-article-inline\\",\\"siteID\\":\\"188830\\"}}]}],\\"slotName\\":\\"intervention\\",\\"networkId\\":\\"25436805\\",\\"adUnit\\":\\"d.thetimes.co.uk\\",\\"contextUrl\\":\\"\\",\\"section\\":\\"\\",\\"sizingMap\\":[{\\"height\\":0,\\"sizes\\":[],\\"width\\":0},{\\"height\\":100,\\"sizes\\":[[300,250],[320,50],[320,48],[300,50]],\\"width\\":300},{\\"height\\":90,\\"sizes\\":[[728,90]],\\"width\\":768},{\\"height\\":250,\\"sizes\\":[[970,250],[970,90],[728,90]],\\"width\\":1024}],\\"pageTargeting\\":{\\"title\\":\\"This is title\\",\\"label\\":\\"This is label\\"},\\"slotTargeting\\":{\\"section\\":\\"news\\"}},
+            platform: \\"native\\",
+            window
+          }).init();
+          </script>
+        </body>
+      </html>
+    ",
+          }
+        }
+        style={
+          Object {
+            "backgroundColor": "transparent",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F9F9F9",
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "overflow": "hidden",
+            },
+            Object {
+              "height": 250,
+              "width": 320,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "left": 0,
+              "position": "absolute",
+              "top": 0,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+            style={
+              Object {
+                "height": 250,
+                "width": 320,
+              }
+            }
+          />
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "backgroundColor": "#F9F9F9",
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 11,
+              "letterSpacing": 1.5,
+              "paddingBottom": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 5,
+              "zIndex": 1,
+            }
+          }
+        >
+          ADVERTISEMENT
+        </Text>
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`3. Advert loading state placeholder 1`] = `
+<View
+  style={
+    Array [
+      null,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+        Object {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F9F9F9",
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 50,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+          style={
+            Object {
+              "height": 50,
+              "width": 320,
+            }
+          }
+        />
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "#F9F9F9",
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 11,
+            "letterSpacing": 1.5,
+            "paddingBottom": 5,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 5,
+            "zIndex": 1,
+          }
+        }
+      >
+        ADVERTISEMENT
+      </Text>
+    </View>
+  </View>
+</View>
+`;

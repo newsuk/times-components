@@ -165,7 +165,7 @@ class ArticleList extends Component {
 
     const AdComponent = (
       <AdComposer adConfig={adConfig}>
-        <Ad slotName="inline-ad" />
+        <Ad isLoading={articlesLoading} slotName="inline-ad" />
       </AdComposer>
     );
 
@@ -198,9 +198,7 @@ class ArticleList extends Component {
                 const renderAd = () => {
                   if (
                     index !== this.advertPosition ||
-                    !hasAdvertConfig ||
-                    isLoading ||
-                    articlesLoading
+                    !hasAdvertConfig
                   ) {
                     return null;
                   }
