@@ -19,7 +19,7 @@ export class AuthorProfileHeadBase extends Component {
       jobTitle,
       onTwitterLinkPress,
       renderBiography,
-      renderImage,
+      image,
       renderName,
       twitter
     } = this.props;
@@ -53,7 +53,7 @@ export class AuthorProfileHeadBase extends Component {
           style={styles.authorHeadWrapper}
           testID="author-head"
         >
-          {renderImage()}
+          {image}
           {renderName()}
           {renderJobTitle()}
           {renderTwitterLink()}
@@ -69,7 +69,7 @@ AuthorProfileHeadBase.propTypes = {
   jobTitle: PropTypes.string,
   onTwitterLinkPress: PropTypes.func,
   renderBiography: PropTypes.func.isRequired,
-  renderImage: PropTypes.func.isRequired,
+  image: PropTypes.node.isRequired,
   renderName: PropTypes.func.isRequired,
   twitter: PropTypes.string
 };

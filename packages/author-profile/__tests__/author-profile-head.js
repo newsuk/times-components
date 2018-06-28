@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-native";
 import { shallow } from "enzyme";
 import { AuthorProfileHeadBase as AuthorProfileHeadBaseWithoutTracking } from "../src/author-profile-head-base";
 import AuthorProfileHeadTwitter from "../src/author-profile-head-twitter";
@@ -9,7 +10,7 @@ export default () => {
     jobTitle: "testJobTitle",
     onTwitterLinkPress: () => null,
     renderBiography: () => null,
-    renderImage: () => null,
+    image: <Image />,
     renderName: () => null,
     twitter: "testTwitterHandle"
   };

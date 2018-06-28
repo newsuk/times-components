@@ -50,7 +50,7 @@ const ArticleListItem = props => {
     <Link onPress={onPress} url={url}>
       <View style={styles.listItemContainer}>
         <Card
-          image={imageUri ? { uri: imageUri } : null}
+          image={{ uri: imageUri }}
           imageRatio={imageRatio}
           showImage={showImage}
         >

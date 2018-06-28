@@ -33,6 +33,7 @@ exports[`3. Should re-render when isLoading prop is changed 1`] = `
     }
     testID="author-head"
   >
+    <Image />
     <AuthorProfileHeadJobTitle
       jobTitle="testJobTitle"
     />

@@ -8,7 +8,11 @@ const AuthorProfileHeadImage = ({ uri }) => (
 );
 
 AuthorProfileHeadImage.propTypes = {
-  uri: PropTypes.string.isRequired
+  uri: PropTypes.string
+};
+
+AuthorProfileHeadImage.defaultProps = {
+  uri: ""
 };
 
 export default AuthorProfileHeadImage;
