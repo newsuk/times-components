@@ -1,25 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Advert 1`] = `
-<View
-  style={
-    Array [
-      null,
-    ]
-  }
->
-  <View
-    style={
-      Object {
-        "height": 0,
-        "width": 0,
-      }
-    }
-  >
+<View>
+  <View>
     <WebView
       injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
-      onMessage={[Function]}
-      onNavigationStateChange={[Function]}
       source={
         Object {
           "baseUrl": "https://www.thetimes.co.uk/",
@@ -56,88 +41,17 @@ exports[`1. Advert 1`] = `
     ",
         }
       }
-      style={
-        Object {
-          "backgroundColor": "transparent",
-        }
-      }
     />
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        },
-        Object {
-          "flex": 1,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#F9F9F9",
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "justifyContent": "center",
-            "overflow": "hidden",
-          },
-          Object {
-            "height": 50,
-            "width": 320,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "left": 0,
-            "position": "absolute",
-            "top": 0,
-          }
-        }
-      >
+  <View>
+    <View>
+      <View>
         <Image
           resizeMode="contain"
           source={1}
-          style={
-            Object {
-              "height": 50,
-              "width": 320,
-            }
-          }
         />
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "backgroundColor": "#F9F9F9",
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#696969",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 11,
-            "letterSpacing": 1.5,
-            "paddingBottom": 5,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 5,
-            "zIndex": 1,
-          }
-        }
-      >
+      <Text>
         ADVERTISEMENT
       </Text>
     </View>
@@ -147,25 +61,10 @@ exports[`1. Advert 1`] = `
 
 exports[`2. Two adverts 1`] = `
 Array [
-  <View
-    style={
-      Array [
-        null,
-      ]
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": 0,
-          "width": 0,
-        }
-      }
-    >
+  <View>
+    <View>
       <WebView
         injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
-        onMessage={[Function]}
-        onNavigationStateChange={[Function]}
         source={
           Object {
             "baseUrl": "https://www.thetimes.co.uk/",
@@ -202,112 +101,26 @@ Array [
     ",
           }
         }
-        style={
-          Object {
-            "backgroundColor": "transparent",
-          }
-        }
       />
     </View>
-    <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
-          },
-          Object {
-            "flex": 1,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F9F9",
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "justifyContent": "center",
-              "overflow": "hidden",
-            },
-            Object {
-              "height": 50,
-              "width": 320,
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            Object {
-              "left": 0,
-              "position": "absolute",
-              "top": 0,
-            }
-          }
-        >
+    <View>
+      <View>
+        <View>
           <Image
             resizeMode="contain"
             source={1}
-            style={
-              Object {
-                "height": 50,
-                "width": 320,
-              }
-            }
           />
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#F9F9F9",
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "color": "#696969",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 11,
-              "letterSpacing": 1.5,
-              "paddingBottom": 5,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 5,
-              "zIndex": 1,
-            }
-          }
-        >
+        <Text>
           ADVERTISEMENT
         </Text>
       </View>
     </View>
   </View>,
-  <View
-    style={
-      Array [
-        null,
-      ]
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": 0,
-          "width": 0,
-        }
-      }
-    >
+  <View>
+    <View>
       <WebView
         injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
-        onMessage={[Function]}
-        onNavigationStateChange={[Function]}
         source={
           Object {
             "baseUrl": "https://www.thetimes.co.uk/",
@@ -344,88 +157,17 @@ Array [
     ",
           }
         }
-        style={
-          Object {
-            "backgroundColor": "transparent",
-          }
-        }
       />
     </View>
-    <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
-          },
-          Object {
-            "flex": 1,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F9F9F9",
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "justifyContent": "center",
-              "overflow": "hidden",
-            },
-            Object {
-              "height": 250,
-              "width": 320,
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            Object {
-              "left": 0,
-              "position": "absolute",
-              "top": 0,
-            }
-          }
-        >
+    <View>
+      <View>
+        <View>
           <Image
             resizeMode="contain"
             source={1}
-            style={
-              Object {
-                "height": 250,
-                "width": 320,
-              }
-            }
           />
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#F9F9F9",
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "color": "#696969",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 11,
-              "letterSpacing": 1.5,
-              "paddingBottom": 5,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 5,
-              "zIndex": 1,
-            }
-          }
-        >
+        <Text>
           ADVERTISEMENT
         </Text>
       </View>
@@ -435,88 +177,16 @@ Array [
 `;
 
 exports[`3. Advert loading state placeholder 1`] = `
-<View
-  style={
-    Array [
-      null,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        },
-        Object {
-          "flex": 1,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#F9F9F9",
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "justifyContent": "center",
-            "overflow": "hidden",
-          },
-          Object {
-            "height": 50,
-            "width": 320,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "left": 0,
-            "position": "absolute",
-            "top": 0,
-          }
-        }
-      >
+<View>
+  <View>
+    <View>
+      <View>
         <Image
           resizeMode="contain"
           source={1}
-          style={
-            Object {
-              "height": 50,
-              "width": 320,
-            }
-          }
         />
       </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "backgroundColor": "#F9F9F9",
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#696969",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 11,
-            "letterSpacing": 1.5,
-            "paddingBottom": 5,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 5,
-            "zIndex": 1,
-          }
-        }
-      >
+      <Text>
         ADVERTISEMENT
       </Text>
     </View>

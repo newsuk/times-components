@@ -1,4 +1,4 @@
-import shared from "../ad.shared";
+import shared from "../ad.native";
 
 jest.mock(
   "../../src/utils/webview-event-callback-setup",
