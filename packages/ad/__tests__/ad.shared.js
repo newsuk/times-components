@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import Ad, { AdComposer } from "../src/ad";
 
 export default () => {
-  it("renders with one ad slot", () => {
+  it("one ad slot", () => {
     const tree = renderer
       .create(
         <AdComposer>
@@ -15,7 +15,7 @@ export default () => {
     expect(tree).toMatchSnapshot("1. Advert");
   });
 
-  it("renders with more than one ad slot", () => {
+  it("two ad slots", () => {
     const tree = renderer
       .create(
         <AdComposer>
@@ -30,7 +30,7 @@ export default () => {
     expect(tree).toMatchSnapshot("2. Two adverts");
   });
 
-  it("renders placeholder when isLoading prop is true", () => {
+  it("ad placeholder when isLoading prop is true", () => {
     const tree = renderer
       .create(
         <AdComposer>

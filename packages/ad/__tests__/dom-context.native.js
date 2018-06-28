@@ -71,7 +71,7 @@ export default () => {
     expect(f).not.toThrowError();
   });
 
-  it("renders correctly", () => {
+  it("renders", () => {
     const component = renderer.create(
       <DOMContextNative
         height={200}
