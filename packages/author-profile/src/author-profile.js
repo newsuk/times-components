@@ -34,23 +34,6 @@ const AuthorProfile = ({
     return <ArticleListPageError refetch={refetch} />;
   }
 
-  if (isLoading || !author) {
-    return (
-      <ArticleList
-        adConfig={adConfig}
-        articleListHeader={<AuthorProfileHead isLoading />}
-        articlesLoading
-        emptyStateMessage={emptyStateMessage}
-        fetchMore={() => Promise.resolve()}
-        imageRatio={ratioTextToFloat("3:2")}
-        isLoading
-        pageSize={initPageSize}
-        refetch={() => {}}
-        showImages
-      />
-    );
-  }
-
   const {
     articles,
     biography,
@@ -59,12 +42,20 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } = author;
+  } = author || {
+    articles: [],
+    biography: "",
+    hasLeadAssets: false,
+    image: "",
+    jobTitle: "",
+    name: "",
+    twitter: ""
+  };
 
   const articleListHeader = (
     <AuthorProfileHead
       biography={biography}
-      isLoading={false}
+      isLoading={isLoading}
       jobTitle={jobTitle}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
