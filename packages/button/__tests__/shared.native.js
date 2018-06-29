@@ -2,6 +2,7 @@ import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
+  flattenStyleTransform,
   minimaliseTransform,
   minimalNativeTransform,
   print
@@ -16,7 +17,8 @@ export default () => {
     compose(
       print,
       minimaliseTransform((value, key) => key.startsWith("accessibility")),
-      minimalNativeTransform
+      minimalNativeTransform,
+      flattenStyleTransform
     )
   );
 

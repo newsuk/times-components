@@ -5,26 +5,23 @@ exports[`1. Render the button 1`] = `
   activeOpacity={1}
   delayPressOut={100}
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#006699",
-        "borderRadius": 4,
-        "elevation": 3,
-        "height": 36,
-        "justifyContent": "center",
-        "minWidth": 100,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 3,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 5,
-        "width": "100%",
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 4,
+      "elevation": 3,
+      "height": 36,
+      "justifyContent": "center",
+      "minWidth": 100,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "height": 3,
+        "width": 0,
       },
-      null,
-    ]
+      "shadowOpacity": 1,
+      "shadowRadius": 5,
+      "width": "100%",
+    }
   }
   underlayColor="#0077B3"
 >
