@@ -6,6 +6,7 @@ import {
   ListItemWrapper,
   ListItemLongText,
   ListItemShortText,
+  ListItemSeparator,
   PageErrorContainer,
   PageErrorImageContainer,
   PageErrorContentContainer
@@ -28,6 +29,10 @@ describe("ArticleList responsive tests on web", () => {
 
   it("should render ListItemShortText correctly", () => {
     expect(renderer.create(<ListItemShortText />).toJSON()).toMatchSnapshot();
+  });
+
+  it("should render ListItemSeparator correctly", () => {
+    expect(renderer.create(<ListItemSeparator />).toJSON()).toMatchSnapshot();
   });
 
   it("should render PageErrorContainer correctly", () => {

@@ -394,14 +394,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
+        <View />
       </View>
     </View>
     <View>
@@ -638,14 +631,7 @@ exports[`ArticleList tests on android should render an article list 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
+        <View />
       </View>
     </View>
     <View>
@@ -2271,14 +2257,7 @@ exports[`ArticleList tests on android should render an article list that is load
     </View>
     <View>
       <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
+        <View />
         <ActivityIndicator
           animating={true}
           color="#DBDBDB"
@@ -2381,16 +2360,7 @@ exports[`ArticleList tests on android should render the article list error conte
 </React.Fragment>
 `;
 
-exports[`ArticleList tests on android should render the article list item separator keyline correctly 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#DBDBDB",
-      "height": 1,
-    }
-  }
-/>
-`;
+exports[`ArticleList tests on android should render the article list item separator keyline correctly 1`] = `<ListItemSeparator />`;
 
 exports[`ArticleList tests on android should render the article list page error correctly 1`] = `
 <View

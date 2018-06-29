@@ -19,9 +19,11 @@ const styles = StyleSheet.create({
   listContentContainer: {
     width: "100%"
   },
-  listItemSeparator: {
-    backgroundColor: colours.functional.keyline,
-    height: 1
+  adContainer: {
+    borderColor: colours.functional.keyline,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    paddingVertical: spacing(2)
   },
   retryButton: {
     alignSelf: "center",

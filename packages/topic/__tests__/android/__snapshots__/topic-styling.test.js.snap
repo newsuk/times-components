@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Topic styling tests on android should render styling correctly 1`] = `
+.c0 {
+  height: 1px;
+  background-color: #DBDBDB;
+  margin-left: 10;
+  margin-right: 10;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 <RCTScrollView
   ListHeaderComponent={
     <TopicHead
@@ -595,14 +609,7 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
+        <View />
       </View>
     </View>
     <View>
@@ -1076,14 +1083,7 @@ exports[`Topic styling tests on android should render styling correctly 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
+        <View />
       </View>
     </View>
     <View>
