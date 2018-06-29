@@ -47,6 +47,11 @@ exports[`Pagination on Web renders correctly 1`] = `
 }
 
 .c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
   display: none;
 }
 
@@ -72,6 +77,13 @@ exports[`Pagination on Web renders correctly 1`] = `
 
 @media (min-width:768px) {
   .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     display: inline;
   }
 }
@@ -91,8 +103,12 @@ exports[`Pagination on Web renders correctly 1`] = `
   <div
     className="c2"
   >
-    <div />
-    <div>
+    <div
+      className="c3"
+    />
+    <div
+      className="c3"
+    >
       <a
         href="./2"
         style={
@@ -108,7 +124,7 @@ exports[`Pagination on Web renders correctly 1`] = `
             <span>
               Next
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -178,6 +194,11 @@ exports[`Pagination on Web renders next link 1`] = `
 }
 
 .c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
   display: none;
 }
 
@@ -203,6 +224,13 @@ exports[`Pagination on Web renders next link 1`] = `
 
 @media (min-width:768px) {
   .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     display: inline;
   }
 }
@@ -222,8 +250,12 @@ exports[`Pagination on Web renders next link 1`] = `
   <div
     className="c2"
   >
-    <div />
-    <div>
+    <div
+      className="c3"
+    />
+    <div
+      className="c3"
+    >
       <a
         href="./2"
         style={
@@ -239,7 +271,7 @@ exports[`Pagination on Web renders next link 1`] = `
             <span>
               Next
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -309,6 +341,11 @@ exports[`Pagination on Web renders prev and next link 1`] = `
 }
 
 .c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
   display: none;
 }
 
@@ -334,6 +371,13 @@ exports[`Pagination on Web renders prev and next link 1`] = `
 
 @media (min-width:768px) {
   .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     display: inline;
   }
 }
@@ -353,7 +397,9 @@ exports[`Pagination on Web renders prev and next link 1`] = `
   <div
     className="c2"
   >
-    <div>
+    <div
+      className="c3"
+    >
       <a
         href="./1"
         style={
@@ -379,7 +425,7 @@ exports[`Pagination on Web renders prev and next link 1`] = `
             <span>
               Previous
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -388,7 +434,9 @@ exports[`Pagination on Web renders prev and next link 1`] = `
         </div>
       </a>
     </div>
-    <div>
+    <div
+      className="c3"
+    >
       <a
         href="./3"
         style={
@@ -404,7 +452,7 @@ exports[`Pagination on Web renders prev and next link 1`] = `
             <span>
               Next
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -474,6 +522,11 @@ exports[`Pagination on Web renders prev link 1`] = `
 }
 
 .c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
   display: none;
 }
 
@@ -499,6 +552,13 @@ exports[`Pagination on Web renders prev link 1`] = `
 
 @media (min-width:768px) {
   .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     display: inline;
   }
 }
@@ -518,7 +578,9 @@ exports[`Pagination on Web renders prev link 1`] = `
   <div
     className="c2"
   >
-    <div>
+    <div
+      className="c3"
+    >
       <a
         href="./2"
         style={
@@ -544,7 +606,7 @@ exports[`Pagination on Web renders prev link 1`] = `
             <span>
               Previous
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -553,7 +615,9 @@ exports[`Pagination on Web renders prev link 1`] = `
         </div>
       </a>
     </div>
-    <div />
+    <div
+      className="c3"
+    />
   </div>
 </div>
 `;
@@ -605,6 +669,11 @@ exports[`Pagination on Web renders results message 1`] = `
 }
 
 .c3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
   display: none;
 }
 
@@ -630,6 +699,13 @@ exports[`Pagination on Web renders results message 1`] = `
 
 @media (min-width:768px) {
   .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     display: inline;
   }
 }
@@ -649,8 +725,12 @@ exports[`Pagination on Web renders results message 1`] = `
   <div
     className="c2"
   >
-    <div />
-    <div>
+    <div
+      className="c3"
+    />
+    <div
+      className="c3"
+    >
       <a
         href="./2"
         style={
@@ -666,7 +746,7 @@ exports[`Pagination on Web renders results message 1`] = `
             <span>
               Next
               <span
-                className="c3"
+                className="c4"
               >
                  page
               </span>
@@ -691,6 +771,11 @@ exports[`Pagination on Web renders results message 1`] = `
 
 exports[`Pagination on Web renders with hidden results 1`] = `
 .c2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c3 {
   display: none;
 }
 
@@ -726,6 +811,13 @@ exports[`Pagination on Web renders with hidden results 1`] = `
 
 @media (min-width:768px) {
   .c2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
     display: inline;
   }
 }
@@ -736,8 +828,12 @@ exports[`Pagination on Web renders with hidden results 1`] = `
   <div
     className="c1"
   >
-    <div />
-    <div>
+    <div
+      className="c2"
+    />
+    <div
+      className="c2"
+    >
       <a
         href="./2"
         style={
@@ -753,7 +849,7 @@ exports[`Pagination on Web renders with hidden results 1`] = `
             <span>
               Next
               <span
-                className="c2"
+                className="c3"
               >
                  page
               </span>
