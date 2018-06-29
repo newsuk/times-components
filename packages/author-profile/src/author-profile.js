@@ -17,7 +17,7 @@ const AuthorProfile = ({
   adConfig,
   author,
   error,
-  isLoading,
+  isLoading: isHeaderLoading,
   onArticlePress,
   onNext,
   onPrev,
@@ -34,23 +34,6 @@ const AuthorProfile = ({
     return <ArticleListPageError refetch={refetch} />;
   }
 
-  if (isLoading || !author) {
-    return (
-      <ArticleList
-        adConfig={adConfig}
-        articleListHeader={<AuthorProfileHead isLoading />}
-        articlesLoading
-        emptyStateMessage={emptyStateMessage}
-        fetchMore={() => Promise.resolve()}
-        imageRatio={ratioTextToFloat("3:2")}
-        isLoading
-        pageSize={initPageSize}
-        refetch={() => {}}
-        showImages
-      />
-    );
-  }
-
   const {
     articles,
     biography,
@@ -59,12 +42,21 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } = author;
+  } = isHeaderLoading
+    ? {
+        articles: [],
+        hasLeadAssets: true,
+        image: "",
+        jobTitle: "",
+        name: "",
+        twitter: ""
+      }
+    : author;
 
   const articleListHeader = (
     <AuthorProfileHead
       biography={biography}
-      isLoading={false}
+      isLoading={isHeaderLoading}
       jobTitle={jobTitle}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
@@ -126,7 +118,7 @@ const AuthorProfile = ({
             emptyStateMessage={emptyStateMessage}
             error={articlesError}
             imageRatio={ratioTextToFloat(imageRatio)}
-            isLoading={isLoading}
+            isLoading={isHeaderLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}

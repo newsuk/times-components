@@ -4353,29 +4353,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         </View>
       </View>
     </View>
-    <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-            }
-          }
-        />
-        <ActivityIndicator
-          animating={true}
-          color="#DBDBDB"
-          hidesWhenStopped={true}
-          size="large"
-          style={
-            Object {
-              "paddingVertical": 25,
-            }
-          }
-        />
-      </View>
-    </View>
+    <View />
   </View>
 </RCTScrollView>
 `;
