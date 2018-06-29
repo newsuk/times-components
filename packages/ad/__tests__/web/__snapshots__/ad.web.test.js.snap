@@ -15,382 +15,87 @@ exports[`1. Advert 1`] = `
 }
 </style>
 
-<AdComposer
-  adConfig={
-    Object {
-      "adUnit": "d.thetimes.co.uk",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "25436805",
-      "pageTargeting": Object {
-        "label": "This is label",
-        "title": "This is title",
-      },
-      "slotTargeting": Object {
-        "section": "news",
-      },
-    }
-  }
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+  isLoading={false}
+  section="colin"
+  slotName="header"
+  style={null}
 >
-  <Broadcast
+  <Subscriber
     channel="adConfig"
-    value={
-      Object {
-        "adUnit": "d.thetimes.co.uk",
-        "bidderSlots": Array [
-          "ad-header",
-          "ad-article-inline",
-        ],
-        "biddersConfig": Object {
-          "bidders": Object {
-            "amazon": Object {
-              "accountId": "3360",
-            },
-            "appnexus": Object {
-              "placementId": "5823281",
-            },
-            "indexExchange": Object {
-              "siteId": "188830",
-            },
-            "rubicon": Object {
-              "accountId": "14062",
-              "siteId": "70608",
-              "zoneId": "335918",
-            },
-          },
-          "bucketSize": 0.25,
-          "maxBid": 15,
-          "minPrice": 0.01,
-          "timeout": 3000,
-        },
-        "networkId": "25436805",
-        "pageTargeting": Object {
-          "label": "This is label",
-          "title": "This is title",
-        },
-        "slotTargeting": Object {
-          "section": "news",
-        },
-      }
-    }
   >
-    <Ad
-      baseUrl="https://www.thetimes.co.uk/"
-      contextUrl=""
-      isLoading={false}
-      section=""
-      slotName="header"
-      style={null}
-    >
-      <Subscriber
-        channel="adConfig"
+    <div>
+      <DOMContext
+        baseUrl="https://www.thetimes.co.uk/"
+        height={0}
+        init={[Function]}
+        onRenderComplete={[Function]}
+        width={0}
+      />
+      <AdPlaceholder
+        height={90}
+        width={728}
       >
         <div>
           <div
-            className="IS1"
-          />
-          <AdPlaceholder
-            height={90}
-            width={728}
-          />
+            className="IS2"
+          >
+            <div>
+              <Watermark
+                height={90}
+                viewBox="-630 120 1200 50"
+                width={728}
+              >
+                <Svg
+                  height={90}
+                  width={728}
+                >
+                  <svg
+                    height={90}
+                    width={728}
+                  >
+                    <G
+                      fill="none"
+                      fillRule="evenodd"
+                      id="Page-1"
+                      opacity="0.07"
+                      stroke="none"
+                      strokeWidth="1"
+                    >
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                        id="Page-1"
+                        opacity="0.07"
+                        stroke="none"
+                        strokeWidth="1"
+                      >
+                        <Path
+                          fill="#1D1D1B"
+                          id="Shape"
+                        >
+                          <path
+                            fill="#1D1D1B"
+                            id="Shape"
+                          />
+                        </Path>
+                      </g>
+                    </G>
+                  </svg>
+                </Svg>
+              </Watermark>
+            </div>
+            <div
+              dir="auto"
+            >
+              ADVERTISEMENT
+            </div>
+          </div>
         </div>
-      </Subscriber>
-    </Ad>
-  </Broadcast>
-</AdComposer>
-`;
-
-exports[`2. Two adverts 1`] = `
-<style>
-{
-  "IS1": {
-    "height": 0,
-    "overflow": "hidden",
-    "width": 0,
-  },
-  "IS2": {
-    "height": "90px",
-    "width": "728px",
-  },
-  "IS3": {
-    "height": 0,
-    "overflow": "hidden",
-    "width": 0,
-  },
-  "IS4": {
-    "height": "90px",
-    "width": "728px",
-  },
-}
-</style>
-
-<AdComposer
-  adConfig={
-    Object {
-      "adUnit": "d.thetimes.co.uk",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "25436805",
-      "pageTargeting": Object {
-        "label": "This is label",
-        "title": "This is title",
-      },
-      "slotTargeting": Object {
-        "section": "news",
-      },
-    }
-  }
->
-  <Broadcast
-    channel="adConfig"
-    value={
-      Object {
-        "adUnit": "d.thetimes.co.uk",
-        "bidderSlots": Array [
-          "ad-header",
-          "ad-article-inline",
-        ],
-        "biddersConfig": Object {
-          "bidders": Object {
-            "amazon": Object {
-              "accountId": "3360",
-            },
-            "appnexus": Object {
-              "placementId": "5823281",
-            },
-            "indexExchange": Object {
-              "siteId": "188830",
-            },
-            "rubicon": Object {
-              "accountId": "14062",
-              "siteId": "70608",
-              "zoneId": "335918",
-            },
-          },
-          "bucketSize": 0.25,
-          "maxBid": 15,
-          "minPrice": 0.01,
-          "timeout": 3000,
-        },
-        "networkId": "25436805",
-        "pageTargeting": Object {
-          "label": "This is label",
-          "title": "This is title",
-        },
-        "slotTargeting": Object {
-          "section": "news",
-        },
-      }
-    }
-  >
-    <Ad
-      baseUrl="https://www.thetimes.co.uk/"
-      contextUrl=""
-      isLoading={false}
-      section=""
-      slotName="header"
-      style={null}
-    >
-      <Subscriber
-        channel="adConfig"
-      >
-        <div>
-          <div
-            className="IS1"
-          />
-          <AdPlaceholder
-            height={90}
-            width={728}
-          />
-        </div>
-      </Subscriber>
-    </Ad>
-    <Ad
-      baseUrl="https://www.thetimes.co.uk/"
-      contextUrl=""
-      isLoading={false}
-      section=""
-      slotName="intervention"
-      style={null}
-    >
-      <Subscriber
-        channel="adConfig"
-      >
-        <div>
-          <div
-            className="IS3"
-          />
-          <AdPlaceholder
-            height={90}
-            width={728}
-          />
-        </div>
-      </Subscriber>
-    </Ad>
-  </Broadcast>
-</AdComposer>
-`;
-
-exports[`3. Advert loading state placeholder 1`] = `
-<style>
-{
-  "IS1": {
-    "height": "90px",
-    "width": "728px",
-  },
-}
-</style>
-
-<AdComposer
-  adConfig={
-    Object {
-      "adUnit": "d.thetimes.co.uk",
-      "bidderSlots": Array [
-        "ad-header",
-        "ad-article-inline",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "indexExchange": Object {
-            "siteId": "188830",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "networkId": "25436805",
-      "pageTargeting": Object {
-        "label": "This is label",
-        "title": "This is title",
-      },
-      "slotTargeting": Object {
-        "section": "news",
-      },
-    }
-  }
->
-  <Broadcast
-    channel="adConfig"
-    value={
-      Object {
-        "adUnit": "d.thetimes.co.uk",
-        "bidderSlots": Array [
-          "ad-header",
-          "ad-article-inline",
-        ],
-        "biddersConfig": Object {
-          "bidders": Object {
-            "amazon": Object {
-              "accountId": "3360",
-            },
-            "appnexus": Object {
-              "placementId": "5823281",
-            },
-            "indexExchange": Object {
-              "siteId": "188830",
-            },
-            "rubicon": Object {
-              "accountId": "14062",
-              "siteId": "70608",
-              "zoneId": "335918",
-            },
-          },
-          "bucketSize": 0.25,
-          "maxBid": 15,
-          "minPrice": 0.01,
-          "timeout": 3000,
-        },
-        "networkId": "25436805",
-        "pageTargeting": Object {
-          "label": "This is label",
-          "title": "This is title",
-        },
-        "slotTargeting": Object {
-          "section": "news",
-        },
-      }
-    }
-  >
-    <Ad
-      baseUrl="https://www.thetimes.co.uk/"
-      contextUrl=""
-      isLoading={true}
-      section=""
-      slotName="header"
-      style={null}
-    >
-      <Subscriber
-        channel="adConfig"
-      >
-        <div>
-          <AdPlaceholder
-            height={90}
-            width={728}
-          />
-        </div>
-      </Subscriber>
-    </Ad>
-  </Broadcast>
-</AdComposer>
+      </AdPlaceholder>
+    </div>
+  </Subscriber>
+</Ad>
 `;

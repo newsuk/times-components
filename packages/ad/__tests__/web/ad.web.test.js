@@ -7,12 +7,14 @@ import {
   hoistStyleTransform,
   justChildren,
   meltNative,
-  minimalWebTransform,
+  minimaliseTransform,
   propsNoChildren,
   replaceTransform,
   stylePrinter,
   rnwTransform
 } from "@times-components/jest-serializer";
+import { delay } from "@times-components/utils";
+import adConfig from "../../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../../src/ad";
 
 describe("web", () => {
@@ -22,46 +24,55 @@ describe("web", () => {
     compose(
       stylePrinter,
       replaceTransform({
-        DOMContext: justChildren,
-        AdPlaceholder: propsNoChildren,
+        AdComposer: justChildren,
+        Broadcast: justChildren,
+        DOMContext: propsNoChildren,
         ...meltNative
       }),
-      minimalWebTransform,
+      minimaliseTransform((value, key) => key === "data"),
       hoistStyleTransform,
       rnwTransform()
     )
   );
 
-  it("one ad slot", () => {
+  const articleContextURL =
+    "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+
+  it.only("one ad slot", async () => {
     const wrapper = mount(
-      <AdComposer>
-        <Ad slotName="header" />
+      <AdComposer adConfig={adConfig}>
+        <Ad contextUrl={articleContextURL} section="colin" slotName="header" />
       </AdComposer>
     );
+
+    await wrapper.find(Ad).instance().setAdReady();
+
+    console.log("EXPECT");
 
     expect(wrapper).toMatchSnapshot("1. Advert");
   });
 
-  it("two ad slots", () => {
-    const wrapper = mount(
-      <AdComposer>
-        <Fragment>
-          <Ad slotName="header" />
-          <Ad slotName="intervention" />
-        </Fragment>
-      </AdComposer>
-    );
+  // it("two ad slots", () => {
+  //   const wrapper = mount(
+  //     <AdComposer adConfig={adConfig}>
+  //       <Fragment>
+  //         <Ad slotName="header" />
+  //         <Ad slotName="intervention" />
+  //       </Fragment>
+  //     </AdComposer>
+  //   );
 
-    expect(wrapper).toMatchSnapshot("2. Two adverts");
-  });
 
-  it("ad placeholder when isLoading prop is true", () => {
-    const wrapper = mount(
-      <AdComposer>
-        <Ad isLoading slotName="header" />
-      </AdComposer>
-    );
+  //   expect(wrapper).toMatchSnapshot("2. Two adverts");
+  // });
 
-    expect(wrapper).toMatchSnapshot("3. Advert loading state placeholder");
-  });
+  // it("ad placeholder when isLoading prop is true", () => {
+  //   const wrapper = mount(
+  //     <AdComposer adConfig={adConfig}>
+  //       <Ad isLoading slotName="header" />
+  //     </AdComposer>
+  //   );
+
+  //   expect(wrapper).toMatchSnapshot("3. Advert loading state placeholder");
+  // });
 });
