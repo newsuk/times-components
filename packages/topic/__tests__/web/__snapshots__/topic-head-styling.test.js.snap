@@ -20,7 +20,7 @@ exports[`TopicHead styling tests on web should render styling correctly 1`] = `
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
-  margin: 20px auto;
+  margin: 0 auto 25px auto;
   width: 200px;
 }
 

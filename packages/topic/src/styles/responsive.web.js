@@ -59,7 +59,7 @@ export const ResponsiveDivider = withResponsiveStyles(
     border-top-color: ${colours.functional.keyline};
     border-top-style: solid;
     border-top-width: 1px;
-    margin: ${spacing(4)} auto;
+    margin: 0 auto ${spacing(5)} auto;
     width: 200px;
   `,
     mediumUp: () => `
