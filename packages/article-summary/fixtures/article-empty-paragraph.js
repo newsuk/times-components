@@ -2,6 +2,7 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
+const defaultByline = "Camilla Long, Environment Editor";
 const defaultHeadline =
   "OK, so Putin’s not a lady, but he does have the wildest man‑PMT";
 const defaultLabel = "Camilla Long";
@@ -11,6 +12,7 @@ const defaultParagraph2 = "The former punk";
 
 export default (
   {
+    byline = defaultByline,
     headline = defaultHeadline,
     label = defaultLabel,
     paragraph1 = defaultParagraph1,
@@ -35,7 +37,7 @@ export default (
           {
             name: "text",
             attributes: {
-              value: "A byline"
+              value: byline
             },
             children: []
           }

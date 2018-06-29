@@ -1,6 +1,7 @@
 import React from "react";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "../";
 
+const defaultByline = "Camilla Long, Environment Editor";
 const defaultHeadline =
   "Top medal for forces dog who took a bite out of the Taliban";
 const defaultParagraph1 =
@@ -10,6 +11,7 @@ const defaultParagraph2 =
 
 export default (
   {
+    byline = defaultByline,
     headline = defaultHeadline,
     paragraph1 = defaultParagraph1,
     paragraph2 = defaultParagraph2
@@ -29,7 +31,7 @@ export default (
           {
             name: "text",
             attributes: {
-              value: "A byline"
+              value: byline
             },
             children: []
           }

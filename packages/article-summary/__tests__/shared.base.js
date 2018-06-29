@@ -20,6 +20,7 @@ jest.mock("@times-components/date-publication", () => "DatePublication");
 jest.mock("@times-components/video-label", () => "VideoLabel");
 
 export default () => {
+  const byline = "A byline";
   const headline = "Test Headline";
   const label = "Test label";
   const paragraph = "Test paragraph";
@@ -46,6 +47,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <ArticleSummary
         {...opinionBylineFixture({
+          byline,
           headline,
           label,
           paragraph
@@ -62,6 +64,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <ArticleSummary
         {...articleMultiFixture({
+          byline,
           headline,
           label,
           paragraph1,
@@ -127,6 +130,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <ArticleSummary
         {...emptyParagraphFixture({
+          byline,
           headline,
           label,
           paragraph1,
@@ -154,6 +158,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <ArticleSummary
         {...noLabelFixture({
+          byline,
           headline,
           paragraph
         })}
@@ -177,7 +182,9 @@ export default () => {
 
   it("should render an article summary component with no date publication", () => {
     const testInstance = TestRenderer.create(
-      <ArticleSummary {...noDatePublication({ headline, label, paragraph })} />
+      <ArticleSummary
+        {...noDatePublication({ byline, headline, label, paragraph })}
+      />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot(
@@ -187,7 +194,9 @@ export default () => {
 
   it("should render an article summary component with a video label", () => {
     const testInstance = TestRenderer.create(
-      <ArticleSummary {...videoLabelFixture({ headline, label, paragraph })} />
+      <ArticleSummary
+        {...videoLabelFixture({ byline, headline, label, paragraph })}
+      />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot(

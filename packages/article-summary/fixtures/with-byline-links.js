@@ -8,11 +8,13 @@ const defaultLabel = "Camilla Long";
 const defaultParagraph =
   "The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.";
 
-export default ({
-  headline = defaultHeadline,
-  label = defaultLabel,
-  paragraph = defaultParagraph
-}) => ({
+export default (
+  {
+    headline = defaultHeadline,
+    label = defaultLabel,
+    paragraph = defaultParagraph
+  } = {}
+) => ({
   labelProps: {
     title: label,
     color: colours.functional.primary
@@ -25,13 +27,28 @@ export default ({
   bylineProps: {
     ast: [
       {
+        name: "author",
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: []
+          }
+        ]
+      },
+      {
         name: "inline",
         attributes: {},
         children: [
           {
             name: "text",
             attributes: {
-              value: "A byline"
+              value: ", Environment Editor"
             },
             children: []
           }
