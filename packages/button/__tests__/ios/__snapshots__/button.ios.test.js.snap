@@ -2,22 +2,21 @@
 
 exports[`1. Render the button 1`] = `
 <TouchableHighlight
-  accessibilityComponentType="button"
-  accessibilityLabel="Test button"
-  accessibilityRole="button"
-  accessibilityTraits="button"
   activeOpacity={1}
   delayPressOut={100}
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#006699",
-      "borderRadius": 2,
-      "height": 45,
-      "justifyContent": "center",
-      "minWidth": 100,
-      "width": "100%",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#006699",
+        "borderRadius": 2,
+        "height": 45,
+        "justifyContent": "center",
+        "minWidth": 100,
+        "width": "100%",
+      },
+      null,
+    ]
   }
   underlayColor="#0077B3"
 >

@@ -1,37 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Render the button 1`] = `
-<TouchableHighlight
-  accessibilityComponentType="button"
-  accessibilityLabel="Test button"
-  accessibilityRole="button"
-  accessibilityTraits="button"
-  activeOpacity={1}
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#006699",
-      "borderRadius": 2,
-      "height": 45,
-      "justifyContent": "center",
-      "minWidth": 100,
-      "width": 160,
-    }
-  }
-  underlayColor="#0077B3"
+<style>
+{
+  "S1": {
+    "color": "rgba(255,255,255,1)",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "16px",
+    "padding-top": "1px",
+  },
+  "S2": {
+    "-ms-flex-align": "center",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-pack": "center",
+    "-webkit-justify-content": "center",
+    "align-items": "center",
+    "background-color": "rgba(0,102,153,1)",
+    "height": "45px",
+    "justify-content": "center",
+    "min-width": "100px",
+    "padding-top": "0px",
+    "width": "160px",
+  },
+}
+</style>
+
+<div
+  className="S2"
 >
-  <Text
-    style={
-      Object {
-        "color": "#FFF",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 16,
-        "paddingTop": 1,
-      }
-    }
+  <div
+    className="S1"
     title="Test button"
   >
     Test button
-  </Text>
-</TouchableHighlight>
+  </div>
+</div>
 `;

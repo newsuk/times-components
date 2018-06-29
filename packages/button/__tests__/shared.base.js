@@ -3,9 +3,9 @@ import React from "react";
 import { shallow } from "enzyme";
 import Button from "../src/button";
 
-export default () => {
-  it("should render the button correctly", () => {
-    const wrapper = shallow(
+export default renderMethod => {
+  it("should render the button", () => {
+    const wrapper = renderMethod(
       <Button onPress={() => null} title="test button" />
     );
 
