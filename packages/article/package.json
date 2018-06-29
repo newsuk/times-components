@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -80,7 +80,7 @@
     "@times-components/markup": "1.0.12",
     "@times-components/provider": "0.36.6",
     "@times-components/pull-quote": "1.0.6",
-    "@times-components/related-articles": "1.1.11",
+    "@times-components/related-articles": "1.1.12",
     "@times-components/responsive-styles": "1.0.5",
     "@times-components/styleguide": "1.1.4",
     "@times-components/tracking": "1.0.5",
