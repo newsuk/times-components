@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing } from "@times-components/styleguide";
+import { spacing, colours } from "@times-components/styleguide";
 
 export const ListContentContainer = withResponsiveStyles(
   View,
@@ -8,8 +8,6 @@ export const ListContentContainer = withResponsiveStyles(
     base: () => `
       align-self: center;
       max-width: 680px;
-      padding-left: ${spacing(2)};
-      padding-right: ${spacing(2)};
       width: 100%;
     `,
     mediumUp: () => `
@@ -29,8 +27,13 @@ export const ListItemWrapper = withResponsiveStyles(
     base: () => `
     padding-bottom: ${spacing(3)};
     padding-top: ${spacing(3)};
+    padding-left: ${spacing(2)};
+    padding-right: ${spacing(2)};
   `,
     mediumUp: () => `
+    padding-left: 0;
+    padding-right: 0;
+    
     .articleListImage {
       flex: 2;
       margin-bottom: 0;
@@ -46,6 +49,21 @@ export const ListItemWrapper = withResponsiveStyles(
   `
   },
   "ListItemWrapper"
+);
+
+export const ListItemSeparator = withResponsiveStyles(
+  View,
+  {
+    base: () => `
+    margin-left: ${spacing(2)};
+    margin-right: ${spacing(2)};
+  `,
+    mediumUp: () => `
+    margin-left: 0;
+    margin-right: 0;
+  `
+  },
+  "ListItemSeparator"
 );
 
 export const ListItemLongText = withResponsiveStyles(
