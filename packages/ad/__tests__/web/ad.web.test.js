@@ -35,7 +35,7 @@ describe("web", () => {
   it("one ad slot", () => {
     const wrapper = shallow(
       <AdComposer adConfig={adConfig}>
-        <Ad contextUrl={articleContextURL} section="new" slotName="header" />
+        <Ad contextUrl={articleContextURL} section="news" slotName="header" />
       </AdComposer>
     );
 
@@ -46,10 +46,10 @@ describe("web", () => {
     const wrapper = shallow(
       <AdComposer adConfig={adConfig}>
         <Fragment>
-          <Ad contextUrl={articleContextURL} section="new" slotName="header" />
+          <Ad contextUrl={articleContextURL} section="news" slotName="header" />
           <Ad
             contextUrl={articleContextURL}
-            section="new"
+            section="news"
             slotName="intervention"
           />
         </Fragment>
@@ -65,7 +65,7 @@ describe("web", () => {
         <Ad
           contextUrl={articleContextURL}
           isLoading
-          section="new"
+          section="news"
           slotName="header"
         />
       </AdComposer>

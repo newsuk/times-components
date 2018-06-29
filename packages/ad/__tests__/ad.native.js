@@ -8,6 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
 
 export default () => {
@@ -21,10 +22,13 @@ export default () => {
     )
   );
 
+  const articleContextURL =
+    "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+
   it("one ad slot", () => {
     const testInstance = TestRenderer.create(
-      <AdComposer>
-        <Ad slotName="header" />
+      <AdComposer adConfig={adConfig}>
+        <Ad contextUrl={articleContextURL} section="news" slotName="header" />
       </AdComposer>
     );
 
@@ -33,10 +37,14 @@ export default () => {
 
   it("two ad slots", () => {
     const testInstance = TestRenderer.create(
-      <AdComposer>
+      <AdComposer adConfig={adConfig}>
         <Fragment>
-          <Ad slotName="header" />
-          <Ad slotName="intervention" />
+          <Ad contextUrl={articleContextURL} section="news" slotName="header" />
+          <Ad
+            contextUrl={articleContextURL}
+            section="news"
+            slotName="intervention"
+          />
         </Fragment>
       </AdComposer>
     );
@@ -46,8 +54,13 @@ export default () => {
 
   it("ad placeholder when isLoading prop is true", () => {
     const testInstance = TestRenderer.create(
-      <AdComposer>
-        <Ad isLoading slotName="header" />
+      <AdComposer adConfig={adConfig}>
+        <Ad
+          contextUrl={articleContextURL}
+          isLoading
+          section="news"
+          slotName="header"
+        />
       </AdComposer>
     );
 

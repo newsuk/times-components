@@ -5,7 +5,7 @@ exports[`1. Advert 1`] = `
   baseUrl="https://www.thetimes.co.uk/"
   contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
   isLoading={false}
-  section="new"
+  section="news"
   slotName="header"
   style={null}
 />
@@ -17,7 +17,7 @@ exports[`2. Two adverts 1`] = `
     baseUrl="https://www.thetimes.co.uk/"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={false}
-    section="new"
+    section="news"
     slotName="header"
     style={null}
   />
@@ -25,7 +25,7 @@ exports[`2. Two adverts 1`] = `
     baseUrl="https://www.thetimes.co.uk/"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={false}
-    section="new"
+    section="news"
     slotName="intervention"
     style={null}
   />
@@ -37,7 +37,7 @@ exports[`3. Advert loading state placeholder 1`] = `
   baseUrl="https://www.thetimes.co.uk/"
   contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
   isLoading={true}
-  section="new"
+  section="news"
   slotName="header"
   style={null}
 />
