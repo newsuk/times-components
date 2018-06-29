@@ -238,3 +238,57 @@ Simply takes the given `Node` and uses Jest's standard `serialize` method;
 
 A custom printer that works with `hoistStyle` and `rnw` which takes their
 accumulated "bag" of styles and prints them in a `style` block
+
+## Patterns and Practices
+
+As discussed in the blog post at the start of the document, there are currently
+numerous problems around "building trees" of React components and rendering them
+out nicely on both Native and Web platforms. Enzyme doesn't have the React
+Native adapter so using React Test Renderer tends to be your best bet. This
+doesn't give you "host" objects for the `replace` serializer leaving you with
+`jest.mock`. It's currently advisable to mock all your dependencies even if you
+have the best intentions with "integration" testing. They usually lead to a
+multitude of snapshot updates you don't care about which dulls your interest in
+reviewing them at the PR level with little benefit.
+
+For web using Enzyme with `mount` and a mixture of the
+`enzymeRenderedSerializer` and `enzymeTreeSerializer` should give you everything
+you need to start with. As with the curation of any snapshot, it's best to start
+with the raw output, then prune it iteratively to make sure you both don't miss
+something and/or can make informed decision on where you want to split your
+snapshots.
+
+[jest-lint](https://github.com/newsuk/jest-lint) should make your life a lot
+easier when it comes to deciding on when to "stop" or where to focus. It's
+particularly picky on the number of attributes on a JSX node which will force
+you to split your tests out. Try and find a natural split for the type of
+component and the type of attributes that are being spewed into the snapshot.
+For example, a component may have a number of functional `prop`s you care about
+and a collection of non-functional `prop`s. This would lead to a natural divide
+of functional and non-functional tests e.g. accessibility vs rendering vs style.
+
+It's particularly recommended to split out styling from rendering in tests due
+to the same "too many updates" problem. It's much more likely that the snapshots
+will be valued if they only update when they're supposed to and changing
+`padding` shouldn't change the snapshot test for "renders capital letters". It
+also highlights on a PR when a styling change is made and the style snapshot _is
+not_ updated to the reviewer. This would indicate it's not being correctly
+captured which can get lost with large "big picture" renders.
+
+Another pattern you want to look out for is repeated props throughout a snapshot
+which probably means they should be removed and onen test should represent them.
+It's discretionary but probably means the snapshots aren't focused on the tests
+enough.
+
+On Native you're likely going to want to use `minimalNative`, `flattenStyle` and
+`minimalise` to focus the given tests.
+
+On web you're similarly going to be looking at `minimalWeb`, `hoistStyle`,
+`minimalise`, and `rnw`.
+
+BE AWARE! Under the hood of `addSerializer` it's using
+`expect.addSnapshotSerializer`. There's no `expect.removeSnapshotSerializer` and
+they don't compose particularly well due to the various side-effects after
+they've been applied. While it is possible to get a coincidental balance of
+serializers at the test level (order very much dependent), try and run your
+desired serializers per test file for sanity.
