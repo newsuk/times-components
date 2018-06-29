@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/ad@1.2.1...@times-components/ad@1.3.0) (2018-06-29)
+
+
+### Features
+
+* add isLoading flag to ad package to manage placeholder ([#1062](https://github.com/newsuk/times-components/issues/1062)) ([089ec11](https://github.com/newsuk/times-components/commit/089ec11))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/ad@1.2.0...@times-components/ad@1.2.1) (2018-06-29)
 
