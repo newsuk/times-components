@@ -17,7 +17,7 @@ const AuthorProfile = ({
   adConfig,
   author,
   error,
-  isLoading,
+  isLoading: isHeaderLoading,
   onArticlePress,
   onNext,
   onPrev,
@@ -42,7 +42,7 @@ const AuthorProfile = ({
     jobTitle,
     name,
     twitter
-  } = isLoading
+  } = isHeaderLoading
     ? {
         articles: [],
         hasLeadAssets: true,
@@ -56,7 +56,7 @@ const AuthorProfile = ({
   const articleListHeader = (
     <AuthorProfileHead
       biography={biography}
-      isLoading={isLoading}
+      isLoading={isHeaderLoading}
       jobTitle={jobTitle}
       name={name}
       onTwitterLinkPress={onTwitterLinkPress}
@@ -118,7 +118,7 @@ const AuthorProfile = ({
             emptyStateMessage={emptyStateMessage}
             error={articlesError}
             imageRatio={ratioTextToFloat(imageRatio)}
-            isLoading={isLoading}
+            isLoading={isHeaderLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}

@@ -13,7 +13,7 @@ import TopicHead from "./topic-head";
 const Topic = ({
   adConfig,
   error,
-  isLoading,
+  isLoading: isHeaderLoading,
   page,
   pageSize: initPageSize,
   onArticlePress,
@@ -30,12 +30,16 @@ const Topic = ({
     return <ArticleListPageError refetch={refetch} />;
   }
 
-  const { name, description } = isLoading
+  const { name, description } = isHeaderLoading
     ? { name: "", description: "" }
     : topic;
 
   const articleListHeader = (
-    <TopicHead name={name} description={description} isLoading={isLoading} />
+    <TopicHead
+      name={name}
+      description={description}
+      isLoading={isHeaderLoading}
+    />
   );
 
   return (
@@ -88,7 +92,7 @@ const Topic = ({
             error={articlesError}
             fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
-            isLoading={isLoading}
+            isLoading={isHeaderLoading}
             onArticlePress={onArticlePress}
             onNext={onNext}
             onPrev={onPrev}
