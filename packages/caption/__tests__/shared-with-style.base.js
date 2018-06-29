@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import Caption from "../src/caption";
 
 const captionText = "Some caption text goes in here";
@@ -16,10 +16,12 @@ const style = {
 
 module.exports = () => {
   it("renders with specific styles", () => {
-    const tree = renderer
-      .create(<Caption text={captionText} credits={credits} style={style} />)
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <Caption text={captionText} credits={credits} style={style} />
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(testInstance.toJSON()).toMatchSnapshot(
+      "1. renders with specific styles"
+    );
   });
 };
