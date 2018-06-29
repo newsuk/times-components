@@ -1,618 +1,179 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article Summary tests on ios should render an ArticleSummaryContent component with a AST 1`] = `
-<Text
-  style={
-    Object {
-      "color": "#696969",
-      "flexWrap": "wrap",
-      "fontFamily": "TimesDigitalW04",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "marginBottom": 10,
-    }
-  }
->
-  <Text>
-    
-    Victoria
-    ...
-  </Text>
-</Text>
-`;
-
-exports[`Article Summary tests on ios should render an ArticleSummaryContent component with a blank AST 1`] = `null`;
-
-exports[`Article Summary tests on ios should render an ArticleSummaryContent component with two paragraphs 1`] = `
-<Text
-  style={
-    Object {
-      "color": "#696969",
-      "flexWrap": "wrap",
-      "fontFamily": "TimesDigitalW04",
-      "fontSize": 14,
-      "lineHeight": 20,
-      "marginBottom": 10,
-    }
-  }
->
-  <Text>
-    
-    The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-  </Text>
-  <Text>
-     
-    Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen.
-    ...
-  </Text>
-</Text>
-`;
-
-exports[`Article Summary tests on ios should render an ArticleSummaryHeadline component with a blank AST 1`] = `
-<Text
-  accessibilityRole="heading"
-  aria-level="3"
-  style={
-    Object {
-      "color": "#333333",
-      "fontFamily": "TimesModern-Bold",
-      "fontSize": 22,
-      "fontWeight": "900",
-      "lineHeight": 22,
-      "marginBottom": 5,
-    }
-  }
->
-  Example headline
-</Text>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component containing links 1`] = `
+exports[`1. should render an article summary component with a single paragraph 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      FRANCIS ELLIOTT
-    </Text>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
   </View>
   <Text
     accessibilityRole="heading"
     aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
   >
-    Sajid Javid to end hostile era for illegal immigrants
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;
+
+exports[`2. should render an article summary with opinion byline 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </View>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+      isOpinionByline={true}
+    />
   </Text>
   <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
+    accessibilityRole="heading"
+    aria-level="3"
   >
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`3. should render an article summary component with multiple paragraphs 1`] = `
+<View>
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph 1.
+    </Text>
+    <Text>
+       
+      Test paragraph 2
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;
+
+exports[`4. should render an article summary component with content including line breaks 1`] = `
+<View>
+  <Text>
     <Text>
       
       <Text>
-        Sajid Javid
-      </Text>
-       has warned the Home Office to expect an overhaul after the 
-      <Text>
-        Windrush scandal
-      </Text>
-       as he ditches the policy of creating a “hostile
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with a single paragraph 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with a video label 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "paddingBottom": 2,
-          }
-        }
-      >
-        <ARTSurfaceView
-          style={
-            Object {
-              "height": 7.777391304347827,
-              "width": 13.76,
-            }
-          }
-        >
-          <ARTGroup
-            opacity={1}
-            transform={
-              Array [
-                0.5982608695652174,
-                0,
-                0,
-                0.5982608695652174,
-                0,
-                0,
-              ]
-            }
-          >
-            <ARTShape
-              d={
-                Array [
-                  0,
-                  0.154639175,
-                  0.139754386,
-                  2,
-                  15.609649475,
-                  0.139754386,
-                  2,
-                  15.609649475,
-                  13.711894786,
-                  2,
-                  0.1546391749999998,
-                  13.711894786,
-                  2,
-                  0.1546391749999998,
-                  0.1397543859999999,
-                ]
-              }
-              fill={
-                Array [
-                  0,
-                  0.2,
-                  0.2,
-                  0.2,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-            <ARTShape
-              d={
-                Array [
-                  0,
-                  16.3405361,
-                  4.14989474,
-                  2,
-                  16.3405361,
-                  9.66442105,
-                  2,
-                  22.0216082,
-                  12.8146667,
-                  2,
-                  22.0216082,
-                  0.999894737,
-                ]
-              }
-              fill={
-                Array [
-                  0,
-                  0.2,
-                  0.2,
-                  0.2,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-            <ARTShape
-              d={
-                Array [
-                  0,
-                  23.7538144,
-                  0.0496140351,
-                  2,
-                  22.7616495,
-                  0.643508772,
-                  2,
-                  22.7616495,
-                  13.1902105,
-                  2,
-                  23.7538144,
-                  13.7782105,
-                ]
-              }
-              fill={
-                Array [
-                  0,
-                  0.2,
-                  0.2,
-                  0.2,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-          </ARTGroup>
-        </ARTSurfaceView>
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "fontWeight": "400",
-            "letterSpacing": 1.2,
-            "lineHeight": 12,
-            "marginLeft": 5,
-            "padding": 0,
-            "position": "relative",
-            "top": 2,
-          }
-        }
-      >
-        CAMILLA LONG
-      </Text>
-    </View>
-  </View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with content including line breaks 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      <Text
-        style={
-          Object {
-            "fontWeight": "bold",
-          }
-        }
-      >
-        Victoria
+        Review 1
       </Text>
       <Text>
         
@@ -627,14 +188,8 @@ exports[`Article Summary tests on ios should render an article-summary component
     </Text>
     <Text>
        
-      <Text
-        style={
-          Object {
-            "fontWeight": "bold",
-          }
-        }
-      >
-        Lucy Worsley’s Nights at the Opera
+      <Text>
+        Review 2
       </Text>
       <Text>
         
@@ -649,804 +204,317 @@ exports[`Article Summary tests on ios should render an article-summary component
     </Text>
     <Text>
        
-      Poor old Harriet, Duchess of Sutherland. There she was giddily expecting a
+      Test paragraph
       ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Saturday July 01 2017, 03:32pm, The Sunday Times
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
     </Text>
   </Text>
 </View>
 `;
 
-exports[`Article Summary tests on ios should render an article-summary component with empty content at the end trimmed 1`] = `
+exports[`5. should render an article summary component containing links 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
   </View>
   <Text
     accessibilityRole="heading"
     aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
   >
-    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+    Test Headline
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
+  <Text>
     <Text>
       
-      Sally Jones, one of the world’s most wanted terrorists, has been killed in a US drone strike in Syria, it was revealed last night.
+      <Text>
+        Sajid Javid
+      </Text>
+       has warned the Home Office to expect an overhaul after the 
+      <Text>
+        Windrush scandal
+      </Text>
+       as he ditches the policy of creating a “hostile
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`6. should render an article summary component with headline and blank content 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </View>
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-07-01T14:32:00.000Z"
+      publication="SUNDAYTIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`7. should render an article summary component with empty content at the end trimmed 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </View>
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph 1.
     </Text>
     <Text>
        
-      The former punk
+      Test paragraph 2
     </Text>
     <Text>
        
       ...
     </Text>
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Saturday July 01 2017, 03:32pm, The Sunday Times
+  <Text>
+    <DatePublication
+      date="2017-07-01T14:32:00.000Z"
+      publication="SUNDAYTIMES"
+    />
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
       }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
+    />
   </Text>
 </View>
 `;
 
-exports[`Article Summary tests on ios should render an article-summary component with headline and blank content 1`] = `
+exports[`8. should render an article summary component with no byline 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
   >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
     </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`9. should render an article summary component with no label 1`] = `
+<View>
+  <Text
+    accessibilityRole="heading"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;
+
+exports[`10. should render an article summary component with no headline 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </View>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-07-01T14:32:00.000Z"
+      publication="SUNDAYTIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`11. should render an article summary component with no date publication 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
   </View>
   <Text
     accessibilityRole="heading"
     aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
   >
-    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+    Test Headline
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
       }
-    }
-    testID="datePublication"
-  >
-    Saturday July 01 2017, 03:32pm, The Sunday Times
+    />
   </Text>
 </View>
 `;
 
-exports[`Article Summary tests on ios should render an article-summary component with headline and no content 1`] = `
+exports[`12. should render an article summary component with a video label 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
+  <View>
+    <VideoLabel
+      color="#333333"
+      isVideo={true}
+      title="Test label"
+    />
   </View>
   <Text
     accessibilityRole="heading"
     aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
   >
-    OK, so Putin’s not a lady, but he does have the wildest man‑PMT
+    Test Headline
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Saturday July 01 2017, 03:32pm, The Sunday Times
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with multiple paragraphs 1`] = `
-<View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
+  <Text>
     <Text>
       
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-    </Text>
-    <Text>
-       
-      Mali sniffed out explosives and insurgents during a gunfight that lasted seven and a half hours to help a team of Special Boat Service (SBS) operators hunt down and kill more than a dozen
+      Test paragraph
       ...
     </Text>
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "A byline",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
       }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with no byline 1`] = `
-<View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with no date publication 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with no headline 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Saturday July 01 2017, 03:32pm, The Sunday Times
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary component with no label 1`] = `
-<View>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-</View>
-`;
-
-exports[`Article Summary tests on ios should render an article-summary with opinion byline 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "marginBottom": 5,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 1.2,
-          "marginBottom": 0,
-        }
-      }
-    >
-      CAMILLA LONG
-    </Text>
-  </View>
-  <Text
-    style={
-      Object {
-        "color": "#850029",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "400",
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      Camilla Long
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "flexDirection": "row",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 13,
-        }
-      }
-    >
-      , Environment Editor
-    </Text>
-  </Text>
-  <Text
-    accessibilityRole="heading"
-    aria-level="3"
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesModern-Bold",
-        "fontSize": 22,
-        "fontWeight": "900",
-        "lineHeight": 22,
-        "marginBottom": 5,
-      }
-    }
-  >
-    Top medal for forces dog who took a bite out of the Taliban
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <Text>
-      
-      The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
-      ...
-    </Text>
-  </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginBottom": 5,
-      }
-    }
-    testID="datePublication"
-  >
-    Friday November 17 2017, 12:01am, The Times
+    />
   </Text>
 </View>
 `;

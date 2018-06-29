@@ -19,42 +19,42 @@ export default {
     {
       type: "story",
       name: "Default",
-      component: () => story(<ArticleSummary {...defaultFixture} />)
+      component: () => story(<ArticleSummary {...defaultFixture()} />)
     },
     {
       type: "story",
       name: "With links in summary",
-      component: () => story(<ArticleSummary {...withSummaryLinksFixture} />)
+      component: () => story(<ArticleSummary {...withSummaryLinksFixture()} />)
     },
     {
       type: "story",
       name: "With byline links",
-      component: () => story(<ArticleSummary {...withBylineLinksFixture} />)
+      component: () => story(<ArticleSummary {...withBylineLinksFixture()} />)
     },
     {
       type: "story",
       name: "No byline",
-      component: () => story(<ArticleSummary {...noBylineFixture} />)
+      component: () => story(<ArticleSummary {...noBylineFixture()} />)
     },
     {
       type: "story",
       name: "Summary with multiple paragraphs",
-      component: () => story(<ArticleSummary {...articleMultiFixture} />)
+      component: () => story(<ArticleSummary {...articleMultiFixture()} />)
     },
     {
       type: "story",
       name: "Video label",
-      component: () => story(<ArticleSummary {...videoLabelFixture} />)
+      component: () => story(<ArticleSummary {...videoLabelFixture()} />)
     },
     {
       type: "story",
       name: "No label",
-      component: () => story(<ArticleSummary {...noLabelFixture} />)
+      component: () => story(<ArticleSummary {...noLabelFixture()} />)
     },
     {
       type: "story",
       name: "Review/Rating summary",
-      component: () => story(<ArticleSummary {...reviewFixture} />)
+      component: () => story(<ArticleSummary {...reviewFixture()} />)
     }
   ]
 };

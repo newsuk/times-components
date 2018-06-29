@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. should render an article summary component with a single paragraph 1`] = `
+<style>
+{
+  "IS1": {
+    "marginBottom": "5px",
+  },
+  "IS2": {
+    "color": "rgba(51,51,51,1)",
+    "fontFamily": "TimesModern-Bold",
+    "fontSize": "22px",
+    "fontWeight": "400",
+    "lineHeight": "22px",
+    "marginBottom": "5px",
+  },
+  "IS3": {
+    "WebkitBoxLines": "multiple",
+    "WebkitFlexWrap": "wrap",
+    "color": "rgba(105,105,105,1)",
+    "flexWrap": "wrap",
+    "fontFamily": "TimesDigitalW04",
+    "lineHeight": "20px",
+    "marginBottom": "10px",
+    "msFlexWrap": "wrap",
+  },
+  "IS4": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
+  },
+  "IS5": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+    "marginBottom": "5px",
+  },
+  "S1": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+  },
+  "S2": {
+    "font-size": "14px",
+  },
+  "S3": {
+    "margin-bottom": "0px",
+  },
+}
+</style>
+
+<div
+  className="S3"
+>
+  <div
+    className="IS1"
+  >
+    <ArticleLabel
+      color="#333333"
+      title="Test label"
+    />
+  </div>
+  <h3
+    aria-level="3"
+    className="IS2"
+    role="heading"
+  >
+    Test Headline
+  </h3>
+  <div
+    className="IS3 S2"
+  >
+    <span
+      className="S1"
+    >
+      
+      Test paragraph
+      ...
+    </span>
+  </div>
+  <div
+    className="IS4"
+    data-testid="datePublication"
+  >
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </div>
+  <div
+    className="IS5"
+  >
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`2. should render an article summary content component with the given style 1`] = `
+<style>
+{
+  "IS1": {
+    "WebkitBoxLines": "multiple",
+    "WebkitFlexWrap": "wrap",
+    "color": "rgba(105,105,105,1)",
+    "flexWrap": "wrap",
+    "fontFamily": "TimesDigitalW04",
+    "lineHeight": "20px",
+    "marginBottom": "10px",
+    "msFlexWrap": "wrap",
+  },
+  "S1": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+  },
+  "S2": {
+    "font-size": "14px",
+  },
+}
+</style>
+
+<div
+  className="IS1 S2"
+>
+  <span
+    className="S1"
+  >
+    
+    Test
+    ...
+  </span>
+</div>
+`;
