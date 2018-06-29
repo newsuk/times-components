@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Render an accessible button 1`] = `
+<div
+  aria-label="Test button"
+  role="button"
+  tabIndex="0"
+>
+  <div
+    title="Test button"
+  >
+    Test button
+  </div>
+</div>
+`;

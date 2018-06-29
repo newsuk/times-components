@@ -2,10 +2,6 @@
 
 exports[`1. Render the button 1`] = `
 <TouchableHighlight
-  accessibilityComponentType="button"
-  accessibilityLabel="T E S T   B U T T O N"
-  accessibilityRole="button"
-  accessibilityTraits="button"
   activeOpacity={1}
   delayPressOut={100}
   style={
