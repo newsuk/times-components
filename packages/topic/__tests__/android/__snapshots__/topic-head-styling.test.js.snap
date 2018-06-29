@@ -10,9 +10,8 @@ exports[`TopicHead styling tests on android should render styling correctly 1`] 
       "borderBottomWidth": 0.5,
       "flexDirection": "column",
       "minHeight": 90,
-      "paddingBottom": 20,
       "paddingHorizontal": 10,
-      "paddingTop": 50,
+      "paddingTop": 40,
       "width": "100%",
     }
   }
@@ -44,7 +43,7 @@ exports[`TopicHead styling tests on android should render styling correctly 1`] 
           "borderTopColor": "#DBDBDB",
           "borderTopWidth": 1,
           "justifyContent": "center",
-          "marginVertical": 20,
+          "marginBottom": 25,
           "width": 200,
         }
       }

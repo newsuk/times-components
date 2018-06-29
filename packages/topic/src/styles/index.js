@@ -11,13 +11,15 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: spacing(10),
-    paddingBottom: spacing(4),
+    paddingTop: spacing(8),
     paddingHorizontal: spacing(2),
     backgroundColor: colours.functional.backgroundPrimary,
     borderBottomColor: colours.functional.border,
     borderBottomWidth: StyleSheet.hairlineWidth,
     minHeight: 90
+  },
+  container: {
+    alignItems: "center"
   },
   name: {
     fontFamily: fonts.headline,
@@ -35,12 +37,9 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1,
-    marginVertical: spacing(4),
+    marginBottom: spacing(5),
     width: 200,
     justifyContent: "center"
-  },
-  container: {
-    alignItems: "center"
   }
 });
 
