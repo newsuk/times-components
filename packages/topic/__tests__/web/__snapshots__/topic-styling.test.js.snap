@@ -29,8 +29,6 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   max-width: 680px;
-  padding-left: 10px;
-  padding-right: 10px;
   width: 100%;
 }
 
@@ -80,11 +78,23 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
 }
 
 .c7 {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .c8 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c9 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c10 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -94,7 +104,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   flex-direction: column;
 }
 
-.c9 {
+.c11 {
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -178,7 +188,19 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 .articleListImage {
+  .c7 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .c8 .articleListImage {
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
@@ -188,7 +210,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     padding-right: 15px;
   }
 
-  .c7 .articleListContent {
+  .c8 .articleListContent {
     -webkit-flex: 2.7;
     -ms-flex: 2.7;
     flex: 2.7;
@@ -196,6 +218,13 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     min-width: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -241,8 +270,12 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
           <div
             className="c6"
           >
-            <div />
-            <div />
+            <div
+              className="c7"
+            />
+            <div
+              className="c7"
+            />
           </div>
         </div>
       </div>
@@ -254,7 +287,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         id="empty.0"
       >
         <div
-          className="c7"
+          className="c8"
         >
           <div>
             <div
@@ -345,9 +378,13 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         data-testid="empty.1"
         id="empty.1"
       >
-        <div />
         <div
-          className="c7"
+          className="c9"
+        >
+          <div />
+        </div>
+        <div
+          className="c8"
         >
           <div>
             <div
@@ -438,9 +475,13 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         data-testid="empty.2"
         id="empty.2"
       >
-        <div />
         <div
-          className="c7"
+          className="c9"
+        >
+          <div />
+        </div>
+        <div
+          className="c8"
         >
           <div>
             <div
@@ -530,13 +571,17 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     <div>
       <div>
         <div
-          className="c8"
+          className="c10"
         >
           <div
-            className="c9"
+            className="c11"
           >
-            <div />
-            <div />
+            <div
+              className="c7"
+            />
+            <div
+              className="c7"
+            />
           </div>
         </div>
       </div>

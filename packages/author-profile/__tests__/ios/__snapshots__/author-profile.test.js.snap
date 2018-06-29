@@ -872,7 +872,14 @@ exports[`1. Render an author profile page 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
@@ -1108,7 +1115,14 @@ exports[`1. Render an author profile page 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
@@ -1339,7 +1353,14 @@ exports[`1. Render an author profile page 1`] = `
     </View>
     <View>
       <View>
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
         <ActivityIndicator
           animating={true}
           color="#DBDBDB"
@@ -2439,7 +2460,14 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
@@ -2571,7 +2599,14 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
@@ -2686,7 +2721,14 @@ exports[`2. Render an author profile page without images 1`] = `
     </View>
     <View>
       <View>
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
         <ActivityIndicator
           animating={true}
           color="#DBDBDB"
@@ -3356,7 +3398,14 @@ exports[`3. Render an author profile page loading state 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
@@ -3830,7 +3879,14 @@ exports[`3. Render an author profile page loading state 1`] = `
           }
         }
       >
-        <View />
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+            }
+          }
+        />
       </View>
     </View>
     <View>
