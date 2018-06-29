@@ -116,7 +116,6 @@ class ArticleList extends Component {
       emptyStateMessage,
       error,
       imageRatio,
-      isLoading,
       onArticlePress,
       onNext,
       onPrev,
@@ -165,7 +164,7 @@ class ArticleList extends Component {
 
     const AdComponent = (
       <AdComposer adConfig={adConfig}>
-        <Ad slotName="inline-ad" />
+        <Ad isLoading={articlesLoading} slotName="inline-ad" />
       </AdComposer>
     );
 
@@ -196,12 +195,7 @@ class ArticleList extends Component {
                   index > 0 ? <ArticleListItemSeparator /> : null;
 
                 const renderAd = () => {
-                  if (
-                    index !== this.advertPosition ||
-                    !hasAdvertConfig ||
-                    isLoading ||
-                    articlesLoading
-                  ) {
+                  if (index !== this.advertPosition || !hasAdvertConfig) {
                     return null;
                   }
 

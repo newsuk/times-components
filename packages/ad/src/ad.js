@@ -15,7 +15,6 @@ class Ad extends Component {
     const { slotName } = nextProps;
 
     return {
-      adReady: false,
       config: getSlotConfig(slotName, screenWidth())
     };
   }
@@ -40,7 +39,14 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const { baseUrl, contextUrl, section, slotName, style } = this.props;
+    const {
+      baseUrl,
+      contextUrl,
+      isLoading,
+      section,
+      slotName,
+      style
+    } = this.props;
     const { windowWidth } = this.state;
 
     this.slots = adConfig.bidderSlots.map(slot =>
@@ -79,7 +85,7 @@ class Ad extends Component {
           width: this.state.config.maxSizes.width
         };
 
-    const webviewComponent = (
+    const AdComponent = (
       <DOMContext
         baseUrl={baseUrl}
         data={data}
@@ -89,18 +95,18 @@ class Ad extends Component {
       />
     );
 
-    const placeholderComponent = !this.state.adReady ? (
+    const AdPlaceholderComponent = (
       <AdPlaceholder
         height={this.state.config.maxSizes.height}
         style={styles.children}
         width={this.state.config.maxSizes.width}
       />
-    ) : null;
+    );
 
     return (
       <View style={[style]}>
-        {webviewComponent}
-        {placeholderComponent}
+        {isLoading ? null : AdComponent}
+        {isLoading || !this.state.adReady ? AdPlaceholderComponent : null}
       </View>
     );
   }

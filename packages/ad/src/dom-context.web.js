@@ -57,7 +57,7 @@ class DOMContext extends Component {
     const { height, width } = this.props;
     return (
       <div
-        style={{ height, width, overflow: "hidden" }}
+        style={{ height, overflow: "hidden", width }}
         ref={div => {
           this.div = div;
         }}

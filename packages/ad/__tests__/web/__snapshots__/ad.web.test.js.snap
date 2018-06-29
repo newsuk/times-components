@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert 1`] = `
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+  isLoading={false}
+  section="news"
+  slotName="header"
+  style={null}
+/>
+`;
+
+exports[`2. Two adverts 1`] = `
+<React.Fragment>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="header"
+    style={null}
+  />
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="intervention"
+    style={null}
+  />
+</React.Fragment>
+`;
+
+exports[`3. Advert loading state placeholder 1`] = `
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+  isLoading={true}
+  section="news"
+  slotName="header"
+  style={null}
+/>
+`;

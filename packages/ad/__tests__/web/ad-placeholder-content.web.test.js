@@ -13,8 +13,8 @@ import {
   stylePrinter,
   rnwTransform
 } from "@times-components/jest-serializer";
-import shared from "../ad-placeholder.shared";
 import AdPlaceholder from "../../src/ad-placeholder";
+import shared from "../ad-placeholder.shared";
 
 describe("web", () => {
   addSerializers(

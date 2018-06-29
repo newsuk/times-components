@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`On android DOMContext Native renders correctly 1`] = `
+exports[`ios renders 1`] = `
 <View
   style={
     Object {
@@ -10,6 +10,7 @@ exports[`On android DOMContext Native renders correctly 1`] = `
   }
 >
   <WebView
+    injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
     onMessage={[Function]}
     onNavigationStateChange={[Function]}
     source={

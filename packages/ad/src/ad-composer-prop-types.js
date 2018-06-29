@@ -15,6 +15,7 @@ export const propTypes = {
   ]).isRequired
 };
 
+// @TODO: check these are sensible
 export const defaultProps = {
   adConfig: {
     networkId: "25436805",
