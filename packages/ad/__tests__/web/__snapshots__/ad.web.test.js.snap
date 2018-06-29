@@ -1,101 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. Advert 1`] = `
-<style>
-{
-  "IS1": {
-    "height": 0,
-    "overflow": "hidden",
-    "width": 0,
-  },
-  "IS2": {
-    "height": "90px",
-    "width": "728px",
-  },
-}
-</style>
-
 <Ad
   baseUrl="https://www.thetimes.co.uk/"
   contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
   isLoading={false}
-  section="colin"
+  section="new"
   slotName="header"
   style={null}
->
-  <Subscriber
-    channel="adConfig"
-  >
-    <div>
-      <DOMContext
-        baseUrl="https://www.thetimes.co.uk/"
-        height={0}
-        init={[Function]}
-        onRenderComplete={[Function]}
-        width={0}
-      />
-      <AdPlaceholder
-        height={90}
-        width={728}
-      >
-        <div>
-          <div
-            className="IS2"
-          >
-            <div>
-              <Watermark
-                height={90}
-                viewBox="-630 120 1200 50"
-                width={728}
-              >
-                <Svg
-                  height={90}
-                  width={728}
-                >
-                  <svg
-                    height={90}
-                    width={728}
-                  >
-                    <G
-                      fill="none"
-                      fillRule="evenodd"
-                      id="Page-1"
-                      opacity="0.07"
-                      stroke="none"
-                      strokeWidth="1"
-                    >
-                      <g
-                        fill="none"
-                        fillRule="evenodd"
-                        id="Page-1"
-                        opacity="0.07"
-                        stroke="none"
-                        strokeWidth="1"
-                      >
-                        <Path
-                          fill="#1D1D1B"
-                          id="Shape"
-                        >
-                          <path
-                            fill="#1D1D1B"
-                            id="Shape"
-                          />
-                        </Path>
-                      </g>
-                    </G>
-                  </svg>
-                </Svg>
-              </Watermark>
-            </div>
-            <div
-              dir="auto"
-            >
-              ADVERTISEMENT
-            </div>
-          </div>
-        </div>
-      </AdPlaceholder>
-    </div>
-  </Subscriber>
-</Ad>
+/>
+`;
+
+exports[`2. Two adverts 1`] = `
+<React.Fragment>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="new"
+    slotName="header"
+    style={null}
+  />
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="new"
+    slotName="intervention"
+    style={null}
+  />
+</React.Fragment>
+`;
+
+exports[`3. Advert loading state placeholder 1`] = `
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+  isLoading={true}
+  section="new"
+  slotName="header"
+  style={null}
+/>
 `;
