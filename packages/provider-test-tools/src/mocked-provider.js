@@ -4,7 +4,6 @@ import { ApolloProvider } from "react-apollo";
 import { MockLink } from "react-apollo/test-utils";
 import { InMemoryCache as Cache } from "apollo-cache-inmemory";
 import PropTypes from "prop-types";
-import { IntrospectionFragmentMatcher } from "apollo-cache-inmemory";
 import { fragmentMatcher } from "@times-components/utils";
 
 class MockedProvider extends Component {

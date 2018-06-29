@@ -13,6 +13,8 @@ const introspectionQueryResultData = {
   }
 };
 
-export const fragmentMatcher = new IntrospectionFragmentMatcher({
+const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData
 });
+
+export default fragmentMatcher;
