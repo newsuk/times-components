@@ -49,6 +49,9 @@ const slotNames = [
   "pixelskin"
 ];
 
+const articleContextURL =
+  "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+
 const renderAd = slotName => (
   <Fragment>
     {slotName.indexOf("pixel") !== -1 && (
@@ -56,11 +59,7 @@ const renderAd = slotName => (
         The pixel ad is below. It&rsquo;s invisible.
       </Text>
     )}
-    <Ad
-      contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
-      section="news"
-      slotName={slotName}
-    />
+    <Ad contextUrl={articleContextURL} section="news" slotName={slotName} />
   </Fragment>
 );
 
@@ -77,6 +76,19 @@ export default {
             placeholderSizes,
             placeholderSizes[0]
           )
+        )
+    },
+    {
+      type: "story",
+      name: "Ad Loading State",
+      component: () =>
+        withOpenInNewWindow(
+          <Ad
+            contextUrl={articleContextURL}
+            isLoading
+            section="news"
+            slotName="header"
+          />
         )
     },
     {
