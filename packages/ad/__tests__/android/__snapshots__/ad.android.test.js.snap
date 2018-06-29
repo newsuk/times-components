@@ -45,9 +45,10 @@ exports[`1. Advert 1`] = `
   <View>
     <View>
       <View>
-        <Image
-          resizeMode="contain"
-          source={1}
+        <WaterMark
+          height={50}
+          viewBox="-50 0 320 50"
+          width={320}
         />
       </View>
       <Text>
@@ -104,9 +105,10 @@ Array [
     <View>
       <View>
         <View>
-          <Image
-            resizeMode="contain"
-            source={1}
+          <WaterMark
+            height={50}
+            viewBox="-50 0 320 50"
+            width={320}
           />
         </View>
         <Text>
@@ -159,9 +161,10 @@ Array [
     <View>
       <View>
         <View>
-          <Image
-            resizeMode="contain"
-            source={1}
+          <WaterMark
+            height={250}
+            viewBox="-15 0 269 250"
+            width={320}
           />
         </View>
         <Text>
@@ -178,9 +181,10 @@ exports[`3. Advert loading state placeholder 1`] = `
   <View>
     <View>
       <View>
-        <Image
-          resizeMode="contain"
-          source={1}
+        <WaterMark
+          height={50}
+          viewBox="-50 0 320 50"
+          width={320}
         />
       </View>
       <Text>

@@ -6,6 +6,7 @@ jest.mock(
 );
 jest.mock("../../src/ad-init", () => () => "mockAdInit");
 jest.mock("WebView", () => "WebView");
+jest.mock("@times-components/watermark", () => "WaterMark");
 
 describe("ios", () => {
   shared();
