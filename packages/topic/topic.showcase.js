@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
+import {
+  fixtureGenerator,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
-import { MockedProvider } from "@times-components/utils";
 import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
 import adConfig from "./fixtures/topic-ad-config.json";

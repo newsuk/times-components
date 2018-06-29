@@ -1,8 +1,10 @@
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { MockedProvider } from "@times-components/utils";
+import {
+  fixtureGenerator,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import Topic from "../src/topic";
 
 export default () => {

@@ -5,7 +5,7 @@ import { AuthorProfileProvider } from "@times-components/provider";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
-import { MockedProvider } from "@times-components/utils";
+import { MockedProvider } from "@times-components/provider-test-tools";
 import AuthorProfile from "./src/author-profile";
 import longSummaryLength from "./author-profile-constants";
 

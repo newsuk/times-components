@@ -4,7 +4,8 @@ import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { MockedProvider, fragmentMatcher } from "@times-components/utils";
+import { MockedProvider } from "@times-components/provider-test-tools";
+import { fragmentMatcher } from "@times-components/utils";
 import { text } from "@storybook/addon-knobs/react";
 
 const StorybookProvider = props => {
