@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.14"></a>
+## [2.2.14](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.2.13...@times-components/author-profile@2.2.14) (2018-06-29)
+
+
+### Bug Fixes
+
+* article list rerender ([#1064](https://github.com/newsuk/times-components/issues/1064)) ([7e1c81e](https://github.com/newsuk/times-components/commit/7e1c81e))
+
+
+
+
 <a name="2.2.13"></a>
 ## [2.2.13](https://github.com/newsuk/times-components/compare/@times-components/author-profile@2.2.12...@times-components/author-profile@2.2.13) (2018-06-28)
 
