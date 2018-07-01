@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. should render the default layout 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+<style>
+{
+  "IS1": {
+    "display": "block",
+    "position": "absolute",
+    "width": "100%",
+    "zIndex": 1,
+  },
+  "IS2": {
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "IS3": {
+    "flex": 1,
+  },
+  "IS4": {
+    "bottom": "0px",
+    "left": "0px",
+    "position": "absolute",
+    "right": "0px",
+    "top": "0px",
+  },
+  "IS5": {
+    "bottom": 0,
+    "left": 0,
+    "position": "absolute",
+    "right": 0,
+    "top": 0,
+    "zIndex": 0,
+  },
+  "IS6": {
+    "display": "table",
+    "height": 0,
+    "overflow": "hidden",
+    "paddingBottom": "150%",
+  },
+  "S1": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+  "S2": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+  "S3": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+  "S4": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "10px",
+    "min-width": "100%",
+  },
+  "S5": {
+    "display": "inline",
+    "margin-bottom": "0px",
+  },
+  "S6": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "100%",
+  },
+  "S7": {
+    "-ms-flex-align": "start",
+    "-ms-flex-direction": "row",
+    "-ms-flex-pack": "end",
+    "-ms-flex-wrap": "wrap",
+    "-webkit-align-items": "flex-start",
+    "-webkit-box-align": "start",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-lines": "multiple",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-box-pack": "end",
+    "-webkit-flex-direction": "row",
+    "-webkit-flex-wrap": "wrap",
+    "-webkit-justify-content": "flex-end",
+    "align-items": "flex-start",
+    "display": "flex",
+    "flex-direction": "row",
+    "flex-wrap": "wrap",
+    "justify-content": "flex-end",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+  "S8": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "display": "flex",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "min-width": "0px",
+  },
+}
+</style>
+
+<FadeIn>
+  <div
+    className="c0 S8"
+  >
+    <div
+      className="S7"
+    >
+      <div
+        className="S4"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          uri="https://img.io/img&resize=360"
+        />
+      </div>
+      <div
+        className="S6"
+      >
+        <div
+          className="S5"
+        >
+          A card
+        </div>
+      </div>
+    </div>
+  </div>
+</FadeIn>
+`;

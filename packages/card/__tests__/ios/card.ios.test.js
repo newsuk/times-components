@@ -1,5 +1,5 @@
-import shared from "../shared";
+import shared from "../shared.native";
 
-describe("Card tests on ios", () => {
+describe("ios", () => {
   shared();
 });
