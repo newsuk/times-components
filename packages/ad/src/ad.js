@@ -27,15 +27,15 @@ class Ad extends Component {
     this.prebidConfig = prebidConfig;
 
     this.state = {
-      adReady: false,
       config: getSlotConfig(slotName, screenWidth()),
-      hasError: false
+      hasError: false,
+      isAdReady: false
     };
   }
 
   setAdReady = () => {
     this.setState({
-      adReady: true
+      isAdReady: true
     });
   };
 
@@ -54,7 +54,7 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { adReady, hasError, windowWidth } = this.state;
+    const { hasError, isAdReady, windowWidth } = this.state;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -85,7 +85,7 @@ class Ad extends Component {
       slotTargeting: adConfig.slotTargeting
     };
 
-    const sizeProps = !adReady
+    const sizeProps = !isAdReady
       ? { height: 0, width: 0 }
       : {
           height: this.state.config.maxSizes.height,
@@ -114,7 +114,7 @@ class Ad extends Component {
     return (
       <View style={[style]}>
         {isLoading || hasError ? null : AdComponent}
-        {(isLoading || !adReady) && !hasError ? AdPlaceholderComponent : null}
+        {(isLoading || !isAdReady) && !hasError ? AdPlaceholderComponent : null}
       </View>
     );
   }
