@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+    />
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`2. renders with a child 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+    />
+  </ARTSurfaceView>
+  <Text>
+    Hello world!
+  </Text>
+</View>
+`;

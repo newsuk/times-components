@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders using prop styles 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Object {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
+      }
+    }
+  >
+    <ARTShape />
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`2. renders using array prop styles 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 300,
+      "width": 400,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Object {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
+      }
+    }
+  >
+    <ARTShape />
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`3. renders using stylesheets 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 200,
+      "margin": 10,
+      "width": 200,
+    }
+  }
+>
+  <ARTSurfaceView
+    style={
+      Object {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 0,
+      }
+    }
+  >
+    <ARTShape />
+  </ARTSurfaceView>
+</View>
+`;
