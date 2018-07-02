@@ -1,42 +1,17 @@
-/* eslint-disable no-underscore-dangle */
-
 import React, { Component } from "react";
 import ApolloClient from "apollo-client";
 import { ApolloProvider } from "react-apollo";
-import { ApolloLink } from "apollo-link";
 import { MockLink } from "react-apollo/test-utils";
-import {
-  InMemoryCache as Cache,
-  IntrospectionFragmentMatcher
-} from "apollo-cache-inmemory";
+import { InMemoryCache as Cache } from "apollo-cache-inmemory";
 import PropTypes from "prop-types";
-import Observable from "zen-observable";
-import introspectionResult from "./schema.json";
-
-const filteredTypes = introspectionResult.data.__schema.types.filter(
-  ({ possibleTypes }) => possibleTypes !== null
-);
-const introspectionQueryResultData = {
-  __schema: {
-    ...introspectionResult.data.__schema,
-    types: filteredTypes
-  }
-};
-
-export const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData
-});
+import { fragmentMatcher } from "@times-components/utils";
 
 class MockedProvider extends Component {
   constructor(props, context) {
     super(props, context);
 
-    const link = this.props.isLoading
-      ? new ApolloLink(() => Observable.of())
-      : new MockLink(props.mocks);
-
     this.client = new ApolloClient({
-      link,
+      link: new MockLink(props.mocks),
       cache: new Cache({ addTypename: !props.removeTypename, fragmentMatcher })
     });
   }
@@ -69,13 +44,11 @@ MockedProvider.propTypes = {
     })
   ).isRequired,
   children: PropTypes.node.isRequired,
-  removeTypename: PropTypes.bool,
-  isLoading: PropTypes.bool
+  removeTypename: PropTypes.bool
 };
 
 MockedProvider.defaultProps = {
-  removeTypename: false,
-  isLoading: false
+  removeTypename: false
 };
 
-export { MockedProvider };
+export default MockedProvider;

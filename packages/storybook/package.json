@@ -48,6 +48,7 @@
     "@storybook/addons": "3.4.1",
     "@storybook/react-native": "3.4.1",
     "@times-components/jest-configurator": "1.0.3",
+    "@times-components/provider-test-tools": "0.12.5",
     "@times-components/utils": "1.1.4",
     "apollo-cache-inmemory": "1.1.10",
     "apollo-client": "2.3.2",

@@ -1,7 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import mockDate from "mockdate";
-import { delay, MockedProvider } from "@times-components/utils";
+import { MockedProvider } from "@times-components/provider-test-tools";
+import { delay } from "@times-components/utils";
 import AuthorProfile from "../src/author-profile";
 import {
   mockArticles,

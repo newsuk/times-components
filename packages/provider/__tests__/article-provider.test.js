@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils";
+import { MockedProvider } from "@times-components/provider-test-tools";
 import { addTypenameToDocument } from "apollo-utilities";
 import fixture from "@times-components/provider-test-tools/fixtures/article.json";
 import { ArticleProvider } from "../src/provider";

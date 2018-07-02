@@ -2,10 +2,12 @@ import "react-native";
 import React from "react";
 import { AdComposer } from "@times-components/ad";
 import { AuthorProfileProvider } from "@times-components/provider";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
+import {
+  fixtureGenerator,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
-import { MockedProvider } from "@times-components/utils";
 import AuthorProfile from "./src/author-profile";
 import longSummaryLength from "./author-profile-constants";
 

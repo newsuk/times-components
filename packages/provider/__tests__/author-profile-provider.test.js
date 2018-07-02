@@ -1,7 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
+import {
+  fixtureGenerator,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import { AuthorProfileProvider } from "../src/provider";
 
 const renderComponent = child =>

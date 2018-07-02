@@ -5,8 +5,10 @@ import topicFixture from "@times-components/provider-test-tools/fixtures/topic.j
 import articleFixture from "@times-components/provider-test-tools/fixtures/article.json";
 import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
-import { MockedProvider } from "@times-components/utils";
-import { fixtureGenerator } from "@times-components/provider-test-tools";
+import {
+  fixtureGenerator,
+  MockedProvider
+} from "@times-components/provider-test-tools";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,

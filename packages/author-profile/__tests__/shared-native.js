@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList } from "react-native";
 import renderer from "react-test-renderer";
-import { MockedProvider } from "@times-components/utils";
+import { MockedProvider } from "@times-components/provider-test-tools";
 import AuthorProfile from "../src/author-profile";
 import { mockArticles, pageSize, props } from "./mocks";
 
