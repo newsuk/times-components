@@ -113,7 +113,7 @@ class Ad extends Component {
 
     return (
       <View style={[style]}>
-        {isLoading && !hasError ? null : AdComponent}
+        {isLoading || hasError ? null : AdComponent}
         {(isLoading || !adReady) && !hasError ? AdPlaceholderComponent : null}
       </View>
     );
