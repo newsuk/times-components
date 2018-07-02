@@ -1065,14 +1065,16 @@ exports[`ArticleList tests on web should render the article list error content c
 `;
 
 exports[`ArticleList tests on web should render the article list item separator keyline correctly 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#DBDBDB",
-      "height": 1,
+<ListItemSeparator>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#DBDBDB",
+        "height": 1,
+      }
     }
-  }
-/>
+  />
+</ListItemSeparator>
 `;
 
 exports[`ArticleList tests on web should render the article list page error correctly 1`] = `

@@ -2,7 +2,7 @@ import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
-const ControlWrapper = withResponsiveStyles(
+const LinkContainer = withResponsiveStyles(
   View,
   {
     base: () => `
@@ -14,7 +14,7 @@ const ControlWrapper = withResponsiveStyles(
       padding-right: 0;
     `
   },
-  "ControlWrapper"
+  "LinkContainer"
 );
 
-export default ControlWrapper;
+export default LinkContainer;

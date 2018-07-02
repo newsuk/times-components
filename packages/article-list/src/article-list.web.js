@@ -15,7 +15,7 @@ import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
 import styles from "./styles";
-import { ListContentContainer, ListItemSeparator } from "./styles/responsive";
+import { ListContentContainer } from "./styles/responsive";
 
 class ArticleList extends Component {
   constructor(props) {
@@ -202,13 +202,13 @@ class ArticleList extends Component {
                   return AdComponent;
                 };
 
-                const shouldRenderSeperator =
-                  index > 0 && index !== this.advertPosition + 1;
-                const separatorComponent = shouldRenderSeperator ? (
-                  <ListItemSeparator>
-                    <ArticleListItemSeparator />
-                  </ListItemSeparator>
-                ) : null;
+                const renderSeperator = () => {
+                  if (index === 0 || index === this.advertPosition + 1) {
+                    return null;
+                  }
+
+                  return <ArticleListItemSeparator />;
+                };
 
                 return (
                   <Fragment key={elementId}>
@@ -222,7 +222,7 @@ class ArticleList extends Component {
                         {({ hasError }) =>
                           hasError ? null : (
                             <Fragment>
-                              {separatorComponent}
+                              {renderSeperator()}
                               <ArticleListItem
                                 {...article}
                                 index={index}

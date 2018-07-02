@@ -9,7 +9,7 @@ import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
 import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
-import ControlWrapper from "./styles/responsive.web";
+import LinkContainer from "./styles/responsive.web";
 
 const styles = StyleSheet.create({
   absolute: {
@@ -65,8 +65,8 @@ const Pagination = ({
     <PaginationContainer hideResults={hideResults}>
       {messageComponent}
       <PaginationBorder hideResults={hideResults}>
-        <ControlWrapper>{prevComponent}</ControlWrapper>
-        <ControlWrapper>{nextComponent}</ControlWrapper>
+        <LinkContainer>{prevComponent}</LinkContainer>
+        <LinkContainer>{nextComponent}</LinkContainer>
       </PaginationBorder>
     </PaginationContainer>
   );

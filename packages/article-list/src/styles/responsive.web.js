@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 export const ListContentContainer = withResponsiveStyles(
   View,

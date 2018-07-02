@@ -90,11 +90,6 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
 }
 
 .c9 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c10 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -104,7 +99,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
   flex-direction: column;
 }
 
-.c11 {
+.c10 {
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -218,13 +213,6 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
     min-width: auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -378,11 +366,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         data-testid="empty.1"
         id="empty.1"
       >
-        <div
-          className="c9"
-        >
-          <div />
-        </div>
+        <div />
         <div
           className="c8"
         >
@@ -475,11 +459,7 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
         data-testid="empty.2"
         id="empty.2"
       >
-        <div
-          className="c9"
-        >
-          <div />
-        </div>
+        <div />
         <div
           className="c8"
         >
@@ -571,10 +551,10 @@ exports[`Topic styling tests on web should render styling correctly 1`] = `
     <div>
       <div>
         <div
-          className="c10"
+          className="c9"
         >
           <div
-            className="c11"
+            className="c10"
           >
             <div
               className="c7"
