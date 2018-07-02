@@ -5,7 +5,6 @@ import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
 import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
-import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
 import { propTypes, defaultProps } from "./ad-prop-types";
 import styles from "./styles";
@@ -96,7 +95,6 @@ class Ad extends Component {
       <DOMContext
         baseUrl={baseUrl}
         data={data}
-        init={adInit}
         onRenderError={this.setAdError}
         onRenderComplete={this.setAdReady}
         {...sizeProps}

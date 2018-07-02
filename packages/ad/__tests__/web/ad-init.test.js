@@ -1,4 +1,4 @@
-import adInitOriginal from "../../src/ad-init";
+import adInitOriginal from "../../src/utils/ad-init";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
 
