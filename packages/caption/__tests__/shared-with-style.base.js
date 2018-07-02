@@ -14,7 +14,7 @@ const style = {
   }
 };
 
-module.exports = () => {
+export default () => {
   it("renders with specific styles", () => {
     const testInstance = TestRenderer.create(
       <Caption text={captionText} credits={credits} style={style} />

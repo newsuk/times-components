@@ -6,7 +6,7 @@ import Caption from "../src/caption";
 const captionText = "Some caption text goes in here";
 const credits = "Just credits";
 
-module.exports = () => {
+export default () => {
   it("renders without credits", () => {
     const testInstance = TestRenderer.create(<Caption text={captionText} />);
 
