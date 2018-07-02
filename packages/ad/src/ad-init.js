@@ -9,7 +9,7 @@ const adInit = args => {
 
   const scriptsInserted = {};
   let initCalled = false;
-  let hasAdBlocker = false;
+  let hasScriptLoadingError = false;
 
   const initialiser = {
     utils: {
@@ -25,7 +25,7 @@ const adInit = args => {
               resolve();
             },
             () => {
-              hasAdBlocker = true;
+              hasScriptLoadingError = true;
               reject(new Error(`load error for ${scriptUri}`));
             }
           );
@@ -387,9 +387,9 @@ const adInit = args => {
       this.gpt.doSlotAdSetup();
 
       this.gpt.waitUntilReady().then(() => {
-        if (hasAdBlocker) {
+        if (hasScriptLoadingError) {
           this.destroySlots();
-          return eventCallback("adBlocker");
+          return eventCallback("scriptLoadingError");
         }
         return eventCallback("renderComplete");
       });

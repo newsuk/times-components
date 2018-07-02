@@ -78,12 +78,12 @@ describe("DOMContext Web", () => {
     expect(onRenderComplete).toHaveBeenCalled();
   });
 
-  it("calls the renderError callback when a adBlocker event is dispatched", () => {
+  it("calls the renderError callback when a scriptLoadingError event is dispatched", () => {
     const onRenderErrorMock = jest.fn();
 
     mount(
       <DOMContext
-        init={({ eventCallback }) => eventCallback("adBlocker")}
+        init={({ eventCallback }) => eventCallback("scriptLoadingError")}
         onRenderError={onRenderErrorMock}
       />
     );
