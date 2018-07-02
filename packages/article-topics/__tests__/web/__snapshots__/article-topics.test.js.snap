@@ -44,7 +44,7 @@ exports[`2. Render a single topic 1`] = `
     style={
       Object {
         "borderColor": "#DBDBDB",
-        "borderRadius": 1,
+        "borderRadius": 2,
         "borderWidth": 1,
         "marginRight": "10px",
         "marginTop": "10px",

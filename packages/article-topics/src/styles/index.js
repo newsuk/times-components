@@ -3,7 +3,7 @@ import { colours, fonts, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     borderColor: colours.functional.keyline,
-    borderRadius: 1,
+    borderRadius: 2,
     borderWidth: 1,
     paddingBottom: 12,
     paddingLeft: spacing(3),
