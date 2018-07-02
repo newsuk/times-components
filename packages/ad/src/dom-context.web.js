@@ -48,6 +48,8 @@ class DOMContext extends Component {
     if (this.eventQueue.length === 0) return;
     if (type === "error") {
       throw new Error(`DomContext error: ${detail}`);
+    } else if (type === "scriptLoadingError") {
+      this.props.onRenderError();
     } else if (type === "renderComplete") {
       this.props.onRenderComplete();
     }

@@ -9,6 +9,7 @@ const adInit = args => {
 
   const scriptsInserted = {};
   let initCalled = false;
+  let hasScriptLoadingError = false;
 
   const initialiser = {
     utils: {
@@ -24,6 +25,7 @@ const adInit = args => {
               resolve();
             },
             () => {
+              hasScriptLoadingError = true;
               reject(new Error(`load error for ${scriptUri}`));
             }
           );
@@ -385,7 +387,11 @@ const adInit = args => {
       this.gpt.doSlotAdSetup();
 
       this.gpt.waitUntilReady().then(() => {
-        eventCallback("renderComplete");
+        if (hasScriptLoadingError) {
+          this.destroySlots();
+          return eventCallback("scriptLoadingError");
+        }
+        return eventCallback("renderComplete");
       });
     }
   };
