@@ -57,8 +57,7 @@
     "lodash.omitby": "4.6.0",
     "prop-types": "15.6.0",
     "react": "16.3.1",
-    "react-apollo": "2.1.4",
-    "zen-observable": "0.8.8"
+    "react-apollo": "2.1.4"
   },
   "peerDependencies": {
     "react": ">=16.2",
