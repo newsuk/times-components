@@ -2,13 +2,19 @@
 
 exports[`ArticleList responsive tests on web should render ListContentContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ hkMMvo"
+  className="responsive-styles__component-fbPFZZ bSCqAc"
 />
 `;
 
 exports[`ArticleList responsive tests on web should render ListItemLongText correctly 1`] = `
 <div
   className="responsive-styles__component-fbPFZZ dQznFS"
+/>
+`;
+
+exports[`ArticleList responsive tests on web should render ListItemSeparator correctly 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ fpmWTY"
 />
 `;
 
@@ -20,7 +26,7 @@ exports[`ArticleList responsive tests on web should render ListItemShortText cor
 
 exports[`ArticleList responsive tests on web should render ListItemWrapper correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ ereXyn"
+  className="responsive-styles__component-fbPFZZ hvIATq"
 />
 `;
 

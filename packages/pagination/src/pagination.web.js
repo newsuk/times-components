@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
@@ -9,6 +9,7 @@ import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
 import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
+import LinkContainer from "./styles/responsive.web";
 
 const styles = StyleSheet.create({
   absolute: {
@@ -64,8 +65,8 @@ const Pagination = ({
     <PaginationContainer hideResults={hideResults}>
       {messageComponent}
       <PaginationBorder hideResults={hideResults}>
-        <View>{prevComponent}</View>
-        <View>{nextComponent}</View>
+        <LinkContainer>{prevComponent}</LinkContainer>
+        <LinkContainer>{nextComponent}</LinkContainer>
       </PaginationBorder>
     </PaginationContainer>
   );

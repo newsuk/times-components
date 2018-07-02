@@ -110,7 +110,7 @@ exports[`1. Render an author profile page 1`] = `
     </div>
   </header>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -129,8 +129,12 @@ exports[`1. Render an author profile page 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            >
               <a
                 href="?page=2"
                 style={
@@ -184,7 +188,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -294,7 +298,11 @@ exports[`1. Render an author profile page 1`] = `
         data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
         id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
           style={
@@ -304,7 +312,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -414,7 +422,11 @@ exports[`1. Render an author profile page 1`] = `
         data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
         id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
           style={
@@ -424,7 +436,7 @@ exports[`1. Render an author profile page 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -538,8 +550,12 @@ exports[`1. Render an author profile page 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            >
               <a
                 href="?page=2"
                 style={
@@ -692,7 +708,7 @@ exports[`2. Render an author profile page without images 1`] = `
     </div>
   </header>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -711,8 +727,12 @@ exports[`2. Render an author profile page without images 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            >
               <a
                 href="?page=2"
                 style={
@@ -766,7 +786,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -902,7 +922,11 @@ exports[`2. Render an author profile page without images 1`] = `
         data-testid="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
         id="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/trump-urges-britain-to-put-more-into-nato-defence-xhf7cktk3"
           style={
@@ -912,7 +936,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1064,7 +1088,11 @@ exports[`2. Render an author profile page without images 1`] = `
         data-testid="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
         id="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/uk-to-protect-bosnia-poll-s0vfjhzmx"
           style={
@@ -1074,7 +1102,7 @@ exports[`2. Render an author profile page without images 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1206,8 +1234,12 @@ exports[`2. Render an author profile page without images 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            >
               <a
                 href="?page=2"
                 style={
@@ -1269,7 +1301,7 @@ exports[`3. Render an author profile page loading state 1`] = `
     </div>
   </header>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -1288,8 +1320,12 @@ exports[`3. Render an author profile page loading state 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -1301,7 +1337,7 @@ exports[`3. Render an author profile page loading state 1`] = `
         id="empty.0"
       >
         <div
-          className="responsive-styles__component-fbPFZZ ereXyn"
+          className="responsive-styles__component-fbPFZZ hvIATq"
         >
           <div>
             <div
@@ -1391,9 +1427,13 @@ exports[`3. Render an author profile page loading state 1`] = `
         data-testid="empty.1"
         id="empty.1"
       >
-        <div />
         <div
-          className="responsive-styles__component-fbPFZZ ereXyn"
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
+        <div
+          className="responsive-styles__component-fbPFZZ hvIATq"
         >
           <div>
             <div
@@ -1483,9 +1523,13 @@ exports[`3. Render an author profile page loading state 1`] = `
         data-testid="empty.2"
         id="empty.2"
       >
-        <div />
         <div
-          className="responsive-styles__component-fbPFZZ ereXyn"
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
+        <div
+          className="responsive-styles__component-fbPFZZ hvIATq"
         >
           <div>
             <div
@@ -1579,8 +1623,12 @@ exports[`3. Render an author profile page loading state 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>

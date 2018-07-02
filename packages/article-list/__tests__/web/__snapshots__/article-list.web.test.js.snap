@@ -3,7 +3,7 @@
 exports[`ArticleList tests on web should render an article list 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -22,8 +22,12 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -43,7 +47,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -155,7 +159,11 @@ exports[`ArticleList tests on web should render an article list 1`] = `
         data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
         id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
           style={
@@ -165,7 +173,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -277,7 +285,11 @@ exports[`ArticleList tests on web should render an article list 1`] = `
         data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
         id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
           style={
@@ -287,7 +299,7 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -403,8 +415,12 @@ exports[`ArticleList tests on web should render an article list 1`] = `
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -423,7 +439,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
   }
 >
   <div
-    className="responsive-styles__component-fbPFZZ ereXyn"
+    className="responsive-styles__component-fbPFZZ hvIATq"
   >
     <div
       className="responsive-styles__component-fbPFZZ woNlo"
@@ -557,7 +573,7 @@ exports[`ArticleList tests on web should render an article list item 1`] = `
 
 exports[`ArticleList tests on web should render an article list item loading state 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ ereXyn"
+  className="responsive-styles__component-fbPFZZ hvIATq"
 >
   <div>
     <div
@@ -654,7 +670,7 @@ exports[`ArticleList tests on web should render an article list item without ima
   }
 >
   <div
-    className="responsive-styles__component-fbPFZZ ereXyn"
+    className="responsive-styles__component-fbPFZZ hvIATq"
   >
     <div
       className="responsive-styles__component-fbPFZZ woNlo"
@@ -841,7 +857,7 @@ exports[`ArticleList tests on web should render an article list page error corre
 exports[`ArticleList tests on web should render an article list that is loading 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -860,8 +876,12 @@ exports[`ArticleList tests on web should render an article list that is loading 
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -873,7 +893,7 @@ exports[`ArticleList tests on web should render an article list that is loading 
         id="empty.0"
       >
         <div
-          className="responsive-styles__component-fbPFZZ ereXyn"
+          className="responsive-styles__component-fbPFZZ hvIATq"
         >
           <div>
             <div
@@ -968,8 +988,12 @@ exports[`ArticleList tests on web should render an article list that is loading 
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -1041,14 +1065,16 @@ exports[`ArticleList tests on web should render the article list error content c
 `;
 
 exports[`ArticleList tests on web should render the article list item separator keyline correctly 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#DBDBDB",
-      "height": 1,
+<ListItemSeparator>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#DBDBDB",
+        "height": 1,
+      }
     }
-  }
-/>
+  />
+</ListItemSeparator>
 `;
 
 exports[`ArticleList tests on web should render the article list page error correctly 1`] = `
@@ -1093,8 +1119,12 @@ exports[`ArticleList tests on web should render the article list pagination corr
       <div
         className="responsive-styles__component-fbPFZZ cePhpb"
       >
-        <div />
-        <div>
+        <div
+          className="responsive-styles__component-fbPFZZ cmwPJA"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ cmwPJA"
+        >
           <a
             href="?page=2"
             style={
@@ -1138,7 +1168,7 @@ exports[`ArticleList tests on web should render the article list pagination corr
 exports[`ArticleList tests on web should show an advert after the fifth article 1`] = `
 <div>
   <div
-    className="responsive-styles__component-fbPFZZ hkMMvo"
+    className="responsive-styles__component-fbPFZZ bSCqAc"
   >
     <div>
       <div>
@@ -1157,8 +1187,12 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           <div
             className="responsive-styles__component-fbPFZZ cePhpb"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>
@@ -1178,7 +1212,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1286,7 +1320,11 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
         id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/social-media-must-raise-game-to-beat-terrorists-says-un-chief-s5w8878f0"
           style={
@@ -1296,7 +1334,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1404,7 +1442,11 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
         id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/cuts-have-left-the-army-20-years-out-of-date-says-former-general-sir-richard-barrons-lg9txzbpn"
           style={
@@ -1414,7 +1456,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1522,7 +1564,11 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         data-testid="21627e52-c651-11e7-92dc-06edfbca4aab.3"
         id="21627e52-c651-11e7-92dc-06edfbca4aab.3"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/mod-recruits-more-civilians-as-royal-marines-face-axe-nqdh8v3zd"
           style={
@@ -1532,7 +1578,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1640,7 +1686,11 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         data-testid="9c4991b8-c657-11e7-92dc-06edfbca4aab.4"
         id="9c4991b8-c657-11e7-92dc-06edfbca4aab.4"
       >
-        <div />
+        <div
+          className="responsive-styles__component-fbPFZZ fpmWTY"
+        >
+          <div />
+        </div>
         <a
           href="https://www.thetimes.co.uk/article/remembrance-appeal-branches-out-with-poppy-onesies-mj2crrd8x"
           style={
@@ -1650,7 +1700,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1758,46 +1808,48 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         </a>
       </div>
       <div>
-        <div
-          style={
-            Object {
-              "height": 0,
-              "overflow": "hidden",
-              "width": 0,
-            }
-          }
-        />
         <div>
           <div
             style={
               Object {
-                "height": "90px",
-                "width": "728px",
+                "height": 0,
+                "overflow": "hidden",
+                "width": 0,
               }
             }
-          >
-            <div>
-              <svg
-                height={90}
-                width={728}
-              >
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                  id="Page-1"
-                  opacity="0.07"
-                  stroke="none"
-                  strokeWidth="1"
+          />
+          <div>
+            <div
+              style={
+                Object {
+                  "height": "90px",
+                  "width": "728px",
+                }
+              }
+            >
+              <div>
+                <svg
+                  height={90}
+                  width={728}
                 >
-                  <path
-                    fill="#1D1D1B"
-                    id="Shape"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div>
-              ADVERTISEMENT
+                  <g
+                    fill="none"
+                    fillRule="evenodd"
+                    id="Page-1"
+                    opacity="0.07"
+                    stroke="none"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fill="#1D1D1B"
+                      id="Shape"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                ADVERTISEMENT
+              </div>
             </div>
           </div>
         </div>
@@ -1807,7 +1859,6 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
         data-testid="937bc97c-c597-11e7-92dc-06edfbca4aab.5"
         id="937bc97c-c597-11e7-92dc-06edfbca4aab.5"
       >
-        <div />
         <a
           href="https://www.thetimes.co.uk/article/mod-heralds-a-renewed-special-relationship-with-us-d6wfnx3fs"
           style={
@@ -1817,7 +1868,7 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           }
         >
           <div
-            className="responsive-styles__component-fbPFZZ ereXyn"
+            className="responsive-styles__component-fbPFZZ hvIATq"
           >
             <div
               className="responsive-styles__component-fbPFZZ woNlo"
@@ -1941,8 +1992,12 @@ exports[`ArticleList tests on web should show an advert after the fifth article 
           <div
             className="responsive-styles__component-fbPFZZ ciodUt"
           >
-            <div />
-            <div />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
+            <div
+              className="responsive-styles__component-fbPFZZ cmwPJA"
+            />
           </div>
         </div>
       </div>

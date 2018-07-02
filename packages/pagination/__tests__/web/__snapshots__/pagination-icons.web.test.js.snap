@@ -6,7 +6,7 @@ exports[`PaginationIcons on Web Next page icon renders out an svg and label 1`] 
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "padding": 12,
+      "paddingVertical": "10px",
     }
   }
   testID="pagination-button-next"
@@ -46,7 +46,7 @@ exports[`PaginationIcons on Web Previous page icon renders out an svg and label 
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "padding": 12,
+      "paddingVertical": "10px",
     }
   }
   testID="pagination-button-previous"
