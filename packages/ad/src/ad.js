@@ -111,12 +111,18 @@ class Ad extends Component {
       />
     );
 
-    return (
-      <View style={[style]}>
-        {isLoading || hasError ? null : AdComponent}
-        {(isLoading || !isAdReady) && !hasError ? AdPlaceholderComponent : null}
-      </View>
-    );
+    const renderAds = () => {
+      if (hasError) return null;
+
+      return (
+        <View style={[style]}>
+          {isLoading ? null : AdComponent}
+          {isLoading || !isAdReady ? AdPlaceholderComponent : null}
+        </View>
+      );
+    };
+
+    return renderAds();
   }
 
   render() {
