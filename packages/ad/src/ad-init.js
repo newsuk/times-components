@@ -389,11 +389,9 @@ const adInit = args => {
       this.gpt.waitUntilReady().then(() => {
         if (hasAdBlocker) {
           this.destroySlots();
-          eventCallback("log", `User likely has ad blocker`);
-
-          return;
+          return eventCallback("adBlocker");
         }
-        eventCallback("renderComplete");
+        return eventCallback("renderComplete");
       });
     }
   };

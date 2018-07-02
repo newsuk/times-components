@@ -5,10 +5,12 @@ export const propTypes = {
   height: PropTypes.number.isRequired,
   init: PropTypes.func.isRequired,
   onRenderComplete: PropTypes.func,
+  onRenderError: PropTypes.func,
   width: PropTypes.number.isRequired
 };
 
 export const defaultProps = {
   data: {},
-  onRenderComplete: () => {}
+  onRenderComplete: () => {},
+  onRenderError: () => {}
 };
