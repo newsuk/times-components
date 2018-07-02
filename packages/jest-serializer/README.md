@@ -276,7 +276,7 @@ not_ updated to the reviewer. This would indicate it's not being correctly
 captured which can get lost with large "big picture" renders.
 
 Another pattern you want to look out for is repeated props throughout a snapshot
-which probably means they should be removed and onen test should represent them.
+which probably means they should be removed and one test should represent them.
 It's discretionary but probably means the snapshots aren't focused on the tests
 enough.
 
