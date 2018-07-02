@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import styles from "./styles";
-import { ListItemSeparator } from "./styles/responsive.web";
+import { ListItemSeparator } from "./styles/responsive";
 
 const ArticleListItemSeparator = () => (
   <ListItemSeparator>
