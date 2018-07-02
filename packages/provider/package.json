@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "0.37.0",
+  "version": "0.37.1",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -34,9 +34,9 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "1.0.4",
-    "@times-components/provider-test-tools": "0.13.0",
-    "@times-components/storybook": "1.1.0",
-    "@times-components/utils": "1.2.0",
+    "@times-components/provider-test-tools": "0.13.1",
+    "@times-components/storybook": "1.1.1",
+    "@times-components/utils": "1.2.1",
     "@times-components/webpack-configurator": "1.0.0",
     "apollo-utilities": "1.0.12",
     "babel-core": "6.26.0",

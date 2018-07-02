@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -34,7 +34,7 @@
     "@times-components/eslint-config-thetimes": "0.6.1",
     "@times-components/jest-configurator": "1.0.4",
     "@times-components/jest-serializer": "1.0.4",
-    "@times-components/storybook": "1.1.0",
+    "@times-components/storybook": "1.1.1",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -57,9 +57,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "1.1.5",
-    "@times-components/utils": "1.2.0",
-    "@times-components/watermark": "1.0.6",
+    "@times-components/styleguide": "1.1.6",
+    "@times-components/utils": "1.2.1",
+    "@times-components/watermark": "1.0.7",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/newsuk/times-components/compare/@times-components/ad@1.3.1...@times-components/ad@1.3.2) (2018-07-02)
+
+
+### Bug Fixes
+
+* handle ad blocker ([#1076](https://github.com/newsuk/times-components/issues/1076)) ([b9c308a](https://github.com/newsuk/times-components/commit/b9c308a))
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/newsuk/times-components/compare/@times-components/ad@1.3.0...@times-components/ad@1.3.1) (2018-07-02)
 
