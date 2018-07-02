@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/utils@1.1.4...@times-components/utils@1.2.0) (2018-07-02)
+
+
+### Features
+
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/newsuk/times-components/compare/@times-components/utils@1.1.3...@times-components/utils@1.1.4) (2018-06-29)
 
