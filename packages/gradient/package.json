@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -50,7 +50,7 @@
     "@times-components/jest-configurator": "1.0.4",
     "@times-components/jest-serializer": "1.0.4",
     "@times-components/storybook": "1.1.1",
-    "@times-components/video": "2.0.8",
+    "@times-components/video": "2.0.9",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
