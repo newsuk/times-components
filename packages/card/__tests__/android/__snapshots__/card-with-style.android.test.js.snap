@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. should render the default layout 1`] = `
+<View
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <Text>
+        A card
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. should render with reversed layout 1`] = `
+<View
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "height": "auto",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 10,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <Text>
+        A card in reverse
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 0,
+          "minWidth": "100%",
+        }
+      }
+    >
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. should render a loading state 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Object {
+          "height": 24,
+          "marginBottom": 10,
+          "maxWidth": 300,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`4. should render a reversed loading component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 10,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Gradient
+      degrees={264}
+      style={
+        Object {
+          "height": 24,
+          "marginBottom": 10,
+          "maxWidth": 300,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 10,
+        }
+      }
+    />
+    <Gradient
+      degrees={267}
+      style={
+        Object {
+          "height": 10,
+          "marginBottom": 0,
+          "maxWidth": 240,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 0,
+        "minWidth": "100%",
+      }
+    }
+  >
+    <Image
+      aspectRatio={0.6666666666666666}
+    />
+  </View>
+</View>
+`;

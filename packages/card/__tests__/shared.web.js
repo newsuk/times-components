@@ -1,37 +1,29 @@
+import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
-  flattenStyleTransform,
-  hoistStyleTransform,
   justChildren,
   meltNative,
+  minimaliseTransform,
   minimalWebTransform,
+  print,
   propsNoChildren,
   replaceTransform,
-  rnwTransform,
-  stylePrinter
+  rnwTransform
 } from "@times-components/jest-serializer";
-
-const styles = [
-  "alignItems",
-  "display",
-  "flex",
-  "flexDirection",
-  "flexWrap",
-  "height",
-  "justifyContent",
-  "marginBottom",
-  "maxWidth",
-  "minWidth"
-];
+import shared from "./shared.base";
 
 export default () => {
   addSerializers(
     expect,
     enzymeTreeSerializer(),
     compose(
-      stylePrinter,
+      print,
+      minimalWebTransform,
+      minimaliseTransform(
+        (value, key) => key === "style" || key === "className"
+      ),
       replaceTransform({
         CardComponent: justChildren,
         Gradient: propsNoChildren,
@@ -39,13 +31,9 @@ export default () => {
         TimesImage: propsNoChildren,
         ...meltNative
       }),
-      flattenStyleTransform,
-      hoistStyleTransform,
-      minimalWebTransform,
-      rnwTransform(styles)
+      rnwTransform()
     )
   );
 
-  // eslint-disable-next-line global-require
-  require("jest-styled-components");
+  shared(mount);
 };

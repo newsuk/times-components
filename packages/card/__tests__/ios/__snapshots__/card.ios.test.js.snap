@@ -1,659 +1,315 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Renders default layout 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
+exports[`1. should render the default layout 1`] = `
+<View>
+  <View>
+    <View>
+      <Image
         aspectRatio={0.6666666666666666}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+        uri="https://img.io/img&resize=360"
       />
     </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
+    <View>
       <Text>
         A card
       </Text>
     </View>
   </View>
-</FadeIn>
+</View>
 `;
 
-exports[`2. Renders default layout with placeholder 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
+exports[`2. should pass an empty state to the image component 1`] = `
+<View>
+  <View>
+    <View>
+      <Image
         aspectRatio={0.6666666666666666}
         uri=""
       />
     </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
+    <View>
       <Text>
-        A card
+        A card with an empty image
       </Text>
     </View>
   </View>
-</FadeIn>
+</View>
 `;
 
-exports[`3. Renders without an image (null) 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
-        aspectRatio={0.6666666666666666}
-        uri=""
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
+exports[`4. should render without an image when showImage is false 1`] = `
+<View>
+  <View>
+    <View>
       <Text>
         No image
       </Text>
     </View>
   </View>
-</FadeIn>
+</View>
 `;
 
-exports[`4. Renders without an image (showImage is false) 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Text>
-        No image
-      </Text>
-    </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`5. Renders without an image (uri is null) 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
+exports[`5. should pass an empty state to the image component when uri is null 1`] = `
+<View>
+  <View>
+    <View>
+      <Image
         aspectRatio={0.6666666666666666}
         uri=""
       />
     </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
+    <View>
       <Text>
-        No URL
+        No URI
       </Text>
     </View>
   </View>
-</FadeIn>
+</View>
 `;
 
-exports[`6. Renders with a reversed layout 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "height": "auto",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
+exports[`6. should render with reversed layout 1`] = `
+<View>
+  <View>
+    <View>
       <Text>
-        A card
+        A card in reverse
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
+    <View>
+      <Image
         aspectRatio={0.6666666666666666}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+        uri="https://img.io/img&resize=360"
       />
     </View>
   </View>
-</FadeIn>
+</View>
 `;
 
-exports[`7. Renders with a reversed layout with no image 1`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "height": "auto",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
+exports[`7. should render with reversed layout and no image 1`] = `
+<View>
+  <View>
+    <View>
       <Text>
-        A card
+        A card in reverse with no image
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. should render a loading state 1`] = `
+<View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+    />
+  </View>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+  </View>
+</View>
+`;
+
+exports[`10. should render a loading card with no image 1`] = `
+<View>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+  </View>
+</View>
+`;
+
+exports[`11. should render a reversed loading component 1`] = `
+<View>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+  </View>
+  <View>
+    <Image
+      aspectRatio={0.6666666666666666}
+    />
+  </View>
+</View>
+`;
+
+exports[`12. should render a reversed loading component with no image 1`] = `
+<View>
+  <View>
+    <Gradient
+      degrees={264}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+    <Gradient
+      degrees={267}
+    />
+  </View>
+</View>
+`;
+
+exports[`13. should not re-render when imageRatio prop is changed 1`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Text>
+        Do not re-render me
       </Text>
     </View>
   </View>
 </FadeIn>
 `;
 
-exports[`8. Renders a loading state 1`] = `
+exports[`13. should not re-render when imageRatio prop is changed 2`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Text>
+        Do not re-render me
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`14. should re-render when image uri changes 1`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Text>
+        Some text
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`14. should re-render when image uri changes 2`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="http://foo&resize=360"
+      />
+    </View>
+    <View>
+      <Text>
+        Some text
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`15. should re-render when image size changes 1`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img&resize=360"
+      />
+    </View>
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`15. should re-render when image size changes 2`] = `
+<FadeIn>
+  <View>
+    <View>
+      <Image
+        aspectRatio={0.6666666666666666}
+        uri="https://img.io/img"
+      />
+    </View>
+    <View>
+      <Text>
+        Some content
+      </Text>
+    </View>
+  </View>
+</FadeIn>
+`;
+
+exports[`16. should re-render when loading state changes 1`] = `
 <Loading
-  contentContainerClass=""
-  imageContainerClass=""
   imageRatio={0.6666666666666666}
   isReversed={false}
   showImage={true}
 />
 `;
 
-exports[`9. Renders a loading component 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 0,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Gradient
-      degrees={264}
-      style={
-        Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`10. Renders a loading component with no image 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 0,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Gradient
-      degrees={264}
-      style={
-        Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`11. Renders a reversed loading component 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Gradient
-      degrees={264}
-      style={
-        Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
-        }
-      }
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 0,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      uri=""
-    />
-  </View>
-</View>
-`;
-
-exports[`12. Renders a reversed loading component with no image 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "flex-start",
-      "display": "flex",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "justifyContent": "flex-end",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "marginBottom": 10,
-        "minWidth": "100%",
-      }
-    }
-  >
-    <Gradient
-      degrees={264}
-      style={
-        Object {
-          "height": 24,
-          "marginBottom": 10,
-          "maxWidth": 300,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 10,
-        }
-      }
-    />
-    <Gradient
-      degrees={267}
-      style={
-        Object {
-          "height": 10,
-          "marginBottom": 0,
-          "maxWidth": 240,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`Card tests on ios should not re-render when imageRatio prop is changed 1`] = `
+exports[`16. should re-render when loading state changes 2`] = `
 <FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
+  <View>
+    <View>
+      <Image
         aspectRatio={0.6666666666666666}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
+        uri="https://img.io/img&resize=360"
       />
     </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
+    <View>
       <Text>
-        Do not re-render me
-      </Text>
-    </View>
-  </View>
-</FadeIn>
-`;
-
-exports[`Card tests on ios should not re-render when imageRatio prop is changed 2`] = `
-<FadeIn>
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "display": "flex",
-        "flexDirection": "row",
-        "flexWrap": "wrap",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 10,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <TimesImage
-        aspectRatio={0.6666666666666666}
-        uri="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12&resize=360"
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 0,
-          "minWidth": "100%",
-        }
-      }
-    >
-      <Text>
-        Do not re-render me
+        Re-render me
       </Text>
     </View>
   </View>
