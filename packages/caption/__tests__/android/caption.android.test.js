@@ -1,6 +1,5 @@
-import "react-native";
-import shared from "../shared";
+import shared from "../shared.native";
 
-describe("Caption on Android", () => {
+describe("android", () => {
   shared();
 });

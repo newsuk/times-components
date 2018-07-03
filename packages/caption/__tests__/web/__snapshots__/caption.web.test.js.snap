@@ -1,135 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Caption on Web renders an image with a caption 1`] = `
+exports[`1. renders without credits 1`] = `
 <div>
   <div>
-    <div
-      style={
-        Object {
-          "display": "table",
-          "height": 0,
-          "overflow": "hidden",
-          "paddingBottom": "56.25%",
-        }
-      }
-    >
-      <img
-        alt=""
-        src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78"
-        style={
-          Object {
-            "display": "block",
-            "position": "absolute",
-            "width": "100%",
-            "zIndex": 1,
-          }
-        }
-      />
-      <div
-        style={
-          Object {
-            "bottom": "0px",
-            "left": "0px",
-            "position": "absolute",
-            "right": "0px",
-            "top": "0px",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      dir="auto"
-    >
+    <div>
       Some caption text goes in here
     </div>
-    <div
-      dir="auto"
-    >
+  </div>
+</div>
+`;
+
+exports[`2. renders with credits 1`] = `
+<div>
+  <div>
+    <div>
+      Some caption text goes in here
+    </div>
+    <div>
       JUST CREDITS
     </div>
   </div>
 </div>
 `;
 
-exports[`Caption on Web renders correctly with credits 1`] = `
+exports[`3. renders with credits only 1`] = `
 <div>
   <div>
-    <div
-      dir="auto"
-    >
-      Some caption text goes in here
-    </div>
-    <div
-      dir="auto"
-    >
+    <div>
       JUST CREDITS
     </div>
   </div>
 </div>
 `;
 
-exports[`Caption on Web renders correctly with credits only 1`] = `
+exports[`4. renders a child 1`] = `
 <div>
   <div>
-    <div
-      dir="auto"
-    >
-      JUST CREDITS
-    </div>
+    Hello world!
   </div>
-</div>
-`;
-
-exports[`Caption on Web renders correctly with specific styles 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "backgroundColor": "red",
-      }
-    }
-  >
-    <div
-      dir="auto"
-      style={
-        Object {
-          "color": "green",
-        }
-      }
-    >
-      Some caption text goes in here
-    </div>
-    <div
-      dir="auto"
-      style={
-        Object {
-          "color": "green",
-        }
-      }
-    >
-      JUST CREDITS
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Caption on Web renders correctly without credits 1`] = `
-<div>
   <div>
-    <div
-      dir="auto"
-    >
+    <div>
       Some caption text goes in here
+    </div>
+    <div>
+      JUST CREDITS
     </div>
   </div>
 </div>

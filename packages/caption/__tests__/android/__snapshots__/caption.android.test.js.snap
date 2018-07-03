@@ -1,284 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Caption on Android renders an image with a caption 1`] = `
+exports[`1. renders without credits 1`] = `
 <View>
-  <View
-    aspectRatio={1.7777777777777777}
-  >
-    <View
-      style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        source={
-          Object {
-            "uri": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=1440",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <ARTSurfaceView
-            style={
-              Object {
-                "bottom": 0,
-                "height": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          >
-            <ARTShape
-              d={
-                Array [
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                ]
-              }
-              fill={
-                Array [
-                  1,
-                  0,
-                  0,
-                  -0,
-                  0,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  1,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  1,
-                  0,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-          </ARTSurfaceView>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 20,
-        }
-      }
-    >
+  <View>
+    <Text>
       Some caption text goes in here
     </Text>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "lineHeight": 20,
-        }
-      }
-    >
+  </View>
+</View>
+`;
+
+exports[`2. renders with credits 1`] = `
+<View>
+  <View>
+    <Text>
+      Some caption text goes in here
+    </Text>
+    <Text>
       JUST CREDITS
     </Text>
   </View>
 </View>
 `;
 
-exports[`Caption on Android renders correctly with credits 1`] = `
+exports[`3. renders with credits only 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 20,
-        }
-      }
-    >
-      Some caption text goes in here
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "lineHeight": 20,
-        }
-      }
-    >
+  <View>
+    <Text>
       JUST CREDITS
     </Text>
   </View>
 </View>
 `;
 
-exports[`Caption on Android renders correctly with credits only 1`] = `
+exports[`4. renders a child 1`] = `
 <View>
-  <View
-    style={
-      Object {
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "lineHeight": 20,
-        }
-      }
-    >
-      JUST CREDITS
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Caption on Android renders correctly with specific styles 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "red",
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "green",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 20,
-        }
-      }
-    >
+  <Text>
+    Hello world!
+  </Text>
+  <View>
+    <Text>
       Some caption text goes in here
     </Text>
-    <Text
-      style={
-        Object {
-          "color": "green",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 9,
-          "fontWeight": "400",
-          "letterSpacing": 1,
-          "lineHeight": 20,
-        }
-      }
-    >
+    <Text>
       JUST CREDITS
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Caption on Android renders correctly without credits 1`] = `
-<View>
-  <View
-    style={
-      Object {
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 13,
-          "lineHeight": 20,
-        }
-      }
-    >
-      Some caption text goes in here
     </Text>
   </View>
 </View>

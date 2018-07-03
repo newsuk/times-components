@@ -1,6 +1,5 @@
-import "react-native";
-import shared from "../shared";
+import shared from "../shared.web";
 
-describe("Caption on Web", () => {
+describe("web", () => {
   shared();
 });

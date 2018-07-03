@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders with specific styles 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "green",
+  },
+  "IS2": {
+    "color": "green",
+  },
+  "IS3": {
+    "backgroundColor": "red",
+  },
+  "S1": {
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "17px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "9px",
+    "font-weight": "400",
+    "letter-spacing": "1px",
+    "line-height": "17px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "padding-top": "10px",
+  },
+  "S4": {
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="S4"
+>
+  <div
+    className="IS3 S3"
+  >
+    <div
+      className="IS1 S1"
+    >
+      Some caption text goes in here
+    </div>
+    <div
+      className="IS2 S2"
+    >
+      JUST CREDITS
+    </div>
+  </div>
+</div>
+`;
