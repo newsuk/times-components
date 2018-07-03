@@ -13,7 +13,7 @@ const props = {
 };
 
 export default renderMethod => {
-  // magic to stop the React Native Animated library from dying as each test kicks of another animation that uses timing
+  // magic to stop the React Native Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 
   it("should render the default layout", () => {
