@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 import Gradient from "../src/gradient";
 
-module.exports = renderMethod => {
+export default renderMethod => {
   it("renders", () => {
     const output = renderMethod(<Gradient />);
 
