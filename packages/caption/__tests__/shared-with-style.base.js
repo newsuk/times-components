@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import Caption from "../src/caption";

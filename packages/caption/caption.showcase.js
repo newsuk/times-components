@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import Image from "@times-components/image";
 import Caption from "./src/caption";
