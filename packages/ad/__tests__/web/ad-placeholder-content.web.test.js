@@ -14,23 +14,11 @@ import {
   rnwTransform
 } from "@times-components/jest-serializer";
 import AdPlaceholder from "../../src/ad-placeholder";
-import shared from "../ad-placeholder.shared";
 
 describe("web", () => {
   addSerializers(
     expect,
-    enzymeTreeSerializer(),
-    compose(
-      stylePrinter,
-      replaceTransform({
-        AdPlaceholder: justChildren,
-        Watermark: propsNoChildren,
-        ...meltNative
-      }),
-      minimalWebTransform,
-      hoistStyleTransform,
-      rnwTransform()
-    )
+    enzymeTreeSerializer()
   );
 
   it("should render an advert placeholder", () => {
@@ -38,6 +26,4 @@ describe("web", () => {
 
     expect(wrapper).toMatchSnapshot("1. Advert placeholder");
   });
-
-  shared();
 });

@@ -14,37 +14,23 @@ jest.mock("../../src/utils/ad-init", () => {
   });
 });
 
-describe.only("DOMContext Web", () => {
-  beforeEach(() => {
-    adInit.mockClear();
-  });
-
+describe("web", () => {
   const props = {
+    data: { foo: "bar" },
     height: 200,
     width: 200
   };
 
-  it("calls init", () => {
+  it("should initialise the ad code", () => {
     mount(<DOMContext {...props} />);
 
     expect(mockInit).toHaveBeenCalled();
   });
 
-  // // it("passes the data object to the init function", () => {
-  // //   const init = jest.fn(() => {
-  // //     return { init: () => {} };
-  // //   });
+  it("should handle an error", () => {
+    jest.spyOn(console, "error").mockImplementation();
 
-  // //   mount(<DOMContext {...props} data={{ foo: "bar" }} />);
-
-  // //   expect(init).toHaveBeenCalledWith(
-  // //     expect.objectContaining({
-  // //       data: { foo: "bar" }
-  // //     })
-  // //   );
-  // // });
-
-  it("reports an error in the init function", () => {
+    const eventCallbackMock = jest.fn();
     adInit.mockImplementation(() => {
       throw new Error("broken");
     });
@@ -53,66 +39,12 @@ describe.only("DOMContext Web", () => {
       mount(
         <DOMContext
           {...props}
-          data={{ foo: "bar" }}
         />
       );
     };
 
     expect(runWithError).toThrowError("broken");
   });
-
-  // it("throw an error", () => {
-  //   const runWithError = () => {
-  //     mount(
-  //       <DOMContext
-  //         init={({ eventCallback }) => eventCallback("error", "error message")}
-  //         data={{ foo: "bar" }}
-  //       />
-  //     );
-  //   };
-
-  //   expect(runWithError).toThrowError("DomContext error: error message");
-  // });
-
-  // it("calls the renderComplete callback when a renderComplete event is dispatched", () => {
-  //   const onRenderComplete = jest.fn();
-
-  //   mount(
-  //     <DOMContext
-  //       init={({ eventCallback }) => eventCallback("renderComplete")}
-  //       onRenderComplete={onRenderComplete}
-  //     />
-  //   );
-
-  //   expect(onRenderComplete).toHaveBeenCalled();
-  // });
-
-  // it("does not error when init dispatches a renderComplete event but no onRenderComplete callback is provided", () => {
-  //   const f = () =>
-  //     mount(
-  //       <DOMContext
-  //         {...props}
-  //         init={({ eventCallback }) => eventCallback("renderComplete")}
-  //       />
-  //     );
-  //   expect(f).not.toThrow();
-  // });
-
-  // it("Doesn't throw an error when given an invalid event name", () => {
-  //   /* eslint arrow-body-style: ["error", "as-needed", { "requireReturnForObjectLiteral": true }] */
-  //   const component = mount(
-  //     <DOMContext
-  //       {...props}
-  //       init={() => {
-  //         return { init: () => {} };
-  //       }}
-  //     />
-  //   );
-
-  //   expect(() => {
-  //     component.instance().processEvent({ type: "invalid" });
-  //   }).not.toThrowError();
-  // });
 
   it("should destroy all ad slots when unmounting", () => {
     adInit.mockImplementation(() => {
@@ -123,7 +55,7 @@ describe.only("DOMContext Web", () => {
     });
 
     const wrapper = shallow(
-      <DOMContext {...props} data={{}} />
+      <DOMContext {...props} />
     );
 
     wrapper.unmount();

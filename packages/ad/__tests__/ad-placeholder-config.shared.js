@@ -5,7 +5,7 @@ export default () => {
     const height = 90;
     const width = 728;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "2. Small ViewBox config"
+      "1. Small ViewBox config"
     );
   });
 
@@ -13,7 +13,7 @@ export default () => {
     const height = 250;
     const width = 300;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "3. MPU ViewBox config"
+      "2. MPU ViewBox config"
     );
   });
 

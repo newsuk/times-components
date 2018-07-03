@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Small ViewBox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;
+
+exports[`2. MPU ViewBox config 1`] = `
+Object {
+  "marginLeft": 15,
+  "marginTop": 0,
+  "svgHeight": 250,
+  "svgWidth": 269,
+}
+`;
+
+exports[`3. Billboard ViewBox config 1`] = `
+Object {
+  "marginLeft": 630,
+  "marginTop": -120,
+  "svgHeight": 50,
+  "svgWidth": 1200,
+}
+`;
+
+exports[`4. Default ViewBox config 1`] = `
+Object {
+  "marginLeft": 50,
+  "marginTop": 0,
+  "svgHeight": 50,
+  "svgWidth": 700,
+}
+`;
