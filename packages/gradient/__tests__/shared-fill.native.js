@@ -20,38 +20,38 @@ export default () => {
   );
 
   it("renders with no angle", () => {
-    const output = TestRenderer.create(<Gradient />);
+    const testInstance = TestRenderer.create(<Gradient />);
 
-    expect(output).toMatchSnapshot("1. renders with no angle");
+    expect(testInstance).toMatchSnapshot("1. renders with no angle");
   });
 
   it("renders with an angle (-45)", () => {
-    const output = TestRenderer.create(<Gradient degrees={-45} />);
+    const testInstance = TestRenderer.create(<Gradient degrees={-45} />);
 
-    expect(output).toMatchSnapshot("2. renders with an angle (-45)");
+    expect(testInstance).toMatchSnapshot("2. renders with an angle (-45)");
   });
 
   it("renders with an angle (45)", () => {
-    const output = TestRenderer.create(<Gradient degrees={45} />);
+    const testInstance = TestRenderer.create(<Gradient degrees={45} />);
 
-    expect(output).toMatchSnapshot("3. renders with an angle (45)");
+    expect(testInstance).toMatchSnapshot("3. renders with an angle (45)");
   });
 
   it("renders with an angle (90)", () => {
-    const output = TestRenderer.create(<Gradient degrees={90} />);
+    const testInstance = TestRenderer.create(<Gradient degrees={90} />);
 
-    expect(output).toMatchSnapshot("4. renders with an angle (90)");
+    expect(testInstance).toMatchSnapshot("4. renders with an angle (90)");
   });
 
   it("renders with an angle (180)", () => {
-    const output = TestRenderer.create(<Gradient degrees={180} />);
+    const testInstance = TestRenderer.create(<Gradient degrees={180} />);
 
-    expect(output).toMatchSnapshot("5. renders with an angle (180)");
+    expect(testInstance).toMatchSnapshot("5. renders with an angle (180)");
   });
 
   it("renders with an angle (270)", () => {
-    const output = TestRenderer.create(<Gradient degrees={270} />);
+    const testInstance = TestRenderer.create(<Gradient degrees={270} />);
 
-    expect(output).toMatchSnapshot("6. renders with an angle (270)");
+    expect(testInstance).toMatchSnapshot("6. renders with an angle (270)");
   });
 };

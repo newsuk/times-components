@@ -23,7 +23,7 @@ export default () => {
   );
 
   it("renders using prop styles", () => {
-    const output = TestRenderer.create(
+    const testInstance = TestRenderer.create(
       <Gradient
         style={{
           height: 200,
@@ -32,11 +32,11 @@ export default () => {
       />
     );
 
-    expect(output).toMatchSnapshot("1. renders using prop styles");
+    expect(testInstance).toMatchSnapshot("1. renders using prop styles");
   });
 
   it("renders using array prop styles", () => {
-    const output = TestRenderer.create(
+    const testInstance = TestRenderer.create(
       <Gradient
         style={[
           {
@@ -49,7 +49,7 @@ export default () => {
       />
     );
 
-    expect(output).toMatchSnapshot("2. renders using array prop styles");
+    expect(testInstance).toMatchSnapshot("2. renders using array prop styles");
   });
 
   it("renders using stylesheets", () => {
@@ -59,7 +59,7 @@ export default () => {
       }
     });
 
-    const output = TestRenderer.create(
+    const testInstance = TestRenderer.create(
       <Gradient
         style={[
           styles.container,
@@ -73,6 +73,6 @@ export default () => {
       />
     );
 
-    expect(output).toMatchSnapshot("3. renders using stylesheets");
+    expect(testInstance).toMatchSnapshot("3. renders using stylesheets");
   });
 };
