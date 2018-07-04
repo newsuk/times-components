@@ -95,8 +95,8 @@ class Ad extends Component {
       <DOMContext
         baseUrl={baseUrl}
         data={data}
-        onRenderError={this.setAdError}
         onRenderComplete={this.setAdReady}
+        onRenderError={this.setAdError}
         {...sizeProps}
       />
     );
