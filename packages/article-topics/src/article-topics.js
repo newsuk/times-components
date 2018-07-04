@@ -5,12 +5,15 @@ import ArticleTopic from "./article-topic";
 import styles from "./styles";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
+const MAX_TOPICS = 5;
 
 const ArticleTopics = ({ topics, style, onPress }) => (
   <View style={[styles.topicGroup, style]}>
-    {topics.map(({ name, slug }) => (
-      <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
-    ))}
+    {topics
+      .slice(0, MAX_TOPICS)
+      .map(({ name, slug }) => (
+        <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
+      ))}
   </View>
 );
 

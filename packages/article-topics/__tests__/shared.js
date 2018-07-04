@@ -15,13 +15,13 @@ module.exports = () => {
     mockDate.reset();
   });
 
-  it("renders a group of topics in the correct order", () => {
+  it("renders a group of topics in the correct order and only 5", () => {
     const wrapper = shallow(
       <ArticleTopics topics={topicData} onPress={() => {}} />
     );
 
     expect(wrapper).toMatchSnapshot(
-      "1. Render a group of topics in the correct order"
+      "1. Render a group of topics in the correct order and only 5"
     );
   });
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Render a group of topics in the correct order 1`] = `
+exports[`1. Render a group of topics in the correct order and only 5 1`] = `
 <View
   style={
     Object {
@@ -27,8 +27,8 @@ exports[`1. Render a group of topics in the correct order 1`] = `
     slug="arsenal"
   />
   <WithTrackEvents(ArticleTopic)
-    name="Rugby Union"
-    slug="rugby-union"
+    name="Luton Town"
+    slug="luton-town"
   />
 </View>
 `;

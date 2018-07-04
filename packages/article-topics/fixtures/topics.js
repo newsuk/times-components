@@ -16,6 +16,10 @@ const topicsData = [
     name: "Arsenal"
   },
   {
+    slug: "luton-town",
+    name: "Luton Town"
+  },
+  {
     slug: "rugby-union",
     name: "Rugby Union"
   }
