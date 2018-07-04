@@ -5,7 +5,7 @@ export default () => {
     const height = 90;
     const width = 728;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "1. Small ViewBox config"
+      "1. small ViewBox config"
     );
   });
 
@@ -13,7 +13,7 @@ export default () => {
     const height = 250;
     const width = 300;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "2. MPU ViewBox config"
+      "2. mpu ViewBox config"
     );
   });
 
@@ -21,7 +21,7 @@ export default () => {
     const height = 250;
     const width = 970;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "3. Billboard ViewBox config"
+      "3. billboard ViewBox config"
     );
   });
 
@@ -29,7 +29,7 @@ export default () => {
     const height = 50;
     const width = 700;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "4. Default ViewBox config"
+      "4. default ViewBox config"
     );
   });
 };

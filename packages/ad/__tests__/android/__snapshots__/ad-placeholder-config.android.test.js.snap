@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Small ViewBox config 1`] = `
+exports[`1. small ViewBox config 1`] = `
 Object {
   "marginLeft": 630,
   "marginTop": -120,
@@ -9,7 +9,7 @@ Object {
 }
 `;
 
-exports[`2. MPU ViewBox config 1`] = `
+exports[`2. mpu ViewBox config 1`] = `
 Object {
   "marginLeft": 15,
   "marginTop": 0,
@@ -18,7 +18,7 @@ Object {
 }
 `;
 
-exports[`3. Billboard ViewBox config 1`] = `
+exports[`3. billboard ViewBox config 1`] = `
 Object {
   "marginLeft": 630,
   "marginTop": -120,
@@ -27,7 +27,7 @@ Object {
 }
 `;
 
-exports[`4. Default ViewBox config 1`] = `
+exports[`4. default ViewBox config 1`] = `
 Object {
   "marginLeft": 50,
   "marginTop": 0,

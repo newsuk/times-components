@@ -28,15 +28,16 @@ describe("web", () => {
   it("should handle an error", () => {
     jest.spyOn(console, "error").mockImplementation();
 
-    adInit.mockImplementation(() =>
-      throw new Error("broken")
-    );
+    adInit.mockImplementation(() => {
+      const testError = new Error("test error");
+      throw testError;
+    });
 
     const runWithError = () => {
       mount(<DOMContext {...props} />);
     };
 
-    expect(runWithError).toThrowError("broken");
+    expect(runWithError).toThrowError("test error");
   });
 
   it("should destroy all ad slots when unmounting", () => {
