@@ -27,8 +27,8 @@ exports[`1. Render a group of topics in the correct order and only 5 1`] = `
     slug="arsenal"
   />
   <WithTrackEvents(ArticleTopic)
-    name="Luton Town"
-    slug="luton-town"
+    name="Rugby Union"
+    slug="rugby-union"
   />
 </View>
 `;
