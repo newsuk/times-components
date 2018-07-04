@@ -6,8 +6,6 @@ import {
   enzymeTreeSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
-  justChildren,
-  meltNative,
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
@@ -37,7 +35,9 @@ describe("web", () => {
   );
 
   it("should render an advert placeholder", () => {
-    const wrapper = mount(<AdPlaceholder height={300} style={style} width={970} />);
+    const wrapper = mount(
+      <AdPlaceholder height={300} style={style} width={970} />
+    );
 
     expect(wrapper).toMatchSnapshot("1. Advert placeholder");
   });

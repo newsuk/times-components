@@ -1,15 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Advert placeholder 1`] = `
+exports[`1. advert placeholder 1`] = `
 <View>
   <View>
     <View>
-      <Image
-        resizeMode="contain"
-        source={1}
+      <Watermark
+        height={300}
+        viewBox="-630 120 1200 50"
+        width={970}
       />
     </View>
-    <Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
       ADVERTISEMENT
     </Text>
   </View>

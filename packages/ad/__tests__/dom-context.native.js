@@ -1,6 +1,4 @@
-import React from "react";
 import { Linking } from "react-native";
-import renderer from "react-test-renderer";
 import DOMContextNative from "../src/dom-context";
 
 // prevent function sources appearing in snapshots

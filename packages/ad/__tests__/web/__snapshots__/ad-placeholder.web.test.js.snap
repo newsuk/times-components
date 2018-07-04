@@ -10,11 +10,7 @@ exports[`1. advert placeholder 1`] = `
         width={970}
       />
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       ADVERTISEMENT
     </Text>
   </View>

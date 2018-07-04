@@ -5,14 +5,12 @@ import DOMContext from "../../src/dom-context.web";
 
 const mockInit = jest.fn();
 const mockDestroySlots = jest.fn();
-jest.mock("../../src/utils/ad-init", () => {
-  return jest.fn().mockImplementation(() => {
-    return {
-      init: mockInit,
-      destroySlots: mockDestroySlots
-    };
-  });
-});
+jest.mock("../../src/utils/ad-init", () =>
+  jest.fn().mockImplementation(() => ({
+    init: mockInit,
+    destroySlots: mockDestroySlots
+  }))
+);
 
 describe("web", () => {
   const props = {
@@ -30,33 +28,24 @@ describe("web", () => {
   it("should handle an error", () => {
     jest.spyOn(console, "error").mockImplementation();
 
-    const eventCallbackMock = jest.fn();
-    adInit.mockImplementation(() => {
-      throw new Error("broken");
-    });
+    adInit.mockImplementation(() =>
+      throw new Error("broken")
+    );
 
     const runWithError = () => {
-      mount(
-        <DOMContext
-          {...props}
-        />
-      );
+      mount(<DOMContext {...props} />);
     };
 
     expect(runWithError).toThrowError("broken");
   });
 
   it("should destroy all ad slots when unmounting", () => {
-    adInit.mockImplementation(() => {
-      return {
-        init: mockInit,
-        destroySlots: mockDestroySlots
-      };
-    });
+    adInit.mockImplementation(() => ({
+      init: mockInit,
+      destroySlots: mockDestroySlots
+    }));
 
-    const wrapper = shallow(
-      <DOMContext {...props} />
-    );
+    const wrapper = shallow(<DOMContext {...props} />);
 
     wrapper.unmount();
 

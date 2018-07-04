@@ -46,8 +46,6 @@ class DOMContext extends Component {
   }
 
   processEvent = ({ type, detail }) => {
-    console.log("TYPE: ", type);
-    console.log("DETAIL: ", detail);
     if (this.eventQueue.length === 0) return;
     if (type === "error") {
       throw new Error(`DomContext error: ${detail}`);

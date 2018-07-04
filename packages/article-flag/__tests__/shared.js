@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import { shallow } from "enzyme";
 import {
@@ -12,32 +11,32 @@ import {
   SponsoredArticleFlag
 } from "../src/article-flag";
 
-module.exports = () => {
+export default () => {
   describe("should render the", () => {
     addSerializers(expect, enzymeRootSerializer());
 
-    it("New flag", () => {
+    it("new flag", () => {
       const wrapper = shallow(<NewArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("2. New flag");
+      expect(wrapper).toMatchSnapshot("2. new flag");
     });
 
-    it("Updated flag", () => {
+    it("updated flag", () => {
       const wrapper = shallow(<UpdatedArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("3. Updated flag");
+      expect(wrapper).toMatchSnapshot("3. updated flag");
     });
 
-    it("Exclusive flag", () => {
+    it("exclusive flag", () => {
       const wrapper = shallow(<ExclusiveArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("4. Exclusive flag");
+      expect(wrapper).toMatchSnapshot("4. exclusive flag");
     });
 
-    it("Sponsored flag", () => {
+    it("sponsored flag", () => {
       const wrapper = shallow(<SponsoredArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("5. Sponsored flag");
+      expect(wrapper).toMatchSnapshot("5. sponsored flag");
     });
   });
 };
