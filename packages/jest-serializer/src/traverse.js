@@ -56,14 +56,12 @@ const transform = (accum, transformElement, node) => {
       element: node
     };
 
-  const { accum: childAccum, children } = (
-    node.children ||
-    node.props.children ||
-    []
-  ).reduce(transformChildren(transform, transformElement), {
-    accum,
-    children: []
-  });
+  const { accum: childAccum, children } = []
+    .concat(node.children || node.props.children || [])
+    .reduce(transformChildren(transform, transformElement), {
+      accum,
+      children: []
+    });
 
   const trp = transformRenderProps(
     transform,

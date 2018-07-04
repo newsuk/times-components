@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`0. IconDiamond renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 50,
+      "width": 50,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        2.5,
+        0,
+        0,
+        2.5,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTGroup
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d="c3ca00c47bbe3e1a429d0716c0592877"
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`1. IconTwitter renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 40,
+      "width": 50,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        0.06666666666666667,
+        0,
+        0,
+        0.06666666666666667,
+        23.6,
+        18.6,
+      ]
+    }
+  >
+    <ARTShape
+      d="2b20b5d514bdec5d4c2f5d1eb0ad437c"
+      fill={
+        Array [
+          0,
+          0,
+          0.4,
+          0.6,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`2. IconVideo renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 28.26086956521739,
+      "width": 50,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        2.1739130434782608,
+        0,
+        0,
+        2.1739130434782608,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTShape
+      d="449cccb3ac16d057a2c74d137cfbbbfb"
+      fill={
+        Array [
+          0,
+          0.11372549019607843,
+          0.11372549019607843,
+          0.10588235294117647,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+    <ARTShape
+      d="f2fe184e88869d0ef2eb25afbc19b807"
+      fill={
+        Array [
+          0,
+          0.11372549019607843,
+          0.11372549019607843,
+          0.10588235294117647,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+    <ARTShape
+      d="aa5d049c3b5acb33e4312411ca0e1c65"
+      fill={
+        Array [
+          0,
+          0.11372549019607843,
+          0.11372549019607843,
+          0.10588235294117647,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`3. IconEmail renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 36.36363636363637,
+      "width": 50.00000000000001,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        2.272727272727273,
+        0,
+        0,
+        2.272727272727273,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTGroup
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d="4c3e2447d8a07529d4601a20e2be1f86"
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`4. IconStar renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 50,
+      "width": 50,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        2.9411764705882355,
+        0,
+        0,
+        2.9411764705882355,
+        -35.294117647058826,
+        -32.352941176470594,
+      ]
+    }
+  >
+    <ARTShape
+      d="f40095102020601e0dbdf5ec3d81fbd2"
+      fill={
+        Array [
+          0,
+          0.11372549019607843,
+          0.11372549019607843,
+          0.10588235294117647,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`5. IconFacebook renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 100,
+      "width": 50,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        5,
+        0,
+        0,
+        5,
+        -70,
+        -50,
+      ]
+    }
+  >
+    <ARTGroup
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    >
+      <ARTShape
+        d="2189892cba14977e0cdb05b5f065a642"
+        fill={
+          Array [
+            0,
+            0.11372549019607843,
+            0.11372549019607843,
+            0.10588235294117647,
+            1,
+          ]
+        }
+        stroke={null}
+        strokeCap={1}
+        strokeDash={null}
+        strokeJoin={1}
+        strokeWidth={1}
+        transform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+      />
+    </ARTGroup>
+  </ARTGroup>
+</ARTSurfaceView>
+`;

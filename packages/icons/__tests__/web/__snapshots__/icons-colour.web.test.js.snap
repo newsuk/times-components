@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`0. IconDiamond renders with different colours 1`] = `
+<g
+  fill="#facade"
+  stroke="#c0ffee"
+>
+  <path />
+</g>
+`;
+
+exports[`1. IconTwitter renders with different colours 1`] = `
+<path
+  fill="#facade"
+  stroke="#c0ffee"
+/>
+`;
+
+exports[`2. IconVideo renders with different colours 1`] = `
+Array [
+  <rect
+    fill="#facade"
+    height="13.5721404"
+    stroke="#c0ffee"
+    width="15.4550103"
+    x="0.154639175"
+    y="0.139754386"
+  />,
+  <polygon
+    fill="#facade"
+    points="e6624ad17344f251daa0c00df406817b"
+    stroke="#c0ffee"
+  />,
+  <polygon
+    fill="#facade"
+    points="26d8194b38b196f22e7d31ee45b19805"
+    stroke="#c0ffee"
+  />,
+]
+`;
+
+exports[`3. IconEmail renders with different colours 1`] = `
+<g
+  fill="#facade"
+  fillRule="nonzero"
+  stroke="#c0ffee"
+>
+  <path />
+</g>
+`;
+
+exports[`4. IconStar renders with different colours 1`] = `
+<polygon
+  fill="#facade"
+  points="03c58ab70fd52f598d210973eeea7848"
+  stroke="#c0ffee"
+/>
+`;
+
+exports[`5. IconFacebook renders with different colours 1`] = `
+<g
+  fill="#facade"
+  fillRule="nonzero"
+  stroke="#c0ffee"
+>
+  <path />
+</g>
+`;

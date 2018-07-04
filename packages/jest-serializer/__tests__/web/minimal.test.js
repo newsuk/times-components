@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import renderer from "react-test-renderer";
-import { addSerializers, minimalWeb } from "../../src";
+import { addSerializers, enzymeRootSerializer, minimalWeb } from "../../src";
 import shared from "../shared.minimal";
 
 describe("The minimal serializer should", () => {
   describe("for web", () => {
-    addSerializers(expect, minimalWeb);
+    addSerializers(expect, enzymeRootSerializer(), minimalWeb);
 
     it("not remove className", () => {
       const styles = StyleSheet.create({

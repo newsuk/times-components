@@ -1,31 +1,27 @@
 import { View, Text } from "react-native";
-import { Path } from "svgs";
-import PropTypes from "prop-types";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
+import Enzyme, { shallow } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 export default () => {
-  it("remove d-prop from path", () => {
-    const component = <Path d="1 2 3 4 5 6" />;
-    const tree = renderer.create(component);
-    expect(tree).toMatchSnapshot();
-  });
-
   it("transform render props", () => {
-    const propToRender = <Path d="1 2 3 4 5 6" />;
-    const Nested = props => <Text {...props}>Nested</Text>;
-    const PropRenderer = ({ prop }) => (
-      <View>
-        <Nested prop={prop} />
-      </View>
+    const Foo = () => <Text>World</Text>;
+    const PropRenderer = () => (
+      <Foo
+        prop={
+          <Text href="href" dir="dir">
+            Bar
+          </Text>
+        }
+      />
     );
 
-    PropRenderer.propTypes = {
-      prop: PropTypes.element.isRequired
-    };
+    const wrapper = shallow(<PropRenderer prop={<Text>Hello</Text>} />);
 
-    const tree = renderer.create(<PropRenderer prop={propToRender} />);
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("remove undefined props", () => {
@@ -36,8 +32,9 @@ export default () => {
       </View>
     );
 
-    const tree = renderer.create(<DummyRenderer />);
-    expect(tree.toJSON()).toMatchSnapshot();
+    const testInstance = TestRenderer.create(<DummyRenderer />);
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 
   it("remove functions as props", () => {
@@ -48,8 +45,9 @@ export default () => {
       </View>
     );
 
-    const tree = renderer.create(<DummyRenderer />);
-    expect(tree.toJSON()).toMatchSnapshot();
+    const testInstance = TestRenderer.create(<DummyRenderer />);
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 
   it("remove empty objects as props", () => {
@@ -59,7 +57,8 @@ export default () => {
       </View>
     );
 
-    const tree = renderer.create(<DummyRenderer />);
-    expect(tree.toJSON()).toMatchSnapshot();
+    const testInstance = TestRenderer.create(<DummyRenderer />);
+
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 };
