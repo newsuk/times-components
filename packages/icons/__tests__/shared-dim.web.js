@@ -20,7 +20,7 @@ export default () => {
       replaceTransform({
         svg: propsNoChildren
       }),
-      minimaliseTransform((value, key) => key === "style"),
+      minimaliseTransform((value, key) => key === "style" || key === "viewBox"),
       replaceLongKeys
     )
   );

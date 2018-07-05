@@ -20,7 +20,7 @@ export default () => {
       replaceTransform({
         svg: justChildren
       }),
-      minimaliseTransform((value, key) => key === "d" || key === "style"),
+      minimaliseTransform((value, key) => key !== "fill" && key !== "stroke"),
       replaceLongKeys
     )
   );
