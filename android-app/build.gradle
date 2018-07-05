@@ -1,0 +1,72 @@
+import groovy.json.JsonSlurper
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+def reactRepositoryPath = "$rootDir/repo"
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url "$reactRepositoryPath"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+task removePreviousReactArchives(type: Delete) {
+    delete reactRepositoryPath
+}
+
+task generateReactArchives {
+    subprojects { subproject ->
+        apply plugin: 'maven'
+        def reactProjects = ['react-native-svg', 'react-native-device-info']
+
+        if (reactProjects.contains(subproject.name)) {
+            task generateReactArchive(type: Upload) {
+                configuration = subproject.configurations.archives
+                def jsonFile = file("$rootDir/../node_modules/$subproject.name/package.json")
+                def packageJson = new JsonSlurper().parseText(jsonFile.text)
+                repositories.mavenDeployer {
+                    repository url: "file://${reactRepositoryPath}"
+
+                    pom.project {
+                        groupId 'react-repo'
+                        artifactId subproject.name
+                        version packageJson.version
+                    }
+                }
+            }
+
+            generateReactArchives.dependsOn(generateReactArchive)
+        }
+    }
+    task reactNativeCopy(type: Copy) {
+        from('../node_modules/react-native/android')
+        into(reactRepositoryPath)
+    }
+
+    reactNativeCopy.dependsOn(removePreviousReactArchives)
+    generateReactArchives.dependsOn(reactNativeCopy)
+}

@@ -85,7 +85,9 @@
     }
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "android-app",
+    "ios-app"
   ],
   "repository": {
     "type": "git",
