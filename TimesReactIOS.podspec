@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'json'
 
-package = JSON.parse(File.read("./packages/ios-app/package.json"))
+package = JSON.parse(File.read("./ios-app/package.json"))
 
 podspec_version = package["version"]
 react_native_version = package["dependencies"]["react-native"]
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '9.0'
   s.swift_version = '3.0'
-  #s.resources   = "./packages/ios-app/assets/js/index.ios.bundle"
-  #s.resource_bundles = {'TimesReactIOSBundle' => './packages/ios-app/assets/js/index.ios.bundle'}
+  #s.resources   = "./ios-app/assets/js/index.ios.bundle"
+  #s.resource_bundles = {'TimesReactIOSBundle' => './ios-app/assets/js/index.ios.bundle'}
   
   # React is split into a set of subspecs, these are the essentials
   
