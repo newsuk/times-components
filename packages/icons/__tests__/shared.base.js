@@ -7,7 +7,7 @@ export default renderMethod =>
     const testName = `${name} renders`;
 
     it(testName, () => {
-      const output = renderMethod(<Icon title={name} width={50} height={50} />);
+      const output = renderMethod(<Icon title={name} width={20} />);
 
       expect(output).toMatchSnapshot(`${indx + 1}. ${testName}`);
     });

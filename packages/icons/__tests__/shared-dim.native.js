@@ -4,7 +4,9 @@ import {
   compose,
   flattenStyleTransform,
   minimaliseTransform,
-  print
+  print,
+  propsNoChildren,
+  replaceTransform
 } from "@times-components/jest-serializer";
 import shared from "./shared-dim.base";
 import replaceLongKeys from "./utils";
@@ -14,6 +16,9 @@ export default () => {
     expect,
     compose(
       print,
+      replaceTransform({
+        ARTSurfaceView: propsNoChildren
+      }),
       flattenStyleTransform,
       minimaliseTransform((value, key) => key === "opacity"),
       replaceLongKeys
