@@ -201,7 +201,7 @@ independent of what `jest.mock` provides or because you don't want to globally
 mock the dependency. `jest-mock` also doesn't play well with web or named member
 imports.
 
-###replaceProp
+### replaceProp
 
 **replaceProp((value: Object, key: string): Object): Serializer**
 

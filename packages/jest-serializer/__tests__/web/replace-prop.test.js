@@ -1,7 +1,7 @@
 import { addSerializers, enzymeRootSerializer, replaceProp } from "../../src";
 import shared from "../shared.replace-prop";
 
-describe("The replace prop serializer should", () => {
+describe("the replace prop serializer should", () => {
   describe("for native", () => {
     addSerializers(
       expect,
