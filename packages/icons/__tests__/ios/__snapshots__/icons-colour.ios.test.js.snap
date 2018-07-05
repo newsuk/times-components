@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`0. IconDiamond renders with different colours 1`] = `
+exports[`1. IconDiamond renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -72,7 +72,7 @@ exports[`0. IconDiamond renders with different colours 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`1. IconTwitter renders with different colours 1`] = `
+exports[`2. IconTwitter renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -131,7 +131,7 @@ exports[`1. IconTwitter renders with different colours 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`2. IconVideo renders with different colours 1`] = `
+exports[`3. IconVideo renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -258,7 +258,7 @@ exports[`2. IconVideo renders with different colours 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`3. IconEmail renders with different colours 1`] = `
+exports[`4. IconEmail renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -330,7 +330,7 @@ exports[`3. IconEmail renders with different colours 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`4. IconStar renders with different colours 1`] = `
+exports[`5. IconStar renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -389,7 +389,7 @@ exports[`4. IconStar renders with different colours 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`5. IconFacebook renders with different colours 1`] = `
+exports[`6. IconFacebook renders with different colours 1`] = `
 <ARTSurfaceView
   style={
     Object {

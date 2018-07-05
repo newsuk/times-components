@@ -14,6 +14,6 @@ export default renderMethod =>
         <Icon strokeColour={stroke} height={50} fillColour={fill} />
       );
 
-      expect(wrapper).toMatchSnapshot(`${indx}. ${testName}`);
+      expect(wrapper).toMatchSnapshot(`${indx + 1}. ${testName}`);
     });
   });

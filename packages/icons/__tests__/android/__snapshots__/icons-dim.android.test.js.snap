@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`0. IconDiamond sets a width when height is set 1`] = `
+exports[`1. IconDiamond sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -65,7 +65,7 @@ exports[`0. IconDiamond sets a width when height is set 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`1. IconTwitter sets a width when height is set 1`] = `
+exports[`2. IconTwitter sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -117,7 +117,7 @@ exports[`1. IconTwitter sets a width when height is set 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`2. IconVideo sets a width when height is set 1`] = `
+exports[`3. IconVideo sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -223,7 +223,7 @@ exports[`2. IconVideo sets a width when height is set 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`3. IconEmail sets a width when height is set 1`] = `
+exports[`4. IconEmail sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -288,7 +288,7 @@ exports[`3. IconEmail sets a width when height is set 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`4. IconStar sets a width when height is set 1`] = `
+exports[`5. IconStar sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -340,7 +340,7 @@ exports[`4. IconStar sets a width when height is set 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`5. IconFacebook sets a width when height is set 1`] = `
+exports[`6. IconFacebook sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {

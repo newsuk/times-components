@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`0. IconDiamond renders 1`] = `
+exports[`1. IconDiamond renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -21,7 +21,7 @@ exports[`0. IconDiamond renders 1`] = `
 </svg>
 `;
 
-exports[`1. IconTwitter renders 1`] = `
+exports[`2. IconTwitter renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -39,7 +39,7 @@ exports[`1. IconTwitter renders 1`] = `
 </svg>
 `;
 
-exports[`2. IconVideo renders 1`] = `
+exports[`3. IconVideo renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -68,7 +68,7 @@ exports[`2. IconVideo renders 1`] = `
 </svg>
 `;
 
-exports[`3. IconEmail renders 1`] = `
+exports[`4. IconEmail renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -90,7 +90,7 @@ exports[`3. IconEmail renders 1`] = `
 </svg>
 `;
 
-exports[`4. IconStar renders 1`] = `
+exports[`5. IconStar renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -108,7 +108,7 @@ exports[`4. IconStar renders 1`] = `
 </svg>
 `;
 
-exports[`5. IconFacebook renders 1`] = `
+exports[`6. IconFacebook renders 1`] = `
 <svg
   aria-label="[title]"
   height={50}

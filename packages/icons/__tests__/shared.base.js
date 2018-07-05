@@ -9,6 +9,6 @@ export default renderMethod =>
     it(testName, () => {
       const output = renderMethod(<Icon title={name} width={50} height={50} />);
 
-      expect(output).toMatchSnapshot(`${indx}. ${testName}`);
+      expect(output).toMatchSnapshot(`${indx + 1}. ${testName}`);
     });
   });
