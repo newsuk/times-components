@@ -1,45 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. multiple adverts 1`] = `
-<style>
+Array [
+  <style>
 {
-  "IS1": {
-    "backgroundColor": "transparent",
-    "flex": 1,
-  },
-  "IS2": {
-    "flex": 1,
-  },
-  "IS3": {
-    "height": 50,
-    "width": 320,
-  },
-  "IS4": {
-    "backgroundColor": "red",
-  },
-}
+    "IS1": {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    },
+    "IS2": {
+      "flex": 1,
+    },
+    "IS3": {
+      "height": 50,
+      "width": 320,
+    },
+    "IS4": {
+      "backgroundColor": "red",
+    },
+  }
 </style>
 
 <View
-  className="IS4"
->
-  <View
-    className="IS3"
+    className="IS4"
   >
     <View
-      className="IS2"
+      className="IS3"
     >
-      <RCTWebView
-        className="IS1"
-        javaScriptEnabled={true}
-        messagingEnabled={true}
-        saveFormDataDisabled={false}
-        scalesPageToFit={true}
-        thirdPartyCookiesEnabled={true}
-      />
+      <View
+        className="IS2"
+      >
+        <RCTWebView
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
     </View>
-  </View>
-</View>
+  </View>,
+  <style>
+{
+    "IS1": {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    },
+    "IS2": {
+      "flex": 1,
+    },
+    "IS3": {
+      "height": 0,
+      "width": 0,
+    },
+    "IS4": {
+      "backgroundColor": "red",
+    },
+  }
+</style>
+
+<View
+    className="IS4"
+  >
+    <View
+      className="IS3"
+    >
+      <View
+        className="IS2"
+      >
+        <RCTWebView
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
+    </View>
+  </View>,
+]
 `;
 
 exports[`2. loading state advert shows placeholder only 1`] = `

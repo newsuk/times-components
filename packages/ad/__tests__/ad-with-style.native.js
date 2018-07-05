@@ -47,12 +47,14 @@ export default () => {
       <AdComposer adConfig={adConfig}>
         <Fragment>
           <Ad {...props} slotName="header" />
+          <Ad {...props} slotName="pixel" />
         </Fragment>
       </AdComposer>
     );
 
-    const AdComponent = testInstance.root.findByType(Ad);
-    AdComponent.instance.setAdReady();
+    const AdComponent = testInstance.root.findAllByType(Ad);
+    AdComponent[0].instance.setAdReady();
+    AdComponent[1].instance.setAdReady();
 
     expect(testInstance).toMatchSnapshot("1. multiple adverts");
   });
