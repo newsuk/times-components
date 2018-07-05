@@ -52,7 +52,7 @@ export default () => {
     );
 
     const AdComponent = testInstance.root.findByType(Ad);
-    AdComponent._fiber.stateNode.setAdReady();
+    AdComponent.instance.setAdReady();
 
     expect(testInstance).toMatchSnapshot("1. multiple adverts");
   });
@@ -81,7 +81,7 @@ export default () => {
     );
 
     const AdComponent = testInstance.root.findByType(Ad);
-    AdComponent._fiber.stateNode.setAdError();
+    AdComponent.instance.setAdError();
 
     expect(testInstance).toMatchSnapshot(
       "3. should not show when loading scripts errored"

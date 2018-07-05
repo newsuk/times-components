@@ -1,6 +1,6 @@
 import { prebidConfig } from "../../src/utils";
 
-describe("Prebid Config test", () => {
+export default () => {
   const maxBid = 15;
   const minPrice = 0.01;
   const bucketSize = 0.25;
@@ -46,4 +46,4 @@ describe("Prebid Config test", () => {
     const bid = adserverTargeting.filter(item => item.key === "hb_size")[0];
     expect(bid.val({ size: dummyValue })).toEqual(dummyValue);
   });
-});
+};

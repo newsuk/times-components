@@ -1,5 +1,4 @@
 import merge from "lodash.merge";
-
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 
 const amazonInitExtension = {
@@ -11,7 +10,7 @@ const amazonInitExtension = {
   }
 };
 
-describe("AdInit.prebid", () => {
+export default () => {
   let mock;
   let initOptions;
 
@@ -33,7 +32,7 @@ describe("AdInit.prebid", () => {
     expect(init.prebid.setupAsync).not.toHaveBeenCalled();
   });
 
-  it("Sets up Amazon bidding if amazon account ID is set", () => {
+  it("sets up Amazon bidding if amazon account ID is set", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     jest.spyOn(init.prebid, "setupApstag");
     init.init();
@@ -43,7 +42,7 @@ describe("AdInit.prebid", () => {
     );
   });
 
-  it("Does not set up Amazon bidding if no Amazon bidder config is present", () => {
+  it("does not set up Amazon bidding if no Amazon bidder config is present", () => {
     const init = adInit(
       merge(initOptions, {
         data: { prebidConfig: { bidders: { amazon: null } } }
@@ -54,7 +53,7 @@ describe("AdInit.prebid", () => {
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
   });
 
-  it("Does not set up Amazon bidding if no Amazon account id is set in the bidder config", () => {
+  it("does not set up Amazon bidding if no Amazon account id is set in the bidder config", () => {
     const init = adInit(
       merge(initOptions, {
         data: { prebidConfig: { bidders: { amazon: { accountId: "" } } } }
@@ -65,7 +64,7 @@ describe("AdInit.prebid", () => {
     expect(init.prebid.setupApstag).not.toHaveBeenCalled();
   });
 
-  it("Fetches bids from Amazon", () => {
+  it("fetches bids from Amazon", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     init.prebid.setupApstag();
     jest
@@ -77,7 +76,7 @@ describe("AdInit.prebid", () => {
     expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
   });
 
-  it("Applies prebid targeting on finaliseAds()", () => {
+  it("applies prebid targeting on finaliseAds()", () => {
     const init = adInit(initOptions);
     jest.spyOn(init.prebid, "applyPrebidTargeting").mockImplementation();
     init.finaliseAds(true);
@@ -167,7 +166,7 @@ describe("AdInit.prebid", () => {
     ).toEqual([]);
   });
 
-  it("Sets up Amazon apstag", () => {
+  it("sets up Amazon apstag", () => {
     const init = adInit(initOptions);
     /* eslint no-underscore-dangle: ["error", { "allow": ["_Q"] }] */
     expect(mock.window.apstag).toEqual(undefined);
@@ -175,7 +174,7 @@ describe("AdInit.prebid", () => {
     expect(mock.window.apstag._Q).toBeTruthy();
   });
 
-  it("Provides valid fetchBids callback to apstag", () => {
+  it("provides valid fetchBids callback to apstag", () => {
     const init = adInit(initOptions);
     init.prebid.setupApstag("3360", 3000);
     jest.spyOn(mock.window.apstag, "addToQueue");
@@ -186,4 +185,4 @@ describe("AdInit.prebid", () => {
     );
     expect(mock.window.apstag.targetingKeys()).toEqual([]);
   });
-});
+};
