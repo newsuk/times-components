@@ -1,11 +1,10 @@
 /* eslint-env browser */
 import React, { Component } from "react";
-import init from "./utils/ad-init";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 class DOMContext extends Component {
   componentDidMount() {
-    const { data } = this.props;
+    const { data, init } = this.props;
 
     this.initExecuting = true;
     this.hasUnmounted = false;

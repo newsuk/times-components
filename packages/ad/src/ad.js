@@ -3,6 +3,7 @@ import { Subscriber } from "react-broadcast";
 import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
+import adInit from "./utils/ad-init";
 import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import AdComposer from "./ad-composer";
@@ -97,6 +98,7 @@ class Ad extends Component {
       <DOMContext
         baseUrl={baseUrl}
         data={data}
+        init={adInit}
         onRenderComplete={this.setAdReady}
         onRenderError={this.setAdError}
         {...sizeProps}

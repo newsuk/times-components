@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import { WebView, View, Linking, Platform } from "react-native";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
-import init from "./utils/ad-init";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 class DOMContext extends PureComponent {
@@ -50,7 +49,7 @@ class DOMContext extends PureComponent {
   };
 
   render() {
-    const { data, width, height } = this.props;
+    const { data, init, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
