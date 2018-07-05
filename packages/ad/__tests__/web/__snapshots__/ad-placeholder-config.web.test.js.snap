@@ -18,16 +18,7 @@ Object {
 }
 `;
 
-exports[`3. billboard ViewBox config 1`] = `
-Object {
-  "marginLeft": 630,
-  "marginTop": -120,
-  "svgHeight": 50,
-  "svgWidth": 1200,
-}
-`;
-
-exports[`4. default ViewBox config 1`] = `
+exports[`3. default ViewBox config 1`] = `
 Object {
   "marginLeft": 50,
   "marginTop": 0,

@@ -9,6 +9,7 @@ class DOMContext extends Component {
 
     this.initExecuting = true;
     this.hasUnmounted = false;
+
     this.adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,

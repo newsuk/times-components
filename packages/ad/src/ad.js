@@ -55,6 +55,8 @@ class Ad extends Component {
     } = this.props;
     const { hasError, isAdReady, windowWidth } = this.state;
 
+    if (hasError) return null;
+
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
@@ -73,7 +75,7 @@ class Ad extends Component {
         maxBid: adConfig.biddersConfig.maxBid,
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
-      slots: this.slots || [],
+      slots: this.slots,
       slotName,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
@@ -109,18 +111,12 @@ class Ad extends Component {
       />
     );
 
-    const renderAds = () => {
-      if (hasError) return null;
-
-      return (
-        <View style={[style]}>
-          {isLoading ? null : AdComponent}
-          {isLoading || !isAdReady ? AdPlaceholderComponent : null}
-        </View>
-      );
-    };
-
-    return renderAds();
+    return (
+      <View style={[style]}>
+        {isLoading ? null : AdComponent}
+        {isLoading || !isAdReady ? AdPlaceholderComponent : null}
+      </View>
+    );
   }
 
   render() {

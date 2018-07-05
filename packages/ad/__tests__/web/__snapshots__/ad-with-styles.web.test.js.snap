@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. multiple adverts 1`] = `
+<style>
+{
+  "IS1": {
+    "height": 90,
+    "overflow": "hidden",
+    "width": 728,
+  },
+  "IS10": {
+    "backgroundColor": "red",
+  },
+  "IS11": {
+    "backgroundColor": "red",
+  },
+  "IS12": {
+    "backgroundColor": "red",
+  },
+  "IS2": {
+    "backgroundColor": "red",
+  },
+  "IS3": {
+    "backgroundColor": "red",
+  },
+  "IS4": {
+    "backgroundColor": "red",
+  },
+  "IS5": {
+    "height": 0,
+    "overflow": "hidden",
+    "width": 0,
+  },
+  "IS6": {
+    "backgroundColor": "red",
+  },
+  "IS7": {
+    "backgroundColor": "red",
+  },
+  "IS8": {
+    "backgroundColor": "red",
+  },
+  "IS9": {
+    "height": 90,
+    "overflow": "hidden",
+    "width": 728,
+  },
+}
+</style>
+
+<AdComposer>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    className="IS4"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="header"
+  >
+    <View
+      className="IS3"
+    >
+      <div
+        className="IS2"
+      >
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={90}
+          width={728}
+        >
+          <div
+            className="IS1"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    className="IS8"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="pixel"
+  >
+    <View
+      className="IS7"
+    >
+      <div
+        className="IS6"
+      >
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={0}
+          width={0}
+        >
+          <div
+            className="IS5"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    className="IS12"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="intervention"
+  >
+    <View
+      className="IS11"
+    >
+      <div
+        className="IS10"
+      >
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={90}
+          width={728}
+        >
+          <div
+            className="IS9"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+</AdComposer>
+`;
+
+exports[`2. loading state advert shows placeholder only 1`] = `
+<style>
+{
+  "IS1": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS2": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": "5px",
+    "paddingLeft": "10px",
+    "paddingRight": "10px",
+    "paddingTop": "5px",
+    "zIndex": 1,
+  },
+  "IS3": {
+    "height": "90px",
+    "width": "728px",
+  },
+  "IS4": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 90,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 728,
+  },
+  "IS5": {
+    "alignItems": "center",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS6": {
+    "flex": 1,
+  },
+  "IS7": {
+    "backgroundColor": "red",
+  },
+  "IS8": {
+    "backgroundColor": "red",
+  },
+  "IS9": {
+    "backgroundColor": "red",
+  },
+}
+</style>
+
+<AdComposer>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    className="IS9"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={true}
+    section="news"
+    slotName="header"
+  >
+    <View
+      className="IS8"
+    >
+      <div
+        className="IS7"
+      >
+        <AdPlaceholder
+          className="IS6"
+          height={90}
+          width={728}
+        >
+          <View
+            className="IS5"
+          >
+            <div>
+              <View
+                className="IS4"
+              >
+                <div
+                  className="IS3"
+                >
+                  <View
+                    className="IS1"
+                  >
+                    <div>
+                      <Watermark
+                        height={90}
+                        viewBox="-630 120 1200 50"
+                        width={728}
+                      />
+                    </div>
+                  </View>
+                  <Text
+                    className="IS2"
+                  >
+                    <div>
+                      ADVERTISEMENT
+                    </div>
+                  </Text>
+                </div>
+              </View>
+            </div>
+          </View>
+        </AdPlaceholder>
+      </div>
+    </View>
+  </Ad>
+</AdComposer>
+`;
+
+exports[`3. should not show when loading scripts errored 1`] = `
+<style>
+{
+  "IS1": {
+    "backgroundColor": "red",
+  },
+}
+</style>
+
+<AdComposer>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    className="IS1"
+    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    isLoading={false}
+    section="news"
+    slotName="header"
+  />
+</AdComposer>
+`;

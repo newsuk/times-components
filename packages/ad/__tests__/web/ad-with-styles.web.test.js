@@ -1,0 +1,122 @@
+import React, { Fragment } from "react";
+import { mount } from "enzyme";
+import {
+  addSerializers,
+  compose,
+  enzymeTreeSerializer,
+  flattenStyleTransform,
+  hoistStyleTransform,
+  justChildren,
+  minimalWebTransform,
+  minimaliseTransform,
+  propsNoChildren,
+  replaceTransform,
+  stylePrinter,
+  rnwTransform
+} from "@times-components/jest-serializer";
+import adInit from "../../src/utils/ad-init";
+import adConfig from "../../fixtures/article-ad-config.json";
+import Ad, { AdComposer } from "../../src/ad";
+
+jest.mock("../../src/utils/ad-init");
+adInit.mockImplementation(() => ({
+  init: () => {},
+  destroySlots: () => {}
+}));
+
+const props = {
+  contextUrl:
+    "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
+  section: "news",
+  style: {
+    backgroundColor: "red"
+  }
+};
+
+describe("web", () => {
+  addSerializers(
+    expect,
+    enzymeTreeSerializer(),
+    compose(
+      stylePrinter,
+      flattenStyleTransform,
+      hoistStyleTransform,
+      minimalWebTransform,
+      minimaliseTransform((value, key) => key === "adConfig" || key === "data"),
+      replaceTransform({
+        Broadcast: justChildren,
+        Subscriber: justChildren,
+        Watermark: propsNoChildren
+      }),
+      rnwTransform()
+    )
+  );
+
+  it("should render multiple ad slots", () => {
+    const wrapper = mount(
+      <AdComposer adConfig={adConfig}>
+        <Fragment>
+          <Ad {...props} slotName="header" />
+          <Ad {...props} slotName="pixel" />
+          <Ad {...props} slotName="intervention" />
+        </Fragment>
+      </AdComposer>
+    );
+
+    wrapper
+      .find("Ad")
+      .at(0)
+      .instance()
+      .setAdReady();
+    wrapper
+      .find("Ad")
+      .at(1)
+      .instance()
+      .setAdReady();
+    wrapper
+      .find("Ad")
+      .at(2)
+      .instance()
+      .setAdReady();
+
+    wrapper.update();
+
+    expect(wrapper).toMatchSnapshot("1. multiple adverts");
+  });
+
+  it("should render only the placeholder when isLoading", () => {
+    const wrapper = mount(
+      <AdComposer adConfig={adConfig}>
+        <Fragment>
+          <Ad {...props} isLoading slotName="header" />
+        </Fragment>
+      </AdComposer>
+    );
+
+    expect(wrapper).toMatchSnapshot(
+      "2. loading state advert shows placeholder only"
+    );
+  });
+
+  it("should render nothing if there is an error in the loading of scripts", () => {
+    const wrapper = mount(
+      <AdComposer adConfig={adConfig}>
+        <Fragment>
+          <Ad {...props} slotName="header" />
+        </Fragment>
+      </AdComposer>
+    );
+
+    wrapper
+      .find("Ad")
+      .at(0)
+      .instance()
+      .setAdError();
+
+    wrapper.update();
+
+    expect(wrapper).toMatchSnapshot(
+      "3. should not show when loading scripts errored"
+    );
+  });
+});

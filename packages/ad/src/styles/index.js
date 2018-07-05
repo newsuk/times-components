@@ -25,15 +25,6 @@ export const calculateViewBox = ({ height, width }) => {
     };
   }
 
-  if (height >= 250 && width >= 970) {
-    return {
-      marginLeft: 205,
-      marginTop: -40,
-      svgHeight: 220,
-      svgWidth: 584
-    };
-  }
-
   return {
     marginLeft: 50,
     marginTop: 0,

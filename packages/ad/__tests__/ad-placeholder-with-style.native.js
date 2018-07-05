@@ -5,8 +5,9 @@ import {
   compose,
   enzymeRootSerializer,
   flattenStyleTransform,
+  hoistStyleTransform,
   minimalNativeTransform,
-  print
+  stylePrinter
 } from "@times-components/jest-serializer";
 import AdPlaceholder from "../src/ad-placeholder";
 
@@ -14,7 +15,12 @@ export default () => {
   addSerializers(
     expect,
     enzymeRootSerializer(),
-    compose(print, minimalNativeTransform, flattenStyleTransform)
+    compose(
+      stylePrinter,
+      minimalNativeTransform,
+      flattenStyleTransform,
+      hoistStyleTransform
+    )
   );
 
   it("should render an advert placeholder", () => {

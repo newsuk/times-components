@@ -17,19 +17,11 @@ export default () => {
     );
   });
 
-  it("should return a billboard ViewBox config", () => {
-    const height = 250;
-    const width = 970;
-    expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "3. billboard ViewBox config"
-    );
-  });
-
   it("should return a default ViewBox config", () => {
     const height = 50;
     const width = 700;
     expect(calculateViewBox({ height, width })).toMatchSnapshot(
-      "4. default ViewBox config"
+      "3. default ViewBox config"
     );
   });
 };
