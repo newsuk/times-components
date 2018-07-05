@@ -1,4 +1,4 @@
-import shared from "../ad.native";
+import shared from "../ad.shared";
 
 describe("ios", () => {
   shared();
