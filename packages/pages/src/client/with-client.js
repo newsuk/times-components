@@ -6,11 +6,15 @@ import { ApolloProvider } from "react-apollo";
 import { fragmentMatcher } from "@times-components/utils";
 
 const withClient = WrappedComponent => ({ graphqlEndPoint }) => fetch => {
-  const link = createHttpLink({
-    uri: graphqlEndPoint,
-    fetch: (uri, opts) =>
-      fetch(uri, opts).then(responseBody => new Response(responseBody))
-  });
+  const link = fetch
+    ? createHttpLink({
+        uri: graphqlEndPoint,
+        fetch: (uri, opts) =>
+          fetch(uri, opts).then(responseBody => new Response(responseBody))
+      })
+    : createHttpLink({
+        uri: graphqlEndPoint
+      });
 
   const client = new ApolloClient({
     link,
