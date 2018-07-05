@@ -3365,6 +3365,7 @@ exports[`Article tests on android should render an article with a video asset 1`
             <View>
               <svg
                 height={70}
+                viewBox="0 0 100 100"
                 width={70}
               >
                 <rect
@@ -3377,6 +3378,7 @@ exports[`Article tests on android should render an article with a video asset 1`
                 />
                 <polygon
                   fill="rgb(255,255,255)"
+                  points="30,20 70,50 30,80"
                 />
               </svg>
             </View>
