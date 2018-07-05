@@ -1,462 +1,173 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. IconDiamond renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 50,
-    }
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
   }
->
-  <ARTGroup
-    transform={
-      Array [
-        2.5,
-        0,
-        0,
-        2.5,
-        0,
-        0,
-      ]
-    }
-  >
-    <ARTGroup
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    >
-      <ARTShape
-        d="c3ca00c47bbe3e1a429d0716c0592877"
-        fill={
-          Array [
-            0,
-            0.9803921568627451,
-            0.792156862745098,
-            0.8705882352941177,
-            1,
-          ]
-        }
-        stroke={
-          Array [
-            0.7529411764705882,
-            1,
-            0.9333333333333333,
-            1,
-          ]
-        }
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
 `;
 
 exports[`2. IconTwitter renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 62.5,
-    }
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
   }
->
-  <ARTGroup
-    transform={
-      Array [
-        0.08333333333333333,
-        0,
-        0,
-        0.08333333333333333,
-        29.5,
-        23.25,
-      ]
-    }
-  >
-    <ARTShape
-      d="2b20b5d514bdec5d4c2f5d1eb0ad437c"
-      fill={
-        Array [
-          0,
-          0.9803921568627451,
-          0.792156862745098,
-          0.8705882352941177,
-          1,
-        ]
-      }
-      stroke={
-        Array [
-          0.7529411764705882,
-          1,
-          0.9333333333333333,
-          1,
-        ]
-      }
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
 `;
 
 exports[`3. IconVideo renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 48.608695652173914,
-      "width": 86,
-    }
-  }
->
-  <ARTGroup
-    transform={
+Array [
+  <ARTShape
+    fill={
       Array [
-        3.739130434782609,
         0,
-        0,
-        3.739130434782609,
-        0,
-        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
       ]
     }
-  >
-    <ARTShape
-      d="449cccb3ac16d057a2c74d137cfbbbfb"
-      fill={
-        Array [
-          0,
-          0.9803921568627451,
-          0.792156862745098,
-          0.8705882352941177,
-          1,
-        ]
-      }
-      stroke={
-        Array [
-          0.7529411764705882,
-          1,
-          0.9333333333333333,
-          1,
-        ]
-      }
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-    <ARTShape
-      d="f2fe184e88869d0ef2eb25afbc19b807"
-      fill={
-        Array [
-          0,
-          0.9803921568627451,
-          0.792156862745098,
-          0.8705882352941177,
-          1,
-        ]
-      }
-      stroke={
-        Array [
-          0.7529411764705882,
-          1,
-          0.9333333333333333,
-          1,
-        ]
-      }
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-    <ARTShape
-      d="aa5d049c3b5acb33e4312411ca0e1c65"
-      fill={
-        Array [
-          0,
-          0.9803921568627451,
-          0.792156862745098,
-          0.8705882352941177,
-          1,
-        ]
-      }
-      stroke={
-        Array [
-          0.7529411764705882,
-          1,
-          0.9333333333333333,
-          1,
-        ]
-      }
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+  <ARTShape
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+  <ARTShape
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+]
 `;
 
 exports[`4. IconEmail renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 68.75,
-    }
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
   }
->
-  <ARTGroup
-    transform={
-      Array [
-        3.125,
-        0,
-        0,
-        3.125,
-        0,
-        0,
-      ]
-    }
-  >
-    <ARTGroup
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    >
-      <ARTShape
-        d="4c3e2447d8a07529d4601a20e2be1f86"
-        fill={
-          Array [
-            0,
-            0.9803921568627451,
-            0.792156862745098,
-            0.8705882352941177,
-            1,
-          ]
-        }
-        stroke={
-          Array [
-            0.7529411764705882,
-            1,
-            0.9333333333333333,
-            1,
-          ]
-        }
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
 `;
 
 exports[`5. IconStar renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 50,
-    }
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
   }
->
-  <ARTGroup
-    transform={
-      Array [
-        2.9411764705882355,
-        0,
-        0,
-        2.9411764705882355,
-        -35.294117647058826,
-        -32.352941176470594,
-      ]
-    }
-  >
-    <ARTShape
-      d="f40095102020601e0dbdf5ec3d81fbd2"
-      fill={
-        Array [
-          0,
-          0.9803921568627451,
-          0.792156862745098,
-          0.8705882352941177,
-          1,
-        ]
-      }
-      stroke={
-        Array [
-          0.7529411764705882,
-          1,
-          0.9333333333333333,
-          1,
-        ]
-      }
-      strokeCap={1}
-      strokeDash={null}
-      strokeJoin={1}
-      strokeWidth={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    />
-  </ARTGroup>
-</ARTSurfaceView>
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
 `;
 
 exports[`6. IconFacebook renders with different colours 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 25,
-    }
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
   }
->
-  <ARTGroup
-    transform={
-      Array [
-        2.5,
-        0,
-        0,
-        2.5,
-        -35,
-        -25,
-      ]
-    }
-  >
-    <ARTGroup
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    >
-      <ARTShape
-        d="2189892cba14977e0cdb05b5f065a642"
-        fill={
-          Array [
-            0,
-            0.9803921568627451,
-            0.792156862745098,
-            0.8705882352941177,
-            1,
-          ]
-        }
-        stroke={
-          Array [
-            0.7529411764705882,
-            1,
-            0.9333333333333333,
-            1,
-          ]
-        }
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
 `;
