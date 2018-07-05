@@ -7,13 +7,14 @@
     "bundle:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output assets/js/index.ios.bundle --assets-dest assets/res/",
     "bundle:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > assets/js/index.ios.bundle.meta",
     "bundle": "yarn bundle:js && yarn bundle:meta",
-    "fmt": "prettier --write '**/*.js'",
     "start": "haul start --platform ios",
-    "lint:prettier": "prettier --list-different **/*.js",
-    "lint": "yarn lint:prettier"
+    "fmt": "prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
     "@times-components/pages": "0.0.1",
+    "prop-types": "15.6.0",
     "react": "16.3.1",
     "react-native": "0.54.2",
     "react-native-svg": "6.3.1"
@@ -28,11 +29,9 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-es2015": "6.24.1",
-    "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",
     "babel-preset-react-native": "4.0.0",
     "babel-preset-stage-2": "6.24.1",
-    "flow-bin": "0.63.1",
     "haul": "1.0.0-rc.4",
     "prettier": "1.8.2",
     "webpack": "4.6.0"

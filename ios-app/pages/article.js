@@ -4,7 +4,7 @@ import { NativeModules } from "react-native";
 import { Article } from "@times-components/pages";
 
 const {
-  onRelatedArticlePress,
+  onRelatedArticlePress: onArticlePress,
   onLinkPress,
   onAuthorPress,
   onVideoPress,
@@ -40,21 +40,17 @@ const ArticleView = ({ articleId }) => (
   <ArticlePageView
     articleId={articleId}
     analyticsStream={track}
-    onArticlePress={url => onRelatedArticlePress(url)}
-    onLinkPress={url => onLinkPress(url)}
-    onAuthorPress={slug => onAuthorPress(slug)}
-    onVideoPress={extras => onVideoPress(extras)}
-    onTopicPress={url => onTopicPress(url)}
-    platformAdConfig={platformAdConfig({
-      sectionId: "9e51e2a0-fadf-11e7-9a34-94e1b34681c3",
-      sectionName: "News",
-      articlePositionInSlot: 3
-    })}
+    onArticlePress={onArticlePress}
+    onAuthorPress={onAuthorPress}
+    onLinkPress={onLinkPress}
+    onVideoPress={onVideoPress}
+    onTopicPress={onTopicPress}
+    platformAdConfig={platformAdConfig}
   />
 );
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired
-}
+};
 
 export default ArticleView;

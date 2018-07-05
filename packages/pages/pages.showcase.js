@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { Article } from "./src/index";
+import { Article } from "./src/pages";
 
 export default {
   name: "Pages",

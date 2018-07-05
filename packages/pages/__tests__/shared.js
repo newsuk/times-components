@@ -1,7 +1,7 @@
 import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import { Article } from "../src/index";
+import { Article } from "../src/pages";
 
 module.exports = () => {
   it("renders correctly", () => {

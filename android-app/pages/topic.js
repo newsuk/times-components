@@ -22,6 +22,6 @@ const TopicView = ({ topicSlug }) => (
 
 TopicView.propTypes = {
   topicSlug: PropTypes.string.isRequired
-}
+};
 
 export default TopicView;

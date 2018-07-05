@@ -24,7 +24,6 @@ const AuthorProfileView = ({ authorSlug }) => (
 
 AuthorProfileView.propTypes = {
   authorSlug: PropTypes.string.isRequired
-}
+};
 
 export default AuthorProfileView;
-
