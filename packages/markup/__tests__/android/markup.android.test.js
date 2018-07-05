@@ -1,5 +1,5 @@
-import shared from "../shared";
+import shared from "../shared.native";
 
-describe("Markup Native tests on android", () => {
+describe("android", () => {
   shared();
 });
