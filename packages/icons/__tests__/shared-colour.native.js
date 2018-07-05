@@ -9,7 +9,6 @@ import {
   print
 } from "@times-components/jest-serializer";
 import shared from "./shared-colour.base";
-import replaceLongKeys from "./utils";
 
 export default () => {
   addSerializers(
@@ -21,8 +20,7 @@ export default () => {
         ARTGroup: justChildren
       }),
       flattenStyleTransform,
-      minimaliseTransform((value, key) => key !== "stroke" && key !== "fill"),
-      replaceLongKeys
+      minimaliseTransform((value, key) => key !== "stroke" && key !== "fill")
     )
   );
 

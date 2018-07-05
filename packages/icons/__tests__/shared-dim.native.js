@@ -9,7 +9,6 @@ import {
   replaceTransform
 } from "@times-components/jest-serializer";
 import shared from "./shared-dim.base";
-import replaceLongKeys from "./utils";
 
 export default () => {
   addSerializers(
@@ -20,8 +19,7 @@ export default () => {
         ARTSurfaceView: propsNoChildren
       }),
       flattenStyleTransform,
-      minimaliseTransform((value, key) => key === "opacity"),
-      replaceLongKeys
+      minimaliseTransform((value, key) => key === "opacity")
     )
   );
 
