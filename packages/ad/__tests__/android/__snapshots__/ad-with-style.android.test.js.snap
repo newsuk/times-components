@@ -11,57 +11,17 @@ exports[`1. multiple adverts 1`] = `
     "flex": 1,
   },
   "IS3": {
-    "height": 0,
-    "width": 0,
+    "height": 50,
+    "width": 320,
   },
   "IS4": {
-    "height": 50,
-    "width": 320,
-  },
-  "IS5": {
-    "left": 0,
-    "position": "absolute",
-    "top": 0,
-  },
-  "IS6": {
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "color": "#696969",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 11,
-    "letterSpacing": 1.5,
-    "paddingBottom": 5,
-    "paddingLeft": 10,
-    "paddingRight": 10,
-    "paddingTop": 5,
-    "zIndex": 1,
-  },
-  "IS7": {
-    "alignItems": "center",
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "height": 50,
-    "justifyContent": "center",
-    "overflow": "hidden",
-    "width": 320,
-  },
-  "IS8": {
-    "alignItems": "center",
-    "flex": 1,
-    "justifyContent": "center",
-  },
-  "IS9": {
     "backgroundColor": "red",
   },
 }
 </style>
 
 <View
-  className="IS9"
+  className="IS4"
 >
   <View
     className="IS3"
@@ -79,22 +39,77 @@ exports[`1. multiple adverts 1`] = `
       />
     </View>
   </View>
+</View>
+`;
+
+exports[`2. loading state advert shows placeholder only 1`] = `
+<style>
+{
+  "IS1": {
+    "height": 50,
+    "width": 320,
+  },
+  "IS2": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS3": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": 5,
+    "paddingLeft": 10,
+    "paddingRight": 10,
+    "paddingTop": 5,
+    "zIndex": 1,
+  },
+  "IS4": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 50,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 320,
+  },
+  "IS5": {
+    "alignItems": "center",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS6": {
+    "backgroundColor": "red",
+  },
+}
+</style>
+
+<View
+  className="IS6"
+>
   <View
-    className="IS8"
+    className="IS5"
   >
     <View
-      className="IS7"
+      className="IS4"
     >
       <View
-        className="IS5"
+        className="IS2"
       >
         <Image
-          className="IS4"
+          className="IS1"
           resizeMode="contain"
         />
       </View>
       <Text
-        className="IS6"
+        className="IS3"
       >
         ADVERTISEMENT
       </Text>
@@ -102,3 +117,5 @@ exports[`1. multiple adverts 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. should not show when loading scripts errored 1`] = `null`;

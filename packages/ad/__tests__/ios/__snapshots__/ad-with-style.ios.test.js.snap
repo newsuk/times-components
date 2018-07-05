@@ -100,3 +100,79 @@ exports[`1. multiple adverts 1`] = `
   </View>
 </View>
 `;
+
+exports[`2. loading state advert shows placeholder only 1`] = `
+<style>
+{
+  "IS1": {
+    "height": 50,
+    "width": 320,
+  },
+  "IS2": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS3": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": 5,
+    "paddingLeft": 10,
+    "paddingRight": 10,
+    "paddingTop": 5,
+    "zIndex": 1,
+  },
+  "IS4": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 50,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 320,
+  },
+  "IS5": {
+    "alignItems": "center",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS6": {
+    "backgroundColor": "red",
+  },
+}
+</style>
+
+<View
+  className="IS6"
+>
+  <View
+    className="IS5"
+  >
+    <View
+      className="IS4"
+    >
+      <View
+        className="IS2"
+      >
+        <Image
+          className="IS1"
+          resizeMode="contain"
+        />
+      </View>
+      <Text
+        className="IS3"
+      >
+        ADVERTISEMENT
+      </Text>
+    </View>
+  </View>
+</View>
+`;

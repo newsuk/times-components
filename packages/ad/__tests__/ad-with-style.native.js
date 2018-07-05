@@ -51,60 +51,40 @@ export default () => {
       </AdComposer>
     );
 
-    // testInstance
-    //   .find("Ad")
-    //   .at(0)
-    //   .instance()
-    //   .setAdReady();
-    // testInstance
-    //   .find("Ad")
-    //   .at(1)
-    //   .instance()
-    //   .setAdReady();
-    // testInstance
-    //   .find("Ad")
-    //   .at(2)
-    //   .instance()
-    //   .setAdReady();
-
-    // testInstance.update();
+    const AdComponent = testInstance.root.findByType(Ad);
+    AdComponent._fiber.stateNode.setAdReady();
 
     expect(testInstance).toMatchSnapshot("1. multiple adverts");
   });
 
-  // it("should render only the placeholder when isLoading", () => {
-  //   const wrapper = shallow(
-  //     <AdComposer adConfig={adConfig}>
-  //       <Fragment>
-  //         <Ad {...props} isLoading slotName="header" />
-  //       </Fragment>
-  //     </AdComposer>
-  //   );
+  it("should render only the placeholder when isLoading", () => {
+    const testInstance = TestRenderer.create(
+      <AdComposer adConfig={adConfig}>
+        <Fragment>
+          <Ad {...props} isLoading slotName="header" />
+        </Fragment>
+      </AdComposer>
+    );
 
-  //   expect(wrapper).toMatchSnapshot(
-  //     "2. loading state advert shows placeholder only"
-  //   );
-  // });
+    expect(testInstance).toMatchSnapshot(
+      "2. loading state advert shows placeholder only"
+    );
+  });
 
-  // it("should render nothing if there is an error in the loading of scripts", () => {
-  //   const wrapper = shallow(
-  //     <AdComposer adConfig={adConfig}>
-  //       <Fragment>
-  //         <Ad {...props} slotName="header" />
-  //       </Fragment>
-  //     </AdComposer>
-  //   );
+  it("should return null if there is an error in the loading of scripts", () => {
+    const testInstance = TestRenderer.create(
+      <AdComposer adConfig={adConfig}>
+        <Fragment>
+          <Ad {...props} slotName="header" />
+        </Fragment>
+      </AdComposer>
+    );
 
-  //   wrapper
-  //     .find("Ad")
-  //     .at(0)
-  //     .instance()
-  //     .setAdError();
+    const AdComponent = testInstance.root.findByType(Ad);
+    AdComponent._fiber.stateNode.setAdError();
 
-  //   wrapper.update();
-
-  //   expect(wrapper).toMatchSnapshot(
-  //     "3. should not show when loading scripts errored"
-  //   );
-  // });
+    expect(testInstance).toMatchSnapshot(
+      "3. should not show when loading scripts errored"
+    );
+  });
 };
