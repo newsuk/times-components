@@ -1,7 +1,6 @@
 {
   "name": "@times-components/android-app",
   "version": "0.1.1",
-  "private": true,
   "license": "BSD-3-Clause",
   "scripts": {
     "bundle:android": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
