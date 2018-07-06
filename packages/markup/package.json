@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
@@ -36,9 +36,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.4",
-    "@times-components/jest-serializer": "1.0.4",
-    "@times-components/storybook": "1.1.1",
+    "@times-components/jest-configurator": "1.0.5",
+    "@times-components/jest-serializer": "1.0.5",
+    "@times-components/storybook": "1.1.2",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -59,9 +59,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/ad": "1.3.2",
-    "@times-components/pull-quote": "1.0.8",
-    "@times-components/styleguide": "1.1.6",
+    "@times-components/ad": "1.3.3",
+    "@times-components/pull-quote": "1.0.9",
+    "@times-components/styleguide": "1.1.7",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {
