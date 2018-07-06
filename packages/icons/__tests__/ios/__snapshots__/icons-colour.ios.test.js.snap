@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. IconDiamond renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`2. IconTwitter renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`3. IconVideo renders with different colours 1`] = `
+Array [
+  <ARTShape
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+  <ARTShape
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+  <ARTShape
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />,
+]
+`;
+
+exports[`4. IconEmail renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`5. IconStar renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;
+
+exports[`6. IconFacebook renders with different colours 1`] = `
+<ARTShape
+  fill={
+    Array [
+      0,
+      0.9803921568627451,
+      0.792156862745098,
+      0.8705882352941177,
+      1,
+    ]
+  }
+  stroke={
+    Array [
+      0.7529411764705882,
+      1,
+      0.9333333333333333,
+      1,
+    ]
+  }
+/>
+`;

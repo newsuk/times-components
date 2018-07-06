@@ -1,45 +1,18 @@
-import omit from "lodash.omit";
 import omitBy from "lodash.omitby";
 import traverse from "./traverse";
 import print from "./printers";
-
-function getType({ type }) {
-  if (type instanceof Function) {
-    return type.name.toLowerCase();
-  }
-  if (typeof type === "string") {
-    return type.toLowerCase();
-  }
-  return typeof type;
-}
-
-function cleanSvgProps(node, props) {
-  const type = getType(node);
-  return type === "path" || type === "polygon" || type === "svg"
-    ? omit(props, ["d", "path", "points", "viewBox"])
-    : props;
-}
 
 export const minimaliseTransform = excludeProps => (
   accum,
   node,
   props,
   children
-) => {
-  const { ...other } = props;
-
-  return {
-    accum,
-    node,
-    props: omitBy(
-      {
-        ...cleanSvgProps(node, other)
-      },
-      excludeProps
-    ),
-    children
-  };
-};
+) => ({
+  accum,
+  node,
+  props: omitBy(props, excludeProps),
+  children
+});
 
 export default excludeProps =>
   traverse(print, minimaliseTransform(excludeProps));

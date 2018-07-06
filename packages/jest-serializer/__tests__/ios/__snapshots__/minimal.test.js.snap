@@ -15,8 +15,6 @@ exports[`The minimal serializer should for native not remove styles 1`] = `
 />
 `;
 
-exports[`The minimal serializer should for native remove d-prop from path 1`] = `<path />`;
-
 exports[`The minimal serializer should for native remove empty objects as props 1`] = `
 <View>
   <Text />
@@ -42,11 +40,13 @@ exports[`The minimal serializer should for native remove undefined props 1`] = `
 `;
 
 exports[`The minimal serializer should for native transform render props 1`] = `
-<View>
-  <Text
-    prop={<Path />}
-  >
-    Nested
-  </Text>
-</View>
+<Foo
+  prop={
+    <Text
+      dir="dir"
+    >
+      Bar
+    </Text>
+  }
+/>
 `;

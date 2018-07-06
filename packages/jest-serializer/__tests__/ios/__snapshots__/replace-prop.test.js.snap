@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the replace prop serializer should for native replace the expected prop 1`] = `
+<Bar
+  test1="somethingElse"
+  test2="test2"
+/>
+`;
