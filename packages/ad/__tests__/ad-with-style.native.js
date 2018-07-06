@@ -6,8 +6,8 @@ import {
   enzymeRootSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
-  minimalNativeTransform,
   minimaliseTransform,
+  minimalNativeTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import adInit from "../src/utils/ad-init";

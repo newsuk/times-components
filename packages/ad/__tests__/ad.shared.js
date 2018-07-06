@@ -3,9 +3,9 @@ import { shallow } from "enzyme";
 import {
   addSerializers,
   compose,
-  print,
+  enzymeRootSerializer,
   minimaliseTransform,
-  enzymeRootSerializer
+  print
 } from "@times-components/jest-serializer";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";

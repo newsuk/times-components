@@ -7,12 +7,12 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   justChildren,
-  minimalWebTransform,
   minimaliseTransform,
+  minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  stylePrinter,
-  rnwTransform
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import adInit from "../../src/utils/ad-init";
 import adConfig from "../../fixtures/article-ad-config.json";

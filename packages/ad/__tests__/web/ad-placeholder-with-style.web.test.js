@@ -9,8 +9,8 @@ import {
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  stylePrinter,
-  rnwTransform
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import AdPlaceholder from "../../src/ad-placeholder";
 
