@@ -36,7 +36,9 @@ export default () => {
       minimalNativeTransform,
       flattenStyleTransform,
       hoistStyleTransform,
-      minimaliseTransform((value, key) => key === "source")
+      minimaliseTransform(
+        (value, key) => key === "source" || key === "injectedJavaScript"
+      )
     )
   );
 

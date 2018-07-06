@@ -95,8 +95,7 @@ describe("web", () => {
 
     const AdComponent = wrapper.find("Ad");
 
-    AdComponent
-      .at(0)
+    AdComponent.at(0)
       .instance()
       .setAdError();
 

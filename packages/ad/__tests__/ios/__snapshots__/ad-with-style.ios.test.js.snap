@@ -13,7 +13,6 @@ Array [
       >
         <RCTWebView
           className="IS1"
-          injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
           messagingEnabled={true}
           scalesPageToFit={true}
         />
@@ -31,7 +30,6 @@ Array [
       >
         <RCTWebView
           className="IS1"
-          injectedJavaScript="window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
           messagingEnabled={true}
           scalesPageToFit={true}
         />
