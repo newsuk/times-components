@@ -30,7 +30,8 @@
     ],
     "testMatch": [
       "<rootDir>/packages/depend/__tests__/**.test.js"
-    ]
+    ],
+    "testURL": "http://localhost"
   },
   "repository": {
     "type": "git",
@@ -55,7 +56,7 @@
     "babel-core": "6.26.0",
     "babel-preset-react-native": "4.0.0",
     "eslint": "4.9.0",
-    "jest": "21.2.1",
+    "jest": "23.3.0",
     "prettier": "1.8.2"
   },
   "dependencies": {

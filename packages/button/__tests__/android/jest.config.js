@@ -1,5 +1,5 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
 
 module.exports = jestConfigurator("android", __dirname, {
-  coverageIgnoreGlobs: ["shared.js"]
+  coverageIgnoreGlobs: ["utils/index.android.js"]
 });

@@ -42,9 +42,8 @@ describe("Jest Configurator Tests", () => {
         path.resolve(__dirname, "../fixtures/ignore"),
         { coverageIgnoreGlobs: ["data-helper.js"] }
       );
-      expect(config.collectCoverageFrom).toEqual([
-        "**/fixtures/ignore/src/ignore.js"
-      ]);
+
+      expect(config.coveragePathIgnorePatterns).toEqual(["data-helper.js"]);
     });
   });
 
