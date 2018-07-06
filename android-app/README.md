@@ -1,8 +1,14 @@
 # Android-App package
 
-This package gets bundled as a native android library, to be used in an existing
-native application, including the js bundle and native dependencies. It consumes
-times-components, and provides necessary bridging to the native apps.
+Use this package to run android react-native development server for the existing
+native application, or to bundle a native library for android app releases.
+
+When ran as a development server, haul launches a webpack server that bundles
+components on-the-fly. Launch the app in debug mode to connect to development
+server.
+
+When bundled, it gets assembled as a native android library, including the js
+bundle, image assets and native dependencies.
 
 ## Dev Server
 
