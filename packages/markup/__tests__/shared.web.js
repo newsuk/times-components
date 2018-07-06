@@ -1,3 +1,5 @@
+import React from "react";
+import { View } from "react-native";
 import {
   addSerializers,
   compose,
@@ -12,8 +14,12 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { AdComposer } from "@times-components/ad";
 import { mount } from "enzyme";
+import { renderTrees } from "../src/markup";
 import shared from "./shared.base";
+
+const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json");
 
 export default () => {
   addSerializers(
@@ -36,4 +42,14 @@ export default () => {
   );
 
   shared(mount);
+
+  it("renders multiple paragraphs with ads", () => {
+    const wrapper = mount(
+      <AdComposer>
+        <View>{renderTrees(multiParagraphWithAds)}</View>
+      </AdComposer>
+    );
+
+    expect(wrapper).toMatchSnapshot("14. renders multiple paragraphs with ads");
+  });
 };

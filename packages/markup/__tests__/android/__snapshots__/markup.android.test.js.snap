@@ -53,52 +53,7 @@ exports[`3. renders multiple paragraphs with a pull quote 1`] = `
 </View>
 `;
 
-exports[`4. renders multiple paragraphs with ads 1`] = `
-<View>
-  <Text>
-    This is the text for paragraph one
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Ad
-    pos="inline-ad"
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderTopColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "paddingBottom": 10,
-        "paddingTop": 10,
-      }
-    }
-  />
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-  <Text>
-    This is the text for paragraph two
-  </Text>
-</View>
-`;
-
-exports[`5. renders the bold tag 1`] = `
+exports[`4. renders the bold tag 1`] = `
 <Text
   style={
     Object {
@@ -110,7 +65,7 @@ exports[`5. renders the bold tag 1`] = `
 </Text>
 `;
 
-exports[`6. renders the italic tag 1`] = `
+exports[`5. renders the italic tag 1`] = `
 <Text
   style={
     Object {
@@ -122,20 +77,20 @@ exports[`6. renders the italic tag 1`] = `
 </Text>
 `;
 
-exports[`7. renders the span tag 1`] = `
+exports[`6. renders the span tag 1`] = `
 <Text>
   some other text here
 </Text>
 `;
 
-exports[`8. renders the line break tag 1`] = `
+exports[`7. renders the line break tag 1`] = `
 <Text>
   
 
 </Text>
 `;
 
-exports[`9. renders a mixture of tags 1`] = `
+exports[`8. renders a mixture of tags 1`] = `
 <View>
   <View>
     <Text>
@@ -172,7 +127,7 @@ exports[`9. renders a mixture of tags 1`] = `
 </View>
 `;
 
-exports[`10. renders tags nested 1`] = `
+exports[`9. renders tags nested 1`] = `
 <Text>
   Some text is here 
   <Text>
@@ -189,7 +144,7 @@ exports[`10. renders tags nested 1`] = `
 </Text>
 `;
 
-exports[`11. renders wrapped tags 1`] = `
+exports[`10. renders wrapped tags 1`] = `
 <Text>
   Camilla Long is 
   <Text
@@ -215,7 +170,7 @@ exports[`11. renders wrapped tags 1`] = `
 </Text>
 `;
 
-exports[`12. renders multiple children 1`] = `
+exports[`11. renders multiple children 1`] = `
 <Text
   style={
     Object {
@@ -232,6 +187,51 @@ exports[`12. renders multiple children 1`] = `
 </Text>
 `;
 
-exports[`13. does not render a script tag 1`] = `<View />`;
+exports[`12. does not render a script tag 1`] = `<View />`;
 
-exports[`14. does not render an image tag 1`] = `<View />`;
+exports[`13. does not render an image tag 1`] = `<View />`;
+
+exports[`14. renders multiple paragraphs with ads 1`] = `
+<View>
+  <Text>
+    This is the text for paragraph one
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Ad
+    slotName="inline-ad"
+    style={
+      Object {
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "paddingBottom": 10,
+        "paddingTop": 10,
+      }
+    }
+  />
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+  <Text>
+    This is the text for paragraph two
+  </Text>
+</View>
+`;

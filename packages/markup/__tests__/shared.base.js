@@ -1,12 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { AdComposer } from "@times-components/ad";
 import { renderTree, renderTrees } from "../src/markup";
 import multiParagraphWithPullQuote from "../fixtures/multi-paragraph-with-pullquote";
 
 const singleParagraph = require("../fixtures/single-paragraph.json");
 const multiParagraph = require("../fixtures/multi-paragraph.json");
-const multiParagraphWithAds = require("../fixtures/multi-paragraph-with-ads.json");
 const bold = require("../fixtures/bold.json");
 const italic = require("../fixtures/italic.json");
 const span = require("../fixtures/span.json");
@@ -44,38 +42,28 @@ export default renderComponent => {
     );
   });
 
-  it("renders multiple paragraphs with ads", () => {
-    const output = renderComponent(
-      <AdComposer>
-        <View>{renderTrees(multiParagraphWithAds)}</View>
-      </AdComposer>
-    );
-
-    expect(output).toMatchSnapshot("4. renders multiple paragraphs with ads");
-  });
-
   it("renders the bold tag", () => {
     const output = renderComponent(renderTree(bold));
 
-    expect(output).toMatchSnapshot("5. renders the bold tag");
+    expect(output).toMatchSnapshot("4. renders the bold tag");
   });
 
   it("renders the italic tag", () => {
     const output = renderComponent(renderTree(italic));
 
-    expect(output).toMatchSnapshot("6. renders the italic tag");
+    expect(output).toMatchSnapshot("5. renders the italic tag");
   });
 
   it("renders the span tag", () => {
     const output = renderComponent(renderTree(span));
 
-    expect(output).toMatchSnapshot("7. renders the span tag");
+    expect(output).toMatchSnapshot("6. renders the span tag");
   });
 
   it("renders the line break tag", () => {
     const output = renderComponent(renderTree(lineBreak));
 
-    expect(output).toMatchSnapshot("8. renders the line break tag");
+    expect(output).toMatchSnapshot("7. renders the line break tag");
   });
 
   it("renders a mixture of tags", () => {
@@ -94,7 +82,7 @@ export default renderComponent => {
       })
     );
 
-    expect(output).toMatchSnapshot("9. renders a mixture of tags");
+    expect(output).toMatchSnapshot("8. renders a mixture of tags");
   });
 
   it("renders tags nested", () => {
@@ -106,13 +94,13 @@ export default renderComponent => {
       })
     );
 
-    expect(output).toMatchSnapshot("10. renders tags nested");
+    expect(output).toMatchSnapshot("9. renders tags nested");
   });
 
   it("renders wrapped tags", () => {
     const output = renderComponent(<Text>{renderTrees(bio)}</Text>);
 
-    expect(output).toMatchSnapshot("11. renders wrapped tags");
+    expect(output).toMatchSnapshot("10. renders wrapped tags");
   });
 
   it("renders multiple children", () => {
@@ -120,18 +108,18 @@ export default renderComponent => {
       <Text style={{ color: "red" }}>{renderTrees(multiParagraph)}</Text>
     );
 
-    expect(output).toMatchSnapshot("12. renders multiple children");
+    expect(output).toMatchSnapshot("11. renders multiple children");
   });
 
   it("does not render a script tag", () => {
     const output = renderComponent(<View>{renderTrees(script)}</View>);
 
-    expect(output).toMatchSnapshot("13. does not render a script tag");
+    expect(output).toMatchSnapshot("12. does not render a script tag");
   });
 
   it("does not render an image tag", () => {
     const output = renderComponent(<View>{renderTrees(image)}</View>);
 
-    expect(output).toMatchSnapshot("14. does not render an image tag");
+    expect(output).toMatchSnapshot("13. does not render an image tag");
   });
 };
