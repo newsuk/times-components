@@ -13,12 +13,19 @@ export const meltNative = {
 };
 
 export const replaceTransform = config => (accum, node, props, children) => {
-  if (!config[node.type]) {
+  if (config[node.type] === undefined) {
     return {
       accum,
       node,
       props,
       children
+    };
+  }
+
+  if (!config[node.type]) {
+    return {
+      accum,
+      node: null
     };
   }
 
