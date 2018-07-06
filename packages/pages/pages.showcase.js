@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "react-native";
 import React from "react";
 import { Article, AuthorProfile, Topic } from "./src/pages";
@@ -8,15 +9,24 @@ export default {
     {
       type: "story",
       name: "Article",
-      component: () => {
+      component: ({ text }) => {
+        const articleId = text(
+          "Article id",
+          "4938a3d4-8109-11e8-a645-f0478472c67b"
+        );
+        const graphqlEndPoint = text(
+          "GraphQL Endpoint",
+          "https://api.thetimes.co.uk/graphql"
+        );
+
         const config = {
-          graphqlEndPoint: "https://api.thetimes.co.uk/graphql"
+          graphqlEndPoint
         };
         const ArticlePageView = Article(config)();
 
         return (
           <ArticlePageView
-            articleId="4f1de98e-8042-11e8-af03-7edc8dc9d023"
+            articleId={articleId}
             analyticsStream={() => {}}
             onArticlePress={() => {}}
             onAuthorPress={() => {}}
@@ -31,15 +41,21 @@ export default {
     {
       type: "story",
       name: "AuthorProfile",
-      component: () => {
+      component: ({ text }) => {
+        const authorSlug = text("Author slug", "deborah-haynes");
+        const graphqlEndPoint = text(
+          "GraphQL Endpoint",
+          "https://api.thetimes.co.uk/graphql"
+        );
+
         const config = {
-          graphqlEndPoint: "https://api.thetimes.co.uk/graphql"
+          graphqlEndPoint
         };
         const AuthorProfilePageView = AuthorProfile(config)();
 
         return (
           <AuthorProfilePageView
-            authorSlug="deborah-haynes"
+            authorSlug={authorSlug}
             onArticlePress={() => {}}
             onTwitterLinkPress={() => {}}
             analyticsStream={() => {}}
@@ -50,15 +66,21 @@ export default {
     {
       type: "story",
       name: "Topic",
-      component: () => {
+      component: ({ text }) => {
+        const topicSlug = text("Topic slug", "brexit");
+        const graphqlEndPoint = text(
+          "GraphQL Endpoint",
+          "https://api.thetimes.co.uk/graphql"
+        );
+
         const config = {
-          graphqlEndPoint: "https://api.thetimes.co.uk/graphql"
+          graphqlEndPoint
         };
         const TopicPageView = Topic(config)();
 
         return (
           <TopicPageView
-            topicSlug="brexit"
+            topicSlug={topicSlug}
             onArticlePress={() => {}}
             analyticsStream={() => {}}
           />
