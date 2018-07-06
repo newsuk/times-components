@@ -2,26 +2,7 @@
 
 exports[`1. multiple adverts 1`] = `
 Array [
-  <style>
-{
-    "IS1": {
-      "backgroundColor": "transparent",
-      "flex": 1,
-    },
-    "IS2": {
-      "flex": 1,
-    },
-    "IS3": {
-      "height": 50,
-      "width": 320,
-    },
-    "IS4": {
-      "backgroundColor": "red",
-    },
-  }
-</style>
-
-<View
+  <View
     className="IS4"
   >
     <View
@@ -41,26 +22,7 @@ Array [
       </View>
     </View>
   </View>,
-  <style>
-{
-    "IS1": {
-      "backgroundColor": "transparent",
-      "flex": 1,
-    },
-    "IS2": {
-      "flex": 1,
-    },
-    "IS3": {
-      "height": 0,
-      "width": 0,
-    },
-    "IS4": {
-      "backgroundColor": "red",
-    },
-  }
-</style>
-
-<View
+  <View
     className="IS4"
   >
     <View
@@ -84,54 +46,6 @@ Array [
 `;
 
 exports[`2. loading state advert shows placeholder only 1`] = `
-<style>
-{
-  "IS1": {
-    "height": 50,
-    "width": 320,
-  },
-  "IS2": {
-    "left": 0,
-    "position": "absolute",
-    "top": 0,
-  },
-  "IS3": {
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "color": "#696969",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 11,
-    "letterSpacing": 1.5,
-    "paddingBottom": 5,
-    "paddingLeft": 10,
-    "paddingRight": 10,
-    "paddingTop": 5,
-    "zIndex": 1,
-  },
-  "IS4": {
-    "alignItems": "center",
-    "backgroundColor": "#F9F9F9",
-    "borderColor": "#DBDBDB",
-    "borderStyle": "solid",
-    "borderWidth": 1,
-    "height": 50,
-    "justifyContent": "center",
-    "overflow": "hidden",
-    "width": 320,
-  },
-  "IS5": {
-    "alignItems": "center",
-    "flex": 1,
-    "justifyContent": "center",
-  },
-  "IS6": {
-    "backgroundColor": "red",
-  },
-}
-</style>
-
 <View
   className="IS6"
 >
