@@ -7,7 +7,7 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   minimalNativeTransform,
-  stylePrinter
+  print
 } from "@times-components/jest-serializer";
 import AdPlaceholder from "../src/ad-placeholder";
 
@@ -16,7 +16,7 @@ export default () => {
     expect,
     enzymeRootSerializer(),
     compose(
-      stylePrinter,
+      print,
       minimalNativeTransform,
       flattenStyleTransform,
       hoistStyleTransform

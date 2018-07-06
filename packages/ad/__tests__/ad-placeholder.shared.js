@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import {
   addSerializers,
   compose,
-  enzymeRootSerializer,
+  enzymeTreeSerializer,
   minimaliseTransform,
   print
 } from "@times-components/jest-serializer";
@@ -12,7 +12,7 @@ import AdPlaceholder from "../src/ad-placeholder";
 export default () => {
   addSerializers(
     expect,
-    enzymeRootSerializer(),
+    enzymeTreeSerializer(),
     compose(print, minimaliseTransform((value, key) => key === "style"))
   );
 
