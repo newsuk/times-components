@@ -1,7 +1,8 @@
 # Android-App package
 
-This package aims to consume times-components and provide necessary bridging to
-the native apps.
+This package gets bundled as a native android library, to be used in an existing
+native application, including the js bundle and native dependencies. It consumes
+times-components, and provides necessary bridging to the native apps.
 
 ## Dev Server
 
