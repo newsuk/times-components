@@ -1,9 +1,8 @@
-import "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
 import { Article } from "../src/pages";
 
-module.exports = () => {
+export default () => {
   it("renders correctly", () => {
     const config = {};
     const fetch = () => {};
