@@ -28,3 +28,4 @@ coverage
 settings.gradle
 build.gradle
 dextrose/snappy
+TimesReactIOS.podspec

@@ -10,7 +10,7 @@ const changedComponentsList = () => {
       componentDirectories.push(
         require.resolve(changedPackage.name).split("dist")[0]
       );
-    } catch (e){
+    } catch (e) {
       // Module not found
     }
   });

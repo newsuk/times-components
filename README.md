@@ -54,11 +54,10 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 ## Native App Dev Server
 
-In order to run development servers for native applications, start haul dev server via:
+In order to run development servers for native applications, start haul dev
+server via:
 
-`yarn android:app`
-  or
-`yarn ios:app`
+`yarn android:app` or `yarn ios:app`
 
 ## Haul
 
