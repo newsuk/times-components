@@ -77,7 +77,9 @@ describe("web", () => {
       </AdComposer>
     );
 
-    expect(wrapper).toMatchSnapshot(
+    const AdComponent = wrapper.find("Ad");
+
+    expect(AdComponent).toMatchSnapshot(
       "2. loading state advert shows placeholder only"
     );
   });
@@ -91,15 +93,16 @@ describe("web", () => {
       </AdComposer>
     );
 
-    wrapper
-      .find("Ad")
+    const AdComponent = wrapper.find("Ad");
+
+    AdComponent
       .at(0)
       .instance()
       .setAdError();
 
     wrapper.update();
 
-    expect(wrapper).toMatchSnapshot(
+    expect(AdComponent).toMatchSnapshot(
       "3. should not show when loading scripts errored"
     );
   });
