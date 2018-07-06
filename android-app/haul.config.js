@@ -12,6 +12,11 @@ export default {
 
     config.module.rules[1].exclude = /\.\.\/node_modules(?!.*[\/\\](react|@expo|pretty-format|haul|metro))/;
 
+    config.resolve = {
+      ...config.resolve,
+      extensions: [`.android.js`, ".native.js", ".js"],
+      mainFields: ["devModule", "dev", "react-native", "browser", "module", "main"],
+    };
     return config;
   }
 };
