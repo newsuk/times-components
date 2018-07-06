@@ -1,16 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pages tests on ios renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexBasis": "100%",
-      "justifyContent": "center",
-    }
-  }
->
+exports[`ios renders correctly 1`] = `
+<View>
   <ActivityIndicator
     animating={true}
     color="#999999"
