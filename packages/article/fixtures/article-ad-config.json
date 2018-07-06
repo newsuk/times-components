@@ -2,7 +2,7 @@
   "networkId": "25436805",
   "adUnit": "d.thetimes.co.uk",
   "pageTargeting": {
-    "testmode": "null",
+    "testmode": "lite",
     "log": "1",
     "ra": "0",
     "teaser": false,
@@ -55,5 +55,5 @@
       }
     }
   },
-  "bidderSlots": ["ad-header", "ad-article-inline"]
+  "bidderSlots": ["ad-header", "ad-inline"]
 }
