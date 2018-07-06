@@ -1,19 +1,18 @@
+import React from "react";
 import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
-  flattenStyleTransform,
-  hoistStyleTransform,
   justChildren,
   meltNative,
-  minimalWebTransform,
   propsNoChildren,
   replaceTransform,
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { AdComposer } from "@times-components/ad";
 import { mount } from "enzyme";
-import shared from "./shared.base";
+import shared from "./shared-ad.base";
 
 export default () => {
   addSerializers(
@@ -25,15 +24,11 @@ export default () => {
         Ad: propsNoChildren,
         AdComposer: justChildren,
         Broadcast: justChildren,
-        PullQuotes: propsNoChildren,
         ...meltNative
       }),
-      flattenStyleTransform,
-      hoistStyleTransform,
-      minimalWebTransform,
       rnwTransform()
     )
   );
 
-  shared(mount);
+  shared(component => mount(<AdComposer>{component}</AdComposer>));
 };
