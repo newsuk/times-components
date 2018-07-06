@@ -18,7 +18,7 @@ exports[`1. renders multiple paragraphs with ads 1`] = `
     This is the text for paragraph two
   </Text>
   <Ad
-    slotName="ad-inline"
+    slotName="inline-ad"
     style={
       Object {
         "borderBottomColor": "#DBDBDB",

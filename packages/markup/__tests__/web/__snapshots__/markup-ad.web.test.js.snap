@@ -22,7 +22,7 @@ exports[`1. renders multiple paragraphs with ads 1`] = `
     contextUrl=""
     isLoading={false}
     section=""
-    slotName="ad-inline"
+    slotName="inline-ad"
     style={85}
   />
   <p>

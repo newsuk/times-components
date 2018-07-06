@@ -64,7 +64,7 @@ class ArticlePage extends Component {
       <Fragment>
         <HeaderAdContainer key="headerAd">
           <Ad
-            slotName="ad-header"
+            slotName="header"
             style={adStyle}
             section={section}
             contextUrl={url}

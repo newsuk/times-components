@@ -48,7 +48,7 @@ const defaultRenderers = {
   },
   ad(key, attributes) {
     return (
-      <Ad key={key} slotName="ad-inline" style={styles.ad} {...attributes} />
+      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
     );
   },
   break(key) {
