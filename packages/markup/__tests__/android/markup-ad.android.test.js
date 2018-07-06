@@ -1,4 +1,4 @@
-import shared from "../shared.native";
+import shared from "../shared-ad.native";
 
 describe("android", () => {
   shared();

@@ -1,4 +1,4 @@
-import shared from "../shared.web";
+import shared from "../shared-ad.web";
 
 describe("web", () => {
   shared();

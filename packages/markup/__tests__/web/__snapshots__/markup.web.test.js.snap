@@ -1,14 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Markup Web does not render a script tag 1`] = `<div />`;
+exports[`1. renders a single paragraph 1`] = `
+<p>
+  This is the text for paragraph one
+</p>
+`;
 
-exports[`Markup Web does not render an image tag 1`] = `<div />`;
+exports[`2. renders multiple paragraphs 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
 
-exports[`Markup Web renders a mixture of tags 1`] = `
+exports[`3. renders multiple paragraphs with a pull quote 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "rgba(105,105,105,1)",
+  },
+  "IS2": {
+    "color": "rgba(105,105,105,1)",
+  },
+}
+</style>
+
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <PullQuotes
+    caption="Katie Glass"
+    captionColour="#696969"
+    content="Some pull quote"
+    quoteColour="#696969"
+    twitter=""
+  />
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
+
+exports[`4. renders the bold tag 1`] = `
+<strong>
+  some text here
+</strong>
+`;
+
+exports[`5. renders the italic tag 1`] = `
+<em>
+   some more text here
+</em>
+`;
+
+exports[`6. renders the span tag 1`] = `
+<span>
+  some other text here
+</span>
+`;
+
+exports[`7. renders the line break tag 1`] = `<br />`;
+
+exports[`8. renders a mixture of tags 1`] = `
 <div>
   <div>
     <div
-      dir="auto"
       href="http://www.google.com"
     >
       some link here
@@ -32,162 +114,12 @@ exports[`Markup Web renders a mixture of tags 1`] = `
 </div>
 `;
 
-exports[`Markup Web renders a single paragraph 1`] = `
-<p>
-  This is the text for paragraph one
-</p>
-`;
-
-exports[`Markup Web renders multiple children 1`] = `
-<div
-  dir="auto"
-  style={
-    Object {
-      "color": "red",
-    }
-  }
->
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`Markup Web renders multiple paragraphs 1`] = `
+exports[`9. renders tags nested 1`] = `
 <div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`Markup Web renders multiple paragraphs with a pull quote 1`] = `
-<div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <div>
-    <div
-      dir="auto"
-      style={
-        Object {
-          "color": "rgba(105,105,105,1)",
-        }
-      }
-    >
-      “
-    </div>
-    <div
-      className="responsive-styles__component-fbPFZZ kssypV"
-      dir="auto"
-    >
-      [The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child
-    </div>
-    <div>
-      <div
-        dir="auto"
-        style={
-          Object {
-            "color": "rgba(105,105,105,1)",
-          }
-        }
-      >
-        Katie Glass
-      </div>
-    </div>
-  </div>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`Markup Web renders multiple paragraphs with ads 1`] = `
-<div>
-  <p>
-    This is the text for paragraph one
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <Ad
-    pos="inline-ad"
-    style={
-      Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "borderTopColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": "30px",
-        "marginTop": "30px",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
-      }
-    }
-  />
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-  <p>
-    This is the text for paragraph two
-  </p>
-</div>
-`;
-
-exports[`Markup Web renders tags nested 1`] = `
-<div
-  dir="auto"
->
   Some text is here 
-  <span
-    dir="auto"
-  >
+  <span>
     and there is some 
-    <span
-      dir="auto"
-    >
+    <span>
       more text 
       <span>
         and in here
@@ -199,30 +131,8 @@ exports[`Markup Web renders tags nested 1`] = `
 </div>
 `;
 
-exports[`Markup Web renders the bold tag 1`] = `
-<strong>
-  some text here
-</strong>
-`;
-
-exports[`Markup Web renders the italic tag 1`] = `
-<em>
-   some more text here
-</em>
-`;
-
-exports[`Markup Web renders the line break tag 1`] = `<br />`;
-
-exports[`Markup Web renders the span tag 1`] = `
-<span>
-  some other text here
-</span>
-`;
-
-exports[`Markup Web renders wrapped tags 1`] = `
-<div
-  dir="auto"
->
+exports[`10. renders wrapped tags 1`] = `
+<div>
   Camilla Long is 
   <em>
     the Sunday Times
@@ -234,3 +144,28 @@ exports[`Markup Web renders wrapped tags 1`] = `
    at the British Press Awards in 2010 and 2016.
 </div>
 `;
+
+exports[`11. renders multiple children 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "red",
+  },
+}
+</style>
+
+<div
+  className="IS1"
+>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;
+
+exports[`12. does not render a script tag 1`] = `<div />`;
+
+exports[`13. does not render an image tag 1`] = `<div />`;
