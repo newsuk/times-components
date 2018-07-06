@@ -130,7 +130,7 @@ export default {
             >
               {({ article, isLoading, error }) => (
                 <Article
-                  adConfig={defaultAdConfig}
+                  adConfig={articleAdConfig}
                   analyticsStream={storybookReporter}
                   article={article}
                   error={error}
