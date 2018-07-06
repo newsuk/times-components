@@ -27,10 +27,7 @@ adInit.mockImplementation(() => ({
 const props = {
   contextUrl:
     "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
-  section: "news",
-  style: {
-    backgroundColor: "red"
-  }
+  section: "news"
 };
 
 describe("web", () => {
@@ -90,7 +87,7 @@ describe("web", () => {
     const wrapper = mount(
       <AdComposer adConfig={adConfig}>
         <Fragment>
-          <Ad {...props} slotName="header" />
+          <Ad {...props} style={{ backgroundColor: "red" }} slotName="header" />
         </Fragment>
       </AdComposer>
     );

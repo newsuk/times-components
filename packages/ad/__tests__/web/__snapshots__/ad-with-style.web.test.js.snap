@@ -8,39 +8,12 @@ exports[`1. multiple adverts 1`] = `
     "overflow": "hidden",
     "width": 728,
   },
-  "IS10": {
-    "backgroundColor": "red",
-  },
-  "IS11": {
-    "backgroundColor": "red",
-  },
-  "IS12": {
-    "backgroundColor": "red",
-  },
   "IS2": {
-    "backgroundColor": "red",
-  },
-  "IS3": {
-    "backgroundColor": "red",
-  },
-  "IS4": {
-    "backgroundColor": "red",
-  },
-  "IS5": {
     "height": 0,
     "overflow": "hidden",
     "width": 0,
   },
-  "IS6": {
-    "backgroundColor": "red",
-  },
-  "IS7": {
-    "backgroundColor": "red",
-  },
-  "IS8": {
-    "backgroundColor": "red",
-  },
-  "IS9": {
+  "IS3": {
     "height": 90,
     "overflow": "hidden",
     "width": 728,
@@ -51,18 +24,13 @@ exports[`1. multiple adverts 1`] = `
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    className="IS4"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={false}
     section="news"
     slotName="header"
   >
-    <View
-      className="IS3"
-    >
-      <div
-        className="IS2"
-      >
+    <View>
+      <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={90}
@@ -77,25 +45,20 @@ exports[`1. multiple adverts 1`] = `
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    className="IS8"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={false}
     section="news"
     slotName="pixel"
   >
-    <View
-      className="IS7"
-    >
-      <div
-        className="IS6"
-      >
+    <View>
+      <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={0}
           width={0}
         >
           <div
-            className="IS5"
+            className="IS2"
           />
         </DOMContext>
       </div>
@@ -103,25 +66,20 @@ exports[`1. multiple adverts 1`] = `
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    className="IS12"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={false}
     section="news"
     slotName="intervention"
   >
-    <View
-      className="IS11"
-    >
-      <div
-        className="IS10"
-      >
+    <View>
+      <div>
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={90}
           width={728}
         >
           <div
-            className="IS9"
+            className="IS3"
           />
         </DOMContext>
       </div>
@@ -176,33 +134,19 @@ exports[`2. loading state advert shows placeholder only 1`] = `
   "IS6": {
     "flex": 1,
   },
-  "IS7": {
-    "backgroundColor": "red",
-  },
-  "IS8": {
-    "backgroundColor": "red",
-  },
-  "IS9": {
-    "backgroundColor": "red",
-  },
 }
 </style>
 
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    className="IS9"
     contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     isLoading={true}
     section="news"
     slotName="header"
   >
-    <View
-      className="IS8"
-    >
-      <div
-        className="IS7"
-      >
+    <View>
+      <div>
         <AdPlaceholder
           className="IS6"
           height={90}
