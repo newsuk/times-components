@@ -25,13 +25,15 @@ const container = {
 const styles = StyleSheet.create({
   nextContainer: Object.assign(
     {
-      paddingVertical: spacing(2)
+      paddingTop: spacing(2),
+      paddingBottom: 8
     },
     container
   ),
   previousContainer: Object.assign(
     {
-      paddingVertical: spacing(2)
+      paddingTop: spacing(2),
+      paddingBottom: 8
     },
     container
   ),

@@ -2,7 +2,7 @@
 
 exports[`ArticleList responsive tests on web should render ListContentContainer correctly 1`] = `
 <div
-  className="responsive-styles__component-fbPFZZ bSCqAc"
+  className="responsive-styles__component-fbPFZZ bPaJEQ"
 />
 `;
 

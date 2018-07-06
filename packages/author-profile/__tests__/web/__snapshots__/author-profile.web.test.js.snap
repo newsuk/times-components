@@ -111,78 +111,82 @@ exports[`1. Render an author profile page 1`] = `
       </div>
     </div>
   </header>
-  <div
-    className="responsive-styles__component-fbPFZZ bSCqAc"
-  >
-    <div>
+  <div>
+    <div
+      className="responsive-styles__component-fbPFZZ bPaJEQ"
+    >
       <div>
-        <div
-          className="responsive-styles__component-fbPFZZ ldBdZT"
-        >
+        <div>
           <div
-            className="responsive-styles__component-fbPFZZ exZFAC"
+            className="responsive-styles__component-fbPFZZ ldBdZT"
           >
             <div
-              data-testid="results-message"
+              className="responsive-styles__component-fbPFZZ exZFAC"
             >
-              Showing 1 - 3 of 20 results
-            </div>
-          </div>
-          <div
-            className="responsive-styles__component-fbPFZZ cePhpb"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            >
-              <a
-                href="?page=2"
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
+              <div
+                data-testid="results-message"
               >
-                <div
-                  data-testid="pagination-button-next"
+                Showing 1 - 3 of 20 results
+              </div>
+            </div>
+            <div
+              className="responsive-styles__component-fbPFZZ cePhpb"
+            >
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              />
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              >
+                <a
+                  href="?page=2"
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
                 >
-                  <div>
-                    <span>
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
+                  <div
+                    data-testid="pagination-button-next"
                   >
-                    <g
-                      fill="#006699"
+                    <div>
+                      <span>
+                        Next
+                        <span
+                          className="responsive-styles__component-fbPFZZ hqaoTY"
+                        >
+                           page
+                        </span>
+                      </span>
+                    </div>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
                     >
-                      <path
-                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </a>
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div
+      accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+      data-testid="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+      id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+    >
       <div
-        accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-        data-testid="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
-        id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <a
           href="https://www.thetimes.co.uk/article/top-medal-for-forces-dog-who-took-a-bite-out-of-the-taliban-vgklxs37f"
@@ -298,10 +302,14 @@ exports[`1. Render an author profile page 1`] = `
           </div>
         </a>
       </div>
+    </div>
+    <div
+      accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+      data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+      id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+    >
       <div
-        accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-        data-testid="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
-        id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
@@ -422,10 +430,14 @@ exports[`1. Render an author profile page 1`] = `
           </div>
         </a>
       </div>
+    </div>
+    <div
+      accessibility-label="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+      data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+      id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+    >
       <div
-        accessibility-label="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-        data-testid="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
-        id="f79c9d8c-c95c-11e7-b529-95e3fc05f40f.2"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
@@ -717,78 +729,82 @@ exports[`2. Render an author profile page without images 1`] = `
       </div>
     </div>
   </header>
-  <div
-    className="responsive-styles__component-fbPFZZ bSCqAc"
-  >
-    <div>
+  <div>
+    <div
+      className="responsive-styles__component-fbPFZZ bPaJEQ"
+    >
       <div>
-        <div
-          className="responsive-styles__component-fbPFZZ ldBdZT"
-        >
+        <div>
           <div
-            className="responsive-styles__component-fbPFZZ exZFAC"
+            className="responsive-styles__component-fbPFZZ ldBdZT"
           >
             <div
-              data-testid="results-message"
+              className="responsive-styles__component-fbPFZZ exZFAC"
             >
-              Showing 1 - 3 of 20 results
-            </div>
-          </div>
-          <div
-            className="responsive-styles__component-fbPFZZ cePhpb"
-          >
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            >
-              <a
-                href="?page=2"
-                style={
-                  Object {
-                    "textDecoration": "none",
-                  }
-                }
+              <div
+                data-testid="results-message"
               >
-                <div
-                  data-testid="pagination-button-next"
+                Showing 1 - 3 of 20 results
+              </div>
+            </div>
+            <div
+              className="responsive-styles__component-fbPFZZ cePhpb"
+            >
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              />
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              >
+                <a
+                  href="?page=2"
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
                 >
-                  <div>
-                    <span>
-                      Next
-                      <span
-                        className="responsive-styles__component-fbPFZZ hqaoTY"
-                      >
-                         page
-                      </span>
-                    </span>
-                  </div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
+                  <div
+                    data-testid="pagination-button-next"
                   >
-                    <g
-                      fill="#006699"
+                    <div>
+                      <span>
+                        Next
+                        <span
+                          className="responsive-styles__component-fbPFZZ hqaoTY"
+                        >
+                           page
+                        </span>
+                      </span>
+                    </div>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
                     >
-                      <path
-                        d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </a>
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div
+      accessibility-label="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+      data-testid="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+      id="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+    >
       <div
-        accessibility-label="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
-        data-testid="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
-        id="7225cd6a-701c-11e8-bea3-bf1a5a054f3a.0"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <a
           href="https://www.thetimes.co.uk/article/rolls-royce-spy-was-chinese-consultant-mw9ttcckm"
@@ -930,10 +946,14 @@ exports[`2. Render an author profile page without images 1`] = `
           </div>
         </a>
       </div>
+    </div>
+    <div
+      accessibility-label="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+      data-testid="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+      id="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+    >
       <div
-        accessibility-label="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
-        data-testid="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
-        id="d67c536e-6f5a-11e8-bea3-bf1a5a054f3a.1"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
@@ -1096,10 +1116,14 @@ exports[`2. Render an author profile page without images 1`] = `
           </div>
         </a>
       </div>
+    </div>
+    <div
+      accessibility-label="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+      data-testid="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+      id="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+    >
       <div
-        accessibility-label="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
-        data-testid="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
-        id="b2e4cd1a-6a9a-11e8-996c-7589300f03c9.2"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
@@ -1316,41 +1340,45 @@ exports[`3. Render an author profile page loading state 1`] = `
       </div>
     </div>
   </header>
-  <div
-    className="responsive-styles__component-fbPFZZ bSCqAc"
-  >
-    <div>
+  <div>
+    <div
+      className="responsive-styles__component-fbPFZZ bPaJEQ"
+    >
       <div>
-        <div
-          className="responsive-styles__component-fbPFZZ ldBdZT"
-        >
+        <div>
           <div
-            className="responsive-styles__component-fbPFZZ exZFAC"
+            className="responsive-styles__component-fbPFZZ ldBdZT"
           >
             <div
-              data-testid="results-message"
+              className="responsive-styles__component-fbPFZZ exZFAC"
             >
-              Showing 0 - 0 of 0 results
+              <div
+                data-testid="results-message"
+              >
+                Showing 0 - 0 of 0 results
+              </div>
             </div>
-          </div>
-          <div
-            className="responsive-styles__component-fbPFZZ cePhpb"
-          >
             <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
-            <div
-              className="responsive-styles__component-fbPFZZ cmwPJA"
-            />
+              className="responsive-styles__component-fbPFZZ cePhpb"
+            >
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              />
+              <div
+                className="responsive-styles__component-fbPFZZ cmwPJA"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div
+      accessibility-label="empty.0"
+      data-testid="empty.0"
+      id="empty.0"
+    >
       <div
-        accessibility-label="empty.0"
-        data-testid="empty.0"
-        id="empty.0"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ hvIATq"
@@ -1438,10 +1466,14 @@ exports[`3. Render an author profile page loading state 1`] = `
           </div>
         </div>
       </div>
+    </div>
+    <div
+      accessibility-label="empty.1"
+      data-testid="empty.1"
+      id="empty.1"
+    >
       <div
-        accessibility-label="empty.1"
-        data-testid="empty.1"
-        id="empty.1"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
@@ -1534,10 +1566,14 @@ exports[`3. Render an author profile page loading state 1`] = `
           </div>
         </div>
       </div>
+    </div>
+    <div
+      accessibility-label="empty.2"
+      data-testid="empty.2"
+      id="empty.2"
+    >
       <div
-        accessibility-label="empty.2"
-        data-testid="empty.2"
-        id="empty.2"
+        className="responsive-styles__component-fbPFZZ bPaJEQ"
       >
         <div
           className="responsive-styles__component-fbPFZZ fpmWTY"
