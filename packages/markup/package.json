@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
