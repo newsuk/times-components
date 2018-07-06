@@ -63,21 +63,9 @@ describe("web", () => {
       </AdComposer>
     );
 
-    wrapper
-      .find("Ad")
-      .at(0)
-      .instance()
-      .setAdReady();
-    wrapper
-      .find("Ad")
-      .at(1)
-      .instance()
-      .setAdReady();
-    wrapper
-      .find("Ad")
-      .at(2)
-      .instance()
-      .setAdReady();
+    wrapper.find("Ad").forEach(node => {
+      node.instance().setAdReady();
+    });
 
     wrapper.update();
 
