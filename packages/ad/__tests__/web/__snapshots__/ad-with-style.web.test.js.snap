@@ -24,7 +24,7 @@ exports[`1. multiple adverts 1`] = `
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    contextUrl="https://www.thetimes.co.uk"
     isLoading={false}
     section="news"
     slotName="header"
@@ -45,7 +45,7 @@ exports[`1. multiple adverts 1`] = `
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    contextUrl="https://www.thetimes.co.uk"
     isLoading={false}
     section="news"
     slotName="pixel"
@@ -66,7 +66,7 @@ exports[`1. multiple adverts 1`] = `
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    contextUrl="https://www.thetimes.co.uk"
     isLoading={false}
     section="news"
     slotName="intervention"
@@ -140,7 +140,7 @@ exports[`2. loading state advert shows placeholder only 1`] = `
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    contextUrl="https://www.thetimes.co.uk"
     isLoading={true}
     section="news"
     slotName="header"
@@ -192,19 +192,10 @@ exports[`2. loading state advert shows placeholder only 1`] = `
 `;
 
 exports[`3. should not show when loading scripts errored 1`] = `
-<style>
-{
-  "IS1": {
-    "backgroundColor": "red",
-  },
-}
-</style>
-
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
-    className="IS1"
-    contextUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    contextUrl="https://www.thetimes.co.uk"
     isLoading={false}
     section="news"
     slotName="header"
