@@ -3,12 +3,11 @@ import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
-  enzymeRootSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
   minimaliseTransform,
   minimalNativeTransform,
-  stylePrinter
+  print
 } from "@times-components/jest-serializer";
 import adInit from "../src/utils/ad-init";
 import adConfig from "../fixtures/article-ad-config.json";
@@ -32,9 +31,8 @@ const props = {
 export default () => {
   addSerializers(
     expect,
-    enzymeRootSerializer(),
     compose(
-      stylePrinter,
+      print,
       minimalNativeTransform,
       flattenStyleTransform,
       hoistStyleTransform,

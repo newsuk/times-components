@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import {
   addSerializers,
   compose,
-  enzymeRootSerializer,
+  enzymeTreeSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
   minimalNativeTransform,
@@ -14,7 +14,7 @@ import AdPlaceholder from "../src/ad-placeholder";
 export default () => {
   addSerializers(
     expect,
-    enzymeRootSerializer(),
+    enzymeTreeSerializer(),
     compose(
       print,
       minimalNativeTransform,
