@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. IconDiamond renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="064d9dc888226a281482b4aa9646de05"
+  width={20}
+>
+  <title>
+    IconDiamond
+  </title>
+  <g
+    fill="#1D1D1B"
+  >
+    <path
+      d="6d46867616424ca1e758db3aec64d542"
+    />
+  </g>
+</svg>
+`;
+
+exports[`2. IconTwitter renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="f0ca3b77f62fa9136cdfd9a3f847d07b"
+  width={20}
+>
+  <title>
+    IconTwitter
+  </title>
+  <path
+    d="0407fd6a3edc199eb6063d0ebd2c66ad"
+    fill="#006699"
+  />
+</svg>
+`;
+
+exports[`3. IconVideo renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="7d01bea7ecb0281e219ae5357dfe4a3f"
+  width={20}
+>
+  <title>
+    IconVideo
+  </title>
+  <rect
+    fill="#1D1D1B"
+    height="13.5721404"
+    width="15.4550103"
+    x="0.154639175"
+    y="0.139754386"
+  />
+  <polygon
+    fill="#1D1D1B"
+    points="e6624ad17344f251daa0c00df406817b"
+  />
+  <polygon
+    fill="#1D1D1B"
+    points="26d8194b38b196f22e7d31ee45b19805"
+  />
+</svg>
+`;
+
+exports[`4. IconEmail renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="b4de9ef077a0a2ad684a1d8e6916ebc4"
+  width={20}
+>
+  <title>
+    IconEmail
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
+  >
+    <path
+      d="1d7aae45398f94fa23694b6080b89032"
+    />
+  </g>
+</svg>
+`;
+
+exports[`5. IconStar renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="f37430a4df9c4efc01308a92d39c898f"
+  width={20}
+>
+  <title>
+    IconStar
+  </title>
+  <polygon
+    fill="#1D1D1B"
+    points="03c58ab70fd52f598d210973eeea7848"
+  />
+</svg>
+`;
+
+exports[`6. IconFacebook renders 1`] = `
+<svg
+  aria-label="[title]"
+  role="img"
+  viewBox="bd9a71c8a3142edf7cab6a62a2277378"
+  width={20}
+>
+  <title>
+    IconFacebook
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
+  >
+    <path
+      d="ff2ae287381fd0583b3a4df9bc45c5be"
+    />
+  </g>
+</svg>
+`;

@@ -132,12 +132,15 @@ exports[`Pagination on Web renders correctly 1`] = `
           </div>
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </g>
           </svg>
         </div>
@@ -279,12 +282,15 @@ exports[`Pagination on Web renders next link 1`] = `
           </div>
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </g>
           </svg>
         </div>
@@ -413,12 +419,15 @@ exports[`Pagination on Web renders prev and next link 1`] = `
         >
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              />
             </g>
           </svg>
           <div>
@@ -460,12 +469,15 @@ exports[`Pagination on Web renders prev and next link 1`] = `
           </div>
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </g>
           </svg>
         </div>
@@ -594,12 +606,15 @@ exports[`Pagination on Web renders prev link 1`] = `
         >
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+              />
             </g>
           </svg>
           <div>
@@ -754,12 +769,15 @@ exports[`Pagination on Web renders results message 1`] = `
           </div>
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </g>
           </svg>
         </div>
@@ -857,12 +875,15 @@ exports[`Pagination on Web renders with hidden results 1`] = `
           </div>
           <svg
             height={12}
+            viewBox="42 12 60 120"
             width={7}
           >
             <g
               fill="#006699"
             >
-              <path />
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+              />
             </g>
           </svg>
         </div>

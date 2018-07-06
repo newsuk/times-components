@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders multiple paragraphs with ads 1`] = `
+<div>
+  <p>
+    This is the text for paragraph one
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl=""
+    isLoading={false}
+    section=""
+    slotName="inline-ad"
+    style={85}
+  />
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+  <p>
+    This is the text for paragraph two
+  </p>
+</div>
+`;

@@ -14,6 +14,7 @@ import replace, {
   propsNoChildren,
   replaceTransform
 } from "./replace";
+import replaceProp, { replacePropTransform } from "./replace-prop";
 import hoistStyle, { hoistStyleTransform } from "./hoist-style";
 import traverse from "./traverse";
 import print, { stylePrinter } from "./printers";
@@ -77,6 +78,8 @@ export {
   print,
   propsNoChildren,
   replace,
+  replaceProp,
+  replacePropTransform,
   replaceTransform,
   rnw,
   rnwTransform,

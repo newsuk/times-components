@@ -6,10 +6,10 @@ import { AdComposer } from "@times-components/ad";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fonts } from "@times-components/styleguide";
 import { renderTree, renderTrees } from "./src/markup";
+import multiParagraphWithPullQuote from "./fixtures/multi-paragraph-with-pullquote";
 
 const multiParagraph = require("./fixtures/multi-paragraph.json");
 const multiParagraphWithAds = require("./fixtures/multi-paragraph-with-ads.json");
-const multiParagraphWithPullQuote = require("./fixtures/multi-paragraph-with-pullquote.json");
 const mixture = require("./fixtures/tag-mixture.json");
 const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
@@ -112,7 +112,7 @@ export default {
       name: "Multiple paragraphs with pull quote",
       component: () => (
         <View style={{ width: 320 }}>
-          {renderTrees(multiParagraphWithPullQuote)}
+          {renderTrees(multiParagraphWithPullQuote())}
         </View>
       )
     }

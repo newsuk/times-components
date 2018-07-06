@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. IconDiamond sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={50}
+/>
+`;
+
+exports[`2. IconTwitter sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={62.5}
+/>
+`;
+
+exports[`3. IconVideo sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={86}
+/>
+`;
+
+exports[`4. IconEmail sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={68.75}
+/>
+`;
+
+exports[`5. IconStar sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={50}
+/>
+`;
+
+exports[`6. IconFacebook sets a width when height is set 1`] = `
+<svg
+  height={50}
+  width={25}
+/>
+`;

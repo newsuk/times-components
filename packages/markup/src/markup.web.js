@@ -34,7 +34,9 @@ const defaultRenderers = {
     return <span key={key}>{renderedChildren}</span>;
   },
   ad(key, attributes) {
-    return <Ad key={key} pos="inline-ad" style={styles.ad} {...attributes} />;
+    return (
+      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+    );
   },
   break(key) {
     return <br key={key} />;

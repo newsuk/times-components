@@ -195,10 +195,21 @@ Refer to the code for the latest removed values.
 
 **replace({ [ComponentName: string]: Replacer }): Serializer**
 
-An experimental serializer that may be best suited to `jest.mock` but in some
-cases you may find it desirable to simply switch out bits of your tree for
-brevity and focus independent of what `jest.mock` provides or because you don't
-want to globally mock the dependency.
+A serializer that may be best suited to `jest.mock` but in some cases you may
+find it desirable to simply switch out bits of your tree for brevity and focus
+independent of what `jest.mock` provides or because you don't want to globally
+mock the dependency. `jest-mock` also doesn't play well with web or named member
+imports.
+
+### replaceProp
+
+**replaceProp((value: Object, key: string): Object): Serializer**
+
+Similar to the `minimalise` serializer, rather than omitting values you can
+replace them. This is handy for occasions when a prop value has a very long
+completely unreadable value that you would like to "monitor" and see on a PR
+that a change has been made but at the same time not destroy the snapshots
+readability.
 
 ###rnw
 

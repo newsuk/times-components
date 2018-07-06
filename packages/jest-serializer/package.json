@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",
@@ -33,15 +33,14 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/svgs": "1.0.5",
+    "@times-components/svgs": "1.0.6",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.0",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
     "prop-types": "15.6.0",
-    "react-test-renderer": "16.3.1",
-    "svgs": "3.2.1"
+    "react-test-renderer": "16.3.1"
   },
   "dependencies": {
     "enzyme-to-json": "3.3.4",
