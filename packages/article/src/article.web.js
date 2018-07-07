@@ -63,7 +63,12 @@ class ArticlePage extends Component {
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad pos="header" style={adStyle} section={section} contextUrl={url} />
+          <Ad
+            slotName="header"
+            style={adStyle}
+            section={section}
+            contextUrl={url}
+          />
         </HeaderAdContainer>
         <MainContainer>
           <HeaderContainer>
@@ -102,9 +107,9 @@ class ArticlePage extends Component {
         </MainContainer>
         <ArticleTopics topics={topics} onPress={onTopicPress} />
         {displayRelatedArticles}
-        <Ad pos="pixel" section={section} contextUrl={url} />
-        <Ad pos="pixelteads" section={section} contextUrl={url} />
-        <Ad pos="pixelskin" section={section} contextUrl={url} />
+        <Ad slotName="pixel" section={section} contextUrl={url} />
+        <Ad slotName="pixelteads" section={section} contextUrl={url} />
+        <Ad slotName="pixelskin" section={section} contextUrl={url} />
       </Fragment>
     );
   }

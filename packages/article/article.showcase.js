@@ -23,6 +23,7 @@ import articleFixtureNoStandfirstNoFlags from "./fixtures/no-standfirst-no-flags
 import articleFixtureNoLabelNoFlags from "./fixtures/no-label-no-flags.json";
 import articleFixtureNoLabelNoFlagsNoStandFirst from "./fixtures/no-label-no-flags-no-standfirst.json";
 import articleFixtureNoLeadAsset from "./fixtures/no-lead-asset.json";
+import articleAdConfig from "./fixtures/article-ad-config.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -44,61 +45,13 @@ const mocks = [
   }
 ];
 
-const defaultAdConfig = {
-  networkId: "25436805",
-  adUnit: "d.thetimes.co.uk",
-  pageTargeting: {
-    title: "Title",
-    label: "Label"
-  },
-  slotTargeting: {
-    path: "/news",
-    sec_id: "null",
-    section: "news",
-    zone: "current_edition",
-    slot: "news"
-  },
-  biddersConfig: {
-    timeout: 3000,
-    minPrice: 0.01,
-    maxBid: 15,
-    bucketSize: 0.25,
-    bidders: {
-      appnexus: {
-        placementId: "5823281"
-      },
-      rubicon: {
-        accountId: "14062",
-        siteId: "70608",
-        zoneId: "335918"
-      },
-      amazon: {
-        accountId: "3360"
-      },
-      criteo: {
-        zoneMap: {
-          "120x600": "764877"
-        }
-      },
-      pubmatic: {
-        accountId: "156034",
-        adSlotPrefix: "Thetimes"
-      },
-      indexExchange: {
-        siteId: "188830"
-      }
-    }
-  },
-  bidderSlots: ["ad-header", "ad-article-inline"]
-};
-
 const renderArticle = (
   decorateAction,
   {
     fixture: { data = {} } = {},
     isLoading = false,
     analyticsStream = storybookReporter,
-    adConfig = defaultAdConfig,
+    adConfig = articleAdConfig,
     error
   }
 ) => (
@@ -177,7 +130,7 @@ export default {
             >
               {({ article, isLoading, error }) => (
                 <Article
-                  adConfig={defaultAdConfig}
+                  adConfig={articleAdConfig}
                   analyticsStream={storybookReporter}
                   article={article}
                   error={error}

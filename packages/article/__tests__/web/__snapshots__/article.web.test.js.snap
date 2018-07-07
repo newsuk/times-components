@@ -1391,16 +1391,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -1423,16 +1423,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -1455,16 +1455,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -3673,16 +3673,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -3705,16 +3705,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -3737,16 +3737,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -4293,16 +4293,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -4325,16 +4325,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -4357,16 +4357,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -5659,16 +5659,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -5691,16 +5691,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -5723,16 +5723,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -7042,16 +7042,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -7074,16 +7074,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -7106,16 +7106,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -8417,16 +8417,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -8449,16 +8449,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -8481,16 +8481,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -9784,16 +9784,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -9816,16 +9816,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -9848,16 +9848,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -11146,16 +11146,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -11178,16 +11178,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -11210,16 +11210,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -12532,16 +12532,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -12564,16 +12564,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -12596,16 +12596,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -13910,16 +13910,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -13942,16 +13942,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -13974,16 +13974,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -15280,16 +15280,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -15312,16 +15312,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
@@ -15344,16 +15344,16 @@ Array [
       <div
         style={
           Object {
-            "height": "90px",
-            "width": "728px",
+            "height": "0px",
+            "width": "0px",
           }
         }
       >
         <div>
           <Watermark
-            height={90}
-            viewBox="-630 120 1200 50"
-            width={728}
+            height={0}
+            viewBox="-50 0 0 0"
+            width={0}
           />
         </div>
         <div>
