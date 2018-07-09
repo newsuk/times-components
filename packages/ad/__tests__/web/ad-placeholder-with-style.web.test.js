@@ -18,6 +18,29 @@ const style = {
   backgroundColor: "red"
 };
 
+const styles = [
+  "alignItems",
+  "backgroundColor",
+  "borderColor",
+  "borderStyle",
+  "borderWidth",
+  "color",
+  "flex",
+  "fontFamily",
+  "fontSize",
+  "justifyContent",
+  "left",
+  "letterSpacing",
+  "paddingBottom",
+  "paddingLeft",
+  "paddingRight",
+  "paddingTop",
+  "position",
+  "overflow",
+  "top",
+  "zIndex"
+];
+
 describe("web", () => {
   addSerializers(
     expect,
@@ -30,7 +53,7 @@ describe("web", () => {
       replaceTransform({
         Watermark: propsNoChildren
       }),
-      rnwTransform()
+      rnwTransform(styles)
     )
   );
 
