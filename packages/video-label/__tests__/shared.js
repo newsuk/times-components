@@ -6,7 +6,7 @@ import VideoLabel from "../src/video-label";
 export default () => {
   it("renders VideoLabel with an explicit title", () => {
     const tree = renderer
-      .create(<VideoLabel title="swimming" color="#008347" />)
+      .create(<VideoLabel color="#008347" title="swimming" />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

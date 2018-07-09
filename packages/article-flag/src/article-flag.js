@@ -10,12 +10,12 @@ import styles from "./style";
 const ArticleFlag = ({ title, color }) => (
   <View style={styles.view}>
     <View style={styles.diamond}>
-      <IconDiamond height={8} width={8} fillColour={color} />
+      <IconDiamond fillColour={color} height={8} width={8} />
     </View>
     <Text
       accessibilityLabel={`${title} Flag`}
-      testID={`flag-${title}`}
       style={[styles.title, { color }]}
+      testID={`flag-${title}`}
     >
       {beautifyTitle(title)}
     </Text>
@@ -32,19 +32,19 @@ ArticleFlag.defaultProps = {
 };
 
 const NewArticleFlag = () => (
-  <ArticleFlag title="new" color={colours.functional.articleFlagNew} />
+  <ArticleFlag color={colours.functional.articleFlagNew} title="new" />
 );
 const UpdatedArticleFlag = () => (
-  <ArticleFlag title="updated" color={colours.functional.articleFlagUpdated} />
+  <ArticleFlag color={colours.functional.articleFlagUpdated} title="updated" />
 );
 const ExclusiveArticleFlag = () => (
   <ArticleFlag
-    title="exclusive"
     color={colours.functional.articleFlagExclusive}
+    title="exclusive"
   />
 );
 const SponsoredArticleFlag = () => (
-  <ArticleFlag title="sponsored" color={colours.functional.tertiary} />
+  <ArticleFlag color={colours.functional.tertiary} title="sponsored" />
 );
 
 export default ArticleFlag;

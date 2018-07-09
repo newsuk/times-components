@@ -17,7 +17,7 @@ const linkStyles = {
 };
 
 const ArticleLink = props => (
-  <TextLink url={props.url} onPress={props.onPress} style={linkStyles}>
+  <TextLink onPress={props.onPress} style={linkStyles} url={props.url}>
     {props.children}
   </TextLink>
 );

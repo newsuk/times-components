@@ -139,6 +139,13 @@ class BrightcoveVideo extends Component {
 
     return (
       <NativeBrightcove
+        accountId={this.props.accountId}
+        autoplay={this.props.autoplay}
+        hideFullScreenButton={this.props.hideFullScreenButton}
+        onChange={this.handleChange}
+        onIOSError={this.onError}
+        onLoadingError={this.onError}
+        policyKey={this.props.policyKey}
         ref={ref => {
           this.bcPlayer = ref;
         }}
@@ -147,15 +154,8 @@ class BrightcoveVideo extends Component {
           width: this.props.width,
           position: this.props.position,
           zIndex: this.props.zIndex
-        }}
-        policyKey={this.props.policyKey}
-        accountId={this.props.accountId}
-        videoId={this.props.videoId}
-        autoplay={this.props.autoplay}
-        hideFullScreenButton={this.props.hideFullScreenButton}
-        onChange={this.handleChange}
-        onLoadingError={this.onError} // android handler seems to be reserved on iOS
-        onIOSError={this.onError} // so we use this instead
+        }} // android handler seems to be reserved on iOS
+        videoId={this.props.videoId} // so we use this instead
       />
     );
   }

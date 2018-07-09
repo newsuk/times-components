@@ -6,7 +6,7 @@ const ArticleLeadAssetImage = ({ crop: { ratio, url } }) => {
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return <ModalImage uri={url} aspectRatio={aspectRatio} />;
+  return <ModalImage aspectRatio={aspectRatio} uri={url} />;
 };
 
 export const propTypes = {

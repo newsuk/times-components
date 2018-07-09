@@ -47,9 +47,9 @@ export default {
             {({ topic, error, isLoading }) => (
               <Topic
                 {...getProps(decorateAction)}
-                topic={topic}
                 error={error}
                 isLoading={isLoading}
+                topic={topic}
               />
             )}
           </TopicProvider>
@@ -60,7 +60,7 @@ export default {
       type: "story",
       name: "Loading",
       component: (_, { decorateAction }) => (
-        <MockedProvider mocks={mocks} isLoading>
+        <MockedProvider isLoading mocks={mocks}>
           <Topic {...getProps(decorateAction)} isLoading />
         </MockedProvider>
       )
@@ -76,9 +76,9 @@ export default {
             {({ topic, error, isLoading }) => (
               <Topic
                 {...getProps(decorateAction)}
-                topic={topic}
                 error={error}
                 isLoading={isLoading}
+                topic={topic}
               />
             )}
           </TopicProvider>
@@ -100,10 +100,10 @@ export default {
             {({ topic, error, isLoading, refetch }) => (
               <Topic
                 {...getProps(decorateAction)}
-                topic={topic}
                 error={error}
                 isLoading={isLoading}
                 refetch={refetch}
+                topic={topic}
               />
             )}
           </TopicProvider>

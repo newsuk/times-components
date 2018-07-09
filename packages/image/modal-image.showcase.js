@@ -15,7 +15,7 @@ export default {
       platform: "native",
       component: () => (
         <View>
-          <ModalImage uri={uri} aspectRatio={16 / 9} />
+          <ModalImage aspectRatio={16 / 9} uri={uri} />
         </View>
       )
     }

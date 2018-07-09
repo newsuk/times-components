@@ -10,9 +10,9 @@ const ShowTopics = ({ device, onPress, topics }) => {
       return (
         <TopicsMetaContainer>
           <ArticleTopics
-            topics={topics}
-            style={styles.topicsMetaContainer}
             onPress={onPress}
+            style={styles.topicsMetaContainer}
+            topics={topics}
           />
         </TopicsMetaContainer>
       );
@@ -21,9 +21,9 @@ const ShowTopics = ({ device, onPress, topics }) => {
     return (
       <TopicsContainer>
         <ArticleTopics
-          topics={topics}
-          style={styles.topicsContainer}
           onPress={onPress}
+          style={styles.topicsContainer}
+          topics={topics}
         />
       </TopicsContainer>
     );

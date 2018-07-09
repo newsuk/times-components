@@ -6,7 +6,7 @@
   "dev": "src/article-flag.js",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",

@@ -3,8 +3,8 @@ import { TouchableNativeFeedback } from "react-native";
 
 const Touchable = props => (
   <TouchableNativeFeedback
-    useForeground={TouchableNativeFeedback.canUseNativeForeground()}
     delayPressIn={0}
+    useForeground={TouchableNativeFeedback.canUseNativeForeground()}
     {...props}
   />
 );

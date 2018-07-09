@@ -37,10 +37,10 @@ class ListComponent extends Component {
     return (
       <FlatList
         data={this.props.items}
-        renderItem={({ item }) => <Text>Item {item.someValue}</Text>}
-        onViewableItemsChanged={this.onViewableItemsChanged}
-        keyExtractor={({ someKey }) => someKey}
         initialNumToRender={this.props.items.length}
+        keyExtractor={({ someKey }) => someKey}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        renderItem={({ item }) => <Text>Item {item.someValue}</Text>}
         viewabilityConfig={{
           viewAreaCoveragePercentThreshold: 100,
           waitForInteraction: false

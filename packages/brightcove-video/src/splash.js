@@ -21,9 +21,9 @@ const addMissingProtocolToPoster = poster => ({
 
 const Splash = ({ poster, width, height, playIcon }) => (
   <View
+    accessibilityLabel="splash-component"
     style={{ width, height }}
     testID="splash-component"
-    accessibilityLabel="splash-component"
   >
     {poster ? (
       <Image

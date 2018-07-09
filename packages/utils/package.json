@@ -7,7 +7,7 @@
   "scripts": {
     "make-schema": "node ./scripts/fetch-gql-schema",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",

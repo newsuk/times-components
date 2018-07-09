@@ -5,7 +5,7 @@
   "main": "dist/index",
   "dev": "src/jest-serializer",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test:ios": "jest --config='./jest.config.native.js'",

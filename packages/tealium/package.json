@@ -5,7 +5,7 @@
   "main": "dist",
   "dev": "src",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",

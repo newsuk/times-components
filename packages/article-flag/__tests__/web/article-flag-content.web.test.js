@@ -40,7 +40,7 @@ describe("web", () => {
     });
 
     it("flag with a colour", () => {
-      const wrapper = mount(<ArticleFlag title="Coloured Red" color="red" />);
+      const wrapper = mount(<ArticleFlag color="red" title="Coloured Red" />);
 
       expect(wrapper).toMatchSnapshot("2. Red Article flag");
     });

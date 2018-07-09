@@ -43,9 +43,9 @@ export default {
       component: () => {
         const colourBoxes = Object.keys(colours.functional).map(colourName => (
           <ColourBox
+            hex={colours.functional[colourName]}
             key={colourName}
             name={colourName}
-            hex={colours.functional[colourName]}
           />
         ));
 
@@ -59,9 +59,9 @@ export default {
       component: () => {
         const colourBoxes = Object.keys(colours.functional).map(colourName => (
           <ColourBox
+            hex={colours.functional[colourName]}
             key={colourName}
             name={colourName}
-            hex={colours.functional[colourName]}
           />
         ));
 
@@ -75,9 +75,9 @@ export default {
       component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
+            hex={colours.section[colourName]}
             key={colourName}
             name={colourName}
-            hex={colours.section[colourName]}
           />
         ));
 
@@ -91,9 +91,9 @@ export default {
       component: () => {
         const colourBoxes = Object.keys(colours.section).map(colourName => (
           <ColourBox
+            hex={colours.section[colourName]}
             key={colourName}
             name={colourName}
-            hex={colours.section[colourName]}
           />
         ));
 

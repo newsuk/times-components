@@ -39,9 +39,9 @@ class ModalImage extends Component {
     return (
       <View>
         <Modal
-          visible={this.state.showModal}
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
+          visible={this.state.showModal}
         >
           <View style={styles.modal}>
             <Button onPress={this.hideModal}>{closeButton}</Button>

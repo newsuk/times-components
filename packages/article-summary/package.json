@@ -4,7 +4,7 @@
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

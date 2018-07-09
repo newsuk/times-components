@@ -19,8 +19,8 @@ const ArticleBody = props => {
   });
   const BodyView = contentArray.map(content => (
     <ArticleRow
-      key={`cont-${content.index}`}
       content={content}
+      key={`cont-${content.index}`}
       onLinkPress={onLinkPress}
     />
   ));

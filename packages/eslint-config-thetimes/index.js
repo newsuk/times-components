@@ -8,6 +8,13 @@ module.exports = {
   plugins: ["flowtype"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
+    "react/jsx-sort-props": [
+      2,
+      {
+        ignoreCase: true,
+        reservedFirst: false
+      }
+    ],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": [
       "error",

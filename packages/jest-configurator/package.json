@@ -7,7 +7,7 @@
   "scripts": {
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "lint": "flow check && eslint . && yarn prettier:diff",
     "pretest": "./setup.sh",
     "test": "jest",

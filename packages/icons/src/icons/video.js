@@ -18,10 +18,10 @@ const IconVideo = ({ title, width, height, fillColour, strokeColour }) => (
         stroke: strokeColour,
         fill: fillColour
       })}
+      height="13.5721404"
+      width="15.4550103"
       x="0.154639175"
       y="0.139754386"
-      width="15.4550103"
-      height="13.5721404"
     />
     <Polygon
       {...clean({

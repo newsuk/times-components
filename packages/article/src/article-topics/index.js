@@ -8,7 +8,7 @@ const ShowTopics = ({ topics, onPress }) => {
   if (topics && topics.length > 0) {
     return (
       <View style={styles.topicsContainer}>
-        <ArticleTopics topics={topics} onPress={onPress} />
+        <ArticleTopics onPress={onPress} topics={topics} />
       </View>
     );
   }

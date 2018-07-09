@@ -4,7 +4,7 @@
   "description": "The eslint config for Times Components",
   "main": "index.js",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "yarn prettier:diff"
   },

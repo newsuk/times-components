@@ -6,7 +6,7 @@ import ArticleLabel from "../src/article-label";
 module.exports = () => {
   it("renders ArticleLabel", () => {
     const tree = renderer
-      .create(<ArticleLabel title="swimming" color="#008347" />)
+      .create(<ArticleLabel color="#008347" title="swimming" />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

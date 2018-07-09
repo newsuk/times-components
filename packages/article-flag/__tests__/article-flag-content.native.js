@@ -17,7 +17,7 @@ export default () => {
     });
 
     it("flag with a colour", () => {
-      const wrapper = shallow(<ArticleFlag title="Coloured Red" color="red" />);
+      const wrapper = shallow(<ArticleFlag color="red" title="Coloured Red" />);
 
       expect(wrapper).toMatchSnapshot("2. Red Article flag");
     });

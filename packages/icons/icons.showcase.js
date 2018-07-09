@@ -40,15 +40,15 @@ const renderIcon = color => args => {
   const Icon = args[1];
 
   return (
-    <View style={styles.icon} key={name}>
+    <View key={name} style={styles.icon}>
       <Icon
-        width={50}
-        height={50}
         fillColour={color(`Icon ${name} fill`, Icon.defaultProps.fillColour)}
+        height={50}
         strokeColour={color(
           `Icon ${name} strike`,
           Icon.defaultProps.strokeColour
         )}
+        width={50}
       />
       <Text style={styles.label}>{name}</Text>
     </View>

@@ -17,10 +17,10 @@ const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
       <TopicArticlesProvider
-        slug="chelsea"
-        pageSize={pageSize}
-        page={1}
         debounceTimeMs={0}
+        page={1}
+        pageSize={pageSize}
+        slug="chelsea"
       >
         {child}
       </TopicArticlesProvider>

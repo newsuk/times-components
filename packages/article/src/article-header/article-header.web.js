@@ -20,7 +20,7 @@ const ArticleHeader = ({
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel label={label} isVideo={isVideo} />
+    <HeaderLabel isVideo={isVideo} label={label} />
     <HeadlineContainer style={styles.articleHeadLineText}>
       {headline}
     </HeadlineContainer>

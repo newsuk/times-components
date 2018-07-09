@@ -6,7 +6,7 @@
   "dev": "src/ad",
   "scripts": {
     "prepublishOnly": "yarn transpile && yarn bundle",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

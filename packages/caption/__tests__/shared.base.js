@@ -15,7 +15,7 @@ export default () => {
 
   it("renders with credits", () => {
     const testInstance = TestRenderer.create(
-      <Caption text={captionText} credits={credits} />
+      <Caption credits={credits} text={captionText} />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot("2. renders with credits");
@@ -31,7 +31,7 @@ export default () => {
 
   it("renders a child", () => {
     const testInstance = TestRenderer.create(
-      <Caption text={captionText} credits={credits}>
+      <Caption credits={credits} text={captionText}>
         <Text>Hello world!</Text>
       </Caption>
     );

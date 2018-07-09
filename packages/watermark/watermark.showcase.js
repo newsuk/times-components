@@ -8,13 +8,13 @@ export default {
     {
       type: "story",
       name: "MPU",
-      component: () => <Watermark width={300} height={250} />
+      component: () => <Watermark height={250} width={300} />
     },
     {
       type: "story",
       name: "Full",
       component: () => (
-        <Watermark width={970} height={250} viewBox="0 0 1000 300" />
+        <Watermark height={250} viewBox="0 0 1000 300" width={970} />
       )
     }
   ]

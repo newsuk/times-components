@@ -20,12 +20,12 @@ class VideoAdder extends Component {
     while (i < count) {
       videos.push(
         <BrightcoveVideo
-          key={i}
-          width={300}
+          accountId={this.props.accountId}
           height={200}
+          key={i}
           policyKey={this.props.policyKey}
           videoId={this.props.videoId}
-          accountId={this.props.accountId}
+          width={300}
         />
       );
 

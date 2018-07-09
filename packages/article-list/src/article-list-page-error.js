@@ -9,8 +9,8 @@ const ArticleListPageError = ({ refetch }) => (
   <View style={styles.listErrorContainer}>
     <View>
       <Image
-        accessible
         accessibilityLabel="Server error"
+        accessible
         resizeMode="contain"
         source={{
           uri:

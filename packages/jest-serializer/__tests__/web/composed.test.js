@@ -27,8 +27,8 @@ describe("The serializers should", () => {
 
     const component = (
       <Text
-        style={[styles.colored, styles.padded]}
         func={() => {}}
+        style={[styles.colored, styles.padded]}
         undef={undefined}
       />
     );

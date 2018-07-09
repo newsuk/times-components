@@ -35,8 +35,8 @@ const Pagination = ({
   const prevComponent =
     startResult > pageSize ? (
       <Link
-        style={styles.arrow}
         onPress={e => onPrev(e, page - 1)}
+        style={styles.arrow}
         url={generatePageLink(page - 1)}
       >
         <PreviousPageIcon />
@@ -46,8 +46,8 @@ const Pagination = ({
   const nextComponent =
     finalResult < count ? (
       <Link
-        style={styles.arrow}
         onPress={e => onNext(e, page + 1)}
+        style={styles.arrow}
         url={generatePageLink(page + 1)}
       >
         <NextPageIcon />

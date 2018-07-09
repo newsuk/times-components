@@ -31,14 +31,14 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
       return (
         <View key={key}>
           <ArticleImage
+            captionOptions={{
+              caption,
+              credits
+            }}
             imageOptions={{
               display,
               ratio,
               url
-            }}
-            captionOptions={{
-              caption,
-              credits
             }}
           />
         </View>
@@ -48,9 +48,9 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
       return (
         <View key={key}>
           <PullQuote
-            key={key}
-            content={content}
             caption={name}
+            content={content}
+            key={key}
             twitter={twitter}
           />
         </View>
@@ -62,7 +62,6 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
       return (
         <ArticleLink
           key={index}
-          uuid={index}
           onPress={e =>
             onLinkPress(e, {
               url: attributes.href,
@@ -71,6 +70,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
             })
           }
           url={url}
+          uuid={index}
         >
           {children}
         </ArticleLink>
@@ -94,13 +94,13 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
       return (
         <View key={key} style={primaryContainer}>
           <Video
-            width={width}
-            height={height}
-            policyKey={brightcovePolicyKey}
-            videoId={brightcoveVideoId}
             accountId={brightcoveAccountId}
-            poster={{ uri: posterImageUrl }}
+            height={height}
             onVideoPress={onVideoPress}
+            policyKey={brightcovePolicyKey}
+            poster={{ uri: posterImageUrl }}
+            videoId={brightcoveVideoId}
+            width={width}
           />
           <InsetCaption caption={caption} />
         </View>

@@ -93,7 +93,7 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link url={url} onPress={onPress}>
+    <Link onPress={onPress} url={url}>
       <ListItemWrapper>
         <Card
           contentContainerClass="articleListContent"

@@ -30,7 +30,7 @@ describe("web", () => {
 
   it("should render a reversed loading component", () => {
     const output = mount(
-      <Card {...props} isReversed isLoading>
+      <Card {...props} isLoading isReversed>
         <Text>Loading in reverse</Text>
       </Card>
     );

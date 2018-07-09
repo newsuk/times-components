@@ -6,7 +6,7 @@ import styles from "../styles/article-header";
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
   return (
-    <Text testID="standfirst" style={[styles.standFirst]}>
+    <Text style={[styles.standFirst]} testID="standfirst">
       {standfirst}
     </Text>
   );

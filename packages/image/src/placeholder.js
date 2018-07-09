@@ -25,7 +25,7 @@ class Placeholder extends Component {
     const { width } = this.state;
 
     return (
-      <View style={[styles.container, style]} onLayout={this.handleLayout}>
+      <View onLayout={this.handleLayout} style={[styles.container, style]}>
         <Gradient degrees={264} style={styles.container}>
           {width ? (
             <View style={[styles.container, styles.placeholderContainer]}>

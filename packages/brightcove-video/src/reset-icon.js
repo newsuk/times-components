@@ -7,22 +7,22 @@ const ResetIcon = ({ width, strW = 14, svgW = 100 }) => {
 
   return (
     <Svg
-      width={width}
       height={width * ((svgW + strW) / svgW)}
       viewBox={`0 0 ${svgW} ${svgW + strW}`}
+      width={width}
     >
       <Circle
-        r={(svgW - strW) / 2}
-        cy={r + strW}
         cx={r}
+        cy={r + strW}
         fill="none"
+        r={(svgW - strW) / 2}
         stroke="white"
-        strokeWidth={strW}
         strokeDasharray={1.5 * Math.PI * ((svgW - strW) / 2)}
+        strokeWidth={strW}
       />
       <Path
-        fill="white"
         d={`M${r} 0 L ${r + strW * 2.5} ${strW * 1.5} L ${r} ${strW * 3}z`}
+        fill="white"
       />
     </Svg>
   );

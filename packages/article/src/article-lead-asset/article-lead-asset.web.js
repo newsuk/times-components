@@ -40,14 +40,14 @@ const LeadAssetComponent = ({
   }
   const leadAssetView = isVideo ? (
     <Video
-      width="100%"
-      height="100%"
-      position="absolute"
-      policyKey={leadAsset.brightcovePolicyKey}
-      videoId={leadAsset.brightcoveVideoId}
       accountId={leadAsset.brightcoveAccountId}
+      height="100%"
       paidOnly={leadAsset.paidOnly}
+      policyKey={leadAsset.brightcovePolicyKey}
+      position="absolute"
       poster={{ uri: displayImage.url }}
+      videoId={leadAsset.brightcoveVideoId}
+      width="100%"
     />
   ) : (
     <Image uri={displayImage.url} />
@@ -59,7 +59,7 @@ const LeadAssetComponent = ({
         {leadAssetView}
       </AspectRatioContainer>
       <LeadAssetCaptionContainer>
-        <Caption text={leadAsset.caption} credits={leadAsset.credits} />
+        <Caption credits={leadAsset.credits} text={leadAsset.caption} />
       </LeadAssetCaptionContainer>
     </LeadAsset>
   );

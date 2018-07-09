@@ -32,8 +32,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={primaryImage.imageOptions}
           captionOptions={primaryImage.captionOptions}
+          imageOptions={primaryImage.imageOptions}
         />
       )
     ).toMatchSnapshot("1. renders primary image with caption and credits"));
@@ -42,8 +42,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={secondaryImage.imageOptions}
           captionOptions={secondaryImage.captionOptions}
+          imageOptions={secondaryImage.imageOptions}
         />
       )
     ).toMatchSnapshot("2. renders secondary image with caption and credits"));
@@ -52,8 +52,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={landscapeInlineImage.imageOptions}
           captionOptions={landscapeInlineImage.captionOptions}
+          imageOptions={landscapeInlineImage.imageOptions}
         />
       )
     ).toMatchSnapshot(
@@ -64,8 +64,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={portraitInlineImage.imageOptions}
           captionOptions={portraitInlineImage.captionOptions}
+          imageOptions={portraitInlineImage.imageOptions}
         />
       )
     ).toMatchSnapshot(

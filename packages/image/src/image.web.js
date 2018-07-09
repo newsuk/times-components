@@ -25,7 +25,7 @@ const TimesImage = ({ aspectRatio, style, uri }) => {
   return (
     <View style={style}>
       <div style={styles.wrapper}>
-        <img src={uri} style={styles.img} alt="" />
+        <img alt="" src={uri} style={styles.img} />
         <Placeholder style={styles.placeholder} />
       </div>
     </View>
