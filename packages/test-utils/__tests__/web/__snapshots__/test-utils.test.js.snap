@@ -15,3 +15,11 @@ exports[`2. text example two 1`] = `
    test
 </div>
 `;
+
+exports[`3. all test names should be lowercase 1`] = `
+<div>
+  This is the 
+  third
+   test
+</div>
+`;

@@ -17,6 +17,10 @@ const exampleTests = [
   {
     name: "text example two",
     test: () => exampleTest("second")
+  },
+  {
+    name: "ALL TEST NAMES SHOULD BE LOWERCASE",
+    test: () => exampleTest("third")
   }
 ];
 
