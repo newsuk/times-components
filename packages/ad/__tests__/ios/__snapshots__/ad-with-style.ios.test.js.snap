@@ -41,29 +41,13 @@ Array [
 
 exports[`2. loading state advert shows placeholder only 1`] = `
 <View
-  className="IS6"
+  className="IS2"
 >
-  <View
-    className="IS5"
-  >
-    <View
-      className="IS4"
-    >
-      <View
-        className="IS2"
-      >
-        <Image
-          className="IS1"
-          resizeMode="contain"
-        />
-      </View>
-      <Text
-        className="IS3"
-      >
-        ADVERTISEMENT
-      </Text>
-    </View>
-  </View>
+  <AdPlaceholder
+    className="IS1"
+    height={50}
+    width={320}
+  />
 </View>
 `;
 
