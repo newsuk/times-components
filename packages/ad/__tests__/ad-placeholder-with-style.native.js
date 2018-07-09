@@ -5,7 +5,6 @@ import {
   compose,
   enzymeTreeSerializer,
   flattenStyleTransform,
-  hoistStyleTransform,
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
@@ -18,8 +17,7 @@ export default () => {
     compose(
       print,
       minimalNativeTransform,
-      flattenStyleTransform,
-      hoistStyleTransform
+      flattenStyleTransform
     )
   );
 
