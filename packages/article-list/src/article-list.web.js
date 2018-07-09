@@ -150,12 +150,7 @@ class ArticleList extends Component {
     const ErrorComponent = (
       <ListContentContainer>
         {paginationComponent()}
-        <View
-          style={[
-            styles.listContentContainer,
-            styles.listContentErrorContainer
-          ]}
-        >
+        <View style={styles.listContentErrorContainer}>
           <ArticleListError />
           <Button onPress={refetch} style={styles.retryButton} title="Retry" />
         </View>
@@ -187,7 +182,7 @@ class ArticleList extends Component {
       data.length === 0 ? (
         <ArticleListEmptyState message={emptyStateMessage} />
       ) : (
-        <View style={styles.listContentContainer}>
+        <View>
           <ListContentContainer>
             {paginationComponent({ autoScroll: false, hideResults: false })}
           </ListContentContainer>
