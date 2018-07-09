@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import {
   addSerializers,
   compose,
-  enzymeRootSerializer,
+  enzymeTreeSerializer,
   flattenStyleTransform,
   minimalNativeTransform,
   print
@@ -13,13 +13,13 @@ import AdPlaceholder from "../src/ad-placeholder";
 export default () => {
   addSerializers(
     expect,
-    enzymeRootSerializer(),
+    enzymeTreeSerializer(),
     compose(print, minimalNativeTransform, flattenStyleTransform)
   );
 
   it("should render an advert placeholder", () => {
     const wrapper = shallow(<AdPlaceholder height={300} width={970} />);
 
-    expect(wrapper).toMatchSnapshot("1. Advert placeholder");
+    expect(wrapper).toMatchSnapshot("1. advert placeholder");
   });
 };

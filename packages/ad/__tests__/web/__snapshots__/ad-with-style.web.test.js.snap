@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. multiple adverts 1`] = `
+<style>
+{
+  "IS1": {
+    "height": 90,
+    "overflow": "hidden",
+    "width": 728,
+  },
+  "IS2": {
+    "height": 0,
+    "overflow": "hidden",
+    "width": 0,
+  },
+  "IS3": {
+    "height": 90,
+    "overflow": "hidden",
+    "width": 728,
+  },
+}
+</style>
+
+<AdComposer>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk"
+    isLoading={false}
+    section="news"
+    slotName="header"
+  >
+    <View>
+      <div>
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={90}
+          width={728}
+        >
+          <div
+            className="IS1"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk"
+    isLoading={false}
+    section="news"
+    slotName="pixel"
+  >
+    <View>
+      <div>
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={0}
+          width={0}
+        >
+          <div
+            className="IS2"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+  <Ad
+    baseUrl="https://www.thetimes.co.uk/"
+    contextUrl="https://www.thetimes.co.uk"
+    isLoading={false}
+    section="news"
+    slotName="intervention"
+  >
+    <View>
+      <div>
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={90}
+          width={728}
+        >
+          <div
+            className="IS3"
+          />
+        </DOMContext>
+      </div>
+    </View>
+  </Ad>
+</AdComposer>
+`;
+
+exports[`2. loading state advert shows placeholder only 1`] = `
+<style>
+{
+  "IS1": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS2": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": "5px",
+    "paddingLeft": "10px",
+    "paddingRight": "10px",
+    "paddingTop": "5px",
+    "zIndex": 1,
+  },
+  "IS3": {
+    "height": "90px",
+    "width": "728px",
+  },
+  "IS4": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 90,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 728,
+  },
+  "IS5": {
+    "alignItems": "center",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS6": {
+    "flex": 1,
+  },
+}
+</style>
+
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk"
+  isLoading={true}
+  section="news"
+  slotName="header"
+>
+  <View>
+    <div>
+      <AdPlaceholder
+        className="IS6"
+        height={90}
+        width={728}
+      >
+        <View
+          className="IS5"
+        >
+          <div>
+            <View
+              className="IS4"
+            >
+              <div
+                className="IS3"
+              >
+                <View
+                  className="IS1"
+                >
+                  <div>
+                    <Watermark
+                      height={90}
+                      viewBox="-630 120 1200 50"
+                      width={728}
+                    />
+                  </div>
+                </View>
+                <Text
+                  className="IS2"
+                >
+                  <div>
+                    ADVERTISEMENT
+                  </div>
+                </Text>
+              </div>
+            </View>
+          </div>
+        </View>
+      </AdPlaceholder>
+    </div>
+  </View>
+</Ad>
+`;
+
+exports[`3. should not show when loading scripts errored 1`] = `
+<style>
+{
+  "IS1": {
+    "height": 0,
+    "overflow": "hidden",
+    "width": 0,
+  },
+  "IS2": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS3": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": "5px",
+    "paddingLeft": "10px",
+    "paddingRight": "10px",
+    "paddingTop": "5px",
+    "zIndex": 1,
+  },
+  "IS4": {
+    "height": "90px",
+    "width": "728px",
+  },
+  "IS5": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 90,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 728,
+  },
+  "IS6": {
+    "alignItems": "center",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS7": {
+    "flex": 1,
+  },
+}
+</style>
+
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk"
+  isLoading={false}
+  section="news"
+  slotName="header"
+>
+  <View>
+    <div>
+      <DOMContext
+        baseUrl="https://www.thetimes.co.uk/"
+        height={0}
+        width={0}
+      >
+        <div
+          className="IS1"
+        />
+      </DOMContext>
+      <AdPlaceholder
+        className="IS7"
+        height={90}
+        width={728}
+      >
+        <View
+          className="IS6"
+        >
+          <div>
+            <View
+              className="IS5"
+            >
+              <div
+                className="IS4"
+              >
+                <View
+                  className="IS2"
+                >
+                  <div>
+                    <Watermark
+                      height={90}
+                      viewBox="-630 120 1200 50"
+                      width={728}
+                    />
+                  </div>
+                </View>
+                <Text
+                  className="IS3"
+                >
+                  <div>
+                    ADVERTISEMENT
+                  </div>
+                </Text>
+              </div>
+            </View>
+          </div>
+        </View>
+      </AdPlaceholder>
+    </div>
+  </View>
+</Ad>
+`;

@@ -1,7 +1,7 @@
-import adInit from "../../src/ad-init";
+import adInit from "../../src/utils/ad-init";
 import { makeAdInitMocks } from "../../fixtures/ad-init-mocks";
 
-describe("AdInit.grapeshot", () => {
+export default () => {
   let mock;
   let initOptions;
   let init;
@@ -24,7 +24,7 @@ describe("AdInit.grapeshot", () => {
     init.grapeshot.setupAsync(init.gpt, init.utils);
   };
 
-  it("Sets the page targeting value if the script loads", done => {
+  it("sets the page targeting value if the script loads", done => {
     testGrapeshotScriptLoadResult((uri, onLoad) => {
       onLoad();
       setTimeout(() => {
@@ -36,7 +36,7 @@ describe("AdInit.grapeshot", () => {
     });
   });
 
-  it("Does not set page targeting value if the script errors", done => {
+  it("does not set page targeting value if the script errors", done => {
     testGrapeshotScriptLoadResult((uri, onLoad, onError) => {
       onError();
       setTimeout(() => {
@@ -45,4 +45,4 @@ describe("AdInit.grapeshot", () => {
       }, 0);
     });
   });
-});
+};

@@ -41,6 +41,7 @@ describe("DOMContext Web", () => {
     const runWithError = () => {
       mount(
         <DOMContext
+          {...props}
           init={() => {
             throw new Error("broken");
           }}
@@ -56,6 +57,7 @@ describe("DOMContext Web", () => {
     const runWithError = () => {
       mount(
         <DOMContext
+          {...props}
           init={({ eventCallback }) => eventCallback("error", "error message")}
           data={{ foo: "bar" }}
         />
@@ -70,6 +72,7 @@ describe("DOMContext Web", () => {
 
     mount(
       <DOMContext
+        {...props}
         init={({ eventCallback }) => eventCallback("renderComplete")}
         onRenderComplete={onRenderComplete}
       />
@@ -83,6 +86,7 @@ describe("DOMContext Web", () => {
 
     mount(
       <DOMContext
+        {...props}
         init={({ eventCallback }) => eventCallback("scriptLoadingError")}
         onRenderError={onRenderErrorMock}
       />

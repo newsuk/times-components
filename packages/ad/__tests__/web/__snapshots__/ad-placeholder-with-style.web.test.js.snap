@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. Advert placeholder 1`] = `
+<style>
+{
+  "IS1": {
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+  },
+  "IS2": {
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "color": "#696969",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 11,
+    "letterSpacing": 1.5,
+    "paddingBottom": "5px",
+    "paddingLeft": "10px",
+    "paddingRight": "10px",
+    "paddingTop": "5px",
+    "zIndex": 1,
+  },
+  "IS3": {
+    "height": "300px",
+    "width": "970px",
+  },
+  "IS4": {
+    "alignItems": "center",
+    "backgroundColor": "#F9F9F9",
+    "borderColor": "#DBDBDB",
+    "borderStyle": "solid",
+    "borderWidth": 1,
+    "height": 300,
+    "justifyContent": "center",
+    "overflow": "hidden",
+    "width": 970,
+  },
+  "IS5": {
+    "backgroundColor": "red",
+  },
+  "IS6": {
+    "alignItems": "center",
+    "backgroundColor": "red",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "IS7": {
+    "backgroundColor": "red",
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "left": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+    "position": "absolute",
+    "top": "0px",
+    "z-index": "0",
+  },
+  "S2": {
+    "background-color": "rgba(249,249,249,1)",
+    "color": "rgba(105,105,105,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "11px",
+    "letter-spacing": "1.5px",
+    "padding-bottom": "5px",
+    "padding-left": "10px",
+    "padding-right": "10px",
+    "padding-top": "5px",
+    "z-index": "1",
+  },
+  "S3": {
+    "-ms-flex-align": "center",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-pack": "center",
+    "-webkit-justify-content": "center",
+    "align-items": "center",
+    "background-color": "rgba(249,249,249,1)",
+    "justify-content": "center",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+    "z-index": "0",
+  },
+  "S4": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "center",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-pack": "center",
+    "-webkit-flex": "1",
+    "-webkit-justify-content": "center",
+    "align-items": "center",
+    "flex": "1",
+    "justify-content": "center",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+    "z-index": "0",
+  },
+}
+</style>
+
+<AdPlaceholder
+  className="IS7"
+  height={300}
+  width={970}
+>
+  <View
+    className="IS6"
+  >
+    <div
+      className="IS5 S4"
+    >
+      <View
+        className="IS4"
+      >
+        <div
+          className="IS3 S3"
+        >
+          <View
+            className="IS1"
+          >
+            <div
+              className="S1"
+            >
+              <Watermark
+                height={300}
+                viewBox="-630 120 1200 50"
+                width={970}
+              />
+            </div>
+          </View>
+          <Text
+            className="IS2"
+          >
+            <div
+              className="S2"
+            >
+              ADVERTISEMENT
+            </div>
+          </Text>
+        </div>
+      </View>
+    </div>
+  </View>
+</AdPlaceholder>
+`;

@@ -1,10 +1,10 @@
-import adInitOriginal from "../../src/ad-init";
+import adInitOriginal from "../../src/utils/ad-init";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
 
 jest.useFakeTimers();
 
-describe("AdInit", () => {
+export default () => {
   let initOptions;
   let mock;
 
@@ -12,7 +12,7 @@ describe("AdInit", () => {
     ({ initOptions, mock } = makeAdInitMocks());
   });
 
-  it("is self-contained", () => {
+  it("should be self-contained", () => {
     expectFunctionToBeSelfContained(adInitOriginal);
   });
 
@@ -43,6 +43,7 @@ describe("AdInit", () => {
     expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
     expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
   });
+
   it("refresh the ads on a new breakpoint", () => {
     const init1 = adInit(initOptions);
 
@@ -83,4 +84,14 @@ describe("AdInit", () => {
       new Error("init() has already been called")
     );
   });
-});
+
+  it("destroys all slots", () => {
+    const init = adInit(initOptions);
+
+    jest.spyOn(init.gpt, "destroySlots").mockImplementation();
+
+    init.destroySlots();
+
+    expect(init.gpt.destroySlots).toHaveBeenCalledTimes(1);
+  });
+};

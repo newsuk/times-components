@@ -4,10 +4,11 @@ import { propTypes, defaultProps } from "./dom-context-prop-types";
 
 class DOMContext extends Component {
   componentDidMount() {
-    const { init, data } = this.props;
+    const { data, init } = this.props;
 
     this.initExecuting = true;
     this.hasUnmounted = false;
+
     this.adInit = init({
       el: this.div,
       eventCallback: this.eventCallback,

@@ -3,7 +3,7 @@ import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-conta
 
 const realWindow = window;
 
-describe("webviewEventCallbackSetup", () => {
+export default () => {
   let window;
   let errorHandler;
 
@@ -136,4 +136,4 @@ describe("webviewEventCallbackSetup", () => {
       "*"
     );
   });
-});
+};

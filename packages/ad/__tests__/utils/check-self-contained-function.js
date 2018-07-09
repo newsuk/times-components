@@ -3,7 +3,7 @@ import {
   reportErrors
 } from "../../fixtures/check-self-contained-function";
 
-describe("checkSelfContainedFunction", () => {
+export default () => {
   it("does not find errors in function that does not use global variables", () => {
     function f(a1) {
       const useOfA1 = a1;
@@ -54,4 +54,4 @@ describe("checkSelfContainedFunction", () => {
     // eslint-disable-next-line no-console
     expect(console.error).toHaveBeenCalled();
   });
-});
+};

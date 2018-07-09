@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Advert placeholder 1`] = `
+exports[`1. advert placeholder 1`] = `
 <View>
   <View>
     <View>
-      <Image
-        resizeMode="contain"
-        source={1}
+      <Watermark
+        height={300}
+        viewBox="-630 120 1200 50"
+        width={970}
       />
     </View>
     <Text>
@@ -14,40 +15,4 @@ exports[`1. Advert placeholder 1`] = `
     </Text>
   </View>
 </View>
-`;
-
-exports[`2. Small ViewBox config 1`] = `
-Object {
-  "marginLeft": 630,
-  "marginTop": -120,
-  "svgHeight": 50,
-  "svgWidth": 1200,
-}
-`;
-
-exports[`3. Billboard ViewBox config 1`] = `
-Object {
-  "marginLeft": 630,
-  "marginTop": -120,
-  "svgHeight": 50,
-  "svgWidth": 1200,
-}
-`;
-
-exports[`3. MPU ViewBox config 1`] = `
-Object {
-  "marginLeft": 15,
-  "marginTop": 0,
-  "svgHeight": 250,
-  "svgWidth": 269,
-}
-`;
-
-exports[`4. Default ViewBox config 1`] = `
-Object {
-  "marginLeft": 50,
-  "marginTop": 0,
-  "svgHeight": 50,
-  "svgWidth": 700,
-}
 `;

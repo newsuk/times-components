@@ -1,7 +1,7 @@
 import { makeAdInitMocks } from "../../fixtures/ad-init-mocks";
-import adInit from "../../src/ad-init";
+import adInit from "../../src/utils/ad-init";
 
-describe("AdInit.utils", () => {
+export default () => {
   let mock;
   let initOptions;
   let utils;
@@ -12,13 +12,13 @@ describe("AdInit.utils", () => {
     ({ utils } = adInit(initOptions));
   });
 
-  it("Adds a script tag to the DOM head", () => {
+  it("adds a script tag to the DOM head", () => {
     utils.loadScript("my-script", 0).catch(() => {});
     const scripts = mock.window.document.head.getElementsByTagName("script");
     expect(scripts.length).toBe(1);
   });
 
-  it("Logs an error and swallows the exception if adding a script tag throws an exception", () => {
+  it("logs an error and swallows the exception if adding a script tag throws an exception", () => {
     jest
       .spyOn(mock.window.document.head, "appendChild")
       .mockImplementation(() => {
@@ -31,7 +31,7 @@ describe("AdInit.utils", () => {
     );
   });
 
-  it("Resolves the promise on script element load event", done => {
+  it("resolves the promise on script element load event", done => {
     jest
       .spyOn(utils, "createScriptElement")
       .mockImplementation((uri, onLoad) => {
@@ -43,7 +43,7 @@ describe("AdInit.utils", () => {
       .catch(done);
   });
 
-  it("Rejects the promise on script element error event", done => {
+  it("rejects the promise on script element error event", done => {
     jest
       .spyOn(utils, "createScriptElement")
       .mockImplementation((uri, onLoad, onError) => {
@@ -52,15 +52,15 @@ describe("AdInit.utils", () => {
     utils.loadScript("my-script", 0).catch(() => done());
   });
 
-  it("Errors if the same script is loaded twice", () => {
+  it("errors if the same script is loaded twice", () => {
     const doLoadScript = () => utils.loadScript("my-script", 0).catch(() => {});
     doLoadScript();
     expect(doLoadScript).toThrow('Inserting "my-script" twice');
   });
 
-  it("Rejects the promise if the timeout elapses before the script loads", done => {
+  it("rejects the promise if the timeout elapses before the script loads", done => {
     jest.spyOn(utils, "createScriptElement").mockImplementation();
     utils.loadScript("my-script", 1000).catch(() => done());
     jest.runTimersToTime(1000);
   });
-});
+};

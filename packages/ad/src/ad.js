@@ -3,9 +3,9 @@ import { Subscriber } from "react-broadcast";
 import { View } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
+import adInit from "./utils/ad-init";
 import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
-import adInit from "./ad-init";
 import AdComposer from "./ad-composer";
 import { propTypes, defaultProps } from "./ad-prop-types";
 import styles from "./styles";
@@ -56,6 +56,8 @@ class Ad extends Component {
     } = this.props;
     const { hasError, isAdReady, windowWidth } = this.state;
 
+    if (hasError) return null;
+
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
@@ -74,7 +76,7 @@ class Ad extends Component {
         maxBid: adConfig.biddersConfig.maxBid,
         bucketSize: adConfig.biddersConfig.bucketSize
       }),
-      slots: this.slots || [],
+      slots: this.slots,
       slotName,
       networkId: adConfig.networkId,
       adUnit: adConfig.adUnit,
@@ -97,8 +99,8 @@ class Ad extends Component {
         baseUrl={baseUrl}
         data={data}
         init={adInit}
-        onRenderError={this.setAdError}
         onRenderComplete={this.setAdReady}
+        onRenderError={this.setAdError}
         {...sizeProps}
       />
     );
@@ -111,18 +113,12 @@ class Ad extends Component {
       />
     );
 
-    const renderAds = () => {
-      if (hasError) return null;
-
-      return (
-        <View style={[style]}>
-          {isLoading ? null : AdComponent}
-          {isLoading || !isAdReady ? AdPlaceholderComponent : null}
-        </View>
-      );
-    };
-
-    return renderAds();
+    return (
+      <View style={[style]}>
+        {isLoading ? null : AdComponent}
+        {isLoading || !isAdReady ? AdPlaceholderComponent : null}
+      </View>
+    );
   }
 
   render() {

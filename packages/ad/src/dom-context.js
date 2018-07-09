@@ -3,7 +3,7 @@ import { WebView, View, Linking, Platform } from "react-native";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 
-export default class DOMContext extends PureComponent {
+class DOMContext extends PureComponent {
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
   }
@@ -49,7 +49,7 @@ export default class DOMContext extends PureComponent {
   };
 
   render() {
-    const { init, data, width, height } = this.props;
+    const { data, init, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
     // because React Native doesn't report errors in webview JS code, try
     // connecting a debugger to the app, console.log(html), copy and paste
@@ -113,3 +113,5 @@ export default class DOMContext extends PureComponent {
 
 DOMContext.propTypes = propTypes;
 DOMContext.defaultProps = defaultProps;
+
+export default DOMContext;
