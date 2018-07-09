@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. test example one 1`] = `
+<div>
+  This is the 
+  first
+   test
+</div>
+`;
+
+exports[`2. text example two 1`] = `
+<div>
+  This is the 
+  second
+   test
+</div>
+`;
