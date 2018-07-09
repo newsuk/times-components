@@ -14,7 +14,11 @@ export default () => {
   addSerializers(
     expect,
     enzymeTreeSerializer(),
-    compose(print, minimaliseTransform((value, key) => key === "style"), minimalNativeTransform)
+    compose(
+      print,
+      minimaliseTransform((value, key) => key === "style"),
+      minimalNativeTransform
+    )
   );
 
   it("should render the advert placeholder", () => {
