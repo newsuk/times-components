@@ -42,7 +42,7 @@ export default () => {
       }
     },
     {
-      name: "sponsored artilce flag",
+      name: "sponsored article flag",
       test: () => {
         const wrapper = shallow(<SponsoredArticleFlag />);
 

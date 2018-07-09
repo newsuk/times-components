@@ -21,7 +21,7 @@ exports[`3. exclusive article flag 1`] = `
 />
 `;
 
-exports[`4. sponsored artilce flag 1`] = `
+exports[`4. sponsored article flag 1`] = `
 <ArticleFlag
   color="#4D4D4D"
   title="sponsored"
