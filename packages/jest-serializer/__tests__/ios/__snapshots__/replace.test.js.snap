@@ -55,3 +55,5 @@ exports[`The replace serializer should replace the expected component 1`] = `
   </Placeholder>
 </View>
 `;
+
+exports[`The replace serializer should replace the expected component completely 1`] = `<View />`;

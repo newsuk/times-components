@@ -45,6 +45,29 @@ describe("The replace serializer should", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("replace the expected component completely", () => {
+    addSerializers(
+      expect,
+      enzymeTreeSerializer(),
+      replace({
+        ChildComponent: null
+      })
+    );
+
+    // eslint-disable-next-line react/prop-types
+    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    // eslint-disable-next-line react/prop-types
+    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+
+    const wrapper = mount(
+      <WrapperComponent>
+        <ChildComponent text="Hello world!" />
+      </WrapperComponent>
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("provide a helper to return the component with props and no children", () => {
     addSerializers(
       expect,

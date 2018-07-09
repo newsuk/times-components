@@ -12,11 +12,6 @@ import PaginationContainer from "./pagination-container";
 import LinkContainer from "./styles/responsive.web";
 
 const styles = StyleSheet.create({
-  absolute: {
-    left: 0,
-    position: "absolute",
-    right: 0
-  },
   arrow: {
     color: colours.functional.action,
     fontFamily: fonts.supporting,

@@ -1,135 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination on Web renders correctly 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c4 {
-  display: none;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      data-testid="results-message"
-    >
-      Showing 1 - 20 of 21 results
+exports[`1. renders results, previous and next 1`] = `
+<div>
+  <div>
+    <div>
+      Showing 13 - 15 of 20 results
     </div>
   </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    />
-    <div
-      className="c3"
-    >
+  <div>
+    <div>
       <a
-        href="./2"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
+        href="./4"
       >
-        <div
-          data-testid="pagination-button-next"
-        >
-          <div>
-            <span>
-              Next
-              <span
-                className="c4"
-              >
-                 page
-              </span>
-            </span>
-          </div>
+        <div>
           <svg
             height={12}
             viewBox="42 12 60 120"
@@ -139,303 +22,14 @@ exports[`Pagination on Web renders correctly 1`] = `
               fill="#006699"
             >
               <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Pagination on Web renders next link 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c4 {
-  display: none;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      data-testid="results-message"
-    >
-      Showing 1 - 20 of 41 results
-    </div>
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    />
-    <div
-      className="c3"
-    >
-      <a
-        href="./2"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
-      >
-        <div
-          data-testid="pagination-button-next"
-        >
-          <div>
-            <span>
-              Next
-              <span
-                className="c4"
-              >
-                 page
-              </span>
-            </span>
-          </div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Pagination on Web renders prev and next link 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c4 {
-  display: none;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      data-testid="results-message"
-    >
-      Showing 21 - 40 of 41 results
-    </div>
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <a
-        href="./1"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
-      >
-        <div
-          data-testid="pagination-button-previous"
-        >
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
               />
             </g>
           </svg>
           <div>
             <span>
               Previous
-              <span
-                className="c4"
-              >
+              <span>
                  page
               </span>
             </span>
@@ -443,30 +37,131 @@ exports[`Pagination on Web renders prev and next link 1`] = `
         </div>
       </a>
     </div>
-    <div
-      className="c3"
-    >
+    <div>
+      <a
+        href="./6"
+      >
+        <div>
+          <div>
+            <span>
+              Next
+              <span>
+                 page
+              </span>
+            </span>
+          </div>
+          <svg
+            height={12}
+            viewBox="42 12 60 120"
+            width={7}
+          >
+            <g
+              fill="#006699"
+            >
+              <path
+                d="9a11f164df72df4cb9ea6a3266824472"
+              />
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. renders with no results 1`] = `
+<div>
+  <div>
+    <div>
+      <a
+        href="./4"
+      >
+        <div>
+          <svg
+            height={12}
+            viewBox="42 12 60 120"
+            width={7}
+          >
+            <g
+              fill="#006699"
+            >
+              <path
+                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+              />
+            </g>
+          </svg>
+          <div>
+            <span>
+              Previous
+              <span>
+                 page
+              </span>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="./6"
+      >
+        <div>
+          <div>
+            <span>
+              Next
+              <span>
+                 page
+              </span>
+            </span>
+          </div>
+          <svg
+            height={12}
+            viewBox="42 12 60 120"
+            width={7}
+          >
+            <g
+              fill="#006699"
+            >
+              <path
+                d="9a11f164df72df4cb9ea6a3266824472"
+              />
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. does not give a count smaller than a single page 1`] = `
+<div>
+  <div>
+    <div>
+      Showing 1 - 20 of 20 results
+    </div>
+  </div>
+  <div>
+    <div />
+    <div />
+  </div>
+</div>
+`;
+
+exports[`4. limits the starting result to the total count 1`] = `
+<div>
+  <div>
+    <div>
+      Showing 20 - 20 of 20 results
+    </div>
+  </div>
+  <div>
+    <div>
       <a
         href="./3"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
       >
-        <div
-          data-testid="pagination-button-next"
-        >
-          <div>
-            <span>
-              Next
-              <span
-                className="c4"
-              >
-                 page
-              </span>
-            </span>
-          </div>
+        <div>
           <svg
             height={12}
             viewBox="42 12 60 120"
@@ -476,153 +171,14 @@ exports[`Pagination on Web renders prev and next link 1`] = `
               fill="#006699"
             >
               <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Pagination on Web renders prev link 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c4 {
-  display: none;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      data-testid="results-message"
-    >
-      Showing 41 - 41 of 41 results
-    </div>
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <a
-        href="./2"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
-      >
-        <div
-          data-testid="pagination-button-previous"
-        >
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z"
+                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
               />
             </g>
           </svg>
           <div>
             <span>
               Previous
-              <span
-                className="c4"
-              >
+              <span>
                  page
               </span>
             </span>
@@ -630,143 +186,19 @@ exports[`Pagination on Web renders prev link 1`] = `
         </div>
       </a>
     </div>
-    <div
-      className="c3"
-    />
+    <div />
   </div>
 </div>
 `;
 
-exports[`Pagination on Web renders results message 1`] = `
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c4 {
-  display: none;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      data-testid="results-message"
-    >
-      Showing 1 - 20 of 21 results
-    </div>
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    />
-    <div
-      className="c3"
-    >
+exports[`5. renders previous and not next 1`] = `
+<div>
+  <div>
+    <div>
       <a
-        href="./2"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
+        href="./4"
       >
-        <div
-          data-testid="pagination-button-next"
-        >
-          <div>
-            <span>
-              Next
-              <span
-                className="c4"
-              >
-                 page
-              </span>
-            </span>
-          </div>
+        <div>
           <svg
             height={12}
             viewBox="42 12 60 120"
@@ -776,99 +208,39 @@ exports[`Pagination on Web renders results message 1`] = `
               fill="#006699"
             >
               <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
               />
             </g>
           </svg>
+          <div>
+            <span>
+              Previous
+              <span>
+                 page
+              </span>
+            </span>
+          </div>
         </div>
       </a>
     </div>
+    <div />
   </div>
 </div>
 `;
 
-exports[`Pagination on Web renders with hidden results 1`] = `
-.c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c3 {
-  display: none;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    display: inline;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    />
-    <div
-      className="c2"
-    >
+exports[`6. renders next and not previous 1`] = `
+<div>
+  <div>
+    <div />
+    <div>
       <a
         href="./2"
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
       >
-        <div
-          data-testid="pagination-button-next"
-        >
+        <div>
           <div>
             <span>
               Next
-              <span
-                className="c3"
-              >
+              <span>
                  page
               </span>
             </span>
@@ -882,7 +254,7 @@ exports[`Pagination on Web renders with hidden results 1`] = `
               fill="#006699"
             >
               <path
-                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                d="9a11f164df72df4cb9ea6a3266824472"
               />
             </g>
           </svg>
