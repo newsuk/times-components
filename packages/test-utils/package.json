@@ -34,6 +34,7 @@
   "devDependencies": {
     "@times-components/jest-configurator": "1.0.8",
     "@times-components/jest-serializer": "1.0.8",
+    "@times-components/webpack-configurator": "1.0.1",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
     "eslint": "4.9.0",
