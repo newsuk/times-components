@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   paginationSpacing: {
-    maxWidth: 800
+    maxWidth: 760
   },
   listItemContainer: {
     paddingBottom: spacing(3),

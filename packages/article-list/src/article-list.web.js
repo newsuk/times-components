@@ -150,12 +150,7 @@ class ArticleList extends Component {
     const ErrorComponent = (
       <ListContentContainer>
         {paginationComponent()}
-        <View
-          style={[
-            styles.listContentContainer,
-            styles.listContentErrorContainer
-          ]}
-        >
+        <View style={styles.listContentErrorContainer}>
           <ArticleListError />
           <Button onPress={refetch} style={styles.retryButton} title="Retry" />
         </View>
@@ -187,63 +182,63 @@ class ArticleList extends Component {
       data.length === 0 ? (
         <ArticleListEmptyState message={emptyStateMessage} />
       ) : (
-        <ListContentContainer>
-          {paginationComponent({ autoScroll: false, hideResults: false })}
-          <View style={styles.listContentContainer}>
-            {data &&
-              data.map((article, index) => {
-                const { id, elementId, url } = article;
+        <View>
+          <ListContentContainer>
+            {paginationComponent({ autoScroll: false, hideResults: false })}
+          </ListContentContainer>
+          {data &&
+            data.map((article, index) => {
+              const { id, elementId, url } = article;
 
-                const renderAd = () => {
-                  if (index !== this.advertPosition || !hasAdvertConfig) {
-                    return null;
-                  }
+              const renderAd = () => {
+                if (index !== this.advertPosition || !hasAdvertConfig) {
+                  return null;
+                }
 
-                  return AdComponent;
-                };
+                return AdComponent;
+              };
 
-                const renderSeperator = () => {
-                  if (index === 0 || index === this.advertPosition + 1) {
-                    return null;
-                  }
+              const renderSeperator = () => {
+                if (index === 0 || index === this.advertPosition + 1) {
+                  return null;
+                }
 
-                  return <ArticleListItemSeparator />;
-                };
+                return <ArticleListItemSeparator />;
+              };
 
-                return (
-                  <Fragment key={elementId}>
-                    <div
-                      accessibility-label={elementId}
-                      data-testid={elementId}
-                      id={elementId}
-                      ref={node => this.registerNode(node)}
-                    >
-                      <ErrorView>
-                        {({ hasError }) =>
-                          hasError ? null : (
-                            <Fragment>
-                              {renderSeperator()}
-                              <ArticleListItem
-                                {...article}
-                                index={index}
-                                length={data.length}
-                                imageRatio={imageRatio}
-                                imageSize={this.getImageSize(elementId) || 100}
-                                onPress={e => onArticlePress(e, { id, url })}
-                                showImage={showImages}
-                              />
-                            </Fragment>
-                          )
-                        }
-                      </ErrorView>
-                    </div>
-                    {renderAd()}
-                  </Fragment>
-                );
-              })}
-          </View>
+              return (
+                <Fragment key={elementId}>
+                  <div
+                    accessibility-label={elementId}
+                    data-testid={elementId}
+                    id={elementId}
+                    ref={node => this.registerNode(node)}
+                  >
+                    <ErrorView>
+                      {({ hasError }) =>
+                        hasError ? null : (
+                          <ListContentContainer>
+                            {renderSeperator()}
+                            <ArticleListItem
+                              {...article}
+                              index={index}
+                              length={data.length}
+                              imageRatio={imageRatio}
+                              imageSize={this.getImageSize(elementId) || 100}
+                              onPress={e => onArticlePress(e, { id, url })}
+                              showImage={showImages}
+                            />
+                          </ListContentContainer>
+                        )
+                      }
+                    </ErrorView>
+                  </div>
+                  {renderAd()}
+                </Fragment>
+              );
+            })}
           {paginationComponent({ autoScroll: true, hideResults: true })}
-        </ListContentContainer>
+        </View>
       );
 
     if (!articlesLoading) receiveChildList(data);

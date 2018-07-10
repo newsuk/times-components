@@ -14,10 +14,7 @@ const styles = StyleSheet.create({
   },
   paginationSpacing: {
     flex: 1,
-    maxWidth: 800
-  },
-  listContentContainer: {
-    width: "100%"
+    maxWidth: 760
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,

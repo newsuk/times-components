@@ -6,7 +6,7 @@ export const ListContentContainer = withResponsiveStyles(
   View,
   {
     base: () => `
-      align-self: center;
+      margin: 0 auto;
       max-width: 680px;
       width: 100%;
     `,
