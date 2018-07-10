@@ -44,7 +44,7 @@ const tests = [
   {
     name: "red article flag",
     test: () => {
-      const wrapper = mount(<ArticleFlag color="red" title="No Colour" />);
+      const wrapper = mount(<ArticleFlag color="red" title="Coloured Red" />);
 
       expect(wrapper).toMatchSnapshot();
     }
