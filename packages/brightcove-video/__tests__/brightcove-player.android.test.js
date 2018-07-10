@@ -13,8 +13,8 @@ describe("brightcove-player Android component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -43,8 +43,8 @@ describe("brightcove-player Android component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -59,9 +59,9 @@ describe("brightcove-player Android component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
         onEnterFullscreen={done}
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -74,9 +74,9 @@ describe("brightcove-player Android component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
-        policyKey="[POLICY_KEY]"
         onExitFullscreen={done}
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -90,8 +90,8 @@ describe("brightcove-player Android component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 

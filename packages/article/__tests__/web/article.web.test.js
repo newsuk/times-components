@@ -44,8 +44,8 @@ describe("Article tests on web", () => {
       .create(
         <Article
           {...articleFixtureNoLeadAsset.data}
-          analyticsStream={() => {}}
           adConfig={adConfig}
+          analyticsStream={() => {}}
           onAuthorPress={() => {}}
           onLinkPress={() => {}}
           onRelatedArticlePress={() => {}}

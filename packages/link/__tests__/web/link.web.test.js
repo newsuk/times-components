@@ -25,9 +25,9 @@ describe("Link tests on Web", () => {
 
     const component = mount(
       <Link
-        url="http://thetimes.co.uk"
         onPress={() => {}}
         responsiveLinkStyles={responsiveLinkStyles}
+        url="http://thetimes.co.uk"
       >
         The Times
       </Link>
@@ -39,7 +39,7 @@ describe("Link tests on Web", () => {
   it("renders with a target", () => {
     const tree = renderer
       .create(
-        <Link url="http://thetimes.co.uk" onPress={() => {}} target="_blank">
+        <Link onPress={() => {}} target="_blank" url="http://thetimes.co.uk">
           The Times
         </Link>
       )

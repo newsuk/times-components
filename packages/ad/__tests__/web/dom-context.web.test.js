@@ -26,7 +26,7 @@ describe("DOMContext Web", () => {
       return { init: () => {} };
     });
 
-    mount(<DOMContext {...props} init={init} data={{ foo: "bar" }} />);
+    mount(<DOMContext {...props} data={{ foo: "bar" }} init={init} />);
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -42,10 +42,10 @@ describe("DOMContext Web", () => {
       mount(
         <DOMContext
           {...props}
+          data={{ foo: "bar" }}
           init={() => {
             throw new Error("broken");
           }}
-          data={{ foo: "bar" }}
         />
       );
     };
@@ -58,8 +58,8 @@ describe("DOMContext Web", () => {
       mount(
         <DOMContext
           {...props}
-          init={({ eventCallback }) => eventCallback("error", "error message")}
           data={{ foo: "bar" }}
+          init={({ eventCallback }) => eventCallback("error", "error message")}
         />
       );
     };
@@ -131,7 +131,7 @@ describe("DOMContext Web", () => {
     });
 
     const wrapper = shallow(
-      <DOMContext {...props} init={mockInit} data={{}} />
+      <DOMContext {...props} data={{}} init={mockInit} />
     );
 
     wrapper.unmount();

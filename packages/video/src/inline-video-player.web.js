@@ -159,18 +159,18 @@ class InlineVideoPlayer extends Component {
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
-      <div style={{ width, height }} data-testid="video-component">
+      <div data-testid="video-component" style={{ width, height }}>
         <video
           id={this.id}
           style={{ width, height }}
           {...(poster ? { poster: this.props.poster.uri } : {})}
-          data-embed="default"
-          data-video-id={videoId}
-          data-account={accountId}
-          data-player={playerId}
-          data-application-id
           className="video-js"
           controls
+          data-account={accountId}
+          data-application-id
+          data-embed="default"
+          data-player={playerId}
+          data-video-id={videoId}
         />
       </div>
     );

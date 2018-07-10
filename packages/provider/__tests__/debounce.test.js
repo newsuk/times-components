@@ -13,7 +13,7 @@ jest.advanceTimersByTime = jest.runTimersToTime;
 describe("Debounce", () => {
   it("adds debounceProps to the props passed to the inner component", () => {
     const Outer = withDebounce(Inner);
-    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
+    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
     expect(component.find("Inner").props()).toEqual({
       foo: "initialFoo",
       debounceTimeMs: 1000,
@@ -27,7 +27,7 @@ describe("Debounce", () => {
 
   it("does not change debouncing status if component recieves same props", () => {
     const Outer = withDebounce(Inner);
-    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
+    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
     component.setProps({ foo: "initialFoo" });
     expect(component.find("Inner").props()).toEqual({
       foo: "initialFoo",
@@ -43,7 +43,7 @@ describe("Debounce", () => {
   const testUpdateInnerPropsAfterDelay = delay => {
     const Outer = withDebounce(Inner);
     const component = shallow(
-      <Outer foo="initialFoo" debounceTimeMs={delay} />
+      <Outer debounceTimeMs={delay} foo="initialFoo" />
     );
     const innerProps = () =>
       component
@@ -82,7 +82,7 @@ describe("Debounce", () => {
 
   it("does not atttempt to update props after unmount", () => {
     const Outer = withDebounce(Inner);
-    const component = shallow(<Outer foo="initialFoo" debounceTimeMs={1000} />);
+    const component = shallow(<Outer debounceTimeMs={1000} foo="initialFoo" />);
     const setState = jest.spyOn(component.instance(), "handleDebounceTimer");
 
     expect(setState.mock.calls.length).toEqual(0);

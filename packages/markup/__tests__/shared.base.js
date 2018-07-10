@@ -74,7 +74,7 @@ export default renderComponent => {
         },
         link(key, attributes, renderedChildren) {
           return (
-            <Text key={key} href={attributes.href}>
+            <Text href={attributes.href} key={key}>
               {renderedChildren}
             </Text>
           );

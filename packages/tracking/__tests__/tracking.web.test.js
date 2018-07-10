@@ -69,7 +69,7 @@ class ListComponent extends Component {
     return (
       <View>
         {this.props.items.map(item => (
-          <Text key={item.someKey} id={item.elementId}>
+          <Text id={item.elementId} key={item.someKey}>
             Item {item.someValue}
           </Text>
         ))}

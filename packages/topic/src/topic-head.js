@@ -8,7 +8,7 @@ const TopicHead = ({ name, description, isLoading }) => {
     description ? (
       <Fragment>
         <View style={styles.divider} />
-        <Text testID="topic-description" style={styles.description}>
+        <Text style={styles.description} testID="topic-description">
           {description}
         </Text>
       </Fragment>
@@ -20,9 +20,9 @@ const TopicHead = ({ name, description, isLoading }) => {
     <View style={styles.wrapper}>
       <View style={styles.container}>
         <Text
-          testID="topic-name"
           accessibilityRole="heading"
           style={styles.name}
+          testID="topic-name"
         >
           {name}
         </Text>

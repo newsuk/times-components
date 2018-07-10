@@ -6,7 +6,7 @@
   "dev": "src/icons",
   "scripts": {
     "flow": "node_modules/flow-bin/cli.js",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

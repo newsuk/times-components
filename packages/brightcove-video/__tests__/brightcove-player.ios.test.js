@@ -13,8 +13,8 @@ describe("brightcove-player iOS component", () => {
     const brightcoveVideo = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
       />
     );
 

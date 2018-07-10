@@ -54,7 +54,7 @@ export default {
 
         return (
           <MockedProvider mocks={mocks} removeTypename>
-            <WithData prop1={1} prop2={2} debounceTimeMs={0}>
+            <WithData debounceTimeMs={0} prop1={1} prop2={2}>
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </WithData>
           </MockedProvider>
@@ -88,7 +88,7 @@ export default {
 
         return (
           <MockedProvider mocks={mocks} removeTypename>
-            <WithData prop1={1} prop2={2} debounceTimeMs={0}>
+            <WithData debounceTimeMs={0} prop1={1} prop2={2}>
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </WithData>
           </MockedProvider>
@@ -114,11 +114,11 @@ export default {
         return (
           <MockedProvider mocks={mocks}>
             <AuthorProfileProvider
-              slug="fiona-hamilton"
-              pageSize={3}
-              page={4}
               articleImageRatio="16:9"
               debounceTimeMs={0}
+              page={4}
+              pageSize={3}
+              slug="fiona-hamilton"
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </AuthorProfileProvider>
@@ -145,8 +145,8 @@ export default {
         return (
           <MockedProvider mocks={mocks}>
             <ArticleProvider
-              id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
               debounceTimeMs={0}
+              id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </ArticleProvider>
@@ -166,10 +166,10 @@ export default {
         return (
           <MockedProvider mocks={mocks}>
             <AuthorArticlesWithImagesProvider
-              slug="deborah-haynes"
-              pageSize={5}
-              page={1}
               debounceTimeMs={0}
+              page={1}
+              pageSize={5}
+              slug="deborah-haynes"
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </AuthorArticlesWithImagesProvider>
@@ -195,7 +195,7 @@ export default {
 
         return (
           <MockedProvider mocks={mocks}>
-            <TopicProvider slug="chelsea" debounceTimeMs={0}>
+            <TopicProvider debounceTimeMs={0} slug="chelsea">
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </TopicProvider>
           </MockedProvider>
@@ -214,10 +214,10 @@ export default {
         return (
           <MockedProvider mocks={mocks}>
             <TopicArticlesProvider
-              slug="chelsea"
-              pageSize={5}
-              page={1}
               debounceTimeMs={0}
+              page={1}
+              pageSize={5}
+              slug="chelsea"
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
             </TopicArticlesProvider>

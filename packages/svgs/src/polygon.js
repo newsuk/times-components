@@ -29,7 +29,7 @@ const Polygon = ({ stroke, fill, points }) => {
     d.lineTo(x, y);
   }
 
-  return <SVGPath stroke={stroke} fill={fill} d={d} />;
+  return <SVGPath d={d} fill={fill} stroke={stroke} />;
 };
 
 Polygon.propTypes = {

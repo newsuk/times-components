@@ -26,12 +26,12 @@ export default class Boxes extends Component {
     return (
       <FlatList
         data={this.props.boxes}
+        keyExtractor={({ id }) => id}
+        onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => (
           <Text id={`box-${item.id}`}>Item {item.id}</Text>
         )}
-        onViewableItemsChanged={this.onViewableItemsChanged}
         viewabilityConfig={viewabilityConfig}
-        keyExtractor={({ id }) => id}
       />
     );
   }

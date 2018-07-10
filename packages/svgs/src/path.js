@@ -10,11 +10,11 @@ const Path = ({ d, fill, stroke, strokeWidth, opacity }) => {
 
   return (
     <Shape
+      d={d}
       fill={artFill}
+      opacity={opacity}
       stroke={artStroke}
       strokeWidth={strokeWidth}
-      d={d}
-      opacity={opacity}
     />
   );
 };

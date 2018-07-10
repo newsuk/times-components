@@ -27,7 +27,7 @@ export default {
     {
       type: "story",
       name: "With credits",
-      component: () => <Caption text={captionText} credits={credits} />
+      component: () => <Caption credits={credits} text={captionText} />
     },
     {
       type: "story",
@@ -38,15 +38,15 @@ export default {
       type: "story",
       name: "With specific styles",
       component: () => (
-        <Caption text={captionText} credits={credits} style={style} />
+        <Caption credits={credits} style={style} text={captionText} />
       )
     },
     {
       type: "story",
       name: "Image with caption",
       component: () => (
-        <Caption text={captionText} credits={credits}>
-          <Image uri={exampleImage} aspectRatio={16 / 9} />
+        <Caption credits={credits} text={captionText}>
+          <Image aspectRatio={16 / 9} uri={exampleImage} />
         </Caption>
       )
     }

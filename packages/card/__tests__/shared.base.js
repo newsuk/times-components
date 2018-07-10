@@ -96,7 +96,7 @@ export default renderMethod => {
 
   it("should render a loading card with no image", () => {
     const output = renderMethod(
-      <Card {...props} showImage={false} isLoading>
+      <Card {...props} isLoading showImage={false}>
         <Text>Loading with no image</Text>
       </Card>
     );
@@ -108,7 +108,7 @@ export default renderMethod => {
 
   it("should render a reversed loading component", () => {
     const output = renderMethod(
-      <Card {...props} isReversed isLoading>
+      <Card {...props} isLoading isReversed>
         <Text>Loading in reverse</Text>
       </Card>
     );
@@ -120,7 +120,7 @@ export default renderMethod => {
 
   it("should render a reversed loading component with no image", () => {
     const output = renderMethod(
-      <Card {...props} isReversed showImage={false} isLoading>
+      <Card {...props} isLoading isReversed showImage={false}>
         <Text>Loading in reverse with no image</Text>
       </Card>
     );

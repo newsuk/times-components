@@ -12,7 +12,7 @@ export default () => {
     const PropRenderer = () => (
       <Foo
         prop={
-          <Text href="href" dir="dir">
+          <Text dir="dir" href="href">
             Bar
           </Text>
         }
@@ -28,7 +28,7 @@ export default () => {
     const Dummy = props => <Text {...props} />;
     const DummyRenderer = () => (
       <View>
-        <Dummy undef={undefined} False={false} Null={null} Zero={0} />
+        <Dummy False={false} Null={null} Undef={undefined} Zero={0} />
       </View>
     );
 

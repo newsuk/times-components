@@ -10,10 +10,10 @@ const videoId = "4084164751001";
 
 withComponent(
   <BrightcovePlayer
+    accountId={accountId}
     fructoseID="brightcove video renders"
     policyKey={policyKey}
     videoId={videoId}
-    accountId={accountId}
   />,
   "video with external controls",
   async fructose => {
@@ -33,10 +33,10 @@ withComponent(
 
 withComponent(
   <VideoWithExternalControls
+    accountId={accountId}
     fructoseID="brightcove with external controls"
     policyKey={policyKey}
     videoId={videoId}
-    accountId={accountId}
   />,
   "video with external controls",
   async fructose => {

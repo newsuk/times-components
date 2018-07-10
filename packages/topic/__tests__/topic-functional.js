@@ -67,8 +67,8 @@ export default () => {
 
   it("should render the loading state", () => {
     const tree = renderer.create(
-      <MockedProvider mocks={mockArticles} isLoading>
-        <Topic {...props} topic={{}} isLoading />
+      <MockedProvider isLoading mocks={mockArticles}>
+        <Topic {...props} isLoading topic={{}} />
       </MockedProvider>
     );
 
@@ -92,9 +92,9 @@ export default () => {
       <MockedProvider mocks={mockArticles}>
         <Topic
           {...props}
+          analyticsStream={reporter}
           page={1}
           pageSize={pageSize}
-          analyticsStream={reporter}
         />
       </MockedProvider>
     );

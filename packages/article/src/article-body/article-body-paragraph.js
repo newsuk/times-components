@@ -5,9 +5,9 @@ import styles from "../styles/article-body";
 
 const BodyParagraph = props => (
   <View
-    testID={`paragraph-${props.uid}`}
     key={`paragraph-${props.uid}`}
     style={[styles.articleMainContentRow]}
+    testID={`paragraph-${props.uid}`}
   >
     <Text style={styles.articleTextElement}>{props.children}</Text>
   </View>

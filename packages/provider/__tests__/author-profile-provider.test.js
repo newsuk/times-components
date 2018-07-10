@@ -15,7 +15,7 @@ const renderComponent = child =>
         delay: 0
       })}
     >
-      <AuthorProfileProvider slug="deborah-haynes" debounceTimeMs={0}>
+      <AuthorProfileProvider debounceTimeMs={0} slug="deborah-haynes">
         {child}
       </AuthorProfileProvider>
     </MockedProvider>

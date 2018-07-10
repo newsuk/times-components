@@ -15,6 +15,6 @@ export default render => ({ isVideo, label }) => {
       testID: "label",
       style: styles.articleLabel
     },
-    <Label title={label} color={colours.section.default} />
+    <Label color={colours.section.default} title={label} />
   );
 };

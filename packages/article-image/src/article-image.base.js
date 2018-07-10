@@ -38,7 +38,7 @@ const renderCaption = (display, caption, credits) => {
     display === "primary" ? (
       <InsetCaption caption={caption} credits={credits} />
     ) : (
-      <Caption text={caption} credits={credits} style={captionStyle[display]} />
+      <Caption credits={credits} style={captionStyle[display]} text={caption} />
     );
 
   return (
@@ -55,8 +55,8 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
   if (display === "inline") {
     return (
       <InlineImage
-        imageOptions={imageOptions}
         captionOptions={captionOptions}
+        imageOptions={imageOptions}
       />
     );
   }
@@ -72,7 +72,7 @@ const ArticleImage = ({ imageOptions, captionOptions }) => {
 
   return [
     <View key="img" style={styles[`${display}Image`]}>
-      <ModalImage uri={url} aspectRatio={aspectRatio} />
+      <ModalImage aspectRatio={aspectRatio} uri={url} />
     </View>,
     ...children
   ];

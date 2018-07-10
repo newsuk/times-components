@@ -4,7 +4,7 @@
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",

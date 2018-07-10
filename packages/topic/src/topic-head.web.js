@@ -17,7 +17,7 @@ const TopicHead = ({ name, description, isLoading }) => {
     description ? (
       <Fragment>
         <ResponsiveDivider />
-        <Text testID="topic-description" style={styles.description}>
+        <Text style={styles.description} testID="topic-description">
           {description}
         </Text>
       </Fragment>
@@ -28,7 +28,7 @@ const TopicHead = ({ name, description, isLoading }) => {
   ) : (
     <View style={styles.wrapper}>
       <HeadContainer>
-        <ResponsiveName testID="topic-name" accessibilityRole="heading">
+        <ResponsiveName accessibilityRole="heading" testID="topic-name">
           {name}
         </ResponsiveName>
         {showDescription()}

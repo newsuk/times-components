@@ -6,7 +6,7 @@ import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
 
 const ArticleTopic = ({ name, onPress, slug }) => (
-  <Link url={`/topic/${slug}`} onPress={e => onPress(e, { name, slug })}>
+  <Link onPress={e => onPress(e, { name, slug })} url={`/topic/${slug}`}>
     <View style={styles.container}>
       <Text style={styles.text}>{name}</Text>
     </View>

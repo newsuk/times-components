@@ -5,7 +5,7 @@
   "main": "dist/related-articles",
   "dev": "src/related-articles",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint src && npm run prettier:diff",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",

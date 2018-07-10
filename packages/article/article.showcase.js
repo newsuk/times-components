@@ -57,10 +57,10 @@ const renderArticle = (
 ) => (
   <Article
     {...data}
-    isLoading={isLoading}
-    analyticsStream={analyticsStream}
     adConfig={adConfig}
+    analyticsStream={analyticsStream}
     error={error}
+    isLoading={isLoading}
     onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
     onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
     onRelatedArticlePress={preventDefaultedAction(decorateAction)(
@@ -125,8 +125,8 @@ export default {
         return (
           <StorybookProvider mocks={mocks}>
             <ArticleProvider
-              id={overrideArticleId || predefinedArticle}
               debounceTimeMs={0}
+              id={overrideArticleId || predefinedArticle}
             >
               {({ article, isLoading, error }) => (
                 <Article
@@ -162,8 +162,8 @@ export default {
         <div>
           <a
             href={`/iframe.html${window.top.location.search}`}
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             Click to render the ads
           </a>

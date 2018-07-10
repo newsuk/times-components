@@ -20,12 +20,12 @@ const ArticleLeadAssetVideo = ({
   return (
     <Video
       accountId={brightcoveAccountId}
-      policyKey={brightcovePolicyKey}
-      videoId={brightcoveVideoId}
-      poster={{ uri: imageUrl }}
-      width={width}
       height={height}
       onVideoPress={onVideoPress}
+      policyKey={brightcovePolicyKey}
+      poster={{ uri: imageUrl }}
+      videoId={brightcoveVideoId}
+      width={width}
     />
   );
 };

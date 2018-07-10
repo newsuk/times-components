@@ -140,8 +140,8 @@ module.exports = () => {
 
       renderer.create(
         <WithTrackingAndContext
-          aProp="propValue"
           analyticsStream={reporter}
+          aProp="propValue"
           {...props}
         />
       );
@@ -186,8 +186,8 @@ module.exports = () => {
 
       renderer.create(
         <WithTrackingAndContext
-          aProp="propValue"
           analyticsStream={reporter}
+          aProp="propValue"
           {...props}
         />
       );

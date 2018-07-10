@@ -16,12 +16,12 @@ const renderComponent = child =>
       })}
     >
       <AuthorArticlesNoImagesProvider
-        slug="deborah-haynes"
-        pageSize={5}
-        page={1}
-        shortSummaryLength={220}
-        longSummaryLength={360}
         debounceTimeMs={0}
+        longSummaryLength={360}
+        page={1}
+        pageSize={5}
+        shortSummaryLength={220}
+        slug="deborah-haynes"
       >
         {child}
       </AuthorArticlesNoImagesProvider>

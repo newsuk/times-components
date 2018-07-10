@@ -40,7 +40,7 @@ export default {
           <Text style={{ marginTop: 10, marginBottom: 10 }}>Mobile size:</Text>
           <Video {...defaultVideoProps} />
           <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
-          <Video {...defaultVideoProps} width={664} height={374} />
+          <Video {...defaultVideoProps} height={374} width={664} />
         </View>
       )
     },
@@ -61,7 +61,7 @@ export default {
       platform: "native",
       component: () => (
         <View style={{ width: "100%", height: "100%" }}>
-          <Video {...defaultVideoProps} width="100%" height="100%" />
+          <Video {...defaultVideoProps} height="100%" width="100%" />
         </View>
       )
     },
@@ -71,7 +71,7 @@ export default {
       platform: "web",
       component: () => (
         <View style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-          <Video {...defaultVideoProps} width="100%" height="100%" />
+          <Video {...defaultVideoProps} height="100%" width="100%" />
         </View>
       )
     },
@@ -103,9 +103,9 @@ export default {
           <Text style={{ marginTop: 20, marginBottom: 10 }}>Desktop size:</Text>
           <Video
             {...defaultVideoProps}
-            width={664}
             height={374}
             videoId="invalid id"
+            width={664}
           />
         </View>
       )

@@ -13,10 +13,10 @@ const renderAuthorComponent = (
   const url = `/profile/${attributes.slug}`;
   return (
     <TextLink
-      style={bylineStyles}
       key={key}
-      url={url}
       onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
+      style={bylineStyles}
+      url={url}
     >
       {children}
     </TextLink>

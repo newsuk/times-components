@@ -9,9 +9,9 @@ const ArticleListEmptyState = ({ message }) => (
     <Text style={styles.listEmptyMessage}>{message}</Text>
     <View style={styles.listEmptyWatermarkContainer}>
       <Watermark
-        width={watermarkStyles.width}
         height={watermarkStyles.height}
         viewBox={watermarkStyles.viewBox}
+        width={watermarkStyles.width}
       />
     </View>
   </View>

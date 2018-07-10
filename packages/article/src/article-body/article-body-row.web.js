@@ -41,14 +41,14 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       return (
         <MediaWrapper key={key}>
           <ArticleImage
+            captionOptions={{
+              caption,
+              credits
+            }}
             imageOptions={{
               display,
               ratio,
               url
-            }}
-            captionOptions={{
-              caption,
-              credits
             }}
           />
         </MediaWrapper>
@@ -69,12 +69,12 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
         <MediaWrapper key={key}>
           <AspectRatioContainer aspectRatio="16:9">
             <Video
-              width="100%"
+              accountId={brightcoveAccountId}
               height="100%"
               policyKey={brightcovePolicyKey}
-              videoId={brightcoveVideoId}
-              accountId={brightcoveAccountId}
               poster={{ uri: posterImageUrl }}
+              videoId={brightcoveVideoId}
+              width="100%"
             />
           </AspectRatioContainer>
           <InsetCaption caption={caption} />
@@ -85,7 +85,7 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       return (
         <PullQuoteContainer key={key}>
           <PullQuoteResp>
-            <PullQuote content={content} caption={name} twitter={twitter} />
+            <PullQuote caption={name} content={content} twitter={twitter} />
           </PullQuoteResp>
         </PullQuoteContainer>
       );
@@ -96,10 +96,10 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       return (
         <ArticleLink
           key={key}
-          uuid={index}
           onPress={e => onLinkPress(e, { href })}
-          url={href}
           target={target}
+          url={href}
+          uuid={index}
         >
           {children}
         </ArticleLink>

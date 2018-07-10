@@ -221,10 +221,10 @@ class ArticleList extends Component {
                             {renderSeperator()}
                             <ArticleListItem
                               {...article}
-                              index={index}
-                              length={data.length}
                               imageRatio={imageRatio}
                               imageSize={this.getImageSize(elementId) || 100}
+                              index={index}
+                              length={data.length}
                               onPress={e => onArticlePress(e, { id, url })}
                               showImage={showImages}
                             />

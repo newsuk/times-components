@@ -87,9 +87,9 @@ export default {
         }));
         return (
           <BoxesWithTrackingContext
-            onViewed={() => {}}
-            boxes={boxes}
             analyticsStream={storybookReporter}
+            boxes={boxes}
+            onViewed={() => {}}
           />
         );
       }

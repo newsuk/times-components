@@ -10,7 +10,7 @@ export default renderMethod =>
       const fill = "#facade";
 
       const wrapper = renderMethod(
-        <Icon strokeColour={stroke} height={50} fillColour={fill} />
+        <Icon fillColour={fill} height={50} strokeColour={stroke} />
       );
 
       expect(wrapper).toMatchSnapshot(`${indx + 1}. ${testName}`);

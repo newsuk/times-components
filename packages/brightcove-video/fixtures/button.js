@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 
 const Button = props => (
   <TouchableOpacity
-    testID={props.testID}
+    onPress={props.onPress}
     style={{
       backgroundColor: "blue",
       padding: 5,
       margin: 5,
       width: 200
     }}
-    onPress={props.onPress}
+    testID={props.testID}
   >
     <Text style={{ color: "white", textAlign: "center" }}>
       {props.buttonText}

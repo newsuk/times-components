@@ -62,7 +62,7 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <InsetCaptionContainerStyle key="caption">
-      <Caption text={caption} credits={credits} />
+      <Caption credits={credits} text={caption} />
     </InsetCaptionContainerStyle>
   );
 };
@@ -83,7 +83,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
   return (
     <Fragment>
       <InsetImageStyle key="img">
-        <Image uri={url} aspectRatio={aspectRatio} />
+        <Image aspectRatio={aspectRatio} uri={url} />
       </InsetImageStyle>
       {imgCaption}
     </Fragment>

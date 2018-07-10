@@ -9,8 +9,8 @@ describe("brightcove-player native component", () => {
       .create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       )
       .toJSON();
@@ -23,8 +23,8 @@ describe("brightcove-player native component", () => {
       .create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       )
       .toJSON();
@@ -38,9 +38,9 @@ describe("brightcove-player native component", () => {
       .create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           height={400}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
           width={600}
         />
       )
@@ -55,8 +55,8 @@ describe("brightcove-player native component", () => {
       .create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       )
       .toJSON();
@@ -70,13 +70,13 @@ describe("brightcove-player native component", () => {
     const root = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
         runNativeCommand={commandName => {
           expect(commandName).toBe("play");
 
           done();
         }}
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -89,13 +89,13 @@ describe("brightcove-player native component", () => {
     const root = renderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         policyKey="[POLICY_KEY]"
         runNativeCommand={commandName => {
           expect(commandName).toBe("pause");
 
           done();
         }}
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -117,8 +117,8 @@ describe("brightcove-player native component", () => {
       const root = renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -218,8 +218,8 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -230,12 +230,12 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onChange={evt => {
             expect(evt.something).toBe(true);
             done();
           }}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -246,9 +246,9 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onPlay={done}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -259,9 +259,9 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onPause={done}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -273,12 +273,12 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onDuration={duration => {
             expect(duration).toBe(999);
             done();
           }}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -289,9 +289,9 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onFinish={done}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -302,12 +302,12 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onError={evt => {
             expect(evt).toBe("random act of badness");
             done();
           }}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -318,12 +318,12 @@ describe("brightcove-player native component", () => {
       renderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
-          policyKey="[POLICY_KEY]"
           onError={evt => {
             expect(evt).toBe("random act of badness");
             done();
           }}
+          policyKey="[POLICY_KEY]"
+          videoId="[VIDEO_ID]"
         />
       );
 

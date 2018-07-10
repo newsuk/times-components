@@ -30,7 +30,7 @@ const renderCaption = (display, caption, credits) => {
 
   return (
     <View key="caption" style={styles.inlineCaption}>
-      <Caption text={caption} credits={credits} style={styles} />
+      <Caption credits={credits} style={styles} text={caption} />
     </View>
   );
 };
@@ -50,7 +50,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
 
   return [
     <View key="img" style={styles.inlineImage}>
-      <ModalImage uri={url} aspectRatio={aspectRatio} />
+      <ModalImage aspectRatio={aspectRatio} uri={url} />
     </View>,
     ...imgCaption
   ];

@@ -42,7 +42,7 @@ module.exports = () => {
       const reporter = jest.fn();
 
       renderer.create(
-        <WithTrackingAndContext keyTwo="two" analyticsStream={reporter} />
+        <WithTrackingAndContext analyticsStream={reporter} keyTwo="two" />
       );
 
       expect(reporter).toHaveBeenCalledWith(
@@ -241,7 +241,7 @@ module.exports = () => {
       });
 
       const tree = renderer.create(
-        <WithTrackingContext someProp="bar" analyticsStream={() => {}} />
+        <WithTrackingContext analyticsStream={() => {}} someProp="bar" />
       );
 
       expect(tree).toMatchSnapshot();

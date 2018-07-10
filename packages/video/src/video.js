@@ -18,6 +18,7 @@ const Video = ({
   videoId
 }) => (
   <Touchable
+    accessibilityLabel="splash-component"
     onPress={e => {
       onVideoPress(e, {
         accountId,
@@ -26,16 +27,15 @@ const Video = ({
       });
     }}
     testID="splash-component"
-    accessibilityLabel="splash-component"
   >
     <View style={{ width, height }}>
       {poster ? (
         <Image
-          uri={poster.uri}
           style={{
             width,
             height
           }}
+          uri={poster.uri}
         />
       ) : (
         <View

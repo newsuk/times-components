@@ -14,12 +14,12 @@ export default {
       name: "Article Label",
       component: ({ select }) => (
         <ArticleLabel
-          title="swimming"
           color={select(
             "Section",
             invert(colours.section),
             colours.section.default
           )}
+          title="swimming"
         />
       )
     }

@@ -6,7 +6,7 @@
   "scripts": {
     "transpile": "babel src -d dist --ignore __tests__",
     "prepublishOnly": "yarn transpile",
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
     "test": "jest",

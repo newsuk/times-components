@@ -111,10 +111,10 @@ class BrightcoveVideo extends Component {
             this.playerRef = ref;
           }}
           {...this.props}
-          onPlay={this.handlePlay}
+          autoplay
           onError={this.handleError}
           onFinish={this.handleFinish}
-          autoplay
+          onPlay={this.handlePlay}
         />
       );
     }

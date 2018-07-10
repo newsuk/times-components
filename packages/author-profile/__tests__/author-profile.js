@@ -56,7 +56,7 @@ export default () => {
 
   it("should render the loading state", () => {
     const tree = renderer.create(
-      <MockedProvider mocks={mockArticles} isLoading>
+      <MockedProvider isLoading mocks={mockArticles}>
         <AuthorProfile {...props} isLoading />
       </MockedProvider>
     );

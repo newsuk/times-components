@@ -26,10 +26,10 @@ export default {
       name: "Group of Topics",
       component: () => (
         <ArticleTopics
-          topics={topicsData}
           onPress={e => {
             e.preventDefault();
           }}
+          topics={topicsData}
         />
       )
     },
