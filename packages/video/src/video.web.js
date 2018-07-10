@@ -12,7 +12,7 @@ export const isPaidOnly = paidOnlyValue =>
   paidOnlyValue === "false" ? false : !!paidOnlyValue;
 
 const Video = props => {
-  const { paidOnly, width, height, poster } = props;
+  const { height, paidOnly, poster, width } = props;
   return (
     <ErrorView>
       {({ hasError }) =>
