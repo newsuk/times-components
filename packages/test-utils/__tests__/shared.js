@@ -24,6 +24,4 @@ const exampleTests = [
   }
 ];
 
-export default () => {
-  iterator(exampleTests);
-};
+export default () => iterator(exampleTests);
