@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ApolloClient from "apollo-client";
+import { ApolloClient } from "apollo-client";
 import { ApolloLink } from "apollo-link";
 import { ApolloProvider } from "react-apollo";
 import { MockLink } from "react-apollo/test-utils";
