@@ -1,6 +1,6 @@
 import React from "react";
-import Svg, { Polygon, Rect } from "svgs";
 import { View } from "react-native";
+import Svg, { Polygon, Rect } from "svgs";
 
 const PlayIcon = () => (
   <View>

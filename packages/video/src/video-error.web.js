@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
-import styles from "./styles/video-error.styles";
+import styles from "./styles";
 
 const VideoError = ({ width, height }) => (
   <View style={[styles.background, { width, height }]}>

@@ -5,8 +5,8 @@ import Image from "@times-components/image";
 
 import Touchable from "./touchable";
 import PlayIcon from "./play-icon";
-import { propTypes, defaultProps } from "./video.proptypes";
-import styles from "./styles/video.styles";
+import { propTypes, defaultProps } from "./video-prop-types";
+import styles from "./styles";
 
 const Video = ({
   poster,

@@ -2,12 +2,11 @@ import React from "react";
 import { View, Text } from "react-native";
 import Image from "@times-components/image";
 import ErrorView from "@times-components/error-view";
-
 import InlineVideoPlayer from "./inline-video-player";
 import IsPaidSubscriber from "./is-paid-subscriber";
 import VideoError from "./video-error";
-import { propTypes, defaultProps } from "./video.proptypes";
-import styles from "./styles/video.styles.web";
+import { propTypes, defaultProps } from "./video-prop-types";
+import styles from "./styles";
 
 export const isPaidOnly = paidOnlyValue =>
   paidOnlyValue === "false" ? false : !!paidOnlyValue;

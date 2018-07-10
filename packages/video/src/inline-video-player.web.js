@@ -1,7 +1,6 @@
 /* eslint-env browser */
 import React, { Component } from "react";
-
-import { propTypes, defaultProps } from "./video.proptypes";
+import { propTypes, defaultProps } from "./video-prop-types";
 
 const css = `
 .video-js .vjs-big-play-button {
