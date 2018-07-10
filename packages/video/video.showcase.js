@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import { View, Text, Alert } from "react-native";
 import React from "react";
 import Video from "./src/video";
