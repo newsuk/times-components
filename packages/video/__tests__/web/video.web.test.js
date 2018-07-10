@@ -1,6 +1,5 @@
 import React from "react";
 import renderer from "react-test-renderer";
-
 import shared, { defaultVideoProps } from "../shared";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video, { isPaidOnly } from "../../src/video";
