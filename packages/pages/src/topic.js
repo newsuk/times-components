@@ -5,18 +5,18 @@ import { TopicProvider } from "@times-components/provider";
 import withClient from "./client/with-client";
 
 const TopicPage = ({ topicSlug, onArticlePress, analyticsStream }) => (
-  <TopicProvider slug={topicSlug} page={1} pageSize={20} debounceTimeMs={250}>
+  <TopicProvider debounceTimeMs={250} page={1} pageSize={20} slug={topicSlug}>
     {({ topic, isLoading, error, page, pageSize, refetch }) => (
       <Topic
-        topic={topic}
-        slug={topicSlug}
-        isLoading={isLoading}
-        error={error}
-        onArticlePress={(event, extras) => onArticlePress(extras.url)}
         analyticsStream={analyticsStream}
+        error={error}
+        isLoading={isLoading}
+        onArticlePress={(event, extras) => onArticlePress(extras.url)}
         page={page}
-        refetch={refetch}
         pageSize={pageSize}
+        refetch={refetch}
+        slug={topicSlug}
+        topic={topic}
       />
     )}
   </TopicProvider>

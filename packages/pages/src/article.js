@@ -15,21 +15,19 @@ const ArticleDetailsPage = ({
   onLinkPress,
   onTopicPress
 }) => (
-  <ArticleProvider id={articleId} debounceTimeMs={100}>
+  <ArticleProvider debounceTimeMs={100} id={articleId}>
     {({ article, isLoading, error }) => {
       const adConfig =
         isLoading || error ? {} : adTargetConfig(platformAdConfig, article);
 
       return (
         <Article
-          article={article}
-          isLoading={isLoading}
-          error={error}
-          analyticsStream={analyticsStream}
           adConfig={adConfig}
-          onRelatedArticlePress={(event, extras) => onArticlePress(extras.url)}
+          analyticsStream={analyticsStream}
+          article={article}
+          error={error}
+          isLoading={isLoading}
           onAuthorPress={(event, extras) => onAuthorPress(extras.slug)}
-          onVideoPress={(event, info) => onVideoPress(info)}
           onLinkPress={(event, linkInfo) => {
             if (linkInfo.type === "article") {
               onArticlePress(linkInfo.url);
@@ -39,7 +37,9 @@ const ArticleDetailsPage = ({
               onLinkPress(linkInfo.url);
             }
           }}
+          onRelatedArticlePress={(event, extras) => onArticlePress(extras.url)}
           onTopicPress={(event, extras) => onTopicPress(extras.slug)}
+          onVideoPress={(event, info) => onVideoPress(info)}
         />
       );
     }}

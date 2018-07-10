@@ -10,13 +10,13 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticlePageView
-          articleId="test-article-id"
           analyticsStream={() => {}}
+          articleId="test-article-id"
           onArticlePress={() => {}}
           onAuthorPress={() => {}}
           onLinkPress={() => {}}
-          onVideoPress={() => {}}
           onTopicPress={() => {}}
+          onVideoPress={() => {}}
           platformAdConfig={{}}
         />
       )

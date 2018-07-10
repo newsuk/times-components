@@ -26,13 +26,13 @@ export default {
 
         return (
           <ArticlePageView
-            articleId={articleId}
             analyticsStream={() => {}}
+            articleId={articleId}
             onArticlePress={() => {}}
             onAuthorPress={() => {}}
             onLinkPress={() => {}}
-            onVideoPress={() => {}}
             onTopicPress={() => {}}
+            onVideoPress={() => {}}
             platformAdConfig={{}}
           />
         );
@@ -55,10 +55,10 @@ export default {
 
         return (
           <AuthorProfilePageView
+            analyticsStream={() => {}}
             authorSlug={authorSlug}
             onArticlePress={() => {}}
             onTwitterLinkPress={() => {}}
-            analyticsStream={() => {}}
           />
         );
       }
@@ -80,9 +80,9 @@ export default {
 
         return (
           <TopicPageView
-            topicSlug={topicSlug}
-            onArticlePress={() => {}}
             analyticsStream={() => {}}
+            onArticlePress={() => {}}
+            topicSlug={topicSlug}
           />
         );
       }

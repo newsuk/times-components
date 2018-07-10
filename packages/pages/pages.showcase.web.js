@@ -26,13 +26,13 @@ export default {
 
         return (
           <ArticlePageView
-            articleId={articleId}
             analyticsStream={() => {}}
+            articleId={articleId}
             onArticlePress={() => {}}
             onAuthorPress={() => {}}
             onLinkPress={() => {}}
-            onVideoPress={() => {}}
             onTopicPress={() => {}}
+            onVideoPress={() => {}}
             platformAdConfig={{}}
           />
         );

@@ -12,10 +12,10 @@ const AuthorProfilePage = ({
 }) => (
   <AuthorProfileProvider
     articleImageRatio="4:3"
-    slug={authorSlug}
+    debounceTimeMs={250}
     page={1}
     pageSize={20}
-    debounceTimeMs={250}
+    slug={authorSlug}
   >
     {({
       author,
@@ -28,18 +28,18 @@ const AuthorProfilePage = ({
       refetch
     }) => (
       <AuthorProfile
-        author={author}
-        slug={authorSlug}
-        isLoading={isLoading}
         analyticsStream={analyticsStream}
+        author={author}
         error={error}
-        page={page}
-        pageSize={pageSize}
-        refetch={refetch}
-        onTwitterLinkPress={(event, extras) => onTwitterLinkPress(extras.url)}
+        isLoading={isLoading}
         onArticlePress={(event, extras) => onArticlePress(extras.url)}
         onNext={onNext}
         onPrev={onPrev}
+        onTwitterLinkPress={(event, extras) => onTwitterLinkPress(extras.url)}
+        page={page}
+        pageSize={pageSize}
+        refetch={refetch}
+        slug={authorSlug}
       />
     )}
   </AuthorProfileProvider>
