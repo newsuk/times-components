@@ -5,6 +5,7 @@ import {
   addSerializers,
   enzymeRootSerializer
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import {
   NewArticleFlag,
   UpdatedArticleFlag,
@@ -15,27 +16,40 @@ import {
 export default () => {
   addSerializers(expect, enzymeRootSerializer());
 
-  it("new article flag", () => {
-    const wrapper = shallow(<NewArticleFlag />);
+  const tests = [
+    {
+      name: "new article flag",
+      test: () => {
+        const wrapper = shallow(<NewArticleFlag />);
 
-    expect(wrapper).toMatchSnapshot();
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "updated article flag",
+      test: () => {
+        const wrapper = shallow(<UpdatedArticleFlag />);
 
-  it("updated article flag", () => {
-    const wrapper = shallow(<UpdatedArticleFlag />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "exclusive article flag",
+      test: () => {
+        const wrapper = shallow(<ExclusiveArticleFlag />);
 
-    expect(wrapper).toMatchSnapshot();
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "sponsored artilce flag",
+      test: () => {
+        const wrapper = shallow(<SponsoredArticleFlag />);
 
-  it("exclusive article flag", () => {
-    const wrapper = shallow(<ExclusiveArticleFlag />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    }
+  ];
 
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it("sponsored artilce flag", () => {
-    const wrapper = shallow(<SponsoredArticleFlag />);
-
-    expect(wrapper).toMatchSnapshot();
-  });
+  iterator(tests);
 };

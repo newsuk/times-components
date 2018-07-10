@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`exclusive article flag 1`] = `
-<ArticleFlag
-  color="#C51D24"
-  title="exclusive"
-/>
-`;
-
-exports[`new article flag 1`] = `
+exports[`1. new article flag 1`] = `
 <ArticleFlag
   color="#E34605"
   title="new"
 />
 `;
 
-exports[`sponsored artilce flag 1`] = `
-<ArticleFlag
-  color="#4D4D4D"
-  title="sponsored"
-/>
-`;
-
-exports[`updated article flag 1`] = `
+exports[`2. updated article flag 1`] = `
 <ArticleFlag
   color="#3C81BE"
   title="updated"
+/>
+`;
+
+exports[`3. exclusive article flag 1`] = `
+<ArticleFlag
+  color="#C51D24"
+  title="exclusive"
+/>
+`;
+
+exports[`4. sponsored artilce flag 1`] = `
+<ArticleFlag
+  color="#4D4D4D"
+  title="sponsored"
 />
 `;

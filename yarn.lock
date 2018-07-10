@@ -813,6 +813,72 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
+"@times-components/jest-configurator@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-1.0.6.tgz#24483465637c8b3caf8cc87a887e0ce61f857578"
+  dependencies:
+    "@times-components/jest-serializer" "1.0.6"
+    babel-jest "22.4.3"
+    enzyme "3.3.0"
+    enzyme-adapter-react-16 "1.1.0"
+    find-node-modules "1.0.4"
+    jest "21.2.1"
+    jest-plugin-context "2.6.0"
+    jest-plugins "2.9.0"
+    recursive-readdir-synchronous "0.0.3"
+
+"@times-components/jest-serializer@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-serializer/-/jest-serializer-1.0.6.tgz#f2ca3f49e3b54781aa421a02bb414dabcf7f035b"
+  dependencies:
+    enzyme-to-json "3.3.4"
+    lodash.omit "4.5.0"
+    lodash.omitby "4.6.0"
+
+"@times-components/provider-test-tools@0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@times-components/provider-test-tools/-/provider-test-tools-0.13.3.tgz#d8779f7ed22907e69bda32a651afbebb072169df"
+  dependencies:
+    "@times-components/provider" "0.37.3"
+    "@times-components/utils" "1.2.3"
+    apollo-cache-inmemory "1.1.10"
+    apollo-client "2.3.2"
+    apollo-link "1.2.2"
+    apollo-utilities "1.0.12"
+    graphql "0.13.1"
+    graphql-tag "2.8.0"
+    lodash.isequal "4.4.0"
+    prop-types "15.6.0"
+    react "16.3.1"
+    react-apollo "2.1.4"
+    react-test-renderer "16.3.1"
+    zen-observable "0.8.8"
+
+"@times-components/provider@0.37.3":
+  version "0.37.3"
+  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.37.3.tgz#4c90eab18a7942ad4b90d154bcc45af10ec1182c"
+  dependencies:
+    graphql-tag "2.8.0"
+    hoist-non-react-statics "2.5.0"
+    lodash.isequal "4.4.0"
+    lodash.pick "4.4.0"
+    prop-types "15.6.0"
+    react-apollo "2.1.4"
+    react-display-name "0.2.3"
+
+"@times-components/utils@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-1.2.3.tgz#fb9512cfb400d7aee70265b9a40476484292d48a"
+  dependencies:
+    apollo-cache-inmemory "1.1.10"
+    apollo-client "2.3.2"
+    apollo-link "1.2.2"
+    graphql "0.13.1"
+    lodash.omitby "4.6.0"
+    prop-types "15.6.0"
+    react "16.3.1"
+    react-apollo "2.1.4"
+
 "@types/async@2.0.49":
   version "2.0.49"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"

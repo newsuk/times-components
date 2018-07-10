@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Article flag 1`] = `
+exports[`1. article flag 1`] = `
 <View
   style={
     Object {
@@ -45,7 +45,7 @@ exports[`1. Article flag 1`] = `
 </View>
 `;
 
-exports[`2. Red Article flag 1`] = `
+exports[`2. red article flag 1`] = `
 <View
   style={
     Object {
