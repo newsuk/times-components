@@ -1,7 +1,3 @@
-import shared from "../shared";
-import beautifyTitle from "../beautify-title-without-spacing";
+import shared from "../video-label";
 
-describe("Video Label test on web", () => {
-  shared();
-  beautifyTitle();
-});
+shared();

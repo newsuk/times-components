@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styles from "./style";
 import beautifyTitle from "./beautify-title";
 
-const VideoLabel = ({ title, color }) => (
+const VideoLabel = ({ color, title }) => (
   <View style={styles.container}>
     <View style={styles.iconContainer}>
       <IconVideo fillColour={color} height={8} />
@@ -17,13 +17,13 @@ const VideoLabel = ({ title, color }) => (
 );
 
 VideoLabel.propTypes = {
-  title: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  title: PropTypes.string
 };
 
 VideoLabel.defaultProps = {
-  title: "",
-  color: "black"
+  color: "black",
+  title: ""
 };
 
 export default VideoLabel;

@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-
-import "react-native";
 import React from "react";
 import { colours } from "@times-components/styleguide";
 import invert from "lodash.invert";
@@ -11,7 +9,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "Video Label without title",
+      name: "Without title",
       component: ({ select }) => (
         <VideoLabel
           color={select(
@@ -24,7 +22,7 @@ export default {
     },
     {
       type: "story",
-      name: "Video Label with title",
+      name: "With title",
       component: ({ select }) => (
         <VideoLabel
           color={select(
