@@ -1,4 +1,4 @@
-import "react-native";
+/* eslint-disable react/prop-types */
 import React from "react";
 import Watermark from "./src/watermark";
 
@@ -8,7 +8,12 @@ export default {
     {
       type: "story",
       name: "MPU",
-      component: () => <Watermark height={250} width={300} />
+      component: ({ number }) => (
+        <Watermark
+          height={number("Height: ", 250)}
+          width={number("Width: ", 300)}
+        />
+      )
     },
     {
       type: "story",

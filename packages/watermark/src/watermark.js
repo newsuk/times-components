@@ -2,12 +2,12 @@ import React from "react";
 import { Image } from "react-native";
 import PropTypes from "prop-types";
 
-const Watermark = ({ width, height }) => (
+const Watermark = ({ height, width }) => (
   <Image
     resizeMode="contain"
     // eslint-disable-next-line global-require
     source={require("../assets/watermark.png")}
-    style={{ width, height }}
+    style={{ height, width }}
   />
 );
 
