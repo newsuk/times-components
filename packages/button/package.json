@@ -1,11 +1,11 @@
 {
   "name": "@times-components/button",
-  "version": "1.1.8",
+  "version": "1.1.10",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "prepublishOnly": "yarn transpile && yarn bundle",
@@ -36,9 +36,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.5",
-    "@times-components/jest-serializer": "1.0.5",
-    "@times-components/storybook": "1.1.2",
+    "@times-components/jest-configurator": "1.0.7",
+    "@times-components/jest-serializer": "1.0.7",
+    "@times-components/storybook": "1.1.4",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
@@ -59,8 +59,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "1.1.7",
-    "@times-components/utils": "1.2.2",
+    "@times-components/styleguide": "1.1.9",
+    "@times-components/utils": "1.2.4",
     "prop-types": "15.6.0"
   },
   "peerDependencies": {

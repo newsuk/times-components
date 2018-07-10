@@ -116,10 +116,10 @@ export default () => {
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
+        fetchMore={fetchMore}
         isLoading={false}
         page={1}
         pageSize={3}
-        fetchMore={fetchMore}
       />
     );
 
@@ -139,10 +139,10 @@ export default () => {
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
+        fetchMore={fetchMore}
         isLoading={false}
         page={1}
         pageSize={3}
-        fetchMore={fetchMore}
       />
     ).dive();
     wrapper.setState({ loadMoreError: null });
@@ -172,10 +172,10 @@ export default () => {
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
+        fetchMore={fetchMore}
         isLoading={false}
         page={1}
         pageSize={3}
-        fetchMore={fetchMore}
       />
     ).dive();
     wrapper.setState({ loadMoreError: "Error" });
@@ -206,10 +206,10 @@ export default () => {
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
+        fetchMore={fetchMore}
         isLoading={false}
         page={1}
         pageSize={3}
-        fetchMore={fetchMore}
       />
     ).dive();
     wrapper.setState({ loadMoreError: null });
@@ -238,10 +238,10 @@ export default () => {
         articles={results.articles.list}
         articlesLoading={false}
         count={10}
+        fetchMore={fetchMore}
         isLoading={false}
         page={1}
         pageSize={3}
-        fetchMore={fetchMore}
       />
     ).dive();
 

@@ -1,4 +1,6 @@
-import tests from "../test-wrapper-helper";
-import pagination from "../../src/pagination-wrapper";
+import shared from "../shared.web";
+import withPageState from "../../src/pagination-wrapper";
 
-describe("Pagination Wrapper on Web", tests(pagination));
+describe("web", () => {
+  shared(withPageState);
+});

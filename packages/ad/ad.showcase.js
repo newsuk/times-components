@@ -24,8 +24,8 @@ const withOpenInNewWindow = children => {
     window !== window.top && (
       <a
         href={`/iframe.html${window.top.location.search}`}
-        target="_blank"
         rel="noopener noreferrer"
+        target="_blank"
       >
         Open in new window
       </a>

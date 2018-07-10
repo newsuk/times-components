@@ -265,16 +265,16 @@ class BrightcoveVideo extends Component {
           id={this.state.id}
           style={{ width: this.props.width, height: this.props.height }}
           {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player={this.props.playerId}
           // following 'autoplay' can not expected to always work on web
           // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
           autoPlay={this.props.autoplay}
-          data-application-id
           className="video-js"
           controls
+          data-account={this.props.accountId}
+          data-application-id
+          data-embed="default"
+          data-player={this.props.playerId}
+          data-video-id={this.props.videoId}
         />
       </div>
     );

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.14"></a>
+## [2.1.14](https://github.com/newsuk/times-components/compare/@times-components/article@2.1.13...@times-components/article@2.1.14) (2018-07-09)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
+<a name="2.1.13"></a>
+## [2.1.13](https://github.com/newsuk/times-components/compare/@times-components/article@2.1.12...@times-components/article@2.1.13) (2018-07-07)
+
+
+### Bug Fixes
+
+* article ad config and prop ([#1088](https://github.com/newsuk/times-components/issues/1088)) ([e4566a6](https://github.com/newsuk/times-components/commit/e4566a6))
+
+
+
+
+<a name="2.1.12"></a>
+## [2.1.12](https://github.com/newsuk/times-components/compare/@times-components/article@2.1.11...@times-components/article@2.1.12) (2018-07-07)
+
+
+
+
+**Note:** Version bump only for package @times-components/article
+
 <a name="2.1.11"></a>
 ## [2.1.11](https://github.com/newsuk/times-components/compare/@times-components/article@2.1.10...@times-components/article@2.1.11) (2018-07-06)
 

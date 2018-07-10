@@ -27,12 +27,12 @@ export default {
       name: "Video Label with title",
       component: ({ select }) => (
         <VideoLabel
-          title="swimming"
           color={select(
             "Section",
             invert(colours.section),
             colours.section.default
           )}
+          title="swimming"
         />
       )
     }

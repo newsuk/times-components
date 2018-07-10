@@ -54,11 +54,11 @@ const AuthorProfileHead = ({
       style={styles.authorHeadContainer}
     >
       <AuthorProfileHeadBaseWithTracking
+        image={image}
         isLoading={isLoading}
         jobTitle={jobTitle}
         onTwitterLinkPress={onTwitterLinkPress}
         renderBiography={renderBiography}
-        image={image}
         renderName={renderName}
         twitter={twitter}
       />

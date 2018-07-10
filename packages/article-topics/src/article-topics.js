@@ -9,7 +9,7 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 const ArticleTopics = ({ topics, style, onPress }) => (
   <View style={[styles.topicGroup, style]}>
     {topics.map(({ name, slug }) => (
-      <ArticleTopic key={slug} slug={slug} name={name} onPress={onPress} />
+      <ArticleTopic key={slug} name={name} onPress={onPress} slug={slug} />
     ))}
   </View>
 );

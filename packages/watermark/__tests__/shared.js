@@ -6,7 +6,7 @@ import Watermark from "../src/watermark";
 module.exports = () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<Watermark width={300} height={250} />)
+      .create(<Watermark height={250} width={300} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

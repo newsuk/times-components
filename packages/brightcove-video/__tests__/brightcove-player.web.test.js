@@ -29,8 +29,8 @@ describe("brightcove-video web component", () => {
       .create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           poster={{ uri: "[POSTER_URI]" }}
+          videoId="[VIDEO_ID]"
         />
       )
       .toJSON();
@@ -52,8 +52,8 @@ describe("brightcove-video web component", () => {
     renderer.create(
       <BrightcoveVideo
         accountId="[ACCOUNT_ID]"
-        videoId="[VIDEO_ID]"
         playerId="[PLAYER_ID]"
+        videoId="[VIDEO_ID]"
       />
     );
 
@@ -86,8 +86,8 @@ describe("brightcove-video web component", () => {
       .create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           height={400}
+          videoId="[VIDEO_ID]"
           width={600}
         />
       )
@@ -102,8 +102,8 @@ describe("brightcove-video web component", () => {
       .create(
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           playerId="[PLAYER_ID]"
+          videoId="[VIDEO_ID]"
         />
       )
       .toJSON();
@@ -120,13 +120,13 @@ describe("brightcove-video web component", () => {
       <View>
         <BrightcoveVideo
           accountId="[ACCOUNT_ID1]"
-          videoId="[VIDEO_ID1]"
           playerId="[PLAYER_ID1]"
+          videoId="[VIDEO_ID1]"
         />
         <BrightcoveVideo
           accountId="[ACCOUNT_ID2]"
-          videoId="[VIDEO_ID2]"
           playerId="[PLAYER_ID2]"
+          videoId="[VIDEO_ID2]"
         />
       </View>
     );
@@ -151,13 +151,13 @@ describe("brightcove-video web component", () => {
       <View>
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           playerId="[PLAYER_ID1]"
+          videoId="[VIDEO_ID]"
         />
         <BrightcoveVideo
           accountId="[ACCOUNT_ID]"
-          videoId="[VIDEO_ID]"
           playerId="[PLAYER_ID2]"
+          videoId="[VIDEO_ID]"
         />
       </View>
     );
@@ -184,7 +184,6 @@ describe("brightcove-video web component", () => {
       const component = (
         <BrightcoveVideo
           accountId="[X]"
-          videoId="[VIDEO_ID]"
           onError={err => {
             expect(err).toMatchObject({
               code: "",
@@ -193,6 +192,7 @@ describe("brightcove-video web component", () => {
             });
             done();
           }}
+          videoId="[VIDEO_ID]"
         />
       );
 
@@ -248,7 +248,6 @@ describe("brightcove-video web component", () => {
         const component = (
           <BrightcoveVideo
             accountId="57838016001"
-            videoId="[X]"
             onError={err => {
               expect(err).toMatchObject({
                 code: "[CODE]",
@@ -256,6 +255,7 @@ describe("brightcove-video web component", () => {
               });
               done();
             }}
+            videoId="[X]"
           />
         );
 
@@ -284,10 +284,10 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               onPlay={() => {
                 done();
               }}
+              videoId="[X]"
             />
           );
 
@@ -306,10 +306,10 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               onPause={() => {
                 done();
               }}
+              videoId="[X]"
             />
           );
 
@@ -330,11 +330,11 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               onProgress={progress => {
                 expect(progress).toBe(100);
                 done();
               }}
+              videoId="[X]"
             />
           );
 
@@ -356,11 +356,11 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               onDuration={duration => {
                 expect(duration).toBe(850);
                 done();
               }}
+              videoId="[X]"
             />
           );
 
@@ -379,10 +379,10 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               onFinish={() => {
                 done();
               }}
+              videoId="[X]"
             />
           );
 
@@ -455,10 +455,10 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               ref={ref => {
                 brightcoveVideo = ref;
               }}
+              videoId="[X]"
             />
           );
 
@@ -485,10 +485,10 @@ describe("brightcove-video web component", () => {
           const component = (
             <BrightcoveVideo
               accountId="57838016001"
-              videoId="[X]"
               ref={ref => {
                 brightcoveVideo = ref;
               }}
+              videoId="[X]"
             />
           );
 

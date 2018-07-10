@@ -54,38 +54,43 @@ class ArticlePage extends Component {
         <RelatedArticles
           analyticsStream={() => {}}
           articles={relatedArticles}
-          template={relatedArticlesLayout.template}
-          onPress={onRelatedArticlePress}
           mainId={relatedArticlesLayout.main}
+          onPress={onRelatedArticlePress}
+          template={relatedArticlesLayout.template}
         />
       ) : null;
 
     return (
       <Fragment>
         <HeaderAdContainer key="headerAd">
-          <Ad pos="header" style={adStyle} section={section} contextUrl={url} />
+          <Ad
+            contextUrl={url}
+            section={section}
+            slotName="header"
+            style={adStyle}
+          />
         </HeaderAdContainer>
         <MainContainer>
           <HeaderContainer>
             <ArticleHeader
-              headline={headline}
               flags={flags}
-              standfirst={standfirst}
-              label={label}
+              headline={headline}
               isVideo={leadAssetProps.isVideo}
+              label={label}
+              standfirst={standfirst}
             />
           </HeaderContainer>
           <MetaContainer>
             <ArticleMeta
               byline={byline}
-              publishedTime={publishedTime}
-              publicationName={publicationName}
               onAuthorPress={onAuthorPress}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
             />
             <ArticleTopics
-              topics={topics}
               device="DESKTOP"
               onPress={onTopicPress}
+              topics={topics}
             />
           </MetaContainer>
           <LeadAssetContainer>
@@ -94,17 +99,17 @@ class ArticlePage extends Component {
           <BodyContainer>
             <ArticleBody
               content={content}
-              section={section}
               contextUrl={url}
               onLinkPress={onLinkPress}
+              section={section}
             />
           </BodyContainer>
         </MainContainer>
-        <ArticleTopics topics={topics} onPress={onTopicPress} />
+        <ArticleTopics onPress={onTopicPress} topics={topics} />
         {displayRelatedArticles}
-        <Ad pos="pixel" section={section} contextUrl={url} />
-        <Ad pos="pixelteads" section={section} contextUrl={url} />
-        <Ad pos="pixelskin" section={section} contextUrl={url} />
+        <Ad contextUrl={url} section={section} slotName="pixel" />
+        <Ad contextUrl={url} section={section} slotName="pixelteads" />
+        <Ad contextUrl={url} section={section} slotName="pixelskin" />
       </Fragment>
     );
   }

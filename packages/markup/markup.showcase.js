@@ -36,8 +36,8 @@ export default {
           <div>
             <a
               href={`/iframe.html${window.top.location.search}`}
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               Click to render the ads
             </a>
@@ -66,7 +66,7 @@ export default {
           },
           link(key, attributes, renderedChildren) {
             return (
-              <Text key={key} href={attributes.href}>
+              <Text href={attributes.href} key={key}>
                 {renderedChildren}
               </Text>
             );

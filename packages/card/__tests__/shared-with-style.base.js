@@ -50,7 +50,7 @@ export default renderMethod => {
 
   it("should render a reversed loading component", () => {
     const output = renderMethod(
-      <Card {...props} isReversed isLoading>
+      <Card {...props} isLoading isReversed>
         <Text>Loading in reverse</Text>
       </Card>
     );

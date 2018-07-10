@@ -22,8 +22,8 @@ const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
       <ArticleProvider
-        id="113e9875-b7bf-4dd7-ac99-dee231bf6e74"
         debounceTimeMs={0}
+        id="113e9875-b7bf-4dd7-ac99-dee231bf6e74"
       >
         {child}
       </ArticleProvider>

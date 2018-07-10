@@ -9,7 +9,7 @@ const captionStyle = {
 };
 
 const CaptionComponentPrimaryNative = ({ caption, credits }) => (
-  <Caption text={caption} credits={credits} style={captionStyle} />
+  <Caption credits={credits} style={captionStyle} text={caption} />
 );
 
 CaptionComponentPrimaryNative.propTypes = {

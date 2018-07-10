@@ -12,9 +12,8 @@ const ArticleContent = ({
   onVideoPress
 }) => (
   <FlatList
-    testID="flat-list-article"
-    keyExtractor={item => item.type + item.index || item.type}
     data={data}
+    keyExtractor={item => item.type + item.index || item.type}
     renderItem={({ item }) =>
       renderRow(
         item,
@@ -25,6 +24,7 @@ const ArticleContent = ({
         onVideoPress
       )
     }
+    testID="flat-list-article"
   />
 );
 

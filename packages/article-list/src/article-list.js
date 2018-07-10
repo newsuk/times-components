@@ -121,9 +121,9 @@ class ArticleList extends Component {
         <View>
           <ArticleListItemSeparator />
           <ActivityIndicator
-            style={styles.loadingContainer}
-            size="large"
             color={colours.functional.keyline}
+            size="large"
+            style={styles.loadingContainer}
           />
         </View>
       );
@@ -142,23 +142,30 @@ class ArticleList extends Component {
       <FlatList
         accessibilityID="scroll-view"
         data={data}
+        ItemSeparatorComponent={() => (
+          <View style={styles.listItemSeparatorContainer}>
+            <ArticleListItemSeparator />
+          </View>
+        )}
         keyExtractor={item => `${item.elementId}`}
-        onViewableItemsChanged={this.onViewableItemsChanged}
-        pageSize={pageSize}
-        onEndReachedThreshold={2}
+        ListFooterComponent={articleListFooter}
+        ListHeaderComponent={articleListHeader}
         onEndReached={() =>
           // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
           data.length > 0 ? this.fetchMoreOnEndReached(data) : null
         }
+        onEndReachedThreshold={2}
+        onViewableItemsChanged={this.onViewableItemsChanged}
+        pageSize={pageSize}
         renderItem={({ item, index }) => (
           <ErrorView>
             {({ hasError }) =>
               hasError ? null : (
                 <ArticleListItem
                   {...item}
+                  imageRatio={imageRatio}
                   index={index}
                   length={data.length}
-                  imageRatio={imageRatio}
                   onPress={e =>
                     onArticlePress(e, { id: item.id, url: item.url })
                   }
@@ -171,13 +178,6 @@ class ArticleList extends Component {
         )}
         testID="scroll-view"
         viewabilityConfig={viewabilityConfig}
-        ItemSeparatorComponent={() => (
-          <View style={styles.listItemSeparatorContainer}>
-            <ArticleListItemSeparator />
-          </View>
-        )}
-        ListFooterComponent={articleListFooter}
-        ListHeaderComponent={articleListHeader}
       />
     );
   }

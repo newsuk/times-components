@@ -6,7 +6,7 @@ export default (Link, TextLink, Text) => {
     it("renders correctly", () => {
       const tree = renderer
         .create(
-          <Link url="http://thetimes.co.uk" onPress={() => {}}>
+          <Link onPress={() => {}} url="http://thetimes.co.uk">
             The Times
           </Link>
         )
@@ -17,7 +17,7 @@ export default (Link, TextLink, Text) => {
     it("doesnt change inner text styles", () => {
       const tree = renderer
         .create(
-          <Link url="http://thetimes.co.uk" onPress={() => {}}>
+          <Link onPress={() => {}} url="http://thetimes.co.uk">
             <Text>Hello</Text>
           </Link>
         )
@@ -32,9 +32,9 @@ export default (Link, TextLink, Text) => {
       const tree = renderer
         .create(
           <TextLink
-            url="http://thetimes.co.uk"
             onPress={() => {}}
             style={{ backgroundColor: "blue" }}
+            url="http://thetimes.co.uk"
           >
             The Times
           </TextLink>
@@ -48,9 +48,9 @@ export default (Link, TextLink, Text) => {
       const tree = renderer
         .create(
           <TextLink
-            url="http://thetimes.co.uk"
             onPress={() => {}}
             style={[{ backgroundColor: "blue" }, { color: "red" }]}
+            url="http://thetimes.co.uk"
           >
             The Times
           </TextLink>
@@ -63,7 +63,7 @@ export default (Link, TextLink, Text) => {
     it("renders correctly with children", () => {
       const tree = renderer
         .create(
-          <TextLink url="http://thetimes.co.uk" onPress={() => {}}>
+          <TextLink onPress={() => {}} url="http://thetimes.co.uk">
             The Times
           </TextLink>
         )

@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 const Link = ({ onPress, children }) => (
   <TouchableNativeFeedback
+    delayPressIn={0}
     onPress={onPress}
     useForeground={TouchableNativeFeedback.canUseNativeForeground()}
-    delayPressIn={0}
   >
     <View pointerEvents="box-only">{children}</View>
   </TouchableNativeFeedback>

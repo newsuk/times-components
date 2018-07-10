@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 const Watermark = ({ width, height }) => (
   <Image
+    resizeMode="contain"
     // eslint-disable-next-line global-require
     source={require("../assets/watermark.png")}
-    resizeMode="contain"
     style={{ width, height }}
   />
 );

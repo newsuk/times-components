@@ -58,9 +58,10 @@ class Gradient extends Component {
       .line(0, -height);
 
     return (
-      <View style={[styles.container, style]} onLayout={this.onLayout}>
-        <Surface width={width} height={height} style={styles.surface}>
+      <View onLayout={this.onLayout} style={[styles.container, style]}>
+        <Surface height={height} style={styles.surface} width={width}>
           <Shape
+            d={d}
             fill={
               new LinearGradient(
                 {
@@ -73,7 +74,6 @@ class Gradient extends Component {
                 height * end.y
               )
             }
-            d={d}
           />
         </Surface>
         {children}

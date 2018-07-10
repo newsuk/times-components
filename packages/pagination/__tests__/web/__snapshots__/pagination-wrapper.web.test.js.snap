@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination Wrapper on Web renders inner component with page 1 1`] = `
+exports[`1. renders inner component with page 1 1`] = `
 <div>
   {
   "page": 1

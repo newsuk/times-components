@@ -49,11 +49,11 @@ const RelatedArticleItem = ({
   } = imageConfig;
 
   return (
-    <Link url={url} onPress={e => onPress(e, { url: article.url })}>
+    <Link onPress={e => onPress(e, { url: article.url })} url={url}>
       <Card
         contentContainerClass={contentContainerClass}
-        imageContainerClass={imageContainerClass}
         image={{ uri: get(article, `leadAsset.crop${cropSize}.url`) }}
+        imageContainerClass={imageContainerClass}
         imageRatio={imageRatio}
         imageStyle={imageStyle}
         isReversed={isReversed}

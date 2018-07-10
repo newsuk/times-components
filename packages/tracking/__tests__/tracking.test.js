@@ -24,8 +24,8 @@ module.exports = () => {
       renderer.create(
         <ListWithChildTracking
           analyticsStream={reporter}
-          onViewed={() => {}}
           items={items}
+          onViewed={() => {}}
         />
       );
 
@@ -86,9 +86,9 @@ module.exports = () => {
 
       const tracking = shallow(
         <ListWithChildTracking
-          onViewed={() => {}}
           analyticsStream={reporter}
           items={items}
+          onViewed={() => {}}
         />,
         {
           context: {
@@ -132,9 +132,9 @@ module.exports = () => {
 
       const tracking = shallow(
         <ListWithChildTracking
-          onViewed={() => {}}
           analyticsStream={reporter}
           items={items}
+          onViewed={() => {}}
         />,
         {
           context: {
@@ -180,9 +180,9 @@ module.exports = () => {
 
       const tracking = shallow(
         <ListWithChildTracking
-          onViewed={() => {}}
           analyticsStream={reporter}
           items={items}
+          onViewed={() => {}}
         />,
         {
           context: {
@@ -229,9 +229,9 @@ module.exports = () => {
 
       const tracking = shallow(
         <ListWithChildTracking
-          onViewed={() => {}}
           analyticsStream={reporter}
           items={items}
+          onViewed={() => {}}
         />,
         {
           context: {

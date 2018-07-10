@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 });
 
 const ResultsMessage = ({ children: message }) => (
-  <Text testID="results-message" style={[styles.message]}>
+  <Text style={[styles.message]} testID="results-message">
     {message}
   </Text>
 );

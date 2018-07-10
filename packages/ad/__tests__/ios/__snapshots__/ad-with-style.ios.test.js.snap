@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. multiple adverts 1`] = `
+Array [
+  <View
+    className="IS4"
+  >
+    <View
+      className="IS3"
+    >
+      <View
+        className="IS2"
+      >
+        <RCTWebView
+          className="IS1"
+          messagingEnabled={true}
+          scalesPageToFit={true}
+        />
+      </View>
+    </View>
+  </View>,
+  <View
+    className="IS4"
+  >
+    <View
+      className="IS3"
+    >
+      <View
+        className="IS2"
+      >
+        <RCTWebView
+          className="IS1"
+          messagingEnabled={true}
+          scalesPageToFit={true}
+        />
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`2. loading state advert shows placeholder only 1`] = `
+<View
+  className="IS2"
+>
+  <AdPlaceholder
+    className="IS1"
+    height={50}
+    width={320}
+  />
+</View>
+`;
+
+exports[`3. should not show when loading scripts errored 1`] = `null`;

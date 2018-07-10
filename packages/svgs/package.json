@@ -1,11 +1,11 @@
 {
   "name": "@times-components/svgs",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
-    "fmt": "prettier --write '**/*.*'",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "prepublishOnly": "yarn transpile && yarn bundle",
@@ -39,8 +39,8 @@
   "devDependencies": {
     "@storybook/react-native": "3.4.1",
     "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.5",
-    "@times-components/jest-serializer": "1.0.5",
+    "@times-components/jest-configurator": "1.0.7",
+    "@times-components/jest-serializer": "1.0.7",
     "@times-components/webpack-configurator": "1.0.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",

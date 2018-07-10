@@ -10,7 +10,7 @@ module.exports = () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
-        <Svg width={100} height={100} viewBox="145 50 108 120" version="1.1">
+        <Svg height={100} version="1.1" viewBox="145 50 108 120" width={100}>
           <G fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
             <Path d={T_SHAPE} fill="#000000" />
           </G>

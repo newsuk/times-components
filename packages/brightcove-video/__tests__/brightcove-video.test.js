@@ -9,7 +9,7 @@ const accountId = "[ACCOUNT_ID]";
 const videoId = "[VIDEO_ID]";
 
 const playIconEmoji = () => (
-  <span role="img" aria-label="play-video">
+  <span aria-label="play-video" role="img">
     ▶️
   </span>
 );

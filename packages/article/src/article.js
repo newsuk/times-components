@@ -32,10 +32,10 @@ class ArticlePage extends Component {
     switch (rowData.type) {
       case "leadAsset": {
         return (
-          <View testID="leadAsset" key="leadAsset">
+          <View key="leadAsset" testID="leadAsset">
             <ArticleLeadAsset
-              key={rowData.type}
               data={{ ...rowData.data, onVideoPress }}
+              key={rowData.type}
             />
           </View>
         );
@@ -45,12 +45,12 @@ class ArticlePage extends Component {
         const { headline, flags, standfirst, label, isVideo } = rowData.data;
         return (
           <ArticleHeader
-            key={rowData.type}
-            headline={headline}
             flags={flags}
-            standfirst={standfirst}
-            label={label}
+            headline={headline}
             isVideo={isVideo}
+            key={rowData.type}
+            label={label}
+            standfirst={standfirst}
             style={[styles.articleMainContentRow]}
           />
         );
@@ -60,11 +60,11 @@ class ArticlePage extends Component {
         const { byline, publishedTime, publicationName } = rowData.data;
         return (
           <ArticleMeta
-            key={rowData.type}
             byline={byline}
-            publishedTime={publishedTime}
-            publicationName={publicationName}
+            key={rowData.type}
             onAuthorPress={onAuthorPress}
+            publicationName={publicationName}
+            publishedTime={publishedTime}
           />
         );
       }
@@ -85,16 +85,16 @@ class ArticlePage extends Component {
           <RelatedArticles
             analyticsStream={() => {}}
             articles={relatedArticles}
-            template={relatedArticlesLayout.template}
-            onPress={onRelatedArticlePress}
             mainId={relatedArticlesLayout.main}
+            onPress={onRelatedArticlePress}
+            template={relatedArticlesLayout.template}
           />
         );
       }
 
       case "topics": {
         return (
-          <ArticleTopics topics={rowData.data.topics} onPress={onTopicPress} />
+          <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
         );
       }
 
@@ -139,15 +139,15 @@ class ArticlePage extends Component {
     const ArticleListView = (
       <ArticleContent
         data={this.state.dataSource}
-        renderRow={ArticlePage.renderRow}
         initialListSize={listViewSize}
         onAuthorPress={this.props.onAuthorPress}
         onLinkPress={this.props.onLinkPress}
         onRelatedArticlePress={this.props.onRelatedArticlePress}
         onTopicPress={this.props.onTopicPress}
         onVideoPress={this.props.onVideoPress}
-        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
         pageSize={listViewPageSize}
+        renderRow={ArticlePage.renderRow}
+        scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
       />
     );
 

@@ -29,7 +29,7 @@ export const renderByline = (
 
     inline(key, attributes, children) {
       return (
-        <Text style={bylineStyles} key={key}>
+        <Text key={key} style={bylineStyles}>
           {children}
         </Text>
       );

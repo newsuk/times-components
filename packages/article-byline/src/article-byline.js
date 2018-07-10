@@ -4,7 +4,7 @@ import { getBylineStyles, renderByline } from "./utils";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 
 const renderAuthorComponent = (children, bylineStyles, key) => (
-  <Text style={bylineStyles} key={key}>
+  <Text key={key} style={bylineStyles}>
     {children}
   </Text>
 );

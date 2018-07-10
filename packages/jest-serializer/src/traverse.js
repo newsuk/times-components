@@ -78,9 +78,16 @@ const transform = (accum, transformElement, node) => {
   );
 
   if (!u.node) {
+    if (u.children) {
+      return {
+        accum: u.accum,
+        element: u.children.length === 1 ? u.children[0] : u.children
+      };
+    }
+
     return {
       accum: u.accum,
-      element: u.children.length === 1 ? u.children[0] : u.children
+      element: null
     };
   }
 

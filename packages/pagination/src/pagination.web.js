@@ -12,11 +12,6 @@ import PaginationContainer from "./pagination-container";
 import LinkContainer from "./styles/responsive.web";
 
 const styles = StyleSheet.create({
-  absolute: {
-    left: 0,
-    position: "absolute",
-    right: 0
-  },
   arrow: {
     color: colours.functional.action,
     fontFamily: fonts.supporting,
@@ -40,8 +35,8 @@ const Pagination = ({
   const prevComponent =
     startResult > pageSize ? (
       <Link
-        style={styles.arrow}
         onPress={e => onPrev(e, page - 1)}
+        style={styles.arrow}
         url={generatePageLink(page - 1)}
       >
         <PreviousPageIcon />
@@ -51,8 +46,8 @@ const Pagination = ({
   const nextComponent =
     finalResult < count ? (
       <Link
-        style={styles.arrow}
         onPress={e => onNext(e, page + 1)}
+        style={styles.arrow}
         url={generatePageLink(page + 1)}
       >
         <NextPageIcon />

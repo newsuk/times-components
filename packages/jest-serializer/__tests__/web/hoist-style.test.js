@@ -26,7 +26,7 @@ describe("hoist-style should", () => {
     addSerializers(expect, enzymeRenderedSerializer(), hoistStyle);
 
     const wrapper = mount(
-      <Text style={[styles.text, { color: "red" }]} foo="bar">
+      <Text foo="bar" style={[styles.text, { color: "red" }]}>
         Some text
       </Text>
     );
@@ -46,7 +46,7 @@ describe("hoist-style should", () => {
     );
 
     const wrapper = mount(
-      <Text style={[styles.text, { color: "red" }]} foo="bar">
+      <Text foo="bar" style={[styles.text, { color: "red" }]}>
         Some text
       </Text>
     );

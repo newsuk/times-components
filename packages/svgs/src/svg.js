@@ -24,7 +24,7 @@ const Svg = ({ width, viewBox, children }) => {
   const transform = new Transform().translate(-shapeX, -shapeY);
 
   return (
-    <Surface width={shapeWidth * scale} height={shapeHeight * scale}>
+    <Surface height={shapeHeight * scale} width={shapeWidth * scale}>
       <Group scale={scale} transform={transform}>
         {children}
       </Group>

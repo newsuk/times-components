@@ -13,7 +13,7 @@ const Rect = ({ stroke, fill, x, y, width, height }) => {
     .line(-width, 0)
     .line(0, -height);
 
-  return <SVGPath stroke={stroke} fill={fill} d={d} />;
+  return <SVGPath d={d} fill={fill} stroke={stroke} />;
 };
 
 Rect.propTypes = {

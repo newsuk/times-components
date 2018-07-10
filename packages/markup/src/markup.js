@@ -57,9 +57,9 @@ const defaultRenderers = {
   pullQuote(key, attributes) {
     return (
       <PullQuote
-        key={key}
-        content={attributes.content}
         caption={attributes.caption.name}
+        content={attributes.content}
+        key={key}
       />
     );
   }

@@ -9,7 +9,7 @@ export default class Boxes extends Component {
   }
   render() {
     return this.props.boxes.map(item => (
-      <Box key={item.elementId} id={item.elementId} {...item}>
+      <Box id={item.elementId} key={item.elementId} {...item}>
         <Text>{item.elementId}</Text>
       </Box>
     ));

@@ -12,7 +12,7 @@ jest.advanceTimersByTime = jest.runTimersToTime;
 describe("Debounce web test", () => {
   it("updates debounceProps once for many closely spaced props updates", () => {
     const Outer = withDebounce(Inner);
-    const component = mount(<Outer foo="initialFoo" debounceTimeMs={1000} />);
+    const component = mount(<Outer debounceTimeMs={1000} foo="initialFoo" />);
 
     const numberOfDebouncedPropsUpdates = () =>
       component

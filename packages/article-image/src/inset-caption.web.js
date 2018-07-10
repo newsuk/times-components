@@ -11,7 +11,7 @@ const InsetCaptionStyle = withResponsiveStyles(View, {
 
 const InsetCaptionWeb = props => (
   <InsetCaptionStyle>
-    <Caption text={props.caption} credits={props.credits} />
+    <Caption credits={props.credits} text={props.caption} />
   </InsetCaptionStyle>
 );
 

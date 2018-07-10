@@ -19,8 +19,8 @@ export default {
       name: "Primary",
       component: () => (
         <ArticleImage
-          imageOptions={primaryImage.imageOptions}
           captionOptions={primaryImage.captionOptions}
+          imageOptions={primaryImage.imageOptions}
         />
       )
     },
@@ -29,8 +29,8 @@ export default {
       name: "Secondary",
       component: () => (
         <ArticleImage
-          imageOptions={secondaryImage.imageOptions}
           captionOptions={secondaryImage.captionOptions}
+          imageOptions={secondaryImage.imageOptions}
         />
       )
     },
@@ -39,8 +39,8 @@ export default {
       name: "Inline (portrait)",
       component: () => (
         <ArticleImage
-          imageOptions={portraitInlineImage.imageOptions}
           captionOptions={portraitInlineImage.captionOptions}
+          imageOptions={portraitInlineImage.imageOptions}
         />
       )
     },
@@ -49,8 +49,8 @@ export default {
       name: "Inline (landscape)",
       component: () => (
         <ArticleImage
-          imageOptions={landscapeInlineImage.imageOptions}
           captionOptions={landscapeInlineImage.captionOptions}
+          imageOptions={landscapeInlineImage.imageOptions}
         />
       )
     }

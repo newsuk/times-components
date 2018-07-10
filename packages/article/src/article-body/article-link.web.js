@@ -20,10 +20,10 @@ const responsiveLinkStyles = {
 const ArticleLink = ({ children, onPress, target, url, uuid }) => (
   <Link
     index={`link-${uuid}`}
-    url={url}
     onPress={onPress}
     responsiveLinkStyles={responsiveLinkStyles}
     target={target}
+    url={url}
   >
     {children}
   </Link>

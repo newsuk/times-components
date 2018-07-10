@@ -1,4 +1,4 @@
-#jest-serializer
+# jest-serializer
 
 A suite of tools to enable you to "curate" the "perfect" Jest snapshot. See
 [this blog post](https://medium.com/@craigbilner/expect-anything-tomatchsnapshot-here-be-dragons-26516e02de8c)
@@ -15,7 +15,7 @@ requirements \* other than importing the desired serializers for your needs.
 * Jest@21.2.1
 * Node@8.11.3
 
-##Getting started
+## Getting started
 
 ```
 yarn add @times-components/jest-serializer --dev
@@ -38,7 +38,7 @@ snapshots based on these
 [custom serializers](http://jestjs.io/docs/en/configuration.html#snapshotserializers-array-string).
 The context being the "test file" currently under test.
 
-##Serializers
+## Serializers
 
 **addSerializers(expect: JestExpect, ...serializers: Serializer[]): void**
 
@@ -52,7 +52,7 @@ addSerializers(expect, serializer1, serializer2);
 
 These are the serializers that are currently provided:
 
-###compose
+### compose
 
 **compose(printer: Printer, ...transformers: Transformer[]): Serializer**
 
@@ -89,7 +89,7 @@ Gives you your mounted Enzyme component tree as if it was rendered. i.e.
 `<div>`s and `<span>`s. This useful if you don't care to manipulate the tree in
 anyway.
 
-####enzymeRootSerializer
+#### enzymeRootSerializer
 
 **enzymeRootSerializer(): Serializer**
 
@@ -98,7 +98,7 @@ root component only. May be useful if you have a mixture of snapshot
 requirements involving both parent and children. However you may use Enzyme's
 own API to pick the correct thing to snapshot to begin with.
 
-####enzymeTreeSerializer
+#### enzymeTreeSerializer
 
 **enzymeTreeSerializer(): Serializer**
 
@@ -119,7 +119,7 @@ e.g.
 </ParentComponent>
 ```
 
-###flattenStyle
+### flattenStyle
 
 **flattenStyle: Serializer**
 
@@ -131,7 +131,7 @@ the styles as intended.
 On web you may want to also use `hoistStyle` to clean up the snapshot noise
 further.
 
-###hoistStyle
+### hoistStyle
 
 **hoistStyle: Serializer**
 
@@ -142,7 +142,7 @@ on the platform (RNW magic) and keeps the snapshots a little leaner too.
 
 For the styles to be shown, use with `compose` and the `stylePrinter`.
 
-###minimalise
+### minimalise
 
 **minimalise((value: Object, key: string): boolean): Serializer**
 
@@ -157,7 +157,7 @@ addSerializers(expect, minimalise((value, key) => key === "style"));
 
 will strip all styles from your JSX nodes.
 
-###minimalNative
+### minimalNative
 
 **minimalNative: Serializer**
 
@@ -168,7 +168,7 @@ either interactive tests and/or a type system rather than with snapshots.
 
 Refer to the code for the latest removed values.
 
-###minimalRnw
+### minimalRnw
 
 **minimalRnw: Serializer**
 
@@ -176,7 +176,7 @@ An example of perhaps where this package is likely to move to as patterns and
 common use cases appear. This combines `minimalWeb` with `rnw` much like a babel
 preset.
 
-###minimalWeb
+### minimalWeb
 
 **minimalWeb: Serializer**
 
@@ -188,7 +188,7 @@ than with snapshots.
 
 Refer to the code for the latest removed values.
 
-###replace
+### replace
 
 **type Replacer = (node: ReactNode, props: ReactProps, children: ReactChildren):
 { node?: ReactNode, props?: ReactProps, children?: ReactChildren };**
@@ -211,7 +211,7 @@ completely unreadable value that you would like to "monitor" and see on a PR
 that a change has been made but at the same time not destroy the snapshots
 readability.
 
-###rnw
+### rnw
 
 **rnw(string[]): Serializer**
 
@@ -231,7 +231,7 @@ will assign a generic `className` to the Node and print the styles with that
 `className`, but only for `color` and `fontSize` due to RNW producing many stock
 styles.
 
-##Printers
+## Printers
 
 Currently there are two types of "printers". A printer has the type:
 
@@ -241,11 +241,11 @@ ReactNode): string**
 The custom serializers can build up something they'd like to "accumulate" over
 the whole snapshot such as styles, and the printer decides how to print them.
 
-###print
+### print
 
 Simply takes the given `Node` and uses Jest's standard `serialize` method;
 
-###stylePrinter
+### stylePrinter
 
 A custom printer that works with `hoistStyle` and `rnw` which takes their
 accumulated "bag" of styles and prints them in a `style` block

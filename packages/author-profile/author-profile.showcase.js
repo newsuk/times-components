@@ -83,7 +83,7 @@ export default {
       type: "story",
       name: "Loading",
       component: (_, { decorateAction }) => (
-        <MockedProvider mocks={mockArticles} isLoading>
+        <MockedProvider isLoading mocks={mockArticles}>
           <AuthorProfile {...getProps(decorateAction)} isLoading />
         </MockedProvider>
       )

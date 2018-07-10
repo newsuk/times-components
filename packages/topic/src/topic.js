@@ -36,9 +36,9 @@ const Topic = ({
 
   const articleListHeader = (
     <TopicHead
-      name={name}
       description={description}
       isLoading={isHeaderLoading}
+      name={name}
     />
   );
 

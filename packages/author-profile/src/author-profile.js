@@ -117,6 +117,7 @@ const AuthorProfile = ({
             count={get(articles, "count", 0)}
             emptyStateMessage={emptyStateMessage}
             error={articlesError}
+            fetchMore={fetchMoreArticles}
             imageRatio={ratioTextToFloat(imageRatio)}
             isLoading={isHeaderLoading}
             onArticlePress={onArticlePress}
@@ -125,7 +126,6 @@ const AuthorProfile = ({
             page={page}
             pageSize={pageSize}
             refetch={refetchArticles}
-            fetchMore={fetchMoreArticles}
             showImages={hasLeadAssets}
           />
         );

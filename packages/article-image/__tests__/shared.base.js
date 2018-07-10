@@ -65,8 +65,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={noCredits.imageOptions}
           captionOptions={noCredits.captionOptions}
+          imageOptions={noCredits.imageOptions}
         />
       )
     ).toMatchSnapshot("4. renders a caption if received");
@@ -88,8 +88,8 @@ export default makeTest => {
     expect(
       makeTest(
         <ArticleImage
-          imageOptions={noCredits.imageOptions}
           captionOptions={noCredits.captionOptions}
+          imageOptions={noCredits.imageOptions}
         />
       )
     ).toMatchSnapshot("5. renders a credit if received");

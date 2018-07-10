@@ -17,7 +17,7 @@ module.exports = () => {
 
   it("renders a group of topics in the correct order", () => {
     const wrapper = shallow(
-      <ArticleTopics topics={topicData} onPress={() => {}} />
+      <ArticleTopics onPress={() => {}} topics={topicData} />
     );
 
     expect(wrapper).toMatchSnapshot(
@@ -29,8 +29,8 @@ module.exports = () => {
     const wrapper = shallow(
       <ArticleTopic
         name={topicData[0].name}
-        slug={topicData[0].slug}
         onPress={() => {}}
+        slug={topicData[0].slug}
       />
     ).dive();
 
@@ -68,8 +68,8 @@ module.exports = () => {
     shallow(
       <ArticleTopic
         name={topicData[0].name}
-        slug={topicData[0].slug}
         onPress={() => events}
+        slug={topicData[0].slug}
       />,
       {
         context

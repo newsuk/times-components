@@ -16,10 +16,10 @@ const renderComponent = child =>
       })}
     >
       <AuthorArticlesWithImagesProvider
-        slug="deborah-haynes"
-        pageSize={5}
-        page={1}
         debounceTimeMs={0}
+        page={1}
+        pageSize={5}
+        slug="deborah-haynes"
       >
         {child}
       </AuthorArticlesWithImagesProvider>

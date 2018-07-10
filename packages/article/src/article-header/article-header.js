@@ -18,7 +18,7 @@ const ArticleHeader = ({
   style
 }) => (
   <View style={[...style]}>
-    <HeaderLabel label={label} isVideo={isVideo} />
+    <HeaderLabel isVideo={isVideo} label={label} />
     <Text style={styles.articleHeadLineText}>{headline}</Text>
     <HeaderStandfirst standfirst={standfirst} />
     <HeaderFlags flags={flags} />

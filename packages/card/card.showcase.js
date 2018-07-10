@@ -162,8 +162,8 @@ export default {
             {...cardProps}
             contentContainerClass="exampleCardContent"
             imageContainerClass="exampleCardImage"
-            showImage
             isLoading
+            showImage
           >
             <Text>Is loading</Text>
           </Card>
@@ -179,8 +179,8 @@ export default {
             {...cardProps}
             contentContainerClass="exampleCardContent"
             imageContainerClass="exampleCardImage"
-            showImage={false}
             isLoading
+            showImage={false}
           >
             <Text>Is loading</Text>
           </Card>
@@ -196,9 +196,9 @@ export default {
             {...cardProps}
             contentContainerClass="exampleCardContent"
             imageContainerClass="exampleCardImage"
-            showImage
             isLoading
             isReversed
+            showImage
           >
             <Text>Is loading</Text>
           </Card>
@@ -214,9 +214,9 @@ export default {
             {...cardProps}
             contentContainerClass="exampleCardContent"
             imageContainerClass="exampleCardImage"
-            showImage={false}
             isLoading
             isReversed
+            showImage={false}
           >
             <Text>Is loading</Text>
           </Card>

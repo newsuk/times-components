@@ -15,9 +15,9 @@ export default () => {
     const tree = renderer
       .create(
         <TopicHead
+          description="Animals are multicellular eukaryotic organisms."
           isLoading={false}
           name="Animals"
-          description="Animals are multicellular eukaryotic organisms."
         />
       )
       .toJSON();

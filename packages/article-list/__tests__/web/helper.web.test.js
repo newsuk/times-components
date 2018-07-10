@@ -382,7 +382,7 @@ describe("Lazy loading and pagination tests on web", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onPrev = jest.fn();
       const component = mount(
-        <ArticleList {...articleListContentProps} page={2} onPrev={onPrev} />
+        <ArticleList {...articleListContentProps} onPrev={onPrev} page={2} />
       );
 
       component
@@ -397,7 +397,7 @@ describe("Lazy loading and pagination tests on web", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onNext = jest.fn();
       const component = mount(
-        <ArticleList {...articleListContentProps} page={2} onNext={onNext} />
+        <ArticleList {...articleListContentProps} onNext={onNext} page={2} />
       );
 
       component
@@ -412,7 +412,7 @@ describe("Lazy loading and pagination tests on web", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onPrev = jest.fn();
       const component = mount(
-        <ArticleList {...articleListContentProps} page={2} onPrev={onPrev} />
+        <ArticleList {...articleListContentProps} onPrev={onPrev} page={2} />
       );
 
       component
@@ -427,7 +427,7 @@ describe("Lazy loading and pagination tests on web", () => {
       const onScroll = jest.spyOn(window, "scroll");
       const onNext = jest.fn();
       const component = mount(
-        <ArticleList {...articleListContentProps} page={2} onNext={onNext} />
+        <ArticleList {...articleListContentProps} onNext={onNext} page={2} />
       );
 
       component

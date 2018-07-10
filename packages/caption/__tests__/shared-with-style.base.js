@@ -16,7 +16,7 @@ const style = {
 export default () => {
   it("renders with specific styles", () => {
     const testInstance = TestRenderer.create(
-      <Caption text={captionText} credits={credits} style={style} />
+      <Caption credits={credits} style={style} text={captionText} />
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot(
