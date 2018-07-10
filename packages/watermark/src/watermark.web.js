@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import Svg, { G, Path } from "svgs";
 import { colours } from "@times-components/styleguide";
 
-const Watermark = ({ width, height, viewBox }) => (
+const Watermark = ({ height, viewBox, width }) => (
   <Svg height={height} viewBox={viewBox} width={width}>
     <G
       fill="none"
@@ -24,9 +23,9 @@ const Watermark = ({ width, height, viewBox }) => (
 );
 
 Watermark.propTypes = {
-  width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
-  viewBox: PropTypes.string
+  viewBox: PropTypes.string,
+  width: PropTypes.number.isRequired
 };
 
 Watermark.defaultProps = {

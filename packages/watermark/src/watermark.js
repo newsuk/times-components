@@ -12,8 +12,8 @@ const Watermark = ({ width, height }) => (
 );
 
 Watermark.propTypes = {
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired
 };
 
 export default Watermark;

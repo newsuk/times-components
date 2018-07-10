@@ -1,14 +1,31 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
+import {
+  addSerializers,
+  compose,
+  enzymeTreeSerializer,
+  minimaliseTransform,
+  minimalNativeTransform,
+  print
+} from "@times-components/jest-serializer";
 import Watermark from "../src/watermark";
 
-module.exports = () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<Watermark height={250} width={300} />)
-      .toJSON();
+export default () => {
+  addSerializers(
+    expect,
+    enzymeTreeSerializer(),
+    compose(
+      print,
+      minimaliseTransform(
+        (value, key) => key === "d" || key === "id" || key === "source"
+      ),
+      minimalNativeTransform
+    )
+  );
 
-    expect(tree).toMatchSnapshot();
+  it("1. watermark", () => {
+    const wrapper = shallow(<Watermark height={250} width={300} />);
+
+    expect(wrapper).toMatchSnapshot();
   });
 };
