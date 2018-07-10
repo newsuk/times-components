@@ -813,91 +813,6 @@
     webpack-dev-server "^2.9.5"
     webpack-merge "^4.1.1"
 
-"@times-components/jest-configurator@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-1.0.5.tgz#6d50a315d8be688ce2461822e9fee28ba9d9b986"
-  dependencies:
-    "@times-components/jest-serializer" "1.0.5"
-    babel-jest "22.4.3"
-    enzyme "3.3.0"
-    enzyme-adapter-react-16 "1.1.0"
-    find-node-modules "1.0.4"
-    jest "21.2.1"
-    jest-plugin-context "2.6.0"
-    jest-plugins "2.9.0"
-    recursive-readdir-synchronous "0.0.3"
-
-"@times-components/jest-serializer@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-serializer/-/jest-serializer-1.0.5.tgz#e4bc64b98ed7b6520708fbd559e05619f199a1b2"
-  dependencies:
-    enzyme-to-json "3.3.4"
-    lodash.omit "4.5.0"
-    lodash.omitby "4.6.0"
-
-"@times-components/provider-test-tools@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@times-components/provider-test-tools/-/provider-test-tools-0.13.2.tgz#1944f8207aac793ed0c59beef34f981216777cd8"
-  dependencies:
-    "@times-components/provider" "0.37.2"
-    "@times-components/utils" "1.2.2"
-    apollo-cache-inmemory "1.1.10"
-    apollo-client "2.3.2"
-    apollo-link "1.2.2"
-    apollo-utilities "1.0.12"
-    graphql "0.13.1"
-    graphql-tag "2.8.0"
-    lodash.isequal "4.4.0"
-    prop-types "15.6.0"
-    react "16.3.1"
-    react-apollo "2.1.4"
-    react-test-renderer "16.3.1"
-    zen-observable "0.8.8"
-
-"@times-components/provider@0.37.2":
-  version "0.37.2"
-  resolved "https://registry.yarnpkg.com/@times-components/provider/-/provider-0.37.2.tgz#141e1e244d152807ffdcbe2423a143a228fe3123"
-  dependencies:
-    graphql-tag "2.8.0"
-    hoist-non-react-statics "2.5.0"
-    lodash.isequal "4.4.0"
-    lodash.pick "4.4.0"
-    prop-types "15.6.0"
-    react-apollo "2.1.4"
-    react-display-name "0.2.3"
-
-"@times-components/storybook@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-1.1.2.tgz#6af8e3d8e0f1cda5eab00cacfa1f0726de6390ae"
-  dependencies:
-    "@storybook/addon-actions" "3.4.1"
-    "@storybook/addon-knobs" "3.4.1"
-    "@storybook/addons" "3.4.1"
-    "@storybook/react-native" "3.4.1"
-    "@times-components/jest-configurator" "1.0.5"
-    "@times-components/provider-test-tools" "0.13.2"
-    "@times-components/utils" "1.2.2"
-    apollo-cache-inmemory "1.1.10"
-    apollo-client "2.3.2"
-    apollo-link-http "1.5.3"
-    graphql "0.13.1"
-    prop-types "15.6.0"
-    react-apollo "2.1.4"
-    react-test-renderer "16.3.1"
-
-"@times-components/utils@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-1.2.2.tgz#81198fe382d14105867f724ce25ce6804f2b12fa"
-  dependencies:
-    apollo-cache-inmemory "1.1.10"
-    apollo-client "2.3.2"
-    apollo-link "1.2.2"
-    graphql "0.13.1"
-    lodash.omitby "4.6.0"
-    prop-types "15.6.0"
-    react "16.3.1"
-    react-apollo "2.1.4"
-
 "@types/async@2.0.49":
   version "2.0.49"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"
@@ -11777,15 +11692,6 @@ react-treebeard@^2.1.0:
     radium "^0.19.0"
     shallowequal "^0.2.2"
     velocity-react "^1.3.1"
-
-react@16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
 
 react@16.4.1, react@^16.2.0:
   version "16.4.1"
