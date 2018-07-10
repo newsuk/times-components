@@ -4,22 +4,32 @@ import {
   addSerializers,
   enzymeTreeSerializer
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import ArticleFlag from "../src/article-flag";
 
 export default () => {
-  describe("should render the", () => {
-    addSerializers(expect, enzymeTreeSerializer());
+  addSerializers(expect, enzymeTreeSerializer());
 
-    it("flag with no colour", () => {
-      const wrapper = shallow(<ArticleFlag title="No Colour" />);
+  const tests = [
+    {
+      name: "article flag",
+      test: () => {
+        const wrapper = shallow(<ArticleFlag title="No Colour" />);
 
-      expect(wrapper).toMatchSnapshot("1. Article flag");
-    });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "red article flag",
+      test: () => {
+        const wrapper = shallow(
+          <ArticleFlag color="red" title="Coloured Red" />
+        );
 
-    it("flag with a colour", () => {
-      const wrapper = shallow(<ArticleFlag color="red" title="Coloured Red" />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    }
+  ];
 
-      expect(wrapper).toMatchSnapshot("2. Red Article flag");
-    });
-  });
+  iterator(tests);
 };

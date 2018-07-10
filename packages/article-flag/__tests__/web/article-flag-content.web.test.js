@@ -13,36 +13,42 @@ import {
   stylePrinter,
   rnwTransform
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import ArticleFlag from "../../src/article-flag";
 
-describe("web", () => {
-  addSerializers(
-    expect,
-    enzymeTreeSerializer(),
-    compose(
-      stylePrinter,
-      replaceTransform({
-        ArticleFlag: justChildren,
-        IconDiamond: propsNoChildren,
-        ...meltNative
-      }),
-      minimalWebTransform,
-      hoistStyleTransform,
-      rnwTransform()
-    )
-  );
+addSerializers(
+  expect,
+  enzymeTreeSerializer(),
+  compose(
+    stylePrinter,
+    replaceTransform({
+      ArticleFlag: justChildren,
+      IconDiamond: propsNoChildren,
+      ...meltNative
+    }),
+    minimalWebTransform,
+    hoistStyleTransform,
+    rnwTransform()
+  )
+);
 
-  describe("should render the", () => {
-    it("flag with no colour", () => {
+const tests = [
+  {
+    name: "article flag",
+    test: () => {
       const wrapper = mount(<ArticleFlag title="No Colour" />);
 
-      expect(wrapper).toMatchSnapshot("1. Article flag");
-    });
-
-    it("flag with a colour", () => {
+      expect(wrapper).toMatchSnapshot();
+    }
+  },
+  {
+    name: "red article flag",
+    test: () => {
       const wrapper = mount(<ArticleFlag color="red" title="Coloured Red" />);
 
-      expect(wrapper).toMatchSnapshot("2. Red Article flag");
-    });
-  });
-});
+      expect(wrapper).toMatchSnapshot();
+    }
+  }
+];
+
+iterator(tests);

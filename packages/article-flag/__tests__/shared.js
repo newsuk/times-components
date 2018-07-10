@@ -5,6 +5,7 @@ import {
   addSerializers,
   enzymeRootSerializer
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import {
   NewArticleFlag,
   UpdatedArticleFlag,
@@ -12,32 +13,43 @@ import {
   SponsoredArticleFlag
 } from "../src/article-flag";
 
-module.exports = () => {
-  describe("should render the", () => {
-    addSerializers(expect, enzymeRootSerializer());
+export default () => {
+  addSerializers(expect, enzymeRootSerializer());
 
-    it("New flag", () => {
-      const wrapper = shallow(<NewArticleFlag />);
+  const tests = [
+    {
+      name: "new article flag",
+      test: () => {
+        const wrapper = shallow(<NewArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("2. New flag");
-    });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "updated article flag",
+      test: () => {
+        const wrapper = shallow(<UpdatedArticleFlag />);
 
-    it("Updated flag", () => {
-      const wrapper = shallow(<UpdatedArticleFlag />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "exclusive article flag",
+      test: () => {
+        const wrapper = shallow(<ExclusiveArticleFlag />);
 
-      expect(wrapper).toMatchSnapshot("3. Updated flag");
-    });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "sponsored article flag",
+      test: () => {
+        const wrapper = shallow(<SponsoredArticleFlag />);
 
-    it("Exclusive flag", () => {
-      const wrapper = shallow(<ExclusiveArticleFlag />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    }
+  ];
 
-      expect(wrapper).toMatchSnapshot("4. Exclusive flag");
-    });
-
-    it("Sponsored flag", () => {
-      const wrapper = shallow(<SponsoredArticleFlag />);
-
-      expect(wrapper).toMatchSnapshot("5. Sponsored flag");
-    });
-  });
+  iterator(tests);
 };
