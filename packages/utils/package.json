@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -31,9 +31,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.6.1",
-    "@times-components/jest-configurator": "1.0.7",
-    "@times-components/webpack-configurator": "1.0.0",
+    "@times-components/eslint-config-thetimes": "0.6.2",
+    "@times-components/jest-configurator": "1.0.8",
+    "@times-components/webpack-configurator": "1.0.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
