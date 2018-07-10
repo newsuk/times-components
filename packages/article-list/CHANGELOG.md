@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.12"></a>
+## [2.4.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@2.4.11...@times-components/article-list@2.4.12) (2018-07-10)
+
+
+### Bug Fixes
+
+* minor padding issues on pagination and article-list ([#1089](https://github.com/newsuk/times-components/issues/1089)) ([6e85d6e](https://github.com/newsuk/times-components/commit/6e85d6e))
+
+
+
+
 <a name="2.4.11"></a>
 ## [2.4.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@2.4.10...@times-components/article-list@2.4.11) (2018-07-09)
 

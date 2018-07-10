@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "2.4.11",
+  "version": "2.4.12",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -69,7 +69,7 @@
     "@times-components/error-view": "1.0.10",
     "@times-components/image": "2.0.12",
     "@times-components/link": "1.0.10",
-    "@times-components/pagination": "1.0.11",
+    "@times-components/pagination": "1.0.12",
     "@times-components/responsive-styles": "1.0.10",
     "@times-components/styleguide": "1.1.9",
     "@times-components/tracking": "1.0.10",
