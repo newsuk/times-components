@@ -22,7 +22,10 @@ storybook-static
 *.sh
 *.log
 packages
+android-app
+ios-app
 coverage
 settings.gradle
 build.gradle
 dextrose/snappy
+TimesReactIOS.podspec

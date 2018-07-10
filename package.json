@@ -40,9 +40,11 @@
     "storybook-native": "storybook -c .storybook.native start -p 7007 --haul ./.storybook.native/webpack.haul.storybook.js --platform all",
     "preios": "yarn fetch-fonts",
     "ios": "react-native run-ios",
+    "ios:app": "cd ios-app && yarn start",
     "start-emulator": "./lib/start_android_emulator.sh",
     "preandroid": "yarn fetch-fonts && yarn start-emulator",
     "android": "react-native run-android",
+    "android:app": "cd android-app && yarn start",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "prefmt": "prettier --write '**/*.*'",
     "fmt": "lerna run fmt",
@@ -85,7 +87,9 @@
     }
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "android-app",
+    "ios-app"
   ],
   "repository": {
     "type": "git",
@@ -129,7 +133,7 @@
     "fs-extra": "4.0.1",
     "global": "4.3.2",
     "handlebars": "4.0.10",
-    "haul": "1.0.0-beta.14",
+    "haul": "1.0.0-rc.4",
     "jest": "21.2.1",
     "lcov-result-merger": "1.2.0",
     "lerna": "2.5.1",
@@ -137,7 +141,7 @@
     "node-fetch": "1.7.2",
     "prettier": "1.8.2",
     "prop-types": "15.6.0",
-    "react": "16.3.1",
+    "react": "16.4.1",
     "react-dom": "16.3.1",
     "react-native": "0.54.2",
     "react-native-storybook-loader": "1.5.1",

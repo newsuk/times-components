@@ -4,5 +4,8 @@
 dist
 storybook-static
 packages
+android-app
+ios-app
 dextrose/snappy
 fructose/components.js
+haul.config.js

@@ -52,6 +52,13 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
        work.
   4. go to http://localhost:7007
 
+## Native App Dev Server
+
+In order to run development servers for native applications, start haul dev
+server via:
+
+`yarn android:app` or `yarn ios:app`
+
 ## Haul
 
 We use Haul in lieu of the standard `react-native` CLI so that we can generate

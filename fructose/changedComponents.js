@@ -6,9 +6,13 @@ const changedComponentsList = () => {
   const componentDirectories = [];
 
   changedComponents.forEach(changedPackage => {
-    componentDirectories.push(
-      require.resolve(changedPackage.name).split("dist")[0]
-    );
+    try {
+      componentDirectories.push(
+        require.resolve(changedPackage.name).split("dist")[0]
+      );
+    } catch (e) {
+      // Module not found
+    }
   });
 
   fs.writeFileSync(

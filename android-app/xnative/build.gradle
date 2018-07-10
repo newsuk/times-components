@@ -1,0 +1,85 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+import groovy.json.JsonSlurper
+
+def packageInfo = new JsonSlurper().parseText(rootProject.file('package.json').text)
+
+def reactRepositoryPath = "$rootDir/repo"
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "source"
+}
+
+publishing {
+    publications {
+        xnative(MavenPublication) {
+            groupId 'uk.co.thetimes'
+            artifactId 'times-xnative'
+            version packageInfo.version
+            artifact(sourceJar)
+            artifact("$buildDir/outputs/aar/xnative-release.aar")
+            pom.withXml {
+                final dependenciesNode = asNode().appendNode('dependencies')
+
+                ext.addDependency = { Dependency dep, String scope ->
+                    if (dep.group == null || dep.version == null || dep.name == null || dep.name == "unspecified")
+                        return // ignore invalid dependencies
+
+                    final dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', dep.group)
+                    dependencyNode.appendNode('artifactId', dep.name)
+                    dependencyNode.appendNode('version', dep.version)
+                    dependencyNode.appendNode('scope', scope)
+
+                    if (!dep.transitive) {
+                        // If this dependency is transitive, we should force exclude all its dependencies them from the POM
+                        final exclusionNode = dependencyNode.appendNode('exclusions').appendNode('exclusion')
+                        exclusionNode.appendNode('groupId', '*')
+                        exclusionNode.appendNode('artifactId', '*')
+                    } else if (!dep.properties.excludeRules.empty) {
+                        // Otherwise add specified exclude rules
+                        final exclusions = dependencyNode.appendNode('exclusions')
+                        dep.properties.excludeRules.each { ExcludeRule rule ->
+                            final exclusionNode = exclusions.appendNode('exclusion')
+                            exclusionNode.appendNode('groupId', rule.group ?: '*')
+                            exclusionNode.appendNode('artifactId', rule.module ?: '*')
+                        }
+                    }
+                }
+
+                // List all "api" dependencies (for new Gradle) as "compile" dependencies
+                configurations.api.getAllDependencies().each { dep -> addDependency(dep, "compile") }
+                // List all "implementation" dependencies (for new Gradle) as "runtime" dependencies
+                configurations.implementation.getAllDependencies().each { dep -> addDependency(dep, "runtime") }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url "$reactRepositoryPath"
+        }
+    }
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName packageInfo.version
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+}
+
+dependencies {
+    api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
+    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {
+        exclude group: "com.facebook.react"
+    }
+    api("react-repo:react-native-device-info:${packageInfo.dependencies.'react-native-device-info'}") {
+        exclude group: "com.facebook.react"
+        exclude group: "com.google.android.gms"
+    }
+}
