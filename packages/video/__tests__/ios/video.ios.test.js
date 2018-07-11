@@ -1,3 +1,3 @@
-import shared from "../video-shared-native";
+import shared from "../video-shared-with-style.native";
 
 shared();
