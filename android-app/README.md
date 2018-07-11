@@ -21,7 +21,7 @@ on-the-fly bundles for the react development.
 ## Bundling and release
 
 To publish this repo to maven, it needs to be built as a native android library.
-Run `yarn bundle:all` to achieve this, and publish using publish.sh script.
+Run `yarn build:all` to achieve this, and publish using publish.sh script.
 
 This bundling process first creates the js bundle, puts it inside an android
 library and assembles the android library, alongside any native dependencies.
