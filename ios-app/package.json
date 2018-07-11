@@ -22,5 +22,6 @@
     "haul": "1.0.0-rc.4",
     "prettier": "1.8.2",
     "webpack": "4.6.0"
-  }
+  },
+  "private": true
 }
