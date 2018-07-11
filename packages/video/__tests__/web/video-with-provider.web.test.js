@@ -4,6 +4,7 @@ import {
   addSerializers,
   compose,
   minimaliseTransform,
+  minimalWebTransform,
   print,
   rnwTransform
 } from "@times-components/jest-serializer";
@@ -17,6 +18,7 @@ addSerializers(
   compose(
     print,
     minimaliseTransform((value, key) => key === "style"),
+    minimalWebTransform,
     rnwTransform()
   )
 );

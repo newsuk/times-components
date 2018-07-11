@@ -14,9 +14,7 @@ exports[`1. paidonly video for unpaid users 1`] = `
     </div>
   </div>
   <div>
-    <div
-      dir="auto"
-    >
+    <div>
       We are sorry, you need to be a subscriber to watch this video
     </div>
   </div>
