@@ -6,6 +6,7 @@ import {
   minimaliseTransform,
   print
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
 
@@ -14,7 +15,27 @@ addSerializers(
   compose(print, minimaliseTransform((value, key) => key === "style"))
 );
 
-it("1. video", () => {
-  const testInstance = TestRenderer.create(<Video {...defaultVideoProps} />);
-  expect(testInstance).toMatchSnapshot();
-});
+const tests = [
+  {
+    name: "video",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} />
+      );
+
+      expect(testInstance).toMatchSnapshot();
+    }
+  },
+  {
+    name: "video without a poster image",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} poster={null} />
+      );
+
+      expect(testInstance).toMatchSnapshot();
+    }
+  }
+];
+
+iterator(tests);

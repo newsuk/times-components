@@ -17,3 +17,20 @@ exports[`1. video 1`] = `
   />
 </div>
 `;
+
+exports[`2. video without a poster image 1`] = `
+<div
+  data-testid="video-component"
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-2"
+  />
+</div>
+`;
