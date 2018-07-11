@@ -1,3 +1,3 @@
-import shared from "../video-label";
+import shared from "../video-label.native";
 
 shared();
