@@ -1,61 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Video on native renders a play icon correctly 1`] = `
-<View>
-  <svg
-    height={70}
-    style={Object {}}
-    viewBox="0 0 100 100"
-    width={70}
-  >
-    <rect
-      fill="rgba(0,0,0)"
-      fillOpacity="0.4"
-      height="100"
-      stroke="rgb(255,255,255)"
-      strokeWidth="8"
-      style={Object {}}
-      width="100"
-    />
-    <polygon
-      fill="rgb(255,255,255)"
-      points="30,20 70,50 30,80"
-      style={Object {}}
-    />
-  </svg>
-</View>
-`;
-
-exports[`Video on native renders correctly 1`] = `
-<View
-  accessibilityComponentType={undefined}
+exports[`1. video 1`] = `
+<Touchable
   accessibilityLabel="splash-component"
-  accessibilityTraits={undefined}
-  accessible={true}
-  hitSlop={undefined}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onLayout={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": 200,
-      "width": 300,
-    }
-  }
   testID="splash-component"
 >
   <View
-    aspectRatio={undefined}
+    style={
+      Object {
+        "height": 200,
+        "width": 300,
+      }
+    }
+  >
+    <TimesImage
+      style={
+        Object {
+          "height": 200,
+          "width": 300,
+        }
+      }
+      uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "height": 200,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 300,
+        }
+      }
+    >
+      <PlayIcon />
+    </View>
+  </View>
+</Touchable>
+`;
+
+exports[`2. video without a poster image 1`] = `
+<Touchable
+  accessibilityLabel="splash-component"
+  testID="splash-component"
+>
+  <View
     style={
       Object {
         "height": 200,
@@ -66,257 +58,28 @@ exports[`Video on native renders correctly 1`] = `
     <View
       style={
         Object {
-          "height": "100%",
-          "width": "100%",
+          "backgroundColor": "black",
+          "height": 200,
+          "width": 300,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "height": 200,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 300,
         }
       }
     >
-      <Image
-        onLoad={[Function]}
-        source={
-          Object {
-            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            Object {
-              "height": "100%",
-              "width": "100%",
-            },
-            undefined,
-          ]
-        }
-      />
-      <View
-        onLayout={[Function]}
-        style={
-          Array [
-            Object {
-              "flex": 1,
-            },
-            null,
-          ]
-        }
-      >
-        <View
-          onLayout={[Function]}
-          style={
-            Array [
-              Object {
-                "flex": 1,
-              },
-              Object {
-                "flex": 1,
-              },
-            ]
-          }
-        >
-          <ARTSurfaceView
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": 0,
-                  "width": 0,
-                },
-              ]
-            }
-          >
-            <ARTShape
-              d={
-                Array [
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                ]
-              }
-              fill={
-                Array [
-                  1,
-                  0,
-                  0,
-                  -0,
-                  0,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  1,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  1,
-                  0,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-          </ARTSurfaceView>
-        </View>
-      </View>
+      <PlayIcon />
     </View>
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 200,
-          "width": 300,
-        },
-      ]
-    }
-  >
-    <View>
-      <svg
-        height={70}
-        style={Object {}}
-        viewBox="0 0 100 100"
-        width={70}
-      >
-        <rect
-          fill="rgba(0,0,0)"
-          fillOpacity="0.4"
-          height="100"
-          stroke="rgb(255,255,255)"
-          strokeWidth="8"
-          style={Object {}}
-          width="100"
-        />
-        <polygon
-          fill="rgb(255,255,255)"
-          points="30,20 70,50 30,80"
-          style={Object {}}
-        />
-      </svg>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Video on native renders correctly without a poster image 1`] = `
-<View
-  accessibilityComponentType={undefined}
-  accessibilityLabel="splash-component"
-  accessibilityTraits={undefined}
-  accessible={true}
-  hitSlop={undefined}
-  nativeBackgroundAndroid={
-    Object {
-      "attribute": "selectableItemBackground",
-      "type": "ThemeAttrAndroid",
-    }
-  }
-  onLayout={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "height": 200,
-      "width": 300,
-    }
-  }
-  testID="splash-component"
->
-  <View
-    style={
-      Object {
-        "backgroundColor": "black",
-        "height": 200,
-        "width": 300,
-      }
-    }
-  />
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 200,
-          "width": 300,
-        },
-      ]
-    }
-  >
-    <View>
-      <svg
-        height={70}
-        style={Object {}}
-        viewBox="0 0 100 100"
-        width={70}
-      >
-        <rect
-          fill="rgba(0,0,0)"
-          fillOpacity="0.4"
-          height="100"
-          stroke="rgb(255,255,255)"
-          strokeWidth="8"
-          style={Object {}}
-          width="100"
-        />
-        <polygon
-          fill="rgb(255,255,255)"
-          points="30,20 70,50 30,80"
-          style={Object {}}
-        />
-      </svg>
-    </View>
-  </View>
-</View>
+</Touchable>
 `;

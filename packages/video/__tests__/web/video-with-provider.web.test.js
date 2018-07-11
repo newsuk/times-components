@@ -1,22 +1,18 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import videoProps from "../default-video-props";
-import IsPaidSubscriber from "../../src/is-paid-subscriber";
-import Video, { isPaidOnly } from "../../src/video";
-
 import {
   addSerializers,
   compose,
   minimaliseTransform,
   print
 } from "@times-components/jest-serializer";
+import IsPaidSubscriber from "../../src/is-paid-subscriber";
+import Video, { isPaidOnly } from "../../src/video";
+import videoProps from "../default-video-props";
 
 addSerializers(
   expect,
-  compose(
-    print,
-    minimaliseTransform((value, key) => key === "style")
-  )
+  compose(print, minimaliseTransform((value, key) => key === "style"))
 );
 
 const testSubscriberAndVideoPaidStatus = ({
@@ -42,7 +38,10 @@ it("renders a paidOnly video correctly for paid users", () => {
 });
 
 it("renders a non-paidOnly video correctly for unpaid users", () => {
-  testSubscriberAndVideoPaidStatus({ subscriberIsPaid: false, videoIsPaidOnly: false });
+  testSubscriberAndVideoPaidStatus({
+    subscriberIsPaid: false,
+    videoIsPaidOnly: false
+  });
 });
 
 it("renders a non-paidOnly video correctly for paid users", () => {

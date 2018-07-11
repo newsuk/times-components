@@ -13,11 +13,7 @@ import VideoError from "../../src/video-error";
 addSerializers(
   expect,
   enzymeTreeSerializer(),
-  compose(
-    stylePrinter,
-    flattenStyleTransform,
-    hoistStyleTransform
-  )
+  compose(stylePrinter, flattenStyleTransform, hoistStyleTransform)
 );
 
 it("1. video with error", () => {
