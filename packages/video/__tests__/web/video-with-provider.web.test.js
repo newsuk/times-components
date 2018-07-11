@@ -6,12 +6,16 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print,
+  propsNoChildren,
+  replaceTransform,
   rnwTransform
 } from "@times-components/jest-serializer";
 import iterator from "@times-components/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import videoProps from "../default-video-props";
+
+jest.mock("@times-components/image", () => "Image");
 
 addSerializers(
   expect,
