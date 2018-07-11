@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -15,6 +15,6 @@ addSerializers(
 );
 
 it("1. video", () => {
-  const tree = renderer.create(<Video {...defaultVideoProps} />);
-  expect(tree).toMatchSnapshot();
+  const testInstance = TestRenderer.create(<Video {...defaultVideoProps} />);
+  expect(testInstance).toMatchSnapshot();
 });

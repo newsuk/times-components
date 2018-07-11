@@ -18,6 +18,7 @@ export default () => {
     );
 
     const wrapper = shallow(<PlayIcon />);
+
     expect(wrapper).toMatchSnapshot();
   });
 };
