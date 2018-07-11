@@ -3,9 +3,10 @@ import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
-  enzymeRenderedSerializer,
+  enzymeTreeSerializer,
   flattenStyleTransform,
   hoistStyleTransform,
+  meltNative,
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
@@ -34,14 +35,15 @@ const styles = [
 
 addSerializers(
   expect,
-  enzymeRenderedSerializer(),
+  enzymeTreeSerializer(),
   compose(
     stylePrinter,
     flattenStyleTransform,
     hoistStyleTransform,
     minimalWebTransform,
     replaceTransform({
-      IconVideo: propsNoChildren
+      IconVideo: propsNoChildren,
+      ...meltNative
     }),
     rnwTransform(styles)
   )
