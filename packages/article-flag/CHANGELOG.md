@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@1.0.13...@times-components/article-flag@1.1.0) (2018-07-11)
+
+
+### Features
+
+* POC test utils iterator that prepends an index to each snapshot ([#1092](https://github.com/newsuk/times-components/issues/1092)) ([ba41c79](https://github.com/newsuk/times-components/commit/ba41c79))
+
+
+
+
 <a name="1.0.13"></a>
 ## [1.0.13](https://github.com/newsuk/times-components/compare/@times-components/article-flag@1.0.12...@times-components/article-flag@1.0.13) (2018-07-10)
 

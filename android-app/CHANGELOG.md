@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# 0.2.0 (2018-07-11)
+
+
+### Bug Fixes
+
+* update native scripts from bundle to build ([#1105](https://github.com/newsuk/times-components/issues/1105)) ([505d0f4](https://github.com/newsuk/times-components/commit/505d0f4))
+
+
+### Features
+
+* native packages as private and exclude assets from linting ([#1106](https://github.com/newsuk/times-components/issues/1106)) ([9cf6d21](https://github.com/newsuk/times-components/commit/9cf6d21))
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/newsuk/times-xnative/compare/@thetimes/android-app@0.0.12...@thetimes/android-app@0.1.1) (2018-06-29)
 
