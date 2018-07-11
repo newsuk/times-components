@@ -22,6 +22,10 @@ exports[`1. video with error 1`] = `
     "width": 410,
   },
   "IS3": {
+    "height": "100px",
+    "width": "100px",
+  },
+  "IS4": {
     "alignItems": "center",
     "backgroundColor": "rgba(0, 0, 0, 0.6)",
     "display": "flex",
@@ -29,21 +33,72 @@ exports[`1. video with error 1`] = `
     "justifyContent": "center",
     "width": 100,
   },
+  "S1": {
+    "color": "white",
+    "display": "inline",
+    "font-family": "TimesModern-Bold",
+    "font-size": "20px",
+    "height": "auto",
+    "margin-bottom": "10px",
+    "text-align": "center",
+    "width": "auto",
+  },
+  "S2": {
+    "color": "rgba(255, 255, 255, 0.8)",
+    "display": "inline",
+    "font-family": "TimesDigitalW04",
+    "font-size": "14px",
+    "height": "auto",
+    "margin-bottom": "0px",
+    "max-width": "80%",
+    "text-align": "center",
+    "width": "410px",
+  },
+  "S3": {
+    "-ms-flex-align": "center",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-pack": "center",
+    "-webkit-justify-content": "center",
+    "align-items": "center",
+    "background-color": "rgba(0, 0, 0, 0.6)",
+    "display": "flex",
+    "justify-content": "center",
+    "margin-bottom": "0px",
+  },
 }
 </style>
 
-<View
-  className="IS3"
+<VideoError
+  height={100}
+  width={100}
 >
-  <Text
-    className="IS1"
+  <View
+    className="IS4"
   >
-    Video unable to play
-  </Text>
-  <Text
-    className="IS2"
-  >
-    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
-  </Text>
-</View>
+    <div
+      className="IS3 S3"
+    >
+      <Text
+        className="IS1"
+      >
+        <div
+          className="S1"
+        >
+          Video unable to play
+        </div>
+      </Text>
+      <Text
+        className="IS2"
+      >
+        <div
+          className="S2"
+        >
+          Please check your network connection and try refreshing the page. If that doesn't work, please try again later
+        </div>
+      </Text>
+    </div>
+  </View>
+</VideoError>
 `;
