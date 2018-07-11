@@ -15,7 +15,26 @@ exports[`1. video 1`] = `
     uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
   />
   <View>
-    <PlayIcon />
+    <View>
+      <svg
+        height={70}
+        viewBox="0 0 100 100"
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+          points="30,20 70,50 30,80"
+        />
+      </svg>
+    </View>
   </View>
 </View>
 `;
@@ -33,7 +52,26 @@ exports[`2. video without a poster image 1`] = `
 >
   <View />
   <View>
-    <PlayIcon />
+    <View>
+      <svg
+        height={70}
+        viewBox="0 0 100 100"
+        width={70}
+      >
+        <rect
+          fill="rgba(0,0,0)"
+          fillOpacity="0.4"
+          height="100"
+          stroke="rgb(255,255,255)"
+          strokeWidth="8"
+          width="100"
+        />
+        <polygon
+          fill="rgb(255,255,255)"
+          points="30,20 70,50 30,80"
+        />
+      </svg>
+    </View>
   </View>
 </View>
 `;

@@ -13,7 +13,6 @@ import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
-jest.mock("../src/play-icon", () => "PlayIcon");
 
 export default () => {
   addSerializers(
