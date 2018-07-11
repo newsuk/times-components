@@ -3,6 +3,11 @@
 exports[`1. watermark 1`] = `
 <Image
   resizeMode="contain"
+  source={
+    Object {
+      "uri": "watermark-asset",
+    }
+  }
   style={
     Object {
       "height": 250,

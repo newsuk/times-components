@@ -5,12 +5,13 @@ import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
-  minimaliseTransform,
   minimalNativeTransform,
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
 import Watermark from "../src/watermark";
+
+jest.mock("../assets/watermark.png", () => ({ uri: "watermark-asset" }));
 
 export default () => {
   const hash = v =>
@@ -23,9 +24,6 @@ export default () => {
     enzymeTreeSerializer(),
     compose(
       print,
-      minimaliseTransform(
-        (value, key) => key === "source"
-      ),
       minimalNativeTransform,
       replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
     )
