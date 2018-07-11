@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. video with error 1`] = `
+<View>
+  <Text>
+    Video unable to play
+  </Text>
+  <Text>
+    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
+  </Text>
+</View>
+`;
