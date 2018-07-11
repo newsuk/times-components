@@ -4,6 +4,7 @@ exports[`Video on native renders a play icon correctly 1`] = `
 <View>
   <svg
     height={70}
+    style={Object {}}
     viewBox="0 0 100 100"
     width={70}
   >
@@ -13,11 +14,13 @@ exports[`Video on native renders a play icon correctly 1`] = `
       height="100"
       stroke="rgb(255,255,255)"
       strokeWidth="8"
+      style={Object {}}
       width="100"
     />
     <polygon
       fill="rgb(255,255,255)"
       points="30,20 70,50 30,80"
+      style={Object {}}
     />
   </svg>
 </View>
@@ -25,14 +28,29 @@ exports[`Video on native renders a play icon correctly 1`] = `
 
 exports[`Video on native renders correctly 1`] = `
 <View
+  accessibilityComponentType={undefined}
   accessibilityLabel="splash-component"
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
   isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "opacity": 1,
     }
   }
   testID="splash-component"
+  tvParallaxProperties={undefined}
 >
   <View
     style={
@@ -43,6 +61,7 @@ exports[`Video on native renders correctly 1`] = `
     }
   >
     <View
+      aspectRatio={undefined}
       style={
         Object {
           "height": 200,
@@ -59,48 +78,68 @@ exports[`Video on native renders correctly 1`] = `
         }
       >
         <Image
+          onLoad={[Function]}
           source={
             Object {
               "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
             }
           }
           style={
-            Object {
-              "bottom": 0,
-              "height": "100%",
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": "100%",
-            }
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": "100%",
+                "width": "100%",
+              },
+              undefined,
+            ]
           }
         />
         <View
+          onLayout={[Function]}
           style={
-            Object {
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "flex": 1,
+              },
+              null,
+            ]
           }
         >
           <View
+            onLayout={[Function]}
             style={
-              Object {
-                "flex": 1,
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                Object {
+                  "flex": 1,
+                },
+              ]
             }
           >
             <ARTSurfaceView
               style={
-                Object {
-                  "bottom": 0,
-                  "height": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": 0,
+                    "width": 0,
+                  },
+                ]
               }
             >
               <ARTShape
@@ -163,21 +202,26 @@ exports[`Video on native renders correctly 1`] = `
     </View>
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 200,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 300,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 200,
+            "width": 300,
+          },
+        ]
       }
     >
       <View>
         <svg
           height={70}
+          style={Object {}}
           viewBox="0 0 100 100"
           width={70}
         >
@@ -187,11 +231,13 @@ exports[`Video on native renders correctly 1`] = `
             height="100"
             stroke="rgb(255,255,255)"
             strokeWidth="8"
+            style={Object {}}
             width="100"
           />
           <polygon
             fill="rgb(255,255,255)"
             points="30,20 70,50 30,80"
+            style={Object {}}
           />
         </svg>
       </View>
@@ -202,14 +248,29 @@ exports[`Video on native renders correctly 1`] = `
 
 exports[`Video on native renders correctly without a poster image 1`] = `
 <View
+  accessibilityComponentType={undefined}
   accessibilityLabel="splash-component"
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
   isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
     Object {
       "opacity": 1,
     }
   }
   testID="splash-component"
+  tvParallaxProperties={undefined}
 >
   <View
     style={
@@ -230,21 +291,26 @@ exports[`Video on native renders correctly without a poster image 1`] = `
     />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 200,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 300,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 200,
+            "width": 300,
+          },
+        ]
       }
     >
       <View>
         <svg
           height={70}
+          style={Object {}}
           viewBox="0 0 100 100"
           width={70}
         >
@@ -254,11 +320,13 @@ exports[`Video on native renders correctly without a poster image 1`] = `
             height="100"
             stroke="rgb(255,255,255)"
             strokeWidth="8"
+            style={Object {}}
             width="100"
           />
           <polygon
             fill="rgb(255,255,255)"
             points="30,20 70,50 30,80"
+            style={Object {}}
           />
         </svg>
       </View>
