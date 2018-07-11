@@ -1,14 +1,37 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
+import { createHash } from "crypto";
+import {
+  addSerializers,
+  compose,
+  enzymeTreeSerializer,
+  minimalNativeTransform,
+  print,
+  replacePropTransform
+} from "@times-components/jest-serializer";
 import Watermark from "../src/watermark";
 
-module.exports = () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<Watermark height={250} width={300} />)
-      .toJSON();
+jest.mock("../assets/watermark.png", () => ({ uri: "watermark-asset" }));
 
-    expect(tree).toMatchSnapshot();
+export default () => {
+  const hash = v =>
+    createHash("md5")
+      .update(v)
+      .digest("hex");
+
+  addSerializers(
+    expect,
+    enzymeTreeSerializer(),
+    compose(
+      print,
+      minimalNativeTransform,
+      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+    )
+  );
+
+  it("1. watermark", () => {
+    const wrapper = shallow(<Watermark height={250} width={300} />);
+
+    expect(wrapper).toMatchSnapshot();
   });
 };

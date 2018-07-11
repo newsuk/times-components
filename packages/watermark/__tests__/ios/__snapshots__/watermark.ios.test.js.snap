@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Watermark tests on iOS renders correctly 1`] = `
+exports[`1. watermark 1`] = `
 <Image
   resizeMode="contain"
-  source={1}
+  source={
+    Object {
+      "uri": "watermark-asset",
+    }
+  }
   style={
     Object {
       "height": 250,
