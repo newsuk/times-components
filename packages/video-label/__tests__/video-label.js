@@ -8,6 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
 import VideoLabel from "../src/video-label";
 
 export default () => {
@@ -21,21 +22,34 @@ export default () => {
     )
   );
 
-  it("1. video label with a title", () => {
-    const wrapper = shallow(<VideoLabel color="#008347" title="swimming" />);
+  const tests = [
+    {
+      name: "video label with a title",
+      test: () => {
+        const wrapper = shallow(
+          <VideoLabel color="#008347" title="swimming" />
+        );
 
-    expect(wrapper).toMatchSnapshot();
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "video label without a title shows VIDEO",
+      test: () => {
+        const wrapper = shallow(<VideoLabel color="#008347" />);
 
-  it("2. video label without a title shows VIDEO", () => {
-    const wrapper = shallow(<VideoLabel color="#008347" />);
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "video label with the black default colour",
+      test: () => {
+        const wrapper = shallow(<VideoLabel />);
 
-    expect(wrapper).toMatchSnapshot();
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("3. video label with the black default colour", () => {
-    const wrapper = shallow(<VideoLabel />);
-
-    expect(wrapper).toMatchSnapshot();
-  });
+  iterator(tests);
 };

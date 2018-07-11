@@ -14,7 +14,7 @@ exports[`1. video label with a title 1`] = `
 </View>
 `;
 
-exports[`2. video label without a title shows VIDEO 1`] = `
+exports[`2. video label without a title shows video 1`] = `
 <View>
   <View>
     <IconVideo
