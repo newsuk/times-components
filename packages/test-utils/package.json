@@ -45,8 +45,8 @@
     "eslint-plugin-react": "7.4.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",
-    "react": ">=16.2",
-    "react-native": ">=0.54",
+    "react": "16.4.1",
+    "react-native": "0.54.2",
     "webpack": "4.6.0",
     "webpack-cli": "2.1.4"
   },
