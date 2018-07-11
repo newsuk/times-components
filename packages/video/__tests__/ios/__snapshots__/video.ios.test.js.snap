@@ -1,85 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. video 1`] = `
-<Touchable
+<View
   accessibilityLabel="splash-component"
+  isTVSelectable={true}
   testID="splash-component"
 >
-  <View
-    style={
-      Object {
-        "height": 200,
-        "width": 300,
-      }
-    }
-  >
-    <TimesImage
-      style={
-        Object {
-          "height": 200,
-          "width": 300,
-        }
-      }
+  <View>
+    <Image
       uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
     />
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 200,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 300,
-        }
-      }
-    >
+    <View>
       <PlayIcon />
     </View>
   </View>
-</Touchable>
+</View>
 `;
 
 exports[`2. video without a poster image 1`] = `
-<Touchable
+<View
   accessibilityLabel="splash-component"
+  isTVSelectable={true}
   testID="splash-component"
 >
-  <View
-    style={
-      Object {
-        "height": 200,
-        "width": 300,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "backgroundColor": "black",
-          "height": 200,
-          "width": 300,
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "height": 200,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 300,
-        }
-      }
-    >
+  <View>
+    <View />
+    <View>
       <PlayIcon />
     </View>
   </View>
-</Touchable>
+</View>
 `;
