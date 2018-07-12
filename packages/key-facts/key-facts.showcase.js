@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollView } from "react-native";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts.json";
@@ -16,11 +17,13 @@ export default {
       type: "story",
       name: "default",
       component: () => (
-        <KeyFacts
-          items={children[0].children}
-          onLinkPress={() => {}}
-          title={attributes.title}
-        />
+        <ScrollView>
+          <KeyFacts
+            items={children[0].children}
+            onLinkPress={() => {}}
+            title={attributes.title}
+          />
+        </ScrollView>
       )
     }
   ]

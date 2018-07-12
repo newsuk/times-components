@@ -15,7 +15,8 @@ const sharedStyle = {
   },
   container: {
     flexDirection: "row",
-    marginBottom: spacing(4)
+    marginBottom: spacing(4),
+    paddingLeft: 1
   },
   text: {
     color: colours.functional.primary,
@@ -24,6 +25,13 @@ const sharedStyle = {
     lineHeight: 30,
     marginTop: -5,
     paddingLeft: spacing(3)
+  },
+  title: {
+    fontFamily: fonts.supporting,
+    fontSize: fontSizes.cardMetaMobile,
+    fontWeight: "400",
+    letterSpacing: 1.2,
+    marginBottom: 20
   }
 };
 
