@@ -17,6 +17,9 @@ const sharedStyle = {
     flexDirection: "row",
     marginBottom: spacing(4)
   },
+  italic: {
+    fontStyle: "italic"
+  },
   text: {
     color: colours.functional.primary,
     fontFamily: fonts.body,

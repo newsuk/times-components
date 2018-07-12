@@ -13,7 +13,7 @@ export default {
     {
       type: "story",
       name: "default",
-      component: () => <KeyFacts data={data} />
+      component: () => <KeyFacts data={data} onLinkPress={() => {}} />
     }
   ]
 };
