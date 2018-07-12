@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -39,7 +39,7 @@
     "@times-components/jest-configurator": "1.0.9",
     "@times-components/jest-serializer": "1.0.9",
     "@times-components/storybook": "1.1.6",
-    "@times-components/test-utils": "0.1.1",
+    "@times-components/test-utils": "0.1.2",
     "@times-components/webpack-configurator": "1.0.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
