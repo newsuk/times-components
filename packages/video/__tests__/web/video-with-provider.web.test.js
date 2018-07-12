@@ -11,7 +11,7 @@ import {
 import iterator from "@times-components/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
-import videoProps from "../default-video-props";
+import defaultVideoProps from "../default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
 
@@ -31,9 +31,10 @@ const testSubscriberAndVideoPaidStatus = ({
 }) => {
   const testInstance = TestRenderer.create(
     <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-      <Video {...videoProps} paidOnly={videoIsPaidOnly} />
+      <Video {...defaultVideoProps} paidOnly={videoIsPaidOnly} />
     </IsPaidSubscriber.Provider>
   );
+
   expect(testInstance.toJSON()).toMatchSnapshot();
 };
 
