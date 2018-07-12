@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Video on native renders a play icon correctly 1`] = `
-<View>
-  <svg
-    height={70}
-    viewBox="0 0 100 100"
-    width={70}
-  >
-    <rect
-      fill="rgba(0,0,0)"
-      fillOpacity="0.4"
-      height="100"
-      stroke="rgb(255,255,255)"
-      strokeWidth="8"
-      width="100"
-    />
-    <polygon
-      fill="rgb(255,255,255)"
-      points="30,20 70,50 30,80"
-    />
-  </svg>
-</View>
-`;
-
-exports[`Video on native renders correctly 1`] = `
+exports[`1. video 1`] = `
 <View
   accessibilityLabel="splash-component"
   nativeBackgroundAndroid={
@@ -32,147 +9,12 @@ exports[`Video on native renders correctly 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  style={
-    Object {
-      "height": 200,
-      "width": 300,
-    }
-  }
   testID="splash-component"
 >
-  <View
-    style={
-      Object {
-        "height": 200,
-        "width": 300,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": "100%",
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        source={
-          Object {
-            "uri": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "height": "100%",
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
-          <ARTSurfaceView
-            style={
-              Object {
-                "bottom": 0,
-                "height": 0,
-                "left": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          >
-            <ARTShape
-              d={
-                Array [
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                ]
-              }
-              fill={
-                Array [
-                  1,
-                  0,
-                  0,
-                  -0,
-                  0,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  0.9764705882352941,
-                  1,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  0.9294117647058824,
-                  1,
-                  0,
-                  1,
-                ]
-              }
-              opacity={1}
-              stroke={null}
-              strokeCap={1}
-              strokeDash={null}
-              strokeJoin={1}
-              strokeWidth={1}
-              transform={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-            />
-          </ARTSurfaceView>
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "height": 200,
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": 300,
-      }
-    }
-  >
+  <Image
+    uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  />
+  <View>
     <View>
       <svg
         height={70}
@@ -197,7 +39,7 @@ exports[`Video on native renders correctly 1`] = `
 </View>
 `;
 
-exports[`Video on native renders correctly without a poster image 1`] = `
+exports[`2. video without a poster image 1`] = `
 <View
   accessibilityLabel="splash-component"
   nativeBackgroundAndroid={
@@ -206,37 +48,10 @@ exports[`Video on native renders correctly without a poster image 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  style={
-    Object {
-      "height": 200,
-      "width": 300,
-    }
-  }
   testID="splash-component"
 >
-  <View
-    style={
-      Object {
-        "backgroundColor": "black",
-        "height": 200,
-        "width": 300,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "height": 200,
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": 300,
-      }
-    }
-  >
+  <View />
+  <View>
     <View>
       <svg
         height={70}

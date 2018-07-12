@@ -1,16 +1,9 @@
 import { StyleSheet } from "react-native";
-import { spacing, fonts } from "@times-components/styleguide";
+import { fonts, spacing } from "@times-components/styleguide";
+import sharedStyles from "./shared";
 
-export default StyleSheet.create({
-  heading: {
-    fontFamily: fonts.headline,
-    fontSize: "20px",
-    textAlign: "center",
-    color: "white",
-    width: "auto",
-    height: "auto",
-    marginBottom: spacing(2)
-  },
+const styles = StyleSheet.create({
+  ...sharedStyles,
   body: {
     fontFamily: fonts.body,
     fontSize: "14px",
@@ -25,5 +18,16 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "rgba(0, 0, 0, 0.6)"
+  },
+  heading: {
+    fontFamily: fonts.headline,
+    fontSize: "20px",
+    textAlign: "center",
+    color: "white",
+    width: "auto",
+    height: "auto",
+    marginBottom: spacing(2)
   }
 });
+
+export default styles;

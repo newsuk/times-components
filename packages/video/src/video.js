@@ -2,20 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import Image from "@times-components/image";
-
 import Touchable from "./touchable";
-import PlayIcon from "./play-icon";
-import { propTypes, defaultProps } from "./video.proptypes";
-import styles from "./styles/video.styles";
+import PlayIcon from "./play-icon.native";
+import { propTypes, defaultProps } from "./video-prop-types";
+import styles from "./styles";
 
 const Video = ({
-  poster,
-  width,
+  accountId,
   height,
   onVideoPress,
-  accountId,
   policyKey,
-  videoId
+  poster,
+  videoId,
+  width
 }) => (
   <Touchable
     accessibilityLabel="splash-component"
@@ -28,25 +27,25 @@ const Video = ({
     }}
     testID="splash-component"
   >
-    <View style={{ width, height }}>
+    <View style={{ height, width }}>
       {poster ? (
         <Image
           style={{
-            width,
-            height
+            height,
+            width
           }}
           uri={poster.uri}
         />
       ) : (
         <View
           style={{
-            width,
+            backgroundColor: "black",
             height,
-            backgroundColor: "black"
+            width
           }}
         />
       )}
-      <View style={[styles.overlay, { width, height }]}>
+      <View style={[styles.overlay, { height, width }]}>
         <PlayIcon />
       </View>
     </View>

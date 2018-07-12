@@ -1,7 +1,6 @@
 /* eslint-env browser */
 import React, { Component } from "react";
-
-import { propTypes, defaultProps } from "./video.proptypes";
+import { propTypes, defaultProps } from "./video-prop-types";
 
 const css = `
 .video-js .vjs-big-play-button {
@@ -159,10 +158,10 @@ class InlineVideoPlayer extends Component {
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
-      <div data-testid="video-component" style={{ width, height }}>
+      <div data-testid="video-component" style={{ height, width }}>
         <video
           id={this.id}
-          style={{ width, height }}
+          style={{ height, width }}
           {...(poster ? { poster: this.props.poster.uri } : {})}
           className="video-js"
           controls

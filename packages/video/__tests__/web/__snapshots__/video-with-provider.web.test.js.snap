@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. paidonly video for unpaid users 1`] = `
+<div>
+  <Image
+    aspectRatio={1.5}
+    uri="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  />
+  <div>
+    <div>
+      We are sorry, you need to be a subscriber to watch this video
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. paidonly video for paid users 1`] = `
+<div
+  data-testid="video-component"
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-1"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  />
+</div>
+`;
+
+exports[`3. non-paidonly video for unpaid users 1`] = `
+<div
+  data-testid="video-component"
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-2"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  />
+</div>
+`;
+
+exports[`4. non-paidonly video for paid users 1`] = `
+<div
+  data-testid="video-component"
+>
+  <video
+    className="video-js"
+    controls={true}
+    data-account="[account id]"
+    data-application-id={true}
+    data-embed="default"
+    data-player="[player id]"
+    data-video-id="[video id]"
+    id="[video id]-[account id]-3"
+    poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  />
+</div>
+`;

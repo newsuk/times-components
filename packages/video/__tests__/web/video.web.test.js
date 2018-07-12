@@ -1,51 +1,41 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
+import {
+  addSerializers,
+  compose,
+  minimaliseTransform,
+  print
+} from "@times-components/jest-serializer";
+import iterator from "@times-components/test-utils";
+import Video from "../../src/video";
+import defaultVideoProps from "../default-video-props";
 
-import shared, { defaultVideoProps } from "../shared";
-import IsPaidSubscriber from "../../src/is-paid-subscriber";
-import Video, { isPaidOnly } from "../../src/video";
+addSerializers(
+  expect,
+  compose(print, minimaliseTransform((value, key) => key === "style"))
+);
 
-describe("Video on web", () => {
-  shared();
+const tests = [
+  {
+    name: "video",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} />
+      );
 
-  const testSubscriberAndVideoPaidStatus = (
-    subscriberIsPaid,
-    videoIsPaidOnly
-  ) => {
-    const tree = renderer
-      .create(
-        <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-          <Video {...defaultVideoProps} paidOnly={videoIsPaidOnly} />
-        </IsPaidSubscriber.Provider>
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  };
+      expect(testInstance).toMatchSnapshot();
+    }
+  },
+  {
+    name: "video without a poster image",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <Video {...defaultVideoProps} poster={null} />
+      );
 
-  it("renders a paidOnly video correctly for unpaid users", () => {
-    testSubscriberAndVideoPaidStatus(false, true);
-  });
+      expect(testInstance).toMatchSnapshot();
+    }
+  }
+];
 
-  it("renders a paidOnly video correctly for paid users", () => {
-    testSubscriberAndVideoPaidStatus(true, true);
-  });
-
-  it("renders a non-paidOnly video correctly for unpaid users", () => {
-    testSubscriberAndVideoPaidStatus(false, false);
-  });
-
-  it("renders a non-paidOnly video correctly for paid users", () => {
-    testSubscriberAndVideoPaidStatus(true, false);
-  });
-
-  it("Allows stringified booleans as well as truthiness/falsiness to determine paidonly status", () => {
-    expect(isPaidOnly(true)).toBe(true);
-    expect(isPaidOnly(false)).toBe(false);
-    expect(isPaidOnly("true")).toBe(true);
-    expect(isPaidOnly("false")).toBe(false);
-    expect(isPaidOnly(1)).toBe(true);
-    expect(isPaidOnly(0)).toBe(false);
-    expect(isPaidOnly(undefined)).toBe(false);
-    expect(isPaidOnly(null)).toBe(false);
-  });
-});
+iterator(tests);

@@ -1,7 +1,6 @@
-import { StyleSheet } from "react-native";
-import { spacing, fonts } from "@times-components/styleguide";
+import { fonts, spacing } from "@times-components/styleguide";
 
-export default StyleSheet.create({
+const styles = {
   noSubscriptionWrapper: {
     position: "absolute",
     top: "50%",
@@ -20,5 +19,15 @@ export default StyleSheet.create({
     fontFamily: fonts.body,
     padding: spacing(2),
     textAlign: "center"
+  },
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
   }
-});
+};
+
+export default styles;

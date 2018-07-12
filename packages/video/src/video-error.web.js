@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
-import styles from "./styles/video-error.styles";
+import styles from "./styles";
 
-const VideoError = ({ width, height }) => (
+const VideoError = ({ height, width }) => (
   <View style={[styles.background, { width, height }]}>
     <Text style={styles.heading}>Video unable to play</Text>
     <Text style={styles.body}>
@@ -14,8 +14,8 @@ const VideoError = ({ width, height }) => (
 );
 
 VideoError.propTypes = {
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default VideoError;

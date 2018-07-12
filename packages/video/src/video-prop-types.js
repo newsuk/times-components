@@ -7,13 +7,13 @@ const numberOrString = PropTypes.oneOfType([
 
 export const propTypes = {
   accountId: PropTypes.string.isRequired,
+  height: numberOrString.isRequired,
+  paidOnly: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   playerId: PropTypes.string,
-  videoId: PropTypes.string.isRequired,
   policyKey: PropTypes.string.isRequired,
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
-  paidOnly: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  width: numberOrString.isRequired,
-  height: numberOrString.isRequired
+  videoId: PropTypes.string.isRequired,
+  width: numberOrString.isRequired
 };
 
 export const defaultProps = {
