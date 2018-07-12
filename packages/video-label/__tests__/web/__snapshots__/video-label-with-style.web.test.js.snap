@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. video label with a title 1`] = `
+<style>
+{
+  "IS1": {
+    "paddingBottom": 3,
+  },
+  "IS2": {
+    "color": "rgba(0,131,71,1)",
+  },
+  "IS3": {
+    "color": "#008347",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": 12,
+    "fontWeight": "400",
+    "letterSpacing": 1.2,
+    "lineHeight": 11,
+    "marginLeft": 5,
+    "padding": 0,
+    "position": "relative",
+    "top": 2,
+  },
+  "IS4": {
+    "alignItems": "center",
+    "flexDirection": "row",
+    "marginBottom": 3,
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "padding-bottom": "3px",
+    "position": "relative",
+  },
+  "S2": {
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "12px",
+    "font-weight": "400",
+    "letter-spacing": "1.2px",
+    "line-height": "11px",
+    "margin-bottom": "0px",
+    "margin-left": "5px",
+    "padding-bottom": "0px",
+    "position": "relative",
+    "top": "2px",
+  },
+  "S3": {
+    "-ms-flex-align": "center",
+    "-ms-flex-direction": "row",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "align-items": "center",
+    "flex-direction": "row",
+    "margin-bottom": "3px",
+    "margin-left": "0px",
+    "padding-bottom": "0px",
+    "position": "relative",
+  },
+}
+</style>
+
+<VideoLabel
+  color="#008347"
+  title="swimming"
+>
+  <div
+    className="S3"
+  >
+    <div
+      className="S1"
+    >
+      <IconVideo
+        fillColour="#008347"
+        height={8}
+      />
+    </div>
+    <div
+      className="IS2 S2"
+    >
+      SWIMMING
+    </div>
+  </div>
+</VideoLabel>
+`;
+
+exports[`2. video label without a title shows video 1`] = `
+<style>
+{
+  "IS1": {
+    "paddingBottom": 3,
+  },
+  "IS2": {
+    "color": "rgba(0,131,71,1)",
+  },
+  "IS3": {
+    "color": "#008347",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": 12,
+    "fontWeight": "400",
+    "letterSpacing": 1.2,
+    "lineHeight": 11,
+    "marginLeft": 5,
+    "padding": 0,
+    "position": "relative",
+    "top": 2,
+  },
+  "IS4": {
+    "alignItems": "center",
+    "flexDirection": "row",
+    "marginBottom": 3,
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "padding-bottom": "3px",
+    "position": "relative",
+  },
+  "S2": {
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "12px",
+    "font-weight": "400",
+    "letter-spacing": "1.2px",
+    "line-height": "11px",
+    "margin-bottom": "0px",
+    "margin-left": "5px",
+    "padding-bottom": "0px",
+    "position": "relative",
+    "top": "2px",
+  },
+  "S3": {
+    "-ms-flex-align": "center",
+    "-ms-flex-direction": "row",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "align-items": "center",
+    "flex-direction": "row",
+    "margin-bottom": "3px",
+    "margin-left": "0px",
+    "padding-bottom": "0px",
+    "position": "relative",
+  },
+}
+</style>
+
+<VideoLabel
+  color="#008347"
+  title=""
+>
+  <div
+    className="S3"
+  >
+    <div
+      className="S1"
+    >
+      <IconVideo
+        fillColour="#008347"
+        height={8}
+      />
+    </div>
+    <div
+      className="IS2 S2"
+    >
+      VIDEO
+    </div>
+  </div>
+</VideoLabel>
+`;
+
+exports[`3. video label with the black default colour 1`] = `
+<style>
+{
+  "IS1": {
+    "paddingBottom": 3,
+  },
+  "IS2": {
+    "color": "black",
+  },
+  "IS3": {
+    "color": "black",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": 12,
+    "fontWeight": "400",
+    "letterSpacing": 1.2,
+    "lineHeight": 11,
+    "marginLeft": 5,
+    "padding": 0,
+    "position": "relative",
+    "top": 2,
+  },
+  "IS4": {
+    "alignItems": "center",
+    "flexDirection": "row",
+    "marginBottom": 3,
+  },
+  "S1": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "padding-bottom": "3px",
+    "position": "relative",
+  },
+  "S2": {
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "12px",
+    "font-weight": "400",
+    "letter-spacing": "1.2px",
+    "line-height": "11px",
+    "margin-bottom": "0px",
+    "margin-left": "5px",
+    "padding-bottom": "0px",
+    "position": "relative",
+    "top": "2px",
+  },
+  "S3": {
+    "-ms-flex-align": "center",
+    "-ms-flex-direction": "row",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "align-items": "center",
+    "flex-direction": "row",
+    "margin-bottom": "3px",
+    "margin-left": "0px",
+    "padding-bottom": "0px",
+    "position": "relative",
+  },
+}
+</style>
+
+<VideoLabel
+  color="black"
+  title=""
+>
+  <div
+    className="S3"
+  >
+    <div
+      className="S1"
+    >
+      <IconVideo
+        fillColour="black"
+        height={8}
+      />
+    </div>
+    <div
+      className="IS2 S2"
+    >
+      VIDEO
+    </div>
+  </div>
+</VideoLabel>
+`;

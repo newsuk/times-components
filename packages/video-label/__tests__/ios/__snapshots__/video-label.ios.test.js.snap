@@ -1,386 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Video Label test on ios renders VideoLabel with an explicit title 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 2,
-      }
-    }
-  >
-    <ARTSurfaceView
-      style={
-        Object {
-          "height": 7.777391304347827,
-          "width": 13.76,
-        }
-      }
-    >
-      <ARTGroup
-        opacity={1}
-        transform={
-          Array [
-            0.5982608695652174,
-            0,
-            0,
-            0.5982608695652174,
-            0,
-            0,
-          ]
-        }
-      >
-        <ARTShape
-          d={
-            Array [
-              0,
-              0.154639175,
-              0.139754386,
-              2,
-              15.609649475,
-              0.139754386,
-              2,
-              15.609649475,
-              13.711894786,
-              2,
-              0.1546391749999998,
-              13.711894786,
-              2,
-              0.1546391749999998,
-              0.1397543859999999,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-        <ARTShape
-          d={
-            Array [
-              0,
-              16.3405361,
-              4.14989474,
-              2,
-              16.3405361,
-              9.66442105,
-              2,
-              22.0216082,
-              12.8146667,
-              2,
-              22.0216082,
-              0.999894737,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-        <ARTShape
-          d={
-            Array [
-              0,
-              23.7538144,
-              0.0496140351,
-              2,
-              22.7616495,
-              0.643508772,
-              2,
-              22.7616495,
-              13.1902105,
-              2,
-              23.7538144,
-              13.7782105,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-      </ARTGroup>
-    </ARTSurfaceView>
+exports[`1. video label with a title 1`] = `
+<View>
+  <View>
+    <IconVideo
+      fillColour="#008347"
+      height={8}
+    />
   </View>
-  <Text
-    style={
-      Object {
-        "color": "#008347",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "lineHeight": 12,
-        "marginLeft": 5,
-        "padding": 0,
-        "position": "relative",
-        "top": 2,
-      }
-    }
-  >
+  <Text>
     SWIMMING
   </Text>
 </View>
 `;
 
-exports[`Video Label test on ios renders VideoLabel without an explicit title 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 2,
-      }
-    }
-  >
-    <ARTSurfaceView
-      style={
-        Object {
-          "height": 7.777391304347827,
-          "width": 13.76,
-        }
-      }
-    >
-      <ARTGroup
-        opacity={1}
-        transform={
-          Array [
-            0.5982608695652174,
-            0,
-            0,
-            0.5982608695652174,
-            0,
-            0,
-          ]
-        }
-      >
-        <ARTShape
-          d={
-            Array [
-              0,
-              0.154639175,
-              0.139754386,
-              2,
-              15.609649475,
-              0.139754386,
-              2,
-              15.609649475,
-              13.711894786,
-              2,
-              0.1546391749999998,
-              13.711894786,
-              2,
-              0.1546391749999998,
-              0.1397543859999999,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-        <ARTShape
-          d={
-            Array [
-              0,
-              16.3405361,
-              4.14989474,
-              2,
-              16.3405361,
-              9.66442105,
-              2,
-              22.0216082,
-              12.8146667,
-              2,
-              22.0216082,
-              0.999894737,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-        <ARTShape
-          d={
-            Array [
-              0,
-              23.7538144,
-              0.0496140351,
-              2,
-              22.7616495,
-              0.643508772,
-              2,
-              22.7616495,
-              13.1902105,
-              2,
-              23.7538144,
-              13.7782105,
-            ]
-          }
-          fill={
-            Array [
-              0,
-              0,
-              0.5137254901960784,
-              0.2784313725490196,
-              1,
-            ]
-          }
-          opacity={1}
-          stroke={null}
-          strokeCap={1}
-          strokeDash={null}
-          strokeJoin={1}
-          strokeWidth={1}
-          transform={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-        />
-      </ARTGroup>
-    </ARTSurfaceView>
+exports[`2. video label without a title shows video 1`] = `
+<View>
+  <View>
+    <IconVideo
+      fillColour="#008347"
+      height={8}
+    />
   </View>
-  <Text
-    style={
-      Object {
-        "color": "#008347",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 12,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "lineHeight": 12,
-        "marginLeft": 5,
-        "padding": 0,
-        "position": "relative",
-        "top": 2,
-      }
-    }
-  >
+  <Text>
+    VIDEO
+  </Text>
+</View>
+`;
+
+exports[`3. video label with the black default colour 1`] = `
+<View>
+  <View>
+    <IconVideo
+      fillColour="black"
+      height={8}
+    />
+  </View>
+  <Text>
     VIDEO
   </Text>
 </View>

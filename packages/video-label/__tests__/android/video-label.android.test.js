@@ -1,7 +1,3 @@
-import shared from "../shared";
-import beautifyTitle from "../beautify-title-with-spacing";
+import shared from "../video-label.native";
 
-describe("Video Label test on android", () => {
-  shared();
-  beautifyTitle();
-});
+shared();

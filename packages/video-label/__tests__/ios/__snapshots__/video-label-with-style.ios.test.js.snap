@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. video label with a title 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 2,
+      }
+    }
+  >
+    <IconVideo
+      fillColour="#008347"
+      height={8}
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#008347",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "lineHeight": 12,
+        "marginLeft": 5,
+        "padding": 0,
+        "position": "relative",
+        "top": 2,
+      }
+    }
+  >
+    SWIMMING
+  </Text>
+</View>
+`;
+
+exports[`2. video label without a title shows video 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 2,
+      }
+    }
+  >
+    <IconVideo
+      fillColour="#008347"
+      height={8}
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#008347",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "lineHeight": 12,
+        "marginLeft": 5,
+        "padding": 0,
+        "position": "relative",
+        "top": 2,
+      }
+    }
+  >
+    VIDEO
+  </Text>
+</View>
+`;
+
+exports[`3. video label with the black default colour 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingBottom": 2,
+      }
+    }
+  >
+    <IconVideo
+      fillColour="black"
+      height={8}
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "black",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "lineHeight": 12,
+        "marginLeft": 5,
+        "padding": 0,
+        "position": "relative",
+        "top": 2,
+      }
+    }
+  >
+    VIDEO
+  </Text>
+</View>
+`;

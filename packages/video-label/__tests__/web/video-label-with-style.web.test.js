@@ -4,29 +4,48 @@ import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
+  flattenStyleTransform,
+  hoistStyleTransform,
   meltNative,
-  minimaliseTransform,
   minimalWebTransform,
-  print,
   propsNoChildren,
   replaceTransform,
-  rnwTransform
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import iterator from "@times-components/test-utils";
 import VideoLabel from "../../src/video-label";
+
+const styles = [
+  "alignItems",
+  "color",
+  "flexDirection",
+  "fontFamily",
+  "fontSize",
+  "fontWeight",
+  "letterSpacing",
+  "lineHeight",
+  "marginBottom",
+  "marginLeft",
+  "padding",
+  "paddingBottom",
+  "position",
+  "top"
+];
 
 addSerializers(
   expect,
   enzymeTreeSerializer(),
   compose(
-    print,
+    stylePrinter,
+    flattenStyleTransform,
+    hoistStyleTransform,
     minimalWebTransform,
-    minimaliseTransform((value, key) => key === "style" || key === "className"),
     replaceTransform({
       IconVideo: propsNoChildren,
       ...meltNative
     }),
-    rnwTransform()
+    rnwTransform(styles)
   )
 );
 
