@@ -36,7 +36,3 @@ yarn test:web
 Visit the official
 
 <!-- Add the storybook link here. -->
-
-## Future
-
-<!-- Add details of future development here. -->

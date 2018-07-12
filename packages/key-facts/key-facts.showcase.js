@@ -4,7 +4,7 @@ import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts.json";
 
 export default {
-  name: "KeyFacts",
+  name: "Composed/Key Facts",
   children: [
     {
       type: "decorator",
@@ -12,7 +12,7 @@ export default {
     },
     {
       type: "story",
-      name: "KeyFacts",
+      name: "default",
       component: () => <KeyFacts data={data} />
     }
   ]
