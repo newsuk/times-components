@@ -1,4 +1,5 @@
 const functionalColours = {
+  bullet: "#103546",
   brandColour: "#1D1D1B", // Times brand colour
   contrast: "#FFFFFF", // Contrast to Times brand colour
   primary: "#333333", // Headlines, titles and paragraph text

@@ -1,6 +1,13 @@
+import {
+  colours,
+  fonts,
+  fontSizes,
+  spacing
+} from "@times-components/styleguide";
+
 const sharedStyle = {
   bullet: {
-    backgroundColor: "#103546",
+    backgroundColor: colours.functional.bullet,
     height: 8,
     top: 6,
     transform: [{ rotate: "45deg" }],
@@ -8,15 +15,15 @@ const sharedStyle = {
   },
   container: {
     flexDirection: "row",
-    marginBottom: 15
+    marginBottom: spacing(3)
   },
   text: {
-    color: "#333333",
-    fontFamily: "TimesDigitalW04",
-    fontSize: 16,
+    color: colours.functional.primary,
+    fontFamily: fonts.body,
+    fontSize: fontSizes.secondary,
     lineHeight: 30,
     marginTop: -5,
-    paddingLeft: 15
+    paddingLeft: spacing(3)
   }
 };
 
