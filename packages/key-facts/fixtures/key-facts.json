@@ -7,7 +7,7 @@
           "name": "text",
           "attributes": {
             "value":
-              "Lorem ipsum dolor adipisicing sit amet eight times, police say"
+              "Lorem ipsum dolor adipisicing sit amet eight times, police say "
           },
           "children": []
         },
@@ -18,7 +18,20 @@
             {
               "name": "text",
               "attributes": {
-                "value": "loads of things"
+                "value": "loads of things "
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "italic",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "loads of things "
               },
               "children": []
             }
@@ -46,7 +59,7 @@
         {
           "name": "text",
           "attributes": {
-            "value": ".”"
+            "value": "."
           },
           "children": []
         }
