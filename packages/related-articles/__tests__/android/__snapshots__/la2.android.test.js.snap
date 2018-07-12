@@ -10,7 +10,7 @@ Array [
       "attrs": Object {
         "articles": Array [],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
+        "template": "OPINION_AND_TWO",
       },
       "component": "Page",
       "object": "RelatedArticles",
@@ -19,7 +19,7 @@ Array [
 ]
 `;
 
-exports[`2. should render a single related article 1`] = `
+exports[`2. should render one lead related article 1`] = `
 <View>
   <View>
     <Text
@@ -38,7 +38,7 @@ exports[`2. should render a single related article 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop.io",
+                "uri": "https://crop169.io",
               }
             }
             imageRatio={1.7777777777777777}
@@ -47,8 +47,10 @@ exports[`2. should render a single related article 1`] = `
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="leading article"
+                >
+                  L E A D I N G   A R T I C L E
                 </Text>
               </View>
               <Text
@@ -71,10 +73,7 @@ exports[`2. should render a single related article 1`] = `
               </Text>
               <Text>
                 <Text>
-                  Camilla Long
-                </Text>
-                <Text>
-                  , Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -86,7 +85,7 @@ exports[`2. should render a single related article 1`] = `
 </View>
 `;
 
-exports[`2a. should send analytics for a single related article 1`] = `
+exports[`2a. should send analytics for one lead related article 1`] = `
 Array [
   Array [
     Object {
@@ -94,15 +93,15 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long",
+            "byline": "Deborah Haynes",
             "headline": "Test Headline",
-            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
+            "role": "lead-and-two",
           },
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
+        "template": "LEAD_AND_TWO",
       },
       "component": "Page",
       "object": "RelatedArticles",
@@ -111,7 +110,7 @@ Array [
 ]
 `;
 
-exports[`3. should render two related articles 1`] = `
+exports[`3. should render one lead and one support related article 1`] = `
 <View>
   <View>
     <Text
@@ -130,7 +129,7 @@ exports[`3. should render two related articles 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop1.io",
+                "uri": "https://crop169-1.io",
               }
             }
             imageRatio={1.7777777777777777}
@@ -139,8 +138,10 @@ exports[`3. should render two related articles 1`] = `
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="leading article"
+                >
+                  L E A D I N G   A R T I C L E
                 </Text>
               </View>
               <Text
@@ -163,7 +164,7 @@ exports[`3. should render two related articles 1`] = `
               </Text>
               <Text>
                 <Text>
-                  Camilla Long, Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -179,17 +180,19 @@ exports[`3. should render two related articles 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop2.io",
+                "uri": "https://crop169-2.io",
               }
             }
             imageRatio={1.7777777777777777}
             isReversed={false}
-            showImage={true}
+            showImage={false}
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="defence cuts | analysis"
+                >
+                  D E F E N C E   C U T S   |   A N A L Y S I S
                 </Text>
               </View>
               <Text
@@ -198,21 +201,12 @@ exports[`3. should render two related articles 1`] = `
               >
                 Second Headline
               </Text>
-              <View>
-                <Text>
-                  <Text>
-                    
-                    Summary 125
-                    ...
-                  </Text>
-                </Text>
-              </View>
               <Text>
                 January 17 2018, 12:00pm
               </Text>
               <Text>
                 <Text>
-                  Camilla Long, Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -224,7 +218,7 @@ exports[`3. should render two related articles 1`] = `
 </View>
 `;
 
-exports[`3a. should send analytics for two related articles 1`] = `
+exports[`3a. should send analytics for one lead and one support related article 1`] = `
 Array [
   Array [
     Object {
@@ -232,22 +226,22 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Deborah Haynes",
             "headline": "First Headline",
-            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
+            "role": "lead-and-two",
           },
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Deborah Haynes",
             "headline": "Second Headline",
-            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",
-            "role": "standard-2",
+            "role": "lead-and-two-supporting-1",
           },
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
+        "template": "LEAD_AND_TWO",
       },
       "component": "Page",
       "object": "RelatedArticles",
@@ -256,7 +250,7 @@ Array [
 ]
 `;
 
-exports[`4. should render three related articles 1`] = `
+exports[`4. should render one lead and two support related articles 1`] = `
 <View>
   <View>
     <Text
@@ -275,17 +269,19 @@ exports[`4. should render three related articles 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop1.io",
+                "uri": "https://crop169-1.io",
               }
             }
             imageRatio={1.7777777777777777}
             isReversed={false}
-            showImage={false}
+            showImage={true}
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="leading article"
+                >
+                  L E A D I N G   A R T I C L E
                 </Text>
               </View>
               <Text
@@ -308,7 +304,7 @@ exports[`4. should render three related articles 1`] = `
               </Text>
               <Text>
                 <Text>
-                  Camilla Long, Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -324,7 +320,7 @@ exports[`4. should render three related articles 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop2.io",
+                "uri": "https://crop169-2.io",
               }
             }
             imageRatio={1.7777777777777777}
@@ -333,8 +329,10 @@ exports[`4. should render three related articles 1`] = `
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="defence cuts"
+                >
+                  D E F E N C E   C U T S
                 </Text>
               </View>
               <Text
@@ -343,21 +341,12 @@ exports[`4. should render three related articles 1`] = `
               >
                 Second Headline
               </Text>
-              <View>
-                <Text>
-                  <Text>
-                    
-                    Summary 125
-                    ...
-                  </Text>
-                </Text>
-              </View>
               <Text>
                 January 17 2018, 12:00pm
               </Text>
               <Text>
                 <Text>
-                  Camilla Long, Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -373,7 +362,7 @@ exports[`4. should render three related articles 1`] = `
           <Card
             image={
               Object {
-                "uri": "https://crop3.io",
+                "uri": "https://crop169-3.io",
               }
             }
             imageRatio={1.7777777777777777}
@@ -382,8 +371,10 @@ exports[`4. should render three related articles 1`] = `
           >
             <View>
               <View>
-                <Text>
-                  BAYEUX TAPESTRY
+                <Text
+                  accessibilityLabel="defence cuts | analysis"
+                >
+                  D E F E N C E   C U T S   |   A N A L Y S I S
                 </Text>
               </View>
               <Text
@@ -392,21 +383,12 @@ exports[`4. should render three related articles 1`] = `
               >
                 Third Headline
               </Text>
-              <View>
-                <Text>
-                  <Text>
-                    
-                    Summary 125
-                    ...
-                  </Text>
-                </Text>
-              </View>
               <Text>
                 January 17 2018, 12:00pm
               </Text>
               <Text>
                 <Text>
-                  Camilla Long, Environment Editor
+                  Deborah Haynes
                 </Text>
               </Text>
             </View>
@@ -418,7 +400,7 @@ exports[`4. should render three related articles 1`] = `
 </View>
 `;
 
-exports[`4a. should send analytics for three related articles 1`] = `
+exports[`4a. should send analytics for one lead and two support related articles 1`] = `
 Array [
   Array [
     Object {
@@ -426,29 +408,29 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Deborah Haynes",
             "headline": "First Headline",
-            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
-            "role": "standard-1",
+            "role": "lead-and-two",
           },
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Deborah Haynes",
             "headline": "Second Headline",
-            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "id": "7bd4be00-d15e-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",
-            "role": "standard-2",
+            "role": "lead-and-two-supporting-1",
           },
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "byline": "Deborah Haynes",
             "headline": "Third Headline",
-            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",
-            "role": "standard-3",
+            "role": "lead-and-two-supporting-2",
           },
         ],
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "template": "DEFAULT",
+        "template": "LEAD_AND_TWO",
       },
       "component": "Page",
       "object": "RelatedArticles",

@@ -1,13 +1,14 @@
 import React from "react";
 import RelatedArticles from "../src/related-articles";
-import standard1ArticleFixture from "../fixtures/standard/1-article";
+import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article";
 import { createRelatedArticlesProps, testSummary } from "./shared-util";
 
-const standard1ArticleFixtureData = standard1ArticleFixture({
+const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
   url: "https://test.io",
   crop169: "https://crop.io",
   headline: "Test Headline",
-  summary125: testSummary(125)
+  summary125: testSummary(125),
+  summary160: testSummary(160)
 }).data;
 
 export default renderComponent => {
@@ -16,7 +17,7 @@ export default renderComponent => {
 
     const output = renderComponent(
       <RelatedArticles
-        {...createRelatedArticlesProps(standard1ArticleFixtureData, events)}
+        {...createRelatedArticlesProps(leadAndTwo1ArticleFixtureData, events)}
       />
     );
 

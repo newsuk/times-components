@@ -1,27 +1,5 @@
 import TestRenderer from "react-test-renderer";
-import {
-  addSerializers,
-  compose,
-  flattenStyleTransform,
-  minimaliseTransform,
-  minimalNativeTransform,
-  print
-} from "@times-components/jest-serializer";
+import "./shared-with-style.native";
 import shared from "./shared-std-with-style.base";
 
-jest.mock("@times-components/card", () => "Card");
-jest.mock("@times-components/link", () => "Link");
-
-export default () => {
-  addSerializers(
-    expect,
-    compose(
-      print,
-      minimalNativeTransform,
-      flattenStyleTransform,
-      minimaliseTransform((value, key) => key !== "style")
-    )
-  );
-
-  shared(TestRenderer.create);
-};
+export default () => shared(TestRenderer.create);

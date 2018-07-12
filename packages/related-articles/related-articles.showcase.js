@@ -10,9 +10,9 @@ import standard1RelatedArticleNoLabelFixture from "./fixtures/standard/1-article
 import standard1RelatedArticleNoBylineFixture from "./fixtures/standard/1-article-no-byline.json";
 import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles";
 import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles";
-import leadAndTwo1RelatedArticleFixture from "./fixtures/leadandtwo/1-article.json";
-import leadAndTwo2RelatedArticlesFixture from "./fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3RelatedArticlesFixture from "./fixtures/leadandtwo/3-articles.json";
+import leadAndTwo1RelatedArticleFixture from "./fixtures/leadandtwo/1-article.js";
+import leadAndTwo2RelatedArticlesFixture from "./fixtures/leadandtwo/2-articles.js";
+import leadAndTwo3RelatedArticlesFixture from "./fixtures/leadandtwo/3-articles.js";
 import opinionAndTwo1RelatedArticleFixture from "./fixtures/opinionandtwo/1-article.js";
 import opinionAndTwo2RelatedArticlesFixture from "./fixtures/opinionandtwo/2-articles.js";
 import opinionAndTwo3RelatedArticlesFixture from "./fixtures/opinionandtwo/3-articles.js";

@@ -1,22 +1,7 @@
 import React from "react";
 import RelatedArticles from "../src/related-articles";
 import opinionAndTwo1ArticleFixture from "../fixtures/opinionandtwo/1-article";
-
-const testSummary = summary => [
-  {
-    name: "paragraph",
-    attributes: {},
-    children: [
-      {
-        name: "text",
-        attributes: {
-          value: `Summary ${summary}`
-        },
-        children: []
-      }
-    ]
-  }
-];
+import { createRelatedArticlesProps, testSummary } from "./shared-util";
 
 const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   url: "https://test.io",
@@ -25,18 +10,6 @@ const opinionAndTwo1ArticleFixtureData = opinionAndTwo1ArticleFixture({
   summary125: testSummary(125),
   summary160: testSummary(160)
 }).data;
-
-const createRelatedArticlesProps = (
-  fixtureData,
-  action = () => {},
-  onPress = () => {}
-) => ({
-  analyticsStream: action,
-  articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main,
-  onPress
-});
 
 export default renderComponent => {
   it("should render the default styles", () => {

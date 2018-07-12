@@ -19,7 +19,7 @@ Array [
 ]
 `;
 
-exports[`2. render a single related article 1`] = `
+exports[`2. should render a single related article 1`] = `
 <View>
   <View>
     <Text
@@ -113,7 +113,7 @@ Array [
 ]
 `;
 
-exports[`3. render two related articles 1`] = `
+exports[`3. should render two related articles 1`] = `
 <View>
   <View>
     <Text
@@ -262,7 +262,7 @@ Array [
 ]
 `;
 
-exports[`4 should render three related articles 1`] = `
+exports[`4. should render three related articles 1`] = `
 <View>
   <View>
     <Text

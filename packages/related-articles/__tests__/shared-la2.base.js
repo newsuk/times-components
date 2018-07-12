@@ -1,136 +1,52 @@
-import React from "react";
-import mockDate from "mockdate";
-import { shallow } from "enzyme";
+import util, { testSummary } from "./shared-util";
+import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article";
+import leadAndTwo2ArticlesFixture from "../fixtures/leadandtwo/2-articles";
+import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles";
 
-import RelatedArticles from "../src/related-articles";
-import RelatedArticleItem from "../src/related-article-item";
+const leadAndTwo1ArticleFixtureData = leadAndTwo1ArticleFixture({
+  crop169: "https://crop169.io",
+  headline: "Test Headline",
+  summary125: testSummary(125),
+  url: "https://test.io"
+}).data;
 
-import leadAndTwo1ArticleFixture from "../fixtures/leadandtwo/1-article.json";
-import leadAndTwo2ArticlesFixture from "../fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3ArticlesFixture from "../fixtures/leadandtwo/3-articles.json";
+const leadAndTwo2ArticlesFixtureData = leadAndTwo2ArticlesFixture({
+  firstCrop169: "https://crop169-1.io",
+  firstHeadline: "First Headline",
+  firstSummary125: testSummary(125),
+  firstSummary175: testSummary(175),
+  firstUrl: "https://first.io",
+  secondCrop169: "https://crop169-2.io",
+  secondHeadline: "Second Headline",
+  secondSummary125: testSummary(125),
+  secondSummary175: testSummary(175),
+  secondUrl: "https://second.io"
+}).data;
 
-const createRelatedArticlesProps = (
-  fixtureData,
-  action = () => {},
-  onPress = () => {}
-) => ({
-  analyticsStream: action,
-  articles: fixtureData.relatedArticles,
-  template: fixtureData.relatedArticlesLayout.template,
-  mainId: fixtureData.relatedArticlesLayout.main,
-  onPress
+const leadAndTwo3ArticlesFixtureData = leadAndTwo3ArticlesFixture({
+  firstCrop169: "https://crop169-1.io",
+  firstHeadline: "First Headline",
+  firstSummary125: testSummary(125),
+  firstSummary175: testSummary(175),
+  firstUrl: "https://first.io",
+  secondCrop169: "https://crop169-2.io",
+  secondHeadline: "Second Headline",
+  secondSummary125: testSummary(125),
+  secondSummary175: testSummary(175),
+  secondUrl: "https://second.io",
+  thirdCrop169: "https://crop169-3.io",
+  thirdHeadline: "Third Headline",
+  thirdSummary125: testSummary(125),
+  thirdSummary175: testSummary(175),
+  thirdUrl: "https://third.io"
+}).data;
+
+export default util({
+  fixture1: leadAndTwo1ArticleFixtureData,
+  fixture2: leadAndTwo2ArticlesFixtureData,
+  fixture3: leadAndTwo3ArticlesFixtureData,
+  one: "one lead related article",
+  three: "one lead and two support related articles",
+  template: "OPINION_AND_TWO",
+  two: "one lead and one support related article"
 });
-
-export default renderComponent => {
-  const realIntl = Intl;
-
-  beforeEach(() => {
-    mockDate.set(1514764800000, 0);
-    global.Intl = {
-      DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
-    };
-    jest.useFakeTimers();
-  });
-
-  afterEach(() => {
-    mockDate.reset();
-    global.Intl = realIntl;
-  });
-
-  it("callback triggered on related article press", () => {
-    const onRelatedArticlePress = jest.fn();
-    const article = leadAndTwo1ArticleFixture.data.relatedArticles[0];
-
-    const wrapper = shallow(
-      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
-    );
-
-    const eventMock = {};
-    wrapper
-      .find("Link")
-      .at(0)
-      .simulate("press", eventMock);
-
-    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-      url: article.url
-    });
-  });
-
-  it("should render one lead related article", () => {
-    const events = jest.fn();
-
-    const output = renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo1ArticleFixture.data, events)}
-      />
-    );
-
-    expect(output).toMatchSnapshot("1 .should render one lead related article");
-  });
-
-  it("should send analytics for a lead related article", () => {
-    const events = jest.fn();
-
-    renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo1ArticleFixture.data, events)}
-      />
-    );
-
-    expect(events.mock.calls).toEqual([]);
-  });
-
-  it("should render one lead and one support related article", () => {
-    const events = jest.fn();
-
-    const output = renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo2ArticlesFixture.data, events)}
-      />
-    );
-
-    expect(output).toMatchSnapshot(
-      "2. should render one lead and one support related article"
-    );
-  });
-
-  it("should send analytics for one lead and one support related article", () => {
-    const events = jest.fn();
-
-    renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo2ArticlesFixture.data, events)}
-      />
-    );
-
-    expect(events.mock.calls).toEqual([]);
-  });
-
-  it("should render one lead and two support related articles", () => {
-    const events = jest.fn();
-
-    const output = renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo3ArticlesFixture.data, events)}
-      />
-    );
-
-    expect(output).toMatchSnapshot(
-      "3. should render one lead and two support related articles"
-    );
-  });
-
-  it("should send analytics for one lead and two support related articles", () => {
-    const events = jest.fn();
-
-    renderComponent(
-      <RelatedArticles
-        {...createRelatedArticlesProps(leadAndTwo3ArticlesFixture.data, events)}
-      />
-    );
-
-    expect(events.mock.calls).toEqual([]);
-  });
-};
