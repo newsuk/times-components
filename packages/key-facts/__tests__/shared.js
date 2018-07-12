@@ -4,9 +4,7 @@ import KeyFacts from "../src/key-facts";
 
 export default () => {
   it("renders correctly", () => {
-    const testInstance = TestRenderer.create(
-      <KeyFacts />
-    );
+    const testInstance = TestRenderer.create(<KeyFacts />);
 
     expect(testInstance.toJSON()).toMatchSnapshot();
   });
