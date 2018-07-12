@@ -15,7 +15,7 @@ const sharedStyle = {
   },
   container: {
     flexDirection: "row",
-    marginBottom: spacing(3)
+    marginBottom: spacing(4)
   },
   text: {
     color: colours.functional.primary,
