@@ -6,7 +6,6 @@ const KeyFactsResponsiveContainer = withResponsiveStyles(
   {
     mediumUp: () => `
     flex-direction: row;
-    flex-wrap: wrap;
   `
   },
   "KeyFactsResponsiveContainer"

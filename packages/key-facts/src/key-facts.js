@@ -45,7 +45,7 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
   return (
     <KeyFactsContainer>
       <KeyFactsTitle title={title} />
-      {items.map((item, index) => renderKeyFact(item, index))}
+      <View>{items.map((item, index) => renderKeyFact(item, index))}</View>
     </KeyFactsContainer>
   );
 };
