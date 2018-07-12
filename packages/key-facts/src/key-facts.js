@@ -4,13 +4,12 @@ import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup";
 import styles from "./styles";
 
-const KeyFacts = ({ data, onLinkPress }) => {
-  const { data: keyFactsData } = data;
-  const renderKeyFact = (keyFact, index) => (
+const KeyFacts = ({ items, onLinkPress, title }) => {
+  const renderKeyFact = (item, index) => (
     <View key={`key-facts-${index}`} style={styles.container}>
       <View style={styles.bullet} />
       <Text style={styles.text}>
-        {keyFact.children.map((ast, indx) =>
+        {item.children.map((ast, indx) =>
           renderTree(
             ast,
             {
@@ -40,7 +39,7 @@ const KeyFacts = ({ data, onLinkPress }) => {
     </View>
   );
 
-  return keyFactsData.map((keyFact, index) => renderKeyFact(keyFact, index));
+  return items.map((item, index) => renderKeyFact(item, index));
 };
 
 export default KeyFacts;

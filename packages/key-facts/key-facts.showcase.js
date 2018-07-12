@@ -3,6 +3,8 @@ import { LateralSpacingDecorator } from "@times-components/storybook";
 import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts.json";
 
+const { data: { children, attributes } } = data;
+
 export default {
   name: "Composed/Key Facts",
   children: [
@@ -13,7 +15,13 @@ export default {
     {
       type: "story",
       name: "default",
-      component: () => <KeyFacts data={data} onLinkPress={() => {}} />
+      component: () => (
+        <KeyFacts
+          items={children[0].children}
+          onLinkPress={() => {}}
+          title={attributes.title}
+        />
+      )
     }
   ]
 };
