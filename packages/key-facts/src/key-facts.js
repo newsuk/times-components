@@ -14,13 +14,6 @@ const KeyFacts = ({ data, onLinkPress }) => {
           renderTree(
             ast,
             {
-              italic(key, attributes, renderedChildren) {
-                return (
-                  <Text key={key} style={styles.italic}>
-                    {renderedChildren}
-                  </Text>
-                );
-              },
               link(key, attributes, children) {
                 const url = attributes.href;
                 return (

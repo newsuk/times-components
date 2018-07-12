@@ -65,15 +65,13 @@ const defaultRenderers = {
   }
 };
 
-export const renderTree = (tree, renderers, index = 0) => {
-  console.log("MARK UP INDEX: ", index);
-  return renderTreeWithoutDefaults(
+export const renderTree = (tree, renderers, index = 0) =>
+  renderTreeWithoutDefaults(
     tree,
     Object.assign({}, defaultRenderers, renderers),
     index ? `${index}` : "",
     index
   );
-}
 
 export const renderTrees = (trees, renderers) =>
   trees.map((tree, index) => renderTree(tree, renderers, index));
