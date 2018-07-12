@@ -1,95 +1,125 @@
 {
-  "data": [
-    {
-      "name": "listElement",
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value":
-              "Lorem ipsum dolor adipisicing sit amet eight times, police say "
-          },
-          "children": []
-        },
-        {
-          "name": "bold",
-          "attributes": {},
-          "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "loads of things "
-              },
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "italic",
-          "attributes": {},
-          "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "loads of things "
-              },
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "link",
-          "attributes": {
-            "href":
-              "https://www.thetimes.co.uk/article/if-trump-smashes-the-crockery-at-nato-may-will-have-to-pick-up-the-pieces-9hlm3bbp3",
-            "type": "article",
-            "canonicalId":
-              "if-trump-smashes-the-crockery-at-nato-may-will-have-to-pick-up-the-pieces-9hlm3bbp3"
-          },
-          "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "trump link"
-              },
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "text",
-          "attributes": {
-            "value": "."
-          },
-          "children": []
-        }
-      ]
+  "data": {
+    "name": "keyFacts",
+    "attributes": {
+      "title": "Sex, cocaine and sport: a volatile combination"
     },
-    {
-      "name": "listElement",
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value":
-              "lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    "children": [
+      {
+        "name": "unorderedList",
+        "children": [
+          {
+            "name": "listElement",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru"
+                },
+                "children": []
+              }
+            ]
           },
-          "children": []
-        }
-      ]
-    },
-    {
-      "name": "listElement",
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value":
-              "Halloumi can be eaten raw (ready from supermarkets), but for a better taste"
+          {
+            "name": "listElement",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Daniel Plaza, an "
+                },
+                "children": []
+              },
+              {
+                "name": "link",
+                "attributes": {
+                  "href": "https://www.thetimes.co.uk/topic/olympics",
+                  "target": "_blank",
+                  "type": "topic"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Olympic"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    " race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared"
+                },
+                "children": []
+              }
+            ]
           },
-          "children": []
-        }
-      ]
-    }
-  ]
+          {
+            "name": "listElement",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife \"at least four times\" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "listElement",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    "In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his "
+                },
+                "children": []
+              },
+              {
+                "name": "bold",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "penis"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    " enlargement medication. A possible two-year ban was reduced by "
+                },
+                "children": []
+              },
+              {
+                "name": "italic",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "three months"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
