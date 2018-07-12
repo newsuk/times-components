@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Text, View } from "react-native";
 import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup";
+import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
 import { propTypes, defaultProps } from "./key-facts-prop-types";
 import styles from "./styles";
@@ -42,10 +43,10 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
   );
 
   return (
-    <Fragment>
+    <KeyFactsContainer>
       <KeyFactsTitle title={title} />
       {items.map((item, index) => renderKeyFact(item, index))}
-    </Fragment>
+    </KeyFactsContainer>
   );
 };
 

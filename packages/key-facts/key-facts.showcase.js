@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView } from "react-native";
 import { LateralSpacingDecorator } from "@times-components/storybook";
@@ -16,12 +17,12 @@ export default {
     {
       type: "story",
       name: "default",
-      component: () => (
+      component: ({ text }) => (
         <ScrollView>
           <KeyFacts
             items={children[0].children}
             onLinkPress={() => {}}
-            title={attributes.title}
+            title={text("Key facts title: ", attributes.title)}
           />
         </ScrollView>
       )
