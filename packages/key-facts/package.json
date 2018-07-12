@@ -51,6 +51,7 @@
     "webpack": "4.6.0"
   },
   "dependencies": {
+    "@times-components/link": "1.0.12",
     "@times-components/markup": "1.0.21",
     "@times-components/styleguide": "1.1.11",
     "prop-types": "15.6.0"
