@@ -4,10 +4,12 @@ import {
   compose,
   flattenStyleTransform,
   minimaliseTransform,
-  print
+  print,
+  replacePropTransform
 } from "@times-components/jest-serializer";
-import { replaceLongKeys } from "@times-components/test-utils";
+import { hash } from "@times-components/test-utils";
 import shared from "./shared.base";
+import longKeysSet from "./shared-long-keys-set";
 
 export default () => {
   addSerializers(
@@ -16,7 +18,10 @@ export default () => {
       print,
       flattenStyleTransform,
       minimaliseTransform((value, key) => key === "opacity"),
-      replaceLongKeys(new Set(["d", "viewBox", "points"]))
+      replacePropTransform(
+        (value, key) =>
+          longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
+      )
     )
   );
 

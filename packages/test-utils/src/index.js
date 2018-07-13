@@ -1,4 +1,4 @@
 import iterator from "./iterator";
-import replaceLongKeys from "./replace-long-keys";
+import hash from "./hash";
 
-export { iterator, replaceLongKeys };
+export { iterator, hash };

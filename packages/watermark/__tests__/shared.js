@@ -5,9 +5,10 @@ import {
   compose,
   enzymeTreeSerializer,
   minimalNativeTransform,
-  print
+  print,
+  replacePropTransform
 } from "@times-components/jest-serializer";
-import { replaceLongKeys } from "@times-components/test-utils";
+import { hash } from "@times-components/test-utils";
 import Watermark from "../src/watermark";
 
 jest.mock("../assets/watermark.png", () => ({ uri: "watermark-asset" }));
@@ -16,7 +17,11 @@ export default () => {
   addSerializers(
     expect,
     enzymeTreeSerializer(),
-    compose(print, minimalNativeTransform, replaceLongKeys(new Set(["d"])))
+    compose(
+      print,
+      minimalNativeTransform,
+      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+    )
   );
 
   it("1. watermark", () => {

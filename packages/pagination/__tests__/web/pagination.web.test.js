@@ -7,9 +7,10 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   rnwTransform,
-  stylePrinter
+  stylePrinter,
+  replacePropTransform
 } from "@times-components/jest-serializer";
-import { replaceLongKeys } from "@times-components/test-utils";
+import { hash } from "@times-components/test-utils";
 import Pagination from "../../src/pagination";
 
 describe("web", () => {
@@ -24,7 +25,7 @@ describe("web", () => {
         (value, key) =>
           key === "style" || key === "className" || key === "data-testid"
       ),
-      replaceLongKeys(new Set(["d"]))
+      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
     )
   );
 
