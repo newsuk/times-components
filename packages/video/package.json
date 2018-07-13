@@ -51,7 +51,7 @@
     "@times-components/jest-configurator": "1.0.9",
     "@times-components/jest-serializer": "1.0.9",
     "@times-components/storybook": "1.1.6",
-    "@times-components/test-utils": "0.1.1",
+    "@times-components/test-utils": "0.1.2",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-plugin-add-react-displayname": "0.0.5",
