@@ -10,10 +10,10 @@ import styles from "./styles";
 
 const KeyFacts = ({ items, onLinkPress, title }) => {
   const renderTitle = () => {
-    if(!title) return null;
+    if (!title) return null;
 
-    return <KeyFactsTitle title={title} />
-  }
+    return <KeyFactsTitle title={title} />;
+  };
 
   const renderKeyFact = (item, index) => (
     <View key={`key-facts-${index}`} style={styles.container}>
@@ -51,9 +51,7 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
 
   return (
     <KeyFactsContainer>
-      {
-        renderTitle()
-      }
+      {renderTitle()}
       <KeyFactsWrapper>
         {items.map((item, index) => renderKeyFact(item, index))}
       </KeyFactsWrapper>
