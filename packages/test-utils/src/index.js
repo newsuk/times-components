@@ -1,8 +1,4 @@
-/* global it */
-const iterator = tests =>
-  tests.forEach(({ name, test }, indx) => {
-    const index = indx + 1;
-    it(`${index}. ${name.toLowerCase()}`, () => test());
-  });
+import iterator from "./iterator";
+import hash from "./hash";
 
-export default iterator;
+export { iterator, hash };

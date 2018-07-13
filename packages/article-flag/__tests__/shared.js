@@ -4,7 +4,7 @@ import {
   addSerializers,
   enzymeRootSerializer
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import {
   NewArticleFlag,
   UpdatedArticleFlag,

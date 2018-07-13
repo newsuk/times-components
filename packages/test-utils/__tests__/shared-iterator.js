@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { shallow } from "enzyme";
-import iterator from "../src/index";
+import { iterator } from "../src/index";
 
 const exampleTest = ordinal => {
   const TextComponent = <Text>This is the {ordinal} test</Text>;

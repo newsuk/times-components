@@ -13,7 +13,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import VideoLabel from "../../src/video-label";
 
 const styles = [

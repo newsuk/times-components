@@ -4,10 +4,12 @@ import {
   compose,
   enzymeRenderedSerializer,
   minimaliseTransform,
-  print
+  print,
+  replacePropTransform
 } from "@times-components/jest-serializer";
+import { hash } from "@times-components/test-utils";
 import shared from "./shared.base";
-import replaceLongKeys from "./utils";
+import longKeysSet from "./shared-long-keys-set";
 
 export default () => {
   addSerializers(
@@ -16,7 +18,10 @@ export default () => {
     compose(
       print,
       minimaliseTransform((value, key) => key === "style"),
-      replaceLongKeys
+      replacePropTransform(
+        (value, key) =>
+          longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
+      )
     )
   );
 

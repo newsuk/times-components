@@ -13,7 +13,7 @@ import {
   stylePrinter,
   rnwTransform
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import ArticleFlag from "../../src/article-flag";
 
 addSerializers(

@@ -8,7 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 

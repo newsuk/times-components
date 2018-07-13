@@ -6,7 +6,7 @@ import {
   print,
   rnwTransform
 } from "@times-components/jest-serializer";
-import shared from "../shared";
+import shared from "../shared-iterator";
 
 addSerializers(
   expect,

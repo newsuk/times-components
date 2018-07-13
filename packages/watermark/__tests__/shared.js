@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { createHash } from "crypto";
 import {
   addSerializers,
   compose,
@@ -9,16 +8,12 @@ import {
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
+import { hash } from "@times-components/test-utils";
 import Watermark from "../src/watermark";
 
 jest.mock("../assets/watermark.png", () => ({ uri: "watermark-asset" }));
 
 export default () => {
-  const hash = v =>
-    createHash("md5")
-      .update(v)
-      .digest("hex");
-
   addSerializers(
     expect,
     enzymeTreeSerializer(),
