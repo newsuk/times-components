@@ -1,24 +1,18 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
-import { createHash } from "crypto";
 import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  replacePropTransform,
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { replaceLongKeys } from "@times-components/test-utils";
 import Pagination from "../../src/pagination";
 
 describe("web", () => {
-  const hash = v =>
-    createHash("md5")
-      .update(v)
-      .digest("hex");
-
   addSerializers(
     expect,
     enzymeRenderedSerializer(),
@@ -30,7 +24,7 @@ describe("web", () => {
         (value, key) =>
           key === "style" || key === "className" || key === "data-testid"
       ),
-      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+      replaceLongKeys(new Set(["d"]))
     )
   );
 
