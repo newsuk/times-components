@@ -9,6 +9,12 @@ import { propTypes, defaultProps } from "./key-facts-prop-types";
 import styles from "./styles";
 
 const KeyFacts = ({ items, onLinkPress, title }) => {
+  const renderTitle = () => {
+    if(!title) return null;
+
+    return <KeyFactsTitle title={title} />
+  }
+
   const renderKeyFact = (item, index) => (
     <View key={`key-facts-${index}`} style={styles.container}>
       <View style={styles.bullet} />
@@ -45,7 +51,9 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
 
   return (
     <KeyFactsContainer>
-      <KeyFactsTitle title={title} />
+      {
+        renderTitle()
+      }
       <KeyFactsWrapper>
         {items.map((item, index) => renderKeyFact(item, index))}
       </KeyFactsWrapper>
