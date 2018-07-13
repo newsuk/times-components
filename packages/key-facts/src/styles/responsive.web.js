@@ -1,5 +1,6 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 export const KeyFactsResponsiveContainer = withResponsiveStyles(
   View,
@@ -16,8 +17,19 @@ export const KeyFactsResponsiveWrapper = withResponsiveStyles(
   View,
   {
     mediumUp: () => `
-    width: 70%;
+    width: 80%;
   `
   },
   "KeyFactsResponsiveWrapper"
+);
+
+export const KeyFactsTitleResponsive = withResponsiveStyles(
+  Text,
+  {
+    mediumUp: () => `
+    padding-right: ${spacing(4)};
+    width: 20%;
+  `
+  },
+  "KeyFactsTitleResponsive"
 );

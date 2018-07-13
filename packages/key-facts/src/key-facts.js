@@ -46,7 +46,9 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
   return (
     <KeyFactsContainer>
       <KeyFactsTitle title={title} />
-      <KeyFactsWrapper>{items.map((item, index) => renderKeyFact(item, index))}</KeyFactsWrapper>
+      <KeyFactsWrapper>
+        {items.map((item, index) => renderKeyFact(item, index))}
+      </KeyFactsWrapper>
     </KeyFactsContainer>
   );
 };
