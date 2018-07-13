@@ -6,17 +6,9 @@ const hash = v =>
     .update(v)
     .digest("hex");
 
-// const longKeys = new Set(["d", "viewBox", "points"]);
-
-const replaceLongKeys = longKeysSet => {
-  if (longKeysSet instanceof Set) {
-    return replacePropTransform(
-      (value, key) =>
-        longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
-    );
-  }
-
-  return null;
-};
+const replaceLongKeys = longKeysSet =>
+  replacePropTransform(
+    (value, key) => (longKeysSet.has(key) ? hash(JSON.stringify(value)) : value)
+  );
 
 export default replaceLongKeys;
