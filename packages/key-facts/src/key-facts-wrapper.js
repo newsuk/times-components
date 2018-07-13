@@ -1,11 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import PropTypes from "prop-types";
+import propTypes from "./key-facts-container-prop-types";
 
 const KeyFactsWrapper = ({ children }) => <View>{children}</View>;
 
-KeyFactsWrapper.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired
-};
+KeyFactsWrapper.propTypes = propTypes;
 
 export default KeyFactsWrapper;

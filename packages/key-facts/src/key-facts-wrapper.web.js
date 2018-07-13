@@ -1,13 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { KeyFactsResponsiveWrapper } from "./styles/responsive";
+import propTypes from "./key-facts-container-prop-types";
 
 const KeyFactsWrapper = ({ children }) => (
   <KeyFactsResponsiveWrapper>{children}</KeyFactsResponsiveWrapper>
 );
 
-KeyFactsWrapper.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired
-};
+KeyFactsWrapper.propTypes = propTypes;
 
 export default KeyFactsWrapper;
