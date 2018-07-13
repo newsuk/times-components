@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ dyyjqL"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ VvueK"
+  >
+    SEX, COCAINE AND SPORT: A VOLATILE COMBINATION
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA"
+  >
+    <div>
+      <div />
+      <div>
+        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        Daniel Plaza, an 
+        <a
+          href="https://www.thetimes.co.uk/topic/olympics"
+          role="link"
+        >
+          Olympic
+        </a>
+         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        <strong>
+          penis
+        </strong>
+         enlargement medication. A possible two-year ban was reduced by 
+        <em>
+          three months
+        </em>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. key facts without title 1`] = `
+<div
+  className="responsive-styles__component-fbPFZZ dyyjqL"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA"
+  >
+    <div>
+      <div />
+      <div>
+        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        Daniel Plaza, an 
+        <a
+          href="https://www.thetimes.co.uk/topic/olympics"
+          role="link"
+        >
+          Olympic
+        </a>
+         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        <strong>
+          penis
+        </strong>
+         enlargement medication. A possible two-year ban was reduced by 
+        <em>
+          three months
+        </em>
+      </div>
+    </div>
+  </div>
+</div>
+`;
