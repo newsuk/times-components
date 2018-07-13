@@ -7,12 +7,13 @@ import data from "./fixtures/key-facts.json";
 
 const { data: { children, attributes } } = data;
 
-const renderKeyFacts = text =>
+const renderKeyFacts = text => (
   <KeyFacts
     items={children[0].children}
     onLinkPress={() => {}}
     title={text("Key facts title: ", attributes.title)}
   />
+);
 
 export default {
   name: "Composed/Key Facts",
@@ -27,9 +28,7 @@ export default {
       platform: "native",
       component: ({ text }) => (
         <ScrollView style={{ width: "100%" }}>
-          {
-            renderKeyFacts(text)
-          }
+          {renderKeyFacts(text)}
         </ScrollView>
       )
     },

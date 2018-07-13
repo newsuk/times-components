@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+<style>
+{
+  "S1": {
+    "color": "inherit",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "12px",
+    "font-weight": "400",
+    "letter-spacing": "1.2px",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S10": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S11": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S12": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S13": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S14": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S15": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S16": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S2": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S3": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S4": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S5": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S6": {
+    "background-color": "transparent",
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S7": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S8": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S9": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+}
+</style>
+
+<div
+  className="responsive-styles__component-fbPFZZ dyyjqL S16"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ VvueK S1"
+  >
+    SEX, COCAINE AND SPORT: A VOLATILE COMBINATION
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA S15"
+  >
+    <div
+      className="S4"
+    >
+      <div
+        className="S2"
+      />
+      <div
+        className="S3"
+      >
+        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+      </div>
+    </div>
+    <div
+      className="S8"
+    >
+      <div
+        className="S5"
+      />
+      <div
+        className="S7"
+      >
+        Daniel Plaza, an 
+        <a
+          className="S6"
+          href="https://www.thetimes.co.uk/topic/olympics"
+          role="link"
+        >
+          Olympic
+        </a>
+         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
+      </div>
+    </div>
+    <div
+      className="S11"
+    >
+      <div
+        className="S9"
+      />
+      <div
+        className="S10"
+      >
+        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+      </div>
+    </div>
+    <div
+      className="S14"
+    >
+      <div
+        className="S12"
+      />
+      <div
+        className="S13"
+      >
+        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        <strong>
+          penis
+        </strong>
+         enlargement medication. A possible two-year ban was reduced by 
+        <em>
+          three months
+        </em>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. key facts without title 1`] = `
+<style>
+{
+  "S1": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S10": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S11": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S12": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S13": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S14": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S15": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S2": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S3": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S4": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S5": {
+    "background-color": "transparent",
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S6": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+  "S7": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S8": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S9": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+  },
+}
+</style>
+
+<div
+  className="responsive-styles__component-fbPFZZ dyyjqL S15"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA S14"
+  >
+    <div
+      className="S3"
+    >
+      <div
+        className="S1"
+      />
+      <div
+        className="S2"
+      >
+        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+      </div>
+    </div>
+    <div
+      className="S7"
+    >
+      <div
+        className="S4"
+      />
+      <div
+        className="S6"
+      >
+        Daniel Plaza, an 
+        <a
+          className="S5"
+          href="https://www.thetimes.co.uk/topic/olympics"
+          role="link"
+        >
+          Olympic
+        </a>
+         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
+      </div>
+    </div>
+    <div
+      className="S10"
+    >
+      <div
+        className="S8"
+      />
+      <div
+        className="S9"
+      >
+        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+      </div>
+    </div>
+    <div
+      className="S13"
+    >
+      <div
+        className="S11"
+      />
+      <div
+        className="S12"
+      >
+        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        <strong>
+          penis
+        </strong>
+         enlargement medication. A possible two-year ban was reduced by 
+        <em>
+          three months
+        </em>
+      </div>
+    </div>
+  </div>
+</div>
+`;
