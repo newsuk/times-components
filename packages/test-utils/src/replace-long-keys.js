@@ -8,7 +8,7 @@ const hash = v =>
 
 // const longKeys = new Set(["d", "viewBox", "points"]);
 
-export default longKeysSet => {
+const replaceLongKeys = longKeysSet => {
   if (longKeysSet instanceof Set) {
     return replacePropTransform(
       (value, key) =>
@@ -18,3 +18,5 @@ export default longKeysSet => {
 
   return null;
 };
+
+export default replaceLongKeys;
