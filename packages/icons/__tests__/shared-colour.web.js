@@ -8,8 +8,8 @@ import {
   print,
   replaceTransform
 } from "@times-components/jest-serializer";
+import { replaceLongKeys } from "@times-components/test-utils";
 import shared from "./shared-colour.base";
-import replaceLongKeys from "./utils";
 
 export default () => {
   addSerializers(
@@ -21,7 +21,7 @@ export default () => {
         svg: justChildren
       }),
       minimaliseTransform((value, key) => key !== "fill" && key !== "stroke"),
-      replaceLongKeys
+      replaceLongKeys(new Set(["d", "viewBox", "points"]))
     )
   );
 

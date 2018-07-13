@@ -8,8 +8,8 @@ import {
   propsNoChildren,
   replaceTransform
 } from "@times-components/jest-serializer";
+import { replaceLongKeys } from "@times-components/test-utils";
 import shared from "./shared-dim.base";
-import replaceLongKeys from "./utils";
 
 export default () => {
   addSerializers(
@@ -21,7 +21,7 @@ export default () => {
         svg: propsNoChildren
       }),
       minimaliseTransform((value, key) => key === "style" || key === "viewBox"),
-      replaceLongKeys
+      replaceLongKeys(new Set(["d", "viewBox", "points"]))
     )
   );
 

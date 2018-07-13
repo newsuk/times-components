@@ -6,8 +6,8 @@ import {
   minimaliseTransform,
   print
 } from "@times-components/jest-serializer";
+import { replaceLongKeys } from "@times-components/test-utils";
 import shared from "./shared.base";
-import replaceLongKeys from "./utils";
 
 export default () => {
   addSerializers(
@@ -16,7 +16,7 @@ export default () => {
       print,
       flattenStyleTransform,
       minimaliseTransform((value, key) => key === "opacity"),
-      replaceLongKeys
+      replaceLongKeys(new Set(["d", "viewBox", "points"]))
     )
   );
 
