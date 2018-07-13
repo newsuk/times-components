@@ -8,7 +8,7 @@ import {
   print,
   rnwTransform
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
