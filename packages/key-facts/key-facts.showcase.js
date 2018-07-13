@@ -18,7 +18,7 @@ export default {
       type: "story",
       name: "default",
       component: ({ text }) => (
-        <ScrollView>
+        <ScrollView style={{ width: "100%" }}>
           <KeyFacts
             items={children[0].children}
             onLinkPress={() => {}}

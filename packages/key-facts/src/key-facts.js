@@ -4,6 +4,7 @@ import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup";
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
+import KeyFactsWrapper from "./key-facts-wrapper";
 import { propTypes, defaultProps } from "./key-facts-prop-types";
 import styles from "./styles";
 
@@ -45,7 +46,7 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
   return (
     <KeyFactsContainer>
       <KeyFactsTitle title={title} />
-      <View>{items.map((item, index) => renderKeyFact(item, index))}</View>
+      <KeyFactsWrapper>{items.map((item, index) => renderKeyFact(item, index))}</KeyFactsWrapper>
     </KeyFactsContainer>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import KeyFactsResponsiveContainer from "./styles/responsive";
+import { KeyFactsResponsiveContainer } from "./styles/responsive";
 
 const KeyFactsContainer = ({ children }) => (
   <KeyFactsResponsiveContainer>{children}</KeyFactsResponsiveContainer>
