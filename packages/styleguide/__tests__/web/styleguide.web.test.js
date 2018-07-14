@@ -1,7 +1,7 @@
 import shared from "../shared";
 import { colours, fonts, spacing } from "../../src/styleguide";
 
-describe("Styleguide tests for web", () => {
+describe("web", () => {
   it("should have an object of section colours", () => {
     expect(typeof colours.section).toBe("object");
   });

@@ -1,3 +1,12 @@
-const { addSerializers, rnw } = require("@times-components/jest-serializer");
+const {
+  addSerializers,
+  compose,
+  minimalWebTransform,
+  print,
+  rnwTransform
+} = require("@times-components/jest-serializer");
 
-addSerializers(expect, rnw());
+addSerializers(expect, compose(print, minimalWebTransform, rnwTransform()));
+
+// eslint-disable-next-line global-require
+require("jest-styled-components");
