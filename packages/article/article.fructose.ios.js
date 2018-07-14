@@ -3,7 +3,7 @@
 import React from "react";
 import Article from "./src/article";
 
-const fullArticleFixture = require("./fixtures/full-article.json");
+const fullArticleFixture = require("./fixtures/full-article.js");
 
 const props = {
   ...fullArticleFixture.data,

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. analytics when rendering an Article page 1`] = `
+Object {
+  "action": "Viewed",
+  "attrs": Object {
+    "byline": "Camilla Long",
+    "eventTime": "2018-01-01T00:00:00.000Z",
+    "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+    "publishedTime": "2015-03-13T18:54:58.000Z",
+    "topics": Array [
+      Object {
+        "name": "Football",
+        "slug": "football",
+      },
+      Object {
+        "name": "Manchester United FC",
+        "slug": "manchester-united",
+      },
+      Object {
+        "name": "Chelsea FC",
+        "slug": "chelsea",
+      },
+      Object {
+        "name": "Arsenal",
+        "slug": "arsenal",
+      },
+      Object {
+        "name": "Rugby Union",
+        "slug": "rugby-union",
+      },
+    ],
+  },
+  "component": "Page",
+  "object": "Article",
+}
+`;

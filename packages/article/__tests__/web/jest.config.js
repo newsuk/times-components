@@ -1,5 +1,4 @@
 const jestConfigurator = require("@times-components/jest-configurator").default;
-const path = require("path");
 
 module.exports = jestConfigurator("web", __dirname, {
   coverageIgnoreGlobs: [
@@ -7,6 +6,5 @@ module.exports = jestConfigurator("web", __dirname, {
     "article-lead-asset-image.js",
     "article-lead-asset-video.js",
     "data-helper.js"
-  ],
-  setupTestFrameworkScriptFile: path.join(__dirname, "./serializers")
+  ]
 });

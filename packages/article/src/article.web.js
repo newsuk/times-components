@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleBody from "./article-body/article-body";
@@ -25,126 +25,119 @@ const adStyle = {
   marginBottom: 0
 };
 
-class ArticlePage extends Component {
-  static renderArticle(
-    articleData,
-    onAuthorPress,
-    onLinkPress,
-    onRelatedArticlePress,
-    onTopicPress
-  ) {
-    const {
-      headline,
-      flags,
-      standfirst,
-      label,
-      byline,
-      publishedTime,
-      publicationName,
-      content,
-      section,
-      url,
-      topics,
-      relatedArticles,
-      relatedArticlesLayout
-    } = articleData;
-    const leadAssetProps = getLeadAsset(articleData);
-    const displayRelatedArticles =
-      relatedArticlesLayout && relatedArticlesLayout.template ? (
-        <RelatedArticles
-          analyticsStream={() => {}}
-          articles={relatedArticles}
-          mainId={relatedArticlesLayout.main}
-          onPress={onRelatedArticlePress}
-          template={relatedArticlesLayout.template}
+const renderArticle = (
+  articleData,
+  analyticsStream,
+  onAuthorPress,
+  onRelatedArticlePress,
+  onTopicPress
+) => {
+  const {
+    headline,
+    flags,
+    standfirst,
+    label,
+    byline,
+    publishedTime,
+    publicationName,
+    content,
+    section,
+    url,
+    topics,
+    relatedArticles,
+    relatedArticlesLayout
+  } = articleData;
+  const leadAssetProps = getLeadAsset(articleData);
+  const displayRelatedArticles =
+    relatedArticlesLayout && relatedArticlesLayout.template ? (
+      <RelatedArticles
+        analyticsStream={analyticsStream}
+        articles={relatedArticles}
+        mainId={relatedArticlesLayout.main}
+        onPress={onRelatedArticlePress}
+        template={relatedArticlesLayout.template}
+      />
+    ) : null;
+
+  return (
+    <Fragment>
+      <HeaderAdContainer key="headerAd">
+        <Ad
+          contextUrl={url}
+          section={section}
+          slotName="header"
+          style={adStyle}
         />
-      ) : null;
-
-    return (
-      <Fragment>
-        <HeaderAdContainer key="headerAd">
-          <Ad
-            contextUrl={url}
-            section={section}
-            slotName="header"
-            style={adStyle}
+      </HeaderAdContainer>
+      <MainContainer>
+        <HeaderContainer>
+          <ArticleHeader
+            flags={flags}
+            headline={headline}
+            isVideo={leadAssetProps.isVideo}
+            label={label}
+            standfirst={standfirst}
           />
-        </HeaderAdContainer>
-        <MainContainer>
-          <HeaderContainer>
-            <ArticleHeader
-              flags={flags}
-              headline={headline}
-              isVideo={leadAssetProps.isVideo}
-              label={label}
-              standfirst={standfirst}
-            />
-          </HeaderContainer>
-          <MetaContainer>
-            <ArticleMeta
-              byline={byline}
-              onAuthorPress={onAuthorPress}
-              publicationName={publicationName}
-              publishedTime={publishedTime}
-            />
-            <ArticleTopics
-              device="DESKTOP"
-              onPress={onTopicPress}
-              topics={topics}
-            />
-          </MetaContainer>
-          <LeadAssetContainer>
-            <LeadAssetComponent {...leadAssetProps} />
-          </LeadAssetContainer>
-          <BodyContainer>
-            <ArticleBody
-              content={content}
-              contextUrl={url}
-              onLinkPress={onLinkPress}
-              section={section}
-            />
-          </BodyContainer>
-        </MainContainer>
-        <ArticleTopics onPress={onTopicPress} topics={topics} />
-        {displayRelatedArticles}
-        <Ad contextUrl={url} section={section} slotName="pixel" />
-        <Ad contextUrl={url} section={section} slotName="pixelteads" />
-        <Ad contextUrl={url} section={section} slotName="pixelskin" />
-      </Fragment>
-    );
+        </HeaderContainer>
+        <MetaContainer>
+          <ArticleMeta
+            byline={byline}
+            onAuthorPress={onAuthorPress}
+            publicationName={publicationName}
+            publishedTime={publishedTime}
+          />
+          <ArticleTopics
+            device="DESKTOP"
+            onPress={onTopicPress}
+            topics={topics}
+          />
+        </MetaContainer>
+        <LeadAssetContainer>
+          <LeadAssetComponent {...leadAssetProps} />
+        </LeadAssetContainer>
+        <BodyContainer>
+          <ArticleBody content={content} contextUrl={url} section={section} />
+        </BodyContainer>
+      </MainContainer>
+      <ArticleTopics onPress={onTopicPress} topics={topics} />
+      {displayRelatedArticles}
+      <Ad contextUrl={url} section={section} slotName="pixel" />
+      <Ad contextUrl={url} section={section} slotName="pixelteads" />
+      <Ad contextUrl={url} section={section} slotName="pixelskin" />
+    </Fragment>
+  );
+};
+
+const ArticlePage = ({
+  adConfig,
+  analyticsStream,
+  article,
+  error,
+  isLoading,
+  onAuthorPress,
+  onRelatedArticlePress,
+  onTopicPress
+}) => {
+  if (error) {
+    return <ArticleError {...error} />;
   }
 
-  render() {
-    const {
-      error,
-      isLoading,
-      onAuthorPress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress
-    } = this.props;
-
-    if (error) {
-      return <ArticleError {...error} />;
-    }
-
-    if (isLoading) {
-      return <ArticleLoading />;
-    }
-
-    return (
-      <AdComposer adConfig={this.props.adConfig}>
-        {ArticlePage.renderArticle(
-          this.props.article,
-          onAuthorPress,
-          onLinkPress,
-          onRelatedArticlePress,
-          onTopicPress
-        )}
-      </AdComposer>
-    );
+  if (isLoading) {
+    return <ArticleLoading />;
   }
-}
+
+  return (
+    <AdComposer adConfig={adConfig}>
+      {renderArticle(
+        article,
+        analyticsStream,
+        onAuthorPress,
+        onRelatedArticlePress,
+        onTopicPress
+      )}
+    </AdComposer>
+  );
+};
 
 ArticlePage.propTypes = articlePropTypes;
 ArticlePage.defaultProps = articleDefaultProps;

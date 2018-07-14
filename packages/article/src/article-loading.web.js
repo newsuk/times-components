@@ -1,5 +1,5 @@
 import React from "react";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -10,8 +10,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default () => (
-  <View style={styles.container}>
-    <ActivityIndicator size="large" />
-  </View>
-);
+export default () => <Text style={styles.container}>Loading ...</Text>;
