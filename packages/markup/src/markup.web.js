@@ -49,15 +49,6 @@ const defaultRenderers = {
         key={key}
       />
     );
-  },
-  keyFacts(key, attributes, children) {
-    return (
-      <PullQuote
-        items={children[0].children}
-        key={key}
-        title={attributes.title}
-      />
-    );
   }
 };
 
