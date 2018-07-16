@@ -36,4 +36,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&knob-Key%20facts%20title%3A%20=New%20Brexit%20referendum&selectedKind=Composed%2FKey%20Facts&selectedStory=default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available key facts templates.
-
