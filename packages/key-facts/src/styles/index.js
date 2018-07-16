@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colours.functional.primary,
+    fontFamily: fonts.body,
     fontSize: fontSizes.secondary,
     lineHeight: 30,
     marginTop: -8,

@@ -15,7 +15,7 @@ exports[`1. key facts with title 1`] = `
   },
   "S10": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -52,7 +52,7 @@ exports[`1. key facts with title 1`] = `
   },
   "S13": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -109,7 +109,7 @@ exports[`1. key facts with title 1`] = `
   },
   "S3": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -155,7 +155,7 @@ exports[`1. key facts with title 1`] = `
   },
   "S7": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -317,7 +317,7 @@ exports[`2. key facts without title 1`] = `
   },
   "S12": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -358,7 +358,7 @@ exports[`2. key facts without title 1`] = `
   },
   "S2": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -404,7 +404,7 @@ exports[`2. key facts without title 1`] = `
   },
   "S6": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
@@ -441,7 +441,7 @@ exports[`2. key facts without title 1`] = `
   },
   "S9": {
     "color": "rgba(51,51,51,1)",
-    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-family": "TimesDigitalW04",
     "font-size": "16px",
     "line-height": "30px",
     "margin-bottom": "0px",
