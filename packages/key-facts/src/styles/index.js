@@ -20,13 +20,16 @@ const styles = StyleSheet.create({
     paddingLeft: 1,
     width: "100%"
   },
+  link: {
+    color: colours.functional.action
+  },
   text: {
     color: colours.functional.primary,
-    fontFamily: fonts.body,
     fontSize: fontSizes.secondary,
     lineHeight: 30,
     marginTop: -8,
-    paddingLeft: spacing(3)
+    paddingLeft: spacing(3),
+    width: "95%"
   },
   title: {
     fontFamily: fonts.supporting,

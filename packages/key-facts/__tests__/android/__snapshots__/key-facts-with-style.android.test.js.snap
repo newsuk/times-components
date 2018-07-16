@@ -55,11 +55,11 @@ Array [
     },
     "IS14": {
       "color": "#333333",
-      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
       "paddingLeft": 15,
+      "width": "95%",
     },
     "IS15": {
       "flexDirection": "row",
@@ -69,11 +69,11 @@ Array [
     },
     "IS2": {
       "color": "#333333",
-      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
       "paddingLeft": 15,
+      "width": "95%",
     },
     "IS3": {
       "flexDirection": "row",
@@ -96,15 +96,17 @@ Array [
       {
         "textDecorationLine": "underline",
       },
-      {},
+      {
+        "color": "#006699",
+      },
     ],
     "IS6": {
       "color": "#333333",
-      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
       "paddingLeft": 15,
+      "width": "95%",
     },
     "IS7": {
       "flexDirection": "row",
@@ -125,11 +127,11 @@ Array [
     },
     "IS9": {
       "color": "#333333",
-      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
       "paddingLeft": 15,
+      "width": "95%",
     },
   }
 </style>
@@ -213,11 +215,11 @@ exports[`2. key facts without title 1`] = `
   },
   "IS14": {
     "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
     "paddingLeft": 15,
+    "width": "95%",
   },
   "IS15": {
     "flexDirection": "row",
@@ -227,11 +229,11 @@ exports[`2. key facts without title 1`] = `
   },
   "IS2": {
     "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
     "paddingLeft": 15,
+    "width": "95%",
   },
   "IS3": {
     "flexDirection": "row",
@@ -254,15 +256,17 @@ exports[`2. key facts without title 1`] = `
     {
       "textDecorationLine": "underline",
     },
-    {},
+    {
+      "color": "#006699",
+    },
   ],
   "IS6": {
     "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
     "paddingLeft": 15,
+    "width": "95%",
   },
   "IS7": {
     "flexDirection": "row",
@@ -283,11 +287,11 @@ exports[`2. key facts without title 1`] = `
   },
   "IS9": {
     "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
     "paddingLeft": 15,
+    "width": "95%",
   },
 }
 </style>

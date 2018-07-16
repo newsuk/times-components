@@ -35,6 +35,7 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
                         canonicalId: attributes.canonicalId
                       })
                     }
+                    style={styles.link}
                     url={url}
                   >
                     {children}
