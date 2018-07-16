@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import KeyFacts from "../src/key-facts";
-import data from "../fixtures/key-facts.json";
+import data from "../fixtures/key-facts-tests.json";
 
 const { data: { children, attributes } } = data;
 

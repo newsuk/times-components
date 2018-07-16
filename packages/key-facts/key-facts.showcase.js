@@ -3,7 +3,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import KeyFacts from "./src/key-facts";
-import data from "./fixtures/key-facts.json";
+import data from "./fixtures/key-facts-showcase.json";
 
 const { data: { children, attributes } } = data;
 
