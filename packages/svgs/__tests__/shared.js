@@ -17,7 +17,9 @@ export default () => {
   });
 
   it("renders a Path with no fill", () => {
-    const testInstance = TestRenderer.create(<Path d="M211.26076,54" fill="none" />);
+    const testInstance = TestRenderer.create(
+      <Path d="M211.26076,54" fill="none" />
+    );
 
     expect(testInstance).toMatchSnapshot("2. renders a Path with no fill");
   });
