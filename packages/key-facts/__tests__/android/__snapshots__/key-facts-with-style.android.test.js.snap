@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+Array [
+  <style>
+{
+    "IS1": {
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 12,
+      "fontWeight": "400",
+      "letterSpacing": 1.2,
+      "marginBottom": 20,
+    },
+  }
+</style>
+
+<Text>
+    E X A M P L E   T I T L E
+  </Text>,
+  <style>
+{
+    "IS1": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS10": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS11": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS12": {
+      "fontWeight": "bold",
+    },
+    "IS13": {
+      "fontStyle": "italic",
+    },
+    "IS14": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+      "width": "95%",
+    },
+    "IS15": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS2": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+      "width": "95%",
+    },
+    "IS3": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS4": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS5": Array [
+      {
+        "textDecorationLine": "underline",
+      },
+      {
+        "color": "#006699",
+      },
+    ],
+    "IS6": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+      "width": "95%",
+    },
+    "IS7": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS8": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS9": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+      "width": "95%",
+    },
+  }
+</style>
+
+<View>
+    <View>
+      <View />
+      <Text>
+        Example bullet text
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text>
+        An example 
+        <Text
+          accessibilityRole="link"
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text>
+        More example text.
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text>
+        Example text 
+        <Text>
+          this is bold 
+        </Text>
+        <Text>
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>,
+]
+`;
+
+exports[`2. key facts without title 1`] = `
+<style>
+{
+  "IS1": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS10": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS11": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS12": {
+    "fontWeight": "bold",
+  },
+  "IS13": {
+    "fontStyle": "italic",
+  },
+  "IS14": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS15": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS2": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS3": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS4": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS5": Array [
+    {
+      "textDecorationLine": "underline",
+    },
+    {
+      "color": "#006699",
+    },
+  ],
+  "IS6": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS7": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS8": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS9": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+}
+</style>
+
+<View>
+  <View>
+    <View />
+    <Text>
+      Example bullet text
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      An example 
+      <Text
+        accessibilityRole="link"
+      >
+        link
+      </Text>
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      More example text.
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      Example text 
+      <Text>
+        this is bold 
+      </Text>
+      <Text>
+        this is in italics.
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
