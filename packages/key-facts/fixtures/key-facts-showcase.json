@@ -2,7 +2,7 @@
   "data": {
     "name": "keyFacts",
     "attributes": {
-      "title": "Sex, cocaine and sport: a volatile combination"
+      "title": "New Brexit referendum"
     },
     "children": [
       {
@@ -14,8 +14,33 @@
               {
                 "name": "text",
                 "attributes": {
+                  "value": "Another ministerial aide, "
+                },
+                "children": []
+              },
+              {
+                "name": "link",
+                "attributes": {
+                  "href":
+                    "https://www.thetimes.co.uk/edition/news/may-hit-by-another-brexit-walkout-amid-claims-of-establishment-coup-k9x69qlb8",
+                  "target": "_blank",
+                  "type": "article"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Robert Courts"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
                   "value":
-                    "The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru"
+                    ", resigned saying that he could not look himself in the mirror if he backed the Chequers proposals."
                 },
                 "children": []
               }
@@ -27,32 +52,8 @@
               {
                 "name": "text",
                 "attributes": {
-                  "value": "Daniel Plaza, an "
-                },
-                "children": []
-              },
-              {
-                "name": "link",
-                "attributes": {
-                  "href": "https://www.thetimes.co.uk/topic/olympics",
-                  "target": "_blank",
-                  "type": "topic"
-                },
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": {
-                      "value": "Olympic"
-                    },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
                   "value":
-                    " race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared"
+                    "Downing Street and Conservative Party bosses were seeking to assess the scale of a grassroots rebellion."
                 },
                 "children": []
               }
@@ -77,29 +78,7 @@
               {
                 "name": "text",
                 "attributes": {
-                  "value":
-                    "In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his "
-                },
-                "children": []
-              },
-              {
-                "name": "bold",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": {
-                      "value": "penis"
-                    },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value":
-                    " enlargement medication. A possible two-year ban was reduced by "
+                  "value": "Chuka Umunna, leader of the "
                 },
                 "children": []
               },
@@ -110,11 +89,39 @@
                   {
                     "name": "text",
                     "attributes": {
-                      "value": "three months"
+                      "value": "Labour Remainers"
                     },
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value": ", dismissed Mrs May’s "
+                },
+                "children": []
+              },
+              {
+                "name": "bold",
+                "attributes": {},
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "compromise"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "attributes": {
+                  "value":
+                    " as “anti-worker and anti-business” and said that it would “royally screw” Britain’s service sector."
+                },
+                "children": []
               }
             ]
           }
