@@ -1,13 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
-  enzymeRenderedSerializer,
   hoistStyleTransform,
   minimalNativeTransform,
-  propsNoChildren,
-  replaceTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -19,22 +16,14 @@ const { data: { children, attributes } } = data;
 export default () => {
   addSerializers(
     expect,
-    enzymeRenderedSerializer(),
-    compose(
-      stylePrinter,
-      hoistStyleTransform,
-      minimalNativeTransform,
-      replaceTransform({
-        TextLink: propsNoChildren
-      })
-    )
+    compose(stylePrinter, hoistStyleTransform, minimalNativeTransform)
   );
 
   const tests = [
     {
       name: "key facts with title",
       test: () => {
-        const wrapper = shallow(
+        const testInstance = TestRenderer.create(
           <KeyFacts
             items={children[0].children}
             onLinkPress={() => {}}
@@ -42,17 +31,17 @@ export default () => {
           />
         );
 
-        expect(wrapper).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "key facts without title",
       test: () => {
-        const wrapper = shallow(
+        const testInstance = TestRenderer.create(
           <KeyFacts items={children[0].children} onLinkPress={() => {}} />
         );
 
-        expect(wrapper).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];
