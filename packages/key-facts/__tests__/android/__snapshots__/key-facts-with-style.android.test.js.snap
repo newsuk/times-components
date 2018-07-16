@@ -1,122 +1,140 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. key facts with title 1`] = `
-<style>
+Array [
+  <style>
 {
-  "IS1": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS10": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS11": {
-    "fontWeight": "bold",
-  },
-  "IS12": {
-    "fontStyle": "italic",
-  },
-  "IS13": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-  },
-  "IS14": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS2": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-  },
-  "IS3": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS4": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS5": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-  },
-  "IS6": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS7": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS8": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-  },
-  "IS9": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-}
+    "IS1": {
+      "fontFamily": "GillSansMTStd-Medium",
+      "fontSize": 12,
+      "fontWeight": "400",
+      "letterSpacing": 1.2,
+      "marginBottom": 20,
+    },
+  }
 </style>
 
-<KeyFactsContainer>
-  <KeyFactsTitle
-    title="Example title"
-  />
-  <KeyFactsWrapper>
+<Text>
+    E X A M P L E   T I T L E
+  </Text>,
+  <style>
+{
+    "IS1": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS10": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS11": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS12": {
+      "fontWeight": "bold",
+    },
+    "IS13": {
+      "fontStyle": "italic",
+    },
+    "IS14": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+    },
+    "IS15": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS2": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+    },
+    "IS3": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS4": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS5": Array [
+      {
+        "textDecorationLine": "underline",
+      },
+      {},
+    ],
+    "IS6": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+    },
+    "IS7": {
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "paddingLeft": 1,
+      "width": "100%",
+    },
+    "IS8": {
+      "backgroundColor": "#103546",
+      "height": 8,
+      "top": 1,
+      "transform": Array [
+        {
+          "rotate": "45deg",
+        },
+      ],
+      "width": 8,
+    },
+    "IS9": {
+      "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
+      "fontSize": 16,
+      "lineHeight": 30,
+      "marginTop": -8,
+      "paddingLeft": 15,
+    },
+  }
+</style>
+
+<View>
     <View>
       <View />
       <Text>
@@ -127,10 +145,11 @@ exports[`1. key facts with title 1`] = `
       <View />
       <Text>
         An example 
-        <TextLink
-          target={null}
-          url="https://www.thetimes.co.uk/test/link"
-        />
+        <Text
+          accessibilityRole="link"
+        >
+          link
+        </Text>
       </Text>
     </View>
     <View>
@@ -151,8 +170,8 @@ exports[`1. key facts with title 1`] = `
         </Text>
       </Text>
     </View>
-  </KeyFactsWrapper>
-</KeyFactsContainer>
+  </View>,
+]
 `;
 
 exports[`2. key facts without title 1`] = `
@@ -170,6 +189,12 @@ exports[`2. key facts without title 1`] = `
     "width": 8,
   },
   "IS10": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS11": {
     "backgroundColor": "#103546",
     "height": 8,
     "top": 1,
@@ -180,13 +205,13 @@ exports[`2. key facts without title 1`] = `
     ],
     "width": 8,
   },
-  "IS11": {
+  "IS12": {
     "fontWeight": "bold",
   },
-  "IS12": {
+  "IS13": {
     "fontStyle": "italic",
   },
-  "IS13": {
+  "IS14": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
@@ -194,7 +219,7 @@ exports[`2. key facts without title 1`] = `
     "marginTop": -8,
     "paddingLeft": 15,
   },
-  "IS14": {
+  "IS15": {
     "flexDirection": "row",
     "marginBottom": 20,
     "paddingLeft": 1,
@@ -225,7 +250,13 @@ exports[`2. key facts without title 1`] = `
     ],
     "width": 8,
   },
-  "IS5": {
+  "IS5": Array [
+    {
+      "textDecorationLine": "underline",
+    },
+    {},
+  ],
+  "IS6": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
@@ -233,13 +264,13 @@ exports[`2. key facts without title 1`] = `
     "marginTop": -8,
     "paddingLeft": 15,
   },
-  "IS6": {
+  "IS7": {
     "flexDirection": "row",
     "marginBottom": 20,
     "paddingLeft": 1,
     "width": "100%",
   },
-  "IS7": {
+  "IS8": {
     "backgroundColor": "#103546",
     "height": 8,
     "top": 1,
@@ -250,7 +281,7 @@ exports[`2. key facts without title 1`] = `
     ],
     "width": 8,
   },
-  "IS8": {
+  "IS9": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
@@ -258,51 +289,44 @@ exports[`2. key facts without title 1`] = `
     "marginTop": -8,
     "paddingLeft": 15,
   },
-  "IS9": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
 }
 </style>
 
-<KeyFactsContainer>
-  <KeyFactsWrapper>
-    <View>
-      <View />
-      <Text>
-        Example bullet text
+<View>
+  <View>
+    <View />
+    <Text>
+      Example bullet text
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      An example 
+      <Text
+        accessibilityRole="link"
+      >
+        link
       </Text>
-    </View>
-    <View>
-      <View />
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      More example text.
+    </Text>
+  </View>
+  <View>
+    <View />
+    <Text>
+      Example text 
       <Text>
-        An example 
-        <TextLink
-          target={null}
-          url="https://www.thetimes.co.uk/test/link"
-        />
+        this is bold 
       </Text>
-    </View>
-    <View>
-      <View />
       <Text>
-        More example text.
+        this is in italics.
       </Text>
-    </View>
-    <View>
-      <View />
-      <Text>
-        Example text 
-        <Text>
-          this is bold 
-        </Text>
-        <Text>
-          this is in italics.
-        </Text>
-      </Text>
-    </View>
-  </KeyFactsWrapper>
-</KeyFactsContainer>
+    </Text>
+  </View>
+</View>
 `;
