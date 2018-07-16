@@ -195,7 +195,7 @@ exports[`1. key facts with title 1`] = `
   <div
     className="responsive-styles__component-fbPFZZ VvueK S1"
   >
-    SEX, COCAINE AND SPORT: A VOLATILE COMBINATION
+    EXAMPLE TITLE
   </div>
   <div
     className="responsive-styles__component-fbPFZZ llrYRA S15"
@@ -209,7 +209,7 @@ exports[`1. key facts with title 1`] = `
       <div
         className="S3"
       >
-        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+        Example bullet text
       </div>
     </div>
     <div
@@ -221,15 +221,14 @@ exports[`1. key facts with title 1`] = `
       <div
         className="S7"
       >
-        Daniel Plaza, an 
+        An example 
         <a
           className="S6"
-          href="https://www.thetimes.co.uk/topic/olympics"
+          href="https://www.thetimes.co.uk/test/link"
           role="link"
         >
-          Olympic
+          link
         </a>
-         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
       </div>
     </div>
     <div
@@ -241,7 +240,7 @@ exports[`1. key facts with title 1`] = `
       <div
         className="S10"
       >
-        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+        More example text.
       </div>
     </div>
     <div
@@ -253,13 +252,12 @@ exports[`1. key facts with title 1`] = `
       <div
         className="S13"
       >
-        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        Example text 
         <strong>
-          penis
+          this is bold 
         </strong>
-         enlargement medication. A possible two-year ban was reduced by 
         <em>
-          three months
+          this is in italics.
         </em>
       </div>
     </div>
@@ -461,7 +459,7 @@ exports[`2. key facts without title 1`] = `
       <div
         className="S2"
       >
-        The Italian cyclist Gilberto Simoni was cleared of taking cocaine in 2002 by proving that traces of the drug came from coca leaf sweets his aunt brought back from Peru
+        Example bullet text
       </div>
     </div>
     <div
@@ -473,15 +471,14 @@ exports[`2. key facts without title 1`] = `
       <div
         className="S6"
       >
-        Daniel Plaza, an 
+        An example 
         <a
           className="S5"
-          href="https://www.thetimes.co.uk/topic/olympics"
+          href="https://www.thetimes.co.uk/test/link"
           role="link"
         >
-          Olympic
+          link
         </a>
-         race-walking champion from Spain, said that a positive test for nandrolone in 1996 had been caused by his performing a sex act on his pregnant wife. Ten years later, he was cleared
       </div>
     </div>
     <div
@@ -493,7 +490,7 @@ exports[`2. key facts without title 1`] = `
       <div
         className="S9"
       >
-        Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife "at least four times" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not
+        More example text.
       </div>
     </div>
     <div
@@ -505,13 +502,12 @@ exports[`2. key facts without title 1`] = `
       <div
         className="S12"
       >
-        In 2010 the American sprinter LaShawn Merritt blamed a positive test on not reading the ingredients for his 
+        Example text 
         <strong>
-          penis
+          this is bold 
         </strong>
-         enlargement medication. A possible two-year ban was reduced by 
         <em>
-          three months
+          this is in italics.
         </em>
       </div>
     </div>

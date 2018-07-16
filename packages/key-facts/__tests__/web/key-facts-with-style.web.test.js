@@ -8,9 +8,9 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import KeyFacts from "../../src/key-facts";
-import data from "../../fixtures/key-facts.json";
+import data from "../../fixtures/key-facts-tests.json";
 
 const { data: { children, attributes } } = data;
 
