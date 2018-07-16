@@ -55,6 +55,7 @@ Array [
     },
     "IS14": {
       "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
@@ -69,6 +70,7 @@ Array [
     },
     "IS2": {
       "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
@@ -102,6 +104,7 @@ Array [
     ],
     "IS6": {
       "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
@@ -127,6 +130,7 @@ Array [
     },
     "IS9": {
       "color": "#333333",
+      "fontFamily": "TimesDigitalW04",
       "fontSize": 16,
       "lineHeight": 30,
       "marginTop": -8,
@@ -215,6 +219,7 @@ exports[`2. key facts without title 1`] = `
   },
   "IS14": {
     "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
@@ -229,6 +234,7 @@ exports[`2. key facts without title 1`] = `
   },
   "IS2": {
     "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
@@ -262,6 +268,7 @@ exports[`2. key facts without title 1`] = `
   ],
   "IS6": {
     "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
@@ -287,6 +294,7 @@ exports[`2. key facts without title 1`] = `
   },
   "IS9": {
     "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
     "lineHeight": 30,
     "marginTop": -8,
