@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should handle no child elements 1`] = `null`;
+exports[`1. no child elements 1`] = `null`;
 
-exports[`2. should render a single child element 1`] = `
+exports[`2. a single child element 1`] = `
 <View>
   <View
     style={
@@ -33,7 +33,7 @@ exports[`2. should render a single child element 1`] = `
 </View>
 `;
 
-exports[`3. should render two child elements 1`] = `
+exports[`3. two child elements 1`] = `
 <View>
   <View
     style={
@@ -90,7 +90,7 @@ exports[`3. should render two child elements 1`] = `
 </View>
 `;
 
-exports[`4. should render three child elements 1`] = `
+exports[`4. three child elements 1`] = `
 <View>
   <View
     style={

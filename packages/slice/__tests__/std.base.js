@@ -1,50 +1,67 @@
 import React from "react";
+import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
 import { StandardSlice } from "../src/slice";
 
 export default renderComponent => {
-  it("should handle no child elements", () => {
-    const wrapper = renderComponent(
-      <StandardSlice itemCount={0} renderItems={() => []} />
-    );
+  const tests = [
+    {
+      name: "no child elements",
+      test() {
+        const wrapper = renderComponent(
+          <StandardSlice itemCount={0} renderItems={() => []} />
+        );
 
-    expect(wrapper).toMatchSnapshot("1. should handle no child elements");
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "a single child element",
+      test() {
+        const wrapper = renderComponent(
+          <StandardSlice
+            itemCount={1}
+            renderItems={() => [createItem("standard-1")]}
+          />
+        );
 
-  it("should render a single child element", () => {
-    const wrapper = renderComponent(
-      <StandardSlice
-        itemCount={1}
-        renderItems={() => [createItem("standard-1")]}
-      />
-    );
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "two child elements",
+      test() {
+        const wrapper = renderComponent(
+          <StandardSlice
+            itemCount={2}
+            renderItems={() => [
+              createItem("standard-1"),
+              createItem("standard-2")
+            ]}
+          />
+        );
 
-    expect(wrapper).toMatchSnapshot("2. should render a single child element");
-  });
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "three child elements",
+      test() {
+        const wrapper = renderComponent(
+          <StandardSlice
+            itemCount={3}
+            renderItems={() => [
+              createItem("standard-1"),
+              createItem("standard-2"),
+              createItem("standard-3")
+            ]}
+          />
+        );
 
-  it("should render two child elements", () => {
-    const wrapper = renderComponent(
-      <StandardSlice
-        itemCount={2}
-        renderItems={() => [createItem("standard-1"), createItem("standard-2")]}
-      />
-    );
+        expect(wrapper).toMatchSnapshot();
+      }
+    }
+  ];
 
-    expect(wrapper).toMatchSnapshot("3. should render two child elements");
-  });
-
-  it("should render three child elements", () => {
-    const wrapper = renderComponent(
-      <StandardSlice
-        itemCount={3}
-        renderItems={() => [
-          createItem("standard-1"),
-          createItem("standard-2"),
-          createItem("standard-3")
-        ]}
-      />
-    );
-
-    expect(wrapper).toMatchSnapshot("4. should render three child elements");
-  });
+  iterator(tests);
 };
