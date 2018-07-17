@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders an SVG, G, Path 1`] = `
+exports[`1. an svg, g, path 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -39,7 +39,7 @@ exports[`1. renders an SVG, G, Path 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`2. renders a Path with no fill 1`] = `
+exports[`2. a path with no fill 1`] = `
 <ARTShape
   d="343185e9878751b0e59aeee3debd5e87"
   opacity={1}
@@ -50,7 +50,7 @@ exports[`2. renders a Path with no fill 1`] = `
 />
 `;
 
-exports[`3. render a polygon 1`] = `
+exports[`3. a polygon 1`] = `
 <ARTShape
   d="f2fe184e88869d0ef2eb25afbc19b807"
   fill={
@@ -78,7 +78,7 @@ exports[`3. render a polygon 1`] = `
 />
 `;
 
-exports[`4. render a rect 1`] = `
+exports[`4. a rect 1`] = `
 <ARTShape
   d="db81aee2682fc4fbf84207fe820554da"
   fill={
