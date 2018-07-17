@@ -1,6 +1,6 @@
 # KeyFacts
 
-Bulleted list of textual AST information that can contain text, links and styled
+Unordered list of textual AST information that can contain text, links and styled
 text such as bold, or italic content.
 
 ## Contributing
