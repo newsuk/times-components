@@ -1,5 +1,5 @@
 import React from "react";
-import iterator from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
 
