@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
+import KeyFacts, { KeyFactsBullet } from "@times-components/key-facts";
 import PullQuote from "@times-components/pull-quote";
 import { colours, spacing } from "@times-components/styleguide";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";

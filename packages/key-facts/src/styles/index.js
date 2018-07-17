@@ -7,6 +7,10 @@ import {
 } from "@times-components/styleguide";
 
 const styles = StyleSheet.create({
+  container: {
+    marginLeft: 10,
+    marginRight: 10
+  },
   bullet: {
     backgroundColor: colours.functional.bullet,
     height: 8,
@@ -14,7 +18,7 @@ const styles = StyleSheet.create({
     transform: [{ rotate: "45deg" }],
     width: 8
   },
-  container: {
+  bulletContainer: {
     flexDirection: "row",
     marginBottom: spacing(4),
     paddingLeft: 1,

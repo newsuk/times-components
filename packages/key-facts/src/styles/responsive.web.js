@@ -1,13 +1,22 @@
 import { Text, View } from "react-native";
-import withResponsiveStyles from "@times-components/responsive-styles";
+import withResponsiveStyles, {
+  config
+} from "@times-components/responsive-styles";
 import { spacing } from "@times-components/styleguide";
 
 export const KeyFactsResponsiveContainer = withResponsiveStyles(
   View,
   {
+    base: () => `
+    margin: 0 10px;
+  `,
     mediumUp: () => `
     flex-direction: row;
-    width: 100%;
+    margin: 0 auto;
+    width: ${config.mediumBpWidth};
+  `,
+    wideUp: () => `
+    width: ${config.wideBpWidth};
   `
   },
   "KeyFactsResponsiveContainer"

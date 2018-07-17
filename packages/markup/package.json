@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.0.2",
+    "@times-components/key-facts": "0.0.1",
     "@times-components/pull-quote": "2.0.3",
     "@times-components/styleguide": "2.0.2",
     "prop-types": "15.6.0"

@@ -12,6 +12,7 @@ import Article from "./src/article";
 import fullArticleTypenameFixture from "./fixtures/full-article-typename.json";
 import fullArticleFixture from "./fixtures/full-article.json";
 import fullLongArticleFixture from "./fixtures/full-long-article.json";
+import articleWithKeyFacts from "./fixtures/article-with-key-facts.json";
 import articleWithVideoFixture from "./fixtures/article-with-video-asset.json";
 import articleFixtureBylineAuthor from "./fixtures/article-with-byline-author.json";
 import articleFixtureNoStandfirst from "./fixtures/no-standfirst.json";
@@ -85,6 +86,12 @@ export default {
       name: "Article with video asset",
       component: (_, { decorateAction }) =>
         renderArticle(decorateAction, { fixture: articleWithVideoFixture })
+    },
+    {
+      type: "story",
+      name: "Article with key facts",
+      component: (_, { decorateAction }) =>
+        renderArticle(decorateAction, { fixture: articleWithKeyFacts })
     },
     {
       type: "story",
