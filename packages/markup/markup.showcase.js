@@ -62,14 +62,18 @@ export default {
       component: () =>
         renderTree(mixture, {
           block(key, attributes, renderedChildren) {
-            return <View key={key}>{renderedChildren}</View>;
+            return {
+              element: <View key={key}>{renderedChildren}</View>
+            };
           },
           link(key, attributes, renderedChildren) {
-            return (
-              <Text href={attributes.href} key={key}>
-                {renderedChildren}
-              </Text>
-            );
+            return {
+              element: (
+                <Text href={attributes.href} key={key}>
+                  {renderedChildren}
+                </Text>
+              )
+            };
           }
         })
     },
@@ -90,18 +94,20 @@ export default {
         <View>
           {renderTrees(multiParagraph, {
             paragraph(key, attributes, children) {
-              return (
-                <Text
-                  key={key}
-                  style={{
-                    margin: 10,
-                    color: "red",
-                    fontFamily: fonts.headline
-                  }}
-                >
-                  {children}
-                </Text>
-              );
+              return {
+                element: (
+                  <Text
+                    key={key}
+                    style={{
+                      margin: 10,
+                      color: "red",
+                      fontFamily: fonts.headline
+                    }}
+                  >
+                    {children}
+                  </Text>
+                )
+              };
             }
           })}
         </View>
