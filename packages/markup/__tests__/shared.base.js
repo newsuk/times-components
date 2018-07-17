@@ -131,7 +131,7 @@ export default renderComponent => {
             block(key, attributes, renderedChildren) {
               return {
                 element: <Text key={key}>{renderedChildren}</Text>,
-                shouldIgnoreChildren: true
+                shouldRenderChildren: false
               };
             }
           })

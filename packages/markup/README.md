@@ -7,7 +7,7 @@ uses for common AST nodes such as `paragraph`, `text` or `link`. In the override
 renderer that a consumer would set, the consumer dictates how these nodes are
 handled. Each renderer method should return an object with an `element` property
 (that returns the component to be rendered), and a optional
-`shouldIgnoreChildren` boolean that can ensure the renderer does not render
+`shouldRenderChildren` boolean that can ensure the renderer does not render
 certain node's children.
 
 ## Contributing
