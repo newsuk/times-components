@@ -1,13 +1,6 @@
 # Markup
 
-This component renders out markup Abstrat Syntax Trees (AST) into components.
-The `renderTree` method takes AST data as the first argument, and an override
-renderer object as the second argument. Markup has a set of default renderers it
-uses for common AST nodes such as `paragraph`, `text` or `link`. In the override
-renderer that a consumer would set, the consumer dictates how these nodes are
-handled. Each renderer method should return an object with an `element` property
-(the component to be rendered), and a optional `shouldRenderChildren` boolean
-that can ensure the renderer does not render that node's children.
+This package is for core rendering of components such `paragraph`, `text` or `link`. Consumers provide Abstrat Syntax Tree (AST) data which `markup` iterates over and renders with default `renderer` functions that dictate how the nodes of the AST are rendered. Consumers can override these default `renderers` by providing their own.
 
 ## Contributing
 
@@ -48,6 +41,9 @@ Visit the official
 to see our available markup templates.
 
 ## How to use
+
+The exported `renderTree` and `renderTrees` methods take AST data as the first argument, and an optional overriding renderer object as the second argument. The provided `renderer` methods should follow the pattern set out in the default `renderers`. Each method should return an object with an `element` property (the component to be rendered), and a optional `shouldRenderChildren` boolean
+that can ensure the renderer does not render that node's children.
 
 ```js
 import { renderTree } from "@times-components/markup";
