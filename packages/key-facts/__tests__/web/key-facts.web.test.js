@@ -1,4 +1,3 @@
-import React from "react";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -8,23 +7,19 @@ import {
   rnwTransform
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import KeyFacts from "../../src/key-facts";
-import data from "../../fixtures/key-facts-tests.json";
-
-const { data: { children, attributes } } = data;
+import renderKeyFacts from "../shared-render-key-facts";
 
 addSerializers(expect, compose(print, minimalWebTransform, rnwTransform()));
+
+// eslint-disable-next-line global-require
+require("jest-styled-components");
 
 const tests = [
   {
     name: "key facts with title",
     test: () => {
       const testInstance = TestRenderer.create(
-        <KeyFacts
-          items={children[0].children}
-          onLinkPress={() => {}}
-          title={attributes.title}
-        />
+        renderKeyFacts("New Brexit referendum")
       );
 
       expect(testInstance).toMatchSnapshot();
@@ -33,9 +28,7 @@ const tests = [
   {
     name: "key facts without title",
     test: () => {
-      const testInstance = TestRenderer.create(
-        <KeyFacts items={children[0].children} onLinkPress={() => {}} />
-      );
+      const testInstance = TestRenderer.create(renderKeyFacts());
 
       expect(testInstance).toMatchSnapshot();
     }
