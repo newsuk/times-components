@@ -3,19 +3,19 @@ import { ScrollView } from "react-native";
 import storybookReporter from "@times-components/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
-import standard1RelatedArticleFixture from "./fixtures/standard/1-article.json";
+import standard1RelatedArticleFixture from "./fixtures/standard/1-article";
 import standard1RelatedArticleFixtureVideoLead from "./fixtures/standard/1-article-video-lead.json";
 import standard1RelatedArticleNoImageFixture from "./fixtures/standard/1-article-no-image.json";
 import standard1RelatedArticleNoLabelFixture from "./fixtures/standard/1-article-no-label.json";
 import standard1RelatedArticleNoBylineFixture from "./fixtures/standard/1-article-no-byline.json";
-import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles.json";
-import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles.json";
-import leadAndTwo1RelatedArticleFixture from "./fixtures/leadandtwo/1-article.json";
-import leadAndTwo2RelatedArticlesFixture from "./fixtures/leadandtwo/2-articles.json";
-import leadAndTwo3RelatedArticlesFixture from "./fixtures/leadandtwo/3-articles.json";
-import opinionAndTwo1RelatedArticleFixture from "./fixtures/opinionandtwo/1-article.json";
-import opinionAndTwo2RelatedArticlesFixture from "./fixtures/opinionandtwo/2-articles.json";
-import opinionAndTwo3RelatedArticlesFixture from "./fixtures/opinionandtwo/3-articles.json";
+import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles";
+import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles";
+import leadAndTwo1RelatedArticleFixture from "./fixtures/leadandtwo/1-article.js";
+import leadAndTwo2RelatedArticlesFixture from "./fixtures/leadandtwo/2-articles.js";
+import leadAndTwo3RelatedArticlesFixture from "./fixtures/leadandtwo/3-articles.js";
+import opinionAndTwo1RelatedArticleFixture from "./fixtures/opinionandtwo/1-article.js";
+import opinionAndTwo2RelatedArticlesFixture from "./fixtures/opinionandtwo/2-articles.js";
+import opinionAndTwo3RelatedArticlesFixture from "./fixtures/opinionandtwo/3-articles.js";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -49,7 +49,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleFixture.data
+          standard1RelatedArticleFixture().data
         )
     },
     {
@@ -94,7 +94,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard2RelatedArticlesFixture.data
+          standard2RelatedArticlesFixture().data
         )
     },
     {
@@ -103,7 +103,7 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard3RelatedArticlesFixture.data
+          standard3RelatedArticlesFixture().data
         )
     },
     {

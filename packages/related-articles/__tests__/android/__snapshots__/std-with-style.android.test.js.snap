@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. default styles 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 0.5,
+        "borderStyle": "solid",
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 0.5,
+        "display": "flex",
+        "height": 55,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 25,
+        }
+      }
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#DBDBDB",
+          "borderBottomWidth": 0.5,
+          "borderStyle": "solid",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Link>
+          <Card>
+            <View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#DB133B",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1.2,
+                      "marginBottom": 0,
+                    }
+                  }
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "fontWeight": "400",
+                    "lineHeight": 28,
+                    "marginBottom": 5,
+                    "marginTop": -5,
+                  }
+                }
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text
+                  style={
+                    Object {
+                      "color": "#696969",
+                      "flexWrap": "wrap",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 10,
+                    }
+                  }
+                >
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                March 13 2015, 06:54pm
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#DB133B",
+                      "flexDirection": "row",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 13,
+                    }
+                  }
+                >
+                  Camilla Long
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#DB133B",
+                      "flexDirection": "row",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 13,
+                    }
+                  }
+                >
+                  , Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;

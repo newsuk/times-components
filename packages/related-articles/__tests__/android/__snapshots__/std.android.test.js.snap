@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no related articles 1`] = `null`;
+
+exports[`2. analytics with no related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`3. a single related article 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://test.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Test Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long
+                </Text>
+                <Text>
+                  , Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. analytics for a single related article 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long",
+            "headline": "Test Headline",
+            "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`5. two related articles 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://first.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop1.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                First Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long, Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Link
+          url="https://second.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop2.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={true}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Second Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                January 17 2018, 12:00pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long, Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`6. analytics for two related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "First Headline",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Second Headline",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "standard-2",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;
+
+exports[`7. three related articles 1`] = `
+<View>
+  <View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      Related articles
+    </Text>
+  </View>
+  <View>
+    <View>
+      <View>
+        <Link
+          url="https://first.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop1.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={false}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                First Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                March 13 2015, 06:54pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long, Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Link
+          url="https://second.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop2.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={false}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Second Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                January 17 2018, 12:00pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long, Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+    <View>
+      <View>
+        <Link
+          url="https://third.io"
+        >
+          <Card
+            image={
+              Object {
+                "uri": "https://crop3.io",
+              }
+            }
+            imageRatio={1.7777777777777777}
+            isReversed={false}
+            showImage={false}
+          >
+            <View>
+              <View>
+                <Text
+                  accessibilityLabel="BAYEUX TAPESTRY"
+                >
+                  B A Y E U X   T A P E S T R Y
+                </Text>
+              </View>
+              <Text
+                accessibilityRole="heading"
+                aria-level="3"
+              >
+                Third Headline
+              </Text>
+              <View>
+                <Text>
+                  <Text>
+                    
+                    Summary 125
+                    ...
+                  </Text>
+                </Text>
+              </View>
+              <Text>
+                January 17 2018, 12:00pm
+              </Text>
+              <Text>
+                <Text>
+                  Camilla Long, Environment Editor
+                </Text>
+              </Text>
+            </View>
+          </Card>
+        </Link>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. analytics for three related articles 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articles": Array [
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "First Headline",
+            "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2015-03-13T18:54:58.000Z",
+            "role": "standard-1",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Second Headline",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "standard-2",
+          },
+          Object {
+            "byline": "Camilla Long, Environment Editor",
+            "headline": "Third Headline",
+            "id": "8b47c1b8-fb05-11e7-a987-7fcf5e99898c",
+            "publishedTime": "2018-01-17T12:00:00.000Z",
+            "role": "standard-3",
+          },
+        ],
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "template": "DEFAULT",
+      },
+      "component": "Page",
+      "object": "RelatedArticles",
+    },
+  ],
+]
+`;

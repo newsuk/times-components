@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. default styles 1`] = `
+.c0 .imageContainerClass {
+  display: block;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width:768px) {
+  .c0 .imageContainerClass {
+    display: block;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-right: 10px;
+  }
+
+  .c0 .contentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 300px;
+  }
+
+  .c0 .headlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: block;
+  }
+
+  .c0 .summary145Class {
+    display: none;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<style>
+{
+  "IS1": {
+    "color": "rgba(219,19,59,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "letterSpacing": "1.2px",
+  },
+  "IS2": {
+    "marginBottom": "5px",
+  },
+  "IS3": {
+    "WebkitBoxLines": "multiple",
+    "WebkitFlexWrap": "wrap",
+    "color": "rgba(105,105,105,1)",
+    "flexWrap": "wrap",
+    "fontFamily": "TimesDigitalW04",
+    "lineHeight": "20px",
+    "marginBottom": "10px",
+    "msFlexWrap": "wrap",
+  },
+  "IS4": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+  },
+  "IS5": {
+    "color": "rgba(219,19,59,1)",
+  },
+  "IS6": {
+    "color": "rgba(219,19,59,1)",
+  },
+  "IS7": {
+    "color": "rgba(105,105,105,1)",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": "13px",
+    "lineHeight": "15px",
+  },
+  "IS8": {
+    "marginTop": "10px",
+  },
+  "S1": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(51,51,51,1)",
+    "display": "inline",
+    "font-family": "TimesModern-Bold",
+    "font-size": "25px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S10": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "13px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S11": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "13px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S12": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S13": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S14": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S15": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S16": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S17": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S18": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+  },
+  "S2": {
+    "-ms-flex-align": "center",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-pack": "center",
+    "-webkit-justify-content": "center",
+    "align-items": "center",
+    "border-bottom-color": "rgba(219,219,219,1)",
+    "border-bottom-width": "1px",
+    "border-top-color": "rgba(219,219,219,1)",
+    "border-top-width": "1px",
+    "display": "flex",
+    "height": "55px",
+    "justify-content": "center",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S4": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(51,51,51,1)",
+    "display": "inline",
+    "font-family": "TimesModern-Bold",
+    "font-size": "22px",
+    "font-weight": "400",
+    "line-height": "24px",
+    "margin-bottom": "5px",
+    "margin-top": "0px",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "inherit",
+    "display": "inline",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S7": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "font-size": "14px",
+    "margin-top": "0px",
+  },
+  "S8": {
+    "-ms-flex-align": "stretch",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "flex",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+  },
+  "S9": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "display": "inline",
+    "margin-bottom": "5px",
+    "margin-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="S18 IS8"
+>
+  <div
+    className="S2"
+  >
+    <h3
+      className="S1"
+    >
+      Related articles
+    </h3>
+  </div>
+  <div
+    className="c0 S17"
+  >
+    <div
+      className="c1 S16"
+    >
+      <div
+        className="c2 S15"
+      >
+        <div
+          className="c3 S14"
+        >
+          <Link>
+            <Card>
+              <div
+                className="S13"
+              >
+                <div
+                  className="S4 IS2"
+                >
+                  <div
+                    className="S3 IS1"
+                  >
+                    BAYEUX TAPESTRY
+                  </div>
+                </div>
+                <h3
+                  className="headlineClass S5"
+                >
+                  Test Headline
+                </h3>
+                <div
+                  className="S8"
+                >
+                  <div
+                    className="summaryHidden summary125Class S7 IS3"
+                  >
+                    <span
+                      className="S6"
+                    >
+                      
+                      Summary 125
+                      ...
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="S9 IS4"
+                >
+                  March 13 2015, 06:54pm
+                </div>
+                <div
+                  className="S12 IS7"
+                >
+                  <span
+                    className="S10 IS5"
+                  >
+                    Camilla Long
+                  </span>
+                  <span
+                    className="S11 IS6"
+                  >
+                    , Environment Editor
+                  </span>
+                </div>
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
