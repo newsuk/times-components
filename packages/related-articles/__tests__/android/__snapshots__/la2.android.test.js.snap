@@ -2,7 +2,7 @@
 
 exports[`1. no related articles 1`] = `null`;
 
-exports[`1a. analytics with no related articles 1`] = `
+exports[`2. analytics with no related articles 1`] = `
 Array [
   Array [
     Object {
@@ -19,7 +19,7 @@ Array [
 ]
 `;
 
-exports[`2. one lead related article 1`] = `
+exports[`3. one lead related article 1`] = `
 <View>
   <View>
     <Text
@@ -85,7 +85,7 @@ exports[`2. one lead related article 1`] = `
 </View>
 `;
 
-exports[`2a. analytics for one lead related article 1`] = `
+exports[`4. analytics for one lead related article 1`] = `
 Array [
   Array [
     Object {
@@ -110,7 +110,7 @@ Array [
 ]
 `;
 
-exports[`3. one lead and one support related article 1`] = `
+exports[`5. one lead and one support related article 1`] = `
 <View>
   <View>
     <Text
@@ -218,7 +218,7 @@ exports[`3. one lead and one support related article 1`] = `
 </View>
 `;
 
-exports[`3a. analytics for one lead and one support related article 1`] = `
+exports[`6. analytics for one lead and one support related article 1`] = `
 Array [
   Array [
     Object {
@@ -250,7 +250,7 @@ Array [
 ]
 `;
 
-exports[`4. one lead and two support related articles 1`] = `
+exports[`7. one lead and two support related articles 1`] = `
 <View>
   <View>
     <Text
@@ -400,7 +400,7 @@ exports[`4. one lead and two support related articles 1`] = `
 </View>
 `;
 
-exports[`4a. analytics for one lead and two support related articles 1`] = `
+exports[`8. analytics for one lead and two support related articles 1`] = `
 Array [
   Array [
     Object {

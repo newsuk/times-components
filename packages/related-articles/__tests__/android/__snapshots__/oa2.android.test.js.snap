@@ -2,7 +2,7 @@
 
 exports[`1. no related articles 1`] = `null`;
 
-exports[`1a. analytics with no related articles 1`] = `
+exports[`2. analytics with no related articles 1`] = `
 Array [
   Array [
     Object {
@@ -19,7 +19,7 @@ Array [
 ]
 `;
 
-exports[`2. one opinion related article 1`] = `
+exports[`3. one opinion related article 1`] = `
 <View>
   <View>
     <Text
@@ -95,7 +95,7 @@ exports[`2. one opinion related article 1`] = `
 </View>
 `;
 
-exports[`2a. analytics for one opinion related article 1`] = `
+exports[`4. analytics for one opinion related article 1`] = `
 Array [
   Array [
     Object {
@@ -120,7 +120,7 @@ Array [
 ]
 `;
 
-exports[`3. one opinion and one support related article 1`] = `
+exports[`5. one opinion and one support related article 1`] = `
 <View>
   <View>
     <Text
@@ -238,7 +238,7 @@ exports[`3. one opinion and one support related article 1`] = `
 </View>
 `;
 
-exports[`3a. analytics for one opinion and one support related article 1`] = `
+exports[`6. analytics for one opinion and one support related article 1`] = `
 Array [
   Array [
     Object {
@@ -270,7 +270,7 @@ Array [
 ]
 `;
 
-exports[`4. opinion and two support related articles 1`] = `
+exports[`7. opinion and two support related articles 1`] = `
 <View>
   <View>
     <Text
@@ -430,7 +430,7 @@ exports[`4. opinion and two support related articles 1`] = `
 </View>
 `;
 
-exports[`4a. analytics for opinion and two support related articles 1`] = `
+exports[`8. analytics for opinion and two support related articles 1`] = `
 Array [
   Array [
     Object {

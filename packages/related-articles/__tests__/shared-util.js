@@ -1,4 +1,5 @@
 import React from "react";
+import iterator from "@times-components/test-utils";
 import mockDate from "mockdate";
 import { shallow } from "enzyme";
 
@@ -59,122 +60,140 @@ export default ({
     global.Intl = realIntl;
   });
 
-  it("callback triggered on related article press", () => {
-    const onRelatedArticlePress = jest.fn();
-    const article = fixture1.relatedArticles[0];
+  const tests = [
+    {
+      name: "no related articles",
+      test() {
+        const events = jest.fn();
 
-    const wrapper = shallow(
-      <RelatedArticleItem article={article} onPress={onRelatedArticlePress} />
-    );
+        const data = {
+          relatedArticles: [],
+          relatedArticlesLayout: {
+            template
+          }
+        };
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+        );
 
-    const eventMock = {};
-    wrapper
-      .find("Link")
-      .at(0)
-      .simulate("press", eventMock);
-
-    expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
-      url: article.url
-    });
-  });
-
-  it("no related articles", () => {
-    const events = jest.fn();
-
-    const data = {
-      relatedArticles: [],
-      relatedArticlesLayout: {
-        template
+        expect(output).toMatchSnapshot();
       }
-    };
-    const output = renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(data, events)} />
-    );
+    },
+    {
+      name: "analytics with no related articles",
+      test() {
+        const events = jest.fn();
 
-    expect(output).toMatchSnapshot("1. no related articles");
-  });
+        const data = {
+          relatedArticles: [],
+          relatedArticlesLayout: {
+            template
+          }
+        };
 
-  it("analytics with no related articles", () => {
-    const events = jest.fn();
+        renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(data, events)} />
+        );
 
-    const data = {
-      relatedArticles: [],
-      relatedArticlesLayout: {
-        template
+        expect(events.mock.calls).toMatchSnapshot();
       }
-    };
+    },
+    {
+      name: one,
+      test() {
+        const events = jest.fn();
 
-    renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(data, events)} />
-    );
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture1, events)} />
+        );
 
-    expect(events.mock.calls).toMatchSnapshot(
-      "1a. analytics with no related articles"
-    );
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: `analytics for ${one}`,
+      test() {
+        const events = jest.fn();
 
-  it(one, () => {
-    const events = jest.fn();
+        renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture1, events)} />
+        );
 
-    const output = renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture1, events)} />
-    );
+        expect(events.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: two,
+      test() {
+        const events = jest.fn();
 
-    expect(output).toMatchSnapshot(`2. ${one}`);
-  });
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture2, events)} />
+        );
 
-  it(`analytics for ${one}`, () => {
-    const events = jest.fn();
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: `analytics for ${two}`,
+      test() {
+        const events = jest.fn();
 
-    renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture1, events)} />
-    );
+        renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture2, events)} />
+        );
 
-    expect(events.mock.calls).toMatchSnapshot(
-      `2a. analytics for ${one}`
-    );
-  });
+        expect(events.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: three,
+      test() {
+        const events = jest.fn();
 
-  it(two, () => {
-    const events = jest.fn();
+        const output = renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture3, events)} />
+        );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: `analytics for ${three}`,
+      test() {
+        const events = jest.fn();
 
-    const output = renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture2, events)} />
-    );
+        renderComponent(
+          <RelatedArticles {...createRelatedArticlesProps(fixture3, events)} />
+        );
 
-    expect(output).toMatchSnapshot(`3. ${two}`);
-  });
+        expect(events.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: "callback triggered on related article press",
+      test() {
+        const onRelatedArticlePress = jest.fn();
+        const article = fixture1.relatedArticles[0];
 
-  it(`analytics for ${two}`, () => {
-    const events = jest.fn();
+        const wrapper = shallow(
+          <RelatedArticleItem
+            article={article}
+            onPress={onRelatedArticlePress}
+          />
+        );
 
-    renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture2, events)} />
-    );
+        const eventMock = {};
+        wrapper
+          .find("Link")
+          .at(0)
+          .simulate("press", eventMock);
 
-    expect(events.mock.calls).toMatchSnapshot(
-      `3a. analytics for ${two}`
-    );
-  });
+        expect(onRelatedArticlePress).toHaveBeenCalledWith(eventMock, {
+          url: article.url
+        });
+      }
+    }
+  ];
 
-  it(three, () => {
-    const events = jest.fn();
-
-    const output = renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture3, events)} />
-    );
-    expect(output).toMatchSnapshot(`4. ${three}`);
-  });
-
-  it(`analytics for ${three}`, () => {
-    const events = jest.fn();
-
-    renderComponent(
-      <RelatedArticles {...createRelatedArticlesProps(fixture3, events)} />
-    );
-
-    expect(events.mock.calls).toMatchSnapshot(
-      `4a. analytics for ${three}`
-    );
-  });
+  iterator(tests);
 };
