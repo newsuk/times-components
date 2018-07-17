@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. Lead and two tracking roles 1`] = `
+exports[`1. lead and two roles for tracking 1`] = `
 Array [
   "lead-and-two",
   "lead-and-two-supporting-1",
@@ -8,7 +8,7 @@ Array [
 ]
 `;
 
-exports[`2. Opinion and two tracking roles 1`] = `
+exports[`2. opinion and two roles for tracking 1`] = `
 Array [
   "opinion-and-two",
   "opinion-and-two-supporting-1",
@@ -16,7 +16,7 @@ Array [
 ]
 `;
 
-exports[`3. Standard tracking roles 1`] = `
+exports[`3. standard roles for tracking 1`] = `
 Array [
   "standard-1",
   "standard-2",
