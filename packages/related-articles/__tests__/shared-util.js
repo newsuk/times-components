@@ -78,7 +78,7 @@ export default ({
     });
   });
 
-  it("should render no related articles", () => {
+  it("no related articles", () => {
     const events = jest.fn();
 
     const data = {
@@ -91,10 +91,10 @@ export default ({
       <RelatedArticles {...createRelatedArticlesProps(data, events)} />
     );
 
-    expect(output).toMatchSnapshot("1. should render no related articles");
+    expect(output).toMatchSnapshot("1. no related articles");
   });
 
-  it("should send analytics even when no related articles", () => {
+  it("analytics with no related articles", () => {
     const events = jest.fn();
 
     const data = {
@@ -109,21 +109,21 @@ export default ({
     );
 
     expect(events.mock.calls).toMatchSnapshot(
-      "1a. should send analytics even when no related articles"
+      "1a. analytics with no related articles"
     );
   });
 
-  it(`should render ${one}`, () => {
+  it(one, () => {
     const events = jest.fn();
 
     const output = renderComponent(
       <RelatedArticles {...createRelatedArticlesProps(fixture1, events)} />
     );
 
-    expect(output).toMatchSnapshot(`2. should render ${one}`);
+    expect(output).toMatchSnapshot(`2. ${one}`);
   });
 
-  it(`should send analytics for ${one}`, () => {
+  it(`analytics for ${one}`, () => {
     const events = jest.fn();
 
     renderComponent(
@@ -131,21 +131,21 @@ export default ({
     );
 
     expect(events.mock.calls).toMatchSnapshot(
-      `2a. should send analytics for ${one}`
+      `2a. analytics for ${one}`
     );
   });
 
-  it(`should render ${two}`, () => {
+  it(two, () => {
     const events = jest.fn();
 
     const output = renderComponent(
       <RelatedArticles {...createRelatedArticlesProps(fixture2, events)} />
     );
 
-    expect(output).toMatchSnapshot(`3. should render ${two}`);
+    expect(output).toMatchSnapshot(`3. ${two}`);
   });
 
-  it(`should send analytics for ${two}`, () => {
+  it(`analytics for ${two}`, () => {
     const events = jest.fn();
 
     renderComponent(
@@ -153,20 +153,20 @@ export default ({
     );
 
     expect(events.mock.calls).toMatchSnapshot(
-      `3a. should send analytics for ${two}`
+      `3a. analytics for ${two}`
     );
   });
 
-  it(`should render ${three}`, () => {
+  it(three, () => {
     const events = jest.fn();
 
     const output = renderComponent(
       <RelatedArticles {...createRelatedArticlesProps(fixture3, events)} />
     );
-    expect(output).toMatchSnapshot(`4. should render ${three}`);
+    expect(output).toMatchSnapshot(`4. ${three}`);
   });
 
-  it(`should send analytics for ${three}`, () => {
+  it(`analytics for ${three}`, () => {
     const events = jest.fn();
 
     renderComponent(
@@ -174,7 +174,7 @@ export default ({
     );
 
     expect(events.mock.calls).toMatchSnapshot(
-      `4a. should send analytics for ${three}`
+      `4a. analytics for ${three}`
     );
   });
 };

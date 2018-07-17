@@ -29,7 +29,7 @@ export default renderComponent => {
     global.Intl = realIntl;
   });
 
-  it("should render the default styles", () => {
+  it("default styles", () => {
     const events = jest.fn();
 
     const output = renderComponent(
@@ -38,6 +38,6 @@ export default renderComponent => {
       />
     );
 
-    expect(output).toMatchSnapshot("1. should render the default styles");
+    expect(output).toMatchSnapshot("1. default styles");
   });
 };
