@@ -1,0 +1,675 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no child elements 1`] = `""`;
+
+exports[`2. a single child element 1`] = `
+.c0 .imageContainerClass {
+  display: block;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width:768px) {
+  .c0 .imageContainerClass {
+    display: block;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-right: 10px;
+  }
+
+  .c0 .contentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 300px;
+  }
+
+  .c0 .headlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: block;
+  }
+
+  .c0 .summary145Class {
+    display: none;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S5"
+>
+  <div
+    className="c1 S4"
+  >
+    <div
+      className="c2 S3"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. two child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 .imageContainerClass {
+  display: block;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .imageContainerClass {
+    display: block;
+  }
+
+  .c0 .headlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: block;
+  }
+
+  .c0 .summary145Class {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0 10px;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S7": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S8": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S8"
+>
+  <div
+    className="c1 S7"
+  >
+    <div
+      className="c2 S6"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
+      </div>
+      <div
+        className="c4 S3"
+      />
+      <div
+        className="c3 S5"
+      >
+        <div
+          className="S4"
+        >
+          standard-2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. three child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c0 .imageContainerClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .imageContainerClass {
+    display: block;
+  }
+
+  .c0 .headlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: none;
+  }
+
+  .c0 .summary145Class {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S10": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S11": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S7": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S8": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S9": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S11"
+>
+  <div
+    className="c1 S10"
+  >
+    <div
+      className="c2 S9"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
+      </div>
+      <div
+        className="c4 S3"
+      />
+      <div
+        className="c3 S5"
+      >
+        <div
+          className="S4"
+        >
+          standard-2
+        </div>
+      </div>
+      <div
+        className="c4 S6"
+      />
+      <div
+        className="c3 S8"
+      >
+        <div
+          className="S7"
+        >
+          standard-3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

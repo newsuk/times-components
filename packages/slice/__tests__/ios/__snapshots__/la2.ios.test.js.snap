@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a single child element 1`] = `
+<View>
+  <View>
+    <View>
+      <Text>
+        lead
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. two child elements 1`] = `
+<View>
+  <View>
+    <View>
+      <Text>
+        lead
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <Text>
+        support-1
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`3. three child elements 1`] = `
+<View>
+  <View>
+    <View>
+      <Text>
+        lead
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <Text>
+        support-1
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View>
+      <Text>
+        support-2
+      </Text>
+    </View>
+  </View>
+</View>
+`;

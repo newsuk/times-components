@@ -1,0 +1,1087 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. a single child element 1`] = `
+.c0 .opinionContentContainerClass {
+  min-height: 250px;
+}
+
+.c0 .opinionImageContainerClass {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  bottom: -9px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .opinionSummary125Class {
+  display: block;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+@media (min-width:520px) {
+  .c0 .opinionContentContainerClass {
+    min-height: 200px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    min-width: 130px;
+  }
+
+  .c0 .opinionHeadlineClass {
+    padding-right: 30px;
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .c0 .opinionContentContainerClass {
+    min-width: auto;
+    padding-right: 55px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    max-width: 167px;
+    min-width: auto;
+    position: relative;
+    min-width: auto;
+  }
+
+  .c0 .opinionSummary125Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary160Class {
+    display: block;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 80.8%;
+  }
+
+  .c2 a {
+    display: block;
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .c3 a > div,
+  .c3 a > div > div {
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S5"
+>
+  <div
+    className="c1 S4"
+  >
+    <div
+      className="c2 S3"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          opinion
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. two child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 .opinionContentContainerClass {
+  min-height: 250px;
+}
+
+.c0 .opinionImageContainerClass {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  bottom: -9px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .opinionSummary125Class {
+  display: block;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:520px) {
+  .c0 .opinionContentContainerClass {
+    min-height: 200px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+
+  .c0 .opinionHeadlineClass {
+    padding-right: 30px;
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .c0 .opinionContentContainerClass {
+    min-width: auto;
+    padding-right: 55px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    max-width: 167px;
+    min-width: auto;
+    position: relative;
+    min-width: 165px;
+  }
+
+  .c0 .opinionSummary125Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary145Class {
+    display: block;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .opinionSummary125Class,
+  .c0 .opinionSummary145Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary225Class {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .c2 a {
+    display: block;
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .c3 a > div,
+  .c3 a > div > div {
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: block;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    min-width: 400px;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-right: 0;
+    padding-left: 10px;
+    max-width: 100%;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S7": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S8": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S9": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S9"
+>
+  <div
+    className="c1 S8"
+  >
+    <div
+      className="c2 S7"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          opinion
+        </div>
+      </div>
+      <div
+        className="c4 S3"
+      />
+      <div
+        className="c5 S6"
+      >
+        <div
+          className="c6 S5"
+        >
+          <div
+            className="S4"
+          >
+            support-1
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. three child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 .opinionContentContainerClass {
+  min-height: 250px;
+}
+
+.c0 .opinionImageContainerClass {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  bottom: -9px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .opinionSummary125Class {
+  display: block;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:520px) {
+  .c0 .opinionContentContainerClass {
+    min-height: 200px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+
+  .c0 .opinionHeadlineClass {
+    padding-right: 30px;
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .c0 .opinionContentContainerClass {
+    min-width: auto;
+    padding-right: 55px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    max-width: 167px;
+    min-width: auto;
+    position: relative;
+    min-width: 152px;
+  }
+
+  .c0 .opinionSummary125Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary160Class {
+    display: block;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 80.8%;
+  }
+
+  .c2 a {
+    display: block;
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-color: #DBDBDB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .c3 a > div,
+  .c3 a > div > div {
+    height: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: none;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-right: 0;
+    border-left-color: #DBDBDB;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top: none;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-right: 0;
+    padding-top: 0;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S10": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S11": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S2": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S4": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S5": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S7": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S8": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+  "S9": {
+    "border-bottom-width": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "padding-right": "0px",
+    "padding-top": "0px",
+  },
+}
+</style>
+
+<div
+  className="c0 S11"
+>
+  <div
+    className="c1 S10"
+  >
+    <div
+      className="c2 S9"
+    >
+      <div
+        className="c3 S2"
+      >
+        <div
+          className="S1"
+        >
+          opinion
+        </div>
+      </div>
+      <div
+        className="c4 S3"
+      />
+      <div
+        className="c5 S8"
+      >
+        <div
+          className="c6 S5"
+        >
+          <div
+            className="S4"
+          >
+            support-1
+          </div>
+        </div>
+        <div
+          className="c7 S7"
+        >
+          <div
+            className="S6"
+          >
+            support-2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
