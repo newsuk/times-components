@@ -1,4 +1,3 @@
-import React from "react";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -9,10 +8,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import KeyFacts from "../../src/key-facts";
-import data from "../../fixtures/key-facts-tests.json";
-
-const { data: { children, attributes } } = data;
+import renderKeyFacts from "../shared-render-key-facts";
 
 const styles = [
   "backgroundColor",
@@ -43,11 +39,7 @@ const tests = [
     name: "key facts with title",
     test: () => {
       const wrapper = mount(
-        <KeyFacts
-          items={children[0].children}
-          onLinkPress={() => {}}
-          title={attributes.title}
-        />
+        renderKeyFacts("New Brexit referendum")
       );
 
       expect(wrapper).toMatchSnapshot();
@@ -57,7 +49,7 @@ const tests = [
     name: "key facts without title",
     test: () => {
       const wrapper = mount(
-        <KeyFacts items={children[0].children} onLinkPress={() => {}} />
+        renderKeyFacts()
       );
 
       expect(wrapper).toMatchSnapshot();

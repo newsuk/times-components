@@ -3,43 +3,27 @@
 exports[`1. key facts with title 1`] = `
 <KeyFactsContainer>
   <KeyFactsTitle
-    title="Example title"
+    title="New Brexit referendum"
   />
   <KeyFactsWrapper>
-    <View>
-      <View />
+    <KeyFactsBullet>
       <Text>
-        Example bullet text
+        List item 1
       </Text>
-    </View>
-    <View>
-      <View />
+    </KeyFactsBullet>
+    <KeyFactsBullet>
       <Text>
-        An example 
-        <TextLink
-          target={null}
-          url="https://www.thetimes.co.uk/test/link"
-        />
+        List item 2
       </Text>
-    </View>
-    <View>
-      <View />
+    </KeyFactsBullet>
+    <KeyFactsBullet>
       <Text>
-        More example text.
+        List item 3a
       </Text>
-    </View>
-    <View>
-      <View />
       <Text>
-        Example text 
-        <Text>
-          this is bold 
-        </Text>
-        <Text>
-          this is in italics.
-        </Text>
+         List item 3b
       </Text>
-    </View>
+    </KeyFactsBullet>
   </KeyFactsWrapper>
 </KeyFactsContainer>
 `;
@@ -47,40 +31,24 @@ exports[`1. key facts with title 1`] = `
 exports[`2. key facts without title 1`] = `
 <KeyFactsContainer>
   <KeyFactsWrapper>
-    <View>
-      <View />
+    <KeyFactsBullet>
       <Text>
-        Example bullet text
+        List item 1
       </Text>
-    </View>
-    <View>
-      <View />
+    </KeyFactsBullet>
+    <KeyFactsBullet>
       <Text>
-        An example 
-        <TextLink
-          target={null}
-          url="https://www.thetimes.co.uk/test/link"
-        />
+        List item 2
       </Text>
-    </View>
-    <View>
-      <View />
+    </KeyFactsBullet>
+    <KeyFactsBullet>
       <Text>
-        More example text.
+        List item 3a
       </Text>
-    </View>
-    <View>
-      <View />
       <Text>
-        Example text 
-        <Text>
-          this is bold 
-        </Text>
-        <Text>
-          this is in italics.
-        </Text>
+         List item 3b
       </Text>
-    </View>
+    </KeyFactsBullet>
   </KeyFactsWrapper>
 </KeyFactsContainer>
 `;
