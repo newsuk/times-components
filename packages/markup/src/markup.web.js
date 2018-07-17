@@ -18,19 +18,26 @@ const styles = StyleSheet.create({
   }
 });
 const defaultRenderers = {
-  paragraph(key, attributes, renderedChildren) {
+  ad(key, attributes) {
     return {
-      element: <p key={key}>{renderedChildren}</p>
+      element: (
+        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+      )
     };
   },
-  text(key, { value }) {
+  block(key, attributes, renderedChildren) {
     return {
-      element: value
+      element: <div key={key}>{renderedChildren}</div>
     };
   },
   bold(key, attributes, renderedChildren) {
     return {
       element: <strong key={key}>{renderedChildren}</strong>
+    };
+  },
+  break(key) {
+    return {
+      element: <br key={key} />
     };
   },
   italic(key, attributes, renderedChildren) {
@@ -43,16 +50,9 @@ const defaultRenderers = {
       element: <span key={key}>{renderedChildren}</span>
     };
   },
-  ad(key, attributes) {
+  paragraph(key, attributes, renderedChildren) {
     return {
-      element: (
-        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-      )
-    };
-  },
-  break(key) {
-    return {
-      element: <br key={key} />
+      element: <p key={key}>{renderedChildren}</p>
     };
   },
   pullQuote(key, attributes) {
@@ -64,6 +64,11 @@ const defaultRenderers = {
           key={key}
         />
       )
+    };
+  },
+  text(key, { value }) {
+    return {
+      element: value
     };
   }
 };

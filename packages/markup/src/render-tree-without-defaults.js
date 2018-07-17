@@ -5,7 +5,7 @@ const renderTree = (tree, renderers, key, indx) => {
 
   if (!renderer) return null;
 
-  const initialResult = renderer(key, attributes);
+  const initialResult = renderer(key, attributes, null, indx, tree);
   const { element, shouldRenderChildren = true } = initialResult;
 
   if (!shouldRenderChildren) return element;
@@ -13,7 +13,9 @@ const renderTree = (tree, renderers, key, indx) => {
   const renderedChildren = children.map((child, index) =>
     renderTree(child, renderers, `${key}.${index}`, index)
   );
-  const result = renderer(key, attributes, renderedChildren, indx);
+  const result = renderer(key, attributes, renderedChildren, indx, tree);
+
   return result.element;
 };
+
 export default renderTree;

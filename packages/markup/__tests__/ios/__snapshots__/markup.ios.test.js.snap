@@ -144,9 +144,74 @@ exports[`9. nested tags 1`] = `
 </Text>
 `;
 
-exports[`10. ignore children of nested tags 1`] = `<Text />`;
+exports[`10. ignore children of nested tags 1`] = `
+<View>
+  Some text is here 
+  <View>
+    and there is some 
+    <View>
+      more text 
+      <Text>
+        and in here
+      </Text>
+    </View>
+    <Text />
+     after it too
+  </View>
+   and here
+</View>
+`;
 
-exports[`11. wrapped tags 1`] = `
+exports[`11. provide ast of node 1`] = `
+<View>
+  Some text is here 
+  <View>
+    and there is some 
+    <View>
+      more text 
+      <Text>
+        and in here
+      </Text>
+    </View>
+    <Text>
+      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
+    </Text>
+     after it too
+  </View>
+   and here
+</View>
+`;
+
+exports[`12. provide ast of node for child 1`] = `
+<View>
+  <Text>
+    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
+  </Text>
+  <View>
+    <Text>
+      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
+    </Text>
+    <View>
+      <Text>
+        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
+      </Text>
+      <Text>
+        <Text>
+          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
+        </Text>
+      </Text>
+    </View>
+    <Text>
+      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
+    </Text>
+  </View>
+  <Text>
+    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
+  </Text>
+</View>
+`;
+
+exports[`13. wrapped tags 1`] = `
 <Text>
   Camilla Long is 
   <Text
@@ -172,7 +237,7 @@ exports[`11. wrapped tags 1`] = `
 </Text>
 `;
 
-exports[`12. multiple children 1`] = `
+exports[`14. multiple children 1`] = `
 <Text
   style={
     Object {
@@ -189,6 +254,6 @@ exports[`12. multiple children 1`] = `
 </Text>
 `;
 
-exports[`13. does not render a script tag 1`] = `<View />`;
+exports[`15. does not render a script tag 1`] = `<View />`;
 
-exports[`14. image tag 1`] = `<View />`;
+exports[`16. image tag 1`] = `<View />`;

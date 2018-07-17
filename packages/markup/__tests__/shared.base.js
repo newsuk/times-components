@@ -128,10 +128,47 @@ export default renderComponent => {
       test: () => {
         const output = renderComponent(
           renderTree(nested, {
-            block(key, attributes, renderedChildren) {
+            specialElement(key, attributes, renderedChildren) {
               return {
                 element: <Text key={key}>{renderedChildren}</Text>,
                 shouldRenderChildren: false
+              };
+            }
+          })
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "provide AST of node",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            specialElement(key, attributes, renderedChildren, indx, node) {
+              return {
+                element: (
+                  <Text key={key}>{`special: ${JSON.stringify(node)}`}</Text>
+                ),
+                shouldRenderChildren: false
+              };
+            }
+          })
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "provide AST of node for child",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            text(key, attributes, renderedChildren, indx, node) {
+              return {
+                element: (
+                  <Text key={key}>{`special: ${JSON.stringify(node)}`}</Text>
+                )
               };
             }
           })
