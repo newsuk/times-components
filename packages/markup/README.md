@@ -1,6 +1,52 @@
-# Markup Component
+# Markup
 
-This component renders out markup trees into react components.
+This component renders out markup Abstrat Syntax Trees (AST) into components.
+The `renderTree` method takes AST data as the first argument, and an override
+renderer object as the second argument. Markup has a set of default renderers it
+uses for common AST nodes such as `paragraph`, `text` or `link`. In the override
+renderer that a consumer would set, the consumer dictates how these nodes are
+handled. Each renderer method should return an object with an `element` property
+(that returns the component to be rendered), and a optional
+`shouldIgnoreChildren` boolean that can ensure the renderer does not render
+certain node's children.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
+package
+
+## Running the code
+
+Please see our main [README.md](../README.md) to get the project running locally
+
+## Development
+
+The code can be formatted and linted in accordance with the agreed standards.
+
+```
+yarn fmt
+yarn lint
+```
+
+## Testing
+
+Testing can be done on each platform individually
+
+```
+yarn test:android
+yarn test:ios
+yarn test:web
+```
+
+Or the tests for all platforms can be run
+
+```
+yarn test:all
+```
+
+Visit the official
+[storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Composed%2FMarkup&selectedStory=Multiple%20paragraphs&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
+to see our available markup templates.
 
 ## How to use
 
@@ -54,13 +100,15 @@ const tree = {
 
 const renderers = {
   fancyThing(key, attributes, renderedChildren) {
-    return (
-      <View key={key} style={{ backgroundColor: attributes.backgroundColor }}>
-        <Text style={{ color: "green" }}>
-          {renderedChildren}
-        </Text>
-      </View>
-    );
+    return {
+      element: (
+        <View key={key} style={{ backgroundColor: attributes.backgroundColor }}>
+          <Text style={{ color: "green" }}>
+            {renderedChildren}
+          </Text>
+        </View>
+      )
+    };
   }
 }
 
@@ -77,7 +125,7 @@ const element = renderTree(tree, renderers)
 an array of trees into an array of react elements.
 
 ```js
-import { renderTree } from "@times-components/markup";
+import { renderTrees } from "@times-components/markup";
 
 const trees = [
   {

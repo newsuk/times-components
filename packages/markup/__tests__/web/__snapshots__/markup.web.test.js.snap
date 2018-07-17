@@ -131,7 +131,9 @@ exports[`9. nested tags 1`] = `
 </div>
 `;
 
-exports[`10. wrapped tags 1`] = `
+exports[`10. ignore children of nested tags 1`] = `<div />`;
+
+exports[`11. wrapped tags 1`] = `
 <div>
   Camilla Long is 
   <em>
@@ -145,13 +147,17 @@ exports[`10. wrapped tags 1`] = `
 </div>
 `;
 
-exports[`11. multiple children 1`] = `
-<Text
-  style={
-    Object {
-      "color": "red",
-    }
-  }
+exports[`12. multiple children 1`] = `
+<style>
+{
+  "IS1": {
+    "color": "red",
+  },
+}
+</style>
+
+<div
+  className="IS1"
 >
   <p>
     This is the text for paragraph one
@@ -159,9 +165,9 @@ exports[`11. multiple children 1`] = `
   <p>
     This is the text for paragraph two
   </p>
-</Text>
+</div>
 `;
 
-exports[`12. does not render a script tag 1`] = `<div />`;
+exports[`13. does not render a script tag 1`] = `<div />`;
 
-exports[`13. image tag 1`] = `<div />`;
+exports[`14. image tag 1`] = `<div />`;

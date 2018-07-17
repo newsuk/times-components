@@ -124,6 +124,23 @@ export default renderComponent => {
       }
     },
     {
+      name: "ignore children of nested tags",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            block(key, attributes, renderedChildren) {
+              return {
+                element: <Text key={key}>{renderedChildren}</Text>,
+                shouldIgnoreChildren: true
+              };
+            }
+          })
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "wrapped tags",
       test: () => {
         const output = renderComponent(<Text>{renderTrees(bio)}</Text>);
@@ -134,7 +151,7 @@ export default renderComponent => {
     {
       name: "multiple children",
       test: () => {
-        const output = (
+        const output = renderComponent(
           <Text style={{ color: "red" }}>{renderTrees(multiParagraph)}</Text>
         );
 

@@ -5,6 +5,10 @@ const renderTree = (tree, renderers, key, indx) => {
 
   if (!renderer) return null;
 
+  const initialResult = renderer(key, attributes);
+
+  if (initialResult.shouldIgnoreChildren) return initialResult.element;
+
   const renderedChildren = children.map((child, index) =>
     renderTree(child, renderers, `${key}.${index}`, index)
   );
