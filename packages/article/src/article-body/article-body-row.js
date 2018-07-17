@@ -21,60 +21,68 @@ const primaryContainer = {
 const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
-      return (
-        <BodyParagraph key={index} uid={index}>
-          {children}
-        </BodyParagraph>
-      );
+      return {
+        element: (
+          <BodyParagraph key={index} uid={index}>
+            {children}
+          </BodyParagraph>
+        )
+      };
     },
     image(key, { display, ratio, url, caption, credits }) {
-      return (
-        <View key={key}>
-          <ArticleImage
-            captionOptions={{
-              caption,
-              credits
-            }}
-            imageOptions={{
-              display,
-              ratio,
-              url
-            }}
-          />
-        </View>
-      );
+      return {
+        element: (
+          <View key={key}>
+            <ArticleImage
+              captionOptions={{
+                caption,
+                credits
+              }}
+              imageOptions={{
+                display,
+                ratio,
+                url
+              }}
+            />
+          </View>
+        )
+      };
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
-      return (
-        <View key={key}>
-          <PullQuote
-            caption={name}
-            content={content}
-            key={key}
-            twitter={twitter}
-          />
-        </View>
-      );
+      return {
+        element: (
+          <View key={key}>
+            <PullQuote
+              caption={name}
+              content={content}
+              key={key}
+              twitter={twitter}
+            />
+          </View>
+        )
+      };
     },
     link(key, attributes, children) {
       const url = attributes.href;
 
-      return (
-        <ArticleLink
-          key={index}
-          onPress={e =>
-            onLinkPress(e, {
-              url: attributes.href,
-              type: attributes.type,
-              canonicalId: attributes.canonicalId
-            })
-          }
-          url={url}
-          uuid={index}
-        >
-          {children}
-        </ArticleLink>
-      );
+      return {
+        element: (
+          <ArticleLink
+            key={index}
+            onPress={e =>
+              onLinkPress(e, {
+                url: attributes.href,
+                type: attributes.type,
+                canonicalId: attributes.canonicalId
+              })
+            }
+            url={url}
+            uuid={index}
+          >
+            {children}
+          </ArticleLink>
+        )
+      };
     },
     video(
       key,
@@ -91,20 +99,22 @@ const ArticleRow = ({ content: { data, index }, onLinkPress, onVideoPress }) =>
       const { width } = Dimensions.get("window");
       const height = width / aspectRatio;
 
-      return (
-        <View key={key} style={primaryContainer}>
-          <Video
-            accountId={brightcoveAccountId}
-            height={height}
-            onVideoPress={onVideoPress}
-            policyKey={brightcovePolicyKey}
-            poster={{ uri: posterImageUrl }}
-            videoId={brightcoveVideoId}
-            width={width}
-          />
-          <InsetCaption caption={caption} />
-        </View>
-      );
+      return {
+        element: (
+          <View key={key} style={primaryContainer}>
+            <Video
+              accountId={brightcoveAccountId}
+              height={height}
+              onVideoPress={onVideoPress}
+              policyKey={brightcovePolicyKey}
+              poster={{ uri: posterImageUrl }}
+              videoId={brightcoveVideoId}
+              width={width}
+            />
+            <InsetCaption caption={caption} />
+          </View>
+        )
+      };
     }
   });
 
