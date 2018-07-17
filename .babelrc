@@ -1,8 +1,12 @@
 {
   "presets": ["react-native"],
   "plugins": [
-    ["flow-react-proptypes", { "ignoreNodeModules": true }],
-    "styled-components",
-    "add-react-displayname"
-  ]
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "react-dom/server": "./node_modules/react-apollo/react-apollo.browser.umd.js"
+        }
+      }
+    ]]
 }
