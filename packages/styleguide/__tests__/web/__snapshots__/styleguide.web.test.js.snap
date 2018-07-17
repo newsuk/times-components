@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`web should render a FadeIn animation wrapper component 1`] = `
+exports[`a FadeIn animation wrapper component 1`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
@@ -15,7 +15,7 @@ exports[`web should render a FadeIn animation wrapper component 1`] = `
 </div>
 `;
 
-exports[`web should render a FadeIn animation wrapper component 2`] = `
+exports[`a FadeIn animation wrapper component 2`] = `
 .c0 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;

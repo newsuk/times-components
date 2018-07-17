@@ -8,7 +8,7 @@ export default () => {
     jest.useFakeTimers();
   });
 
-  it("should render a FadeIn animation wrapper component", () => {
+  it("a FadeIn animation wrapper component", () => {
     const testInstance = TestRenderer.create(
       <Animations.FadeIn>
         <Text>Hello World</Text>
