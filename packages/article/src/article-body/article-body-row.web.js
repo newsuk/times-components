@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { renderTrees } from "@times-components/markup";
-import Video from "@times-components/video";
 import ArticleImage from "@times-components/article-image";
+import { renderTrees } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
+import Video from "@times-components/video";
 import BodyParagraph from "./article-body-paragraph";
 import ArticleLink from "./article-link";
 import AspectRatioContainer from "./media-aspect-ratio";

@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import sharedPropTypes from "./key-facts-shared-prop-types";
 
 export const propTypes = {
-  items: PropTypes.array.isRequired,
+  children: sharedPropTypes.children,
   onLinkPress: PropTypes.func,
   title: PropTypes.string
 };

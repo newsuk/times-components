@@ -1,61 +1,21 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { TextLink } from "@times-components/link";
-import { renderTree } from "@times-components/markup";
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
 import KeyFactsWrapper from "./key-facts-wrapper";
+import KeyFactsBullet from "./key-facts-bullet";
 import { propTypes, defaultProps } from "./key-facts-prop-types";
-import styles from "./styles";
 
-const KeyFacts = ({ items, onLinkPress, title }) => {
+const KeyFacts = ({ children, title }) => {
   const renderTitle = () => {
     if (!title) return null;
 
     return <KeyFactsTitle title={title} />;
   };
 
-  const renderKeyFact = (item, index) => (
-    <View key={`key-facts-${index}`} style={styles.container}>
-      <View style={styles.bullet} />
-      <Text style={styles.text}>
-        {item.children.map((ast, indx) =>
-          renderTree(
-            ast,
-            {
-              link(key, attributes, children) {
-                const url = attributes.href;
-                return (
-                  <TextLink
-                    key={`${index}${key}`}
-                    onPress={e =>
-                      onLinkPress(e, {
-                        url: attributes.href,
-                        type: attributes.type,
-                        canonicalId: attributes.canonicalId
-                      })
-                    }
-                    style={styles.link}
-                    url={url}
-                  >
-                    {children}
-                  </TextLink>
-                );
-              }
-            },
-            `key-facts-${index}${indx}`
-          )
-        )}
-      </Text>
-    </View>
-  );
-
   return (
     <KeyFactsContainer>
       {renderTitle()}
-      <KeyFactsWrapper>
-        {items.map((item, index) => renderKeyFact(item, index))}
-      </KeyFactsWrapper>
+      <KeyFactsWrapper>{children}</KeyFactsWrapper>
     </KeyFactsContainer>
   );
 };
@@ -63,4 +23,5 @@ const KeyFacts = ({ items, onLinkPress, title }) => {
 KeyFacts.propTypes = propTypes;
 KeyFacts.defaultProps = defaultProps;
 
+export { KeyFactsBullet };
 export default KeyFacts;

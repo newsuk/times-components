@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
+import KeyFacts, { KeyFactsBullet } from "@times-components/key-facts";
 import PullQuote from "@times-components/pull-quote";
 import { colours, spacing } from "@times-components/styleguide";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
@@ -48,6 +49,19 @@ const defaultRenderers = {
         content={attributes.content}
         key={key}
       />
+    );
+  },
+  listElement(key, attributes, children) {
+    return <KeyFactsBullet key={key}>{children}</KeyFactsBullet>;
+  },
+  unorderedList(key, attributes, children) {
+    return children;
+  },
+  keyFacts(key, attributes, children) {
+    return (
+      <KeyFacts key={key} onLinkPress={() => {}} title={attributes.title}>
+        {children[0]}
+      </KeyFacts>
     );
   }
 };
