@@ -19,36 +19,52 @@ const styles = StyleSheet.create({
 });
 const defaultRenderers = {
   paragraph(key, attributes, renderedChildren) {
-    return <p key={key}>{renderedChildren}</p>;
+    return {
+      element: <p key={key}>{renderedChildren}</p>
+    };
   },
   text(key, { value }) {
-    return value;
+    return {
+      element: value
+    };
   },
   bold(key, attributes, renderedChildren) {
-    return <strong key={key}>{renderedChildren}</strong>;
+    return {
+      element: <strong key={key}>{renderedChildren}</strong>
+    };
   },
   italic(key, attributes, renderedChildren) {
-    return <em key={key}>{renderedChildren}</em>;
+    return {
+      element: <em key={key}>{renderedChildren}</em>
+    };
   },
   inline(key, attributes, renderedChildren) {
-    return <span key={key}>{renderedChildren}</span>;
+    return {
+      element: <span key={key}>{renderedChildren}</span>
+    };
   },
   ad(key, attributes) {
-    return (
-      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-    );
+    return {
+      element: (
+        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+      )
+    };
   },
   break(key) {
-    return <br key={key} />;
+    return {
+      element: <br key={key} />
+    };
   },
   pullQuote(key, attributes) {
-    return (
-      <PullQuote
-        caption={attributes.caption.name}
-        content={attributes.content}
-        key={key}
-      />
-    );
+    return {
+      element: (
+        <PullQuote
+          caption={attributes.caption.name}
+          content={attributes.content}
+          key={key}
+        />
+      )
+    };
   }
 };
 

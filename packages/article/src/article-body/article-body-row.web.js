@@ -30,29 +30,33 @@ export const responsiveDisplayWrapper = displayType => {
 const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
   renderTrees([data], {
     paragraph(key, attributes, children) {
-      return (
-        <BodyParagraph key={key} uid={index}>
-          {children}
-        </BodyParagraph>
-      );
+      return {
+        element: (
+          <BodyParagraph key={key} uid={index}>
+            {children}
+          </BodyParagraph>
+        )
+      };
     },
     image(key, { display, ratio, url, caption, credits }) {
       const MediaWrapper = responsiveDisplayWrapper(display);
-      return (
-        <MediaWrapper key={key}>
-          <ArticleImage
-            captionOptions={{
-              caption,
-              credits
-            }}
-            imageOptions={{
-              display,
-              ratio,
-              url
-            }}
-          />
-        </MediaWrapper>
-      );
+      return {
+        element: (
+          <MediaWrapper key={key}>
+            <ArticleImage
+              captionOptions={{
+                caption,
+                credits
+              }}
+              imageOptions={{
+                display,
+                ratio,
+                url
+              }}
+            />
+          </MediaWrapper>
+        )
+      };
     },
     video(
       key,
@@ -65,45 +69,51 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
       }
     ) {
       const MediaWrapper = responsiveDisplayWrapper("primary");
-      return (
-        <MediaWrapper key={key}>
-          <AspectRatioContainer aspectRatio="16:9">
-            <Video
-              accountId={brightcoveAccountId}
-              height="100%"
-              policyKey={brightcovePolicyKey}
-              poster={{ uri: posterImageUrl }}
-              videoId={brightcoveVideoId}
-              width="100%"
-            />
-          </AspectRatioContainer>
-          <InsetCaption caption={caption} />
-        </MediaWrapper>
-      );
+      return {
+        element: (
+          <MediaWrapper key={key}>
+            <AspectRatioContainer aspectRatio="16:9">
+              <Video
+                accountId={brightcoveAccountId}
+                height="100%"
+                policyKey={brightcovePolicyKey}
+                poster={{ uri: posterImageUrl }}
+                videoId={brightcoveVideoId}
+                width="100%"
+              />
+            </AspectRatioContainer>
+            <InsetCaption caption={caption} />
+          </MediaWrapper>
+        )
+      };
     },
     pullQuote(key, { content, caption: { name, twitter } }) {
-      return (
-        <PullQuoteContainer key={key}>
-          <PullQuoteResp>
-            <PullQuote caption={name} content={content} twitter={twitter} />
-          </PullQuoteResp>
-        </PullQuoteContainer>
-      );
+      return {
+        element: (
+          <PullQuoteContainer key={key}>
+            <PullQuoteResp>
+              <PullQuote caption={name} content={content} twitter={twitter} />
+            </PullQuoteResp>
+          </PullQuoteContainer>
+        )
+      };
     },
     link(key, attributes, children) {
       const { href, target } = attributes;
 
-      return (
-        <ArticleLink
-          key={key}
-          onPress={e => onLinkPress(e, { href })}
-          target={target}
-          url={href}
-          uuid={index}
-        >
-          {children}
-        </ArticleLink>
-      );
+      return {
+        element: (
+          <ArticleLink
+            key={key}
+            onPress={e => onLinkPress(e, { href })}
+            target={target}
+            url={href}
+            uuid={index}
+          >
+            {children}
+          </ArticleLink>
+        )
+      };
     }
   });
 

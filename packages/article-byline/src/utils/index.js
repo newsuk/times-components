@@ -28,10 +28,12 @@ export const renderByline = (
     },
 
     inline(key, attributes, children) {
-      return (
-        <Text key={key} style={bylineStyles}>
-          {children}
-        </Text>
-      );
+      return {
+        element: (
+          <Text key={key} style={bylineStyles}>
+            {children}
+          </Text>
+        )
+      };
     }
   });

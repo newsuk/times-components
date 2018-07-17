@@ -70,14 +70,18 @@ export default renderComponent => {
     const output = renderComponent(
       renderTree(mixture, {
         block(key, attributes, renderedChildren) {
-          return <View key={key}>{renderedChildren}</View>;
+          return {
+            element: <View key={key}>{renderedChildren}</View>
+          };
         },
         link(key, attributes, renderedChildren) {
-          return (
-            <Text href={attributes.href} key={key}>
-              {renderedChildren}
-            </Text>
-          );
+          return {
+            element: (
+              <Text href={attributes.href} key={key}>
+                {renderedChildren}
+              </Text>
+            )
+          };
         }
       })
     );
@@ -89,7 +93,9 @@ export default renderComponent => {
     const output = renderComponent(
       renderTree(nested, {
         block(key, attributes, renderedChildren) {
-          return <Text key={key}>{renderedChildren}</Text>;
+          return {
+            element: <Text key={key}>{renderedChildren}</Text>
+          };
         }
       })
     );

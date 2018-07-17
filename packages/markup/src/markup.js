@@ -24,44 +24,60 @@ const styles = StyleSheet.create({
 
 const defaultRenderers = {
   paragraph(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return {
+      element: <Text key={key}>{renderedChildren}</Text>
+    };
   },
   text(key, { value }) {
-    return value;
+    return {
+      element: value
+    };
   },
   bold(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.bold}>
-        {renderedChildren}
-      </Text>
-    );
+    return {
+      element: (
+        <Text key={key} style={styles.bold}>
+          {renderedChildren}
+        </Text>
+      )
+    };
   },
   italic(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.italic}>
-        {renderedChildren}
-      </Text>
-    );
+    return {
+      element: (
+        <Text key={key} style={styles.italic}>
+          {renderedChildren}
+        </Text>
+      )
+    };
   },
   inline(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return {
+      element: <Text key={key}>{renderedChildren}</Text>
+    };
   },
   ad(key, attributes) {
-    return (
-      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-    );
+    return {
+      element: (
+        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+      )
+    };
   },
   break(key) {
-    return <Text key={key}>{"\n"}</Text>;
+    return {
+      element: <Text key={key}>{"\n"}</Text>
+    };
   },
   pullQuote(key, attributes) {
-    return (
-      <PullQuote
-        caption={attributes.caption.name}
-        content={attributes.content}
-        key={key}
-      />
-    );
+    return {
+      element: (
+        <PullQuote
+          caption={attributes.caption.name}
+          content={attributes.content}
+          key={key}
+        />
+      )
+    };
   }
 };
 
