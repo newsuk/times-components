@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+.c0 {
+  margin: 0 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-right: 20px;
+    width: 20%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80%;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    NEW BREXIT REFERENDUM
+  </div>
+  <div
+    className="c2"
+  >
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 1
+        </span>
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 2
+        </span>
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 3a
+        </span>
+        <span>
+           List item 3b
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. key facts without title 1`] = `
+.c0 {
+  margin: 0 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: 80%;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 1
+        </span>
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 2
+        </span>
+      </div>
+    </div>
+    <div>
+      <div />
+      <div>
+        <span>
+          List item 3a
+        </span>
+        <span>
+           List item 3b
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

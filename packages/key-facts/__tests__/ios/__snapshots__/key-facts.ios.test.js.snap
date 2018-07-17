@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+<KeyFactsContainer>
+  <KeyFactsTitle
+    title="New Brexit referendum"
+  />
+  <KeyFactsWrapper>
+    <KeyFactsBullet>
+      <Text>
+        List item 1
+      </Text>
+    </KeyFactsBullet>
+    <KeyFactsBullet>
+      <Text>
+        List item 2
+      </Text>
+    </KeyFactsBullet>
+    <KeyFactsBullet>
+      <Text>
+        List item 3a
+      </Text>
+      <Text>
+         List item 3b
+      </Text>
+    </KeyFactsBullet>
+  </KeyFactsWrapper>
+</KeyFactsContainer>
+`;
+
+exports[`2. key facts without title 1`] = `
+<KeyFactsContainer>
+  <KeyFactsWrapper>
+    <KeyFactsBullet>
+      <Text>
+        List item 1
+      </Text>
+    </KeyFactsBullet>
+    <KeyFactsBullet>
+      <Text>
+        List item 2
+      </Text>
+    </KeyFactsBullet>
+    <KeyFactsBullet>
+      <Text>
+        List item 3a
+      </Text>
+      <Text>
+         List item 3b
+      </Text>
+    </KeyFactsBullet>
+  </KeyFactsWrapper>
+</KeyFactsContainer>
+`;

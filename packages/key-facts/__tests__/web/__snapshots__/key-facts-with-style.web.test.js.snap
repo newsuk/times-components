@@ -1,0 +1,480 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+<style>
+{
+  "S1": {
+    "color": "inherit",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "12px",
+    "font-weight": "400",
+    "letter-spacing": "1.2px",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S10": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S11": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S12": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S13": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S14": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S15": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S16": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S2": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S3": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S4": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S5": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S6": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S7": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S8": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S9": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+}
+</style>
+
+<div
+  className="responsive-styles__component-fbPFZZ hwYdzt S16"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ VvueK S1"
+  >
+    NEW BREXIT REFERENDUM
+  </div>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA S15"
+  >
+    <div
+      className="S5"
+    >
+      <div
+        className="S2"
+      />
+      <div
+        className="S4"
+      >
+        <span
+          className="S3"
+        >
+          List item 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="S9"
+    >
+      <div
+        className="S6"
+      />
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          List item 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="S14"
+    >
+      <div
+        className="S10"
+      />
+      <div
+        className="S13"
+      >
+        <span
+          className="S11"
+        >
+          List item 3a
+        </span>
+        <span
+          className="S12"
+        >
+           List item 3b
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`2. key facts without title 1`] = `
+<style>
+{
+  "S1": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S10": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S11": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S12": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S13": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S14": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S15": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S2": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S3": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S4": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S5": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+  "S6": {
+    "color": "inherit",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S7": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S8": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S9": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
+}
+</style>
+
+<div
+  className="responsive-styles__component-fbPFZZ hwYdzt S15"
+>
+  <div
+    className="responsive-styles__component-fbPFZZ llrYRA S14"
+  >
+    <div
+      className="S4"
+    >
+      <div
+        className="S1"
+      />
+      <div
+        className="S3"
+      >
+        <span
+          className="S2"
+        >
+          List item 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="S8"
+    >
+      <div
+        className="S5"
+      />
+      <div
+        className="S7"
+      >
+        <span
+          className="S6"
+        >
+          List item 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="S13"
+    >
+      <div
+        className="S9"
+      />
+      <div
+        className="S12"
+      >
+        <span
+          className="S10"
+        >
+          List item 3a
+        </span>
+        <span
+          className="S11"
+        >
+           List item 3b
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
