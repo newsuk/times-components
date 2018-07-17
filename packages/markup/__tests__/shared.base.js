@@ -184,9 +184,7 @@ export default renderComponent => {
           renderTree(nested, {
             text(key, attributes, renderedChildren) {
               return {
-                element: (
-                  <Text key={key}>{renderedChildren.length}</Text>
-                )
+                element: <Text key={key}>{renderedChildren.length}</Text>
               };
             }
           })
