@@ -211,7 +211,36 @@ exports[`12. provide ast of node for child 1`] = `
 </View>
 `;
 
-exports[`13. wrapped tags 1`] = `
+exports[`13. provide empty children 1`] = `
+<View>
+  <Text>
+    0
+  </Text>
+  <View>
+    <Text>
+      0
+    </Text>
+    <View>
+      <Text>
+        0
+      </Text>
+      <Text>
+        <Text>
+          0
+        </Text>
+      </Text>
+    </View>
+    <Text>
+      0
+    </Text>
+  </View>
+  <Text>
+    0
+  </Text>
+</View>
+`;
+
+exports[`14. wrapped tags 1`] = `
 <Text>
   Camilla Long is 
   <Text
@@ -237,7 +266,7 @@ exports[`13. wrapped tags 1`] = `
 </Text>
 `;
 
-exports[`14. multiple children 1`] = `
+exports[`15. multiple children 1`] = `
 <Text
   style={
     Object {
@@ -254,6 +283,6 @@ exports[`14. multiple children 1`] = `
 </Text>
 `;
 
-exports[`15. does not render a script tag 1`] = `<View />`;
+exports[`16. does not render a script tag 1`] = `<View />`;
 
-exports[`16. image tag 1`] = `<View />`;
+exports[`17. image tag 1`] = `<View />`;

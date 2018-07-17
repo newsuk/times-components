@@ -178,6 +178,24 @@ export default renderComponent => {
       }
     },
     {
+      name: "provide empty children",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            text(key, attributes, renderedChildren) {
+              return {
+                element: (
+                  <Text key={key}>{renderedChildren.length}</Text>
+                )
+              };
+            }
+          })
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "wrapped tags",
       test: () => {
         const output = renderComponent(<Text>{renderTrees(bio)}</Text>);

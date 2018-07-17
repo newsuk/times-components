@@ -5,7 +5,7 @@ const renderTree = (tree, renderers, key, indx) => {
 
   if (!renderer) return null;
 
-  const initialResult = renderer(key, attributes, null, indx, tree);
+  const initialResult = renderer(key, attributes, [], indx, tree);
   const { element, shouldRenderChildren = true } = initialResult;
 
   if (!shouldRenderChildren) return element;
