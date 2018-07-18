@@ -6,7 +6,7 @@ const caption = "A caption";
 const twitter = "@twitter";
 
 export default renderComponent => {
-  it("should render with different colours", () => {
+  it("different colours", () => {
     const output = renderComponent(
       <PullQuotes
         caption={caption}
@@ -17,6 +17,6 @@ export default renderComponent => {
       />
     );
 
-    expect(output).toMatchSnapshot("1. should render with different colours");
+    expect(output).toMatchSnapshot();
   });
 };

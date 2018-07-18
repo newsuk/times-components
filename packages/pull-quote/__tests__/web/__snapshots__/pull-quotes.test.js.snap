@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. should render with a caption 1`] = `
+exports[`1. with a caption 1`] = `
 <div>
   <div>
     “
@@ -16,7 +16,7 @@ exports[`1. should render with a caption 1`] = `
 </div>
 `;
 
-exports[`2. should render without a caption 1`] = `
+exports[`2. without a caption 1`] = `
 <div>
   <div>
     “
@@ -32,7 +32,7 @@ exports[`2. should render without a caption 1`] = `
 </div>
 `;
 
-exports[`3. should render with a twitter handle 1`] = `
+exports[`3. with a twitter handle 1`] = `
 <div>
   <div>
     “

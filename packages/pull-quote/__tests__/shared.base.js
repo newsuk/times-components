@@ -1,4 +1,5 @@
 import React from "react";
+import { iterator } from "@times-components/test-utils";
 import PullQuotes from "../src/pull-quote";
 
 const content = "Some content";
@@ -6,25 +7,36 @@ const caption = "A caption";
 const twitter = "@twitter";
 
 export default renderComponent => {
-  it("should render with a caption", () => {
-    const output = renderComponent(
-      <PullQuotes caption={caption} content={content} />
-    );
+  const tests = [
+    {
+      name: "with a caption",
+      test() {
+        const output = renderComponent(
+          <PullQuotes caption={caption} content={content} />
+        );
 
-    expect(output).toMatchSnapshot("1. should render with a caption");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "without a caption",
+      test() {
+        const output = renderComponent(<PullQuotes content={content} />);
 
-  it("should render without a caption", () => {
-    const output = renderComponent(<PullQuotes content={content} />);
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "with a twitter handle",
+      test() {
+        const output = renderComponent(
+          <PullQuotes caption={caption} content={content} twitter={twitter} />
+        );
 
-    expect(output).toMatchSnapshot("2. should render without a caption");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("should render with a twitter handle", () => {
-    const output = renderComponent(
-      <PullQuotes caption={caption} content={content} twitter={twitter} />
-    );
-
-    expect(output).toMatchSnapshot("3. should render with a twitter handle");
-  });
+  iterator(tests);
 };
