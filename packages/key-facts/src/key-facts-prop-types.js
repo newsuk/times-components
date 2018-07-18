@@ -1,13 +1,8 @@
 import PropTypes from "prop-types";
-import { treePropType } from "@times-components/markup";
-// import sharedPropTypes from "./key-facts-shared-prop-types";
 
-export const propTypes = {
-  ast: PropTypes.arrayOf(treePropType).isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  title: PropTypes.string
+const propTypes = {
+  ast: PropTypes.object.isRequired,
+  onLinkPress: PropTypes.func.isRequired
 };
 
-export const defaultProps = {
-  title: ""
-};
+export default propTypes;

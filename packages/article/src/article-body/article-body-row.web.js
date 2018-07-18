@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ArticleImage from "@times-components/article-image";
+import KeyFacts from "@times-components/key-facts";
 import { renderTrees } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
@@ -96,6 +97,12 @@ const ArticleRow = ({ content: { data, index }, onLinkPress }) =>
             </PullQuoteResp>
           </PullQuoteContainer>
         )
+      };
+    },
+    keyFacts(key, attributes, renderedChildren, indx, node) {
+      return {
+        element: <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />,
+        shouldRenderChildren: false
       };
     },
     link(key, attributes, children) {

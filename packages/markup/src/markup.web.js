@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import Ad from "@times-components/ad";
-import KeyFacts, { KeyFactsBullet } from "@times-components/key-facts";
+import KeyFacts from "@times-components/key-facts";
 import PullQuote from "@times-components/pull-quote";
 import { colours, spacing } from "@times-components/styleguide";
 import renderTreeWithoutDefaults from "./render-tree-without-defaults";
@@ -53,7 +53,7 @@ const defaultRenderers = {
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return {
-      element: <KeyFacts ast={node} key={key} />,
+      element: <KeyFacts ast={node} key={key} onLinkPress={() => {}} />,
       shouldRenderChildren: false
     };
   },

@@ -5,10 +5,13 @@ import { renderTree } from "@times-components/markup";
 import KeyFactsContainer from "./key-facts-container";
 import KeyFactsTitle from "./key-facts-title";
 import KeyFactsWrapper from "./key-facts-wrapper";
-import { propTypes, defaultProps } from "./key-facts-prop-types";
+import propTypes from "./key-facts-prop-types";
 import styles from "./styles";
 
-const KeyFacts = ({ ast: keyFactsAST, onLinkPress, title }) => {
+const KeyFacts = ({ ast, onLinkPress }) => {
+  const { children, attributes: { title } } = ast;
+  const { children: keyFactsItems } = children[0];
+
   const renderTitle = () => {
     if (!title) return null;
 
@@ -20,34 +23,34 @@ const KeyFacts = ({ ast: keyFactsAST, onLinkPress, title }) => {
       <View style={styles.bulletContainer}>
         <View style={styles.bullet} />
         <Text style={styles.text}>
-          {item.children.map((ast, indx) =>
+          {item.children.map((data, indx) =>
             renderTree(
-              ast,
+              data,
               {
-                link(key, attributes, children) {
-                  const url = attributes.href;
+                link(key, atts, renderedChildren) {
+                  const { canonicalId, href: url, type } = atts;
                   return {
                     element: (
                       <TextLink
                         key={`${index}${key}`}
                         onPress={e =>
                           onLinkPress(e, {
-                            canonicalId: attributes.canonicalId,
-                            type: attributes.type,
-                            url: attributes.href
+                            canonicalId,
+                            type,
+                            url
                           })
                         }
                         style={styles.link}
                         url={url}
                       >
-                        {children}
+                        {renderedChildren}
                       </TextLink>
                     )
                   };
                 },
-                listElement(key, attributes, children) {
+                listElement(key, attributes, renderedChildren) {
                   return {
-                    element: children
+                    element: renderedChildren
                   };
                 }
               },
@@ -63,13 +66,12 @@ const KeyFacts = ({ ast: keyFactsAST, onLinkPress, title }) => {
     <KeyFactsContainer>
       {renderTitle()}
       <KeyFactsWrapper>
-        {keyFactsAST.map((item, index) => renderKeyFact(item, index))}
+        {keyFactsItems.map((item, index) => renderKeyFact(item, index))}
       </KeyFactsWrapper>
     </KeyFactsContainer>
   );
 };
 
 KeyFacts.propTypes = propTypes;
-KeyFacts.defaultProps = defaultProps;
 
 export default KeyFacts;

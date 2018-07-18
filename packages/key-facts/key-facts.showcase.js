@@ -5,15 +5,7 @@ import { LateralSpacingDecorator } from "@times-components/storybook";
 import KeyFacts from "./src/key-facts";
 import data from "./fixtures/key-facts-showcase.json";
 
-const { data: { children, attributes } } = data;
-
-const renderKeyFacts = text => (
-  <KeyFacts
-    ast={children[0].children}
-    onLinkPress={() => {}}
-    title={text("Key facts title: ", attributes.title)}
-  />
-);
+const renderKeyFacts = () => <KeyFacts ast={data} onLinkPress={() => {}} />;
 
 export default {
   name: "Composed/Key Facts",
@@ -26,17 +18,15 @@ export default {
       type: "story",
       name: "default",
       platform: "native",
-      component: ({ text }) => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts(text)}
-        </ScrollView>
+      component: () => (
+        <ScrollView style={{ width: "100%" }}>{renderKeyFacts()}</ScrollView>
       )
     },
     {
       type: "story",
       name: "default",
       platform: "web",
-      component: ({ text }) => renderKeyFacts(text)
+      component: () => renderKeyFacts()
     }
   ]
 };
