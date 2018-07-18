@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+* upgrade react-style-proptype & fix text link proptypes ([#374](https://github.com/newsuk/times-components/issues/374)) ([1d20491](https://github.com/newsuk/times-components/commit/1d20491))
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add gradient package ([#333](https://github.com/newsuk/times-components/issues/333)) ([7cee0bb](https://github.com/newsuk/times-components/commit/7cee0bb))
+* add Jest Configurator to Gradient package ([#610](https://github.com/newsuk/times-components/issues/610)) ([765578c](https://github.com/newsuk/times-components/commit/765578c))
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* enforce destruct of Component from React ([#970](https://github.com/newsuk/times-components/issues/970)) ([b6424be](https://github.com/newsuk/times-components/commit/b6424be))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* paidOnly videos and new video package ([#889](https://github.com/newsuk/times-components/issues/889)) ([2e57f4b](https://github.com/newsuk/times-components/commit/2e57f4b))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* REPLAT-1403 - Article Summary Refactor ([#586](https://github.com/newsuk/times-components/issues/586)) ([8f8364b](https://github.com/newsuk/times-components/commit/8f8364b)), closes [#587](https://github.com/newsuk/times-components/issues/587) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543)
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.14"></a>
 ## [1.0.14](https://github.com/newsuk/times-components/compare/@times-components/gradient@1.0.13...@times-components/gradient@1.0.14) (2018-07-11)
 

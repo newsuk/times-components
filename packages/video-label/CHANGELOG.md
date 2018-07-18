@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* video label and article topic design tweaks ([#1077](https://github.com/newsuk/times-components/issues/1077)) ([7413558](https://github.com/newsuk/times-components/commit/7413558))
+* video label layout on web, ios and android ([#1040](https://github.com/newsuk/times-components/issues/1040)) ([e90cdb7](https://github.com/newsuk/times-components/commit/e90cdb7))
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* only set video label to "video" if no explicit label is provided (REPLAT-1919) ([#854](https://github.com/newsuk/times-components/issues/854)) ([5833bba](https://github.com/newsuk/times-components/commit/5833bba))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* use ART for SVGs (REPLAT-2285) ([#1009](https://github.com/newsuk/times-components/issues/1009)) ([795cb3f](https://github.com/newsuk/times-components/commit/795cb3f))
+* video label ([#704](https://github.com/newsuk/times-components/issues/704)) ([d13c2a5](https://github.com/newsuk/times-components/commit/d13c2a5))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.2.14"></a>
 ## [1.2.14](https://github.com/newsuk/times-components/compare/@times-components/video-label@1.2.13...@times-components/video-label@1.2.14) (2018-07-12)
 

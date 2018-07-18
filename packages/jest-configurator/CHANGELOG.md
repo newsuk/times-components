@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* add ignore files ([17c9697](https://github.com/newsuk/times-components/commit/17c9697))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* linting ([#878](https://github.com/newsuk/times-components/issues/878)) ([9df1abf](https://github.com/newsuk/times-components/commit/9df1abf))
+* read Jest intra-monorepo dependencies from source ([#877](https://github.com/newsuk/times-components/issues/877)) ([96fb38a](https://github.com/newsuk/times-components/commit/96fb38a))
+* refactor and test styles ([#352](https://github.com/newsuk/times-components/issues/352)) ([610ef5e](https://github.com/newsuk/times-components/commit/610ef5e))
+* static rendering of card component ([#394](https://github.com/newsuk/times-components/issues/394)) ([955e8b0](https://github.com/newsuk/times-components/commit/955e8b0))
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add jest-configurator to Tracking package ([#638](https://github.com/newsuk/times-components/issues/638)) ([6b251e9](https://github.com/newsuk/times-components/commit/6b251e9))
+* allow platform independence in Jest Configurator ([#646](https://github.com/newsuk/times-components/issues/646)) ([d83b7b2](https://github.com/newsuk/times-components/commit/d83b7b2))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+* Topic header ([#928](https://github.com/newsuk/times-components/issues/928)) ([7a718e8](https://github.com/newsuk/times-components/commit/7a718e8))
+* use ART for SVGs (REPLAT-2285) ([#1009](https://github.com/newsuk/times-components/issues/1009)) ([795cb3f](https://github.com/newsuk/times-components/commit/795cb3f))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@1.0.8...@times-components/jest-configurator@1.0.9) (2018-07-11)
 

@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Bug Fixes
+
+* ad storybook has the wrong props ([#1041](https://github.com/newsuk/times-components/issues/1041)) ([2b8b4c1](https://github.com/newsuk/times-components/commit/2b8b4c1))
+* ad-composer children prop-types ([b294a06](https://github.com/newsuk/times-components/commit/b294a06))
+* add missing dependency for ads and article flags ([#247](https://github.com/newsuk/times-components/issues/247)) ([2238ccb](https://github.com/newsuk/times-components/commit/2238ccb))
+* ads in article list for pagination and loading states ([#1028](https://github.com/newsuk/times-components/issues/1028)) ([6e233d9](https://github.com/newsuk/times-components/commit/6e233d9))
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fetching fonts ([#227](https://github.com/newsuk/times-components/issues/227)) ([614e6d3](https://github.com/newsuk/times-components/commit/614e6d3))
+* fix logic bug and compile errors on native ads ([#758](https://github.com/newsuk/times-components/issues/758)) ([4c54cc3](https://github.com/newsuk/times-components/commit/4c54cc3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* handle ad blocker ([#1076](https://github.com/newsuk/times-components/issues/1076)) ([b9c308a](https://github.com/newsuk/times-components/commit/b9c308a))
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* moving bidding slots as a prop from render ([#753](https://github.com/newsuk/times-components/issues/753)) ([a957e50](https://github.com/newsuk/times-components/commit/a957e50))
+* mpu story (placeholder position) ([c3e5ec7](https://github.com/newsuk/times-components/commit/c3e5ec7))
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+* prevent exceptions thrown by ad blocker from terminating script execution ([#784](https://github.com/newsuk/times-components/issues/784)) ([028db9e](https://github.com/newsuk/times-components/commit/028db9e))
+* remove criteo and pubmatic bidders ([#899](https://github.com/newsuk/times-components/issues/899)) ([b32d11c](https://github.com/newsuk/times-components/commit/b32d11c))
+* replaces View.propTypes with ViewPropTypes ([#346](https://github.com/newsuk/times-components/issues/346)) ([6406e60](https://github.com/newsuk/times-components/commit/6406e60))
+* set fixed height for the ad components ([#90](https://github.com/newsuk/times-components/issues/90)) ([dd48767](https://github.com/newsuk/times-components/commit/dd48767))
+* sync up version numbers ([#629](https://github.com/newsuk/times-components/issues/629)) ([151b99a](https://github.com/newsuk/times-components/commit/151b99a))
+* tear down ad slots ([#1046](https://github.com/newsuk/times-components/issues/1046)) ([669ab04](https://github.com/newsuk/times-components/commit/669ab04))
+* tidy up ads stories ([#742](https://github.com/newsuk/times-components/issues/742)) ([c3b1eb3](https://github.com/newsuk/times-components/commit/c3b1eb3))
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+* upgrade react-style-proptype & fix text link proptypes ([#374](https://github.com/newsuk/times-components/issues/374)) ([1d20491](https://github.com/newsuk/times-components/commit/1d20491))
+* vertically align the ads ([#653](https://github.com/newsuk/times-components/issues/653)) ([da2b59e](https://github.com/newsuk/times-components/commit/da2b59e))
+* video package code review updates ([#898](https://github.com/newsuk/times-components/issues/898)) ([fab3593](https://github.com/newsuk/times-components/commit/fab3593))
+* watermark view box is customizable based on width and height ([#336](https://github.com/newsuk/times-components/issues/336)) ([b3fc9ce](https://github.com/newsuk/times-components/commit/b3fc9ce))
+
+
+### Features
+
+* ad refactor ([#1053](https://github.com/newsuk/times-components/issues/1053)) ([0d4981a](https://github.com/newsuk/times-components/commit/0d4981a))
+* add ad composer ([#611](https://github.com/newsuk/times-components/issues/611)) ([94b8f41](https://github.com/newsuk/times-components/commit/94b8f41))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add grapeshot ([#625](https://github.com/newsuk/times-components/issues/625)) ([8ca8be0](https://github.com/newsuk/times-components/commit/8ca8be0))
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+* add isLoading flag to ad package to manage placeholder ([#1062](https://github.com/newsuk/times-components/issues/1062)) ([089ec11](https://github.com/newsuk/times-components/commit/089ec11))
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+* add new Ad component pieces ([#579](https://github.com/newsuk/times-components/issues/579)) ([25bb859](https://github.com/newsuk/times-components/commit/25bb859))
+* add topic page ad config to ad stories ([#1030](https://github.com/newsuk/times-components/issues/1030)) ([3f4bc0f](https://github.com/newsuk/times-components/commit/3f4bc0f))
+* adding pixel ads ([#734](https://github.com/newsuk/times-components/issues/734)) ([eb4d17d](https://github.com/newsuk/times-components/commit/eb4d17d))
+* change ad slot targeting config ([#626](https://github.com/newsuk/times-components/issues/626)) ([d651c08](https://github.com/newsuk/times-components/commit/d651c08))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* enable header bidding for ads ([#706](https://github.com/newsuk/times-components/issues/706)) ([e53c7df](https://github.com/newsuk/times-components/commit/e53c7df))
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* refactor slot targeting and add timestestgroup ([#751](https://github.com/newsuk/times-components/issues/751)) ([1d39555](https://github.com/newsuk/times-components/commit/1d39555))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* responsive ads ([#733](https://github.com/newsuk/times-components/issues/733)) ([9e2df9e](https://github.com/newsuk/times-components/commit/9e2df9e))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.3.8"></a>
 ## [1.3.8](https://github.com/newsuk/times-components/compare/@times-components/ad@1.3.7...@times-components/ad@1.3.8) (2018-07-11)
 

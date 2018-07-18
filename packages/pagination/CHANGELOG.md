@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* apply the design review ([#512](https://github.com/newsuk/times-components/issues/512)) ([70561dd](https://github.com/newsuk/times-components/commit/70561dd))
+* article list design review changes ([#1074](https://github.com/newsuk/times-components/issues/1074)) ([a0667ad](https://github.com/newsuk/times-components/commit/a0667ad))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+* limit the page to to the end ([6de396e](https://github.com/newsuk/times-components/commit/6de396e))
+* make pagination responsive on web and not on native ([#459](https://github.com/newsuk/times-components/issues/459)) ([1306daa](https://github.com/newsuk/times-components/commit/1306daa))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* minor padding issues on pagination and article-list ([#1089](https://github.com/newsuk/times-components/issues/1089)) ([6e85d6e](https://github.com/newsuk/times-components/commit/6e85d6e))
+* package.json main ([ed150b8](https://github.com/newsuk/times-components/commit/ed150b8))
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+* prevent 'undefined' being used in pagination display name ([#237](https://github.com/newsuk/times-components/issues/237)) ([772fcaf](https://github.com/newsuk/times-components/commit/772fcaf))
+* update coverage patterns ([#293](https://github.com/newsuk/times-components/issues/293)) ([6cb2b53](https://github.com/newsuk/times-components/commit/6cb2b53))
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+* update snapshots for pagination ([383f132](https://github.com/newsuk/times-components/commit/383f132))
+* update styled-components ([#740](https://github.com/newsuk/times-components/issues/740)) ([6756ed6](https://github.com/newsuk/times-components/commit/6756ed6))
+* web font smoothing ([c3aa351](https://github.com/newsuk/times-components/commit/c3aa351))
+
+
+### Features
+
+* add basic pagination footer to author profile ([1581114](https://github.com/newsuk/times-components/commit/1581114))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+* add some missing files to .npmignore ([#768](https://github.com/newsuk/times-components/issues/768)) ([9caf001](https://github.com/newsuk/times-components/commit/9caf001))
+* add storybook decorators ([#300](https://github.com/newsuk/times-components/issues/300)) ([9247723](https://github.com/newsuk/times-components/commit/9247723))
+* add test ids to components in author profile to support e2e tests ([#713](https://github.com/newsuk/times-components/issues/713)) ([9048bd1](https://github.com/newsuk/times-components/commit/9048bd1))
+* apply style to pagination ([64bd32e](https://github.com/newsuk/times-components/commit/64bd32e))
+* author profile page ([#100](https://github.com/newsuk/times-components/issues/100)) ([fe54cba](https://github.com/newsuk/times-components/commit/fe54cba))
+* author profile provider component ([57cbb79](https://github.com/newsuk/times-components/commit/57cbb79))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* events on pagination change ([19f1205](https://github.com/newsuk/times-components/commit/19f1205))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* pagination component ([feda057](https://github.com/newsuk/times-components/commit/feda057))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* remove padding from card and adjust other styles ([dd9acd3](https://github.com/newsuk/times-components/commit/dd9acd3))
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* use funcs as children ([8892564](https://github.com/newsuk/times-components/commit/8892564))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.14"></a>
 ## [1.0.14](https://github.com/newsuk/times-components/compare/@times-components/pagination@1.0.13...@times-components/pagination@1.0.14) (2018-07-11)
 

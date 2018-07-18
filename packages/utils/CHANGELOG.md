@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Bug Fixes
+
+* add protocol to splash REPLAT-1677 ([#837](https://github.com/newsuk/times-components/issues/837)) ([109f0f5](https://github.com/newsuk/times-components/commit/109f0f5))
+* article list rerender ([#1064](https://github.com/newsuk/times-components/issues/1064)) ([7e1c81e](https://github.com/newsuk/times-components/commit/7e1c81e))
+* clean up properly after a graphql error ([#501](https://github.com/newsuk/times-components/issues/501)) ([fbd30f0](https://github.com/newsuk/times-components/commit/fbd30f0))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fixed article lead asset provider ([#813](https://github.com/newsuk/times-components/issues/813)) ([2c8473b](https://github.com/newsuk/times-components/commit/2c8473b))
+* import the transpiled file ([#613](https://github.com/newsuk/times-components/issues/613)) ([fafde41](https://github.com/newsuk/times-components/commit/fafde41))
+* linting ([#878](https://github.com/newsuk/times-components/issues/878)) ([9df1abf](https://github.com/newsuk/times-components/commit/9df1abf))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* mocked provider ([#952](https://github.com/newsuk/times-components/issues/952)) ([db89e49](https://github.com/newsuk/times-components/commit/db89e49))
+* Update video attribute ([#865](https://github.com/newsuk/times-components/issues/865)) ([1feae5a](https://github.com/newsuk/times-components/commit/1feae5a))
+
+
+### Features
+
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add time zone support to DatePublication ([#525](https://github.com/newsuk/times-components/issues/525)) ([444c148](https://github.com/newsuk/times-components/commit/444c148))
+* allow platform independence in Jest Configurator ([#646](https://github.com/newsuk/times-components/issues/646)) ([d83b7b2](https://github.com/newsuk/times-components/commit/d83b7b2))
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+* Topic provider ([#926](https://github.com/newsuk/times-components/issues/926)) ([d982278](https://github.com/newsuk/times-components/commit/d982278))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* update related article field denoting the main article ([#787](https://github.com/newsuk/times-components/issues/787)) ([6ecd8d7](https://github.com/newsuk/times-components/commit/6ecd8d7))
+* Update the topic articles provider ([#1008](https://github.com/newsuk/times-components/issues/1008)) ([6ec475d](https://github.com/newsuk/times-components/commit/6ec475d))
+* Update to Articles Provider to Include Related Articles ([910fc2d](https://github.com/newsuk/times-components/commit/910fc2d))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* use the native timezone ([#584](https://github.com/newsuk/times-components/issues/584)) ([e03a0b1](https://github.com/newsuk/times-components/commit/e03a0b1))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/newsuk/times-components/compare/@times-components/utils@1.2.5...@times-components/utils@1.2.6) (2018-07-11)
 

@@ -3,6 +3,109 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# 3.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+* BREAKING CHANGE: feat: break up author profile into new article list package (#920) ([a613621](https://github.com/newsuk/times-components/commit/a613621)), closes [#920](https://github.com/newsuk/times-components/issues/920)
+
+
+### Bug Fixes
+
+* add loading state to article-list to avoid duplicate requests ([#1048](https://github.com/newsuk/times-components/issues/1048)) ([2c8c6a3](https://github.com/newsuk/times-components/commit/2c8c6a3))
+* ads in article list for pagination and loading states ([#1028](https://github.com/newsuk/times-components/issues/1028)) ([6e233d9](https://github.com/newsuk/times-components/commit/6e233d9))
+* article list design review changes ([#1074](https://github.com/newsuk/times-components/issues/1074)) ([a0667ad](https://github.com/newsuk/times-components/commit/a0667ad))
+* article list layout fixed ([#1012](https://github.com/newsuk/times-components/issues/1012)) ([c77ab31](https://github.com/newsuk/times-components/commit/c77ab31))
+* article list page layout ([#995](https://github.com/newsuk/times-components/issues/995)) ([a763150](https://github.com/newsuk/times-components/commit/a763150))
+* article list static image ([#984](https://github.com/newsuk/times-components/issues/984)) ([60460a7](https://github.com/newsuk/times-components/commit/60460a7))
+* image component resize query string params ([#985](https://github.com/newsuk/times-components/issues/985)) ([79be184](https://github.com/newsuk/times-components/commit/79be184))
+* image component warnings on native for empty source.uri props ([#991](https://github.com/newsuk/times-components/issues/991)) ([1feefc2](https://github.com/newsuk/times-components/commit/1feefc2))
+* minor padding issues on pagination and article-list ([#1089](https://github.com/newsuk/times-components/issues/1089)) ([6e85d6e](https://github.com/newsuk/times-components/commit/6e85d6e))
+* not call end reached before load ([#987](https://github.com/newsuk/times-components/issues/987)) ([14f5e20](https://github.com/newsuk/times-components/commit/14f5e20))
+* not use flex for IE article list page error layout ([#1017](https://github.com/newsuk/times-components/issues/1017)) ([f4bf368](https://github.com/newsuk/times-components/commit/f4bf368))
+* tear down ad slots ([#1046](https://github.com/newsuk/times-components/issues/1046)) ([669ab04](https://github.com/newsuk/times-components/commit/669ab04))
+* topic and author profile stories ([#1025](https://github.com/newsuk/times-components/issues/1025)) ([0c947e7](https://github.com/newsuk/times-components/commit/0c947e7))
+* topic design review ([#1010](https://github.com/newsuk/times-components/issues/1010)) ([54f1cad](https://github.com/newsuk/times-components/commit/54f1cad))
+* update article-list snapshot ([#1023](https://github.com/newsuk/times-components/issues/1023)) ([075f040](https://github.com/newsuk/times-components/commit/075f040))
+* use normalised width when no IO ([#1013](https://github.com/newsuk/times-components/issues/1013)) ([e20144e](https://github.com/newsuk/times-components/commit/e20144e))
+
+
+### Features
+
+* ad refactor ([#1053](https://github.com/newsuk/times-components/issues/1053)) ([0d4981a](https://github.com/newsuk/times-components/commit/0d4981a))
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* add button onPress styles ([#997](https://github.com/newsuk/times-components/issues/997)) ([98a86fe](https://github.com/newsuk/times-components/commit/98a86fe))
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add isLoading flag to ad package to manage placeholder ([#1062](https://github.com/newsuk/times-components/issues/1062)) ([089ec11](https://github.com/newsuk/times-components/commit/089ec11))
+* article list ads ([#1022](https://github.com/newsuk/times-components/issues/1022)) ([b9e1413](https://github.com/newsuk/times-components/commit/b9e1413))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+* * refactor: refactor author profile for consistency with other packages
+* refactor: refactor profile head
+* refactor: moving author profile provider code to provider package
+* refactor: fix up provider to work with author profile code
+* refactor: remove unrequired responsive components
+* refactor: DRY error list components and styles across devices
+* refactor: alphabetise all the things and move styles to src folder
+* refactor: move separator styles to styles
+* refactor: listing separator renamed
+* refactor: DRY up list item events tracking code
+* refactor: DRY up get image uri code
+* refactor: rename list itme
+* refactor: rename tests
+* refactor: rename list item component
+* refactor: rename event tracking component
+* refactor: rename separator component
+* refactor: rename error list component
+* refactor: refactor auth profile errors and fix button styling
+* refactor: add responsive file and refactor error page components
+* refactor: refactor error page files and components
+* refactor: move web list item responsive code
+* refactor: refactor item list on native
+* refactor: refactor auth profile content component
+* refactor: amend pagination name
+* refactor: amend prop type file name and fix tests
+* refactor: refactor error and content component names
+* feat: article list package
+* feat: split article list and author profile
+* refactor: move tests to article list
+* refactor: begin renaming tests
+* refactor: move author profile tests to author profile, ensure coverage
+* refactor: rename auth prof tests
+* refactor: remove more unrequired npm deps and rename description
+* refactor: refactor auth prof storybook file
+* refactor: fix auth prof coverage
+* refactor: refactor article list components used in author profile
+* refactor: amend article list prop type file name
+* refactor: rename article list components
+* refactor: start tidying up article list tests
+* refactor: refactor article list pagination test
+* refactor: add further coverage for article list
+* refactor: remove dextose scripts as directed
+* refactor: start testing article list component
+* refactor: add responsive tests for article list
+* refactor: refactor article list native tests
+* refactor: remove native scrollview hack
+* refactor: pass author head into article list from author profile
+* refactor: fix error prop type in author profile and remove unrequire dextrose scripts
+
+
+
+
 <a name="2.4.16"></a>
 ## [2.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@2.4.15...@times-components/article-list@2.4.16) (2018-07-12)
 

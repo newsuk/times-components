@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* adds support for picking namespaced packages ([#910](https://github.com/newsuk/times-components/issues/910)) ([f5600ea](https://github.com/newsuk/times-components/commit/f5600ea))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* run local depend from root ([#808](https://github.com/newsuk/times-components/issues/808)) ([ddbeb3a](https://github.com/newsuk/times-components/commit/ddbeb3a))
+
+
+### Features
+
+* add depend ([#659](https://github.com/newsuk/times-components/issues/659)) ([c967e4b](https://github.com/newsuk/times-components/commit/c967e4b))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/newsuk/times-components/compare/@times-components/depend@1.0.0...@times-components/depend@1.0.1) (2018-07-10)
 

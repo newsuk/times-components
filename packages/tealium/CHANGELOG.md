@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# 1.4.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* make packages public ([#462](https://github.com/newsuk/times-components/issues/462)) ([ef2d287](https://github.com/newsuk/times-components/commit/ef2d287))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* sync up version numbers ([#629](https://github.com/newsuk/times-components/issues/629)) ([151b99a](https://github.com/newsuk/times-components/commit/151b99a))
+* update dependencies ([#460](https://github.com/newsuk/times-components/issues/460)) ([7794ef3](https://github.com/newsuk/times-components/commit/7794ef3))
+* use fake timers for Tealium tests ([#639](https://github.com/newsuk/times-components/issues/639)) ([e67494f](https://github.com/newsuk/times-components/commit/e67494f))
+
+
+### Features
+
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add Jest Configurator to the Tealium package ([#636](https://github.com/newsuk/times-components/issues/636)) ([c40436d](https://github.com/newsuk/times-components/commit/c40436d))
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+* BREAKING CHANGE: bump version ([#882](https://github.com/newsuk/times-components/issues/882)) ([6a9198d](https://github.com/newsuk/times-components/commit/6a9198d))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="1.3.23"></a>
 ## [1.3.23](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.3.22...@times-components/tealium@1.3.23) (2018-07-11)
 
