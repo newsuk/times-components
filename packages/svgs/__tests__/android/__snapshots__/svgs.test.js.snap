@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Svgs test on android:  renders correctly 1`] = `
+exports[`1. an svg, g, path 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -11,131 +11,14 @@ exports[`Svgs test on android:  renders correctly 1`] = `
 >
   <ARTGroup
     opacity={1}
-    transform={
-      Array [
-        0.9259259259259259,
-        0,
-        0,
-        0.9259259259259259,
-        -134.25925925925927,
-        -46.2962962962963,
-      ]
-    }
+    transform="e66c56023a2e4b857683d66b5bc5d146"
   >
     <ARTGroup
       opacity={1}
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
+      transform="e4c138e0ae717832b3b923e468af04e5"
     >
       <ARTShape
-        d={
-          Array [
-            0,
-            211.26076,
-            54,
-            2,
-            211.231367,
-            54,
-            2,
-            147.67512,
-            54,
-            2,
-            145,
-            85.7081465,
-            2,
-            146.922096,
-            86.4489102,
-            3,
-            146.922096,
-            86.4489102,
-            164.867589,
-            68.1355181,
-            168.301115,
-            65.0001546,
-            3,
-            171.728017,
-            61.8689133,
-            174.237132,
-            61.0885763,
-            176.436179,
-            60.3527593,
-            3,
-            180.998206,
-            59.169681,
-            185.977937,
-            59.2150255,
-            185.977937,
-            59.2150255,
-            2,
-            186.109581,
-            59.2150255,
-            2,
-            186.109581,
-            156.560932,
-            2,
-            169.259886,
-            164.473953,
-            2,
-            169.259886,
-            166,
-            2,
-            228.735147,
-            166,
-            2,
-            228.735147,
-            164.473953,
-            2,
-            211.889177,
-            156.560932,
-            2,
-            211.889177,
-            59.2150255,
-            2,
-            212.01751,
-            59.2150255,
-            3,
-            212.01751,
-            59.2150255,
-            216.992272,
-            59.169681,
-            221.558854,
-            60.3527593,
-            3,
-            223.757072,
-            61.0885763,
-            226.266601,
-            61.8689133,
-            229.691848,
-            65.0001546,
-            3,
-            233.130341,
-            68.1355181,
-            251.071695,
-            86.4489102,
-            251.071695,
-            86.4489102,
-            2,
-            253,
-            85.7081465,
-            2,
-            250.317842,
-            54,
-            2,
-            211.270695,
-            54,
-            2,
-            211.242545,
-            54,
-          ]
-        }
+        d="343185e9878751b0e59aeee3debd5e87"
         fill={
           Array [
             0,
@@ -146,23 +29,79 @@ exports[`Svgs test on android:  renders correctly 1`] = `
           ]
         }
         opacity={1}
-        stroke={null}
         strokeCap={1}
-        strokeDash={null}
         strokeJoin={1}
         strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
+        transform="e4c138e0ae717832b3b923e468af04e5"
       />
     </ARTGroup>
   </ARTGroup>
 </ARTSurfaceView>
+`;
+
+exports[`2. a path with no fill 1`] = `
+<ARTShape
+  d="343185e9878751b0e59aeee3debd5e87"
+  opacity={1}
+  strokeCap={1}
+  strokeJoin={1}
+  strokeWidth={1}
+  transform="e4c138e0ae717832b3b923e468af04e5"
+/>
+`;
+
+exports[`3. a polygon 1`] = `
+<ARTShape
+  d="f2fe184e88869d0ef2eb25afbc19b807"
+  fill={
+    Array [
+      0,
+      0,
+      0,
+      1,
+      1,
+    ]
+  }
+  opacity={1}
+  stroke={
+    Array [
+      1,
+      0,
+      0,
+      1,
+    ]
+  }
+  strokeCap={1}
+  strokeJoin={1}
+  strokeWidth={1}
+  transform="e4c138e0ae717832b3b923e468af04e5"
+/>
+`;
+
+exports[`4. a rect 1`] = `
+<ARTShape
+  d="db81aee2682fc4fbf84207fe820554da"
+  fill={
+    Array [
+      0,
+      0,
+      0,
+      0,
+      1,
+    ]
+  }
+  opacity={1}
+  stroke={
+    Array [
+      1,
+      1,
+      1,
+      1,
+    ]
+  }
+  strokeCap={1}
+  strokeJoin={1}
+  strokeWidth={1}
+  transform="e4c138e0ae717832b3b923e468af04e5"
+/>
 `;

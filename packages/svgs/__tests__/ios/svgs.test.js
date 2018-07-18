@@ -1,5 +1,5 @@
 import shared from "../shared";
+import viewBox from "../viewbox";
 
-describe("Svgs test on ios: ", () => {
-  shared();
-});
+shared();
+viewBox();

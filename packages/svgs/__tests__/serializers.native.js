@@ -2,20 +2,22 @@ import {
   addSerializers,
   compose,
   flattenStyleTransform,
-  minimalWebTransform,
+  minimaliseTransform,
+  minimalNativeTransform,
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 
-const longValues = new Set(["points"]);
+const longValues = new Set(["d", "transform"]);
 
 addSerializers(
   expect,
   compose(
     print,
+    minimalNativeTransform,
+    minimaliseTransform(value => value === null),
     flattenStyleTransform,
-    minimalWebTransform,
     replacePropTransform(
       (value, key) =>
         longValues.has(key) ? hash(JSON.stringify(value)) : value

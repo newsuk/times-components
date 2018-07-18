@@ -1,23 +1,72 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
-import { Svg, G, Path } from "../src/index";
+import TestRenderer from "react-test-renderer";
+import { iterator } from "@times-components/test-utils";
+import { Svg, G, Path, Polygon, Rect } from "../src";
 
-const T_SHAPE =
-  "M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54";
+export default () => {
+  const tests = [
+    {
+      name: "an SVG, G, Path",
+      test() {
+        const testInstance = TestRenderer.create(
+          <Svg height={100} version="1.1" viewBox="145 50 108 120" width={100}>
+            <G fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+              <Path d="M211.26076,54" fill="#000000" />
+            </G>
+          </Svg>
+        );
 
-module.exports = () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(
-        <Svg height={100} version="1.1" viewBox="145 50 108 120" width={100}>
-          <G fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
-            <Path d={T_SHAPE} fill="#000000" />
-          </G>
-        </Svg>
-      )
-      .toJSON();
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "a Path with no fill",
+      test() {
+        const testInstance = TestRenderer.create(
+          <Path d="M211.26076,54" fill="none" />
+        );
 
-    expect(tree).toMatchSnapshot();
-  });
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "a polygon",
+      test() {
+        const strokeColour = "red";
+        const fillColour = "blue";
+
+        const testInstance = TestRenderer.create(
+          <Polygon
+            fill={fillColour}
+            points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
+            stroke={strokeColour}
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "a rect",
+      test() {
+        const testInstance = TestRenderer.create(
+          <Rect
+            fill="rgba(0,0,0)"
+            fillOpacity="0.4"
+            height="100"
+            stroke="rgb(255,255,255)"
+            strokeWidth="8"
+            width="100"
+            x="5"
+            y="10"
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    }
+  ];
+
+  iterator(tests);
 };
