@@ -1,0 +1,128 @@
+{
+  "name": "keyFacts",
+  "attributes": {},
+  "children": [
+    {
+      "name": "unorderedList",
+      "children": [
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Another ministerial aide, "
+              },
+              "children": []
+            },
+            {
+              "name": "link",
+              "attributes": {
+                "href":
+                  "https://www.thetimes.co.uk/edition/news/may-hit-by-another-brexit-walkout-amid-claims-of-establishment-coup-k9x69qlb8",
+                "target": "_blank",
+                "type": "article"
+              },
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "Robert Courts"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  ", resigned saying that he could not look himself in the mirror if he backed the Chequers proposals."
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  "Downing Street and Conservative Party bosses were seeking to assess the scale of a grassroots rebellion."
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  "Dennis Mitchell’s high levels of testosterone in 1998 were caused by having sex with his wife \"at least four times\" on her birthday, according to the sprinter. USA Track and Field believed him, the IAAF did not"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Chuka Umunna, leader of the "
+              },
+              "children": []
+            },
+            {
+              "name": "italic",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "Labour Remainers"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", dismissed Mrs May’s "
+              },
+              "children": []
+            },
+            {
+              "name": "bold",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "compromise"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "attributes": {
+                "value":
+                  " as “anti-worker and anti-business” and said that it would “royally screw” Britain’s service sector."
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

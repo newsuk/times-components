@@ -47,11 +47,6 @@ const KeyFacts = ({ ast, onLinkPress }) => {
                       </TextLink>
                     )
                   };
-                },
-                listElement(key, attributes, renderedChildren) {
-                  return {
-                    element: renderedChildren
-                  };
                 }
               },
               `key-facts-${index}-${indx}`
