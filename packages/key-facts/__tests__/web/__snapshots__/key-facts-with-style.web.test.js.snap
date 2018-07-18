@@ -1,6 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. key facts with title 1`] = `
+.c0 {
+  margin: 0 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-right: 20px;
+    width: 20%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80%;
+  }
+}
+
 <style>
 {
   "S1": {
@@ -18,6 +51,16 @@ exports[`1. key facts with title 1`] = `
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S11": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
     "-webkit-transform": "rotate(45deg)",
     "background-color": "rgba(16,53,70,1)",
     "flex-direction": "column",
@@ -29,23 +72,7 @@ exports[`1. key facts with title 1`] = `
     "transform": "rotate(45deg)",
     "width": "8px",
   },
-  "S11": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
   "S12": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S13": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
@@ -55,7 +82,7 @@ exports[`1. key facts with title 1`] = `
     "padding-left": "15px",
     "width": "95%",
   },
-  "S14": {
+  "S13": {
     "-ms-flex-direction": "row",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "horizontal",
@@ -66,7 +93,7 @@ exports[`1. key facts with title 1`] = `
     "padding-left": "1px",
     "width": "100%",
   },
-  "S15": {
+  "S14": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -76,7 +103,54 @@ exports[`1. key facts with title 1`] = `
     "margin-top": "0px",
     "padding-left": "0px",
   },
+  "S15": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
   "S16": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S17": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S18": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S19": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -102,15 +176,17 @@ exports[`1. key facts with title 1`] = `
     "transform": "rotate(45deg)",
     "width": "8px",
   },
-  "S3": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
+  "S20": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
   },
-  "S4": {
+  "S3": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
@@ -120,7 +196,7 @@ exports[`1. key facts with title 1`] = `
     "padding-left": "15px",
     "width": "95%",
   },
-  "S5": {
+  "S4": {
     "-ms-flex-direction": "row",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "horizontal",
@@ -130,6 +206,16 @@ exports[`1. key facts with title 1`] = `
     "margin-top": "0px",
     "padding-left": "1px",
     "width": "100%",
+  },
+  "S5": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
   },
   "S6": {
     "-ms-flex-direction": "column",
@@ -148,7 +234,8 @@ exports[`1. key facts with title 1`] = `
     "width": "8px",
   },
   "S7": {
-    "color": "inherit",
+    "background-color": "transparent",
+    "color": "rgba(0,102,153,1)",
     "font-family": "inherit",
     "font-size": "inherit",
     "margin-bottom": "0px",
@@ -180,67 +267,91 @@ exports[`1. key facts with title 1`] = `
 </style>
 
 <div
-  className="responsive-styles__component-fbPFZZ hwYdzt S16"
+  className="c0 S20"
 >
   <div
-    className="responsive-styles__component-fbPFZZ VvueK S1"
+    className="c1 S1"
   >
-    NEW BREXIT REFERENDUM
+    EXAMPLE TITLE
   </div>
   <div
-    className="responsive-styles__component-fbPFZZ llrYRA S15"
+    className="c2 S19"
   >
     <div
       className="S5"
     >
       <div
-        className="S2"
-      />
-      <div
         className="S4"
       >
-        <span
+        <div
+          className="S2"
+        />
+        <div
           className="S3"
         >
-          List item 1
-        </span>
+          Example bullet text
+        </div>
       </div>
     </div>
     <div
-      className="S9"
+      className="S10"
     >
       <div
-        className="S6"
-      />
-      <div
-        className="S8"
+        className="S9"
       >
-        <span
-          className="S7"
+        <div
+          className="S6"
+        />
+        <div
+          className="S8"
         >
-          List item 2
-        </span>
+          An example 
+          <a
+            className="S7"
+            href="https://www.thetimes.co.uk/test/link"
+            role="link"
+          >
+            link
+          </a>
+        </div>
       </div>
     </div>
     <div
       className="S14"
     >
       <div
-        className="S10"
-      />
-      <div
         className="S13"
       >
-        <span
+        <div
           className="S11"
-        >
-          List item 3a
-        </span>
-        <span
+        />
+        <div
           className="S12"
         >
-           List item 3b
-        </span>
+          More example text.
+        </div>
+      </div>
+    </div>
+    <div
+      className="S18"
+    >
+      <div
+        className="S17"
+      >
+        <div
+          className="S15"
+        />
+        <div
+          className="S16"
+        >
+          Example text 
+          <strong>
+            this is bold 
+          </strong>
+          <em>
+            this is in italics.
+          </em>
+        </div>
       </div>
     </div>
   </div>
@@ -248,6 +359,32 @@ exports[`1. key facts with title 1`] = `
 `;
 
 exports[`2. key facts without title 1`] = `
+.c0 {
+  margin: 0 10px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: 80%;
+  }
+}
+
 <style>
 {
   "S1": {
@@ -267,22 +404,22 @@ exports[`2. key facts without title 1`] = `
     "width": "8px",
   },
   "S10": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
   },
   "S11": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S12": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
@@ -292,7 +429,7 @@ exports[`2. key facts without title 1`] = `
     "padding-left": "15px",
     "width": "95%",
   },
-  "S13": {
+  "S12": {
     "-ms-flex-direction": "row",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "horizontal",
@@ -303,7 +440,7 @@ exports[`2. key facts without title 1`] = `
     "padding-left": "1px",
     "width": "100%",
   },
-  "S14": {
+  "S13": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -313,7 +450,64 @@ exports[`2. key facts without title 1`] = `
     "margin-top": "0px",
     "padding-left": "0px",
   },
+  "S14": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "-webkit-transform": "rotate(45deg)",
+    "background-color": "rgba(16,53,70,1)",
+    "flex-direction": "column",
+    "height": "8px",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+    "top": "1px",
+    "transform": "rotate(45deg)",
+    "width": "8px",
+  },
   "S15": {
+    "color": "rgba(51,51,51,1)",
+    "font-family": "TimesDigitalW04",
+    "font-size": "16px",
+    "line-height": "30px",
+    "margin-bottom": "0px",
+    "margin-top": "-8px",
+    "padding-left": "15px",
+    "width": "95%",
+  },
+  "S16": {
+    "-ms-flex-direction": "row",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "flex-direction": "row",
+    "margin-bottom": "20px",
+    "margin-top": "0px",
+    "padding-left": "1px",
+    "width": "100%",
+  },
+  "S17": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S18": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S19": {
     "-ms-flex-direction": "column",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
@@ -324,14 +518,6 @@ exports[`2. key facts without title 1`] = `
     "padding-left": "0px",
   },
   "S2": {
-    "color": "inherit",
-    "font-family": "inherit",
-    "font-size": "inherit",
-    "margin-bottom": "0px",
-    "margin-top": "0px",
-    "padding-left": "0px",
-  },
-  "S3": {
     "color": "rgba(51,51,51,1)",
     "font-family": "TimesDigitalW04",
     "font-size": "16px",
@@ -341,7 +527,7 @@ exports[`2. key facts without title 1`] = `
     "padding-left": "15px",
     "width": "95%",
   },
-  "S4": {
+  "S3": {
     "-ms-flex-direction": "row",
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "horizontal",
@@ -351,6 +537,16 @@ exports[`2. key facts without title 1`] = `
     "margin-top": "0px",
     "padding-left": "1px",
     "width": "100%",
+  },
+  "S4": {
+    "-ms-flex-direction": "column",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
   },
   "S5": {
     "-ms-flex-direction": "column",
@@ -369,7 +565,8 @@ exports[`2. key facts without title 1`] = `
     "width": "8px",
   },
   "S6": {
-    "color": "inherit",
+    "background-color": "transparent",
+    "color": "rgba(0,102,153,1)",
     "font-family": "inherit",
     "font-size": "inherit",
     "margin-bottom": "0px",
@@ -402,77 +599,95 @@ exports[`2. key facts without title 1`] = `
     "-webkit-box-direction": "normal",
     "-webkit-box-orient": "vertical",
     "-webkit-flex-direction": "column",
-    "-webkit-transform": "rotate(45deg)",
-    "background-color": "rgba(16,53,70,1)",
     "flex-direction": "column",
-    "height": "8px",
     "margin-bottom": "0px",
     "margin-top": "0px",
     "padding-left": "0px",
-    "top": "1px",
-    "transform": "rotate(45deg)",
-    "width": "8px",
   },
 }
 </style>
 
 <div
-  className="responsive-styles__component-fbPFZZ hwYdzt S15"
+  className="c0 S19"
 >
   <div
-    className="responsive-styles__component-fbPFZZ llrYRA S14"
+    className="c1 S18"
   >
     <div
       className="S4"
     >
       <div
-        className="S1"
-      />
-      <div
         className="S3"
       >
-        <span
+        <div
+          className="S1"
+        />
+        <div
           className="S2"
         >
-          List item 1
-        </span>
+          Example bullet text
+        </div>
       </div>
     </div>
     <div
-      className="S8"
+      className="S9"
     >
       <div
-        className="S5"
-      />
-      <div
-        className="S7"
+        className="S8"
       >
-        <span
-          className="S6"
+        <div
+          className="S5"
+        />
+        <div
+          className="S7"
         >
-          List item 2
-        </span>
+          An example 
+          <a
+            className="S6"
+            href="https://www.thetimes.co.uk/test/link"
+            role="link"
+          >
+            link
+          </a>
+        </div>
       </div>
     </div>
     <div
       className="S13"
     >
       <div
-        className="S9"
-      />
-      <div
         className="S12"
       >
-        <span
+        <div
           className="S10"
-        >
-          List item 3a
-        </span>
-        <span
+        />
+        <div
           className="S11"
         >
-           List item 3b
-        </span>
+          More example text.
+        </div>
+      </div>
+    </div>
+    <div
+      className="S17"
+    >
+      <div
+        className="S16"
+      >
+        <div
+          className="S14"
+        />
+        <div
+          className="S15"
+        >
+          Example text 
+          <strong>
+            this is bold 
+          </strong>
+          <em>
+            this is in italics.
+          </em>
+        </div>
       </div>
     </div>
   </div>

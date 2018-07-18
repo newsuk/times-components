@@ -1,5 +1,5 @@
 import React from "react";
-import { propTypes, defaultProps } from "./key-facts-title-prop-types";
+import propTypes from "./key-facts-title-prop-types";
 import { KeyFactsTitleResponsive } from "./styles/responsive";
 import styles from "./styles";
 
@@ -10,6 +10,5 @@ const KeyFactsTitle = ({ title }) => (
 );
 
 KeyFactsTitle.propTypes = propTypes;
-KeyFactsTitle.defaultProps = defaultProps;
 
 export default KeyFactsTitle;

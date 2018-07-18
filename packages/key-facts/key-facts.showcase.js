@@ -1,32 +1,18 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { ScrollView, Text } from "react-native";
+import { ScrollView } from "react-native";
 import { LateralSpacingDecorator } from "@times-components/storybook";
-import KeyFacts, { KeyFactsBullet } from "./src/key-facts";
+import KeyFacts from "./src/key-facts";
+import data from "./fixtures/key-facts-showcase.json";
+
+const { data: { children, attributes } } = data;
 
 const renderKeyFacts = text => (
-  <KeyFacts title={text("Key facts title: ", "New Brexit referendum")}>
-    <KeyFactsBullet>
-      <Text>
-        Another ministerial aide, Robert Courts, resigned saying that he could
-        not look himself in the mirror if he backed the Chequers proposals.
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        Downing Street and Conservative Party bosses were seeking to assess the
-        scale of a grassroots rebellion.
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        Dennis Mitchell&apos;s high levels of testosterone in 1998 were caused
-        by having sex with his wife &quot;at least four times&quot; on her
-        birthday, according to the sprinter.
-      </Text>
-      <Text>&nbsp;USA Track and Field believed him, the IAAF did not.</Text>
-    </KeyFactsBullet>
-  </KeyFacts>
+  <KeyFacts
+    ast={children[0].children}
+    onLinkPress={() => {}}
+    title={text("Key facts title: ", attributes.title)}
+  />
 );
 
 export default {

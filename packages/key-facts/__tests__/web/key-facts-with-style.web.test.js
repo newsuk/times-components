@@ -7,7 +7,6 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
 import renderKeyFacts from "../shared-render-key-facts";
 
 const styles = [
@@ -34,27 +33,7 @@ addSerializers(
   compose(stylePrinter, minimalWebTransform, rnwTransform(styles))
 );
 
-const tests = [
-  {
-    name: "key facts with title",
-    test: () => {
-      const wrapper = mount(
-        renderKeyFacts("New Brexit referendum")
-      );
+renderKeyFacts(mount);
 
-      expect(wrapper).toMatchSnapshot();
-    }
-  },
-  {
-    name: "key facts without title",
-    test: () => {
-      const wrapper = mount(
-        renderKeyFacts()
-      );
-
-      expect(wrapper).toMatchSnapshot();
-    }
-  }
-];
-
-iterator(tests);
+// eslint-disable-next-line global-require
+require("jest-styled-components");

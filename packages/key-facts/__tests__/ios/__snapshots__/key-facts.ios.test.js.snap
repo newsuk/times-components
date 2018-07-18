@@ -3,27 +3,51 @@
 exports[`1. key facts with title 1`] = `
 <KeyFactsContainer>
   <KeyFactsTitle
-    title="New Brexit referendum"
+    title="Example title"
   />
   <KeyFactsWrapper>
-    <KeyFactsBullet>
-      <Text>
-        List item 1
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        List item 2
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        List item 3a
-      </Text>
-      <Text>
-         List item 3b
-      </Text>
-    </KeyFactsBullet>
+    <View>
+      <View>
+        <View />
+        <Text>
+          Example bullet text
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          An example 
+          <TextLink
+            target={null}
+            url="https://www.thetimes.co.uk/test/link"
+          />
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          More example text.
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          Example text 
+          <Text>
+            this is bold 
+          </Text>
+          <Text>
+            this is in italics.
+          </Text>
+        </Text>
+      </View>
+    </View>
   </KeyFactsWrapper>
 </KeyFactsContainer>
 `;
@@ -31,24 +55,48 @@ exports[`1. key facts with title 1`] = `
 exports[`2. key facts without title 1`] = `
 <KeyFactsContainer>
   <KeyFactsWrapper>
-    <KeyFactsBullet>
-      <Text>
-        List item 1
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        List item 2
-      </Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>
-        List item 3a
-      </Text>
-      <Text>
-         List item 3b
-      </Text>
-    </KeyFactsBullet>
+    <View>
+      <View>
+        <View />
+        <Text>
+          Example bullet text
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          An example 
+          <TextLink
+            target={null}
+            url="https://www.thetimes.co.uk/test/link"
+          />
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          More example text.
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text>
+          Example text 
+          <Text>
+            this is bold 
+          </Text>
+          <Text>
+            this is in italics.
+          </Text>
+        </Text>
+      </View>
+    </View>
   </KeyFactsWrapper>
 </KeyFactsContainer>
 `;

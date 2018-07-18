@@ -11,14 +11,70 @@ exports[`1. key facts with title 1`] = `
     "marginBottom": 20,
   },
   "IS10": {
+    "marginLeft": 10,
+    "marginRight": 10,
+  },
+  "IS11": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS12": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS13": {
     "flexDirection": "row",
     "marginBottom": 20,
     "paddingLeft": 1,
     "width": "100%",
   },
-  "IS11": {
+  "IS14": {
     "marginLeft": 10,
     "marginRight": 10,
+  },
+  "IS15": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS16": {
+    "fontWeight": "bold",
+  },
+  "IS17": {
+    "fontStyle": "italic",
+  },
+  "IS18": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS19": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
   },
   "IS2": {
     "backgroundColor": "#103546",
@@ -30,6 +86,14 @@ exports[`1. key facts with title 1`] = `
       },
     ],
     "width": 8,
+  },
+  "IS20": {
+    "marginLeft": 10,
+    "marginRight": 10,
+  },
+  "IS21": {
+    "marginLeft": 10,
+    "marginRight": 10,
   },
   "IS3": {
     "color": "#333333",
@@ -47,6 +111,10 @@ exports[`1. key facts with title 1`] = `
     "width": "100%",
   },
   "IS5": {
+    "marginLeft": 10,
+    "marginRight": 10,
+  },
+  "IS6": {
     "backgroundColor": "#103546",
     "height": 8,
     "top": 1,
@@ -57,7 +125,15 @@ exports[`1. key facts with title 1`] = `
     ],
     "width": 8,
   },
-  "IS6": {
+  "IS7": Array [
+    {
+      "textDecorationLine": "underline",
+    },
+    {
+      "color": "#006699",
+    },
+  ],
+  "IS8": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
@@ -66,66 +142,62 @@ exports[`1. key facts with title 1`] = `
     "paddingLeft": 15,
     "width": "95%",
   },
-  "IS7": {
+  "IS9": {
     "flexDirection": "row",
     "marginBottom": 20,
     "paddingLeft": 1,
     "width": "100%",
-  },
-  "IS8": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS9": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
   },
 }
 </style>
 
 <View>
   <Text>
-    N E W   B R E X I T   R E F E R E N D U M
+    E X A M P L E   T I T L E
   </Text>
   <View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 1
+          Example bullet text
         </Text>
-      </Text>
+      </View>
     </View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 2
+          An example 
+          <Text
+            accessibilityRole="link"
+          >
+            link
+          </Text>
         </Text>
-      </Text>
+      </View>
     </View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 3a
+          More example text.
         </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
         <Text>
-           List item 3b
+          Example text 
+          <Text>
+            this is bold 
+          </Text>
+          <Text>
+            this is in italics.
+          </Text>
         </Text>
-      </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -146,6 +218,68 @@ exports[`2. key facts without title 1`] = `
     "width": 8,
   },
   "IS10": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS11": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS12": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS13": {
+    "marginLeft": 10,
+    "marginRight": 10,
+  },
+  "IS14": {
+    "backgroundColor": "#103546",
+    "height": 8,
+    "top": 1,
+    "transform": Array [
+      {
+        "rotate": "45deg",
+      },
+    ],
+    "width": 8,
+  },
+  "IS15": {
+    "fontWeight": "bold",
+  },
+  "IS16": {
+    "fontStyle": "italic",
+  },
+  "IS17": {
+    "color": "#333333",
+    "fontFamily": "TimesDigitalW04",
+    "fontSize": 16,
+    "lineHeight": 30,
+    "marginTop": -8,
+    "paddingLeft": 15,
+    "width": "95%",
+  },
+  "IS18": {
+    "flexDirection": "row",
+    "marginBottom": 20,
+    "paddingLeft": 1,
+    "width": "100%",
+  },
+  "IS19": {
     "marginLeft": 10,
     "marginRight": 10,
   },
@@ -158,6 +292,10 @@ exports[`2. key facts without title 1`] = `
     "paddingLeft": 15,
     "width": "95%",
   },
+  "IS20": {
+    "marginLeft": 10,
+    "marginRight": 10,
+  },
   "IS3": {
     "flexDirection": "row",
     "marginBottom": 20,
@@ -165,32 +303,10 @@ exports[`2. key facts without title 1`] = `
     "width": "100%",
   },
   "IS4": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
+    "marginLeft": 10,
+    "marginRight": 10,
   },
   "IS5": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS6": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS7": {
     "backgroundColor": "#103546",
     "height": 8,
     "top": 1,
@@ -201,7 +317,15 @@ exports[`2. key facts without title 1`] = `
     ],
     "width": 8,
   },
-  "IS8": {
+  "IS6": Array [
+    {
+      "textDecorationLine": "underline",
+    },
+    {
+      "color": "#006699",
+    },
+  ],
+  "IS7": {
     "color": "#333333",
     "fontFamily": "TimesDigitalW04",
     "fontSize": 16,
@@ -210,11 +334,15 @@ exports[`2. key facts without title 1`] = `
     "paddingLeft": 15,
     "width": "95%",
   },
-  "IS9": {
+  "IS8": {
     "flexDirection": "row",
     "marginBottom": 20,
     "paddingLeft": 1,
     "width": "100%",
+  },
+  "IS9": {
+    "marginLeft": 10,
+    "marginRight": 10,
   },
 }
 </style>
@@ -222,31 +350,47 @@ exports[`2. key facts without title 1`] = `
 <View>
   <View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 1
+          Example bullet text
         </Text>
-      </Text>
+      </View>
     </View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 2
+          An example 
+          <Text
+            accessibilityRole="link"
+          >
+            link
+          </Text>
         </Text>
-      </Text>
+      </View>
     </View>
     <View>
-      <View />
-      <Text>
+      <View>
+        <View />
         <Text>
-          List item 3a
+          More example text.
         </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
         <Text>
-           List item 3b
+          Example text 
+          <Text>
+            this is bold 
+          </Text>
+          <Text>
+            this is in italics.
+          </Text>
         </Text>
-      </Text>
+      </View>
     </View>
   </View>
 </View>

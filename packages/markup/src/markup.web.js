@@ -51,6 +51,12 @@ const defaultRenderers = {
       element: <span key={key}>{renderedChildren}</span>
     };
   },
+  keyFacts(key, attributes, renderedChildren, indx, node) {
+    return {
+      element: <KeyFacts ast={node} key={key} />,
+      shouldRenderChildren: false
+    };
+  },
   paragraph(key, attributes, renderedChildren) {
     return {
       element: <p key={key}>{renderedChildren}</p>

@@ -40,36 +40,53 @@ exports[`1. key facts with title 1`] = `
   <div
     className="c1"
   >
-    NEW BREXIT REFERENDUM
+    EXAMPLE TITLE
   </div>
   <div
     className="c2"
   >
     <div>
-      <div />
       <div>
-        <span>
-          List item 1
-        </span>
+        <div />
+        <div>
+          Example bullet text
+        </div>
       </div>
     </div>
     <div>
-      <div />
       <div>
-        <span>
-          List item 2
-        </span>
+        <div />
+        <div>
+          An example 
+          <a
+            href="https://www.thetimes.co.uk/test/link"
+            role="link"
+          >
+            link
+          </a>
+        </div>
       </div>
     </div>
     <div>
-      <div />
       <div>
-        <span>
-          List item 3a
-        </span>
-        <span>
-           List item 3b
-        </span>
+        <div />
+        <div>
+          More example text.
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div />
+        <div>
+          Example text 
+          <strong>
+            this is bold 
+          </strong>
+          <em>
+            this is in italics.
+          </em>
+        </div>
       </div>
     </div>
   </div>
@@ -110,30 +127,47 @@ exports[`2. key facts without title 1`] = `
     className="c1"
   >
     <div>
-      <div />
       <div>
-        <span>
-          List item 1
-        </span>
+        <div />
+        <div>
+          Example bullet text
+        </div>
       </div>
     </div>
     <div>
-      <div />
       <div>
-        <span>
-          List item 2
-        </span>
+        <div />
+        <div>
+          An example 
+          <a
+            href="https://www.thetimes.co.uk/test/link"
+            role="link"
+          >
+            link
+          </a>
+        </div>
       </div>
     </div>
     <div>
-      <div />
       <div>
-        <span>
-          List item 3a
-        </span>
-        <span>
-           List item 3b
-        </span>
+        <div />
+        <div>
+          More example text.
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div />
+        <div>
+          Example text 
+          <strong>
+            this is bold 
+          </strong>
+          <em>
+            this is in italics.
+          </em>
+        </div>
       </div>
     </div>
   </div>

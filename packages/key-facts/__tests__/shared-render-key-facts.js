@@ -1,21 +1,12 @@
 import React from "react";
-import { Text } from "react-native";
 import { iterator } from "@times-components/test-utils";
-import KeyFacts, { KeyFactsBullet } from "../src/key-facts";
+import KeyFacts from "../src/key-facts";
+import data from "../fixtures/key-facts-test.json";
+
+const { data: { children, attributes } } = data;
 
 const renderKeyFacts = title => (
-  <KeyFacts title={title}>
-    <KeyFactsBullet>
-      <Text>List item 1</Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>List item 2</Text>
-    </KeyFactsBullet>
-    <KeyFactsBullet>
-      <Text>List item 3a</Text>
-      <Text>&nbsp;List item 3b</Text>
-    </KeyFactsBullet>
-  </KeyFacts>
+  <KeyFacts ast={children[0].children} onLinkPress={() => {}} title={title} />
 );
 
 export default renderComponent => {
@@ -23,9 +14,7 @@ export default renderComponent => {
     {
       name: "key facts with title",
       test: () => {
-        const output = renderComponent(
-          renderKeyFacts("New Brexit referendum")
-        );
+        const output = renderComponent(renderKeyFacts(attributes.title));
 
         expect(output).toMatchSnapshot();
       }
@@ -33,9 +22,7 @@ export default renderComponent => {
     {
       name: "key facts without title",
       test: () => {
-        const output = renderComponent(
-          renderKeyFacts()
-        );
+        const output = renderComponent(renderKeyFacts());
 
         expect(output).toMatchSnapshot();
       }
