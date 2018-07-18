@@ -1,10 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Styleguide tests for ios should render a FadeIn animation wrapper component 1`] = `
+exports[`a FadeIn animation wrapper component 1`] = `
 <View
   style={
     Object {
       "opacity": 0,
+    }
+  }
+>
+  <Text>
+    Hello World
+  </Text>
+</View>
+`;
+
+exports[`a FadeIn animation wrapper component 2`] = `
+<View
+  style={
+    Object {
+      "opacity": 1,
     }
   }
 >

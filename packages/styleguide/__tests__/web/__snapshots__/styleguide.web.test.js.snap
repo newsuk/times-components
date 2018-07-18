@@ -1,12 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Styleguide tests for web should render a FadeIn animation wrapper component 1`] = `
+exports[`a FadeIn animation wrapper component 1`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 <div
-  className="responsive-styles__component-fbPFZZ woNlo"
+  className="c0"
 >
-  <div
-    dir="auto"
-  >
+  <div>
+    Hello World
+  </div>
+</div>
+`;
+
+exports[`a FadeIn animation wrapper component 2`] = `
+.c0 {
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <div>
     Hello World
   </div>
 </div>
