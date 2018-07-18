@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 import Ad from "@times-components/ad";
 import PullQuote from "@times-components/pull-quote";
 import { colours } from "@times-components/styleguide";
@@ -23,14 +23,11 @@ const styles = StyleSheet.create({
 });
 
 const defaultRenderers = {
-  paragraph(key, attributes, renderedChildren) {
+  ad(key, attributes) {
     return {
-      element: <Text key={key}>{renderedChildren}</Text>
-    };
-  },
-  text(key, { value }) {
-    return {
-      element: value
+      element: (
+        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+      )
     };
   },
   bold(key, attributes, renderedChildren) {
@@ -42,6 +39,21 @@ const defaultRenderers = {
       )
     };
   },
+  block(key, attributes, renderedChildren) {
+    return {
+      element: <View key={key}>{renderedChildren}</View>
+    };
+  },
+  break(key) {
+    return {
+      element: <Text key={key}>{"\n"}</Text>
+    };
+  },
+  inline(key, attributes, renderedChildren) {
+    return {
+      element: <Text key={key}>{renderedChildren}</Text>
+    };
+  },
   italic(key, attributes, renderedChildren) {
     return {
       element: (
@@ -51,21 +63,9 @@ const defaultRenderers = {
       )
     };
   },
-  inline(key, attributes, renderedChildren) {
+  paragraph(key, attributes, renderedChildren) {
     return {
       element: <Text key={key}>{renderedChildren}</Text>
-    };
-  },
-  ad(key, attributes) {
-    return {
-      element: (
-        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-      )
-    };
-  },
-  break(key) {
-    return {
-      element: <Text key={key}>{"\n"}</Text>
     };
   },
   pullQuote(key, attributes) {
@@ -78,6 +78,11 @@ const defaultRenderers = {
         />
       )
     };
+  },
+  text(key, { value }) {
+    return {
+      element: value
+    };
   }
 };
 
@@ -85,7 +90,7 @@ export const renderTree = (tree, renderers, index = 0) =>
   renderTreeWithoutDefaults(
     tree,
     Object.assign({}, defaultRenderers, renderers),
-    index ? `${index}` : "",
+    `${index}`,
     index
   );
 

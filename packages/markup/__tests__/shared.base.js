@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
+import { iterator } from "@times-components/test-utils";
 import { renderTree, renderTrees } from "../src/markup";
 import multiParagraphWithPullQuote from "../fixtures/multi-paragraph-with-pullquote";
 
@@ -16,116 +17,217 @@ const script = require("../fixtures/script.json");
 const image = require("../fixtures/image.json");
 
 export default renderComponent => {
-  it("renders a single paragraph", () => {
-    const output = renderComponent(renderTree(singleParagraph));
+  const tests = [
+    {
+      name: "single paragraph",
+      test: () => {
+        const output = renderComponent(renderTree(singleParagraph));
 
-    expect(output).toMatchSnapshot("1. renders a single paragraph");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "multiple paragraphs",
+      test: () => {
+        const output = renderComponent(
+          <View>{renderTrees(multiParagraph)}</View>
+        );
 
-  it("renders multiple paragraphs", () => {
-    const output = renderComponent(<View>{renderTrees(multiParagraph)}</View>);
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "multiple paragraphs with a pull quote",
+      test: () => {
+        const output = renderComponent(
+          <View>
+            {renderTrees(
+              multiParagraphWithPullQuote({ pullQuote: "Some pull quote" })
+            )}
+          </View>
+        );
 
-    expect(output).toMatchSnapshot("2. renders multiple paragraphs");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "bold tag",
+      test: () => {
+        const output = renderComponent(renderTree(bold));
 
-  it("renders multiple paragraphs with a pull quote", () => {
-    const output = renderComponent(
-      <View>
-        {renderTrees(
-          multiParagraphWithPullQuote({ pullQuote: "Some pull quote" })
-        )}
-      </View>
-    );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "italic tag",
+      test: () => {
+        const output = renderComponent(renderTree(italic));
 
-    expect(output).toMatchSnapshot(
-      "3. renders multiple paragraphs with a pull quote"
-    );
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "span tag",
+      test: () => {
+        const output = renderComponent(renderTree(span));
 
-  it("renders the bold tag", () => {
-    const output = renderComponent(renderTree(bold));
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "line break tag",
+      test: () => {
+        const output = renderComponent(renderTree(lineBreak));
 
-    expect(output).toMatchSnapshot("4. renders the bold tag");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "mixture of tags",
+      test: () => {
+        const output = renderComponent(
+          renderTree(mixture, {
+            block(key, attributes, renderedChildren) {
+              return {
+                element: <View key={key}>{renderedChildren}</View>
+              };
+            },
+            link(key, attributes, renderedChildren) {
+              return {
+                element: (
+                  <Text href={attributes.href} key={key}>
+                    {renderedChildren}
+                  </Text>
+                )
+              };
+            }
+          })
+        );
 
-  it("renders the italic tag", () => {
-    const output = renderComponent(renderTree(italic));
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "nested tags",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            block(key, attributes, renderedChildren) {
+              return {
+                element: <Text key={key}>{renderedChildren}</Text>
+              };
+            }
+          })
+        );
 
-    expect(output).toMatchSnapshot("5. renders the italic tag");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "ignore children of nested tags",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            specialElement(key, attributes, renderedChildren) {
+              return {
+                element: <Text key={key}>{renderedChildren}</Text>,
+                shouldRenderChildren: false
+              };
+            }
+          })
+        );
 
-  it("renders the span tag", () => {
-    const output = renderComponent(renderTree(span));
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "provide AST of node",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            specialElement(key, attributes, renderedChildren, indx, node) {
+              return {
+                element: (
+                  <Text key={key}>{`special: ${JSON.stringify(node)}`}</Text>
+                ),
+                shouldRenderChildren: false
+              };
+            }
+          })
+        );
 
-    expect(output).toMatchSnapshot("6. renders the span tag");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "provide AST of node for child",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            text(key, attributes, renderedChildren, indx, node) {
+              return {
+                element: (
+                  <Text key={key}>{`special: ${JSON.stringify(node)}`}</Text>
+                )
+              };
+            }
+          })
+        );
 
-  it("renders the line break tag", () => {
-    const output = renderComponent(renderTree(lineBreak));
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "provide empty children",
+      test: () => {
+        const output = renderComponent(
+          renderTree(nested, {
+            text(key, attributes, renderedChildren) {
+              return {
+                element: <Text key={key}>{renderedChildren.length}</Text>
+              };
+            }
+          })
+        );
 
-    expect(output).toMatchSnapshot("7. renders the line break tag");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "wrapped tags",
+      test: () => {
+        const output = renderComponent(<Text>{renderTrees(bio)}</Text>);
 
-  it("renders a mixture of tags", () => {
-    const output = renderComponent(
-      renderTree(mixture, {
-        block(key, attributes, renderedChildren) {
-          return {
-            element: <View key={key}>{renderedChildren}</View>
-          };
-        },
-        link(key, attributes, renderedChildren) {
-          return {
-            element: (
-              <Text href={attributes.href} key={key}>
-                {renderedChildren}
-              </Text>
-            )
-          };
-        }
-      })
-    );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "multiple children",
+      test: () => {
+        const output = renderComponent(
+          <Text style={{ color: "red" }}>{renderTrees(multiParagraph)}</Text>
+        );
 
-    expect(output).toMatchSnapshot("8. renders a mixture of tags");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "does not render a script tag",
+      test: () => {
+        const output = renderComponent(<View>{renderTrees(script)}</View>);
 
-  it("renders tags nested", () => {
-    const output = renderComponent(
-      renderTree(nested, {
-        block(key, attributes, renderedChildren) {
-          return {
-            element: <Text key={key}>{renderedChildren}</Text>
-          };
-        }
-      })
-    );
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "image tag",
+      test: () => {
+        const output = renderComponent(<View>{renderTrees(image)}</View>);
 
-    expect(output).toMatchSnapshot("9. renders tags nested");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("renders wrapped tags", () => {
-    const output = renderComponent(<Text>{renderTrees(bio)}</Text>);
-
-    expect(output).toMatchSnapshot("10. renders wrapped tags");
-  });
-
-  it("renders multiple children", () => {
-    const output = renderComponent(
-      <Text style={{ color: "red" }}>{renderTrees(multiParagraph)}</Text>
-    );
-
-    expect(output).toMatchSnapshot("11. renders multiple children");
-  });
-
-  it("does not render a script tag", () => {
-    const output = renderComponent(<View>{renderTrees(script)}</View>);
-
-    expect(output).toMatchSnapshot("12. does not render a script tag");
-  });
-
-  it("does not render an image tag", () => {
-    const output = renderComponent(<View>{renderTrees(image)}</View>);
-
-    expect(output).toMatchSnapshot("13. does not render an image tag");
-  });
+  iterator(tests);
 };

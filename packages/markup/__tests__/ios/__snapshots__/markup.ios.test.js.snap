@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders a single paragraph 1`] = `
+exports[`1. single paragraph 1`] = `
 <Text>
   This is the text for paragraph one
 </Text>
 `;
 
-exports[`2. renders multiple paragraphs 1`] = `
+exports[`2. multiple paragraphs 1`] = `
 <View>
   <Text>
     This is the text for paragraph one
@@ -17,7 +17,7 @@ exports[`2. renders multiple paragraphs 1`] = `
 </View>
 `;
 
-exports[`3. renders multiple paragraphs with a pull quote 1`] = `
+exports[`3. multiple paragraphs with a pull quote 1`] = `
 <View>
   <Text>
     This is the text for paragraph one
@@ -53,7 +53,7 @@ exports[`3. renders multiple paragraphs with a pull quote 1`] = `
 </View>
 `;
 
-exports[`4. renders the bold tag 1`] = `
+exports[`4. bold tag 1`] = `
 <Text
   style={
     Object {
@@ -65,7 +65,7 @@ exports[`4. renders the bold tag 1`] = `
 </Text>
 `;
 
-exports[`5. renders the italic tag 1`] = `
+exports[`5. italic tag 1`] = `
 <Text
   style={
     Object {
@@ -77,20 +77,20 @@ exports[`5. renders the italic tag 1`] = `
 </Text>
 `;
 
-exports[`6. renders the span tag 1`] = `
+exports[`6. span tag 1`] = `
 <Text>
   some other text here
 </Text>
 `;
 
-exports[`7. renders the line break tag 1`] = `
+exports[`7. line break tag 1`] = `
 <Text>
   
 
 </Text>
 `;
 
-exports[`8. renders a mixture of tags 1`] = `
+exports[`8. mixture of tags 1`] = `
 <View>
   <View>
     <Text>
@@ -127,7 +127,7 @@ exports[`8. renders a mixture of tags 1`] = `
 </View>
 `;
 
-exports[`9. renders tags nested 1`] = `
+exports[`9. nested tags 1`] = `
 <Text>
   Some text is here 
   <Text>
@@ -144,7 +144,103 @@ exports[`9. renders tags nested 1`] = `
 </Text>
 `;
 
-exports[`10. renders wrapped tags 1`] = `
+exports[`10. ignore children of nested tags 1`] = `
+<View>
+  Some text is here 
+  <View>
+    and there is some 
+    <View>
+      more text 
+      <Text>
+        and in here
+      </Text>
+    </View>
+    <Text />
+     after it too
+  </View>
+   and here
+</View>
+`;
+
+exports[`11. provide ast of node 1`] = `
+<View>
+  Some text is here 
+  <View>
+    and there is some 
+    <View>
+      more text 
+      <Text>
+        and in here
+      </Text>
+    </View>
+    <Text>
+      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
+    </Text>
+     after it too
+  </View>
+   and here
+</View>
+`;
+
+exports[`12. provide ast of node for child 1`] = `
+<View>
+  <Text>
+    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
+  </Text>
+  <View>
+    <Text>
+      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
+    </Text>
+    <View>
+      <Text>
+        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
+      </Text>
+      <Text>
+        <Text>
+          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
+        </Text>
+      </Text>
+    </View>
+    <Text>
+      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
+    </Text>
+  </View>
+  <Text>
+    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
+  </Text>
+</View>
+`;
+
+exports[`13. provide empty children 1`] = `
+<View>
+  <Text>
+    0
+  </Text>
+  <View>
+    <Text>
+      0
+    </Text>
+    <View>
+      <Text>
+        0
+      </Text>
+      <Text>
+        <Text>
+          0
+        </Text>
+      </Text>
+    </View>
+    <Text>
+      0
+    </Text>
+  </View>
+  <Text>
+    0
+  </Text>
+</View>
+`;
+
+exports[`14. wrapped tags 1`] = `
 <Text>
   Camilla Long is 
   <Text
@@ -170,7 +266,7 @@ exports[`10. renders wrapped tags 1`] = `
 </Text>
 `;
 
-exports[`11. renders multiple children 1`] = `
+exports[`15. multiple children 1`] = `
 <Text
   style={
     Object {
@@ -187,6 +283,6 @@ exports[`11. renders multiple children 1`] = `
 </Text>
 `;
 
-exports[`12. does not render a script tag 1`] = `<View />`;
+exports[`16. does not render a script tag 1`] = `<View />`;
 
-exports[`13. does not render an image tag 1`] = `<View />`;
+exports[`17. image tag 1`] = `<View />`;

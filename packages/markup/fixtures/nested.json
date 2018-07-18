@@ -47,6 +47,32 @@
           ]
         },
         {
+          "name": "specialElement",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "text of a special element"
+              },
+              "children": []
+            },
+            {
+              "name": "inline",
+              "attributes": {},
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "inline text of a special element"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "text",
           "attributes": {
             "value": " after it too"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders multiple paragraphs with ads 1`] = `
+exports[`multiple paragraphs with ads 1`] = `
 <div>
   <p>
     This is the text for paragraph one

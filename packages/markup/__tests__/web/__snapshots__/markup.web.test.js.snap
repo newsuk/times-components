@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders a single paragraph 1`] = `
+exports[`1. single paragraph 1`] = `
 <p>
   This is the text for paragraph one
 </p>
 `;
 
-exports[`2. renders multiple paragraphs 1`] = `
+exports[`2. multiple paragraphs 1`] = `
 <div>
   <p>
     This is the text for paragraph one
@@ -17,7 +17,7 @@ exports[`2. renders multiple paragraphs 1`] = `
 </div>
 `;
 
-exports[`3. renders multiple paragraphs with a pull quote 1`] = `
+exports[`3. multiple paragraphs with a pull quote 1`] = `
 <style>
 {
   "IS1": {
@@ -67,27 +67,27 @@ exports[`3. renders multiple paragraphs with a pull quote 1`] = `
 </div>
 `;
 
-exports[`4. renders the bold tag 1`] = `
+exports[`4. bold tag 1`] = `
 <strong>
   some text here
 </strong>
 `;
 
-exports[`5. renders the italic tag 1`] = `
+exports[`5. italic tag 1`] = `
 <em>
    some more text here
 </em>
 `;
 
-exports[`6. renders the span tag 1`] = `
+exports[`6. span tag 1`] = `
 <span>
   some other text here
 </span>
 `;
 
-exports[`7. renders the line break tag 1`] = `<br />`;
+exports[`7. line break tag 1`] = `<br />`;
 
-exports[`8. renders a mixture of tags 1`] = `
+exports[`8. mixture of tags 1`] = `
 <div>
   <div>
     <div
@@ -114,7 +114,7 @@ exports[`8. renders a mixture of tags 1`] = `
 </div>
 `;
 
-exports[`9. renders tags nested 1`] = `
+exports[`9. nested tags 1`] = `
 <div>
   Some text is here 
   <span>
@@ -131,7 +131,103 @@ exports[`9. renders tags nested 1`] = `
 </div>
 `;
 
-exports[`10. renders wrapped tags 1`] = `
+exports[`10. ignore children of nested tags 1`] = `
+<div>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+    <div />
+     after it too
+  </div>
+   and here
+</div>
+`;
+
+exports[`11. provide ast of node 1`] = `
+<div>
+  Some text is here 
+  <div>
+    and there is some 
+    <div>
+      more text 
+      <span>
+        and in here
+      </span>
+    </div>
+    <div>
+      special: {"name":"specialElement","attributes":{},"children":[{"name":"text","attributes":{"value":"text of a special element"},"children":[]},{"name":"inline","attributes":{},"children":[{"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}]}]}
+    </div>
+     after it too
+  </div>
+   and here
+</div>
+`;
+
+exports[`12. provide ast of node for child 1`] = `
+<div>
+  <div>
+    special: {"name":"text","attributes":{"value":"Some text is here "},"children":[]}
+  </div>
+  <div>
+    <div>
+      special: {"name":"text","attributes":{"value":"and there is some "},"children":[]}
+    </div>
+    <div>
+      <div>
+        special: {"name":"text","attributes":{"value":"more text "},"children":[]}
+      </div>
+      <span>
+        <div>
+          special: {"name":"text","attributes":{"value":"and in here"},"children":[]}
+        </div>
+      </span>
+    </div>
+    <div>
+      special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
+    </div>
+  </div>
+  <div>
+    special: {"name":"text","attributes":{"value":" and here"},"children":[]}
+  </div>
+</div>
+`;
+
+exports[`13. provide empty children 1`] = `
+<div>
+  <div>
+    0
+  </div>
+  <div>
+    <div>
+      0
+    </div>
+    <div>
+      <div>
+        0
+      </div>
+      <span>
+        <div>
+          0
+        </div>
+      </span>
+    </div>
+    <div>
+      0
+    </div>
+  </div>
+  <div>
+    0
+  </div>
+</div>
+`;
+
+exports[`14. wrapped tags 1`] = `
 <div>
   Camilla Long is 
   <em>
@@ -145,7 +241,7 @@ exports[`10. renders wrapped tags 1`] = `
 </div>
 `;
 
-exports[`11. renders multiple children 1`] = `
+exports[`15. multiple children 1`] = `
 <style>
 {
   "IS1": {
@@ -166,6 +262,6 @@ exports[`11. renders multiple children 1`] = `
 </div>
 `;
 
-exports[`12. does not render a script tag 1`] = `<div />`;
+exports[`16. does not render a script tag 1`] = `<div />`;
 
-exports[`13. does not render an image tag 1`] = `<div />`;
+exports[`17. image tag 1`] = `<div />`;
