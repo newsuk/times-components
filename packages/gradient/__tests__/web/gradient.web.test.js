@@ -12,49 +12,57 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { iterator } from "@times-components/test-utils";
 import Gradient from "../../src/gradient";
 
-describe("web", () => {
-  addSerializers(
-    expect,
-    enzymeRenderedSerializer(),
-    compose(
-      stylePrinter,
-      hoistStyleTransform,
-      minimalWebTransform,
-      rnwTransform(["backgroundColor"])
-    )
-  );
+addSerializers(
+  expect,
+  enzymeRenderedSerializer(),
+  compose(
+    stylePrinter,
+    hoistStyleTransform,
+    minimalWebTransform,
+    rnwTransform(["backgroundColor"])
+  )
+);
 
-  it("should render with the expected style", () => {
-    const styles = StyleSheet.create({
-      gradient: {
-        backgroundColor: "red"
-      }
-    });
+const tests = [
+  {
+    name: "gradient with style",
+    test: () => {
+      const styles = StyleSheet.create({
+        gradient: {
+          backgroundColor: "red"
+        }
+      });
 
-    expect(
-      mount(<Gradient degrees={30} style={styles.gradient} />)
-    ).toMatchSnapshot("1. should render with the expected style");
-  });
+      expect(
+        mount(<Gradient degrees={30} style={styles.gradient} />)
+      ).toMatchSnapshot();
+    }
+  },
+  {
+    name: "gradient with a child",
+    test: () => {
+      addSerializers(
+        expect,
+        compose(
+          print,
+          minimaliseTransform((value, key) => key === "style"),
+          minimalWebTransform,
+          rnwTransform()
+        )
+      );
 
-  it("should render with a child", () => {
-    addSerializers(
-      expect,
-      compose(
-        print,
-        minimaliseTransform((value, key) => key === "style"),
-        minimalWebTransform,
-        rnwTransform()
-      )
-    );
+      expect(
+        mount(
+          <Gradient>
+            <Text>Hello world!</Text>
+          </Gradient>
+        )
+      ).toMatchSnapshot();
+    }
+  }
+];
 
-    expect(
-      mount(
-        <Gradient>
-          <Text>Hello world!</Text>
-        </Gradient>
-      )
-    ).toMatchSnapshot("2. should render with a child");
-  });
-});
+iterator(tests);

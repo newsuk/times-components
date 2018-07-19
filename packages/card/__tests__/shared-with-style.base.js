@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
+import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
 const props = {
@@ -14,51 +15,62 @@ const props = {
 export default renderMethod => {
   jest.useFakeTimers();
 
-  it("should render the default layout", () => {
-    const output = renderMethod(
-      <Card {...props}>
-        <Text>A card</Text>
-      </Card>
-    );
+  const tests = [
+    {
+      name: "card default state",
+      test: () => {
+        const output = renderMethod(
+          <Card {...props}>
+            <Text>A card</Text>
+          </Card>
+        );
 
-    jest.runTimersToTime();
+        jest.runTimersToTime();
 
-    expect(output).toMatchSnapshot("1. should render the default layout");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card with reversed state",
+      test: () => {
+        const output = renderMethod(
+          <Card {...props} isReversed>
+            <Text>A card in reverse</Text>
+          </Card>
+        );
 
-  it("should render with reversed layout", () => {
-    const output = renderMethod(
-      <Card {...props} isReversed>
-        <Text>A card in reverse</Text>
-      </Card>
-    );
+        jest.runTimersToTime();
 
-    jest.runTimersToTime();
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card loading state",
+      test: () => {
+        const output = renderMethod(
+          <Card {...props} isLoading>
+            <Text>Loading state</Text>
+          </Card>
+        );
 
-    expect(output).toMatchSnapshot("2. should render with reversed layout");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "card reversed loading state",
+      test: () => {
+        const output = renderMethod(
+          <Card {...props} isLoading isReversed>
+            <Text>Loading in reverse</Text>
+          </Card>
+        );
 
-  it("should render a loading state", () => {
-    const output = renderMethod(
-      <Card {...props} isLoading>
-        <Text>Loading state</Text>
-      </Card>
-    );
+        jest.runTimersToTime();
 
-    expect(output).toMatchSnapshot("3. should render a loading state");
-  });
+        expect(output).toMatchSnapshot();
+      }
+    }
+  ];
 
-  it("should render a reversed loading component", () => {
-    const output = renderMethod(
-      <Card {...props} isLoading isReversed>
-        <Text>Loading in reverse</Text>
-      </Card>
-    );
-
-    jest.runTimersToTime();
-
-    expect(output).toMatchSnapshot(
-      "4. should render a reversed loading component"
-    );
-  });
+  iterator(tests);
 };
