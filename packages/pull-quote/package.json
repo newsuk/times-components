@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pull-quote",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Pull Quote for Times Components Articles",
   "main": "dist/pull-quote",
   "dev": "src/pull-quote",
