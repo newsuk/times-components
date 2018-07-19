@@ -115,49 +115,53 @@ const tests = [
 
       expect(wrapper).toMatchSnapshot();
     }
+  },
+  {
+    name: "tracks next page interaction",
+    test: () => {
+      const stream = jest.fn();
+      const wrapper = shallow(<Pagination count={21} page={1} />, {
+        context: { tracking: { analytics: stream } }
+      });
+
+      wrapper
+        .dive()
+        .find("Link")
+        .simulate("press");
+
+      expect(stream).toHaveBeenCalledWith({
+        component: "Pagination",
+        action: "Pressed",
+        attrs: {
+          direction: "next",
+          destinationPage: 2
+        }
+      });
+    }
+  },
+  {
+    name: "tracks previous page interaction",
+    test: () => {
+      const stream = jest.fn();
+      const wrapper = shallow(<Pagination count={21} page={2} />, {
+        context: { tracking: { analytics: stream } }
+      });
+
+      wrapper
+        .dive()
+        .find("Link")
+        .simulate("press");
+
+      expect(stream).toHaveBeenCalledWith({
+        component: "Pagination",
+        action: "Pressed",
+        attrs: {
+          direction: "previous",
+          destinationPage: 1
+        }
+      });
+    }
   }
 ];
 
 iterator(tests);
-
-it("tracks next page interaction", () => {
-  const stream = jest.fn();
-  const wrapper = shallow(<Pagination count={21} page={1} />, {
-    context: { tracking: { analytics: stream } }
-  });
-
-  wrapper
-    .dive()
-    .find("Link")
-    .simulate("press");
-
-  expect(stream).toHaveBeenCalledWith({
-    component: "Pagination",
-    action: "Pressed",
-    attrs: {
-      direction: "next",
-      destinationPage: 2
-    }
-  });
-});
-
-it("tracks previous page interaction", () => {
-  const stream = jest.fn();
-  const wrapper = shallow(<Pagination count={21} page={2} />, {
-    context: { tracking: { analytics: stream } }
-  });
-
-  wrapper
-    .dive()
-    .find("Link")
-    .simulate("press");
-
-  expect(stream).toHaveBeenCalledWith({
-    component: "Pagination",
-    action: "Pressed",
-    attrs: {
-      direction: "previous",
-      destinationPage: 1
-    }
-  });
-});
