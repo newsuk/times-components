@@ -1,5 +1,3 @@
-import shared from "../shared";
+import shared from "../shared.web";
 
-describe("PullQuotes tests on web", () => {
-  shared();
-});
+shared();

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`different colours 1`] = `
+.c0 {
+  color: #333333;
+  font-family: TimesModern-Regular;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+<style>
+{
+  "IS1": {
+    "color": "rgba(133,0,41,1)",
+  },
+  "IS2": {
+    "color": "rgba(133,0,41,1)",
+  },
+  "IS3": {
+    "color": "#006699",
+    "fontFamily": "GillSansMTStd-Medium",
+    "fontSize": 13,
+    "lineHeight": 13,
+    "marginLeft": 3,
+    "textDecorationLine": "none",
+  },
+  "S1": {
+    "border-left-width": "0px",
+    "display": "inline",
+    "font-family": "TimesModern-Regular",
+    "font-size": "75px",
+    "margin-bottom": "-40px",
+    "margin-left": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S2": {
+    "border-left-width": "0px",
+    "color": "inherit",
+    "display": "inline",
+    "font-family": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Ubuntu, \\"Helvetica Neue\\", sans-serif",
+    "font-size": "14px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S3": {
+    "border-left-width": "0px",
+    "display": "inline",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "13px",
+    "line-height": "13px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+  "S4": {
+    "-ms-flex-align": "center",
+    "-ms-flex-direction": "row",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "align-items": "center",
+    "border-left-color": "rgba(105,105,105,1)",
+    "border-left-width": "1px",
+    "display": "flex",
+    "flex-direction": "row",
+    "height": "15px",
+    "margin-bottom": "0px",
+    "margin-left": "7px",
+    "margin-top": "0px",
+    "padding-left": "7px",
+  },
+  "S5": {
+    "-ms-flex-align": "center",
+    "-ms-flex-direction": "row",
+    "-webkit-align-items": "center",
+    "-webkit-box-align": "center",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-flex-direction": "row",
+    "align-items": "center",
+    "border-left-width": "0px",
+    "display": "flex",
+    "flex-direction": "row",
+    "height": "20px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-top": "10px",
+    "padding-left": "0px",
+  },
+  "S6": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-left-width": "0px",
+    "display": "flex",
+    "flex-direction": "column",
+    "margin-bottom": "15px",
+    "margin-left": "0px",
+    "margin-top": "0px",
+    "padding-left": "0px",
+  },
+}
+</style>
+
+<div
+  className="S6"
+>
+  <div
+    className="IS1 S1"
+  >
+    “
+  </div>
+  <div
+    className="c0 S2"
+  >
+    Some content
+  </div>
+  <div
+    className="S5"
+  >
+    <div
+      className="IS2 S3"
+    >
+      A caption
+    </div>
+    <div
+      className="S4"
+    >
+      <IconTwitter
+        height={10}
+        width={12}
+      />
+      <TextLink
+        className="IS3"
+        target="_blank"
+        url="https://twitter.com/@twitter"
+      >
+        @twitter
+      </TextLink>
+    </div>
+  </div>
+</div>
+`;

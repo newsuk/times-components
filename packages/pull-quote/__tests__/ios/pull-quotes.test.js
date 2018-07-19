@@ -1,5 +1,3 @@
-import shared from "../shared";
+import shared from "../shared.native";
 
-describe("PullQuotes tests on ios", () => {
-  shared();
-});
+shared();
