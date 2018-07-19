@@ -1,12 +1,16 @@
 # Test Utils
 
-A suite of helper methods that assist with testing across all Times Components packages
+A suite of helper methods that assist with testing across all Times Components
+packages
 
 ## How to use
 
 ### iterator
 
-The `iterator` method iterates over a given array of test objects and runs the tests after prefixing the test names with an index. This ensures a correct ordering of tests, particularly snapshot tests, which allows for a better code diff.
+The `iterator` method iterates over a given array of test objects and runs the
+tests after prefixing the test names with an index. This ensures a correct
+ordering of tests, particularly snapshot tests, which allows for a better code
+diff.
 
 Example:
 
