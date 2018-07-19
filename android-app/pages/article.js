@@ -15,20 +15,20 @@ const {
 } = NativeModules.ArticleEvents;
 const ArticlePageView = Article(config)(fetch);
 
-const getPlatformAdConfig = config => ({
+const getPlatformAdConfig = adConfig => ({
   adUnit: "d.thetimes.co.uk",
   networkId: "25436805",
   testMode: "",
-  sectionName: config.sectionName,
-  appVersion: config.appVersion,
+  sectionName: adConfig.sectionName,
+  appVersion: adConfig.appVersion,
   operatingSystem: "Android",
-  operatingSystemVersion: config.operatingSystemVersion,
-  environment: config.environment,
-  deviceId: config.deviceId,
-  cookieEid: config.cookieEid,
-  cookieAcsTnl: config.cookieAcsTnl,
-  cookieIamTgt: config.cookieIamTgt,
-  isLoggedIn: config.isLoggedIn,
+  operatingSystemVersion: adConfig.operatingSystemVersion,
+  environment: adConfig.environment,
+  deviceId: adConfig.deviceId,
+  cookieEid: adConfig.cookieEid,
+  cookieAcsTnl: adConfig.cookieAcsTnl,
+  cookieIamTgt: adConfig.cookieIamTgt,
+  isLoggedIn: adConfig.isLoggedIn,
   platform: "mobile"
 });
 
