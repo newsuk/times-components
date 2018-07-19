@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { shallow } from "enzyme";
 
 export default (withPageState, renderComponent) => {
-  it("renders inner component with page 1", () => {
+  it("renders inner component with page", () => {
     const Component = props => <Text>{JSON.stringify(props, null, 2)}</Text>;
     const PageChanger = withPageState(Component);
 
@@ -13,7 +13,7 @@ export default (withPageState, renderComponent) => {
 
     const output = renderComponent(<PageChanger {...props} />);
 
-    expect(output).toMatchSnapshot("1. renders inner component with page 1");
+    expect(output).toMatchSnapshot();
   });
 
   it("renders inner component with new props", () => {

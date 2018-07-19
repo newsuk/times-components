@@ -319,7 +319,7 @@ exports[`1. renders 1`] = `
 </div>
 `;
 
-exports[`2. renders without results 1`] = `
+exports[`2. renders with no results 1`] = `
 .c2 {
   padding-left: 10px;
   padding-right: 10px;
