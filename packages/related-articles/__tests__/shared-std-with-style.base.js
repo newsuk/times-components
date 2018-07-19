@@ -38,6 +38,6 @@ export default renderComponent => {
       />
     );
 
-    expect(output).toMatchSnapshot("1. default styles");
+    expect(output).toMatchSnapshot();
   });
 };
