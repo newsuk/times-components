@@ -32,10 +32,7 @@ const getPlatformAdConfig = adConfig => ({
   platform: "mobile"
 });
 
-const ArticleView = ({
-  articleId,
-  sectionName
-}) => {
+const ArticleView = ({ articleId, sectionName }) => {
   const adConfig = {
     sectionName
   };
