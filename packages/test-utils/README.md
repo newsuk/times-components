@@ -1,7 +1,7 @@
 # Test Utils
 
-A suite of helper methods that assist with testing across all Times Components
-packages
+A suite of helper methods that assist with testing across the packages of Times
+Components
 
 ## How to use
 
@@ -10,7 +10,9 @@ packages
 The `iterator` method iterates over a given array of test objects and runs the
 tests after prefixing the test names with an index. This ensures a correct
 ordering of tests, particularly snapshot tests, which allows for a better code
-diff.
+diff. Snapshot tests should come first in the list, followed by any other tests
+to ensure the numbered test names increment as expected. Where appropriate,
+snapshot tests would be separated out from non-snapshot tests.
 
 Example:
 
