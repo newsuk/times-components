@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow image caption to have credits only ([b7355fc](https://github.com/newsuk/times-components/commit/b7355fc))
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* caption was not considering empty string ([#279](https://github.com/newsuk/times-components/issues/279)) ([93e9ea7](https://github.com/newsuk/times-components/commit/93e9ea7))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* package.json main ([ed150b8](https://github.com/newsuk/times-components/commit/ed150b8))
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+* update caption and credit styles per spec ([#197](https://github.com/newsuk/times-components/issues/197)) ([9c73808](https://github.com/newsuk/times-components/commit/9c73808))
+* upgrade react-style-proptype & fix text link proptypes ([#374](https://github.com/newsuk/times-components/issues/374)) ([1d20491](https://github.com/newsuk/times-components/commit/1d20491))
+* use ImageBackground wrapped in View ([#399](https://github.com/newsuk/times-components/issues/399)) ([e77bcde](https://github.com/newsuk/times-components/commit/e77bcde))
+
+
+### Features
+
+* add article loading state ([#324](https://github.com/newsuk/times-components/issues/324)) ([b2c07fe](https://github.com/newsuk/times-components/commit/b2c07fe))
+* add caption component ([e5d8729](https://github.com/newsuk/times-components/commit/e5d8729))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+* allow for caption component to receive children elements ([69f0884](https://github.com/newsuk/times-components/commit/69f0884))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.15"></a>
 ## [1.0.15](https://github.com/newsuk/times-components/compare/@times-components/caption@1.0.14...@times-components/caption@1.0.15) (2018-07-11)
 

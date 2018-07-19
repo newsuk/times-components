@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# 3.0.0 (2018-07-18)
+
+
+* BREAKING CHANGE: Brightcove video launcher (#191) ([c9ec88f](https://github.com/newsuk/times-components/commit/c9ec88f)), closes [#191](https://github.com/newsuk/times-components/issues/191)
+
+
+### Bug Fixes
+
+* add protocol to splash REPLAT-1677 ([#837](https://github.com/newsuk/times-components/issues/837)) ([109f0f5](https://github.com/newsuk/times-components/commit/109f0f5))
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* bad property name ([#383](https://github.com/newsuk/times-components/issues/383)) ([612fd30](https://github.com/newsuk/times-components/commit/612fd30))
+* change player on brightcove fructose tests ([#337](https://github.com/newsuk/times-components/issues/337)) ([6ebe71c](https://github.com/newsuk/times-components/commit/6ebe71c))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+* linting error ([ef09f6f](https://github.com/newsuk/times-components/commit/ef09f6f))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* make tests more reliable ([#325](https://github.com/newsuk/times-components/issues/325)) ([d2d8090](https://github.com/newsuk/times-components/commit/d2d8090))
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+* react-native link ([d281e84](https://github.com/newsuk/times-components/commit/d281e84))
+* simple brightcove activity with fullscreen icon hidden ([#329](https://github.com/newsuk/times-components/issues/329)) ([e9439e6](https://github.com/newsuk/times-components/commit/e9439e6))
+* squishy video ([#128](https://github.com/newsuk/times-components/issues/128)) ([3304520](https://github.com/newsuk/times-components/commit/3304520))
+* storybook brightcove-video poster image uri ([#369](https://github.com/newsuk/times-components/issues/369)) ([eeb46e8](https://github.com/newsuk/times-components/commit/eeb46e8))
+* typo in grouping name ([#656](https://github.com/newsuk/times-components/issues/656)) ([680296c](https://github.com/newsuk/times-components/commit/680296c))
+* update coverage patterns ([#293](https://github.com/newsuk/times-components/issues/293)) ([6cb2b53](https://github.com/newsuk/times-components/commit/6cb2b53))
+* update react-native-svg for expo ([#959](https://github.com/newsuk/times-components/issues/959)) ([0dbef64](https://github.com/newsuk/times-components/commit/0dbef64))
+* use 4.x version of brightcove android SDK ([#200](https://github.com/newsuk/times-components/issues/200)) ([16b79f9](https://github.com/newsuk/times-components/commit/16b79f9))
+
+
+### Features
+
+* add article loading state ([#324](https://github.com/newsuk/times-components/issues/324)) ([b2c07fe](https://github.com/newsuk/times-components/commit/b2c07fe))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+* Add support of brightcovePolicyKey and brightcovePlayerId ([#82](https://github.com/newsuk/times-components/issues/82)) ([1eeedb9](https://github.com/newsuk/times-components/commit/1eeedb9))
+* add video error handler ([#468](https://github.com/newsuk/times-components/issues/468)) ([624d5e6](https://github.com/newsuk/times-components/commit/624d5e6))
+* adds option to reset on finish ([#240](https://github.com/newsuk/times-components/issues/240)) ([b096086](https://github.com/newsuk/times-components/commit/b096086))
+* autoplay ([#103](https://github.com/newsuk/times-components/issues/103)) ([3c76877](https://github.com/newsuk/times-components/commit/3c76877))
+* bubble android fullscreen events outside component ([#294](https://github.com/newsuk/times-components/issues/294)) ([d95ac94](https://github.com/newsuk/times-components/commit/d95ac94))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* disables video context menu ([76a5633](https://github.com/newsuk/times-components/commit/76a5633))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* pause/play video based on appstate ([#148](https://github.com/newsuk/times-components/issues/148)) ([e2f6231](https://github.com/newsuk/times-components/commit/e2f6231))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* set presenting view controller to fix fullscreen ([#269](https://github.com/newsuk/times-components/issues/269)) ([7166adc](https://github.com/newsuk/times-components/commit/7166adc))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* upgrade sb and add dll config ([#85](https://github.com/newsuk/times-components/issues/85)) ([b11fa9e](https://github.com/newsuk/times-components/commit/b11fa9e))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+### BREAKING CHANGES
+
+* merge bc video & launcher
+
+* test: tap-to-launch
+
+* test: eslint
+
+* review: autoplay
+
+* review: use standard image component
+
+* Review: Merge video and player stories
+
+* Review: Generalise play icon component
+
+
+
+
 <a name="2.4.24"></a>
 ## [2.4.24](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@2.4.23...@times-components/brightcove-video@2.4.24) (2018-07-11)
 

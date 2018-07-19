@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* linting ([#878](https://github.com/newsuk/times-components/issues/878)) ([9df1abf](https://github.com/newsuk/times-components/commit/9df1abf))
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* paidOnly videos and new video package ([#889](https://github.com/newsuk/times-components/issues/889)) ([2e57f4b](https://github.com/newsuk/times-components/commit/2e57f4b))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@1.0.8...@times-components/jest-serializer@1.0.9) (2018-07-11)
 

@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Bug Fixes
+
+* ads in article list for pagination and loading states ([#1028](https://github.com/newsuk/times-components/issues/1028)) ([6e233d9](https://github.com/newsuk/times-components/commit/6e233d9))
+* article list design review changes ([#1074](https://github.com/newsuk/times-components/issues/1074)) ([a0667ad](https://github.com/newsuk/times-components/commit/a0667ad))
+* article list layout fixed ([#1012](https://github.com/newsuk/times-components/issues/1012)) ([c77ab31](https://github.com/newsuk/times-components/commit/c77ab31))
+* article list rerender ([#1064](https://github.com/newsuk/times-components/issues/1064)) ([7e1c81e](https://github.com/newsuk/times-components/commit/7e1c81e))
+* Get Topic "Viewed" analytics working ([#954](https://github.com/newsuk/times-components/issues/954)) ([1507be4](https://github.com/newsuk/times-components/commit/1507be4))
+* image component resize query string params ([#985](https://github.com/newsuk/times-components/issues/985)) ([79be184](https://github.com/newsuk/times-components/commit/79be184))
+* image component warnings on native for empty source.uri props ([#991](https://github.com/newsuk/times-components/issues/991)) ([1feefc2](https://github.com/newsuk/times-components/commit/1feefc2))
+* minor padding issues on pagination and article-list ([#1089](https://github.com/newsuk/times-components/issues/1089)) ([6e85d6e](https://github.com/newsuk/times-components/commit/6e85d6e))
+* minor topic head padding tweaks ([#1070](https://github.com/newsuk/times-components/issues/1070)) ([48b9d46](https://github.com/newsuk/times-components/commit/48b9d46))
+* remove redundant slot targetting key-value pair ([#1052](https://github.com/newsuk/times-components/issues/1052)) ([1a64595](https://github.com/newsuk/times-components/commit/1a64595))
+* topic and author profile stories ([#1025](https://github.com/newsuk/times-components/issues/1025)) ([0c947e7](https://github.com/newsuk/times-components/commit/0c947e7))
+* topic design review ([#1010](https://github.com/newsuk/times-components/issues/1010)) ([54f1cad](https://github.com/newsuk/times-components/commit/54f1cad))
+* Topic head in IE ([#1016](https://github.com/newsuk/times-components/issues/1016)) ([c5f8bc8](https://github.com/newsuk/times-components/commit/c5f8bc8))
+* topic header layout ([#1018](https://github.com/newsuk/times-components/issues/1018)) ([98aced6](https://github.com/newsuk/times-components/commit/98aced6))
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* REPLAT-2167 Topic name query ([#956](https://github.com/newsuk/times-components/issues/956)) ([f398f51](https://github.com/newsuk/times-components/commit/f398f51))
+* Topic header ([#928](https://github.com/newsuk/times-components/issues/928)) ([7a718e8](https://github.com/newsuk/times-components/commit/7a718e8))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.3.14"></a>
 ## [1.3.14](https://github.com/newsuk/times-components/compare/@times-components/topic@1.3.13...@times-components/topic@1.3.14) (2018-07-12)
 

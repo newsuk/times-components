@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* Fix the layout when greater than 2 Device Pixel Ratio is used ([#789](https://github.com/newsuk/times-components/issues/789)) ([3192c4a](https://github.com/newsuk/times-components/commit/3192c4a))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* update styled-components ([#740](https://github.com/newsuk/times-components/issues/740)) ([6756ed6](https://github.com/newsuk/times-components/commit/6756ed6))
+
+
+### Features
+
+* add author profile animations ([#670](https://github.com/newsuk/times-components/issues/670)) ([9198122](https://github.com/newsuk/times-components/commit/9198122))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add responsive styles component ([#436](https://github.com/newsuk/times-components/issues/436)) ([79d3c5e](https://github.com/newsuk/times-components/commit/79d3c5e))
+* layout opinion related articles ([#782](https://github.com/newsuk/times-components/issues/782)) ([d10089e](https://github.com/newsuk/times-components/commit/d10089e))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* Slice API for default and lead ([#675](https://github.com/newsuk/times-components/issues/675)) ([c7a0f94](https://github.com/newsuk/times-components/commit/c7a0f94))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* video lead asset (web) ([#780](https://github.com/newsuk/times-components/issues/780)) ([02c3e33](https://github.com/newsuk/times-components/commit/02c3e33))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.12"></a>
 ## [1.0.12](https://github.com/newsuk/times-components/compare/@times-components/responsive-styles@1.0.11...@times-components/responsive-styles@1.0.12) (2018-07-11)
 

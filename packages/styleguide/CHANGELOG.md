@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* article list page layout ([#995](https://github.com/newsuk/times-components/issues/995)) ([a763150](https://github.com/newsuk/times-components/commit/a763150))
+* dextrose failures on styleguide showcase ([#932](https://github.com/newsuk/times-components/issues/932)) ([9696553](https://github.com/newsuk/times-components/commit/9696553))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* Fix the layout when greater than 2 Device Pixel Ratio is used ([#789](https://github.com/newsuk/times-components/issues/789)) ([3192c4a](https://github.com/newsuk/times-components/commit/3192c4a))
+* warnings in font storybook ([#894](https://github.com/newsuk/times-components/issues/894)) ([463ec7d](https://github.com/newsuk/times-components/commit/463ec7d))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Features
+
+* add author profile animations ([#670](https://github.com/newsuk/times-components/issues/670)) ([9198122](https://github.com/newsuk/times-components/commit/9198122))
+* add button onPress styles ([#997](https://github.com/newsuk/times-components/issues/997)) ([98a86fe](https://github.com/newsuk/times-components/commit/98a86fe))
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+* Styleguide Package ([#652](https://github.com/newsuk/times-components/issues/652)) ([87a59ac](https://github.com/newsuk/times-components/commit/87a59ac))
+* Topic header ([#928](https://github.com/newsuk/times-components/issues/928)) ([7a718e8](https://github.com/newsuk/times-components/commit/7a718e8))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* update author profile and topic head background ([#963](https://github.com/newsuk/times-components/issues/963)) ([19bd6ed](https://github.com/newsuk/times-components/commit/19bd6ed))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.1.11"></a>
 ## [1.1.11](https://github.com/newsuk/times-components/compare/@times-components/styleguide@1.1.10...@times-components/styleguide@1.1.11) (2018-07-11)
 

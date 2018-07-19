@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* add bundle step to button package ([#1003](https://github.com/newsuk/times-components/issues/1003)) ([cba4ff0](https://github.com/newsuk/times-components/commit/cba4ff0))
+* add rnw.js to prettier and lint ignore files ([#1006](https://github.com/newsuk/times-components/issues/1006)) ([28d50a6](https://github.com/newsuk/times-components/commit/28d50a6))
+* button package json dev deps ([#1004](https://github.com/newsuk/times-components/issues/1004)) ([8ea1de1](https://github.com/newsuk/times-components/commit/8ea1de1))
+* moved button utils into src folder ([#996](https://github.com/newsuk/times-components/issues/996)) ([54c258a](https://github.com/newsuk/times-components/commit/54c258a))
+* topic design review ([#1010](https://github.com/newsuk/times-components/issues/1010)) ([54f1cad](https://github.com/newsuk/times-components/commit/54f1cad))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Features
+
+* add button onPress styles ([#997](https://github.com/newsuk/times-components/issues/997)) ([98a86fe](https://github.com/newsuk/times-components/commit/98a86fe))
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.1.12"></a>
 ## [1.1.12](https://github.com/newsuk/times-components/compare/@times-components/button@1.1.11...@times-components/button@1.1.12) (2018-07-11)
 

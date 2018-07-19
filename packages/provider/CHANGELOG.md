@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.38.0"></a>
+# 0.38.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* add id field to leadassets in article query ([#711](https://github.com/newsuk/times-components/issues/711)) ([5c46dd9](https://github.com/newsuk/times-components/commit/5c46dd9))
+* Add refetch tests and refactor ([#508](https://github.com/newsuk/times-components/issues/508)) ([4c0e259](https://github.com/newsuk/times-components/commit/4c0e259))
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* android dextrose ([#569](https://github.com/newsuk/times-components/issues/569)) ([b5b74fa](https://github.com/newsuk/times-components/commit/b5b74fa))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* bio width ([#204](https://github.com/newsuk/times-components/issues/204)) ([0c10fc5](https://github.com/newsuk/times-components/commit/0c10fc5))
+* change provider query ([f12bb27](https://github.com/newsuk/times-components/commit/f12bb27))
+* change teaser to content with 145 chars ([#182](https://github.com/newsuk/times-components/issues/182)) ([389a54e](https://github.com/newsuk/times-components/commit/389a54e))
+* clean up properly after a graphql error ([#501](https://github.com/newsuk/times-components/issues/501)) ([fbd30f0](https://github.com/newsuk/times-components/commit/fbd30f0))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* don't change state if component receives the same props ([#595](https://github.com/newsuk/times-components/issues/595)) ([771bfa6](https://github.com/newsuk/times-components/commit/771bfa6))
+* don't point at dev imageserver ([#375](https://github.com/newsuk/times-components/issues/375)) ([fc8dcbc](https://github.com/newsuk/times-components/commit/fc8dcbc))
+* ensure author-head doesn't crash without image ([6f1890f](https://github.com/newsuk/times-components/commit/6f1890f))
+* ensure no exception is thrown no asset ([#177](https://github.com/newsuk/times-components/issues/177)) ([05d573e](https://github.com/newsuk/times-components/commit/05d573e))
+* fetch https images on native ([#189](https://github.com/newsuk/times-components/issues/189)) ([ae6f658](https://github.com/newsuk/times-components/commit/ae6f658))
+* fetching fonts ([#227](https://github.com/newsuk/times-components/issues/227)) ([614e6d3](https://github.com/newsuk/times-components/commit/614e6d3))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* Fix the errors that appear in the Provider story for Article. ([#763](https://github.com/newsuk/times-components/issues/763)) ([55a888c](https://github.com/newsuk/times-components/commit/55a888c))
+* fixed article lead asset provider ([#813](https://github.com/newsuk/times-components/issues/813)) ([2c8473b](https://github.com/newsuk/times-components/commit/2c8473b))
+* ignore package.json ([#295](https://github.com/newsuk/times-components/issues/295)) ([3614c6e](https://github.com/newsuk/times-components/commit/3614c6e))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* make react-native-web a peer ([#470](https://github.com/newsuk/times-components/issues/470)) ([334208c](https://github.com/newsuk/times-components/commit/334208c))
+* Missing headline in topics provider ([#943](https://github.com/newsuk/times-components/issues/943)) ([32b7270](https://github.com/newsuk/times-components/commit/32b7270))
+* move files around; organization ([#262](https://github.com/newsuk/times-components/issues/262)) ([d68ebce](https://github.com/newsuk/times-components/commit/d68ebce))
+* package.json main ([ed150b8](https://github.com/newsuk/times-components/commit/ed150b8))
+* prettier to ignore native code ([#296](https://github.com/newsuk/times-components/issues/296)) ([d6d24ed](https://github.com/newsuk/times-components/commit/d6d24ed))
+* replace loading text by an activity indicator ([0258fd9](https://github.com/newsuk/times-components/commit/0258fd9))
+* stop unmounting and re-render ([#391](https://github.com/newsuk/times-components/issues/391)) ([3e70e31](https://github.com/newsuk/times-components/commit/3e70e31))
+* topic design review ([#1010](https://github.com/newsuk/times-components/issues/1010)) ([54f1cad](https://github.com/newsuk/times-components/commit/54f1cad))
+* Topic head in IE ([#1016](https://github.com/newsuk/times-components/issues/1016)) ([c5f8bc8](https://github.com/newsuk/times-components/commit/c5f8bc8))
+* Twitter profile look ([#195](https://github.com/newsuk/times-components/issues/195)) ([9989006](https://github.com/newsuk/times-components/commit/9989006))
+* update react apollo mocks ([#671](https://github.com/newsuk/times-components/issues/671)) ([844ac6f](https://github.com/newsuk/times-components/commit/844ac6f))
+* Update video attribute ([#865](https://github.com/newsuk/times-components/issues/865)) ([1feae5a](https://github.com/newsuk/times-components/commit/1feae5a))
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* add basic pagination footer to author profile ([1581114](https://github.com/newsuk/times-components/commit/1581114))
+* add debouncing to all graphql queries ([#548](https://github.com/newsuk/times-components/issues/548)) ([7c1ced1](https://github.com/newsuk/times-components/commit/7c1ced1))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add graphql integration ([#205](https://github.com/newsuk/times-components/issues/205)) ([cdd268a](https://github.com/newsuk/times-components/commit/cdd268a))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add json files to lint and fmt ([#274](https://github.com/newsuk/times-components/issues/274)) ([f008b0f](https://github.com/newsuk/times-components/commit/f008b0f))
+* add no images provider ([76df683](https://github.com/newsuk/times-components/commit/76df683))
+* add provider component ([#125](https://github.com/newsuk/times-components/issues/125)) ([3bf9c9f](https://github.com/newsuk/times-components/commit/3bf9c9f))
+* add support for article section ([#722](https://github.com/newsuk/times-components/issues/722)) ([b36133d](https://github.com/newsuk/times-components/commit/b36133d))
+* article provider ([#278](https://github.com/newsuk/times-components/issues/278)) ([c43ea39](https://github.com/newsuk/times-components/commit/c43ea39))
+* article with provider ([#283](https://github.com/newsuk/times-components/issues/283)) ([d0c0792](https://github.com/newsuk/times-components/commit/d0c0792))
+* author and listing level error states ([#475](https://github.com/newsuk/times-components/issues/475)) ([ffb9620](https://github.com/newsuk/times-components/commit/ffb9620))
+* author profile article links ([#244](https://github.com/newsuk/times-components/issues/244)) ([2d48af7](https://github.com/newsuk/times-components/commit/2d48af7))
+* author profile provider ([#139](https://github.com/newsuk/times-components/issues/139)) ([05bd5df](https://github.com/newsuk/times-components/commit/05bd5df))
+* author profile provider component ([57cbb79](https://github.com/newsuk/times-components/commit/57cbb79))
+* Dynamic Summary lengths ([#755](https://github.com/newsuk/times-components/issues/755)) ([341b897](https://github.com/newsuk/times-components/commit/341b897))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* move fixture-generator to provider-test-tools ([#819](https://github.com/newsuk/times-components/issues/819)) ([02fdc37](https://github.com/newsuk/times-components/commit/02fdc37))
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+* query pagination count ([17cb0d8](https://github.com/newsuk/times-components/commit/17cb0d8))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+* REPLAT-2167 Topic name query ([#956](https://github.com/newsuk/times-components/issues/956)) ([f398f51](https://github.com/newsuk/times-components/commit/f398f51))
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+* separate providers ([#287](https://github.com/newsuk/times-components/issues/287)) ([252e996](https://github.com/newsuk/times-components/commit/252e996))
+* Topic provider ([#926](https://github.com/newsuk/times-components/issues/926)) ([d982278](https://github.com/newsuk/times-components/commit/d982278))
+* update prettier ([#235](https://github.com/newsuk/times-components/issues/235)) ([c9ab71b](https://github.com/newsuk/times-components/commit/c9ab71b))
+* update related article field denoting the main article ([#787](https://github.com/newsuk/times-components/issues/787)) ([6ecd8d7](https://github.com/newsuk/times-components/commit/6ecd8d7))
+* Update the topic articles provider ([#1008](https://github.com/newsuk/times-components/issues/1008)) ([6ec475d](https://github.com/newsuk/times-components/commit/6ec475d))
+* Update to Articles Provider to Include Related Articles ([910fc2d](https://github.com/newsuk/times-components/commit/910fc2d))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+* use funcs as children ([8892564](https://github.com/newsuk/times-components/commit/8892564))
+* use summary and headline for author profile ([#417](https://github.com/newsuk/times-components/issues/417)) ([921940f](https://github.com/newsuk/times-components/commit/921940f))
+* use Yarn Workspaces ([55a7b88](https://github.com/newsuk/times-components/commit/55a7b88))
+
+
+
+
 <a name="0.37.6"></a>
 ## [0.37.6](https://github.com/newsuk/times-components/compare/@times-components/provider@0.37.5...@times-components/provider@0.37.6) (2018-07-11)
 

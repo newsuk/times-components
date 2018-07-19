@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# 0.7.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* make packages public ([#462](https://github.com/newsuk/times-components/issues/462)) ([ef2d287](https://github.com/newsuk/times-components/commit/ef2d287))
+
+
+### Features
+
+* enforce destruct of Component from React ([#970](https://github.com/newsuk/times-components/issues/970)) ([b6424be](https://github.com/newsuk/times-components/commit/b6424be))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+
+
+
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/newsuk/times-components/compare/@times-components/eslint-config-thetimes@0.6.1...@times-components/eslint-config-thetimes@0.6.2) (2018-07-10)
 

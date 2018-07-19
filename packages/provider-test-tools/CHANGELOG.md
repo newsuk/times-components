@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.0"></a>
+# 0.14.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* Missing headline in topics provider ([#943](https://github.com/newsuk/times-components/issues/943)) ([32b7270](https://github.com/newsuk/times-components/commit/32b7270))
+* mocked provider ([#952](https://github.com/newsuk/times-components/issues/952)) ([db89e49](https://github.com/newsuk/times-components/commit/db89e49))
+* topic design review ([#1010](https://github.com/newsuk/times-components/issues/1010)) ([54f1cad](https://github.com/newsuk/times-components/commit/54f1cad))
+* Topic head in IE ([#1016](https://github.com/newsuk/times-components/issues/1016)) ([c5f8bc8](https://github.com/newsuk/times-components/commit/c5f8bc8))
+* update react apollo mocks ([#671](https://github.com/newsuk/times-components/issues/671)) ([844ac6f](https://github.com/newsuk/times-components/commit/844ac6f))
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add provider testing package ([#543](https://github.com/newsuk/times-components/issues/543)) ([d563b83](https://github.com/newsuk/times-components/commit/d563b83))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* move fixture-generator to provider-test-tools ([#819](https://github.com/newsuk/times-components/issues/819)) ([02fdc37](https://github.com/newsuk/times-components/commit/02fdc37))
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+* REPLAT-2167 Topic name query ([#956](https://github.com/newsuk/times-components/issues/956)) ([f398f51](https://github.com/newsuk/times-components/commit/f398f51))
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+* Topic provider ([#926](https://github.com/newsuk/times-components/issues/926)) ([d982278](https://github.com/newsuk/times-components/commit/d982278))
+* topics empty state ([#1035](https://github.com/newsuk/times-components/issues/1035)) ([71b12f4](https://github.com/newsuk/times-components/commit/71b12f4))
+* update apollo-link ([#982](https://github.com/newsuk/times-components/issues/982)) ([c7b3bad](https://github.com/newsuk/times-components/commit/c7b3bad))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="0.13.6"></a>
 ## [0.13.6](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@0.13.5...@times-components/provider-test-tools@0.13.6) (2018-07-11)
 

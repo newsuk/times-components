@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix storybook tests ([#841](https://github.com/newsuk/times-components/issues/841)) ([cc7c7f1](https://github.com/newsuk/times-components/commit/cc7c7f1))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* fixed article lead asset provider ([#813](https://github.com/newsuk/times-components/issues/813)) ([2c8473b](https://github.com/newsuk/times-components/commit/2c8473b))
+* mocked provider ([#952](https://github.com/newsuk/times-components/issues/952)) ([db89e49](https://github.com/newsuk/times-components/commit/db89e49))
+* repair broken knobs argument to showcaseToStoryBook ([#870](https://github.com/newsuk/times-components/issues/870)) ([240800f](https://github.com/newsuk/times-components/commit/240800f))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Features
+
+* add button package ([#978](https://github.com/newsuk/times-components/issues/978)) ([f6e6a52](https://github.com/newsuk/times-components/commit/f6e6a52))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* Add Infinite Scroll on Article List ([#939](https://github.com/newsuk/times-components/issues/939)) ([bf71112](https://github.com/newsuk/times-components/commit/bf71112))
+* add tests to the Storybook package ([#640](https://github.com/newsuk/times-components/issues/640)) ([91df2b0](https://github.com/newsuk/times-components/commit/91df2b0))
+* author and listing level error states ([#475](https://github.com/newsuk/times-components/issues/475)) ([ffb9620](https://github.com/newsuk/times-components/commit/ffb9620))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* move MockedProvider to provider-test-tools ([#1068](https://github.com/newsuk/times-components/issues/1068)) ([4ee2fbd](https://github.com/newsuk/times-components/commit/4ee2fbd))
+* paidOnly videos and new video package ([#889](https://github.com/newsuk/times-components/issues/889)) ([2e57f4b](https://github.com/newsuk/times-components/commit/2e57f4b))
+* refactor storybook package ([#453](https://github.com/newsuk/times-components/issues/453)) ([acadef3](https://github.com/newsuk/times-components/commit/acadef3))
+* REPLAT-1311 Label Colour by Section ([#662](https://github.com/newsuk/times-components/issues/662)) ([7c50dcb](https://github.com/newsuk/times-components/commit/7c50dcb))
+* rewrite the story ([#825](https://github.com/newsuk/times-components/issues/825)) ([c08b823](https://github.com/newsuk/times-components/commit/c08b823))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.1.6"></a>
 ## [1.1.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@1.1.5...@times-components/storybook@1.1.6) (2018-07-11)
 

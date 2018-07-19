@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# 0.5.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* fixed tealium storybook for android / native ([#883](https://github.com/newsuk/times-components/issues/883)) ([31666fb](https://github.com/newsuk/times-components/commit/31666fb))
+* update dep ([#862](https://github.com/newsuk/times-components/issues/862)) ([c20b456](https://github.com/newsuk/times-components/commit/c20b456))
+
+
+### Features
+
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+* BREAKING CHANGE: bump version ([#882](https://github.com/newsuk/times-components/issues/882)) ([6a9198d](https://github.com/newsuk/times-components/commit/6a9198d))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+
+
 <a name="0.4.22"></a>
 ## [0.4.22](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.4.21...@times-components/tealium-utils@0.4.22) (2018-07-11)
 

@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix opinion layout ([#839](https://github.com/newsuk/times-components/issues/839)) ([e54f403](https://github.com/newsuk/times-components/commit/e54f403))
+* implement link renderer ([#914](https://github.com/newsuk/times-components/issues/914)) ([bd944a3](https://github.com/newsuk/times-components/commit/bd944a3))
+* updated path to cutout image used in opinion slice ([#835](https://github.com/newsuk/times-components/issues/835)) ([e1db56b](https://github.com/newsuk/times-components/commit/e1db56b))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### Features
+
+* add article list video label ([#1027](https://github.com/newsuk/times-components/issues/1027)) ([ca20dea](https://github.com/newsuk/times-components/commit/ca20dea))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add tealium-utils package ([#846](https://github.com/newsuk/times-components/issues/846)) ([b5da5fa](https://github.com/newsuk/times-components/commit/b5da5fa))
+* image resizing ([#861](https://github.com/newsuk/times-components/issues/861)) ([73bb820](https://github.com/newsuk/times-components/commit/73bb820))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* updating to latest tc ([#924](https://github.com/newsuk/times-components/issues/924)) ([e294cd2](https://github.com/newsuk/times-components/commit/e294cd2))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.1.25"></a>
 ## [1.1.25](https://github.com/newsuk/times-components/compare/@times-components/related-articles@1.1.24...@times-components/related-articles@1.1.25) (2018-07-12)
 

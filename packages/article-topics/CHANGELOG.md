@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# 3.0.0 (2018-07-18)
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+* BREAKING CHANGE: Rename `topics` package to `article-topics` (#915) ([d77e019](https://github.com/newsuk/times-components/commit/d77e019)), closes [#915](https://github.com/newsuk/times-components/issues/915)
+
+
+### Bug Fixes
+
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* video label and article topic design tweaks ([#1077](https://github.com/newsuk/times-components/issues/1077)) ([7413558](https://github.com/newsuk/times-components/commit/7413558))
+
+
+### Features
+
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* omit function prop values from snapshots ([#994](https://github.com/newsuk/times-components/issues/994)) ([6050e4e](https://github.com/newsuk/times-components/commit/6050e4e))
+* REPLAT-2658 update article query ([#986](https://github.com/newsuk/times-components/issues/986)) ([1f3fac4](https://github.com/newsuk/times-components/commit/1f3fac4))
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+* rename topics package to article-topics
+
+* fix: typo in readme
+
+* fix: update snapshots
+
+
+
+
 <a name="2.0.13"></a>
 ## [2.0.13](https://github.com/newsuk/times-components/compare/@times-components/article-topics@2.0.12...@times-components/article-topics@2.0.13) (2018-07-11)
 

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* allow storybook-native debugging by upgrading react native ([#673](https://github.com/newsuk/times-components/issues/673)) ([2228d33](https://github.com/newsuk/times-components/commit/2228d33))
+* apply new dextrose ([#651](https://github.com/newsuk/times-components/issues/651)) ([ca586ee](https://github.com/newsuk/times-components/commit/ca586ee))
+* dextrose ([#919](https://github.com/newsuk/times-components/issues/919)) ([a8fa1d4](https://github.com/newsuk/times-components/commit/a8fa1d4))
+* do not publish on npm settings files ([#848](https://github.com/newsuk/times-components/issues/848)) ([a1df7f3](https://github.com/newsuk/times-components/commit/a1df7f3))
+* fix opinion layout ([#839](https://github.com/newsuk/times-components/issues/839)) ([e54f403](https://github.com/newsuk/times-components/commit/e54f403))
+* fix the broken storybook addon by updating storybook. ([#583](https://github.com/newsuk/times-components/issues/583)) ([6056e00](https://github.com/newsuk/times-components/commit/6056e00))
+* Fix the layout when greater than 2 Device Pixel Ratio is used ([#789](https://github.com/newsuk/times-components/issues/789)) ([3192c4a](https://github.com/newsuk/times-components/commit/3192c4a))
+* make dextrose work on web ([#712](https://github.com/newsuk/times-components/issues/712)) ([8030104](https://github.com/newsuk/times-components/commit/8030104))
+* slice stories (knobs) ([#879](https://github.com/newsuk/times-components/issues/879)) ([1b30f4c](https://github.com/newsuk/times-components/commit/1b30f4c))
+* sync up version numbers ([#629](https://github.com/newsuk/times-components/issues/629)) ([151b99a](https://github.com/newsuk/times-components/commit/151b99a))
+* update to latest article summary and update fixture ([#581](https://github.com/newsuk/times-components/issues/581)) ([64bc215](https://github.com/newsuk/times-components/commit/64bc215))
+
+
+### Features
+
+* add comment/opinion and two template to Slice package ([#761](https://github.com/newsuk/times-components/issues/761)) ([18e125c](https://github.com/newsuk/times-components/commit/18e125c))
+* add expo ([#860](https://github.com/newsuk/times-components/issues/860)) ([d8edd0b](https://github.com/newsuk/times-components/commit/d8edd0b))
+* add knobs to Slice stories and put them in relevant directories ([#744](https://github.com/newsuk/times-components/issues/744)) ([d8584b4](https://github.com/newsuk/times-components/commit/d8584b4))
+* add related articles tracking ([#666](https://github.com/newsuk/times-components/issues/666)) ([33146c2](https://github.com/newsuk/times-components/commit/33146c2))
+* add story for slice component ([#655](https://github.com/newsuk/times-components/issues/655)) ([721c620](https://github.com/newsuk/times-components/commit/721c620))
+* add three related articles ([#647](https://github.com/newsuk/times-components/issues/647)) ([9e0ca8f](https://github.com/newsuk/times-components/commit/9e0ca8f))
+* colours in styleguide for all packages ([#707](https://github.com/newsuk/times-components/issues/707)) ([d62bb1b](https://github.com/newsuk/times-components/commit/d62bb1b))
+* create a template system for Slice ([#710](https://github.com/newsuk/times-components/issues/710)) ([f22ed7c](https://github.com/newsuk/times-components/commit/f22ed7c))
+* design review related articles ([#772](https://github.com/newsuk/times-components/issues/772)) ([9e2130a](https://github.com/newsuk/times-components/commit/9e2130a))
+* Dynamic Summary lengths ([#755](https://github.com/newsuk/times-components/issues/755)) ([341b897](https://github.com/newsuk/times-components/commit/341b897))
+* layout opinion related articles ([#782](https://github.com/newsuk/times-components/issues/782)) ([d10089e](https://github.com/newsuk/times-components/commit/d10089e))
+* make related articles use Slice and add Lead and Two ([#702](https://github.com/newsuk/times-components/issues/702)) ([7e441ac](https://github.com/newsuk/times-components/commit/7e441ac))
+* make rnw bundles ([#958](https://github.com/newsuk/times-components/issues/958)) ([c412a57](https://github.com/newsuk/times-components/commit/c412a57))
+* provide the layout for two related articles ([#621](https://github.com/newsuk/times-components/issues/621)) ([fd10b51](https://github.com/newsuk/times-components/commit/fd10b51)), closes [#585](https://github.com/newsuk/times-components/issues/585)
+* REPLAT-1403 - Article Summary Refactor ([#586](https://github.com/newsuk/times-components/issues/586)) ([8f8364b](https://github.com/newsuk/times-components/commit/8f8364b)), closes [#587](https://github.com/newsuk/times-components/issues/587) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543) [#588](https://github.com/newsuk/times-components/issues/588) [#572](https://github.com/newsuk/times-components/issues/572) [#549](https://github.com/newsuk/times-components/issues/549) [#543](https://github.com/newsuk/times-components/issues/543)
+* Slice API for default and lead ([#675](https://github.com/newsuk/times-components/issues/675)) ([c7a0f94](https://github.com/newsuk/times-components/commit/c7a0f94))
+* slice ordering ([#756](https://github.com/newsuk/times-components/issues/756)) ([bcb91a6](https://github.com/newsuk/times-components/commit/bcb91a6))
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+* breaking change: compose serializers (#1029) ([2e45d57](https://github.com/newsuk/times-components/commit/2e45d57)), closes [#1029](https://github.com/newsuk/times-components/issues/1029)
+
+
+### BREAKING CHANGES
+
+* add options object to jest-configurator
+* feat: hoist dev specific rnw styles in snapshots a la styled components
+* feat: remove empty values from snapshots e.g. stickyHeaderIndices
+* feat: web retains className even if empty and native does not
+* chore: remove coverage flags from test scripts
+* chore: bump enzyme-to-json
+
+
+
+
 <a name="1.0.12"></a>
 ## [1.0.12](https://github.com/newsuk/times-components/compare/@times-components/slice@1.0.11...@times-components/slice@1.0.12) (2018-07-11)
 
