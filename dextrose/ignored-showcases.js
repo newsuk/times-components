@@ -7,7 +7,9 @@ const ignoredShowcases = [
   "video",
   "Tracking",
   "tracking",
-  "Loading"
+  "Loading",
+  "Pages/Long Article",
+  "Pages/Default"
 ];
 
 module.exports = ignoredShowcases;
