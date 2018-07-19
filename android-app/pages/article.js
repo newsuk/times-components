@@ -34,26 +34,10 @@ const getPlatformAdConfig = config => ({
 
 const ArticleView = ({
   articleId,
-  sectionName,
-  appVersion,
-  operatingSystemVersion,
-  environment,
-  deviceId,
-  cookieEid,
-  cookieAcsTnl,
-  cookieIamTgt,
-  isLoggedIn
+  sectionName
 }) => {
   const adConfig = {
-    sectionName,
-    appVersion,
-    operatingSystemVersion,
-    environment,
-    deviceId,
-    cookieEid,
-    cookieAcsTnl,
-    cookieIamTgt,
-    isLoggedIn
+    sectionName
   };
 
   return (
@@ -72,15 +56,7 @@ const ArticleView = ({
 
 ArticleView.propTypes = {
   articleId: PropTypes.string.isRequired,
-  sectionName: PropTypes.string.isRequired,
-  appVersion: PropTypes.string.isRequired,
-  operatingSystemVersion: PropTypes.string.isRequired,
-  environment: PropTypes.string.isRequired,
-  deviceId: PropTypes.string.isRequired,
-  cookieEid: PropTypes.string.isRequired,
-  cookieAcsTnl: PropTypes.string.isRequired,
-  cookieIamTgt: PropTypes.string.isRequired,
-  isLoggedIn: PropTypes.string.isRequired
+  sectionName: PropTypes.string.isRequired
 };
 
 export default ArticleView;
