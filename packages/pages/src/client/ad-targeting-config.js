@@ -1,15 +1,13 @@
 export default (platformAdConfig, articleAdConfig) => ({
-  networkId: platformAdConfig.adUnit,
-  adUnit: platformAdConfig.networkId,
+  networkId: platformAdConfig.networkId,
+  adUnit: platformAdConfig.adUnit,
   pageTargeting: {
     Timeline: "0",
     edition: "tnl-english",
     Shared: "0",
     testmode: platformAdConfig.testMode,
-    sec_id: platformAdConfig.sectionId,
     cont_type: "art",
     av: platformAdConfig.appVersion,
-    ft: "",
     kw: articleAdConfig.headline.toLowerCase().replace(/\s+/g, ","),
     st: "Member",
     aid: articleAdConfig.id,
@@ -21,12 +19,9 @@ export default (platformAdConfig, articleAdConfig) => ({
     env: platformAdConfig.environment,
     log: platformAdConfig.isLoggedIn ? "1" : "0",
     pid: platformAdConfig.cookieEid,
-    pos: "article_ad",
     vid: "",
     cips: platformAdConfig.cookieAcsTnl,
-    "did#": platformAdConfig.deviceIdHash,
-    path: platformAdConfig.sectionName,
-    slot: platformAdConfig.articlePositionInSlot,
+    path: platformAdConfig.sectionName.toLowerCase(),
     pform: platformAdConfig.platform,
     share_token: "",
     Timeline_Id: platformAdConfig.sectionName,
@@ -34,7 +29,12 @@ export default (platformAdConfig, articleAdConfig) => ({
     section: platformAdConfig.sectionName,
     excl_cat: ""
   },
-  slotTargeting: {},
+  slotTargeting: {
+    path: `/${platformAdConfig.sectionName.toLowerCase()}`,
+    section: platformAdConfig.sectionName,
+    slot: platformAdConfig.sectionName.toLowerCase(),
+    zone: "current_edition"
+  },
   bidderSlots: [],
   biddersConfig: {}
 });
