@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
 import { Article } from "@times-components/pages";
-import DeviceInfo from "react-native-device-info";
 
 const config = NativeModules.ReactConfig;
 const { fetch } = NativeModules.NativeFetch;
@@ -25,7 +24,7 @@ const getPlatformAdConfig = config => ({
   operatingSystem: "Android",
   operatingSystemVersion: config.operatingSystemVersion,
   environment: config.environment,
-  deviceId: DeviceInfo.getUniqueID(),
+  deviceId: config.deviceId,
   cookieEid: config.cookieEid,
   cookieAcsTnl: config.cookieAcsTnl,
   cookieIamTgt: config.cookieIamTgt,
@@ -39,6 +38,7 @@ const ArticleView = ({
   appVersion,
   operatingSystemVersion,
   environment,
+  deviceId,
   cookieEid,
   cookieAcsTnl,
   cookieIamTgt,
@@ -49,6 +49,7 @@ const ArticleView = ({
     appVersion,
     operatingSystemVersion,
     environment,
+    deviceId,
     cookieEid,
     cookieAcsTnl,
     cookieIamTgt,
@@ -75,6 +76,7 @@ ArticleView.propTypes = {
   appVersion: PropTypes.string.isRequired,
   operatingSystemVersion: PropTypes.string.isRequired,
   environment: PropTypes.string.isRequired,
+  deviceId: PropTypes.string.isRequired,
   cookieEid: PropTypes.string.isRequired,
   cookieAcsTnl: PropTypes.string.isRequired,
   cookieIamTgt: PropTypes.string.isRequired,
