@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/jest-configurator": "2.0.0",
-    "@times-components/jest-serializer": "2.0.0",
+    "@times-components/jest-configurator": "2.0.1",
+    "@times-components/jest-serializer": "2.0.1",
     "@times-components/webpack-configurator": "2.0.0",
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",

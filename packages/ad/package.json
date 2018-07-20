@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -32,9 +32,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.7.0",
-    "@times-components/jest-configurator": "2.0.0",
-    "@times-components/jest-serializer": "2.0.0",
-    "@times-components/storybook": "2.0.0",
+    "@times-components/jest-configurator": "2.0.1",
+    "@times-components/jest-serializer": "2.0.1",
+    "@times-components/storybook": "2.0.1",
     "@times-components/webpack-configurator": "2.0.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -57,9 +57,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "2.0.0",
-    "@times-components/utils": "2.0.0",
-    "@times-components/watermark": "2.0.0",
+    "@times-components/styleguide": "2.0.1",
+    "@times-components/utils": "2.0.1",
+    "@times-components/watermark": "2.0.1",
     "prop-types": "15.6.0",
     "react-broadcast": "0.5.2"
   },
