@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. multiple adverts 1`] = `
+exports[`1. multiple ad slots 1`] = `
 <style>
 {
   "IS1": {
@@ -88,7 +88,7 @@ exports[`1. multiple adverts 1`] = `
 </AdComposer>
 `;
 
-exports[`2. loading state advert shows placeholder only 1`] = `
+exports[`2. placeholder when isloading 1`] = `
 <style>
 {
   "IS1": {
@@ -189,7 +189,7 @@ exports[`2. loading state advert shows placeholder only 1`] = `
 </Ad>
 `;
 
-exports[`3. should not show when loading scripts errored 1`] = `
+exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 <style>
 {
   "IS1": {
