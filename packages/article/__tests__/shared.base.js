@@ -466,7 +466,7 @@ const negativeTests = [
   }
 ];
 
-export default (renderComponent, platformTests) => {
+export default (renderComponent, platformTests = []) => {
   const realIntl = Intl;
 
   beforeEach(() => {

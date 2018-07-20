@@ -28,7 +28,5 @@ export default () => {
     )
   );
 
-  const tests = [];
-
-  shared(TestRenderer.create, tests);
+  shared(TestRenderer.create);
 };
