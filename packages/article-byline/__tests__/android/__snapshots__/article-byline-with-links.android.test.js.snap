@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleBylineWithLinks tests on android 1. single inline element 1`] = `
+exports[`1. single inline element 1`] = `
 <View>
   <Text>
     Lindsay McIntosh Scottish Political Editor
@@ -8,7 +8,7 @@ exports[`ArticleBylineWithLinks tests on android 1. single inline element 1`] = 
 </View>
 `;
 
-exports[`ArticleBylineWithLinks tests on android 2. with the author in the begining 1`] = `
+exports[`2. with the author in the begining 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -21,7 +21,7 @@ exports[`ArticleBylineWithLinks tests on android 2. with the author in the begin
 </View>
 `;
 
-exports[`ArticleBylineWithLinks tests on android 3. with the author at the end 1`] = `
+exports[`3. with the author at the end 1`] = `
 <View>
   <Text>
     RBS Six Nations 
@@ -34,7 +34,7 @@ exports[`ArticleBylineWithLinks tests on android 3. with the author at the end 1
 </View>
 `;
 
-exports[`ArticleBylineWithLinks tests on android 4. with multiple authors separated by text with commas 1`] = `
+exports[`4. with multiple authors separated by text with commas 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -60,7 +60,7 @@ exports[`ArticleBylineWithLinks tests on android 4. with multiple authors separa
 </View>
 `;
 
-exports[`ArticleBylineWithLinks tests on android 5. with multiple authors separated by spaces 1`] = `
+exports[`5. with multiple authors separated by spaces 1`] = `
 <View>
   <Text
     accessibilityRole="link"
@@ -86,4 +86,4 @@ exports[`ArticleBylineWithLinks tests on android 5. with multiple authors separa
 </View>
 `;
 
-exports[`ArticleBylineWithLinks tests on android 6. null with an empty ast 1`] = `null`;
+exports[`6. null with an empty ast 1`] = `null`;
