@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ios 1. gradient using prop styles 1`] = `
+exports[`1. gradient using prop styles 1`] = `
 <View
   style={
     Object {
@@ -28,7 +28,7 @@ exports[`ios 1. gradient using prop styles 1`] = `
 </View>
 `;
 
-exports[`ios 2. gradient using array prop styles 1`] = `
+exports[`2. gradient using array prop styles 1`] = `
 <View
   style={
     Object {
@@ -56,7 +56,7 @@ exports[`ios 2. gradient using array prop styles 1`] = `
 </View>
 `;
 
-exports[`ios 3. gradient using stylesheets 1`] = `
+exports[`3. gradient using stylesheets 1`] = `
 <View
   style={
     Object {

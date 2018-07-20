@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`web accessible button 1`] = `
+exports[`accessible button 1`] = `
 <div
   aria-label="Test button"
   role="button"

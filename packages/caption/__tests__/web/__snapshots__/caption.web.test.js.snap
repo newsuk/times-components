@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`web 1. caption without credits 1`] = `
+exports[`1. caption without credits 1`] = `
 <div>
   <div>
     <div>
@@ -10,7 +10,7 @@ exports[`web 1. caption without credits 1`] = `
 </div>
 `;
 
-exports[`web 2. caption with credits 1`] = `
+exports[`2. caption with credits 1`] = `
 <div>
   <div>
     <div>
@@ -23,7 +23,7 @@ exports[`web 2. caption with credits 1`] = `
 </div>
 `;
 
-exports[`web 3. caption with credits only 1`] = `
+exports[`3. caption with credits only 1`] = `
 <div>
   <div>
     <div>
@@ -33,7 +33,7 @@ exports[`web 3. caption with credits only 1`] = `
 </div>
 `;
 
-exports[`web 4. caption with child 1`] = `
+exports[`4. caption with child 1`] = `
 <div>
   <div>
     Hello world!

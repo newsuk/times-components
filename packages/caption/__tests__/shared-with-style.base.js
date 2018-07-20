@@ -14,13 +14,11 @@ const style = {
 };
 
 export default () => {
-  it("renders with specific styles", () => {
+  it("caption with specific styles", () => {
     const testInstance = TestRenderer.create(
       <Caption credits={credits} style={style} text={captionText} />
     );
 
-    expect(testInstance.toJSON()).toMatchSnapshot(
-      "1. renders with specific styles"
-    );
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 };
