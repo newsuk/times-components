@@ -1,199 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. key facts with title 1`] = `
-<style>
-{
-  "IS1": {
-    "fontFamily": "GillSansMTStd-Medium",
-    "fontSize": 12,
-    "fontWeight": "400",
-    "letterSpacing": 1.2,
-    "marginBottom": 20,
-  },
-  "IS10": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS11": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS12": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS13": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS14": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS15": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS16": {
-    "fontWeight": "bold",
-  },
-  "IS17": {
-    "fontStyle": "italic",
-  },
-  "IS18": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS19": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS2": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS20": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS21": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS3": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS4": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS5": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS6": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS7": Array [
-    {
-      "textDecorationLine": "underline",
-    },
-    {
-      "color": "#006699",
-    },
-  ],
-  "IS8": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS9": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-}
-</style>
-
-<View>
-  <Text>
+<View
+  className="IS21"
+>
+  <Text
+    className="IS1"
+  >
     E X A M P L E   T I T L E
   </Text>
   <View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS5"
+    >
+      <View
+        className="IS4"
+      >
+        <View
+          className="IS2"
+        />
+        <Text
+          className="IS3"
+        >
           Example bullet text
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS10"
+    >
+      <View
+        className="IS9"
+      >
+        <View
+          className="IS6"
+        />
+        <Text
+          className="IS8"
+        >
           An example 
           <Text
             accessibilityRole="link"
+            className="IS7"
           >
             link
           </Text>
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS14"
+    >
+      <View
+        className="IS13"
+      >
+        <View
+          className="IS11"
+        />
+        <Text
+          className="IS12"
+        >
           More example text.
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS20"
+    >
+      <View
+        className="IS19"
+      >
+        <View
+          className="IS15"
+        />
+        <Text
+          className="IS18"
+        >
           Example text 
-          <Text>
+          <Text
+            className="IS16"
+          >
             this is bold 
           </Text>
-          <Text>
+          <Text
+            className="IS17"
+          >
             this is in italics.
           </Text>
         </Text>
@@ -204,189 +95,85 @@ exports[`1. key facts with title 1`] = `
 `;
 
 exports[`2. key facts without title 1`] = `
-<style>
-{
-  "IS1": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS10": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS11": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS12": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS13": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS14": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS15": {
-    "fontWeight": "bold",
-  },
-  "IS16": {
-    "fontStyle": "italic",
-  },
-  "IS17": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS18": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS19": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS2": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS20": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS3": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS4": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-  "IS5": {
-    "backgroundColor": "#103546",
-    "height": 8,
-    "top": 1,
-    "transform": Array [
-      {
-        "rotate": "45deg",
-      },
-    ],
-    "width": 8,
-  },
-  "IS6": Array [
-    {
-      "textDecorationLine": "underline",
-    },
-    {
-      "color": "#006699",
-    },
-  ],
-  "IS7": {
-    "color": "#333333",
-    "fontFamily": "TimesDigitalW04",
-    "fontSize": 16,
-    "lineHeight": 30,
-    "marginTop": -8,
-    "paddingLeft": 15,
-    "width": "95%",
-  },
-  "IS8": {
-    "flexDirection": "row",
-    "marginBottom": 20,
-    "paddingLeft": 1,
-    "width": "100%",
-  },
-  "IS9": {
-    "marginLeft": 10,
-    "marginRight": 10,
-  },
-}
-</style>
-
-<View>
+<View
+  className="IS20"
+>
   <View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS4"
+    >
+      <View
+        className="IS3"
+      >
+        <View
+          className="IS1"
+        />
+        <Text
+          className="IS2"
+        >
           Example bullet text
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS9"
+    >
+      <View
+        className="IS8"
+      >
+        <View
+          className="IS5"
+        />
+        <Text
+          className="IS7"
+        >
           An example 
           <Text
             accessibilityRole="link"
+            className="IS6"
           >
             link
           </Text>
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS13"
+    >
+      <View
+        className="IS12"
+      >
+        <View
+          className="IS10"
+        />
+        <Text
+          className="IS11"
+        >
           More example text.
         </Text>
       </View>
     </View>
-    <View>
-      <View>
-        <View />
-        <Text>
+    <View
+      className="IS19"
+    >
+      <View
+        className="IS18"
+      >
+        <View
+          className="IS14"
+        />
+        <Text
+          className="IS17"
+        >
           Example text 
-          <Text>
+          <Text
+            className="IS15"
+          >
             this is bold 
           </Text>
-          <Text>
+          <Text
+            className="IS16"
+          >
             this is in italics.
           </Text>
         </Text>
