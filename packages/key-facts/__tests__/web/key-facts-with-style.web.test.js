@@ -1,3 +1,4 @@
+import React from "react";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -7,7 +8,8 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import renderKeyFacts from "../shared-render-key-facts";
+import KeyFacts from "../../src/key-facts";
+import data from "../../fixtures/key-facts-test.json";
 
 const styles = [
   "backgroundColor",
@@ -33,7 +35,11 @@ addSerializers(
   compose(stylePrinter, minimalWebTransform, rnwTransform(styles))
 );
 
-renderKeyFacts(mount);
+it("key facts with title", () => {
+  const wrapper = mount(<KeyFacts ast={data} onLinkPress={() => {}} />);
+
+  expect(wrapper).toMatchSnapshot();
+});
 
 // eslint-disable-next-line global-require
 require("jest-styled-components");

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. key facts with title 1`] = `
+exports[`key facts with title 1`] = `
 <View
   className="IS21"
 >
@@ -84,95 +84,6 @@ exports[`1. key facts with title 1`] = `
           </Text>
           <Text
             className="IS17"
-          >
-            this is in italics.
-          </Text>
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`2. key facts without title 1`] = `
-<View
-  className="IS20"
->
-  <View>
-    <View
-      className="IS4"
-    >
-      <View
-        className="IS3"
-      >
-        <View
-          className="IS1"
-        />
-        <Text
-          className="IS2"
-        >
-          Example bullet text
-        </Text>
-      </View>
-    </View>
-    <View
-      className="IS9"
-    >
-      <View
-        className="IS8"
-      >
-        <View
-          className="IS5"
-        />
-        <Text
-          className="IS7"
-        >
-          An example 
-          <Text
-            accessibilityRole="link"
-            className="IS6"
-          >
-            link
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View
-      className="IS13"
-    >
-      <View
-        className="IS12"
-      >
-        <View
-          className="IS10"
-        />
-        <Text
-          className="IS11"
-        >
-          More example text.
-        </Text>
-      </View>
-    </View>
-    <View
-      className="IS19"
-    >
-      <View
-        className="IS18"
-      >
-        <View
-          className="IS14"
-        />
-        <Text
-          className="IS17"
-        >
-          Example text 
-          <Text
-            className="IS15"
-          >
-            this is bold 
-          </Text>
-          <Text
-            className="IS16"
           >
             this is in italics.
           </Text>
