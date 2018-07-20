@@ -627,7 +627,6 @@ export const videoLeadAsset = (
     url = defaultVideoPosterUrl
   } = {}
 ) => ({
-  __typename: "Video",
   brightcoveVideoId: "4084164751001",
   brightcovePolicyKey,
   brightcoveAccountId: "57838016001",
@@ -640,9 +639,12 @@ export const videoLeadAsset = (
     caption: "CCTV captures moment of the explosion",
     crop: {
       ratio: "16:9",
-      url
-    }
-  }
+      url,
+      __typename: "Crop"
+    },
+    __typename: "Image"
+  },
+  __typename: "Video"
 });
 
 const defaultByline = [
@@ -1048,8 +1050,11 @@ const defaultLeadAsset = {
   crop: {
     ratio: "16:9",
     url:
-      "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156"
-  }
+      "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5f243dd6-93aa-11e7-a2ce-ce94682a575d.jpg?crop=3000%2C1687%2C0%2C156",
+    __typename: "Crop"
+  },
+  type: "Image",
+  __typename: "Image"
 };
 const defaultRelatedArticles = [
   {
@@ -1073,6 +1078,7 @@ const defaultRelatedArticles = [
     label: "Health",
     publicationName: "TIMES",
     publishedTime: "2015-03-23T19:39:39.000Z",
+    section: "",
     summary105: [
       {
         name: "paragraph",
@@ -1294,18 +1300,23 @@ const defaultRelatedArticles = [
       }
     ],
     leadAsset: {
+      id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
       title: "TMS: Pratchett’s law of the jungle",
       crop169: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40"
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+        __typename: "Crop"
       },
       crop32: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0"
-      }
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+        __typename: "Crop"
+      },
+      __typename: "Image"
     },
     url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+    __typename: "Article"
   },
   {
     id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
@@ -1329,6 +1340,7 @@ const defaultRelatedArticles = [
     label: "Science",
     publicationName: "TIMES",
     publishedTime: "2015-03-23T20:42:27.000Z",
+    section: "",
     summary105: [
       {
         name: "paragraph",
@@ -1471,18 +1483,23 @@ const defaultRelatedArticles = [
       }
     ],
     leadAsset: {
+      id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
       title: "Rise of centenarian drivers as elderly push on",
       crop169: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40"
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C439%2C0%2C40",
+        __typename: "Crop"
       },
       crop32: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0"
-      }
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0",
+        __typename: "Crop"
+      },
+      __typename: "Image"
     },
     url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
+      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+    __typename: "Article"
   },
   {
     id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
@@ -1505,6 +1522,7 @@ const defaultRelatedArticles = [
     label: "Science",
     publicationName: "TIMES",
     publishedTime: "2015-03-23T20:56:09.000Z",
+    section: "",
     summary105: [
       {
         name: "paragraph",
@@ -1615,22 +1633,28 @@ const defaultRelatedArticles = [
       }
     ],
     leadAsset: {
+      id: "8557a3d2-cb55-11e4-81dd-064fe933cd41",
       title: "At long last, a burial place fit for a king",
       crop169: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40"
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C439%2C0%2C40",
+        __typename: "Crop"
       },
       crop32: {
         url:
-          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0"
-      }
+          "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/966beb186f2a7951c2b7f6d3ac4339862a7c381b.jpg?crop=780%2C520%2C0%2C0",
+        __typename: "Crop"
+      },
+      __typename: "Image"
     },
     url:
-      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k"
+      "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+    __typename: "Article"
   }
 ];
 const defaultRelatedArticlesLayout = {
-  template: "DEFAULT"
+  template: "DEFAULT",
+  __typename: "Default"
 };
 const defaultSection = "news";
 const defaultStandfirst =
@@ -1638,23 +1662,28 @@ const defaultStandfirst =
 const defaultTopics = [
   {
     name: "Football",
-    slug: "football"
+    slug: "football",
+    __typename: "Topic"
   },
   {
     name: "Manchester United FC",
-    slug: "manchester-united"
+    slug: "manchester-united",
+    __typename: "Topic"
   },
   {
     name: "Chelsea FC",
-    slug: "chelsea"
+    slug: "chelsea",
+    __typename: "Topic"
   },
   {
     name: "Arsenal",
-    slug: "arsenal"
+    slug: "arsenal",
+    __typename: "Topic"
   },
   {
     name: "Rugby Union",
-    slug: "rugby-union"
+    slug: "rugby-union",
+    __typename: "Topic"
   }
 ];
 const defaultUrl =
@@ -1705,7 +1734,8 @@ export default ({ withAds = true, ...config } = {}) => {
   const core = {
     id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
     publicationName: "TIMES",
-    publishedTime: "2015-03-13T18:54:58.000Z"
+    publishedTime: "2015-03-13T18:54:58.000Z",
+    __typename: "Article"
   };
 
   const defaultConfig = makeDefaultConfig(config);
@@ -1729,13 +1759,7 @@ export const testFixture = {
       name: "inline",
       attributes: {},
       children: [
-        {
-          name: "text",
-          attributes: {
-            value: "Some byline"
-          },
-          children: []
-        }
+        { name: "text", attributes: { value: "Some byline" }, children: [] }
       ]
     }
   ],
@@ -1744,13 +1768,7 @@ export const testFixture = {
       name: "paragraph",
       attributes: {},
       children: [
-        {
-          name: "text",
-          attributes: {
-            value: "Some content"
-          },
-          children: []
-        }
+        { name: "text", attributes: { value: "Some content" }, children: [] }
       ]
     }
   ],
@@ -1762,10 +1780,8 @@ export const testFixture = {
     title: "Some Title",
     credits: "Some Credits",
     caption: "Some Caption",
-    crop: {
-      ratio: "16:9",
-      url: "https://crop169.io"
-    }
+    crop: { ratio: "16:9", url: "https://crop169.io", __typename: "Crop" },
+    __typename: "Image"
   },
   relatedArticles: [
     {
@@ -1783,23 +1799,17 @@ export const testFixture = {
       summary225: [],
       leadAsset: {
         title: "RA Title",
-        crop169: {
-          url: "https://racrop169.io"
-        },
-        crop32: {
-          url: "https://racrop32.io"
-        }
+        crop169: { url: "https://racrop169.io", __typename: "Crop" },
+        crop32: { url: "https://racrop32.io", __typename: "Crop" },
+        __typename: "Image"
       },
-      url: "https://ra.io"
+      url: "https://ra.io",
+      __typename: "Article"
     }
   ],
   section: "Some Section",
   standfirst: "Some Standfirst",
-  topics: [
-    {
-      name: "Topic",
-      slug: "topic"
-    }
-  ],
-  url: "https://url.io"
+  topics: [{ name: "Topic", slug: "topic" }],
+  url: "https://url.io",
+  __typename: "Article"
 };

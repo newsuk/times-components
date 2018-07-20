@@ -32,7 +32,11 @@ const mocks = [
         id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44"
       }
     },
-    result: fullArticleFixture()
+    result: {
+      data: {
+        article: fullArticleFixture()
+      }
+    }
   }
 ];
 
