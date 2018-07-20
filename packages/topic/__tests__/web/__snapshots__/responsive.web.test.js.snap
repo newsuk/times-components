@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Topic responsive tests on web should render HeadContainer correctly 1`] = `
+exports[`should render HeadContainer correctly 1`] = `
 .c0 {
   width: 100%;
   padding-left: 10px;
@@ -31,7 +31,7 @@ exports[`Topic responsive tests on web should render HeadContainer correctly 1`]
 />
 `;
 
-exports[`Topic responsive tests on web should render HeadContainer correctly 2`] = `
+exports[`should render HeadContainer correctly 2`] = `
 .c0 {
   width: 100%;
   padding-left: 10px;
@@ -62,7 +62,7 @@ exports[`Topic responsive tests on web should render HeadContainer correctly 2`]
 />
 `;
 
-exports[`Topic responsive tests on web should render ResponsiveDivider correctly 1`] = `
+exports[`should render ResponsiveDivider correctly 1`] = `
 .c0 {
   border-top-color: #DBDBDB;
   border-top-style: solid;
@@ -82,7 +82,7 @@ exports[`Topic responsive tests on web should render ResponsiveDivider correctly
 />
 `;
 
-exports[`Topic responsive tests on web should render ResponsiveName correctly 1`] = `
+exports[`should render ResponsiveName correctly 1`] = `
 .c0 {
   font-family: TimesModern-Bold;
   font-size: 40px;

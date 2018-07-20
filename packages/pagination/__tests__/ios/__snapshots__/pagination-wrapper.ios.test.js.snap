@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ios 1. inner component with page 1`] = `
+exports[`1. inner component with page 1`] = `
 <Text>
   {
   "page": 1

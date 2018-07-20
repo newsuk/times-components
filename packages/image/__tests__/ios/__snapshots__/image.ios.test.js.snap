@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image tests on ios 1. default layout 1`] = `
+exports[`1. default layout 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -22,7 +22,7 @@ exports[`Image tests on ios 1. default layout 1`] = `
 </View>
 `;
 
-exports[`Image tests on ios 1. prepend https schema 1`] = `
+exports[`1. prepend https schema 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -44,7 +44,7 @@ exports[`Image tests on ios 1. prepend https schema 1`] = `
 </View>
 `;
 
-exports[`Image tests on ios 2. default layout without uri 1`] = `
+exports[`2. default layout without uri 1`] = `
 <View
   aspectRatio={1.5}
 >
@@ -61,7 +61,7 @@ exports[`Image tests on ios 2. default layout without uri 1`] = `
 </View>
 `;
 
-exports[`Image tests on ios 3. should accept styling prop 1`] = `
+exports[`3. should accept styling prop 1`] = `
 <View
   aspectRatio={1.5}
   style={
@@ -88,7 +88,7 @@ exports[`Image tests on ios 3. should accept styling prop 1`] = `
 </View>
 `;
 
-exports[`Image tests on ios 4. loading image when width set 1`] = `
+exports[`4. loading image when width set 1`] = `
 <View
   style={
     Object {

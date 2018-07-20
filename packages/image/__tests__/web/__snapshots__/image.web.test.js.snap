@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image tests on web 1. default layout 1`] = `
+exports[`1. default layout 1`] = `
 <View>
   <div
     style={
@@ -40,7 +40,7 @@ exports[`Image tests on web 1. default layout 1`] = `
 </View>
 `;
 
-exports[`Image tests on web 2. default layout without uri 1`] = `
+exports[`2. default layout without uri 1`] = `
 <View>
   <div
     style={
@@ -80,7 +80,7 @@ exports[`Image tests on web 2. default layout without uri 1`] = `
 </View>
 `;
 
-exports[`Image tests on web 3. should accept styling prop 1`] = `
+exports[`3. should accept styling prop 1`] = `
 <View
   style={
     Object {
@@ -126,7 +126,7 @@ exports[`Image tests on web 3. should accept styling prop 1`] = `
 </View>
 `;
 
-exports[`Image tests on web 4. loading image when width set 1`] = `
+exports[`4. loading image when width set 1`] = `
 <View
   style={
     Object {
@@ -159,7 +159,7 @@ exports[`Image tests on web 4. loading image when width set 1`] = `
 </View>
 `;
 
-exports[`Image tests on web ModalImage passes through to Image 1`] = `
+exports[`modal props pass through to image 1`] = `
 <View>
   <div
     style={
