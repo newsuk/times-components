@@ -4,7 +4,7 @@ import {
   addSerializers,
   compose,
   flattenStyleTransform,
-  hoistStyleTransform,
+  minimaliseTransform,
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
@@ -16,9 +16,9 @@ export default () => {
     expect,
     compose(
       print,
-      minimalNativeTransform,
       flattenStyleTransform,
-      hoistStyleTransform
+      minimaliseTransform((value, key) => key !== "style"),
+      minimalNativeTransform
     )
   );
 

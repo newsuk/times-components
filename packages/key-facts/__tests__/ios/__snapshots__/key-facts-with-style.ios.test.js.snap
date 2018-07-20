@@ -2,46 +2,131 @@
 
 exports[`key facts with title 1`] = `
 <View
-  className="IS21"
+  style={
+    Object {
+      "marginLeft": 10,
+      "marginRight": 10,
+    }
+  }
 >
   <Text
-    className="IS1"
+    style={
+      Object {
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 1.2,
+        "marginBottom": 20,
+      }
+    }
   >
     EXAMPLE TITLE
   </Text>
   <View>
     <View
-      className="IS5"
+      style={
+        Object {
+          "marginLeft": 10,
+          "marginRight": 10,
+        }
+      }
     >
       <View
-        className="IS4"
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "paddingLeft": 1,
+            "width": "100%",
+          }
+        }
       >
         <View
-          className="IS2"
+          style={
+            Object {
+              "backgroundColor": "#103546",
+              "height": 8,
+              "top": 1,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 8,
+            }
+          }
         />
         <Text
-          className="IS3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 30,
+              "marginTop": -8,
+              "paddingLeft": 15,
+              "width": "95%",
+            }
+          }
         >
           Example bullet text
         </Text>
       </View>
     </View>
     <View
-      className="IS10"
+      style={
+        Object {
+          "marginLeft": 10,
+          "marginRight": 10,
+        }
+      }
     >
       <View
-        className="IS9"
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "paddingLeft": 1,
+            "width": "100%",
+          }
+        }
       >
         <View
-          className="IS6"
+          style={
+            Object {
+              "backgroundColor": "#103546",
+              "height": 8,
+              "top": 1,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 8,
+            }
+          }
         />
         <Text
-          className="IS8"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 30,
+              "marginTop": -8,
+              "paddingLeft": 15,
+              "width": "95%",
+            }
+          }
         >
           An example 
           <Text
-            accessibilityRole="link"
-            className="IS7"
+            style={
+              Object {
+                "color": "#006699",
+                "textDecorationLine": "underline",
+              }
+            }
           >
             link
           </Text>
@@ -49,41 +134,117 @@ exports[`key facts with title 1`] = `
       </View>
     </View>
     <View
-      className="IS14"
+      style={
+        Object {
+          "marginLeft": 10,
+          "marginRight": 10,
+        }
+      }
     >
       <View
-        className="IS13"
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "paddingLeft": 1,
+            "width": "100%",
+          }
+        }
       >
         <View
-          className="IS11"
+          style={
+            Object {
+              "backgroundColor": "#103546",
+              "height": 8,
+              "top": 1,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 8,
+            }
+          }
         />
         <Text
-          className="IS12"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 30,
+              "marginTop": -8,
+              "paddingLeft": 15,
+              "width": "95%",
+            }
+          }
         >
           More example text.
         </Text>
       </View>
     </View>
     <View
-      className="IS20"
+      style={
+        Object {
+          "marginLeft": 10,
+          "marginRight": 10,
+        }
+      }
     >
       <View
-        className="IS19"
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "paddingLeft": 1,
+            "width": "100%",
+          }
+        }
       >
         <View
-          className="IS15"
+          style={
+            Object {
+              "backgroundColor": "#103546",
+              "height": 8,
+              "top": 1,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 8,
+            }
+          }
         />
         <Text
-          className="IS18"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 16,
+              "lineHeight": 30,
+              "marginTop": -8,
+              "paddingLeft": 15,
+              "width": "95%",
+            }
+          }
         >
           Example text 
           <Text
-            className="IS16"
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
           >
             this is bold 
           </Text>
           <Text
-            className="IS17"
+            style={
+              Object {
+                "fontStyle": "italic",
+              }
+            }
           >
             this is in italics.
           </Text>

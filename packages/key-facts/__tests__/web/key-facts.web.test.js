@@ -4,13 +4,17 @@ import {
   compose,
   minimalWebTransform,
   print,
-  rnwTransform
+  minimaliseTransform
 } from "@times-components/jest-serializer";
 import renderKeyFacts from "../shared-render-key-facts";
 
-addSerializers(expect, compose(print, minimalWebTransform, rnwTransform()));
-
-// eslint-disable-next-line global-require
-require("jest-styled-components");
+addSerializers(
+  expect,
+  compose(
+    print,
+    minimalWebTransform,
+    minimaliseTransform((value, key) => key === "style" || key === "className")
+  )
+);
 
 renderKeyFacts(TestRenderer.create);
