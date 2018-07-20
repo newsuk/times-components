@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`web 1. does not render an image if display is not received 1`] = `Array []`;
+exports[`1. does not render an image if display is not received 1`] = `Array []`;
 
-exports[`web 2. does not render an image if ratio is not received 1`] = `Array []`;
+exports[`2. does not render an image if ratio is not received 1`] = `Array []`;
 
-exports[`web 3. image with no caption 1`] = `
+exports[`3. image with no caption 1`] = `
 <div>
   <TimesImage
     aspectRatio={1.7777777777777777}
@@ -13,7 +13,7 @@ exports[`web 3. image with no caption 1`] = `
 </div>
 `;
 
-exports[`web 4. image with caption 1`] = `
+exports[`4. image with caption 1`] = `
 <div>
   <div>
     <div>
@@ -25,7 +25,7 @@ exports[`web 4. image with caption 1`] = `
 </div>
 `;
 
-exports[`web 5. image with credit 1`] = `
+exports[`5. image with credit 1`] = `
 <div>
   <div>
     <div>
