@@ -18,12 +18,12 @@ const KeyFacts = ({ ast, onLinkPress }) => {
     return <KeyFactsTitle title={title} />;
   };
 
-  const renderKeyFact = (item, index) => (
-    <View key={`key-facts-${index}`} style={styles.container}>
+  const renderKeyFact = (item, listIndex) => (
+    <View key={`key-facts-${listIndex}`} style={styles.container}>
       <View style={styles.bulletContainer}>
         <View style={styles.bullet} />
         <Text style={styles.text}>
-          {item.children.map((data, indx) =>
+          {item.children.map((data, listItemIndex) =>
             renderTree(
               data,
               {
@@ -32,7 +32,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
                   return {
                     element: (
                       <TextLink
-                        key={`${index}${key}`}
+                        key={key}
                         onPress={e =>
                           onLinkPress(e, {
                             canonicalId,
@@ -49,7 +49,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
                   };
                 }
               },
-              `key-facts-${index}-${indx}`
+              `key-facts-${listIndex}-${listItemIndex}`
             )
           )}
         </Text>

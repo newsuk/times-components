@@ -3,6 +3,7 @@ import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
+  flattenStyleTransform,
   justChildren,
   meltNative,
   propsNoChildren,
@@ -20,6 +21,7 @@ export default () => {
     enzymeTreeSerializer(),
     compose(
       stylePrinter,
+      flattenStyleTransform,
       replaceTransform({
         Ad: propsNoChildren,
         AdComposer: justChildren,
