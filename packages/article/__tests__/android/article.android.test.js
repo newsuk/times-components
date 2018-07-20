@@ -27,13 +27,9 @@ jest.mock("@times-components/tracking", () => {
   };
 });
 
-describe("Article tests on android", () => {
-  shared();
-  nativeShared();
-});
+shared();
+nativeShared();
 
 jest.unmock("@times-components/tracking");
 
-describe("Article Tracking tests on web", () => {
-  sharedTracking();
-});
+sharedTracking();

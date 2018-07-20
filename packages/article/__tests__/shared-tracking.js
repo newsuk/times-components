@@ -15,7 +15,7 @@ export default () => {
     mockDate.reset();
   });
 
-  it("should track page view", () => {
+  it("analytics for page view", () => {
     const stream = jest.fn();
 
     TestRenderer.create(
@@ -32,8 +32,6 @@ export default () => {
     );
     const call = stream.mock.calls[0][0];
 
-    expect(call).toMatchSnapshot(
-      "Send analytics when rendering an Article page"
-    );
+    expect(call).toMatchSnapshot();
   });
 };
