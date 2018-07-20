@@ -1,5 +1,6 @@
+import "react-native";
 import React from "react";
-import TestRenderer from "react-test-renderer";
+import renderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Article from "../src/article";
 import { adConfig } from "./shared";
@@ -15,10 +16,10 @@ export default () => {
     mockDate.reset();
   });
 
-  it("analytics for page view", () => {
+  it("should track page view", () => {
     const stream = jest.fn();
 
-    TestRenderer.create(
+    renderer.create(
       <Article
         {...fullArticleFixture.data}
         adConfig={adConfig}
@@ -32,6 +33,8 @@ export default () => {
     );
     const call = stream.mock.calls[0][0];
 
-    expect(call).toMatchSnapshot();
+    expect(call).toMatchSnapshot(
+      "Send analytics when rendering an Article page"
+    );
   });
 };

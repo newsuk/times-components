@@ -1,6 +1,7 @@
 import "jest-styled-components";
+import "react-native";
 import React from "react";
-import TestRenderer from "react-test-renderer";
+import renderer from "react-test-renderer";
 import { mount } from "enzyme";
 import ArticleRow from "../../src/article-body/article-body-row";
 import ArticleLink from "../../src/article-body/article-link";
@@ -35,55 +36,63 @@ jest.mock("@times-components/tracking", () => {
   };
 });
 
-shared();
+describe("Article tests on web", () => {
+  shared();
 
-it("renders article with no lead asset", () => {
-  const testInstance = TestRenderer.create(
-    <Article
-      {...articleFixtureNoLeadAsset.data}
-      adConfig={adConfig}
-      analyticsStream={() => {}}
-      onAuthorPress={() => {}}
-      onLinkPress={() => {}}
-      onRelatedArticlePress={() => {}}
-      onTopicPress={() => {}}
-    />
-  ).toJSON();
-  expect(testInstance).toMatchSnapshot();
-});
+  it("renders article with no lead asset", () => {
+    const tree = renderer
+      .create(
+        <Article
+          {...articleFixtureNoLeadAsset.data}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          onAuthorPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-it("ArticleRow should handle a link onPress", () => {
-  const testUrl = "http://www.test.com";
-  const props = {
-    content: {
-      data: {
-        attributes: {
-          href: testUrl
+  it("ArticleRow should handle a link onPress", () => {
+    const testUrl = "http://www.test.com";
+    const props = {
+      content: {
+        data: {
+          attributes: {
+            href: testUrl
+          },
+          children: [
+            {
+              name: "text",
+              attributes: {
+                value: "police disclosure of evidence"
+              },
+              children: []
+            }
+          ],
+          name: "link"
         },
-        children: [
-          {
-            name: "text",
-            attributes: {
-              value: "police disclosure of evidence"
-            },
-            children: []
-          }
-        ],
-        name: "link"
-      },
-      index: 1
-    }
-  };
-  const onPressMock = jest.fn();
-  const wrapper = mount(<ArticleRow {...props} onLinkPress={onPressMock} />);
-  const eventObject = { event: true };
-  wrapper
-    .find(ArticleLink)
-    .props()
-    .onPress(eventObject);
-  expect(onPressMock).toHaveBeenCalledWith(eventObject, { href: testUrl });
+        index: 1
+      }
+    };
+    const onPressMock = jest.fn();
+    const component = mount(
+      <ArticleRow {...props} onLinkPress={onPressMock} />
+    );
+    const eventObject = { event: true };
+    component
+      .find(ArticleLink)
+      .props()
+      .onPress(eventObject);
+    expect(onPressMock).toHaveBeenCalledWith(eventObject, { href: testUrl });
+  });
 });
 
 jest.unmock("@times-components/tracking");
 
-sharedTracking();
+describe("Article Tracking tests on web", () => {
+  sharedTracking();
+});
