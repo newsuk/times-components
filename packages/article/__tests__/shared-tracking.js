@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Article from "../src/article";
-import { adConfig } from "./shared.base";
+import { adConfig } from "./ad-mock";
 import articleFixture from "../fixtures/full-article";
 
 export default () => {
