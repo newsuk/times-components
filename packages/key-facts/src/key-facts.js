@@ -27,8 +27,8 @@ const KeyFacts = ({ ast, onLinkPress }) => {
             renderTree(
               data,
               {
-                link(key, atts, renderedChildren) {
-                  const { canonicalId, href: url, type } = atts;
+                link(key, attributes, renderedChildren) {
+                  const { canonicalId, href: url, type } = attributes;
                   return {
                     element: (
                       <TextLink
