@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. key facts with title 1`] = `
-<KeyFactsContainer>
-  <KeyFactsTitle
-    title="Example title"
-  />
-  <KeyFactsWrapper>
+<View>
+  <Text>
+    E X A M P L E   T I T L E
+  </Text>
+  <View>
     <View>
       <View>
         <View />
@@ -19,10 +19,11 @@ exports[`1. key facts with title 1`] = `
         <View />
         <Text>
           An example 
-          <TextLink
-            target={null}
-            url="https://www.thetimes.co.uk/test/link"
-          />
+          <Text
+            accessibilityRole="link"
+          >
+            link
+          </Text>
         </Text>
       </View>
     </View>
@@ -48,13 +49,13 @@ exports[`1. key facts with title 1`] = `
         </Text>
       </View>
     </View>
-  </KeyFactsWrapper>
-</KeyFactsContainer>
+  </View>
+</View>
 `;
 
 exports[`2. key facts without title 1`] = `
-<KeyFactsContainer>
-  <KeyFactsWrapper>
+<View>
+  <View>
     <View>
       <View>
         <View />
@@ -68,10 +69,11 @@ exports[`2. key facts without title 1`] = `
         <View />
         <Text>
           An example 
-          <TextLink
-            target={null}
-            url="https://www.thetimes.co.uk/test/link"
-          />
+          <Text
+            accessibilityRole="link"
+          >
+            link
+          </Text>
         </Text>
       </View>
     </View>
@@ -97,6 +99,6 @@ exports[`2. key facts without title 1`] = `
         </Text>
       </View>
     </View>
-  </KeyFactsWrapper>
-</KeyFactsContainer>
+  </View>
+</View>
 `;
