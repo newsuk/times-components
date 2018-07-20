@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleBylineWithLinks tests on web 1. single inline element 1`] = `
+exports[`1. single inline element 1`] = `
 <div>
   <div>
     Lindsay McIntosh Scottish Political Editor
@@ -8,7 +8,7 @@ exports[`ArticleBylineWithLinks tests on web 1. single inline element 1`] = `
 </div>
 `;
 
-exports[`ArticleBylineWithLinks tests on web 2. with the author in the begining 1`] = `
+exports[`2. with the author in the begining 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -22,7 +22,7 @@ exports[`ArticleBylineWithLinks tests on web 2. with the author in the begining 
 </div>
 `;
 
-exports[`ArticleBylineWithLinks tests on web 3. with the author at the end 1`] = `
+exports[`3. with the author at the end 1`] = `
 <div>
   <div>
     RBS Six Nations 
@@ -36,7 +36,7 @@ exports[`ArticleBylineWithLinks tests on web 3. with the author at the end 1`] =
 </div>
 `;
 
-exports[`ArticleBylineWithLinks tests on web 4. with multiple authors separated by text with commas 1`] = `
+exports[`4. with multiple authors separated by text with commas 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -65,7 +65,7 @@ exports[`ArticleBylineWithLinks tests on web 4. with multiple authors separated 
 </div>
 `;
 
-exports[`ArticleBylineWithLinks tests on web 5. with multiple authors separated by spaces 1`] = `
+exports[`5. with multiple authors separated by spaces 1`] = `
 <div>
   <a
     href="/profile/camilla-long"
@@ -94,4 +94,4 @@ exports[`ArticleBylineWithLinks tests on web 5. with multiple authors separated 
 </div>
 `;
 
-exports[`ArticleBylineWithLinks tests on web 6. null with an empty ast 1`] = `null`;
+exports[`6. null with an empty ast 1`] = `null`;
