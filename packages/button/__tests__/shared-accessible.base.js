@@ -3,10 +3,10 @@ import Button from "../src/button";
 
 export default renderMethod => {
   it("accessible button", () => {
-    const wrapper = renderMethod(
+    const output = renderMethod(
       <Button onPress={() => null} title="test button" />
     );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 };

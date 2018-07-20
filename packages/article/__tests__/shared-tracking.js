@@ -1,6 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Article from "../src/article";
 import { adConfig } from "./shared";
@@ -19,7 +18,7 @@ export default () => {
   it("should track page view", () => {
     const stream = jest.fn();
 
-    renderer.create(
+    TestRenderer.create(
       <Article
         {...fullArticleFixture.data}
         adConfig={adConfig}

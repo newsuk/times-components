@@ -18,7 +18,7 @@ jest.useFakeTimers();
 serializers();
 
 it("card with default layout", () => {
-  const output = mount(
+  const wrapper = mount(
     <Card {...props}>
       <Text>A card</Text>
     </Card>
@@ -26,5 +26,5 @@ it("card with default layout", () => {
 
   jest.runTimersToTime();
 
-  expect(output).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
 });

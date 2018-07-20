@@ -18,7 +18,7 @@ jest.useFakeTimers();
 serializers();
 
 it("card with reversed layout", () => {
-  const output = mount(
+  const wrapper = mount(
     <Card {...props} isReversed>
       <Text>A card in reverse</Text>
     </Card>
@@ -26,5 +26,5 @@ it("card with reversed layout", () => {
 
   jest.runTimersToTime();
 
-  expect(output).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
 });

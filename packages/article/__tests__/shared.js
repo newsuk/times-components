@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import Article from "../src/article";
@@ -82,7 +82,7 @@ export default () => {
           error: { message: "An example error." }
         };
 
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <Article
             {...props}
             adConfig={adConfig}
@@ -95,13 +95,13 @@ export default () => {
           />
         );
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "full article",
       test: async () => {
-        const tree = shallow(
+        const wrapper = shallow(
           <Article
             {...fullArticleFixture.data}
             adConfig={adConfig}
@@ -114,217 +114,197 @@ export default () => {
           />
         );
 
-        expect(tree).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
       }
     },
     {
       name: "smaller article",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...shortArticleFixture.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...shortArticleFixture.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no flags",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoFlags.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoFlags.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no byline",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoByline.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoByline.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no label",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoLabel.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoLabel.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no standfirst",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoStandfirst.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoStandfirst.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no standfirst and no flags",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoStandfirstNoFlags.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoStandfirstNoFlags.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no standfirst and no label",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoStandfirstNoLabel.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoStandfirstNoLabel.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no flags and no label",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoLabelNoFlags.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoLabelNoFlags.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with no standfirst, no label and no no flags",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureNoLabelNoFlagsNoStandFirst.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "article with a video asset",
       test: async () => {
-        const tree = renderer
-          .create(
-            <Article
-              {...articleFixtureWithVideo.data}
-              adConfig={adConfig}
-              analyticsStream={() => {}}
-              onAuthorPress={() => {}}
-              onLinkPress={() => {}}
-              onRelatedArticlePress={() => {}}
-              onTopicPress={() => {}}
-              onVideoPress={() => {}}
-            />
-          )
-          .toJSON();
+        const testInstance = TestRenderer.create(
+          <Article
+            {...articleFixtureWithVideo.data}
+            adConfig={adConfig}
+            analyticsStream={() => {}}
+            onAuthorPress={() => {}}
+            onLinkPress={() => {}}
+            onRelatedArticlePress={() => {}}
+            onTopicPress={() => {}}
+            onVideoPress={() => {}}
+          />
+        ).toJSON();
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

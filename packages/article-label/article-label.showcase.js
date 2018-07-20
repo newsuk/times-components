@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-
-import "react-native";
 import React from "react";
 import invert from "lodash.invert";
 import { colours } from "@times-components/styleguide";

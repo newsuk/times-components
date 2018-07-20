@@ -1,14 +1,13 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import ArticleLabel from "../src/article-label";
 
 module.exports = () => {
   it("renders ArticleLabel", () => {
-    const tree = renderer
-      .create(<ArticleLabel color="#008347" title="swimming" />)
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <ArticleLabel color="#008347" title="swimming" />
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 };

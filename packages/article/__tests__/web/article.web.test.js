@@ -1,7 +1,6 @@
 import "jest-styled-components";
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { mount } from "enzyme";
 import ArticleRow from "../../src/article-body/article-body-row";
 import ArticleLink from "../../src/article-body/article-link";
@@ -40,20 +39,18 @@ describe("Article tests on web", () => {
   shared();
 
   it("renders article with no lead asset", () => {
-    const tree = renderer
-      .create(
-        <Article
-          {...articleFixtureNoLeadAsset.data}
-          adConfig={adConfig}
-          analyticsStream={() => {}}
-          onAuthorPress={() => {}}
-          onLinkPress={() => {}}
-          onRelatedArticlePress={() => {}}
-          onTopicPress={() => {}}
-        />
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const testInstance = TestRenderer.create(
+      <Article
+        {...articleFixtureNoLeadAsset.data}
+        adConfig={adConfig}
+        analyticsStream={() => {}}
+        onAuthorPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+      />
+    ).toJSON();
+    expect(testInstance).toMatchSnapshot();
   });
 
   it("ArticleRow should handle a link onPress", () => {
@@ -79,11 +76,9 @@ describe("Article tests on web", () => {
       }
     };
     const onPressMock = jest.fn();
-    const component = mount(
-      <ArticleRow {...props} onLinkPress={onPressMock} />
-    );
+    const wrapper = mount(<ArticleRow {...props} onLinkPress={onPressMock} />);
     const eventObject = { event: true };
-    component
+    wrapper
       .find(ArticleLink)
       .props()
       .onPress(eventObject);

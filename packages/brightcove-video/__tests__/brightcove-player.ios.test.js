@@ -1,6 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 
 import BrightcovePlayer from "../src/brightcove-player";
 
@@ -10,7 +9,7 @@ describe("brightcove-player iOS component", () => {
   });
 
   it("will attempt to call the correct native method", () => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -26,7 +25,7 @@ describe("brightcove-player iOS component", () => {
       }
     }));
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.runNativeCommand("play", []);
 

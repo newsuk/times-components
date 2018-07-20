@@ -1,7 +1,5 @@
-import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
-
+import TestRenderer from "react-test-renderer";
 import BrightcovePlayer from "../src/brightcove-player.android";
 
 describe("brightcove-player Android component", () => {
@@ -10,7 +8,7 @@ describe("brightcove-player Android component", () => {
   });
 
   it("will attempt to call the correct native method", () => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -31,7 +29,7 @@ describe("brightcove-player Android component", () => {
       }
     }));
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.runNativeCommand("play", []);
 
@@ -40,7 +38,7 @@ describe("brightcove-player Android component", () => {
   });
 
   it("will go fullscreen if it receives an 'onChange' event with 'isFullscreen' equal to true", () => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -48,15 +46,15 @@ describe("brightcove-player Android component", () => {
       />
     );
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.onChange({ isFullscreen: true });
 
-    expect(brightcoveVideo.toJSON()).toMatchSnapshot();
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 
   it("will fire 'onEnterFullscreen' event if it receives an 'onChange' event with 'isFullscreen' equal to true", done => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         onEnterFullscreen={done}
@@ -65,13 +63,13 @@ describe("brightcove-player Android component", () => {
       />
     );
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.onChange({ isFullscreen: true });
   });
 
   it("will fire 'onExitFullscreen' event if it receives an 'onChange' event with 'isFullscreen' equal to false", done => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         onExitFullscreen={done}
@@ -80,14 +78,14 @@ describe("brightcove-player Android component", () => {
       />
     );
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.onChange({ isFullscreen: true });
     rootInstance.onChange({ isFullscreen: false });
   });
 
   it("will filter android only props from being passed native component", () => {
-    const brightcoveVideo = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -95,7 +93,7 @@ describe("brightcove-player Android component", () => {
       />
     );
 
-    const rootInstance = brightcoveVideo.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     expect(rootInstance.bcv.props.videoId).toEqual("[VIDEO_ID]");
     expect(rootInstance.bcv.props.accountId).toEqual("[ACCOUNT_ID]");

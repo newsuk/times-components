@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import { AdComposer } from "@times-components/ad";
 import { AuthorProfileProvider } from "@times-components/provider";

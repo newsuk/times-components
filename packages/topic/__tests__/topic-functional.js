@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import {
   fixtureGenerator,
@@ -58,7 +58,7 @@ export default () => {
     {
       name: "topic page",
       test: async () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <MockedProvider mocks={mockArticles}>
             <Topic {...props} page={1} pageSize={pageSize} />
           </MockedProvider>
@@ -66,29 +66,29 @@ export default () => {
 
         await delay(1500);
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "loading state",
       test: () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <MockedProvider isLoading mocks={mockArticles}>
             <Topic {...props} isLoading topic={{}} />
           </MockedProvider>
         );
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "error state with an invalid Topic Query",
       test: () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <Topic {...props} error={{}} refetch={() => null} />
         );
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -96,7 +96,7 @@ export default () => {
       test: () => {
         const reporter = jest.fn();
 
-        renderer.create(
+        TestRenderer.create(
           <MockedProvider mocks={mockArticles}>
             <Topic
               {...props}

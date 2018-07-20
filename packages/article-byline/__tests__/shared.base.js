@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import ArticleByline from "../src/article-byline";
@@ -8,7 +8,7 @@ import authorsFixture from "../fixtures/authors.json";
 
 export default Component => {
   const renderArticleByline = props =>
-    renderer.create(
+    TestRenderer.create(
       <View>
         <Component {...props} />
       </View>
@@ -18,59 +18,59 @@ export default Component => {
     {
       name: "single inline element",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.singleInlineElement
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with the author in the begining",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.authorInTheBeginning
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with the author at the end",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.authorAtTheEnd
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with multiple authors separated by text with commas",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.multipleAuthorsCommaSeparated
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with multiple authors separated by spaces",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.multipleAuthorsSpaceSeparated
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "null with an empty AST",
       test: () => {
-        const tree = renderer.create(<ArticleByline ast={[]} />);
+        const testInstance = TestRenderer.create(<ArticleByline ast={[]} />);
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

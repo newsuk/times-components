@@ -1,7 +1,6 @@
-import "react-native";
 import React from "react";
 import PropTypes from "prop-types";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import "jest-styled-components";
 
 import withResponsiveStyles from "../../src/responsive-styles";
@@ -12,16 +11,20 @@ Hello.defaultProps = { className: "" };
 
 it("handles missing styles object", () => {
   const WithStyles = withResponsiveStyles("div");
-  const tree = renderer.create(<WithStyles>Foo</WithStyles>).toJSON();
+  const testInstance = TestRenderer.create(
+    <WithStyles>Foo</WithStyles>
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("handles empty styles object", () => {
   const WithStyles = withResponsiveStyles("div", {});
-  const tree = renderer.create(<WithStyles>Foo</WithStyles>).toJSON();
+  const testInstance = TestRenderer.create(
+    <WithStyles>Foo</WithStyles>
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("applies styles for all breakpoints", () => {
@@ -32,27 +35,31 @@ it("applies styles for all breakpoints", () => {
     wideUp: () => "color: green;",
     hugeUp: () => "color: yellow;"
   });
-  const tree = renderer.create(<WithColours>Foo</WithColours>).toJSON();
+  const testInstance = TestRenderer.create(
+    <WithColours>Foo</WithColours>
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("optimises un-used breakpoints away", () => {
   const WithStyles = withResponsiveStyles("div", {
     mediumUp: () => "color: blue;"
   });
-  const tree = renderer.create(<WithStyles>Foo</WithStyles>).toJSON();
+  const testInstance = TestRenderer.create(
+    <WithStyles>Foo</WithStyles>
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("applies styles to custom components via className", () => {
   const BlueHello = withResponsiveStyles(Hello, {
     mediumUp: () => "color: blue;"
   });
-  const tree = renderer.create(<BlueHello>Foo</BlueHello>).toJSON();
+  const testInstance = TestRenderer.create(<BlueHello>Foo</BlueHello>).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });
 
 it("supports responsive styles based on props", () => {
@@ -61,9 +68,9 @@ it("supports responsive styles based on props", () => {
       color: ${props.special ? "red" : "blue"};
     `
   });
-  const tree = renderer
-    .create(<ResponsiveHello special>Foo</ResponsiveHello>)
-    .toJSON();
+  const testInstance = TestRenderer.create(
+    <ResponsiveHello special>Foo</ResponsiveHello>
+  ).toJSON();
 
-  expect(tree).toMatchSnapshot();
+  expect(testInstance).toMatchSnapshot();
 });

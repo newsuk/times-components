@@ -22,19 +22,19 @@ const tests = [
   {
     name: "card loading state",
     test: () => {
-      const output = mount(
+      const wrapper = mount(
         <Card {...props} isLoading>
           <Text>Loading state</Text>
         </Card>
       );
 
-      expect(output).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot();
     }
   },
   {
     name: "card with reversed loading state",
     test: () => {
-      const output = mount(
+      const wrapper = mount(
         <Card {...props} isLoading isReversed>
           <Text>Loading in reverse</Text>
         </Card>
@@ -42,7 +42,7 @@ const tests = [
 
       jest.runTimersToTime();
 
-      expect(output).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot();
     }
   }
 ];

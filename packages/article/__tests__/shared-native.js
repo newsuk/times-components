@@ -1,5 +1,3 @@
-import "react-native";
-
 import getLeadAsset, {
   defaultAsset
 } from "../src/article-lead-asset/get-lead-asset";

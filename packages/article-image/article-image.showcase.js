@@ -1,4 +1,3 @@
-import "react-native";
 import React from "react";
 import ArticleImage from "./src/article-image";
 import primaryImageFixture from "./fixtures/primary-image";

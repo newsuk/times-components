@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import authorsFixture from "../fixtures/authors.json";
 
@@ -13,7 +13,7 @@ const styles = {
 
 export default Component => {
   const renderArticleByline = props =>
-    renderer.create(
+    TestRenderer.create(
       <View>
         <Component {...props} />
       </View>
@@ -23,33 +23,33 @@ export default Component => {
     {
       name: "with a single author",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.singleAuthor
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with a given section colour",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.singleAuthor,
           color: "blue"
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "with given styles",
       test: () => {
-        const tree = renderArticleByline({
+        const testInstance = renderArticleByline({
           ast: authorsFixture.singleAuthor,
           style: styles
         });
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

@@ -1,73 +1,64 @@
-import "react-native";
 import React, { Component } from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import BrightcovePlayer from "../src/brightcove-player-helper";
 
 describe("brightcove-player native component", () => {
   it("renders correctly", () => {
-    const tree = renderer
-      .create(
-        <BrightcovePlayer
-          accountId="[ACCOUNT_ID]"
-          policyKey="[POLICY_KEY]"
-          videoId="[VIDEO_ID]"
-        />
-      )
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <BrightcovePlayer
+        accountId="[ACCOUNT_ID]"
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
+      />
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(testInstance.toJSON()).toMatchSnapshot();
   });
 
   it("width x height default to 320 x 180", () => {
-    const tree = renderer
-      .create(
-        <BrightcovePlayer
-          accountId="[ACCOUNT_ID]"
-          policyKey="[POLICY_KEY]"
-          videoId="[VIDEO_ID]"
-        />
-      )
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <BrightcovePlayer
+        accountId="[ACCOUNT_ID]"
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
+      />
+    );
 
-    expect(tree.props.style.width).toBe(320);
-    expect(tree.props.style.height).toBe(180);
+    expect(testInstance.toJSON().props.style.width).toBe(320);
+    expect(testInstance.toJSON().props.style.height).toBe(180);
   });
 
   it("width x height can be overridden", () => {
-    const tree = renderer
-      .create(
-        <BrightcovePlayer
-          accountId="[ACCOUNT_ID]"
-          height={400}
-          policyKey="[POLICY_KEY]"
-          videoId="[VIDEO_ID]"
-          width={600}
-        />
-      )
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <BrightcovePlayer
+        accountId="[ACCOUNT_ID]"
+        height={400}
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
+        width={600}
+      />
+    );
 
-    expect(tree.props.style.width).toBe(600);
-    expect(tree.props.style.height).toBe(400);
+    expect(testInstance.toJSON().props.style.width).toBe(600);
+    expect(testInstance.toJSON().props.style.height).toBe(400);
   });
 
   it("passes accountId, videoId & policyKey to video correctly", () => {
-    const tree = renderer
-      .create(
-        <BrightcovePlayer
-          accountId="[ACCOUNT_ID]"
-          policyKey="[POLICY_KEY]"
-          videoId="[VIDEO_ID]"
-        />
-      )
-      .toJSON();
+    const testInstance = TestRenderer.create(
+      <BrightcovePlayer
+        accountId="[ACCOUNT_ID]"
+        policyKey="[POLICY_KEY]"
+        videoId="[VIDEO_ID]"
+      />
+    );
 
-    expect(tree.props.policyKey).toBe("[POLICY_KEY]");
-    expect(tree.props.videoId).toBe("[VIDEO_ID]");
-    expect(tree.props.accountId).toBe("[ACCOUNT_ID]");
+    expect(testInstance.toJSON().props.policyKey).toBe("[POLICY_KEY]");
+    expect(testInstance.toJSON().props.videoId).toBe("[VIDEO_ID]");
+    expect(testInstance.toJSON().props.accountId).toBe("[ACCOUNT_ID]");
   });
 
   it("will call passed 'runNativeCommand' method property with 'play' when play is called", done => {
-    const root = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -80,13 +71,13 @@ describe("brightcove-player native component", () => {
       />
     );
 
-    const rootInstance = root.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.play();
   });
 
   it("will call passed 'runNativeCommand' method property with 'pause' when pause is called", done => {
-    const root = renderer.create(
+    const testInstance = TestRenderer.create(
       <BrightcovePlayer
         accountId="[ACCOUNT_ID]"
         policyKey="[POLICY_KEY]"
@@ -99,7 +90,7 @@ describe("brightcove-player native component", () => {
       />
     );
 
-    const rootInstance = root.getInstance();
+    const rootInstance = testInstance.getInstance();
 
     rootInstance.pause();
   });
@@ -114,7 +105,7 @@ describe("brightcove-player native component", () => {
     let playSpy;
 
     beforeEach(() => {
-      const root = renderer.create(
+      const testInstance = TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           policyKey="[POLICY_KEY]"
@@ -122,7 +113,7 @@ describe("brightcove-player native component", () => {
         />
       );
 
-      rootInstance = root.getInstance();
+      rootInstance = testInstance.getInstance();
 
       pauseSpy = jest.spyOn(rootInstance, "pause");
       playSpy = jest.spyOn(rootInstance, "play");
@@ -215,7 +206,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("will ignore unrecognised props in native change event", () => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           policyKey="[POLICY_KEY]"
@@ -227,7 +218,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("trigger a general change event", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onChange={evt => {
@@ -243,7 +234,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("trigger a play event", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onPlay={done}
@@ -256,7 +247,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("trigger a pause event", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onPause={done}
@@ -270,7 +261,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("trigger a pause event", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onDuration={duration => {
@@ -286,7 +277,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("trigger a finish event", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onFinish={done}
@@ -299,7 +290,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("will correctly handle native (android) errors", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onError={evt => {
@@ -315,7 +306,7 @@ describe("brightcove-player native component", () => {
     });
 
     it("will correctly handle native (iOS) errors", done => {
-      renderer.create(
+      TestRenderer.create(
         <BrightcovePlayer
           accountId="[ACCOUNT_ID]"
           onError={evt => {

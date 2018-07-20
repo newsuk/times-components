@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { iterator } from "@times-components/test-utils";
@@ -33,7 +33,7 @@ export default () => {
     {
       name: "with images",
       test: async () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <MockedProvider mocks={mockArticles}>
             <AuthorProfile {...props} />
           </MockedProvider>
@@ -41,13 +41,13 @@ export default () => {
 
         await delay(1500);
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "without images",
       test: async () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <MockedProvider mocks={mockArticlesWithoutImages}>
             <AuthorProfile {...props} author={mockAuthorWithoutImages} />
           </MockedProvider>
@@ -55,27 +55,29 @@ export default () => {
 
         await delay(1500);
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "loading state",
       test: () => {
-        const tree = renderer.create(
+        const testInstance = TestRenderer.create(
           <MockedProvider isLoading mocks={mockArticles}>
             <AuthorProfile {...props} isLoading />
           </MockedProvider>
         );
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "author profile page error state",
       test: () => {
-        const tree = renderer.create(<AuthorProfile {...props} error={{}} />);
+        const testInstance = TestRenderer.create(
+          <AuthorProfile {...props} error={{}} />
+        );
 
-        expect(tree).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -83,7 +85,7 @@ export default () => {
       test: () => {
         const reporter = jest.fn();
 
-        renderer.create(
+        TestRenderer.create(
           <MockedProvider mocks={mockArticles}>
             <AuthorProfile {...props} analyticsStream={reporter} />
           </MockedProvider>
