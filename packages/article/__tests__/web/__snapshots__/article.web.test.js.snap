@@ -189,15 +189,19 @@ Array [
     articles={
       Array [
         Object {
+          "__typename": "Article",
           "byline": Array [],
           "headline": "RA Headline",
           "id": "ra-1",
           "label": "RA Label",
           "leadAsset": Object {
+            "__typename": "Image",
             "crop169": Object {
+              "__typename": "Crop",
               "url": "https://racrop169.io",
             },
             "crop32": Object {
+              "__typename": "Crop",
               "url": "https://racrop32.io",
             },
             "title": "RA Title",
