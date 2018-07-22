@@ -1,44 +1,10 @@
 import PropTypes from "prop-types";
-
-export const propTypesBase = {
-  headline: PropTypes.string,
-  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-  imageSize: PropTypes.number,
-  label: PropTypes.string,
-  leadAsset: PropTypes.shape({
-    crop: PropTypes.shape({
-      url: PropTypes.string
-    }),
-    title: PropTypes.string
-  }),
-  longSummary: PropTypes.array,
-  publicationName: PropTypes.string,
-  publishedTime: PropTypes.string,
-  shortSummary: PropTypes.array,
-  summary: PropTypes.array,
-  url: PropTypes.string
-};
+import * as baseTypes from "./article-list-item-prop-types.base";
 
 export const propTypes = {
-  ...propTypesBase,
-  imageRatio: PropTypes.number,
-  index: PropTypes.number.isRequired,
-  length: PropTypes.number.isRequired,
-  onPress: PropTypes.func,
-  showImage: PropTypes.bool
+  ...baseTypes.propTypes,
+  onPress: PropTypes.func.isRequired
 };
 
-export const defaultProps = {
-  headline: "",
-  imageRatio: 1,
-  imageSize: null,
-  label: "",
-  longSummary: [],
-  onPress: () => {},
-  publicationName: "",
-  publishedTime: "",
-  shortSummary: [],
-  showImage: true,
-  summary: [],
-  url: ""
-};
+// eslint-disable-next-line prefer-destructuring
+export const defaultProps = baseTypes.defaultProps;

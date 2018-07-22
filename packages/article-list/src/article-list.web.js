@@ -116,7 +116,6 @@ class ArticleList extends Component {
       emptyStateMessage,
       error,
       imageRatio,
-      onArticlePress,
       onNext,
       onPrev,
       page,
@@ -136,11 +135,13 @@ class ArticleList extends Component {
         hideResults={hideResults}
         onNext={(...args) => {
           onNext(...args);
-          if (autoScroll) scrollUpToPaging(window);
+          if (autoScroll && typeof window !== "undefined")
+            scrollUpToPaging(window);
         }}
         onPrev={(...args) => {
           onPrev(...args);
-          if (autoScroll) scrollUpToPaging(window);
+          if (autoScroll && typeof window !== "undefined")
+            scrollUpToPaging(window);
         }}
         page={page}
         pageSize={pageSize}
@@ -188,7 +189,7 @@ class ArticleList extends Component {
           </ListContentContainer>
           {data &&
             data.map((article, index) => {
-              const { id, elementId, url } = article;
+              const { elementId } = article;
 
               const renderAd = () => {
                 if (index !== this.advertPosition || !hasAdvertConfig) {
@@ -225,7 +226,6 @@ class ArticleList extends Component {
                               imageSize={this.getImageSize(elementId) || 100}
                               index={index}
                               length={data.length}
-                              onPress={e => onArticlePress(e, { id, url })}
                               showImage={showImages}
                             />
                           </ListContentContainer>

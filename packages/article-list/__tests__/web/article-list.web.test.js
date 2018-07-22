@@ -1,7 +1,3 @@
-import shared from "../shared";
-import sharedWeb from "../shared-web";
+import shared from "../shared.web";
 
-describe("ArticleList tests on web", () => {
-  shared();
-  sharedWeb();
-});
+shared();

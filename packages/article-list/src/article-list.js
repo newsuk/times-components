@@ -46,12 +46,15 @@ class ArticleList extends Component {
     }
 
     this.setState({ loadingMore: true });
-    return this.props
-      .fetchMore(data.length)
-      .then(() => this.setState({ loadingMore: false }))
-      .catch(loadMoreError =>
-        this.setState({ loadMoreError, loadingMore: false })
-      );
+
+    return new Promise((res, rej) =>
+      this.props
+        .fetchMore(data.length)
+        .then(() => this.setState({ loadingMore: false }, res))
+        .catch(loadMoreError =>
+          this.setState({ loadMoreError, loadingMore: false }, rej)
+        )
+    );
   }
 
   render() {
@@ -105,11 +108,15 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
             <View style={styles.showMoreRetryContainer}>
               <Button
-                onPress={() => {
-                  this.setState({ loadMoreError: null }, () =>
-                    this.fetchMoreOnEndReached(data)
-                  );
-                }}
+                onPress={() =>
+                  new Promise((res, rej) => {
+                    this.setState({ loadMoreError: null }, () =>
+                      this.fetchMoreOnEndReached(data)
+                        .then(res)
+                        .catch(rej)
+                    );
+                  })
+                }
                 style={styles.showMoreRetryButton}
                 title="Retry"
               />
@@ -117,6 +124,7 @@ class ArticleList extends Component {
           </View>
         );
       }
+
       return (
         <View>
           <ArticleListItemSeparator />

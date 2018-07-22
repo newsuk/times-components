@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an error view 1`] = `
+<View>
+  <View>
+    <Text>
+      Something's gone wrong
+    </Text>
+    <Text>
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <Button
+    title="Retry"
+  />
+</View>
+`;
+
+exports[`2. an error view with header 1`] = `
+<View>
+  <Text>
+    Header
+  </Text>
+  <View>
+    <Text>
+      Something's gone wrong
+    </Text>
+    <Text>
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </Text>
+  </View>
+  <Button
+    title="Retry"
+  />
+</View>
+`;
+
+exports[`3. an empty list 1`] = `
+<View>
+  <View>
+    <Text>
+      Empty state
+    </Text>
+    <View>
+      <Watermark
+        height={250}
+        width={300}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`4. loading state 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View>
+        <Card
+          imageRatio={1}
+          isLoading={true}
+          showImage={true}
+        />
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View>
+      <View>
+        <Card
+          imageRatio={1}
+          isLoading={true}
+          showImage={true}
+        />
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View>
+      <View>
+        <Card
+          imageRatio={1}
+          isLoading={true}
+          showImage={true}
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <ActivityIndicator
+          animating={true}
+          color="#DBDBDB"
+          hidesWhenStopped={true}
+          size="large"
+        />
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

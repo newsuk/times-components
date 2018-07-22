@@ -6,17 +6,18 @@ export const propTypes = {
   articles: PropTypes.arrayOf(PropTypes.shape(articleItemPropTypes)),
   articlesLoading: PropTypes.bool,
   emptyStateMessage: PropTypes.string.isRequired,
+  error: PropTypes.object, // ApolloError, TS will be better here
   isLoading: PropTypes.bool.isRequired,
-  onArticlePress: PropTypes.func.isRequired,
-  onViewed: PropTypes.func,
-  receiveChildList: PropTypes.func
+  pageSize: PropTypes.number,
+  receiveChildList: PropTypes.func,
+  refetch: PropTypes.func.isRequired
 };
 
 export const defaultProps = {
   articleListHeader: null,
   articles: [],
+  error: null,
   isLoading: true,
-  onArticlePress: () => {},
-  onViewed: () => {},
+  pageSize: 10,
   receiveChildList: () => {}
 };

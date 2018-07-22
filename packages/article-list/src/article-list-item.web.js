@@ -25,7 +25,6 @@ const ArticleListItem = props => {
     label,
     leadAsset,
     longSummary,
-    onPress,
     publicationName,
     publishedTime,
     section,
@@ -93,7 +92,7 @@ const ArticleListItem = props => {
   );
 
   return (
-    <Link onPress={onPress} url={url}>
+    <Link url={url}>
       <ListItemWrapper>
         <Card
           contentContainerClass="articleListContent"

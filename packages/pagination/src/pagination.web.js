@@ -37,6 +37,7 @@ const Pagination = ({
       <Link
         onPress={e => onPrev(e, page - 1)}
         style={styles.arrow}
+        testID="page-prev"
         url={generatePageLink(page - 1)}
       >
         <PreviousPageIcon />
@@ -48,6 +49,7 @@ const Pagination = ({
       <Link
         onPress={e => onNext(e, page + 1)}
         style={styles.arrow}
+        testID="page-next"
         url={generatePageLink(page + 1)}
       >
         <NextPageIcon />

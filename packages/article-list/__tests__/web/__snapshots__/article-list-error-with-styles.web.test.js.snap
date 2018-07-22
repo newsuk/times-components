@@ -1,0 +1,895 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. page error 1`] = `
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 428px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    max-width: none;
+    width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    max-width: 428px;
+  }
+}
+
+<style>
+{
+  "IS1": {
+    "display": "block",
+    "position": "absolute",
+    "width": "100%",
+    "zIndex": 1,
+  },
+  "IS2": {
+    "backgroundImage": "linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%)",
+  },
+  "IS3": {
+    "bottom": "0px",
+    "left": "0px",
+    "position": "absolute",
+    "right": "0px",
+    "top": "0px",
+  },
+  "IS4": {
+    "display": "table",
+    "height": 0,
+    "overflow": "hidden",
+    "paddingBottom": "110%",
+  },
+  "IS5": {
+    "alignSelf": "center",
+    "marginBottom": "10px",
+    "marginTop": "40px",
+  },
+  "S1": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S2": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+  },
+  "S3": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S4": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S5": {
+    "-ms-flex-item-align": "center",
+    "-webkit-align-self": "center",
+    "align-self": "center",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(29,29,27,1)",
+    "font-family": "TimesModern-Bold",
+    "font-size": "35px",
+    "margin-bottom": "10px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "20px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "text-align": "center",
+  },
+  "S6": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(105,105,105,1)",
+    "font-family": "TimesDigitalW04-Regular",
+    "font-size": "18px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "text-align": "center",
+  },
+  "S7": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S8": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+}
+</style>
+
+<div
+  className="c0 S8"
+>
+  <div
+    className="c1 S4"
+  >
+    <div
+      className="S3"
+    >
+      <div
+        className="IS4"
+      >
+        <img
+          className="IS1"
+        />
+        <div
+          className="S2 IS3"
+        >
+          <div
+            className="S1 IS2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c2 S7"
+  >
+    <div
+      className="S5"
+    >
+      Something's gone wrong
+    </div>
+    <div
+      className="S6"
+    >
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </div>
+    <Button
+      className="IS5"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. article list 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+}
+
+.c1 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.c3 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+.c4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c5 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c0 {
+    max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    border-top-width: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+<style>
+{
+  "S1": {
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "color": "rgba(105,105,105,1)",
+    "font-family": "GillSansMTStd-Medium",
+    "font-size": "15px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "4px",
+  },
+  "S10": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S11": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S12": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S13": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S14": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S15": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "max-width": "760px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S16": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "row",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-box-pack": "center",
+    "-webkit-flex-direction": "row",
+    "-webkit-justify-content": "center",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "row",
+    "justify-content": "center",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S17": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S18": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S2": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S3": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S4": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S5": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S6": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S7": {
+    "-ms-flex": "1",
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex": "1",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex": "1",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "max-width": "760px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S8": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "row",
+    "-ms-flex-pack": "center",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "horizontal",
+    "-webkit-box-pack": "center",
+    "-webkit-flex-direction": "row",
+    "-webkit-justify-content": "center",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "row",
+    "justify-content": "center",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+  "S9": {
+    "-ms-flex-align": "stretch",
+    "-ms-flex-direction": "column",
+    "-webkit-align-items": "stretch",
+    "-webkit-box-align": "stretch",
+    "-webkit-box-direction": "normal",
+    "-webkit-box-orient": "vertical",
+    "-webkit-flex-direction": "column",
+    "align-items": "stretch",
+    "border-bottom-width": "0px",
+    "border-top-width": "0px",
+    "flex-direction": "column",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "margin-right": "0px",
+    "margin-top": "0px",
+    "min-height": "0px",
+    "padding-bottom": "0px",
+    "padding-top": "0px",
+    "position": "relative",
+  },
+}
+</style>
+
+<div
+  className="S18"
+>
+  <div
+    className="S17"
+  >
+    <div
+      className="c0 S9"
+    >
+      <div
+        className="S8"
+      >
+        <div
+          className="S7"
+        >
+          <div
+            className="c1 S6"
+          >
+            <div
+              className="c2 S2"
+            >
+              <div
+                className="S1"
+              >
+                Showing 0 - 0 of 0 results
+              </div>
+            </div>
+            <div
+              className="c3 S5"
+            >
+              <div
+                className="c4 S3"
+              />
+              <div
+                className="c4 S4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="c0 S10"
+      >
+        ArticleListItem
+      </div>
+    </div>
+    <div />
+    <div
+      className="S16"
+    >
+      <div
+        className="S15"
+      >
+        <div
+          className="c5 S14"
+        >
+          <div
+            className="c6 S13"
+          >
+            <div
+              className="c4 S11"
+            />
+            <div
+              className="c4 S12"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

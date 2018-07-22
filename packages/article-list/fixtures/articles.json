@@ -1,0 +1,298 @@
+[
+  {
+    "headline": "Headline 1",
+    "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+    "label": "Label 1",
+    "leadAsset": {
+      "title": "Lead 1",
+      "crop": {
+        "url": "https://lead1.io",
+        "__typename": "Crop"
+      },
+      "type": "Image",
+      "__typename": "Image"
+    },
+    "publicationName": "TIMES",
+    "publishedTime": "2017-11-17T00:01:00.000Z",
+    "section": "world",
+    "shortSummary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Short summary 1"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Summary 1"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "url": "https://article1.io"
+  },
+  {
+    "byline": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Byline 2"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "headline": "Headline 2",
+    "id": "4e6894ec-cb18-11e7-b529-95e3fc05f40f",
+    "label": "Label 2",
+    "leadAsset": {
+      "title": "Lead 2",
+      "crop": {
+        "url": "https://lead2.io",
+        "__typename": "Crop"
+      },
+      "type": "Image",
+      "__typename": "Image"
+    },
+    "publicationName": "SUNDAYTIMES",
+    "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortSummary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Short summary 2"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Summary 2"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "url": "https://article2.io"
+  },
+  {
+    "byline": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Byline 3"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "headline": "Headline 3",
+    "id": "ca003c2a-8e6f-11e8-9eb6-529269fb1459",
+    "label": "Label 3",
+    "leadAsset": {
+      "title": "Lead 3",
+      "crop": {
+        "url": "https://lead3.io",
+        "__typename": "Crop"
+      },
+      "type": "Image",
+      "__typename": "Image"
+    },
+    "publicationName": "SUNDAYTIMES",
+    "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortSummary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Short summary 3"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Summary 3"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "url": "https://article3.io"
+  },
+  {
+    "byline": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Byline 4"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "headline": "Headline 4",
+    "id": "ca003fe0-8e6f-11e8-9eb6-529269fb1459",
+    "label": "Label 4",
+    "leadAsset": {
+      "title": "Lead 4",
+      "crop": {
+        "url": "https://lead4.io",
+        "__typename": "Crop"
+      },
+      "type": "Image",
+      "__typename": "Image"
+    },
+    "publicationName": "SUNDAYTIMES",
+    "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortSummary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Short summary 4"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Summary 4"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "url": "https://article4.io"
+  },
+  {
+    "byline": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Byline 5"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "headline": "Headline 5",
+    "id": "ca00422e-8e6f-11e8-9eb6-529269fb1459",
+    "label": "Label 5",
+    "leadAsset": {
+      "title": "Lead 5",
+      "crop": {
+        "url": "https://lead5.io",
+        "__typename": "Crop"
+      },
+      "type": "Image",
+      "__typename": "Image"
+    },
+    "publicationName": "SUNDAYTIMES",
+    "publishedTime": "2017-11-17T00:01:00.000Z",
+    "shortSummary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Short summary 5"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "name": "paragraph",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Summary 5"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "url": "https://article5.io"
+  }
+]

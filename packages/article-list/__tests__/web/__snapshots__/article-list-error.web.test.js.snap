@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. page error 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <img
+          alt=""
+          src="2d7dffcd8e7f3cde3e959c364dc3d432"
+        />
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Something's gone wrong
+    </div>
+    <div>
+      We can't load the page you have requested. Please check your network connection and retry to continue
+    </div>
+    <Button
+      title="Retry"
+    />
+  </div>
+</div>
+`;
+
+exports[`2. article list 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                Showing 0 - 0 of 0 results
+              </div>
+            </div>
+            <div>
+              <div />
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      accessibility-label="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+      id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
+    >
+      <div>
+        ArticleListItem
+      </div>
+    </div>
+    <div
+      accessibility-label="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+      id="4e6894ec-cb18-11e7-b529-95e3fc05f40f.1"
+    />
+    <div>
+      <div>
+        <div>
+          <div>
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

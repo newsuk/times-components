@@ -35,7 +35,8 @@ const redundantNativeKeys = new Set([
   "allowFontScaling",
   "className",
   "ellipsizeMode",
-  "href"
+  "href",
+  "isTVSelectable"
 ]);
 
 export const minimalNativeTransform = minimaliseTransform(
